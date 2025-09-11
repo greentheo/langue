@@ -1,0 +1,1182 @@
+{
+  "metadata": {
+    "language": "french",
+    "level": "b2",
+    "version": "1.0",
+    "word_count": 90,
+    "created_at": "2025-09-11T23:04:43.474666",
+    "description": "Common B2 level French vocabulary"
+  },
+  "words": [
+    {
+      "word": "résilience",
+      "translations": [
+        "resilience",
+        "adaptability",
+        "toughness"
+      ],
+      "examples": [
+        "La résilience de cette entreprise face à la crise économique a été remarquable."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "épanouissement",
+      "translations": [
+        "fulfillment",
+        "self-actualization",
+        "blossoming"
+      ],
+      "examples": [
+        "Son épanouissement personnel l'a aidé à surmonter les défis de sa carrière."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "polyvalence",
+      "translations": [
+        "versatility",
+        "adaptability",
+        "multiskilled"
+      ],
+      "examples": [
+        "Grâce à sa polyvalence, elle a pu changer de poste facilement au sein de l'entreprise."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "empathie",
+      "translations": [
+        "empathy",
+        "compassion",
+        "understanding"
+      ],
+      "examples": [
+        "L'empathie dont il a fait preuve a été très appréciée par ses collègues."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "ingéniosité",
+      "translations": [
+        "ingenuity",
+        "creativity",
+        "resourcefulness"
+      ],
+      "examples": [
+        "Son ingéniosité l'a aidé à résoudre ce problème complexe."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "indépendance",
+      "translations": [
+        "independence",
+        "self-reliance",
+        "autonomy"
+      ],
+      "examples": [
+        "Elle a fait preuve d'une grande indépendance dans la gestion de son projet."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "ambition",
+      "translations": [
+        "ambition",
+        "drive",
+        "determination"
+      ],
+      "examples": [
+        "Son ambition de devenir directeur l'a poussé à travailler sans relâche."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "réflexion",
+      "translations": [
+        "reflection",
+        "contemplation",
+        "consideration"
+      ],
+      "examples": [
+        "Cette période de réflexion l'a aidé à prendre la bonne décision."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "persévérance",
+      "translations": [
+        "perseverance",
+        "persistence",
+        "determination"
+      ],
+      "examples": [
+        "Sa persévérance face aux défis l'a finalement conduit au succès."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "intuition",
+      "translations": [
+        "intuition",
+        "instinct",
+        "gut feeling"
+      ],
+      "examples": [
+        "Son intuition l'a guidé dans le bon choix à faire."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "curiosité",
+      "translations": [
+        "curiosity",
+        "inquisitiveness",
+        "thirst for knowledge"
+      ],
+      "examples": [
+        "Sa curiosité l'a poussé à explorer de nouveaux domaines passionnants."
+      ],
+      "category": "education",
+      "difficulty": 3
+    },
+    {
+      "word": "engagement",
+      "translations": [
+        "commitment",
+        "dedication",
+        "involvement"
+      ],
+      "examples": [
+        "Son engagement envers l'entreprise a été reconnu par ses supérieurs."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "créativité",
+      "translations": [
+        "creativity",
+        "innovation",
+        "originality"
+      ],
+      "examples": [
+        "Sa créativité lui a permis de proposer des solutions uniques à ce problème."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "résilience",
+      "translations": [
+        "resilience",
+        "adaptability",
+        "toughness"
+      ],
+      "examples": [
+        "La résilience de cette entreprise face à la crise économique a été remarquable."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "équilibre",
+      "translations": [
+        "balance",
+        "equilibrium",
+        "harmony"
+      ],
+      "examples": [
+        "Trouver un équilibre entre sa vie professionnelle et personnelle est un défi constant."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "autonomie",
+      "translations": [
+        "autonomy",
+        "independence",
+        "self-sufficiency"
+      ],
+      "examples": [
+        "Son autonomie dans la gestion de son projet lui a permis de progresser rapidement."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "adaptabilité",
+      "translations": [
+        "adaptability",
+        "flexibility",
+        "versatility"
+      ],
+      "examples": [
+        "Son adaptabilité lui a permis de s'ajuster facilement aux changements dans son entreprise."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "collaboration",
+      "translations": [
+        "collaboration",
+        "teamwork",
+        "cooperation"
+      ],
+      "examples": [
+        "La collaboration étroite entre les équipes a été essentielle pour mener à bien ce projet."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "leadership",
+      "translations": [
+        "leadership",
+        "influence",
+        "authority"
+      ],
+      "examples": [
+        "Son leadership a été déterminant pour motiver son équipe à atteindre leurs objectifs."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "responsabilité",
+      "translations": [
+        "responsibility",
+        "accountability",
+        "liability"
+      ],
+      "examples": [
+        "Elle a fait preuve d'une grande responsabilité dans la gestion de ce dossier important."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "communication",
+      "translations": [
+        "communication",
+        "expression",
+        "interaction"
+      ],
+      "examples": [
+        "Une bonne communication est essentielle pour travailler efficacement en équipe."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "motivation",
+      "translations": [
+        "motivation",
+        "drive",
+        "enthusiasm"
+      ],
+      "examples": [
+        "Sa motivation constante l'a aidé à surmonter les défis de ce projet exigeant."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "innovation",
+      "translations": [
+        "innovation",
+        "creativity",
+        "originality"
+      ],
+      "examples": [
+        "L'innovation est au cœur de la stratégie de cette entreprise pour rester compétitive."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "résolution",
+      "translations": [
+        "resolution",
+        "determination",
+        "perseverance"
+      ],
+      "examples": [
+        "Sa résolution à atteindre ses objectifs l'a aidé à surmonter tous les obstacles."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "discernement",
+      "translations": [
+        "discernment",
+        "judgment",
+        "insight"
+      ],
+      "examples": [
+        "Son discernement lui a permis de prendre la bonne décision dans cette situation complexe."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "initiative",
+      "translations": [
+        "initiative",
+        "proactivity",
+        "self-motivation"
+      ],
+      "examples": [
+        "Son initiative a été remarquée et a contribué à son avancement dans l'entreprise."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "réflexion",
+      "translations": [
+        "reflection",
+        "contemplation",
+        "consideration"
+      ],
+      "examples": [
+        "Cette période de réflexion l'a aidé à prendre la bonne décision."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "objectivité",
+      "translations": [
+        "objectivity",
+        "impartiality",
+        "neutrality"
+      ],
+      "examples": [
+        "Son objectivité dans l'analyse de la situation a été très appréciée par ses collègues."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "persévérance",
+      "translations": [
+        "perseverance",
+        "persistence",
+        "determination"
+      ],
+      "examples": [
+        "Sa persévérance face aux défis l'a finalement conduit au succès."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "intégrité",
+      "translations": [
+        "integrity",
+        "honesty",
+        "moral principles"
+      ],
+      "examples": [
+        "Son intégrité est un atout majeur dans son travail et ses relations professionnelles."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "adaptabilité",
+      "translations": [
+        "adaptability",
+        "flexibility",
+        "versatility"
+      ],
+      "examples": [
+        "Son adaptabilité lui a permis de s'ajuster facilement aux changements dans son entreprise."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "résolution",
+      "translations": [
+        "resolution",
+        "determination",
+        "perseverance"
+      ],
+      "examples": [
+        "Sa résolution à atteindre ses objectifs l'a aidé à surmonter tous les obstacles."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "indépendance",
+      "translations": [
+        "independence",
+        "self-reliance",
+        "autonomy"
+      ],
+      "examples": [
+        "Elle a fait preuve d'une grande indépendance dans la gestion de son projet."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "créativité",
+      "translations": [
+        "creativity",
+        "innovation",
+        "originality"
+      ],
+      "examples": [
+        "Sa créativité lui a permis de proposer des solutions uniques à ce problème."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "autonomie",
+      "translations": [
+        "autonomy",
+        "independence",
+        "self-sufficiency"
+      ],
+      "examples": [
+        "Son autonomie dans la gestion de son projet lui a permis de progresser rapidement."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "discernement",
+      "translations": [
+        "discernment",
+        "judgment",
+        "insight"
+      ],
+      "examples": [
+        "Son discernement lui a permis de prendre la bonne décision dans cette situation complexe."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "curiosité",
+      "translations": [
+        "curiosity",
+        "inquisitiveness",
+        "thirst for knowledge"
+      ],
+      "examples": [
+        "Sa curiosité l'a poussé à explorer de nouveaux domaines passionnants."
+      ],
+      "category": "education",
+      "difficulty": 3
+    },
+    {
+      "word": "intuition",
+      "translations": [
+        "intuition",
+        "instinct",
+        "gut feeling"
+      ],
+      "examples": [
+        "Son intuition l'a guidé dans le bon choix à faire."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "responsabilité",
+      "translations": [
+        "responsibility",
+        "accountability",
+        "liability"
+      ],
+      "examples": [
+        "Elle a fait preuve d'une grande responsabilité dans la gestion de ce dossier important."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "communication",
+      "translations": [
+        "communication",
+        "expression",
+        "interaction"
+      ],
+      "examples": [
+        "Une bonne communication est essentielle pour travailler efficacement en équipe."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "équilibre",
+      "translations": [
+        "balance",
+        "equilibrium",
+        "harmony"
+      ],
+      "examples": [
+        "Trouver un équilibre entre sa vie professionnelle et personnelle est un défi constant."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "engagement",
+      "translations": [
+        "commitment",
+        "dedication",
+        "involvement"
+      ],
+      "examples": [
+        "Son engagement envers l'entreprise a été reconnu par ses supérieurs."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "motivation",
+      "translations": [
+        "motivation",
+        "drive",
+        "enthusiasm"
+      ],
+      "examples": [
+        "Sa motivation constante l'a aidé à surmonter les défis de ce projet exigeant."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "initiative",
+      "translations": [
+        "initiative",
+        "proactivity",
+        "self-motivation"
+      ],
+      "examples": [
+        "Son initiative a été remarquée et a contribué à son avancement dans l'entreprise."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "objectivité",
+      "translations": [
+        "objectivity",
+        "impartiality",
+        "neutrality"
+      ],
+      "examples": [
+        "Son objectivité dans l'analyse de la situation a été très appréciée par ses collègues."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "intégrité",
+      "translations": [
+        "integrity",
+        "honesty",
+        "moral principles"
+      ],
+      "examples": [
+        "Son intégrité est un atout majeur dans son travail et ses relations professionnelles."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "leadership",
+      "translations": [
+        "leadership",
+        "influence",
+        "authority"
+      ],
+      "examples": [
+        "Son leadership a été déterminant pour motiver son équipe à atteindre leurs objectifs."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "collaboration",
+      "translations": [
+        "collaboration",
+        "teamwork",
+        "cooperation"
+      ],
+      "examples": [
+        "La collaboration étroite entre les équipes a été essentielle pour mener à bien ce projet."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "innovation",
+      "translations": [
+        "innovation",
+        "creativity",
+        "originality"
+      ],
+      "examples": [
+        "L'innovation est au cœur de la stratégie de cette entreprise pour rester compétitive."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "empathie",
+      "translations": [
+        "empathy",
+        "compassion",
+        "understanding"
+      ],
+      "examples": [
+        "L'empathie dont il a fait preuve a été très appréciée par ses collègues."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "épanouissement",
+      "translations": [
+        "fulfillment",
+        "self-actualization",
+        "blossoming"
+      ],
+      "examples": [
+        "Son épanouissement personnel l'a aidé à surmonter les défis de sa carrière."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "polyvalence",
+      "translations": [
+        "versatility",
+        "adaptability",
+        "multiskilled"
+      ],
+      "examples": [
+        "Grâce à sa polyvalence, elle a pu changer de poste facilement au sein de l'entreprise."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "préméditer",
+      "translations": [
+        "to premeditate",
+        "to plan in advance",
+        "to contemplate"
+      ],
+      "examples": [
+        "Elle a prémédité son vol pendant des semaines."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "empiéter",
+      "translations": [
+        "to encroach",
+        "to trespass",
+        "to infringe"
+      ],
+      "examples": [
+        "Son voisin a empiété sur sa propriété."
+      ],
+      "category": "housing",
+      "difficulty": 3
+    },
+    {
+      "word": "désinvolte",
+      "translations": [
+        "nonchalant",
+        "casual",
+        "cavalier"
+      ],
+      "examples": [
+        "Elle a une attitude désinvolte qui agace ses collègues."
+      ],
+      "category": "emotions",
+      "difficulty": 3
+    },
+    {
+      "word": "dévoiler",
+      "translations": [
+        "to unveil",
+        "to reveal",
+        "to disclose"
+      ],
+      "examples": [
+        "Le journaliste a dévoilé les détails de l'affaire."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "éphémère",
+      "translations": [
+        "fleeting",
+        "transient",
+        "short-lived"
+      ],
+      "examples": [
+        "Leur relation a été éphémère, elle n'a duré que quelques mois."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "abdiquer",
+      "translations": [
+        "to abdicate",
+        "to renounce",
+        "to relinquish"
+      ],
+      "examples": [
+        "Le roi a abdiqué son trône."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "ingérence",
+      "translations": [
+        "interference",
+        "meddling",
+        "intrusion"
+      ],
+      "examples": [
+        "Son ingérence dans les affaires de l'entreprise a causé des problèmes."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "manigancer",
+      "translations": [
+        "to conspire",
+        "to plot",
+        "to scheme"
+      ],
+      "examples": [
+        "Ils ont manigancé un plan pour voler l'entreprise."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "récalcitrant",
+      "translations": [
+        "recalcitrant",
+        "defiant",
+        "uncooperative"
+      ],
+      "examples": [
+        "Certains employés sont récalcitrants aux changements."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "subordonner",
+      "translations": [
+        "to subordinate",
+        "to make subservient",
+        "to subjugate"
+      ],
+      "examples": [
+        "Il a subordonné ses intérêts personnels à ceux de l'entreprise."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "bienveillant",
+      "translations": [
+        "benevolent",
+        "kind",
+        "considerate"
+      ],
+      "examples": [
+        "Son regard bienveillant m'a réconforté."
+      ],
+      "category": "emotions",
+      "difficulty": 3
+    },
+    {
+      "word": "téméraire",
+      "translations": [
+        "reckless",
+        "daring",
+        "audacious"
+      ],
+      "examples": [
+        "Il a pris une décision téméraire qui a failli lui coûter son emploi."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "indulgent",
+      "translations": [
+        "indulgent",
+        "permissive",
+        "lenient"
+      ],
+      "examples": [
+        "Ses parents ont été trop indulgents avec lui."
+      ],
+      "category": "family",
+      "difficulty": 3
+    },
+    {
+      "word": "nostalgique",
+      "translations": [
+        "nostalgic",
+        "sentimental",
+        "wistful"
+      ],
+      "examples": [
+        "Elle est nostalgique de son enfance passée à la campagne."
+      ],
+      "category": "emotions",
+      "difficulty": 3
+    },
+    {
+      "word": "évasif",
+      "translations": [
+        "evasive",
+        "vague",
+        "noncommittal"
+      ],
+      "examples": [
+        "Ses réponses ont été évasives, il n'a pas voulu donner plus de détails."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "insidieux",
+      "translations": [
+        "insidious",
+        "stealthy",
+        "treacherous"
+      ],
+      "examples": [
+        "La maladie a progressé de manière insidieuse."
+      ],
+      "category": "health",
+      "difficulty": 4
+    },
+    {
+      "word": "érudition",
+      "translations": [
+        "erudition",
+        "scholarly knowledge",
+        "learnedness"
+      ],
+      "examples": [
+        "Son érudition impressionne tous ses collègues."
+      ],
+      "category": "education",
+      "difficulty": 4
+    },
+    {
+      "word": "méticuleux",
+      "translations": [
+        "meticulous",
+        "thorough",
+        "painstaking"
+      ],
+      "examples": [
+        "Elle est très méthodique et méticuleux dans son travail."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "inébranlable",
+      "translations": [
+        "unwavering",
+        "steadfast",
+        "resolute"
+      ],
+      "examples": [
+        "Son engagement envers cette cause est inébranlable."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "impartial",
+      "translations": [
+        "impartial",
+        "unbiased",
+        "objective"
+      ],
+      "examples": [
+        "Le juge a fait preuve d'impartialité pendant le procès."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "opiniâtre",
+      "translations": [
+        "stubborn",
+        "persistent",
+        "obstinate"
+      ],
+      "examples": [
+        "Malgré les obstacles, il est resté opiniâtre dans la poursuite de son projet."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "malléable",
+      "translations": [
+        "malleable",
+        "pliable",
+        "adaptable"
+      ],
+      "examples": [
+        "Son esprit ouvert et malléable lui permet de s'adapter facilement."
+      ],
+      "category": "emotions",
+      "difficulty": 3
+    },
+    {
+      "word": "indolent",
+      "translations": [
+        "indolent",
+        "lazy",
+        "sluggish"
+      ],
+      "examples": [
+        "Certains employés ont une attitude indolente qui agace leurs collègues."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "irréprochable",
+      "translations": [
+        "impeccable",
+        "flawless",
+        "exemplary"
+      ],
+      "examples": [
+        "Son comportement professionnel est irréprochable."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "scrupuleux",
+      "translations": [
+        "scrupulous",
+        "meticulous",
+        "conscientious"
+      ],
+      "examples": [
+        "Elle est très scrupuleuse dans l'accomplissement de ses tâches."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "intransigeant",
+      "translations": [
+        "inflexible",
+        "unyielding",
+        "uncompromising"
+      ],
+      "examples": [
+        "Son patron a été intransigeant sur les délais du projet."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "circonspect",
+      "translations": [
+        "cautious",
+        "prudent",
+        "discreet"
+      ],
+      "examples": [
+        "Il faut être circonspect dans la gestion des informations confidentielles."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "sceptique",
+      "translations": [
+        "skeptical",
+        "doubtful",
+        "cynical"
+      ],
+      "examples": [
+        "Certains collègues se montrent sceptiques face à ce nouveau projet."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "conciliant",
+      "translations": [
+        "conciliatory",
+        "accommodating",
+        "compromising"
+      ],
+      "examples": [
+        "Son attitude conciliante a permis de résoudre le conflit."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "insolent",
+      "translations": [
+        "insolent",
+        "impudent",
+        "disrespectful"
+      ],
+      "examples": [
+        "Son comportement insolent envers le directeur lui a valu une réprimande."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "débonnaire",
+      "translations": [
+        "good-natured",
+        "amiable",
+        "genial"
+      ],
+      "examples": [
+        "Malgré son apparence débonnaire, il peut se montrer très ferme."
+      ],
+      "category": "emotions",
+      "difficulty": 3
+    },
+    {
+      "word": "acrimonieux",
+      "translations": [
+        "acrimonious",
+        "bitter",
+        "hostile"
+      ],
+      "examples": [
+        "Les échanges entre les deux partis sont devenus acrimonieux."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "réfractaire",
+      "translations": [
+        "refractory",
+        "resistant",
+        "unresponsive"
+      ],
+      "examples": [
+        "Certains élèves se montrent réfractaires aux changements."
+      ],
+      "category": "education",
+      "difficulty": 4
+    },
+    {
+      "word": "dogmatique",
+      "translations": [
+        "dogmatic",
+        "inflexible",
+        "doctrinaire"
+      ],
+      "examples": [
+        "Son approche dogmatique du problème n'a pas permis de trouver une solution."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "irascible",
+      "translations": [
+        "irascible",
+        "irritable",
+        "quick-tempered"
+      ],
+      "examples": [
+        "Lorsqu'il est fatigué, il devient irascible et s'emporte facilement."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "impassible",
+      "translations": [
+        "impassive",
+        "stoic",
+        "emotionless"
+      ],
+      "examples": [
+        "Malgré la gravité de la situation, il est resté impassible."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "loquace",
+      "translations": [
+        "loquacious",
+        "talkative",
+        "garrulous"
+      ],
+      "examples": [
+        "Pendant la réunion, il s'est montré particulièrement loquace."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "insipide",
+      "translations": [
+        "insipid",
+        "bland",
+        "tasteless"
+      ],
+      "examples": [
+        "Le plat était tellement insipide que je n'ai pas pu le finir."
+      ],
+      "category": "food",
+      "difficulty": 3
+    }
+  ]
+}

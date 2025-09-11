@@ -13,6 +13,7 @@ langue/activities/__init__.py
 langue/activities/base.py
 langue/activities/chat.py
 langue/activities/fill_blank.py
+langue/activities/flashcards.py
 langue/activities/reading.py
 langue/activities/translation.py
 langue/activities/flashcards/__init__.py
@@ -27,6 +28,14 @@ langue/cli/commands.py
 langue/config/__init__.py
 langue/config/manager.py
 langue/config/settings.py
+langue/data/flashcard_libraries/french/a1.json
+langue/data/flashcard_libraries/french/a2.json
+langue/data/flashcard_libraries/french/b1.json
+langue/data/flashcard_libraries/french/b2.json
+langue/data/flashcard_libraries/french/c1.json
+langue/data/flashcard_libraries/french/c2.json
+langue/data/flashcard_libraries/german/a1.json
+langue/data/flashcard_libraries/spanish/a1.json
 langue/models/__init__.py
 langue/models/base.py
 langue/models/claude.py

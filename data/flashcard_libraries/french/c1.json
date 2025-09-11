@@ -1,0 +1,1156 @@
+{
+  "metadata": {
+    "language": "french",
+    "level": "c1",
+    "version": "1.0",
+    "word_count": 88,
+    "created_at": "2025-09-11T23:05:34.483357",
+    "description": "Common C1 level French vocabulary"
+  },
+  "words": [
+    {
+      "word": "accomplissement",
+      "translations": [
+        "achievement",
+        "fulfillment",
+        "attainment"
+      ],
+      "examples": [
+        "Son accomplissement dans son travail l'a rendu très fier."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "affable",
+      "translations": [
+        "affable",
+        "friendly",
+        "amiable"
+      ],
+      "examples": [
+        "Elle a toujours été une personne affable et chaleureuse."
+      ],
+      "category": "emotions",
+      "difficulty": 3
+    },
+    {
+      "word": "aguerri",
+      "translations": [
+        "seasoned",
+        "experienced",
+        "hardened"
+      ],
+      "examples": [
+        "Grâce à ses années d'expérience, il est devenu un professionnel aguerri."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "amalgame",
+      "translations": [
+        "amalgam",
+        "mixture",
+        "blend"
+      ],
+      "examples": [
+        "Ce plat est un amalgame de saveurs délicieuses."
+      ],
+      "category": "food",
+      "difficulty": 4
+    },
+    {
+      "word": "ambivalence",
+      "translations": [
+        "ambivalence",
+        "conflicting feelings",
+        "indecision"
+      ],
+      "examples": [
+        "Son ambivalence face à ce choix important le tourmente."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "anecdotique",
+      "translations": [
+        "anecdotal",
+        "incidental",
+        "trivial"
+      ],
+      "examples": [
+        "Cet événement est plutôt anecdotique dans sa carrière."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "anodin",
+      "translations": [
+        "innocuous",
+        "trivial",
+        "harmless"
+      ],
+      "examples": [
+        "Ce commentaire peut paraître anodin, mais il l'a blessé."
+      ],
+      "category": "daily_routines",
+      "difficulty": 3
+    },
+    {
+      "word": "antinomie",
+      "translations": [
+        "antinomy",
+        "contradiction",
+        "paradox"
+      ],
+      "examples": [
+        "Il y a une antinomie flagrante entre ses principes et ses actes."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "apathie",
+      "translations": [
+        "apathy",
+        "indifference",
+        "lack of interest"
+      ],
+      "examples": [
+        "Son apathie face à ce problème m'a surpris et déçu."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "appréhension",
+      "translations": [
+        "apprehension",
+        "anxiety",
+        "fear"
+      ],
+      "examples": [
+        "Il a une certaine appréhension à l'idée de passer cet entretien."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "ardu",
+      "translations": [
+        "arduous",
+        "difficult",
+        "challenging"
+      ],
+      "examples": [
+        "La tâche s'est avérée plus ardue que prévu."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "artefact",
+      "translations": [
+        "artifact",
+        "object",
+        "relic"
+      ],
+      "examples": [
+        "Ce musée abrite de nombreux artefacts historiques."
+      ],
+      "category": "arts",
+      "difficulty": 4
+    },
+    {
+      "word": "assidu",
+      "translations": [
+        "diligent",
+        "persistent",
+        "dedicated"
+      ],
+      "examples": [
+        "Il est connu pour être un travailleur assidu et fiable."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "atavisme",
+      "translations": [
+        "atavism",
+        "throwback",
+        "reversion"
+      ],
+      "examples": [
+        "Certains traits de caractère peuvent être un atavisme familial."
+      ],
+      "category": "daily_routines",
+      "difficulty": 5
+    },
+    {
+      "word": "atout",
+      "translations": [
+        "asset",
+        "advantage",
+        "strength"
+      ],
+      "examples": [
+        "Son expérience est un atout majeur pour ce poste."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "austère",
+      "translations": [
+        "austere",
+        "severe",
+        "strict"
+      ],
+      "examples": [
+        "Son style de vie austère lui permet d'économiser."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "bénéfique",
+      "translations": [
+        "beneficial",
+        "advantageous",
+        "helpful"
+      ],
+      "examples": [
+        "Cette nouvelle routine de sommeil s'est avérée bénéfique."
+      ],
+      "category": "health",
+      "difficulty": 4
+    },
+    {
+      "word": "bienséance",
+      "translations": [
+        "propriety",
+        "decorum",
+        "etiquette"
+      ],
+      "examples": [
+        "Il faut respecter les règles de bienséance dans ce milieu."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "calamiteux",
+      "translations": [
+        "calamitous",
+        "disastrous",
+        "catastrophic"
+      ],
+      "examples": [
+        "Cet accident a eu des conséquences calamiteuses pour l'entreprise."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "candide",
+      "translations": [
+        "candid",
+        "frank",
+        "naive"
+      ],
+      "examples": [
+        "Il a fait une remarque candide qui a surpris tout le monde."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "cérébral",
+      "translations": [
+        "cerebral",
+        "intellectual",
+        "cognitive"
+      ],
+      "examples": [
+        "Ce sujet demande une réflexion cérébrale approfondie."
+      ],
+      "category": "education",
+      "difficulty": 4
+    },
+    {
+      "word": "circonspect",
+      "translations": [
+        "circumspect",
+        "cautious",
+        "prudent"
+      ],
+      "examples": [
+        "Il est toujours très circonspect avant de prendre une décision."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "clairvoyant",
+      "translations": [
+        "clairvoyant",
+        "insightful",
+        "perceptive"
+      ],
+      "examples": [
+        "Ses commentaires clairvoyants ont éclairé la situation."
+      ],
+      "category": "emotions",
+      "difficulty": 5
+    },
+    {
+      "word": "clémence",
+      "translations": [
+        "clemency",
+        "leniency",
+        "mercy"
+      ],
+      "examples": [
+        "Le juge a fait preuve de clémence en lui accordant une peine légère."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "coercitif",
+      "translations": [
+        "coercive",
+        "forceful",
+        "compulsory"
+      ],
+      "examples": [
+        "Cette nouvelle politique a un caractère trop coercitif."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "corollaire",
+      "translations": [
+        "corollary",
+        "consequence",
+        "implication"
+      ],
+      "examples": [
+        "Cet événement a eu plusieurs corollaires inattendus."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "cosmopolite",
+      "translations": [
+        "cosmopolitan",
+        "worldly",
+        "sophisticated"
+      ],
+      "examples": [
+        "Cette ville a une ambiance très cosmopolite et ouverte."
+      ],
+      "category": "travel",
+      "difficulty": 4
+    },
+    {
+      "word": "délétère",
+      "translations": [
+        "deleterious",
+        "harmful",
+        "detrimental"
+      ],
+      "examples": [
+        "Les effets délétères de cette pollution sont préoccupants."
+      ],
+      "category": "nature",
+      "difficulty": 5
+    },
+    {
+      "word": "désinvolte",
+      "translations": [
+        "nonchalant",
+        "casual",
+        "offhand"
+      ],
+      "examples": [
+        "Il a répondu de manière désinvolte à cette question importante."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "despotique",
+      "translations": [
+        "despotic",
+        "tyrannical",
+        "authoritarian"
+      ],
+      "examples": [
+        "Ce régime politique est devenu de plus en plus despotique."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "diligent",
+      "translations": [
+        "diligent",
+        "hardworking",
+        "industrious"
+      ],
+      "examples": [
+        "Grâce à son travail diligent, il a pu terminer le projet à temps."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "discrétionnaire",
+      "translations": [
+        "discretionary",
+        "optional",
+        "arbitrary"
+      ],
+      "examples": [
+        "Cette décision relève de son pouvoir discrétionnaire."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "dissident",
+      "translations": [
+        "dissident",
+        "nonconformist",
+        "rebel"
+      ],
+      "examples": [
+        "Elle a pris position en tant que dissident politique."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "dogmatique",
+      "translations": [
+        "dogmatic",
+        "inflexible",
+        "rigid"
+      ],
+      "examples": [
+        "Son approche dogmatique du problème l'a empêché de trouver une solution."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "durable",
+      "translations": [
+        "durable",
+        "long-lasting",
+        "resilient"
+      ],
+      "examples": [
+        "Cet équipement est conçu pour être durable et résistant."
+      ],
+      "category": "technology",
+      "difficulty": 3
+    },
+    {
+      "word": "éclectique",
+      "translations": [
+        "eclectic",
+        "diverse",
+        "varied"
+      ],
+      "examples": [
+        "Sa collection d'art est d'un style très éclectique."
+      ],
+      "category": "arts",
+      "difficulty": 4
+    },
+    {
+      "word": "égrégore",
+      "translations": [
+        "egregore",
+        "group mind",
+        "collective consciousness"
+      ],
+      "examples": [
+        "Cet événement a créé un égrégore puissant au sein de la communauté."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "élégiaque",
+      "translations": [
+        "elegiac",
+        "mournful",
+        "melancholic"
+      ],
+      "examples": [
+        "La musique avait une tonalité élégiaque qui a touché les auditeurs."
+      ],
+      "category": "arts",
+      "difficulty": 5
+    },
+    {
+      "word": "émancipation",
+      "translations": [
+        "emancipation",
+        "liberation",
+        "freedom"
+      ],
+      "examples": [
+        "Ce mouvement a permis l'émancipation des femmes dans cette société."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "empathie",
+      "translations": [
+        "empathy",
+        "compassion",
+        "understanding"
+      ],
+      "examples": [
+        "Son empathie envers les autres est une de ses plus grandes qualités."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "éphémère",
+      "translations": [
+        "ephemeral",
+        "fleeting",
+        "transient"
+      ],
+      "examples": [
+        "La beauté de cette fleur est malheureusement éphémère."
+      ],
+      "category": "nature",
+      "difficulty": 4
+    },
+    {
+      "word": "érudition",
+      "translations": [
+        "erudition",
+        "scholarship",
+        "learning"
+      ],
+      "examples": [
+        "Son érudition sur ce sujet est impressionnante."
+      ],
+      "category": "education",
+      "difficulty": 5
+    },
+    {
+      "word": "esotérique",
+      "translations": [
+        "esoteric",
+        "arcane",
+        "obscure"
+      ],
+      "examples": [
+        "Ce domaine de recherche est très esotérique et peu connu."
+      ],
+      "category": "education",
+      "difficulty": 5
+    },
+    {
+      "word": "exacerbé",
+      "translations": [
+        "exacerbated",
+        "aggravated",
+        "worsened"
+      ],
+      "examples": [
+        "La situation a été exacerbée par les tensions croissantes."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "exégèse",
+      "translations": [
+        "exegesis",
+        "interpretation",
+        "analysis"
+      ],
+      "examples": [
+        "Cette exégèse du texte a permis d'en comprendre le sens profond."
+      ],
+      "category": "education",
+      "difficulty": 5
+    },
+    {
+      "word": "exubérant",
+      "translations": [
+        "exuberant",
+        "lively",
+        "enthusiastic"
+      ],
+      "examples": [
+        "Lors de la fête, l'ambiance était exubérante et joyeuse."
+      ],
+      "category": "leisure",
+      "difficulty": 4
+    },
+    {
+      "word": "fallacieux",
+      "translations": [
+        "fallacious",
+        "misleading",
+        "deceptive"
+      ],
+      "examples": [
+        "Son raisonnement comporte des arguments fallacieux."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "fataliste",
+      "translations": [
+        "fatalistic",
+        "resigned",
+        "defeatist"
+      ],
+      "examples": [
+        "Face à cette situation, il a adopté une attitude fataliste."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "féliciter",
+      "translations": [
+        "to congratulate",
+        "to commend",
+        "to praise"
+      ],
+      "examples": [
+        "Je tiens à vous féliciter pour votre excellent travail."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "félon",
+      "translations": [
+        "treacherous",
+        "disloyal",
+        "perfidious"
+      ],
+      "examples": [
+        "Son comportement félon a trahi la confiance de ses collègues."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "ferveur",
+      "translations": [
+        "fervor",
+        "enthusiasm",
+        "passion"
+      ],
+      "examples": [
+        "Il a défendu cette cause avec une grande ferveur."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "fieffé",
+      "translations": [
+        "arrant",
+        "thorough",
+        "consummate"
+      ],
+      "examples": [
+        "Ce menteur est un fieffé imposteur qui abuse de la confiance des autres."
+      ],
+      "category": "daily_routines",
+      "difficulty": 5
+    },
+    {
+      "word": "fortuit",
+      "translations": [
+        "fortuitous",
+        "accidental",
+        "chance"
+      ],
+      "examples": [
+        "Cette rencontre fortuite a changé le cours de ma vie."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "frugal",
+      "translations": [
+        "frugal",
+        "thrifty",
+        "economical"
+      ],
+      "examples": [
+        "Il mène un mode de vie frugal pour épargner davantage."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "prédisposition",
+      "translations": [
+        "predisposition",
+        "inclination",
+        "tendency"
+      ],
+      "examples": [
+        "Elle a une prédisposition naturelle pour le chant."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "conjecturale",
+      "translations": [
+        "conjectural",
+        "speculative",
+        "hypothetical"
+      ],
+      "examples": [
+        "Cette théorie est encore conjecturale et nécessite plus de recherches."
+      ],
+      "category": "education",
+      "difficulty": 4
+    },
+    {
+      "word": "idiosyncrasie",
+      "translations": [
+        "idiosyncrasy",
+        "peculiarity",
+        "eccentricity"
+      ],
+      "examples": [
+        "Chaque personne a ses propres idiosyncrasies qui la rendent unique."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "réminiscence",
+      "translations": [
+        "reminiscence",
+        "recollection",
+        "memory"
+      ],
+      "examples": [
+        "Cette mélodie évoque en moi des réminiscences de mon enfance."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "récusation",
+      "translations": [
+        "challenge",
+        "rejection",
+        "objection"
+      ],
+      "examples": [
+        "La récusation de ce témoin par l'avocat a été jugée légitime."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "hégémonie",
+      "translations": [
+        "hegemony",
+        "dominance",
+        "supremacy"
+      ],
+      "examples": [
+        "Certains craignent l'hégémonie des États-Unis sur la scène internationale."
+      ],
+      "category": "politics",
+      "difficulty": 5
+    },
+    {
+      "word": "péremptoire",
+      "translations": [
+        "peremptory",
+        "authoritative",
+        "decisive"
+      ],
+      "examples": [
+        "Le juge a donné une réponse péremptoire à la requête de l'avocat."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "injonction",
+      "translations": [
+        "injunction",
+        "order",
+        "command"
+      ],
+      "examples": [
+        "Le tribunal a émis une injonction interdisant la publication de ces informations."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "éclectisme",
+      "translations": [
+        "eclecticism",
+        "diversity",
+        "variety"
+      ],
+      "examples": [
+        "Son goût musical est marqué par l'éclectisme, il aime tous les genres."
+      ],
+      "category": "arts",
+      "difficulty": 4
+    },
+    {
+      "word": "sycophante",
+      "translations": [
+        "sycophant",
+        "flatterer",
+        "toady"
+      ],
+      "examples": [
+        "Certains politiques sont entourés de sycophantes qui les adulentconstamment."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "impécunieux",
+      "translations": [
+        "penniless",
+        "destitute",
+        "broke"
+      ],
+      "examples": [
+        "Malgré sa formation prestigieuse, il est resté impécunieux toute sa vie."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "concomitant",
+      "translations": [
+        "concomitant",
+        "accompanying",
+        "concurrent"
+      ],
+      "examples": [
+        "Le stress et la fatigue sont souvent des phénomènes concomitants."
+      ],
+      "category": "health",
+      "difficulty": 4
+    },
+    {
+      "word": "insidieux",
+      "translations": [
+        "insidious",
+        "stealthy",
+        "treacherous"
+      ],
+      "examples": [
+        "Cette maladie a une progression insidieuse qui la rend difficile à détecter."
+      ],
+      "category": "health",
+      "difficulty": 4
+    },
+    {
+      "word": "évanescent",
+      "translations": [
+        "evanescent",
+        "fleeting",
+        "transitory"
+      ],
+      "examples": [
+        "La beauté de ce coucher de soleil est évanescente, elle ne dure qu'un instant."
+      ],
+      "category": "nature",
+      "difficulty": 4
+    },
+    {
+      "word": "intransigeant",
+      "translations": [
+        "intransigent",
+        "inflexible",
+        "uncompromising"
+      ],
+      "examples": [
+        "Sur cette question, le syndicat a adopté une position intransigeante."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "subreptice",
+      "translations": [
+        "surreptitious",
+        "stealthy",
+        "furtive"
+      ],
+      "examples": [
+        "Ses activités subreptices ont fini par être découvertes par les autorités."
+      ],
+      "category": "daily_routines",
+      "difficulty": 5
+    },
+    {
+      "word": "déliquescent",
+      "translations": [
+        "deliquescent",
+        "liquefying",
+        "dissolving"
+      ],
+      "examples": [
+        "Certains sels sont déliquescents et absorbent l'humidité de l'air."
+      ],
+      "category": "science",
+      "difficulty": 5
+    },
+    {
+      "word": "caduque",
+      "translations": [
+        "obsolete",
+        "outdated",
+        "defunct"
+      ],
+      "examples": [
+        "Cette loi est aujourd'hui caduque et doit être réformée."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "péjoratif",
+      "translations": [
+        "pejorative",
+        "derogatory",
+        "disparaging"
+      ],
+      "examples": [
+        "Ce terme a une connotation péjorative et devrait être évité."
+      ],
+      "category": "language",
+      "difficulty": 4
+    },
+    {
+      "word": "péremptoirement",
+      "translations": [
+        "peremptorily",
+        "authoritatively",
+        "decisively"
+      ],
+      "examples": [
+        "Le juge a rejeté péremptoirement la demande de l'avocat."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "pernicieux",
+      "translations": [
+        "pernicious",
+        "harmful",
+        "destructive"
+      ],
+      "examples": [
+        "Ses habitudes alimentaires ont eu des effets pernicieux sur sa santé."
+      ],
+      "category": "health",
+      "difficulty": 4
+    },
+    {
+      "word": "péremption",
+      "translations": [
+        "expiration",
+        "lapse",
+        "termination"
+      ],
+      "examples": [
+        "La péremption de ce contrat nous oblige à en signer un nouveau."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "immuable",
+      "translations": [
+        "immutable",
+        "unchangeable",
+        "constant"
+      ],
+      "examples": [
+        "Certains principes éthiques sont considérés comme immuables."
+      ],
+      "category": "philosophy",
+      "difficulty": 4
+    },
+    {
+      "word": "inextricable",
+      "translations": [
+        "inextricable",
+        "intricate",
+        "complex"
+      ],
+      "examples": [
+        "La situation s'est révélée inextricable et a nécessité une intervention."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "irréfragable",
+      "translations": [
+        "irrefutable",
+        "indisputable",
+        "conclusive"
+      ],
+      "examples": [
+        "Les preuves présentées par l'avocat sont d'une nature irréfragable."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "prérogative",
+      "translations": [
+        "prerogative",
+        "privilege",
+        "exclusive right"
+      ],
+      "examples": [
+        "En tant que dirigeant, il a la prérogative de prendre cette décision."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "quintessence",
+      "translations": [
+        "quintessence",
+        "essence",
+        "epitome"
+      ],
+      "examples": [
+        "Cette œuvre d'art est la quintessence du mouvement impressionniste."
+      ],
+      "category": "arts",
+      "difficulty": 5
+    },
+    {
+      "word": "idiosyncrasique",
+      "translations": [
+        "idiosyncratic",
+        "peculiar",
+        "eccentric"
+      ],
+      "examples": [
+        "Ses goûts musicaux ont un caractère idiosyncrasique très prononcé."
+      ],
+      "category": "arts",
+      "difficulty": 5
+    },
+    {
+      "word": "revendication",
+      "translations": [
+        "claim",
+        "demand",
+        "entitlement"
+      ],
+      "examples": [
+        "Les syndicats ont formulé de nouvelles revendications salariales."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "récalcitrant",
+      "translations": [
+        "recalcitrant",
+        "uncooperative",
+        "resistant"
+      ],
+      "examples": [
+        "Malgré les efforts de l'enseignant, l'élève est resté récalcitrant."
+      ],
+      "category": "education",
+      "difficulty": 4
+    },
+    {
+      "word": "obsolescence",
+      "translations": [
+        "obsolescence",
+        "outdatedness",
+        "depreciation"
+      ],
+      "examples": [
+        "L'obsolescence rapide des technologies rend difficile les investissements."
+      ],
+      "category": "technology",
+      "difficulty": 4
+    },
+    {
+      "word": "pérennité",
+      "translations": [
+        "permanence",
+        "durability",
+        "longevity"
+      ],
+      "examples": [
+        "Malgré les crises, l'entreprise a su assurer sa pérennité."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "désuétude",
+      "translations": [
+        "obsolescence",
+        "disuse",
+        "antiquation"
+      ],
+      "examples": [
+        "Cette loi est tombée en désuétude et doit être réformée."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "immanent",
+      "translations": [
+        "immanent",
+        "inherent",
+        "intrinsic"
+      ],
+      "examples": [
+        "Cette qualité est immanente à la nature même de l'objet."
+      ],
+      "category": "philosophy",
+      "difficulty": 5
+    }
+  ]
+}

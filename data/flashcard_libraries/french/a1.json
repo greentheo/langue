@@ -3,9 +3,10 @@
     "language": "french",
     "level": "a1",
     "version": "1.0",
-    "word_count": 300,
+    "word_count": 389,
     "created_at": "2025-09-10T23:55:58.950923",
-    "description": "Common A1 level French vocabulary"
+    "description": "Common A1 level French vocabulary",
+    "updated_at": "2025-09-11T23:02:31.702514"
   },
   "words": [
     {
@@ -3487,6 +3488,998 @@
       ],
       "category": "basics",
       "difficulty": 1
+    },
+    {
+      "word": "s'il vous plaît",
+      "translations": [
+        "please"
+      ],
+      "examples": [
+        "Pouvez-vous me passer le sel, s'il vous plaît ?"
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "un",
+      "translations": [
+        "one"
+      ],
+      "examples": [
+        "J'ai acheté un livre."
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "deux",
+      "translations": [
+        "two"
+      ],
+      "examples": [
+        "Il y a deux chiens dans le parc."
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "trois",
+      "translations": [
+        "three"
+      ],
+      "examples": [
+        "Je vais à la plage trois fois par semaine."
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "quatre",
+      "translations": [
+        "four"
+      ],
+      "examples": [
+        "J'ai quatre frères et sœurs."
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "cinq",
+      "translations": [
+        "five"
+      ],
+      "examples": [
+        "Il y a cinq pommes sur la table."
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "mère",
+      "translations": [
+        "mother"
+      ],
+      "examples": [
+        "Ma mère est très gentille."
+      ],
+      "category": "family",
+      "difficulty": 2
+    },
+    {
+      "word": "père",
+      "translations": [
+        "father"
+      ],
+      "examples": [
+        "Mon père travaille beaucoup."
+      ],
+      "category": "family",
+      "difficulty": 2
+    },
+    {
+      "word": "frère",
+      "translations": [
+        "brother"
+      ],
+      "examples": [
+        "J'ai un frère plus jeune."
+      ],
+      "category": "family",
+      "difficulty": 2
+    },
+    {
+      "word": "sœur",
+      "translations": [
+        "sister"
+      ],
+      "examples": [
+        "Ma sœur est très intelligente."
+      ],
+      "category": "family",
+      "difficulty": 2
+    },
+    {
+      "word": "famille",
+      "translations": [
+        "family"
+      ],
+      "examples": [
+        "J'aime passer du temps avec ma famille."
+      ],
+      "category": "family",
+      "difficulty": 2
+    },
+    {
+      "word": "pain",
+      "translations": [
+        "bread"
+      ],
+      "examples": [
+        "Je voudrais une baguette de pain, s'il vous plaît."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "eau",
+      "translations": [
+        "water"
+      ],
+      "examples": [
+        "Puis-je avoir un verre d'eau ?"
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "pomme",
+      "translations": [
+        "apple"
+      ],
+      "examples": [
+        "J'ai acheté des pommes au marché."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "fromage",
+      "translations": [
+        "cheese"
+      ],
+      "examples": [
+        "Je préfère le fromage de chèvre."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "viande",
+      "translations": [
+        "meat"
+      ],
+      "examples": [
+        "Nous avons mangé de la viande de bœuf pour le dîner."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "avion",
+      "translations": [
+        "airplane"
+      ],
+      "examples": [
+        "Nous prenons l'avion pour aller en vacances."
+      ],
+      "category": "travel",
+      "difficulty": 2
+    },
+    {
+      "word": "train",
+      "translations": [
+        "train"
+      ],
+      "examples": [
+        "Je prends le train pour aller au travail."
+      ],
+      "category": "travel",
+      "difficulty": 2
+    },
+    {
+      "word": "voiture",
+      "translations": [
+        "car"
+      ],
+      "examples": [
+        "Ma voiture est garée dans le parking."
+      ],
+      "category": "travel",
+      "difficulty": 2
+    },
+    {
+      "word": "bateau",
+      "translations": [
+        "boat"
+      ],
+      "examples": [
+        "Nous avons fait une croisière en bateau."
+      ],
+      "category": "travel",
+      "difficulty": 2
+    },
+    {
+      "word": "métro",
+      "translations": [
+        "subway",
+        "metro"
+      ],
+      "examples": [
+        "Je prends le métro pour aller en ville."
+      ],
+      "category": "travel",
+      "difficulty": 2
+    },
+    {
+      "word": "magasin",
+      "translations": [
+        "store",
+        "shop"
+      ],
+      "examples": [
+        "Je vais faire des achats dans ce magasin."
+      ],
+      "category": "shopping",
+      "difficulty": 2
+    },
+    {
+      "word": "acheter",
+      "translations": [
+        "to buy"
+      ],
+      "examples": [
+        "J'ai acheté un nouveau manteau."
+      ],
+      "category": "shopping",
+      "difficulty": 2
+    },
+    {
+      "word": "vendre",
+      "translations": [
+        "to sell"
+      ],
+      "examples": [
+        "Cette boutique vend de beaux bijoux."
+      ],
+      "category": "shopping",
+      "difficulty": 2
+    },
+    {
+      "word": "payer",
+      "translations": [
+        "to pay"
+      ],
+      "examples": [
+        "Je vais payer avec ma carte bancaire."
+      ],
+      "category": "shopping",
+      "difficulty": 2
+    },
+    {
+      "word": "argent",
+      "translations": [
+        "money"
+      ],
+      "examples": [
+        "J'ai assez d'argent pour acheter ce manteau."
+      ],
+      "category": "shopping",
+      "difficulty": 2
+    },
+    {
+      "word": "heure",
+      "translations": [
+        "hour"
+      ],
+      "examples": [
+        "Il est 15 heures."
+      ],
+      "category": "time",
+      "difficulty": 2
+    },
+    {
+      "word": "jour",
+      "translations": [
+        "day"
+      ],
+      "examples": [
+        "Aujourd'hui, nous allons au parc."
+      ],
+      "category": "time",
+      "difficulty": 2
+    },
+    {
+      "word": "semaine",
+      "translations": [
+        "week"
+      ],
+      "examples": [
+        "Je travaille du lundi au vendredi chaque semaine."
+      ],
+      "category": "time",
+      "difficulty": 2
+    },
+    {
+      "word": "mois",
+      "translations": [
+        "month"
+      ],
+      "examples": [
+        "Mon anniversaire est en mai."
+      ],
+      "category": "time",
+      "difficulty": 2
+    },
+    {
+      "word": "année",
+      "translations": [
+        "year"
+      ],
+      "examples": [
+        "Nous avons déménagé dans cette maison il y a deux ans."
+      ],
+      "category": "time",
+      "difficulty": 2
+    },
+    {
+      "word": "soleil",
+      "translations": [
+        "sun"
+      ],
+      "examples": [
+        "Il fait beau et il y a beaucoup de soleil aujourd'hui."
+      ],
+      "category": "weather",
+      "difficulty": 2
+    },
+    {
+      "word": "pluie",
+      "translations": [
+        "rain"
+      ],
+      "examples": [
+        "Il pleut beaucoup ces jours-ci."
+      ],
+      "category": "weather",
+      "difficulty": 2
+    },
+    {
+      "word": "neige",
+      "translations": [
+        "snow"
+      ],
+      "examples": [
+        "Il y a beaucoup de neige sur les montagnes."
+      ],
+      "category": "weather",
+      "difficulty": 2
+    },
+    {
+      "word": "vent",
+      "translations": [
+        "wind"
+      ],
+      "examples": [
+        "Il fait très venteux aujourd'hui."
+      ],
+      "category": "weather",
+      "difficulty": 2
+    },
+    {
+      "word": "nuage",
+      "translations": [
+        "cloud"
+      ],
+      "examples": [
+        "Le ciel est couvert de nuages gris."
+      ],
+      "category": "weather",
+      "difficulty": 2
+    },
+    {
+      "word": "travailler",
+      "translations": [
+        "to work"
+      ],
+      "examples": [
+        "Je travaille dans un bureau."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "bureau",
+      "translations": [
+        "office"
+      ],
+      "examples": [
+        "Mon bureau est au troisième étage."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "patron",
+      "translations": [
+        "boss"
+      ],
+      "examples": [
+        "Mon patron est très exigeant."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "collègue",
+      "translations": [
+        "colleague"
+      ],
+      "examples": [
+        "Je m'entends bien avec mes collègues."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "salaire",
+      "translations": [
+        "salary"
+      ],
+      "examples": [
+        "Mon salaire me permet de vivre confortablement."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "école",
+      "translations": [
+        "school"
+      ],
+      "examples": [
+        "Je vais à l'école tous les jours."
+      ],
+      "category": "education",
+      "difficulty": 3
+    },
+    {
+      "word": "professeur",
+      "translations": [
+        "teacher"
+      ],
+      "examples": [
+        "Mon professeur de français est très sympathique."
+      ],
+      "category": "education",
+      "difficulty": 3
+    },
+    {
+      "word": "étudiant",
+      "translations": [
+        "student"
+      ],
+      "examples": [
+        "Je suis un étudiant en première année."
+      ],
+      "category": "education",
+      "difficulty": 3
+    },
+    {
+      "word": "livre",
+      "translations": [
+        "book"
+      ],
+      "examples": [
+        "J'ai emprunté ce livre à la bibliothèque."
+      ],
+      "category": "education",
+      "difficulty": 3
+    },
+    {
+      "word": "stylo",
+      "translations": [
+        "pen"
+      ],
+      "examples": [
+        "Peux-tu me prêter un stylo, s'il te plaît ?"
+      ],
+      "category": "education",
+      "difficulty": 3
+    },
+    {
+      "word": "maison",
+      "translations": [
+        "house"
+      ],
+      "examples": [
+        "Ma maison a un grand jardin."
+      ],
+      "category": "housing",
+      "difficulty": 3
+    },
+    {
+      "word": "appartement",
+      "translations": [
+        "apartment"
+      ],
+      "examples": [
+        "J'habite dans un appartement au centre-ville."
+      ],
+      "category": "housing",
+      "difficulty": 3
+    },
+    {
+      "word": "chambre",
+      "translations": [
+        "room"
+      ],
+      "examples": [
+        "Ma chambre est au deuxième étage."
+      ],
+      "category": "housing",
+      "difficulty": 3
+    },
+    {
+      "word": "cuisine",
+      "translations": [
+        "kitchen"
+      ],
+      "examples": [
+        "Je fais la cuisine tous les soirs."
+      ],
+      "category": "housing",
+      "difficulty": 3
+    },
+    {
+      "word": "jardin",
+      "translations": [
+        "garden"
+      ],
+      "examples": [
+        "Nous avons un beau jardin avec des fleurs."
+      ],
+      "category": "housing",
+      "difficulty": 3
+    },
+    {
+      "word": "lire",
+      "translations": [
+        "to read"
+      ],
+      "examples": [
+        "J'aime lire des livres pendant mon temps libre."
+      ],
+      "category": "leisure",
+      "difficulty": 3
+    },
+    {
+      "word": "jouer",
+      "translations": [
+        "to play"
+      ],
+      "examples": [
+        "Nous jouons au football le week-end."
+      ],
+      "category": "leisure",
+      "difficulty": 3
+    },
+    {
+      "word": "sport",
+      "translations": [
+        "sport"
+      ],
+      "examples": [
+        "Le football est mon sport préféré."
+      ],
+      "category": "leisure",
+      "difficulty": 3
+    },
+    {
+      "word": "musique",
+      "translations": [
+        "music"
+      ],
+      "examples": [
+        "J'écoute de la musique classique le soir."
+      ],
+      "category": "leisure",
+      "difficulty": 3
+    },
+    {
+      "word": "film",
+      "translations": [
+        "movie"
+      ],
+      "examples": [
+        "Nous allons voir un film au cinéma ce soir."
+      ],
+      "category": "leisure",
+      "difficulty": 3
+    },
+    {
+      "word": "mal",
+      "translations": [
+        "pain",
+        "ache"
+      ],
+      "examples": [
+        "J'ai mal à la tête."
+      ],
+      "category": "health",
+      "difficulty": 3
+    },
+    {
+      "word": "médecin",
+      "translations": [
+        "doctor"
+      ],
+      "examples": [
+        "Je vais voir un médecin pour mon problème de dos."
+      ],
+      "category": "health",
+      "difficulty": 3
+    },
+    {
+      "word": "hôpital",
+      "translations": [
+        "hospital"
+      ],
+      "examples": [
+        "Mon grand-père est à l'hôpital."
+      ],
+      "category": "health",
+      "difficulty": 3
+    },
+    {
+      "word": "médicament",
+      "translations": [
+        "medication"
+      ],
+      "examples": [
+        "Le médecin m'a prescrit des médicaments."
+      ],
+      "category": "health",
+      "difficulty": 3
+    },
+    {
+      "word": "santé",
+      "translations": [
+        "health"
+      ],
+      "examples": [
+        "Ma santé est bonne."
+      ],
+      "category": "health",
+      "difficulty": 3
+    },
+    {
+      "word": "boucher",
+      "translations": [
+        "butcher",
+        "to chop"
+      ],
+      "examples": [
+        "Le boucher vend de la viande fraîche."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "parapluie",
+      "translations": [
+        "umbrella"
+      ],
+      "examples": [
+        "Je prends mon parapluie quand il pleut."
+      ],
+      "category": "weather",
+      "difficulty": 2
+    },
+    {
+      "word": "pêcher",
+      "translations": [
+        "to fish",
+        "to pick"
+      ],
+      "examples": [
+        "Mon père aime pêcher le weekend."
+      ],
+      "category": "leisure",
+      "difficulty": 3
+    },
+    {
+      "word": "boulangerie",
+      "translations": [
+        "bakery"
+      ],
+      "examples": [
+        "J'achète du pain à la boulangerie."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "rire",
+      "translations": [
+        "to laugh"
+      ],
+      "examples": [
+        "Elle rit quand elle est heureuse."
+      ],
+      "category": "emotions",
+      "difficulty": 2
+    },
+    {
+      "word": "oreille",
+      "translations": [
+        "ear"
+      ],
+      "examples": [
+        "J'entends avec mes oreilles."
+      ],
+      "category": "health",
+      "difficulty": 2
+    },
+    {
+      "word": "chanter",
+      "translations": [
+        "to sing"
+      ],
+      "examples": [
+        "Elle chante très bien."
+      ],
+      "category": "arts",
+      "difficulty": 3
+    },
+    {
+      "word": "fleuve",
+      "translations": [
+        "river"
+      ],
+      "examples": [
+        "Le fleuve traverse la ville."
+      ],
+      "category": "nature",
+      "difficulty": 3
+    },
+    {
+      "word": "chaussure",
+      "translations": [
+        "shoe"
+      ],
+      "examples": [
+        "Je porte des chaussures confortables."
+      ],
+      "category": "shopping",
+      "difficulty": 2
+    },
+    {
+      "word": "dormir",
+      "translations": [
+        "to sleep"
+      ],
+      "examples": [
+        "Je dors huit heures par nuit."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2
+    },
+    {
+      "word": "courir",
+      "translations": [
+        "to run"
+      ],
+      "examples": [
+        "Je cours tous les jours pour faire de l'exercice."
+      ],
+      "category": "sports",
+      "difficulty": 3
+    },
+    {
+      "word": "montagne",
+      "translations": [
+        "mountain"
+      ],
+      "examples": [
+        "Les montagnes sont très hautes."
+      ],
+      "category": "nature",
+      "difficulty": 3
+    },
+    {
+      "word": "église",
+      "translations": [
+        "church"
+      ],
+      "examples": [
+        "L'église est un bâtiment religieux."
+      ],
+      "category": "arts",
+      "difficulty": 3
+    },
+    {
+      "word": "malade",
+      "translations": [
+        "sick",
+        "ill"
+      ],
+      "examples": [
+        "Je suis malade et je reste au lit."
+      ],
+      "category": "health",
+      "difficulty": 2
+    },
+    {
+      "word": "manger",
+      "translations": [
+        "to eat"
+      ],
+      "examples": [
+        "Je mange du pain et du fromage pour le petit-déjeuner."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "parler",
+      "translations": [
+        "to speak",
+        "to talk"
+      ],
+      "examples": [
+        "Nous parlons français à la maison."
+      ],
+      "category": "daily_routines",
+      "difficulty": 3
+    },
+    {
+      "word": "beau",
+      "translations": [
+        "beautiful",
+        "handsome"
+      ],
+      "examples": [
+        "Ce paysage est vraiment beau."
+      ],
+      "category": "arts",
+      "difficulty": 2
+    },
+    {
+      "word": "fatigue",
+      "translations": [
+        "tired",
+        "exhausted"
+      ],
+      "examples": [
+        "Je suis fatigué après une longue journée de travail."
+      ],
+      "category": "health",
+      "difficulty": 3
+    },
+    {
+      "word": "hôtel",
+      "translations": [
+        "hotel"
+      ],
+      "examples": [
+        "Nous restons à l'hôtel pendant nos vacances."
+      ],
+      "category": "travel",
+      "difficulty": 3
+    },
+    {
+      "word": "écrire",
+      "translations": [
+        "to write"
+      ],
+      "examples": [
+        "J'écris une lettre à ma grand-mère."
+      ],
+      "category": "education",
+      "difficulty": 3
+    },
+    {
+      "word": "prendre",
+      "translations": [
+        "to take",
+        "to have"
+      ],
+      "examples": [
+        "Je prends le bus pour aller au travail."
+      ],
+      "category": "transportation",
+      "difficulty": 3
+    },
+    {
+      "word": "prêter",
+      "translations": [
+        "to lend",
+        "to borrow"
+      ],
+      "examples": [
+        "Je peux te prêter mon stylo si tu en as besoin."
+      ],
+      "category": "daily_routines",
+      "difficulty": 3
+    },
+    {
+      "word": "apporter",
+      "translations": [
+        "to bring"
+      ],
+      "examples": [
+        "Peux-tu m'apporter un verre d'eau ?"
+      ],
+      "category": "daily_routines",
+      "difficulty": 3
+    },
+    {
+      "word": "regarder",
+      "translations": [
+        "to watch",
+        "to look at"
+      ],
+      "examples": [
+        "Je regarde la télévision le soir."
+      ],
+      "category": "leisure",
+      "difficulty": 3
+    },
+    {
+      "word": "fermer",
+      "translations": [
+        "to close"
+      ],
+      "examples": [
+        "Je ferme la porte à clé avant de sortir."
+      ],
+      "category": "daily_routines",
+      "difficulty": 3
+    },
+    {
+      "word": "aimer",
+      "translations": [
+        "to like",
+        "to love"
+      ],
+      "examples": [
+        "J'aime beaucoup le chocolat."
+      ],
+      "category": "emotions",
+      "difficulty": 3
+    },
+    {
+      "word": "animal",
+      "translations": [
+        "animal"
+      ],
+      "examples": [
+        "J'ai un chat comme animal de compagnie."
+      ],
+      "category": "nature",
+      "difficulty": 3
+    },
+    {
+      "word": "marché",
+      "translations": [
+        "market"
+      ],
+      "examples": [
+        "Je vais au marché pour acheter des fruits et légumes."
+      ],
+      "category": "shopping",
+      "difficulty": 3
     }
   ]
 }
