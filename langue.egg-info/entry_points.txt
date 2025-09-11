@@ -1,0 +1,2 @@
+[console_scripts]
+langue = langue.main:main
