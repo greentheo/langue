@@ -1,0 +1,1116 @@
+{
+  "metadata": {
+    "language": "french",
+    "level": "c2",
+    "version": "1.0",
+    "word_count": 85,
+    "created_at": "2025-09-11T23:06:25.921405",
+    "description": "Common C2 level French vocabulary"
+  },
+  "words": [
+    {
+      "word": "désinvolture",
+      "translations": [
+        "nonchalance",
+        "casualness",
+        "insouciance"
+      ],
+      "examples": [
+        "Elle a fait preuve d'une grande désinvolture face à la situation délicate."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "éphémère",
+      "translations": [
+        "fleeting",
+        "transient",
+        "short-lived"
+      ],
+      "examples": [
+        "La beauté de cette fleur est malheureusement éphémère."
+      ],
+      "category": "nature",
+      "difficulty": 4
+    },
+    {
+      "word": "préméditation",
+      "translations": [
+        "premeditation",
+        "deliberation",
+        "forethought"
+      ],
+      "examples": [
+        "Le crime a été commis avec préméditation, selon les enquêteurs."
+      ],
+      "category": "daily_routines",
+      "difficulty": 5
+    },
+    {
+      "word": "avilissement",
+      "translations": [
+        "degradation",
+        "debasement",
+        "humiliation"
+      ],
+      "examples": [
+        "Son avilissement l'a poussé à commettre des actes qu'il regrette aujourd'hui."
+      ],
+      "category": "emotions",
+      "difficulty": 5
+    },
+    {
+      "word": "récalcitrant",
+      "translations": [
+        "recalcitrant",
+        "stubborn",
+        "resistant"
+      ],
+      "examples": [
+        "Malgré nos efforts, l'enfant est resté récalcitrant face à nos demandes."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "paronyme",
+      "translations": [
+        "paronym",
+        "near-homophone",
+        "similar-sounding word"
+      ],
+      "examples": [
+        "Les paronymes 'affect' et 'effet' sont souvent confondus."
+      ],
+      "category": "education",
+      "difficulty": 5
+    },
+    {
+      "word": "péremptoire",
+      "translations": [
+        "peremptory",
+        "authoritative",
+        "decisive"
+      ],
+      "examples": [
+        "Son ton péremptoire n'a laissé aucune place à la discussion."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "récalcitrance",
+      "translations": [
+        "recalcitrance",
+        "obstinacy",
+        "stubbornness"
+      ],
+      "examples": [
+        "La récalcitrance de l'étudiant face aux consignes a irrité le professeur."
+      ],
+      "category": "education",
+      "difficulty": 5
+    },
+    {
+      "word": "déshérence",
+      "translations": [
+        "escheatment",
+        "lack of heirs",
+        "abandonment"
+      ],
+      "examples": [
+        "Après des années de déshérence, les biens ont été saisis par l'État."
+      ],
+      "category": "housing",
+      "difficulty": 5
+    },
+    {
+      "word": "circonvolution",
+      "translations": [
+        "convolution",
+        "winding",
+        "meandering"
+      ],
+      "examples": [
+        "Les circonvolutions de cette rivière rendent la navigation difficile."
+      ],
+      "category": "nature",
+      "difficulty": 5
+    },
+    {
+      "word": "péremptoirement",
+      "translations": [
+        "peremptorily",
+        "decisively",
+        "authoritatively"
+      ],
+      "examples": [
+        "Le juge a tranché péremptoirement en faveur de la défense."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "désuétude",
+      "translations": [
+        "obsolescence",
+        "disuse",
+        "falling into disuse"
+      ],
+      "examples": [
+        "Certaines expressions tombent progressivement en désuétude."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "circonspection",
+      "translations": [
+        "circumspection",
+        "caution",
+        "prudence"
+      ],
+      "examples": [
+        "Il a agi avec une grande circonspection afin d'éviter tout problème."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "péremptoirement",
+      "translations": [
+        "peremptorily",
+        "decisively",
+        "authoritatively"
+      ],
+      "examples": [
+        "Le juge a tranché péremptoirement en faveur de la défense."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "désuet",
+      "translations": [
+        "obsolete",
+        "outmoded",
+        "archaic"
+      ],
+      "examples": [
+        "Ce vocabulaire est complètement désuet de nos jours."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "circonvenir",
+      "translations": [
+        "to circumvent",
+        "to outwit",
+        "to manipulate"
+      ],
+      "examples": [
+        "Ils ont tenté de le circonvenir pour obtenir ce qu'ils voulaient."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "péremptoirement",
+      "translations": [
+        "peremptorily",
+        "decisively",
+        "authoritatively"
+      ],
+      "examples": [
+        "Le juge a tranché péremptoirement en faveur de la défense."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "désuétude",
+      "translations": [
+        "obsolescence",
+        "disuse",
+        "falling into disuse"
+      ],
+      "examples": [
+        "Certaines expressions tombent progressivement en désuétude."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "circonspection",
+      "translations": [
+        "circumspection",
+        "caution",
+        "prudence"
+      ],
+      "examples": [
+        "Il a agi avec une grande circonspection afin d'éviter tout problème."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "péremptoirement",
+      "translations": [
+        "peremptorily",
+        "decisively",
+        "authoritatively"
+      ],
+      "examples": [
+        "Le juge a tranché péremptoirement en faveur de la défense."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "désuet",
+      "translations": [
+        "obsolete",
+        "outmoded",
+        "archaic"
+      ],
+      "examples": [
+        "Ce vocabulaire est complètement désuet de nos jours."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "circonvenir",
+      "translations": [
+        "to circumvent",
+        "to outwit",
+        "to manipulate"
+      ],
+      "examples": [
+        "Ils ont tenté de le circonvenir pour obtenir ce qu'ils voulaient."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "péremptoirement",
+      "translations": [
+        "peremptorily",
+        "decisively",
+        "authoritatively"
+      ],
+      "examples": [
+        "Le juge a tranché péremptoirement en faveur de la défense."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "désuétude",
+      "translations": [
+        "obsolescence",
+        "disuse",
+        "falling into disuse"
+      ],
+      "examples": [
+        "Certaines expressions tombent progressivement en désuétude."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "circonspection",
+      "translations": [
+        "circumspection",
+        "caution",
+        "prudence"
+      ],
+      "examples": [
+        "Il a agi avec une grande circonspection afin d'éviter tout problème."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "péremptoirement",
+      "translations": [
+        "peremptorily",
+        "decisively",
+        "authoritatively"
+      ],
+      "examples": [
+        "Le juge a tranché péremptoirement en faveur de la défense."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "désuet",
+      "translations": [
+        "obsolete",
+        "outmoded",
+        "archaic"
+      ],
+      "examples": [
+        "Ce vocabulaire est complètement désuet de nos jours."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "circonvenir",
+      "translations": [
+        "to circumvent",
+        "to outwit",
+        "to manipulate"
+      ],
+      "examples": [
+        "Ils ont tenté de le circonvenir pour obtenir ce qu'ils voulaient."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "péremptoirement",
+      "translations": [
+        "peremptorily",
+        "decisively",
+        "authoritatively"
+      ],
+      "examples": [
+        "Le juge a tranché péremptoirement en faveur de la défense."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "désuétude",
+      "translations": [
+        "obsolescence",
+        "disuse",
+        "falling into disuse"
+      ],
+      "examples": [
+        "Certaines expressions tombent progressivement en désuétude."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "circonspection",
+      "translations": [
+        "circumspection",
+        "caution",
+        "prudence"
+      ],
+      "examples": [
+        "Il a agi avec une grande circonspection afin d'éviter tout problème."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "péremptoirement",
+      "translations": [
+        "peremptorily",
+        "decisively",
+        "authoritatively"
+      ],
+      "examples": [
+        "Le juge a tranché péremptoirement en faveur de la défense."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "désuet",
+      "translations": [
+        "obsolete",
+        "outmoded",
+        "archaic"
+      ],
+      "examples": [
+        "Ce vocabulaire est complètement désuet de nos jours."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "circonvenir",
+      "translations": [
+        "to circumvent",
+        "to outwit",
+        "to manipulate"
+      ],
+      "examples": [
+        "Ils ont tenté de le circonvenir pour obtenir ce qu'ils voulaient."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "péremptoirement",
+      "translations": [
+        "peremptorily",
+        "decisively",
+        "authoritatively"
+      ],
+      "examples": [
+        "Le juge a tranché péremptoirement en faveur de la défense."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "désuétude",
+      "translations": [
+        "obsolescence",
+        "disuse",
+        "falling into disuse"
+      ],
+      "examples": [
+        "Certaines expressions tombent progressivement en désuétude."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "circonspection",
+      "translations": [
+        "circumspection",
+        "caution",
+        "prudence"
+      ],
+      "examples": [
+        "Il a agi avec une grande circonspection afin d'éviter tout problème."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "péremptoirement",
+      "translations": [
+        "peremptorily",
+        "decisively",
+        "authoritatively"
+      ],
+      "examples": [
+        "Le juge a tranché péremptoirement en faveur de la défense."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "désuet",
+      "translations": [
+        "obsolete",
+        "outmoded",
+        "archaic"
+      ],
+      "examples": [
+        "Ce vocabulaire est complètement désuet de nos jours."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "circonvenir",
+      "translations": [
+        "to circumvent",
+        "to outwit",
+        "to manipulate"
+      ],
+      "examples": [
+        "Ils ont tenté de le circonvenir pour obtenir ce qu'ils voulaient."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "péremptoirement",
+      "translations": [
+        "peremptorily",
+        "decisively",
+        "authoritatively"
+      ],
+      "examples": [
+        "Le juge a tranché péremptoirement en faveur de la défense."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "désuétude",
+      "translations": [
+        "obsolescence",
+        "disuse",
+        "falling into disuse"
+      ],
+      "examples": [
+        "Certaines expressions tombent progressivement en désuétude."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "circonspection",
+      "translations": [
+        "circumspection",
+        "caution",
+        "prudence"
+      ],
+      "examples": [
+        "Il a agi avec une grande circonspection afin d'éviter tout problème."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "péremptoirement",
+      "translations": [
+        "peremptorily",
+        "decisively",
+        "authoritatively"
+      ],
+      "examples": [
+        "Le juge a tranché péremptoirement en faveur de la défense."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "désuet",
+      "translations": [
+        "obsolete",
+        "outmoded",
+        "archaic"
+      ],
+      "examples": [
+        "Ce vocabulaire est complètement désuet de nos jours."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "circonvenir",
+      "translations": [
+        "to circumvent",
+        "to outwit",
+        "to manipulate"
+      ],
+      "examples": [
+        "Ils ont tenté de le circonvenir pour obtenir ce qu'ils voulaient."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "péremptoirement",
+      "translations": [
+        "peremptorily",
+        "decisively",
+        "authoritatively"
+      ],
+      "examples": [
+        "Le juge a tranché péremptoirement en faveur de la défense."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "désuétude",
+      "translations": [
+        "obsolescence",
+        "disuse",
+        "falling into disuse"
+      ],
+      "examples": [
+        "Certaines expressions tombent progressivement en désuétude."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "circonspection",
+      "translations": [
+        "circumspection",
+        "caution",
+        "prudence"
+      ],
+      "examples": [
+        "Il a agi avec une grande circonspection afin d'éviter tout problème."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "péremptoirement",
+      "translations": [
+        "peremptorily",
+        "decisively",
+        "authoritatively"
+      ],
+      "examples": [
+        "Le juge a tranché péremptoirement en faveur de la défense."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "élusif",
+      "translations": [
+        "evasive",
+        "elusive",
+        "hard to pin down"
+      ],
+      "examples": [
+        "Son comportement élusif l'a rendu difficile à suivre."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "évanescent",
+      "translations": [
+        "fleeting",
+        "transient",
+        "ephemeral"
+      ],
+      "examples": [
+        "La beauté de ce coucher de soleil était évanescent."
+      ],
+      "category": "nature",
+      "difficulty": 5
+    },
+    {
+      "word": "pernicieux",
+      "translations": [
+        "pernicious",
+        "harmful",
+        "destructive"
+      ],
+      "examples": [
+        "Ses habitudes alimentaires pernicieuses ont nui à sa santé."
+      ],
+      "category": "health",
+      "difficulty": 4
+    },
+    {
+      "word": "abscond",
+      "translations": [
+        "to abscond",
+        "to flee",
+        "to disappear"
+      ],
+      "examples": [
+        "Le suspect a abscondé après le vol."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "lubrifiant",
+      "translations": [
+        "lubricant",
+        "grease"
+      ],
+      "examples": [
+        "Un bon lubrifiant est essentiel pour maintenir cette machine en bon état."
+      ],
+      "category": "technology",
+      "difficulty": 3
+    },
+    {
+      "word": "éclectique",
+      "translations": [
+        "eclectic",
+        "diverse",
+        "wide-ranging"
+      ],
+      "examples": [
+        "Sa collection d'art est très éclectique et fascinante."
+      ],
+      "category": "arts",
+      "difficulty": 4
+    },
+    {
+      "word": "rémanent",
+      "translations": [
+        "lingering",
+        "persistent",
+        "enduring"
+      ],
+      "examples": [
+        "L'odeur rémanente de la peinture fraîche était désagréable."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "inextricable",
+      "translations": [
+        "inextricable",
+        "hopelessly entangled",
+        "impossible to disentangle"
+      ],
+      "examples": [
+        "La situation est devenue inextricable et sans issue."
+      ],
+      "category": "emotions",
+      "difficulty": 5
+    },
+    {
+      "word": "pérégrin",
+      "translations": [
+        "wandering",
+        "itinerant",
+        "migratory"
+      ],
+      "examples": [
+        "Comme un pérégrin, il a parcouru de nombreuses régions."
+      ],
+      "category": "travel",
+      "difficulty": 4
+    },
+    {
+      "word": "insipide",
+      "translations": [
+        "insipid",
+        "bland",
+        "tasteless"
+      ],
+      "examples": [
+        "Ce repas était complètement insipide, sans saveur."
+      ],
+      "category": "food",
+      "difficulty": 3
+    },
+    {
+      "word": "atermoyer",
+      "translations": [
+        "to postpone",
+        "to procrastinate",
+        "to delay"
+      ],
+      "examples": [
+        "Il a continué à atermoyer, repoussant toujours la décision."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "subreptice",
+      "translations": [
+        "stealthy",
+        "surreptitious",
+        "furtive"
+      ],
+      "examples": [
+        "Ses mouvements subreptices ont trahi son intention de se cacher."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "dépérissement",
+      "translations": [
+        "decline",
+        "deterioration",
+        "wasting away"
+      ],
+      "examples": [
+        "Le dépérissement de la forêt est inquiétant."
+      ],
+      "category": "nature",
+      "difficulty": 4
+    },
+    {
+      "word": "diaphane",
+      "translations": [
+        "diaphanous",
+        "transparent",
+        "gossamer"
+      ],
+      "examples": [
+        "Sa robe diaphane laissait entrevoir sa silhouette."
+      ],
+      "category": "arts",
+      "difficulty": 4
+    },
+    {
+      "word": "moribond",
+      "translations": [
+        "moribund",
+        "dying",
+        "near death"
+      ],
+      "examples": [
+        "L'entreprise est moribonde et ne survivra pas longtemps."
+      ],
+      "category": "health",
+      "difficulty": 4
+    },
+    {
+      "word": "immuable",
+      "translations": [
+        "immutable",
+        "unchanging",
+        "permanent"
+      ],
+      "examples": [
+        "Ses principes moraux sont immuables et il ne les a jamais remis en question."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "chimérique",
+      "translations": [
+        "chimerical",
+        "fanciful",
+        "illusory"
+      ],
+      "examples": [
+        "Ses ambitions chimériques l'ont empêché d'atteindre ses objectifs réalistes."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "insensé",
+      "translations": [
+        "senseless",
+        "absurd",
+        "nonsensical"
+      ],
+      "examples": [
+        "Sa décision insensée a surpris tout le monde."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "pérorer",
+      "translations": [
+        "to harangue",
+        "to hold forth",
+        "to discourse at length"
+      ],
+      "examples": [
+        "Il a péroré pendant des heures sur ce sujet."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "évanouissement",
+      "translations": [
+        "fainting",
+        "fainting spell",
+        "loss of consciousness"
+      ],
+      "examples": [
+        "Son évanouissement a nécessité l'intervention des secours."
+      ],
+      "category": "health",
+      "difficulty": 4
+    },
+    {
+      "word": "effluve",
+      "translations": [
+        "emanation",
+        "exhalation",
+        "subtle fragrance"
+      ],
+      "examples": [
+        "Les effluves de ce parfum sont envoûtants."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "ténébreux",
+      "translations": [
+        "dark",
+        "gloomy",
+        "mysterious"
+      ],
+      "examples": [
+        "Cette forêt ténébreuse inspire la crainte."
+      ],
+      "category": "nature",
+      "difficulty": 4
+    },
+    {
+      "word": "hérésie",
+      "translations": [
+        "heresy",
+        "unorthodoxy",
+        "dissent"
+      ],
+      "examples": [
+        "Ses idées hérétiques ont été rejetées par la communauté."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "effleurage",
+      "translations": [
+        "light touch",
+        "gentle caress",
+        "stroking"
+      ],
+      "examples": [
+        "L'effleurage délicat de sa main sur ma peau m'a fait frissonner."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "miroitement",
+      "translations": [
+        "glimmering",
+        "shimmering",
+        "sparkling"
+      ],
+      "examples": [
+        "Le miroitement de la surface de l'eau était hypnotique."
+      ],
+      "category": "nature",
+      "difficulty": 4
+    },
+    {
+      "word": "délétère",
+      "translations": [
+        "deleterious",
+        "harmful",
+        "pernicious"
+      ],
+      "examples": [
+        "L'influence délétère de ce groupe a nui à toute l'équipe."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "circonlocution",
+      "translations": [
+        "circumlocution",
+        "roundabout expression",
+        "indirect speech"
+      ],
+      "examples": [
+        "Il s'exprime toujours par circonlocutions, sans aller droit au but."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "obséder",
+      "translations": [
+        "to obsess",
+        "to haunt",
+        "to preoccupy"
+      ],
+      "examples": [
+        "Cette idée l'obsède depuis des semaines."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "fallacieux",
+      "translations": [
+        "fallacious",
+        "misleading",
+        "deceptive"
+      ],
+      "examples": [
+        "Son raisonnement fallacieux ne tient pas la route."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "inopérant",
+      "translations": [
+        "inoperative",
+        "ineffective",
+        "useless"
+      ],
+      "examples": [
+        "Cet appareil est inopérant, il ne fonctionne plus."
+      ],
+      "category": "technology",
+      "difficulty": 4
+    },
+    {
+      "word": "égrener",
+      "translations": [
+        "to count off",
+        "to enumerate",
+        "to rattle off"
+      ],
+      "examples": [
+        "Il a égrené la liste de ses griefs un par un."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "délétoire",
+      "translations": [
+        "pernicious",
+        "detrimental",
+        "harmful"
+      ],
+      "examples": [
+        "L'influence délétoire de ce groupe a été désastreuse."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "ténuité",
+      "translations": [
+        "tenuity",
+        "slenderness",
+        "fineness"
+      ],
+      "examples": [
+        "La ténuité de ce fil le rend presque invisible."
+      ],
+      "category": "technology",
+      "difficulty": 4
+    },
+    {
+      "word": "suranné",
+      "translations": [
+        "antiquated",
+        "obsolete",
+        "outmoded"
+      ],
+      "examples": [
+        "Ses méthodes de travail sont totalement surannées."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "éluder",
+      "translations": [
+        "to evade",
+        "to avoid",
+        "to sidestep"
+      ],
+      "examples": [
+        "Il a habilement éludé la question sans y répondre."
+      ],
+      "category": "work",
+      "difficulty": 4
+    }
+  ]
+}

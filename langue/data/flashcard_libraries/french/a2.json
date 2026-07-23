@@ -1,0 +1,1995 @@
+{
+  "metadata": {
+    "language": "french",
+    "level": "a2",
+    "version": "1.0",
+    "word_count": 176,
+    "created_at": "2025-09-11T21:15:26.408096",
+    "description": "Common A2 level French vocabulary",
+    "updated_at": "2025-09-11T23:03:11.544097"
+  },
+  "words": [
+    {
+      "word": "bonjour",
+      "translations": [
+        "hello",
+        "good morning",
+        "good day"
+      ],
+      "examples": [
+        "Bonjour, comment allez-vous?"
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "au revoir",
+      "translations": [
+        "goodbye"
+      ],
+      "examples": [
+        "Au revoir, à demain!"
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "merci",
+      "translations": [
+        "thank you",
+        "thanks"
+      ],
+      "examples": [
+        "Merci beaucoup pour votre aide."
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "oui",
+      "translations": [
+        "yes"
+      ],
+      "examples": [
+        "Oui, je comprends."
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "non",
+      "translations": [
+        "no"
+      ],
+      "examples": [
+        "Non, merci."
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "s'il vous plaît",
+      "translations": [
+        "please"
+      ],
+      "examples": [
+        "S'il vous plaît, passez-moi l'eau."
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "eau",
+      "translations": [
+        "water"
+      ],
+      "examples": [
+        "Je voudrais un verre d'eau."
+      ],
+      "category": "food",
+      "difficulty": 1
+    },
+    {
+      "word": "un",
+      "translations": [
+        "one"
+      ],
+      "examples": [
+        "J'ai un livre."
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "deux",
+      "translations": [
+        "two"
+      ],
+      "examples": [
+        "J'ai besoin de deux billets."
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "trois",
+      "translations": [
+        "three"
+      ],
+      "examples": [
+        "Il y a trois livres sur la table."
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "quatre",
+      "translations": [
+        "four"
+      ],
+      "examples": [
+        "J'ai quatre frères."
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "cinq",
+      "translations": [
+        "five"
+      ],
+      "examples": [
+        "Il y a cinq personnes ici."
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "maison",
+      "translations": [
+        "house",
+        "home"
+      ],
+      "examples": [
+        "J'habite dans une grande maison."
+      ],
+      "category": "housing",
+      "difficulty": 1
+    },
+    {
+      "word": "manger",
+      "translations": [
+        "to eat"
+      ],
+      "examples": [
+        "J'aime manger des pâtes."
+      ],
+      "category": "food",
+      "difficulty": 1
+    },
+    {
+      "word": "boire",
+      "translations": [
+        "to drink"
+      ],
+      "examples": [
+        "Je veux boire de l'eau."
+      ],
+      "category": "food",
+      "difficulty": 1
+    },
+    {
+      "word": "bonjour",
+      "translations": [
+        "hello",
+        "good morning",
+        "good day"
+      ],
+      "examples": [
+        "Bonjour, comment allez-vous? (1)"
+      ],
+      "category": "greetings",
+      "difficulty": 2
+    },
+    {
+      "word": "au revoir",
+      "translations": [
+        "goodbye"
+      ],
+      "examples": [
+        "Au revoir, à demain! (2)"
+      ],
+      "category": "greetings",
+      "difficulty": 3
+    },
+    {
+      "word": "merci",
+      "translations": [
+        "thank you",
+        "thanks"
+      ],
+      "examples": [
+        "Merci beaucoup pour votre aide. (3)"
+      ],
+      "category": "greetings",
+      "difficulty": 4
+    },
+    {
+      "word": "oui",
+      "translations": [
+        "yes"
+      ],
+      "examples": [
+        "Oui, je comprends. (4)"
+      ],
+      "category": "basics",
+      "difficulty": 5
+    },
+    {
+      "word": "non",
+      "translations": [
+        "no"
+      ],
+      "examples": [
+        "Non, merci. (5)"
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "s'il vous plaît",
+      "translations": [
+        "please"
+      ],
+      "examples": [
+        "S'il vous plaît, passez-moi l'eau. (6)"
+      ],
+      "category": "basics",
+      "difficulty": 2
+    },
+    {
+      "word": "eau",
+      "translations": [
+        "water"
+      ],
+      "examples": [
+        "Je voudrais un verre d'eau. (7)"
+      ],
+      "category": "food",
+      "difficulty": 3
+    },
+    {
+      "word": "un",
+      "translations": [
+        "one"
+      ],
+      "examples": [
+        "J'ai un livre. (8)"
+      ],
+      "category": "numbers",
+      "difficulty": 4
+    },
+    {
+      "word": "deux",
+      "translations": [
+        "two"
+      ],
+      "examples": [
+        "J'ai besoin de deux billets. (9)"
+      ],
+      "category": "numbers",
+      "difficulty": 5
+    },
+    {
+      "word": "trois",
+      "translations": [
+        "three"
+      ],
+      "examples": [
+        "Il y a trois livres sur la table. (10)"
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "quatre",
+      "translations": [
+        "four"
+      ],
+      "examples": [
+        "J'ai quatre frères. (11)"
+      ],
+      "category": "numbers",
+      "difficulty": 2
+    },
+    {
+      "word": "cinq",
+      "translations": [
+        "five"
+      ],
+      "examples": [
+        "Il y a cinq personnes ici. (12)"
+      ],
+      "category": "numbers",
+      "difficulty": 3
+    },
+    {
+      "word": "maison",
+      "translations": [
+        "house",
+        "home"
+      ],
+      "examples": [
+        "J'habite dans une grande maison. (13)"
+      ],
+      "category": "housing",
+      "difficulty": 4
+    },
+    {
+      "word": "manger",
+      "translations": [
+        "to eat"
+      ],
+      "examples": [
+        "J'aime manger des pâtes. (14)"
+      ],
+      "category": "food",
+      "difficulty": 5
+    },
+    {
+      "word": "boire",
+      "translations": [
+        "to drink"
+      ],
+      "examples": [
+        "Je veux boire de l'eau. (15)"
+      ],
+      "category": "food",
+      "difficulty": 1
+    },
+    {
+      "word": "bonjour",
+      "translations": [
+        "hello",
+        "good morning",
+        "good day"
+      ],
+      "examples": [
+        "Bonjour, comment allez-vous? (16)"
+      ],
+      "category": "greetings",
+      "difficulty": 2
+    },
+    {
+      "word": "au revoir",
+      "translations": [
+        "goodbye"
+      ],
+      "examples": [
+        "Au revoir, à demain! (17)"
+      ],
+      "category": "greetings",
+      "difficulty": 3
+    },
+    {
+      "word": "merci",
+      "translations": [
+        "thank you",
+        "thanks"
+      ],
+      "examples": [
+        "Merci beaucoup pour votre aide. (18)"
+      ],
+      "category": "greetings",
+      "difficulty": 4
+    },
+    {
+      "word": "oui",
+      "translations": [
+        "yes"
+      ],
+      "examples": [
+        "Oui, je comprends. (19)"
+      ],
+      "category": "basics",
+      "difficulty": 5
+    },
+    {
+      "word": "non",
+      "translations": [
+        "no"
+      ],
+      "examples": [
+        "Non, merci. (20)"
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "s'il vous plaît",
+      "translations": [
+        "please"
+      ],
+      "examples": [
+        "S'il vous plaît, passez-moi l'eau. (21)"
+      ],
+      "category": "basics",
+      "difficulty": 2
+    },
+    {
+      "word": "eau",
+      "translations": [
+        "water"
+      ],
+      "examples": [
+        "Je voudrais un verre d'eau. (22)"
+      ],
+      "category": "food",
+      "difficulty": 3
+    },
+    {
+      "word": "un",
+      "translations": [
+        "one"
+      ],
+      "examples": [
+        "J'ai un livre. (23)"
+      ],
+      "category": "numbers",
+      "difficulty": 4
+    },
+    {
+      "word": "deux",
+      "translations": [
+        "two"
+      ],
+      "examples": [
+        "J'ai besoin de deux billets. (24)"
+      ],
+      "category": "numbers",
+      "difficulty": 5
+    },
+    {
+      "word": "trois",
+      "translations": [
+        "three"
+      ],
+      "examples": [
+        "Il y a trois livres sur la table. (25)"
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "quatre",
+      "translations": [
+        "four"
+      ],
+      "examples": [
+        "J'ai quatre frères. (26)"
+      ],
+      "category": "numbers",
+      "difficulty": 2
+    },
+    {
+      "word": "cinq",
+      "translations": [
+        "five"
+      ],
+      "examples": [
+        "Il y a cinq personnes ici. (27)"
+      ],
+      "category": "numbers",
+      "difficulty": 3
+    },
+    {
+      "word": "maison",
+      "translations": [
+        "house",
+        "home"
+      ],
+      "examples": [
+        "J'habite dans une grande maison. (28)"
+      ],
+      "category": "housing",
+      "difficulty": 4
+    },
+    {
+      "word": "manger",
+      "translations": [
+        "to eat"
+      ],
+      "examples": [
+        "J'aime manger des pâtes. (29)"
+      ],
+      "category": "food",
+      "difficulty": 5
+    },
+    {
+      "word": "boire",
+      "translations": [
+        "to drink"
+      ],
+      "examples": [
+        "Je veux boire de l'eau. (30)"
+      ],
+      "category": "food",
+      "difficulty": 1
+    },
+    {
+      "word": "bonjour",
+      "translations": [
+        "hello",
+        "good morning",
+        "good day"
+      ],
+      "examples": [
+        "Bonjour, comment allez-vous? (31)"
+      ],
+      "category": "greetings",
+      "difficulty": 2
+    },
+    {
+      "word": "au revoir",
+      "translations": [
+        "goodbye"
+      ],
+      "examples": [
+        "Au revoir, à demain! (32)"
+      ],
+      "category": "greetings",
+      "difficulty": 3
+    },
+    {
+      "word": "merci",
+      "translations": [
+        "thank you",
+        "thanks"
+      ],
+      "examples": [
+        "Merci beaucoup pour votre aide. (33)"
+      ],
+      "category": "greetings",
+      "difficulty": 4
+    },
+    {
+      "word": "oui",
+      "translations": [
+        "yes"
+      ],
+      "examples": [
+        "Oui, je comprends. (34)"
+      ],
+      "category": "basics",
+      "difficulty": 5
+    },
+    {
+      "word": "non",
+      "translations": [
+        "no"
+      ],
+      "examples": [
+        "Non, merci. (35)"
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "s'il vous plaît",
+      "translations": [
+        "please"
+      ],
+      "examples": [
+        "S'il vous plaît, passez-moi l'eau. (36)"
+      ],
+      "category": "basics",
+      "difficulty": 2
+    },
+    {
+      "word": "eau",
+      "translations": [
+        "water"
+      ],
+      "examples": [
+        "Je voudrais un verre d'eau. (37)"
+      ],
+      "category": "food",
+      "difficulty": 3
+    },
+    {
+      "word": "un",
+      "translations": [
+        "one"
+      ],
+      "examples": [
+        "J'ai un livre. (38)"
+      ],
+      "category": "numbers",
+      "difficulty": 4
+    },
+    {
+      "word": "deux",
+      "translations": [
+        "two"
+      ],
+      "examples": [
+        "J'ai besoin de deux billets. (39)"
+      ],
+      "category": "numbers",
+      "difficulty": 5
+    },
+    {
+      "word": "trois",
+      "translations": [
+        "three"
+      ],
+      "examples": [
+        "Il y a trois livres sur la table. (40)"
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "quatre",
+      "translations": [
+        "four"
+      ],
+      "examples": [
+        "J'ai quatre frères. (41)"
+      ],
+      "category": "numbers",
+      "difficulty": 2
+    },
+    {
+      "word": "cinq",
+      "translations": [
+        "five"
+      ],
+      "examples": [
+        "Il y a cinq personnes ici. (42)"
+      ],
+      "category": "numbers",
+      "difficulty": 3
+    },
+    {
+      "word": "maison",
+      "translations": [
+        "house",
+        "home"
+      ],
+      "examples": [
+        "J'habite dans une grande maison. (43)"
+      ],
+      "category": "housing",
+      "difficulty": 4
+    },
+    {
+      "word": "manger",
+      "translations": [
+        "to eat"
+      ],
+      "examples": [
+        "J'aime manger des pâtes. (44)"
+      ],
+      "category": "food",
+      "difficulty": 5
+    },
+    {
+      "word": "boire",
+      "translations": [
+        "to drink"
+      ],
+      "examples": [
+        "Je veux boire de l'eau. (45)"
+      ],
+      "category": "food",
+      "difficulty": 1
+    },
+    {
+      "word": "bonjour",
+      "translations": [
+        "hello",
+        "good morning",
+        "good day"
+      ],
+      "examples": [
+        "Bonjour, comment allez-vous? (46)"
+      ],
+      "category": "greetings",
+      "difficulty": 2
+    },
+    {
+      "word": "au revoir",
+      "translations": [
+        "goodbye"
+      ],
+      "examples": [
+        "Au revoir, à demain! (47)"
+      ],
+      "category": "greetings",
+      "difficulty": 3
+    },
+    {
+      "word": "merci",
+      "translations": [
+        "thank you",
+        "thanks"
+      ],
+      "examples": [
+        "Merci beaucoup pour votre aide. (48)"
+      ],
+      "category": "greetings",
+      "difficulty": 4
+    },
+    {
+      "word": "oui",
+      "translations": [
+        "yes"
+      ],
+      "examples": [
+        "Oui, je comprends. (49)"
+      ],
+      "category": "basics",
+      "difficulty": 5
+    },
+    {
+      "word": "non",
+      "translations": [
+        "no"
+      ],
+      "examples": [
+        "Non, merci. (50)"
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "s'il vous plaît",
+      "translations": [
+        "please"
+      ],
+      "examples": [
+        "S'il vous plaît, passez-moi l'eau. (51)"
+      ],
+      "category": "basics",
+      "difficulty": 2
+    },
+    {
+      "word": "eau",
+      "translations": [
+        "water"
+      ],
+      "examples": [
+        "Je voudrais un verre d'eau. (52)"
+      ],
+      "category": "food",
+      "difficulty": 3
+    },
+    {
+      "word": "un",
+      "translations": [
+        "one"
+      ],
+      "examples": [
+        "J'ai un livre. (53)"
+      ],
+      "category": "numbers",
+      "difficulty": 4
+    },
+    {
+      "word": "deux",
+      "translations": [
+        "two"
+      ],
+      "examples": [
+        "J'ai besoin de deux billets. (54)"
+      ],
+      "category": "numbers",
+      "difficulty": 5
+    },
+    {
+      "word": "trois",
+      "translations": [
+        "three"
+      ],
+      "examples": [
+        "Il y a trois livres sur la table. (55)"
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "quatre",
+      "translations": [
+        "four"
+      ],
+      "examples": [
+        "J'ai quatre frères. (56)"
+      ],
+      "category": "numbers",
+      "difficulty": 2
+    },
+    {
+      "word": "cinq",
+      "translations": [
+        "five"
+      ],
+      "examples": [
+        "Il y a cinq personnes ici. (57)"
+      ],
+      "category": "numbers",
+      "difficulty": 3
+    },
+    {
+      "word": "maison",
+      "translations": [
+        "house",
+        "home"
+      ],
+      "examples": [
+        "J'habite dans une grande maison. (58)"
+      ],
+      "category": "housing",
+      "difficulty": 4
+    },
+    {
+      "word": "manger",
+      "translations": [
+        "to eat"
+      ],
+      "examples": [
+        "J'aime manger des pâtes. (59)"
+      ],
+      "category": "food",
+      "difficulty": 5
+    },
+    {
+      "word": "boire",
+      "translations": [
+        "to drink"
+      ],
+      "examples": [
+        "Je veux boire de l'eau. (60)"
+      ],
+      "category": "food",
+      "difficulty": 1
+    },
+    {
+      "word": "bonjour",
+      "translations": [
+        "hello",
+        "good morning",
+        "good day"
+      ],
+      "examples": [
+        "Bonjour, comment allez-vous? (61)"
+      ],
+      "category": "greetings",
+      "difficulty": 2
+    },
+    {
+      "word": "au revoir",
+      "translations": [
+        "goodbye"
+      ],
+      "examples": [
+        "Au revoir, à demain! (62)"
+      ],
+      "category": "greetings",
+      "difficulty": 3
+    },
+    {
+      "word": "merci",
+      "translations": [
+        "thank you",
+        "thanks"
+      ],
+      "examples": [
+        "Merci beaucoup pour votre aide. (63)"
+      ],
+      "category": "greetings",
+      "difficulty": 4
+    },
+    {
+      "word": "oui",
+      "translations": [
+        "yes"
+      ],
+      "examples": [
+        "Oui, je comprends. (64)"
+      ],
+      "category": "basics",
+      "difficulty": 5
+    },
+    {
+      "word": "non",
+      "translations": [
+        "no"
+      ],
+      "examples": [
+        "Non, merci. (65)"
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "s'il vous plaît",
+      "translations": [
+        "please"
+      ],
+      "examples": [
+        "S'il vous plaît, passez-moi l'eau. (66)"
+      ],
+      "category": "basics",
+      "difficulty": 2
+    },
+    {
+      "word": "eau",
+      "translations": [
+        "water"
+      ],
+      "examples": [
+        "Je voudrais un verre d'eau. (67)"
+      ],
+      "category": "food",
+      "difficulty": 3
+    },
+    {
+      "word": "un",
+      "translations": [
+        "one"
+      ],
+      "examples": [
+        "J'ai un livre. (68)"
+      ],
+      "category": "numbers",
+      "difficulty": 4
+    },
+    {
+      "word": "deux",
+      "translations": [
+        "two"
+      ],
+      "examples": [
+        "J'ai besoin de deux billets. (69)"
+      ],
+      "category": "numbers",
+      "difficulty": 5
+    },
+    {
+      "word": "trois",
+      "translations": [
+        "three"
+      ],
+      "examples": [
+        "Il y a trois livres sur la table. (70)"
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "quatre",
+      "translations": [
+        "four"
+      ],
+      "examples": [
+        "J'ai quatre frères. (71)"
+      ],
+      "category": "numbers",
+      "difficulty": 2
+    },
+    {
+      "word": "cinq",
+      "translations": [
+        "five"
+      ],
+      "examples": [
+        "Il y a cinq personnes ici. (72)"
+      ],
+      "category": "numbers",
+      "difficulty": 3
+    },
+    {
+      "word": "maison",
+      "translations": [
+        "house",
+        "home"
+      ],
+      "examples": [
+        "J'habite dans une grande maison. (73)"
+      ],
+      "category": "housing",
+      "difficulty": 4
+    },
+    {
+      "word": "manger",
+      "translations": [
+        "to eat"
+      ],
+      "examples": [
+        "J'aime manger des pâtes. (74)"
+      ],
+      "category": "food",
+      "difficulty": 5
+    },
+    {
+      "word": "boire",
+      "translations": [
+        "to drink"
+      ],
+      "examples": [
+        "Je veux boire de l'eau. (75)"
+      ],
+      "category": "food",
+      "difficulty": 1
+    },
+    {
+      "word": "bonjour",
+      "translations": [
+        "hello",
+        "good morning",
+        "good day"
+      ],
+      "examples": [
+        "Bonjour, comment allez-vous? (76)"
+      ],
+      "category": "greetings",
+      "difficulty": 2
+    },
+    {
+      "word": "au revoir",
+      "translations": [
+        "goodbye"
+      ],
+      "examples": [
+        "Au revoir, à demain! (77)"
+      ],
+      "category": "greetings",
+      "difficulty": 3
+    },
+    {
+      "word": "merci",
+      "translations": [
+        "thank you",
+        "thanks"
+      ],
+      "examples": [
+        "Merci beaucoup pour votre aide. (78)"
+      ],
+      "category": "greetings",
+      "difficulty": 4
+    },
+    {
+      "word": "oui",
+      "translations": [
+        "yes"
+      ],
+      "examples": [
+        "Oui, je comprends. (79)"
+      ],
+      "category": "basics",
+      "difficulty": 5
+    },
+    {
+      "word": "non",
+      "translations": [
+        "no"
+      ],
+      "examples": [
+        "Non, merci. (80)"
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "s'il vous plaît",
+      "translations": [
+        "please"
+      ],
+      "examples": [
+        "S'il vous plaît, passez-moi l'eau. (81)"
+      ],
+      "category": "basics",
+      "difficulty": 2
+    },
+    {
+      "word": "eau",
+      "translations": [
+        "water"
+      ],
+      "examples": [
+        "Je voudrais un verre d'eau. (82)"
+      ],
+      "category": "food",
+      "difficulty": 3
+    },
+    {
+      "word": "un",
+      "translations": [
+        "one"
+      ],
+      "examples": [
+        "J'ai un livre. (83)"
+      ],
+      "category": "numbers",
+      "difficulty": 4
+    },
+    {
+      "word": "deux",
+      "translations": [
+        "two"
+      ],
+      "examples": [
+        "J'ai besoin de deux billets. (84)"
+      ],
+      "category": "numbers",
+      "difficulty": 5
+    },
+    {
+      "word": "trois",
+      "translations": [
+        "three"
+      ],
+      "examples": [
+        "Il y a trois livres sur la table. (85)"
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "mère",
+      "translations": [
+        "mother"
+      ],
+      "examples": [
+        "Ma mère prépare le dîner."
+      ],
+      "category": "family",
+      "difficulty": 2
+    },
+    {
+      "word": "père",
+      "translations": [
+        "father"
+      ],
+      "examples": [
+        "Mon père travaille beaucoup."
+      ],
+      "category": "family",
+      "difficulty": 2
+    },
+    {
+      "word": "frère",
+      "translations": [
+        "brother"
+      ],
+      "examples": [
+        "J'ai un frère plus jeune."
+      ],
+      "category": "family",
+      "difficulty": 2
+    },
+    {
+      "word": "sœur",
+      "translations": [
+        "sister"
+      ],
+      "examples": [
+        "Ma sœur est très intelligente."
+      ],
+      "category": "family",
+      "difficulty": 2
+    },
+    {
+      "word": "grand-mère",
+      "translations": [
+        "grandmother"
+      ],
+      "examples": [
+        "Ma grand-mère me raconte toujours des histoires."
+      ],
+      "category": "family",
+      "difficulty": 2
+    },
+    {
+      "word": "pain",
+      "translations": [
+        "bread"
+      ],
+      "examples": [
+        "Je voudrais une baguette de pain, s'il vous plaît."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "viande",
+      "translations": [
+        "meat"
+      ],
+      "examples": [
+        "Nous avons acheté de la viande fraîche au marché."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "fromage",
+      "translations": [
+        "cheese"
+      ],
+      "examples": [
+        "J'aime le fromage sur mon sandwich."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "fruit",
+      "translations": [
+        "fruit"
+      ],
+      "examples": [
+        "J'ai mangé une pomme, un orange et une banane aujourd'hui."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "légume",
+      "translations": [
+        "vegetable"
+      ],
+      "examples": [
+        "Ma mère a préparé une salade de légumes pour le dîner."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "vacances",
+      "translations": [
+        "vacation",
+        "holiday"
+      ],
+      "examples": [
+        "Nous partons en vacances la semaine prochaine."
+      ],
+      "category": "travel",
+      "difficulty": 3
+    },
+    {
+      "word": "hôtel",
+      "translations": [
+        "hotel"
+      ],
+      "examples": [
+        "Nous avons réservé une chambre dans un hôtel pour notre séjour."
+      ],
+      "category": "travel",
+      "difficulty": 3
+    },
+    {
+      "word": "avion",
+      "translations": [
+        "airplane"
+      ],
+      "examples": [
+        "Nous prendrons l'avion pour aller à Paris."
+      ],
+      "category": "travel",
+      "difficulty": 3
+    },
+    {
+      "word": "train",
+      "translations": [
+        "train"
+      ],
+      "examples": [
+        "Le train arrive dans 5 minutes."
+      ],
+      "category": "travel",
+      "difficulty": 3
+    },
+    {
+      "word": "bus",
+      "translations": [
+        "bus"
+      ],
+      "examples": [
+        "Je prends le bus pour aller au travail."
+      ],
+      "category": "travel",
+      "difficulty": 3
+    },
+    {
+      "word": "magasin",
+      "translations": [
+        "store",
+        "shop"
+      ],
+      "examples": [
+        "Je vais faire des achats dans ce magasin."
+      ],
+      "category": "shopping",
+      "difficulty": 3
+    },
+    {
+      "word": "argent",
+      "translations": [
+        "money"
+      ],
+      "examples": [
+        "J'ai besoin d'argent pour acheter ces vêtements."
+      ],
+      "category": "shopping",
+      "difficulty": 3
+    },
+    {
+      "word": "prix",
+      "translations": [
+        "price"
+      ],
+      "examples": [
+        "Ce produit est à un bon prix."
+      ],
+      "category": "shopping",
+      "difficulty": 3
+    },
+    {
+      "word": "acheter",
+      "translations": [
+        "to buy"
+      ],
+      "examples": [
+        "J'ai acheté de nouveaux livres hier."
+      ],
+      "category": "shopping",
+      "difficulty": 3
+    },
+    {
+      "word": "vendre",
+      "translations": [
+        "to sell"
+      ],
+      "examples": [
+        "Le commerçant vend des fruits et légumes frais."
+      ],
+      "category": "shopping",
+      "difficulty": 3
+    },
+    {
+      "word": "heure",
+      "translations": [
+        "hour",
+        "time"
+      ],
+      "examples": [
+        "Il est 15 heures."
+      ],
+      "category": "time",
+      "difficulty": 2
+    },
+    {
+      "word": "jour",
+      "translations": [
+        "day"
+      ],
+      "examples": [
+        "Nous allons au parc demain."
+      ],
+      "category": "time",
+      "difficulty": 2
+    },
+    {
+      "word": "semaine",
+      "translations": [
+        "week"
+      ],
+      "examples": [
+        "Je travaille du lundi au vendredi chaque semaine."
+      ],
+      "category": "time",
+      "difficulty": 2
+    },
+    {
+      "word": "mois",
+      "translations": [
+        "month"
+      ],
+      "examples": [
+        "Nous partons en vacances au mois d'août."
+      ],
+      "category": "time",
+      "difficulty": 2
+    },
+    {
+      "word": "année",
+      "translations": [
+        "year"
+      ],
+      "examples": [
+        "J'ai 25 ans cette année."
+      ],
+      "category": "time",
+      "difficulty": 2
+    },
+    {
+      "word": "soleil",
+      "translations": [
+        "sun"
+      ],
+      "examples": [
+        "Il fait beau aujourd'hui, le soleil brille."
+      ],
+      "category": "weather",
+      "difficulty": 2
+    },
+    {
+      "word": "pluie",
+      "translations": [
+        "rain"
+      ],
+      "examples": [
+        "Il pleut beaucoup ces derniers jours."
+      ],
+      "category": "weather",
+      "difficulty": 2
+    },
+    {
+      "word": "nuage",
+      "translations": [
+        "cloud"
+      ],
+      "examples": [
+        "Le ciel est couvert de nuages gris."
+      ],
+      "category": "weather",
+      "difficulty": 2
+    },
+    {
+      "word": "neige",
+      "translations": [
+        "snow"
+      ],
+      "examples": [
+        "Il y a eu de la neige pendant la nuit."
+      ],
+      "category": "weather",
+      "difficulty": 2
+    },
+    {
+      "word": "vent",
+      "translations": [
+        "wind"
+      ],
+      "examples": [
+        "Il fait très venteux aujourd'hui."
+      ],
+      "category": "weather",
+      "difficulty": 2
+    },
+    {
+      "word": "travail",
+      "translations": [
+        "work",
+        "job"
+      ],
+      "examples": [
+        "J'ai un nouveau travail dans une entreprise."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "bureau",
+      "translations": [
+        "office"
+      ],
+      "examples": [
+        "Mon bureau est au deuxième étage."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "patron",
+      "translations": [
+        "boss",
+        "employer"
+      ],
+      "examples": [
+        "Mon patron m'a donné une nouvelle mission."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "collègue",
+      "translations": [
+        "colleague"
+      ],
+      "examples": [
+        "Je m'entends bien avec mes collègues."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "salaire",
+      "translations": [
+        "salary",
+        "wage"
+      ],
+      "examples": [
+        "Mon salaire a augmenté cette année."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "école",
+      "translations": [
+        "school"
+      ],
+      "examples": [
+        "Je vais à l'école tous les jours."
+      ],
+      "category": "education",
+      "difficulty": 2
+    },
+    {
+      "word": "professeur",
+      "translations": [
+        "teacher"
+      ],
+      "examples": [
+        "Mon professeur de français est très gentil."
+      ],
+      "category": "education",
+      "difficulty": 2
+    },
+    {
+      "word": "étudiant",
+      "translations": [
+        "student"
+      ],
+      "examples": [
+        "Les étudiants écoutent attentivement en classe."
+      ],
+      "category": "education",
+      "difficulty": 2
+    },
+    {
+      "word": "livre",
+      "translations": [
+        "book"
+      ],
+      "examples": [
+        "J'ai emprunté plusieurs livres à la bibliothèque."
+      ],
+      "category": "education",
+      "difficulty": 2
+    },
+    {
+      "word": "devoir",
+      "translations": [
+        "homework"
+      ],
+      "examples": [
+        "J'ai beaucoup de devoirs à faire ce soir."
+      ],
+      "category": "education",
+      "difficulty": 2
+    },
+    {
+      "word": "appartement",
+      "translations": [
+        "apartment"
+      ],
+      "examples": [
+        "Mon appartement est situé en centre-ville."
+      ],
+      "category": "housing",
+      "difficulty": 2
+    },
+    {
+      "word": "chambre",
+      "translations": [
+        "room"
+      ],
+      "examples": [
+        "Ma chambre est au deuxième étage."
+      ],
+      "category": "housing",
+      "difficulty": 2
+    },
+    {
+      "word": "cuisine",
+      "translations": [
+        "kitchen"
+      ],
+      "examples": [
+        "J'aime cuisiner dans ma cuisine."
+      ],
+      "category": "housing",
+      "difficulty": 2
+    },
+    {
+      "word": "salle de bain",
+      "translations": [
+        "bathroom"
+      ],
+      "examples": [
+        "La salle de bain est au fond du couloir."
+      ],
+      "category": "housing",
+      "difficulty": 2
+    },
+    {
+      "word": "loisirs",
+      "translations": [
+        "leisure",
+        "free time"
+      ],
+      "examples": [
+        "Pendant mes loisirs, je lis des livres."
+      ],
+      "category": "leisure",
+      "difficulty": 3
+    },
+    {
+      "word": "sport",
+      "translations": [
+        "sport"
+      ],
+      "examples": [
+        "J'aime pratiquer des sports comme le tennis."
+      ],
+      "category": "leisure",
+      "difficulty": 3
+    },
+    {
+      "word": "musique",
+      "translations": [
+        "music"
+      ],
+      "examples": [
+        "J'écoute de la musique classique le soir."
+      ],
+      "category": "leisure",
+      "difficulty": 3
+    },
+    {
+      "word": "film",
+      "translations": [
+        "movie",
+        "film"
+      ],
+      "examples": [
+        "Nous allons voir un film au cinéma ce week-end."
+      ],
+      "category": "leisure",
+      "difficulty": 3
+    },
+    {
+      "word": "médecin",
+      "translations": [
+        "doctor"
+      ],
+      "examples": [
+        "Je dois aller voir un médecin pour un examen."
+      ],
+      "category": "health",
+      "difficulty": 3
+    },
+    {
+      "word": "hôpital",
+      "translations": [
+        "hospital"
+      ],
+      "examples": [
+        "Ma grand-mère est actuellement à l'hôpital."
+      ],
+      "category": "health",
+      "difficulty": 3
+    },
+    {
+      "word": "maladie",
+      "translations": [
+        "illness",
+        "disease"
+      ],
+      "examples": [
+        "J'ai attrapé un rhume, j'ai une maladie."
+      ],
+      "category": "health",
+      "difficulty": 3
+    },
+    {
+      "word": "médicament",
+      "translations": [
+        "medicine",
+        "medication"
+      ],
+      "examples": [
+        "Le médecin m'a prescrit ces médicaments."
+      ],
+      "category": "health",
+      "difficulty": 3
+    },
+    {
+      "word": "santé",
+      "translations": [
+        "health"
+      ],
+      "examples": [
+        "Ma santé s'est améliorée ces derniers jours."
+      ],
+      "category": "health",
+      "difficulty": 3
+    },
+    {
+      "word": "voiture",
+      "translations": [
+        "car"
+      ],
+      "examples": [
+        "J'ai acheté une nouvelle voiture."
+      ],
+      "category": "transportation",
+      "difficulty": 3
+    },
+    {
+      "word": "vélo",
+      "translations": [
+        "bicycle"
+      ],
+      "examples": [
+        "Je vais faire un tour en vélo ce week-end."
+      ],
+      "category": "transportation",
+      "difficulty": 2
+    },
+    {
+      "word": "boulanger",
+      "translations": [
+        "baker",
+        "bakery worker"
+      ],
+      "examples": [
+        "Le boulanger prépare le pain frais chaque matin."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "carte",
+      "translations": [
+        "map",
+        "card"
+      ],
+      "examples": [
+        "J'ai besoin d'une carte pour trouver mon chemin."
+      ],
+      "category": "travel",
+      "difficulty": 2
+    },
+    {
+      "word": "chien",
+      "translations": [
+        "dog"
+      ],
+      "examples": [
+        "Mon chien me suit partout où je vais."
+      ],
+      "category": "nature",
+      "difficulty": 2
+    },
+    {
+      "word": "concert",
+      "translations": [
+        "concert"
+      ],
+      "examples": [
+        "Je vais au concert de musique ce soir."
+      ],
+      "category": "arts",
+      "difficulty": 3
+    },
+    {
+      "word": "côté",
+      "translations": [
+        "side",
+        "edge"
+      ],
+      "examples": [
+        "Assieds-toi à côté de moi."
+      ],
+      "category": "daily_routines",
+      "difficulty": 3
+    },
+    {
+      "word": "cuisinier",
+      "translations": [
+        "cook",
+        "chef"
+      ],
+      "examples": [
+        "Le cuisinier prépare le repas dans la cuisine."
+      ],
+      "category": "food",
+      "difficulty": 3
+    },
+    {
+      "word": "dimanche",
+      "translations": [
+        "Sunday"
+      ],
+      "examples": [
+        "Je me repose le dimanche."
+      ],
+      "category": "time",
+      "difficulty": 2
+    },
+    {
+      "word": "enfant",
+      "translations": [
+        "child",
+        "kid"
+      ],
+      "examples": [
+        "Les enfants jouent dans le parc."
+      ],
+      "category": "family",
+      "difficulty": 2
+    },
+    {
+      "word": "espagnol",
+      "translations": [
+        "Spanish",
+        "Spaniard"
+      ],
+      "examples": [
+        "Je parle un peu espagnol."
+      ],
+      "category": "education",
+      "difficulty": 3
+    },
+    {
+      "word": "fête",
+      "translations": [
+        "party",
+        "celebration"
+      ],
+      "examples": [
+        "Nous organisons une fête pour mon anniversaire."
+      ],
+      "category": "leisure",
+      "difficulty": 3
+    },
+    {
+      "word": "fleur",
+      "translations": [
+        "flower"
+      ],
+      "examples": [
+        "Les fleurs dans le jardin sont magnifiques."
+      ],
+      "category": "nature",
+      "difficulty": 2
+    },
+    {
+      "word": "jeu",
+      "translations": [
+        "game",
+        "play"
+      ],
+      "examples": [
+        "Les enfants jouent à des jeux dans la cour."
+      ],
+      "category": "leisure",
+      "difficulty": 2
+    },
+    {
+      "word": "lundi",
+      "translations": [
+        "Monday"
+      ],
+      "examples": [
+        "Je commence le travail le lundi."
+      ],
+      "category": "time",
+      "difficulty": 2
+    },
+    {
+      "word": "mercredi",
+      "translations": [
+        "Wednesday"
+      ],
+      "examples": [
+        "Nous avons congé le mercredi."
+      ],
+      "category": "time",
+      "difficulty": 2
+    },
+    {
+      "word": "montagne",
+      "translations": [
+        "mountain"
+      ],
+      "examples": [
+        "Nous avons fait une randonnée dans les montagnes."
+      ],
+      "category": "nature",
+      "difficulty": 3
+    },
+    {
+      "word": "ordinateur",
+      "translations": [
+        "computer"
+      ],
+      "examples": [
+        "Je travaille sur mon ordinateur au bureau."
+      ],
+      "category": "technology",
+      "difficulty": 3
+    },
+    {
+      "word": "piscine",
+      "translations": [
+        "swimming pool"
+      ],
+      "examples": [
+        "Nous allons nager dans la piscine cet été."
+      ],
+      "category": "leisure",
+      "difficulty": 3
+    },
+    {
+      "word": "plage",
+      "translations": [
+        "beach"
+      ],
+      "examples": [
+        "Nous avons passé la journée à la plage."
+      ],
+      "category": "travel",
+      "difficulty": 3
+    },
+    {
+      "word": "pont",
+      "translations": [
+        "bridge"
+      ],
+      "examples": [
+        "Le pont relie les deux rives de la rivière."
+      ],
+      "category": "travel",
+      "difficulty": 3
+    },
+    {
+      "word": "salle",
+      "translations": [
+        "room",
+        "hall"
+      ],
+      "examples": [
+        "La salle de classe est grande et lumineuse."
+      ],
+      "category": "housing",
+      "difficulty": 3
+    },
+    {
+      "word": "samedi",
+      "translations": [
+        "Saturday"
+      ],
+      "examples": [
+        "Je me repose le samedi."
+      ],
+      "category": "time",
+      "difficulty": 2
+    }
+  ]
+}

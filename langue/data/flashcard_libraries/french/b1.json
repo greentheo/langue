@@ -1,0 +1,1257 @@
+{
+  "metadata": {
+    "language": "french",
+    "level": "b1",
+    "version": "1.0",
+    "word_count": 96,
+    "created_at": "2025-09-11T23:03:55.741767",
+    "description": "Common B1 level French vocabulary"
+  },
+  "words": [
+    {
+      "word": "aborder",
+      "translations": [
+        "to approach",
+        "to tackle",
+        "to deal with"
+      ],
+      "examples": [
+        "J'ai décidé d'aborder le sujet délicat avec mon patron."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "accueillir",
+      "translations": [
+        "to welcome",
+        "to host",
+        "to receive"
+      ],
+      "examples": [
+        "L'hôtel a accueilli de nombreux touristes pendant les vacances."
+      ],
+      "category": "travel",
+      "difficulty": 2
+    },
+    {
+      "word": "admirer",
+      "translations": [
+        "to admire",
+        "to appreciate",
+        "to marvel at"
+      ],
+      "examples": [
+        "J'admire le talent de cet artiste pour ses œuvres magnifiques."
+      ],
+      "category": "arts",
+      "difficulty": 3
+    },
+    {
+      "word": "adresser",
+      "translations": [
+        "to address",
+        "to send to",
+        "to direct"
+      ],
+      "examples": [
+        "Je vais adresser ma lettre de démission à mon employeur."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "afficher",
+      "translations": [
+        "to display",
+        "to show",
+        "to post"
+      ],
+      "examples": [
+        "L'entreprise a affiché ses nouveaux horaires d'ouverture."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "aimer",
+      "translations": [
+        "to like",
+        "to love",
+        "to enjoy"
+      ],
+      "examples": [
+        "J'aime beaucoup voyager et découvrir de nouveaux endroits."
+      ],
+      "category": "emotions",
+      "difficulty": 2
+    },
+    {
+      "word": "ajouter",
+      "translations": [
+        "to add",
+        "to include",
+        "to put in"
+      ],
+      "examples": [
+        "Je vais ajouter quelques épices pour donner plus de saveur à ce plat."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "annoncer",
+      "translations": [
+        "to announce",
+        "to declare",
+        "to inform"
+      ],
+      "examples": [
+        "Le directeur a annoncé de nouveaux changements dans l'entreprise."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "apercevoir",
+      "translations": [
+        "to notice",
+        "to catch sight of",
+        "to spot"
+      ],
+      "examples": [
+        "J'ai aperçu un beau coucher de soleil depuis ma fenêtre."
+      ],
+      "category": "nature",
+      "difficulty": 3
+    },
+    {
+      "word": "apporter",
+      "translations": [
+        "to bring",
+        "to carry",
+        "to provide"
+      ],
+      "examples": [
+        "Pouvez-vous apporter votre ordinateur portable à la réunion ?"
+      ],
+      "category": "work",
+      "difficulty": 2
+    },
+    {
+      "word": "apprendre",
+      "translations": [
+        "to learn",
+        "to find out",
+        "to acquire"
+      ],
+      "examples": [
+        "J'apprends le français depuis quelques mois et je fais des progrès."
+      ],
+      "category": "education",
+      "difficulty": 3
+    },
+    {
+      "word": "approcher",
+      "translations": [
+        "to approach",
+        "to come near",
+        "to get close"
+      ],
+      "examples": [
+        "Le train approche de la gare, il est temps de monter."
+      ],
+      "category": "transportation",
+      "difficulty": 3
+    },
+    {
+      "word": "arrêter",
+      "translations": [
+        "to stop",
+        "to halt",
+        "to discontinue"
+      ],
+      "examples": [
+        "Il faut arrêter de fumer pour préserver sa santé."
+      ],
+      "category": "health",
+      "difficulty": 2
+    },
+    {
+      "word": "arriver",
+      "translations": [
+        "to arrive",
+        "to reach",
+        "to get to"
+      ],
+      "examples": [
+        "Je suis arrivé en retard à la réunion à cause de la circulation."
+      ],
+      "category": "travel",
+      "difficulty": 2
+    },
+    {
+      "word": "aspirer",
+      "translations": [
+        "to aspire",
+        "to desire",
+        "to aim for"
+      ],
+      "examples": [
+        "J'aspire à une meilleure qualité de vie et plus de stabilité."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "assister",
+      "translations": [
+        "to attend",
+        "to be present at",
+        "to witness"
+      ],
+      "examples": [
+        "J'ai assisté à une conférence très intéressante sur les nouvelles technologies."
+      ],
+      "category": "education",
+      "difficulty": 3
+    },
+    {
+      "word": "attendre",
+      "translations": [
+        "to wait",
+        "to expect",
+        "to anticipate"
+      ],
+      "examples": [
+        "Je t'attends depuis une demi-heure, dépêche-toi !"
+      ],
+      "category": "daily_routines",
+      "difficulty": 2
+    },
+    {
+      "word": "attraper",
+      "translations": [
+        "to catch",
+        "to grab",
+        "to seize"
+      ],
+      "examples": [
+        "J'ai attrapé le train de justesse avant qu'il ne parte."
+      ],
+      "category": "daily_routines",
+      "difficulty": 3
+    },
+    {
+      "word": "augmenter",
+      "translations": [
+        "to increase",
+        "to raise",
+        "to grow"
+      ],
+      "examples": [
+        "Les prix des logements ont beaucoup augmenté ces dernières années."
+      ],
+      "category": "housing",
+      "difficulty": 3
+    },
+    {
+      "word": "autoriser",
+      "translations": [
+        "to authorize",
+        "to permit",
+        "to allow"
+      ],
+      "examples": [
+        "L'entreprise a autorisé ses employés à travailler à distance."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "avancer",
+      "translations": [
+        "to advance",
+        "to move forward",
+        "to progress"
+      ],
+      "examples": [
+        "Nous avançons bien dans la réalisation de ce projet."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "baisser",
+      "translations": [
+        "to lower",
+        "to decrease",
+        "to reduce"
+      ],
+      "examples": [
+        "Le prix de l'essence a baissé ces dernières semaines."
+      ],
+      "category": "daily_routines",
+      "difficulty": 3
+    },
+    {
+      "word": "battre",
+      "translations": [
+        "to beat",
+        "to strike",
+        "to defeat"
+      ],
+      "examples": [
+        "L'équipe de football a battu ses adversaires lors du match."
+      ],
+      "category": "sports",
+      "difficulty": 3
+    },
+    {
+      "word": "bouger",
+      "translations": [
+        "to move",
+        "to stir",
+        "to shift"
+      ],
+      "examples": [
+        "Ne bougez pas, je vais vous prendre en photo."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2
+    },
+    {
+      "word": "briller",
+      "translations": [
+        "to shine",
+        "to sparkle",
+        "to gleam"
+      ],
+      "examples": [
+        "Les étoiles brillent dans le ciel étoilé."
+      ],
+      "category": "nature",
+      "difficulty": 3
+    },
+    {
+      "word": "calculer",
+      "translations": [
+        "to calculate",
+        "to compute",
+        "to figure out"
+      ],
+      "examples": [
+        "Je dois calculer le budget nécessaire pour ce projet."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "causer",
+      "translations": [
+        "to cause",
+        "to create",
+        "to generate"
+      ],
+      "examples": [
+        "Le mauvais temps a causé de nombreux retards dans les transports."
+      ],
+      "category": "weather",
+      "difficulty": 3
+    },
+    {
+      "word": "changer",
+      "translations": [
+        "to change",
+        "to modify",
+        "to transform"
+      ],
+      "examples": [
+        "J'ai changé de coiffure et je suis très satisfait du résultat."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2
+    },
+    {
+      "word": "choisir",
+      "translations": [
+        "to choose",
+        "to select",
+        "to pick"
+      ],
+      "examples": [
+        "J'ai choisi de m'inscrire à ce cours de langue."
+      ],
+      "category": "education",
+      "difficulty": 2
+    },
+    {
+      "word": "commander",
+      "translations": [
+        "to order",
+        "to request",
+        "to purchase"
+      ],
+      "examples": [
+        "Je vais commander un nouveau meuble pour mon appartement."
+      ],
+      "category": "shopping",
+      "difficulty": 3
+    },
+    {
+      "word": "commencer",
+      "translations": [
+        "to begin",
+        "to start",
+        "to initiate"
+      ],
+      "examples": [
+        "La nouvelle session de formation commence la semaine prochaine."
+      ],
+      "category": "education",
+      "difficulty": 2
+    },
+    {
+      "word": "comparer",
+      "translations": [
+        "to compare",
+        "to contrast",
+        "to evaluate"
+      ],
+      "examples": [
+        "Je vais comparer les prix de ces deux ordinateurs portables."
+      ],
+      "category": "technology",
+      "difficulty": 3
+    },
+    {
+      "word": "comprendre",
+      "translations": [
+        "to understand",
+        "to grasp",
+        "to comprehend"
+      ],
+      "examples": [
+        "J'ai du mal à comprendre ce concept complexe."
+      ],
+      "category": "education",
+      "difficulty": 3
+    },
+    {
+      "word": "conduire",
+      "translations": [
+        "to drive",
+        "to lead",
+        "to guide"
+      ],
+      "examples": [
+        "Je conduis ma voiture tous les jours pour aller au travail."
+      ],
+      "category": "transportation",
+      "difficulty": 3
+    },
+    {
+      "word": "connaître",
+      "translations": [
+        "to know",
+        "to be familiar with",
+        "to recognize"
+      ],
+      "examples": [
+        "Je connais bien cette ville, j'y ai vécu pendant plusieurs années."
+      ],
+      "category": "daily_routines",
+      "difficulty": 3
+    },
+    {
+      "word": "conseiller",
+      "translations": [
+        "to advise",
+        "to recommend",
+        "to suggest"
+      ],
+      "examples": [
+        "Le médecin m'a conseillé de faire plus d'exercice."
+      ],
+      "category": "health",
+      "difficulty": 3
+    },
+    {
+      "word": "considérer",
+      "translations": [
+        "to consider",
+        "to regard",
+        "to think about"
+      ],
+      "examples": [
+        "Je considère cette offre d'emploi très intéressante."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "continuer",
+      "translations": [
+        "to continue",
+        "to go on",
+        "to persist"
+      ],
+      "examples": [
+        "Malgré les difficultés, je continuerai à travailler sur ce projet."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "convaincre",
+      "translations": [
+        "to convince",
+        "to persuade",
+        "to make believe"
+      ],
+      "examples": [
+        "J'ai réussi à convaincre mon patron d'augmenter mon salaire."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "coûter",
+      "translations": [
+        "to cost",
+        "to be priced at",
+        "to expense"
+      ],
+      "examples": [
+        "Ce nouveau smartphone coûte plus de 500 euros."
+      ],
+      "category": "technology",
+      "difficulty": 3
+    },
+    {
+      "word": "créer",
+      "translations": [
+        "to create",
+        "to make",
+        "to produce"
+      ],
+      "examples": [
+        "L'artiste a créé une œuvre d'art magnifique."
+      ],
+      "category": "arts",
+      "difficulty": 3
+    },
+    {
+      "word": "décider",
+      "translations": [
+        "to decide",
+        "to determine",
+        "to resolve"
+      ],
+      "examples": [
+        "J'ai décidé de prendre des vacances cet été."
+      ],
+      "category": "daily_routines",
+      "difficulty": 3
+    },
+    {
+      "word": "découvrir",
+      "translations": [
+        "to discover",
+        "to find",
+        "to uncover"
+      ],
+      "examples": [
+        "J'ai découvert un nouveau restaurant délicieux dans le quartier."
+      ],
+      "category": "leisure",
+      "difficulty": 3
+    },
+    {
+      "word": "défendre",
+      "translations": [
+        "to defend",
+        "to protect",
+        "to safeguard"
+      ],
+      "examples": [
+        "L'équipe a bien défendu son titre de champion."
+      ],
+      "category": "sports",
+      "difficulty": 4
+    },
+    {
+      "word": "demander",
+      "translations": [
+        "to ask",
+        "to request",
+        "to inquire"
+      ],
+      "examples": [
+        "Je vais demander à mon patron une augmentation de salaire."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "déplacer",
+      "translations": [
+        "to move",
+        "to shift",
+        "to relocate"
+      ],
+      "examples": [
+        "J'ai dû déplacer mon bureau pour avoir plus d'espace."
+      ],
+      "category": "housing",
+      "difficulty": 3
+    },
+    {
+      "word": "déranger",
+      "translations": [
+        "to disturb",
+        "to bother",
+        "to interrupt"
+      ],
+      "examples": [
+        "Désolé de vous déranger, mais j'ai une question importante."
+      ],
+      "category": "daily_routines",
+      "difficulty": 3
+    },
+    {
+      "word": "désirer",
+      "translations": [
+        "to desire",
+        "to want",
+        "to wish"
+      ],
+      "examples": [
+        "Je désire acheter une nouvelle voiture plus économique."
+      ],
+      "category": "daily_routines",
+      "difficulty": 3
+    },
+    {
+      "word": "détester",
+      "translations": [
+        "to hate",
+        "to detest",
+        "to loathe"
+      ],
+      "examples": [
+        "Je déteste le bruit et la pollution de la ville."
+      ],
+      "category": "emotions",
+      "difficulty": 3
+    },
+    {
+      "word": "devenir",
+      "translations": [
+        "to become",
+        "to turn into",
+        "to grow"
+      ],
+      "examples": [
+        "Avec le temps, elle est devenue une excellente cuisinière."
+      ],
+      "category": "daily_routines",
+      "difficulty": 3
+    },
+    {
+      "word": "devoir",
+      "translations": [
+        "to have to",
+        "to must",
+        "to ought to"
+      ],
+      "examples": [
+        "Je dois terminer ce rapport avant la fin de la journée."
+      ],
+      "category": "work",
+      "difficulty": 2
+    },
+    {
+      "word": "différer",
+      "translations": [
+        "to differ",
+        "to vary",
+        "to be distinct"
+      ],
+      "examples": [
+        "Nos opinions sur ce sujet diffèrent grandement."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "dire",
+      "translations": [
+        "to say",
+        "to tell",
+        "to speak"
+      ],
+      "examples": [
+        "Je te dis la vérité, fais-moi confiance."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2
+    },
+    {
+      "word": "diriger",
+      "translations": [
+        "to lead",
+        "to manage",
+        "to guide"
+      ],
+      "examples": [
+        "Le directeur dirige l'équipe avec beaucoup d'efficacité."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "acquérir",
+      "translations": [
+        "to acquire",
+        "to gain",
+        "to obtain"
+      ],
+      "examples": [
+        "J'ai acquis une nouvelle voiture cette année."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "apaiser",
+      "translations": [
+        "to calm",
+        "to soothe",
+        "to pacify"
+      ],
+      "examples": [
+        "Le massage a aidé à apaiser mes douleurs."
+      ],
+      "category": "health",
+      "difficulty": 3
+    },
+    {
+      "word": "applaudir",
+      "translations": [
+        "to applaud",
+        "to clap"
+      ],
+      "examples": [
+        "Tout le monde a applaudi à la fin du spectacle."
+      ],
+      "category": "arts",
+      "difficulty": 2
+    },
+    {
+      "word": "assainir",
+      "translations": [
+        "to purify",
+        "to sanitize",
+        "to clean"
+      ],
+      "examples": [
+        "Nous devons assainir l'eau avant de la boire."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "attirer",
+      "translations": [
+        "to attract",
+        "to draw in",
+        "to lure"
+      ],
+      "examples": [
+        "Le nouveau parc d'attractions attire beaucoup de visiteurs."
+      ],
+      "category": "leisure",
+      "difficulty": 3
+    },
+    {
+      "word": "balayer",
+      "translations": [
+        "to sweep",
+        "to brush away",
+        "to clear"
+      ],
+      "examples": [
+        "Je balaie le sol de la cuisine chaque matin."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2
+    },
+    {
+      "word": "baptiser",
+      "translations": [
+        "to baptize",
+        "to christen"
+      ],
+      "examples": [
+        "Mes parents ont baptisé leur nouveau-né la semaine dernière."
+      ],
+      "category": "family",
+      "difficulty": 3
+    },
+    {
+      "word": "blâmer",
+      "translations": [
+        "to blame",
+        "to criticize",
+        "to fault"
+      ],
+      "examples": [
+        "Ne me blâme pas pour ce qui s'est passé."
+      ],
+      "category": "emotions",
+      "difficulty": 3
+    },
+    {
+      "word": "camoufler",
+      "translations": [
+        "to camouflage",
+        "to disguise",
+        "to conceal"
+      ],
+      "examples": [
+        "Les soldats ont camouflé leur véhicule pour ne pas être repérés."
+      ],
+      "category": "nature",
+      "difficulty": 4
+    },
+    {
+      "word": "captiver",
+      "translations": [
+        "to captivate",
+        "to fascinate",
+        "to enthrall"
+      ],
+      "examples": [
+        "Le discours du conférencier a captivé toute l'audience."
+      ],
+      "category": "arts",
+      "difficulty": 4
+    },
+    {
+      "word": "célébrer",
+      "translations": [
+        "to celebrate",
+        "to commemorate"
+      ],
+      "examples": [
+        "Nous célébrerons ton anniversaire ce week-end."
+      ],
+      "category": "daily_routines",
+      "difficulty": 3
+    },
+    {
+      "word": "chérir",
+      "translations": [
+        "to cherish",
+        "to treasure",
+        "to hold dear"
+      ],
+      "examples": [
+        "Je chéris ces souvenirs de mon enfance."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "concilier",
+      "translations": [
+        "to reconcile",
+        "to harmonize",
+        "to balance"
+      ],
+      "examples": [
+        "Il faut concilier les besoins de chacun pour trouver un compromis."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "confier",
+      "translations": [
+        "to entrust",
+        "to commit",
+        "to place in the care of"
+      ],
+      "examples": [
+        "J'ai confié mon enfant à ma mère pendant mon voyage."
+      ],
+      "category": "family",
+      "difficulty": 3
+    },
+    {
+      "word": "contenir",
+      "translations": [
+        "to contain",
+        "to hold",
+        "to restrain"
+      ],
+      "examples": [
+        "Ce sac peut contenir tous vos effets personnels."
+      ],
+      "category": "daily_routines",
+      "difficulty": 3
+    },
+    {
+      "word": "convoquer",
+      "translations": [
+        "to summon",
+        "to convene",
+        "to call"
+      ],
+      "examples": [
+        "Le directeur a convoqué tous les employés pour une réunion."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "craindre",
+      "translations": [
+        "to fear",
+        "to dread",
+        "to be afraid of"
+      ],
+      "examples": [
+        "Je crains que la tempête n'endommage ma maison."
+      ],
+      "category": "emotions",
+      "difficulty": 3
+    },
+    {
+      "word": "déchirer",
+      "translations": [
+        "to tear",
+        "to rip",
+        "to shred"
+      ],
+      "examples": [
+        "Mon enfant a déchiré la page de mon livre."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2
+    },
+    {
+      "word": "déclarer",
+      "translations": [
+        "to declare",
+        "to announce",
+        "to state"
+      ],
+      "examples": [
+        "Le président a déclaré l'état d'urgence."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "déduire",
+      "translations": [
+        "to deduce",
+        "to infer",
+        "to conclude"
+      ],
+      "examples": [
+        "D'après ces indices, je déduis que le suspect est coupable."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "défier",
+      "translations": [
+        "to defy",
+        "to challenge",
+        "to dare"
+      ],
+      "examples": [
+        "Les manifestants ont défié l'autorité du gouvernement."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "dégrader",
+      "translations": [
+        "to degrade",
+        "to deteriorate",
+        "to worsen"
+      ],
+      "examples": [
+        "La pollution dégrade progressivement l'environnement."
+      ],
+      "category": "nature",
+      "difficulty": 4
+    },
+    {
+      "word": "déléguer",
+      "translations": [
+        "to delegate",
+        "to assign",
+        "to entrust"
+      ],
+      "examples": [
+        "Le directeur a délégué certaines tâches à ses employés."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "dépendre",
+      "translations": [
+        "to depend",
+        "to rely on",
+        "to be contingent on"
+      ],
+      "examples": [
+        "Mon emploi du temps dépend de mes horaires de travail."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "déployer",
+      "translations": [
+        "to deploy",
+        "to spread out",
+        "to unfold"
+      ],
+      "examples": [
+        "L'armée a déployé ses troupes sur le terrain."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "dérober",
+      "translations": [
+        "to steal",
+        "to pilfer",
+        "to shoplift"
+      ],
+      "examples": [
+        "Le voleur a dérobé mon portefeuille dans la foule."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "désigner",
+      "translations": [
+        "to designate",
+        "to appoint",
+        "to assign"
+      ],
+      "examples": [
+        "Le comité a désigné un nouveau président."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "détacher",
+      "translations": [
+        "to detach",
+        "to separate",
+        "to disconnect"
+      ],
+      "examples": [
+        "Je dois détacher ce câble pour brancher un autre appareil."
+      ],
+      "category": "technology",
+      "difficulty": 3
+    },
+    {
+      "word": "détailler",
+      "translations": [
+        "to detail",
+        "to describe",
+        "to specify"
+      ],
+      "examples": [
+        "Le rapport détaille les résultats de notre enquête."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "détendre",
+      "translations": [
+        "to relax",
+        "to unwind",
+        "to loosen"
+      ],
+      "examples": [
+        "Je me détends en écoutant de la musique après le travail."
+      ],
+      "category": "leisure",
+      "difficulty": 3
+    },
+    {
+      "word": "devancer",
+      "translations": [
+        "to anticipate",
+        "to precede",
+        "to outpace"
+      ],
+      "examples": [
+        "Avec ses nouvelles technologies, l'entreprise a devancé ses concurrents."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "développer",
+      "translations": [
+        "to develop",
+        "to expand",
+        "to grow"
+      ],
+      "examples": [
+        "L'entreprise développe de nouveaux produits chaque année."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "dissimuler",
+      "translations": [
+        "to conceal",
+        "to hide",
+        "to mask"
+      ],
+      "examples": [
+        "Il a dissimulé son identité pour ne pas être reconnu."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "distraire",
+      "translations": [
+        "to distract",
+        "to entertain",
+        "to amuse"
+      ],
+      "examples": [
+        "Les jeux vidéo me distraient quand je suis stressé."
+      ],
+      "category": "leisure",
+      "difficulty": 3
+    },
+    {
+      "word": "divulguer",
+      "translations": [
+        "to disclose",
+        "to reveal",
+        "to leak"
+      ],
+      "examples": [
+        "Le journaliste a divulgué des informations confidentielles."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "dominer",
+      "translations": [
+        "to dominate",
+        "to rule",
+        "to control"
+      ],
+      "examples": [
+        "Cette entreprise domine le marché depuis des années."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "douter",
+      "translations": [
+        "to doubt",
+        "to question",
+        "to be uncertain"
+      ],
+      "examples": [
+        "Je doute de la fiabilité de ces informations."
+      ],
+      "category": "emotions",
+      "difficulty": 3
+    },
+    {
+      "word": "échouer",
+      "translations": [
+        "to fail",
+        "to be unsuccessful",
+        "to miss"
+      ],
+      "examples": [
+        "Malgré ses efforts, il a échoué à l'examen."
+      ],
+      "category": "education",
+      "difficulty": 3
+    },
+    {
+      "word": "effacer",
+      "translations": [
+        "to erase",
+        "to delete",
+        "to wipe out"
+      ],
+      "examples": [
+        "N'oublie pas d'effacer le tableau avant de partir."
+      ],
+      "category": "daily_routines",
+      "difficulty": 3
+    },
+    {
+      "word": "élever",
+      "translations": [
+        "to raise",
+        "to bring up",
+        "to nurture"
+      ],
+      "examples": [
+        "Mes parents ont élevé trois enfants dans cette maison."
+      ],
+      "category": "family",
+      "difficulty": 3
+    },
+    {
+      "word": "emballer",
+      "translations": [
+        "to wrap",
+        "to pack",
+        "to package"
+      ],
+      "examples": [
+        "J'ai emballé ton cadeau dans du papier cadeau."
+      ],
+      "category": "shopping",
+      "difficulty": 2
+    },
+    {
+      "word": "emprunter",
+      "translations": [
+        "to borrow",
+        "to take out a loan",
+        "to lend"
+      ],
+      "examples": [
+        "Je dois emprunter de l'argent à la banque pour acheter une voiture."
+      ],
+      "category": "work",
+      "difficulty": 3
+    }
+  ]
+}

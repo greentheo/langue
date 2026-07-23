@@ -1,0 +1,126 @@
+{
+  "metadata": {
+    "language": "spanish",
+    "level": "a1",
+    "version": "1.0",
+    "word_count": 20,
+    "created_at": "2023-10-15T14:30:00Z",
+    "description": "Common A1 level Spanish vocabulary",
+    "updated_at": "2025-09-10T23:49:47.913637"
+  },
+  "words": [
+    {
+      "word": "hola",
+      "translations": [
+        "hello",
+        "hi"
+      ],
+      "examples": [
+        "¡Hola! ¿Cómo estás?"
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "adiós",
+      "translations": [
+        "goodbye",
+        "bye"
+      ],
+      "examples": [
+        "Adiós, hasta mañana."
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "gracias",
+      "translations": [
+        "thank you",
+        "thanks"
+      ],
+      "examples": [
+        "Muchas gracias por tu ayuda."
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "sí",
+      "translations": [
+        "yes"
+      ],
+      "examples": [
+        "Sí, entiendo."
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "no",
+      "translations": [
+        "no"
+      ],
+      "examples": [
+        "No, gracias."
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "por favor",
+      "translations": [
+        "please"
+      ],
+      "examples": [
+        "Por favor, pásame el agua."
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "agua",
+      "translations": [
+        "water"
+      ],
+      "examples": [
+        "Quiero un vaso de agua."
+      ],
+      "category": "food",
+      "difficulty": 1
+    },
+    {
+      "word": "uno",
+      "translations": [
+        "one"
+      ],
+      "examples": [
+        "Tengo uno."
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "dos",
+      "translations": [
+        "two"
+      ],
+      "examples": [
+        "Necesito dos boletos."
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "tres",
+      "translations": [
+        "three"
+      ],
+      "examples": [
+        "Hay tres libros en la mesa."
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    }
+  ]
+}
