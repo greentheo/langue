@@ -9,6 +9,8 @@ from pathlib import Path
 from typing import Dict, List, Optional, Union, Any
 from pydantic import BaseModel, Field, root_validator
 
+from langue.models.registry import DEFAULT_CLAUDE_MODEL
+
 
 class ModelSettings(BaseModel):
     """Settings for a specific model."""
@@ -90,7 +92,7 @@ class Settings(BaseModel):
 
     # Model-specific settings
     ollama: OllamaSettings = OllamaSettings()
-    claude: CloudModelSettings = CloudModelSettings(model_name="claude-3-haiku-20240307")
+    claude: CloudModelSettings = CloudModelSettings(model_name=DEFAULT_CLAUDE_MODEL)
     openai: CloudModelSettings = CloudModelSettings()
 
     # Activity settings
