@@ -28,6 +28,7 @@ from langue.config.manager import ConfigManager
 from langue.user.profile import UserProfileManager
 from langue.cli.commands import register_activity_commands
 from langue.models.discovery import discover_available_models, discover_ollama_models
+from langue.models import registry
 from langue.storage.integration import save_flashcard_activity_results
 
 # Define an 80's style theme
@@ -127,8 +128,9 @@ def ensure_model_selected(config_manager: ConfigManager) -> None:
     if claude_api_key:
         # Set Claude as primary model
         config_manager.update_setting("primary_model", "claude")
-        config_manager.update_setting("claude.model_name", "claude-3-haiku-20240307")
-        console.print(f"[{SYNTHWAVE_THEME['highlight']}]Using Claude Haiku 3.5 for all activities[/{SYNTHWAVE_THEME['highlight']}]")
+        default_model = registry.default_claude_model()
+        config_manager.update_setting("claude.model_name", default_model)
+        console.print(f"[{SYNTHWAVE_THEME['highlight']}]Using {registry.model_display_name(default_model)} for all activities[/{SYNTHWAVE_THEME['highlight']}]")
         return
     else:
         console.print("[yellow]No Anthropic API key found. Checking for Ollama models...[/yellow]")
@@ -359,7 +361,7 @@ def show_activity_menu(ctx):
         level = user.current_level if hasattr(user, 'current_level') else None
 
         # Determine which model to use
-        model_name = "claude:claude-3-haiku-20240307" if os.environ.get("ANTHROPIC_API_KEY") else model_name
+        model_name = registry.default_claude_selector() if os.environ.get("ANTHROPIC_API_KEY") else model_name
 
         activity = FlashcardActivity(
             language=current_language,
@@ -382,7 +384,7 @@ def show_activity_menu(ctx):
         level = user.current_level if hasattr(user, 'current_level') else None
 
         # Determine which model to use
-        model_name = "claude:claude-3-haiku-20240307" if os.environ.get("ANTHROPIC_API_KEY") else model_name
+        model_name = registry.default_claude_selector() if os.environ.get("ANTHROPIC_API_KEY") else model_name
 
         activity = FillBlankActivity(
             language=current_language,
@@ -402,7 +404,7 @@ def show_activity_menu(ctx):
         level = user.current_level if hasattr(user, 'current_level') else None
 
         # Determine which model to use
-        model_name = "claude:claude-3-haiku-20240307" if os.environ.get("ANTHROPIC_API_KEY") else model_name
+        model_name = registry.default_claude_selector() if os.environ.get("ANTHROPIC_API_KEY") else model_name
 
         activity = ChatActivity(
             language=current_language,
@@ -423,7 +425,7 @@ def show_activity_menu(ctx):
         level = user.current_level if hasattr(user, 'current_level') else None
 
         # Determine which model to use
-        model_name = "claude:claude-3-haiku-20240307" if os.environ.get("ANTHROPIC_API_KEY") else model_name
+        model_name = registry.default_claude_selector() if os.environ.get("ANTHROPIC_API_KEY") else model_name
 
         activity = ReadingActivity(
             language=current_language,
@@ -443,7 +445,7 @@ def show_activity_menu(ctx):
         level = user.current_level if hasattr(user, 'current_level') else None
 
         # Determine which model to use
-        model_name = "claude:claude-3-haiku-20240307" if os.environ.get("ANTHROPIC_API_KEY") else model_name
+        model_name = registry.default_claude_selector() if os.environ.get("ANTHROPIC_API_KEY") else model_name
 
         activity = TranslationActivity(
             language=current_language,

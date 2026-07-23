@@ -30,8 +30,10 @@ def discover_available_models() -> List[str]:
 
     # Check for cloud model API keys
     if os.environ.get("ANTHROPIC_API_KEY"):
-        models.append("claude:haiku")
-        models.append("claude:sonnet")
+        # Local import avoids any import-time cycle via the models package __init__.
+        from langue.models.registry import CLAUDE_ALIASES
+        models.append(f"claude:{CLAUDE_ALIASES['haiku']}")
+        models.append(f"claude:{CLAUDE_ALIASES['sonnet']}")
 
     if os.environ.get("OPENAI_API_KEY"):
         models.append("openai:gpt-3.5-turbo")

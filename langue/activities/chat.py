@@ -151,7 +151,7 @@ class ChatActivity(Activity):
                 return OllamaModelInterface(model_name=model_id)
             elif model_name.startswith("claude:"):
                 # Use Claude
-                model_id = model_name.split(":", 1)[1] if ":" in model_name else "claude-3-haiku-20240307"
+                model_id = model_name.split(":", 1)[1] if ":" in model_name else None
                 return ClaudeModelInterface(model_name=model_id)
             else:
                 # Fallback to Ollama

@@ -9,6 +9,7 @@ from typing import Optional
 
 from rich.console import Console
 from langue.models.discovery import discover_ollama_models
+from langue.models import registry
 from langue.tools.library_generator import library_command
 
 # Initialize console for rich output
@@ -86,7 +87,7 @@ def register_activity_commands(main_group):
         activity = FlashcardActivity(
             language=user.current_language,
             difficulty=difficulty,
-            model_name="claude:claude-3-haiku-20240307",  # Use Claude Haiku 3.5 directly
+            model_name=registry.default_claude_selector(),
             level=level,
             user_id=user.user_id
         )
@@ -148,7 +149,7 @@ def register_activity_commands(main_group):
         activity = FillBlankActivity(
             language=user.current_language,
             difficulty=difficulty,
-            model_name="claude:claude-3-haiku-20240307",  # Use Claude Haiku 3.5 directly
+            model_name=registry.default_claude_selector(),
             show_options=True,
             level=level,
             user_id=user.user_id
@@ -214,7 +215,7 @@ def register_activity_commands(main_group):
         activity = ChatActivity(
             language=user.current_language,
             difficulty=difficulty,
-            model_name="claude:claude-3-haiku-20240307",  # Use Claude Haiku 3.5 directly
+            model_name=registry.default_claude_selector(),
             topic=topic,
             duration_minutes=duration,
             level=level,
@@ -279,7 +280,7 @@ def register_activity_commands(main_group):
         activity = ReadingActivity(
             language=user.current_language,
             difficulty=difficulty,
-            model_name="claude:claude-3-haiku-20240307",  # Use Claude Haiku 3.5 directly
+            model_name=registry.default_claude_selector(),
             topic=topic,
             level=level,
             user_id=user.user_id
@@ -341,7 +342,7 @@ def register_activity_commands(main_group):
         activity = TranslationActivity(
             language=user.current_language,
             difficulty=difficulty,
-            model_name="claude:claude-3-haiku-20240307",  # Use Claude Haiku 3.5 directly
+            model_name=registry.default_claude_selector(),
             direction="both",
             level=level,
             user_id=user.user_id
@@ -353,7 +354,7 @@ def register_activity_commands(main_group):
 
     # Register the library generator command with Claude as default model
     main_group.add_command(
-        click.option('--model', default="claude:claude-3-haiku-20240307", help='Specify LLM model to use')(
+        click.option('--model', default=registry.default_claude_selector(), help='Specify LLM model to use')(
             library_command
         ),
         name="library"
