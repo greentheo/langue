@@ -9,7 +9,7 @@ Langue is a command-line language learning application that leverages AI languag
 - **Multiple Learning Activities**: 
   - Flashcards for vocabulary practice with spaced repetition, progress visualization, and performance tracking
   - Level-based vocabulary libraries (A1-C2) for structured learning paths
-  - Fill-in-the-blank exercises
+  - Fill-in-the-blank exercises with vocabulary from flashcard libraries, level-appropriate sentences, continuous mode, and comprehensive progress tracking
   - Reading comprehension
   - Translation practice
   - Conversational chat with adjustable difficulty
@@ -25,6 +25,7 @@ Langue is a command-line language learning application that leverages AI languag
 - **Progress Tracking**:
   - Word learning tracking with detailed performance metrics
   - Advanced flashcard history with scoring and visualization
+  - Fill-in-the-blank history with success rate tracking, challenging word identification, and weekly activity visualization
   - Multiple translation support with intelligent evaluation
   - Weighted selection algorithm that prioritizes difficult words
   - Points system with running totals
@@ -102,7 +103,7 @@ langue/
 - **Core Framework**: Basic application structure and architecture
 - **Activity Implementations**:
   - Flashcards
-  - Fill-in-the-blank
+  - Fill-in-the-blank with flashcard library integration, level-appropriate sentences, and continuous mode
   - Reading comprehension
   - Translation exercises
   - Conversational chat

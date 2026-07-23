@@ -11,8 +11,12 @@ This document outlines the future development plans for Langue, organized by pri
 - Improved test suite to work with or without Ollama server
 - Implemented flashcard library system with level-based vocabulary (A1-C2)
 - Added language level selection in user interface
-- Enhanced flashcard system to handle multiple translations
-- Implemented weighted word selection algorithm
+- Enhance flashcard system to handle multiple translations ✓
+- Implement weighted word selection algorithm ✓
+- Enhance fill-in-the-blank activity with flashcard library integration ✓
+- Implement continuous mode for fill-in-the-blank activity ✓
+- Add level-appropriate sentence generation for fill-in-the-blank ✓
+- Improve progress tracking visualization for weekly activity ✓
 
 ### High Priority
 - Add comprehensive error handling throughout the application
@@ -47,6 +51,7 @@ This document outlines the future development plans for Langue, organized by pri
 - Implement difficulty adaptation based on user performance and level progression
 - Add export/import functionality for user data and custom vocabulary libraries
 - Create specialized activities for grammar practice using level-appropriate content
+- Enhance fill-in-the-blank activity with multiple blanks and more advanced pattern recognition
 - Enhance model selection UI with performance metrics and capabilities
 - Add thematic vocabulary libraries (travel, business, medical, etc.)
 
@@ -67,6 +72,7 @@ This document outlines the future development plans for Langue, organized by pri
 ### Medium Priority
 - Implement advanced analytics for learning optimization
 - Add language-specific grammar rules and exercises
+- Expand fill-in-the-blank activity with grammar focus and contextual difficulty
 - Create a content suggestion system based on user progress
 - Implement multi-profile support
 - Add automatic model benchmarking and selection based on task
@@ -143,6 +149,7 @@ New features should be evaluated against these criteria:
 - Testing different spaced repetition algorithms for optimal retention
 - Comparing effectiveness of different activity types for various learning styles
 - Benchmarking different language models for specific language learning tasks
+- Testing fill-in-the-blank effectiveness with different numbers of choices, blank patterns, and difficulty adaptation
 - Evaluating hybrid approaches using multiple models for different activities
 - Testing effectiveness of level-based vocabulary progression (A1-C2)
 - Comparing user learning rates with and without structured vocabulary libraries

@@ -27,6 +27,7 @@ from langue.activities.reading import ReadingActivity
 from langue.activities.translation import TranslationActivity
 from langue.activities.chat import ChatActivity
 from langue.activities.translation import TranslationActivity
+from langue.storage.database import initialize_database
 from langue.main import show_progress
 from langue.storage.integration import (
     save_activity_results, get_user_profile, save_user_profile,
@@ -330,7 +331,7 @@ class FillBlankTest(EndToEndTest):
             save_activity_results(self.test_user.user_id, activity)
 
             # Verify results
-            self.verify_activity_results("Fill in the Blank", activity.get_results())
+            self.verify_activity_results("Fill-in-the-Blank", activity.get_results())
 
         finally:
             # Restore original methods
