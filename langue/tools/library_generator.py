@@ -7,13 +7,20 @@ organized by language and proficiency level (A1-C2).
 
 import os
 import json
+import re
 import click
 import logging
 import sys
 import requests
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import List, Dict, Any, Optional, Union
+
+# Fields a normalized flashcard entry may contain. "word" is the display text
+# (also used for phrases/units). New optional fields extend words to phrases and
+# grammatical units while staying backward-compatible with old libraries.
+UNIT_TYPES = ("word", "phrase", "grammar")
+BATCH_SIZE = 20  # entries requested per model call, to avoid truncation
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -61,33 +68,39 @@ class VocabularyLibraryGenerator:
         if level.lower() not in LANGUAGE_LEVELS:
             raise ValueError(f"Invalid level: {level}. Must be one of {LANGUAGE_LEVELS}")
 
-        logger.info(f"Generating {count} {level.upper()} level words for {language}")
+        logger.info(f"Generating {count} {level.upper()} level units for {language}")
 
-        # Create a prompt for the language model
-        prompt = self._create_vocabulary_prompt(language, level, count)
-
-        # Generate vocabulary using the model
-        try:
+        # Generate in batches to avoid truncation, deduping by surface text.
+        # Model errors propagate (as ModelError) so the caller can decide whether
+        # to fall back to offline content — we never silently fake results here.
+        collected: List[Dict[str, Any]] = []
+        seen = set()
+        max_attempts = (count // BATCH_SIZE) + 3
+        attempts = 0
+        while len(collected) < count and attempts < max_attempts:
+            attempts += 1
+            need = min(BATCH_SIZE, count - len(collected))
+            prompt = self._create_vocabulary_prompt(language, level, need)
             response = self.model.get_response(
                 prompt,
                 system_prompt=self._get_system_prompt(),
                 temperature=0.7,
-                max_tokens=4000
+                max_tokens=4000,
             )
-        except Exception as e:
-            logger.error(f"Error generating vocabulary with model: {e}")
-            # Don't raise exception, return a fallback list of basic words
-            return self._get_fallback_words(language, level, count)
+            try:
+                batch = self._parse_vocabulary_response(response)
+            except Exception as e:
+                logger.warning(f"Skipping unparseable batch ({e})")
+                continue
+            for entry in batch:
+                key = entry.get("word", "").strip().lower()
+                if key and key not in seen:
+                    seen.add(key)
+                    collected.append(entry)
+            logger.info(f"{language} {level.upper()}: {len(collected)}/{count} units")
 
-        # Parse the response to extract word data
-        try:
-            words = self._parse_vocabulary_response(response)
-            logger.info(f"Successfully generated {len(words)} words")
-            return words
-        except Exception as e:
-            logger.error(f"Error parsing vocabulary response: {e}")
-            logger.debug(f"Raw response: {response}")
-            raise
+        logger.info(f"Generated {len(collected)} units for {language} {level.upper()}")
+        return collected[:count]
 
     def save_library(self, language: str, level: str, words: List[Dict[str, Any]],
                     output_dir: Optional[str] = None, mode: str = 'create') -> str:
@@ -119,7 +132,7 @@ class VocabularyLibraryGenerator:
                 "level": level.lower(),
                 "version": "1.0",
                 "word_count": len(words),
-                "created_at": datetime.utcnow().isoformat(),
+                "created_at": datetime.now(timezone.utc).isoformat(),
                 "description": f"Common {level.upper()} level {language.capitalize()} vocabulary"
             },
             "words": words
@@ -133,7 +146,7 @@ class VocabularyLibraryGenerator:
 
                 # Update metadata
                 existing_data["metadata"]["word_count"] += len(words)
-                existing_data["metadata"]["updated_at"] = datetime.utcnow().isoformat()
+                existing_data["metadata"]["updated_at"] = datetime.now(timezone.utc).isoformat()
 
                 # Append new words, avoiding duplicates
                 existing_words = {w["word"].lower() for w in existing_data["words"]}
@@ -196,47 +209,55 @@ class VocabularyLibraryGenerator:
         Returns:
             Prompt string for the language model
         """
-        return f"""
-        Generate a list of {count} vocabulary words for {level.upper()} level {language} language learners.
+        cats = ', '.join(COMMON_CATEGORIES)
+        return f"""Generate {count} DISTINCT {level.upper()}-level {language} learning units for flashcards.
+Aim for roughly 60% single words, 30% useful phrases/collocations, and 10% grammatical units (a word shown in a common conjugated or inflected form).
 
-        For each word, provide:
-        1. The word in {language}
-        2. English translations (at least 1, up to 3)
-        3. An example sentence using the word in {language}
-        4. A category (choose from: {', '.join(COMMON_CATEGORIES)})
-        5. A difficulty rating (1-5, where 1 is easiest and 5 is most difficult for this level)
+Return ONLY a JSON array. Each element must have this structure:
+{{
+  "word": "the {language} word or phrase exactly as a learner sees it",
+  "type": "word" | "phrase" | "grammar",
+  "part_of_speech": "noun | verb | adjective | adverb | expression | ...",
+  "translations": ["english meaning", "..."],
+  "literal": "literal word-for-word gloss (include ONLY if it differs from the natural translation)",
+  "breakdown": [{{"text": "component in {language}", "gloss": "english meaning of that component"}}],
+  "base_form": "dictionary/base form (include ONLY for type=grammar)",
+  "grammar_note": "short note, e.g. 'present tense, 3rd person singular' (include ONLY for type=grammar)",
+  "examples": ["one short, natural example sentence in {language}"],
+  "example_translations": ["english translation of that example sentence"],
+  "category": "one of: {cats}",
+  "difficulty": difficulty_number_1_to_5
+}}
 
-        Format your response as a JSON array where each object has the following structure:
-        {{
-          "word": "word in {language}",
-          "translations": ["english1", "english2"],
-          "examples": ["example sentence in {language}"],
-          "category": "category name",
-          "difficulty": difficulty_number
-        }}
-
-        ONLY return the JSON array, no additional text or explanation.
-        """
+Rules:
+- "breakdown" is REQUIRED for type=phrase and type=grammar (one entry per component word); for single words it may be omitted.
+- Always include "example_translations" paired with "examples".
+- Keep examples short and appropriate for {level.upper()}.
+- No duplicates. Return only the JSON array, no commentary."""
 
     def _get_system_prompt(self) -> str:
         """Get the system prompt for vocabulary generation."""
-        return """
-        You are an expert language educator specializing in vocabulary development.
-        Your task is to create appropriate vocabulary lists for language learners
-        at different CEFR levels (A1-C2).
+        return """You are an expert language educator building flashcard content for
+learners at CEFR levels A1-C2. You produce a MIX of learning units, not just
+isolated words:
+- "word": a single high-frequency word.
+- "phrase": a short, useful multi-word expression or collocation learners
+  actually encounter (e.g. "I would like", "how much is it").
+- "grammar": a word shown in an inflected/conjugated form that illustrates a
+  common pattern (e.g. a verb in a frequent tense), with its base form noted.
 
-        Guidelines for each level:
-        - A1: Basic, everyday expressions, simple phrases
-        - A2: Common expressions related to personal information, shopping, geography
-        - B1: Regular work/school situations, travel, personal interests
-        - B2: Technical discussions, abstract topics, special interests
-        - C1: Complex topics, idioms, colloquialisms, professional contexts
-        - C2: Highly specialized fields, cultural references, nuanced expressions
+Level guidance:
+- A1: basic everyday words and set phrases; only the most common verb forms.
+- A2: personal-information, shopping, travel, and geography words and phrases.
+- B1: work/school/travel situations, personal interests, more verb tenses.
+- B2: abstract topics, technical discussion, richer collocations.
+- C1: idioms, colloquialisms, professional register.
+- C2: specialized fields, cultural references, nuanced expressions.
 
-        For each word, provide accurate translations, natural example sentences,
-        an appropriate category, and a difficulty rating relative to the specified level.
-        Only return the requested JSON format with no additional explanation.
-        """
+For every unit provide accurate translations, a natural example sentence WITH its
+English translation, and — for phrases and grammar units — a component-by-
+component gloss so a beginner can see how the parts map to meaning. Return only
+the requested JSON, no commentary."""
 
     def _get_fallback_words(self, language: str, level: str, count: int) -> List[Dict[str, Any]]:
         """Get fallback words when model generation fails.
@@ -304,50 +325,77 @@ class VocabularyLibraryGenerator:
         Returns:
             List of word dictionaries
         """
-        # Clean up the response to extract just the JSON part
-        response = response.strip()
-        if "```json" in response:
-            # Extract JSON from code block
-            response = response.split("```json")[1].split("```")[0].strip()
-        elif "```" in response:
-            # Extract from generic code block
-            response = response.split("```")[1].split("```")[0].strip()
+        text = response.strip()
 
-        # Try to parse as JSON
+        # Strip a code fence if present.
+        fence = re.search(r"```(?:json)?\s*([\s\S]*?)```", text)
+        if fence:
+            text = fence.group(1).strip()
+
+        # Isolate the outermost JSON array.
+        start, end = text.find("["), text.rfind("]")
+        candidate = text[start:end + 1] if (start != -1 and end > start) else text
+
+        words = None
+        # Try as-is, then with a light trailing-comma repair.
+        for attempt in (candidate, re.sub(r",\s*([\]}])", r"\1", candidate)):
+            try:
+                words = json.loads(attempt)
+                break
+            except json.JSONDecodeError:
+                continue
+
+        if words is None:
+            raise ValueError("Could not parse model response as a JSON array")
+        if not isinstance(words, list):
+            raise ValueError("Response is not a list")
+
+        return [self._normalize_entry(w) for w in words if isinstance(w, dict)]
+
+    def _normalize_entry(self, entry: Dict[str, Any]) -> Dict[str, Any]:
+        """Coerce a raw model entry into the canonical flashcard schema.
+
+        Guarantees the required keys and cleans the optional phrase/grammar
+        fields; empty optionals are dropped to keep the library JSON tidy.
+        """
+        e = dict(entry)
+        e["word"] = str(e.get("word", "")).strip()
+        e["type"] = e["type"] if e.get("type") in UNIT_TYPES else "word"
+
+        for field in ("translations", "examples", "example_translations"):
+            value = e.get(field, [])
+            if not isinstance(value, list):
+                value = [value] if value else []
+            e[field] = [str(x).strip() for x in value if str(x).strip()]
+
+        breakdown = []
+        raw_breakdown = e.get("breakdown", [])
+        if isinstance(raw_breakdown, list):
+            for item in raw_breakdown:
+                if isinstance(item, dict) and str(item.get("text", "")).strip():
+                    breakdown.append({
+                        "text": str(item["text"]).strip(),
+                        "gloss": str(item.get("gloss", "")).strip(),
+                    })
+        e["breakdown"] = breakdown
+
+        for field in ("part_of_speech", "literal", "base_form", "grammar_note", "category"):
+            if e.get(field) is not None:
+                e[field] = str(e[field]).strip()
+        if not e.get("category"):
+            e["category"] = "basics"
+
         try:
-            words = json.loads(response)
+            e["difficulty"] = max(1, min(5, int(e.get("difficulty", 1))))
+        except (ValueError, TypeError):
+            e["difficulty"] = 1
 
-            # Validate the structure
-            if not isinstance(words, list):
-                raise ValueError("Response is not a list")
+        # Drop empty optionals so word entries stay compact.
+        for field in ("literal", "base_form", "grammar_note", "breakdown", "example_translations"):
+            if not e.get(field):
+                e.pop(field, None)
 
-            # Validate each word
-            for word in words:
-                if not isinstance(word, dict):
-                    raise ValueError(f"Word is not a dictionary: {word}")
-
-                # Ensure required fields
-                required_fields = ["word", "translations", "examples", "category", "difficulty"]
-                for field in required_fields:
-                    if field not in word:
-                        word[field] = [] if field in ["translations", "examples"] else ""
-
-                # Ensure lists are lists
-                for field in ["translations", "examples"]:
-                    if not isinstance(word[field], list):
-                        word[field] = [word[field]]
-
-                # Ensure difficulty is an integer between 1 and 5
-                try:
-                    word["difficulty"] = max(1, min(5, int(word["difficulty"])))
-                except (ValueError, TypeError):
-                    word["difficulty"] = 1
-
-            return words
-        except json.JSONDecodeError as e:
-            logger.error(f"Failed to parse JSON: {e}")
-            logger.debug(f"Raw response: {response}")
-            raise ValueError(f"Failed to parse model response as JSON: {e}")
+        return e
 
 
 @click.command()
@@ -376,44 +424,31 @@ def library_command(language, level, words, output, force, append, model, offlin
         if not os.path.exists(output):
             os.makedirs(output, exist_ok=True)
 
-    # Check if Ollama is running - try multiple API endpoints
-    ollama_running = False
-    endpoints = [
-        "http://localhost:11434/api/tags",
-        "http://localhost:11434/v1/models",
-        "http://localhost:11434/api/models"
-    ]
+    # Load .env so ANTHROPIC_API_KEY is available when run standalone.
+    try:
+        from dotenv import load_dotenv
+        load_dotenv()
+    except ImportError:
+        pass
 
-    for endpoint in endpoints:
-        try:
-            response = requests.get(endpoint, timeout=2)
-            if response.status_code == 200:
-                ollama_running = True
-                click.echo(f"Connected to Ollama server using endpoint: {endpoint}")
-                break
-        except (requests.ConnectionError, requests.Timeout):
-            continue
+    # Resolve the model: explicit --model wins; otherwise use Claude when an API
+    # key is set, else fall back to the local Ollama default. (No hard Ollama
+    # gate — availability surfaces as a clear error on first use.)
+    if not model:
+        if os.environ.get("ANTHROPIC_API_KEY"):
+            from langue.models import registry
+            model = registry.default_claude_selector()
 
-    if not ollama_running:
-        click.echo("Error: Ollama server is not running or not accessible.")
-        click.echo("Please ensure Ollama is installed and running with: ollama serve")
-        click.echo("")
-        click.echo("Alternatively, you can generate libraries without Ollama:")
-        click.echo("  python -m langue.tools.library_generator --offline --language french --level a1")
-        click.echo("")
-        click.echo("Switching to offline mode automatically...")
+    from langue.models.model_manager import get_model_interface
+    try:
+        model_interface = get_model_interface(model_name=model)
+    except Exception as e:
+        click.echo(f"Could not initialize model '{model or 'ollama (default)'}': {e}")
+        click.echo("Switching to offline basic library...")
         create_offline_library(language, level, words, output_dir=output, mode='overwrite' if force else ('append' if append else 'create'))
         return
 
-    try:
-        from langue.models.model_manager import get_model_interface
-        # Get model interface
-        model_interface = get_model_interface(model_name=model)
-    except ImportError:
-        # Fallback if model_manager is not available
-        from langue.models.ollama import OllamaModelInterface
-        click.echo(f"Using default Ollama model for library generation")
-        model_interface = OllamaModelInterface(model_name=model)
+    click.echo(f"Using model: {getattr(model_interface, 'name', model or 'default')}")
 
     try:
         # Create generator
@@ -538,7 +573,7 @@ def create_offline_library(language, level, count, output_dir, mode='create'):
                     "level": level.lower(),
                     "version": "1.0",
                     "word_count": len(words),
-                    "created_at": datetime.utcnow().isoformat(),
+                    "created_at": datetime.now(timezone.utc).isoformat(),
                     "description": f"Basic {level.upper()} level {language.capitalize()} vocabulary (offline mode)"
                 },
                 "words": words
@@ -552,7 +587,7 @@ def create_offline_library(language, level, count, output_dir, mode='create'):
 
                     # Update metadata
                     existing_data["metadata"]["word_count"] += len(words)
-                    existing_data["metadata"]["updated_at"] = datetime.utcnow().isoformat()
+                    existing_data["metadata"]["updated_at"] = datetime.now(timezone.utc).isoformat()
 
                     # Append new words, avoiding duplicates
                     existing_words = {w["word"].lower() for w in existing_data["words"]}

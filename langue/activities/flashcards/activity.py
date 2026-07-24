@@ -262,26 +262,39 @@ class FlashcardActivity(Activity):
         Returns:
             Formatted flashcard content
         """
-        # Get the first example or an empty string
-        example = word_data.get("examples", [""])[0]
+        # Get the first example / its translation (may be absent on older libraries)
+        examples = word_data.get("examples", []) or [""]
+        example = examples[0] if examples else ""
+        example_translations = word_data.get("example_translations", []) or []
+        example_translation = example_translations[0] if example_translations else ""
 
         # Get all translations
-        translations = word_data.get("translations", [""])
+        translations = word_data.get("translations", [""]) or [""]
 
         # Use the first translation for display, but keep all translations for evaluation
         primary_translation = translations[0] if translations else ""
 
-        # Format translations for display
-        all_translations_text = ", ".join(translations)
+        # Build the notes line (part of speech, category, level).
+        part_of_speech = word_data.get("part_of_speech", "")
+        note_bits = [f"Category: {word_data.get('category', 'General')}", f"Level: {self.level.upper()}"]
+        if part_of_speech:
+            note_bits.insert(0, part_of_speech)
 
-        # Format the content in our standard format
+        # Format the content in our standard format. New phrase/grammar fields are
+        # optional and default empty, so single-word library entries are unaffected.
         return {
             "word": word_data.get("word", ""),
             "translation": primary_translation,
             "all_translations": translations,  # Store all translations for evaluation
             "example": example,
-            "example_translation": "",  # We might not have this in the library
-            "notes": f"Category: {word_data.get('category', 'General')} • Level: {self.level.upper()}",
+            "example_translation": example_translation,
+            "notes": " • ".join(note_bits),
+            "unit_type": word_data.get("type", "word"),
+            "part_of_speech": part_of_speech,
+            "literal": word_data.get("literal", ""),
+            "grammar_note": word_data.get("grammar_note", ""),
+            "base_form": word_data.get("base_form", ""),
+            "breakdown": word_data.get("breakdown", []),
             "source": "library"  # Mark this as coming from the library
         }
 
@@ -433,10 +446,15 @@ class FlashcardActivity(Activity):
         if word:
             self.track_words([word])
 
-        # Display the flashcard front (word only)
+        # Display the flashcard front. Title reflects whether it's a word, a
+        # phrase, or a grammatical form; the part of speech shows as a subtitle.
+        unit_type = content.get("unit_type", "word")
+        front_titles = {"word": "【ＷＯＲＤ】", "phrase": "【ＰＨＲＡＳＥ】", "grammar": "【ＦＯＲＭ】"}
+        pos = content.get("part_of_speech", "")
         console.print(Panel(
             f"[bold {SYNTHWAVE_THEME['primary']}]{word}[/bold {SYNTHWAVE_THEME['primary']}]",
-            title="【ＷＯＲＤ】",
+            title=front_titles.get(unit_type, "【ＷＯＲＤ】"),
+            subtitle=pos or None,
             expand=False,
             border_style=PANEL_BORDER_STYLE
         ))
@@ -485,10 +503,33 @@ class FlashcardActivity(Activity):
         translations_text = ", ".join(all_translations)
         table.add_row("Correct Translation(s)", translations_text)
 
+        # Literal gloss (for idiomatic phrases where the literal reading differs).
+        literal = content.get("literal", "")
+        if literal:
+            table.add_row("Literal", f"[dim {SYNTHWAVE_THEME['secondary']}]{literal}[/dim {SYNTHWAVE_THEME['secondary']}]")
+
+        # Component-by-component breakdown (how the parts map to meaning).
+        breakdown = content.get("breakdown", [])
+        if breakdown:
+            bd_text = "\n".join(
+                f"{b.get('text', '')} → {b.get('gloss', '')}" for b in breakdown if b.get("text")
+            )
+            if bd_text:
+                table.add_row("Breakdown", f"[{SYNTHWAVE_THEME['secondary']}]{bd_text}[/{SYNTHWAVE_THEME['secondary']}]")
+
+        # Grammar note (for conjugated / inflected forms).
+        grammar_note = content.get("grammar_note", "")
+        base_form = content.get("base_form", "")
+        if grammar_note or base_form:
+            note = grammar_note
+            if base_form:
+                note = f"{note} (base form: {base_form})" if note else f"base form: {base_form}"
+            table.add_row("Grammar", f"[{SYNTHWAVE_THEME['accent']}]{note}[/{SYNTHWAVE_THEME['accent']}]")
+
         if example:
             table.add_row("Example", f"[italic {SYNTHWAVE_THEME['secondary']}]{example}[/italic {SYNTHWAVE_THEME['secondary']}]")
         if example_translation:
-            table.add_row("Example Translation", example_translation)
+            table.add_row("Example Translation", f"[dim]{example_translation}[/dim]")
         if notes:
             table.add_row("Notes", f"[dim {SYNTHWAVE_THEME['accent']}]{notes}[/dim {SYNTHWAVE_THEME['accent']}]")
 

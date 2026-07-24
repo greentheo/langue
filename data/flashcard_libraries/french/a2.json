@@ -3,1993 +3,1320 @@
     "language": "french",
     "level": "a2",
     "version": "1.0",
-    "word_count": 176,
-    "created_at": "2025-09-11T21:15:26.408096",
-    "description": "Common A2 level French vocabulary",
-    "updated_at": "2025-09-11T23:03:11.544097"
+    "word_count": 61,
+    "created_at": "2026-07-24T03:19:29.057139+00:00",
+    "description": "Common A2 level French vocabulary"
   },
   "words": [
     {
-      "word": "bonjour",
+      "word": "café",
+      "type": "word",
+      "part_of_speech": "noun",
       "translations": [
-        "hello",
-        "good morning",
-        "good day"
+        "coffee",
+        "café"
       ],
       "examples": [
-        "Bonjour, comment allez-vous?"
+        "Je prends un café le matin."
       ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "s'il vous plaît",
-      "translations": [
-        "please"
-      ],
-      "examples": [
-        "S'il vous plaît, passez-moi l'eau."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "eau",
-      "translations": [
-        "water"
-      ],
-      "examples": [
-        "Je voudrais un verre d'eau."
+      "example_translations": [
+        "I have a coffee in the morning."
       ],
       "category": "food",
       "difficulty": 1
     },
     {
-      "word": "un",
+      "word": "gare",
+      "type": "word",
+      "part_of_speech": "noun",
       "translations": [
-        "one"
+        "train station"
       ],
       "examples": [
-        "J'ai un livre."
+        "La gare est près de l'hôtel."
       ],
-      "category": "numbers",
+      "example_translations": [
+        "The train station is near the hotel."
+      ],
+      "category": "transportation",
       "difficulty": 1
     },
     {
-      "word": "deux",
+      "word": "mercredi",
+      "type": "word",
+      "part_of_speech": "noun",
       "translations": [
-        "two"
+        "Wednesday"
       ],
       "examples": [
-        "J'ai besoin de deux billets."
+        "Nous nous voyons mercredi."
       ],
-      "category": "numbers",
-      "difficulty": 1
-    },
-    {
-      "word": "trois",
-      "translations": [
-        "three"
-      ],
-      "examples": [
-        "Il y a trois livres sur la table."
-      ],
-      "category": "numbers",
-      "difficulty": 1
-    },
-    {
-      "word": "quatre",
-      "translations": [
-        "four"
-      ],
-      "examples": [
-        "J'ai quatre frères."
-      ],
-      "category": "numbers",
-      "difficulty": 1
-    },
-    {
-      "word": "cinq",
-      "translations": [
-        "five"
-      ],
-      "examples": [
-        "Il y a cinq personnes ici."
-      ],
-      "category": "numbers",
-      "difficulty": 1
-    },
-    {
-      "word": "maison",
-      "translations": [
-        "house",
-        "home"
-      ],
-      "examples": [
-        "J'habite dans une grande maison."
-      ],
-      "category": "housing",
-      "difficulty": 1
-    },
-    {
-      "word": "manger",
-      "translations": [
-        "to eat"
-      ],
-      "examples": [
-        "J'aime manger des pâtes."
-      ],
-      "category": "food",
-      "difficulty": 1
-    },
-    {
-      "word": "boire",
-      "translations": [
-        "to drink"
-      ],
-      "examples": [
-        "Je veux boire de l'eau."
-      ],
-      "category": "food",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous? (1)"
-      ],
-      "category": "greetings",
-      "difficulty": 2
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain! (2)"
-      ],
-      "category": "greetings",
-      "difficulty": 3
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide. (3)"
-      ],
-      "category": "greetings",
-      "difficulty": 4
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends. (4)"
-      ],
-      "category": "basics",
-      "difficulty": 5
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci. (5)"
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "s'il vous plaît",
-      "translations": [
-        "please"
-      ],
-      "examples": [
-        "S'il vous plaît, passez-moi l'eau. (6)"
-      ],
-      "category": "basics",
-      "difficulty": 2
-    },
-    {
-      "word": "eau",
-      "translations": [
-        "water"
-      ],
-      "examples": [
-        "Je voudrais un verre d'eau. (7)"
-      ],
-      "category": "food",
-      "difficulty": 3
-    },
-    {
-      "word": "un",
-      "translations": [
-        "one"
-      ],
-      "examples": [
-        "J'ai un livre. (8)"
-      ],
-      "category": "numbers",
-      "difficulty": 4
-    },
-    {
-      "word": "deux",
-      "translations": [
-        "two"
-      ],
-      "examples": [
-        "J'ai besoin de deux billets. (9)"
-      ],
-      "category": "numbers",
-      "difficulty": 5
-    },
-    {
-      "word": "trois",
-      "translations": [
-        "three"
-      ],
-      "examples": [
-        "Il y a trois livres sur la table. (10)"
-      ],
-      "category": "numbers",
-      "difficulty": 1
-    },
-    {
-      "word": "quatre",
-      "translations": [
-        "four"
-      ],
-      "examples": [
-        "J'ai quatre frères. (11)"
-      ],
-      "category": "numbers",
-      "difficulty": 2
-    },
-    {
-      "word": "cinq",
-      "translations": [
-        "five"
-      ],
-      "examples": [
-        "Il y a cinq personnes ici. (12)"
-      ],
-      "category": "numbers",
-      "difficulty": 3
-    },
-    {
-      "word": "maison",
-      "translations": [
-        "house",
-        "home"
-      ],
-      "examples": [
-        "J'habite dans une grande maison. (13)"
-      ],
-      "category": "housing",
-      "difficulty": 4
-    },
-    {
-      "word": "manger",
-      "translations": [
-        "to eat"
-      ],
-      "examples": [
-        "J'aime manger des pâtes. (14)"
-      ],
-      "category": "food",
-      "difficulty": 5
-    },
-    {
-      "word": "boire",
-      "translations": [
-        "to drink"
-      ],
-      "examples": [
-        "Je veux boire de l'eau. (15)"
-      ],
-      "category": "food",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous? (16)"
-      ],
-      "category": "greetings",
-      "difficulty": 2
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain! (17)"
-      ],
-      "category": "greetings",
-      "difficulty": 3
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide. (18)"
-      ],
-      "category": "greetings",
-      "difficulty": 4
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends. (19)"
-      ],
-      "category": "basics",
-      "difficulty": 5
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci. (20)"
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "s'il vous plaît",
-      "translations": [
-        "please"
-      ],
-      "examples": [
-        "S'il vous plaît, passez-moi l'eau. (21)"
-      ],
-      "category": "basics",
-      "difficulty": 2
-    },
-    {
-      "word": "eau",
-      "translations": [
-        "water"
-      ],
-      "examples": [
-        "Je voudrais un verre d'eau. (22)"
-      ],
-      "category": "food",
-      "difficulty": 3
-    },
-    {
-      "word": "un",
-      "translations": [
-        "one"
-      ],
-      "examples": [
-        "J'ai un livre. (23)"
-      ],
-      "category": "numbers",
-      "difficulty": 4
-    },
-    {
-      "word": "deux",
-      "translations": [
-        "two"
-      ],
-      "examples": [
-        "J'ai besoin de deux billets. (24)"
-      ],
-      "category": "numbers",
-      "difficulty": 5
-    },
-    {
-      "word": "trois",
-      "translations": [
-        "three"
-      ],
-      "examples": [
-        "Il y a trois livres sur la table. (25)"
-      ],
-      "category": "numbers",
-      "difficulty": 1
-    },
-    {
-      "word": "quatre",
-      "translations": [
-        "four"
-      ],
-      "examples": [
-        "J'ai quatre frères. (26)"
-      ],
-      "category": "numbers",
-      "difficulty": 2
-    },
-    {
-      "word": "cinq",
-      "translations": [
-        "five"
-      ],
-      "examples": [
-        "Il y a cinq personnes ici. (27)"
-      ],
-      "category": "numbers",
-      "difficulty": 3
-    },
-    {
-      "word": "maison",
-      "translations": [
-        "house",
-        "home"
-      ],
-      "examples": [
-        "J'habite dans une grande maison. (28)"
-      ],
-      "category": "housing",
-      "difficulty": 4
-    },
-    {
-      "word": "manger",
-      "translations": [
-        "to eat"
-      ],
-      "examples": [
-        "J'aime manger des pâtes. (29)"
-      ],
-      "category": "food",
-      "difficulty": 5
-    },
-    {
-      "word": "boire",
-      "translations": [
-        "to drink"
-      ],
-      "examples": [
-        "Je veux boire de l'eau. (30)"
-      ],
-      "category": "food",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous? (31)"
-      ],
-      "category": "greetings",
-      "difficulty": 2
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain! (32)"
-      ],
-      "category": "greetings",
-      "difficulty": 3
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide. (33)"
-      ],
-      "category": "greetings",
-      "difficulty": 4
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends. (34)"
-      ],
-      "category": "basics",
-      "difficulty": 5
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci. (35)"
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "s'il vous plaît",
-      "translations": [
-        "please"
-      ],
-      "examples": [
-        "S'il vous plaît, passez-moi l'eau. (36)"
-      ],
-      "category": "basics",
-      "difficulty": 2
-    },
-    {
-      "word": "eau",
-      "translations": [
-        "water"
-      ],
-      "examples": [
-        "Je voudrais un verre d'eau. (37)"
-      ],
-      "category": "food",
-      "difficulty": 3
-    },
-    {
-      "word": "un",
-      "translations": [
-        "one"
-      ],
-      "examples": [
-        "J'ai un livre. (38)"
-      ],
-      "category": "numbers",
-      "difficulty": 4
-    },
-    {
-      "word": "deux",
-      "translations": [
-        "two"
-      ],
-      "examples": [
-        "J'ai besoin de deux billets. (39)"
-      ],
-      "category": "numbers",
-      "difficulty": 5
-    },
-    {
-      "word": "trois",
-      "translations": [
-        "three"
-      ],
-      "examples": [
-        "Il y a trois livres sur la table. (40)"
-      ],
-      "category": "numbers",
-      "difficulty": 1
-    },
-    {
-      "word": "quatre",
-      "translations": [
-        "four"
-      ],
-      "examples": [
-        "J'ai quatre frères. (41)"
-      ],
-      "category": "numbers",
-      "difficulty": 2
-    },
-    {
-      "word": "cinq",
-      "translations": [
-        "five"
-      ],
-      "examples": [
-        "Il y a cinq personnes ici. (42)"
-      ],
-      "category": "numbers",
-      "difficulty": 3
-    },
-    {
-      "word": "maison",
-      "translations": [
-        "house",
-        "home"
-      ],
-      "examples": [
-        "J'habite dans une grande maison. (43)"
-      ],
-      "category": "housing",
-      "difficulty": 4
-    },
-    {
-      "word": "manger",
-      "translations": [
-        "to eat"
-      ],
-      "examples": [
-        "J'aime manger des pâtes. (44)"
-      ],
-      "category": "food",
-      "difficulty": 5
-    },
-    {
-      "word": "boire",
-      "translations": [
-        "to drink"
-      ],
-      "examples": [
-        "Je veux boire de l'eau. (45)"
-      ],
-      "category": "food",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous? (46)"
-      ],
-      "category": "greetings",
-      "difficulty": 2
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain! (47)"
-      ],
-      "category": "greetings",
-      "difficulty": 3
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide. (48)"
-      ],
-      "category": "greetings",
-      "difficulty": 4
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends. (49)"
-      ],
-      "category": "basics",
-      "difficulty": 5
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci. (50)"
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "s'il vous plaît",
-      "translations": [
-        "please"
-      ],
-      "examples": [
-        "S'il vous plaît, passez-moi l'eau. (51)"
-      ],
-      "category": "basics",
-      "difficulty": 2
-    },
-    {
-      "word": "eau",
-      "translations": [
-        "water"
-      ],
-      "examples": [
-        "Je voudrais un verre d'eau. (52)"
-      ],
-      "category": "food",
-      "difficulty": 3
-    },
-    {
-      "word": "un",
-      "translations": [
-        "one"
-      ],
-      "examples": [
-        "J'ai un livre. (53)"
-      ],
-      "category": "numbers",
-      "difficulty": 4
-    },
-    {
-      "word": "deux",
-      "translations": [
-        "two"
-      ],
-      "examples": [
-        "J'ai besoin de deux billets. (54)"
-      ],
-      "category": "numbers",
-      "difficulty": 5
-    },
-    {
-      "word": "trois",
-      "translations": [
-        "three"
-      ],
-      "examples": [
-        "Il y a trois livres sur la table. (55)"
-      ],
-      "category": "numbers",
-      "difficulty": 1
-    },
-    {
-      "word": "quatre",
-      "translations": [
-        "four"
-      ],
-      "examples": [
-        "J'ai quatre frères. (56)"
-      ],
-      "category": "numbers",
-      "difficulty": 2
-    },
-    {
-      "word": "cinq",
-      "translations": [
-        "five"
-      ],
-      "examples": [
-        "Il y a cinq personnes ici. (57)"
-      ],
-      "category": "numbers",
-      "difficulty": 3
-    },
-    {
-      "word": "maison",
-      "translations": [
-        "house",
-        "home"
-      ],
-      "examples": [
-        "J'habite dans une grande maison. (58)"
-      ],
-      "category": "housing",
-      "difficulty": 4
-    },
-    {
-      "word": "manger",
-      "translations": [
-        "to eat"
-      ],
-      "examples": [
-        "J'aime manger des pâtes. (59)"
-      ],
-      "category": "food",
-      "difficulty": 5
-    },
-    {
-      "word": "boire",
-      "translations": [
-        "to drink"
-      ],
-      "examples": [
-        "Je veux boire de l'eau. (60)"
-      ],
-      "category": "food",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous? (61)"
-      ],
-      "category": "greetings",
-      "difficulty": 2
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain! (62)"
-      ],
-      "category": "greetings",
-      "difficulty": 3
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide. (63)"
-      ],
-      "category": "greetings",
-      "difficulty": 4
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends. (64)"
-      ],
-      "category": "basics",
-      "difficulty": 5
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci. (65)"
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "s'il vous plaît",
-      "translations": [
-        "please"
-      ],
-      "examples": [
-        "S'il vous plaît, passez-moi l'eau. (66)"
-      ],
-      "category": "basics",
-      "difficulty": 2
-    },
-    {
-      "word": "eau",
-      "translations": [
-        "water"
-      ],
-      "examples": [
-        "Je voudrais un verre d'eau. (67)"
-      ],
-      "category": "food",
-      "difficulty": 3
-    },
-    {
-      "word": "un",
-      "translations": [
-        "one"
-      ],
-      "examples": [
-        "J'ai un livre. (68)"
-      ],
-      "category": "numbers",
-      "difficulty": 4
-    },
-    {
-      "word": "deux",
-      "translations": [
-        "two"
-      ],
-      "examples": [
-        "J'ai besoin de deux billets. (69)"
-      ],
-      "category": "numbers",
-      "difficulty": 5
-    },
-    {
-      "word": "trois",
-      "translations": [
-        "three"
-      ],
-      "examples": [
-        "Il y a trois livres sur la table. (70)"
-      ],
-      "category": "numbers",
-      "difficulty": 1
-    },
-    {
-      "word": "quatre",
-      "translations": [
-        "four"
-      ],
-      "examples": [
-        "J'ai quatre frères. (71)"
-      ],
-      "category": "numbers",
-      "difficulty": 2
-    },
-    {
-      "word": "cinq",
-      "translations": [
-        "five"
-      ],
-      "examples": [
-        "Il y a cinq personnes ici. (72)"
-      ],
-      "category": "numbers",
-      "difficulty": 3
-    },
-    {
-      "word": "maison",
-      "translations": [
-        "house",
-        "home"
-      ],
-      "examples": [
-        "J'habite dans une grande maison. (73)"
-      ],
-      "category": "housing",
-      "difficulty": 4
-    },
-    {
-      "word": "manger",
-      "translations": [
-        "to eat"
-      ],
-      "examples": [
-        "J'aime manger des pâtes. (74)"
-      ],
-      "category": "food",
-      "difficulty": 5
-    },
-    {
-      "word": "boire",
-      "translations": [
-        "to drink"
-      ],
-      "examples": [
-        "Je veux boire de l'eau. (75)"
-      ],
-      "category": "food",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous? (76)"
-      ],
-      "category": "greetings",
-      "difficulty": 2
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain! (77)"
-      ],
-      "category": "greetings",
-      "difficulty": 3
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide. (78)"
-      ],
-      "category": "greetings",
-      "difficulty": 4
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends. (79)"
-      ],
-      "category": "basics",
-      "difficulty": 5
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci. (80)"
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "s'il vous plaît",
-      "translations": [
-        "please"
-      ],
-      "examples": [
-        "S'il vous plaît, passez-moi l'eau. (81)"
-      ],
-      "category": "basics",
-      "difficulty": 2
-    },
-    {
-      "word": "eau",
-      "translations": [
-        "water"
-      ],
-      "examples": [
-        "Je voudrais un verre d'eau. (82)"
-      ],
-      "category": "food",
-      "difficulty": 3
-    },
-    {
-      "word": "un",
-      "translations": [
-        "one"
-      ],
-      "examples": [
-        "J'ai un livre. (83)"
-      ],
-      "category": "numbers",
-      "difficulty": 4
-    },
-    {
-      "word": "deux",
-      "translations": [
-        "two"
-      ],
-      "examples": [
-        "J'ai besoin de deux billets. (84)"
-      ],
-      "category": "numbers",
-      "difficulty": 5
-    },
-    {
-      "word": "trois",
-      "translations": [
-        "three"
-      ],
-      "examples": [
-        "Il y a trois livres sur la table. (85)"
-      ],
-      "category": "numbers",
-      "difficulty": 1
-    },
-    {
-      "word": "mère",
-      "translations": [
-        "mother"
-      ],
-      "examples": [
-        "Ma mère prépare le dîner."
-      ],
-      "category": "family",
-      "difficulty": 2
-    },
-    {
-      "word": "père",
-      "translations": [
-        "father"
-      ],
-      "examples": [
-        "Mon père travaille beaucoup."
-      ],
-      "category": "family",
-      "difficulty": 2
-    },
-    {
-      "word": "frère",
-      "translations": [
-        "brother"
-      ],
-      "examples": [
-        "J'ai un frère plus jeune."
-      ],
-      "category": "family",
-      "difficulty": 2
-    },
-    {
-      "word": "sœur",
-      "translations": [
-        "sister"
-      ],
-      "examples": [
-        "Ma sœur est très intelligente."
-      ],
-      "category": "family",
-      "difficulty": 2
-    },
-    {
-      "word": "grand-mère",
-      "translations": [
-        "grandmother"
-      ],
-      "examples": [
-        "Ma grand-mère me raconte toujours des histoires."
-      ],
-      "category": "family",
-      "difficulty": 2
-    },
-    {
-      "word": "pain",
-      "translations": [
-        "bread"
-      ],
-      "examples": [
-        "Je voudrais une baguette de pain, s'il vous plaît."
-      ],
-      "category": "food",
-      "difficulty": 2
-    },
-    {
-      "word": "viande",
-      "translations": [
-        "meat"
-      ],
-      "examples": [
-        "Nous avons acheté de la viande fraîche au marché."
-      ],
-      "category": "food",
-      "difficulty": 2
-    },
-    {
-      "word": "fromage",
-      "translations": [
-        "cheese"
-      ],
-      "examples": [
-        "J'aime le fromage sur mon sandwich."
-      ],
-      "category": "food",
-      "difficulty": 2
-    },
-    {
-      "word": "fruit",
-      "translations": [
-        "fruit"
-      ],
-      "examples": [
-        "J'ai mangé une pomme, un orange et une banane aujourd'hui."
-      ],
-      "category": "food",
-      "difficulty": 2
-    },
-    {
-      "word": "légume",
-      "translations": [
-        "vegetable"
-      ],
-      "examples": [
-        "Ma mère a préparé une salade de légumes pour le dîner."
-      ],
-      "category": "food",
-      "difficulty": 2
-    },
-    {
-      "word": "vacances",
-      "translations": [
-        "vacation",
-        "holiday"
-      ],
-      "examples": [
-        "Nous partons en vacances la semaine prochaine."
-      ],
-      "category": "travel",
-      "difficulty": 3
-    },
-    {
-      "word": "hôtel",
-      "translations": [
-        "hotel"
-      ],
-      "examples": [
-        "Nous avons réservé une chambre dans un hôtel pour notre séjour."
-      ],
-      "category": "travel",
-      "difficulty": 3
-    },
-    {
-      "word": "avion",
-      "translations": [
-        "airplane"
-      ],
-      "examples": [
-        "Nous prendrons l'avion pour aller à Paris."
-      ],
-      "category": "travel",
-      "difficulty": 3
-    },
-    {
-      "word": "train",
-      "translations": [
-        "train"
-      ],
-      "examples": [
-        "Le train arrive dans 5 minutes."
-      ],
-      "category": "travel",
-      "difficulty": 3
-    },
-    {
-      "word": "bus",
-      "translations": [
-        "bus"
-      ],
-      "examples": [
-        "Je prends le bus pour aller au travail."
-      ],
-      "category": "travel",
-      "difficulty": 3
-    },
-    {
-      "word": "magasin",
-      "translations": [
-        "store",
-        "shop"
-      ],
-      "examples": [
-        "Je vais faire des achats dans ce magasin."
-      ],
-      "category": "shopping",
-      "difficulty": 3
-    },
-    {
-      "word": "argent",
-      "translations": [
-        "money"
-      ],
-      "examples": [
-        "J'ai besoin d'argent pour acheter ces vêtements."
-      ],
-      "category": "shopping",
-      "difficulty": 3
-    },
-    {
-      "word": "prix",
-      "translations": [
-        "price"
-      ],
-      "examples": [
-        "Ce produit est à un bon prix."
-      ],
-      "category": "shopping",
-      "difficulty": 3
-    },
-    {
-      "word": "acheter",
-      "translations": [
-        "to buy"
-      ],
-      "examples": [
-        "J'ai acheté de nouveaux livres hier."
-      ],
-      "category": "shopping",
-      "difficulty": 3
-    },
-    {
-      "word": "vendre",
-      "translations": [
-        "to sell"
-      ],
-      "examples": [
-        "Le commerçant vend des fruits et légumes frais."
-      ],
-      "category": "shopping",
-      "difficulty": 3
-    },
-    {
-      "word": "heure",
-      "translations": [
-        "hour",
-        "time"
-      ],
-      "examples": [
-        "Il est 15 heures."
+      "example_translations": [
+        "We see each other on Wednesday."
       ],
       "category": "time",
-      "difficulty": 2
+      "difficulty": 1
     },
     {
-      "word": "jour",
+      "word": "chambre",
+      "type": "word",
+      "part_of_speech": "noun",
       "translations": [
-        "day"
+        "bedroom",
+        "room"
       ],
       "examples": [
-        "Nous allons au parc demain."
+        "Ma chambre est petite."
       ],
-      "category": "time",
-      "difficulty": 2
-    },
-    {
-      "word": "semaine",
-      "translations": [
-        "week"
+      "example_translations": [
+        "My bedroom is small."
       ],
-      "examples": [
-        "Je travaille du lundi au vendredi chaque semaine."
-      ],
-      "category": "time",
-      "difficulty": 2
-    },
-    {
-      "word": "mois",
-      "translations": [
-        "month"
-      ],
-      "examples": [
-        "Nous partons en vacances au mois d'août."
-      ],
-      "category": "time",
-      "difficulty": 2
-    },
-    {
-      "word": "année",
-      "translations": [
-        "year"
-      ],
-      "examples": [
-        "J'ai 25 ans cette année."
-      ],
-      "category": "time",
-      "difficulty": 2
-    },
-    {
-      "word": "soleil",
-      "translations": [
-        "sun"
-      ],
-      "examples": [
-        "Il fait beau aujourd'hui, le soleil brille."
-      ],
-      "category": "weather",
-      "difficulty": 2
+      "category": "housing",
+      "difficulty": 1
     },
     {
       "word": "pluie",
+      "type": "word",
+      "part_of_speech": "noun",
       "translations": [
         "rain"
       ],
       "examples": [
-        "Il pleut beaucoup ces derniers jours."
+        "Il y a de la pluie aujourd'hui."
+      ],
+      "example_translations": [
+        "There is rain today."
       ],
       "category": "weather",
-      "difficulty": 2
-    },
-    {
-      "word": "nuage",
-      "translations": [
-        "cloud"
-      ],
-      "examples": [
-        "Le ciel est couvert de nuages gris."
-      ],
-      "category": "weather",
-      "difficulty": 2
-    },
-    {
-      "word": "neige",
-      "translations": [
-        "snow"
-      ],
-      "examples": [
-        "Il y a eu de la neige pendant la nuit."
-      ],
-      "category": "weather",
-      "difficulty": 2
-    },
-    {
-      "word": "vent",
-      "translations": [
-        "wind"
-      ],
-      "examples": [
-        "Il fait très venteux aujourd'hui."
-      ],
-      "category": "weather",
-      "difficulty": 2
+      "difficulty": 1
     },
     {
       "word": "travail",
+      "type": "word",
+      "part_of_speech": "noun",
       "translations": [
         "work",
         "job"
       ],
       "examples": [
-        "J'ai un nouveau travail dans une entreprise."
+        "Mon travail est intéressant."
+      ],
+      "example_translations": [
+        "My work is interesting."
       ],
       "category": "work",
-      "difficulty": 3
-    },
-    {
-      "word": "bureau",
-      "translations": [
-        "office"
-      ],
-      "examples": [
-        "Mon bureau est au deuxième étage."
-      ],
-      "category": "work",
-      "difficulty": 3
-    },
-    {
-      "word": "patron",
-      "translations": [
-        "boss",
-        "employer"
-      ],
-      "examples": [
-        "Mon patron m'a donné une nouvelle mission."
-      ],
-      "category": "work",
-      "difficulty": 3
-    },
-    {
-      "word": "collègue",
-      "translations": [
-        "colleague"
-      ],
-      "examples": [
-        "Je m'entends bien avec mes collègues."
-      ],
-      "category": "work",
-      "difficulty": 3
-    },
-    {
-      "word": "salaire",
-      "translations": [
-        "salary",
-        "wage"
-      ],
-      "examples": [
-        "Mon salaire a augmenté cette année."
-      ],
-      "category": "work",
-      "difficulty": 3
+      "difficulty": 1
     },
     {
       "word": "école",
+      "type": "word",
+      "part_of_speech": "noun",
       "translations": [
         "school"
       ],
       "examples": [
-        "Je vais à l'école tous les jours."
+        "Je vais à l'école."
+      ],
+      "example_translations": [
+        "I go to school."
       ],
       "category": "education",
-      "difficulty": 2
+      "difficulty": 1
     },
     {
-      "word": "professeur",
+      "word": "pain",
+      "type": "word",
+      "part_of_speech": "noun",
       "translations": [
-        "teacher"
+        "bread"
       ],
       "examples": [
-        "Mon professeur de français est très gentil."
+        "Je voudrais du pain, s'il vous plaît."
       ],
-      "category": "education",
-      "difficulty": 2
-    },
-    {
-      "word": "étudiant",
-      "translations": [
-        "student"
-      ],
-      "examples": [
-        "Les étudiants écoutent attentivement en classe."
-      ],
-      "category": "education",
-      "difficulty": 2
-    },
-    {
-      "word": "livre",
-      "translations": [
-        "book"
-      ],
-      "examples": [
-        "J'ai emprunté plusieurs livres à la bibliothèque."
-      ],
-      "category": "education",
-      "difficulty": 2
-    },
-    {
-      "word": "devoir",
-      "translations": [
-        "homework"
-      ],
-      "examples": [
-        "J'ai beaucoup de devoirs à faire ce soir."
-      ],
-      "category": "education",
-      "difficulty": 2
-    },
-    {
-      "word": "appartement",
-      "translations": [
-        "apartment"
-      ],
-      "examples": [
-        "Mon appartement est situé en centre-ville."
-      ],
-      "category": "housing",
-      "difficulty": 2
-    },
-    {
-      "word": "chambre",
-      "translations": [
-        "room"
-      ],
-      "examples": [
-        "Ma chambre est au deuxième étage."
-      ],
-      "category": "housing",
-      "difficulty": 2
-    },
-    {
-      "word": "cuisine",
-      "translations": [
-        "kitchen"
-      ],
-      "examples": [
-        "J'aime cuisiner dans ma cuisine."
-      ],
-      "category": "housing",
-      "difficulty": 2
-    },
-    {
-      "word": "salle de bain",
-      "translations": [
-        "bathroom"
-      ],
-      "examples": [
-        "La salle de bain est au fond du couloir."
-      ],
-      "category": "housing",
-      "difficulty": 2
-    },
-    {
-      "word": "loisirs",
-      "translations": [
-        "leisure",
-        "free time"
-      ],
-      "examples": [
-        "Pendant mes loisirs, je lis des livres."
-      ],
-      "category": "leisure",
-      "difficulty": 3
-    },
-    {
-      "word": "sport",
-      "translations": [
-        "sport"
-      ],
-      "examples": [
-        "J'aime pratiquer des sports comme le tennis."
-      ],
-      "category": "leisure",
-      "difficulty": 3
-    },
-    {
-      "word": "musique",
-      "translations": [
-        "music"
-      ],
-      "examples": [
-        "J'écoute de la musique classique le soir."
-      ],
-      "category": "leisure",
-      "difficulty": 3
-    },
-    {
-      "word": "film",
-      "translations": [
-        "movie",
-        "film"
-      ],
-      "examples": [
-        "Nous allons voir un film au cinéma ce week-end."
-      ],
-      "category": "leisure",
-      "difficulty": 3
-    },
-    {
-      "word": "médecin",
-      "translations": [
-        "doctor"
-      ],
-      "examples": [
-        "Je dois aller voir un médecin pour un examen."
-      ],
-      "category": "health",
-      "difficulty": 3
-    },
-    {
-      "word": "hôpital",
-      "translations": [
-        "hospital"
-      ],
-      "examples": [
-        "Ma grand-mère est actuellement à l'hôpital."
-      ],
-      "category": "health",
-      "difficulty": 3
-    },
-    {
-      "word": "maladie",
-      "translations": [
-        "illness",
-        "disease"
-      ],
-      "examples": [
-        "J'ai attrapé un rhume, j'ai une maladie."
-      ],
-      "category": "health",
-      "difficulty": 3
-    },
-    {
-      "word": "médicament",
-      "translations": [
-        "medicine",
-        "medication"
-      ],
-      "examples": [
-        "Le médecin m'a prescrit ces médicaments."
-      ],
-      "category": "health",
-      "difficulty": 3
-    },
-    {
-      "word": "santé",
-      "translations": [
-        "health"
-      ],
-      "examples": [
-        "Ma santé s'est améliorée ces derniers jours."
-      ],
-      "category": "health",
-      "difficulty": 3
-    },
-    {
-      "word": "voiture",
-      "translations": [
-        "car"
-      ],
-      "examples": [
-        "J'ai acheté une nouvelle voiture."
-      ],
-      "category": "transportation",
-      "difficulty": 3
-    },
-    {
-      "word": "vélo",
-      "translations": [
-        "bicycle"
-      ],
-      "examples": [
-        "Je vais faire un tour en vélo ce week-end."
-      ],
-      "category": "transportation",
-      "difficulty": 2
-    },
-    {
-      "word": "boulanger",
-      "translations": [
-        "baker",
-        "bakery worker"
-      ],
-      "examples": [
-        "Le boulanger prépare le pain frais chaque matin."
+      "example_translations": [
+        "I would like some bread, please."
       ],
       "category": "food",
+      "difficulty": 1
+    },
+    {
+      "word": "je voudrais",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "I would like"
+      ],
+      "breakdown": [
+        {
+          "text": "je",
+          "gloss": "I"
+        },
+        {
+          "text": "voudrais",
+          "gloss": "would like (conditional)"
+        }
+      ],
+      "examples": [
+        "Je voudrais une chambre pour deux nuits."
+      ],
+      "example_translations": [
+        "I would like a room for two nights."
+      ],
+      "category": "shopping",
       "difficulty": 2
     },
     {
-      "word": "carte",
+      "word": "combien ça coûte",
+      "type": "phrase",
+      "part_of_speech": "expression",
       "translations": [
-        "map",
-        "card"
+        "how much does it cost"
+      ],
+      "breakdown": [
+        {
+          "text": "combien",
+          "gloss": "how much"
+        },
+        {
+          "text": "ça",
+          "gloss": "it"
+        },
+        {
+          "text": "coûte",
+          "gloss": "costs"
+        }
       ],
       "examples": [
-        "J'ai besoin d'une carte pour trouver mon chemin."
+        "Combien ça coûte?"
       ],
-      "category": "travel",
+      "example_translations": [
+        "How much does it cost?"
+      ],
+      "category": "shopping",
       "difficulty": 2
     },
     {
-      "word": "chien",
+      "word": "à bientôt",
+      "type": "phrase",
+      "part_of_speech": "expression",
       "translations": [
-        "dog"
+        "see you soon"
+      ],
+      "breakdown": [
+        {
+          "text": "à",
+          "gloss": "to, at"
+        },
+        {
+          "text": "bientôt",
+          "gloss": "soon"
+        }
       ],
       "examples": [
-        "Mon chien me suit partout où je vais."
+        "À bientôt!"
       ],
-      "category": "nature",
+      "example_translations": [
+        "See you soon!"
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "au revoir",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "goodbye"
+      ],
+      "breakdown": [
+        {
+          "text": "au",
+          "gloss": "to the"
+        },
+        {
+          "text": "revoir",
+          "gloss": "see again"
+        }
+      ],
+      "examples": [
+        "Au revoir!"
+      ],
+      "example_translations": [
+        "Goodbye!"
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "bon marché",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "cheap",
+        "inexpensive"
+      ],
+      "breakdown": [
+        {
+          "text": "bon",
+          "gloss": "good"
+        },
+        {
+          "text": "marché",
+          "gloss": "market"
+        }
+      ],
+      "examples": [
+        "Ce restaurant est bon marché."
+      ],
+      "example_translations": [
+        "This restaurant is inexpensive."
+      ],
+      "category": "shopping",
       "difficulty": 2
     },
     {
-      "word": "concert",
+      "word": "il fait beau",
+      "type": "phrase",
+      "part_of_speech": "expression",
       "translations": [
-        "concert"
+        "the weather is nice"
+      ],
+      "breakdown": [
+        {
+          "text": "il",
+          "gloss": "it"
+        },
+        {
+          "text": "fait",
+          "gloss": "makes"
+        },
+        {
+          "text": "beau",
+          "gloss": "beautiful"
+        }
       ],
       "examples": [
-        "Je vais au concert de musique ce soir."
+        "Il fait beau aujourd'hui."
       ],
-      "category": "arts",
-      "difficulty": 3
+      "example_translations": [
+        "The weather is nice today."
+      ],
+      "category": "weather",
+      "difficulty": 2
     },
     {
-      "word": "côté",
+      "word": "parlais",
+      "type": "grammar",
+      "part_of_speech": "verb",
       "translations": [
-        "side",
-        "edge"
+        "was speaking",
+        "used to speak"
+      ],
+      "base_form": "parler",
+      "grammar_note": "imperfect tense, 1st person singular",
+      "breakdown": [
+        {
+          "text": "parl-",
+          "gloss": "speak (root)"
+        },
+        {
+          "text": "-ais",
+          "gloss": "was/used to (imperfect ending)"
+        }
       ],
       "examples": [
-        "Assieds-toi à côté de moi."
+        "Je parlais français quand j'étais enfant."
+      ],
+      "example_translations": [
+        "I spoke French when I was a child."
       ],
       "category": "daily_routines",
       "difficulty": 3
     },
     {
-      "word": "cuisinier",
+      "word": "allons",
+      "type": "grammar",
+      "part_of_speech": "verb",
       "translations": [
-        "cook",
-        "chef"
+        "let's go",
+        "we go"
+      ],
+      "base_form": "aller",
+      "grammar_note": "present tense, 1st person plural",
+      "breakdown": [
+        {
+          "text": "all-",
+          "gloss": "go (root)"
+        },
+        {
+          "text": "-ons",
+          "gloss": "we (present ending)"
+        }
       ],
       "examples": [
-        "Le cuisinier prépare le repas dans la cuisine."
+        "Allons à la plage!"
       ],
-      "category": "food",
-      "difficulty": 3
+      "example_translations": [
+        "Let's go to the beach!"
+      ],
+      "category": "travel",
+      "difficulty": 2
     },
     {
-      "word": "dimanche",
+      "word": "mangeons",
+      "type": "grammar",
+      "part_of_speech": "verb",
       "translations": [
-        "Sunday"
+        "let's eat",
+        "we eat"
+      ],
+      "base_form": "manger",
+      "grammar_note": "present tense, 1st person plural",
+      "breakdown": [
+        {
+          "text": "mang-",
+          "gloss": "eat (root)"
+        },
+        {
+          "text": "-eons",
+          "gloss": "we (present ending with euphonic e)"
+        }
       ],
       "examples": [
-        "Je me repose le dimanche."
+        "Mangeons ensemble ce soir."
+      ],
+      "example_translations": [
+        "Let's eat together tonight."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "pouvez-vous",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "can you",
+        "are you able to"
+      ],
+      "breakdown": [
+        {
+          "text": "pouvez",
+          "gloss": "can (2nd person plural)"
+        },
+        {
+          "text": "vous",
+          "gloss": "you"
+        }
+      ],
+      "examples": [
+        "Pouvez-vous m'aider?"
+      ],
+      "example_translations": [
+        "Can you help me?"
+      ],
+      "category": "daily_routines",
+      "difficulty": 2
+    },
+    {
+      "word": "beaucoup",
+      "type": "word",
+      "part_of_speech": "adverb",
+      "translations": [
+        "a lot",
+        "much"
+      ],
+      "examples": [
+        "J'aime beaucoup la musique."
+      ],
+      "example_translations": [
+        "I like music a lot."
+      ],
+      "category": "leisure",
+      "difficulty": 1
+    },
+    {
+      "word": "déjà",
+      "type": "word",
+      "part_of_speech": "adverb",
+      "translations": [
+        "already"
+      ],
+      "examples": [
+        "J'ai déjà mangé."
+      ],
+      "example_translations": [
+        "I have already eaten."
       ],
       "category": "time",
       "difficulty": 2
     },
     {
-      "word": "enfant",
+      "word": "merci",
+      "type": "word",
+      "part_of_speech": "interjection",
       "translations": [
-        "child",
-        "kid"
+        "thank you",
+        "thanks"
       ],
       "examples": [
-        "Les enfants jouent dans le parc."
+        "Merci beaucoup pour ton aide!"
       ],
-      "category": "family",
+      "example_translations": [
+        "Thank you very much for your help!"
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "marché",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "market"
+      ],
+      "examples": [
+        "Je vais au marché pour acheter des légumes."
+      ],
+      "example_translations": [
+        "I go to the market to buy vegetables."
+      ],
+      "category": "shopping",
+      "difficulty": 1
+    },
+    {
+      "word": "heureux",
+      "type": "word",
+      "part_of_speech": "adjective",
+      "translations": [
+        "happy",
+        "glad"
+      ],
+      "examples": [
+        "Je suis heureux de te voir."
+      ],
+      "example_translations": [
+        "I am happy to see you."
+      ],
+      "category": "emotions",
+      "difficulty": 1
+    },
+    {
+      "word": "pomme de terre",
+      "type": "phrase",
+      "part_of_speech": "noun",
+      "translations": [
+        "potato"
+      ],
+      "breakdown": [
+        {
+          "text": "pomme",
+          "gloss": "apple"
+        },
+        {
+          "text": "de",
+          "gloss": "of"
+        },
+        {
+          "text": "terre",
+          "gloss": "earth"
+        }
+      ],
+      "examples": [
+        "Les pommes de terre sont délicieuses."
+      ],
+      "example_translations": [
+        "Potatoes are delicious."
+      ],
+      "category": "food",
       "difficulty": 2
     },
     {
-      "word": "espagnol",
+      "word": "parler",
+      "type": "grammar",
+      "part_of_speech": "verb",
       "translations": [
-        "Spanish",
-        "Spaniard"
+        "to speak",
+        "to talk"
       ],
+      "base_form": "parler",
+      "grammar_note": "present tense, infinitive form",
       "examples": [
-        "Je parle un peu espagnol."
+        "Je parle français et anglais."
       ],
-      "category": "education",
-      "difficulty": 3
-    },
-    {
-      "word": "fête",
-      "translations": [
-        "party",
-        "celebration"
+      "example_translations": [
+        "I speak French and English."
       ],
-      "examples": [
-        "Nous organisons une fête pour mon anniversaire."
-      ],
-      "category": "leisure",
-      "difficulty": 3
-    },
-    {
-      "word": "fleur",
-      "translations": [
-        "flower"
-      ],
-      "examples": [
-        "Les fleurs dans le jardin sont magnifiques."
-      ],
-      "category": "nature",
+      "category": "daily_routines",
       "difficulty": 2
     },
     {
-      "word": "jeu",
+      "word": "aller",
+      "type": "grammar",
+      "part_of_speech": "verb",
       "translations": [
-        "game",
-        "play"
+        "to go"
       ],
+      "base_form": "aller",
+      "grammar_note": "present tense, infinitive form",
       "examples": [
-        "Les enfants jouent à des jeux dans la cour."
+        "Où vas-tu ce soir?"
       ],
-      "category": "leisure",
+      "example_translations": [
+        "Where are you going this evening?"
+      ],
+      "category": "travel",
       "difficulty": 2
     },
     {
       "word": "lundi",
+      "type": "word",
+      "part_of_speech": "noun",
       "translations": [
         "Monday"
       ],
       "examples": [
-        "Je commence le travail le lundi."
+        "Lundi, j'ai un rendez-vous important."
+      ],
+      "example_translations": [
+        "On Monday, I have an important appointment."
       ],
       "category": "time",
+      "difficulty": 1
+    },
+    {
+      "word": "soleil",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "sun",
+        "sunshine"
+      ],
+      "examples": [
+        "Le soleil brille aujourd'hui."
+      ],
+      "example_translations": [
+        "The sun is shining today."
+      ],
+      "category": "weather",
+      "difficulty": 1
+    },
+    {
+      "word": "bibliothèque",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "library"
+      ],
+      "examples": [
+        "Je vais à la bibliothèque pour étudier."
+      ],
+      "example_translations": [
+        "I go to the library to study."
+      ],
+      "category": "education",
+      "difficulty": 1
+    },
+    {
+      "word": "quel âge as-tu",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "how old are you"
+      ],
+      "breakdown": [
+        {
+          "text": "quel",
+          "gloss": "what"
+        },
+        {
+          "text": "âge",
+          "gloss": "age"
+        },
+        {
+          "text": "as-tu",
+          "gloss": "do you have"
+        }
+      ],
+      "examples": [
+        "Quel âge as-tu?"
+      ],
+      "example_translations": [
+        "How old are you?"
+      ],
+      "category": "greetings",
       "difficulty": 2
     },
     {
-      "word": "mercredi",
+      "word": "frère",
+      "type": "word",
+      "part_of_speech": "noun",
       "translations": [
-        "Wednesday"
+        "brother"
       ],
       "examples": [
-        "Nous avons congé le mercredi."
+        "Mon frère habite à Paris."
       ],
-      "category": "time",
+      "example_translations": [
+        "My brother lives in Paris."
+      ],
+      "category": "family",
+      "difficulty": 1
+    },
+    {
+      "word": "avoir faim",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "to be hungry"
+      ],
+      "breakdown": [
+        {
+          "text": "avoir",
+          "gloss": "to have"
+        },
+        {
+          "text": "faim",
+          "gloss": "hunger"
+        }
+      ],
+      "examples": [
+        "J'ai faim, je veux manger quelque chose."
+      ],
+      "example_translations": [
+        "I'm hungry, I want to eat something."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "médecin",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "doctor"
+      ],
+      "examples": [
+        "Je dois aller chez le médecin demain."
+      ],
+      "example_translations": [
+        "I have to go to the doctor tomorrow."
+      ],
+      "category": "health",
+      "difficulty": 1
+    },
+    {
+      "word": "suis",
+      "type": "grammar",
+      "part_of_speech": "verb",
+      "translations": [
+        "am"
+      ],
+      "base_form": "être",
+      "grammar_note": "present tense, 1st person singular",
+      "examples": [
+        "Je suis étudiant."
+      ],
+      "example_translations": [
+        "I am a student."
+      ],
+      "category": "daily_routines",
+      "difficulty": 1
+    },
+    {
+      "word": "aimer",
+      "type": "grammar",
+      "part_of_speech": "verb",
+      "translations": [
+        "to like",
+        "to love"
+      ],
+      "base_form": "aimer",
+      "grammar_note": "present tense, infinitive form",
+      "examples": [
+        "J'aime les films français."
+      ],
+      "example_translations": [
+        "I like French films."
+      ],
+      "category": "leisure",
+      "difficulty": 1
+    },
+    {
+      "word": "panier",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "basket",
+        "shopping basket"
+      ],
+      "examples": [
+        "Je mets les fruits dans le panier."
+      ],
+      "example_translations": [
+        "I put the fruits in the basket."
+      ],
+      "category": "shopping",
       "difficulty": 2
     },
     {
       "word": "montagne",
+      "type": "word",
+      "part_of_speech": "noun",
       "translations": [
         "mountain"
       ],
       "examples": [
-        "Nous avons fait une randonnée dans les montagnes."
+        "La montagne est très haute."
+      ],
+      "example_translations": [
+        "The mountain is very high."
       ],
       "category": "nature",
-      "difficulty": 3
+      "difficulty": 1
     },
     {
-      "word": "ordinateur",
+      "word": "nuage",
+      "type": "word",
+      "part_of_speech": "noun",
       "translations": [
-        "computer"
+        "cloud"
       ],
       "examples": [
-        "Je travaille sur mon ordinateur au bureau."
+        "Il y a des nuages dans le ciel."
       ],
-      "category": "technology",
-      "difficulty": 3
+      "example_translations": [
+        "There are clouds in the sky."
+      ],
+      "category": "weather",
+      "difficulty": 1
     },
     {
-      "word": "piscine",
+      "word": "stylo",
+      "type": "word",
+      "part_of_speech": "noun",
       "translations": [
-        "swimming pool"
+        "pen"
       ],
       "examples": [
-        "Nous allons nager dans la piscine cet été."
+        "Avez-vous un stylo?"
       ],
-      "category": "leisure",
-      "difficulty": 3
+      "example_translations": [
+        "Do you have a pen?"
+      ],
+      "category": "education",
+      "difficulty": 1
     },
     {
-      "word": "plage",
+      "word": "Combien ça coûte?",
+      "type": "phrase",
+      "part_of_speech": "expression",
       "translations": [
-        "beach"
+        "How much does it cost?"
+      ],
+      "breakdown": [
+        {
+          "text": "Combien",
+          "gloss": "how much"
+        },
+        {
+          "text": "ça",
+          "gloss": "it"
+        },
+        {
+          "text": "coûte",
+          "gloss": "costs"
+        }
       ],
       "examples": [
-        "Nous avons passé la journée à la plage."
+        "Combien ça coûte, ce livre?"
+      ],
+      "example_translations": [
+        "How much does this book cost?"
+      ],
+      "category": "shopping",
+      "difficulty": 2
+    },
+    {
+      "word": "à côté de",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "next to",
+        "beside"
+      ],
+      "breakdown": [
+        {
+          "text": "à",
+          "gloss": "at/to"
+        },
+        {
+          "text": "côté",
+          "gloss": "side"
+        },
+        {
+          "text": "de",
+          "gloss": "of"
+        }
+      ],
+      "examples": [
+        "L'école est à côté de la bibliothèque."
+      ],
+      "example_translations": [
+        "The school is next to the library."
       ],
       "category": "travel",
-      "difficulty": 3
+      "difficulty": 2
     },
     {
-      "word": "pont",
+      "word": "s'il vous plaît",
+      "type": "phrase",
+      "part_of_speech": "expression",
       "translations": [
-        "bridge"
+        "please (formal)"
+      ],
+      "breakdown": [
+        {
+          "text": "s'il",
+          "gloss": "if it"
+        },
+        {
+          "text": "vous",
+          "gloss": "you (formal)"
+        },
+        {
+          "text": "plaît",
+          "gloss": "pleases"
+        }
       ],
       "examples": [
-        "Le pont relie les deux rives de la rivière."
+        "Un café, s'il vous plaît."
+      ],
+      "example_translations": [
+        "A coffee, please."
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "parlent",
+      "type": "grammar",
+      "part_of_speech": "verb",
+      "translations": [
+        "speak (they speak)"
+      ],
+      "base_form": "parler",
+      "grammar_note": "present tense, 3rd person plural",
+      "breakdown": [
+        {
+          "text": "parlent",
+          "gloss": "speak"
+        }
+      ],
+      "examples": [
+        "Ils parlent français."
+      ],
+      "example_translations": [
+        "They speak French."
+      ],
+      "category": "education",
+      "difficulty": 1
+    },
+    {
+      "word": "allé",
+      "type": "grammar",
+      "part_of_speech": "verb",
+      "translations": [
+        "went (he/she went)"
+      ],
+      "base_form": "aller",
+      "grammar_note": "past participle, used with passé composé",
+      "breakdown": [
+        {
+          "text": "allé",
+          "gloss": "went"
+        }
+      ],
+      "examples": [
+        "Il est allé à Paris."
+      ],
+      "example_translations": [
+        "He went to Paris."
       ],
       "category": "travel",
-      "difficulty": 3
+      "difficulty": 2
     },
     {
-      "word": "salle",
+      "word": "Quelle heure est-il?",
+      "type": "phrase",
+      "part_of_speech": "expression",
       "translations": [
-        "room",
-        "hall"
+        "What time is it?"
+      ],
+      "breakdown": [
+        {
+          "text": "Quelle",
+          "gloss": "what"
+        },
+        {
+          "text": "heure",
+          "gloss": "hour/time"
+        },
+        {
+          "text": "est-il",
+          "gloss": "is it"
+        }
       ],
       "examples": [
-        "La salle de classe est grande et lumineuse."
+        "Quelle heure est-il maintenant?"
       ],
-      "category": "housing",
-      "difficulty": 3
-    },
-    {
-      "word": "samedi",
-      "translations": [
-        "Saturday"
-      ],
-      "examples": [
-        "Je me repose le samedi."
+      "example_translations": [
+        "What time is it now?"
       ],
       "category": "time",
+      "difficulty": 1
+    },
+    {
+      "word": "bleu",
+      "type": "word",
+      "part_of_speech": "adjective",
+      "translations": [
+        "blue"
+      ],
+      "examples": [
+        "J'aime cette voiture bleue."
+      ],
+      "example_translations": [
+        "I like this blue car."
+      ],
+      "category": "daily_routines",
+      "difficulty": 1
+    },
+    {
+      "word": "Je m'appelle",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "My name is",
+        "I am called"
+      ],
+      "breakdown": [
+        {
+          "text": "Je",
+          "gloss": "I"
+        },
+        {
+          "text": "m'appelle",
+          "gloss": "am called"
+        }
+      ],
+      "examples": [
+        "Je m'appelle Marie."
+      ],
+      "example_translations": [
+        "My name is Marie."
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "dimanche",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "Sunday"
+      ],
+      "examples": [
+        "Dimanche, je vais au parc."
+      ],
+      "example_translations": [
+        "On Sunday, I go to the park."
+      ],
+      "category": "time",
+      "difficulty": 1
+    },
+    {
+      "word": "sœur",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "sister"
+      ],
+      "examples": [
+        "Ma sœur s'appelle Marie."
+      ],
+      "example_translations": [
+        "My sister's name is Marie."
+      ],
+      "category": "family",
+      "difficulty": 1
+    },
+    {
+      "word": "faire les courses",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "to go shopping",
+        "to do the shopping"
+      ],
+      "breakdown": [
+        {
+          "text": "faire",
+          "gloss": "to do/make"
+        },
+        {
+          "text": "les",
+          "gloss": "the"
+        },
+        {
+          "text": "courses",
+          "gloss": "shopping"
+        }
+      ],
+      "examples": [
+        "Je vais faire les courses demain."
+      ],
+      "example_translations": [
+        "I'm going to go shopping tomorrow."
+      ],
+      "category": "shopping",
       "difficulty": 2
+    },
+    {
+      "word": "prendre",
+      "type": "grammar",
+      "part_of_speech": "verb",
+      "translations": [
+        "to take",
+        "to have (food/drink)"
+      ],
+      "breakdown": [
+        {
+          "text": "prendre",
+          "gloss": "to take"
+        }
+      ],
+      "base_form": "prendre",
+      "grammar_note": "infinitive form; common verb for ordering food/drink",
+      "examples": [
+        "Je prends un café, s'il vous plaît."
+      ],
+      "example_translations": [
+        "I'll have a coffee, please."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "travaille",
+      "type": "grammar",
+      "part_of_speech": "verb",
+      "translations": [
+        "works",
+        "is working"
+      ],
+      "breakdown": [
+        {
+          "text": "travaille",
+          "gloss": "works"
+        }
+      ],
+      "base_form": "travailler",
+      "grammar_note": "present tense, 3rd person singular",
+      "examples": [
+        "Il travaille dans un bureau."
+      ],
+      "example_translations": [
+        "He works in an office."
+      ],
+      "category": "work",
+      "difficulty": 2
+    },
+    {
+      "word": "autobus",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "bus"
+      ],
+      "examples": [
+        "Je prends l'autobus pour aller au travail."
+      ],
+      "example_translations": [
+        "I take the bus to go to work."
+      ],
+      "category": "transportation",
+      "difficulty": 1
+    },
+    {
+      "word": "Enchanté(e)",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "pleased to meet you",
+        "delighted"
+      ],
+      "breakdown": [
+        {
+          "text": "Enchanté",
+          "gloss": "delighted/pleased"
+        }
+      ],
+      "examples": [
+        "Enchanté de vous rencontrer!"
+      ],
+      "example_translations": [
+        "Pleased to meet you!"
+      ],
+      "category": "greetings",
+      "difficulty": 2
+    },
+    {
+      "word": "malade",
+      "type": "word",
+      "part_of_speech": "adjective",
+      "translations": [
+        "sick",
+        "ill"
+      ],
+      "examples": [
+        "Je suis malade aujourd'hui."
+      ],
+      "example_translations": [
+        "I am sick today."
+      ],
+      "category": "health",
+      "difficulty": 1
+    },
+    {
+      "word": "nuageux",
+      "type": "word",
+      "part_of_speech": "adjective",
+      "translations": [
+        "cloudy"
+      ],
+      "examples": [
+        "Le ciel est nuageux aujourd'hui."
+      ],
+      "example_translations": [
+        "The sky is cloudy today."
+      ],
+      "category": "weather",
+      "difficulty": 2
+    },
+    {
+      "word": "maison",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "house",
+        "home"
+      ],
+      "examples": [
+        "J'habite dans une maison verte."
+      ],
+      "example_translations": [
+        "I live in a green house."
+      ],
+      "category": "housing",
+      "difficulty": 1
+    },
+    {
+      "word": "pomme",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "apple"
+      ],
+      "examples": [
+        "Je mange une pomme rouge."
+      ],
+      "example_translations": [
+        "I eat a red apple."
+      ],
+      "category": "food",
+      "difficulty": 1
+    },
+    {
+      "word": "Excusez-moi",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "Excuse me",
+        "Sorry"
+      ],
+      "breakdown": [
+        {
+          "text": "Excusez",
+          "gloss": "excuse (formal)"
+        },
+        {
+          "text": "moi",
+          "gloss": "me"
+        }
+      ],
+      "examples": [
+        "Excusez-moi, où est la gare?"
+      ],
+      "example_translations": [
+        "Excuse me, where is the train station?"
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "Quel âge avez-vous?",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "How old are you?"
+      ],
+      "breakdown": [
+        {
+          "text": "Quel",
+          "gloss": "What/Which"
+        },
+        {
+          "text": "âge",
+          "gloss": "age"
+        },
+        {
+          "text": "avez-vous",
+          "gloss": "do you have (formal)"
+        }
+      ],
+      "examples": [
+        "Quel âge avez-vous?"
+      ],
+      "example_translations": [
+        "How old are you?"
+      ],
+      "category": "greetings",
+      "difficulty": 2
+    },
+    {
+      "word": "parlant",
+      "type": "grammar",
+      "part_of_speech": "verb",
+      "translations": [
+        "speaking (present participle of parler)"
+      ],
+      "base_form": "parler",
+      "grammar_note": "present participle, used to describe ongoing action",
+      "breakdown": [
+        {
+          "text": "parlant",
+          "gloss": "speaking"
+        }
+      ],
+      "examples": [
+        "En parlant avec elle, j'ai appris beaucoup."
+      ],
+      "example_translations": [
+        "While speaking with her, I learned a lot."
+      ],
+      "category": "daily_routines",
+      "difficulty": 3
     }
   ]
 }
