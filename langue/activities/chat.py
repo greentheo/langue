@@ -65,6 +65,13 @@ class ChatActivity(Activity):
         self.turns_count = 0
         self.max_turns = 20  # Fallback limit in case duration isn't reached
 
+        # Beginner-support state.
+        self.native_language = "English"
+        # Show English translations automatically at beginner levels (A1/A2).
+        self.show_translations = self.level in ("a1", "a2")
+        self.last_ai_message = ""      # most recent instructor line (for /t)
+        self._translation_cache = {}   # avoid re-translating the same line
+
     @property
     def name(self) -> str:
         """Get the name of the activity.
@@ -137,6 +144,136 @@ class ChatActivity(Activity):
                 kind="unknown",
             ) from e
 
+    # ------------------------------------------------------------------
+    # Beginner-support helpers (translation, hints, in-chat commands)
+    # ------------------------------------------------------------------
+
+    def _is_beginner(self) -> bool:
+        """True for A1/A2 learners, who get simpler instructor language + aids."""
+        return self.level in ("a1", "a2")
+
+    def _translate_to_native(self, text: str) -> str:
+        """Translate an instructor line into the learner's native language."""
+        text = (text or "").strip()
+        if not text:
+            return ""
+        if text in self._translation_cache:
+            return self._translation_cache[text]
+        try:
+            result = self.model.get_response(
+                prompt=(
+                    f"Translate this {self.language} text into {self.native_language}. "
+                    f"Return ONLY the translation, with no quotes or notes:\n\n{text}"
+                ),
+                temperature=0.0,
+            ).strip()
+        except ModelError as e:
+            result = f"[translation unavailable: {e}]"
+        self._translation_cache[text] = result
+        return result
+
+    def _show_translation(self, text: str) -> None:
+        """Print the native-language translation of a line, dimmed and indented."""
+        translation = self._translate_to_native(text)
+        if translation:
+            console.print(
+                f"[dim {SYNTHWAVE_THEME['secondary']}]  ↳ {translation}"
+                f"[/dim {SYNTHWAVE_THEME['secondary']}]"
+            )
+
+    def _suggest_replies(self) -> None:
+        """Show 2-3 example replies (target language + translation) the learner could give."""
+        if not self.last_ai_message:
+            console.print(f"[dim]Nothing to respond to yet.[/dim]")
+            return
+        try:
+            raw = self.model.get_response(
+                prompt=(
+                    f"A learner is practicing {self.language} at {self.level.upper()} level. "
+                    f"The assistant just said: \"{self.last_ai_message}\". "
+                    f"Suggest 2-3 short, natural replies the learner could give, in {self.language}. "
+                    f"Put each on its own line formatted exactly as: "
+                    f"<reply in {self.language}> = <{self.native_language} translation>. "
+                    "No numbering and no extra commentary."
+                ),
+                temperature=0.5,
+            )
+        except ModelError as e:
+            console.print(Panel(str(e), title="【ＨＩＮＴ】", border_style=PANEL_BORDER_STYLE))
+            return
+        body = Text()
+        body.append("You could try saying:\n", style="bold")
+        shown = 0
+        for line in raw.splitlines():
+            if "=" not in line:
+                continue
+            target, _, native = line.strip().lstrip("-•* ").partition("=")
+            target, native = target.strip(), native.strip()
+            if not target:
+                continue
+            body.append(f"  • {target}", style="cyan")
+            body.append(f"  ({native})\n", style="dim")
+            shown += 1
+            if shown >= 3:
+                break
+        console.print(Panel(body, title="【ＨＩＮＴＳ】", expand=False, border_style=PANEL_BORDER_STYLE))
+
+    def _explain_word(self, word: str) -> None:
+        """Explain a word or phrase to the learner in their native language."""
+        word = word.strip()
+        if not word:
+            console.print("[dim]Usage: /word <a word or phrase>[/dim]")
+            return
+        try:
+            explanation = self.model.get_response(
+                prompt=(
+                    f"Briefly explain the {self.language} word or phrase \"{word}\" to a "
+                    f"{self.level.upper()}-level learner, in {self.native_language}: its meaning "
+                    "and one short example. Keep it to 2-3 short sentences."
+                ),
+                temperature=0.3,
+            ).strip()
+        except ModelError as e:
+            explanation = str(e)
+        console.print(Panel(explanation, title=f"【 {word} 】", expand=False, border_style=PANEL_BORDER_STYLE))
+
+    def _show_chat_help(self) -> None:
+        """List the in-conversation commands."""
+        help_text = Text()
+        help_text.append("Conversation commands:\n", style="bold")
+        commands = [
+            ("/t", f"translate the assistant's last message to {self.native_language}"),
+            ("/hint", "suggest replies you could give"),
+            ("/word <x>", "explain a word or phrase"),
+            ("/bilingual", "toggle automatic translations on/off"),
+            ("/help", "show this help"),
+            ("quit", "end the conversation"),
+        ]
+        for cmd, desc in commands:
+            help_text.append(f"  {cmd}", style="cyan")
+            help_text.append(f" — {desc}\n")
+        console.print(Panel(help_text, title="【ＨＥＬＰ】", expand=False, border_style=PANEL_BORDER_STYLE))
+
+    def _handle_command(self, text: str) -> bool:
+        """Handle a slash command. Returns True if the input was a command (not a turn)."""
+        stripped = text.strip()
+        low = stripped.lower()
+        if low in ("/t", "/en", "/translate"):
+            self._show_translation(self.last_ai_message)
+        elif low in ("/hint", "/h", "/suggest"):
+            self._suggest_replies()
+        elif low in ("/bilingual", "/b"):
+            self.show_translations = not self.show_translations
+            state = "on" if self.show_translations else "off"
+            console.print(f"[{SYNTHWAVE_THEME['accent']}]Automatic translations: {state}[/{SYNTHWAVE_THEME['accent']}]")
+        elif low.startswith("/word") or low.startswith("/w "):
+            self._explain_word(stripped.split(" ", 1)[1] if " " in stripped else "")
+        elif low in ("/help", "/?"):
+            self._show_chat_help()
+        else:
+            return False
+        return True
+
     def _get_level_from_difficulty(self, difficulty: int) -> str:
         """Convert difficulty (1-5) to CEFR level (A1-C2).
 
@@ -172,7 +309,9 @@ class ChatActivity(Activity):
             4: "B2",
             5: "C1"
         }
-        cefr_level = cefr_levels.get(self.difficulty, "B1")
+        # Honor the learner's actual CEFR level (A1-C2). This previously derived
+        # the level from difficulty and capped it at C1, ignoring self.level.
+        cefr_level = self.level.upper()
 
         # Character specification
         character_prompt = ""
@@ -195,6 +334,17 @@ class ChatActivity(Activity):
             "\n5. If the user makes mistakes, provide corrections based on the correction mode."
             "\n\nFor your first message, introduce yourself briefly and ask an open-ended question to start the conversation."
         )
+
+        # At beginner levels, force genuinely simple, comprehensible instructor
+        # language so an A1/A2 learner can actually follow along.
+        if self._is_beginner():
+            system_prompt += (
+                f"\n\nIMPORTANT — the learner is a BEGINNER ({cefr_level}). "
+                "Use very short sentences (about 5-8 words). Use only the most common, "
+                "basic words. Say ONE thing at a time. Prefer simple yes/no or either/or "
+                "questions over open-ended ones. Speak slowly and clearly, as if talking "
+                "to someone who knows very little of the language."
+            )
 
         # Set correction instructions based on mode
         if self.correction_mode == "gentle":
@@ -350,8 +500,17 @@ class ChatActivity(Activity):
 
             console.print(Panel(vocab_text, title="【ＶＯＣＡＢＵＬＡＲＹ】", expand=False, border_style=PANEL_BORDER_STYLE))
 
-        # Display AI's greeting
+        # Display AI's greeting (plus a translation for beginners).
         console.print(f"\n[bold {SYNTHWAVE_THEME['secondary']}]【ＡＳＳＩＳＴＡＮＴ】[/bold {SYNTHWAVE_THEME['secondary']}] {greeting}")
+        self.last_ai_message = greeting
+        if self.show_translations:
+            self._show_translation(greeting)
+
+        # Tell the learner about the in-conversation helpers.
+        console.print(
+            f"[dim {SYNTHWAVE_THEME['accent']}]Tip: /t translate · /hint reply ideas · "
+            f"/word <x> explain · /bilingual toggle · /help[/dim {SYNTHWAVE_THEME['accent']}]"
+        )
 
         # Track turns
         self.turns_count = 1
@@ -460,12 +619,20 @@ class ChatActivity(Activity):
                     # Get user input
                     user_input = console.input(f"\n[bold {SYNTHWAVE_THEME['highlight']}]【ＹＯＵ】[/bold {SYNTHWAVE_THEME['highlight']}] ")
 
+                    # In-conversation commands (/t, /hint, /word, ...) are helpers,
+                    # not a conversational turn — handle and re-prompt.
+                    if self._handle_command(user_input):
+                        continue
+
                     # Process input and get AI response
                     continuing, ai_response = self.process_response(user_input, content)
 
                     if continuing:
-                        # Display AI response
+                        # Display AI response (plus a translation for beginners)
                         console.print(f"\n[bold {SYNTHWAVE_THEME['secondary']}]【ＡＳＳＩＳＴＡＮＴ】[/bold {SYNTHWAVE_THEME['secondary']}] {ai_response}")
+                        self.last_ai_message = ai_response
+                        if self.show_translations:
+                            self._show_translation(ai_response)
 
                         # Award points for each turn
                         self.points_earned += 2
