@@ -44,7 +44,7 @@ class ConfigManager:
         try:
             # Load settings from file
             config_data = toml.load(self.config_file)
-            return Settings.parse_obj(config_data)
+            return Settings.model_validate(config_data)
         except Exception as e:
             print(f"Error loading configuration: {e}")
             print("Loading default settings instead.")
@@ -60,7 +60,10 @@ class ConfigManager:
 
         try:
             # Convert settings to dict and save as TOML
-            settings_dict = settings_to_save.dict()
+            settings_dict = settings_to_save.model_dump()
+
+            # Never persist secrets to disk — API keys come from the environment.
+            self._redact_secrets(settings_dict)
 
             # Convert Path objects to strings
             self._convert_paths_to_strings(settings_dict)
@@ -74,6 +77,18 @@ class ConfigManager:
 
         except Exception as e:
             print(f"Error saving configuration: {e}")
+
+    def _redact_secrets(self, config_dict: Dict[str, Any]) -> None:
+        """Blank out secret fields (API keys) so they are never written to disk.
+
+        Args:
+            config_dict: Configuration dictionary to process (mutated in place).
+        """
+        for key, value in config_dict.items():
+            if isinstance(value, dict):
+                self._redact_secrets(value)
+            elif key == "api_key" and value:
+                config_dict[key] = ""
 
     def _convert_paths_to_strings(self, config_dict: Dict[str, Any]) -> None:
         """Convert Path objects to strings in the config dictionary.

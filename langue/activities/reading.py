@@ -13,6 +13,7 @@ from rich.console import Console
 from rich.panel import Panel
 from rich.text import Text
 from rich.markdown import Markdown
+from rich.table import Table
 
 from langue.activities.base import Activity
 from langue.models.base import ModelInterface
@@ -120,6 +121,87 @@ class ReadingActivity(Activity):
             5: "c1"
         }
         return level_map.get(difficulty, "a1")
+
+    def start(self) -> None:
+        """Run the reading activity: one passage at a time, all its questions.
+
+        Overrides the base loop, which would otherwise generate a brand-new
+        passage for every question and only ever use the first one.
+        """
+        # Header + instructions (mirrors the base activity styling)
+        console.print(Panel(
+            f"[bold {SYNTHWAVE_THEME['primary']}]【{self.name.upper()}】[/bold {SYNTHWAVE_THEME['primary']}]",
+            subtitle=f"Difficulty: {self.difficulty}",
+            border_style=PANEL_BORDER_STYLE
+        ))
+        console.print(f"Language: [{SYNTHWAVE_THEME['secondary']}]{self.language}[/{SYNTHWAVE_THEME['secondary']}]\n")
+        console.print(
+            f"[bold {SYNTHWAVE_THEME['accent']}]【ＩＮＳＴＲＵＣＴＩＯＮＳ】[/bold {SYNTHWAVE_THEME['accent']}] "
+            f"{self.get_instructions()}\n"
+        )
+
+        passage_num = 0
+        reading = True
+        while reading:
+            passage_num += 1
+            console.print(
+                f"\n[bold {SYNTHWAVE_THEME['primary']}]【ＰＡＳＳＡＧＥ {passage_num}】"
+                f"[/bold {SYNTHWAVE_THEME['primary']}]\n"
+            )
+
+            # Generate one passage and present it (passage, vocab, first question).
+            content = self.generate_content()
+            self.present_challenge(content)
+            questions = content.get("questions", [])
+
+            if not questions:
+                console.print(
+                    f"[{SYNTHWAVE_THEME['accent']}]No questions were generated for this "
+                    f"passage.[/{SYNTHWAVE_THEME['accent']}]"
+                )
+
+            # Walk through every question in this passage. process_response scores
+            # the current question and presents the next one as a side effect.
+            while self.current_question_index < len(questions):
+                try:
+                    user_input = console.input(
+                        f"\n[bold {SYNTHWAVE_THEME['secondary']}]【ＹＯＵＲ　ＡＮＳＷＥＲ】"
+                        f"[/bold {SYNTHWAVE_THEME['secondary']}] "
+                    )
+                except (EOFError, KeyboardInterrupt):
+                    console.print(
+                        f"\n[{SYNTHWAVE_THEME['accent']}]Reading session ended."
+                        f"[/{SYNTHWAVE_THEME['accent']}]"
+                    )
+                    reading = False
+                    break
+
+                is_correct, feedback = self.process_response(user_input, content)
+                if is_correct:
+                    console.print(
+                        f"\n[bold {SYNTHWAVE_THEME['highlight']}]★ ＣＯＲＲＥＣＴ! ★"
+                        f"[/bold {SYNTHWAVE_THEME['highlight']}] {feedback}"
+                    )
+                    self.points_earned += 5
+                else:
+                    console.print(
+                        f"\n[bold {SYNTHWAVE_THEME['primary']}]✖ ＮＯＴ　ＱＵＩＴＥ ✖"
+                        f"[/bold {SYNTHWAVE_THEME['primary']}] {feedback}"
+                    )
+                    self.points_earned += 1
+
+            # Offer another passage.
+            if reading:
+                try:
+                    again = console.input(
+                        f"\n[{SYNTHWAVE_THEME['accent']}]Read another passage? (y/N)"
+                        f"[/{SYNTHWAVE_THEME['accent']}] "
+                    )
+                except (EOFError, KeyboardInterrupt):
+                    again = "n"
+                reading = again.strip().lower().startswith("y")
+
+        self._show_summary()
 
     def generate_content(self) -> Dict[str, Any]:
         """Generate reading comprehension content using the language model.
@@ -325,7 +407,8 @@ class ReadingActivity(Activity):
             }
 
         except Exception as e:
-            # Return fallback content in case of error
+            # NOTE: this still masks model failures with placeholder content;
+            # honest ModelError propagation for reading is tracked in #7/#14.
             console.print(f"[red]Error generating reading comprehension: {str(e)}[/red]")
             return {
                 "passage": f"[Error generating {self.language} passage]",

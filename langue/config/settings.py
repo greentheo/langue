@@ -7,9 +7,15 @@ This module provides the Settings class, which represents the application config
 import os
 from pathlib import Path
 from typing import Dict, List, Optional, Union, Any
-from pydantic import BaseModel, Field, root_validator
+from pydantic import BaseModel, Field, ConfigDict, model_validator
 
 from langue.models.registry import DEFAULT_CLAUDE_MODEL
+
+# Map a provider name to the environment variable that holds its API key.
+API_KEY_ENV_VARS = {
+    "claude": "ANTHROPIC_API_KEY",
+    "openai": "OPENAI_API_KEY",
+}
 
 
 class ModelSettings(BaseModel):
@@ -24,8 +30,9 @@ class ModelSettings(BaseModel):
     model_name: str = "default"
     api_url: Optional[str] = None
 
-    class Config:
-        extra = "allow"  # Allow for model-specific extra fields
+    # extra="allow" for model-specific fields; protected_namespaces=() silences
+    # Pydantic v2's warning about the model_name field.
+    model_config = ConfigDict(extra="allow", protected_namespaces=())
 
 
 class OllamaSettings(ModelSettings):
@@ -35,13 +42,15 @@ class OllamaSettings(ModelSettings):
     model_name: str = "llama3.2"
     context_window: int = 4096
 
-    @root_validator(pre=True)
+    @model_validator(mode="before")
+    @classmethod
     def load_from_env(cls, values):
         """Load settings from environment variables."""
-        if "OLLAMA_MODEL" in os.environ:
-            values["model_name"] = os.environ["OLLAMA_MODEL"]
-        if "OLLAMA_SERVER" in os.environ:
-            values["server"] = os.environ["OLLAMA_SERVER"]
+        if isinstance(values, dict):
+            if "OLLAMA_MODEL" in os.environ:
+                values["model_name"] = os.environ["OLLAMA_MODEL"]
+            if "OLLAMA_SERVER" in os.environ:
+                values["server"] = os.environ["OLLAMA_SERVER"]
         return values
 
 
@@ -59,8 +68,7 @@ class ActivitySettings(BaseModel):
     difficulty: int = Field(1, ge=1, le=5)
     auto_reveal: int = 0  # Time in seconds before showing answer (0 for manual)
 
-    class Config:
-        extra = "allow"  # Allow for activity-specific extra fields
+    model_config = ConfigDict(extra="allow")  # activity-specific extra fields
 
 
 class LanguageSettings(BaseModel):
@@ -117,8 +125,7 @@ class Settings(BaseModel):
     max_cache_size: int = 100  # MB
     proxy: Optional[str] = None
 
-    class Config:
-        extra = "allow"
+    model_config = ConfigDict(extra="allow")
 
     def get_model_settings(self, model_name: Optional[str] = None) -> ModelSettings:
         """Get settings for the specified model or the primary model."""
@@ -148,14 +155,15 @@ class Settings(BaseModel):
         """Get API key for the specified model from settings or environment."""
         model = model_name or self.primary_model
 
-        # Try to get from environment first
-        env_var = f"{model.upper()}_API_KEY"
-        if env_var in os.environ:
+        # Try the environment first, using the provider's real env var name
+        # (e.g. claude -> ANTHROPIC_API_KEY, not CLAUDE_API_KEY).
+        env_var = API_KEY_ENV_VARS.get(model, f"{model.upper()}_API_KEY")
+        if os.environ.get(env_var):
             return os.environ[env_var]
 
-        # Fall back to settings
+        # Fall back to any key persisted in settings.
         model_settings = self.get_model_settings(model)
-        return model_settings.api_key
+        return getattr(model_settings, "api_key", None)
 
 
 def load_default_settings() -> Settings:
