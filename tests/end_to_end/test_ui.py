@@ -53,18 +53,15 @@ class TestUI(unittest.TestCase):
             self.assertIsNotNone(parsed_color)
 
     def test_questionary_style(self):
-        """Test that the questionary style is valid."""
-        # Extract the styles from RETRO_STYLE
-        styles = RETRO_STYLE._values
+        """Test that RETRO_STYLE is a valid questionary Style with the expected rules."""
+        import questionary
+        self.assertIsInstance(RETRO_STYLE, questionary.Style)
 
-        # Check that each key has a valid style string
+        # prompt_toolkit exposes parsed rules as (class_name, style) tuples.
+        rule_names = {name for name, _ in RETRO_STYLE.style_rules}
         required_keys = ['qmark', 'question', 'answer', 'pointer', 'highlighted', 'selected']
-
-        # RETRO_STYLE is an instance of questionary.Style which changed its interface
-        # We'll just verify that the required keys are present in the string representation
-        style_str = str(RETRO_STYLE)
         for key in required_keys:
-            self.assertIn(key, style_str)
+            self.assertIn(key, rule_names)
 
     @patch('questionary.select')
     def test_menu_selection(self, mock_select):

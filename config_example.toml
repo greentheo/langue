@@ -1,129 +1,84 @@
-# Langue Configuration File
+# Langue configuration example.
+#
+# Copy to ~/.config/langue/config.toml and edit. The keys below match Langue's
+# actual settings schema, so they take effect (older example files used a
+# different layout that was silently ignored).
+#
+# API keys are NOT stored here — put them in a .env file or your environment:
+#   ANTHROPIC_API_KEY=...   (for the Claude backend)
+#   OPENAI_API_KEY=...      (if using OpenAI)
 
-###############################
-# General Settings
-###############################
-[general]
-# Default language for learning
+# --- General ---
 default_language = "Spanish"
-# Available themes: "default", "dark", "light", "colorful"
-theme = "default"
-# Automatically check for updates on startup
+theme = "default"          # "default", "dark", "light", "colorful"
 check_updates = true
-# Save session data for analytics (local only)
 save_analytics = true
+prompt_for_model = true    # prompt for model selection on first run
 
-###############################
-# User Profile
-###############################
-[user]
-# Your username
+# --- User profile ---
 username = "language_learner"
-# Your learning level (1-5)
-# 1: Beginner, 2: Elementary, 3: Intermediate, 4: Advanced, 5: Proficient
-level = 1
-# Daily learning goal (in minutes)
-daily_goal = 15
+level = 1                  # 1 Beginner ... 5 Proficient
+daily_goal = 15            # minutes
 
-###############################
-# Model Settings
-###############################
-[model]
-# Primary model to use
-# Options: "ollama", "claude", "openai", etc.
-primary = "ollama"
-# Fallback model if primary is unavailable
-fallback = "claude"
-# Model temperature (0.0-1.0)
-# Lower values = more deterministic responses
-# Higher values = more creative responses
-temperature = 0.7
+# --- Model selection ---
+primary_model = "claude"   # "ollama", "claude", or "openai"
+fallback_model = "ollama"
 
-# Ollama-specific settings
-[model.ollama]
-# Server address
+# --- Advanced ---
+debug = false
+log_level = "info"         # "error", "warning", "info", "debug"
+cache_dir = "~/.cache/langue"
+max_cache_size = 100       # MB
+
+# --- Local model (Ollama) ---
+[ollama]
 server = "http://localhost:11434"
-# Default model to use
-# Will be auto-populated with available models when first run
-model = "llama3"
-# Context window size
+model_name = "llama3.2"    # or any installed Ollama model
 context_window = 4096
-
-# Claude-specific settings
-[model.claude]
-# API key
-api_key = "your_claude_api_key_here"
-# Model version
-model = "claude-haiku-4-5"
-# Max tokens to generate
+temperature = 0.7
 max_tokens = 1000
 
-# OpenAI-specific settings
-[model.openai]
-# API key
-api_key = "your_openai_api_key_here"
-# Model version
-model = "gpt-3.5-turbo"
-# Max tokens to generate
+# --- Claude (cloud) --- key comes from ANTHROPIC_API_KEY in your environment
+[claude]
+model_name = "claude-haiku-4-5"
+temperature = 0.7
 max_tokens = 1000
 
-###############################
-# Activity Settings
-###############################
-[activities]
-# Number of items per session for each activity type
+# --- OpenAI (cloud) --- key comes from OPENAI_API_KEY in your environment
+[openai]
+model_name = "gpt-4o-mini"
+temperature = 0.7
+max_tokens = 1000
+
+# --- Activities --- items_per_session, difficulty (1-5), auto_reveal (seconds)
 [activities.flashcards]
 items_per_session = 10
-# Time in seconds before showing answer (0 for manual reveal)
+difficulty = 1
 auto_reveal = 0
 
 [activities.fill_blank]
 items_per_session = 5
-# Difficulty level (1-3)
 difficulty = 1
 
 [activities.chat]
-# Chat session duration in minutes
-duration = 10
-# Chat complexity level (1-5)
-# 1: Very simple sentences, 2: Simple, 3: Moderate, 4: Advanced, 5: Native-like
-complexity = 1
+items_per_session = 1
+difficulty = 1
 
-###############################
-# Progress Tracking
-###############################
-[progress]
-# Save progress to file
-save_progress = true
-# Show progress summary after each session
-show_summary = true
-# Remind of streak status
-streak_reminder = true
+[activities.reading]
+items_per_session = 3
+difficulty = 1
 
-###############################
-# Language-Specific Settings
-###############################
+[activities.translation]
+items_per_session = 5
+difficulty = 1
+
+# --- Language-specific settings ---
 [languages.Spanish]
-# Focus areas: "vocabulary", "grammar", "conversation", "reading", "all"
-focus = "all"
-# Dialect preference (if applicable)
+focus = "all"              # "vocabulary", "grammar", "conversation", "reading", "all"
 dialect = "Spain"
+custom_vocabulary = []
 
 [languages.French]
 focus = "vocabulary"
 dialect = "France"
-
-###############################
-# Advanced Settings
-###############################
-[advanced]
-# Debug mode
-debug = false
-# Log level: "error", "warn", "info", "debug"
-log_level = "info"
-# Cache directory
-cache_dir = "~/.cache/langue"
-# Max cache size in MB
-max_cache_size = 100
-# Proxy URL (if needed)
-proxy = ""
+custom_vocabulary = []
