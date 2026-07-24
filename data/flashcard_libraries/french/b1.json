@@ -3,1254 +3,1635 @@
     "language": "french",
     "level": "b1",
     "version": "1.0",
-    "word_count": 96,
-    "created_at": "2025-09-11T23:03:55.741767",
+    "word_count": 70,
+    "created_at": "2026-07-24T03:20:16.731574+00:00",
     "description": "Common B1 level French vocabulary"
   },
   "words": [
     {
-      "word": "aborder",
+      "word": "métier",
+      "type": "word",
+      "part_of_speech": "noun",
       "translations": [
-        "to approach",
-        "to tackle",
-        "to deal with"
+        "profession",
+        "trade",
+        "craft"
       ],
       "examples": [
-        "J'ai décidé d'aborder le sujet délicat avec mon patron."
+        "Mon métier est infirmier."
+      ],
+      "example_translations": [
+        "My profession is nursing."
       ],
       "category": "work",
-      "difficulty": 3
-    },
-    {
-      "word": "accueillir",
-      "translations": [
-        "to welcome",
-        "to host",
-        "to receive"
-      ],
-      "examples": [
-        "L'hôtel a accueilli de nombreux touristes pendant les vacances."
-      ],
-      "category": "travel",
       "difficulty": 2
     },
     {
-      "word": "admirer",
+      "word": "pouvoir",
+      "type": "word",
+      "part_of_speech": "verb",
       "translations": [
-        "to admire",
-        "to appreciate",
-        "to marvel at"
+        "can",
+        "to be able to",
+        "may"
       ],
       "examples": [
-        "J'admire le talent de cet artiste pour ses œuvres magnifiques."
+        "Je peux t'aider."
       ],
-      "category": "arts",
-      "difficulty": 3
-    },
-    {
-      "word": "adresser",
-      "translations": [
-        "to address",
-        "to send to",
-        "to direct"
+      "example_translations": [
+        "I can help you."
       ],
-      "examples": [
-        "Je vais adresser ma lettre de démission à mon employeur."
-      ],
-      "category": "work",
-      "difficulty": 3
-    },
-    {
-      "word": "afficher",
-      "translations": [
-        "to display",
-        "to show",
-        "to post"
-      ],
-      "examples": [
-        "L'entreprise a affiché ses nouveaux horaires d'ouverture."
-      ],
-      "category": "work",
-      "difficulty": 3
-    },
-    {
-      "word": "aimer",
-      "translations": [
-        "to like",
-        "to love",
-        "to enjoy"
-      ],
-      "examples": [
-        "J'aime beaucoup voyager et découvrir de nouveaux endroits."
-      ],
-      "category": "emotions",
+      "category": "daily_routines",
       "difficulty": 2
     },
     {
-      "word": "ajouter",
+      "word": "devoir",
+      "type": "word",
+      "part_of_speech": "verb",
       "translations": [
-        "to add",
-        "to include",
-        "to put in"
+        "must",
+        "to have to",
+        "to owe"
       ],
       "examples": [
-        "Je vais ajouter quelques épices pour donner plus de saveur à ce plat."
+        "Tu dois finir tes devoirs."
+      ],
+      "example_translations": [
+        "You must finish your homework."
+      ],
+      "category": "education",
+      "difficulty": 2
+    },
+    {
+      "word": "rencontrer",
+      "type": "word",
+      "part_of_speech": "verb",
+      "translations": [
+        "to meet",
+        "to encounter"
+      ],
+      "examples": [
+        "J'ai rencontré mon ami au café."
+      ],
+      "example_translations": [
+        "I met my friend at the café."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2
+    },
+    {
+      "word": "intéressant",
+      "type": "word",
+      "part_of_speech": "adjective",
+      "translations": [
+        "interesting"
+      ],
+      "examples": [
+        "Ce film est très intéressant."
+      ],
+      "example_translations": [
+        "This film is very interesting."
+      ],
+      "category": "leisure",
+      "difficulty": 2
+    },
+    {
+      "word": "difficile",
+      "type": "word",
+      "part_of_speech": "adjective",
+      "translations": [
+        "difficult",
+        "hard"
+      ],
+      "examples": [
+        "Les mathématiques sont difficiles."
+      ],
+      "example_translations": [
+        "Mathematics is difficult."
+      ],
+      "category": "education",
+      "difficulty": 2
+    },
+    {
+      "word": "Je voudrais",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "I would like",
+        "I'd like"
+      ],
+      "breakdown": [
+        {
+          "text": "Je",
+          "gloss": "I"
+        },
+        {
+          "text": "voudrais",
+          "gloss": "would like (conditional form of vouloir)"
+        }
+      ],
+      "examples": [
+        "Je voudrais un café, s'il vous plaît."
+      ],
+      "example_translations": [
+        "I would like a coffee, please."
       ],
       "category": "food",
       "difficulty": 2
     },
     {
-      "word": "annoncer",
+      "word": "à bientôt",
+      "type": "phrase",
+      "part_of_speech": "expression",
       "translations": [
-        "to announce",
-        "to declare",
-        "to inform"
+        "see you soon",
+        "goodbye"
+      ],
+      "breakdown": [
+        {
+          "text": "à",
+          "gloss": "to/at"
+        },
+        {
+          "text": "bientôt",
+          "gloss": "soon"
+        }
       ],
       "examples": [
-        "Le directeur a annoncé de nouveaux changements dans l'entreprise."
+        "À bientôt! On se voit demain."
       ],
-      "category": "work",
-      "difficulty": 3
+      "example_translations": [
+        "See you soon! We'll see each other tomorrow."
+      ],
+      "category": "greetings",
+      "difficulty": 1
     },
     {
-      "word": "apercevoir",
+      "word": "faire un voyage",
+      "type": "phrase",
+      "part_of_speech": "expression",
       "translations": [
-        "to notice",
-        "to catch sight of",
-        "to spot"
+        "to take a trip",
+        "to travel"
+      ],
+      "breakdown": [
+        {
+          "text": "faire",
+          "gloss": "to make/do"
+        },
+        {
+          "text": "un",
+          "gloss": "a"
+        },
+        {
+          "text": "voyage",
+          "gloss": "trip/journey"
+        }
       ],
       "examples": [
-        "J'ai aperçu un beau coucher de soleil depuis ma fenêtre."
+        "Nous allons faire un voyage en Italie cet été."
       ],
-      "category": "nature",
-      "difficulty": 3
-    },
-    {
-      "word": "apporter",
-      "translations": [
-        "to bring",
-        "to carry",
-        "to provide"
-      ],
-      "examples": [
-        "Pouvez-vous apporter votre ordinateur portable à la réunion ?"
-      ],
-      "category": "work",
-      "difficulty": 2
-    },
-    {
-      "word": "apprendre",
-      "translations": [
-        "to learn",
-        "to find out",
-        "to acquire"
-      ],
-      "examples": [
-        "J'apprends le français depuis quelques mois et je fais des progrès."
-      ],
-      "category": "education",
-      "difficulty": 3
-    },
-    {
-      "word": "approcher",
-      "translations": [
-        "to approach",
-        "to come near",
-        "to get close"
-      ],
-      "examples": [
-        "Le train approche de la gare, il est temps de monter."
-      ],
-      "category": "transportation",
-      "difficulty": 3
-    },
-    {
-      "word": "arrêter",
-      "translations": [
-        "to stop",
-        "to halt",
-        "to discontinue"
-      ],
-      "examples": [
-        "Il faut arrêter de fumer pour préserver sa santé."
-      ],
-      "category": "health",
-      "difficulty": 2
-    },
-    {
-      "word": "arriver",
-      "translations": [
-        "to arrive",
-        "to reach",
-        "to get to"
-      ],
-      "examples": [
-        "Je suis arrivé en retard à la réunion à cause de la circulation."
+      "example_translations": [
+        "We are going to take a trip to Italy this summer."
       ],
       "category": "travel",
       "difficulty": 2
     },
     {
-      "word": "aspirer",
+      "word": "Combien ça coûte?",
+      "type": "phrase",
+      "part_of_speech": "expression",
       "translations": [
-        "to aspire",
-        "to desire",
-        "to aim for"
+        "How much does it cost?",
+        "How much is it?"
+      ],
+      "breakdown": [
+        {
+          "text": "Combien",
+          "gloss": "How much"
+        },
+        {
+          "text": "ça",
+          "gloss": "it/that"
+        },
+        {
+          "text": "coûte",
+          "gloss": "costs"
+        }
       ],
       "examples": [
-        "J'aspire à une meilleure qualité de vie et plus de stabilité."
+        "Combien ça coûte, cette robe?"
       ],
-      "category": "emotions",
+      "example_translations": [
+        "How much is this dress?"
+      ],
+      "category": "shopping",
+      "difficulty": 1
+    },
+    {
+      "word": "avoir sommeil",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "to be sleepy",
+        "to be tired"
+      ],
+      "breakdown": [
+        {
+          "text": "avoir",
+          "gloss": "to have"
+        },
+        {
+          "text": "sommeil",
+          "gloss": "sleep"
+        }
+      ],
+      "examples": [
+        "J'ai sommeil, je vais me coucher."
+      ],
+      "example_translations": [
+        "I'm sleepy, I'm going to bed."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2
+    },
+    {
+      "word": "parlait",
+      "type": "grammar",
+      "part_of_speech": "verb",
+      "translations": [
+        "was speaking",
+        "used to speak",
+        "spoke"
+      ],
+      "base_form": "parler",
+      "grammar_note": "imperfect tense, 3rd person singular",
+      "breakdown": [
+        {
+          "text": "parl-",
+          "gloss": "speak (stem)"
+        },
+        {
+          "text": "-ait",
+          "gloss": "imperfect ending (3rd person singular)"
+        }
+      ],
+      "examples": [
+        "Quand j'ai appelé, il parlait au téléphone."
+      ],
+      "example_translations": [
+        "When I called, he was speaking on the phone."
+      ],
+      "category": "daily_routines",
+      "difficulty": 3
+    },
+    {
+      "word": "travailler",
+      "type": "word",
+      "part_of_speech": "verb",
+      "translations": [
+        "to work"
+      ],
+      "examples": [
+        "Elle travaille dans une banque."
+      ],
+      "example_translations": [
+        "She works in a bank."
+      ],
+      "category": "work",
+      "difficulty": 1
+    },
+    {
+      "word": "apprendre",
+      "type": "word",
+      "part_of_speech": "verb",
+      "translations": [
+        "to learn",
+        "to teach"
+      ],
+      "examples": [
+        "Je suis en train d'apprendre le français."
+      ],
+      "example_translations": [
+        "I am learning French."
+      ],
+      "category": "education",
+      "difficulty": 2
+    },
+    {
+      "word": "prendre un petit-déjeuner",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "to have breakfast",
+        "to eat breakfast"
+      ],
+      "breakdown": [
+        {
+          "text": "prendre",
+          "gloss": "to take/have"
+        },
+        {
+          "text": "un",
+          "gloss": "a"
+        },
+        {
+          "text": "petit-déjeuner",
+          "gloss": "breakfast"
+        }
+      ],
+      "examples": [
+        "Je prends un petit-déjeuner vers 7 heures chaque matin."
+      ],
+      "example_translations": [
+        "I have breakfast around 7 o'clock every morning."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "serait",
+      "type": "grammar",
+      "part_of_speech": "verb",
+      "translations": [
+        "would be"
+      ],
+      "base_form": "être",
+      "grammar_note": "conditional mood, 3rd person singular",
+      "breakdown": [
+        {
+          "text": "ser-",
+          "gloss": "be (stem)"
+        },
+        {
+          "text": "-ait",
+          "gloss": "conditional ending (3rd person singular)"
+        }
+      ],
+      "examples": [
+        "Si tu étudiais plus, ce serait plus facile."
+      ],
+      "example_translations": [
+        "If you studied more, it would be easier."
+      ],
+      "category": "education",
+      "difficulty": 3
+    },
+    {
+      "word": "joli",
+      "type": "word",
+      "part_of_speech": "adjective",
+      "translations": [
+        "pretty",
+        "nice",
+        "lovely"
+      ],
+      "examples": [
+        "Tu as une jolie maison."
+      ],
+      "example_translations": [
+        "You have a pretty house."
+      ],
+      "category": "housing",
+      "difficulty": 2
+    },
+    {
+      "word": "se sentir bien",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "to feel well",
+        "to feel good"
+      ],
+      "breakdown": [
+        {
+          "text": "se",
+          "gloss": "oneself (reflexive pronoun)"
+        },
+        {
+          "text": "sentir",
+          "gloss": "to feel"
+        },
+        {
+          "text": "bien",
+          "gloss": "well/good"
+        }
+      ],
+      "examples": [
+        "Je me sens bien aujourd'hui."
+      ],
+      "example_translations": [
+        "I feel well today."
+      ],
+      "category": "health",
+      "difficulty": 2
+    },
+    {
+      "word": "aurait eu",
+      "type": "grammar",
+      "part_of_speech": "verb",
+      "translations": [
+        "would have had"
+      ],
+      "base_form": "avoir",
+      "grammar_note": "conditional perfect, 3rd person singular",
+      "breakdown": [
+        {
+          "text": "aur-",
+          "gloss": "have (conditional stem)"
+        },
+        {
+          "text": "-ait",
+          "gloss": "conditional ending"
+        },
+        {
+          "text": "eu",
+          "gloss": "had (past participle of avoir)"
+        }
+      ],
+      "examples": [
+        "Si tu m'avais dit, j'aurais eu le temps de venir."
+      ],
+      "example_translations": [
+        "If you had told me, I would have had time to come."
+      ],
+      "category": "daily_routines",
       "difficulty": 4
     },
     {
-      "word": "assister",
+      "word": "rester",
+      "type": "word",
+      "part_of_speech": "verb",
       "translations": [
-        "to attend",
-        "to be present at",
-        "to witness"
+        "to stay",
+        "to remain"
       ],
       "examples": [
-        "J'ai assisté à une conférence très intéressante sur les nouvelles technologies."
+        "Nous restons à l'hôtel pendant une semaine."
+      ],
+      "example_translations": [
+        "We are staying at the hotel for a week."
+      ],
+      "category": "travel",
+      "difficulty": 2
+    },
+    {
+      "word": "quel dommage",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "what a shame",
+        "what a pity",
+        "too bad"
+      ],
+      "breakdown": [
+        {
+          "text": "quel",
+          "gloss": "what"
+        },
+        {
+          "text": "dommage",
+          "gloss": "shame/pity"
+        }
+      ],
+      "examples": [
+        "Quel dommage que tu ne puisses pas venir!"
+      ],
+      "example_translations": [
+        "What a shame that you can't come!"
+      ],
+      "category": "emotions",
+      "difficulty": 2
+    },
+    {
+      "word": "le métier",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "profession",
+        "trade",
+        "occupation"
+      ],
+      "examples": [
+        "Quel est ton métier?"
+      ],
+      "example_translations": [
+        "What is your profession?"
+      ],
+      "category": "work",
+      "difficulty": 2
+    },
+    {
+      "word": "améliorer",
+      "type": "word",
+      "part_of_speech": "verb",
+      "translations": [
+        "to improve",
+        "to enhance"
+      ],
+      "examples": [
+        "Je veux améliorer mon français."
+      ],
+      "example_translations": [
+        "I want to improve my French."
       ],
       "category": "education",
+      "difficulty": 2
+    },
+    {
+      "word": "le délai",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "deadline",
+        "time limit",
+        "delay"
+      ],
+      "examples": [
+        "Le délai pour ce projet est vendredi."
+      ],
+      "example_translations": [
+        "The deadline for this project is Friday."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "néanmoins",
+      "type": "word",
+      "part_of_speech": "adverb",
+      "translations": [
+        "nevertheless",
+        "however",
+        "still"
+      ],
+      "examples": [
+        "C'est difficile, néanmoins je vais essayer."
+      ],
+      "example_translations": [
+        "It's difficult, nevertheless I will try."
+      ],
+      "category": "daily_routines",
+      "difficulty": 3
+    },
+    {
+      "word": "la réunion",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "meeting"
+      ],
+      "examples": [
+        "La réunion commence à 14h."
+      ],
+      "example_translations": [
+        "The meeting starts at 2 p.m."
+      ],
+      "category": "work",
+      "difficulty": 2
+    },
+    {
+      "word": "avoir besoin de",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "to need",
+        "to require"
+      ],
+      "breakdown": [
+        {
+          "text": "avoir",
+          "gloss": "to have"
+        },
+        {
+          "text": "besoin",
+          "gloss": "need"
+        },
+        {
+          "text": "de",
+          "gloss": "of"
+        }
+      ],
+      "examples": [
+        "J'ai besoin de ton aide."
+      ],
+      "example_translations": [
+        "I need your help."
+      ],
+      "category": "daily_routines",
+      "difficulty": 1
+    },
+    {
+      "word": "en train de",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "in the process of",
+        "currently doing"
+      ],
+      "breakdown": [
+        {
+          "text": "en",
+          "gloss": "in"
+        },
+        {
+          "text": "train",
+          "gloss": "train/process"
+        },
+        {
+          "text": "de",
+          "gloss": "of"
+        }
+      ],
+      "examples": [
+        "Je suis en train de lire un livre."
+      ],
+      "example_translations": [
+        "I am currently reading a book."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2
+    },
+    {
+      "word": "la plupart de",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "most of",
+        "the majority of"
+      ],
+      "breakdown": [
+        {
+          "text": "la plupart",
+          "gloss": "the majority"
+        },
+        {
+          "text": "de",
+          "gloss": "of"
+        }
+      ],
+      "examples": [
+        "La plupart de mes amis habitent en ville."
+      ],
+      "example_translations": [
+        "Most of my friends live in the city."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2
+    },
+    {
+      "word": "le congé",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "leave",
+        "time off",
+        "vacation"
+      ],
+      "examples": [
+        "Je prends trois semaines de congé en été."
+      ],
+      "example_translations": [
+        "I take three weeks of leave in summer."
+      ],
+      "category": "work",
+      "difficulty": 2
+    },
+    {
+      "word": "s'attendre à",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "to expect",
+        "to anticipate"
+      ],
+      "breakdown": [
+        {
+          "text": "s'attendre",
+          "gloss": "to expect (reflexive)"
+        },
+        {
+          "text": "à",
+          "gloss": "to"
+        }
+      ],
+      "examples": [
+        "Je m'attends à un appel demain."
+      ],
+      "example_translations": [
+        "I expect a call tomorrow."
+      ],
+      "category": "daily_routines",
+      "difficulty": 3
+    },
+    {
+      "word": "avaient",
+      "type": "grammar",
+      "part_of_speech": "verb",
+      "translations": [
+        "had"
+      ],
+      "base_form": "avoir",
+      "grammar_note": "imparfait, 3rd person plural",
+      "breakdown": [
+        {
+          "text": "av-",
+          "gloss": "root: to have"
+        },
+        {
+          "text": "-aient",
+          "gloss": "imperfect ending"
+        }
+      ],
+      "examples": [
+        "Ils avaient une belle maison avant."
+      ],
+      "example_translations": [
+        "They had a beautiful house before."
+      ],
+      "category": "daily_routines",
+      "difficulty": 3
+    },
+    {
+      "word": "le secteur",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "sector",
+        "field",
+        "area"
+      ],
+      "examples": [
+        "Elle travaille dans le secteur de la santé."
+      ],
+      "example_translations": [
+        "She works in the healthcare sector."
+      ],
+      "category": "work",
+      "difficulty": 2
+    },
+    {
+      "word": "faire face à",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "to face",
+        "to deal with",
+        "to confront"
+      ],
+      "breakdown": [
+        {
+          "text": "faire",
+          "gloss": "to make/do"
+        },
+        {
+          "text": "face",
+          "gloss": "face"
+        },
+        {
+          "text": "à",
+          "gloss": "to"
+        }
+      ],
+      "examples": [
+        "Nous devons faire face à ce problème."
+      ],
+      "example_translations": [
+        "We must face this problem."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "compétent",
+      "type": "word",
+      "part_of_speech": "adjective",
+      "translations": [
+        "competent",
+        "skilled",
+        "capable"
+      ],
+      "examples": [
+        "C'est un professeur très compétent."
+      ],
+      "example_translations": [
+        "He is a very competent teacher."
+      ],
+      "category": "education",
+      "difficulty": 2
+    },
+    {
+      "word": "la formation",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "training",
+        "education",
+        "formation"
+      ],
+      "examples": [
+        "Elle suit une formation en informatique."
+      ],
+      "example_translations": [
+        "She is taking a training course in IT."
+      ],
+      "category": "education",
+      "difficulty": 2
+    },
+    {
+      "word": "selon",
+      "type": "word",
+      "part_of_speech": "preposition",
+      "translations": [
+        "according to",
+        "depending on"
+      ],
+      "examples": [
+        "Selon le météo, il pleuvra demain."
+      ],
+      "example_translations": [
+        "According to the weather forecast, it will rain tomorrow."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2
+    },
+    {
+      "word": "à moins que",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "unless",
+        "except if"
+      ],
+      "breakdown": [
+        {
+          "text": "à",
+          "gloss": "to"
+        },
+        {
+          "text": "moins",
+          "gloss": "less"
+        },
+        {
+          "text": "que",
+          "gloss": "that"
+        }
+      ],
+      "examples": [
+        "Je viendrai à moins qu'il ne pleuve."
+      ],
+      "example_translations": [
+        "I will come unless it rains."
+      ],
+      "category": "daily_routines",
+      "difficulty": 3
+    },
+    {
+      "word": "aurais",
+      "type": "grammar",
+      "part_of_speech": "verb",
+      "translations": [
+        "would have"
+      ],
+      "base_form": "avoir",
+      "grammar_note": "conditional, 1st person singular",
+      "breakdown": [
+        {
+          "text": "aur-",
+          "gloss": "root: to have (conditional stem)"
+        },
+        {
+          "text": "-ais",
+          "gloss": "conditional ending"
+        }
+      ],
+      "examples": [
+        "J'aurais aimé venir à ta fête."
+      ],
+      "example_translations": [
+        "I would have liked to come to your party."
+      ],
+      "category": "daily_routines",
+      "difficulty": 3
+    },
+    {
+      "word": "au lieu de",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "instead of",
+        "rather than"
+      ],
+      "breakdown": [
+        {
+          "text": "au",
+          "gloss": "to the"
+        },
+        {
+          "text": "lieu",
+          "gloss": "place"
+        },
+        {
+          "text": "de",
+          "gloss": "of"
+        }
+      ],
+      "examples": [
+        "Au lieu de regarder la télé, je lis."
+      ],
+      "example_translations": [
+        "Instead of watching TV, I read."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2
+    },
+    {
+      "word": "le parcours",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "path",
+        "route",
+        "journey",
+        "career path"
+      ],
+      "examples": [
+        "Son parcours professionnel est impressionnant."
+      ],
+      "example_translations": [
+        "His career path is impressive."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "discuter",
+      "type": "word",
+      "part_of_speech": "verb",
+      "translations": [
+        "to discuss",
+        "to talk about"
+      ],
+      "examples": [
+        "Nous avons discuté de nos plans pour le week-end."
+      ],
+      "example_translations": [
+        "We discussed our plans for the weekend."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2
+    },
+    {
+      "word": "profiter",
+      "type": "word",
+      "part_of_speech": "verb",
+      "translations": [
+        "to take advantage of",
+        "to enjoy",
+        "to benefit from"
+      ],
+      "examples": [
+        "Je veux profiter de mes vacances pour me reposer."
+      ],
+      "example_translations": [
+        "I want to take advantage of my vacation to rest."
+      ],
+      "category": "leisure",
+      "difficulty": 2
+    },
+    {
+      "word": "réussir",
+      "type": "word",
+      "part_of_speech": "verb",
+      "translations": [
+        "to succeed",
+        "to pass (an exam)"
+      ],
+      "examples": [
+        "Elle a réussi son examen de français."
+      ],
+      "example_translations": [
+        "She passed her French exam."
+      ],
+      "category": "education",
+      "difficulty": 2
+    },
+    {
+      "word": "augmenter",
+      "type": "word",
+      "part_of_speech": "verb",
+      "translations": [
+        "to increase",
+        "to raise",
+        "to go up"
+      ],
+      "examples": [
+        "Les prix augmentent chaque mois."
+      ],
+      "example_translations": [
+        "Prices are increasing every month."
+      ],
+      "category": "shopping",
+      "difficulty": 2
+    },
+    {
+      "word": "se plaindre",
+      "type": "word",
+      "part_of_speech": "verb",
+      "translations": [
+        "to complain"
+      ],
+      "examples": [
+        "Il se plaint toujours du temps."
+      ],
+      "example_translations": [
+        "He always complains about the weather."
+      ],
+      "category": "emotions",
+      "difficulty": 3
+    },
+    {
+      "word": "emprunter",
+      "type": "word",
+      "part_of_speech": "verb",
+      "translations": [
+        "to borrow",
+        "to take (a route)"
+      ],
+      "examples": [
+        "Je peux emprunter ton stylo ?"
+      ],
+      "example_translations": [
+        "Can I borrow your pen?"
+      ],
+      "category": "daily_routines",
+      "difficulty": 2
+    },
+    {
+      "word": "disposer",
+      "type": "word",
+      "part_of_speech": "verb",
+      "translations": [
+        "to have available",
+        "to arrange",
+        "to dispose"
+      ],
+      "examples": [
+        "Disposez-vous d'une chambre libre ?"
+      ],
+      "example_translations": [
+        "Do you have a free room available?"
+      ],
+      "category": "housing",
       "difficulty": 3
     },
     {
       "word": "attendre",
+      "type": "word",
+      "part_of_speech": "verb",
       "translations": [
-        "to wait",
-        "to expect",
-        "to anticipate"
+        "to wait for",
+        "to expect"
       ],
       "examples": [
-        "Je t'attends depuis une demi-heure, dépêche-toi !"
+        "J'attends l'autobus depuis 20 minutes."
       ],
-      "category": "daily_routines",
-      "difficulty": 2
-    },
-    {
-      "word": "attraper",
-      "translations": [
-        "to catch",
-        "to grab",
-        "to seize"
-      ],
-      "examples": [
-        "J'ai attrapé le train de justesse avant qu'il ne parte."
-      ],
-      "category": "daily_routines",
-      "difficulty": 3
-    },
-    {
-      "word": "augmenter",
-      "translations": [
-        "to increase",
-        "to raise",
-        "to grow"
-      ],
-      "examples": [
-        "Les prix des logements ont beaucoup augmenté ces dernières années."
-      ],
-      "category": "housing",
-      "difficulty": 3
-    },
-    {
-      "word": "autoriser",
-      "translations": [
-        "to authorize",
-        "to permit",
-        "to allow"
-      ],
-      "examples": [
-        "L'entreprise a autorisé ses employés à travailler à distance."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "avancer",
-      "translations": [
-        "to advance",
-        "to move forward",
-        "to progress"
-      ],
-      "examples": [
-        "Nous avançons bien dans la réalisation de ce projet."
-      ],
-      "category": "work",
-      "difficulty": 3
-    },
-    {
-      "word": "baisser",
-      "translations": [
-        "to lower",
-        "to decrease",
-        "to reduce"
-      ],
-      "examples": [
-        "Le prix de l'essence a baissé ces dernières semaines."
-      ],
-      "category": "daily_routines",
-      "difficulty": 3
-    },
-    {
-      "word": "battre",
-      "translations": [
-        "to beat",
-        "to strike",
-        "to defeat"
-      ],
-      "examples": [
-        "L'équipe de football a battu ses adversaires lors du match."
-      ],
-      "category": "sports",
-      "difficulty": 3
-    },
-    {
-      "word": "bouger",
-      "translations": [
-        "to move",
-        "to stir",
-        "to shift"
-      ],
-      "examples": [
-        "Ne bougez pas, je vais vous prendre en photo."
-      ],
-      "category": "daily_routines",
-      "difficulty": 2
-    },
-    {
-      "word": "briller",
-      "translations": [
-        "to shine",
-        "to sparkle",
-        "to gleam"
-      ],
-      "examples": [
-        "Les étoiles brillent dans le ciel étoilé."
-      ],
-      "category": "nature",
-      "difficulty": 3
-    },
-    {
-      "word": "calculer",
-      "translations": [
-        "to calculate",
-        "to compute",
-        "to figure out"
-      ],
-      "examples": [
-        "Je dois calculer le budget nécessaire pour ce projet."
-      ],
-      "category": "work",
-      "difficulty": 3
-    },
-    {
-      "word": "causer",
-      "translations": [
-        "to cause",
-        "to create",
-        "to generate"
-      ],
-      "examples": [
-        "Le mauvais temps a causé de nombreux retards dans les transports."
-      ],
-      "category": "weather",
-      "difficulty": 3
-    },
-    {
-      "word": "changer",
-      "translations": [
-        "to change",
-        "to modify",
-        "to transform"
-      ],
-      "examples": [
-        "J'ai changé de coiffure et je suis très satisfait du résultat."
-      ],
-      "category": "daily_routines",
-      "difficulty": 2
-    },
-    {
-      "word": "choisir",
-      "translations": [
-        "to choose",
-        "to select",
-        "to pick"
-      ],
-      "examples": [
-        "J'ai choisi de m'inscrire à ce cours de langue."
-      ],
-      "category": "education",
-      "difficulty": 2
-    },
-    {
-      "word": "commander",
-      "translations": [
-        "to order",
-        "to request",
-        "to purchase"
-      ],
-      "examples": [
-        "Je vais commander un nouveau meuble pour mon appartement."
-      ],
-      "category": "shopping",
-      "difficulty": 3
-    },
-    {
-      "word": "commencer",
-      "translations": [
-        "to begin",
-        "to start",
-        "to initiate"
-      ],
-      "examples": [
-        "La nouvelle session de formation commence la semaine prochaine."
-      ],
-      "category": "education",
-      "difficulty": 2
-    },
-    {
-      "word": "comparer",
-      "translations": [
-        "to compare",
-        "to contrast",
-        "to evaluate"
-      ],
-      "examples": [
-        "Je vais comparer les prix de ces deux ordinateurs portables."
-      ],
-      "category": "technology",
-      "difficulty": 3
-    },
-    {
-      "word": "comprendre",
-      "translations": [
-        "to understand",
-        "to grasp",
-        "to comprehend"
-      ],
-      "examples": [
-        "J'ai du mal à comprendre ce concept complexe."
-      ],
-      "category": "education",
-      "difficulty": 3
-    },
-    {
-      "word": "conduire",
-      "translations": [
-        "to drive",
-        "to lead",
-        "to guide"
-      ],
-      "examples": [
-        "Je conduis ma voiture tous les jours pour aller au travail."
+      "example_translations": [
+        "I have been waiting for the bus for 20 minutes."
       ],
       "category": "transportation",
-      "difficulty": 3
+      "difficulty": 1
     },
     {
-      "word": "connaître",
+      "word": "à mon avis",
+      "type": "phrase",
+      "part_of_speech": "expression",
       "translations": [
-        "to know",
-        "to be familiar with",
-        "to recognize"
+        "in my opinion",
+        "in my view"
+      ],
+      "breakdown": [
+        {
+          "text": "à",
+          "gloss": "to, at"
+        },
+        {
+          "text": "mon",
+          "gloss": "my"
+        },
+        {
+          "text": "avis",
+          "gloss": "opinion"
+        }
       ],
       "examples": [
-        "Je connais bien cette ville, j'y ai vécu pendant plusieurs années."
+        "À mon avis, c'est une bonne décision."
       ],
-      "category": "daily_routines",
-      "difficulty": 3
-    },
-    {
-      "word": "conseiller",
-      "translations": [
-        "to advise",
-        "to recommend",
-        "to suggest"
-      ],
-      "examples": [
-        "Le médecin m'a conseillé de faire plus d'exercice."
-      ],
-      "category": "health",
-      "difficulty": 3
-    },
-    {
-      "word": "considérer",
-      "translations": [
-        "to consider",
-        "to regard",
-        "to think about"
-      ],
-      "examples": [
-        "Je considère cette offre d'emploi très intéressante."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "continuer",
-      "translations": [
-        "to continue",
-        "to go on",
-        "to persist"
-      ],
-      "examples": [
-        "Malgré les difficultés, je continuerai à travailler sur ce projet."
-      ],
-      "category": "work",
-      "difficulty": 3
-    },
-    {
-      "word": "convaincre",
-      "translations": [
-        "to convince",
-        "to persuade",
-        "to make believe"
-      ],
-      "examples": [
-        "J'ai réussi à convaincre mon patron d'augmenter mon salaire."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "coûter",
-      "translations": [
-        "to cost",
-        "to be priced at",
-        "to expense"
-      ],
-      "examples": [
-        "Ce nouveau smartphone coûte plus de 500 euros."
-      ],
-      "category": "technology",
-      "difficulty": 3
-    },
-    {
-      "word": "créer",
-      "translations": [
-        "to create",
-        "to make",
-        "to produce"
-      ],
-      "examples": [
-        "L'artiste a créé une œuvre d'art magnifique."
-      ],
-      "category": "arts",
-      "difficulty": 3
-    },
-    {
-      "word": "décider",
-      "translations": [
-        "to decide",
-        "to determine",
-        "to resolve"
-      ],
-      "examples": [
-        "J'ai décidé de prendre des vacances cet été."
-      ],
-      "category": "daily_routines",
-      "difficulty": 3
-    },
-    {
-      "word": "découvrir",
-      "translations": [
-        "to discover",
-        "to find",
-        "to uncover"
-      ],
-      "examples": [
-        "J'ai découvert un nouveau restaurant délicieux dans le quartier."
-      ],
-      "category": "leisure",
-      "difficulty": 3
-    },
-    {
-      "word": "défendre",
-      "translations": [
-        "to defend",
-        "to protect",
-        "to safeguard"
-      ],
-      "examples": [
-        "L'équipe a bien défendu son titre de champion."
-      ],
-      "category": "sports",
-      "difficulty": 4
-    },
-    {
-      "word": "demander",
-      "translations": [
-        "to ask",
-        "to request",
-        "to inquire"
-      ],
-      "examples": [
-        "Je vais demander à mon patron une augmentation de salaire."
-      ],
-      "category": "work",
-      "difficulty": 3
-    },
-    {
-      "word": "déplacer",
-      "translations": [
-        "to move",
-        "to shift",
-        "to relocate"
-      ],
-      "examples": [
-        "J'ai dû déplacer mon bureau pour avoir plus d'espace."
-      ],
-      "category": "housing",
-      "difficulty": 3
-    },
-    {
-      "word": "déranger",
-      "translations": [
-        "to disturb",
-        "to bother",
-        "to interrupt"
-      ],
-      "examples": [
-        "Désolé de vous déranger, mais j'ai une question importante."
-      ],
-      "category": "daily_routines",
-      "difficulty": 3
-    },
-    {
-      "word": "désirer",
-      "translations": [
-        "to desire",
-        "to want",
-        "to wish"
-      ],
-      "examples": [
-        "Je désire acheter une nouvelle voiture plus économique."
-      ],
-      "category": "daily_routines",
-      "difficulty": 3
-    },
-    {
-      "word": "détester",
-      "translations": [
-        "to hate",
-        "to detest",
-        "to loathe"
-      ],
-      "examples": [
-        "Je déteste le bruit et la pollution de la ville."
-      ],
-      "category": "emotions",
-      "difficulty": 3
-    },
-    {
-      "word": "devenir",
-      "translations": [
-        "to become",
-        "to turn into",
-        "to grow"
-      ],
-      "examples": [
-        "Avec le temps, elle est devenue une excellente cuisinière."
-      ],
-      "category": "daily_routines",
-      "difficulty": 3
-    },
-    {
-      "word": "devoir",
-      "translations": [
-        "to have to",
-        "to must",
-        "to ought to"
-      ],
-      "examples": [
-        "Je dois terminer ce rapport avant la fin de la journée."
-      ],
-      "category": "work",
-      "difficulty": 2
-    },
-    {
-      "word": "différer",
-      "translations": [
-        "to differ",
-        "to vary",
-        "to be distinct"
-      ],
-      "examples": [
-        "Nos opinions sur ce sujet diffèrent grandement."
-      ],
-      "category": "daily_routines",
-      "difficulty": 4
-    },
-    {
-      "word": "dire",
-      "translations": [
-        "to say",
-        "to tell",
-        "to speak"
-      ],
-      "examples": [
-        "Je te dis la vérité, fais-moi confiance."
+      "example_translations": [
+        "In my opinion, it's a good decision."
       ],
       "category": "daily_routines",
       "difficulty": 2
     },
     {
-      "word": "diriger",
+      "word": "en même temps",
+      "type": "phrase",
+      "part_of_speech": "expression",
       "translations": [
-        "to lead",
-        "to manage",
-        "to guide"
+        "at the same time",
+        "meanwhile"
+      ],
+      "breakdown": [
+        {
+          "text": "en",
+          "gloss": "in"
+        },
+        {
+          "text": "même",
+          "gloss": "same"
+        },
+        {
+          "text": "temps",
+          "gloss": "time"
+        }
       ],
       "examples": [
-        "Le directeur dirige l'équipe avec beaucoup d'efficacité."
+        "Je travaille et j'étudie en même temps."
       ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "acquérir",
-      "translations": [
-        "to acquire",
-        "to gain",
-        "to obtain"
-      ],
-      "examples": [
-        "J'ai acquis une nouvelle voiture cette année."
-      ],
-      "category": "work",
-      "difficulty": 3
-    },
-    {
-      "word": "apaiser",
-      "translations": [
-        "to calm",
-        "to soothe",
-        "to pacify"
-      ],
-      "examples": [
-        "Le massage a aidé à apaiser mes douleurs."
-      ],
-      "category": "health",
-      "difficulty": 3
-    },
-    {
-      "word": "applaudir",
-      "translations": [
-        "to applaud",
-        "to clap"
-      ],
-      "examples": [
-        "Tout le monde a applaudi à la fin du spectacle."
-      ],
-      "category": "arts",
-      "difficulty": 2
-    },
-    {
-      "word": "assainir",
-      "translations": [
-        "to purify",
-        "to sanitize",
-        "to clean"
-      ],
-      "examples": [
-        "Nous devons assainir l'eau avant de la boire."
-      ],
-      "category": "daily_routines",
-      "difficulty": 4
-    },
-    {
-      "word": "attirer",
-      "translations": [
-        "to attract",
-        "to draw in",
-        "to lure"
-      ],
-      "examples": [
-        "Le nouveau parc d'attractions attire beaucoup de visiteurs."
-      ],
-      "category": "leisure",
-      "difficulty": 3
-    },
-    {
-      "word": "balayer",
-      "translations": [
-        "to sweep",
-        "to brush away",
-        "to clear"
-      ],
-      "examples": [
-        "Je balaie le sol de la cuisine chaque matin."
+      "example_translations": [
+        "I work and study at the same time."
       ],
       "category": "daily_routines",
       "difficulty": 2
     },
     {
-      "word": "baptiser",
+      "word": "bien entendu",
+      "type": "phrase",
+      "part_of_speech": "expression",
       "translations": [
-        "to baptize",
-        "to christen"
+        "of course",
+        "naturally"
+      ],
+      "breakdown": [
+        {
+          "text": "bien",
+          "gloss": "well"
+        },
+        {
+          "text": "entendu",
+          "gloss": "understood, heard"
+        }
       ],
       "examples": [
-        "Mes parents ont baptisé leur nouveau-né la semaine dernière."
+        "Bien entendu, je vais vous aider."
       ],
-      "category": "family",
-      "difficulty": 3
-    },
-    {
-      "word": "blâmer",
-      "translations": [
-        "to blame",
-        "to criticize",
-        "to fault"
-      ],
-      "examples": [
-        "Ne me blâme pas pour ce qui s'est passé."
-      ],
-      "category": "emotions",
-      "difficulty": 3
-    },
-    {
-      "word": "camoufler",
-      "translations": [
-        "to camouflage",
-        "to disguise",
-        "to conceal"
-      ],
-      "examples": [
-        "Les soldats ont camouflé leur véhicule pour ne pas être repérés."
-      ],
-      "category": "nature",
-      "difficulty": 4
-    },
-    {
-      "word": "captiver",
-      "translations": [
-        "to captivate",
-        "to fascinate",
-        "to enthrall"
-      ],
-      "examples": [
-        "Le discours du conférencier a captivé toute l'audience."
-      ],
-      "category": "arts",
-      "difficulty": 4
-    },
-    {
-      "word": "célébrer",
-      "translations": [
-        "to celebrate",
-        "to commemorate"
-      ],
-      "examples": [
-        "Nous célébrerons ton anniversaire ce week-end."
-      ],
-      "category": "daily_routines",
-      "difficulty": 3
-    },
-    {
-      "word": "chérir",
-      "translations": [
-        "to cherish",
-        "to treasure",
-        "to hold dear"
-      ],
-      "examples": [
-        "Je chéris ces souvenirs de mon enfance."
-      ],
-      "category": "emotions",
-      "difficulty": 4
-    },
-    {
-      "word": "concilier",
-      "translations": [
-        "to reconcile",
-        "to harmonize",
-        "to balance"
-      ],
-      "examples": [
-        "Il faut concilier les besoins de chacun pour trouver un compromis."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "confier",
-      "translations": [
-        "to entrust",
-        "to commit",
-        "to place in the care of"
-      ],
-      "examples": [
-        "J'ai confié mon enfant à ma mère pendant mon voyage."
-      ],
-      "category": "family",
-      "difficulty": 3
-    },
-    {
-      "word": "contenir",
-      "translations": [
-        "to contain",
-        "to hold",
-        "to restrain"
-      ],
-      "examples": [
-        "Ce sac peut contenir tous vos effets personnels."
-      ],
-      "category": "daily_routines",
-      "difficulty": 3
-    },
-    {
-      "word": "convoquer",
-      "translations": [
-        "to summon",
-        "to convene",
-        "to call"
-      ],
-      "examples": [
-        "Le directeur a convoqué tous les employés pour une réunion."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "craindre",
-      "translations": [
-        "to fear",
-        "to dread",
-        "to be afraid of"
-      ],
-      "examples": [
-        "Je crains que la tempête n'endommage ma maison."
-      ],
-      "category": "emotions",
-      "difficulty": 3
-    },
-    {
-      "word": "déchirer",
-      "translations": [
-        "to tear",
-        "to rip",
-        "to shred"
-      ],
-      "examples": [
-        "Mon enfant a déchiré la page de mon livre."
+      "example_translations": [
+        "Of course, I'll help you."
       ],
       "category": "daily_routines",
       "difficulty": 2
     },
     {
-      "word": "déclarer",
+      "word": "avoir du mal à",
+      "type": "phrase",
+      "part_of_speech": "expression",
       "translations": [
-        "to declare",
-        "to announce",
-        "to state"
+        "to have difficulty (doing something)",
+        "to struggle with"
+      ],
+      "breakdown": [
+        {
+          "text": "avoir",
+          "gloss": "to have"
+        },
+        {
+          "text": "du",
+          "gloss": "some"
+        },
+        {
+          "text": "mal",
+          "gloss": "difficulty, pain"
+        },
+        {
+          "text": "à",
+          "gloss": "to"
+        }
       ],
       "examples": [
-        "Le président a déclaré l'état d'urgence."
+        "J'ai du mal à comprendre cette grammaire."
       ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "déduire",
-      "translations": [
-        "to deduce",
-        "to infer",
-        "to conclude"
-      ],
-      "examples": [
-        "D'après ces indices, je déduis que le suspect est coupable."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "défier",
-      "translations": [
-        "to defy",
-        "to challenge",
-        "to dare"
-      ],
-      "examples": [
-        "Les manifestants ont défié l'autorité du gouvernement."
-      ],
-      "category": "emotions",
-      "difficulty": 4
-    },
-    {
-      "word": "dégrader",
-      "translations": [
-        "to degrade",
-        "to deteriorate",
-        "to worsen"
-      ],
-      "examples": [
-        "La pollution dégrade progressivement l'environnement."
-      ],
-      "category": "nature",
-      "difficulty": 4
-    },
-    {
-      "word": "déléguer",
-      "translations": [
-        "to delegate",
-        "to assign",
-        "to entrust"
-      ],
-      "examples": [
-        "Le directeur a délégué certaines tâches à ses employés."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "dépendre",
-      "translations": [
-        "to depend",
-        "to rely on",
-        "to be contingent on"
-      ],
-      "examples": [
-        "Mon emploi du temps dépend de mes horaires de travail."
-      ],
-      "category": "work",
-      "difficulty": 3
-    },
-    {
-      "word": "déployer",
-      "translations": [
-        "to deploy",
-        "to spread out",
-        "to unfold"
-      ],
-      "examples": [
-        "L'armée a déployé ses troupes sur le terrain."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "dérober",
-      "translations": [
-        "to steal",
-        "to pilfer",
-        "to shoplift"
-      ],
-      "examples": [
-        "Le voleur a dérobé mon portefeuille dans la foule."
-      ],
-      "category": "daily_routines",
-      "difficulty": 4
-    },
-    {
-      "word": "désigner",
-      "translations": [
-        "to designate",
-        "to appoint",
-        "to assign"
-      ],
-      "examples": [
-        "Le comité a désigné un nouveau président."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "détacher",
-      "translations": [
-        "to detach",
-        "to separate",
-        "to disconnect"
-      ],
-      "examples": [
-        "Je dois détacher ce câble pour brancher un autre appareil."
-      ],
-      "category": "technology",
-      "difficulty": 3
-    },
-    {
-      "word": "détailler",
-      "translations": [
-        "to detail",
-        "to describe",
-        "to specify"
-      ],
-      "examples": [
-        "Le rapport détaille les résultats de notre enquête."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "détendre",
-      "translations": [
-        "to relax",
-        "to unwind",
-        "to loosen"
-      ],
-      "examples": [
-        "Je me détends en écoutant de la musique après le travail."
-      ],
-      "category": "leisure",
-      "difficulty": 3
-    },
-    {
-      "word": "devancer",
-      "translations": [
-        "to anticipate",
-        "to precede",
-        "to outpace"
-      ],
-      "examples": [
-        "Avec ses nouvelles technologies, l'entreprise a devancé ses concurrents."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "développer",
-      "translations": [
-        "to develop",
-        "to expand",
-        "to grow"
-      ],
-      "examples": [
-        "L'entreprise développe de nouveaux produits chaque année."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "dissimuler",
-      "translations": [
-        "to conceal",
-        "to hide",
-        "to mask"
-      ],
-      "examples": [
-        "Il a dissimulé son identité pour ne pas être reconnu."
-      ],
-      "category": "daily_routines",
-      "difficulty": 4
-    },
-    {
-      "word": "distraire",
-      "translations": [
-        "to distract",
-        "to entertain",
-        "to amuse"
-      ],
-      "examples": [
-        "Les jeux vidéo me distraient quand je suis stressé."
-      ],
-      "category": "leisure",
-      "difficulty": 3
-    },
-    {
-      "word": "divulguer",
-      "translations": [
-        "to disclose",
-        "to reveal",
-        "to leak"
-      ],
-      "examples": [
-        "Le journaliste a divulgué des informations confidentielles."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "dominer",
-      "translations": [
-        "to dominate",
-        "to rule",
-        "to control"
-      ],
-      "examples": [
-        "Cette entreprise domine le marché depuis des années."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "douter",
-      "translations": [
-        "to doubt",
-        "to question",
-        "to be uncertain"
-      ],
-      "examples": [
-        "Je doute de la fiabilité de ces informations."
-      ],
-      "category": "emotions",
-      "difficulty": 3
-    },
-    {
-      "word": "échouer",
-      "translations": [
-        "to fail",
-        "to be unsuccessful",
-        "to miss"
-      ],
-      "examples": [
-        "Malgré ses efforts, il a échoué à l'examen."
+      "example_translations": [
+        "I have difficulty understanding this grammar."
       ],
       "category": "education",
       "difficulty": 3
     },
     {
-      "word": "effacer",
+      "word": "s'intéresser à",
+      "type": "phrase",
+      "part_of_speech": "expression",
       "translations": [
-        "to erase",
-        "to delete",
-        "to wipe out"
+        "to be interested in",
+        "to take an interest in"
+      ],
+      "breakdown": [
+        {
+          "text": "s'intéresser",
+          "gloss": "to interest oneself"
+        },
+        {
+          "text": "à",
+          "gloss": "in"
+        }
       ],
       "examples": [
-        "N'oublie pas d'effacer le tableau avant de partir."
+        "Mon fils s'intéresse beaucoup au sport."
+      ],
+      "example_translations": [
+        "My son is very interested in sports."
+      ],
+      "category": "leisure",
+      "difficulty": 2
+    },
+    {
+      "word": "parlons",
+      "type": "grammar",
+      "part_of_speech": "verb",
+      "translations": [
+        "let's speak",
+        "we speak"
+      ],
+      "base_form": "parler",
+      "grammar_note": "present tense, 1st person plural (imperative/subjunctive form)",
+      "breakdown": [
+        {
+          "text": "parl-",
+          "gloss": "speak (root)"
+        },
+        {
+          "text": "-ons",
+          "gloss": "we (ending)"
+        }
+      ],
+      "examples": [
+        "Parlons de vos projets d'avenir."
+      ],
+      "example_translations": [
+        "Let's talk about your future plans."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2
+    },
+    {
+      "word": "finissant",
+      "type": "grammar",
+      "part_of_speech": "verb",
+      "translations": [
+        "finishing",
+        "ending"
+      ],
+      "base_form": "finir",
+      "grammar_note": "present participle",
+      "breakdown": [
+        {
+          "text": "fin-",
+          "gloss": "finish (root)"
+        },
+        {
+          "text": "-issant",
+          "gloss": "present participle ending"
+        }
+      ],
+      "examples": [
+        "En finissant mon travail, j'ai réalisé une erreur."
+      ],
+      "example_translations": [
+        "While finishing my work, I realized a mistake."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "était",
+      "type": "grammar",
+      "part_of_speech": "verb",
+      "translations": [
+        "was"
+      ],
+      "base_form": "être",
+      "grammar_note": "imperfect tense, 3rd person singular",
+      "breakdown": [
+        {
+          "text": "ét-",
+          "gloss": "be (root)"
+        },
+        {
+          "text": "-ait",
+          "gloss": "was (imperfect ending)"
+        }
+      ],
+      "examples": [
+        "Quand j'étais enfant, je jouais souvent dehors."
+      ],
+      "example_translations": [
+        "When I was a child, I often played outside."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2
+    },
+    {
+      "word": "convenable",
+      "type": "word",
+      "part_of_speech": "adjective",
+      "translations": [
+        "suitable",
+        "appropriate",
+        "decent"
+      ],
+      "examples": [
+        "C'est une tenue convenable pour le bureau."
+      ],
+      "example_translations": [
+        "It's appropriate clothing for the office."
       ],
       "category": "daily_routines",
       "difficulty": 3
     },
     {
-      "word": "élever",
+      "word": "malgré",
+      "type": "word",
+      "part_of_speech": "preposition",
       "translations": [
-        "to raise",
-        "to bring up",
-        "to nurture"
+        "despite",
+        "in spite of"
       ],
       "examples": [
-        "Mes parents ont élevé trois enfants dans cette maison."
+        "Malgré la pluie, nous sommes sortis."
       ],
-      "category": "family",
-      "difficulty": 3
-    },
-    {
-      "word": "emballer",
-      "translations": [
-        "to wrap",
-        "to pack",
-        "to package"
+      "example_translations": [
+        "Despite the rain, we went out."
       ],
-      "examples": [
-        "J'ai emballé ton cadeau dans du papier cadeau."
-      ],
-      "category": "shopping",
+      "category": "weather",
       "difficulty": 2
     },
     {
-      "word": "emprunter",
+      "word": "se débrouiller",
+      "type": "phrase",
+      "part_of_speech": "verb",
       "translations": [
-        "to borrow",
-        "to take out a loan",
-        "to lend"
+        "to manage",
+        "to get by",
+        "to cope"
+      ],
+      "breakdown": [
+        {
+          "text": "se",
+          "gloss": "oneself (reflexive pronoun)"
+        },
+        {
+          "text": "débrouiller",
+          "gloss": "to untangle, to manage"
+        }
       ],
       "examples": [
-        "Je dois emprunter de l'argent à la banque pour acheter une voiture."
+        "Je me débrouille bien en anglais maintenant."
+      ],
+      "example_translations": [
+        "I'm managing well in English now."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2
+    },
+    {
+      "word": "avoir lieu",
+      "type": "phrase",
+      "part_of_speech": "verb",
+      "translations": [
+        "to take place",
+        "to occur",
+        "to happen"
+      ],
+      "breakdown": [
+        {
+          "text": "avoir",
+          "gloss": "to have"
+        },
+        {
+          "text": "lieu",
+          "gloss": "place, location"
+        }
+      ],
+      "examples": [
+        "La réunion aura lieu demain à 14h."
+      ],
+      "example_translations": [
+        "The meeting will take place tomorrow at 2 p.m."
       ],
       "category": "work",
+      "difficulty": 2
+    },
+    {
+      "word": "ambitieux",
+      "type": "word",
+      "part_of_speech": "adjective",
+      "translations": [
+        "ambitious",
+        "ambitious (person)"
+      ],
+      "examples": [
+        "Mon collègue est très ambitieux."
+      ],
+      "example_translations": [
+        "My colleague is very ambitious."
+      ],
+      "category": "work",
+      "difficulty": 2
+    },
+    {
+      "word": "avais",
+      "type": "grammar",
+      "part_of_speech": "verb",
+      "translations": [
+        "had (past imperfect)"
+      ],
+      "base_form": "avoir",
+      "grammar_note": "imparfait, 1st/2nd person singular",
+      "breakdown": [
+        {
+          "text": "av-",
+          "gloss": "root of avoir"
+        },
+        {
+          "text": "-ais",
+          "gloss": "imparfait ending (1st/2nd person singular)"
+        }
+      ],
+      "examples": [
+        "Quand j'avais dix ans, je jouais au football."
+      ],
+      "example_translations": [
+        "When I was ten years old, I played football."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2
+    },
+    {
+      "word": "un emploi",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "a job",
+        "employment",
+        "a position"
+      ],
+      "examples": [
+        "Elle a trouvé un emploi dans une grande entreprise."
+      ],
+      "example_translations": [
+        "She found a job in a large company."
+      ],
+      "category": "work",
+      "difficulty": 2
+    },
+    {
+      "word": "faire attention à",
+      "type": "phrase",
+      "part_of_speech": "verb",
+      "translations": [
+        "to pay attention to",
+        "to watch out for",
+        "to be careful with"
+      ],
+      "breakdown": [
+        {
+          "text": "faire",
+          "gloss": "to do, to make"
+        },
+        {
+          "text": "attention",
+          "gloss": "attention, care"
+        },
+        {
+          "text": "à",
+          "gloss": "to"
+        }
+      ],
+      "examples": [
+        "Fais attention à la circulation quand tu traverses."
+      ],
+      "example_translations": [
+        "Pay attention to traffic when you cross."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2
+    },
+    {
+      "word": "sérieux",
+      "type": "word",
+      "part_of_speech": "adjective",
+      "translations": [
+        "serious",
+        "earnest",
+        "reliable"
+      ],
+      "examples": [
+        "C'est un étudiant très sérieux."
+      ],
+      "example_translations": [
+        "He is a very serious student."
+      ],
+      "category": "education",
+      "difficulty": 2
+    },
+    {
+      "word": "étaient",
+      "type": "grammar",
+      "part_of_speech": "verb",
+      "translations": [
+        "were (past imperfect)"
+      ],
+      "base_form": "être",
+      "grammar_note": "imparfait, 3rd person plural",
+      "breakdown": [
+        {
+          "text": "ét-",
+          "gloss": "root of être"
+        },
+        {
+          "text": "-aient",
+          "gloss": "imparfait ending (3rd person plural)"
+        }
+      ],
+      "examples": [
+        "Ils étaient heureux pendant leurs vacances."
+      ],
+      "example_translations": [
+        "They were happy during their vacation."
+      ],
+      "category": "emotions",
+      "difficulty": 2
+    },
+    {
+      "word": "un conseil",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "advice",
+        "a piece of advice",
+        "a council"
+      ],
+      "examples": [
+        "Je te donne un conseil : étudie régulièrement."
+      ],
+      "example_translations": [
+        "I'm giving you some advice: study regularly."
+      ],
+      "category": "education",
+      "difficulty": 2
+    },
+    {
+      "word": "prendre rendez-vous",
+      "type": "phrase",
+      "part_of_speech": "verb",
+      "translations": [
+        "to make an appointment",
+        "to book an appointment"
+      ],
+      "breakdown": [
+        {
+          "text": "prendre",
+          "gloss": "to take"
+        },
+        {
+          "text": "rendez-vous",
+          "gloss": "appointment, meeting"
+        }
+      ],
+      "examples": [
+        "Je dois prendre rendez-vous chez le médecin."
+      ],
+      "example_translations": [
+        "I need to make an appointment with the doctor."
+      ],
+      "category": "health",
+      "difficulty": 2
+    },
+    {
+      "word": "désormais",
+      "type": "word",
+      "part_of_speech": "adverb",
+      "translations": [
+        "from now on",
+        "henceforth",
+        "hereafter"
+      ],
+      "examples": [
+        "Désormais, je vais me coucher plus tôt."
+      ],
+      "example_translations": [
+        "From now on, I'll go to bed earlier."
+      ],
+      "category": "daily_routines",
       "difficulty": 3
     }
   ]

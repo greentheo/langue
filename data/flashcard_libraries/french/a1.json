@@ -3,4483 +3,1051 @@
     "language": "french",
     "level": "a1",
     "version": "1.0",
-    "word_count": 389,
-    "created_at": "2025-09-10T23:55:58.950923",
-    "description": "Common A1 level French vocabulary",
-    "updated_at": "2025-09-11T23:02:31.702514"
+    "word_count": 48,
+    "created_at": "2026-07-24T03:18:29.239530+00:00",
+    "description": "Common A1 level French vocabulary"
   },
   "words": [
     {
       "word": "bonjour",
+      "type": "word",
+      "part_of_speech": "expression",
       "translations": [
         "hello",
-        "good morning",
         "good day"
       ],
+      "literal": "good day",
       "examples": [
         "Bonjour, comment allez-vous?"
       ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
+      "example_translations": [
+        "Hello, how are you?"
       ],
       "category": "greetings",
       "difficulty": 1
     },
     {
       "word": "merci",
+      "type": "word",
+      "part_of_speech": "expression",
       "translations": [
         "thank you",
         "thanks"
       ],
       "examples": [
-        "Merci beaucoup pour votre aide."
+        "Merci beaucoup!"
       ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
+      "example_translations": [
+        "Thank you very much!"
       ],
       "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "bonjour",
-      "translations": [
-        "hello",
-        "good morning",
-        "good day"
-      ],
-      "examples": [
-        "Bonjour, comment allez-vous?"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "au revoir",
-      "translations": [
-        "goodbye"
-      ],
-      "examples": [
-        "Au revoir, à demain!"
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "merci",
-      "translations": [
-        "thank you",
-        "thanks"
-      ],
-      "examples": [
-        "Merci beaucoup pour votre aide."
-      ],
-      "category": "greetings",
-      "difficulty": 1
-    },
-    {
-      "word": "oui",
-      "translations": [
-        "yes"
-      ],
-      "examples": [
-        "Oui, je comprends."
-      ],
-      "category": "basics",
-      "difficulty": 1
-    },
-    {
-      "word": "non",
-      "translations": [
-        "no"
-      ],
-      "examples": [
-        "Non, merci."
-      ],
-      "category": "basics",
       "difficulty": 1
     },
     {
       "word": "s'il vous plaît",
+      "type": "phrase",
+      "part_of_speech": "expression",
       "translations": [
-        "please"
+        "please (formal)"
+      ],
+      "breakdown": [
+        {
+          "text": "s'il",
+          "gloss": "if it"
+        },
+        {
+          "text": "vous",
+          "gloss": "you (formal)"
+        },
+        {
+          "text": "plaît",
+          "gloss": "pleases"
+        }
       ],
       "examples": [
-        "Pouvez-vous me passer le sel, s'il vous plaît ?"
+        "Un café, s'il vous plaît."
+      ],
+      "example_translations": [
+        "A coffee, please."
       ],
       "category": "greetings",
       "difficulty": 1
     },
     {
       "word": "un",
+      "type": "word",
+      "part_of_speech": "article",
       "translations": [
-        "one"
+        "a",
+        "an (masculine)"
       ],
       "examples": [
-        "J'ai acheté un livre."
+        "Un chat est sur la table."
       ],
-      "category": "numbers",
+      "example_translations": [
+        "A cat is on the table."
+      ],
+      "category": "daily_routines",
       "difficulty": 1
     },
     {
-      "word": "deux",
+      "word": "chat",
+      "type": "word",
+      "part_of_speech": "noun",
       "translations": [
-        "two"
+        "cat"
       ],
       "examples": [
-        "Il y a deux chiens dans le parc."
+        "J'aime mon chat."
       ],
-      "category": "numbers",
+      "example_translations": [
+        "I like my cat."
+      ],
+      "category": "nature",
+      "difficulty": 1
+    },
+    {
+      "word": "maison",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "house",
+        "home"
+      ],
+      "examples": [
+        "Je suis à la maison."
+      ],
+      "example_translations": [
+        "I am at home."
+      ],
+      "category": "housing",
+      "difficulty": 1
+    },
+    {
+      "word": "eau",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "water"
+      ],
+      "examples": [
+        "Je bois de l'eau."
+      ],
+      "example_translations": [
+        "I drink water."
+      ],
+      "category": "food",
+      "difficulty": 1
+    },
+    {
+      "word": "pain",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "bread"
+      ],
+      "examples": [
+        "Du pain avec du beurre, s'il vous plaît."
+      ],
+      "example_translations": [
+        "Bread with butter, please."
+      ],
+      "category": "food",
       "difficulty": 1
     },
     {
       "word": "trois",
+      "type": "word",
+      "part_of_speech": "number",
       "translations": [
         "three"
       ],
       "examples": [
-        "Je vais à la plage trois fois par semaine."
+        "J'ai trois frères."
       ],
-      "category": "numbers",
-      "difficulty": 1
-    },
-    {
-      "word": "quatre",
-      "translations": [
-        "four"
-      ],
-      "examples": [
-        "J'ai quatre frères et sœurs."
-      ],
-      "category": "numbers",
-      "difficulty": 1
-    },
-    {
-      "word": "cinq",
-      "translations": [
-        "five"
-      ],
-      "examples": [
-        "Il y a cinq pommes sur la table."
+      "example_translations": [
+        "I have three brothers."
       ],
       "category": "numbers",
       "difficulty": 1
     },
     {
       "word": "mère",
+      "type": "word",
+      "part_of_speech": "noun",
       "translations": [
         "mother"
       ],
       "examples": [
-        "Ma mère est très gentille."
+        "Ma mère est gentille."
+      ],
+      "example_translations": [
+        "My mother is kind."
       ],
       "category": "family",
-      "difficulty": 2
+      "difficulty": 1
     },
     {
-      "word": "père",
+      "word": "je m'appelle",
+      "type": "phrase",
+      "part_of_speech": "expression",
       "translations": [
-        "father"
+        "my name is",
+        "I am called"
+      ],
+      "breakdown": [
+        {
+          "text": "je",
+          "gloss": "I"
+        },
+        {
+          "text": "m'appelle",
+          "gloss": "call myself"
+        }
       ],
       "examples": [
-        "Mon père travaille beaucoup."
+        "Je m'appelle Marie."
       ],
-      "category": "family",
-      "difficulty": 2
+      "example_translations": [
+        "My name is Marie."
+      ],
+      "category": "greetings",
+      "difficulty": 1
     },
     {
-      "word": "frère",
+      "word": "comment ça va?",
+      "type": "phrase",
+      "part_of_speech": "expression",
       "translations": [
-        "brother"
+        "how are you?",
+        "how's it going?"
+      ],
+      "breakdown": [
+        {
+          "text": "comment",
+          "gloss": "how"
+        },
+        {
+          "text": "ça",
+          "gloss": "it"
+        },
+        {
+          "text": "va",
+          "gloss": "goes"
+        }
       ],
       "examples": [
-        "J'ai un frère plus jeune."
+        "Bonjour! Comment ça va?"
       ],
-      "category": "family",
-      "difficulty": 2
+      "example_translations": [
+        "Hello! How are you?"
+      ],
+      "category": "greetings",
+      "difficulty": 1
     },
     {
-      "word": "sœur",
+      "word": "suis",
+      "type": "grammar",
+      "part_of_speech": "verb",
       "translations": [
-        "sister"
+        "am (I am)"
+      ],
+      "base_form": "être",
+      "grammar_note": "present tense, 1st person singular",
+      "breakdown": [
+        {
+          "text": "suis",
+          "gloss": "am"
+        }
       ],
       "examples": [
-        "Ma sœur est très intelligente."
+        "Je suis français."
       ],
-      "category": "family",
-      "difficulty": 2
+      "example_translations": [
+        "I am French."
+      ],
+      "category": "daily_routines",
+      "difficulty": 1
     },
     {
-      "word": "famille",
+      "word": "est",
+      "type": "grammar",
+      "part_of_speech": "verb",
       "translations": [
-        "family"
+        "is"
+      ],
+      "base_form": "être",
+      "grammar_note": "present tense, 3rd person singular",
+      "breakdown": [
+        {
+          "text": "est",
+          "gloss": "is"
+        }
       ],
       "examples": [
-        "J'aime passer du temps avec ma famille."
+        "Il est professeur."
       ],
-      "category": "family",
-      "difficulty": 2
-    },
-    {
-      "word": "pain",
-      "translations": [
-        "bread"
+      "example_translations": [
+        "He is a teacher."
       ],
-      "examples": [
-        "Je voudrais une baguette de pain, s'il vous plaît."
-      ],
-      "category": "food",
-      "difficulty": 2
-    },
-    {
-      "word": "eau",
-      "translations": [
-        "water"
-      ],
-      "examples": [
-        "Puis-je avoir un verre d'eau ?"
-      ],
-      "category": "food",
-      "difficulty": 2
-    },
-    {
-      "word": "pomme",
-      "translations": [
-        "apple"
-      ],
-      "examples": [
-        "J'ai acheté des pommes au marché."
-      ],
-      "category": "food",
-      "difficulty": 2
-    },
-    {
-      "word": "fromage",
-      "translations": [
-        "cheese"
-      ],
-      "examples": [
-        "Je préfère le fromage de chèvre."
-      ],
-      "category": "food",
-      "difficulty": 2
-    },
-    {
-      "word": "viande",
-      "translations": [
-        "meat"
-      ],
-      "examples": [
-        "Nous avons mangé de la viande de bœuf pour le dîner."
-      ],
-      "category": "food",
-      "difficulty": 2
-    },
-    {
-      "word": "avion",
-      "translations": [
-        "airplane"
-      ],
-      "examples": [
-        "Nous prenons l'avion pour aller en vacances."
-      ],
-      "category": "travel",
-      "difficulty": 2
-    },
-    {
-      "word": "train",
-      "translations": [
-        "train"
-      ],
-      "examples": [
-        "Je prends le train pour aller au travail."
-      ],
-      "category": "travel",
-      "difficulty": 2
-    },
-    {
-      "word": "voiture",
-      "translations": [
-        "car"
-      ],
-      "examples": [
-        "Ma voiture est garée dans le parking."
-      ],
-      "category": "travel",
-      "difficulty": 2
-    },
-    {
-      "word": "bateau",
-      "translations": [
-        "boat"
-      ],
-      "examples": [
-        "Nous avons fait une croisière en bateau."
-      ],
-      "category": "travel",
-      "difficulty": 2
-    },
-    {
-      "word": "métro",
-      "translations": [
-        "subway",
-        "metro"
-      ],
-      "examples": [
-        "Je prends le métro pour aller en ville."
-      ],
-      "category": "travel",
-      "difficulty": 2
-    },
-    {
-      "word": "magasin",
-      "translations": [
-        "store",
-        "shop"
-      ],
-      "examples": [
-        "Je vais faire des achats dans ce magasin."
-      ],
-      "category": "shopping",
-      "difficulty": 2
-    },
-    {
-      "word": "acheter",
-      "translations": [
-        "to buy"
-      ],
-      "examples": [
-        "J'ai acheté un nouveau manteau."
-      ],
-      "category": "shopping",
-      "difficulty": 2
-    },
-    {
-      "word": "vendre",
-      "translations": [
-        "to sell"
-      ],
-      "examples": [
-        "Cette boutique vend de beaux bijoux."
-      ],
-      "category": "shopping",
-      "difficulty": 2
-    },
-    {
-      "word": "payer",
-      "translations": [
-        "to pay"
-      ],
-      "examples": [
-        "Je vais payer avec ma carte bancaire."
-      ],
-      "category": "shopping",
-      "difficulty": 2
-    },
-    {
-      "word": "argent",
-      "translations": [
-        "money"
-      ],
-      "examples": [
-        "J'ai assez d'argent pour acheter ce manteau."
-      ],
-      "category": "shopping",
-      "difficulty": 2
-    },
-    {
-      "word": "heure",
-      "translations": [
-        "hour"
-      ],
-      "examples": [
-        "Il est 15 heures."
-      ],
-      "category": "time",
-      "difficulty": 2
+      "category": "daily_routines",
+      "difficulty": 1
     },
     {
       "word": "jour",
+      "type": "word",
+      "part_of_speech": "noun",
       "translations": [
         "day"
       ],
       "examples": [
-        "Aujourd'hui, nous allons au parc."
+        "Quel jour sommes-nous?"
+      ],
+      "example_translations": [
+        "What day is it?"
       ],
       "category": "time",
-      "difficulty": 2
-    },
-    {
-      "word": "semaine",
-      "translations": [
-        "week"
-      ],
-      "examples": [
-        "Je travaille du lundi au vendredi chaque semaine."
-      ],
-      "category": "time",
-      "difficulty": 2
-    },
-    {
-      "word": "mois",
-      "translations": [
-        "month"
-      ],
-      "examples": [
-        "Mon anniversaire est en mai."
-      ],
-      "category": "time",
-      "difficulty": 2
-    },
-    {
-      "word": "année",
-      "translations": [
-        "year"
-      ],
-      "examples": [
-        "Nous avons déménagé dans cette maison il y a deux ans."
-      ],
-      "category": "time",
-      "difficulty": 2
-    },
-    {
-      "word": "soleil",
-      "translations": [
-        "sun"
-      ],
-      "examples": [
-        "Il fait beau et il y a beaucoup de soleil aujourd'hui."
-      ],
-      "category": "weather",
-      "difficulty": 2
-    },
-    {
-      "word": "pluie",
-      "translations": [
-        "rain"
-      ],
-      "examples": [
-        "Il pleut beaucoup ces jours-ci."
-      ],
-      "category": "weather",
-      "difficulty": 2
-    },
-    {
-      "word": "neige",
-      "translations": [
-        "snow"
-      ],
-      "examples": [
-        "Il y a beaucoup de neige sur les montagnes."
-      ],
-      "category": "weather",
-      "difficulty": 2
-    },
-    {
-      "word": "vent",
-      "translations": [
-        "wind"
-      ],
-      "examples": [
-        "Il fait très venteux aujourd'hui."
-      ],
-      "category": "weather",
-      "difficulty": 2
-    },
-    {
-      "word": "nuage",
-      "translations": [
-        "cloud"
-      ],
-      "examples": [
-        "Le ciel est couvert de nuages gris."
-      ],
-      "category": "weather",
-      "difficulty": 2
-    },
-    {
-      "word": "travailler",
-      "translations": [
-        "to work"
-      ],
-      "examples": [
-        "Je travaille dans un bureau."
-      ],
-      "category": "work",
-      "difficulty": 3
-    },
-    {
-      "word": "bureau",
-      "translations": [
-        "office"
-      ],
-      "examples": [
-        "Mon bureau est au troisième étage."
-      ],
-      "category": "work",
-      "difficulty": 3
-    },
-    {
-      "word": "patron",
-      "translations": [
-        "boss"
-      ],
-      "examples": [
-        "Mon patron est très exigeant."
-      ],
-      "category": "work",
-      "difficulty": 3
-    },
-    {
-      "word": "collègue",
-      "translations": [
-        "colleague"
-      ],
-      "examples": [
-        "Je m'entends bien avec mes collègues."
-      ],
-      "category": "work",
-      "difficulty": 3
-    },
-    {
-      "word": "salaire",
-      "translations": [
-        "salary"
-      ],
-      "examples": [
-        "Mon salaire me permet de vivre confortablement."
-      ],
-      "category": "work",
-      "difficulty": 3
+      "difficulty": 1
     },
     {
       "word": "école",
+      "type": "word",
+      "part_of_speech": "noun",
       "translations": [
         "school"
       ],
       "examples": [
-        "Je vais à l'école tous les jours."
+        "Je vais à l'école."
+      ],
+      "example_translations": [
+        "I go to school."
       ],
       "category": "education",
-      "difficulty": 3
+      "difficulty": 1
     },
     {
-      "word": "professeur",
+      "word": "combien ça coûte?",
+      "type": "phrase",
+      "part_of_speech": "expression",
       "translations": [
-        "teacher"
+        "how much does it cost?",
+        "how much is it?"
+      ],
+      "breakdown": [
+        {
+          "text": "combien",
+          "gloss": "how much"
+        },
+        {
+          "text": "ça",
+          "gloss": "it"
+        },
+        {
+          "text": "coûte",
+          "gloss": "costs"
+        }
       ],
       "examples": [
-        "Mon professeur de français est très sympathique."
+        "Combien ça coûte, ce livre?"
       ],
-      "category": "education",
-      "difficulty": 3
+      "example_translations": [
+        "How much does this book cost?"
+      ],
+      "category": "shopping",
+      "difficulty": 1
     },
     {
-      "word": "étudiant",
+      "word": "bleu",
+      "type": "word",
+      "part_of_speech": "adjective",
       "translations": [
-        "student"
+        "blue"
       ],
       "examples": [
-        "Je suis un étudiant en première année."
+        "Le ciel est bleu."
+      ],
+      "example_translations": [
+        "The sky is blue."
+      ],
+      "category": "nature",
+      "difficulty": 1
+    },
+    {
+      "word": "vais",
+      "type": "grammar",
+      "part_of_speech": "verb",
+      "translations": [
+        "go (I go)"
+      ],
+      "base_form": "aller",
+      "grammar_note": "present tense, 1st person singular",
+      "breakdown": [
+        {
+          "text": "vais",
+          "gloss": "go"
+        }
+      ],
+      "examples": [
+        "Je vais au parc."
+      ],
+      "example_translations": [
+        "I go to the park."
+      ],
+      "category": "transportation",
+      "difficulty": 1
+    },
+    {
+      "word": "au revoir",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "goodbye",
+        "see you again"
+      ],
+      "breakdown": [
+        {
+          "text": "au",
+          "gloss": "to the"
+        },
+        {
+          "text": "revoir",
+          "gloss": "see again"
+        }
+      ],
+      "examples": [
+        "Au revoir, à demain!"
+      ],
+      "example_translations": [
+        "Goodbye, see you tomorrow!"
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "je voudrais",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "I would like",
+        "I'd like"
+      ],
+      "literal": "I would like",
+      "breakdown": [
+        {
+          "text": "je",
+          "gloss": "I"
+        },
+        {
+          "text": "voudrais",
+          "gloss": "would like"
+        }
+      ],
+      "examples": [
+        "Je voudrais un verre d'eau."
+      ],
+      "example_translations": [
+        "I would like a glass of water."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "chaud",
+      "type": "word",
+      "part_of_speech": "adjective",
+      "translations": [
+        "hot",
+        "warm"
+      ],
+      "examples": [
+        "Il fait chaud aujourd'hui."
+      ],
+      "example_translations": [
+        "It's hot today."
+      ],
+      "category": "weather",
+      "difficulty": 1
+    },
+    {
+      "word": "combien ça coûte",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "how much does it cost",
+        "how much is it"
+      ],
+      "literal": "how much it costs",
+      "breakdown": [
+        {
+          "text": "combien",
+          "gloss": "how much"
+        },
+        {
+          "text": "ça",
+          "gloss": "it"
+        },
+        {
+          "text": "coûte",
+          "gloss": "costs"
+        }
+      ],
+      "examples": [
+        "Combien ça coûte?"
+      ],
+      "example_translations": [
+        "How much is it?"
+      ],
+      "category": "shopping",
+      "difficulty": 2
+    },
+    {
+      "word": "aime",
+      "type": "grammar",
+      "part_of_speech": "verb",
+      "translations": [
+        "loves, likes (he/she/it likes)"
+      ],
+      "base_form": "aimer",
+      "grammar_note": "present tense, 3rd person singular",
+      "breakdown": [
+        {
+          "text": "aime",
+          "gloss": "likes"
+        }
+      ],
+      "examples": [
+        "Il aime les fruits."
+      ],
+      "example_translations": [
+        "He likes fruits."
+      ],
+      "category": "emotions",
+      "difficulty": 1
+    },
+    {
+      "word": "père",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "father"
+      ],
+      "examples": [
+        "Mon père est ingénieur."
+      ],
+      "example_translations": [
+        "My father is an engineer."
+      ],
+      "category": "family",
+      "difficulty": 1
+    },
+    {
+      "word": "pomme",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "apple"
+      ],
+      "examples": [
+        "Je mange une pomme."
+      ],
+      "example_translations": [
+        "I eat an apple."
+      ],
+      "category": "food",
+      "difficulty": 1
+    },
+    {
+      "word": "parle",
+      "type": "grammar",
+      "part_of_speech": "verb",
+      "translations": [
+        "speaks (he/she/it speaks)"
+      ],
+      "base_form": "parler",
+      "grammar_note": "present tense, 3rd person singular",
+      "breakdown": [
+        {
+          "text": "parle",
+          "gloss": "speaks"
+        }
+      ],
+      "examples": [
+        "Elle parle français."
+      ],
+      "example_translations": [
+        "She speaks French."
+      ],
+      "category": "daily_routines",
+      "difficulty": 1
+    },
+    {
+      "word": "chien",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "dog"
+      ],
+      "examples": [
+        "J'aime mon chien."
+      ],
+      "example_translations": [
+        "I like my dog."
+      ],
+      "category": "nature",
+      "difficulty": 1
+    },
+    {
+      "word": "rouge",
+      "type": "word",
+      "part_of_speech": "adjective",
+      "translations": [
+        "red"
+      ],
+      "examples": [
+        "La pomme est rouge."
+      ],
+      "example_translations": [
+        "The apple is red."
+      ],
+      "category": "daily_routines",
+      "difficulty": 1
+    },
+    {
+      "word": "grand",
+      "type": "word",
+      "part_of_speech": "adjective",
+      "translations": [
+        "big",
+        "large",
+        "tall"
+      ],
+      "examples": [
+        "C'est une grande maison."
+      ],
+      "example_translations": [
+        "It is a big house."
+      ],
+      "category": "daily_routines",
+      "difficulty": 1
+    },
+    {
+      "word": "petit",
+      "type": "word",
+      "part_of_speech": "adjective",
+      "translations": [
+        "small",
+        "little"
+      ],
+      "examples": [
+        "Le petit garçon joue."
+      ],
+      "example_translations": [
+        "The small boy plays."
+      ],
+      "category": "daily_routines",
+      "difficulty": 1
+    },
+    {
+      "word": "Enchanté(e)",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "Pleased to meet you",
+        "Delighted"
+      ],
+      "breakdown": [
+        {
+          "text": "Enchanté",
+          "gloss": "delighted / enchanted"
+        }
+      ],
+      "examples": [
+        "Enchanté de vous rencontrer."
+      ],
+      "example_translations": [
+        "Pleased to meet you."
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "Quel âge avez-vous?",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "How old are you? (formal)"
+      ],
+      "breakdown": [
+        {
+          "text": "Quel",
+          "gloss": "what / which"
+        },
+        {
+          "text": "âge",
+          "gloss": "age"
+        },
+        {
+          "text": "avez-vous",
+          "gloss": "do you have"
+        }
+      ],
+      "examples": [
+        "Quel âge avez-vous?"
+      ],
+      "example_translations": [
+        "How old are you?"
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "es",
+      "type": "grammar",
+      "part_of_speech": "verb",
+      "translations": [
+        "are"
+      ],
+      "base_form": "être",
+      "grammar_note": "present tense, 2nd person singular (informal)",
+      "breakdown": [
+        {
+          "text": "es",
+          "gloss": "are (from être)"
+        }
+      ],
+      "examples": [
+        "Tu es français?"
+      ],
+      "example_translations": [
+        "Are you French?"
+      ],
+      "category": "daily_routines",
+      "difficulty": 1
+    },
+    {
+      "word": "parlons",
+      "type": "grammar",
+      "part_of_speech": "verb",
+      "translations": [
+        "let's speak",
+        "we speak"
+      ],
+      "base_form": "parler",
+      "grammar_note": "present tense, 1st person plural (or imperative)",
+      "breakdown": [
+        {
+          "text": "parlons",
+          "gloss": "speak/let's speak (from parler)"
+        }
+      ],
+      "examples": [
+        "Parlons français!"
+      ],
+      "example_translations": [
+        "Let's speak French!"
       ],
       "category": "education",
-      "difficulty": 3
+      "difficulty": 1
+    },
+    {
+      "word": "ça va?",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "How are you?",
+        "How's it going?"
+      ],
+      "breakdown": [
+        {
+          "text": "ça",
+          "gloss": "that / it"
+        },
+        {
+          "text": "va",
+          "gloss": "goes"
+        }
+      ],
+      "examples": [
+        "Ça va bien, merci."
+      ],
+      "example_translations": [
+        "I'm doing well, thanks."
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "je suis",
+      "type": "grammar",
+      "part_of_speech": "verb",
+      "translations": [
+        "I am"
+      ],
+      "breakdown": [
+        {
+          "text": "je",
+          "gloss": "I"
+        },
+        {
+          "text": "suis",
+          "gloss": "am"
+        }
+      ],
+      "base_form": "être",
+      "grammar_note": "present tense, 1st person singular",
+      "examples": [
+        "Je suis français."
+      ],
+      "example_translations": [
+        "I am French."
+      ],
+      "category": "daily_routines",
+      "difficulty": 1
+    },
+    {
+      "word": "vous êtes",
+      "type": "grammar",
+      "part_of_speech": "verb",
+      "translations": [
+        "you are (formal)",
+        "you all are"
+      ],
+      "breakdown": [
+        {
+          "text": "vous",
+          "gloss": "you (formal/plural)"
+        },
+        {
+          "text": "êtes",
+          "gloss": "are"
+        }
+      ],
+      "base_form": "être",
+      "grammar_note": "present tense, 2nd person formal/plural",
+      "examples": [
+        "Vous êtes professeur?"
+      ],
+      "example_translations": [
+        "Are you a teacher?"
+      ],
+      "category": "daily_routines",
+      "difficulty": 1
+    },
+    {
+      "word": "j'aime",
+      "type": "grammar",
+      "part_of_speech": "verb",
+      "translations": [
+        "I like",
+        "I love"
+      ],
+      "breakdown": [
+        {
+          "text": "j'",
+          "gloss": "I"
+        },
+        {
+          "text": "aime",
+          "gloss": "like / love"
+        }
+      ],
+      "base_form": "aimer",
+      "grammar_note": "present tense, 1st person singular",
+      "examples": [
+        "J'aime le chocolat."
+      ],
+      "example_translations": [
+        "I like chocolate."
+      ],
+      "category": "emotions",
+      "difficulty": 1
+    },
+    {
+      "word": "il y a",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "there is",
+        "there are"
+      ],
+      "breakdown": [
+        {
+          "text": "il",
+          "gloss": "it"
+        },
+        {
+          "text": "y",
+          "gloss": "there"
+        },
+        {
+          "text": "a",
+          "gloss": "has"
+        }
+      ],
+      "examples": [
+        "Il y a une table ici."
+      ],
+      "example_translations": [
+        "There is a table here."
+      ],
+      "category": "daily_routines",
+      "difficulty": 1
+    },
+    {
+      "word": "oui",
+      "type": "word",
+      "part_of_speech": "interjection",
+      "translations": [
+        "yes"
+      ],
+      "examples": [
+        "Oui, c'est correct."
+      ],
+      "example_translations": [
+        "Yes, that's correct."
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "non",
+      "type": "word",
+      "part_of_speech": "interjection",
+      "translations": [
+        "no"
+      ],
+      "examples": [
+        "Non, je ne veux pas."
+      ],
+      "example_translations": [
+        "No, I don't want to."
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "parlez",
+      "type": "grammar",
+      "part_of_speech": "verb",
+      "translations": [
+        "speak",
+        "talk"
+      ],
+      "base_form": "parler",
+      "grammar_note": "present tense, 2nd person plural (formal)",
+      "breakdown": [
+        {
+          "text": "parlez",
+          "gloss": "speak (you formal/plural)"
+        }
+      ],
+      "examples": [
+        "Vous parlez français?"
+      ],
+      "example_translations": [
+        "Do you speak French?"
+      ],
+      "category": "daily_routines",
+      "difficulty": 1
     },
     {
       "word": "livre",
+      "type": "word",
+      "part_of_speech": "noun",
       "translations": [
         "book"
       ],
       "examples": [
-        "J'ai emprunté ce livre à la bibliothèque."
+        "C'est un bon livre."
+      ],
+      "example_translations": [
+        "It is a good book."
       ],
       "category": "education",
-      "difficulty": 3
+      "difficulty": 1
     },
     {
-      "word": "stylo",
+      "word": "blanc",
+      "type": "word",
+      "part_of_speech": "adjective",
       "translations": [
-        "pen"
+        "white"
       ],
       "examples": [
-        "Peux-tu me prêter un stylo, s'il te plaît ?"
+        "Le lait est blanc."
       ],
-      "category": "education",
-      "difficulty": 3
-    },
-    {
-      "word": "maison",
-      "translations": [
-        "house"
-      ],
-      "examples": [
-        "Ma maison a un grand jardin."
-      ],
-      "category": "housing",
-      "difficulty": 3
-    },
-    {
-      "word": "appartement",
-      "translations": [
-        "apartment"
-      ],
-      "examples": [
-        "J'habite dans un appartement au centre-ville."
-      ],
-      "category": "housing",
-      "difficulty": 3
-    },
-    {
-      "word": "chambre",
-      "translations": [
-        "room"
-      ],
-      "examples": [
-        "Ma chambre est au deuxième étage."
-      ],
-      "category": "housing",
-      "difficulty": 3
-    },
-    {
-      "word": "cuisine",
-      "translations": [
-        "kitchen"
-      ],
-      "examples": [
-        "Je fais la cuisine tous les soirs."
-      ],
-      "category": "housing",
-      "difficulty": 3
-    },
-    {
-      "word": "jardin",
-      "translations": [
-        "garden"
-      ],
-      "examples": [
-        "Nous avons un beau jardin avec des fleurs."
-      ],
-      "category": "housing",
-      "difficulty": 3
-    },
-    {
-      "word": "lire",
-      "translations": [
-        "to read"
-      ],
-      "examples": [
-        "J'aime lire des livres pendant mon temps libre."
-      ],
-      "category": "leisure",
-      "difficulty": 3
-    },
-    {
-      "word": "jouer",
-      "translations": [
-        "to play"
-      ],
-      "examples": [
-        "Nous jouons au football le week-end."
-      ],
-      "category": "leisure",
-      "difficulty": 3
-    },
-    {
-      "word": "sport",
-      "translations": [
-        "sport"
-      ],
-      "examples": [
-        "Le football est mon sport préféré."
-      ],
-      "category": "leisure",
-      "difficulty": 3
-    },
-    {
-      "word": "musique",
-      "translations": [
-        "music"
-      ],
-      "examples": [
-        "J'écoute de la musique classique le soir."
-      ],
-      "category": "leisure",
-      "difficulty": 3
-    },
-    {
-      "word": "film",
-      "translations": [
-        "movie"
-      ],
-      "examples": [
-        "Nous allons voir un film au cinéma ce soir."
-      ],
-      "category": "leisure",
-      "difficulty": 3
-    },
-    {
-      "word": "mal",
-      "translations": [
-        "pain",
-        "ache"
-      ],
-      "examples": [
-        "J'ai mal à la tête."
-      ],
-      "category": "health",
-      "difficulty": 3
-    },
-    {
-      "word": "médecin",
-      "translations": [
-        "doctor"
-      ],
-      "examples": [
-        "Je vais voir un médecin pour mon problème de dos."
-      ],
-      "category": "health",
-      "difficulty": 3
-    },
-    {
-      "word": "hôpital",
-      "translations": [
-        "hospital"
-      ],
-      "examples": [
-        "Mon grand-père est à l'hôpital."
-      ],
-      "category": "health",
-      "difficulty": 3
-    },
-    {
-      "word": "médicament",
-      "translations": [
-        "medication"
-      ],
-      "examples": [
-        "Le médecin m'a prescrit des médicaments."
-      ],
-      "category": "health",
-      "difficulty": 3
-    },
-    {
-      "word": "santé",
-      "translations": [
-        "health"
-      ],
-      "examples": [
-        "Ma santé est bonne."
-      ],
-      "category": "health",
-      "difficulty": 3
-    },
-    {
-      "word": "boucher",
-      "translations": [
-        "butcher",
-        "to chop"
-      ],
-      "examples": [
-        "Le boucher vend de la viande fraîche."
-      ],
-      "category": "food",
-      "difficulty": 2
-    },
-    {
-      "word": "parapluie",
-      "translations": [
-        "umbrella"
-      ],
-      "examples": [
-        "Je prends mon parapluie quand il pleut."
-      ],
-      "category": "weather",
-      "difficulty": 2
-    },
-    {
-      "word": "pêcher",
-      "translations": [
-        "to fish",
-        "to pick"
-      ],
-      "examples": [
-        "Mon père aime pêcher le weekend."
-      ],
-      "category": "leisure",
-      "difficulty": 3
-    },
-    {
-      "word": "boulangerie",
-      "translations": [
-        "bakery"
-      ],
-      "examples": [
-        "J'achète du pain à la boulangerie."
-      ],
-      "category": "food",
-      "difficulty": 2
-    },
-    {
-      "word": "rire",
-      "translations": [
-        "to laugh"
-      ],
-      "examples": [
-        "Elle rit quand elle est heureuse."
-      ],
-      "category": "emotions",
-      "difficulty": 2
-    },
-    {
-      "word": "oreille",
-      "translations": [
-        "ear"
-      ],
-      "examples": [
-        "J'entends avec mes oreilles."
-      ],
-      "category": "health",
-      "difficulty": 2
-    },
-    {
-      "word": "chanter",
-      "translations": [
-        "to sing"
-      ],
-      "examples": [
-        "Elle chante très bien."
-      ],
-      "category": "arts",
-      "difficulty": 3
-    },
-    {
-      "word": "fleuve",
-      "translations": [
-        "river"
-      ],
-      "examples": [
-        "Le fleuve traverse la ville."
-      ],
-      "category": "nature",
-      "difficulty": 3
-    },
-    {
-      "word": "chaussure",
-      "translations": [
-        "shoe"
-      ],
-      "examples": [
-        "Je porte des chaussures confortables."
-      ],
-      "category": "shopping",
-      "difficulty": 2
-    },
-    {
-      "word": "dormir",
-      "translations": [
-        "to sleep"
-      ],
-      "examples": [
-        "Je dors huit heures par nuit."
+      "example_translations": [
+        "Milk is white."
       ],
       "category": "daily_routines",
-      "difficulty": 2
+      "difficulty": 1
     },
     {
-      "word": "courir",
+      "word": "avoir",
+      "type": "word",
+      "part_of_speech": "verb",
       "translations": [
-        "to run"
-      ],
-      "examples": [
-        "Je cours tous les jours pour faire de l'exercice."
-      ],
-      "category": "sports",
-      "difficulty": 3
-    },
-    {
-      "word": "montagne",
-      "translations": [
-        "mountain"
-      ],
-      "examples": [
-        "Les montagnes sont très hautes."
-      ],
-      "category": "nature",
-      "difficulty": 3
-    },
-    {
-      "word": "église",
-      "translations": [
-        "church"
-      ],
-      "examples": [
-        "L'église est un bâtiment religieux."
-      ],
-      "category": "arts",
-      "difficulty": 3
-    },
-    {
-      "word": "malade",
-      "translations": [
-        "sick",
-        "ill"
-      ],
-      "examples": [
-        "Je suis malade et je reste au lit."
-      ],
-      "category": "health",
-      "difficulty": 2
-    },
-    {
-      "word": "manger",
-      "translations": [
-        "to eat"
-      ],
-      "examples": [
-        "Je mange du pain et du fromage pour le petit-déjeuner."
-      ],
-      "category": "food",
-      "difficulty": 2
-    },
-    {
-      "word": "parler",
-      "translations": [
-        "to speak",
-        "to talk"
-      ],
-      "examples": [
-        "Nous parlons français à la maison."
-      ],
-      "category": "daily_routines",
-      "difficulty": 3
-    },
-    {
-      "word": "beau",
-      "translations": [
-        "beautiful",
-        "handsome"
-      ],
-      "examples": [
-        "Ce paysage est vraiment beau."
-      ],
-      "category": "arts",
-      "difficulty": 2
-    },
-    {
-      "word": "fatigue",
-      "translations": [
-        "tired",
-        "exhausted"
-      ],
-      "examples": [
-        "Je suis fatigué après une longue journée de travail."
-      ],
-      "category": "health",
-      "difficulty": 3
-    },
-    {
-      "word": "hôtel",
-      "translations": [
-        "hotel"
-      ],
-      "examples": [
-        "Nous restons à l'hôtel pendant nos vacances."
-      ],
-      "category": "travel",
-      "difficulty": 3
-    },
-    {
-      "word": "écrire",
-      "translations": [
-        "to write"
-      ],
-      "examples": [
-        "J'écris une lettre à ma grand-mère."
-      ],
-      "category": "education",
-      "difficulty": 3
-    },
-    {
-      "word": "prendre",
-      "translations": [
-        "to take",
         "to have"
       ],
       "examples": [
-        "Je prends le bus pour aller au travail."
+        "J'ai une voiture."
       ],
-      "category": "transportation",
-      "difficulty": 3
-    },
-    {
-      "word": "prêter",
-      "translations": [
-        "to lend",
-        "to borrow"
-      ],
-      "examples": [
-        "Je peux te prêter mon stylo si tu en as besoin."
+      "example_translations": [
+        "I have a car."
       ],
       "category": "daily_routines",
-      "difficulty": 3
+      "difficulty": 1
     },
     {
-      "word": "apporter",
+      "word": "comment allez-vous",
+      "type": "phrase",
+      "part_of_speech": "expression",
       "translations": [
-        "to bring"
+        "how are you (formal)",
+        "how do you do"
+      ],
+      "breakdown": [
+        {
+          "text": "comment",
+          "gloss": "how"
+        },
+        {
+          "text": "allez-vous",
+          "gloss": "are you (formal)"
+        }
       ],
       "examples": [
-        "Peux-tu m'apporter un verre d'eau ?"
+        "Comment allez-vous aujourd'hui?"
       ],
-      "category": "daily_routines",
-      "difficulty": 3
+      "example_translations": [
+        "How are you today?"
+      ],
+      "category": "greetings",
+      "difficulty": 1
     },
     {
-      "word": "regarder",
+      "word": "va",
+      "type": "grammar",
+      "part_of_speech": "verb",
       "translations": [
-        "to watch",
-        "to look at"
+        "go/goes"
+      ],
+      "base_form": "aller",
+      "grammar_note": "present tense, 3rd person singular",
+      "breakdown": [
+        {
+          "text": "va",
+          "gloss": "goes"
+        }
       ],
       "examples": [
-        "Je regarde la télévision le soir."
+        "Il va à Paris."
       ],
-      "category": "leisure",
-      "difficulty": 3
-    },
-    {
-      "word": "fermer",
-      "translations": [
-        "to close"
+      "example_translations": [
+        "He goes to Paris."
       ],
-      "examples": [
-        "Je ferme la porte à clé avant de sortir."
-      ],
-      "category": "daily_routines",
-      "difficulty": 3
-    },
-    {
-      "word": "aimer",
-      "translations": [
-        "to like",
-        "to love"
-      ],
-      "examples": [
-        "J'aime beaucoup le chocolat."
-      ],
-      "category": "emotions",
-      "difficulty": 3
-    },
-    {
-      "word": "animal",
-      "translations": [
-        "animal"
-      ],
-      "examples": [
-        "J'ai un chat comme animal de compagnie."
-      ],
-      "category": "nature",
-      "difficulty": 3
-    },
-    {
-      "word": "marché",
-      "translations": [
-        "market"
-      ],
-      "examples": [
-        "Je vais au marché pour acheter des fruits et légumes."
-      ],
-      "category": "shopping",
-      "difficulty": 3
+      "category": "travel",
+      "difficulty": 1
     }
   ]
 }

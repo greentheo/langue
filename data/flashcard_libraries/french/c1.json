@@ -3,1154 +3,1704 @@
     "language": "french",
     "level": "c1",
     "version": "1.0",
-    "word_count": 88,
-    "created_at": "2025-09-11T23:05:34.483357",
+    "word_count": 70,
+    "created_at": "2026-07-24T03:22:39.230798+00:00",
     "description": "Common C1 level French vocabulary"
   },
   "words": [
     {
-      "word": "accomplissement",
+      "word": "acuité",
+      "type": "word",
+      "part_of_speech": "noun",
       "translations": [
-        "achievement",
-        "fulfillment",
-        "attainment"
+        "acuity",
+        "sharpness",
+        "keenness"
       ],
       "examples": [
-        "Son accomplissement dans son travail l'a rendu très fier."
+        "L'acuité de son analyse politique a impressionné les experts."
       ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "affable",
-      "translations": [
-        "affable",
-        "friendly",
-        "amiable"
-      ],
-      "examples": [
-        "Elle a toujours été une personne affable et chaleureuse."
+      "example_translations": [
+        "The acuity of his political analysis impressed the experts."
       ],
       "category": "emotions",
-      "difficulty": 3
-    },
-    {
-      "word": "aguerri",
-      "translations": [
-        "seasoned",
-        "experienced",
-        "hardened"
-      ],
-      "examples": [
-        "Grâce à ses années d'expérience, il est devenu un professionnel aguerri."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "amalgame",
-      "translations": [
-        "amalgam",
-        "mixture",
-        "blend"
-      ],
-      "examples": [
-        "Ce plat est un amalgame de saveurs délicieuses."
-      ],
-      "category": "food",
-      "difficulty": 4
-    },
-    {
-      "word": "ambivalence",
-      "translations": [
-        "ambivalence",
-        "conflicting feelings",
-        "indecision"
-      ],
-      "examples": [
-        "Son ambivalence face à ce choix important le tourmente."
-      ],
-      "category": "emotions",
-      "difficulty": 4
-    },
-    {
-      "word": "anecdotique",
-      "translations": [
-        "anecdotal",
-        "incidental",
-        "trivial"
-      ],
-      "examples": [
-        "Cet événement est plutôt anecdotique dans sa carrière."
-      ],
-      "category": "work",
-      "difficulty": 3
-    },
-    {
-      "word": "anodin",
-      "translations": [
-        "innocuous",
-        "trivial",
-        "harmless"
-      ],
-      "examples": [
-        "Ce commentaire peut paraître anodin, mais il l'a blessé."
-      ],
-      "category": "daily_routines",
-      "difficulty": 3
-    },
-    {
-      "word": "antinomie",
-      "translations": [
-        "antinomy",
-        "contradiction",
-        "paradox"
-      ],
-      "examples": [
-        "Il y a une antinomie flagrante entre ses principes et ses actes."
-      ],
-      "category": "work",
-      "difficulty": 5
-    },
-    {
-      "word": "apathie",
-      "translations": [
-        "apathy",
-        "indifference",
-        "lack of interest"
-      ],
-      "examples": [
-        "Son apathie face à ce problème m'a surpris et déçu."
-      ],
-      "category": "emotions",
-      "difficulty": 4
-    },
-    {
-      "word": "appréhension",
-      "translations": [
-        "apprehension",
-        "anxiety",
-        "fear"
-      ],
-      "examples": [
-        "Il a une certaine appréhension à l'idée de passer cet entretien."
-      ],
-      "category": "emotions",
-      "difficulty": 4
-    },
-    {
-      "word": "ardu",
-      "translations": [
-        "arduous",
-        "difficult",
-        "challenging"
-      ],
-      "examples": [
-        "La tâche s'est avérée plus ardue que prévu."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "artefact",
-      "translations": [
-        "artifact",
-        "object",
-        "relic"
-      ],
-      "examples": [
-        "Ce musée abrite de nombreux artefacts historiques."
-      ],
-      "category": "arts",
-      "difficulty": 4
-    },
-    {
-      "word": "assidu",
-      "translations": [
-        "diligent",
-        "persistent",
-        "dedicated"
-      ],
-      "examples": [
-        "Il est connu pour être un travailleur assidu et fiable."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "atavisme",
-      "translations": [
-        "atavism",
-        "throwback",
-        "reversion"
-      ],
-      "examples": [
-        "Certains traits de caractère peuvent être un atavisme familial."
-      ],
-      "category": "daily_routines",
-      "difficulty": 5
-    },
-    {
-      "word": "atout",
-      "translations": [
-        "asset",
-        "advantage",
-        "strength"
-      ],
-      "examples": [
-        "Son expérience est un atout majeur pour ce poste."
-      ],
-      "category": "work",
-      "difficulty": 3
-    },
-    {
-      "word": "austère",
-      "translations": [
-        "austere",
-        "severe",
-        "strict"
-      ],
-      "examples": [
-        "Son style de vie austère lui permet d'économiser."
-      ],
-      "category": "daily_routines",
-      "difficulty": 4
-    },
-    {
-      "word": "bénéfique",
-      "translations": [
-        "beneficial",
-        "advantageous",
-        "helpful"
-      ],
-      "examples": [
-        "Cette nouvelle routine de sommeil s'est avérée bénéfique."
-      ],
-      "category": "health",
-      "difficulty": 4
-    },
-    {
-      "word": "bienséance",
-      "translations": [
-        "propriety",
-        "decorum",
-        "etiquette"
-      ],
-      "examples": [
-        "Il faut respecter les règles de bienséance dans ce milieu."
-      ],
-      "category": "daily_routines",
-      "difficulty": 4
-    },
-    {
-      "word": "calamiteux",
-      "translations": [
-        "calamitous",
-        "disastrous",
-        "catastrophic"
-      ],
-      "examples": [
-        "Cet accident a eu des conséquences calamiteuses pour l'entreprise."
-      ],
-      "category": "work",
-      "difficulty": 5
-    },
-    {
-      "word": "candide",
-      "translations": [
-        "candid",
-        "frank",
-        "naive"
-      ],
-      "examples": [
-        "Il a fait une remarque candide qui a surpris tout le monde."
-      ],
-      "category": "daily_routines",
-      "difficulty": 4
-    },
-    {
-      "word": "cérébral",
-      "translations": [
-        "cerebral",
-        "intellectual",
-        "cognitive"
-      ],
-      "examples": [
-        "Ce sujet demande une réflexion cérébrale approfondie."
-      ],
-      "category": "education",
-      "difficulty": 4
-    },
-    {
-      "word": "circonspect",
-      "translations": [
-        "circumspect",
-        "cautious",
-        "prudent"
-      ],
-      "examples": [
-        "Il est toujours très circonspect avant de prendre une décision."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "clairvoyant",
-      "translations": [
-        "clairvoyant",
-        "insightful",
-        "perceptive"
-      ],
-      "examples": [
-        "Ses commentaires clairvoyants ont éclairé la situation."
-      ],
-      "category": "emotions",
-      "difficulty": 5
-    },
-    {
-      "word": "clémence",
-      "translations": [
-        "clemency",
-        "leniency",
-        "mercy"
-      ],
-      "examples": [
-        "Le juge a fait preuve de clémence en lui accordant une peine légère."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "coercitif",
-      "translations": [
-        "coercive",
-        "forceful",
-        "compulsory"
-      ],
-      "examples": [
-        "Cette nouvelle politique a un caractère trop coercitif."
-      ],
-      "category": "work",
-      "difficulty": 5
-    },
-    {
-      "word": "corollaire",
-      "translations": [
-        "corollary",
-        "consequence",
-        "implication"
-      ],
-      "examples": [
-        "Cet événement a eu plusieurs corollaires inattendus."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "cosmopolite",
-      "translations": [
-        "cosmopolitan",
-        "worldly",
-        "sophisticated"
-      ],
-      "examples": [
-        "Cette ville a une ambiance très cosmopolite et ouverte."
-      ],
-      "category": "travel",
-      "difficulty": 4
-    },
-    {
-      "word": "délétère",
-      "translations": [
-        "deleterious",
-        "harmful",
-        "detrimental"
-      ],
-      "examples": [
-        "Les effets délétères de cette pollution sont préoccupants."
-      ],
-      "category": "nature",
-      "difficulty": 5
-    },
-    {
-      "word": "désinvolte",
-      "translations": [
-        "nonchalant",
-        "casual",
-        "offhand"
-      ],
-      "examples": [
-        "Il a répondu de manière désinvolte à cette question importante."
-      ],
-      "category": "daily_routines",
-      "difficulty": 4
-    },
-    {
-      "word": "despotique",
-      "translations": [
-        "despotic",
-        "tyrannical",
-        "authoritarian"
-      ],
-      "examples": [
-        "Ce régime politique est devenu de plus en plus despotique."
-      ],
-      "category": "work",
-      "difficulty": 5
-    },
-    {
-      "word": "diligent",
-      "translations": [
-        "diligent",
-        "hardworking",
-        "industrious"
-      ],
-      "examples": [
-        "Grâce à son travail diligent, il a pu terminer le projet à temps."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "discrétionnaire",
-      "translations": [
-        "discretionary",
-        "optional",
-        "arbitrary"
-      ],
-      "examples": [
-        "Cette décision relève de son pouvoir discrétionnaire."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "dissident",
-      "translations": [
-        "dissident",
-        "nonconformist",
-        "rebel"
-      ],
-      "examples": [
-        "Elle a pris position en tant que dissident politique."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "dogmatique",
-      "translations": [
-        "dogmatic",
-        "inflexible",
-        "rigid"
-      ],
-      "examples": [
-        "Son approche dogmatique du problème l'a empêché de trouver une solution."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "durable",
-      "translations": [
-        "durable",
-        "long-lasting",
-        "resilient"
-      ],
-      "examples": [
-        "Cet équipement est conçu pour être durable et résistant."
-      ],
-      "category": "technology",
-      "difficulty": 3
-    },
-    {
-      "word": "éclectique",
-      "translations": [
-        "eclectic",
-        "diverse",
-        "varied"
-      ],
-      "examples": [
-        "Sa collection d'art est d'un style très éclectique."
-      ],
-      "category": "arts",
-      "difficulty": 4
-    },
-    {
-      "word": "égrégore",
-      "translations": [
-        "egregore",
-        "group mind",
-        "collective consciousness"
-      ],
-      "examples": [
-        "Cet événement a créé un égrégore puissant au sein de la communauté."
-      ],
-      "category": "work",
-      "difficulty": 5
-    },
-    {
-      "word": "élégiaque",
-      "translations": [
-        "elegiac",
-        "mournful",
-        "melancholic"
-      ],
-      "examples": [
-        "La musique avait une tonalité élégiaque qui a touché les auditeurs."
-      ],
-      "category": "arts",
-      "difficulty": 5
-    },
-    {
-      "word": "émancipation",
-      "translations": [
-        "emancipation",
-        "liberation",
-        "freedom"
-      ],
-      "examples": [
-        "Ce mouvement a permis l'émancipation des femmes dans cette société."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "empathie",
-      "translations": [
-        "empathy",
-        "compassion",
-        "understanding"
-      ],
-      "examples": [
-        "Son empathie envers les autres est une de ses plus grandes qualités."
-      ],
-      "category": "emotions",
-      "difficulty": 4
-    },
-    {
-      "word": "éphémère",
-      "translations": [
-        "ephemeral",
-        "fleeting",
-        "transient"
-      ],
-      "examples": [
-        "La beauté de cette fleur est malheureusement éphémère."
-      ],
-      "category": "nature",
-      "difficulty": 4
-    },
-    {
-      "word": "érudition",
-      "translations": [
-        "erudition",
-        "scholarship",
-        "learning"
-      ],
-      "examples": [
-        "Son érudition sur ce sujet est impressionnante."
-      ],
-      "category": "education",
-      "difficulty": 5
-    },
-    {
-      "word": "esotérique",
-      "translations": [
-        "esoteric",
-        "arcane",
-        "obscure"
-      ],
-      "examples": [
-        "Ce domaine de recherche est très esotérique et peu connu."
-      ],
-      "category": "education",
-      "difficulty": 5
-    },
-    {
-      "word": "exacerbé",
-      "translations": [
-        "exacerbated",
-        "aggravated",
-        "worsened"
-      ],
-      "examples": [
-        "La situation a été exacerbée par les tensions croissantes."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "exégèse",
-      "translations": [
-        "exegesis",
-        "interpretation",
-        "analysis"
-      ],
-      "examples": [
-        "Cette exégèse du texte a permis d'en comprendre le sens profond."
-      ],
-      "category": "education",
-      "difficulty": 5
-    },
-    {
-      "word": "exubérant",
-      "translations": [
-        "exuberant",
-        "lively",
-        "enthusiastic"
-      ],
-      "examples": [
-        "Lors de la fête, l'ambiance était exubérante et joyeuse."
-      ],
-      "category": "leisure",
-      "difficulty": 4
-    },
-    {
-      "word": "fallacieux",
-      "translations": [
-        "fallacious",
-        "misleading",
-        "deceptive"
-      ],
-      "examples": [
-        "Son raisonnement comporte des arguments fallacieux."
-      ],
-      "category": "work",
-      "difficulty": 5
-    },
-    {
-      "word": "fataliste",
-      "translations": [
-        "fatalistic",
-        "resigned",
-        "defeatist"
-      ],
-      "examples": [
-        "Face à cette situation, il a adopté une attitude fataliste."
-      ],
-      "category": "emotions",
-      "difficulty": 4
-    },
-    {
-      "word": "féliciter",
-      "translations": [
-        "to congratulate",
-        "to commend",
-        "to praise"
-      ],
-      "examples": [
-        "Je tiens à vous féliciter pour votre excellent travail."
-      ],
-      "category": "work",
-      "difficulty": 3
-    },
-    {
-      "word": "félon",
-      "translations": [
-        "treacherous",
-        "disloyal",
-        "perfidious"
-      ],
-      "examples": [
-        "Son comportement félon a trahi la confiance de ses collègues."
-      ],
-      "category": "work",
-      "difficulty": 5
-    },
-    {
-      "word": "ferveur",
-      "translations": [
-        "fervor",
-        "enthusiasm",
-        "passion"
-      ],
-      "examples": [
-        "Il a défendu cette cause avec une grande ferveur."
-      ],
-      "category": "emotions",
-      "difficulty": 4
-    },
-    {
-      "word": "fieffé",
-      "translations": [
-        "arrant",
-        "thorough",
-        "consummate"
-      ],
-      "examples": [
-        "Ce menteur est un fieffé imposteur qui abuse de la confiance des autres."
-      ],
-      "category": "daily_routines",
-      "difficulty": 5
-    },
-    {
-      "word": "fortuit",
-      "translations": [
-        "fortuitous",
-        "accidental",
-        "chance"
-      ],
-      "examples": [
-        "Cette rencontre fortuite a changé le cours de ma vie."
-      ],
-      "category": "daily_routines",
-      "difficulty": 4
-    },
-    {
-      "word": "frugal",
-      "translations": [
-        "frugal",
-        "thrifty",
-        "economical"
-      ],
-      "examples": [
-        "Il mène un mode de vie frugal pour épargner davantage."
-      ],
-      "category": "daily_routines",
-      "difficulty": 4
-    },
-    {
-      "word": "prédisposition",
-      "translations": [
-        "predisposition",
-        "inclination",
-        "tendency"
-      ],
-      "examples": [
-        "Elle a une prédisposition naturelle pour le chant."
-      ],
-      "category": "emotions",
-      "difficulty": 4
-    },
-    {
-      "word": "conjecturale",
-      "translations": [
-        "conjectural",
-        "speculative",
-        "hypothetical"
-      ],
-      "examples": [
-        "Cette théorie est encore conjecturale et nécessite plus de recherches."
-      ],
-      "category": "education",
-      "difficulty": 4
-    },
-    {
-      "word": "idiosyncrasie",
-      "translations": [
-        "idiosyncrasy",
-        "peculiarity",
-        "eccentricity"
-      ],
-      "examples": [
-        "Chaque personne a ses propres idiosyncrasies qui la rendent unique."
-      ],
-      "category": "emotions",
-      "difficulty": 4
-    },
-    {
-      "word": "réminiscence",
-      "translations": [
-        "reminiscence",
-        "recollection",
-        "memory"
-      ],
-      "examples": [
-        "Cette mélodie évoque en moi des réminiscences de mon enfance."
-      ],
-      "category": "emotions",
-      "difficulty": 4
-    },
-    {
-      "word": "récusation",
-      "translations": [
-        "challenge",
-        "rejection",
-        "objection"
-      ],
-      "examples": [
-        "La récusation de ce témoin par l'avocat a été jugée légitime."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "hégémonie",
-      "translations": [
-        "hegemony",
-        "dominance",
-        "supremacy"
-      ],
-      "examples": [
-        "Certains craignent l'hégémonie des États-Unis sur la scène internationale."
-      ],
-      "category": "politics",
-      "difficulty": 5
-    },
-    {
-      "word": "péremptoire",
-      "translations": [
-        "peremptory",
-        "authoritative",
-        "decisive"
-      ],
-      "examples": [
-        "Le juge a donné une réponse péremptoire à la requête de l'avocat."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "injonction",
-      "translations": [
-        "injunction",
-        "order",
-        "command"
-      ],
-      "examples": [
-        "Le tribunal a émis une injonction interdisant la publication de ces informations."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "éclectisme",
-      "translations": [
-        "eclecticism",
-        "diversity",
-        "variety"
-      ],
-      "examples": [
-        "Son goût musical est marqué par l'éclectisme, il aime tous les genres."
-      ],
-      "category": "arts",
-      "difficulty": 4
-    },
-    {
-      "word": "sycophante",
-      "translations": [
-        "sycophant",
-        "flatterer",
-        "toady"
-      ],
-      "examples": [
-        "Certains politiques sont entourés de sycophantes qui les adulentconstamment."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "impécunieux",
-      "translations": [
-        "penniless",
-        "destitute",
-        "broke"
-      ],
-      "examples": [
-        "Malgré sa formation prestigieuse, il est resté impécunieux toute sa vie."
-      ],
-      "category": "daily_routines",
-      "difficulty": 4
-    },
-    {
-      "word": "concomitant",
-      "translations": [
-        "concomitant",
-        "accompanying",
-        "concurrent"
-      ],
-      "examples": [
-        "Le stress et la fatigue sont souvent des phénomènes concomitants."
-      ],
-      "category": "health",
-      "difficulty": 4
-    },
-    {
-      "word": "insidieux",
-      "translations": [
-        "insidious",
-        "stealthy",
-        "treacherous"
-      ],
-      "examples": [
-        "Cette maladie a une progression insidieuse qui la rend difficile à détecter."
-      ],
-      "category": "health",
-      "difficulty": 4
-    },
-    {
-      "word": "évanescent",
-      "translations": [
-        "evanescent",
-        "fleeting",
-        "transitory"
-      ],
-      "examples": [
-        "La beauté de ce coucher de soleil est évanescente, elle ne dure qu'un instant."
-      ],
-      "category": "nature",
-      "difficulty": 4
-    },
-    {
-      "word": "intransigeant",
-      "translations": [
-        "intransigent",
-        "inflexible",
-        "uncompromising"
-      ],
-      "examples": [
-        "Sur cette question, le syndicat a adopté une position intransigeante."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "subreptice",
-      "translations": [
-        "surreptitious",
-        "stealthy",
-        "furtive"
-      ],
-      "examples": [
-        "Ses activités subreptices ont fini par être découvertes par les autorités."
-      ],
-      "category": "daily_routines",
-      "difficulty": 5
-    },
-    {
-      "word": "déliquescent",
-      "translations": [
-        "deliquescent",
-        "liquefying",
-        "dissolving"
-      ],
-      "examples": [
-        "Certains sels sont déliquescents et absorbent l'humidité de l'air."
-      ],
-      "category": "science",
-      "difficulty": 5
-    },
-    {
-      "word": "caduque",
-      "translations": [
-        "obsolete",
-        "outdated",
-        "defunct"
-      ],
-      "examples": [
-        "Cette loi est aujourd'hui caduque et doit être réformée."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "péjoratif",
-      "translations": [
-        "pejorative",
-        "derogatory",
-        "disparaging"
-      ],
-      "examples": [
-        "Ce terme a une connotation péjorative et devrait être évité."
-      ],
-      "category": "language",
-      "difficulty": 4
-    },
-    {
-      "word": "péremptoirement",
-      "translations": [
-        "peremptorily",
-        "authoritatively",
-        "decisively"
-      ],
-      "examples": [
-        "Le juge a rejeté péremptoirement la demande de l'avocat."
-      ],
-      "category": "work",
-      "difficulty": 5
-    },
-    {
-      "word": "pernicieux",
-      "translations": [
-        "pernicious",
-        "harmful",
-        "destructive"
-      ],
-      "examples": [
-        "Ses habitudes alimentaires ont eu des effets pernicieux sur sa santé."
-      ],
-      "category": "health",
-      "difficulty": 4
-    },
-    {
-      "word": "péremption",
-      "translations": [
-        "expiration",
-        "lapse",
-        "termination"
-      ],
-      "examples": [
-        "La péremption de ce contrat nous oblige à en signer un nouveau."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "immuable",
-      "translations": [
-        "immutable",
-        "unchangeable",
-        "constant"
-      ],
-      "examples": [
-        "Certains principes éthiques sont considérés comme immuables."
-      ],
-      "category": "philosophy",
-      "difficulty": 4
-    },
-    {
-      "word": "inextricable",
-      "translations": [
-        "inextricable",
-        "intricate",
-        "complex"
-      ],
-      "examples": [
-        "La situation s'est révélée inextricable et a nécessité une intervention."
-      ],
-      "category": "work",
-      "difficulty": 5
-    },
-    {
-      "word": "irréfragable",
-      "translations": [
-        "irrefutable",
-        "indisputable",
-        "conclusive"
-      ],
-      "examples": [
-        "Les preuves présentées par l'avocat sont d'une nature irréfragable."
-      ],
-      "category": "work",
-      "difficulty": 5
-    },
-    {
-      "word": "prérogative",
-      "translations": [
-        "prerogative",
-        "privilege",
-        "exclusive right"
-      ],
-      "examples": [
-        "En tant que dirigeant, il a la prérogative de prendre cette décision."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "quintessence",
-      "translations": [
-        "quintessence",
-        "essence",
-        "epitome"
-      ],
-      "examples": [
-        "Cette œuvre d'art est la quintessence du mouvement impressionniste."
-      ],
-      "category": "arts",
-      "difficulty": 5
-    },
-    {
-      "word": "idiosyncrasique",
-      "translations": [
-        "idiosyncratic",
-        "peculiar",
-        "eccentric"
-      ],
-      "examples": [
-        "Ses goûts musicaux ont un caractère idiosyncrasique très prononcé."
-      ],
-      "category": "arts",
-      "difficulty": 5
-    },
-    {
-      "word": "revendication",
-      "translations": [
-        "claim",
-        "demand",
-        "entitlement"
-      ],
-      "examples": [
-        "Les syndicats ont formulé de nouvelles revendications salariales."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "récalcitrant",
-      "translations": [
-        "recalcitrant",
-        "uncooperative",
-        "resistant"
-      ],
-      "examples": [
-        "Malgré les efforts de l'enseignant, l'élève est resté récalcitrant."
-      ],
-      "category": "education",
-      "difficulty": 4
-    },
-    {
-      "word": "obsolescence",
-      "translations": [
-        "obsolescence",
-        "outdatedness",
-        "depreciation"
-      ],
-      "examples": [
-        "L'obsolescence rapide des technologies rend difficile les investissements."
-      ],
-      "category": "technology",
-      "difficulty": 4
-    },
-    {
-      "word": "pérennité",
-      "translations": [
-        "permanence",
-        "durability",
-        "longevity"
-      ],
-      "examples": [
-        "Malgré les crises, l'entreprise a su assurer sa pérennité."
-      ],
-      "category": "work",
       "difficulty": 4
     },
     {
       "word": "désuétude",
+      "type": "word",
+      "part_of_speech": "noun",
       "translations": [
-        "obsolescence",
         "disuse",
-        "antiquation"
+        "obsolescence"
       ],
       "examples": [
-        "Cette loi est tombée en désuétude et doit être réformée."
+        "Cette loi est tombée en désuétude depuis plusieurs décennies."
+      ],
+      "example_translations": [
+        "This law has fallen into disuse for several decades."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "veulerie",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "spinelessness",
+        "cowardice",
+        "weakness of will"
+      ],
+      "examples": [
+        "La veulerie de certains politiciens a déçu les électeurs."
+      ],
+      "example_translations": [
+        "The spinelessness of certain politicians disappointed the voters."
+      ],
+      "category": "emotions",
+      "difficulty": 5
+    },
+    {
+      "word": "prégnance",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "pregnance",
+        "pervasiveness",
+        "striking quality"
+      ],
+      "examples": [
+        "La prégnance du symbolisme religieux dans l'art médiéval est indéniable."
+      ],
+      "example_translations": [
+        "The pervasiveness of religious symbolism in medieval art is undeniable."
+      ],
+      "category": "arts",
+      "difficulty": 5
+    },
+    {
+      "word": "circonlocution",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "circumlocution",
+        "roundabout way of speaking"
+      ],
+      "examples": [
+        "Il a utilisé la circonlocution pour éviter de dire la vérité directement."
+      ],
+      "example_translations": [
+        "He used circumlocution to avoid stating the truth directly."
       ],
       "category": "work",
       "difficulty": 4
     },
     {
-      "word": "immanent",
+      "word": "sagacité",
+      "type": "word",
+      "part_of_speech": "noun",
       "translations": [
-        "immanent",
-        "inherent",
-        "intrinsic"
+        "sagacity",
+        "discernment",
+        "shrewdness"
       ],
       "examples": [
-        "Cette qualité est immanente à la nature même de l'objet."
+        "La sagacité du juge a permis de résoudre l'affaire complexe."
       ],
-      "category": "philosophy",
+      "example_translations": [
+        "The judge's sagacity made it possible to resolve the complex case."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "contumace",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "contumacy",
+        "stubborn refusal to obey",
+        "defiance"
+      ],
+      "examples": [
+        "Son attitude de contumace face aux autorités lui a coûté cher."
+      ],
+      "example_translations": [
+        "His contumacious attitude toward the authorities cost him dearly."
+      ],
+      "category": "work",
       "difficulty": 5
+    },
+    {
+      "word": "faire preuve de discernement",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "to show discernment",
+        "to demonstrate good judgment"
+      ],
+      "breakdown": [
+        {
+          "text": "faire",
+          "gloss": "to make/show"
+        },
+        {
+          "text": "preuve de",
+          "gloss": "proof/evidence of"
+        },
+        {
+          "text": "discernement",
+          "gloss": "discernment/judgment"
+        }
+      ],
+      "examples": [
+        "Elle a fait preuve de discernement en refusant cette offre douteuse."
+      ],
+      "example_translations": [
+        "She showed good judgment in refusing that questionable offer."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "à bon droit",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "rightly",
+        "justifiably",
+        "with good reason"
+      ],
+      "breakdown": [
+        {
+          "text": "à",
+          "gloss": "with/in"
+        },
+        {
+          "text": "bon",
+          "gloss": "good"
+        },
+        {
+          "text": "droit",
+          "gloss": "right/reason"
+        }
+      ],
+      "examples": [
+        "On peut à bon droit se demander si cette décision était justifiée."
+      ],
+      "example_translations": [
+        "One may rightly wonder whether this decision was justified."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "sans détour",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "without beating around the bush",
+        "straightforwardly",
+        "bluntly"
+      ],
+      "breakdown": [
+        {
+          "text": "sans",
+          "gloss": "without"
+        },
+        {
+          "text": "détour",
+          "gloss": "detour/roundabout way"
+        }
+      ],
+      "examples": [
+        "Il a dit sans détour ce qu'il pensait de la situation."
+      ],
+      "example_translations": [
+        "He said bluntly what he thought about the situation."
+      ],
+      "category": "daily_routines",
+      "difficulty": 3
+    },
+    {
+      "word": "mettre en avant",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "to put forward",
+        "to highlight",
+        "to emphasize"
+      ],
+      "breakdown": [
+        {
+          "text": "mettre",
+          "gloss": "to put"
+        },
+        {
+          "text": "en",
+          "gloss": "in/into"
+        },
+        {
+          "text": "avant",
+          "gloss": "forward"
+        }
+      ],
+      "examples": [
+        "Les candidats ont mis en avant leurs expériences professionnelles."
+      ],
+      "example_translations": [
+        "The candidates highlighted their professional experience."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "d'ores et déjà",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "already",
+        "from now on",
+        "as of now"
+      ],
+      "breakdown": [
+        {
+          "text": "d'ores",
+          "gloss": "from this moment (archaic)"
+        },
+        {
+          "text": "et",
+          "gloss": "and"
+        },
+        {
+          "text": "déjà",
+          "gloss": "already"
+        }
+      ],
+      "examples": [
+        "Nous pouvons d'ores et déjà confirmer la date de la réunion."
+      ],
+      "example_translations": [
+        "We can already confirm the date of the meeting."
+      ],
+      "category": "time",
+      "difficulty": 4
+    },
+    {
+      "word": "avoir beau faire",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "in vain",
+        "to no avail",
+        "no matter how much one does"
+      ],
+      "breakdown": [
+        {
+          "text": "avoir",
+          "gloss": "to have"
+        },
+        {
+          "text": "beau",
+          "gloss": "fine/beautiful"
+        },
+        {
+          "text": "faire",
+          "gloss": "to do"
+        }
+      ],
+      "examples": [
+        "Il a beau faire des efforts, rien ne change."
+      ],
+      "example_translations": [
+        "No matter how hard he tries, nothing changes."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "subsidiairement",
+      "type": "word",
+      "part_of_speech": "adverb",
+      "translations": [
+        "subsidiarily",
+        "in a secondary capacity",
+        "as a backup argument"
+      ],
+      "examples": [
+        "L'avocat a soulevé ce point subsidiairement, après son argument principal."
+      ],
+      "example_translations": [
+        "The lawyer raised this point as a secondary argument after his main one."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "s'affranchir de",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "to free oneself from",
+        "to break free from",
+        "to get rid of"
+      ],
+      "breakdown": [
+        {
+          "text": "s'",
+          "gloss": "oneself"
+        },
+        {
+          "text": "affranchir",
+          "gloss": "to free/liberate"
+        },
+        {
+          "text": "de",
+          "gloss": "from"
+        }
+      ],
+      "examples": [
+        "Elle a réussi à s'affranchir des conventions sociales."
+      ],
+      "example_translations": [
+        "She managed to break free from social conventions."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "s'était imposé",
+      "type": "grammar",
+      "part_of_speech": "verb",
+      "translations": [
+        "had imposed itself",
+        "had become necessary"
+      ],
+      "base_form": "s'imposer",
+      "grammar_note": "pluperfect tense, 3rd person singular; reflexive verb",
+      "breakdown": [
+        {
+          "text": "s'",
+          "gloss": "oneself (reflexive pronoun)"
+        },
+        {
+          "text": "était",
+          "gloss": "had been (auxiliary être)"
+        },
+        {
+          "text": "imposé",
+          "gloss": "imposed (past participle)"
+        }
+      ],
+      "examples": [
+        "Cette réforme s'était imposée comme une nécessité."
+      ],
+      "example_translations": [
+        "This reform had become necessary."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "en dépit de",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "in spite of",
+        "despite"
+      ],
+      "breakdown": [
+        {
+          "text": "en",
+          "gloss": "in"
+        },
+        {
+          "text": "dépit",
+          "gloss": "spite"
+        },
+        {
+          "text": "de",
+          "gloss": "of"
+        }
+      ],
+      "examples": [
+        "En dépit des obstacles, il a poursuivi son projet."
+      ],
+      "example_translations": [
+        "Despite the obstacles, he continued his project."
+      ],
+      "category": "daily_routines",
+      "difficulty": 3
+    },
+    {
+      "word": "aurait pu",
+      "type": "grammar",
+      "part_of_speech": "verb",
+      "translations": [
+        "could have",
+        "might have"
+      ],
+      "base_form": "pouvoir",
+      "grammar_note": "conditional perfect tense, 3rd person singular",
+      "breakdown": [
+        {
+          "text": "aurait",
+          "gloss": "would have (auxiliary avoir)"
+        },
+        {
+          "text": "pu",
+          "gloss": "been able (past participle of pouvoir)"
+        }
+      ],
+      "examples": [
+        "Il aurait pu réussir s'il avait travaillé davantage."
+      ],
+      "example_translations": [
+        "He could have succeeded if he had worked harder."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "apodictique",
+      "type": "word",
+      "part_of_speech": "adjective",
+      "translations": [
+        "apodictic",
+        "absolutely certain",
+        "incontrovertible"
+      ],
+      "examples": [
+        "Son affirmation était trop apodictique pour être vraie."
+      ],
+      "example_translations": [
+        "His assertion was too absolute to be true."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "occulter",
+      "type": "word",
+      "part_of_speech": "verb",
+      "translations": [
+        "to hide",
+        "to conceal",
+        "to obscure"
+      ],
+      "examples": [
+        "Les scandales politiques ont occulté les véritables enjeux du débat."
+      ],
+      "example_translations": [
+        "The political scandals obscured the real issues of the debate."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "l'incontournable",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "must-see",
+        "essential thing",
+        "unavoidable element"
+      ],
+      "examples": [
+        "Ce musée est l'incontournable de Paris."
+      ],
+      "example_translations": [
+        "This museum is a must-see in Paris."
+      ],
+      "category": "arts",
+      "difficulty": 4
+    },
+    {
+      "word": "s'ingérer",
+      "type": "word",
+      "part_of_speech": "verb",
+      "translations": [
+        "to meddle",
+        "to interfere",
+        "to intrude"
+      ],
+      "examples": [
+        "Il ne faut pas s'ingérer dans les affaires d'autrui."
+      ],
+      "example_translations": [
+        "One must not meddle in other people's affairs."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "la candeur",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "naivety",
+        "ingenuousness",
+        "artlessness"
+      ],
+      "examples": [
+        "Sa candeur l'a rendue vulnérable aux manipulations."
+      ],
+      "example_translations": [
+        "Her naivety made her vulnerable to manipulation."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "avoir des visées sur",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "to have designs on",
+        "to set one's sights on",
+        "to have ambitions regarding"
+      ],
+      "breakdown": [
+        {
+          "text": "avoir",
+          "gloss": "to have"
+        },
+        {
+          "text": "des visées",
+          "gloss": "designs, ambitions"
+        },
+        {
+          "text": "sur",
+          "gloss": "on, regarding"
+        }
+      ],
+      "examples": [
+        "Il a des visées sur le poste de directeur."
+      ],
+      "example_translations": [
+        "He has designs on the director's position."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "la dextérité",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "dexterity",
+        "skill",
+        "adroitness"
+      ],
+      "examples": [
+        "La dextérité du chirurgien était impressionnante."
+      ],
+      "example_translations": [
+        "The surgeon's dexterity was impressive."
+      ],
+      "category": "health",
+      "difficulty": 4
+    },
+    {
+      "word": "être en proie à",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "to be prey to",
+        "to be afflicted by",
+        "to be beset by"
+      ],
+      "breakdown": [
+        {
+          "text": "être",
+          "gloss": "to be"
+        },
+        {
+          "text": "en proie",
+          "gloss": "prey, victim"
+        },
+        {
+          "text": "à",
+          "gloss": "to"
+        }
+      ],
+      "examples": [
+        "Elle était en proie à des doutes existentiels."
+      ],
+      "example_translations": [
+        "She was beset by existential doubts."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "l'édulcoration",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "softening",
+        "sweetening",
+        "dilution"
+      ],
+      "examples": [
+        "L'édulcoration du message politique a déplu aux militants."
+      ],
+      "example_translations": [
+        "The softening of the political message displeased the activists."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "se dérober à",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "to shirk",
+        "to evade",
+        "to dodge"
+      ],
+      "breakdown": [
+        {
+          "text": "se dérober",
+          "gloss": "to steal away, to dodge"
+        },
+        {
+          "text": "à",
+          "gloss": "from"
+        }
+      ],
+      "examples": [
+        "Il ne peut pas se dérober à ses responsabilités."
+      ],
+      "example_translations": [
+        "He cannot shirk his responsibilities."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "ayant recours à",
+      "type": "grammar",
+      "part_of_speech": "verb",
+      "translations": [
+        "having recourse to",
+        "resorting to",
+        "making use of"
+      ],
+      "breakdown": [
+        {
+          "text": "ayant",
+          "gloss": "having (present participle of avoir)"
+        },
+        {
+          "text": "recours",
+          "gloss": "recourse, resort"
+        },
+        {
+          "text": "à",
+          "gloss": "to"
+        }
+      ],
+      "base_form": "avoir recours à",
+      "grammar_note": "present participle used to show concurrent action or means",
+      "examples": [
+        "Ayant recours à des stratégies innovantes, l'entreprise a prospéré."
+      ],
+      "example_translations": [
+        "By resorting to innovative strategies, the company thrived."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "la morosité",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "gloominess",
+        "despondency",
+        "sluggishness"
+      ],
+      "examples": [
+        "La morosité économique affecte le moral des travailleurs."
+      ],
+      "example_translations": [
+        "Economic sluggishness affects workers' morale."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "préconiser",
+      "type": "word",
+      "part_of_speech": "verb",
+      "translations": [
+        "to advocate",
+        "to recommend",
+        "to suggest"
+      ],
+      "examples": [
+        "Les experts préconisent une approche progressive."
+      ],
+      "example_translations": [
+        "Experts advocate a gradual approach."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "la perspicacité",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "acuity",
+        "shrewdness",
+        "discernment"
+      ],
+      "examples": [
+        "Sa perspicacité lui a permis de deviner les intentions cachées."
+      ],
+      "example_translations": [
+        "Her acuity allowed her to guess the hidden intentions."
+      ],
+      "category": "emotions",
+      "difficulty": 5
+    },
+    {
+      "word": "au demeurant",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "moreover",
+        "besides",
+        "for that matter"
+      ],
+      "breakdown": [
+        {
+          "text": "au",
+          "gloss": "to the, at the"
+        },
+        {
+          "text": "demeurant",
+          "gloss": "remaining, rest"
+        }
+      ],
+      "examples": [
+        "Au demeurant, cette décision était inévitable."
+      ],
+      "example_translations": [
+        "Moreover, this decision was inevitable."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "l'atermoiement",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "delay",
+        "procrastination",
+        "temporization"
+      ],
+      "examples": [
+        "L'atermoiement du gouvernement a frustré les citoyens."
+      ],
+      "example_translations": [
+        "The government's procrastination frustrated citizens."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "étant donné que",
+      "type": "grammar",
+      "part_of_speech": "conjunction",
+      "translations": [
+        "given that",
+        "considering that",
+        "since"
+      ],
+      "breakdown": [
+        {
+          "text": "étant",
+          "gloss": "being (present participle of être)"
+        },
+        {
+          "text": "donné",
+          "gloss": "given"
+        },
+        {
+          "text": "que",
+          "gloss": "that"
+        }
+      ],
+      "base_form": "étant donné que",
+      "grammar_note": "present participle construction used as a causal conjunction",
+      "examples": [
+        "Étant donné que vous êtes en retard, nous commençons sans vous."
+      ],
+      "example_translations": [
+        "Given that you are late, we are starting without you."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "la pusillanimité",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "cowardliness",
+        "timidity",
+        "faint-heartedness"
+      ],
+      "examples": [
+        "Sa pusillanimité l'empêchait de prendre des risques."
+      ],
+      "example_translations": [
+        "His cowardliness prevented him from taking risks."
+      ],
+      "category": "emotions",
+      "difficulty": 5
+    },
+    {
+      "word": "ne pas avoir froid aux yeux",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "to be fearless",
+        "to be bold",
+        "not to be easily intimidated"
+      ],
+      "breakdown": [
+        {
+          "text": "ne pas avoir",
+          "gloss": "not to have"
+        },
+        {
+          "text": "froid",
+          "gloss": "cold"
+        },
+        {
+          "text": "aux yeux",
+          "gloss": "in the eyes"
+        }
+      ],
+      "examples": [
+        "Elle n'a pas froid aux yeux et ose affronter ses adversaires."
+      ],
+      "example_translations": [
+        "She is fearless and dares to confront her adversaries."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "l'obséquiosité",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "obsequiousness",
+        "servility",
+        "excessive deference"
+      ],
+      "examples": [
+        "Son obséquiosité envers le patron était pathétique."
+      ],
+      "example_translations": [
+        "His obsequiousness toward the boss was pathetic."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "faire fi de",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "to disregard",
+        "to scoff at",
+        "to make light of"
+      ],
+      "breakdown": [
+        {
+          "text": "faire",
+          "gloss": "to make, to do"
+        },
+        {
+          "text": "fi",
+          "gloss": "shame, scorn"
+        },
+        {
+          "text": "de",
+          "gloss": "of"
+        }
+      ],
+      "examples": [
+        "Il fait fi des conventions sociales."
+      ],
+      "example_translations": [
+        "He disregards social conventions."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "s'accaparer",
+      "type": "word",
+      "part_of_speech": "verb",
+      "translations": [
+        "to monopolize",
+        "to seize control of",
+        "to take over"
+      ],
+      "examples": [
+        "Les grandes corporations s'accaparent les ressources naturelles."
+      ],
+      "example_translations": [
+        "Large corporations monopolize natural resources."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "délétère",
+      "type": "word",
+      "part_of_speech": "adjective",
+      "translations": [
+        "deleterious",
+        "harmful",
+        "pernicious"
+      ],
+      "examples": [
+        "Les effets délétères de la pollution sont bien documentés."
+      ],
+      "example_translations": [
+        "The deleterious effects of pollution are well documented."
+      ],
+      "category": "nature",
+      "difficulty": 5
+    },
+    {
+      "word": "à titre informatif",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "for information purposes",
+        "for your information",
+        "FYI"
+      ],
+      "breakdown": [
+        {
+          "text": "à titre",
+          "gloss": "in the capacity of"
+        },
+        {
+          "text": "informatif",
+          "gloss": "informative"
+        }
+      ],
+      "examples": [
+        "À titre informatif, le tarif augmentera le mois prochain."
+      ],
+      "example_translations": [
+        "For your information, the rate will increase next month."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "édulcorer",
+      "type": "word",
+      "part_of_speech": "verb",
+      "translations": [
+        "to sweeten",
+        "to soften",
+        "to tone down"
+      ],
+      "examples": [
+        "Il a édulcoré ses critiques pour ne pas offenser."
+      ],
+      "example_translations": [
+        "He toned down his criticisms to avoid offending."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "avoir raison de",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "to get the better of",
+        "to overcome",
+        "to defeat"
+      ],
+      "breakdown": [
+        {
+          "text": "avoir",
+          "gloss": "to have"
+        },
+        {
+          "text": "raison",
+          "gloss": "reason"
+        },
+        {
+          "text": "de",
+          "gloss": "of"
+        }
+      ],
+      "examples": [
+        "La détermination a eu raison de ses doutes."
+      ],
+      "example_translations": [
+        "Determination overcame his doubts."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "d'ailleurs",
+      "type": "word",
+      "part_of_speech": "adverb",
+      "translations": [
+        "besides",
+        "moreover",
+        "furthermore",
+        "by the way"
+      ],
+      "examples": [
+        "Ce projet est intéressant. D'ailleurs, nous en discuterons demain."
+      ],
+      "example_translations": [
+        "This project is interesting. Besides, we'll discuss it tomorrow."
+      ],
+      "category": "daily_routines",
+      "difficulty": 3
+    },
+    {
+      "word": "se morfondre",
+      "type": "word",
+      "part_of_speech": "verb",
+      "translations": [
+        "to languish",
+        "to mope",
+        "to fret"
+      ],
+      "examples": [
+        "Elle se morfondait en attendant des nouvelles."
+      ],
+      "example_translations": [
+        "She languished while waiting for news."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "aller de pair avec",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "to go hand in hand with",
+        "to be closely associated with"
+      ],
+      "breakdown": [
+        {
+          "text": "aller",
+          "gloss": "to go"
+        },
+        {
+          "text": "de pair",
+          "gloss": "hand in hand"
+        },
+        {
+          "text": "avec",
+          "gloss": "with"
+        }
+      ],
+      "examples": [
+        "L'ambition va de pair avec la persévérance."
+      ],
+      "example_translations": [
+        "Ambition goes hand in hand with perseverance."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "s'était avéré",
+      "type": "grammar",
+      "part_of_speech": "verb",
+      "translations": [
+        "had proved",
+        "had turned out"
+      ],
+      "base_form": "s'avérer",
+      "grammar_note": "passé composé (perfect tense), 3rd person singular reflexive",
+      "breakdown": [
+        {
+          "text": "s'",
+          "gloss": "oneself (reflexive)"
+        },
+        {
+          "text": "était",
+          "gloss": "had been (auxiliary)"
+        },
+        {
+          "text": "avéré",
+          "gloss": "proved"
+        }
+      ],
+      "examples": [
+        "Cette stratégie s'était avérée efficace."
+      ],
+      "example_translations": [
+        "This strategy had proved effective."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "insidieux",
+      "type": "word",
+      "part_of_speech": "adjective",
+      "translations": [
+        "insidious",
+        "treacherous",
+        "subtle and dangerous"
+      ],
+      "examples": [
+        "Les changements climatiques ont des effets insidieux."
+      ],
+      "example_translations": [
+        "Climate change has insidious effects."
+      ],
+      "category": "nature",
+      "difficulty": 5
+    },
+    {
+      "word": "faire valoir",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "to assert",
+        "to point out",
+        "to make a case for"
+      ],
+      "breakdown": [
+        {
+          "text": "faire",
+          "gloss": "to make"
+        },
+        {
+          "text": "valoir",
+          "gloss": "to be worth"
+        }
+      ],
+      "examples": [
+        "Elle a fait valoir ses compétences lors de l'entretien."
+      ],
+      "example_translations": [
+        "She asserted her skills during the interview."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "désuet",
+      "type": "word",
+      "part_of_speech": "adjective",
+      "translations": [
+        "obsolete",
+        "outdated",
+        "archaic"
+      ],
+      "examples": [
+        "Ces lois sont devenues désuètes."
+      ],
+      "example_translations": [
+        "These laws have become obsolete."
+      ],
+      "category": "education",
+      "difficulty": 4
+    },
+    {
+      "word": "ne serait-ce que",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "if only",
+        "even if only",
+        "at least"
+      ],
+      "breakdown": [
+        {
+          "text": "ne",
+          "gloss": "not (negative)"
+        },
+        {
+          "text": "serait",
+          "gloss": "would be"
+        },
+        {
+          "text": "ce",
+          "gloss": "it"
+        },
+        {
+          "text": "que",
+          "gloss": "that"
+        }
+      ],
+      "examples": [
+        "Viens nous voir, ne serait-ce que pour une heure."
+      ],
+      "example_translations": [
+        "Come see us, if only for an hour."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "contrevenir",
+      "type": "word",
+      "part_of_speech": "verb",
+      "translations": [
+        "to contravene",
+        "to violate",
+        "to go against"
+      ],
+      "examples": [
+        "Cette décision contrevient aux règles établies."
+      ],
+      "example_translations": [
+        "This decision contravenes the established rules."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "prenant",
+      "type": "word",
+      "part_of_speech": "adjective",
+      "translations": [
+        "engaging",
+        "absorbing",
+        "compelling"
+      ],
+      "examples": [
+        "C'est un roman très prenant."
+      ],
+      "example_translations": [
+        "It's a very engaging novel."
+      ],
+      "category": "arts",
+      "difficulty": 3
+    },
+    {
+      "word": "aurait pu être",
+      "type": "grammar",
+      "part_of_speech": "verb",
+      "translations": [
+        "could have been"
+      ],
+      "base_form": "pouvoir être",
+      "grammar_note": "conditional perfect (passé du conditionnel), 3rd person singular",
+      "breakdown": [
+        {
+          "text": "aurait",
+          "gloss": "would have (auxiliary)"
+        },
+        {
+          "text": "pu",
+          "gloss": "been able"
+        },
+        {
+          "text": "être",
+          "gloss": "to be"
+        }
+      ],
+      "examples": [
+        "Le résultat aurait pu être différent."
+      ],
+      "example_translations": [
+        "The result could have been different."
+      ],
+      "category": "daily_routines",
+      "difficulty": 4
+    },
+    {
+      "word": "en quelque sorte",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "in a way",
+        "so to speak",
+        "in some sense"
+      ],
+      "breakdown": [
+        {
+          "text": "en",
+          "gloss": "in"
+        },
+        {
+          "text": "quelque",
+          "gloss": "some"
+        },
+        {
+          "text": "sorte",
+          "gloss": "sort/way"
+        }
+      ],
+      "examples": [
+        "C'est, en quelque sorte, une révolution tranquille."
+      ],
+      "example_translations": [
+        "It is, in a way, a quiet revolution."
+      ],
+      "category": "daily_routines",
+      "difficulty": 3
+    },
+    {
+      "word": "contourner",
+      "type": "word",
+      "part_of_speech": "verb",
+      "translations": [
+        "to circumvent",
+        "to go around",
+        "to skirt"
+      ],
+      "examples": [
+        "Il a cherché à contourner la réglementation en vigueur."
+      ],
+      "example_translations": [
+        "He tried to circumvent the existing regulations."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "s'en prendre à",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "to blame",
+        "to attack",
+        "to take it out on"
+      ],
+      "breakdown": [
+        {
+          "text": "s'en",
+          "gloss": "oneself of it"
+        },
+        {
+          "text": "prendre",
+          "gloss": "to take"
+        },
+        {
+          "text": "à",
+          "gloss": "to/at"
+        }
+      ],
+      "examples": [
+        "Ne t'en prends pas à moi pour tes échecs."
+      ],
+      "example_translations": [
+        "Don't blame me for your failures."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "l'érudition",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "erudition",
+        "scholarly knowledge",
+        "learning"
+      ],
+      "examples": [
+        "Son érudition en histoire médiévale était impressionnante."
+      ],
+      "example_translations": [
+        "Her erudition in medieval history was impressive."
+      ],
+      "category": "education",
+      "difficulty": 5
+    },
+    {
+      "word": "avait envisagé",
+      "type": "grammar",
+      "part_of_speech": "verb",
+      "translations": [
+        "had considered"
+      ],
+      "base_form": "envisager",
+      "grammar_note": "passé composé, 3rd person singular (auxiliary avoir + past participle)",
+      "breakdown": [
+        {
+          "text": "avait",
+          "gloss": "had (auxiliary)"
+        },
+        {
+          "text": "envisagé",
+          "gloss": "considered (past participle)"
+        }
+      ],
+      "examples": [
+        "Elle avait envisagé plusieurs solutions avant de décider."
+      ],
+      "example_translations": [
+        "She had considered several solutions before deciding."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "de surcroît",
+      "type": "phrase",
+      "part_of_speech": "adverb",
+      "translations": [
+        "moreover",
+        "furthermore",
+        "what is more"
+      ],
+      "breakdown": [
+        {
+          "text": "de",
+          "gloss": "of"
+        },
+        {
+          "text": "surcroît",
+          "gloss": "excess/surplus"
+        }
+      ],
+      "examples": [
+        "Le projet est coûteux, et de surcroît, il n'est pas viable."
+      ],
+      "example_translations": [
+        "The project is expensive, and moreover, it is not viable."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "la duplicité",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "duplicity",
+        "deceitfulness",
+        "double-dealing"
+      ],
+      "examples": [
+        "Sa duplicité a finalement été découverte par ses collègues."
+      ],
+      "example_translations": [
+        "His duplicity was eventually discovered by his colleagues."
+      ],
+      "category": "emotions",
+      "difficulty": 5
+    },
+    {
+      "word": "mettre en lumière",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "to highlight",
+        "to bring to light",
+        "to shed light on"
+      ],
+      "breakdown": [
+        {
+          "text": "mettre",
+          "gloss": "to put"
+        },
+        {
+          "text": "en",
+          "gloss": "in"
+        },
+        {
+          "text": "lumière",
+          "gloss": "light"
+        }
+      ],
+      "examples": [
+        "L'étude a mis en lumière les inégalités sociales persistantes."
+      ],
+      "example_translations": [
+        "The study highlighted persistent social inequalities."
+      ],
+      "category": "education",
+      "difficulty": 4
+    },
+    {
+      "word": "l'acuité",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "acuity",
+        "sharpness",
+        "keenness"
+      ],
+      "examples": [
+        "L'acuité de son analyse a impressionné les experts."
+      ],
+      "example_translations": [
+        "The sharpness of his analysis impressed the experts."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "à bon escient",
+      "type": "phrase",
+      "part_of_speech": "adverb",
+      "translations": [
+        "knowingly",
+        "deliberately",
+        "advisedly"
+      ],
+      "breakdown": [
+        {
+          "text": "à",
+          "gloss": "to/at"
+        },
+        {
+          "text": "bon",
+          "gloss": "good"
+        },
+        {
+          "text": "escient",
+          "gloss": "knowledge/intent"
+        }
+      ],
+      "examples": [
+        "Il a critiqué le rapport à bon escient, en soulevant des points valides."
+      ],
+      "example_translations": [
+        "He criticized the report knowingly, raising valid points."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "l'opportunisme",
+      "type": "word",
+      "part_of_speech": "noun",
+      "translations": [
+        "opportunism",
+        "self-interest",
+        "expediency"
+      ],
+      "examples": [
+        "Son opportunisme politique a aliéné bon nombre de ses partisans."
+      ],
+      "example_translations": [
+        "His political opportunism alienated many of his supporters."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "faire preuve de",
+      "type": "phrase",
+      "part_of_speech": "expression",
+      "translations": [
+        "to show",
+        "to demonstrate",
+        "to display"
+      ],
+      "breakdown": [
+        {
+          "text": "faire",
+          "gloss": "to make/do"
+        },
+        {
+          "text": "preuve",
+          "gloss": "proof/evidence"
+        },
+        {
+          "text": "de",
+          "gloss": "of"
+        }
+      ],
+      "examples": [
+        "Elle a fait preuve d'une grande résilience face aux adversités."
+      ],
+      "example_translations": [
+        "She demonstrated great resilience in the face of adversity."
+      ],
+      "category": "emotions",
+      "difficulty": 3
+    },
+    {
+      "word": "s'ingénier",
+      "type": "word",
+      "part_of_speech": "verb",
+      "translations": [
+        "to contrive",
+        "to devise",
+        "to engineer a solution"
+      ],
+      "examples": [
+        "Elle s'ingénie à trouver des solutions créatives aux problèmes les plus épineux."
+      ],
+      "example_translations": [
+        "She contrives to find creative solutions to the thorniest problems."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "ayant eu",
+      "type": "grammar",
+      "part_of_speech": "verb",
+      "translations": [
+        "having had"
+      ],
+      "base_form": "avoir",
+      "grammar_note": "past participle of avoir in compound form; expresses an action completed before another past action",
+      "breakdown": [
+        {
+          "text": "ayant",
+          "gloss": "having (present participle of avoir)"
+        },
+        {
+          "text": "eu",
+          "gloss": "had (past participle of avoir)"
+        }
+      ],
+      "examples": [
+        "Ayant eu connaissance des faits, elle a décidé de se retirer du projet."
+      ],
+      "example_translations": [
+        "Having had knowledge of the facts, she decided to withdraw from the project."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "circonspect",
+      "type": "word",
+      "part_of_speech": "adjective",
+      "translations": [
+        "circumspect",
+        "wary",
+        "cautious",
+        "guarded"
+      ],
+      "examples": [
+        "Son attitude circonspecte face aux nouvelles propositions reflétait son expérience."
+      ],
+      "example_translations": [
+        "His circumspect attitude toward the new proposals reflected his experience."
+      ],
+      "category": "emotions",
+      "difficulty": 4
     }
   ]
 }
