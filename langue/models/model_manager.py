@@ -156,3 +156,16 @@ class MockModelInterface(ModelInterface):
         """
         return ["English", "Spanish", "French", "German", "Italian", "Portuguese",
                 "Chinese", "Japanese", "Korean", "Russian", "Arabic"]
+
+    def get_model_info(self) -> Dict[str, Any]:
+        """Return information about the mock model (required by ModelInterface)."""
+        return {
+            "name": self.name,
+            "type": "mock",
+            "offline": True,
+            "model_name": self.model_name,
+        }
+
+    def get_chat_response(self, messages, temperature=None, max_tokens=None, **kwargs) -> str:
+        """Return a predefined chat response."""
+        return '{"result": "This is a mock response for offline operation."}'
