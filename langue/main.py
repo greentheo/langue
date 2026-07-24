@@ -29,6 +29,7 @@ from langue.user.profile import UserProfileManager
 from langue.cli.commands import register_activity_commands
 from langue.models.discovery import discover_available_models, discover_ollama_models
 from langue.models import registry
+from langue.models.base import ModelError
 from langue.storage.integration import save_flashcard_activity_results
 
 # Define an 80's style theme
@@ -296,7 +297,16 @@ def show_main_menu(ctx):
         choice = 1
 
     if choice == 1:
-        show_activity_menu(ctx)
+        try:
+            show_activity_menu(ctx)
+        except ModelError as e:
+            hint = f"\n\n{e.hint}" if e.hint else ""
+            console.print(Panel(
+                f"{e}{hint}",
+                title="【ＭＯＤＥＬ　ＥＲＲＯＲ】",
+                border_style=SYNTHWAVE_THEME['primary'],
+                padding=(1, 2),
+            ))
     elif choice == 2:
         change_language_or_level(ctx)
     elif choice == 3:
