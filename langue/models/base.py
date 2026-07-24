@@ -8,6 +8,25 @@ import abc
 from typing import Dict, List, Optional, Any
 
 
+class ModelError(RuntimeError):
+    """Raised when a model backend genuinely fails.
+
+    Model interfaces raise this instead of returning fabricated text, so a
+    real failure (bad key, retired model, no network, Ollama down) surfaces to
+    the user as a clear error rather than a fake reply.
+
+    Attributes:
+        kind: short machine code — 'auth', 'not_found', 'rate_limit',
+            'connection', 'unavailable', or 'unknown'.
+        hint: optional user-facing suggestion for how to fix it.
+    """
+
+    def __init__(self, message: str, kind: str = "unknown", hint: Optional[str] = None):
+        super().__init__(message)
+        self.kind = kind
+        self.hint = hint
+
+
 class ModelInterface(abc.ABC):
     """Abstract base class for model interfaces.
 

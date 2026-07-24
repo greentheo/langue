@@ -8,23 +8,26 @@ import json
 import requests
 from typing import Dict, List, Optional, Any
 
-from langue.models.base import ModelInterface
+from langue.models.base import ModelInterface, ModelError
+from langue.models import registry
 
 
 class OllamaModelInterface(ModelInterface):
     """Interface for local Ollama models."""
 
-    def __init__(self, model_name: str = "llama3", server_url: str = "http://localhost:11434"):
+    def __init__(self, model_name: Optional[str] = None, server_url: str = "http://localhost:11434"):
         """Initialize the Ollama model interface.
 
         Args:
-            model_name: Name of the Ollama model to use
+            model_name: Name of the Ollama model to use (defaults to the
+                registry default when None).
             server_url: URL of the Ollama server
         """
-        self._model_name = model_name
+        self._model_name = model_name or registry.DEFAULT_OLLAMA_MODEL
         self._server_url = server_url.rstrip("/")
-        self._api_url = f"{server_url}/v1"
-        self._legacy_api_url = f"{server_url}/api"
+        # OpenAI-compatible endpoint (chat) vs native management endpoints (tags/show).
+        self._api_url = f"{self._server_url}/v1"
+        self._legacy_api_url = f"{self._server_url}/api"
 
     def get_response(self, prompt: str, system_prompt: Optional[str] = None,
                      temperature: Optional[float] = None, max_tokens: Optional[int] = None,
@@ -78,9 +81,12 @@ class OllamaModelInterface(ModelInterface):
                         "content": prompt
                     }
                 ],
-                "temperature": temperature,
-                "max_tokens": max_tokens
             }
+            # Only send optional params when set — some servers reject nulls.
+            if temperature is not None:
+                chat_request["temperature"] = temperature
+            if max_tokens is not None:
+                chat_request["max_tokens"] = max_tokens
 
             response = requests.post(
                 f"{self._api_url}/chat/completions",
@@ -104,14 +110,20 @@ class OllamaModelInterface(ModelInterface):
             # Handle response from legacy API
             else:
                 return data.get("response", "")
-        except requests.exceptions.ConnectionError:
-            raise ConnectionError(f"Could not connect to Ollama server at {self._server_url}")
+        except requests.exceptions.ConnectionError as e:
+            raise ModelError(
+                f"Could not connect to the Ollama server at {self._server_url}.",
+                kind="connection",
+                hint="Is Ollama running? Start it with 'ollama serve'.") from e
         except requests.exceptions.HTTPError as e:
-            raise RuntimeError(f"Ollama API error: {e}")
+            raise ModelError(
+                f"Ollama returned an error for model '{self._model_name}': {e}",
+                kind="unavailable",
+                hint=f"Is the model installed? Try 'ollama pull {self._model_name}'.") from e
         except requests.exceptions.RequestException as e:
-            raise RuntimeError(f"Error communicating with Ollama: {e}")
-        except json.JSONDecodeError:
-            raise RuntimeError("Invalid response from Ollama server")
+            raise ModelError(f"Error communicating with Ollama: {e}", kind="connection") from e
+        except json.JSONDecodeError as e:
+            raise ModelError("Invalid response from the Ollama server.", kind="unknown") from e
 
     def get_supported_languages(self) -> List[str]:
         """Get a list of languages supported by this Ollama model.
@@ -150,8 +162,8 @@ class OllamaModelInterface(ModelInterface):
             True if the Ollama server is running and the model is available
         """
         try:
-            # Check if Ollama server is running
-            response = requests.get(f"{self._api_url}/tags", timeout=2)
+            # Check if Ollama server is running (native endpoint, not /v1)
+            response = requests.get(f"{self._legacy_api_url}/tags", timeout=2)
             response.raise_for_status()
 
             # Check if this specific model is available
@@ -179,8 +191,8 @@ class OllamaModelInterface(ModelInterface):
         try:
             # Try to get more details about the model
             response = requests.post(
-                f"{self._api_url}/show",
-                json={"name": self._model_name},
+                f"{self._legacy_api_url}/show",
+                json={"model": self._model_name},
                 timeout=5
             )
 

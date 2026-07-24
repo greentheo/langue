@@ -5,9 +5,10 @@ This module provides functions for managing language model interfaces,
 including initialization, selection, and configuration.
 """
 
+import os
 from typing import Optional, Dict, Any
 
-from langue.models.base import ModelInterface
+from langue.models.base import ModelInterface, ModelError
 from langue.models.ollama import OllamaModelInterface
 from langue.models.claude import ClaudeModelInterface
 from langue.models.discovery import discover_ollama_models
@@ -78,10 +79,21 @@ def initialize_model_with_fallback(model_name: Optional[str] = None) -> ModelInt
             print("Trying default model...")
             return get_model_interface(None)
         except Exception as e2:
-            # If all else fails, use a mock model that doesn't make actual calls
-            print(f"Warning: Failed to initialize default model: {e2}")
-            print("Using mock model for offline operation.")
-            return MockModelInterface()
+            # Only fall back to fake responses when the user explicitly opts in,
+            # and make it unmistakably loud. Otherwise surface the real failure.
+            if os.environ.get("LANGUE_ALLOW_MOCK") == "1":
+                banner = "=" * 64
+                print(banner)
+                print("WARNING: MOCK MODE ENABLED (LANGUE_ALLOW_MOCK=1)")
+                print("Responses are FAKE canned text, NOT real AI output.")
+                print(banner)
+                return MockModelInterface()
+            raise ModelError(
+                f"Could not initialize any language model (last error: {e2}).",
+                kind="unavailable",
+                hint="Set ANTHROPIC_API_KEY for Claude, or start Ollama for local "
+                     "models. Set LANGUE_ALLOW_MOCK=1 to allow fake offline responses.",
+            ) from e2
 
 
 class MockModelInterface(ModelInterface):

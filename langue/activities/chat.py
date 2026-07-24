@@ -17,38 +17,10 @@ from rich.markdown import Markdown
 from rich.prompt import Prompt
 
 from langue.activities.base import Activity
-from langue.models.base import ModelInterface
+from langue.models.base import ModelInterface, ModelError
 from langue.models.ollama import OllamaModelInterface
 from langue.models.claude import ClaudeModelInterface
 from langue.utils.helpers import extract_words, parse_language_level
-
-# Add MockModelInterface for fallback when real models fail
-class MockModelInterface(ModelInterface):
-    """A mock model interface that returns predefined responses.
-
-    This is used as a fallback when the real model initialization fails.
-    """
-
-    def __init__(self, model_name: str = "mock"):
-        """Initialize mock model."""
-        self.model_name = model_name
-
-    def get_response(self, prompt: str, system_prompt: str = None, temperature: float = 0.7) -> str:
-        """Return a predefined response."""
-        # Return a simple greeting based on prompt context
-        if "spanish" in prompt.lower() or "español" in prompt.lower():
-            return "¡Hola! Soy un asistente de conversación básico."
-        elif "french" in prompt.lower() or "français" in prompt.lower():
-            return "Bonjour! Je suis un assistant de conversation basique."
-        elif "german" in prompt.lower() or "deutsch" in prompt.lower():
-            return "Hallo! Ich bin ein einfacher Konversationsassistent."
-        else:
-            return "Hello! I am a basic conversation assistant."
-
-    def get_chat_response(self, messages: List[Dict[str, str]], temperature: float = 0.7) -> str:
-        """Return a predefined chat response."""
-        # Return a simple response
-        return "Lo siento, estoy funcionando en modo limitado."
 
 # Import console with 80's theme from base activity
 from langue.activities.base import console, SYNTHWAVE_THEME, PANEL_BORDER_STYLE
@@ -156,18 +128,14 @@ class ChatActivity(Activity):
             else:
                 # Fallback to Ollama
                 return OllamaModelInterface()
+        except ModelError:
+            # Surface the real failure to the launch boundary — do not fake a model.
+            raise
         except Exception as e:
-            # Log the error
-            error_panel = Panel(
-                f"Error initializing model: {str(e)}\n\n"
-                "Using fallback conversation mode. This will work but responses won't be personalized.",
-                title="【﻿ＥＲＲＯＲ】",
-                border_style=PANEL_BORDER_STYLE,
-                padding=(1, 2)
-            )
-            console.print(error_panel)
-            # Return a fallback model that doesn't make real API calls
-            return MockModelInterface()
+            raise ModelError(
+                f"Could not initialize the conversation model: {e}",
+                kind="unknown",
+            ) from e
 
     def _get_level_from_difficulty(self, difficulty: int) -> str:
         """Convert difficulty (1-5) to CEFR level (A1-C2).
@@ -455,34 +423,23 @@ class ChatActivity(Activity):
 
             return True, response
 
+        except ModelError as e:
+            # Honest failure — show the specific problem and end the session
+            # rather than pretending to reply.
+            hint = f"\n\n{e.hint}" if e.hint else ""
+            console.print(Panel(
+                f"{e}{hint}",
+                title="【ＭＯＤＥＬ　ＥＲＲＯＲ】",
+                border_style=PANEL_BORDER_STYLE
+            ))
+            return False, ""
         except Exception as e:
-            error_message = str(e)
-
-            # Create and display error panel
-            if "404 Client Error: Not Found" in error_message and "ollama" in error_message.lower():
-                # Specific message for Ollama not running
-                console.print(Panel(
-                    f"Error: Ollama server is not responding\n\n"
-                    "This could be because Ollama is not running or experiencing issues.",
-                    title="【ＯＬＬＡＭＡ　ＥＲＲＯＲ】",
-                    border_style=PANEL_BORDER_STYLE
-                ))
-            else:
-                # Generic error message
-                console.print(Panel(
-                    f"Error getting response: {error_message}",
-                    title="【ＥＲＲＯＲ】",
-                    border_style=PANEL_BORDER_STYLE
-                ))
-
-            # Fallback responses in different languages
-            fallback_response = "Lo siento, tuve un problema al responder. ¿Puedes intentar decir algo más?"
-            if self.language == "French":
-                fallback_response = "Désolé, j'ai eu un problème à répondre. Pouvez-vous essayer de dire autre chose?"
-            elif self.language == "German":
-                fallback_response = "Es tut mir leid, ich hatte ein Problem beim Antworten. Könntest du versuchen, etwas anderes zu sagen?"
-
-            return True, fallback_response
+            console.print(Panel(
+                f"Error getting response: {e}",
+                title="【ＥＲＲＯＲ】",
+                border_style=PANEL_BORDER_STYLE
+            ))
+            return False, ""
 
     def start(self) -> None:
         """Start the chat activity.
@@ -512,8 +469,9 @@ class ChatActivity(Activity):
 
                         # Award points for each turn
                         self.points_earned += 2
-                    else:
-                        # End of conversation
+                    elif ai_response:
+                        # End of conversation with a closing message (empty means an
+                        # error panel was already shown — don't print a blank line).
                         console.print(f"\n[bold {SYNTHWAVE_THEME['secondary']}]【ＡＳＳＩＳＴＡＮＴ】[/bold {SYNTHWAVE_THEME['secondary']}] {ai_response}")
                 except EOFError:
                     # Handle Ctrl+D gracefully

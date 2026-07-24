@@ -7,10 +7,11 @@ This module provides an implementation of the ModelInterface for cloud-based Cla
 import os
 from typing import Dict, List, Optional, Any
 
+import anthropic
 from anthropic import Anthropic
 from anthropic.types import MessageParam
 
-from langue.models.base import ModelInterface
+from langue.models.base import ModelInterface, ModelError
 from langue.models import registry
 
 
@@ -29,18 +30,40 @@ class ClaudeModelInterface(ModelInterface):
         self._api_key = api_key or os.environ.get("ANTHROPIC_API_KEY")
 
         if not self._api_key:
-            print(f"WARNING: No API key provided for Claude model. Check your .env file or environment variables.")
-            print(f"         Add ANTHROPIC_API_KEY to your environment to use Claude models.")
-            raise ValueError("No API key provided for Claude model (ANTHROPIC_API_KEY missing)")
+            raise ModelError(
+                "No API key provided for Claude.", kind="auth",
+                hint="Add ANTHROPIC_API_KEY to your .env file or environment, "
+                     "or use a local Ollama model instead.")
 
-        # Use a dummy client if no API key to avoid immediate errors
         try:
             self._client = Anthropic(api_key=self._api_key)
         except Exception as e:
-            # Log error but continue - we'll handle API errors gracefully during requests
-            import logging
-            logging.debug(f"Claude client initialization error (suppressed): {str(e)}")
-            self._client = None
+            raise ModelError(
+                f"Failed to initialize the Claude client: {e}",
+                kind="unknown",
+                hint="Check your anthropic SDK install and ANTHROPIC_API_KEY.",
+            ) from e
+
+    def _raise_model_error(self, err: Exception) -> None:
+        """Translate an Anthropic SDK error into a typed ModelError and raise it."""
+        if isinstance(err, anthropic.AuthenticationError):
+            raise ModelError(
+                "Claude authentication failed.", kind="auth",
+                hint="Check that ANTHROPIC_API_KEY is set and valid.") from err
+        if isinstance(err, anthropic.NotFoundError):
+            raise ModelError(
+                f"Claude model '{self._model_name}' was not found.", kind="not_found",
+                hint="The model may be retired or not enabled for your account. "
+                     "Update the model in Settings.") from err
+        if isinstance(err, anthropic.RateLimitError):
+            raise ModelError(
+                "Claude rate limit exceeded.", kind="rate_limit",
+                hint="Wait a moment and try again.") from err
+        if isinstance(err, anthropic.APIConnectionError):
+            raise ModelError(
+                "Could not reach the Claude API.", kind="connection",
+                hint="Check your internet connection.") from err
+        raise ModelError(f"Claude API error: {err}", kind="unknown") from err
 
     def get_response(self, prompt: str, system_prompt: Optional[str] = None,
                      temperature: Optional[float] = None, max_tokens: Optional[int] = None,
@@ -85,22 +108,15 @@ class ClaudeModelInterface(ModelInterface):
                 params[key] = value
 
             # Make the API call
-            try:
-                response = self._client.messages.create(**params)
-                # Extract and return the text content
-                response_text = response.content[0].text
-                return response_text
-            except Exception as api_error:
-                # Suppress authentication errors in the UI but log them silently
-                import logging
-                logging.debug(f"API error (suppressed): {str(api_error)}")
+            response = self._client.messages.create(**params)
+            return response.content[0].text
 
-                # Create a fallback response for authentication errors
-                return "I'm having trouble connecting to my knowledge base right now. Let's continue with the activity anyway."
-
+        except anthropic.APIError as api_error:
+            self._raise_model_error(api_error)
+        except ModelError:
+            raise
         except Exception as e:
-            # Handle other non-API errors
-            return f"Sorry, I encountered an error: {str(e)}"
+            raise ModelError(f"Unexpected error calling Claude: {e}", kind="unknown") from e
 
     def get_supported_languages(self) -> List[str]:
         """Get a list of languages supported by Claude models.
@@ -229,19 +245,12 @@ class ClaudeModelInterface(ModelInterface):
                 params[key] = value
 
             # Make the API call
-            try:
-                response = self._client.messages.create(**params)
-                # Extract and return the text content
-                response_text = response.content[0].text
-                return response_text
-            except Exception as api_error:
-                # Suppress authentication errors in the UI but log them silently
-                import logging
-                logging.debug(f"Chat API error (suppressed): {str(api_error)}")
+            response = self._client.messages.create(**params)
+            return response.content[0].text
 
-                # Create a fallback response for authentication errors
-                return "I'm having trouble connecting to my knowledge base right now. Let's continue with the activity anyway."
-
+        except anthropic.APIError as api_error:
+            self._raise_model_error(api_error)
+        except ModelError:
+            raise
         except Exception as e:
-            # Handle other non-API errors
-            return f"Sorry, I encountered an error: {str(e)}"
+            raise ModelError(f"Unexpected error calling Claude: {e}", kind="unknown") from e
