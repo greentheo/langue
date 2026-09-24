@@ -1,0 +1,167 @@
+// Langue web — Postgres schema.
+//
+// Mirrors the concepts the Python CLI tracks in SQLite (users, per-language
+// word exposure, activity log, achievements, flashcard reviews) and adds what a
+// multi-user hosted app needs: password credentials, revocable sessions, and
+// invite codes so the deployment stays closed to strangers.
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+// Prisma 7: the connection URL lives in prisma.config.ts for CLI commands and
+// reaches the runtime client via the pg driver adapter in src/lib/db.ts.
+datasource db {
+  provider = "postgresql"
+}
+
+/// A registered learner. Registration requires a valid InviteCode.
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  displayName  String
+  passwordHash String
+  isAdmin      Boolean  @default(false)
+  createdAt    DateTime @default(now())
+  lastActiveAt DateTime @default(now())
+
+  // Learning preferences.
+  currentLanguage String @default("italian")
+  currentLevel    String @default("a1")
+  nativeLanguage  String @default("English")
+
+  // Aggregate progress. Denormalized on purpose: the dashboard reads these on
+  // every page load, and recomputing them from ActivityLog would not scale.
+  points     Int @default(0)
+  streakDays Int @default(0)
+
+  sessions     Session[]
+  progress     LanguageProgress[]
+  wordStats    WordStat[]
+  activityLog  ActivityLog[]
+  achievements Achievement[]
+  reviews      FlashcardReview[]
+  invitesUsed  InviteCode[]      @relation("InviteRedeemedBy")
+  invitesMade  InviteCode[]      @relation("InviteCreatedBy")
+
+  @@index([email])
+}
+
+/// Server-side session. The cookie holds only a random token; revoking a
+/// session means deleting the row, which a stateless JWT could not do.
+model Session {
+  id        String   @id @default(cuid())
+  tokenHash String   @unique
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+  expiresAt DateTime
+  userAgent String?
+
+  @@index([userId])
+  @@index([expiresAt])
+}
+
+/// Single-use registration code. Keeps the deployment private and caps who can
+/// spend the owner's Anthropic budget.
+model InviteCode {
+  id           String    @id @default(cuid())
+  code         String    @unique
+  note         String?
+  createdAt    DateTime  @default(now())
+  expiresAt    DateTime?
+  redeemedAt   DateTime?
+  createdById  String?
+  createdBy    User?     @relation("InviteCreatedBy", fields: [createdById], references: [id], onDelete: SetNull)
+  redeemedById String?   @unique
+  redeemedBy   User?     @relation("InviteRedeemedBy", fields: [redeemedById], references: [id], onDelete: SetNull)
+
+  @@index([code])
+}
+
+/// Per-language progress for one user.
+model LanguageProgress {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  language  String
+  level     String   @default("a1")
+  wordCount Int      @default(0)
+  points    Int      @default(0)
+  updatedAt DateTime @updatedAt
+
+  @@unique([userId, language])
+  @@index([userId])
+}
+
+/// A word the user has encountered, with exposure count. Feeds both the
+/// "words learned" metric and flashcard selection.
+model WordStat {
+  id         String   @id @default(cuid())
+  userId     String
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  language   String
+  word       String
+  exposures  Int      @default(1)
+  correct    Int      @default(0)
+  incorrect  Int      @default(0)
+  firstSeen  DateTime @default(now())
+  lastSeen   DateTime @default(now())
+  /// Next scheduled review; null until the word has been graded at least once.
+  dueAt      DateTime?
+  /// SM-2 style interval in days and ease factor, for future spaced repetition.
+  intervalDays Int   @default(0)
+  ease         Float @default(2.5)
+
+  @@unique([userId, language, word])
+  @@index([userId, language])
+  @@index([userId, language, dueAt])
+}
+
+/// One completed activity session.
+model ActivityLog {
+  id           String   @id @default(cuid())
+  userId       String
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  activityType String
+  language     String
+  level        String
+  pointsEarned Int      @default(0)
+  itemsTotal   Int      @default(0)
+  itemsCorrect Int      @default(0)
+  durationSec  Int      @default(0)
+  completedAt  DateTime @default(now())
+  metadata     Json?
+
+  @@index([userId, completedAt])
+  @@index([userId, activityType])
+}
+
+model Achievement {
+  id       String   @id @default(cuid())
+  userId   String
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  name     String
+  earnedAt DateTime @default(now())
+
+  @@unique([userId, name])
+  @@index([userId])
+}
+
+/// Individual flashcard answer, kept for review history and grading analytics.
+model FlashcardReview {
+  id         String   @id @default(cuid())
+  userId     String
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  language   String
+  level      String
+  word       String
+  expected   String
+  userAnswer String
+  score      Int
+  correct    Boolean
+  answeredAt DateTime @default(now())
+
+  @@index([userId, language, answeredAt])
+}

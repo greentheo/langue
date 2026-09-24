@@ -3,9 +3,11 @@
     "language": "french",
     "level": "b1",
     "version": "1.0",
-    "word_count": 96,
+    "word_count": 94,
     "created_at": "2025-09-11T23:03:55.741767",
-    "description": "Common B1 level French vocabulary"
+    "description": "Intermediate (B1) French vocabulary: work, travel, and personal interests",
+    "source": "data/vocab_sources/french/b1.psv",
+    "generated_by": "langue.tools.vocab_build"
   },
   "words": [
     {
@@ -74,19 +76,6 @@
       "difficulty": 3
     },
     {
-      "word": "aimer",
-      "translations": [
-        "to like",
-        "to love",
-        "to enjoy"
-      ],
-      "examples": [
-        "J'aime beaucoup voyager et découvrir de nouveaux endroits."
-      ],
-      "category": "emotions",
-      "difficulty": 2
-    },
-    {
       "word": "ajouter",
       "translations": [
         "to add",
@@ -124,19 +113,6 @@
       ],
       "category": "nature",
       "difficulty": 3
-    },
-    {
-      "word": "apporter",
-      "translations": [
-        "to bring",
-        "to carry",
-        "to provide"
-      ],
-      "examples": [
-        "Pouvez-vous apporter votre ordinateur portable à la réunion ?"
-      ],
-      "category": "work",
-      "difficulty": 2
     },
     {
       "word": "apprendre",

@@ -1,0 +1,1114 @@
+{
+  "metadata": {
+    "language": "portuguese",
+    "level": "c1",
+    "version": "1.0",
+    "word_count": 96,
+    "created_at": "2026-08-12T22:30:37.727535+00:00",
+    "description": "Advanced (C1) Portuguese vocabulary: idiomatic, professional, and nuanced usage",
+    "source": "data/vocab_sources/portuguese/c1.psv",
+    "generated_by": "langue.tools.vocab_build"
+  },
+  "words": [
+    {
+      "word": "clarividência",
+      "translations": [
+        "clear-sightedness",
+        "foresight"
+      ],
+      "examples": [
+        "Sua clarividência salvou a empresa."
+      ],
+      "category": "abstract",
+      "difficulty": 5
+    },
+    {
+      "word": "inércia",
+      "translations": [
+        "inertia"
+      ],
+      "examples": [
+        "A inércia burocrática trava qualquer reforma."
+      ],
+      "category": "abstract",
+      "difficulty": 5
+    },
+    {
+      "word": "arbítrio",
+      "translations": [
+        "free will",
+        "discretion"
+      ],
+      "examples": [
+        "A decisão fica ao livre arbítrio de cada um."
+      ],
+      "category": "philosophy",
+      "difficulty": 5
+    },
+    {
+      "word": "discernimento",
+      "translations": [
+        "discernment"
+      ],
+      "examples": [
+        "É preciso discernimento para avaliar as fontes."
+      ],
+      "category": "philosophy",
+      "difficulty": 5
+    },
+    {
+      "word": "usança",
+      "translations": [
+        "custom",
+        "usage"
+      ],
+      "examples": [
+        "Por usança antiga, começa-se com um brinde."
+      ],
+      "category": "society",
+      "difficulty": 5
+    },
+    {
+      "word": "práxis",
+      "translations": [
+        "practice",
+        "praxis"
+      ],
+      "examples": [
+        "Não é a práxis desta repartição."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "legado",
+      "translations": [
+        "legacy"
+      ],
+      "examples": [
+        "É um legado do século passado."
+      ],
+      "category": "society",
+      "difficulty": 4
+    },
+    {
+      "word": "enraizamento",
+      "translations": [
+        "rootedness"
+      ],
+      "examples": [
+        "O enraizamento cultural é profundo aqui."
+      ],
+      "category": "society",
+      "difficulty": 5
+    },
+    {
+      "word": "ressalva",
+      "translations": [
+        "caveat",
+        "proviso"
+      ],
+      "examples": [
+        "O relatório traz uma ressalva importante."
+      ],
+      "category": "abstract",
+      "difficulty": 5
+    },
+    {
+      "word": "corolário",
+      "translations": [
+        "corollary"
+      ],
+      "examples": [
+        "O corolário é que os custos dobram."
+      ],
+      "category": "science",
+      "difficulty": 5
+    },
+    {
+      "word": "repercussão",
+      "translations": [
+        "repercussion",
+        "impact"
+      ],
+      "examples": [
+        "As repercussões no emprego serão positivas."
+      ],
+      "category": "business",
+      "difficulty": 4
+    },
+    {
+      "word": "sinergia",
+      "translations": [
+        "synergy"
+      ],
+      "examples": [
+        "Buscam sinergias entre os dois setores."
+      ],
+      "category": "business",
+      "difficulty": 4
+    },
+    {
+      "word": "mais-valia",
+      "translations": [
+        "added value",
+        "surplus value"
+      ],
+      "examples": [
+        "A mais-valia fica com o distribuidor."
+      ],
+      "category": "business",
+      "difficulty": 5
+    },
+    {
+      "word": "opacidade",
+      "translations": [
+        "opacity",
+        "lack of transparency"
+      ],
+      "examples": [
+        "Denunciam a opacidade das contas."
+      ],
+      "category": "politics",
+      "difficulty": 5
+    },
+    {
+      "word": "detrimento",
+      "translations": [
+        "detriment"
+      ],
+      "examples": [
+        "Sem detrimento dos direitos adquiridos."
+      ],
+      "category": "politics",
+      "difficulty": 5
+    },
+    {
+      "word": "sutil",
+      "translations": [
+        "subtle"
+      ],
+      "examples": [
+        "Ele faz uma distinção muito sutil."
+      ],
+      "category": "abstract",
+      "difficulty": 4
+    },
+    {
+      "word": "capcioso",
+      "translations": [
+        "captious",
+        "loaded"
+      ],
+      "examples": [
+        "É uma pergunta capciosa."
+      ],
+      "category": "philosophy",
+      "difficulty": 5
+    },
+    {
+      "word": "espúrio",
+      "translations": [
+        "spurious",
+        "illegitimate"
+      ],
+      "examples": [
+        "Alegam motivos espúrios."
+      ],
+      "category": "politics",
+      "difficulty": 5
+    },
+    {
+      "word": "flagrante",
+      "translations": [
+        "flagrant",
+        "blatant"
+      ],
+      "examples": [
+        "A contradição é flagrante."
+      ],
+      "category": "abstract",
+      "difficulty": 4
+    },
+    {
+      "word": "inequívoco",
+      "translations": [
+        "unequivocal"
+      ],
+      "examples": [
+        "A resposta foi inequívoca."
+      ],
+      "category": "language",
+      "difficulty": 4
+    },
+    {
+      "word": "exaustivo",
+      "translations": [
+        "exhaustive",
+        "comprehensive"
+      ],
+      "examples": [
+        "A lista não é exaustiva."
+      ],
+      "category": "education",
+      "difficulty": 4
+    },
+    {
+      "word": "superficial",
+      "translations": [
+        "cursory",
+        "superficial"
+      ],
+      "examples": [
+        "Uma análise superficial não basta."
+      ],
+      "category": "education",
+      "difficulty": 3
+    },
+    {
+      "word": "verossímil",
+      "translations": [
+        "plausible",
+        "credible"
+      ],
+      "examples": [
+        "A reconstituição é verossímil."
+      ],
+      "category": "abstract",
+      "difficulty": 4
+    },
+    {
+      "word": "enganoso",
+      "translations": [
+        "misleading",
+        "deceptive"
+      ],
+      "examples": [
+        "A manchete é enganosa."
+      ],
+      "category": "language",
+      "difficulty": 4
+    },
+    {
+      "word": "contundente",
+      "translations": [
+        "forceful",
+        "hard-hitting"
+      ],
+      "examples": [
+        "A argumentação não é contundente."
+      ],
+      "category": "abstract",
+      "difficulty": 4
+    },
+    {
+      "word": "peculiar",
+      "translations": [
+        "peculiar",
+        "distinctive"
+      ],
+      "examples": [
+        "Ele tem um estilo peculiar."
+      ],
+      "category": "arts",
+      "difficulty": 4
+    },
+    {
+      "word": "inelutável",
+      "translations": [
+        "inescapable"
+      ],
+      "examples": [
+        "O declínio parecia inelutável."
+      ],
+      "category": "philosophy",
+      "difficulty": 5
+    },
+    {
+      "word": "astuto",
+      "translations": [
+        "shrewd",
+        "cunning"
+      ],
+      "examples": [
+        "É um negociador astuto."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "tenaz",
+      "translations": [
+        "tenacious",
+        "persistent"
+      ],
+      "examples": [
+        "Sua tenaz insistência deu frutos."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "arredio",
+      "translations": [
+        "aloof",
+        "withdrawn"
+      ],
+      "examples": [
+        "É um autor arredio, recusa entrevistas."
+      ],
+      "category": "emotions",
+      "difficulty": 5
+    },
+    {
+      "word": "valer-se de",
+      "translations": [
+        "to make use of"
+      ],
+      "examples": [
+        "Valeu-se do direito de não responder."
+      ],
+      "category": "politics",
+      "difficulty": 5
+    },
+    {
+      "word": "acatar",
+      "translations": [
+        "to comply with",
+        "to abide by"
+      ],
+      "examples": [
+        "A empresa deve acatar as determinações."
+      ],
+      "category": "politics",
+      "difficulty": 5
+    },
+    {
+      "word": "incumbir",
+      "translations": [
+        "to entrust",
+        "to be incumbent on"
+      ],
+      "examples": [
+        "A questão foi incumbida à comissão."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "condicionar",
+      "translations": [
+        "to make conditional"
+      ],
+      "examples": [
+        "O acordo fica condicionado à aprovação."
+      ],
+      "category": "business",
+      "difficulty": 4
+    },
+    {
+      "word": "instaurar",
+      "translations": [
+        "to institute",
+        "to open (proceedings)"
+      ],
+      "examples": [
+        "Foi instaurado um processo administrativo."
+      ],
+      "category": "politics",
+      "difficulty": 5
+    },
+    {
+      "word": "consagrar",
+      "translations": [
+        "to enshrine",
+        "to devote"
+      ],
+      "examples": [
+        "A Constituição consagra esse princípio."
+      ],
+      "category": "politics",
+      "difficulty": 5
+    },
+    {
+      "word": "revogar",
+      "translations": [
+        "to repeal",
+        "to revoke"
+      ],
+      "examples": [
+        "Não se pode revogar essa norma."
+      ],
+      "category": "politics",
+      "difficulty": 5
+    },
+    {
+      "word": "ratificar",
+      "translations": [
+        "to ratify"
+      ],
+      "examples": [
+        "O parlamento ratificou o tratado."
+      ],
+      "category": "politics",
+      "difficulty": 5
+    },
+    {
+      "word": "promulgar",
+      "translations": [
+        "to promulgate",
+        "to enact"
+      ],
+      "examples": [
+        "A lei foi promulgada ontem."
+      ],
+      "category": "politics",
+      "difficulty": 5
+    },
+    {
+      "word": "aplicar uma multa",
+      "translations": [
+        "to impose a fine"
+      ],
+      "examples": [
+        "Foi aplicada uma multa pesada."
+      ],
+      "category": "politics",
+      "difficulty": 4
+    },
+    {
+      "word": "cumprir",
+      "translations": [
+        "to fulfil",
+        "to comply"
+      ],
+      "examples": [
+        "Cumpriu todas as obrigações."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "versar sobre",
+      "translations": [
+        "to deal with",
+        "to be about"
+      ],
+      "examples": [
+        "A ação versa sobre patentes."
+      ],
+      "category": "politics",
+      "difficulty": 5
+    },
+    {
+      "word": "argumentar",
+      "translations": [
+        "to argue",
+        "to reason"
+      ],
+      "examples": [
+        "Argumentou a tese com rigor."
+      ],
+      "category": "language",
+      "difficulty": 4
+    },
+    {
+      "word": "refutar",
+      "translations": [
+        "to refute"
+      ],
+      "examples": [
+        "Refutou todas as objeções."
+      ],
+      "category": "philosophy",
+      "difficulty": 5
+    },
+    {
+      "word": "corroborar",
+      "translations": [
+        "to corroborate"
+      ],
+      "examples": [
+        "Os dados corroboram a hipótese."
+      ],
+      "category": "science",
+      "difficulty": 5
+    },
+    {
+      "word": "invalidar",
+      "translations": [
+        "to invalidate"
+      ],
+      "examples": [
+        "O erro invalida todo o resultado."
+      ],
+      "category": "science",
+      "difficulty": 4
+    },
+    {
+      "word": "respaldar",
+      "translations": [
+        "to endorse",
+        "to back"
+      ],
+      "examples": [
+        "Não pretendo respaldar essa escolha."
+      ],
+      "category": "politics",
+      "difficulty": 4
+    },
+    {
+      "word": "esquivar-se",
+      "translations": [
+        "to evade",
+        "to dodge"
+      ],
+      "examples": [
+        "Esquivou-se da pergunta com elegância."
+      ],
+      "category": "language",
+      "difficulty": 4
+    },
+    {
+      "word": "vislumbrar",
+      "translations": [
+        "to glimpse",
+        "to discern"
+      ],
+      "examples": [
+        "Não vislumbro nenhuma irregularidade."
+      ],
+      "category": "politics",
+      "difficulty": 5
+    },
+    {
+      "word": "alegar",
+      "translations": [
+        "to allege",
+        "to claim"
+      ],
+      "examples": [
+        "Alegou motivos de saúde."
+      ],
+      "category": "language",
+      "difficulty": 4
+    },
+    {
+      "word": "prognosticar",
+      "translations": [
+        "to forecast",
+        "to predict"
+      ],
+      "examples": [
+        "Prognostica-se nova recessão."
+      ],
+      "category": "politics",
+      "difficulty": 5
+    },
+    {
+      "word": "denotar",
+      "translations": [
+        "to denote",
+        "to indicate"
+      ],
+      "examples": [
+        "O gesto denota grande segurança."
+      ],
+      "category": "language",
+      "difficulty": 4
+    },
+    {
+      "word": "subjazer",
+      "translations": [
+        "to underlie"
+      ],
+      "examples": [
+        "A essa escolha subjaz uma visão precisa."
+      ],
+      "category": "philosophy",
+      "difficulty": 5
+    },
+    {
+      "word": "esboçar",
+      "translations": [
+        "to sketch",
+        "to outline"
+      ],
+      "examples": [
+        "Esbocemos os três pontos principais."
+      ],
+      "category": "education",
+      "difficulty": 4
+    },
+    {
+      "word": "ganhar força",
+      "translations": [
+        "to gain traction"
+      ],
+      "examples": [
+        "O hábito ganhou força rapidamente."
+      ],
+      "category": "society",
+      "difficulty": 4
+    },
+    {
+      "word": "dar margem a",
+      "translations": [
+        "to give rise to"
+      ],
+      "examples": [
+        "A frase deu margem a muita polêmica."
+      ],
+      "category": "language",
+      "difficulty": 5
+    },
+    {
+      "word": "colocar o foco em",
+      "translations": [
+        "to focus on"
+      ],
+      "examples": [
+        "Vamos colocar o foco no problema real."
+      ],
+      "category": "abstract",
+      "difficulty": 4
+    },
+    {
+      "word": "ruir",
+      "translations": [
+        "to collapse",
+        "to crumble"
+      ],
+      "examples": [
+        "A confiança mútua ruiu."
+      ],
+      "category": "abstract",
+      "difficulty": 5
+    },
+    {
+      "word": "apelar para",
+      "translations": [
+        "to appeal to"
+      ],
+      "examples": [
+        "A campanha apela para os medos."
+      ],
+      "category": "society",
+      "difficulty": 4
+    },
+    {
+      "word": "levar em conta",
+      "translations": [
+        "to take into account"
+      ],
+      "examples": [
+        "É preciso levar em conta os custos ocultos."
+      ],
+      "category": "abstract",
+      "difficulty": 3
+    },
+    {
+      "word": "ir por água abaixo",
+      "translations": [
+        "to fall through"
+      ],
+      "examples": [
+        "O acordo foi por água abaixo."
+      ],
+      "category": "business",
+      "difficulty": 4
+    },
+    {
+      "word": "pôr em xeque",
+      "translations": [
+        "to call into question"
+      ],
+      "examples": [
+        "Ninguém põe em xeque a honestidade dele."
+      ],
+      "category": "society",
+      "difficulty": 5
+    },
+    {
+      "word": "a título de exemplo",
+      "translations": [
+        "by way of example"
+      ],
+      "examples": [
+        "A título de exemplo, cito o caso francês."
+      ],
+      "category": "language",
+      "difficulty": 4
+    },
+    {
+      "word": "em linhas gerais",
+      "translations": [
+        "broadly speaking"
+      ],
+      "examples": [
+        "Em linhas gerais eu concordo."
+      ],
+      "category": "language",
+      "difficulty": 4
+    },
+    {
+      "word": "por si só",
+      "translations": [
+        "in itself"
+      ],
+      "examples": [
+        "O dado por si só não diz nada."
+      ],
+      "category": "abstract",
+      "difficulty": 4
+    },
+    {
+      "word": "com mais razão",
+      "translations": [
+        "all the more so"
+      ],
+      "examples": [
+        "Com mais razão devemos intervir."
+      ],
+      "category": "language",
+      "difficulty": 5
+    },
+    {
+      "word": "estética",
+      "translations": [
+        "aesthetics"
+      ],
+      "examples": [
+        "Sua estética remete ao barroco."
+      ],
+      "category": "philosophy",
+      "difficulty": 4
+    },
+    {
+      "word": "poética",
+      "translations": [
+        "poetics",
+        "artistic vision"
+      ],
+      "examples": [
+        "A poética do autor é coerente."
+      ],
+      "category": "arts",
+      "difficulty": 5
+    },
+    {
+      "word": "vanguarda",
+      "translations": [
+        "avant-garde"
+      ],
+      "examples": [
+        "Ele estava na vanguarda do movimento."
+      ],
+      "category": "arts",
+      "difficulty": 4
+    },
+    {
+      "word": "cânone",
+      "translations": [
+        "canon"
+      ],
+      "examples": [
+        "O cânone literário está em discussão."
+      ],
+      "category": "arts",
+      "difficulty": 5
+    },
+    {
+      "word": "exegese",
+      "translations": [
+        "exegesis"
+      ],
+      "examples": [
+        "A exegese do texto ocupa dois volumes."
+      ],
+      "category": "philosophy",
+      "difficulty": 5
+    },
+    {
+      "word": "filologia",
+      "translations": [
+        "philology"
+      ],
+      "examples": [
+        "Estudou filologia românica."
+      ],
+      "category": "language",
+      "difficulty": 5
+    },
+    {
+      "word": "epistemologia",
+      "translations": [
+        "epistemology"
+      ],
+      "examples": [
+        "A epistemologia investiga os limites do saber."
+      ],
+      "category": "philosophy",
+      "difficulty": 5
+    },
+    {
+      "word": "ontológico",
+      "translations": [
+        "ontological"
+      ],
+      "examples": [
+        "A diferença é ontológica, não prática."
+      ],
+      "category": "philosophy",
+      "difficulty": 5
+    },
+    {
+      "word": "dialética",
+      "translations": [
+        "dialectics"
+      ],
+      "examples": [
+        "A dialética entre os dois polos segue aberta."
+      ],
+      "category": "philosophy",
+      "difficulty": 5
+    },
+    {
+      "word": "paradigma",
+      "translations": [
+        "paradigm"
+      ],
+      "examples": [
+        "É preciso uma mudança de paradigma."
+      ],
+      "category": "science",
+      "difficulty": 4
+    },
+    {
+      "word": "metáfora",
+      "translations": [
+        "metaphor"
+      ],
+      "examples": [
+        "A metáfora é eficaz mas está gasta."
+      ],
+      "category": "language",
+      "difficulty": 4
+    },
+    {
+      "word": "alusão",
+      "translations": [
+        "allusion"
+      ],
+      "examples": [
+        "O título é uma alusão a Machado de Assis."
+      ],
+      "category": "arts",
+      "difficulty": 4
+    },
+    {
+      "word": "estado de bem-estar social",
+      "translations": [
+        "welfare state"
+      ],
+      "examples": [
+        "O estado de bem-estar social está se transformando."
+      ],
+      "category": "society",
+      "difficulty": 5
+    },
+    {
+      "word": "mobilidade social",
+      "translations": [
+        "social mobility"
+      ],
+      "examples": [
+        "A mobilidade social está quase parada."
+      ],
+      "category": "society",
+      "difficulty": 5
+    },
+    {
+      "word": "coesão",
+      "translations": [
+        "cohesion"
+      ],
+      "examples": [
+        "A coesão social está em risco."
+      ],
+      "category": "society",
+      "difficulty": 5
+    },
+    {
+      "word": "marginalização",
+      "translations": [
+        "marginalization"
+      ],
+      "examples": [
+        "A marginalização atinge as periferias."
+      ],
+      "category": "society",
+      "difficulty": 5
+    },
+    {
+      "word": "tecido social",
+      "translations": [
+        "social fabric"
+      ],
+      "examples": [
+        "O tecido social se enfraqueceu."
+      ],
+      "category": "society",
+      "difficulty": 5
+    },
+    {
+      "word": "classe social",
+      "translations": [
+        "social class"
+      ],
+      "examples": [
+        "Pertence à classe média urbana."
+      ],
+      "category": "society",
+      "difficulty": 4
+    },
+    {
+      "word": "clientelismo",
+      "translations": [
+        "patronage",
+        "cronyism"
+      ],
+      "examples": [
+        "O clientelismo distorce as contratações."
+      ],
+      "category": "politics",
+      "difficulty": 5
+    },
+    {
+      "word": "grupo de pressão",
+      "translations": [
+        "lobby",
+        "pressure group"
+      ],
+      "examples": [
+        "O grupo de pressão já é regulamentado."
+      ],
+      "category": "politics",
+      "difficulty": 5
+    },
+    {
+      "word": "transparência",
+      "translations": [
+        "transparency"
+      ],
+      "examples": [
+        "Exigem mais transparência nas contas."
+      ],
+      "category": "politics",
+      "difficulty": 4
+    },
+    {
+      "word": "prestação de contas",
+      "translations": [
+        "accountability"
+      ],
+      "examples": [
+        "Falta qualquer prestação de contas."
+      ],
+      "category": "politics",
+      "difficulty": 5
+    },
+    {
+      "word": "atribuição",
+      "translations": [
+        "duty",
+        "assigned task"
+      ],
+      "examples": [
+        "As atribuições constam no contrato."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "quadro de funcionários",
+      "translations": [
+        "staff",
+        "workforce"
+      ],
+      "examples": [
+        "O quadro de funcionários encolheu vinte por cento."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "rotatividade",
+      "translations": [
+        "staff turnover"
+      ],
+      "examples": [
+        "A rotatividade na empresa é altíssima."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "procuração",
+      "translations": [
+        "power of attorney"
+      ],
+      "examples": [
+        "Assinou com procuração do diretor."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "pauta",
+      "translations": [
+        "agenda"
+      ],
+      "examples": [
+        "O ponto não está na pauta."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "ata",
+      "translations": [
+        "minutes",
+        "record"
+      ],
+      "examples": [
+        "A ata da reunião segue em anexo."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "inadimplência",
+      "translations": [
+        "default",
+        "non-payment"
+      ],
+      "examples": [
+        "A inadimplência acarreta multa."
+      ],
+      "category": "business",
+      "difficulty": 5
+    },
+    {
+      "word": "rescisão",
+      "translations": [
+        "termination (of contract)"
+      ],
+      "examples": [
+        "Ele exerceu o direito de rescisão."
+      ],
+      "category": "business",
+      "difficulty": 5
+    }
+  ]
+}

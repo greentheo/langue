@@ -1,0 +1,96 @@
+# Italian C2 — mastery vocabulary
+# Format: word | translations (semicolon-separated) | example sentence | category | difficulty (1-5)
+
+# Literary and elevated register
+crepuscolo | twilight; dusk | Il crepuscolo scendeva sulla laguna. | nature | 5
+alba | dawn | All'alba la città era ancora deserta. | nature | 4
+brulicare | to swarm; to teem | La piazza brulicava di turisti. | society | 5
+rifulgere | to shine forth | La sua onestà rifulge in ogni pagina. | arts | 5
+adombrare | to hint at; to overshadow | Il testo adombra un rimprovero. | language | 5
+trasecolare | to be astounded | Trasecolò nel leggere la notizia. | emotions | 5
+indugiare | to linger; to hesitate | Indugiò a lungo sulla soglia. | arts | 5
+vagheggiare | to yearn for; to dream of | Vagheggiava un ritorno alle origini. | emotions | 5
+struggersi | to pine; to be consumed | Si struggeva di nostalgia. | emotions | 5
+annoverare | to count among; to number | Lo si annovera tra i maestri del Novecento. | arts | 5
+tratteggiare | to sketch; to outline | L'autore tratteggia un ritratto impietoso. | arts | 5
+dipanare | to unravel | Il romanzo dipana una trama intricata. | arts | 5
+lambire | to lap; to graze | Le fiamme lambirono il tetto. | nature | 5
+albergare | to harbour; to dwell | Albergava in lui un profondo rancore. | emotions | 5
+
+# Rare and precise nouns
+caducità | transience; frailty | La caducità delle cose umane è il suo tema. | philosophy | 5
+efferatezza | brutality; savagery | L'efferatezza del delitto sconvolse il paese. | society | 5
+pervicacia | obstinacy | La sua pervicacia sfiorava l'ostinazione cieca. | emotions | 5
+acribia | scrupulous accuracy | Ha ricostruito i fatti con acribia filologica. | education | 5
+sagacia | sagacity; shrewdness | Con rara sagacia previde il crollo. | philosophy | 5
+alacrità | alacrity; briskness | Lavorava con alacrità sorprendente. | work | 5
+ritrosia | reluctance; shyness | Vinse la sua ritrosia e parlò. | emotions | 5
+sprezzatura | studied nonchalance | Recita con la sprezzatura dei grandi. | arts | 5
+verve | verve; liveliness | Scrive con una verve irresistibile. | arts | 5
+levatura | calibre; stature | È uno studioso di grande levatura. | education | 5
+caratura | calibre; standing | Un evento di caratura internazionale. | business | 5
+cesura | caesura; break | Il 1945 segna una cesura netta. | society | 5
+crinale | ridge; watershed | Siamo su un crinale storico. | politics | 5
+coacervo | jumble; conglomeration | Il testo è un coacervo di citazioni. | language | 5
+guazzabuglio | muddle; hodgepodge | La riforma è un guazzabuglio normativo. | politics | 5
+
+# Refined adjectives
+aulico | lofty; courtly | Adotta un registro aulico, quasi arcaico. | language | 5
+forbito | polished; refined | Parla un italiano forbito. | language | 5
+ricercato | sought-after; refined | Usa un lessico ricercato ma mai pedante. | language | 5
+lapidario | terse; lapidary | La sua risposta fu lapidaria. | language | 5
+ellittico | elliptical; terse | Lo stile ellittico richiede un lettore attento. | language | 5
+icastico | vivid; incisive | Un'immagine icastica, impossibile da dimenticare. | arts | 5
+ridondante | redundant | La prosa è ridondante e va sfoltita. | language | 4
+stucchevole | cloying; sickly sweet | Il finale è stucchevole. | arts | 5
+greve | heavy; coarse | L'ironia greve rovina il tono. | arts | 5
+efferato | brutal; heinous | Un crimine efferato. | society | 5
+recondito | hidden; recondite | Un significato recondito sfugge alla prima lettura. | philosophy | 5
+inveterato | inveterate; deep-rooted | È un fumatore inveterato. | health | 5
+esiziale | fatal; disastrous | Un ritardo esiziale per la trattativa. | business | 5
+proteiforme | protean; ever-changing | Un fenomeno proteiforme, difficile da definire. | science | 5
+ineffabile | ineffable | Provò una gioia ineffabile. | emotions | 5
+
+# Idiom and proverb
+mettere il carro davanti ai buoi | to put the cart before the horse | Discutere i costi ora è mettere il carro davanti ai buoi. | society | 5
+avere le mani in pasta | to have a finger in the pie | Ha le mani in pasta in mezza città. | politics | 5
+gettare la spugna | to throw in the towel | Dopo tre tentativi ha gettato la spugna. | sports | 5
+navigare a vista | to play it by ear | Il governo naviga a vista da mesi. | politics | 5
+fare orecchie da mercante | to turn a deaf ear | La dirigenza fa orecchie da mercante. | work | 5
+prendere lucciole per lanterne | to be badly mistaken | Chi legge così prende lucciole per lanterne. | language | 5
+tagliare la testa al toro | to settle the matter once and for all | Votiamo e tagliamo la testa al toro. | society | 5
+cadere dalla padella nella brace | out of the frying pan into the fire | Cambiando fornitore siamo caduti dalla padella nella brace. | business | 5
+il gioco non vale la candela | the game isn't worth the candle | Per quel margine il gioco non vale la candela. | business | 5
+chi va piano va sano e va lontano | slow and steady wins the race | Chi va piano va sano e va lontano, diceva mia nonna. | society | 5
+non tutte le ciambelle riescono col buco | things don't always turn out right | Pazienza, non tutte le ciambelle riescono col buco. | society | 5
+avere la coda di paglia | to have a guilty conscience | Reagisce così perché ha la coda di paglia. | emotions | 5
+
+# Scholarly and technical
+ermeneutica | hermeneutics | L'ermeneutica del testo sacro è millenaria. | philosophy | 5
+euristica | heuristics | Applica un'euristica semplice ma efficace. | science | 5
+tassonomia | taxonomy | La tassonomia proposta è discutibile. | science | 5
+propedeutico | preparatory; introductory | Il corso è propedeutico all'esame finale. | education | 5
+diacronico | diachronic | Un'analisi diacronica del fenomeno. | language | 5
+sincronico | synchronic | Lo studio sincronico ignora l'evoluzione storica. | language | 5
+apodittico | apodictic; incontrovertible | Fa affermazioni apodittiche senza prove. | philosophy | 5
+assiomatico | axiomatic | Lo dà per assiomatico, ma non lo è. | philosophy | 5
+tautologico | tautological | La definizione è tautologica. | philosophy | 5
+antinomia | antinomy; contradiction in law | L'antinomia tra le due norme resta irrisolta. | politics | 5
+sussidiarietà | subsidiarity | Il principio di sussidiarietà regola le competenze. | politics | 5
+fungibile | fungible; interchangeable | Le due risorse non sono fungibili. | business | 5
+dirimente | decisive; conclusive | È un elemento dirimente per il giudizio. | politics | 5
+prodromico | preliminary; precursory | Sono segnali prodromici di una crisi. | science | 5
+
+# Cultural reference
+campanilismo | parochialism; local pride | Il campanilismo divide ancora i due paesi. | society | 5
+gattopardesco | changing so nothing changes | Una riforma gattopardesca, tutto resta com'era. | politics | 5
+dantesco | Dantesque; hellish | Uno scenario dantesco dopo l'alluvione. | arts | 5
+machiavellico | Machiavellian | Una strategia machiavellica ma efficace. | politics | 5
+bizantino | byzantine; overly complex | Un regolamento bizantino, illeggibile. | politics | 5
+sprovveduto | naive; unprepared | Non è affatto uno sprovveduto. | emotions | 5
+menefreghismo | couldn't-care-less attitude | Il menefreghismo generale è il vero problema. | society | 5
+qualunquismo | political apathy; anti-politics | Il qualunquismo alimenta l'astensione. | politics | 5
+dietrologia | conspiracy-mongering | La dietrologia sostituisce l'analisi. | politics | 5
+garbo | grace; tact | Ha declinato l'invito con garbo. | society | 5
+grinta | grit; determination | Gioca con una grinta straordinaria. | sports | 5
+disinvoltura | ease; self-assurance | Si muove con disinvoltura tra le lingue. | language | 5

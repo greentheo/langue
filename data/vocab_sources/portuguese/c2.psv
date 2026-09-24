@@ -1,0 +1,99 @@
+# Portuguese C2 — mastery vocabulary
+# Leans Brazilian Portuguese; see a1.psv for the dialect note.
+# Format: word | translations (semicolon-separated) | example sentence | category | difficulty (1-5)
+
+# Literary and elevated register
+crepúsculo | twilight; dusk | O crepúsculo descia sobre a baía. | nature | 5
+alvorada | dawn; daybreak | Na alvorada a cidade ainda estava deserta. | nature | 5
+fervilhar | to swarm; to teem | A praça fervilhava de turistas. | society | 5
+fulgurar | to blaze; to shine forth | Sua honestidade fulgura em cada página. | arts | 5
+tangenciar | to touch on; to skirt | O relatório apenas tangencia a questão central. | language | 5
+pasmar | to astound; to be amazed | Pasmou ao ler a notícia. | emotions | 5
+demorar-se | to linger | Demorou-se longamente à soleira. | arts | 4
+anelar | to yearn for | Anelava um retorno às origens. | emotions | 5
+consumir-se | to pine away | Consumia-se de saudade. | emotions | 5
+figurar entre | to be counted among | Figura entre os mestres do século XX. | arts | 5
+delinear | to sketch; to outline | O autor delineia um retrato impiedoso. | arts | 5
+deslindar | to unravel; to clear up | O romance deslinda uma trama intrincada. | arts | 5
+lamber | to lap; to lick | As chamas lamberam o telhado. | nature | 4
+albergar | to harbour; to house | Albergava um rancor profundo. | emotions | 5
+
+# Rare and precise nouns
+caducidade | transience; expiry | A caducidade do humano é seu grande tema. | philosophy | 5
+sanha | fury; viciousness | A sanha do crime chocou o país. | society | 5
+pertinácia | obstinacy; persistence | Sua pertinácia beirava a teimosia cega. | emotions | 5
+acuidade | acuity; sharpness | Reconstruiu os fatos com acuidade filológica. | education | 5
+sagacidade | sagacity; shrewdness | Com rara sagacidade previu o colapso. | philosophy | 5
+presteza | promptness; alacrity | Trabalhava com presteza surpreendente. | work | 5
+retraimento | withdrawal; reticence | Venceu o retraimento e falou. | emotions | 5
+donaire | grace; elegance | Recita com o donaire dos grandes. | arts | 5
+verve | verve; wit | Escreve com uma verve irresistível. | arts | 5
+estatura intelectual | intellectual stature | É um estudioso de grande estatura intelectual. | education | 5
+envergadura | scope; magnitude | Um evento de envergadura internacional. | business | 5
+cesura | caesura; break | O ano de 1930 marca uma cesura nítida. | society | 5
+encruzilhada | crossroads | Estamos numa encruzilhada histórica. | politics | 4
+amálgama | amalgam; jumble | O texto é um amálgama de citações. | language | 5
+emaranhado | tangle; muddle | A reforma é um emaranhado normativo. | politics | 5
+
+# Refined adjectives
+altissonante | high-flown; grandiloquent | Adota um registro altissonante, quase arcaico. | language | 5
+escorreito | flawless; correct | Escreve um português escorreito. | language | 5
+rebuscado | contrived; over-elaborate | Usa um léxico rebuscado e algo pedante. | language | 5
+lapidar | terse; lapidary | Sua resposta foi lapidar. | language | 5
+elíptico | elliptical; terse | O estilo elíptico exige um leitor atento. | language | 5
+plástico | vivid; expressive | Uma imagem plástica, impossível de esquecer. | arts | 5
+redundante | redundant | A prosa é redundante e precisa ser podada. | language | 4
+enjoativo | cloying; sickly | O final é enjoativo. | arts | 5
+chulo | coarse; vulgar | A ironia chula estraga o tom. | arts | 5
+atroz | atrocious; brutal | Um crime atroz. | society | 4
+recôndito | hidden; recondite | Um sentido recôndito escapa à primeira leitura. | philosophy | 5
+inveterado | inveterate; hardened | É um fumante inveterado. | health | 5
+funesto | disastrous; fatal | Um atraso funesto para a negociação. | business | 5
+proteiforme | protean; ever-changing | Um fenômeno proteiforme, difícil de definir. | science | 5
+inefável | ineffable | Sentiu uma alegria inefável. | emotions | 5
+
+# Idiom and proverb
+começar a casa pelo telhado | to put the cart before the horse | Discutir custos agora é começar a casa pelo telhado. | society | 5
+ter as mãos em | to have a hand in | Ele tem as mãos em meia administração. | politics | 5
+jogar a toalha | to throw in the towel | Depois de três tentativas jogou a toalha. | sports | 4
+navegar sem rumo | to drift; to have no direction | O governo navega sem rumo há meses. | politics | 5
+fazer ouvidos moucos | to turn a deaf ear | A diretoria faz ouvidos moucos. | work | 5
+trocar alhos por bugalhos | to mix up two unrelated things | Quem lê assim troca alhos por bugalhos. | language | 5
+cortar o mal pela raiz | to nip it in the bud | Vamos votar e cortar o mal pela raiz. | society | 5
+sair da frigideira e cair no fogo | out of the frying pan into the fire | Trocando de fornecedor saímos da frigideira e caímos no fogo. | business | 5
+não compensar o esforço | not to be worth the effort | Por essa margem não compensa o esforço. | business | 4
+devagar se vai ao longe | slow and steady wins the race | Devagar se vai ao longe, dizia minha avó. | society | 5
+de grão em grão a galinha enche o papo | little by little it adds up | De grão em grão a galinha enche o papo. | society | 5
+ter telhado de vidro | to live in a glass house | Reage assim porque tem telhado de vidro. | emotions | 5
+
+# Scholarly and technical
+hermenêutica | hermeneutics | A hermenêutica do texto sagrado é milenar. | philosophy | 5
+heurística | heuristics | Aplica uma heurística simples mas eficaz. | science | 5
+taxonomia | taxonomy | A taxonomia proposta é discutível. | science | 5
+propedêutico | preparatory; introductory | O curso é propedêutico ao exame final. | education | 5
+diacrônico | diachronic | Uma análise diacrônica do fenômeno. | language | 5
+sincrônico | synchronic | O estudo sincrônico ignora a evolução histórica. | language | 5
+apodítico | apodictic; incontrovertible | Faz afirmações apodíticas sem provas. | philosophy | 5
+axiomático | axiomatic | Ele dá isso por axiomático, e não é. | philosophy | 5
+tautológico | tautological | A definição é tautológica. | philosophy | 5
+antinomia | antinomy; conflict of laws | A antinomia entre as duas normas segue irresolvida. | politics | 5
+subsidiariedade | subsidiarity | O princípio da subsidiariedade regula as competências. | politics | 5
+fungível | fungible; interchangeable | Os dois recursos não são fungíveis. | business | 5
+dirimente | decisive; conclusive | É um elemento dirimente para o julgamento. | politics | 5
+prodrômico | prodromal; precursory | São sinais prodrômicos de uma crise. | science | 5
+
+# Cultural reference
+bairrismo | parochialism; local pride | O bairrismo ainda separa as duas cidades. | society | 5
+quixotesco | quixotic | Uma empreitada quixotesca, fadada ao fracasso. | arts | 5
+dantesco | Dantesque; hellish | Um cenário dantesco depois da enchente. | arts | 5
+maquiavélico | Machiavellian | Uma estratégia maquiavélica mas eficaz. | politics | 5
+bizantino | byzantine; hair-splitting | Um regulamento bizantino, ilegível. | politics | 5
+incauto | unwary; gullible | Ele não é nenhum incauto. | emotions | 5
+desleixo | negligence; sloppiness | O desleixo geral é o verdadeiro problema. | society | 5
+antipolítica | anti-politics | A antipolítica alimenta a abstenção. | politics | 5
+conspiracionismo | conspiracy thinking | O conspiracionismo substitui a análise. | politics | 5
+garbo | grace; poise | Declinou o convite com garbo. | society | 5
+garra | grit; drive | Joga com uma garra extraordinária. | sports | 4
+desenvoltura | ease; self-assurance | Move-se com desenvoltura entre vários idiomas. | language | 5
+saudade | longing; yearning for what is absent | A saudade não tem tradução exata em inglês. | emotions | 4
+jeitinho | knack for working around rules | O jeitinho resolve, mas nem sempre ajuda. | society | 5

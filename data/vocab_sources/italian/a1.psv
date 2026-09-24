@@ -1,0 +1,141 @@
+# Italian A1 — beginner vocabulary
+# Format: word | translations (semicolon-separated) | example sentence | category | difficulty (1-5)
+
+# Greetings and courtesy
+ciao | hello; hi; bye | Ciao, come stai? | greetings | 1
+buongiorno | good morning; good day | Buongiorno, signora Rossi. | greetings | 1
+buonasera | good evening | Buonasera, un tavolo per due. | greetings | 1
+buonanotte | good night | Buonanotte, a domani. | greetings | 1
+arrivederci | goodbye | Arrivederci e grazie di tutto. | greetings | 1
+grazie | thank you; thanks | Grazie mille per il tuo aiuto. | greetings | 1
+prego | you're welcome; please go ahead | Prego, si accomodi. | greetings | 1
+per favore | please | Un caffè, per favore. | greetings | 1
+scusi | excuse me; sorry (formal) | Scusi, dov'è la stazione? | greetings | 1
+piacere | nice to meet you; pleasure | Piacere di conoscerti. | greetings | 1
+salve | hello (neutral) | Salve, cerco il dottor Bianchi. | greetings | 2
+benvenuto | welcome | Benvenuto a Roma! | greetings | 2
+
+# Basics
+sì | yes | Sì, capisco. | basics | 1
+no | no | No, grazie. | basics | 1
+forse | maybe; perhaps | Forse domani andiamo al mare. | basics | 2
+molto | very; a lot | Sono molto stanco oggi. | basics | 1
+poco | little; not much | Parlo poco italiano. | basics | 1
+anche | also; too | Anche io vorrei venire. | basics | 1
+ma | but | Vorrei uscire, ma piove. | basics | 1
+perché | why; because | Perché non vieni con noi? | basics | 1
+come | how; like | Come si dice in italiano? | basics | 1
+dove | where | Dove abiti? | basics | 1
+quando | when | Quando arriva il treno? | basics | 1
+chi | who | Chi è quella ragazza? | basics | 1
+cosa | what; thing | Cosa fai stasera? | basics | 1
+quanto | how much; how many | Quanto costa questo? | basics | 1
+bene | well; good | Sto bene, grazie. | basics | 1
+male | badly; bad | Oggi mi sento male. | basics | 1
+sempre | always | Bevo sempre un caffè la mattina. | basics | 2
+mai | never | Non sono mai stato in Sicilia. | basics | 2
+adesso | now | Adesso devo andare. | basics | 2
+qui | here | Il ristorante è qui vicino. | basics | 1
+
+# Numbers
+uno | one | Ho solo uno zaino. | numbers | 1
+due | two | Vorrei due biglietti. | numbers | 1
+tre | three | Ci sono tre libri sul tavolo. | numbers | 1
+quattro | four | La riunione è alle quattro. | numbers | 1
+cinque | five | Abito al quinto piano, numero cinque. | numbers | 1
+sei | six | Mi alzo alle sei ogni mattina. | numbers | 1
+sette | seven | La settimana ha sette giorni. | numbers | 1
+otto | eight | Il negozio apre alle otto. | numbers | 1
+nove | nine | Ho nove cugini. | numbers | 1
+dieci | ten | Costa dieci euro. | numbers | 1
+venti | twenty | Ho venti minuti di pausa. | numbers | 2
+cento | hundred | Il libro ha cento pagine. | numbers | 2
+mille | thousand | Questa città ha mille anni di storia. | numbers | 2
+primo | first | È il mio primo giorno di lavoro. | numbers | 2
+
+# Family and people
+famiglia | family | La mia famiglia è numerosa. | family | 1
+madre | mother | Mia madre cucina benissimo. | family | 1
+padre | father | Mio padre lavora in banca. | family | 1
+figlio | son; child | Suo figlio ha cinque anni. | family | 1
+figlia | daughter | La loro figlia studia medicina. | family | 1
+fratello | brother | Ho un fratello più grande. | family | 1
+sorella | sister | Mia sorella vive a Milano. | family | 1
+nonno | grandfather | Mio nonno racconta belle storie. | family | 2
+nonna | grandmother | La nonna prepara la pasta a mano. | family | 2
+marito | husband | Suo marito è insegnante. | family | 2
+moglie | wife | Mia moglie ama viaggiare. | family | 2
+amico | friend | Vado al cinema con un amico. | family | 1
+bambino | child; little boy | Il bambino gioca in giardino. | family | 1
+ragazza | girl; girlfriend | Quella ragazza è la mia vicina. | family | 1
+uomo | man | Quell'uomo lavora qui da trent'anni. | family | 1
+donna | woman | La donna alla cassa è molto gentile. | family | 1
+
+# Food and drink
+acqua | water | Vorrei un bicchiere d'acqua. | food | 1
+pane | bread | Compro il pane ogni mattina. | food | 1
+vino | wine | Un bicchiere di vino rosso, grazie. | food | 1
+caffè | coffee | Prendo un caffè al bar. | food | 1
+latte | milk | Bevo il latte a colazione. | food | 1
+pasta | pasta | La pasta è pronta in dieci minuti. | food | 1
+pizza | pizza | Stasera mangiamo la pizza. | food | 1
+formaggio | cheese | Questo formaggio viene dalla Sardegna. | food | 2
+carne | meat | Non mangio carne il venerdì. | food | 2
+pesce | fish | Il pesce è freschissimo oggi. | food | 2
+frutta | fruit | Mangio frutta tutti i giorni. | food | 2
+verdura | vegetables | Compro la verdura al mercato. | food | 2
+zucchero | sugar | Prendi lo zucchero nel caffè? | food | 2
+sale | salt | Manca un po' di sale. | food | 2
+colazione | breakfast | Faccio colazione alle sette. | food | 2
+pranzo | lunch | Il pranzo è all'una. | food | 2
+cena | dinner | La cena è quasi pronta. | food | 2
+ristorante | restaurant | Conosco un buon ristorante in centro. | food | 2
+
+# Time
+giorno | day | Che giorno è oggi? | time | 1
+settimana | week | Ci vediamo la prossima settimana. | time | 2
+mese | month | Parto il mese prossimo. | time | 2
+anno | year | Studio italiano da un anno. | time | 1
+oggi | today | Oggi fa molto caldo. | time | 1
+domani | tomorrow | Domani ho un esame. | time | 1
+ieri | yesterday | Ieri sono andato al museo. | time | 1
+mattina | morning | La mattina corro nel parco. | time | 2
+sera | evening | La sera guardo un film. | time | 2
+notte | night | Ho dormito male questa notte. | time | 2
+ora | hour; now | Che ora è? | time | 1
+minuto | minute | Aspetta un minuto, per favore. | time | 2
+lunedì | Monday | Lunedì torno al lavoro. | time | 2
+sabato | Saturday | Sabato andiamo in montagna. | time | 2
+domenica | Sunday | La domenica dormo fino a tardi. | time | 2
+
+# Places and travel
+casa | house; home | Torno a casa alle sei. | housing | 1
+città | city | Roma è una città bellissima. | travel | 1
+strada | street; road | La strada è chiusa per lavori. | travel | 2
+stazione | station | La stazione è a dieci minuti a piedi. | transportation | 2
+treno | train | Il treno per Firenze parte alle nove. | transportation | 2
+autobus | bus | Prendo l'autobus numero venti. | transportation | 2
+macchina | car | La macchina è parcheggiata qui dietro. | transportation | 2
+aeroporto | airport | Arrivo all'aeroporto alle otto. | transportation | 2
+albergo | hotel | Abbiamo prenotato un albergo in centro. | travel | 2
+negozio | shop; store | Il negozio chiude alle sette. | shopping | 2
+mercato | market | Il mercato è aperto il sabato. | shopping | 2
+biglietto | ticket | Ho comprato il biglietto online. | travel | 2
+
+# Everyday things and adjectives
+libro | book | Sto leggendo un libro italiano. | education | 1
+lavoro | work; job | Il mio lavoro mi piace molto. | work | 1
+scuola | school | I bambini vanno a scuola alle otto. | education | 1
+soldi | money | Non ho soldi con me. | shopping | 2
+telefono | telephone | Ti chiamo al telefono stasera. | technology | 1
+grande | big; large | Vivo in una casa grande. | basics | 1
+piccolo | small; little | Ho un appartamento piccolo. | basics | 1
+nuovo | new | Ho comprato un computer nuovo. | basics | 1
+bello | beautiful; nice | Che bella giornata! | basics | 1
+buono | good; tasty | Questo caffè è molto buono. | basics | 1
+caldo | hot; warm | Oggi fa caldo. | weather | 1
+freddo | cold | In inverno fa freddo qui. | weather | 1
+pioggia | rain | La pioggia è cominciata all'alba. | weather | 2
+sole | sun | C'è il sole oggi. | weather | 1
+felice | happy | Sono felice di vederti. | emotions | 2
+stanco | tired | Sono stanco dopo il lavoro. | emotions | 2

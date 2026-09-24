@@ -1,0 +1,111 @@
+# French C2 — mastery vocabulary
+#
+# Authored to replace the previous C2 set, which held only 36 genuinely new
+# entries out of 50 rows, the rest duplicated from C1 (see issue #27).
+#
+# Format: word | translations (semicolon-separated) | example sentence | category | difficulty (1-5)
+
+# Literary and elevated register
+crépuscule | twilight; dusk | Le crépuscule tombait sur la lagune. | nature | 5
+aube | dawn | À l'aube, la ville était encore déserte. | nature | 4
+grouiller | to swarm; to teem | La place grouillait de touristes. | society | 5
+resplendir | to shine forth; to glow | Sa probité resplendit à chaque page. | arts | 5
+esquisser | to sketch; to outline | L'auteur esquisse un portrait sans complaisance. | arts | 4
+s'attarder | to linger | Il s'attarda longuement sur le seuil. | arts | 4
+se morfondre | to mope; to languish | Il se morfondait loin des siens. | emotions | 5
+languir | to languish; to pine | Elle languissait de nostalgie. | emotions | 5
+démêler | to unravel; to disentangle | Le roman démêle une intrigue touffue. | arts | 5
+lécher | to lap; to lick | Les flammes léchaient la toiture. | nature | 4
+nourrir | to harbour; to nourish | Il nourrissait une rancune tenace. | emotions | 4
+ourdir | to weave; to hatch (a plot) | Ils ourdissaient un complot depuis des mois. | politics | 5
+sourdre | to well up; to arise | Une inquiétude sourdait dans l'assemblée. | emotions | 5
+chatoyer | to shimmer | La soie chatoyait à la lumière des bougies. | arts | 5
+
+# Rare and precise nouns
+fugacité | transience; fleetingness | La fugacité des choses humaines est son grand thème. | philosophy | 5
+férocité | ferocity; savagery | La férocité du crime a bouleversé le pays. | society | 5
+ténacité | tenacity | Sa ténacité confinait à l'entêtement. | emotions | 4
+minutie | meticulousness | Il a reconstitué les faits avec minutie. | education | 5
+perspicacité | perspicacity; insight | Avec une rare perspicacité, il avait prévu l'effondrement. | philosophy | 5
+célérité | swiftness; celerity | L'affaire fut traitée avec célérité. | work | 5
+pudeur | modesty; reserve | Il évoque ce deuil avec pudeur. | emotions | 5
+verve | verve; spirit | Il écrit avec une verve irrésistible. | arts | 5
+envergure | scope; stature | Un événement d'envergure internationale. | business | 5
+césure | caesura; break | L'année 1945 marque une césure nette. | society | 5
+charnière | turning point; hinge | Nous vivons une période charnière. | politics | 5
+fatras | jumble; hotchpotch | Ce texte n'est qu'un fatras de citations. | language | 5
+imbroglio | imbroglio; tangle | La réforme a créé un imbroglio juridique. | politics | 5
+mansuétude | leniency; forbearance | Le juge a fait preuve de mansuétude. | politics | 5
+outrecuidance | presumptuousness | Son outrecuidance a fini par lasser. | emotions | 5
+truchement | intermediary; means | Il s'exprime par le truchement de son avocat. | language | 5
+
+# Refined adjectives
+ampoulé | bombastic; turgid | Il adopte un registre ampoulé, presque archaïque. | language | 5
+châtié | polished; refined (style) | Il écrit un français châtié. | language | 5
+alambiqué | convoluted; over-elaborate | Son raisonnement est alambiqué. | language | 5
+lapidaire | terse; lapidary | Sa réponse fut lapidaire. | language | 5
+elliptique | elliptical; terse | Le style elliptique exige un lecteur attentif. | language | 5
+saisissant | striking; gripping | Une image saisissante, impossible à oublier. | arts | 4
+redondant | redundant | La prose est redondante et mériterait d'être élaguée. | language | 4
+mièvre | mawkish; insipid | La fin est mièvre. | arts | 5
+truculent | colourful; racy | Un personnage truculent et haut en couleur. | arts | 5
+abject | abject; despicable | Un crime abject. | society | 4
+abscons | abstruse; obscure | Un vocabulaire abscons décourage le lecteur. | philosophy | 5
+invétéré | inveterate; hardened | C'est un fumeur invétéré. | health | 5
+funeste | disastrous; fatal | Un retard funeste pour la négociation. | business | 5
+protéiforme | protean; ever-changing | Un phénomène protéiforme, difficile à cerner. | science | 5
+ineffable | ineffable | Il éprouva une joie ineffable. | emotions | 5
+prolixe | verbose; long-winded | L'orateur fut prolixe et confus. | language | 5
+sibyllin | cryptic; sibylline | Sa réponse sibylline n'a rassuré personne. | language | 5
+inique | iniquitous; grossly unfair | Une décision inique. | politics | 5
+
+# Idiom and proverb
+mettre la charrue avant les bœufs | to put the cart before the horse | Discuter des coûts maintenant, c'est mettre la charrue avant les bœufs. | society | 5
+avoir voix au chapitre | to have a say | Les salariés n'ont pas voix au chapitre. | work | 5
+jeter l'éponge | to throw in the towel | Après trois tentatives, il a jeté l'éponge. | sports | 4
+naviguer à vue | to play it by ear | Le gouvernement navigue à vue depuis des mois. | politics | 5
+faire la sourde oreille | to turn a deaf ear | La direction fait la sourde oreille. | work | 5
+prendre des vessies pour des lanternes | to be badly mistaken | Qui lit ainsi prend des vessies pour des lanternes. | language | 5
+trancher dans le vif | to take drastic action | Il a fallu trancher dans le vif. | society | 5
+tomber de Charybde en Scylla | out of the frying pan into the fire | En changeant de fournisseur, nous sommes tombés de Charybde en Scylla. | business | 5
+le jeu n'en vaut pas la chandelle | the game isn't worth the candle | Pour cette marge, le jeu n'en vaut pas la chandelle. | business | 5
+petit à petit l'oiseau fait son nid | little by little it adds up | Petit à petit l'oiseau fait son nid, disait ma grand-mère. | society | 5
+il n'y a pas de fumée sans feu | there's no smoke without fire | On en parle beaucoup : il n'y a pas de fumée sans feu. | society | 5
+battre en brèche | to demolish (an argument) | Il a battu en brèche toutes les objections. | philosophy | 5
+faire les frais de | to bear the brunt of | Ce sont les usagers qui font les frais de la réforme. | politics | 5
+au demeurant | incidentally; for that matter | Au demeurant, la question reste ouverte. | language | 5
+
+# Scholarly and technical
+herméneutique | hermeneutics | L'herméneutique du texte sacré est millénaire. | philosophy | 5
+heuristique | heuristics | Il applique une heuristique simple mais efficace. | science | 5
+taxinomie | taxonomy | La taxinomie proposée est discutable. | science | 5
+propédeutique | preparatory study | Ce cours est propédeutique à l'examen final. | education | 5
+diachronique | diachronic | Une analyse diachronique du phénomène. | language | 5
+synchronique | synchronic | L'étude synchronique néglige l'évolution historique. | language | 5
+apodictique | apodictic; incontrovertible | Il avance des affirmations apodictiques sans preuve. | philosophy | 5
+axiomatique | axiomatic | Il tient cela pour axiomatique, et ce ne l'est pas. | philosophy | 5
+tautologique | tautological | La définition est tautologique. | philosophy | 5
+subsidiarité | subsidiarity | Le principe de subsidiarité régit les compétences. | politics | 5
+fongible | fungible; interchangeable | Ces deux ressources ne sont pas fongibles. | business | 5
+dirimant | decisive; nullifying | C'est un élément dirimant pour le jugement. | politics | 5
+prodromique | prodromal; precursory | Ce sont des signes prodromiques d'une crise. | science | 5
+épistémologie | epistemology | L'épistémologie interroge les limites du savoir. | philosophy | 5
+paradigme | paradigm | Il faut un changement de paradigme. | science | 4
+sémantique | semantics; semantic | La différence est purement sémantique. | language | 4
+polysémie | polysemy | La polysémie du mot complique la traduction. | language | 5
+
+# Cultural reference and society
+esprit de clocher | parochialism | L'esprit de clocher divise encore les deux villages. | society | 5
+donquichottesque | quixotic | Une entreprise donquichottesque, vouée à l'échec. | arts | 5
+dantesque | Dantesque; hellish | Un spectacle dantesque après l'inondation. | arts | 5
+machiavélique | Machiavellian | Une stratégie machiavélique mais efficace. | politics | 5
+byzantin | byzantine; hair-splitting | Un règlement byzantin, illisible. | politics | 5
+jacobin | centralist; Jacobin | Une tradition jacobine bien ancrée. | politics | 5
+naïveté | naivety | Ce serait d'une grande naïveté de le croire. | emotions | 4
+je-m'en-foutisme | couldn't-care-less attitude | Le je-m'en-foutisme général est le vrai problème. | society | 5
+poujadisme | reactionary populism | Le poujadisme prospère sur la défiance. | politics | 5
+transparence | transparency | On exige plus de transparence dans les comptes. | politics | 4
+entregent | social skill; savoir-faire | Son entregent lui a ouvert bien des portes. | society | 5
+panache | panache; flair | Il a décliné l'invitation avec panache. | society | 5
+hargne | aggressive drive; snarling energy | Il joue avec une hargne extraordinaire. | sports | 5
+aisance | ease; fluency | Il se meut avec aisance entre plusieurs langues. | language | 4

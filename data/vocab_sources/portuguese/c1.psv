@@ -1,0 +1,115 @@
+# Portuguese C1 — advanced vocabulary
+# Leans Brazilian Portuguese; see a1.psv for the dialect note.
+# Format: word | translations (semicolon-separated) | example sentence | category | difficulty (1-5)
+
+# Precise abstract nouns
+clarividência | clear-sightedness; foresight | Sua clarividência salvou a empresa. | abstract | 5
+inércia | inertia | A inércia burocrática trava qualquer reforma. | abstract | 5
+arbítrio | free will; discretion | A decisão fica ao livre arbítrio de cada um. | philosophy | 5
+discernimento | discernment | É preciso discernimento para avaliar as fontes. | philosophy | 5
+usança | custom; usage | Por usança antiga, começa-se com um brinde. | society | 5
+práxis | practice; praxis | Não é a práxis desta repartição. | work | 5
+legado | legacy | É um legado do século passado. | society | 4
+enraizamento | rootedness | O enraizamento cultural é profundo aqui. | society | 5
+ressalva | caveat; proviso | O relatório traz uma ressalva importante. | abstract | 5
+corolário | corollary | O corolário é que os custos dobram. | science | 5
+repercussão | repercussion; impact | As repercussões no emprego serão positivas. | business | 4
+sinergia | synergy | Buscam sinergias entre os dois setores. | business | 4
+mais-valia | added value; surplus value | A mais-valia fica com o distribuidor. | business | 5
+opacidade | opacity; lack of transparency | Denunciam a opacidade das contas. | politics | 5
+detrimento | detriment | Sem detrimento dos direitos adquiridos. | politics | 5
+
+# Nuanced adjectives
+sutil | subtle | Ele faz uma distinção muito sutil. | abstract | 4
+capcioso | captious; loaded | É uma pergunta capciosa. | philosophy | 5
+espúrio | spurious; illegitimate | Alegam motivos espúrios. | politics | 5
+flagrante | flagrant; blatant | A contradição é flagrante. | abstract | 4
+inequívoco | unequivocal | A resposta foi inequívoca. | language | 4
+exaustivo | exhaustive; comprehensive | A lista não é exaustiva. | education | 4
+superficial | cursory; superficial | Uma análise superficial não basta. | education | 3
+verossímil | plausible; credible | A reconstituição é verossímil. | abstract | 4
+enganoso | misleading; deceptive | A manchete é enganosa. | language | 4
+contundente | forceful; hard-hitting | A argumentação não é contundente. | abstract | 4
+peculiar | peculiar; distinctive | Ele tem um estilo peculiar. | arts | 4
+inelutável | inescapable | O declínio parecia inelutável. | philosophy | 5
+astuto | shrewd; cunning | É um negociador astuto. | emotions | 4
+tenaz | tenacious; persistent | Sua tenaz insistência deu frutos. | emotions | 4
+arredio | aloof; withdrawn | É um autor arredio, recusa entrevistas. | emotions | 5
+
+# Formal and professional register
+valer-se de | to make use of | Valeu-se do direito de não responder. | politics | 5
+acatar | to comply with; to abide by | A empresa deve acatar as determinações. | politics | 5
+incumbir | to entrust; to be incumbent on | A questão foi incumbida à comissão. | work | 5
+condicionar | to make conditional | O acordo fica condicionado à aprovação. | business | 4
+instaurar | to institute; to open (proceedings) | Foi instaurado um processo administrativo. | politics | 5
+consagrar | to enshrine; to devote | A Constituição consagra esse princípio. | politics | 5
+revogar | to repeal; to revoke | Não se pode revogar essa norma. | politics | 5
+ratificar | to ratify | O parlamento ratificou o tratado. | politics | 5
+promulgar | to promulgate; to enact | A lei foi promulgada ontem. | politics | 5
+aplicar uma multa | to impose a fine | Foi aplicada uma multa pesada. | politics | 4
+cumprir | to fulfil; to comply | Cumpriu todas as obrigações. | work | 3
+versar sobre | to deal with; to be about | A ação versa sobre patentes. | politics | 5
+
+# Argument and rhetoric
+argumentar | to argue; to reason | Argumentou a tese com rigor. | language | 4
+refutar | to refute | Refutou todas as objeções. | philosophy | 5
+corroborar | to corroborate | Os dados corroboram a hipótese. | science | 5
+invalidar | to invalidate | O erro invalida todo o resultado. | science | 4
+respaldar | to endorse; to back | Não pretendo respaldar essa escolha. | politics | 4
+esquivar-se | to evade; to dodge | Esquivou-se da pergunta com elegância. | language | 4
+vislumbrar | to glimpse; to discern | Não vislumbro nenhuma irregularidade. | politics | 5
+alegar | to allege; to claim | Alegou motivos de saúde. | language | 4
+prognosticar | to forecast; to predict | Prognostica-se nova recessão. | politics | 5
+denotar | to denote; to indicate | O gesto denota grande segurança. | language | 4
+subjazer | to underlie | A essa escolha subjaz uma visão precisa. | philosophy | 5
+esboçar | to sketch; to outline | Esbocemos os três pontos principais. | education | 4
+
+# Idioms and set phrases
+ganhar força | to gain traction | O hábito ganhou força rapidamente. | society | 4
+dar margem a | to give rise to | A frase deu margem a muita polêmica. | language | 5
+colocar o foco em | to focus on | Vamos colocar o foco no problema real. | abstract | 4
+ruir | to collapse; to crumble | A confiança mútua ruiu. | abstract | 5
+apelar para | to appeal to | A campanha apela para os medos. | society | 4
+levar em conta | to take into account | É preciso levar em conta os custos ocultos. | abstract | 3
+ir por água abaixo | to fall through | O acordo foi por água abaixo. | business | 4
+pôr em xeque | to call into question | Ninguém põe em xeque a honestidade dele. | society | 5
+a título de exemplo | by way of example | A título de exemplo, cito o caso francês. | language | 4
+em linhas gerais | broadly speaking | Em linhas gerais eu concordo. | language | 4
+por si só | in itself | O dado por si só não diz nada. | abstract | 4
+com mais razão | all the more so | Com mais razão devemos intervir. | language | 5
+
+# Culture, arts, and thought
+estética | aesthetics | Sua estética remete ao barroco. | philosophy | 4
+poética | poetics; artistic vision | A poética do autor é coerente. | arts | 5
+vanguarda | avant-garde | Ele estava na vanguarda do movimento. | arts | 4
+cânone | canon | O cânone literário está em discussão. | arts | 5
+exegese | exegesis | A exegese do texto ocupa dois volumes. | philosophy | 5
+filologia | philology | Estudou filologia românica. | language | 5
+epistemologia | epistemology | A epistemologia investiga os limites do saber. | philosophy | 5
+ontológico | ontological | A diferença é ontológica, não prática. | philosophy | 5
+dialética | dialectics | A dialética entre os dois polos segue aberta. | philosophy | 5
+paradigma | paradigm | É preciso uma mudança de paradigma. | science | 4
+metáfora | metaphor | A metáfora é eficaz mas está gasta. | language | 4
+alusão | allusion | O título é uma alusão a Machado de Assis. | arts | 4
+
+# Society and institutions
+estado de bem-estar social | welfare state | O estado de bem-estar social está se transformando. | society | 5
+mobilidade social | social mobility | A mobilidade social está quase parada. | society | 5
+coesão | cohesion | A coesão social está em risco. | society | 5
+marginalização | marginalization | A marginalização atinge as periferias. | society | 5
+tecido social | social fabric | O tecido social se enfraqueceu. | society | 5
+classe social | social class | Pertence à classe média urbana. | society | 4
+clientelismo | patronage; cronyism | O clientelismo distorce as contratações. | politics | 5
+grupo de pressão | lobby; pressure group | O grupo de pressão já é regulamentado. | politics | 5
+transparência | transparency | Exigem mais transparência nas contas. | politics | 4
+prestação de contas | accountability | Falta qualquer prestação de contas. | politics | 5
+
+# Work and precision
+atribuição | duty; assigned task | As atribuições constam no contrato. | work | 5
+quadro de funcionários | staff; workforce | O quadro de funcionários encolheu vinte por cento. | work | 5
+rotatividade | staff turnover | A rotatividade na empresa é altíssima. | work | 5
+procuração | power of attorney | Assinou com procuração do diretor. | work | 5
+pauta | agenda | O ponto não está na pauta. | work | 4
+ata | minutes; record | A ata da reunião segue em anexo. | work | 5
+inadimplência | default; non-payment | A inadimplência acarreta multa. | business | 5
+rescisão | termination (of contract) | Ele exerceu o direito de rescisão. | business | 5

@@ -1,0 +1,132 @@
+# Portuguese B1 — intermediate vocabulary
+# Leans Brazilian Portuguese; see a1.psv for the dialect note.
+# Format: word | translations (semicolon-separated) | example sentence | category | difficulty (1-5)
+
+# Work and careers
+entrevista | interview | Tenho uma entrevista de emprego na quinta. | work | 3
+currículo | résumé; CV | Atualizei o currículo ontem. | work | 3
+contratar | to hire | A empresa vai contratar dez pessoas. | work | 3
+demitir | to fire; to dismiss | Demitiram metade do setor. | work | 4
+pedir demissão | to resign | Ele pediu demissão depois de cinco anos. | work | 4
+contrato | contract | O contrato vence em dezembro. | work | 3
+prazo | deadline; term | O prazo termina na sexta. | work | 3
+projeto | project | O projeto está dois meses atrasado. | work | 3
+meta | goal; target | Batemos a meta do trimestre. | work | 3
+responsável | responsible; person in charge | Ele é o responsável pela segurança. | work | 3
+experiência | experience | Tenho dez anos de experiência na área. | work | 3
+habilidade | skill; ability | Procuram habilidades técnicas específicas. | work | 3
+capacitação | training; upskilling | A empresa oferece capacitação contínua. | work | 4
+greve | strike | Amanhã tem greve dos transportes. | work | 4
+sindicato | trade union | O sindicato rejeitou a proposta. | work | 4
+
+# Money and society
+imposto | tax | Os impostos sobem todo ano. | politics | 3
+orçamento | budget | O orçamento municipal está no vermelho. | business | 4
+poupança | savings | Investi minha poupança. | business | 3
+empréstimo | loan | Pedi um empréstimo no banco. | business | 3
+financiamento | financing; mortgage | Pagamos o financiamento há dez anos. | business | 4
+investir | to invest | Ele prefere investir em imóveis. | business | 3
+ganhar | to earn; to win | Ele ganha o suficiente para viver bem. | business | 2
+gastar | to spend | Gasto demais com livros. | business | 2
+caro | expensive | Um hotel tão caro não é necessário. | shopping | 2
+barato | cheap; inexpensive | O trem sai mais barato que o avião. | shopping | 2
+
+# Media and technology
+notícia | news; piece of news | A notícia surpreendeu todo mundo. | technology | 3
+jornal | newspaper | Leio o jornal online toda manhã. | technology | 2
+propaganda | advertising; advert | A propaganda interrompe o filme. | technology | 3
+tela | screen | A tela quebrou ontem. | technology | 3
+teclado | keyboard | O teclado não funciona mais. | technology | 3
+rede | network; net | A rede está lenta hoje à noite. | technology | 3
+baixar | to download | Baixei o aplicativo. | technology | 3
+anexo | attachment; attached | O documento vai em anexo. | technology | 3
+atualização | update | A atualização leva dez minutos. | technology | 4
+senha | password | Esqueci a senha. | technology | 2
+privacidade | privacy | A privacidade dos dados é garantida. | technology | 4
+
+# Opinions and discussion
+opinião | opinion | Na minha opinião, ele tem razão. | society | 3
+conselho | advice; council | Vou te dar um conselho sincero. | society | 3
+dúvida | doubt; question | Ainda tenho algumas dúvidas. | abstract | 3
+motivo | reason | Não há motivo para se preocupar. | abstract | 3
+finalidade | purpose; aim | A finalidade da reunião é esclarecer tudo. | abstract | 4
+solução | solution | Encontramos uma solução simples. | abstract | 3
+problema | problem | O problema é mais complexo do que parecia. | abstract | 2
+vantagem | advantage | A vantagem principal é o custo. | abstract | 3
+desvantagem | disadvantage | A única desvantagem é a distância. | abstract | 3
+escolha | choice | Foi uma escolha difícil. | abstract | 3
+decidir | to decide | Precisamos decidir até amanhã. | abstract | 2
+discutir | to discuss; to argue | Discutimos por horas. | society | 3
+convencer | to convince | Não consigo convencê-lo. | society | 3
+sugerir | to suggest | Sugiro que você saia cedo. | society | 3
+admitir | to admit | Preciso admitir que você tinha razão. | society | 3
+recusar | to refuse; to turn down | Ele recusou a oferta. | society | 3
+
+# Emotions and character
+orgulhoso | proud | Estou orgulhoso do meu filho. | emotions | 3
+decepcionado | disappointed | Fiquei decepcionado com o serviço. | emotions | 3
+surpreso | surprised | Ficou surpreso com a notícia. | emotions | 3
+ciumento | jealous | Ele é ciumento do sucesso dela. | emotions | 3
+tímido | shy | Quando criança era muito tímido. | emotions | 3
+generoso | generous | Sempre foi generoso com todos. | emotions | 3
+teimoso | stubborn | Meu pai é terrivelmente teimoso. | emotions | 4
+confiável | reliable; trustworthy | Procuramos alguém confiável. | emotions | 4
+sincero | sincere; honest | Prefiro uma resposta sincera. | emotions | 3
+egoísta | selfish | É um comportamento egoísta. | emotions | 3
+confiança | trust; confidence | Tenho total confiança nela. | emotions | 3
+esperança | hope | Não perdi a esperança. | emotions | 3
+medo | fear | Ela tem medo de voar. | emotions | 2
+raiva | anger | A raiva passou logo. | emotions | 3
+alívio | relief | Que alívio ouvir a sua voz. | emotions | 4
+
+# Health and lifestyle
+dieta | diet | Estou seguindo uma dieta equilibrada. | health | 3
+treino | training; workout | O treino dura uma hora. | sports | 3
+reabilitação | rehabilitation | A reabilitação vai durar seis meses. | health | 4
+cirurgia | surgery | A cirurgia correu bem. | health | 4
+diagnóstico | diagnosis | O diagnóstico saiu uma semana depois. | health | 4
+sintoma | symptom | O primeiro sintoma foi o cansaço. | health | 4
+curar-se | to recover; to heal | Ele se curou completamente. | health | 3
+prevenção | prevention | Prevenção é melhor que remédio. | health | 4
+estresse | stress | O estresse no trabalho aumentou. | health | 3
+bem-estar | wellbeing | O bem-estar dos funcionários importa. | health | 4
+
+# Environment
+meio ambiente | environment | Precisamos proteger o meio ambiente. | nature | 3
+poluição | pollution | A poluição na cidade piorou. | nature | 4
+reciclagem | recycling | A reciclagem do plástico é obrigatória. | nature | 4
+lixo | rubbish; garbage | O lixo é recolhido às terças. | nature | 3
+clima | climate | O clima está mudando rápido. | nature | 3
+floresta | forest | A floresta cobre metade da região. | nature | 3
+rio | river | O rio transbordou depois da chuva. | nature | 3
+seca | drought | A seca já dura três anos. | nature | 4
+recurso | resource | A água é um recurso limitado. | nature | 4
+sustentável | sustainable | Buscam um modelo de desenvolvimento sustentável. | nature | 4
+
+# Travel and culture
+roteiro | itinerary; script | O roteiro inclui cinco cidades. | travel | 4
+alfândega | customs | Passamos pela alfândega em dez minutos. | travel | 4
+bagagem | luggage | A bagagem se perdeu. | travel | 3
+conexão | connection | Perdi a conexão em São Paulo. | travel | 3
+atraso | delay | O voo está com duas horas de atraso. | travel | 3
+alugar | to rent; to hire | Alugamos um carro. | travel | 3
+tradição | tradition | É uma tradição de família. | society | 3
+costume local | local custom | Esse costume local vem da colônia. | society | 4
+festa | party; festival | A festa da cidade é em agosto. | society | 2
+festival | festival | No festival se come muito bem. | food | 3
+receita | recipe; revenue | Esta receita é da minha avó. | food | 3
+ingrediente | ingredient | Falta um ingrediente fundamental. | food | 3
+provar | to taste; to try | Quer provar a sobremesa? | food | 2
+ferver | to boil | Ferva a massa por oito minutos. | food | 3
+
+# Useful verbs
+conseguir | to manage; to get | Não consigo entender esta frase. | basics | 3
+parar de | to stop doing | Ele parou de fumar ano passado. | basics | 2
+provocar | to cause; to provoke | A chuva provocou muitos estragos. | basics | 4
+melhorar | to improve | Meu português melhorou muito. | basics | 3
+piorar | to worsen | A situação piorou. | basics | 3
+evitar | to avoid | Tento evitar o trânsito. | basics | 3
+alcançar | to reach; to achieve | Alcançamos o topo ao meio-dia. | basics | 3
+escolher | to choose | Escolhe você o restaurante. | basics | 2
+perceber | to realize; to notice | Não percebi o erro. | basics | 3
+parecer | to seem | Ele parece mais novo do que é. | basics | 2

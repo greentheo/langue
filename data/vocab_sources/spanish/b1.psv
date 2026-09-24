@@ -1,0 +1,131 @@
+# Spanish B1 — intermediate vocabulary
+# Format: word | translations (semicolon-separated) | example sentence | category | difficulty (1-5)
+
+# Work and careers
+entrevista | interview | Tengo una entrevista de trabajo el jueves. | work | 3
+currículum | résumé; CV | Actualicé el currículum ayer. | work | 3
+contratar | to hire | La empresa va a contratar a diez personas. | work | 3
+despedir | to fire; to see off | Despidieron a media plantilla. | work | 4
+dimitir | to resign | Dimitió después de cinco años. | work | 4
+contrato | contract | El contrato vence en diciembre. | work | 3
+plazo | deadline; term | El plazo termina el viernes. | work | 3
+proyecto | project | El proyecto lleva dos meses de retraso. | work | 3
+objetivo | goal; objective | Hemos alcanzado el objetivo trimestral. | work | 3
+encargado | in charge; supervisor | Es el encargado de la seguridad. | work | 3
+experiencia | experience | Tengo diez años de experiencia en el sector. | work | 3
+habilidad | skill; ability | Buscan habilidades técnicas concretas. | work | 3
+formación | training; education | La empresa ofrece formación continua. | work | 4
+huelga | strike | Mañana hay huelga de transportes. | work | 4
+sindicato | trade union | El sindicato rechazó la propuesta. | work | 4
+
+# Money and society
+impuesto | tax | Los impuestos suben todos los años. | politics | 3
+presupuesto | budget | El presupuesto municipal tiene déficit. | business | 4
+ahorro | saving; savings | He invertido mis ahorros. | business | 3
+préstamo | loan | Pedí un préstamo al banco. | business | 3
+hipoteca | mortgage | Pagamos la hipoteca desde hace diez años. | business | 4
+invertir | to invest | Prefiere invertir en inmuebles. | business | 3
+ganar | to earn; to win | Gana lo suficiente para vivir bien. | business | 2
+gastar | to spend | Gasto demasiado en libros. | business | 2
+caro | expensive | Un hotel tan caro no nos hace falta. | shopping | 2
+barato | cheap; inexpensive | El tren sale más barato que el avión. | shopping | 2
+
+# Media and technology
+noticia | news; piece of news | La noticia sorprendió a todos. | technology | 3
+periódico | newspaper | Leo el periódico en internet cada mañana. | technology | 2
+publicidad | advertising | La publicidad interrumpe la película. | technology | 3
+pantalla | screen | La pantalla se rompió ayer. | technology | 3
+teclado | keyboard | El teclado ya no funciona. | technology | 3
+red | network; net | La red va lenta esta noche. | technology | 3
+descargar | to download | He descargado la aplicación. | technology | 3
+adjunto | attachment; attached | Encontrarás el documento adjunto. | technology | 3
+actualización | update | La actualización tarda diez minutos. | technology | 4
+contraseña | password | He olvidado la contraseña. | technology | 3
+privacidad | privacy | La privacidad de los datos está garantizada. | technology | 4
+
+# Opinions and discussion
+opinión | opinion | En mi opinión, tiene razón. | society | 3
+consejo | advice | Te doy un consejo sincero. | society | 3
+duda | doubt | Todavía tengo alguna duda. | abstract | 3
+motivo | reason; motive | No hay motivo para preocuparse. | abstract | 3
+propósito | purpose; aim | El propósito de la reunión es aclararlo todo. | abstract | 4
+solución | solution | Hemos encontrado una solución sencilla. | abstract | 3
+problema | problem | El problema es más complejo de lo previsto. | abstract | 2
+ventaja | advantage | La ventaja principal es el coste. | abstract | 3
+desventaja | disadvantage | La única desventaja es la distancia. | abstract | 3
+elección | choice; election | Fue una elección difícil. | abstract | 3
+decidir | to decide | Tenemos que decidir antes de mañana. | abstract | 2
+discutir | to discuss; to argue | Discutimos durante horas. | society | 3
+convencer | to convince | No consigo convencerlo. | society | 3
+sugerir | to suggest | Te sugiero que salgas temprano. | society | 3
+admitir | to admit | Debo admitir que tenías razón. | society | 3
+rechazar | to reject; to refuse | Rechazó la oferta. | society | 3
+
+# Emotions and character
+orgulloso | proud | Estoy orgulloso de mi hijo. | emotions | 3
+decepcionado | disappointed | Quedé decepcionado con el servicio. | emotions | 3
+sorprendido | surprised | Se quedó sorprendido con la noticia. | emotions | 3
+celoso | jealous | Está celoso de su éxito. | emotions | 3
+tímido | shy | De niño era muy tímido. | emotions | 3
+generoso | generous | Siempre ha sido generoso con todos. | emotions | 3
+testarudo | stubborn | Mi padre es tremendamente testarudo. | emotions | 4
+fiable | reliable | Buscamos a alguien fiable. | emotions | 4
+sincero | sincere; honest | Prefiero una respuesta sincera. | emotions | 3
+egoísta | selfish | Es un comportamiento egoísta. | emotions | 3
+confianza | trust; confidence | Tengo plena confianza en ella. | emotions | 3
+esperanza | hope | No he perdido la esperanza. | emotions | 3
+miedo | fear | Tiene miedo a volar. | emotions | 2
+enfado | anger; annoyance | Se le pasó el enfado enseguida. | emotions | 3
+alivio | relief | Qué alivio oír tu voz. | emotions | 4
+
+# Health and lifestyle
+dieta | diet | Sigo una dieta equilibrada. | health | 3
+entrenamiento | training; workout | El entrenamiento dura una hora. | sports | 3
+rehabilitación | rehabilitation | La rehabilitación durará seis meses. | health | 4
+operación | operation; surgery | La operación salió bien. | health | 4
+diagnóstico | diagnosis | El diagnóstico llegó una semana después. | health | 4
+síntoma | symptom | El primer síntoma fue el cansancio. | health | 4
+curarse | to recover; to get better | Se ha curado del todo. | health | 3
+prevención | prevention | La prevención es mejor que la cura. | health | 4
+estrés | stress | El estrés en el trabajo ha aumentado. | health | 3
+bienestar | wellbeing | El bienestar de los empleados importa. | health | 4
+
+# Environment
+medio ambiente | environment | Hay que proteger el medio ambiente. | nature | 3
+contaminación | pollution | La contaminación en la ciudad ha empeorado. | nature | 4
+reciclaje | recycling | El reciclaje del plástico es obligatorio. | nature | 4
+basura | rubbish; garbage | La basura se recoge los martes. | nature | 3
+clima | climate | El clima está cambiando deprisa. | nature | 3
+bosque | forest | El bosque cubre media región. | nature | 3
+río | river | El río se desbordó tras la lluvia. | nature | 3
+sequía | drought | La sequía ha durado tres años. | nature | 4
+recurso | resource | El agua es un recurso limitado. | nature | 4
+sostenible | sustainable | Buscan un modelo de desarrollo sostenible. | nature | 4
+
+# Travel and culture
+itinerario | itinerary | El itinerario incluye cinco ciudades. | travel | 4
+aduana | customs | Pasamos la aduana en diez minutos. | travel | 4
+equipaje | luggage | El equipaje se perdió. | travel | 3
+enlace | connection; link | Perdí el enlace en Barcelona. | travel | 4
+retraso | delay | El vuelo lleva dos horas de retraso. | travel | 3
+alquilar | to rent; to hire | Alquilamos un coche. | travel | 3
+tradición | tradition | Es una tradición familiar. | society | 3
+costumbre local | local custom | Esa costumbre local viene de la Edad Media. | society | 4
+fiesta | festival; party | La fiesta del pueblo es en agosto. | society | 2
+feria | fair | En la feria se come muy bien. | food | 3
+receta | recipe | Esta receta es de mi abuela. | food | 3
+ingrediente | ingredient | Falta un ingrediente fundamental. | food | 3
+probar | to taste; to try | ¿Quieres probar el postre? | food | 2
+hervir | to boil | Hierve la pasta ocho minutos. | food | 3
+
+# Useful verbs
+conseguir | to manage; to get | No consigo entender esta frase. | basics | 3
+dejar | to stop; to leave; to let | Dejó de fumar el año pasado. | basics | 2
+provocar | to cause; to provoke | La lluvia provocó muchos daños. | basics | 4
+mejorar | to improve | Mi español ha mejorado mucho. | basics | 3
+empeorar | to worsen | La situación ha empeorado. | basics | 3
+evitar | to avoid | Intento evitar el tráfico. | basics | 3
+alcanzar | to reach; to achieve | Alcanzamos la cima al mediodía. | basics | 3
+elegir | to choose | Elige tú el restaurante. | basics | 2
+darse cuenta | to realize | No me di cuenta del error. | basics | 3
+parecer | to seem | Parece más joven de lo que es. | basics | 2

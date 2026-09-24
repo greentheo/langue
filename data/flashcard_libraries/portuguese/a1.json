@@ -1,0 +1,1429 @@
+{
+  "metadata": {
+    "language": "portuguese",
+    "level": "a1",
+    "version": "1.0",
+    "word_count": 126,
+    "created_at": "2026-08-12T22:30:37.727535+00:00",
+    "description": "Beginner (A1) Portuguese vocabulary: everyday expressions and basic phrases",
+    "source": "data/vocab_sources/portuguese/a1.psv",
+    "generated_by": "langue.tools.vocab_build"
+  },
+  "words": [
+    {
+      "word": "olá",
+      "translations": [
+        "hello",
+        "hi"
+      ],
+      "examples": [
+        "Olá, tudo bem?"
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "oi",
+      "translations": [
+        "hi (informal)"
+      ],
+      "examples": [
+        "Oi, como vai você?"
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "bom dia",
+      "translations": [
+        "good morning"
+      ],
+      "examples": [
+        "Bom dia, dona Marta."
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "boa tarde",
+      "translations": [
+        "good afternoon"
+      ],
+      "examples": [
+        "Boa tarde, posso ajudar?"
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "boa noite",
+      "translations": [
+        "good evening",
+        "good night"
+      ],
+      "examples": [
+        "Boa noite, até amanhã."
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "tchau",
+      "translations": [
+        "bye"
+      ],
+      "examples": [
+        "Tchau, a gente se vê."
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "até logo",
+      "translations": [
+        "see you later"
+      ],
+      "examples": [
+        "Até logo, estou com pressa."
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "obrigado",
+      "translations": [
+        "thank you"
+      ],
+      "examples": [
+        "Muito obrigado pela sua ajuda."
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "de nada",
+      "translations": [
+        "you're welcome"
+      ],
+      "examples": [
+        "De nada, foi um prazer."
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "por favor",
+      "translations": [
+        "please"
+      ],
+      "examples": [
+        "Um café, por favor."
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "desculpa",
+      "translations": [
+        "sorry"
+      ],
+      "examples": [
+        "Desculpa, não te vi."
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "com licença",
+      "translations": [
+        "excuse me"
+      ],
+      "examples": [
+        "Com licença, onde fica o banheiro?"
+      ],
+      "category": "greetings",
+      "difficulty": 2
+    },
+    {
+      "word": "prazer",
+      "translations": [
+        "nice to meet you",
+        "pleasure"
+      ],
+      "examples": [
+        "Prazer em conhecer você."
+      ],
+      "category": "greetings",
+      "difficulty": 2
+    },
+    {
+      "word": "bem-vindo",
+      "translations": [
+        "welcome"
+      ],
+      "examples": [
+        "Bem-vindo ao Rio!"
+      ],
+      "category": "greetings",
+      "difficulty": 2
+    },
+    {
+      "word": "sim",
+      "translations": [
+        "yes"
+      ],
+      "examples": [
+        "Sim, eu entendo."
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "não",
+      "translations": [
+        "no",
+        "not"
+      ],
+      "examples": [
+        "Não, obrigado."
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "talvez",
+      "translations": [
+        "maybe",
+        "perhaps"
+      ],
+      "examples": [
+        "Talvez a gente vá à praia."
+      ],
+      "category": "basics",
+      "difficulty": 2
+    },
+    {
+      "word": "muito",
+      "translations": [
+        "very",
+        "a lot"
+      ],
+      "examples": [
+        "Estou muito cansado hoje."
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "pouco",
+      "translations": [
+        "little",
+        "not much"
+      ],
+      "examples": [
+        "Falo pouco português ainda."
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "também",
+      "translations": [
+        "also",
+        "too"
+      ],
+      "examples": [
+        "Eu também quero ir."
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "mas",
+      "translations": [
+        "but"
+      ],
+      "examples": [
+        "Quero sair, mas está chovendo."
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "porque",
+      "translations": [
+        "because"
+      ],
+      "examples": [
+        "Não fui porque estava doente."
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "como",
+      "translations": [
+        "how",
+        "like"
+      ],
+      "examples": [
+        "Como se diz isso em português?"
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "onde",
+      "translations": [
+        "where"
+      ],
+      "examples": [
+        "Onde você mora?"
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "quando",
+      "translations": [
+        "when"
+      ],
+      "examples": [
+        "Quando chega o trem?"
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "quem",
+      "translations": [
+        "who"
+      ],
+      "examples": [
+        "Quem é aquela moça?"
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "que",
+      "translations": [
+        "what",
+        "that"
+      ],
+      "examples": [
+        "O que você faz hoje à noite?"
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "quanto",
+      "translations": [
+        "how much",
+        "how many"
+      ],
+      "examples": [
+        "Quanto custa isto?"
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "bem",
+      "translations": [
+        "well",
+        "fine"
+      ],
+      "examples": [
+        "Estou bem, obrigado."
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "mal",
+      "translations": [
+        "badly",
+        "bad"
+      ],
+      "examples": [
+        "Hoje me sinto mal."
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "sempre",
+      "translations": [
+        "always"
+      ],
+      "examples": [
+        "Sempre tomo café de manhã."
+      ],
+      "category": "basics",
+      "difficulty": 2
+    },
+    {
+      "word": "nunca",
+      "translations": [
+        "never"
+      ],
+      "examples": [
+        "Nunca estive em Salvador."
+      ],
+      "category": "basics",
+      "difficulty": 2
+    },
+    {
+      "word": "agora",
+      "translations": [
+        "now"
+      ],
+      "examples": [
+        "Agora preciso ir."
+      ],
+      "category": "basics",
+      "difficulty": 2
+    },
+    {
+      "word": "aqui",
+      "translations": [
+        "here"
+      ],
+      "examples": [
+        "O restaurante fica aqui perto."
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "um",
+      "translations": [
+        "one"
+      ],
+      "examples": [
+        "Tenho só um."
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "dois",
+      "translations": [
+        "two"
+      ],
+      "examples": [
+        "Quero dois bilhetes."
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "três",
+      "translations": [
+        "three"
+      ],
+      "examples": [
+        "Há três livros na mesa."
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "quatro",
+      "translations": [
+        "four"
+      ],
+      "examples": [
+        "A reunião é às quatro."
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "cinco",
+      "translations": [
+        "five"
+      ],
+      "examples": [
+        "Moro no quinto andar, número cinco."
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "seis",
+      "translations": [
+        "six"
+      ],
+      "examples": [
+        "Acordo às seis todos os dias."
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "sete",
+      "translations": [
+        "seven"
+      ],
+      "examples": [
+        "A semana tem sete dias."
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "oito",
+      "translations": [
+        "eight"
+      ],
+      "examples": [
+        "A loja abre às oito."
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "nove",
+      "translations": [
+        "nine"
+      ],
+      "examples": [
+        "Tenho nove primos."
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "dez",
+      "translations": [
+        "ten"
+      ],
+      "examples": [
+        "Custa dez reais."
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "vinte",
+      "translations": [
+        "twenty"
+      ],
+      "examples": [
+        "Tenho vinte minutos de pausa."
+      ],
+      "category": "numbers",
+      "difficulty": 2
+    },
+    {
+      "word": "cem",
+      "translations": [
+        "hundred"
+      ],
+      "examples": [
+        "O livro tem cem páginas."
+      ],
+      "category": "numbers",
+      "difficulty": 2
+    },
+    {
+      "word": "mil",
+      "translations": [
+        "thousand"
+      ],
+      "examples": [
+        "A cidade tem mil anos de história."
+      ],
+      "category": "numbers",
+      "difficulty": 2
+    },
+    {
+      "word": "primeiro",
+      "translations": [
+        "first"
+      ],
+      "examples": [
+        "É meu primeiro dia de trabalho."
+      ],
+      "category": "numbers",
+      "difficulty": 2
+    },
+    {
+      "word": "família",
+      "translations": [
+        "family"
+      ],
+      "examples": [
+        "Minha família é muito grande."
+      ],
+      "category": "family",
+      "difficulty": 1
+    },
+    {
+      "word": "mãe",
+      "translations": [
+        "mother"
+      ],
+      "examples": [
+        "Minha mãe cozinha muito bem."
+      ],
+      "category": "family",
+      "difficulty": 1
+    },
+    {
+      "word": "pai",
+      "translations": [
+        "father"
+      ],
+      "examples": [
+        "Meu pai trabalha num banco."
+      ],
+      "category": "family",
+      "difficulty": 1
+    },
+    {
+      "word": "filho",
+      "translations": [
+        "son",
+        "child"
+      ],
+      "examples": [
+        "O filho dele tem cinco anos."
+      ],
+      "category": "family",
+      "difficulty": 1
+    },
+    {
+      "word": "filha",
+      "translations": [
+        "daughter"
+      ],
+      "examples": [
+        "A filha deles estuda medicina."
+      ],
+      "category": "family",
+      "difficulty": 1
+    },
+    {
+      "word": "irmão",
+      "translations": [
+        "brother"
+      ],
+      "examples": [
+        "Tenho um irmão mais velho."
+      ],
+      "category": "family",
+      "difficulty": 1
+    },
+    {
+      "word": "irmã",
+      "translations": [
+        "sister"
+      ],
+      "examples": [
+        "Minha irmã mora em Lisboa."
+      ],
+      "category": "family",
+      "difficulty": 1
+    },
+    {
+      "word": "avô",
+      "translations": [
+        "grandfather"
+      ],
+      "examples": [
+        "Meu avô conta boas histórias."
+      ],
+      "category": "family",
+      "difficulty": 2
+    },
+    {
+      "word": "avó",
+      "translations": [
+        "grandmother"
+      ],
+      "examples": [
+        "A avó faz um bolo ótimo."
+      ],
+      "category": "family",
+      "difficulty": 2
+    },
+    {
+      "word": "marido",
+      "translations": [
+        "husband"
+      ],
+      "examples": [
+        "O marido dela é professor."
+      ],
+      "category": "family",
+      "difficulty": 2
+    },
+    {
+      "word": "esposa",
+      "translations": [
+        "wife"
+      ],
+      "examples": [
+        "Minha esposa adora viajar."
+      ],
+      "category": "family",
+      "difficulty": 2
+    },
+    {
+      "word": "amigo",
+      "translations": [
+        "friend"
+      ],
+      "examples": [
+        "Vou ao cinema com um amigo."
+      ],
+      "category": "family",
+      "difficulty": 1
+    },
+    {
+      "word": "criança",
+      "translations": [
+        "child"
+      ],
+      "examples": [
+        "A criança brinca no parque."
+      ],
+      "category": "family",
+      "difficulty": 1
+    },
+    {
+      "word": "moça",
+      "translations": [
+        "young woman",
+        "girl"
+      ],
+      "examples": [
+        "Aquela moça é minha vizinha."
+      ],
+      "category": "family",
+      "difficulty": 2
+    },
+    {
+      "word": "homem",
+      "translations": [
+        "man"
+      ],
+      "examples": [
+        "Aquele homem trabalha aqui há anos."
+      ],
+      "category": "family",
+      "difficulty": 1
+    },
+    {
+      "word": "mulher",
+      "translations": [
+        "woman",
+        "wife"
+      ],
+      "examples": [
+        "A mulher do caixa é muito gentil."
+      ],
+      "category": "family",
+      "difficulty": 1
+    },
+    {
+      "word": "água",
+      "translations": [
+        "water"
+      ],
+      "examples": [
+        "Quero um copo de água."
+      ],
+      "category": "food",
+      "difficulty": 1
+    },
+    {
+      "word": "pão",
+      "translations": [
+        "bread"
+      ],
+      "examples": [
+        "Compro pão toda manhã."
+      ],
+      "category": "food",
+      "difficulty": 1
+    },
+    {
+      "word": "vinho",
+      "translations": [
+        "wine"
+      ],
+      "examples": [
+        "Uma taça de vinho tinto, por favor."
+      ],
+      "category": "food",
+      "difficulty": 1
+    },
+    {
+      "word": "café",
+      "translations": [
+        "coffee"
+      ],
+      "examples": [
+        "Tomo um café na padaria."
+      ],
+      "category": "food",
+      "difficulty": 1
+    },
+    {
+      "word": "leite",
+      "translations": [
+        "milk"
+      ],
+      "examples": [
+        "Bebo leite no café da manhã."
+      ],
+      "category": "food",
+      "difficulty": 1
+    },
+    {
+      "word": "arroz",
+      "translations": [
+        "rice"
+      ],
+      "examples": [
+        "O arroz já está pronto."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "feijão",
+      "translations": [
+        "beans"
+      ],
+      "examples": [
+        "Arroz com feijão todo dia."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "carne",
+      "translations": [
+        "meat"
+      ],
+      "examples": [
+        "Não como carne às sextas."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "peixe",
+      "translations": [
+        "fish"
+      ],
+      "examples": [
+        "O peixe está fresquíssimo hoje."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "queijo",
+      "translations": [
+        "cheese"
+      ],
+      "examples": [
+        "Este queijo é de Minas."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "fruta",
+      "translations": [
+        "fruit"
+      ],
+      "examples": [
+        "Como fruta todos os dias."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "verdura",
+      "translations": [
+        "vegetables",
+        "greens"
+      ],
+      "examples": [
+        "Compro verdura na feira."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "ovo",
+      "translations": [
+        "egg"
+      ],
+      "examples": [
+        "Quero dois ovos fritos."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "açúcar",
+      "translations": [
+        "sugar"
+      ],
+      "examples": [
+        "Você toma açúcar no café?"
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "sal",
+      "translations": [
+        "salt"
+      ],
+      "examples": [
+        "Está faltando um pouco de sal."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "café da manhã",
+      "translations": [
+        "breakfast"
+      ],
+      "examples": [
+        "O café da manhã é às sete."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "almoço",
+      "translations": [
+        "lunch"
+      ],
+      "examples": [
+        "O almoço é ao meio-dia."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "jantar",
+      "translations": [
+        "dinner",
+        "to have dinner"
+      ],
+      "examples": [
+        "O jantar já está pronto."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "restaurante",
+      "translations": [
+        "restaurant"
+      ],
+      "examples": [
+        "Conheço um bom restaurante aqui."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "dia",
+      "translations": [
+        "day"
+      ],
+      "examples": [
+        "Que dia é hoje?"
+      ],
+      "category": "time",
+      "difficulty": 1
+    },
+    {
+      "word": "semana",
+      "translations": [
+        "week"
+      ],
+      "examples": [
+        "A gente se vê semana que vem."
+      ],
+      "category": "time",
+      "difficulty": 2
+    },
+    {
+      "word": "mês",
+      "translations": [
+        "month"
+      ],
+      "examples": [
+        "Vou viajar mês que vem."
+      ],
+      "category": "time",
+      "difficulty": 2
+    },
+    {
+      "word": "ano",
+      "translations": [
+        "year"
+      ],
+      "examples": [
+        "Estudo português há um ano."
+      ],
+      "category": "time",
+      "difficulty": 1
+    },
+    {
+      "word": "hoje",
+      "translations": [
+        "today"
+      ],
+      "examples": [
+        "Hoje está muito quente."
+      ],
+      "category": "time",
+      "difficulty": 1
+    },
+    {
+      "word": "amanhã",
+      "translations": [
+        "tomorrow"
+      ],
+      "examples": [
+        "Amanhã tenho uma prova."
+      ],
+      "category": "time",
+      "difficulty": 1
+    },
+    {
+      "word": "ontem",
+      "translations": [
+        "yesterday"
+      ],
+      "examples": [
+        "Ontem fui ao museu."
+      ],
+      "category": "time",
+      "difficulty": 1
+    },
+    {
+      "word": "manhã",
+      "translations": [
+        "morning"
+      ],
+      "examples": [
+        "De manhã eu corro no parque."
+      ],
+      "category": "time",
+      "difficulty": 2
+    },
+    {
+      "word": "tarde",
+      "translations": [
+        "afternoon",
+        "late"
+      ],
+      "examples": [
+        "À tarde eu estudo."
+      ],
+      "category": "time",
+      "difficulty": 2
+    },
+    {
+      "word": "noite",
+      "translations": [
+        "night",
+        "evening"
+      ],
+      "examples": [
+        "Dormi mal esta noite."
+      ],
+      "category": "time",
+      "difficulty": 2
+    },
+    {
+      "word": "hora",
+      "translations": [
+        "hour",
+        "time"
+      ],
+      "examples": [
+        "Que horas são?"
+      ],
+      "category": "time",
+      "difficulty": 1
+    },
+    {
+      "word": "minuto",
+      "translations": [
+        "minute"
+      ],
+      "examples": [
+        "Espera um minuto, por favor."
+      ],
+      "category": "time",
+      "difficulty": 2
+    },
+    {
+      "word": "segunda-feira",
+      "translations": [
+        "Monday"
+      ],
+      "examples": [
+        "Segunda-feira volto ao trabalho."
+      ],
+      "category": "time",
+      "difficulty": 2
+    },
+    {
+      "word": "sábado",
+      "translations": [
+        "Saturday"
+      ],
+      "examples": [
+        "Sábado vamos à serra."
+      ],
+      "category": "time",
+      "difficulty": 2
+    },
+    {
+      "word": "domingo",
+      "translations": [
+        "Sunday"
+      ],
+      "examples": [
+        "Aos domingos durmo até tarde."
+      ],
+      "category": "time",
+      "difficulty": 2
+    },
+    {
+      "word": "casa",
+      "translations": [
+        "house",
+        "home"
+      ],
+      "examples": [
+        "Volto para casa às seis."
+      ],
+      "category": "housing",
+      "difficulty": 1
+    },
+    {
+      "word": "cidade",
+      "translations": [
+        "city"
+      ],
+      "examples": [
+        "O Rio é uma cidade linda."
+      ],
+      "category": "travel",
+      "difficulty": 1
+    },
+    {
+      "word": "rua",
+      "translations": [
+        "street"
+      ],
+      "examples": [
+        "A rua está fechada por obras."
+      ],
+      "category": "travel",
+      "difficulty": 2
+    },
+    {
+      "word": "estação",
+      "translations": [
+        "station"
+      ],
+      "examples": [
+        "A estação fica a dez minutos."
+      ],
+      "category": "transportation",
+      "difficulty": 2
+    },
+    {
+      "word": "trem",
+      "translations": [
+        "train"
+      ],
+      "examples": [
+        "O trem para Campinas sai às nove."
+      ],
+      "category": "transportation",
+      "difficulty": 2
+    },
+    {
+      "word": "ônibus",
+      "translations": [
+        "bus"
+      ],
+      "examples": [
+        "Pego o ônibus número vinte."
+      ],
+      "category": "transportation",
+      "difficulty": 2
+    },
+    {
+      "word": "carro",
+      "translations": [
+        "car"
+      ],
+      "examples": [
+        "O carro está estacionado atrás."
+      ],
+      "category": "transportation",
+      "difficulty": 2
+    },
+    {
+      "word": "aeroporto",
+      "translations": [
+        "airport"
+      ],
+      "examples": [
+        "Chego ao aeroporto às oito."
+      ],
+      "category": "transportation",
+      "difficulty": 2
+    },
+    {
+      "word": "hotel",
+      "translations": [
+        "hotel"
+      ],
+      "examples": [
+        "Reservamos um hotel no centro."
+      ],
+      "category": "travel",
+      "difficulty": 2
+    },
+    {
+      "word": "loja",
+      "translations": [
+        "shop",
+        "store"
+      ],
+      "examples": [
+        "A loja fecha às sete."
+      ],
+      "category": "shopping",
+      "difficulty": 2
+    },
+    {
+      "word": "feira",
+      "translations": [
+        "street market"
+      ],
+      "examples": [
+        "A feira acontece aos sábados."
+      ],
+      "category": "shopping",
+      "difficulty": 2
+    },
+    {
+      "word": "passagem",
+      "translations": [
+        "ticket (travel)"
+      ],
+      "examples": [
+        "Comprei a passagem pela internet."
+      ],
+      "category": "travel",
+      "difficulty": 2
+    },
+    {
+      "word": "livro",
+      "translations": [
+        "book"
+      ],
+      "examples": [
+        "Estou lendo um livro em português."
+      ],
+      "category": "education",
+      "difficulty": 1
+    },
+    {
+      "word": "trabalho",
+      "translations": [
+        "work",
+        "job"
+      ],
+      "examples": [
+        "Gosto muito do meu trabalho."
+      ],
+      "category": "work",
+      "difficulty": 1
+    },
+    {
+      "word": "escola",
+      "translations": [
+        "school"
+      ],
+      "examples": [
+        "As crianças vão à escola às sete."
+      ],
+      "category": "education",
+      "difficulty": 1
+    },
+    {
+      "word": "dinheiro",
+      "translations": [
+        "money"
+      ],
+      "examples": [
+        "Não estou com dinheiro."
+      ],
+      "category": "shopping",
+      "difficulty": 2
+    },
+    {
+      "word": "telefone",
+      "translations": [
+        "telephone"
+      ],
+      "examples": [
+        "Te ligo no telefone hoje à noite."
+      ],
+      "category": "technology",
+      "difficulty": 1
+    },
+    {
+      "word": "grande",
+      "translations": [
+        "big",
+        "large"
+      ],
+      "examples": [
+        "Moro numa casa grande."
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "pequeno",
+      "translations": [
+        "small",
+        "little"
+      ],
+      "examples": [
+        "Tenho um apartamento pequeno."
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "novo",
+      "translations": [
+        "new",
+        "young"
+      ],
+      "examples": [
+        "Comprei um computador novo."
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "bonito",
+      "translations": [
+        "pretty",
+        "beautiful"
+      ],
+      "examples": [
+        "Que dia bonito!"
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "bom",
+      "translations": [
+        "good"
+      ],
+      "examples": [
+        "Este café está muito bom."
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "calor",
+      "translations": [
+        "heat",
+        "hot"
+      ],
+      "examples": [
+        "Hoje está fazendo calor."
+      ],
+      "category": "weather",
+      "difficulty": 1
+    },
+    {
+      "word": "frio",
+      "translations": [
+        "cold"
+      ],
+      "examples": [
+        "No inverno faz frio aqui."
+      ],
+      "category": "weather",
+      "difficulty": 1
+    },
+    {
+      "word": "chuva",
+      "translations": [
+        "rain"
+      ],
+      "examples": [
+        "A chuva começou de madrugada."
+      ],
+      "category": "weather",
+      "difficulty": 2
+    },
+    {
+      "word": "sol",
+      "translations": [
+        "sun"
+      ],
+      "examples": [
+        "Hoje tem sol."
+      ],
+      "category": "weather",
+      "difficulty": 1
+    },
+    {
+      "word": "feliz",
+      "translations": [
+        "happy"
+      ],
+      "examples": [
+        "Estou feliz em te ver."
+      ],
+      "category": "emotions",
+      "difficulty": 2
+    },
+    {
+      "word": "cansado",
+      "translations": [
+        "tired"
+      ],
+      "examples": [
+        "Estou cansado depois do trabalho."
+      ],
+      "category": "emotions",
+      "difficulty": 2
+    }
+  ]
+}

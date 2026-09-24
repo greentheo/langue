@@ -1,0 +1,83 @@
+# French C1 — advanced vocabulary
+# Converted from the legacy JSON library, which predates this source pipeline.
+# Format: word | translations (semicolon-separated) | example sentence | category | difficulty (1-5)
+
+accomplissement | achievement; fulfillment; attainment | Son accomplissement dans son travail l'a rendu très fier. | work | 4
+affable | affable; friendly; amiable | Elle a toujours été une personne affable et chaleureuse. | emotions | 3
+aguerri | seasoned; experienced; hardened | Grâce à ses années d'expérience, il est devenu un professionnel aguerri. | work | 4
+amalgame | amalgam; mixture; blend | Ce plat est un amalgame de saveurs délicieuses. | food | 4
+ambivalence | ambivalence; conflicting feelings; indecision | Son ambivalence face à ce choix important le tourmente. | emotions | 4
+anecdotique | anecdotal; incidental; trivial | Cet événement est plutôt anecdotique dans sa carrière. | work | 3
+anodin | innocuous; trivial; harmless | Ce commentaire peut paraître anodin, mais il l'a blessé. | daily_routines | 3
+antinomie | antinomy; contradiction; paradox | Il y a une antinomie flagrante entre ses principes et ses actes. | work | 5
+apathie | apathy; indifference; lack of interest | Son apathie face à ce problème m'a surpris et déçu. | emotions | 4
+appréhension | apprehension; anxiety; fear | Il a une certaine appréhension à l'idée de passer cet entretien. | emotions | 4
+ardu | arduous; difficult; challenging | La tâche s'est avérée plus ardue que prévu. | work | 4
+artefact | artifact; object; relic | Ce musée abrite de nombreux artefacts historiques. | arts | 4
+assidu | diligent; persistent; dedicated | Il est connu pour être un travailleur assidu et fiable. | work | 4
+atavisme | atavism; throwback; reversion | Certains traits de caractère peuvent être un atavisme familial. | daily_routines | 5
+atout | asset; advantage; strength | Son expérience est un atout majeur pour ce poste. | work | 3
+austère | austere; severe; strict | Son style de vie austère lui permet d'économiser. | daily_routines | 4
+bénéfique | beneficial; advantageous; helpful | Cette nouvelle routine de sommeil s'est avérée bénéfique. | health | 4
+bienséance | propriety; decorum; etiquette | Il faut respecter les règles de bienséance dans ce milieu. | daily_routines | 4
+calamiteux | calamitous; disastrous; catastrophic | Cet accident a eu des conséquences calamiteuses pour l'entreprise. | work | 5
+candide | candid; frank; naive | Il a fait une remarque candide qui a surpris tout le monde. | daily_routines | 4
+cérébral | cerebral; intellectual; cognitive | Ce sujet demande une réflexion cérébrale approfondie. | education | 4
+clairvoyant | clairvoyant; insightful; perceptive | Ses commentaires clairvoyants ont éclairé la situation. | emotions | 5
+clémence | clemency; leniency; mercy | Le juge a fait preuve de clémence en lui accordant une peine légère. | work | 4
+coercitif | coercive; forceful; compulsory | Cette nouvelle politique a un caractère trop coercitif. | work | 5
+corollaire | corollary; consequence; implication | Cet événement a eu plusieurs corollaires inattendus. | work | 4
+cosmopolite | cosmopolitan; worldly; sophisticated | Cette ville a une ambiance très cosmopolite et ouverte. | travel | 4
+délétère | deleterious; harmful; detrimental | Les effets délétères de cette pollution sont préoccupants. | nature | 5
+despotique | despotic; tyrannical; authoritarian | Ce régime politique est devenu de plus en plus despotique. | work | 5
+diligent | diligent; hardworking; industrious | Grâce à son travail diligent, il a pu terminer le projet à temps. | work | 4
+discrétionnaire | discretionary; optional; arbitrary | Cette décision relève de son pouvoir discrétionnaire. | work | 4
+dissident | dissident; nonconformist; rebel | Elle a pris position en tant que dissident politique. | work | 4
+durable | durable; long-lasting; resilient | Cet équipement est conçu pour être durable et résistant. | technology | 3
+éclectique | eclectic; diverse; varied | Sa collection d'art est d'un style très éclectique. | arts | 4
+égrégore | egregore; group mind; collective consciousness | Cet événement a créé un égrégore puissant au sein de la communauté. | work | 5
+élégiaque | elegiac; mournful; melancholic | La musique avait une tonalité élégiaque qui a touché les auditeurs. | arts | 5
+émancipation | emancipation; liberation; freedom | Ce mouvement a permis l'émancipation des femmes dans cette société. | work | 4
+esotérique | esoteric; arcane; obscure | Ce domaine de recherche est très esotérique et peu connu. | education | 5
+exacerbé | exacerbated; aggravated; worsened | La situation a été exacerbée par les tensions croissantes. | work | 4
+exégèse | exegesis; interpretation; analysis | Cette exégèse du texte a permis d'en comprendre le sens profond. | education | 5
+exubérant | exuberant; lively; enthusiastic | Lors de la fête, l'ambiance était exubérante et joyeuse. | leisure | 4
+fallacieux | fallacious; misleading; deceptive | Son raisonnement comporte des arguments fallacieux. | work | 5
+fataliste | fatalistic; resigned; defeatist | Face à cette situation, il a adopté une attitude fataliste. | emotions | 4
+féliciter | to congratulate; to commend; to praise | Je tiens à vous féliciter pour votre excellent travail. | work | 3
+félon | treacherous; disloyal; perfidious | Son comportement félon a trahi la confiance de ses collègues. | work | 5
+ferveur | fervor; enthusiasm; passion | Il a défendu cette cause avec une grande ferveur. | emotions | 4
+fieffé | arrant; thorough; consummate | Ce menteur est un fieffé imposteur qui abuse de la confiance des autres. | daily_routines | 5
+fortuit | fortuitous; accidental; chance | Cette rencontre fortuite a changé le cours de ma vie. | daily_routines | 4
+frugal | frugal; thrifty; economical | Il mène un mode de vie frugal pour épargner davantage. | daily_routines | 4
+prédisposition | predisposition; inclination; tendency | Elle a une prédisposition naturelle pour le chant. | emotions | 4
+conjecturale | conjectural; speculative; hypothetical | Cette théorie est encore conjecturale et nécessite plus de recherches. | education | 4
+idiosyncrasie | idiosyncrasy; peculiarity; eccentricity | Chaque personne a ses propres idiosyncrasies qui la rendent unique. | emotions | 4
+réminiscence | reminiscence; recollection; memory | Cette mélodie évoque en moi des réminiscences de mon enfance. | emotions | 4
+récusation | challenge; rejection; objection | La récusation de ce témoin par l'avocat a été jugée légitime. | work | 4
+hégémonie | hegemony; dominance; supremacy | Certains craignent l'hégémonie des États-Unis sur la scène internationale. | politics | 5
+péremptoire | peremptory; authoritative; decisive | Le juge a donné une réponse péremptoire à la requête de l'avocat. | work | 4
+injonction | injunction; order; command | Le tribunal a émis une injonction interdisant la publication de ces informations. | work | 4
+éclectisme | eclecticism; diversity; variety | Son goût musical est marqué par l'éclectisme, il aime tous les genres. | arts | 4
+sycophante | sycophant; flatterer; toady | Certains politiques sont entourés de sycophantes qui les adulentconstamment. | work | 4
+impécunieux | penniless; destitute; broke | Malgré sa formation prestigieuse, il est resté impécunieux toute sa vie. | daily_routines | 4
+concomitant | concomitant; accompanying; concurrent | Le stress et la fatigue sont souvent des phénomènes concomitants. | health | 4
+évanescent | evanescent; fleeting; transitory | La beauté de ce coucher de soleil est évanescente, elle ne dure qu'un instant. | nature | 4
+subreptice | surreptitious; stealthy; furtive | Ses activités subreptices ont fini par être découvertes par les autorités. | daily_routines | 5
+déliquescent | deliquescent; liquefying; dissolving | Certains sels sont déliquescents et absorbent l'humidité de l'air. | science | 5
+caduque | obsolete; outdated; defunct | Cette loi est aujourd'hui caduque et doit être réformée. | work | 4
+péjoratif | pejorative; derogatory; disparaging | Ce terme a une connotation péjorative et devrait être évité. | language | 4
+péremptoirement | peremptorily; authoritatively; decisively | Le juge a rejeté péremptoirement la demande de l'avocat. | work | 5
+pernicieux | pernicious; harmful; destructive | Ses habitudes alimentaires ont eu des effets pernicieux sur sa santé. | health | 4
+péremption | expiration; lapse; termination | La péremption de ce contrat nous oblige à en signer un nouveau. | work | 4
+immuable | immutable; unchangeable; constant | Certains principes éthiques sont considérés comme immuables. | philosophy | 4
+inextricable | inextricable; intricate; complex | La situation s'est révélée inextricable et a nécessité une intervention. | work | 5
+irréfragable | irrefutable; indisputable; conclusive | Les preuves présentées par l'avocat sont d'une nature irréfragable. | work | 5
+prérogative | prerogative; privilege; exclusive right | En tant que dirigeant, il a la prérogative de prendre cette décision. | work | 4
+quintessence | quintessence; essence; epitome | Cette œuvre d'art est la quintessence du mouvement impressionniste. | arts | 5
+idiosyncrasique | idiosyncratic; peculiar; eccentric | Ses goûts musicaux ont un caractère idiosyncrasique très prononcé. | arts | 5
+revendication | claim; demand; entitlement | Les syndicats ont formulé de nouvelles revendications salariales. | work | 4
+obsolescence | obsolescence; outdatedness; depreciation | L'obsolescence rapide des technologies rend difficile les investissements. | technology | 4
+pérennité | permanence; durability; longevity | Malgré les crises, l'entreprise a su assurer sa pérennité. | work | 4
+désuétude | obsolescence; disuse; antiquation | Cette loi est tombée en désuétude et doit être réformée. | work | 4
+immanent | immanent; inherent; intrinsic | Cette qualité est immanente à la nature même de l'objet. | philosophy | 5

@@ -1,0 +1,1374 @@
+{
+  "metadata": {
+    "language": "portuguese",
+    "level": "a2",
+    "version": "1.0",
+    "word_count": 120,
+    "created_at": "2026-08-12T22:30:37.727535+00:00",
+    "description": "Elementary (A2) Portuguese vocabulary: personal information, shopping, local geography",
+    "source": "data/vocab_sources/portuguese/a2.psv",
+    "generated_by": "langue.tools.vocab_build"
+  },
+  "words": [
+    {
+      "word": "acordar",
+      "translations": [
+        "to wake up"
+      ],
+      "examples": [
+        "Acordo às seis e meia."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2
+    },
+    {
+      "word": "levantar-se",
+      "translations": [
+        "to get up"
+      ],
+      "examples": [
+        "Levanto-me assim que o despertador toca."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2
+    },
+    {
+      "word": "tomar banho",
+      "translations": [
+        "to take a shower",
+        "to bathe"
+      ],
+      "examples": [
+        "Tomo banho antes de sair."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2
+    },
+    {
+      "word": "vestir-se",
+      "translations": [
+        "to get dressed"
+      ],
+      "examples": [
+        "Ele se veste muito rápido de manhã."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2
+    },
+    {
+      "word": "pentear-se",
+      "translations": [
+        "to comb one's hair"
+      ],
+      "examples": [
+        "Ela se penteia na frente do espelho."
+      ],
+      "category": "daily_routines",
+      "difficulty": 3
+    },
+    {
+      "word": "deitar-se",
+      "translations": [
+        "to go to bed",
+        "to lie down"
+      ],
+      "examples": [
+        "Deito-me por volta das onze."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2
+    },
+    {
+      "word": "adormecer",
+      "translations": [
+        "to fall asleep"
+      ],
+      "examples": [
+        "Sempre adormeço vendo televisão."
+      ],
+      "category": "daily_routines",
+      "difficulty": 3
+    },
+    {
+      "word": "descansar",
+      "translations": [
+        "to rest"
+      ],
+      "examples": [
+        "Depois do almoço eu descanso um pouco."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2
+    },
+    {
+      "word": "costume",
+      "translations": [
+        "habit",
+        "custom"
+      ],
+      "examples": [
+        "Ler antes de dormir é um bom costume."
+      ],
+      "category": "daily_routines",
+      "difficulty": 3
+    },
+    {
+      "word": "horário",
+      "translations": [
+        "schedule",
+        "timetable"
+      ],
+      "examples": [
+        "O horário dos trens mudou."
+      ],
+      "category": "time",
+      "difficulty": 3
+    },
+    {
+      "word": "apartamento",
+      "translations": [
+        "apartment",
+        "flat"
+      ],
+      "examples": [
+        "Procuro um apartamento para alugar."
+      ],
+      "category": "housing",
+      "difficulty": 2
+    },
+    {
+      "word": "cozinha",
+      "translations": [
+        "kitchen"
+      ],
+      "examples": [
+        "A cozinha é pequena mas clara."
+      ],
+      "category": "housing",
+      "difficulty": 2
+    },
+    {
+      "word": "quarto",
+      "translations": [
+        "bedroom",
+        "room"
+      ],
+      "examples": [
+        "O quarto dá para o pátio."
+      ],
+      "category": "housing",
+      "difficulty": 2
+    },
+    {
+      "word": "banheiro",
+      "translations": [
+        "bathroom"
+      ],
+      "examples": [
+        "O banheiro fica no fim do corredor."
+      ],
+      "category": "housing",
+      "difficulty": 2
+    },
+    {
+      "word": "sala",
+      "translations": [
+        "living room"
+      ],
+      "examples": [
+        "Assistimos ao jogo na sala."
+      ],
+      "category": "housing",
+      "difficulty": 2
+    },
+    {
+      "word": "jardim",
+      "translations": [
+        "garden"
+      ],
+      "examples": [
+        "Temos um jardim pequeno atrás."
+      ],
+      "category": "housing",
+      "difficulty": 2
+    },
+    {
+      "word": "janela",
+      "translations": [
+        "window"
+      ],
+      "examples": [
+        "Abre a janela, está quente."
+      ],
+      "category": "housing",
+      "difficulty": 2
+    },
+    {
+      "word": "porta",
+      "translations": [
+        "door"
+      ],
+      "examples": [
+        "Fecha a porta, por favor."
+      ],
+      "category": "housing",
+      "difficulty": 2
+    },
+    {
+      "word": "cama",
+      "translations": [
+        "bed"
+      ],
+      "examples": [
+        "A cama é dura demais."
+      ],
+      "category": "housing",
+      "difficulty": 2
+    },
+    {
+      "word": "mesa",
+      "translations": [
+        "table"
+      ],
+      "examples": [
+        "Põe a mesa para quatro."
+      ],
+      "category": "housing",
+      "difficulty": 2
+    },
+    {
+      "word": "cadeira",
+      "translations": [
+        "chair"
+      ],
+      "examples": [
+        "Pega uma cadeira e senta."
+      ],
+      "category": "housing",
+      "difficulty": 2
+    },
+    {
+      "word": "armário",
+      "translations": [
+        "wardrobe",
+        "cupboard"
+      ],
+      "examples": [
+        "O armário está cheio de roupa."
+      ],
+      "category": "housing",
+      "difficulty": 3
+    },
+    {
+      "word": "aluguel",
+      "translations": [
+        "rent"
+      ],
+      "examples": [
+        "O aluguel se paga no dia um."
+      ],
+      "category": "housing",
+      "difficulty": 3
+    },
+    {
+      "word": "vizinho",
+      "translations": [
+        "neighbour"
+      ],
+      "examples": [
+        "Meu vizinho é muito barulhento."
+      ],
+      "category": "housing",
+      "difficulty": 2
+    },
+    {
+      "word": "comprar",
+      "translations": [
+        "to buy"
+      ],
+      "examples": [
+        "Preciso comprar pão."
+      ],
+      "category": "shopping",
+      "difficulty": 2
+    },
+    {
+      "word": "vender",
+      "translations": [
+        "to sell"
+      ],
+      "examples": [
+        "Eles vendem fruta orgânica."
+      ],
+      "category": "shopping",
+      "difficulty": 2
+    },
+    {
+      "word": "pagar",
+      "translations": [
+        "to pay"
+      ],
+      "examples": [
+        "Posso pagar com cartão?"
+      ],
+      "category": "shopping",
+      "difficulty": 2
+    },
+    {
+      "word": "custar",
+      "translations": [
+        "to cost"
+      ],
+      "examples": [
+        "Quanto custa o frete?"
+      ],
+      "category": "shopping",
+      "difficulty": 2
+    },
+    {
+      "word": "preço",
+      "translations": [
+        "price"
+      ],
+      "examples": [
+        "O preço me parece alto demais."
+      ],
+      "category": "shopping",
+      "difficulty": 2
+    },
+    {
+      "word": "desconto",
+      "translations": [
+        "discount"
+      ],
+      "examples": [
+        "Tem um desconto de vinte por cento."
+      ],
+      "category": "shopping",
+      "difficulty": 3
+    },
+    {
+      "word": "caixa",
+      "translations": [
+        "checkout",
+        "cashier",
+        "box"
+      ],
+      "examples": [
+        "A fila do caixa está grande."
+      ],
+      "category": "shopping",
+      "difficulty": 3
+    },
+    {
+      "word": "recibo",
+      "translations": [
+        "receipt"
+      ],
+      "examples": [
+        "Guarde o recibo para a troca."
+      ],
+      "category": "shopping",
+      "difficulty": 3
+    },
+    {
+      "word": "cartão",
+      "translations": [
+        "card"
+      ],
+      "examples": [
+        "Não aceitam cartão aqui."
+      ],
+      "category": "shopping",
+      "difficulty": 2
+    },
+    {
+      "word": "dinheiro vivo",
+      "translations": [
+        "cash"
+      ],
+      "examples": [
+        "Prefiro pagar em dinheiro vivo."
+      ],
+      "category": "shopping",
+      "difficulty": 3
+    },
+    {
+      "word": "promoção",
+      "translations": [
+        "sale",
+        "special offer"
+      ],
+      "examples": [
+        "A promoção começa em janeiro."
+      ],
+      "category": "shopping",
+      "difficulty": 3
+    },
+    {
+      "word": "tamanho",
+      "translations": [
+        "size"
+      ],
+      "examples": [
+        "Que tamanho você usa?"
+      ],
+      "category": "clothing",
+      "difficulty": 3
+    },
+    {
+      "word": "experimentar",
+      "translations": [
+        "to try on",
+        "to try"
+      ],
+      "examples": [
+        "Posso experimentar esta jaqueta?"
+      ],
+      "category": "clothing",
+      "difficulty": 3
+    },
+    {
+      "word": "roupa",
+      "translations": [
+        "clothes"
+      ],
+      "examples": [
+        "Preciso lavar a roupa."
+      ],
+      "category": "clothing",
+      "difficulty": 2
+    },
+    {
+      "word": "camisa",
+      "translations": [
+        "shirt"
+      ],
+      "examples": [
+        "A camisa branca está passada."
+      ],
+      "category": "clothing",
+      "difficulty": 2
+    },
+    {
+      "word": "calça",
+      "translations": [
+        "trousers",
+        "pants"
+      ],
+      "examples": [
+        "Esta calça está apertada."
+      ],
+      "category": "clothing",
+      "difficulty": 2
+    },
+    {
+      "word": "sapato",
+      "translations": [
+        "shoe"
+      ],
+      "examples": [
+        "Os sapatos novos machucam."
+      ],
+      "category": "clothing",
+      "difficulty": 2
+    },
+    {
+      "word": "jaqueta",
+      "translations": [
+        "jacket"
+      ],
+      "examples": [
+        "Põe a jaqueta, está frio."
+      ],
+      "category": "clothing",
+      "difficulty": 2
+    },
+    {
+      "word": "casaco",
+      "translations": [
+        "coat"
+      ],
+      "examples": [
+        "O casaco está na entrada."
+      ],
+      "category": "clothing",
+      "difficulty": 3
+    },
+    {
+      "word": "blusa",
+      "translations": [
+        "blouse",
+        "top"
+      ],
+      "examples": [
+        "Preciso de uma blusa mais grossa."
+      ],
+      "category": "clothing",
+      "difficulty": 3
+    },
+    {
+      "word": "saia",
+      "translations": [
+        "skirt"
+      ],
+      "examples": [
+        "Ela usa uma saia comprida."
+      ],
+      "category": "clothing",
+      "difficulty": 3
+    },
+    {
+      "word": "cinto",
+      "translations": [
+        "belt"
+      ],
+      "examples": [
+        "Perdi o cinto de couro."
+      ],
+      "category": "clothing",
+      "difficulty": 3
+    },
+    {
+      "word": "saúde",
+      "translations": [
+        "health"
+      ],
+      "examples": [
+        "Saúde em primeiro lugar."
+      ],
+      "category": "health",
+      "difficulty": 2
+    },
+    {
+      "word": "médico",
+      "translations": [
+        "doctor"
+      ],
+      "examples": [
+        "Preciso ir ao médico."
+      ],
+      "category": "health",
+      "difficulty": 2
+    },
+    {
+      "word": "hospital",
+      "translations": [
+        "hospital"
+      ],
+      "examples": [
+        "O hospital fica perto da estação."
+      ],
+      "category": "health",
+      "difficulty": 2
+    },
+    {
+      "word": "farmácia",
+      "translations": [
+        "pharmacy"
+      ],
+      "examples": [
+        "A farmácia abre à noite."
+      ],
+      "category": "health",
+      "difficulty": 2
+    },
+    {
+      "word": "remédio",
+      "translations": [
+        "medicine",
+        "remedy"
+      ],
+      "examples": [
+        "Tome o remédio depois das refeições."
+      ],
+      "category": "health",
+      "difficulty": 2
+    },
+    {
+      "word": "doente",
+      "translations": [
+        "ill",
+        "sick"
+      ],
+      "examples": [
+        "Estou doente há três dias."
+      ],
+      "category": "health",
+      "difficulty": 2
+    },
+    {
+      "word": "febre",
+      "translations": [
+        "fever"
+      ],
+      "examples": [
+        "Estou com febre alta."
+      ],
+      "category": "health",
+      "difficulty": 3
+    },
+    {
+      "word": "dor de cabeça",
+      "translations": [
+        "headache"
+      ],
+      "examples": [
+        "Estou com uma forte dor de cabeça."
+      ],
+      "category": "health",
+      "difficulty": 3
+    },
+    {
+      "word": "cabeça",
+      "translations": [
+        "head"
+      ],
+      "examples": [
+        "Minha cabeça está doendo."
+      ],
+      "category": "body",
+      "difficulty": 2
+    },
+    {
+      "word": "mão",
+      "translations": [
+        "hand"
+      ],
+      "examples": [
+        "Machuquei a mão."
+      ],
+      "category": "body",
+      "difficulty": 2
+    },
+    {
+      "word": "pé",
+      "translations": [
+        "foot"
+      ],
+      "examples": [
+        "Meu pé direito está doendo."
+      ],
+      "category": "body",
+      "difficulty": 2
+    },
+    {
+      "word": "olho",
+      "translations": [
+        "eye"
+      ],
+      "examples": [
+        "Ele está com um olho irritado."
+      ],
+      "category": "body",
+      "difficulty": 2
+    },
+    {
+      "word": "braço",
+      "translations": [
+        "arm"
+      ],
+      "examples": [
+        "Ele quebrou o braço esquiando."
+      ],
+      "category": "body",
+      "difficulty": 3
+    },
+    {
+      "word": "perna",
+      "translations": [
+        "leg"
+      ],
+      "examples": [
+        "Minha perna esquerda dói."
+      ],
+      "category": "body",
+      "difficulty": 2
+    },
+    {
+      "word": "costas",
+      "translations": [
+        "back"
+      ],
+      "examples": [
+        "Estou com dor nas costas desde ontem."
+      ],
+      "category": "body",
+      "difficulty": 3
+    },
+    {
+      "word": "escritório",
+      "translations": [
+        "office"
+      ],
+      "examples": [
+        "Meu escritório fica no terceiro andar."
+      ],
+      "category": "work",
+      "difficulty": 2
+    },
+    {
+      "word": "reunião",
+      "translations": [
+        "meeting"
+      ],
+      "examples": [
+        "A reunião foi adiada."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "colega",
+      "translations": [
+        "colleague"
+      ],
+      "examples": [
+        "Um colega me ajudou muito."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "salário",
+      "translations": [
+        "salary"
+      ],
+      "examples": [
+        "O salário cai no fim do mês."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "emprego",
+      "translations": [
+        "job",
+        "employment"
+      ],
+      "examples": [
+        "Ele encontrou um emprego novo."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "empresa",
+      "translations": [
+        "company",
+        "firm"
+      ],
+      "examples": [
+        "A empresa tem cinquenta funcionários."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "chefe",
+      "translations": [
+        "boss"
+      ],
+      "examples": [
+        "O chefe está de férias."
+      ],
+      "category": "work",
+      "difficulty": 2
+    },
+    {
+      "word": "férias",
+      "translations": [
+        "holidays",
+        "vacation"
+      ],
+      "examples": [
+        "Tiro duas semanas de férias em agosto."
+      ],
+      "category": "work",
+      "difficulty": 2
+    },
+    {
+      "word": "faculdade",
+      "translations": [
+        "university",
+        "college"
+      ],
+      "examples": [
+        "Ela estuda na faculdade de Coimbra."
+      ],
+      "category": "education",
+      "difficulty": 2
+    },
+    {
+      "word": "prova",
+      "translations": [
+        "exam",
+        "test",
+        "proof"
+      ],
+      "examples": [
+        "Passei na prova de história."
+      ],
+      "category": "education",
+      "difficulty": 2
+    },
+    {
+      "word": "aula",
+      "translations": [
+        "class",
+        "lesson"
+      ],
+      "examples": [
+        "A aula começa às nove."
+      ],
+      "category": "education",
+      "difficulty": 2
+    },
+    {
+      "word": "dever de casa",
+      "translations": [
+        "homework"
+      ],
+      "examples": [
+        "Preciso terminar o dever de casa."
+      ],
+      "category": "education",
+      "difficulty": 2
+    },
+    {
+      "word": "professor",
+      "translations": [
+        "teacher"
+      ],
+      "examples": [
+        "O professor explica muito bem."
+      ],
+      "category": "education",
+      "difficulty": 2
+    },
+    {
+      "word": "aluno",
+      "translations": [
+        "student",
+        "pupil"
+      ],
+      "examples": [
+        "Sou aluno de engenharia."
+      ],
+      "category": "education",
+      "difficulty": 2
+    },
+    {
+      "word": "nota",
+      "translations": [
+        "grade",
+        "mark",
+        "note"
+      ],
+      "examples": [
+        "Tirei uma nota boa."
+      ],
+      "category": "education",
+      "difficulty": 3
+    },
+    {
+      "word": "viagem",
+      "translations": [
+        "trip",
+        "journey"
+      ],
+      "examples": [
+        "A viagem dura três horas."
+      ],
+      "category": "travel",
+      "difficulty": 2
+    },
+    {
+      "word": "mala",
+      "translations": [
+        "suitcase"
+      ],
+      "examples": [
+        "Fiz a mala ontem à noite."
+      ],
+      "category": "travel",
+      "difficulty": 3
+    },
+    {
+      "word": "partir",
+      "translations": [
+        "to leave",
+        "to depart"
+      ],
+      "examples": [
+        "Partimos amanhã de madrugada."
+      ],
+      "category": "travel",
+      "difficulty": 2
+    },
+    {
+      "word": "chegar",
+      "translations": [
+        "to arrive"
+      ],
+      "examples": [
+        "O voo chega atrasado."
+      ],
+      "category": "travel",
+      "difficulty": 2
+    },
+    {
+      "word": "reservar",
+      "translations": [
+        "to book",
+        "to reserve"
+      ],
+      "examples": [
+        "Reservei uma mesa para dois."
+      ],
+      "category": "travel",
+      "difficulty": 3
+    },
+    {
+      "word": "quarto de casal",
+      "translations": [
+        "double room"
+      ],
+      "examples": [
+        "Quero um quarto de casal por três noites."
+      ],
+      "category": "travel",
+      "difficulty": 3
+    },
+    {
+      "word": "passaporte",
+      "translations": [
+        "passport"
+      ],
+      "examples": [
+        "O passaporte vence em março."
+      ],
+      "category": "travel",
+      "difficulty": 3
+    },
+    {
+      "word": "praia",
+      "translations": [
+        "beach"
+      ],
+      "examples": [
+        "A praia fica cheia no verão."
+      ],
+      "category": "travel",
+      "difficulty": 2
+    },
+    {
+      "word": "montanha",
+      "translations": [
+        "mountain"
+      ],
+      "examples": [
+        "No inverno vamos para a montanha."
+      ],
+      "category": "nature",
+      "difficulty": 2
+    },
+    {
+      "word": "lago",
+      "translations": [
+        "lake"
+      ],
+      "examples": [
+        "O lago congela em janeiro."
+      ],
+      "category": "nature",
+      "difficulty": 2
+    },
+    {
+      "word": "mar",
+      "translations": [
+        "sea"
+      ],
+      "examples": [
+        "O mar está calmo hoje."
+      ],
+      "category": "nature",
+      "difficulty": 2
+    },
+    {
+      "word": "campo",
+      "translations": [
+        "countryside",
+        "field"
+      ],
+      "examples": [
+        "Passamos o fim de semana no campo."
+      ],
+      "category": "nature",
+      "difficulty": 2
+    },
+    {
+      "word": "virar",
+      "translations": [
+        "to turn"
+      ],
+      "examples": [
+        "Vire à direita no semáforo."
+      ],
+      "category": "transportation",
+      "difficulty": 2
+    },
+    {
+      "word": "atravessar",
+      "translations": [
+        "to cross"
+      ],
+      "examples": [
+        "Atravesse a rua na faixa."
+      ],
+      "category": "transportation",
+      "difficulty": 3
+    },
+    {
+      "word": "ponto de ônibus",
+      "translations": [
+        "bus stop"
+      ],
+      "examples": [
+        "Desço no próximo ponto de ônibus."
+      ],
+      "category": "transportation",
+      "difficulty": 3
+    },
+    {
+      "word": "semáforo",
+      "translations": [
+        "traffic light"
+      ],
+      "examples": [
+        "O semáforo está vermelho."
+      ],
+      "category": "transportation",
+      "difficulty": 3
+    },
+    {
+      "word": "esquina",
+      "translations": [
+        "corner"
+      ],
+      "examples": [
+        "Vire à esquerda na esquina."
+      ],
+      "category": "transportation",
+      "difficulty": 3
+    },
+    {
+      "word": "estacionamento",
+      "translations": [
+        "car park",
+        "parking"
+      ],
+      "examples": [
+        "O estacionamento é pago."
+      ],
+      "category": "transportation",
+      "difficulty": 3
+    },
+    {
+      "word": "gasolina",
+      "translations": [
+        "petrol",
+        "gasoline"
+      ],
+      "examples": [
+        "Preciso pôr gasolina."
+      ],
+      "category": "transportation",
+      "difficulty": 3
+    },
+    {
+      "word": "carteira de motorista",
+      "translations": [
+        "driving licence"
+      ],
+      "examples": [
+        "Tirei a carteira de motorista aos dezoito."
+      ],
+      "category": "transportation",
+      "difficulty": 3
+    },
+    {
+      "word": "tempo livre",
+      "translations": [
+        "free time"
+      ],
+      "examples": [
+        "No tempo livre eu toco violão."
+      ],
+      "category": "leisure",
+      "difficulty": 2
+    },
+    {
+      "word": "esporte",
+      "translations": [
+        "sport"
+      ],
+      "examples": [
+        "Faço esporte três vezes por semana."
+      ],
+      "category": "sports",
+      "difficulty": 2
+    },
+    {
+      "word": "nadar",
+      "translations": [
+        "to swim"
+      ],
+      "examples": [
+        "Nado na piscina às terças."
+      ],
+      "category": "sports",
+      "difficulty": 2
+    },
+    {
+      "word": "correr",
+      "translations": [
+        "to run"
+      ],
+      "examples": [
+        "Corro no parque bem cedo."
+      ],
+      "category": "sports",
+      "difficulty": 2
+    },
+    {
+      "word": "jogo",
+      "translations": [
+        "game",
+        "match"
+      ],
+      "examples": [
+        "O jogo termina às dez."
+      ],
+      "category": "sports",
+      "difficulty": 2
+    },
+    {
+      "word": "academia",
+      "translations": [
+        "gym"
+      ],
+      "examples": [
+        "Vou à academia depois do trabalho."
+      ],
+      "category": "sports",
+      "difficulty": 3
+    },
+    {
+      "word": "música",
+      "translations": [
+        "music"
+      ],
+      "examples": [
+        "Escuto música enquanto trabalho."
+      ],
+      "category": "arts",
+      "difficulty": 1
+    },
+    {
+      "word": "filme",
+      "translations": [
+        "film",
+        "movie"
+      ],
+      "examples": [
+        "O filme dura duas horas."
+      ],
+      "category": "arts",
+      "difficulty": 1
+    },
+    {
+      "word": "show",
+      "translations": [
+        "concert",
+        "gig"
+      ],
+      "examples": [
+        "O show está esgotado."
+      ],
+      "category": "arts",
+      "difficulty": 2
+    },
+    {
+      "word": "museu",
+      "translations": [
+        "museum"
+      ],
+      "examples": [
+        "O museu fecha às segundas."
+      ],
+      "category": "arts",
+      "difficulty": 2
+    },
+    {
+      "word": "nublado",
+      "translations": [
+        "cloudy"
+      ],
+      "examples": [
+        "Hoje está nublado mas não chove."
+      ],
+      "category": "weather",
+      "difficulty": 3
+    },
+    {
+      "word": "nevar",
+      "translations": [
+        "to snow"
+      ],
+      "examples": [
+        "Nevou na serra esta noite."
+      ],
+      "category": "weather",
+      "difficulty": 3
+    },
+    {
+      "word": "vento",
+      "translations": [
+        "wind"
+      ],
+      "examples": [
+        "Está ventando demais para sair de barco."
+      ],
+      "category": "weather",
+      "difficulty": 2
+    },
+    {
+      "word": "tempestade",
+      "translations": [
+        "storm"
+      ],
+      "examples": [
+        "Uma tempestade alagou a rua."
+      ],
+      "category": "weather",
+      "difficulty": 3
+    },
+    {
+      "word": "contente",
+      "translations": [
+        "glad",
+        "pleased"
+      ],
+      "examples": [
+        "Estou contente com o resultado."
+      ],
+      "category": "emotions",
+      "difficulty": 2
+    },
+    {
+      "word": "triste",
+      "translations": [
+        "sad"
+      ],
+      "examples": [
+        "Estou triste hoje."
+      ],
+      "category": "emotions",
+      "difficulty": 2
+    },
+    {
+      "word": "bravo",
+      "translations": [
+        "angry",
+        "brave"
+      ],
+      "examples": [
+        "Ele está bravo com o atraso."
+      ],
+      "category": "emotions",
+      "difficulty": 3
+    },
+    {
+      "word": "preocupado",
+      "translations": [
+        "worried"
+      ],
+      "examples": [
+        "Estou preocupado com a prova."
+      ],
+      "category": "emotions",
+      "difficulty": 3
+    },
+    {
+      "word": "divertido",
+      "translations": [
+        "fun",
+        "amusing"
+      ],
+      "examples": [
+        "Foi uma noite muito divertida."
+      ],
+      "category": "emotions",
+      "difficulty": 3
+    },
+    {
+      "word": "difícil",
+      "translations": [
+        "difficult"
+      ],
+      "examples": [
+        "Este exercício é difícil."
+      ],
+      "category": "basics",
+      "difficulty": 2
+    },
+    {
+      "word": "fácil",
+      "translations": [
+        "easy"
+      ],
+      "examples": [
+        "A receita é bem fácil."
+      ],
+      "category": "basics",
+      "difficulty": 2
+    },
+    {
+      "word": "rápido",
+      "translations": [
+        "fast",
+        "quick"
+      ],
+      "examples": [
+        "O trem é mais rápido que o ônibus."
+      ],
+      "category": "basics",
+      "difficulty": 2
+    },
+    {
+      "word": "devagar",
+      "translations": [
+        "slow",
+        "slowly"
+      ],
+      "examples": [
+        "A conexão está devagar."
+      ],
+      "category": "basics",
+      "difficulty": 2
+    },
+    {
+      "word": "gentil",
+      "translations": [
+        "kind",
+        "polite"
+      ],
+      "examples": [
+        "A vendedora foi muito gentil."
+      ],
+      "category": "emotions",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+# Italian C1 — advanced vocabulary
+# Format: word | translations (semicolon-separated) | example sentence | category | difficulty (1-5)
+
+# Precise abstract nouns
+lungimiranza | foresight | La sua lungimiranza ha salvato l'azienda. | abstract | 5
+inerzia | inertia | L'inerzia burocratica blocca ogni riforma. | abstract | 5
+arbitrio | discretion; free will | La decisione è lasciata al libero arbitrio. | philosophy | 5
+discernimento | discernment | Serve discernimento per valutare le fonti. | philosophy | 5
+consuetudine | custom; usage | Per consuetudine si comincia con un brindisi. | society | 5
+prassi | standard practice | Non è la prassi in questo ufficio. | work | 5
+retaggio | legacy; heritage | È un retaggio del secolo scorso. | society | 5
+scaturigine | origin; source | La scaturigine del conflitto è economica. | abstract | 5
+disamina | detailed examination | La disamina occupa cinquanta pagine. | education | 5
+caveat | caveat; warning | Il rapporto contiene un caveat importante. | abstract | 5
+corollario | corollary | Il corollario è che i costi raddoppiano. | science | 5
+ricaduta | fallout; spin-off | Le ricadute occupazionali saranno positive. | business | 5
+sinergia | synergy | Cercano sinergie tra i due reparti. | business | 4
+plusvalore | added value; surplus value | Il plusvalore resta al distributore. | business | 5
+opacità | opacity; lack of transparency | Denunciano l'opacità dei conti. | politics | 5
+
+# Nuanced adjectives
+sottile | subtle; thin | Fa una distinzione molto sottile. | abstract | 4
+capzioso | captious; specious | È un argomento capzioso. | philosophy | 5
+pretestuoso | contrived; pretextual | La motivazione appare pretestuosa. | politics | 5
+lampante | glaring; self-evident | La contraddizione è lampante. | abstract | 5
+inequivocabile | unequivocal | La risposta è stata inequivocabile. | language | 5
+esaustivo | exhaustive; comprehensive | L'elenco non è esaustivo. | education | 4
+lacunoso | incomplete; full of gaps | La documentazione è lacunosa. | education | 5
+verosimile | plausible; likely | La ricostruzione è verosimile. | abstract | 4
+fuorviante | misleading | Il titolo è fuorviante. | language | 5
+stringente | stringent; compelling | L'argomentazione non è stringente. | abstract | 5
+peculiare | peculiar; distinctive | Ha uno stile peculiare. | arts | 4
+ineluttabile | inescapable | Il declino sembrava ineluttabile. | philosophy | 5
+scaltro | shrewd; cunning | È un negoziatore scaltro. | emotions | 5
+caparbio | headstrong; determined | La sua caparbia insistenza ha pagato. | emotions | 5
+schivo | reserved; retiring | È un autore schivo, rifiuta le interviste. | emotions | 5
+
+# Formal and professional register
+avvalersi | to make use of | Si è avvalso della facoltà di non rispondere. | politics | 5
+ottemperare | to comply with | L'azienda deve ottemperare alle prescrizioni. | politics | 5
+demandare | to refer; to delegate | La questione è stata demandata alla commissione. | work | 5
+subordinare | to subordinate; to make conditional | L'accordo è subordinato all'approvazione. | business | 5
+esperire | to attempt; to carry out | Sono stati esperiti tutti i tentativi. | politics | 5
+sancire | to establish; to sanction | La Costituzione sancisce questo principio. | politics | 5
+derogare | to derogate; to make an exception | Non si può derogare alla norma. | politics | 5
+ratificare | to ratify | Il parlamento ha ratificato il trattato. | politics | 5
+promulgare | to promulgate; to enact | La legge è stata promulgata ieri. | politics | 5
+comminare | to impose (a penalty) | È stata comminata una multa salata. | politics | 5
+adempiere | to fulfil | Ha adempiuto a tutti gli obblighi. | work | 5
+vertere | to concern; to be about | La causa verte su una questione di brevetti. | politics | 5
+
+# Argument and rhetoric
+argomentare | to argue; to reason | Ha argomentato la tesi con rigore. | language | 4
+confutare | to refute | Ha confutato ogni obiezione. | philosophy | 5
+corroborare | to corroborate | I dati corroborano l'ipotesi. | science | 5
+inficiare | to invalidate; to undermine | L'errore inficia l'intero risultato. | science | 5
+avallare | to endorse; to back | Non intendo avallare questa scelta. | politics | 5
+eludere | to evade; to circumvent | Ha eluso la domanda con eleganza. | language | 5
+ravvisare | to discern; to identify | Non ravviso alcun illecito. | politics | 5
+addurre | to adduce; to put forward | Ha addotto motivi di salute. | language | 5
+paventare | to fear; to warn of | Si paventa una nuova recessione. | politics | 5
+denotare | to denote; to indicate | Il gesto denota grande sicurezza. | language | 4
+sottendere | to underlie; to imply | Questa scelta sottende una precisa visione. | philosophy | 5
+enucleare | to identify; to single out | Enucleiamo i tre punti principali. | education | 5
+
+# Idioms and set phrases
+prendere piede | to catch on; to take hold | L'abitudine ha preso piede rapidamente. | society | 5
+dare adito | to give rise to | La frase ha dato adito a molte polemiche. | language | 5
+mettere a fuoco | to bring into focus | Cerchiamo di mettere a fuoco il problema. | abstract | 4
+venire meno | to fail; to be lacking | È venuta meno la fiducia reciproca. | abstract | 5
+fare leva su | to leverage; to play on | La campagna fa leva sulle paure. | society | 5
+tenere conto | to take into account | Bisogna tenere conto dei costi nascosti. | abstract | 4
+andare a monte | to fall through | L'accordo è andato a monte. | business | 5
+mettere in discussione | to call into question | Nessuno mette in discussione la sua onestà. | society | 4
+a titolo di esempio | by way of example | A titolo di esempio, cito il caso francese. | language | 5
+in linea di massima | broadly speaking | In linea di massima sono d'accordo. | language | 5
+di per sé | in itself | Il dato di per sé non dice nulla. | abstract | 4
+a maggior ragione | all the more so | A maggior ragione dobbiamo intervenire. | language | 5
+
+# Culture, arts, and thought
+estetica | aesthetics | La sua estetica richiama il barocco. | philosophy | 4
+poetica | poetics; artistic vision | La poetica dell'autore è coerente. | arts | 5
+avanguardia | avant-garde | Era all'avanguardia del movimento. | arts | 4
+canone | canon | Il canone letterario è in discussione. | arts | 5
+esegesi | exegesis | L'esegesi del testo occupa due volumi. | philosophy | 5
+filologia | philology | Ha studiato filologia romanza. | language | 5
+epistemologia | epistemology | L'epistemologia indaga i limiti del sapere. | philosophy | 5
+ontologico | ontological | La differenza è ontologica, non pratica. | philosophy | 5
+dialettica | dialectics | La dialettica tra i due poli resta irrisolta. | philosophy | 5
+paradigma | paradigm | Serve un cambio di paradigma. | science | 4
+metafora | metaphor | La metafora è efficace ma abusata. | language | 4
+allusione | allusion | Il titolo è un'allusione a Dante. | arts | 4
+
+# Society and institutions
+welfare | welfare state | Il welfare italiano è in trasformazione. | society | 4
+mobilità sociale | social mobility | La mobilità sociale è quasi ferma. | society | 5
+coesione | cohesion | La coesione sociale è a rischio. | society | 5
+emarginazione | marginalization | L'emarginazione colpisce le periferie. | society | 5
+tessuto sociale | social fabric | Il tessuto sociale si è indebolito. | society | 5
+ceto | social class | Appartiene al ceto medio urbano. | society | 5
+clientelismo | patronage; cronyism | Il clientelismo distorce le assunzioni. | politics | 5
+lobbismo | lobbying | Il lobbismo è ora regolamentato. | politics | 5
+trasparenza | transparency | Chiedono maggiore trasparenza nei bilanci. | politics | 4
+accountability | accountability | Manca ogni forma di accountability. | politics | 5
+
+# Work and precision
+mansione | duty; job function | Le mansioni sono elencate nel contratto. | work | 5
+organico | staff; workforce | L'organico è stato ridotto del venti per cento. | work | 5
+turnover | staff turnover | Il turnover in azienda è altissimo. | work | 5
+delega | delegation; power of attorney | Ha firmato con delega del direttore. | work | 5
+ordine del giorno | agenda | Il punto non è all'ordine del giorno. | work | 5
+verbale | minutes; report | Il verbale della riunione è allegato. | work | 5
+inadempienza | non-compliance; breach | L'inadempienza comporta una penale. | business | 5
+recesso | withdrawal (from contract) | Ha esercitato il diritto di recesso. | business | 5

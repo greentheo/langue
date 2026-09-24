@@ -1,0 +1,98 @@
+# French A1 — beginner vocabulary
+# Converted from the legacy JSON library, which predates this source pipeline.
+# Format: word | translations (semicolon-separated) | example sentence | category | difficulty (1-5)
+
+bonjour | hello; good morning; good day | Bonjour, comment allez-vous? | greetings | 1
+au revoir | goodbye | Au revoir, à demain! | greetings | 1
+merci | thank you; thanks | Merci beaucoup pour votre aide. | greetings | 1
+oui | yes | Oui, je comprends. | basics | 1
+non | no | Non, merci. | basics | 1
+s'il vous plaît | please | Pouvez-vous me passer le sel, s'il vous plaît ? | greetings | 1
+un | one | J'ai acheté un livre. | numbers | 1
+deux | two | Il y a deux chiens dans le parc. | numbers | 1
+trois | three | Je vais à la plage trois fois par semaine. | numbers | 1
+quatre | four | J'ai quatre frères et sœurs. | numbers | 1
+cinq | five | Il y a cinq pommes sur la table. | numbers | 1
+mère | mother | Ma mère est très gentille. | family | 2
+père | father | Mon père travaille beaucoup. | family | 2
+frère | brother | J'ai un frère plus jeune. | family | 2
+sœur | sister | Ma sœur est très intelligente. | family | 2
+famille | family | J'aime passer du temps avec ma famille. | family | 2
+pain | bread | Je voudrais une baguette de pain, s'il vous plaît. | food | 2
+eau | water | Puis-je avoir un verre d'eau ? | food | 2
+pomme | apple | J'ai acheté des pommes au marché. | food | 2
+fromage | cheese | Je préfère le fromage de chèvre. | food | 2
+viande | meat | Nous avons mangé de la viande de bœuf pour le dîner. | food | 2
+avion | airplane | Nous prenons l'avion pour aller en vacances. | travel | 2
+train | train | Je prends le train pour aller au travail. | travel | 2
+voiture | car | Ma voiture est garée dans le parking. | travel | 2
+bateau | boat | Nous avons fait une croisière en bateau. | travel | 2
+métro | subway; metro | Je prends le métro pour aller en ville. | travel | 2
+magasin | store; shop | Je vais faire des achats dans ce magasin. | shopping | 2
+acheter | to buy | J'ai acheté un nouveau manteau. | shopping | 2
+vendre | to sell | Cette boutique vend de beaux bijoux. | shopping | 2
+payer | to pay | Je vais payer avec ma carte bancaire. | shopping | 2
+argent | money | J'ai assez d'argent pour acheter ce manteau. | shopping | 2
+heure | hour | Il est 15 heures. | time | 2
+jour | day | Aujourd'hui, nous allons au parc. | time | 2
+semaine | week | Je travaille du lundi au vendredi chaque semaine. | time | 2
+mois | month | Je pars le mois prochain. | time | 2
+année | year | Cette année, j'apprends le français. | time | 2
+soleil | sun | Il fait beau et il y a beaucoup de soleil aujourd'hui. | weather | 2
+pluie | rain | La pluie a commencé à l'aube. | weather | 2
+neige | snow | Il y a beaucoup de neige sur les montagnes. | weather | 2
+vent | wind | Il fait très venteux aujourd'hui. | weather | 2
+nuage | cloud | Le ciel est couvert de nuages gris. | weather | 2
+travailler | to work | Je travaille dans un bureau. | work | 3
+bureau | office | Mon bureau est au troisième étage. | work | 3
+patron | boss | Mon patron est très exigeant. | work | 3
+collègue | colleague | Je m'entends bien avec mes collègues. | work | 3
+salaire | salary | Mon salaire me permet de vivre confortablement. | work | 3
+école | school | Je vais à l'école tous les jours. | education | 3
+professeur | teacher | Mon professeur de français est très sympathique. | education | 3
+étudiant | student | Je suis un étudiant en première année. | education | 3
+livre | book | J'ai emprunté ce livre à la bibliothèque. | education | 3
+stylo | pen | Peux-tu me prêter un stylo, s'il te plaît ? | education | 3
+maison | house | Ma maison a un grand jardin. | housing | 3
+appartement | apartment | J'habite dans un appartement au centre-ville. | housing | 3
+chambre | room | Ma chambre est au deuxième étage. | housing | 3
+cuisine | kitchen | Je fais la cuisine tous les soirs. | housing | 3
+jardin | garden | Nous avons un beau jardin avec des fleurs. | housing | 3
+lire | to read | J'aime lire des livres pendant mon temps libre. | leisure | 3
+jouer | to play | Nous jouons au football le week-end. | leisure | 3
+sport | sport | Le football est mon sport préféré. | leisure | 3
+musique | music | J'écoute de la musique classique le soir. | leisure | 3
+film | movie | Nous allons voir un film au cinéma ce soir. | leisure | 3
+mal | pain; ache | J'ai mal à la tête. | health | 3
+médecin | doctor | Je vais voir un médecin pour mon problème de dos. | health | 3
+hôpital | hospital | Mon grand-père est à l'hôpital. | health | 3
+médicament | medication | Le médecin m'a prescrit des médicaments. | health | 3
+santé | health | Ma santé est bonne. | health | 3
+boucher | butcher; to chop | Le boucher vend de la viande fraîche. | food | 2
+parapluie | umbrella | Je prends mon parapluie quand il pleut. | weather | 2
+pêcher | to fish; to pick | Mon père aime pêcher le weekend. | leisure | 3
+boulangerie | bakery | J'achète du pain à la boulangerie. | food | 2
+rire | to laugh | Elle rit quand elle est heureuse. | emotions | 2
+oreille | ear | J'entends avec mes oreilles. | health | 2
+chanter | to sing | Elle chante très bien. | arts | 3
+fleuve | river | Le fleuve traverse la ville. | nature | 3
+chaussure | shoe | Je porte des chaussures confortables. | shopping | 2
+dormir | to sleep | Je dors huit heures par nuit. | daily_routines | 2
+courir | to run | Je cours tous les jours pour faire de l'exercice. | sports | 3
+montagne | mountain | Les montagnes sont très hautes. | nature | 3
+église | church | L'église est un bâtiment religieux. | arts | 3
+malade | sick; ill | Je suis malade et je reste au lit. | health | 2
+manger | to eat | Je mange du pain et du fromage pour le petit-déjeuner. | food | 2
+parler | to speak; to talk | Nous parlons français à la maison. | daily_routines | 3
+beau | beautiful; handsome | Ce paysage est vraiment beau. | arts | 2
+fatigue | tired; exhausted | Je suis fatigué après une longue journée de travail. | health | 3
+hôtel | hotel | Nous restons à l'hôtel pendant nos vacances. | travel | 3
+écrire | to write | J'écris une lettre à ma grand-mère. | education | 3
+prendre | to take; to have | Je prends le bus pour aller au travail. | transportation | 3
+prêter | to lend; to borrow | Je peux te prêter mon stylo si tu en as besoin. | daily_routines | 3
+apporter | to bring | Peux-tu m'apporter un verre d'eau ? | daily_routines | 3
+regarder | to watch; to look at | Je regarde la télévision le soir. | leisure | 3
+fermer | to close | Je ferme la porte à clé avant de sortir. | daily_routines | 3
+aimer | to like; to love | J'aime beaucoup le chocolat. | emotions | 3
+animal | animal | J'ai un chat comme animal de compagnie. | nature | 3
+marché | market | Je vais au marché pour acheter des fruits et légumes. | shopping | 3

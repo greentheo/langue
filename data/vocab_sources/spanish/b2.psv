@@ -1,0 +1,117 @@
+# Spanish B2 — upper-intermediate vocabulary
+# Format: word | translations (semicolon-separated) | example sentence | category | difficulty (1-5)
+
+# Abstract nouns and reasoning
+conciencia | awareness; conscience | La conciencia del riesgo ha crecido. | abstract | 4
+coherencia | consistency; coherence | Falta coherencia entre las dos versiones. | abstract | 4
+ambigüedad | ambiguity | La ambigüedad del texto creó confusión. | abstract | 4
+premisa | premise | Partimos de una premisa compartida. | abstract | 4
+consecuencia | consequence | Las consecuencias se verán en años. | abstract | 3
+hipótesis | hypothesis | La hipótesis aún no se ha verificado. | science | 4
+perspectiva | perspective; prospect | Todo cambia desde la perspectiva opuesta. | abstract | 4
+matiz | nuance; shade | La traducción pierde un matiz importante. | language | 4
+contradicción | contradiction | Hay una contradicción en su razonamiento. | abstract | 4
+enfoque | approach; focus | El enfoque del estudio es novedoso. | education | 4
+síntesis | synthesis; summary | Haz una síntesis en media página. | abstract | 4
+criterio | criterion; judgement | El criterio de selección es la calidad. | abstract | 4
+tendencia | trend; tendency | La tendencia lleva meses a la baja. | abstract | 3
+fenómeno | phenomenon | Es un fenómeno difícil de explicar. | science | 4
+supuesto | assumption | El supuesto de partida es erróneo. | abstract | 4
+
+# Politics and institutions
+gobierno | government | El gobierno aprobó la reforma. | politics | 3
+ley | law | La ley entra en vigor en enero. | politics | 3
+reforma | reform | La reforma educativa está cuestionada. | politics | 4
+elecciones | elections | Las elecciones serán en primavera. | politics | 3
+ciudadanía | citizenship | Obtuvo la ciudadanía española. | politics | 4
+derecho | right; law | El derecho al voto está garantizado. | politics | 3
+deber | duty; obligation | Votar es un deber cívico. | politics | 3
+democracia | democracy | La democracia exige participación. | politics | 3
+poder | power | El poder ejecutivo recae en el gobierno. | politics | 3
+corrupción | corruption | La investigación afecta a casos de corrupción. | politics | 4
+justicia | justice | Piden justicia para las víctimas. | politics | 3
+juzgado | court | El juzgado dictó sentencia. | politics | 4
+sentencia | verdict; ruling | La sentencia fue recurrida. | politics | 5
+medida | measure | La medida entró en vigor ayer. | politics | 4
+normativa | regulations | La normativa europea es más estricta. | politics | 5
+
+# Economy and business
+comercio | trade; commerce | El comercio exterior ha crecido un cinco por ciento. | business | 3
+competencia | competition; competence | La competencia es feroz. | business | 4
+facturación | turnover; billing | La facturación creció un diez por ciento. | business | 5
+crecimiento | growth | El crecimiento económico se ha frenado. | business | 3
+crisis | crisis | La crisis golpeó a todo el sector. | business | 3
+deuda | debt | La deuda pública sigue subiendo. | business | 4
+demanda | demand; lawsuit | La demanda supera a la oferta. | business | 3
+oferta | supply; offer | La oferta es válida hasta el domingo. | business | 3
+inversión | investment | La inversión se amortiza en tres años. | business | 4
+empresario | entrepreneur; businessman | Es un empresario del sector textil. | business | 4
+quiebra | bankruptcy | La empresa se declaró en quiebra. | business | 4
+emprender | to undertake; to start up | Han emprendido un nuevo negocio. | business | 4
+delegar | to delegate | Tiene que aprender a delegar más. | business | 4
+negociar | to negotiate | Estamos negociando las condiciones. | business | 4
+
+# Science and technology
+investigación | research; investigation | La investigación la financia la universidad. | science | 3
+experimento | experiment | El experimento dio resultados inesperados. | science | 3
+dato | datum; piece of data | Los datos confirman la tendencia. | science | 3
+prueba | proof; test | No tenemos pruebas suficientes. | science | 3
+descubrimiento | discovery | El descubrimiento cambió el sector. | science | 3
+desarrollo | development | El desarrollo del fármaco lleva años. | science | 3
+innovación | innovation | La innovación exige inversión. | technology | 4
+inteligencia artificial | artificial intelligence | La inteligencia artificial ya está en todas partes. | technology | 4
+algoritmo | algorithm | El algoritmo selecciona los contenidos. | technology | 4
+base de datos | database | La base de datos tiene un millón de registros. | technology | 4
+ciberseguridad | cybersecurity | La ciberseguridad es una prioridad. | technology | 5
+patente | patent | Han registrado una patente. | technology | 5
+prototipo | prototype | El prototipo ya funciona. | technology | 4
+
+# Media and language
+fuente | source; fountain | La fuente no es fiable. | language | 4
+informativo | news bulletin | El informativo de las ocho lo mencionó. | technology | 4
+entrevista periodística | press interview | La entrevista periodística salió ayer. | technology | 4
+titular | headline | El titular era deliberadamente provocador. | technology | 4
+desmentir | to deny; to refute | El ministerio desmintió la noticia. | politics | 5
+divulgar | to disclose; to popularize | Divulgaron los resultados demasiado pronto. | technology | 5
+resumir | to summarize | Resume el artículo en tres líneas. | language | 3
+traducir | to translate | Traduje el contrato al inglés. | language | 3
+expresar | to express | Me cuesta expresar este concepto. | language | 3
+subrayar | to emphasize; to underline | Quisiera subrayar un punto. | language | 4
+aclarar | to clarify | Quiero aclarar un malentendido. | language | 3
+malentendido | misunderstanding | Solo fue un malentendido. | language | 4
+
+# Society
+desigualdad | inequality | La desigualdad ha aumentado. | society | 4
+solidaridad | solidarity | La solidaridad del barrio fue enorme. | society | 4
+integración | integration | La integración requiere tiempo y recursos. | society | 4
+generación | generation | Su generación vivió el boom. | society | 3
+población | population | La población envejece rápidamente. | society | 3
+encuesta | survey; poll | La encuesta incluyó a mil personas. | society | 4
+voluntariado | volunteering | Hace voluntariado todos los sábados. | society | 4
+prejuicio | prejudice | El prejuicio nace de la ignorancia. | society | 4
+comportamiento | behaviour | Su comportamiento me sorprendió. | society | 3
+pertenencia | belonging | El sentido de pertenencia aquí es fuerte. | society | 5
+
+# Arts and culture
+obra | work; play | La obra se expone en el Prado. | arts | 3
+director | director | El director ganó un premio. | arts | 3
+argumento | plot; argument | El argumento es demasiado previsible. | arts | 4
+personaje | character | El personaje principal es ambiguo. | arts | 3
+novela | novel | La novela transcurre en Cádiz. | arts | 3
+poesía | poetry; poem | La poesía es difícil de traducir. | arts | 3
+obra maestra | masterpiece | Se considera su obra maestra. | arts | 4
+crítica | criticism; review | La crítica destrozó la película. | arts | 4
+exposición | exhibition | La exposición cierra el domingo. | arts | 3
+patrimonio | heritage; assets | El patrimonio artístico es inmenso. | arts | 4
+
+# Verbs and expressions
+afrontar | to face; to confront | Debemos afrontar el problema ya. | basics | 3
+sostener | to support; to maintain | Sostiene que no sabía nada. | basics | 4
+comprobar | to verify; to check | Comprueba los datos antes de enviar. | basics | 3
+aplazar | to postpone | El partido se ha aplazado. | basics | 4
+prever | to foresee; to provide for | El contrato prevé una penalización. | basics | 4
+desempeñar | to carry out; to perform | Desempeña su trabajo con cuidado. | basics | 4
+implicar | to involve; to imply | El proyecto implica a tres universidades. | basics | 4
+aprovechar | to take advantage of | Aprovechó la situación. | basics | 3
+plantear | to raise; to pose | Quiero plantear una cuestión. | basics | 4
+merecer la pena | to be worth it | Merece la pena intentarlo. | basics | 4

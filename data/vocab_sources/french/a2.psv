@@ -1,0 +1,201 @@
+# French A2 — elementary vocabulary
+#
+# Authored to replace the previous A2 set, which was 64% duplicated from A1
+# (the offline generator padded short lists by repeating them — see issue #27).
+# Genuinely-A2 entries from the old file are kept; the A1 repeats are gone and
+# the level is filled out with real elementary vocabulary.
+#
+# Format: word | translations (semicolon-separated) | example sentence | category | difficulty (1-5)
+
+# Daily routines
+se réveiller | to wake up | Je me réveille à six heures et demie. | daily_routines | 2
+se lever | to get up | Je me lève dès que le réveil sonne. | daily_routines | 2
+se laver | to wash oneself | Je me lave les mains avant de manger. | daily_routines | 2
+s'habiller | to get dressed | Elle s'habille très vite le matin. | daily_routines | 2
+se coucher | to go to bed | Je me couche vers onze heures. | daily_routines | 2
+s'endormir | to fall asleep | Je m'endors toujours devant la télé. | daily_routines | 3
+se reposer | to rest | Après le déjeuner, je me repose un peu. | daily_routines | 2
+se dépêcher | to hurry | Dépêche-toi, on va être en retard. | daily_routines | 3
+habitude | habit | Lire avant de dormir est une bonne habitude. | daily_routines | 3
+horaire | schedule; timetable | L'horaire des trains a changé. | time | 3
+réveil | alarm clock | Mon réveil n'a pas sonné ce matin. | daily_routines | 3
+
+# Home
+immeuble | apartment building | J'habite dans un immeuble de six étages. | housing | 3
+salon | living room | Nous regardons le match dans le salon. | housing | 2
+salle de bain | bathroom | La salle de bain est au fond du couloir. | housing | 2
+salle | room; hall | La salle de classe est grande et lumineuse. | housing | 3
+escalier | stairs | L'ascenseur est en panne, prends l'escalier. | housing | 3
+ascenseur | lift; elevator | L'ascenseur monte jusqu'au dernier étage. | housing | 3
+meuble | piece of furniture | Ce meuble vient de chez ma grand-mère. | housing | 3
+placard | cupboard; closet | Le placard est plein de vêtements. | housing | 3
+lit | bed | Le lit est trop dur. | housing | 2
+table | table | Mets la table pour quatre personnes. | housing | 2
+chaise | chair | Prends une chaise et assieds-toi. | housing | 2
+fenêtre | window | Ouvre la fenêtre, il fait chaud. | housing | 2
+porte | door | Ferme la porte, s'il te plaît. | housing | 2
+clé | key | J'ai perdu mes clés hier soir. | housing | 2
+loyer | rent | Le loyer se paie le premier du mois. | housing | 3
+voisin | neighbour | Mon voisin est très bruyant. | housing | 2
+côté | side; next to | Assieds-toi à côté de moi. | daily_routines | 3
+
+# Shopping and money
+prix | price | Ce produit est à un bon prix. | shopping | 3
+caisse | checkout; till | La queue à la caisse est longue. | shopping | 3
+reçu | receipt | Gardez le reçu pour l'échange. | shopping | 3
+carte bancaire | bank card | On peut payer par carte bancaire ? | shopping | 3
+espèces | cash | Je préfère payer en espèces. | shopping | 3
+soldes | sales | Les soldes commencent en janvier. | shopping | 3
+réduction | discount | Il y a une réduction de vingt pour cent. | shopping | 3
+taille | size | Quelle taille faites-vous ? | clothing | 3
+essayer | to try; to try on | Je peux essayer cette veste ? | clothing | 2
+cher | expensive; dear | Cet hôtel est trop cher pour nous. | shopping | 2
+bon marché | cheap; inexpensive | Ce restaurant est bon marché. | shopping | 3
+
+# Clothing
+vêtement | garment; item of clothing | Je dois laver mes vêtements. | clothing | 2
+chemise | shirt | La chemise blanche est repassée. | clothing | 2
+pantalon | trousers; pants | Ce pantalon est trop serré. | clothing | 2
+robe | dress | Elle porte une robe élégante. | clothing | 2
+veste | jacket | Mets ta veste, il fait froid. | clothing | 2
+manteau | coat | Le manteau est dans l'entrée. | clothing | 3
+pull | sweater; jumper | J'ai besoin d'un pull plus chaud. | clothing | 2
+jupe | skirt | Elle porte une jupe longue. | clothing | 3
+ceinture | belt | J'ai perdu ma ceinture en cuir. | clothing | 3
+chapeau | hat | Mets un chapeau, il y a du soleil. | clothing | 3
+
+# Health and body
+tête | head | J'ai mal à la tête. | body | 2
+main | hand | Je me suis fait mal à la main. | body | 2
+pied | foot | J'ai mal au pied droit. | body | 2
+œil | eye | Il a un œil irrité. | body | 2
+bras | arm | Il s'est cassé le bras en skiant. | body | 3
+jambe | leg | Ma jambe gauche me fait mal. | body | 2
+dos | back | J'ai mal au dos depuis hier. | body | 3
+ventre | stomach; belly | J'ai mal au ventre. | body | 3
+dent | tooth | J'ai rendez-vous chez le dentiste, j'ai mal à une dent. | body | 3
+fièvre | fever | J'ai de la fièvre depuis ce matin. | health | 3
+rhume | cold (illness) | J'ai attrapé un rhume. | health | 3
+maladie | illness; disease | Cette maladie n'est pas grave. | health | 3
+ordonnance | prescription | Le médecin m'a donné une ordonnance. | health | 3
+pharmacie | pharmacy | La pharmacie est ouverte la nuit. | health | 2
+
+# Work and study
+réunion | meeting | La réunion a été reportée. | work | 3
+entreprise | company; firm | L'entreprise a cinquante employés. | work | 3
+chef | boss; head | Le chef est en congé cette semaine. | work | 2
+congé | leave; time off | Je prends deux semaines de congé en août. | work | 3
+emploi | job; employment | Il a trouvé un nouvel emploi. | work | 3
+entretien | interview; maintenance | J'ai un entretien d'embauche jeudi. | work | 3
+travail | work; job | J'ai un nouveau travail dans une entreprise. | work | 3
+cours | class; lesson | Le cours commence à neuf heures. | education | 2
+examen | exam | J'ai réussi mon examen d'histoire. | education | 2
+devoirs | homework | J'ai beaucoup de devoirs à faire ce soir. | education | 2
+note | grade; mark; note | J'ai eu une bonne note. | education | 3
+cahier | notebook | J'ai oublié mon cahier à la maison. | education | 2
+dictionnaire | dictionary | Cherche ce mot dans le dictionnaire. | education | 3
+ordinateur | computer | Je travaille sur mon ordinateur au bureau. | technology | 3
+espagnol | Spanish | Je parle un peu espagnol. | education | 3
+
+# Travel
+voyage | trip; journey | Le voyage dure trois heures. | travel | 2
+vacances | holiday; vacation | Nous partons en vacances la semaine prochaine. | travel | 3
+valise | suitcase | J'ai fait ma valise hier soir. | travel | 3
+billet | ticket | J'ai acheté le billet sur internet. | travel | 2
+gare | station | La gare est à dix minutes à pied. | transportation | 2
+aéroport | airport | J'arrive à l'aéroport à huit heures. | transportation | 2
+quai | platform | Le train part du quai numéro trois. | transportation | 3
+retard | delay | Le vol a deux heures de retard. | travel | 3
+réserver | to book; to reserve | J'ai réservé une table pour deux. | travel | 3
+passeport | passport | Mon passeport expire en mars. | travel | 3
+plage | beach | Nous avons passé la journée à la plage. | travel | 3
+pont | bridge | Le pont relie les deux rives de la rivière. | travel | 3
+carte | map; card | J'ai besoin d'une carte pour trouver mon chemin. | travel | 2
+bus | bus | Je prends le bus pour aller au travail. | transportation | 3
+vélo | bicycle | Je vais faire un tour en vélo ce week-end. | transportation | 2
+
+# Getting around
+tourner | to turn | Tournez à droite au feu. | transportation | 2
+traverser | to cross | Traverse la rue au passage piéton. | transportation | 3
+arrêt | stop (bus) | Je descends au prochain arrêt. | transportation | 3
+feu | traffic light; fire | Le feu est rouge. | transportation | 3
+carrefour | crossroads; intersection | Tournez à gauche au carrefour. | transportation | 3
+parking | car park; parking | Le parking est payant. | transportation | 3
+essence | petrol; gasoline | Je dois prendre de l'essence. | transportation | 3
+permis | licence; permit | J'ai eu mon permis à dix-huit ans. | transportation | 3
+
+# Food
+petit-déjeuner | breakfast | Je prends mon petit-déjeuner à sept heures. | food | 2
+déjeuner | lunch; to have lunch | Le déjeuner est à midi. | food | 2
+dîner | dinner; to have dinner | Le dîner est presque prêt. | food | 2
+restaurant | restaurant | Je connais un bon restaurant en centre-ville. | food | 2
+boisson | drink | Qu'est-ce que tu veux comme boisson ? | food | 2
+boire | to drink | Je veux boire de l'eau. | food | 2
+poisson | fish | Le poisson est très frais aujourd'hui. | food | 2
+œuf | egg | Je voudrais deux œufs au plat. | food | 2
+sel | salt | Il manque un peu de sel. | food | 2
+sucre | sugar | Tu prends du sucre dans ton café ? | food | 2
+beurre | butter | Passe-moi le beurre, s'il te plaît. | food | 2
+gâteau | cake | Ma grand-mère a fait un gâteau. | food | 2
+fruit | fruit | Je mange un fruit à chaque repas. | food | 2
+légume | vegetable | Ma mère a préparé une salade de légumes pour le dîner. | food | 2
+boulanger | baker | Le boulanger prépare le pain frais chaque matin. | food | 2
+cuisinier | cook; chef | Le cuisinier prépare le repas dans la cuisine. | food | 3
+
+# Free time and weather
+temps libre | free time | Pendant mon temps libre, je joue de la guitare. | leisure | 3
+loisirs | leisure; free time | Pendant mes loisirs, je lis des livres. | leisure | 3
+piscine | swimming pool | Nous allons nager dans la piscine cet été. | leisure | 3
+nager | to swim | Je nage à la piscine tous les mardis. | sports | 2
+match | match; game | Le match se termine à dix heures. | sports | 2
+concert | concert | Je vais au concert de musique ce soir. | arts | 3
+musée | museum | Le musée est fermé le lundi. | arts | 2
+exposition | exhibition | L'exposition ferme dimanche. | arts | 3
+fête | party; celebration | Nous organisons une fête pour mon anniversaire. | leisure | 3
+jeu | game; play | Les enfants jouent à des jeux dans la cour. | leisure | 2
+nuageux | cloudy | Aujourd'hui il est nuageux mais il ne pleut pas. | weather | 3
+orage | thunderstorm | Un orage a inondé la rue. | weather | 3
+brouillard | fog | Il y a du brouillard ce matin. | weather | 3
+saison | season | L'automne est ma saison préférée. | weather | 3
+printemps | spring | Au printemps, les jardins sont magnifiques. | weather | 2
+été | summer | En été, il fait très chaud ici. | weather | 2
+automne | autumn; fall | En automne, les feuilles tombent. | weather | 2
+hiver | winter | En hiver, nous allons à la montagne. | weather | 2
+
+# Family, people, animals
+grand-mère | grandmother | Ma grand-mère me raconte toujours des histoires. | family | 2
+grand-père | grandfather | Mon grand-père a quatre-vingts ans. | family | 2
+enfant | child; kid | Les enfants jouent dans le parc. | family | 2
+mari | husband | Son mari est professeur. | family | 2
+femme | woman; wife | Sa femme adore voyager. | family | 2
+voisine | neighbour (female) | Ma voisine est très gentille. | family | 2
+chien | dog | Mon chien me suit partout où je vais. | nature | 2
+chat | cat | Le chat dort sur le canapé. | nature | 2
+oiseau | bird | Un oiseau chante dans le jardin. | nature | 2
+fleur | flower | Les fleurs dans le jardin sont magnifiques. | nature | 2
+arbre | tree | Il y a un grand arbre devant la maison. | nature | 2
+
+# Days
+lundi | Monday | Je commence le travail le lundi. | time | 2
+mercredi | Wednesday | Nous avons congé le mercredi. | time | 2
+vendredi | Friday | Vendredi soir, nous sortons. | time | 2
+samedi | Saturday | Je me repose le samedi. | time | 2
+dimanche | Sunday | Je me repose le dimanche. | time | 2
+hier | yesterday | Hier, je suis allé au musée. | time | 2
+demain | tomorrow | Demain, j'ai un examen. | time | 2
+aujourd'hui | today | Aujourd'hui il fait très chaud. | time | 2
+matin | morning | Le matin, je cours dans le parc. | time | 2
+soir | evening | Le soir, je regarde un film. | time | 2
+
+# Feelings and describing
+content | glad; pleased | Je suis content du résultat. | emotions | 2
+triste | sad | Je me sens triste aujourd'hui. | emotions | 2
+fâché | angry | Il est fâché à cause du retard. | emotions | 3
+inquiet | worried | Je suis inquiet pour l'examen. | emotions | 3
+amusant | fun; amusing | C'était une soirée très amusante. | emotions | 3
+heureux | happy | Je suis heureux de te voir. | emotions | 2
+difficile | difficult | Cet exercice est difficile. | basics | 2
+facile | easy | La recette est très facile. | basics | 2
+rapide | fast; quick | Le train est plus rapide que le bus. | basics | 2
+lent | slow | La connexion est lente. | basics | 2
+gentil | kind; nice | La vendeuse a été très gentille. | emotions | 2
