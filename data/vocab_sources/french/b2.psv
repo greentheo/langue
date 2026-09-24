@@ -1,0 +1,140 @@
+# French B2 — upper-intermediate vocabulary
+# Converted from the legacy JSON library, which predates this source pipeline.
+# Format: word | translations (semicolon-separated) | example sentence | category | difficulty (1-5)
+
+résilience | resilience; adaptability; toughness | La résilience de cette entreprise face à la crise économique a été remarquable. | work | 4
+épanouissement | fulfillment; self-actualization; blossoming | Son épanouissement personnel l'a aidé à surmonter les défis de sa carrière. | emotions | 4
+polyvalence | versatility; adaptability; multiskilled | Grâce à sa polyvalence, elle a pu changer de poste facilement au sein de l'entreprise. | work | 4
+empathie | empathy; compassion; understanding | L'empathie dont il a fait preuve a été très appréciée par ses collègues. | emotions | 4
+ingéniosité | ingenuity; creativity; resourcefulness | Son ingéniosité l'a aidé à résoudre ce problème complexe. | work | 4
+indépendance | independence; self-reliance; autonomy | Elle a fait preuve d'une grande indépendance dans la gestion de son projet. | daily_routines | 4
+ambition | ambition; drive; determination | Son ambition de devenir directeur l'a poussé à travailler sans relâche. | work | 4
+réflexion | reflection; contemplation; consideration | Cette période de réflexion l'a aidé à prendre la bonne décision. | daily_routines | 4
+persévérance | perseverance; persistence; determination | Sa persévérance face aux défis l'a finalement conduit au succès. | work | 4
+intuition | intuition; instinct; gut feeling | Son intuition l'a guidé dans le bon choix à faire. | emotions | 4
+curiosité | curiosity; inquisitiveness; thirst for knowledge | Sa curiosité l'a poussé à explorer de nouveaux domaines passionnants. | education | 3
+engagement | commitment; dedication; involvement | Son engagement envers l'entreprise a été reconnu par ses supérieurs. | work | 4
+créativité | creativity; innovation; originality | Sa créativité lui a permis de proposer des solutions uniques à ce problème. | work | 4
+équilibre | balance; equilibrium; harmony | Trouver un équilibre entre sa vie professionnelle et personnelle est un défi constant. | daily_routines | 4
+autonomie | autonomy; independence; self-sufficiency | Son autonomie dans la gestion de son projet lui a permis de progresser rapidement. | work | 4
+adaptabilité | adaptability; flexibility; versatility | Son adaptabilité lui a permis de s'ajuster facilement aux changements dans son entreprise. | work | 4
+collaboration | collaboration; teamwork; cooperation | La collaboration étroite entre les équipes a été essentielle pour mener à bien ce projet. | work | 4
+leadership | leadership; influence; authority | Son leadership a été déterminant pour motiver son équipe à atteindre leurs objectifs. | work | 4
+responsabilité | responsibility; accountability; liability | Elle a fait preuve d'une grande responsabilité dans la gestion de ce dossier important. | work | 4
+communication | communication; expression; interaction | Une bonne communication est essentielle pour travailler efficacement en équipe. | work | 4
+motivation | motivation; drive; enthusiasm | Sa motivation constante l'a aidé à surmonter les défis de ce projet exigeant. | work | 4
+innovation | innovation; creativity; originality | L'innovation est au cœur de la stratégie de cette entreprise pour rester compétitive. | work | 4
+résolution | resolution; determination; perseverance | Sa résolution à atteindre ses objectifs l'a aidé à surmonter tous les obstacles. | work | 4
+discernement | discernment; judgment; insight | Son discernement lui a permis de prendre la bonne décision dans cette situation complexe. | work | 4
+initiative | initiative; proactivity; self-motivation | Son initiative a été remarquée et a contribué à son avancement dans l'entreprise. | work | 4
+objectivité | objectivity; impartiality; neutrality | Son objectivité dans l'analyse de la situation a été très appréciée par ses collègues. | work | 4
+intégrité | integrity; honesty; moral principles | Son intégrité est un atout majeur dans son travail et ses relations professionnelles. | work | 4
+préméditer | to premeditate; to plan in advance; to contemplate | Elle a prémédité son vol pendant des semaines. | work | 4
+empiéter | to encroach; to trespass; to infringe | Son voisin a empiété sur sa propriété. | housing | 3
+désinvolte | nonchalant; casual; cavalier | Elle a une attitude désinvolte qui agace ses collègues. | emotions | 3
+dévoiler | to unveil; to reveal; to disclose | Le journaliste a dévoilé les détails de l'affaire. | work | 4
+éphémère | fleeting; transient; short-lived | Leur relation a été éphémère, elle n'a duré que quelques mois. | emotions | 4
+abdiquer | to abdicate; to renounce; to relinquish | Le roi a abdiqué son trône. | work | 4
+ingérence | interference; meddling; intrusion | Son ingérence dans les affaires de l'entreprise a causé des problèmes. | work | 4
+manigancer | to conspire; to plot; to scheme | Ils ont manigancé un plan pour voler l'entreprise. | work | 4
+récalcitrant | recalcitrant; defiant; uncooperative | Certains employés sont récalcitrants aux changements. | work | 4
+subordonner | to subordinate; to make subservient; to subjugate | Il a subordonné ses intérêts personnels à ceux de l'entreprise. | work | 4
+bienveillant | benevolent; kind; considerate | Son regard bienveillant m'a réconforté. | emotions | 3
+téméraire | reckless; daring; audacious | Il a pris une décision téméraire qui a failli lui coûter son emploi. | emotions | 4
+indulgent | indulgent; permissive; lenient | Ses parents ont été trop indulgents avec lui. | family | 3
+nostalgique | nostalgic; sentimental; wistful | Elle est nostalgique de son enfance passée à la campagne. | emotions | 3
+évasif | evasive; vague; noncommittal | Ses réponses ont été évasives, il n'a pas voulu donner plus de détails. | work | 4
+insidieux | insidious; stealthy; treacherous | La maladie a progressé de manière insidieuse. | health | 4
+érudition | erudition; scholarly knowledge; learnedness | Son érudition impressionne tous ses collègues. | education | 4
+méticuleux | meticulous; thorough; painstaking | Elle est très méthodique et méticuleux dans son travail. | work | 4
+inébranlable | unwavering; steadfast; resolute | Son engagement envers cette cause est inébranlable. | emotions | 4
+impartial | impartial; unbiased; objective | Le juge a fait preuve d'impartialité pendant le procès. | work | 4
+opiniâtre | stubborn; persistent; obstinate | Malgré les obstacles, il est resté opiniâtre dans la poursuite de son projet. | emotions | 4
+malléable | malleable; pliable; adaptable | Son esprit ouvert et malléable lui permet de s'adapter facilement. | emotions | 3
+indolent | indolent; lazy; sluggish | Certains employés ont une attitude indolente qui agace leurs collègues. | work | 3
+irréprochable | impeccable; flawless; exemplary | Son comportement professionnel est irréprochable. | work | 4
+scrupuleux | scrupulous; meticulous; conscientious | Elle est très scrupuleuse dans l'accomplissement de ses tâches. | work | 4
+intransigeant | inflexible; unyielding; uncompromising | Son patron a été intransigeant sur les délais du projet. | work | 4
+circonspect | cautious; prudent; discreet | Il faut être circonspect dans la gestion des informations confidentielles. | work | 4
+sceptique | skeptical; doubtful; cynical | Certains collègues se montrent sceptiques face à ce nouveau projet. | work | 3
+conciliant | conciliatory; accommodating; compromising | Son attitude conciliante a permis de résoudre le conflit. | work | 3
+insolent | insolent; impudent; disrespectful | Son comportement insolent envers le directeur lui a valu une réprimande. | work | 4
+débonnaire | good-natured; amiable; genial | Malgré son apparence débonnaire, il peut se montrer très ferme. | emotions | 3
+acrimonieux | acrimonious; bitter; hostile | Les échanges entre les deux partis sont devenus acrimonieux. | work | 4
+réfractaire | refractory; resistant; unresponsive | Certains élèves se montrent réfractaires aux changements. | education | 4
+dogmatique | dogmatic; inflexible; doctrinaire | Son approche dogmatique du problème n'a pas permis de trouver une solution. | work | 4
+irascible | irascible; irritable; quick-tempered | Lorsqu'il est fatigué, il devient irascible et s'emporte facilement. | emotions | 4
+impassible | impassive; stoic; emotionless | Malgré la gravité de la situation, il est resté impassible. | emotions | 4
+loquace | loquacious; talkative; garrulous | Pendant la réunion, il s'est montré particulièrement loquace. | work | 3
+insipide | insipid; bland; tasteless | Le plat était tellement insipide que je n'ai pas pu le finir. | food | 3
+
+# --- Added to broaden B2 beyond its original narrow set of character/soft-skill
+# --- nouns, and to bring the level up to the size of the other languages.
+
+# Politics and institutions
+gouvernement | government | Le gouvernement a adopté la réforme. | politics | 3
+loi | law | La loi entre en vigueur en janvier. | politics | 3
+réforme | reform | La réforme de l'école est contestée. | politics | 4
+élection | election | Les élections auront lieu au printemps. | politics | 3
+citoyenneté | citizenship | Il a obtenu la citoyenneté française. | politics | 4
+droit | right; law | Le droit de vote est garanti. | politics | 3
+démocratie | democracy | La démocratie exige la participation de tous. | politics | 3
+pouvoir | power | Le pouvoir exécutif revient au gouvernement. | politics | 3
+corruption | corruption | L'enquête porte sur des faits de corruption. | politics | 4
+justice | justice | Les victimes réclament justice. | politics | 3
+tribunal | court | Le tribunal a rendu son jugement. | politics | 4
+mandat | term of office; mandate | Son mandat s'achève l'an prochain. | politics | 4
+
+# Economy and business
+concurrence | competition | La concurrence est féroce dans ce secteur. | business | 4
+chiffre d'affaires | turnover; revenue | Le chiffre d'affaires a progressé de dix pour cent. | business | 5
+croissance | growth | La croissance économique a ralenti. | business | 3
+crise | crisis | La crise a frappé tout le secteur. | business | 3
+dette | debt | La dette publique continue d'augmenter. | business | 4
+offre | supply; offer | L'offre est valable jusqu'à dimanche. | business | 3
+demande | demand; request | La demande dépasse l'offre. | business | 3
+investissement | investment | L'investissement sera amorti en trois ans. | business | 4
+entrepreneur | entrepreneur | C'est un entrepreneur du secteur textile. | business | 4
+faillite | bankruptcy | L'entreprise s'est déclarée en faillite. | business | 4
+rentabilité | profitability | La rentabilité du projet reste incertaine. | business | 5
+négocier | to negotiate | Nous négocions encore les conditions. | business | 4
+
+# Science and technology
+recherche | research | La recherche est financée par l'université. | science | 3
+expérience | experiment; experience | L'expérience a donné des résultats inattendus. | science | 3
+donnée | piece of data | Les données confirment la tendance. | science | 3
+preuve | proof; evidence | Nous n'avons pas de preuves suffisantes. | science | 3
+découverte | discovery | Cette découverte a transformé le secteur. | science | 3
+algorithme | algorithm | L'algorithme sélectionne les contenus. | technology | 4
+intelligence artificielle | artificial intelligence | L'intelligence artificielle est partout désormais. | technology | 4
+base de données | database | La base de données contient un million d'entrées. | technology | 4
+brevet | patent | Ils ont déposé un brevet. | technology | 5
+prototype | prototype | Le prototype fonctionne déjà. | technology | 4
+réseau | network | Le réseau est lent ce soir. | technology | 3
+écran | screen | L'écran s'est cassé hier. | technology | 3
+télécharger | to download | J'ai téléchargé l'application. | technology | 3
+mot de passe | password | J'ai oublié mon mot de passe. | technology | 3
+
+# Media, language, society
+actualité | news; current affairs | L'actualité est dominée par ce procès. | technology | 4
+publicité | advertising | La publicité interrompt le film. | technology | 3
+source | source | La source n'est pas fiable. | language | 4
+malentendu | misunderstanding | Ce n'était qu'un malentendu. | language | 4
+nuance | nuance | La traduction perd une nuance importante. | language | 4
+inégalité | inequality | Les inégalités se sont creusées. | society | 4
+solidarité | solidarity | La solidarité du quartier a été immense. | society | 4
+intégration | integration | L'intégration demande du temps et des moyens. | society | 4
+génération | generation | Sa génération a connu les Trente Glorieuses. | society | 3
+sondage | survey; poll | Le sondage a interrogé mille personnes. | society | 4
+bénévolat | volunteering | Elle fait du bénévolat tous les samedis. | society | 4
+préjugé | prejudice | Le préjugé naît de l'ignorance. | society | 4
+comportement | behaviour | Son comportement m'a surpris. | society | 3
+
+# Arts
+œuvre | work (of art) | L'œuvre est exposée au Louvre. | arts | 3
+intrigue | plot | L'intrigue est trop prévisible. | arts | 4
+personnage | character | Le personnage principal est ambigu. | arts | 3
+roman | novel | Le roman se déroule à Marseille. | arts | 3
+poésie | poetry | La poésie est difficile à traduire. | arts | 3
+chef-d'œuvre | masterpiece | On tient ce tableau pour son chef-d'œuvre. | arts | 4
+patrimoine | heritage | Le patrimoine artistique du pays est immense. | arts | 4

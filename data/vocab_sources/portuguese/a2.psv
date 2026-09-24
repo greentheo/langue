@@ -1,0 +1,143 @@
+# Portuguese A2 — elementary vocabulary
+# Leans Brazilian Portuguese; see a1.psv for the dialect note.
+# Format: word | translations (semicolon-separated) | example sentence | category | difficulty (1-5)
+
+# Daily routines
+acordar | to wake up | Acordo às seis e meia. | daily_routines | 2
+levantar-se | to get up | Levanto-me assim que o despertador toca. | daily_routines | 2
+tomar banho | to take a shower; to bathe | Tomo banho antes de sair. | daily_routines | 2
+vestir-se | to get dressed | Ele se veste muito rápido de manhã. | daily_routines | 2
+pentear-se | to comb one's hair | Ela se penteia na frente do espelho. | daily_routines | 3
+deitar-se | to go to bed; to lie down | Deito-me por volta das onze. | daily_routines | 2
+adormecer | to fall asleep | Sempre adormeço vendo televisão. | daily_routines | 3
+descansar | to rest | Depois do almoço eu descanso um pouco. | daily_routines | 2
+costume | habit; custom | Ler antes de dormir é um bom costume. | daily_routines | 3
+horário | schedule; timetable | O horário dos trens mudou. | time | 3
+
+# Home
+apartamento | apartment; flat | Procuro um apartamento para alugar. | housing | 2
+cozinha | kitchen | A cozinha é pequena mas clara. | housing | 2
+quarto | bedroom; room | O quarto dá para o pátio. | housing | 2
+banheiro | bathroom | O banheiro fica no fim do corredor. | housing | 2
+sala | living room | Assistimos ao jogo na sala. | housing | 2
+jardim | garden | Temos um jardim pequeno atrás. | housing | 2
+janela | window | Abre a janela, está quente. | housing | 2
+porta | door | Fecha a porta, por favor. | housing | 2
+cama | bed | A cama é dura demais. | housing | 2
+mesa | table | Põe a mesa para quatro. | housing | 2
+cadeira | chair | Pega uma cadeira e senta. | housing | 2
+armário | wardrobe; cupboard | O armário está cheio de roupa. | housing | 3
+aluguel | rent | O aluguel se paga no dia um. | housing | 3
+vizinho | neighbour | Meu vizinho é muito barulhento. | housing | 2
+
+# Shopping and money
+comprar | to buy | Preciso comprar pão. | shopping | 2
+vender | to sell | Eles vendem fruta orgânica. | shopping | 2
+pagar | to pay | Posso pagar com cartão? | shopping | 2
+custar | to cost | Quanto custa o frete? | shopping | 2
+preço | price | O preço me parece alto demais. | shopping | 2
+desconto | discount | Tem um desconto de vinte por cento. | shopping | 3
+caixa | checkout; cashier; box | A fila do caixa está grande. | shopping | 3
+recibo | receipt | Guarde o recibo para a troca. | shopping | 3
+cartão | card | Não aceitam cartão aqui. | shopping | 2
+dinheiro vivo | cash | Prefiro pagar em dinheiro vivo. | shopping | 3
+promoção | sale; special offer | A promoção começa em janeiro. | shopping | 3
+tamanho | size | Que tamanho você usa? | clothing | 3
+experimentar | to try on; to try | Posso experimentar esta jaqueta? | clothing | 3
+
+# Clothing
+roupa | clothes | Preciso lavar a roupa. | clothing | 2
+camisa | shirt | A camisa branca está passada. | clothing | 2
+calça | trousers; pants | Esta calça está apertada. | clothing | 2
+sapato | shoe | Os sapatos novos machucam. | clothing | 2
+jaqueta | jacket | Põe a jaqueta, está frio. | clothing | 2
+casaco | coat | O casaco está na entrada. | clothing | 3
+blusa | blouse; top | Preciso de uma blusa mais grossa. | clothing | 3
+saia | skirt | Ela usa uma saia comprida. | clothing | 3
+cinto | belt | Perdi o cinto de couro. | clothing | 3
+
+# Health and body
+saúde | health | Saúde em primeiro lugar. | health | 2
+médico | doctor | Preciso ir ao médico. | health | 2
+hospital | hospital | O hospital fica perto da estação. | health | 2
+farmácia | pharmacy | A farmácia abre à noite. | health | 2
+remédio | medicine; remedy | Tome o remédio depois das refeições. | health | 2
+doente | ill; sick | Estou doente há três dias. | health | 2
+febre | fever | Estou com febre alta. | health | 3
+dor de cabeça | headache | Estou com uma forte dor de cabeça. | health | 3
+cabeça | head | Minha cabeça está doendo. | body | 2
+mão | hand | Machuquei a mão. | body | 2
+pé | foot | Meu pé direito está doendo. | body | 2
+olho | eye | Ele está com um olho irritado. | body | 2
+braço | arm | Ele quebrou o braço esquiando. | body | 3
+perna | leg | Minha perna esquerda dói. | body | 2
+costas | back | Estou com dor nas costas desde ontem. | body | 3
+
+# Work and study
+escritório | office | Meu escritório fica no terceiro andar. | work | 2
+reunião | meeting | A reunião foi adiada. | work | 3
+colega | colleague | Um colega me ajudou muito. | work | 3
+salário | salary | O salário cai no fim do mês. | work | 3
+emprego | job; employment | Ele encontrou um emprego novo. | work | 3
+empresa | company; firm | A empresa tem cinquenta funcionários. | work | 3
+chefe | boss | O chefe está de férias. | work | 2
+férias | holidays; vacation | Tiro duas semanas de férias em agosto. | work | 2
+faculdade | university; college | Ela estuda na faculdade de Coimbra. | education | 2
+prova | exam; test; proof | Passei na prova de história. | education | 2
+aula | class; lesson | A aula começa às nove. | education | 2
+dever de casa | homework | Preciso terminar o dever de casa. | education | 2
+professor | teacher | O professor explica muito bem. | education | 2
+aluno | student; pupil | Sou aluno de engenharia. | education | 2
+nota | grade; mark; note | Tirei uma nota boa. | education | 3
+
+# Travel
+viagem | trip; journey | A viagem dura três horas. | travel | 2
+mala | suitcase | Fiz a mala ontem à noite. | travel | 3
+partir | to leave; to depart | Partimos amanhã de madrugada. | travel | 2
+chegar | to arrive | O voo chega atrasado. | travel | 2
+reservar | to book; to reserve | Reservei uma mesa para dois. | travel | 3
+quarto de casal | double room | Quero um quarto de casal por três noites. | travel | 3
+passaporte | passport | O passaporte vence em março. | travel | 3
+praia | beach | A praia fica cheia no verão. | travel | 2
+montanha | mountain | No inverno vamos para a montanha. | nature | 2
+lago | lake | O lago congela em janeiro. | nature | 2
+mar | sea | O mar está calmo hoje. | nature | 2
+campo | countryside; field | Passamos o fim de semana no campo. | nature | 2
+
+# Getting around
+virar | to turn | Vire à direita no semáforo. | transportation | 2
+atravessar | to cross | Atravesse a rua na faixa. | transportation | 3
+ponto de ônibus | bus stop | Desço no próximo ponto de ônibus. | transportation | 3
+semáforo | traffic light | O semáforo está vermelho. | transportation | 3
+esquina | corner | Vire à esquerda na esquina. | transportation | 3
+estacionamento | car park; parking | O estacionamento é pago. | transportation | 3
+gasolina | petrol; gasoline | Preciso pôr gasolina. | transportation | 3
+carteira de motorista | driving licence | Tirei a carteira de motorista aos dezoito. | transportation | 3
+
+# Free time and weather
+tempo livre | free time | No tempo livre eu toco violão. | leisure | 2
+esporte | sport | Faço esporte três vezes por semana. | sports | 2
+nadar | to swim | Nado na piscina às terças. | sports | 2
+correr | to run | Corro no parque bem cedo. | sports | 2
+jogo | game; match | O jogo termina às dez. | sports | 2
+academia | gym | Vou à academia depois do trabalho. | sports | 3
+música | music | Escuto música enquanto trabalho. | arts | 1
+filme | film; movie | O filme dura duas horas. | arts | 1
+show | concert; gig | O show está esgotado. | arts | 2
+museu | museum | O museu fecha às segundas. | arts | 2
+nublado | cloudy | Hoje está nublado mas não chove. | weather | 3
+nevar | to snow | Nevou na serra esta noite. | weather | 3
+vento | wind | Está ventando demais para sair de barco. | weather | 2
+tempestade | storm | Uma tempestade alagou a rua. | weather | 3
+
+# Feelings and describing
+contente | glad; pleased | Estou contente com o resultado. | emotions | 2
+triste | sad | Estou triste hoje. | emotions | 2
+bravo | angry; brave | Ele está bravo com o atraso. | emotions | 3
+preocupado | worried | Estou preocupado com a prova. | emotions | 3
+divertido | fun; amusing | Foi uma noite muito divertida. | emotions | 3
+difícil | difficult | Este exercício é difícil. | basics | 2
+fácil | easy | A receita é bem fácil. | basics | 2
+rápido | fast; quick | O trem é mais rápido que o ônibus. | basics | 2
+devagar | slow; slowly | A conexão está devagar. | basics | 2
+gentil | kind; polite | A vendedora foi muito gentil. | emotions | 2

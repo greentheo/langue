@@ -1,0 +1,98 @@
+# French B1 — intermediate vocabulary
+# Converted from the legacy JSON library, which predates this source pipeline.
+# Format: word | translations (semicolon-separated) | example sentence | category | difficulty (1-5)
+
+aborder | to approach; to tackle; to deal with | J'ai décidé d'aborder le sujet délicat avec mon patron. | work | 3
+accueillir | to welcome; to host; to receive | L'hôtel a accueilli de nombreux touristes pendant les vacances. | travel | 2
+admirer | to admire; to appreciate; to marvel at | J'admire le talent de cet artiste pour ses œuvres magnifiques. | arts | 3
+adresser | to address; to send to; to direct | Je vais adresser ma lettre de démission à mon employeur. | work | 3
+afficher | to display; to show; to post | L'entreprise a affiché ses nouveaux horaires d'ouverture. | work | 3
+ajouter | to add; to include; to put in | Je vais ajouter quelques épices pour donner plus de saveur à ce plat. | food | 2
+annoncer | to announce; to declare; to inform | Le directeur a annoncé de nouveaux changements dans l'entreprise. | work | 3
+apercevoir | to notice; to catch sight of; to spot | J'ai aperçu un beau coucher de soleil depuis ma fenêtre. | nature | 3
+apprendre | to learn; to find out; to acquire | J'apprends le français depuis quelques mois et je fais des progrès. | education | 3
+approcher | to approach; to come near; to get close | Le train approche de la gare, il est temps de monter. | transportation | 3
+arrêter | to stop; to halt; to discontinue | Il faut arrêter de fumer pour préserver sa santé. | health | 2
+arriver | to arrive; to reach; to get to | Je suis arrivé en retard à la réunion à cause de la circulation. | travel | 2
+aspirer | to aspire; to desire; to aim for | J'aspire à une meilleure qualité de vie et plus de stabilité. | emotions | 4
+assister | to attend; to be present at; to witness | J'ai assisté à une conférence très intéressante sur les nouvelles technologies. | education | 3
+attendre | to wait; to expect; to anticipate | Je t'attends depuis une demi-heure, dépêche-toi ! | daily_routines | 2
+attraper | to catch; to grab; to seize | J'ai attrapé le train de justesse avant qu'il ne parte. | daily_routines | 3
+augmenter | to increase; to raise; to grow | Les prix des logements ont beaucoup augmenté ces dernières années. | housing | 3
+autoriser | to authorize; to permit; to allow | L'entreprise a autorisé ses employés à travailler à distance. | work | 4
+avancer | to advance; to move forward; to progress | Nous avançons bien dans la réalisation de ce projet. | work | 3
+baisser | to lower; to decrease; to reduce | Le prix de l'essence a baissé ces dernières semaines. | daily_routines | 3
+battre | to beat; to strike; to defeat | L'équipe de football a battu ses adversaires lors du match. | sports | 3
+bouger | to move; to stir; to shift | Ne bougez pas, je vais vous prendre en photo. | daily_routines | 2
+briller | to shine; to sparkle; to gleam | Les étoiles brillent dans le ciel étoilé. | nature | 3
+calculer | to calculate; to compute; to figure out | Je dois calculer le budget nécessaire pour ce projet. | work | 3
+causer | to cause; to create; to generate | Le mauvais temps a causé de nombreux retards dans les transports. | weather | 3
+changer | to change; to modify; to transform | J'ai changé de coiffure et je suis très satisfait du résultat. | daily_routines | 2
+choisir | to choose; to select; to pick | J'ai choisi de m'inscrire à ce cours de langue. | education | 2
+commander | to order; to request; to purchase | Je vais commander un nouveau meuble pour mon appartement. | shopping | 3
+commencer | to begin; to start; to initiate | La nouvelle session de formation commence la semaine prochaine. | education | 2
+comparer | to compare; to contrast; to evaluate | Je vais comparer les prix de ces deux ordinateurs portables. | technology | 3
+comprendre | to understand; to grasp; to comprehend | J'ai du mal à comprendre ce concept complexe. | education | 3
+conduire | to drive; to lead; to guide | Je conduis ma voiture tous les jours pour aller au travail. | transportation | 3
+connaître | to know; to be familiar with; to recognize | Je connais bien cette ville, j'y ai vécu pendant plusieurs années. | daily_routines | 3
+conseiller | to advise; to recommend; to suggest | Le médecin m'a conseillé de faire plus d'exercice. | health | 3
+considérer | to consider; to regard; to think about | Je considère cette offre d'emploi très intéressante. | work | 4
+continuer | to continue; to go on; to persist | Malgré les difficultés, je continuerai à travailler sur ce projet. | work | 3
+convaincre | to convince; to persuade; to make believe | J'ai réussi à convaincre mon patron d'augmenter mon salaire. | work | 4
+coûter | to cost; to be priced at; to expense | Ce nouveau smartphone coûte plus de 500 euros. | technology | 3
+créer | to create; to make; to produce | L'artiste a créé une œuvre d'art magnifique. | arts | 3
+décider | to decide; to determine; to resolve | J'ai décidé de prendre des vacances cet été. | daily_routines | 3
+découvrir | to discover; to find; to uncover | J'ai découvert un nouveau restaurant délicieux dans le quartier. | leisure | 3
+défendre | to defend; to protect; to safeguard | L'équipe a bien défendu son titre de champion. | sports | 4
+demander | to ask; to request; to inquire | Je vais demander à mon patron une augmentation de salaire. | work | 3
+déplacer | to move; to shift; to relocate | J'ai dû déplacer mon bureau pour avoir plus d'espace. | housing | 3
+déranger | to disturb; to bother; to interrupt | Désolé de vous déranger, mais j'ai une question importante. | daily_routines | 3
+désirer | to desire; to want; to wish | Je désire acheter une nouvelle voiture plus économique. | daily_routines | 3
+détester | to hate; to detest; to loathe | Je déteste le bruit et la pollution de la ville. | emotions | 3
+devenir | to become; to turn into; to grow | Avec le temps, elle est devenue une excellente cuisinière. | daily_routines | 3
+devoir | to have to; to must; to ought to | Je dois terminer ce rapport avant la fin de la journée. | work | 2
+différer | to differ; to vary; to be distinct | Nos opinions sur ce sujet diffèrent grandement. | daily_routines | 4
+dire | to say; to tell; to speak | Je te dis la vérité, fais-moi confiance. | daily_routines | 2
+diriger | to lead; to manage; to guide | Le directeur dirige l'équipe avec beaucoup d'efficacité. | work | 4
+acquérir | to acquire; to gain; to obtain | J'ai acquis une nouvelle voiture cette année. | work | 3
+apaiser | to calm; to soothe; to pacify | Le massage a aidé à apaiser mes douleurs. | health | 3
+applaudir | to applaud; to clap | Tout le monde a applaudi à la fin du spectacle. | arts | 2
+assainir | to purify; to sanitize; to clean | Nous devons assainir l'eau avant de la boire. | daily_routines | 4
+attirer | to attract; to draw in; to lure | Le nouveau parc d'attractions attire beaucoup de visiteurs. | leisure | 3
+balayer | to sweep; to brush away; to clear | Je balaie le sol de la cuisine chaque matin. | daily_routines | 2
+baptiser | to baptize; to christen | Mes parents ont baptisé leur nouveau-né la semaine dernière. | family | 3
+blâmer | to blame; to criticize; to fault | Ne me blâme pas pour ce qui s'est passé. | emotions | 3
+camoufler | to camouflage; to disguise; to conceal | Les soldats ont camouflé leur véhicule pour ne pas être repérés. | nature | 4
+captiver | to captivate; to fascinate; to enthrall | Le discours du conférencier a captivé toute l'audience. | arts | 4
+célébrer | to celebrate; to commemorate | Nous célébrerons ton anniversaire ce week-end. | daily_routines | 3
+chérir | to cherish; to treasure; to hold dear | Je chéris ces souvenirs de mon enfance. | emotions | 4
+concilier | to reconcile; to harmonize; to balance | Il faut concilier les besoins de chacun pour trouver un compromis. | work | 4
+confier | to entrust; to commit; to place in the care of | J'ai confié mon enfant à ma mère pendant mon voyage. | family | 3
+contenir | to contain; to hold; to restrain | Ce sac peut contenir tous vos effets personnels. | daily_routines | 3
+convoquer | to summon; to convene; to call | Le directeur a convoqué tous les employés pour une réunion. | work | 4
+craindre | to fear; to dread; to be afraid of | Je crains que la tempête n'endommage ma maison. | emotions | 3
+déchirer | to tear; to rip; to shred | Mon enfant a déchiré la page de mon livre. | daily_routines | 2
+déclarer | to declare; to announce; to state | Le président a déclaré l'état d'urgence. | work | 4
+déduire | to deduce; to infer; to conclude | D'après ces indices, je déduis que le suspect est coupable. | work | 4
+défier | to defy; to challenge; to dare | Les manifestants ont défié l'autorité du gouvernement. | emotions | 4
+dégrader | to degrade; to deteriorate; to worsen | La pollution dégrade progressivement l'environnement. | nature | 4
+déléguer | to delegate; to assign; to entrust | Le directeur a délégué certaines tâches à ses employés. | work | 4
+dépendre | to depend; to rely on; to be contingent on | Mon emploi du temps dépend de mes horaires de travail. | work | 3
+déployer | to deploy; to spread out; to unfold | L'armée a déployé ses troupes sur le terrain. | work | 4
+dérober | to steal; to pilfer; to shoplift | Le voleur a dérobé mon portefeuille dans la foule. | daily_routines | 4
+désigner | to designate; to appoint; to assign | Le comité a désigné un nouveau président. | work | 4
+détacher | to detach; to separate; to disconnect | Je dois détacher ce câble pour brancher un autre appareil. | technology | 3
+détailler | to detail; to describe; to specify | Le rapport détaille les résultats de notre enquête. | work | 4
+détendre | to relax; to unwind; to loosen | Je me détends en écoutant de la musique après le travail. | leisure | 3
+devancer | to anticipate; to precede; to outpace | Avec ses nouvelles technologies, l'entreprise a devancé ses concurrents. | work | 4
+développer | to develop; to expand; to grow | L'entreprise développe de nouveaux produits chaque année. | work | 4
+dissimuler | to conceal; to hide; to mask | Il a dissimulé son identité pour ne pas être reconnu. | daily_routines | 4
+distraire | to distract; to entertain; to amuse | Les jeux vidéo me distraient quand je suis stressé. | leisure | 3
+divulguer | to disclose; to reveal; to leak | Le journaliste a divulgué des informations confidentielles. | work | 4
+dominer | to dominate; to rule; to control | Cette entreprise domine le marché depuis des années. | work | 4
+douter | to doubt; to question; to be uncertain | Je doute de la fiabilité de ces informations. | emotions | 3
+échouer | to fail; to be unsuccessful; to miss | Malgré ses efforts, il a échoué à l'examen. | education | 3
+effacer | to erase; to delete; to wipe out | N'oublie pas d'effacer le tableau avant de partir. | daily_routines | 3
+élever | to raise; to bring up; to nurture | Mes parents ont élevé trois enfants dans cette maison. | family | 3
+emballer | to wrap; to pack; to package | J'ai emballé ton cadeau dans du papier cadeau. | shopping | 2
+emprunter | to borrow; to take out a loan; to lend | Je dois emprunter de l'argent à la banque pour acheter une voiture. | work | 3

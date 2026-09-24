@@ -1,0 +1,1141 @@
+{
+  "metadata": {
+    "language": "spanish",
+    "level": "b2",
+    "version": "1.0",
+    "word_count": 99,
+    "created_at": "2026-08-12T22:26:56.541747+00:00",
+    "description": "Upper-intermediate (B2) Spanish vocabulary: abstract topics and technical discussion",
+    "source": "data/vocab_sources/spanish/b2.psv",
+    "generated_by": "langue.tools.vocab_build"
+  },
+  "words": [
+    {
+      "word": "conciencia",
+      "translations": [
+        "awareness",
+        "conscience"
+      ],
+      "examples": [
+        "La conciencia del riesgo ha crecido."
+      ],
+      "category": "abstract",
+      "difficulty": 4
+    },
+    {
+      "word": "coherencia",
+      "translations": [
+        "consistency",
+        "coherence"
+      ],
+      "examples": [
+        "Falta coherencia entre las dos versiones."
+      ],
+      "category": "abstract",
+      "difficulty": 4
+    },
+    {
+      "word": "ambigüedad",
+      "translations": [
+        "ambiguity"
+      ],
+      "examples": [
+        "La ambigüedad del texto creó confusión."
+      ],
+      "category": "abstract",
+      "difficulty": 4
+    },
+    {
+      "word": "premisa",
+      "translations": [
+        "premise"
+      ],
+      "examples": [
+        "Partimos de una premisa compartida."
+      ],
+      "category": "abstract",
+      "difficulty": 4
+    },
+    {
+      "word": "consecuencia",
+      "translations": [
+        "consequence"
+      ],
+      "examples": [
+        "Las consecuencias se verán en años."
+      ],
+      "category": "abstract",
+      "difficulty": 3
+    },
+    {
+      "word": "hipótesis",
+      "translations": [
+        "hypothesis"
+      ],
+      "examples": [
+        "La hipótesis aún no se ha verificado."
+      ],
+      "category": "science",
+      "difficulty": 4
+    },
+    {
+      "word": "perspectiva",
+      "translations": [
+        "perspective",
+        "prospect"
+      ],
+      "examples": [
+        "Todo cambia desde la perspectiva opuesta."
+      ],
+      "category": "abstract",
+      "difficulty": 4
+    },
+    {
+      "word": "matiz",
+      "translations": [
+        "nuance",
+        "shade"
+      ],
+      "examples": [
+        "La traducción pierde un matiz importante."
+      ],
+      "category": "language",
+      "difficulty": 4
+    },
+    {
+      "word": "contradicción",
+      "translations": [
+        "contradiction"
+      ],
+      "examples": [
+        "Hay una contradicción en su razonamiento."
+      ],
+      "category": "abstract",
+      "difficulty": 4
+    },
+    {
+      "word": "enfoque",
+      "translations": [
+        "approach",
+        "focus"
+      ],
+      "examples": [
+        "El enfoque del estudio es novedoso."
+      ],
+      "category": "education",
+      "difficulty": 4
+    },
+    {
+      "word": "síntesis",
+      "translations": [
+        "synthesis",
+        "summary"
+      ],
+      "examples": [
+        "Haz una síntesis en media página."
+      ],
+      "category": "abstract",
+      "difficulty": 4
+    },
+    {
+      "word": "criterio",
+      "translations": [
+        "criterion",
+        "judgement"
+      ],
+      "examples": [
+        "El criterio de selección es la calidad."
+      ],
+      "category": "abstract",
+      "difficulty": 4
+    },
+    {
+      "word": "tendencia",
+      "translations": [
+        "trend",
+        "tendency"
+      ],
+      "examples": [
+        "La tendencia lleva meses a la baja."
+      ],
+      "category": "abstract",
+      "difficulty": 3
+    },
+    {
+      "word": "fenómeno",
+      "translations": [
+        "phenomenon"
+      ],
+      "examples": [
+        "Es un fenómeno difícil de explicar."
+      ],
+      "category": "science",
+      "difficulty": 4
+    },
+    {
+      "word": "supuesto",
+      "translations": [
+        "assumption"
+      ],
+      "examples": [
+        "El supuesto de partida es erróneo."
+      ],
+      "category": "abstract",
+      "difficulty": 4
+    },
+    {
+      "word": "gobierno",
+      "translations": [
+        "government"
+      ],
+      "examples": [
+        "El gobierno aprobó la reforma."
+      ],
+      "category": "politics",
+      "difficulty": 3
+    },
+    {
+      "word": "ley",
+      "translations": [
+        "law"
+      ],
+      "examples": [
+        "La ley entra en vigor en enero."
+      ],
+      "category": "politics",
+      "difficulty": 3
+    },
+    {
+      "word": "reforma",
+      "translations": [
+        "reform"
+      ],
+      "examples": [
+        "La reforma educativa está cuestionada."
+      ],
+      "category": "politics",
+      "difficulty": 4
+    },
+    {
+      "word": "elecciones",
+      "translations": [
+        "elections"
+      ],
+      "examples": [
+        "Las elecciones serán en primavera."
+      ],
+      "category": "politics",
+      "difficulty": 3
+    },
+    {
+      "word": "ciudadanía",
+      "translations": [
+        "citizenship"
+      ],
+      "examples": [
+        "Obtuvo la ciudadanía española."
+      ],
+      "category": "politics",
+      "difficulty": 4
+    },
+    {
+      "word": "derecho",
+      "translations": [
+        "right",
+        "law"
+      ],
+      "examples": [
+        "El derecho al voto está garantizado."
+      ],
+      "category": "politics",
+      "difficulty": 3
+    },
+    {
+      "word": "deber",
+      "translations": [
+        "duty",
+        "obligation"
+      ],
+      "examples": [
+        "Votar es un deber cívico."
+      ],
+      "category": "politics",
+      "difficulty": 3
+    },
+    {
+      "word": "democracia",
+      "translations": [
+        "democracy"
+      ],
+      "examples": [
+        "La democracia exige participación."
+      ],
+      "category": "politics",
+      "difficulty": 3
+    },
+    {
+      "word": "poder",
+      "translations": [
+        "power"
+      ],
+      "examples": [
+        "El poder ejecutivo recae en el gobierno."
+      ],
+      "category": "politics",
+      "difficulty": 3
+    },
+    {
+      "word": "corrupción",
+      "translations": [
+        "corruption"
+      ],
+      "examples": [
+        "La investigación afecta a casos de corrupción."
+      ],
+      "category": "politics",
+      "difficulty": 4
+    },
+    {
+      "word": "justicia",
+      "translations": [
+        "justice"
+      ],
+      "examples": [
+        "Piden justicia para las víctimas."
+      ],
+      "category": "politics",
+      "difficulty": 3
+    },
+    {
+      "word": "juzgado",
+      "translations": [
+        "court"
+      ],
+      "examples": [
+        "El juzgado dictó sentencia."
+      ],
+      "category": "politics",
+      "difficulty": 4
+    },
+    {
+      "word": "sentencia",
+      "translations": [
+        "verdict",
+        "ruling"
+      ],
+      "examples": [
+        "La sentencia fue recurrida."
+      ],
+      "category": "politics",
+      "difficulty": 5
+    },
+    {
+      "word": "medida",
+      "translations": [
+        "measure"
+      ],
+      "examples": [
+        "La medida entró en vigor ayer."
+      ],
+      "category": "politics",
+      "difficulty": 4
+    },
+    {
+      "word": "normativa",
+      "translations": [
+        "regulations"
+      ],
+      "examples": [
+        "La normativa europea es más estricta."
+      ],
+      "category": "politics",
+      "difficulty": 5
+    },
+    {
+      "word": "comercio",
+      "translations": [
+        "trade",
+        "commerce"
+      ],
+      "examples": [
+        "El comercio exterior ha crecido un cinco por ciento."
+      ],
+      "category": "business",
+      "difficulty": 3
+    },
+    {
+      "word": "competencia",
+      "translations": [
+        "competition",
+        "competence"
+      ],
+      "examples": [
+        "La competencia es feroz."
+      ],
+      "category": "business",
+      "difficulty": 4
+    },
+    {
+      "word": "facturación",
+      "translations": [
+        "turnover",
+        "billing"
+      ],
+      "examples": [
+        "La facturación creció un diez por ciento."
+      ],
+      "category": "business",
+      "difficulty": 5
+    },
+    {
+      "word": "crecimiento",
+      "translations": [
+        "growth"
+      ],
+      "examples": [
+        "El crecimiento económico se ha frenado."
+      ],
+      "category": "business",
+      "difficulty": 3
+    },
+    {
+      "word": "crisis",
+      "translations": [
+        "crisis"
+      ],
+      "examples": [
+        "La crisis golpeó a todo el sector."
+      ],
+      "category": "business",
+      "difficulty": 3
+    },
+    {
+      "word": "deuda",
+      "translations": [
+        "debt"
+      ],
+      "examples": [
+        "La deuda pública sigue subiendo."
+      ],
+      "category": "business",
+      "difficulty": 4
+    },
+    {
+      "word": "demanda",
+      "translations": [
+        "demand",
+        "lawsuit"
+      ],
+      "examples": [
+        "La demanda supera a la oferta."
+      ],
+      "category": "business",
+      "difficulty": 3
+    },
+    {
+      "word": "oferta",
+      "translations": [
+        "supply",
+        "offer"
+      ],
+      "examples": [
+        "La oferta es válida hasta el domingo."
+      ],
+      "category": "business",
+      "difficulty": 3
+    },
+    {
+      "word": "inversión",
+      "translations": [
+        "investment"
+      ],
+      "examples": [
+        "La inversión se amortiza en tres años."
+      ],
+      "category": "business",
+      "difficulty": 4
+    },
+    {
+      "word": "empresario",
+      "translations": [
+        "entrepreneur",
+        "businessman"
+      ],
+      "examples": [
+        "Es un empresario del sector textil."
+      ],
+      "category": "business",
+      "difficulty": 4
+    },
+    {
+      "word": "quiebra",
+      "translations": [
+        "bankruptcy"
+      ],
+      "examples": [
+        "La empresa se declaró en quiebra."
+      ],
+      "category": "business",
+      "difficulty": 4
+    },
+    {
+      "word": "emprender",
+      "translations": [
+        "to undertake",
+        "to start up"
+      ],
+      "examples": [
+        "Han emprendido un nuevo negocio."
+      ],
+      "category": "business",
+      "difficulty": 4
+    },
+    {
+      "word": "delegar",
+      "translations": [
+        "to delegate"
+      ],
+      "examples": [
+        "Tiene que aprender a delegar más."
+      ],
+      "category": "business",
+      "difficulty": 4
+    },
+    {
+      "word": "negociar",
+      "translations": [
+        "to negotiate"
+      ],
+      "examples": [
+        "Estamos negociando las condiciones."
+      ],
+      "category": "business",
+      "difficulty": 4
+    },
+    {
+      "word": "investigación",
+      "translations": [
+        "research",
+        "investigation"
+      ],
+      "examples": [
+        "La investigación la financia la universidad."
+      ],
+      "category": "science",
+      "difficulty": 3
+    },
+    {
+      "word": "experimento",
+      "translations": [
+        "experiment"
+      ],
+      "examples": [
+        "El experimento dio resultados inesperados."
+      ],
+      "category": "science",
+      "difficulty": 3
+    },
+    {
+      "word": "dato",
+      "translations": [
+        "datum",
+        "piece of data"
+      ],
+      "examples": [
+        "Los datos confirman la tendencia."
+      ],
+      "category": "science",
+      "difficulty": 3
+    },
+    {
+      "word": "prueba",
+      "translations": [
+        "proof",
+        "test"
+      ],
+      "examples": [
+        "No tenemos pruebas suficientes."
+      ],
+      "category": "science",
+      "difficulty": 3
+    },
+    {
+      "word": "descubrimiento",
+      "translations": [
+        "discovery"
+      ],
+      "examples": [
+        "El descubrimiento cambió el sector."
+      ],
+      "category": "science",
+      "difficulty": 3
+    },
+    {
+      "word": "desarrollo",
+      "translations": [
+        "development"
+      ],
+      "examples": [
+        "El desarrollo del fármaco lleva años."
+      ],
+      "category": "science",
+      "difficulty": 3
+    },
+    {
+      "word": "innovación",
+      "translations": [
+        "innovation"
+      ],
+      "examples": [
+        "La innovación exige inversión."
+      ],
+      "category": "technology",
+      "difficulty": 4
+    },
+    {
+      "word": "inteligencia artificial",
+      "translations": [
+        "artificial intelligence"
+      ],
+      "examples": [
+        "La inteligencia artificial ya está en todas partes."
+      ],
+      "category": "technology",
+      "difficulty": 4
+    },
+    {
+      "word": "algoritmo",
+      "translations": [
+        "algorithm"
+      ],
+      "examples": [
+        "El algoritmo selecciona los contenidos."
+      ],
+      "category": "technology",
+      "difficulty": 4
+    },
+    {
+      "word": "base de datos",
+      "translations": [
+        "database"
+      ],
+      "examples": [
+        "La base de datos tiene un millón de registros."
+      ],
+      "category": "technology",
+      "difficulty": 4
+    },
+    {
+      "word": "ciberseguridad",
+      "translations": [
+        "cybersecurity"
+      ],
+      "examples": [
+        "La ciberseguridad es una prioridad."
+      ],
+      "category": "technology",
+      "difficulty": 5
+    },
+    {
+      "word": "patente",
+      "translations": [
+        "patent"
+      ],
+      "examples": [
+        "Han registrado una patente."
+      ],
+      "category": "technology",
+      "difficulty": 5
+    },
+    {
+      "word": "prototipo",
+      "translations": [
+        "prototype"
+      ],
+      "examples": [
+        "El prototipo ya funciona."
+      ],
+      "category": "technology",
+      "difficulty": 4
+    },
+    {
+      "word": "fuente",
+      "translations": [
+        "source",
+        "fountain"
+      ],
+      "examples": [
+        "La fuente no es fiable."
+      ],
+      "category": "language",
+      "difficulty": 4
+    },
+    {
+      "word": "informativo",
+      "translations": [
+        "news bulletin"
+      ],
+      "examples": [
+        "El informativo de las ocho lo mencionó."
+      ],
+      "category": "technology",
+      "difficulty": 4
+    },
+    {
+      "word": "entrevista periodística",
+      "translations": [
+        "press interview"
+      ],
+      "examples": [
+        "La entrevista periodística salió ayer."
+      ],
+      "category": "technology",
+      "difficulty": 4
+    },
+    {
+      "word": "titular",
+      "translations": [
+        "headline"
+      ],
+      "examples": [
+        "El titular era deliberadamente provocador."
+      ],
+      "category": "technology",
+      "difficulty": 4
+    },
+    {
+      "word": "desmentir",
+      "translations": [
+        "to deny",
+        "to refute"
+      ],
+      "examples": [
+        "El ministerio desmintió la noticia."
+      ],
+      "category": "politics",
+      "difficulty": 5
+    },
+    {
+      "word": "divulgar",
+      "translations": [
+        "to disclose",
+        "to popularize"
+      ],
+      "examples": [
+        "Divulgaron los resultados demasiado pronto."
+      ],
+      "category": "technology",
+      "difficulty": 5
+    },
+    {
+      "word": "resumir",
+      "translations": [
+        "to summarize"
+      ],
+      "examples": [
+        "Resume el artículo en tres líneas."
+      ],
+      "category": "language",
+      "difficulty": 3
+    },
+    {
+      "word": "traducir",
+      "translations": [
+        "to translate"
+      ],
+      "examples": [
+        "Traduje el contrato al inglés."
+      ],
+      "category": "language",
+      "difficulty": 3
+    },
+    {
+      "word": "expresar",
+      "translations": [
+        "to express"
+      ],
+      "examples": [
+        "Me cuesta expresar este concepto."
+      ],
+      "category": "language",
+      "difficulty": 3
+    },
+    {
+      "word": "subrayar",
+      "translations": [
+        "to emphasize",
+        "to underline"
+      ],
+      "examples": [
+        "Quisiera subrayar un punto."
+      ],
+      "category": "language",
+      "difficulty": 4
+    },
+    {
+      "word": "aclarar",
+      "translations": [
+        "to clarify"
+      ],
+      "examples": [
+        "Quiero aclarar un malentendido."
+      ],
+      "category": "language",
+      "difficulty": 3
+    },
+    {
+      "word": "malentendido",
+      "translations": [
+        "misunderstanding"
+      ],
+      "examples": [
+        "Solo fue un malentendido."
+      ],
+      "category": "language",
+      "difficulty": 4
+    },
+    {
+      "word": "desigualdad",
+      "translations": [
+        "inequality"
+      ],
+      "examples": [
+        "La desigualdad ha aumentado."
+      ],
+      "category": "society",
+      "difficulty": 4
+    },
+    {
+      "word": "solidaridad",
+      "translations": [
+        "solidarity"
+      ],
+      "examples": [
+        "La solidaridad del barrio fue enorme."
+      ],
+      "category": "society",
+      "difficulty": 4
+    },
+    {
+      "word": "integración",
+      "translations": [
+        "integration"
+      ],
+      "examples": [
+        "La integración requiere tiempo y recursos."
+      ],
+      "category": "society",
+      "difficulty": 4
+    },
+    {
+      "word": "generación",
+      "translations": [
+        "generation"
+      ],
+      "examples": [
+        "Su generación vivió el boom."
+      ],
+      "category": "society",
+      "difficulty": 3
+    },
+    {
+      "word": "población",
+      "translations": [
+        "population"
+      ],
+      "examples": [
+        "La población envejece rápidamente."
+      ],
+      "category": "society",
+      "difficulty": 3
+    },
+    {
+      "word": "encuesta",
+      "translations": [
+        "survey",
+        "poll"
+      ],
+      "examples": [
+        "La encuesta incluyó a mil personas."
+      ],
+      "category": "society",
+      "difficulty": 4
+    },
+    {
+      "word": "voluntariado",
+      "translations": [
+        "volunteering"
+      ],
+      "examples": [
+        "Hace voluntariado todos los sábados."
+      ],
+      "category": "society",
+      "difficulty": 4
+    },
+    {
+      "word": "prejuicio",
+      "translations": [
+        "prejudice"
+      ],
+      "examples": [
+        "El prejuicio nace de la ignorancia."
+      ],
+      "category": "society",
+      "difficulty": 4
+    },
+    {
+      "word": "comportamiento",
+      "translations": [
+        "behaviour"
+      ],
+      "examples": [
+        "Su comportamiento me sorprendió."
+      ],
+      "category": "society",
+      "difficulty": 3
+    },
+    {
+      "word": "pertenencia",
+      "translations": [
+        "belonging"
+      ],
+      "examples": [
+        "El sentido de pertenencia aquí es fuerte."
+      ],
+      "category": "society",
+      "difficulty": 5
+    },
+    {
+      "word": "obra",
+      "translations": [
+        "work",
+        "play"
+      ],
+      "examples": [
+        "La obra se expone en el Prado."
+      ],
+      "category": "arts",
+      "difficulty": 3
+    },
+    {
+      "word": "director",
+      "translations": [
+        "director"
+      ],
+      "examples": [
+        "El director ganó un premio."
+      ],
+      "category": "arts",
+      "difficulty": 3
+    },
+    {
+      "word": "argumento",
+      "translations": [
+        "plot",
+        "argument"
+      ],
+      "examples": [
+        "El argumento es demasiado previsible."
+      ],
+      "category": "arts",
+      "difficulty": 4
+    },
+    {
+      "word": "personaje",
+      "translations": [
+        "character"
+      ],
+      "examples": [
+        "El personaje principal es ambiguo."
+      ],
+      "category": "arts",
+      "difficulty": 3
+    },
+    {
+      "word": "novela",
+      "translations": [
+        "novel"
+      ],
+      "examples": [
+        "La novela transcurre en Cádiz."
+      ],
+      "category": "arts",
+      "difficulty": 3
+    },
+    {
+      "word": "poesía",
+      "translations": [
+        "poetry",
+        "poem"
+      ],
+      "examples": [
+        "La poesía es difícil de traducir."
+      ],
+      "category": "arts",
+      "difficulty": 3
+    },
+    {
+      "word": "obra maestra",
+      "translations": [
+        "masterpiece"
+      ],
+      "examples": [
+        "Se considera su obra maestra."
+      ],
+      "category": "arts",
+      "difficulty": 4
+    },
+    {
+      "word": "crítica",
+      "translations": [
+        "criticism",
+        "review"
+      ],
+      "examples": [
+        "La crítica destrozó la película."
+      ],
+      "category": "arts",
+      "difficulty": 4
+    },
+    {
+      "word": "exposición",
+      "translations": [
+        "exhibition"
+      ],
+      "examples": [
+        "La exposición cierra el domingo."
+      ],
+      "category": "arts",
+      "difficulty": 3
+    },
+    {
+      "word": "patrimonio",
+      "translations": [
+        "heritage",
+        "assets"
+      ],
+      "examples": [
+        "El patrimonio artístico es inmenso."
+      ],
+      "category": "arts",
+      "difficulty": 4
+    },
+    {
+      "word": "afrontar",
+      "translations": [
+        "to face",
+        "to confront"
+      ],
+      "examples": [
+        "Debemos afrontar el problema ya."
+      ],
+      "category": "basics",
+      "difficulty": 3
+    },
+    {
+      "word": "sostener",
+      "translations": [
+        "to support",
+        "to maintain"
+      ],
+      "examples": [
+        "Sostiene que no sabía nada."
+      ],
+      "category": "basics",
+      "difficulty": 4
+    },
+    {
+      "word": "comprobar",
+      "translations": [
+        "to verify",
+        "to check"
+      ],
+      "examples": [
+        "Comprueba los datos antes de enviar."
+      ],
+      "category": "basics",
+      "difficulty": 3
+    },
+    {
+      "word": "aplazar",
+      "translations": [
+        "to postpone"
+      ],
+      "examples": [
+        "El partido se ha aplazado."
+      ],
+      "category": "basics",
+      "difficulty": 4
+    },
+    {
+      "word": "prever",
+      "translations": [
+        "to foresee",
+        "to provide for"
+      ],
+      "examples": [
+        "El contrato prevé una penalización."
+      ],
+      "category": "basics",
+      "difficulty": 4
+    },
+    {
+      "word": "desempeñar",
+      "translations": [
+        "to carry out",
+        "to perform"
+      ],
+      "examples": [
+        "Desempeña su trabajo con cuidado."
+      ],
+      "category": "basics",
+      "difficulty": 4
+    },
+    {
+      "word": "implicar",
+      "translations": [
+        "to involve",
+        "to imply"
+      ],
+      "examples": [
+        "El proyecto implica a tres universidades."
+      ],
+      "category": "basics",
+      "difficulty": 4
+    },
+    {
+      "word": "aprovechar",
+      "translations": [
+        "to take advantage of"
+      ],
+      "examples": [
+        "Aprovechó la situación."
+      ],
+      "category": "basics",
+      "difficulty": 3
+    },
+    {
+      "word": "plantear",
+      "translations": [
+        "to raise",
+        "to pose"
+      ],
+      "examples": [
+        "Quiero plantear una cuestión."
+      ],
+      "category": "basics",
+      "difficulty": 4
+    },
+    {
+      "word": "merecer la pena",
+      "translations": [
+        "to be worth it"
+      ],
+      "examples": [
+        "Merece la pena intentarlo."
+      ],
+      "category": "basics",
+      "difficulty": 4
+    }
+  ]
+}

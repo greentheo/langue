@@ -1,0 +1,142 @@
+# Spanish A1 — beginner vocabulary
+# Format: word | translations (semicolon-separated) | example sentence | category | difficulty (1-5)
+
+# Greetings and courtesy
+hola | hello; hi | ¡Hola! ¿Cómo estás? | greetings | 1
+buenos días | good morning | Buenos días, señora Gómez. | greetings | 1
+buenas tardes | good afternoon | Buenas tardes, ¿en qué puedo ayudarle? | greetings | 1
+buenas noches | good evening; good night | Buenas noches, hasta mañana. | greetings | 1
+adiós | goodbye; bye | Adiós, nos vemos el lunes. | greetings | 1
+hasta luego | see you later | Hasta luego, tengo prisa. | greetings | 1
+gracias | thank you; thanks | Muchas gracias por tu ayuda. | greetings | 1
+de nada | you're welcome | De nada, ha sido un placer. | greetings | 1
+por favor | please | Un café, por favor. | greetings | 1
+perdón | sorry; excuse me | Perdón, no te había visto. | greetings | 1
+disculpe | excuse me (formal) | Disculpe, ¿dónde está el baño? | greetings | 2
+mucho gusto | nice to meet you | Mucho gusto, soy Marta. | greetings | 2
+bienvenido | welcome | ¡Bienvenido a Madrid! | greetings | 2
+
+# Basics
+sí | yes | Sí, entiendo perfectamente. | basics | 1
+no | no | No, gracias. | basics | 1
+quizás | maybe; perhaps | Quizás vayamos a la playa. | basics | 2
+muy | very | Estoy muy cansado hoy. | basics | 1
+mucho | a lot; much | Trabajo mucho los lunes. | basics | 1
+poco | little; not much | Hablo poco español todavía. | basics | 1
+también | also; too | Yo también quiero ir. | basics | 1
+pero | but | Quiero salir, pero está lloviendo. | basics | 1
+porque | because | No fui porque estaba enfermo. | basics | 1
+cómo | how | ¿Cómo se dice esto en español? | basics | 1
+dónde | where | ¿Dónde vives? | basics | 1
+cuándo | when | ¿Cuándo llega el tren? | basics | 1
+quién | who | ¿Quién es esa chica? | basics | 1
+qué | what | ¿Qué haces esta noche? | basics | 1
+cuánto | how much; how many | ¿Cuánto cuesta esto? | basics | 1
+bien | well; fine | Estoy bien, gracias. | basics | 1
+mal | badly; bad | Hoy me siento mal. | basics | 1
+siempre | always | Siempre tomo café por la mañana. | basics | 2
+nunca | never | Nunca he estado en Sevilla. | basics | 2
+ahora | now | Ahora tengo que irme. | basics | 2
+aquí | here | El restaurante está aquí cerca. | basics | 1
+
+# Numbers
+uno | one | Solo tengo uno. | numbers | 1
+dos | two | Quiero dos billetes. | numbers | 1
+tres | three | Hay tres libros en la mesa. | numbers | 1
+cuatro | four | La reunión es a las cuatro. | numbers | 1
+cinco | five | Vivo en el piso cinco. | numbers | 1
+seis | six | Me levanto a las seis. | numbers | 1
+siete | seven | La semana tiene siete días. | numbers | 1
+ocho | eight | La tienda abre a las ocho. | numbers | 1
+nueve | nine | Tengo nueve primos. | numbers | 1
+diez | ten | Cuesta diez euros. | numbers | 1
+veinte | twenty | Tengo veinte minutos de pausa. | numbers | 2
+cien | hundred | El libro tiene cien páginas. | numbers | 2
+mil | thousand | La ciudad tiene mil años de historia. | numbers | 2
+primero | first | Es mi primer día de trabajo. | numbers | 2
+
+# Family and people
+familia | family | Mi familia es muy grande. | family | 1
+madre | mother | Mi madre cocina muy bien. | family | 1
+padre | father | Mi padre trabaja en un banco. | family | 1
+hijo | son; child | Su hijo tiene cinco años. | family | 1
+hija | daughter | Su hija estudia medicina. | family | 1
+hermano | brother | Tengo un hermano mayor. | family | 1
+hermana | sister | Mi hermana vive en Barcelona. | family | 1
+abuelo | grandfather | Mi abuelo cuenta buenas historias. | family | 2
+abuela | grandmother | La abuela hace una tortilla estupenda. | family | 2
+esposo | husband | Su esposo es profesor. | family | 2
+esposa | wife | Mi esposa adora viajar. | family | 2
+amigo | friend | Voy al cine con un amigo. | family | 1
+niño | child; little boy | El niño juega en el parque. | family | 1
+chica | girl | Esa chica es mi vecina. | family | 1
+hombre | man | Ese hombre trabaja aquí hace años. | family | 1
+mujer | woman; wife | La mujer de la caja es muy amable. | family | 1
+
+# Food and drink
+agua | water | Quiero un vaso de agua. | food | 1
+pan | bread | Compro pan todas las mañanas. | food | 1
+vino | wine | Una copa de vino tinto, por favor. | food | 1
+café | coffee | Tomo un café en el bar. | food | 1
+leche | milk | Bebo leche en el desayuno. | food | 1
+arroz | rice | El arroz está listo. | food | 2
+carne | meat | No como carne los viernes. | food | 2
+pescado | fish (food) | El pescado está fresquísimo hoy. | food | 2
+queso | cheese | Este queso es manchego. | food | 2
+fruta | fruit | Como fruta todos los días. | food | 2
+verdura | vegetables | Compro verdura en el mercado. | food | 2
+huevo | egg | Quiero dos huevos fritos. | food | 2
+azúcar | sugar | ¿Tomas azúcar en el café? | food | 2
+sal | salt | Le falta un poco de sal. | food | 2
+desayuno | breakfast | El desayuno es a las siete. | food | 2
+almuerzo | lunch | El almuerzo es a las dos. | food | 2
+cena | dinner | La cena ya está lista. | food | 2
+restaurante | restaurant | Conozco un buen restaurante aquí. | food | 2
+
+# Time
+día | day | ¿Qué día es hoy? | time | 1
+semana | week | Nos vemos la próxima semana. | time | 2
+mes | month | Me voy el mes que viene. | time | 2
+año | year | Estudio español desde hace un año. | time | 1
+hoy | today | Hoy hace mucho calor. | time | 1
+mañana | tomorrow; morning | Mañana tengo un examen. | time | 1
+ayer | yesterday | Ayer fui al museo. | time | 1
+tarde | afternoon; late | Por la tarde estudio. | time | 2
+noche | night | Anoche dormí mal. | time | 2
+hora | hour; time | ¿Qué hora es? | time | 1
+minuto | minute | Espera un minuto, por favor. | time | 2
+lunes | Monday | El lunes vuelvo al trabajo. | time | 2
+sábado | Saturday | El sábado vamos a la montaña. | time | 2
+domingo | Sunday | Los domingos duermo hasta tarde. | time | 2
+
+# Places and travel
+casa | house; home | Vuelvo a casa a las seis. | housing | 1
+ciudad | city | Madrid es una ciudad preciosa. | travel | 1
+calle | street | La calle está cortada por obras. | travel | 2
+estación | station | La estación está a diez minutos. | transportation | 2
+tren | train | El tren a Valencia sale a las nueve. | transportation | 2
+autobús | bus | Cojo el autobús número veinte. | transportation | 2
+coche | car | El coche está aparcado detrás. | transportation | 2
+aeropuerto | airport | Llego al aeropuerto a las ocho. | transportation | 2
+hotel | hotel | Hemos reservado un hotel céntrico. | travel | 2
+tienda | shop; store | La tienda cierra a las siete. | shopping | 2
+mercado | market | El mercado abre los sábados. | shopping | 2
+billete | ticket | Compré el billete por internet. | travel | 2
+
+# Everyday things and adjectives
+libro | book | Estoy leyendo un libro en español. | education | 1
+trabajo | work; job | Me gusta mucho mi trabajo. | work | 1
+escuela | school | Los niños van a la escuela a las ocho. | education | 1
+dinero | money | No llevo dinero encima. | shopping | 2
+teléfono | telephone | Te llamo por teléfono esta noche. | technology | 1
+grande | big; large | Vivo en una casa grande. | basics | 1
+pequeño | small; little | Tengo un piso pequeño. | basics | 1
+nuevo | new | Me compré un ordenador nuevo. | basics | 1
+bonito | pretty; nice | ¡Qué día tan bonito! | basics | 1
+bueno | good | Este café está muy bueno. | basics | 1
+calor | heat; hot | Hoy hace calor. | weather | 1
+frío | cold | En invierno hace frío aquí. | weather | 1
+lluvia | rain | La lluvia empezó al amanecer. | weather | 2
+sol | sun | Hoy hace sol. | weather | 1
+feliz | happy | Estoy feliz de verte. | emotions | 2
+cansado | tired | Estoy cansado después del trabajo. | emotions | 2

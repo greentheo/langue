@@ -1,0 +1,142 @@
+# Italian A2 — elementary vocabulary
+# Format: word | translations (semicolon-separated) | example sentence | category | difficulty (1-5)
+
+# Daily routines
+svegliarsi | to wake up | Mi sveglio alle sei e mezza. | daily_routines | 2
+alzarsi | to get up | Mi alzo subito dopo la sveglia. | daily_routines | 2
+lavarsi | to wash oneself | Mi lavo le mani prima di mangiare. | daily_routines | 2
+vestirsi | to get dressed | Mi vesto in fretta la mattina. | daily_routines | 2
+fare la doccia | to take a shower | Faccio la doccia prima di uscire. | daily_routines | 2
+pettinarsi | to comb one's hair | Si pettina davanti allo specchio. | daily_routines | 3
+addormentarsi | to fall asleep | Mi addormento sempre davanti alla TV. | daily_routines | 3
+riposarsi | to rest | Dopo pranzo mi riposo mezz'ora. | daily_routines | 2
+abitudine | habit | Leggere prima di dormire è una buona abitudine. | daily_routines | 3
+orario | schedule; timetable | L'orario dei treni è cambiato. | time | 3
+
+# Home
+appartamento | apartment | Cerco un appartamento in affitto. | housing | 2
+cucina | kitchen | La cucina è piccola ma luminosa. | housing | 2
+camera | room; bedroom | La camera dà sul cortile. | housing | 2
+bagno | bathroom | Il bagno è in fondo al corridoio. | housing | 2
+soggiorno | living room | Guardiamo la partita in soggiorno. | housing | 3
+giardino | garden | Abbiamo un piccolo giardino dietro casa. | housing | 2
+finestra | window | Apri la finestra, fa caldo. | housing | 2
+porta | door | Chiudi la porta, per favore. | housing | 2
+letto | bed | Il letto è troppo duro. | housing | 2
+tavolo | table | Apparecchia il tavolo per quattro. | housing | 2
+sedia | chair | Prendi una sedia e siediti. | housing | 2
+armadio | wardrobe; closet | L'armadio è pieno di vestiti. | housing | 3
+affitto | rent | L'affitto si paga il primo del mese. | housing | 3
+vicino | neighbour; near | Il mio vicino è molto rumoroso. | housing | 2
+
+# Shopping and money
+comprare | to buy | Devo comprare il pane. | shopping | 2
+vendere | to sell | Vendono frutta biologica. | shopping | 2
+pagare | to pay | Posso pagare con la carta? | shopping | 2
+costare | to cost | Quanto costa la spedizione? | shopping | 2
+prezzo | price | Il prezzo mi sembra troppo alto. | shopping | 2
+sconto | discount | C'è uno sconto del venti per cento. | shopping | 3
+cassa | checkout; cash register | La fila alla cassa è lunga. | shopping | 3
+scontrino | receipt | Conservi lo scontrino per il reso. | shopping | 3
+carta di credito | credit card | Non accettano la carta di credito. | shopping | 3
+contanti | cash | Preferisco pagare in contanti. | shopping | 3
+saldi | sales | I saldi cominciano a gennaio. | shopping | 3
+taglia | size (clothing) | Che taglia porta? | clothing | 3
+provare | to try; to try on | Posso provare questa giacca? | clothing | 2
+
+# Clothing
+vestito | dress; suit | Ha comprato un vestito elegante. | clothing | 2
+camicia | shirt | La camicia bianca è stirata. | clothing | 2
+pantaloni | trousers; pants | Questi pantaloni sono troppo stretti. | clothing | 2
+scarpe | shoes | Le scarpe nuove mi fanno male. | clothing | 2
+giacca | jacket | Metti la giacca, fa freddo. | clothing | 2
+cappotto | coat | Il cappotto è appeso all'ingresso. | clothing | 3
+maglione | sweater | Mi serve un maglione pesante. | clothing | 3
+gonna | skirt | Indossa una gonna lunga. | clothing | 3
+cintura | belt | Ho perso la cintura di pelle. | clothing | 3
+
+# Health and body
+salute | health | La salute viene prima di tutto. | health | 2
+medico | doctor | Devo andare dal medico. | health | 2
+ospedale | hospital | L'ospedale è vicino alla stazione. | health | 2
+farmacia | pharmacy | La farmacia è aperta di notte. | health | 2
+medicina | medicine | Prendi la medicina dopo i pasti. | health | 2
+malato | ill; sick | Sono malato da tre giorni. | health | 2
+febbre | fever | Ho la febbre alta. | health | 3
+mal di testa | headache | Ho un forte mal di testa. | health | 3
+testa | head | Mi gira la testa. | body | 2
+mano | hand | Mi sono fatto male alla mano. | body | 2
+piede | foot | Ho male al piede destro. | body | 2
+occhio | eye | Ha un occhio arrossato. | body | 2
+braccio | arm | Si è rotto un braccio sciando. | body | 3
+gamba | leg | Mi fa male la gamba sinistra. | body | 2
+schiena | back | Ho mal di schiena da ieri. | body | 3
+
+# Work and study
+ufficio | office | Il mio ufficio è al terzo piano. | work | 2
+riunione | meeting | La riunione è stata rimandata. | work | 3
+collega | colleague | Un collega mi ha aiutato molto. | work | 3
+stipendio | salary | Lo stipendio arriva a fine mese. | work | 3
+impiego | job; employment | Ha trovato un nuovo impiego. | work | 3
+azienda | company; firm | L'azienda ha cinquanta dipendenti. | work | 3
+capo | boss; head | Il capo è in ferie questa settimana. | work | 2
+ferie | holidays; leave | Prendo due settimane di ferie ad agosto. | work | 3
+università | university | Studia all'università di Bologna. | education | 2
+esame | exam | Ho superato l'esame di storia. | education | 2
+lezione | lesson; class | La lezione comincia alle nove. | education | 2
+compito | homework; task | Devo finire i compiti. | education | 2
+insegnante | teacher | L'insegnante spiega molto bene. | education | 2
+studente | student | Sono uno studente di ingegneria. | education | 2
+voto | grade; mark | Ho preso un bel voto. | education | 3
+
+# Travel
+viaggio | trip; journey | Il viaggio dura tre ore. | travel | 2
+vacanza | holiday; vacation | Andiamo in vacanza in Puglia. | travel | 2
+valigia | suitcase | Ho fatto la valigia ieri sera. | travel | 3
+partire | to leave; to depart | Partiamo domani all'alba. | travel | 2
+arrivare | to arrive | Il volo arriva in ritardo. | travel | 2
+prenotare | to book; to reserve | Ho prenotato un tavolo per due. | travel | 3
+camera doppia | double room | Vorrei una camera doppia per tre notti. | travel | 3
+passaporto | passport | Il passaporto scade a marzo. | travel | 3
+spiaggia | beach | La spiaggia è affollata d'estate. | travel | 2
+montagna | mountain | D'inverno andiamo in montagna. | nature | 2
+lago | lake | Il lago è gelato in gennaio. | nature | 2
+mare | sea | Il mare oggi è calmo. | nature | 2
+
+# Getting around
+girare | to turn | Giri a destra al semaforo. | transportation | 2
+attraversare | to cross | Attraversa la strada sulle strisce. | transportation | 3
+fermata | stop (bus/tram) | Scendo alla prossima fermata. | transportation | 3
+semaforo | traffic light | Il semaforo è rosso. | transportation | 3
+incrocio | intersection | Gira a sinistra all'incrocio. | transportation | 3
+parcheggio | parking; car park | Il parcheggio è a pagamento. | transportation | 3
+benzina | petrol; gasoline | Devo fare benzina. | transportation | 3
+patente | driving licence | Ho preso la patente a diciotto anni. | transportation | 3
+
+# Free time and weather
+tempo libero | free time | Nel tempo libero suono la chitarra. | leisure | 2
+sport | sport | Faccio sport tre volte a settimana. | sports | 2
+nuotare | to swim | Nuoto in piscina ogni martedì. | sports | 2
+correre | to run | Corro al parco la mattina presto. | sports | 2
+partita | match; game | La partita finisce alle dieci. | sports | 2
+palestra | gym | Vado in palestra dopo il lavoro. | sports | 3
+musica | music | Ascolto musica mentre lavoro. | arts | 1
+film | film; movie | Il film dura due ore. | arts | 1
+concerto | concert | Il concerto è sold out. | arts | 2
+museo | museum | Il museo è chiuso il lunedì. | arts | 2
+nuvoloso | cloudy | Oggi è nuvoloso ma non piove. | weather | 3
+nevicare | to snow | Stanotte ha nevicato in montagna. | weather | 3
+vento | wind | C'è troppo vento per uscire in barca. | weather | 2
+temporale | thunderstorm | Un temporale ha allagato la strada. | weather | 3
+
+# Feelings and describing
+contento | glad; pleased | Sono contento del risultato. | emotions | 2
+triste | sad | Mi sento triste oggi. | emotions | 2
+arrabbiato | angry | È arrabbiato per il ritardo. | emotions | 3
+preoccupato | worried | Sono preoccupato per l'esame. | emotions | 3
+divertente | fun; amusing | È stata una serata divertente. | emotions | 3
+difficile | difficult | Questo esercizio è difficile. | basics | 2
+facile | easy | La ricetta è molto facile. | basics | 2
+veloce | fast; quick | Il treno è più veloce dell'autobus. | basics | 2
+lento | slow | La connessione è lenta. | basics | 2
+gentile | kind; polite | La commessa è stata molto gentile. | emotions | 2

@@ -1,0 +1,41 @@
+# Build context is the repo root; keep it to what the image actually needs
+# (web/ plus data/). Everything below either bloats the context or would leak.
+
+.git
+.gitignore
+
+# Secrets — never into an image layer. This repo has already leaked one key.
+.env
+.env.*
+!.env.template
+!**/.env.example
+
+# Python CLI: not part of the web image.
+venv/
+.venv/
+build/
+dist/
+*.egg-info/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ropeproject/
+data/langue.db
+docs/
+specs/
+tests/
+
+# Node
+web/node_modules/
+web/.next/
+web/out/
+web/src/generated/
+web/.env
+web/.env.*
+!web/.env.example
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
+*.log

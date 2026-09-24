@@ -1,0 +1,117 @@
+# Italian B2 — upper-intermediate vocabulary
+# Format: word | translations (semicolon-separated) | example sentence | category | difficulty (1-5)
+
+# Abstract nouns and reasoning
+consapevolezza | awareness | La consapevolezza del rischio è cresciuta. | abstract | 4
+coerenza | consistency; coherence | Manca coerenza tra le due versioni. | abstract | 4
+ambiguità | ambiguity | L'ambiguità del testo ha creato confusione. | abstract | 4
+premessa | premise | Partiamo da una premessa condivisa. | abstract | 4
+conseguenza | consequence | Le conseguenze si vedranno tra anni. | abstract | 3
+ipotesi | hypothesis | L'ipotesi non è ancora stata verificata. | science | 4
+prospettiva | perspective; prospect | Cambia tutto se guardi la prospettiva opposta. | abstract | 4
+sfumatura | nuance; shade | La traduzione perde una sfumatura importante. | language | 5
+contraddizione | contradiction | C'è una contraddizione nel suo ragionamento. | abstract | 4
+approfondimento | in-depth study | Serve un approfondimento sul tema. | education | 4
+sintesi | synthesis; summary | Fai una sintesi in mezza pagina. | abstract | 4
+criterio | criterion | Il criterio di selezione è la qualità. | abstract | 4
+tendenza | trend; tendency | La tendenza è in calo da mesi. | abstract | 3
+fenomeno | phenomenon | È un fenomeno difficile da spiegare. | science | 4
+presupposto | assumption; prerequisite | Il presupposto di base è sbagliato. | abstract | 5
+
+# Politics and institutions
+governo | government | Il governo ha approvato la riforma. | politics | 3
+legge | law | La legge entra in vigore a gennaio. | politics | 3
+riforma | reform | La riforma della scuola è contestata. | politics | 4
+elezioni | elections | Le elezioni si terranno in primavera. | politics | 3
+cittadinanza | citizenship | Ha ottenuto la cittadinanza italiana. | politics | 4
+diritto | right; law | Il diritto al voto è garantito. | politics | 3
+dovere | duty; must | È un dovere civico votare. | politics | 3
+democrazia | democracy | La democrazia richiede partecipazione. | politics | 3
+potere | power | Il potere esecutivo spetta al governo. | politics | 3
+corruzione | corruption | L'inchiesta riguarda casi di corruzione. | politics | 4
+giustizia | justice | Chiedono giustizia per le vittime. | politics | 3
+tribunale | court | Il tribunale ha emesso la sentenza. | politics | 4
+sentenza | verdict; ruling | La sentenza è stata impugnata. | politics | 5
+provvedimento | measure; provision | Il provvedimento è entrato in vigore. | politics | 5
+normativa | regulations | La normativa europea è più severa. | politics | 5
+
+# Economy and business
+commercio | trade; commerce | Il commercio estero è cresciuto del cinque per cento. | business | 3
+concorrenza | competition | La concorrenza è agguerrita. | business | 4
+fatturato | turnover; revenue | Il fatturato è cresciuto del dieci per cento. | business | 5
+crescita | growth | La crescita economica è rallentata. | business | 3
+crisi | crisis | La crisi ha colpito tutto il settore. | business | 3
+debito | debt | Il debito pubblico continua a salire. | business | 4
+domanda | demand; question | La domanda supera l'offerta. | business | 3
+offerta | supply; offer | L'offerta è valida fino a domenica. | business | 3
+investimento | investment | L'investimento si ripagherà in tre anni. | business | 4
+imprenditore | entrepreneur | È un imprenditore del settore tessile. | business | 4
+fallimento | bankruptcy; failure | L'azienda ha dichiarato fallimento. | business | 4
+avviare | to start up; to launch | Hanno avviato una nuova attività. | business | 4
+delegare | to delegate | Deve imparare a delegare di più. | business | 4
+negoziare | to negotiate | Stiamo negoziando le condizioni. | business | 4
+
+# Science and technology
+ricerca | research | La ricerca è finanziata dall'università. | science | 3
+esperimento | experiment | L'esperimento ha dato risultati inattesi. | science | 3
+dato | datum; piece of data | I dati confermano la tendenza. | science | 3
+prova | proof; test | Non abbiamo prove sufficienti. | science | 3
+scoperta | discovery | La scoperta ha cambiato il settore. | science | 3
+sviluppo | development | Lo sviluppo del farmaco richiede anni. | science | 3
+innovazione | innovation | L'innovazione richiede investimenti. | technology | 4
+intelligenza artificiale | artificial intelligence | L'intelligenza artificiale è ovunque ormai. | technology | 4
+algoritmo | algorithm | L'algoritmo seleziona i contenuti. | technology | 4
+banca dati | database | La banca dati contiene un milione di voci. | technology | 4
+sicurezza informatica | cybersecurity | La sicurezza informatica è una priorità. | technology | 5
+brevetto | patent | Hanno depositato un brevetto. | technology | 5
+prototipo | prototype | Il prototipo funziona già. | technology | 4
+
+# Media and language
+fonte | source | La fonte non è attendibile. | language | 4
+notiziario | news bulletin | Il notiziario delle otto ne ha parlato. | technology | 4
+intervista | interview (press) | L'intervista è uscita ieri. | technology | 3
+titolo | headline; title | Il titolo era volutamente provocatorio. | technology | 3
+smentire | to deny; to refute | Il ministero ha smentito la notizia. | politics | 5
+divulgare | to disclose; to popularize | Hanno divulgato i risultati troppo presto. | technology | 5
+riassumere | to summarize | Riassumi l'articolo in tre righe. | language | 3
+tradurre | to translate | Ho tradotto il contratto in inglese. | language | 3
+esprimere | to express | Fatico a esprimere questo concetto. | language | 3
+sottolineare | to emphasize; to underline | Vorrei sottolineare un punto. | language | 4
+chiarire | to clarify | Voglio chiarire un malinteso. | language | 3
+malinteso | misunderstanding | È stato solo un malinteso. | language | 4
+
+# Society
+disuguaglianza | inequality | La disuguaglianza è aumentata. | society | 5
+solidarietà | solidarity | La solidarietà del quartiere è stata enorme. | society | 4
+integrazione | integration | L'integrazione richiede tempo e risorse. | society | 4
+generazione | generation | La sua generazione ha vissuto il boom. | society | 3
+popolazione | population | La popolazione invecchia rapidamente. | society | 3
+sondaggio | survey; poll | Il sondaggio ha coinvolto mille persone. | society | 4
+volontariato | volunteering | Fa volontariato ogni sabato. | society | 4
+pregiudizio | prejudice | Il pregiudizio nasce dall'ignoranza. | society | 4
+comportamento | behaviour | Il suo comportamento mi ha sorpreso. | society | 3
+appartenenza | belonging | Il senso di appartenenza è forte qui. | society | 5
+
+# Arts and culture
+opera | work; opera | L'opera è esposta agli Uffizi. | arts | 3
+regista | director (film) | Il regista ha vinto un premio. | arts | 4
+trama | plot | La trama è troppo prevedibile. | arts | 4
+personaggio | character | Il personaggio principale è ambiguo. | arts | 3
+romanzo | novel | Il romanzo è ambientato a Trieste. | arts | 3
+poesia | poetry; poem | La poesia è difficile da tradurre. | arts | 3
+capolavoro | masterpiece | È considerato il suo capolavoro. | arts | 4
+critica | criticism; review | La critica ha stroncato il film. | arts | 4
+mostra | exhibition | La mostra chiude domenica. | arts | 3
+patrimonio | heritage; assets | Il patrimonio artistico è immenso. | arts | 4
+
+# Verbs and expressions
+affrontare | to face; to tackle | Dobbiamo affrontare il problema subito. | basics | 3
+sostenere | to support; to claim | Sostiene di non saperne nulla. | basics | 4
+verificare | to verify; to check | Verifica i dati prima di inviare. | basics | 3
+rinviare | to postpone | La partita è stata rinviata. | basics | 4
+prevedere | to foresee; to provide for | Il contratto prevede una penale. | basics | 4
+svolgere | to carry out | Svolge il suo lavoro con cura. | basics | 4
+coinvolgere | to involve | Il progetto coinvolge tre università. | basics | 4
+approfittare | to take advantage | Ha approfittato della situazione. | basics | 4
+rendersi conto | to realize | Mi sono reso conto troppo tardi. | basics | 4
+valere la pena | to be worth it | Vale la pena provare. | basics | 4

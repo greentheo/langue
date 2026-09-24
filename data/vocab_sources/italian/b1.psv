@@ -1,0 +1,131 @@
+# Italian B1 — intermediate vocabulary
+# Format: word | translations (semicolon-separated) | example sentence | category | difficulty (1-5)
+
+# Work and careers
+colloquio | interview | Ho un colloquio di lavoro giovedì. | work | 3
+curriculum | résumé; CV | Ho aggiornato il curriculum ieri. | work | 3
+assumere | to hire; to take on | L'azienda assume dieci persone quest'anno. | work | 3
+licenziare | to fire; to dismiss | Hanno licenziato metà del reparto. | work | 4
+dimettersi | to resign | Si è dimesso dopo cinque anni. | work | 4
+contratto | contract | Il contratto scade a dicembre. | work | 3
+scadenza | deadline; expiry | La scadenza è venerdì prossimo. | work | 3
+progetto | project | Il progetto è in ritardo di due mesi. | work | 3
+obiettivo | goal; objective | Abbiamo raggiunto l'obiettivo trimestrale. | work | 3
+responsabile | responsible; manager | È responsabile della sicurezza. | work | 3
+esperienza | experience | Ho dieci anni di esperienza nel settore. | work | 3
+competenza | skill; competence | Cercano competenze tecniche specifiche. | work | 4
+formazione | training; education | L'azienda offre formazione continua. | work | 4
+sciopero | strike | Domani c'è uno sciopero dei trasporti. | work | 4
+sindacato | trade union | Il sindacato ha respinto la proposta. | work | 4
+
+# Money and society
+tassa | tax | Le tasse aumentano ogni anno. | politics | 3
+bilancio | budget; balance sheet | Il bilancio comunale è in deficit. | business | 4
+risparmio | saving; savings | Ho investito i miei risparmi. | business | 3
+prestito | loan | Ho chiesto un prestito in banca. | business | 3
+mutuo | mortgage | Paghiamo il mutuo da dieci anni. | business | 4
+investire | to invest | Preferisce investire in immobili. | business | 3
+guadagnare | to earn; to gain | Guadagna abbastanza per vivere bene. | business | 3
+spendere | to spend | Spendo troppo in libri. | business | 2
+costoso | expensive | Un albergo così costoso non ci serve. | shopping | 3
+conveniente | affordable; worthwhile | Il treno è più conveniente dell'aereo. | shopping | 3
+
+# Media and technology
+notizia | news; piece of news | La notizia ha sorpreso tutti. | technology | 3
+giornale | newspaper | Leggo il giornale online ogni mattina. | technology | 2
+pubblicità | advertising; advert | La pubblicità interrompe il film. | technology | 3
+schermo | screen | Lo schermo si è rotto ieri. | technology | 3
+tastiera | keyboard | La tastiera non funziona più. | technology | 3
+rete | network; net | La rete è lenta stasera. | technology | 3
+scaricare | to download | Ho scaricato l'applicazione. | technology | 3
+allegato | attachment | Trova il documento in allegato. | technology | 3
+aggiornamento | update | L'aggiornamento richiede dieci minuti. | technology | 4
+password | password | Ho dimenticato la password. | technology | 2
+riservatezza | privacy; confidentiality | La riservatezza dei dati è garantita. | technology | 4
+
+# Opinions and discussion
+opinione | opinion | Secondo la mia opinione, ha ragione. | society | 3
+consiglio | advice; council | Ti do un consiglio sincero. | society | 3
+dubbio | doubt | Ho ancora qualche dubbio. | abstract | 3
+motivo | reason | Non c'è motivo di preoccuparsi. | abstract | 3
+scopo | purpose; aim | Lo scopo dell'incontro è chiarire tutto. | abstract | 4
+soluzione | solution | Abbiamo trovato una soluzione semplice. | abstract | 3
+problema | problem | Il problema è più complesso del previsto. | abstract | 2
+vantaggio | advantage | Il vantaggio principale è il costo. | abstract | 3
+svantaggio | disadvantage | L'unico svantaggio è la distanza. | abstract | 3
+scelta | choice | È stata una scelta difficile. | abstract | 3
+decidere | to decide | Dobbiamo decidere entro domani. | abstract | 2
+discutere | to discuss; to argue | Abbiamo discusso per ore. | society | 3
+convincere | to convince | Non riesco a convincerlo. | society | 3
+suggerire | to suggest | Ti suggerisco di partire presto. | society | 3
+ammettere | to admit | Devo ammettere che avevi ragione. | society | 3
+rifiutare | to refuse; to reject | Ha rifiutato l'offerta. | society | 3
+
+# Emotions and character
+orgoglioso | proud | Sono orgoglioso di mio figlio. | emotions | 3
+deluso | disappointed | Sono rimasto deluso dal servizio. | emotions | 3
+sorpreso | surprised | Fu sorpreso dalla notizia. | emotions | 3
+geloso | jealous | È geloso del suo successo. | emotions | 3
+timido | shy | Da bambino era molto timido. | emotions | 3
+generoso | generous | È sempre stato generoso con tutti. | emotions | 3
+testardo | stubborn | Mio padre è terribilmente testardo. | emotions | 4
+affidabile | reliable | Cerchiamo qualcuno di affidabile. | emotions | 4
+sincero | sincere; honest | Preferisco una risposta sincera. | emotions | 3
+egoista | selfish | È un comportamento egoista. | emotions | 3
+fiducia | trust; confidence | Ho piena fiducia in lei. | emotions | 3
+speranza | hope | Non ho perso la speranza. | emotions | 3
+paura | fear | Ha paura di volare. | emotions | 2
+rabbia | anger | La rabbia gli passò subito. | emotions | 3
+sollievo | relief | Che sollievo sentire la tua voce. | emotions | 4
+
+# Health and lifestyle
+dieta | diet | Sto seguendo una dieta equilibrata. | health | 3
+allenamento | training; workout | L'allenamento dura un'ora. | sports | 3
+riabilitazione | rehabilitation | La riabilitazione durerà sei mesi. | health | 4
+intervento | operation; intervention | L'intervento è andato bene. | health | 4
+diagnosi | diagnosis | La diagnosi è arrivata dopo una settimana. | health | 4
+sintomo | symptom | Il primo sintomo è stata la stanchezza. | health | 4
+guarire | to recover; to heal | È guarito completamente. | health | 3
+prevenzione | prevention | La prevenzione è meglio della cura. | health | 4
+stress | stress | Lo stress al lavoro è aumentato. | health | 3
+benessere | wellbeing | Il benessere dei dipendenti conta. | health | 4
+
+# Environment
+ambiente | environment | Dobbiamo proteggere l'ambiente. | nature | 3
+inquinamento | pollution | L'inquinamento in città è peggiorato. | nature | 4
+riciclaggio | recycling | Il riciclaggio della plastica è obbligatorio. | nature | 4
+rifiuti | waste; rubbish | I rifiuti vengono raccolti il martedì. | nature | 4
+clima | climate | Il clima sta cambiando rapidamente. | nature | 3
+foresta | forest | La foresta copre metà della regione. | nature | 3
+fiume | river | Il fiume è straripato dopo la pioggia. | nature | 3
+campagna | countryside; campaign | Passiamo il weekend in campagna. | nature | 3
+risorsa | resource | L'acqua è una risorsa limitata. | nature | 4
+sostenibile | sustainable | Cercano un modello di sviluppo sostenibile. | nature | 4
+
+# Travel and culture
+itinerario | itinerary | L'itinerario prevede cinque città. | travel | 4
+dogana | customs | Siamo passati dalla dogana in dieci minuti. | travel | 4
+bagaglio | luggage | Il bagaglio è andato perso. | travel | 3
+coincidenza | connection (transport) | Ho perso la coincidenza a Milano. | travel | 4
+ritardo | delay | Il volo ha due ore di ritardo. | travel | 3
+noleggiare | to rent; to hire | Abbiamo noleggiato una macchina. | travel | 3
+tradizione | tradition | È una tradizione di famiglia. | society | 3
+usanza | custom | Questa usanza risale al Medioevo. | society | 4
+festa | festival; party | La festa del paese è ad agosto. | society | 2
+sagra | food festival | Alla sagra si mangia benissimo. | food | 4
+ricetta | recipe | Questa ricetta è di mia nonna. | food | 3
+ingrediente | ingredient | Manca un ingrediente fondamentale. | food | 3
+assaggiare | to taste | Vuoi assaggiare il dolce? | food | 3
+cuocere | to cook; to bake | Cuoci la pasta per otto minuti. | food | 3
+
+# Useful verbs
+riuscire | to manage; to succeed | Non riesco a capire questa frase. | basics | 3
+smettere | to stop; to quit | Ha smesso di fumare l'anno scorso. | basics | 3
+provocare | to cause; to provoke | La pioggia ha provocato molti danni. | basics | 4
+migliorare | to improve | Il mio italiano è migliorato molto. | basics | 3
+peggiorare | to worsen | La situazione è peggiorata. | basics | 3
+evitare | to avoid | Cerco di evitare il traffico. | basics | 3
+raggiungere | to reach; to achieve | Abbiamo raggiunto la cima. | basics | 3
+scegliere | to choose | Scegli tu il ristorante. | basics | 2
+accorgersi | to notice; to realize | Non mi sono accorto dell'errore. | basics | 4
+sembrare | to seem | Sembra più giovane della sua età. | basics | 2

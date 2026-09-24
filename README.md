@@ -1,6 +1,41 @@
-# Langue - CLI Language Learning Assistant
+# Langue - AI Language Learning
 
-Langue is a command-line language learning application powered by AI. Learn languages through interactive exercises and conversations right in your terminal with a rad 80's-inspired interface.
+Langue is an AI language-learning app in two forms that share one vocabulary set:
+
+- **CLI** (`langue/`) — Python, runs in your terminal with a rad 80's-inspired
+  interface. Works fully offline against Ollama.
+- **Web** (`web/`) — TypeScript/Next.js, styled like an Apple IIe, deployable to
+  Railway with invite-only accounts so friends can use it. See
+  [web/README.md](web/README.md).
+
+## Languages
+
+| Language | Levels | Unique words |
+|---|---|---|
+| French | A1–C2 | 650 |
+| Portuguese | A1–C2 | 636 |
+| Spanish | A1–C2 | 632 |
+| Italian | A1–C2 | 631 |
+
+Vocabulary lives in `data/flashcard_libraries/<language>/<level>.json`, but
+those files are **generated**. Edit the pipe-separated sources in
+`data/vocab_sources/<language>/<level>.psv` and rebuild:
+
+```bash
+python -m langue.tools.vocab_build            # regenerate JSON from sources
+python -m langue.tools.vocab_build --check    # fail if JSON is stale
+python -m langue.tools.vocab_validate         # full validation
+```
+
+`vocab_validate` enforces the invariants the activities assume but never
+checked: schema and category conformance, no duplicate word within a level, no
+word at two levels (only the lowest is reachable, so the higher sense would be
+invisible), and no library that is really another language mislabelled.
+
+A German library used to exist. It contained ten Spanish words labelled German —
+`create_offline_library` falls back to Spanish for any language it does not
+recognise — so it was removed rather than left to teach the wrong language.
+See issue #27.
 
 ## Features
 

@@ -3,9 +3,11 @@
     "language": "french",
     "level": "b2",
     "version": "1.0",
-    "word_count": 90,
+    "word_count": 123,
     "created_at": "2025-09-11T23:04:43.474666",
-    "description": "Common B2 level French vocabulary"
+    "description": "Upper-intermediate (B2) French vocabulary: abstract topics and technical discussion",
+    "source": "data/vocab_sources/french/b2.psv",
+    "generated_by": "langue.tools.vocab_build"
   },
   "words": [
     {
@@ -178,19 +180,6 @@
       "difficulty": 4
     },
     {
-      "word": "résilience",
-      "translations": [
-        "resilience",
-        "adaptability",
-        "toughness"
-      ],
-      "examples": [
-        "La résilience de cette entreprise face à la crise économique a été remarquable."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
       "word": "équilibre",
       "translations": [
         "balance",
@@ -347,240 +336,6 @@
       "difficulty": 4
     },
     {
-      "word": "réflexion",
-      "translations": [
-        "reflection",
-        "contemplation",
-        "consideration"
-      ],
-      "examples": [
-        "Cette période de réflexion l'a aidé à prendre la bonne décision."
-      ],
-      "category": "daily_routines",
-      "difficulty": 4
-    },
-    {
-      "word": "objectivité",
-      "translations": [
-        "objectivity",
-        "impartiality",
-        "neutrality"
-      ],
-      "examples": [
-        "Son objectivité dans l'analyse de la situation a été très appréciée par ses collègues."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "persévérance",
-      "translations": [
-        "perseverance",
-        "persistence",
-        "determination"
-      ],
-      "examples": [
-        "Sa persévérance face aux défis l'a finalement conduit au succès."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "intégrité",
-      "translations": [
-        "integrity",
-        "honesty",
-        "moral principles"
-      ],
-      "examples": [
-        "Son intégrité est un atout majeur dans son travail et ses relations professionnelles."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "adaptabilité",
-      "translations": [
-        "adaptability",
-        "flexibility",
-        "versatility"
-      ],
-      "examples": [
-        "Son adaptabilité lui a permis de s'ajuster facilement aux changements dans son entreprise."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "résolution",
-      "translations": [
-        "resolution",
-        "determination",
-        "perseverance"
-      ],
-      "examples": [
-        "Sa résolution à atteindre ses objectifs l'a aidé à surmonter tous les obstacles."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "indépendance",
-      "translations": [
-        "independence",
-        "self-reliance",
-        "autonomy"
-      ],
-      "examples": [
-        "Elle a fait preuve d'une grande indépendance dans la gestion de son projet."
-      ],
-      "category": "daily_routines",
-      "difficulty": 4
-    },
-    {
-      "word": "créativité",
-      "translations": [
-        "creativity",
-        "innovation",
-        "originality"
-      ],
-      "examples": [
-        "Sa créativité lui a permis de proposer des solutions uniques à ce problème."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "autonomie",
-      "translations": [
-        "autonomy",
-        "independence",
-        "self-sufficiency"
-      ],
-      "examples": [
-        "Son autonomie dans la gestion de son projet lui a permis de progresser rapidement."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "discernement",
-      "translations": [
-        "discernment",
-        "judgment",
-        "insight"
-      ],
-      "examples": [
-        "Son discernement lui a permis de prendre la bonne décision dans cette situation complexe."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "curiosité",
-      "translations": [
-        "curiosity",
-        "inquisitiveness",
-        "thirst for knowledge"
-      ],
-      "examples": [
-        "Sa curiosité l'a poussé à explorer de nouveaux domaines passionnants."
-      ],
-      "category": "education",
-      "difficulty": 3
-    },
-    {
-      "word": "intuition",
-      "translations": [
-        "intuition",
-        "instinct",
-        "gut feeling"
-      ],
-      "examples": [
-        "Son intuition l'a guidé dans le bon choix à faire."
-      ],
-      "category": "emotions",
-      "difficulty": 4
-    },
-    {
-      "word": "responsabilité",
-      "translations": [
-        "responsibility",
-        "accountability",
-        "liability"
-      ],
-      "examples": [
-        "Elle a fait preuve d'une grande responsabilité dans la gestion de ce dossier important."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "communication",
-      "translations": [
-        "communication",
-        "expression",
-        "interaction"
-      ],
-      "examples": [
-        "Une bonne communication est essentielle pour travailler efficacement en équipe."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "équilibre",
-      "translations": [
-        "balance",
-        "equilibrium",
-        "harmony"
-      ],
-      "examples": [
-        "Trouver un équilibre entre sa vie professionnelle et personnelle est un défi constant."
-      ],
-      "category": "daily_routines",
-      "difficulty": 4
-    },
-    {
-      "word": "engagement",
-      "translations": [
-        "commitment",
-        "dedication",
-        "involvement"
-      ],
-      "examples": [
-        "Son engagement envers l'entreprise a été reconnu par ses supérieurs."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "motivation",
-      "translations": [
-        "motivation",
-        "drive",
-        "enthusiasm"
-      ],
-      "examples": [
-        "Sa motivation constante l'a aidé à surmonter les défis de ce projet exigeant."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "initiative",
-      "translations": [
-        "initiative",
-        "proactivity",
-        "self-motivation"
-      ],
-      "examples": [
-        "Son initiative a été remarquée et a contribué à son avancement dans l'entreprise."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
       "word": "objectivité",
       "translations": [
         "objectivity",
@@ -602,84 +357,6 @@
       ],
       "examples": [
         "Son intégrité est un atout majeur dans son travail et ses relations professionnelles."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "leadership",
-      "translations": [
-        "leadership",
-        "influence",
-        "authority"
-      ],
-      "examples": [
-        "Son leadership a été déterminant pour motiver son équipe à atteindre leurs objectifs."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "collaboration",
-      "translations": [
-        "collaboration",
-        "teamwork",
-        "cooperation"
-      ],
-      "examples": [
-        "La collaboration étroite entre les équipes a été essentielle pour mener à bien ce projet."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "innovation",
-      "translations": [
-        "innovation",
-        "creativity",
-        "originality"
-      ],
-      "examples": [
-        "L'innovation est au cœur de la stratégie de cette entreprise pour rester compétitive."
-      ],
-      "category": "work",
-      "difficulty": 4
-    },
-    {
-      "word": "empathie",
-      "translations": [
-        "empathy",
-        "compassion",
-        "understanding"
-      ],
-      "examples": [
-        "L'empathie dont il a fait preuve a été très appréciée par ses collègues."
-      ],
-      "category": "emotions",
-      "difficulty": 4
-    },
-    {
-      "word": "épanouissement",
-      "translations": [
-        "fulfillment",
-        "self-actualization",
-        "blossoming"
-      ],
-      "examples": [
-        "Son épanouissement personnel l'a aidé à surmonter les défis de sa carrière."
-      ],
-      "category": "emotions",
-      "difficulty": 4
-    },
-    {
-      "word": "polyvalence",
-      "translations": [
-        "versatility",
-        "adaptability",
-        "multiskilled"
-      ],
-      "examples": [
-        "Grâce à sa polyvalence, elle a pu changer de poste facilement au sein de l'entreprise."
       ],
       "category": "work",
       "difficulty": 4
@@ -1177,6 +854,653 @@
       ],
       "category": "food",
       "difficulty": 3
+    },
+    {
+      "word": "gouvernement",
+      "translations": [
+        "government"
+      ],
+      "examples": [
+        "Le gouvernement a adopté la réforme."
+      ],
+      "category": "politics",
+      "difficulty": 3
+    },
+    {
+      "word": "loi",
+      "translations": [
+        "law"
+      ],
+      "examples": [
+        "La loi entre en vigueur en janvier."
+      ],
+      "category": "politics",
+      "difficulty": 3
+    },
+    {
+      "word": "réforme",
+      "translations": [
+        "reform"
+      ],
+      "examples": [
+        "La réforme de l'école est contestée."
+      ],
+      "category": "politics",
+      "difficulty": 4
+    },
+    {
+      "word": "élection",
+      "translations": [
+        "election"
+      ],
+      "examples": [
+        "Les élections auront lieu au printemps."
+      ],
+      "category": "politics",
+      "difficulty": 3
+    },
+    {
+      "word": "citoyenneté",
+      "translations": [
+        "citizenship"
+      ],
+      "examples": [
+        "Il a obtenu la citoyenneté française."
+      ],
+      "category": "politics",
+      "difficulty": 4
+    },
+    {
+      "word": "droit",
+      "translations": [
+        "right",
+        "law"
+      ],
+      "examples": [
+        "Le droit de vote est garanti."
+      ],
+      "category": "politics",
+      "difficulty": 3
+    },
+    {
+      "word": "démocratie",
+      "translations": [
+        "democracy"
+      ],
+      "examples": [
+        "La démocratie exige la participation de tous."
+      ],
+      "category": "politics",
+      "difficulty": 3
+    },
+    {
+      "word": "pouvoir",
+      "translations": [
+        "power"
+      ],
+      "examples": [
+        "Le pouvoir exécutif revient au gouvernement."
+      ],
+      "category": "politics",
+      "difficulty": 3
+    },
+    {
+      "word": "corruption",
+      "translations": [
+        "corruption"
+      ],
+      "examples": [
+        "L'enquête porte sur des faits de corruption."
+      ],
+      "category": "politics",
+      "difficulty": 4
+    },
+    {
+      "word": "justice",
+      "translations": [
+        "justice"
+      ],
+      "examples": [
+        "Les victimes réclament justice."
+      ],
+      "category": "politics",
+      "difficulty": 3
+    },
+    {
+      "word": "tribunal",
+      "translations": [
+        "court"
+      ],
+      "examples": [
+        "Le tribunal a rendu son jugement."
+      ],
+      "category": "politics",
+      "difficulty": 4
+    },
+    {
+      "word": "mandat",
+      "translations": [
+        "term of office",
+        "mandate"
+      ],
+      "examples": [
+        "Son mandat s'achève l'an prochain."
+      ],
+      "category": "politics",
+      "difficulty": 4
+    },
+    {
+      "word": "concurrence",
+      "translations": [
+        "competition"
+      ],
+      "examples": [
+        "La concurrence est féroce dans ce secteur."
+      ],
+      "category": "business",
+      "difficulty": 4
+    },
+    {
+      "word": "chiffre d'affaires",
+      "translations": [
+        "turnover",
+        "revenue"
+      ],
+      "examples": [
+        "Le chiffre d'affaires a progressé de dix pour cent."
+      ],
+      "category": "business",
+      "difficulty": 5
+    },
+    {
+      "word": "croissance",
+      "translations": [
+        "growth"
+      ],
+      "examples": [
+        "La croissance économique a ralenti."
+      ],
+      "category": "business",
+      "difficulty": 3
+    },
+    {
+      "word": "crise",
+      "translations": [
+        "crisis"
+      ],
+      "examples": [
+        "La crise a frappé tout le secteur."
+      ],
+      "category": "business",
+      "difficulty": 3
+    },
+    {
+      "word": "dette",
+      "translations": [
+        "debt"
+      ],
+      "examples": [
+        "La dette publique continue d'augmenter."
+      ],
+      "category": "business",
+      "difficulty": 4
+    },
+    {
+      "word": "offre",
+      "translations": [
+        "supply",
+        "offer"
+      ],
+      "examples": [
+        "L'offre est valable jusqu'à dimanche."
+      ],
+      "category": "business",
+      "difficulty": 3
+    },
+    {
+      "word": "demande",
+      "translations": [
+        "demand",
+        "request"
+      ],
+      "examples": [
+        "La demande dépasse l'offre."
+      ],
+      "category": "business",
+      "difficulty": 3
+    },
+    {
+      "word": "investissement",
+      "translations": [
+        "investment"
+      ],
+      "examples": [
+        "L'investissement sera amorti en trois ans."
+      ],
+      "category": "business",
+      "difficulty": 4
+    },
+    {
+      "word": "entrepreneur",
+      "translations": [
+        "entrepreneur"
+      ],
+      "examples": [
+        "C'est un entrepreneur du secteur textile."
+      ],
+      "category": "business",
+      "difficulty": 4
+    },
+    {
+      "word": "faillite",
+      "translations": [
+        "bankruptcy"
+      ],
+      "examples": [
+        "L'entreprise s'est déclarée en faillite."
+      ],
+      "category": "business",
+      "difficulty": 4
+    },
+    {
+      "word": "rentabilité",
+      "translations": [
+        "profitability"
+      ],
+      "examples": [
+        "La rentabilité du projet reste incertaine."
+      ],
+      "category": "business",
+      "difficulty": 5
+    },
+    {
+      "word": "négocier",
+      "translations": [
+        "to negotiate"
+      ],
+      "examples": [
+        "Nous négocions encore les conditions."
+      ],
+      "category": "business",
+      "difficulty": 4
+    },
+    {
+      "word": "recherche",
+      "translations": [
+        "research"
+      ],
+      "examples": [
+        "La recherche est financée par l'université."
+      ],
+      "category": "science",
+      "difficulty": 3
+    },
+    {
+      "word": "expérience",
+      "translations": [
+        "experiment",
+        "experience"
+      ],
+      "examples": [
+        "L'expérience a donné des résultats inattendus."
+      ],
+      "category": "science",
+      "difficulty": 3
+    },
+    {
+      "word": "donnée",
+      "translations": [
+        "piece of data"
+      ],
+      "examples": [
+        "Les données confirment la tendance."
+      ],
+      "category": "science",
+      "difficulty": 3
+    },
+    {
+      "word": "preuve",
+      "translations": [
+        "proof",
+        "evidence"
+      ],
+      "examples": [
+        "Nous n'avons pas de preuves suffisantes."
+      ],
+      "category": "science",
+      "difficulty": 3
+    },
+    {
+      "word": "découverte",
+      "translations": [
+        "discovery"
+      ],
+      "examples": [
+        "Cette découverte a transformé le secteur."
+      ],
+      "category": "science",
+      "difficulty": 3
+    },
+    {
+      "word": "algorithme",
+      "translations": [
+        "algorithm"
+      ],
+      "examples": [
+        "L'algorithme sélectionne les contenus."
+      ],
+      "category": "technology",
+      "difficulty": 4
+    },
+    {
+      "word": "intelligence artificielle",
+      "translations": [
+        "artificial intelligence"
+      ],
+      "examples": [
+        "L'intelligence artificielle est partout désormais."
+      ],
+      "category": "technology",
+      "difficulty": 4
+    },
+    {
+      "word": "base de données",
+      "translations": [
+        "database"
+      ],
+      "examples": [
+        "La base de données contient un million d'entrées."
+      ],
+      "category": "technology",
+      "difficulty": 4
+    },
+    {
+      "word": "brevet",
+      "translations": [
+        "patent"
+      ],
+      "examples": [
+        "Ils ont déposé un brevet."
+      ],
+      "category": "technology",
+      "difficulty": 5
+    },
+    {
+      "word": "prototype",
+      "translations": [
+        "prototype"
+      ],
+      "examples": [
+        "Le prototype fonctionne déjà."
+      ],
+      "category": "technology",
+      "difficulty": 4
+    },
+    {
+      "word": "réseau",
+      "translations": [
+        "network"
+      ],
+      "examples": [
+        "Le réseau est lent ce soir."
+      ],
+      "category": "technology",
+      "difficulty": 3
+    },
+    {
+      "word": "écran",
+      "translations": [
+        "screen"
+      ],
+      "examples": [
+        "L'écran s'est cassé hier."
+      ],
+      "category": "technology",
+      "difficulty": 3
+    },
+    {
+      "word": "télécharger",
+      "translations": [
+        "to download"
+      ],
+      "examples": [
+        "J'ai téléchargé l'application."
+      ],
+      "category": "technology",
+      "difficulty": 3
+    },
+    {
+      "word": "mot de passe",
+      "translations": [
+        "password"
+      ],
+      "examples": [
+        "J'ai oublié mon mot de passe."
+      ],
+      "category": "technology",
+      "difficulty": 3
+    },
+    {
+      "word": "actualité",
+      "translations": [
+        "news",
+        "current affairs"
+      ],
+      "examples": [
+        "L'actualité est dominée par ce procès."
+      ],
+      "category": "technology",
+      "difficulty": 4
+    },
+    {
+      "word": "publicité",
+      "translations": [
+        "advertising"
+      ],
+      "examples": [
+        "La publicité interrompt le film."
+      ],
+      "category": "technology",
+      "difficulty": 3
+    },
+    {
+      "word": "source",
+      "translations": [
+        "source"
+      ],
+      "examples": [
+        "La source n'est pas fiable."
+      ],
+      "category": "language",
+      "difficulty": 4
+    },
+    {
+      "word": "malentendu",
+      "translations": [
+        "misunderstanding"
+      ],
+      "examples": [
+        "Ce n'était qu'un malentendu."
+      ],
+      "category": "language",
+      "difficulty": 4
+    },
+    {
+      "word": "nuance",
+      "translations": [
+        "nuance"
+      ],
+      "examples": [
+        "La traduction perd une nuance importante."
+      ],
+      "category": "language",
+      "difficulty": 4
+    },
+    {
+      "word": "inégalité",
+      "translations": [
+        "inequality"
+      ],
+      "examples": [
+        "Les inégalités se sont creusées."
+      ],
+      "category": "society",
+      "difficulty": 4
+    },
+    {
+      "word": "solidarité",
+      "translations": [
+        "solidarity"
+      ],
+      "examples": [
+        "La solidarité du quartier a été immense."
+      ],
+      "category": "society",
+      "difficulty": 4
+    },
+    {
+      "word": "intégration",
+      "translations": [
+        "integration"
+      ],
+      "examples": [
+        "L'intégration demande du temps et des moyens."
+      ],
+      "category": "society",
+      "difficulty": 4
+    },
+    {
+      "word": "génération",
+      "translations": [
+        "generation"
+      ],
+      "examples": [
+        "Sa génération a connu les Trente Glorieuses."
+      ],
+      "category": "society",
+      "difficulty": 3
+    },
+    {
+      "word": "sondage",
+      "translations": [
+        "survey",
+        "poll"
+      ],
+      "examples": [
+        "Le sondage a interrogé mille personnes."
+      ],
+      "category": "society",
+      "difficulty": 4
+    },
+    {
+      "word": "bénévolat",
+      "translations": [
+        "volunteering"
+      ],
+      "examples": [
+        "Elle fait du bénévolat tous les samedis."
+      ],
+      "category": "society",
+      "difficulty": 4
+    },
+    {
+      "word": "préjugé",
+      "translations": [
+        "prejudice"
+      ],
+      "examples": [
+        "Le préjugé naît de l'ignorance."
+      ],
+      "category": "society",
+      "difficulty": 4
+    },
+    {
+      "word": "comportement",
+      "translations": [
+        "behaviour"
+      ],
+      "examples": [
+        "Son comportement m'a surpris."
+      ],
+      "category": "society",
+      "difficulty": 3
+    },
+    {
+      "word": "œuvre",
+      "translations": [
+        "work (of art)"
+      ],
+      "examples": [
+        "L'œuvre est exposée au Louvre."
+      ],
+      "category": "arts",
+      "difficulty": 3
+    },
+    {
+      "word": "intrigue",
+      "translations": [
+        "plot"
+      ],
+      "examples": [
+        "L'intrigue est trop prévisible."
+      ],
+      "category": "arts",
+      "difficulty": 4
+    },
+    {
+      "word": "personnage",
+      "translations": [
+        "character"
+      ],
+      "examples": [
+        "Le personnage principal est ambigu."
+      ],
+      "category": "arts",
+      "difficulty": 3
+    },
+    {
+      "word": "roman",
+      "translations": [
+        "novel"
+      ],
+      "examples": [
+        "Le roman se déroule à Marseille."
+      ],
+      "category": "arts",
+      "difficulty": 3
+    },
+    {
+      "word": "poésie",
+      "translations": [
+        "poetry"
+      ],
+      "examples": [
+        "La poésie est difficile à traduire."
+      ],
+      "category": "arts",
+      "difficulty": 3
+    },
+    {
+      "word": "chef-d'œuvre",
+      "translations": [
+        "masterpiece"
+      ],
+      "examples": [
+        "On tient ce tableau pour son chef-d'œuvre."
+      ],
+      "category": "arts",
+      "difficulty": 4
+    },
+    {
+      "word": "patrimoine",
+      "translations": [
+        "heritage"
+      ],
+      "examples": [
+        "Le patrimoine artistique du pays est immense."
+      ],
+      "category": "arts",
+      "difficulty": 4
     }
   ]
 }

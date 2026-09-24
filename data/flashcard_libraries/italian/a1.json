@@ -1,0 +1,1397 @@
+{
+  "metadata": {
+    "language": "italian",
+    "level": "a1",
+    "version": "1.0",
+    "word_count": 123,
+    "created_at": "2026-08-12T22:23:06.944963+00:00",
+    "description": "Beginner (A1) Italian vocabulary: everyday expressions and basic phrases",
+    "source": "data/vocab_sources/italian/a1.psv",
+    "generated_by": "langue.tools.vocab_build"
+  },
+  "words": [
+    {
+      "word": "ciao",
+      "translations": [
+        "hello",
+        "hi",
+        "bye"
+      ],
+      "examples": [
+        "Ciao, come stai?"
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "buongiorno",
+      "translations": [
+        "good morning",
+        "good day"
+      ],
+      "examples": [
+        "Buongiorno, signora Rossi."
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "buonasera",
+      "translations": [
+        "good evening"
+      ],
+      "examples": [
+        "Buonasera, un tavolo per due."
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "buonanotte",
+      "translations": [
+        "good night"
+      ],
+      "examples": [
+        "Buonanotte, a domani."
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "arrivederci",
+      "translations": [
+        "goodbye"
+      ],
+      "examples": [
+        "Arrivederci e grazie di tutto."
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "grazie",
+      "translations": [
+        "thank you",
+        "thanks"
+      ],
+      "examples": [
+        "Grazie mille per il tuo aiuto."
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "prego",
+      "translations": [
+        "you're welcome",
+        "please go ahead"
+      ],
+      "examples": [
+        "Prego, si accomodi."
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "per favore",
+      "translations": [
+        "please"
+      ],
+      "examples": [
+        "Un caffè, per favore."
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "scusi",
+      "translations": [
+        "excuse me",
+        "sorry (formal)"
+      ],
+      "examples": [
+        "Scusi, dov'è la stazione?"
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "piacere",
+      "translations": [
+        "nice to meet you",
+        "pleasure"
+      ],
+      "examples": [
+        "Piacere di conoscerti."
+      ],
+      "category": "greetings",
+      "difficulty": 1
+    },
+    {
+      "word": "salve",
+      "translations": [
+        "hello (neutral)"
+      ],
+      "examples": [
+        "Salve, cerco il dottor Bianchi."
+      ],
+      "category": "greetings",
+      "difficulty": 2
+    },
+    {
+      "word": "benvenuto",
+      "translations": [
+        "welcome"
+      ],
+      "examples": [
+        "Benvenuto a Roma!"
+      ],
+      "category": "greetings",
+      "difficulty": 2
+    },
+    {
+      "word": "sì",
+      "translations": [
+        "yes"
+      ],
+      "examples": [
+        "Sì, capisco."
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "no",
+      "translations": [
+        "no"
+      ],
+      "examples": [
+        "No, grazie."
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "forse",
+      "translations": [
+        "maybe",
+        "perhaps"
+      ],
+      "examples": [
+        "Forse domani andiamo al mare."
+      ],
+      "category": "basics",
+      "difficulty": 2
+    },
+    {
+      "word": "molto",
+      "translations": [
+        "very",
+        "a lot"
+      ],
+      "examples": [
+        "Sono molto stanco oggi."
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "poco",
+      "translations": [
+        "little",
+        "not much"
+      ],
+      "examples": [
+        "Parlo poco italiano."
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "anche",
+      "translations": [
+        "also",
+        "too"
+      ],
+      "examples": [
+        "Anche io vorrei venire."
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "ma",
+      "translations": [
+        "but"
+      ],
+      "examples": [
+        "Vorrei uscire, ma piove."
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "perché",
+      "translations": [
+        "why",
+        "because"
+      ],
+      "examples": [
+        "Perché non vieni con noi?"
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "come",
+      "translations": [
+        "how",
+        "like"
+      ],
+      "examples": [
+        "Come si dice in italiano?"
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "dove",
+      "translations": [
+        "where"
+      ],
+      "examples": [
+        "Dove abiti?"
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "quando",
+      "translations": [
+        "when"
+      ],
+      "examples": [
+        "Quando arriva il treno?"
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "chi",
+      "translations": [
+        "who"
+      ],
+      "examples": [
+        "Chi è quella ragazza?"
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "cosa",
+      "translations": [
+        "what",
+        "thing"
+      ],
+      "examples": [
+        "Cosa fai stasera?"
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "quanto",
+      "translations": [
+        "how much",
+        "how many"
+      ],
+      "examples": [
+        "Quanto costa questo?"
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "bene",
+      "translations": [
+        "well",
+        "good"
+      ],
+      "examples": [
+        "Sto bene, grazie."
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "male",
+      "translations": [
+        "badly",
+        "bad"
+      ],
+      "examples": [
+        "Oggi mi sento male."
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "sempre",
+      "translations": [
+        "always"
+      ],
+      "examples": [
+        "Bevo sempre un caffè la mattina."
+      ],
+      "category": "basics",
+      "difficulty": 2
+    },
+    {
+      "word": "mai",
+      "translations": [
+        "never"
+      ],
+      "examples": [
+        "Non sono mai stato in Sicilia."
+      ],
+      "category": "basics",
+      "difficulty": 2
+    },
+    {
+      "word": "adesso",
+      "translations": [
+        "now"
+      ],
+      "examples": [
+        "Adesso devo andare."
+      ],
+      "category": "basics",
+      "difficulty": 2
+    },
+    {
+      "word": "qui",
+      "translations": [
+        "here"
+      ],
+      "examples": [
+        "Il ristorante è qui vicino."
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "uno",
+      "translations": [
+        "one"
+      ],
+      "examples": [
+        "Ho solo uno zaino."
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "due",
+      "translations": [
+        "two"
+      ],
+      "examples": [
+        "Vorrei due biglietti."
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "tre",
+      "translations": [
+        "three"
+      ],
+      "examples": [
+        "Ci sono tre libri sul tavolo."
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "quattro",
+      "translations": [
+        "four"
+      ],
+      "examples": [
+        "La riunione è alle quattro."
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "cinque",
+      "translations": [
+        "five"
+      ],
+      "examples": [
+        "Abito al quinto piano, numero cinque."
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "sei",
+      "translations": [
+        "six"
+      ],
+      "examples": [
+        "Mi alzo alle sei ogni mattina."
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "sette",
+      "translations": [
+        "seven"
+      ],
+      "examples": [
+        "La settimana ha sette giorni."
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "otto",
+      "translations": [
+        "eight"
+      ],
+      "examples": [
+        "Il negozio apre alle otto."
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "nove",
+      "translations": [
+        "nine"
+      ],
+      "examples": [
+        "Ho nove cugini."
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "dieci",
+      "translations": [
+        "ten"
+      ],
+      "examples": [
+        "Costa dieci euro."
+      ],
+      "category": "numbers",
+      "difficulty": 1
+    },
+    {
+      "word": "venti",
+      "translations": [
+        "twenty"
+      ],
+      "examples": [
+        "Ho venti minuti di pausa."
+      ],
+      "category": "numbers",
+      "difficulty": 2
+    },
+    {
+      "word": "cento",
+      "translations": [
+        "hundred"
+      ],
+      "examples": [
+        "Il libro ha cento pagine."
+      ],
+      "category": "numbers",
+      "difficulty": 2
+    },
+    {
+      "word": "mille",
+      "translations": [
+        "thousand"
+      ],
+      "examples": [
+        "Questa città ha mille anni di storia."
+      ],
+      "category": "numbers",
+      "difficulty": 2
+    },
+    {
+      "word": "primo",
+      "translations": [
+        "first"
+      ],
+      "examples": [
+        "È il mio primo giorno di lavoro."
+      ],
+      "category": "numbers",
+      "difficulty": 2
+    },
+    {
+      "word": "famiglia",
+      "translations": [
+        "family"
+      ],
+      "examples": [
+        "La mia famiglia è numerosa."
+      ],
+      "category": "family",
+      "difficulty": 1
+    },
+    {
+      "word": "madre",
+      "translations": [
+        "mother"
+      ],
+      "examples": [
+        "Mia madre cucina benissimo."
+      ],
+      "category": "family",
+      "difficulty": 1
+    },
+    {
+      "word": "padre",
+      "translations": [
+        "father"
+      ],
+      "examples": [
+        "Mio padre lavora in banca."
+      ],
+      "category": "family",
+      "difficulty": 1
+    },
+    {
+      "word": "figlio",
+      "translations": [
+        "son",
+        "child"
+      ],
+      "examples": [
+        "Suo figlio ha cinque anni."
+      ],
+      "category": "family",
+      "difficulty": 1
+    },
+    {
+      "word": "figlia",
+      "translations": [
+        "daughter"
+      ],
+      "examples": [
+        "La loro figlia studia medicina."
+      ],
+      "category": "family",
+      "difficulty": 1
+    },
+    {
+      "word": "fratello",
+      "translations": [
+        "brother"
+      ],
+      "examples": [
+        "Ho un fratello più grande."
+      ],
+      "category": "family",
+      "difficulty": 1
+    },
+    {
+      "word": "sorella",
+      "translations": [
+        "sister"
+      ],
+      "examples": [
+        "Mia sorella vive a Milano."
+      ],
+      "category": "family",
+      "difficulty": 1
+    },
+    {
+      "word": "nonno",
+      "translations": [
+        "grandfather"
+      ],
+      "examples": [
+        "Mio nonno racconta belle storie."
+      ],
+      "category": "family",
+      "difficulty": 2
+    },
+    {
+      "word": "nonna",
+      "translations": [
+        "grandmother"
+      ],
+      "examples": [
+        "La nonna prepara la pasta a mano."
+      ],
+      "category": "family",
+      "difficulty": 2
+    },
+    {
+      "word": "marito",
+      "translations": [
+        "husband"
+      ],
+      "examples": [
+        "Suo marito è insegnante."
+      ],
+      "category": "family",
+      "difficulty": 2
+    },
+    {
+      "word": "moglie",
+      "translations": [
+        "wife"
+      ],
+      "examples": [
+        "Mia moglie ama viaggiare."
+      ],
+      "category": "family",
+      "difficulty": 2
+    },
+    {
+      "word": "amico",
+      "translations": [
+        "friend"
+      ],
+      "examples": [
+        "Vado al cinema con un amico."
+      ],
+      "category": "family",
+      "difficulty": 1
+    },
+    {
+      "word": "bambino",
+      "translations": [
+        "child",
+        "little boy"
+      ],
+      "examples": [
+        "Il bambino gioca in giardino."
+      ],
+      "category": "family",
+      "difficulty": 1
+    },
+    {
+      "word": "ragazza",
+      "translations": [
+        "girl",
+        "girlfriend"
+      ],
+      "examples": [
+        "Quella ragazza è la mia vicina."
+      ],
+      "category": "family",
+      "difficulty": 1
+    },
+    {
+      "word": "uomo",
+      "translations": [
+        "man"
+      ],
+      "examples": [
+        "Quell'uomo lavora qui da trent'anni."
+      ],
+      "category": "family",
+      "difficulty": 1
+    },
+    {
+      "word": "donna",
+      "translations": [
+        "woman"
+      ],
+      "examples": [
+        "La donna alla cassa è molto gentile."
+      ],
+      "category": "family",
+      "difficulty": 1
+    },
+    {
+      "word": "acqua",
+      "translations": [
+        "water"
+      ],
+      "examples": [
+        "Vorrei un bicchiere d'acqua."
+      ],
+      "category": "food",
+      "difficulty": 1
+    },
+    {
+      "word": "pane",
+      "translations": [
+        "bread"
+      ],
+      "examples": [
+        "Compro il pane ogni mattina."
+      ],
+      "category": "food",
+      "difficulty": 1
+    },
+    {
+      "word": "vino",
+      "translations": [
+        "wine"
+      ],
+      "examples": [
+        "Un bicchiere di vino rosso, grazie."
+      ],
+      "category": "food",
+      "difficulty": 1
+    },
+    {
+      "word": "caffè",
+      "translations": [
+        "coffee"
+      ],
+      "examples": [
+        "Prendo un caffè al bar."
+      ],
+      "category": "food",
+      "difficulty": 1
+    },
+    {
+      "word": "latte",
+      "translations": [
+        "milk"
+      ],
+      "examples": [
+        "Bevo il latte a colazione."
+      ],
+      "category": "food",
+      "difficulty": 1
+    },
+    {
+      "word": "pasta",
+      "translations": [
+        "pasta"
+      ],
+      "examples": [
+        "La pasta è pronta in dieci minuti."
+      ],
+      "category": "food",
+      "difficulty": 1
+    },
+    {
+      "word": "pizza",
+      "translations": [
+        "pizza"
+      ],
+      "examples": [
+        "Stasera mangiamo la pizza."
+      ],
+      "category": "food",
+      "difficulty": 1
+    },
+    {
+      "word": "formaggio",
+      "translations": [
+        "cheese"
+      ],
+      "examples": [
+        "Questo formaggio viene dalla Sardegna."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "carne",
+      "translations": [
+        "meat"
+      ],
+      "examples": [
+        "Non mangio carne il venerdì."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "pesce",
+      "translations": [
+        "fish"
+      ],
+      "examples": [
+        "Il pesce è freschissimo oggi."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "frutta",
+      "translations": [
+        "fruit"
+      ],
+      "examples": [
+        "Mangio frutta tutti i giorni."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "verdura",
+      "translations": [
+        "vegetables"
+      ],
+      "examples": [
+        "Compro la verdura al mercato."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "zucchero",
+      "translations": [
+        "sugar"
+      ],
+      "examples": [
+        "Prendi lo zucchero nel caffè?"
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "sale",
+      "translations": [
+        "salt"
+      ],
+      "examples": [
+        "Manca un po' di sale."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "colazione",
+      "translations": [
+        "breakfast"
+      ],
+      "examples": [
+        "Faccio colazione alle sette."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "pranzo",
+      "translations": [
+        "lunch"
+      ],
+      "examples": [
+        "Il pranzo è all'una."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "cena",
+      "translations": [
+        "dinner"
+      ],
+      "examples": [
+        "La cena è quasi pronta."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "ristorante",
+      "translations": [
+        "restaurant"
+      ],
+      "examples": [
+        "Conosco un buon ristorante in centro."
+      ],
+      "category": "food",
+      "difficulty": 2
+    },
+    {
+      "word": "giorno",
+      "translations": [
+        "day"
+      ],
+      "examples": [
+        "Che giorno è oggi?"
+      ],
+      "category": "time",
+      "difficulty": 1
+    },
+    {
+      "word": "settimana",
+      "translations": [
+        "week"
+      ],
+      "examples": [
+        "Ci vediamo la prossima settimana."
+      ],
+      "category": "time",
+      "difficulty": 2
+    },
+    {
+      "word": "mese",
+      "translations": [
+        "month"
+      ],
+      "examples": [
+        "Parto il mese prossimo."
+      ],
+      "category": "time",
+      "difficulty": 2
+    },
+    {
+      "word": "anno",
+      "translations": [
+        "year"
+      ],
+      "examples": [
+        "Studio italiano da un anno."
+      ],
+      "category": "time",
+      "difficulty": 1
+    },
+    {
+      "word": "oggi",
+      "translations": [
+        "today"
+      ],
+      "examples": [
+        "Oggi fa molto caldo."
+      ],
+      "category": "time",
+      "difficulty": 1
+    },
+    {
+      "word": "domani",
+      "translations": [
+        "tomorrow"
+      ],
+      "examples": [
+        "Domani ho un esame."
+      ],
+      "category": "time",
+      "difficulty": 1
+    },
+    {
+      "word": "ieri",
+      "translations": [
+        "yesterday"
+      ],
+      "examples": [
+        "Ieri sono andato al museo."
+      ],
+      "category": "time",
+      "difficulty": 1
+    },
+    {
+      "word": "mattina",
+      "translations": [
+        "morning"
+      ],
+      "examples": [
+        "La mattina corro nel parco."
+      ],
+      "category": "time",
+      "difficulty": 2
+    },
+    {
+      "word": "sera",
+      "translations": [
+        "evening"
+      ],
+      "examples": [
+        "La sera guardo un film."
+      ],
+      "category": "time",
+      "difficulty": 2
+    },
+    {
+      "word": "notte",
+      "translations": [
+        "night"
+      ],
+      "examples": [
+        "Ho dormito male questa notte."
+      ],
+      "category": "time",
+      "difficulty": 2
+    },
+    {
+      "word": "ora",
+      "translations": [
+        "hour",
+        "now"
+      ],
+      "examples": [
+        "Che ora è?"
+      ],
+      "category": "time",
+      "difficulty": 1
+    },
+    {
+      "word": "minuto",
+      "translations": [
+        "minute"
+      ],
+      "examples": [
+        "Aspetta un minuto, per favore."
+      ],
+      "category": "time",
+      "difficulty": 2
+    },
+    {
+      "word": "lunedì",
+      "translations": [
+        "Monday"
+      ],
+      "examples": [
+        "Lunedì torno al lavoro."
+      ],
+      "category": "time",
+      "difficulty": 2
+    },
+    {
+      "word": "sabato",
+      "translations": [
+        "Saturday"
+      ],
+      "examples": [
+        "Sabato andiamo in montagna."
+      ],
+      "category": "time",
+      "difficulty": 2
+    },
+    {
+      "word": "domenica",
+      "translations": [
+        "Sunday"
+      ],
+      "examples": [
+        "La domenica dormo fino a tardi."
+      ],
+      "category": "time",
+      "difficulty": 2
+    },
+    {
+      "word": "casa",
+      "translations": [
+        "house",
+        "home"
+      ],
+      "examples": [
+        "Torno a casa alle sei."
+      ],
+      "category": "housing",
+      "difficulty": 1
+    },
+    {
+      "word": "città",
+      "translations": [
+        "city"
+      ],
+      "examples": [
+        "Roma è una città bellissima."
+      ],
+      "category": "travel",
+      "difficulty": 1
+    },
+    {
+      "word": "strada",
+      "translations": [
+        "street",
+        "road"
+      ],
+      "examples": [
+        "La strada è chiusa per lavori."
+      ],
+      "category": "travel",
+      "difficulty": 2
+    },
+    {
+      "word": "stazione",
+      "translations": [
+        "station"
+      ],
+      "examples": [
+        "La stazione è a dieci minuti a piedi."
+      ],
+      "category": "transportation",
+      "difficulty": 2
+    },
+    {
+      "word": "treno",
+      "translations": [
+        "train"
+      ],
+      "examples": [
+        "Il treno per Firenze parte alle nove."
+      ],
+      "category": "transportation",
+      "difficulty": 2
+    },
+    {
+      "word": "autobus",
+      "translations": [
+        "bus"
+      ],
+      "examples": [
+        "Prendo l'autobus numero venti."
+      ],
+      "category": "transportation",
+      "difficulty": 2
+    },
+    {
+      "word": "macchina",
+      "translations": [
+        "car"
+      ],
+      "examples": [
+        "La macchina è parcheggiata qui dietro."
+      ],
+      "category": "transportation",
+      "difficulty": 2
+    },
+    {
+      "word": "aeroporto",
+      "translations": [
+        "airport"
+      ],
+      "examples": [
+        "Arrivo all'aeroporto alle otto."
+      ],
+      "category": "transportation",
+      "difficulty": 2
+    },
+    {
+      "word": "albergo",
+      "translations": [
+        "hotel"
+      ],
+      "examples": [
+        "Abbiamo prenotato un albergo in centro."
+      ],
+      "category": "travel",
+      "difficulty": 2
+    },
+    {
+      "word": "negozio",
+      "translations": [
+        "shop",
+        "store"
+      ],
+      "examples": [
+        "Il negozio chiude alle sette."
+      ],
+      "category": "shopping",
+      "difficulty": 2
+    },
+    {
+      "word": "mercato",
+      "translations": [
+        "market"
+      ],
+      "examples": [
+        "Il mercato è aperto il sabato."
+      ],
+      "category": "shopping",
+      "difficulty": 2
+    },
+    {
+      "word": "biglietto",
+      "translations": [
+        "ticket"
+      ],
+      "examples": [
+        "Ho comprato il biglietto online."
+      ],
+      "category": "travel",
+      "difficulty": 2
+    },
+    {
+      "word": "libro",
+      "translations": [
+        "book"
+      ],
+      "examples": [
+        "Sto leggendo un libro italiano."
+      ],
+      "category": "education",
+      "difficulty": 1
+    },
+    {
+      "word": "lavoro",
+      "translations": [
+        "work",
+        "job"
+      ],
+      "examples": [
+        "Il mio lavoro mi piace molto."
+      ],
+      "category": "work",
+      "difficulty": 1
+    },
+    {
+      "word": "scuola",
+      "translations": [
+        "school"
+      ],
+      "examples": [
+        "I bambini vanno a scuola alle otto."
+      ],
+      "category": "education",
+      "difficulty": 1
+    },
+    {
+      "word": "soldi",
+      "translations": [
+        "money"
+      ],
+      "examples": [
+        "Non ho soldi con me."
+      ],
+      "category": "shopping",
+      "difficulty": 2
+    },
+    {
+      "word": "telefono",
+      "translations": [
+        "telephone"
+      ],
+      "examples": [
+        "Ti chiamo al telefono stasera."
+      ],
+      "category": "technology",
+      "difficulty": 1
+    },
+    {
+      "word": "grande",
+      "translations": [
+        "big",
+        "large"
+      ],
+      "examples": [
+        "Vivo in una casa grande."
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "piccolo",
+      "translations": [
+        "small",
+        "little"
+      ],
+      "examples": [
+        "Ho un appartamento piccolo."
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "nuovo",
+      "translations": [
+        "new"
+      ],
+      "examples": [
+        "Ho comprato un computer nuovo."
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "bello",
+      "translations": [
+        "beautiful",
+        "nice"
+      ],
+      "examples": [
+        "Che bella giornata!"
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "buono",
+      "translations": [
+        "good",
+        "tasty"
+      ],
+      "examples": [
+        "Questo caffè è molto buono."
+      ],
+      "category": "basics",
+      "difficulty": 1
+    },
+    {
+      "word": "caldo",
+      "translations": [
+        "hot",
+        "warm"
+      ],
+      "examples": [
+        "Oggi fa caldo."
+      ],
+      "category": "weather",
+      "difficulty": 1
+    },
+    {
+      "word": "freddo",
+      "translations": [
+        "cold"
+      ],
+      "examples": [
+        "In inverno fa freddo qui."
+      ],
+      "category": "weather",
+      "difficulty": 1
+    },
+    {
+      "word": "pioggia",
+      "translations": [
+        "rain"
+      ],
+      "examples": [
+        "La pioggia è cominciata all'alba."
+      ],
+      "category": "weather",
+      "difficulty": 2
+    },
+    {
+      "word": "sole",
+      "translations": [
+        "sun"
+      ],
+      "examples": [
+        "C'è il sole oggi."
+      ],
+      "category": "weather",
+      "difficulty": 1
+    },
+    {
+      "word": "felice",
+      "translations": [
+        "happy"
+      ],
+      "examples": [
+        "Sono felice di vederti."
+      ],
+      "category": "emotions",
+      "difficulty": 2
+    },
+    {
+      "word": "stanco",
+      "translations": [
+        "tired"
+      ],
+      "examples": [
+        "Sono stanco dopo il lavoro."
+      ],
+      "category": "emotions",
+      "difficulty": 2
+    }
+  ]
+}

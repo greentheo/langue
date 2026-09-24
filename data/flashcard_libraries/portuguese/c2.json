@@ -1,0 +1,990 @@
+{
+  "metadata": {
+    "language": "portuguese",
+    "level": "c2",
+    "version": "1.0",
+    "word_count": 84,
+    "created_at": "2026-08-12T22:30:37.727535+00:00",
+    "description": "Mastery (C2) Portuguese vocabulary: specialized, literary, and culturally loaded terms",
+    "source": "data/vocab_sources/portuguese/c2.psv",
+    "generated_by": "langue.tools.vocab_build"
+  },
+  "words": [
+    {
+      "word": "crepúsculo",
+      "translations": [
+        "twilight",
+        "dusk"
+      ],
+      "examples": [
+        "O crepúsculo descia sobre a baía."
+      ],
+      "category": "nature",
+      "difficulty": 5
+    },
+    {
+      "word": "alvorada",
+      "translations": [
+        "dawn",
+        "daybreak"
+      ],
+      "examples": [
+        "Na alvorada a cidade ainda estava deserta."
+      ],
+      "category": "nature",
+      "difficulty": 5
+    },
+    {
+      "word": "fervilhar",
+      "translations": [
+        "to swarm",
+        "to teem"
+      ],
+      "examples": [
+        "A praça fervilhava de turistas."
+      ],
+      "category": "society",
+      "difficulty": 5
+    },
+    {
+      "word": "fulgurar",
+      "translations": [
+        "to blaze",
+        "to shine forth"
+      ],
+      "examples": [
+        "Sua honestidade fulgura em cada página."
+      ],
+      "category": "arts",
+      "difficulty": 5
+    },
+    {
+      "word": "tangenciar",
+      "translations": [
+        "to touch on",
+        "to skirt"
+      ],
+      "examples": [
+        "O relatório apenas tangencia a questão central."
+      ],
+      "category": "language",
+      "difficulty": 5
+    },
+    {
+      "word": "pasmar",
+      "translations": [
+        "to astound",
+        "to be amazed"
+      ],
+      "examples": [
+        "Pasmou ao ler a notícia."
+      ],
+      "category": "emotions",
+      "difficulty": 5
+    },
+    {
+      "word": "demorar-se",
+      "translations": [
+        "to linger"
+      ],
+      "examples": [
+        "Demorou-se longamente à soleira."
+      ],
+      "category": "arts",
+      "difficulty": 4
+    },
+    {
+      "word": "anelar",
+      "translations": [
+        "to yearn for"
+      ],
+      "examples": [
+        "Anelava um retorno às origens."
+      ],
+      "category": "emotions",
+      "difficulty": 5
+    },
+    {
+      "word": "consumir-se",
+      "translations": [
+        "to pine away"
+      ],
+      "examples": [
+        "Consumia-se de saudade."
+      ],
+      "category": "emotions",
+      "difficulty": 5
+    },
+    {
+      "word": "figurar entre",
+      "translations": [
+        "to be counted among"
+      ],
+      "examples": [
+        "Figura entre os mestres do século XX."
+      ],
+      "category": "arts",
+      "difficulty": 5
+    },
+    {
+      "word": "delinear",
+      "translations": [
+        "to sketch",
+        "to outline"
+      ],
+      "examples": [
+        "O autor delineia um retrato impiedoso."
+      ],
+      "category": "arts",
+      "difficulty": 5
+    },
+    {
+      "word": "deslindar",
+      "translations": [
+        "to unravel",
+        "to clear up"
+      ],
+      "examples": [
+        "O romance deslinda uma trama intrincada."
+      ],
+      "category": "arts",
+      "difficulty": 5
+    },
+    {
+      "word": "lamber",
+      "translations": [
+        "to lap",
+        "to lick"
+      ],
+      "examples": [
+        "As chamas lamberam o telhado."
+      ],
+      "category": "nature",
+      "difficulty": 4
+    },
+    {
+      "word": "albergar",
+      "translations": [
+        "to harbour",
+        "to house"
+      ],
+      "examples": [
+        "Albergava um rancor profundo."
+      ],
+      "category": "emotions",
+      "difficulty": 5
+    },
+    {
+      "word": "caducidade",
+      "translations": [
+        "transience",
+        "expiry"
+      ],
+      "examples": [
+        "A caducidade do humano é seu grande tema."
+      ],
+      "category": "philosophy",
+      "difficulty": 5
+    },
+    {
+      "word": "sanha",
+      "translations": [
+        "fury",
+        "viciousness"
+      ],
+      "examples": [
+        "A sanha do crime chocou o país."
+      ],
+      "category": "society",
+      "difficulty": 5
+    },
+    {
+      "word": "pertinácia",
+      "translations": [
+        "obstinacy",
+        "persistence"
+      ],
+      "examples": [
+        "Sua pertinácia beirava a teimosia cega."
+      ],
+      "category": "emotions",
+      "difficulty": 5
+    },
+    {
+      "word": "acuidade",
+      "translations": [
+        "acuity",
+        "sharpness"
+      ],
+      "examples": [
+        "Reconstruiu os fatos com acuidade filológica."
+      ],
+      "category": "education",
+      "difficulty": 5
+    },
+    {
+      "word": "sagacidade",
+      "translations": [
+        "sagacity",
+        "shrewdness"
+      ],
+      "examples": [
+        "Com rara sagacidade previu o colapso."
+      ],
+      "category": "philosophy",
+      "difficulty": 5
+    },
+    {
+      "word": "presteza",
+      "translations": [
+        "promptness",
+        "alacrity"
+      ],
+      "examples": [
+        "Trabalhava com presteza surpreendente."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "retraimento",
+      "translations": [
+        "withdrawal",
+        "reticence"
+      ],
+      "examples": [
+        "Venceu o retraimento e falou."
+      ],
+      "category": "emotions",
+      "difficulty": 5
+    },
+    {
+      "word": "donaire",
+      "translations": [
+        "grace",
+        "elegance"
+      ],
+      "examples": [
+        "Recita com o donaire dos grandes."
+      ],
+      "category": "arts",
+      "difficulty": 5
+    },
+    {
+      "word": "verve",
+      "translations": [
+        "verve",
+        "wit"
+      ],
+      "examples": [
+        "Escreve com uma verve irresistível."
+      ],
+      "category": "arts",
+      "difficulty": 5
+    },
+    {
+      "word": "estatura intelectual",
+      "translations": [
+        "intellectual stature"
+      ],
+      "examples": [
+        "É um estudioso de grande estatura intelectual."
+      ],
+      "category": "education",
+      "difficulty": 5
+    },
+    {
+      "word": "envergadura",
+      "translations": [
+        "scope",
+        "magnitude"
+      ],
+      "examples": [
+        "Um evento de envergadura internacional."
+      ],
+      "category": "business",
+      "difficulty": 5
+    },
+    {
+      "word": "cesura",
+      "translations": [
+        "caesura",
+        "break"
+      ],
+      "examples": [
+        "O ano de 1930 marca uma cesura nítida."
+      ],
+      "category": "society",
+      "difficulty": 5
+    },
+    {
+      "word": "encruzilhada",
+      "translations": [
+        "crossroads"
+      ],
+      "examples": [
+        "Estamos numa encruzilhada histórica."
+      ],
+      "category": "politics",
+      "difficulty": 4
+    },
+    {
+      "word": "amálgama",
+      "translations": [
+        "amalgam",
+        "jumble"
+      ],
+      "examples": [
+        "O texto é um amálgama de citações."
+      ],
+      "category": "language",
+      "difficulty": 5
+    },
+    {
+      "word": "emaranhado",
+      "translations": [
+        "tangle",
+        "muddle"
+      ],
+      "examples": [
+        "A reforma é um emaranhado normativo."
+      ],
+      "category": "politics",
+      "difficulty": 5
+    },
+    {
+      "word": "altissonante",
+      "translations": [
+        "high-flown",
+        "grandiloquent"
+      ],
+      "examples": [
+        "Adota um registro altissonante, quase arcaico."
+      ],
+      "category": "language",
+      "difficulty": 5
+    },
+    {
+      "word": "escorreito",
+      "translations": [
+        "flawless",
+        "correct"
+      ],
+      "examples": [
+        "Escreve um português escorreito."
+      ],
+      "category": "language",
+      "difficulty": 5
+    },
+    {
+      "word": "rebuscado",
+      "translations": [
+        "contrived",
+        "over-elaborate"
+      ],
+      "examples": [
+        "Usa um léxico rebuscado e algo pedante."
+      ],
+      "category": "language",
+      "difficulty": 5
+    },
+    {
+      "word": "lapidar",
+      "translations": [
+        "terse",
+        "lapidary"
+      ],
+      "examples": [
+        "Sua resposta foi lapidar."
+      ],
+      "category": "language",
+      "difficulty": 5
+    },
+    {
+      "word": "elíptico",
+      "translations": [
+        "elliptical",
+        "terse"
+      ],
+      "examples": [
+        "O estilo elíptico exige um leitor atento."
+      ],
+      "category": "language",
+      "difficulty": 5
+    },
+    {
+      "word": "plástico",
+      "translations": [
+        "vivid",
+        "expressive"
+      ],
+      "examples": [
+        "Uma imagem plástica, impossível de esquecer."
+      ],
+      "category": "arts",
+      "difficulty": 5
+    },
+    {
+      "word": "redundante",
+      "translations": [
+        "redundant"
+      ],
+      "examples": [
+        "A prosa é redundante e precisa ser podada."
+      ],
+      "category": "language",
+      "difficulty": 4
+    },
+    {
+      "word": "enjoativo",
+      "translations": [
+        "cloying",
+        "sickly"
+      ],
+      "examples": [
+        "O final é enjoativo."
+      ],
+      "category": "arts",
+      "difficulty": 5
+    },
+    {
+      "word": "chulo",
+      "translations": [
+        "coarse",
+        "vulgar"
+      ],
+      "examples": [
+        "A ironia chula estraga o tom."
+      ],
+      "category": "arts",
+      "difficulty": 5
+    },
+    {
+      "word": "atroz",
+      "translations": [
+        "atrocious",
+        "brutal"
+      ],
+      "examples": [
+        "Um crime atroz."
+      ],
+      "category": "society",
+      "difficulty": 4
+    },
+    {
+      "word": "recôndito",
+      "translations": [
+        "hidden",
+        "recondite"
+      ],
+      "examples": [
+        "Um sentido recôndito escapa à primeira leitura."
+      ],
+      "category": "philosophy",
+      "difficulty": 5
+    },
+    {
+      "word": "inveterado",
+      "translations": [
+        "inveterate",
+        "hardened"
+      ],
+      "examples": [
+        "É um fumante inveterado."
+      ],
+      "category": "health",
+      "difficulty": 5
+    },
+    {
+      "word": "funesto",
+      "translations": [
+        "disastrous",
+        "fatal"
+      ],
+      "examples": [
+        "Um atraso funesto para a negociação."
+      ],
+      "category": "business",
+      "difficulty": 5
+    },
+    {
+      "word": "proteiforme",
+      "translations": [
+        "protean",
+        "ever-changing"
+      ],
+      "examples": [
+        "Um fenômeno proteiforme, difícil de definir."
+      ],
+      "category": "science",
+      "difficulty": 5
+    },
+    {
+      "word": "inefável",
+      "translations": [
+        "ineffable"
+      ],
+      "examples": [
+        "Sentiu uma alegria inefável."
+      ],
+      "category": "emotions",
+      "difficulty": 5
+    },
+    {
+      "word": "começar a casa pelo telhado",
+      "translations": [
+        "to put the cart before the horse"
+      ],
+      "examples": [
+        "Discutir custos agora é começar a casa pelo telhado."
+      ],
+      "category": "society",
+      "difficulty": 5
+    },
+    {
+      "word": "ter as mãos em",
+      "translations": [
+        "to have a hand in"
+      ],
+      "examples": [
+        "Ele tem as mãos em meia administração."
+      ],
+      "category": "politics",
+      "difficulty": 5
+    },
+    {
+      "word": "jogar a toalha",
+      "translations": [
+        "to throw in the towel"
+      ],
+      "examples": [
+        "Depois de três tentativas jogou a toalha."
+      ],
+      "category": "sports",
+      "difficulty": 4
+    },
+    {
+      "word": "navegar sem rumo",
+      "translations": [
+        "to drift",
+        "to have no direction"
+      ],
+      "examples": [
+        "O governo navega sem rumo há meses."
+      ],
+      "category": "politics",
+      "difficulty": 5
+    },
+    {
+      "word": "fazer ouvidos moucos",
+      "translations": [
+        "to turn a deaf ear"
+      ],
+      "examples": [
+        "A diretoria faz ouvidos moucos."
+      ],
+      "category": "work",
+      "difficulty": 5
+    },
+    {
+      "word": "trocar alhos por bugalhos",
+      "translations": [
+        "to mix up two unrelated things"
+      ],
+      "examples": [
+        "Quem lê assim troca alhos por bugalhos."
+      ],
+      "category": "language",
+      "difficulty": 5
+    },
+    {
+      "word": "cortar o mal pela raiz",
+      "translations": [
+        "to nip it in the bud"
+      ],
+      "examples": [
+        "Vamos votar e cortar o mal pela raiz."
+      ],
+      "category": "society",
+      "difficulty": 5
+    },
+    {
+      "word": "sair da frigideira e cair no fogo",
+      "translations": [
+        "out of the frying pan into the fire"
+      ],
+      "examples": [
+        "Trocando de fornecedor saímos da frigideira e caímos no fogo."
+      ],
+      "category": "business",
+      "difficulty": 5
+    },
+    {
+      "word": "não compensar o esforço",
+      "translations": [
+        "not to be worth the effort"
+      ],
+      "examples": [
+        "Por essa margem não compensa o esforço."
+      ],
+      "category": "business",
+      "difficulty": 4
+    },
+    {
+      "word": "devagar se vai ao longe",
+      "translations": [
+        "slow and steady wins the race"
+      ],
+      "examples": [
+        "Devagar se vai ao longe, dizia minha avó."
+      ],
+      "category": "society",
+      "difficulty": 5
+    },
+    {
+      "word": "de grão em grão a galinha enche o papo",
+      "translations": [
+        "little by little it adds up"
+      ],
+      "examples": [
+        "De grão em grão a galinha enche o papo."
+      ],
+      "category": "society",
+      "difficulty": 5
+    },
+    {
+      "word": "ter telhado de vidro",
+      "translations": [
+        "to live in a glass house"
+      ],
+      "examples": [
+        "Reage assim porque tem telhado de vidro."
+      ],
+      "category": "emotions",
+      "difficulty": 5
+    },
+    {
+      "word": "hermenêutica",
+      "translations": [
+        "hermeneutics"
+      ],
+      "examples": [
+        "A hermenêutica do texto sagrado é milenar."
+      ],
+      "category": "philosophy",
+      "difficulty": 5
+    },
+    {
+      "word": "heurística",
+      "translations": [
+        "heuristics"
+      ],
+      "examples": [
+        "Aplica uma heurística simples mas eficaz."
+      ],
+      "category": "science",
+      "difficulty": 5
+    },
+    {
+      "word": "taxonomia",
+      "translations": [
+        "taxonomy"
+      ],
+      "examples": [
+        "A taxonomia proposta é discutível."
+      ],
+      "category": "science",
+      "difficulty": 5
+    },
+    {
+      "word": "propedêutico",
+      "translations": [
+        "preparatory",
+        "introductory"
+      ],
+      "examples": [
+        "O curso é propedêutico ao exame final."
+      ],
+      "category": "education",
+      "difficulty": 5
+    },
+    {
+      "word": "diacrônico",
+      "translations": [
+        "diachronic"
+      ],
+      "examples": [
+        "Uma análise diacrônica do fenômeno."
+      ],
+      "category": "language",
+      "difficulty": 5
+    },
+    {
+      "word": "sincrônico",
+      "translations": [
+        "synchronic"
+      ],
+      "examples": [
+        "O estudo sincrônico ignora a evolução histórica."
+      ],
+      "category": "language",
+      "difficulty": 5
+    },
+    {
+      "word": "apodítico",
+      "translations": [
+        "apodictic",
+        "incontrovertible"
+      ],
+      "examples": [
+        "Faz afirmações apodíticas sem provas."
+      ],
+      "category": "philosophy",
+      "difficulty": 5
+    },
+    {
+      "word": "axiomático",
+      "translations": [
+        "axiomatic"
+      ],
+      "examples": [
+        "Ele dá isso por axiomático, e não é."
+      ],
+      "category": "philosophy",
+      "difficulty": 5
+    },
+    {
+      "word": "tautológico",
+      "translations": [
+        "tautological"
+      ],
+      "examples": [
+        "A definição é tautológica."
+      ],
+      "category": "philosophy",
+      "difficulty": 5
+    },
+    {
+      "word": "antinomia",
+      "translations": [
+        "antinomy",
+        "conflict of laws"
+      ],
+      "examples": [
+        "A antinomia entre as duas normas segue irresolvida."
+      ],
+      "category": "politics",
+      "difficulty": 5
+    },
+    {
+      "word": "subsidiariedade",
+      "translations": [
+        "subsidiarity"
+      ],
+      "examples": [
+        "O princípio da subsidiariedade regula as competências."
+      ],
+      "category": "politics",
+      "difficulty": 5
+    },
+    {
+      "word": "fungível",
+      "translations": [
+        "fungible",
+        "interchangeable"
+      ],
+      "examples": [
+        "Os dois recursos não são fungíveis."
+      ],
+      "category": "business",
+      "difficulty": 5
+    },
+    {
+      "word": "dirimente",
+      "translations": [
+        "decisive",
+        "conclusive"
+      ],
+      "examples": [
+        "É um elemento dirimente para o julgamento."
+      ],
+      "category": "politics",
+      "difficulty": 5
+    },
+    {
+      "word": "prodrômico",
+      "translations": [
+        "prodromal",
+        "precursory"
+      ],
+      "examples": [
+        "São sinais prodrômicos de uma crise."
+      ],
+      "category": "science",
+      "difficulty": 5
+    },
+    {
+      "word": "bairrismo",
+      "translations": [
+        "parochialism",
+        "local pride"
+      ],
+      "examples": [
+        "O bairrismo ainda separa as duas cidades."
+      ],
+      "category": "society",
+      "difficulty": 5
+    },
+    {
+      "word": "quixotesco",
+      "translations": [
+        "quixotic"
+      ],
+      "examples": [
+        "Uma empreitada quixotesca, fadada ao fracasso."
+      ],
+      "category": "arts",
+      "difficulty": 5
+    },
+    {
+      "word": "dantesco",
+      "translations": [
+        "Dantesque",
+        "hellish"
+      ],
+      "examples": [
+        "Um cenário dantesco depois da enchente."
+      ],
+      "category": "arts",
+      "difficulty": 5
+    },
+    {
+      "word": "maquiavélico",
+      "translations": [
+        "Machiavellian"
+      ],
+      "examples": [
+        "Uma estratégia maquiavélica mas eficaz."
+      ],
+      "category": "politics",
+      "difficulty": 5
+    },
+    {
+      "word": "bizantino",
+      "translations": [
+        "byzantine",
+        "hair-splitting"
+      ],
+      "examples": [
+        "Um regulamento bizantino, ilegível."
+      ],
+      "category": "politics",
+      "difficulty": 5
+    },
+    {
+      "word": "incauto",
+      "translations": [
+        "unwary",
+        "gullible"
+      ],
+      "examples": [
+        "Ele não é nenhum incauto."
+      ],
+      "category": "emotions",
+      "difficulty": 5
+    },
+    {
+      "word": "desleixo",
+      "translations": [
+        "negligence",
+        "sloppiness"
+      ],
+      "examples": [
+        "O desleixo geral é o verdadeiro problema."
+      ],
+      "category": "society",
+      "difficulty": 5
+    },
+    {
+      "word": "antipolítica",
+      "translations": [
+        "anti-politics"
+      ],
+      "examples": [
+        "A antipolítica alimenta a abstenção."
+      ],
+      "category": "politics",
+      "difficulty": 5
+    },
+    {
+      "word": "conspiracionismo",
+      "translations": [
+        "conspiracy thinking"
+      ],
+      "examples": [
+        "O conspiracionismo substitui a análise."
+      ],
+      "category": "politics",
+      "difficulty": 5
+    },
+    {
+      "word": "garbo",
+      "translations": [
+        "grace",
+        "poise"
+      ],
+      "examples": [
+        "Declinou o convite com garbo."
+      ],
+      "category": "society",
+      "difficulty": 5
+    },
+    {
+      "word": "garra",
+      "translations": [
+        "grit",
+        "drive"
+      ],
+      "examples": [
+        "Joga com uma garra extraordinária."
+      ],
+      "category": "sports",
+      "difficulty": 4
+    },
+    {
+      "word": "desenvoltura",
+      "translations": [
+        "ease",
+        "self-assurance"
+      ],
+      "examples": [
+        "Move-se com desenvoltura entre vários idiomas."
+      ],
+      "category": "language",
+      "difficulty": 5
+    },
+    {
+      "word": "saudade",
+      "translations": [
+        "longing",
+        "yearning for what is absent"
+      ],
+      "examples": [
+        "A saudade não tem tradução exata em inglês."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "jeitinho",
+      "translations": [
+        "knack for working around rules"
+      ],
+      "examples": [
+        "O jeitinho resolve, mas nem sempre ajuda."
+      ],
+      "category": "society",
+      "difficulty": 5
+    }
+  ]
+}

@@ -1,0 +1,1270 @@
+{
+  "metadata": {
+    "language": "italian",
+    "level": "b1",
+    "version": "1.0",
+    "word_count": 111,
+    "created_at": "2026-08-12T22:23:06.944963+00:00",
+    "description": "Intermediate (B1) Italian vocabulary: work, travel, and personal interests",
+    "source": "data/vocab_sources/italian/b1.psv",
+    "generated_by": "langue.tools.vocab_build"
+  },
+  "words": [
+    {
+      "word": "colloquio",
+      "translations": [
+        "interview"
+      ],
+      "examples": [
+        "Ho un colloquio di lavoro giovedì."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "curriculum",
+      "translations": [
+        "résumé",
+        "CV"
+      ],
+      "examples": [
+        "Ho aggiornato il curriculum ieri."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "assumere",
+      "translations": [
+        "to hire",
+        "to take on"
+      ],
+      "examples": [
+        "L'azienda assume dieci persone quest'anno."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "licenziare",
+      "translations": [
+        "to fire",
+        "to dismiss"
+      ],
+      "examples": [
+        "Hanno licenziato metà del reparto."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "dimettersi",
+      "translations": [
+        "to resign"
+      ],
+      "examples": [
+        "Si è dimesso dopo cinque anni."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "contratto",
+      "translations": [
+        "contract"
+      ],
+      "examples": [
+        "Il contratto scade a dicembre."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "scadenza",
+      "translations": [
+        "deadline",
+        "expiry"
+      ],
+      "examples": [
+        "La scadenza è venerdì prossimo."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "progetto",
+      "translations": [
+        "project"
+      ],
+      "examples": [
+        "Il progetto è in ritardo di due mesi."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "obiettivo",
+      "translations": [
+        "goal",
+        "objective"
+      ],
+      "examples": [
+        "Abbiamo raggiunto l'obiettivo trimestrale."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "responsabile",
+      "translations": [
+        "responsible",
+        "manager"
+      ],
+      "examples": [
+        "È responsabile della sicurezza."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "esperienza",
+      "translations": [
+        "experience"
+      ],
+      "examples": [
+        "Ho dieci anni di esperienza nel settore."
+      ],
+      "category": "work",
+      "difficulty": 3
+    },
+    {
+      "word": "competenza",
+      "translations": [
+        "skill",
+        "competence"
+      ],
+      "examples": [
+        "Cercano competenze tecniche specifiche."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "formazione",
+      "translations": [
+        "training",
+        "education"
+      ],
+      "examples": [
+        "L'azienda offre formazione continua."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "sciopero",
+      "translations": [
+        "strike"
+      ],
+      "examples": [
+        "Domani c'è uno sciopero dei trasporti."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "sindacato",
+      "translations": [
+        "trade union"
+      ],
+      "examples": [
+        "Il sindacato ha respinto la proposta."
+      ],
+      "category": "work",
+      "difficulty": 4
+    },
+    {
+      "word": "tassa",
+      "translations": [
+        "tax"
+      ],
+      "examples": [
+        "Le tasse aumentano ogni anno."
+      ],
+      "category": "politics",
+      "difficulty": 3
+    },
+    {
+      "word": "bilancio",
+      "translations": [
+        "budget",
+        "balance sheet"
+      ],
+      "examples": [
+        "Il bilancio comunale è in deficit."
+      ],
+      "category": "business",
+      "difficulty": 4
+    },
+    {
+      "word": "risparmio",
+      "translations": [
+        "saving",
+        "savings"
+      ],
+      "examples": [
+        "Ho investito i miei risparmi."
+      ],
+      "category": "business",
+      "difficulty": 3
+    },
+    {
+      "word": "prestito",
+      "translations": [
+        "loan"
+      ],
+      "examples": [
+        "Ho chiesto un prestito in banca."
+      ],
+      "category": "business",
+      "difficulty": 3
+    },
+    {
+      "word": "mutuo",
+      "translations": [
+        "mortgage"
+      ],
+      "examples": [
+        "Paghiamo il mutuo da dieci anni."
+      ],
+      "category": "business",
+      "difficulty": 4
+    },
+    {
+      "word": "investire",
+      "translations": [
+        "to invest"
+      ],
+      "examples": [
+        "Preferisce investire in immobili."
+      ],
+      "category": "business",
+      "difficulty": 3
+    },
+    {
+      "word": "guadagnare",
+      "translations": [
+        "to earn",
+        "to gain"
+      ],
+      "examples": [
+        "Guadagna abbastanza per vivere bene."
+      ],
+      "category": "business",
+      "difficulty": 3
+    },
+    {
+      "word": "spendere",
+      "translations": [
+        "to spend"
+      ],
+      "examples": [
+        "Spendo troppo in libri."
+      ],
+      "category": "business",
+      "difficulty": 2
+    },
+    {
+      "word": "costoso",
+      "translations": [
+        "expensive"
+      ],
+      "examples": [
+        "Un albergo così costoso non ci serve."
+      ],
+      "category": "shopping",
+      "difficulty": 3
+    },
+    {
+      "word": "conveniente",
+      "translations": [
+        "affordable",
+        "worthwhile"
+      ],
+      "examples": [
+        "Il treno è più conveniente dell'aereo."
+      ],
+      "category": "shopping",
+      "difficulty": 3
+    },
+    {
+      "word": "notizia",
+      "translations": [
+        "news",
+        "piece of news"
+      ],
+      "examples": [
+        "La notizia ha sorpreso tutti."
+      ],
+      "category": "technology",
+      "difficulty": 3
+    },
+    {
+      "word": "giornale",
+      "translations": [
+        "newspaper"
+      ],
+      "examples": [
+        "Leggo il giornale online ogni mattina."
+      ],
+      "category": "technology",
+      "difficulty": 2
+    },
+    {
+      "word": "pubblicità",
+      "translations": [
+        "advertising",
+        "advert"
+      ],
+      "examples": [
+        "La pubblicità interrompe il film."
+      ],
+      "category": "technology",
+      "difficulty": 3
+    },
+    {
+      "word": "schermo",
+      "translations": [
+        "screen"
+      ],
+      "examples": [
+        "Lo schermo si è rotto ieri."
+      ],
+      "category": "technology",
+      "difficulty": 3
+    },
+    {
+      "word": "tastiera",
+      "translations": [
+        "keyboard"
+      ],
+      "examples": [
+        "La tastiera non funziona più."
+      ],
+      "category": "technology",
+      "difficulty": 3
+    },
+    {
+      "word": "rete",
+      "translations": [
+        "network",
+        "net"
+      ],
+      "examples": [
+        "La rete è lenta stasera."
+      ],
+      "category": "technology",
+      "difficulty": 3
+    },
+    {
+      "word": "scaricare",
+      "translations": [
+        "to download"
+      ],
+      "examples": [
+        "Ho scaricato l'applicazione."
+      ],
+      "category": "technology",
+      "difficulty": 3
+    },
+    {
+      "word": "allegato",
+      "translations": [
+        "attachment"
+      ],
+      "examples": [
+        "Trova il documento in allegato."
+      ],
+      "category": "technology",
+      "difficulty": 3
+    },
+    {
+      "word": "aggiornamento",
+      "translations": [
+        "update"
+      ],
+      "examples": [
+        "L'aggiornamento richiede dieci minuti."
+      ],
+      "category": "technology",
+      "difficulty": 4
+    },
+    {
+      "word": "password",
+      "translations": [
+        "password"
+      ],
+      "examples": [
+        "Ho dimenticato la password."
+      ],
+      "category": "technology",
+      "difficulty": 2
+    },
+    {
+      "word": "riservatezza",
+      "translations": [
+        "privacy",
+        "confidentiality"
+      ],
+      "examples": [
+        "La riservatezza dei dati è garantita."
+      ],
+      "category": "technology",
+      "difficulty": 4
+    },
+    {
+      "word": "opinione",
+      "translations": [
+        "opinion"
+      ],
+      "examples": [
+        "Secondo la mia opinione, ha ragione."
+      ],
+      "category": "society",
+      "difficulty": 3
+    },
+    {
+      "word": "consiglio",
+      "translations": [
+        "advice",
+        "council"
+      ],
+      "examples": [
+        "Ti do un consiglio sincero."
+      ],
+      "category": "society",
+      "difficulty": 3
+    },
+    {
+      "word": "dubbio",
+      "translations": [
+        "doubt"
+      ],
+      "examples": [
+        "Ho ancora qualche dubbio."
+      ],
+      "category": "abstract",
+      "difficulty": 3
+    },
+    {
+      "word": "motivo",
+      "translations": [
+        "reason"
+      ],
+      "examples": [
+        "Non c'è motivo di preoccuparsi."
+      ],
+      "category": "abstract",
+      "difficulty": 3
+    },
+    {
+      "word": "scopo",
+      "translations": [
+        "purpose",
+        "aim"
+      ],
+      "examples": [
+        "Lo scopo dell'incontro è chiarire tutto."
+      ],
+      "category": "abstract",
+      "difficulty": 4
+    },
+    {
+      "word": "soluzione",
+      "translations": [
+        "solution"
+      ],
+      "examples": [
+        "Abbiamo trovato una soluzione semplice."
+      ],
+      "category": "abstract",
+      "difficulty": 3
+    },
+    {
+      "word": "problema",
+      "translations": [
+        "problem"
+      ],
+      "examples": [
+        "Il problema è più complesso del previsto."
+      ],
+      "category": "abstract",
+      "difficulty": 2
+    },
+    {
+      "word": "vantaggio",
+      "translations": [
+        "advantage"
+      ],
+      "examples": [
+        "Il vantaggio principale è il costo."
+      ],
+      "category": "abstract",
+      "difficulty": 3
+    },
+    {
+      "word": "svantaggio",
+      "translations": [
+        "disadvantage"
+      ],
+      "examples": [
+        "L'unico svantaggio è la distanza."
+      ],
+      "category": "abstract",
+      "difficulty": 3
+    },
+    {
+      "word": "scelta",
+      "translations": [
+        "choice"
+      ],
+      "examples": [
+        "È stata una scelta difficile."
+      ],
+      "category": "abstract",
+      "difficulty": 3
+    },
+    {
+      "word": "decidere",
+      "translations": [
+        "to decide"
+      ],
+      "examples": [
+        "Dobbiamo decidere entro domani."
+      ],
+      "category": "abstract",
+      "difficulty": 2
+    },
+    {
+      "word": "discutere",
+      "translations": [
+        "to discuss",
+        "to argue"
+      ],
+      "examples": [
+        "Abbiamo discusso per ore."
+      ],
+      "category": "society",
+      "difficulty": 3
+    },
+    {
+      "word": "convincere",
+      "translations": [
+        "to convince"
+      ],
+      "examples": [
+        "Non riesco a convincerlo."
+      ],
+      "category": "society",
+      "difficulty": 3
+    },
+    {
+      "word": "suggerire",
+      "translations": [
+        "to suggest"
+      ],
+      "examples": [
+        "Ti suggerisco di partire presto."
+      ],
+      "category": "society",
+      "difficulty": 3
+    },
+    {
+      "word": "ammettere",
+      "translations": [
+        "to admit"
+      ],
+      "examples": [
+        "Devo ammettere che avevi ragione."
+      ],
+      "category": "society",
+      "difficulty": 3
+    },
+    {
+      "word": "rifiutare",
+      "translations": [
+        "to refuse",
+        "to reject"
+      ],
+      "examples": [
+        "Ha rifiutato l'offerta."
+      ],
+      "category": "society",
+      "difficulty": 3
+    },
+    {
+      "word": "orgoglioso",
+      "translations": [
+        "proud"
+      ],
+      "examples": [
+        "Sono orgoglioso di mio figlio."
+      ],
+      "category": "emotions",
+      "difficulty": 3
+    },
+    {
+      "word": "deluso",
+      "translations": [
+        "disappointed"
+      ],
+      "examples": [
+        "Sono rimasto deluso dal servizio."
+      ],
+      "category": "emotions",
+      "difficulty": 3
+    },
+    {
+      "word": "sorpreso",
+      "translations": [
+        "surprised"
+      ],
+      "examples": [
+        "Fu sorpreso dalla notizia."
+      ],
+      "category": "emotions",
+      "difficulty": 3
+    },
+    {
+      "word": "geloso",
+      "translations": [
+        "jealous"
+      ],
+      "examples": [
+        "È geloso del suo successo."
+      ],
+      "category": "emotions",
+      "difficulty": 3
+    },
+    {
+      "word": "timido",
+      "translations": [
+        "shy"
+      ],
+      "examples": [
+        "Da bambino era molto timido."
+      ],
+      "category": "emotions",
+      "difficulty": 3
+    },
+    {
+      "word": "generoso",
+      "translations": [
+        "generous"
+      ],
+      "examples": [
+        "È sempre stato generoso con tutti."
+      ],
+      "category": "emotions",
+      "difficulty": 3
+    },
+    {
+      "word": "testardo",
+      "translations": [
+        "stubborn"
+      ],
+      "examples": [
+        "Mio padre è terribilmente testardo."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "affidabile",
+      "translations": [
+        "reliable"
+      ],
+      "examples": [
+        "Cerchiamo qualcuno di affidabile."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "sincero",
+      "translations": [
+        "sincere",
+        "honest"
+      ],
+      "examples": [
+        "Preferisco una risposta sincera."
+      ],
+      "category": "emotions",
+      "difficulty": 3
+    },
+    {
+      "word": "egoista",
+      "translations": [
+        "selfish"
+      ],
+      "examples": [
+        "È un comportamento egoista."
+      ],
+      "category": "emotions",
+      "difficulty": 3
+    },
+    {
+      "word": "fiducia",
+      "translations": [
+        "trust",
+        "confidence"
+      ],
+      "examples": [
+        "Ho piena fiducia in lei."
+      ],
+      "category": "emotions",
+      "difficulty": 3
+    },
+    {
+      "word": "speranza",
+      "translations": [
+        "hope"
+      ],
+      "examples": [
+        "Non ho perso la speranza."
+      ],
+      "category": "emotions",
+      "difficulty": 3
+    },
+    {
+      "word": "paura",
+      "translations": [
+        "fear"
+      ],
+      "examples": [
+        "Ha paura di volare."
+      ],
+      "category": "emotions",
+      "difficulty": 2
+    },
+    {
+      "word": "rabbia",
+      "translations": [
+        "anger"
+      ],
+      "examples": [
+        "La rabbia gli passò subito."
+      ],
+      "category": "emotions",
+      "difficulty": 3
+    },
+    {
+      "word": "sollievo",
+      "translations": [
+        "relief"
+      ],
+      "examples": [
+        "Che sollievo sentire la tua voce."
+      ],
+      "category": "emotions",
+      "difficulty": 4
+    },
+    {
+      "word": "dieta",
+      "translations": [
+        "diet"
+      ],
+      "examples": [
+        "Sto seguendo una dieta equilibrata."
+      ],
+      "category": "health",
+      "difficulty": 3
+    },
+    {
+      "word": "allenamento",
+      "translations": [
+        "training",
+        "workout"
+      ],
+      "examples": [
+        "L'allenamento dura un'ora."
+      ],
+      "category": "sports",
+      "difficulty": 3
+    },
+    {
+      "word": "riabilitazione",
+      "translations": [
+        "rehabilitation"
+      ],
+      "examples": [
+        "La riabilitazione durerà sei mesi."
+      ],
+      "category": "health",
+      "difficulty": 4
+    },
+    {
+      "word": "intervento",
+      "translations": [
+        "operation",
+        "intervention"
+      ],
+      "examples": [
+        "L'intervento è andato bene."
+      ],
+      "category": "health",
+      "difficulty": 4
+    },
+    {
+      "word": "diagnosi",
+      "translations": [
+        "diagnosis"
+      ],
+      "examples": [
+        "La diagnosi è arrivata dopo una settimana."
+      ],
+      "category": "health",
+      "difficulty": 4
+    },
+    {
+      "word": "sintomo",
+      "translations": [
+        "symptom"
+      ],
+      "examples": [
+        "Il primo sintomo è stata la stanchezza."
+      ],
+      "category": "health",
+      "difficulty": 4
+    },
+    {
+      "word": "guarire",
+      "translations": [
+        "to recover",
+        "to heal"
+      ],
+      "examples": [
+        "È guarito completamente."
+      ],
+      "category": "health",
+      "difficulty": 3
+    },
+    {
+      "word": "prevenzione",
+      "translations": [
+        "prevention"
+      ],
+      "examples": [
+        "La prevenzione è meglio della cura."
+      ],
+      "category": "health",
+      "difficulty": 4
+    },
+    {
+      "word": "stress",
+      "translations": [
+        "stress"
+      ],
+      "examples": [
+        "Lo stress al lavoro è aumentato."
+      ],
+      "category": "health",
+      "difficulty": 3
+    },
+    {
+      "word": "benessere",
+      "translations": [
+        "wellbeing"
+      ],
+      "examples": [
+        "Il benessere dei dipendenti conta."
+      ],
+      "category": "health",
+      "difficulty": 4
+    },
+    {
+      "word": "ambiente",
+      "translations": [
+        "environment"
+      ],
+      "examples": [
+        "Dobbiamo proteggere l'ambiente."
+      ],
+      "category": "nature",
+      "difficulty": 3
+    },
+    {
+      "word": "inquinamento",
+      "translations": [
+        "pollution"
+      ],
+      "examples": [
+        "L'inquinamento in città è peggiorato."
+      ],
+      "category": "nature",
+      "difficulty": 4
+    },
+    {
+      "word": "riciclaggio",
+      "translations": [
+        "recycling"
+      ],
+      "examples": [
+        "Il riciclaggio della plastica è obbligatorio."
+      ],
+      "category": "nature",
+      "difficulty": 4
+    },
+    {
+      "word": "rifiuti",
+      "translations": [
+        "waste",
+        "rubbish"
+      ],
+      "examples": [
+        "I rifiuti vengono raccolti il martedì."
+      ],
+      "category": "nature",
+      "difficulty": 4
+    },
+    {
+      "word": "clima",
+      "translations": [
+        "climate"
+      ],
+      "examples": [
+        "Il clima sta cambiando rapidamente."
+      ],
+      "category": "nature",
+      "difficulty": 3
+    },
+    {
+      "word": "foresta",
+      "translations": [
+        "forest"
+      ],
+      "examples": [
+        "La foresta copre metà della regione."
+      ],
+      "category": "nature",
+      "difficulty": 3
+    },
+    {
+      "word": "fiume",
+      "translations": [
+        "river"
+      ],
+      "examples": [
+        "Il fiume è straripato dopo la pioggia."
+      ],
+      "category": "nature",
+      "difficulty": 3
+    },
+    {
+      "word": "campagna",
+      "translations": [
+        "countryside",
+        "campaign"
+      ],
+      "examples": [
+        "Passiamo il weekend in campagna."
+      ],
+      "category": "nature",
+      "difficulty": 3
+    },
+    {
+      "word": "risorsa",
+      "translations": [
+        "resource"
+      ],
+      "examples": [
+        "L'acqua è una risorsa limitata."
+      ],
+      "category": "nature",
+      "difficulty": 4
+    },
+    {
+      "word": "sostenibile",
+      "translations": [
+        "sustainable"
+      ],
+      "examples": [
+        "Cercano un modello di sviluppo sostenibile."
+      ],
+      "category": "nature",
+      "difficulty": 4
+    },
+    {
+      "word": "itinerario",
+      "translations": [
+        "itinerary"
+      ],
+      "examples": [
+        "L'itinerario prevede cinque città."
+      ],
+      "category": "travel",
+      "difficulty": 4
+    },
+    {
+      "word": "dogana",
+      "translations": [
+        "customs"
+      ],
+      "examples": [
+        "Siamo passati dalla dogana in dieci minuti."
+      ],
+      "category": "travel",
+      "difficulty": 4
+    },
+    {
+      "word": "bagaglio",
+      "translations": [
+        "luggage"
+      ],
+      "examples": [
+        "Il bagaglio è andato perso."
+      ],
+      "category": "travel",
+      "difficulty": 3
+    },
+    {
+      "word": "coincidenza",
+      "translations": [
+        "connection (transport)"
+      ],
+      "examples": [
+        "Ho perso la coincidenza a Milano."
+      ],
+      "category": "travel",
+      "difficulty": 4
+    },
+    {
+      "word": "ritardo",
+      "translations": [
+        "delay"
+      ],
+      "examples": [
+        "Il volo ha due ore di ritardo."
+      ],
+      "category": "travel",
+      "difficulty": 3
+    },
+    {
+      "word": "noleggiare",
+      "translations": [
+        "to rent",
+        "to hire"
+      ],
+      "examples": [
+        "Abbiamo noleggiato una macchina."
+      ],
+      "category": "travel",
+      "difficulty": 3
+    },
+    {
+      "word": "tradizione",
+      "translations": [
+        "tradition"
+      ],
+      "examples": [
+        "È una tradizione di famiglia."
+      ],
+      "category": "society",
+      "difficulty": 3
+    },
+    {
+      "word": "usanza",
+      "translations": [
+        "custom"
+      ],
+      "examples": [
+        "Questa usanza risale al Medioevo."
+      ],
+      "category": "society",
+      "difficulty": 4
+    },
+    {
+      "word": "festa",
+      "translations": [
+        "festival",
+        "party"
+      ],
+      "examples": [
+        "La festa del paese è ad agosto."
+      ],
+      "category": "society",
+      "difficulty": 2
+    },
+    {
+      "word": "sagra",
+      "translations": [
+        "food festival"
+      ],
+      "examples": [
+        "Alla sagra si mangia benissimo."
+      ],
+      "category": "food",
+      "difficulty": 4
+    },
+    {
+      "word": "ricetta",
+      "translations": [
+        "recipe"
+      ],
+      "examples": [
+        "Questa ricetta è di mia nonna."
+      ],
+      "category": "food",
+      "difficulty": 3
+    },
+    {
+      "word": "ingrediente",
+      "translations": [
+        "ingredient"
+      ],
+      "examples": [
+        "Manca un ingrediente fondamentale."
+      ],
+      "category": "food",
+      "difficulty": 3
+    },
+    {
+      "word": "assaggiare",
+      "translations": [
+        "to taste"
+      ],
+      "examples": [
+        "Vuoi assaggiare il dolce?"
+      ],
+      "category": "food",
+      "difficulty": 3
+    },
+    {
+      "word": "cuocere",
+      "translations": [
+        "to cook",
+        "to bake"
+      ],
+      "examples": [
+        "Cuoci la pasta per otto minuti."
+      ],
+      "category": "food",
+      "difficulty": 3
+    },
+    {
+      "word": "riuscire",
+      "translations": [
+        "to manage",
+        "to succeed"
+      ],
+      "examples": [
+        "Non riesco a capire questa frase."
+      ],
+      "category": "basics",
+      "difficulty": 3
+    },
+    {
+      "word": "smettere",
+      "translations": [
+        "to stop",
+        "to quit"
+      ],
+      "examples": [
+        "Ha smesso di fumare l'anno scorso."
+      ],
+      "category": "basics",
+      "difficulty": 3
+    },
+    {
+      "word": "provocare",
+      "translations": [
+        "to cause",
+        "to provoke"
+      ],
+      "examples": [
+        "La pioggia ha provocato molti danni."
+      ],
+      "category": "basics",
+      "difficulty": 4
+    },
+    {
+      "word": "migliorare",
+      "translations": [
+        "to improve"
+      ],
+      "examples": [
+        "Il mio italiano è migliorato molto."
+      ],
+      "category": "basics",
+      "difficulty": 3
+    },
+    {
+      "word": "peggiorare",
+      "translations": [
+        "to worsen"
+      ],
+      "examples": [
+        "La situazione è peggiorata."
+      ],
+      "category": "basics",
+      "difficulty": 3
+    },
+    {
+      "word": "evitare",
+      "translations": [
+        "to avoid"
+      ],
+      "examples": [
+        "Cerco di evitare il traffico."
+      ],
+      "category": "basics",
+      "difficulty": 3
+    },
+    {
+      "word": "raggiungere",
+      "translations": [
+        "to reach",
+        "to achieve"
+      ],
+      "examples": [
+        "Abbiamo raggiunto la cima."
+      ],
+      "category": "basics",
+      "difficulty": 3
+    },
+    {
+      "word": "scegliere",
+      "translations": [
+        "to choose"
+      ],
+      "examples": [
+        "Scegli tu il ristorante."
+      ],
+      "category": "basics",
+      "difficulty": 2
+    },
+    {
+      "word": "accorgersi",
+      "translations": [
+        "to notice",
+        "to realize"
+      ],
+      "examples": [
+        "Non mi sono accorto dell'errore."
+      ],
+      "category": "basics",
+      "difficulty": 4
+    },
+    {
+      "word": "sembrare",
+      "translations": [
+        "to seem"
+      ],
+      "examples": [
+        "Sembra più giovane della sua età."
+      ],
+      "category": "basics",
+      "difficulty": 2
+    }
+  ]
+}
