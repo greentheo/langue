@@ -1,0 +1,155 @@
+title: "Como, bebo, vivo"
+subtitle: Regular -er and -ir verbs
+goal: use regular *-er* and *-ir* verbs in the present tense
+minutes: 12
+
+sections:
+  - heading: "-er verbs: comer (to eat)"
+    body: |
+      Drop **-er** and add these endings. They work for every regular -er
+      verb: *beber* (to drink), *leer* (to read), *aprender* (to learn),
+      *correr* (to run), *vender* (to sell).
+    table:
+      columns: [who, ending, comer]
+      rows:
+        - [yo, "-o", como]
+        - [tú, "-es", comes]
+        - [él / ella / usted, "-e", come]
+        - [nosotros / nosotras, "-emos", comemos]
+        - [vosotros / vosotras, "-éis", coméis]
+        - [ellos / ellas / ustedes, "-en", comen]
+    examples:
+      - ["Bebo agua.", "I drink water."]
+      - ["¿Lees mucho?", "Do you read a lot?"]
+      - ["Aprendemos español.", "We're learning Spanish."]
+    tip: "*Como* means \"I eat\". *¿Cómo?* with an accent mark is the question word \"how?\"."
+
+  - heading: "-ir verbs: vivir (to live)"
+    body: |
+      The **-ir** endings are almost the same as the -er ones. Only
+      *nosotros* and *vosotros* are different: *comemos* but *vivimos*,
+      *coméis* but *vivís*.
+
+      Other regular -ir verbs: *escribir* (to write), *abrir* (to open),
+      *recibir* (to receive), *compartir* (to share).
+    table:
+      columns: [who, comer, vivir]
+      rows:
+        - [yo, como, vivo]
+        - [tú, comes, vives]
+        - [él / ella / usted, come, vive]
+        - [nosotros / nosotras, comemos, vivimos]
+        - [vosotros / vosotras, coméis, vivís]
+        - [ellos / ellas / ustedes, comen, viven]
+    examples:
+      - ["¿Dónde vives?", "Where do you live?"]
+      - ["Vivimos en la ciudad.", "We live in the city."]
+      - ["Ella escribe una carta.", "She's writing a letter."]
+
+  - heading: All three groups together
+    body: |
+      Now you know all three kinds of regular verb. Notice the pattern: the
+      **yo** form always ends in **-o**, whatever the group.
+    table:
+      columns: [who, hablar, comer, vivir]
+      rows:
+        - [yo, hablo, como, vivo]
+        - [tú, hablas, comes, vives]
+        - [él / ella / usted, habla, come, vive]
+        - [nosotros / nosotras, hablamos, comemos, vivimos]
+        - [vosotros / vosotras, habláis, coméis, vivís]
+        - [ellos / ellas / ustedes, hablan, comen, viven]
+    tip: "-ar verbs use **a** in their endings; -er and -ir verbs use **e** (except *nosotros* and *vosotros* for -ir)."
+
+words:
+  - [comer, to eat]
+  - [beber, to drink]
+  - [leer, to read]
+  - [aprender, to learn]
+  - [correr, to run]
+  - [vender, to sell]
+  - [vivir, to live]
+  - [escribir, to write]
+  - [abrir, to open]
+  - [recibir, to receive]
+  - [pan, bread]
+  - [carta, letter]
+  - [ventana, window]
+
+practice:
+  - type: fill
+    prompt: "Yo ___ agua."
+    hint: beber
+    translation: I drink water.
+    answers: [bebo]
+    why: The yo form of every regular verb ends in -o.
+
+  - type: fill
+    prompt: "¿Dónde ___?"
+    hint: vivir, tú
+    translation: Where do you live?
+    answers: [vives]
+    why: The tú ending for -ir verbs is -es.
+
+  - type: fill
+    prompt: "Nosotros ___ en Madrid."
+    hint: vivir
+    translation: We live in Madrid.
+    answers: [vivimos]
+    why: For -ir verbs, the nosotros ending is -imos.
+
+  - type: fill
+    prompt: "Ella ___ un libro."
+    hint: leer
+    translation: She's reading a book.
+    answers: [lee]
+    why: The él/ella ending for -er verbs is -e.
+
+  - type: fill
+    prompt: "Ustedes ___ mucho."
+    hint: comer
+    translation: You all eat a lot.
+    answers: [comen]
+    why: Ustedes uses the same form as ellos — the -en ending.
+
+  - type: translate
+    direction: to-target
+    prompt: We eat bread.
+    answers: [Comemos pan, Nosotros comemos pan, Nosotras comemos pan]
+    why: The nosotros ending for -er verbs is -emos.
+
+  - type: translate
+    direction: to-target
+    prompt: They write a letter.
+    answers: [Escriben una carta, Ellos escriben una carta, Ellas escriben una carta]
+    why: The ellos ending for -ir verbs is -en.
+
+  - type: translate
+    direction: to-target
+    prompt: Where do you live? (polite)
+    answers: ["¿Dónde vive usted?", "¿Dónde vive?", "¿Usted dónde vive?"]
+    why: Usted uses the same verb form as él and ella — vive.
+
+  - type: translate
+    direction: to-english
+    prompt: Aprendo español.
+    answers: [I learn Spanish, I am learning Spanish]
+    why: Aprendo is the yo form of aprender, "to learn".
+
+  - type: translate
+    direction: to-english
+    prompt: "¿Abres la ventana?"
+    answers: [Are you opening the window?, Do you open the window?, Will you open the window?, Can you open the window?]
+    why: Abres is the tú form of abrir, "to open".
+
+  - type: choice
+    prompt: Which form of *vivir* goes with *nosotros*?
+    options: [vivemos, vivimos, vivamos]
+    answer: vivimos
+    why: -ir verbs use -imos for nosotros; -emos is for -er verbs.
+
+  - type: choice
+    prompt: "*Comen* means…"
+    options: [I eat, we eat, they eat]
+    answer: they eat
+    why: The -en ending belongs to ellos, ellas and ustedes.

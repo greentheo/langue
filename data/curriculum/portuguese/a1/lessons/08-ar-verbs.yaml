@@ -1,0 +1,160 @@
+title: "Eu falo português"
+subtitle: Regular -ar verbs and question words
+goal: use regular -ar verbs in the present and ask questions with quem, o que, onde, quando, como, por que and qual
+minutes: 13
+
+sections:
+  - heading: The -ar pattern
+    body: |
+      The dictionary form of a verb is the **infinitive** — like *to speak*
+      in English. In Portuguese it ends in **-ar**, **-er** or **-ir**. This
+      lesson is about **-ar** verbs, the biggest group.
+
+      Take off **-ar** and add the ending for the person:
+    table:
+      columns: [pronoun, falar (to speak), morar (to live)]
+      rows:
+        - [eu, falo, moro]
+        - [você / ele / ela / a gente, fala, mora]
+        - [nós, falamos, moramos]
+        - [vocês / eles / elas, falam, moram]
+    examples:
+      - ["Eu falo inglês.", "I speak English."]
+      - ["Ela mora em Belo Horizonte.", "She lives in Belo Horizonte."]
+      - ["Nós estudamos português.", "We study Portuguese."]
+      - ["Eles trabalham aqui.", "They work here."]
+    tip: "The -o ending already means \"I\": *falo* = I speak. That's why you can drop *eu*."
+
+  - heading: More -ar verbs
+    body: |
+      Hundreds of verbs work exactly like *falar*. Some everyday ones:
+
+      - **morar** — to live (somewhere)
+      - **trabalhar** — to work
+      - **estudar** — to study
+      - **tomar** — to drink, to take (*tomar café* — to have coffee)
+      - **comprar** — to buy
+      - **chegar** — to arrive
+
+      The present tense covers three English forms: *Eu estudo* means "I
+      study", "I'm studying" and "I do study".
+    examples:
+      - ["Você trabalha hoje?", "Are you working today?"]
+      - ["A gente compra pão aqui.", "We buy bread here."]
+      - ["O ônibus chega às oito.", "The bus arrives at eight."]
+
+  - heading: Question words
+    body: |
+      Put the question word first, then the verb — no "do" or "does" needed:
+      *Onde você mora?* — Where do you live?
+
+      To answer "why", use **porque** (because): *— Por que você estuda
+      português? — Porque trabalho em São Paulo.*
+
+      To ask for a specific piece of information — a name, an address — use
+      **qual é**: *Qual é o seu nome?*
+    table:
+      columns: [Portuguese, English]
+      rows:
+        - [quem, who]
+        - [o que / que, what]
+        - [onde, where]
+        - [quando, when]
+        - [como, how]
+        - [por que, why]
+        - [quanto / quanta / quantos / quantas, how much / how many]
+        - [qual / quais, which / what]
+    tip: "*Por que* (two words) asks why; *porque* (one word) answers because. At the very end of a question it takes an accent: *Você estuda por quê?*"
+
+words:
+  - [falar, to speak]
+  - [morar, to live (somewhere)]
+  - [trabalhar, to work]
+  - [estudar, to study]
+  - [tomar, to drink / to take]
+  - [comprar, to buy]
+  - [chegar, to arrive]
+  - [quem, who]
+  - [o que, what]
+  - [quando, when]
+  - [como, how]
+  - [por que, why]
+  - [porque, because]
+  - [qual, which / what]
+
+practice:
+  - type: fill
+    prompt: "Eu ___ em Curitiba."
+    hint: morar, eu
+    translation: I live in Curitiba.
+    answers: [moro]
+    why: -ar verbs end in -o with eu.
+
+  - type: fill
+    prompt: "Nós ___ português."
+    hint: estudar, nós
+    translation: We study Portuguese.
+    answers: [estudamos]
+    why: -ar verbs end in -amos with nós.
+
+  - type: fill
+    prompt: "Eles ___ aqui."
+    hint: trabalhar, eles
+    translation: They work here.
+    answers: [trabalham]
+    why: -ar verbs end in -am with vocês, eles and elas.
+
+  - type: fill
+    prompt: "___ você mora?"
+    hint: where
+    translation: Where do you live?
+    answers: [Onde]
+    why: Onde means where, and it goes first in the question.
+
+  - type: choice
+    prompt: "\"Why do you study Portuguese?\""
+    options: [Por que você estuda português?, Porque você estuda português?, Por quê você estuda português?]
+    answer: Por que você estuda português?
+    why: At the start of a question, "why" is por que — two words, no accent.
+
+  - type: choice
+    prompt: "\"What's your name?\""
+    options: [Qual é o seu nome?, O que é o seu nome?]
+    answer: Qual é o seu nome?
+    why: To ask for a specific piece of information like a name, use qual é.
+
+  - type: translate
+    direction: to-target
+    prompt: She speaks English.
+    answers: [Ela fala inglês.]
+    why: With ela, -ar verbs end in -a.
+
+  - type: translate
+    direction: to-target
+    prompt: Where do you work?
+    answers: [Onde você trabalha?, Você trabalha onde?, Onde o senhor trabalha?, Onde a senhora trabalha?, Onde vocês trabalham?]
+    why: Question word first, then the verb — no "do" needed.
+
+  - type: translate
+    direction: to-target
+    prompt: We buy bread.
+    answers: [Nós compramos pão., Compramos pão., A gente compra pão.]
+    why: Comprar with nós is compramos — and with a gente it is compra.
+
+  - type: translate
+    direction: to-english
+    prompt: Quando vocês chegam?
+    answers: [When do you arrive?, When are you arriving?, When do you get here?, When do you guys arrive?, When do you all arrive?]
+    why: Quando means when; chegam is the vocês form of chegar.
+
+  - type: translate
+    direction: to-english
+    prompt: O que você estuda?
+    answers: [What do you study?, What are you studying?]
+    why: O que means what.
+
+  - type: translate
+    direction: to-english
+    prompt: Eu não falo inglês.
+    answers: [I don't speak English., I do not speak English.]
+    why: Não before the verb makes it negative.

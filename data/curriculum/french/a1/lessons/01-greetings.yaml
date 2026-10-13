@@ -1,0 +1,167 @@
+title: "Bonjour !"
+subtitle: Greetings and introductions
+goal: greet people at any time of day, say your name, ask someone's name, and choose between *tu* and *vous*
+minutes: 10
+
+sections:
+  - heading: Hello and goodbye
+    body: |
+      The word you will use most is **bonjour** — "hello" or "good day". It
+      works with anyone, all day, until the evening. In the evening, switch
+      to **bonsoir**.
+
+      With friends, family and people your age you can say **salut** — it
+      means both "hi" and "bye".
+
+      In France it is polite to add **madame** or **monsieur** when you greet
+      an adult: *Bonjour, madame !*
+    table:
+      columns: [French, English, when]
+      rows:
+        - [bonjour, "hello, good morning", "anyone, until the evening"]
+        - [bonsoir, good evening, "anyone, in the evening"]
+        - [salut, "hi, bye", "friends and family only"]
+        - [au revoir, goodbye, anyone]
+        - [à bientôt, see you soon, anyone]
+        - [à demain, see you tomorrow, anyone]
+    tip: "*Bonne nuit* means \"good night\", but only when someone is going to bed. To say goodbye in the evening, use *bonsoir* or *au revoir*."
+
+  - heading: Tu or vous?
+    body: |
+      English has one word for "you". French has two:
+
+      - **tu** — for friends, family, children, pets, and people your own
+        age if you are young
+      - **vous** — for adults you don't know, teachers, shop staff, and
+        anyone you want to be polite to. *Vous* is also the word for "you"
+        when you are talking to more than one person.
+
+      If you are not sure, use **vous**. Nobody minds being treated politely.
+    tip: "Kids and teenagers say *tu* to each other straight away, but *vous* to their teachers."
+
+  - heading: What's your name?
+    body: |
+      To give your name, say **je m'appelle** and then your name. It
+      literally means "I call myself".
+
+      To ask someone's name:
+
+      - to a friend: **Comment tu t'appelles ?**
+      - politely: **Comment vous appelez-vous ?**
+
+      When you meet someone, say **enchanté** ("delighted"). If you are a
+      girl or a woman, you write it **enchantée** — it sounds exactly the
+      same.
+    examples:
+      - ["Je m'appelle Léa.", "My name is Léa."]
+      - ["Comment tu t'appelles ?", "What's your name? (to a friend)"]
+      - ["Comment vous appelez-vous ?", "What's your name? (polite)"]
+      - ["Enchanté, Paul.", "Nice to meet you, Paul."]
+
+  - heading: How are you?
+    body: |
+      The everyday question is **Ça va ?** — literally "it goes?". The
+      answer can be the same words: **Ça va.** ("I'm fine.")
+
+      - *Ça va bien, merci. Et toi ?* — I'm fine, thanks. And you?
+      - *Très bien !* — Very well!
+      - *Pas mal.* — Not bad.
+
+      The polite version is **Comment allez-vous ?** and you answer
+      *Très bien, merci. Et vous ?*
+    examples:
+      - ["Salut, Hugo ! Ça va ?", "Hi, Hugo! How's it going?"]
+      - ["Ça va bien, merci. Et toi ?", "I'm fine, thanks. And you?"]
+      - ["Bonjour, monsieur. Comment allez-vous ?", "Good morning, sir. How are you?"]
+    tip: "French people often greet friends with *la bise* — a light kiss on each cheek. A handshake is normal with adults you have just met."
+
+words:
+  - [bonjour, "hello, good morning"]
+  - [bonsoir, good evening]
+  - [salut, "hi, bye"]
+  - [au revoir, goodbye]
+  - [à demain, see you tomorrow]
+  - [merci, thank you]
+  - [oui, "yes"]
+  - [non, "no"]
+  - [et, and]
+  - [très bien, very well]
+  - [madame, "madam, Mrs"]
+  - [monsieur, "sir, Mr"]
+  - [enchanté, nice to meet you]
+
+practice:
+  - type: choice
+    prompt: You meet your friend's grandmother for the first time. What do you say?
+    options: ["Salut !", "Bonjour, madame !"]
+    answer: "Bonjour, madame !"
+    why: Salut is only for friends; with an adult you don't know, say bonjour and add madame or monsieur.
+
+  - type: fill
+    prompt: "Je m'___ Léa."
+    hint: (call)
+    translation: My name is Léa.
+    answers: [appelle]
+    why: Je m'appelle — literally "I call myself" — is how you give your name.
+
+  - type: translate
+    direction: to-target
+    prompt: Hello!
+    answers: ["Bonjour !", "Salut !"]
+    why: Bonjour works with anyone; salut is the friendly version.
+
+  - type: translate
+    direction: to-english
+    prompt: "Ça va ?"
+    answers: ["How are you?", "How are you doing?", "How's it going?", "How are things?", "Are you OK?", "Are you okay?"]
+    why: Ça va? literally means "it goes?" and is the everyday way to ask how someone is.
+
+  - type: choice
+    prompt: Which word for "you" do you use with a shop assistant?
+    options: [tu, vous]
+    answer: vous
+    why: Vous is the polite "you" for adults you don't know.
+
+  - type: fill
+    prompt: "Comment tu t'___ ?"
+    hint: (call — to a friend)
+    translation: What's your name?
+    answers: [appelles]
+    why: With tu the verb is t'appelles — the friendly way to ask a name.
+
+  - type: translate
+    direction: to-target
+    prompt: Goodbye!
+    answers: ["Au revoir !"]
+    why: Au revoir works with anyone; it literally means "until seeing again".
+
+  - type: translate
+    direction: to-target
+    prompt: Good evening, sir.
+    answers: ["Bonsoir, monsieur."]
+    why: In the evening bonjour becomes bonsoir, and monsieur makes it polite.
+
+  - type: fill
+    prompt: "Ça va bien, merci. Et ___ ?"
+    hint: (you — to a friend)
+    translation: I'm fine, thanks. And you?
+    answers: [toi]
+    why: Et toi? is the friendly "and you?"; to an adult you would say Et vous?
+
+  - type: translate
+    direction: to-english
+    prompt: "Comment vous appelez-vous ?"
+    answers: ["What is your name?", "What's your name?"]
+    why: This is the polite way to ask a name, using vous.
+
+  - type: choice
+    prompt: A girl writes "Nice to meet you." Which spelling is right?
+    options: [Enchanté, Enchantée]
+    answer: Enchantée
+    why: A girl or woman adds -e in writing; it sounds exactly the same.
+
+  - type: translate
+    direction: to-target
+    prompt: See you tomorrow!
+    answers: ["À demain !"]
+    why: À demain literally means "until tomorrow".

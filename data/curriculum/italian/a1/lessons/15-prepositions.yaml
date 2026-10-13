@@ -1,0 +1,160 @@
+title: Al bar, sul tavolo
+subtitle: Prepositions with articles
+goal: join prepositions to articles — al, nella, dei, sul, dal — to say where things are and where you're going
+minutes: 15
+
+sections:
+  - heading: Small words that do a lot
+    body: |
+      **Prepositions** are the little words like "to", "in", "from" and
+      "with". These are the main Italian ones. Each has more than one job,
+      so learn them from examples.
+
+      **Da** + a person means "at their place" or "to their place": *Vado
+      da Luca* — I'm going to Luca's.
+    table:
+      columns: [Italian, main meanings, example]
+      rows:
+        - [di, "of, from (a city), 's", "il libro di Marco — Marco's book"]
+        - [a, "to, at, in (a city)", "Vado a Roma."]
+        - [da, "from, at/to someone's place", "Vengo da Roma. Vado da Luca."]
+        - [in, "in, to (a country), by (transport)", "in Italia, in treno"]
+        - [su, "on, about", "un libro su Roma"]
+        - [con, with, "con Giulia"]
+        - [per, for, "per Marco"]
+        - ["tra, fra", "between, in (time)", "tra due giorni — in two days"]
+
+  - heading: Preposition + article = one word
+    body: |
+      When **a, di, da, in** or **su** comes right before *il, lo, l', la,
+      i, gli* or *le*, the two join into one word.
+
+      The pattern: **a, da** and **su** just stick onto the article
+      (doubling the *l*); **di** turns into **de-**, and **in** turns into
+      **ne-**.
+    table:
+      columns: ["", il, lo, "l'", la, i, gli, le]
+      rows:
+        - [a, al, allo, "all'", alla, ai, agli, alle]
+        - [di, del, dello, "dell'", della, dei, degli, delle]
+        - [da, dal, dallo, "dall'", dalla, dai, dagli, dalle]
+        - [in, nel, nello, "nell'", nella, nei, negli, nelle]
+        - [su, sul, sullo, "sull'", sulla, sui, sugli, sulle]
+    examples:
+      - ["Vado al bar.", "I'm going to the café."]
+      - ["Il libro è sul tavolo.", "The book is on the table."]
+      - ["Le chiavi sono nella borsa.", "The keys are in the bag."]
+      - ["la casa dei miei nonni", "my grandparents' house"]
+      - ["Vengo dalla stazione.", "I'm coming from the station."]
+    tip: "*Con* and *per* don't join: *con il cane*, *per la mamma*."
+
+  - heading: With or without the article?
+    body: |
+      Remember the set phrases from lesson 11 that take **no** article:
+      *a casa, a scuola, a letto, in centro, in banca, in Italia, a Roma*.
+
+      Most other places need the article, so the preposition joins it:
+
+      - *Vado al cinema, al mare, alla stazione, all'università.*
+      - *Vado dal medico.* — I'm going to the doctor's.
+      - *Sono all'aeroporto.* — I'm at the airport.
+    examples:
+      - ["Andiamo al mare domani.", "We're going to the seaside tomorrow."]
+      - ["Stasera vado da Giulia.", "Tonight I'm going to Giulia's."]
+      - ["Il gatto dorme sul letto.", "The cat is sleeping on the bed."]
+    tip: "Never *a il*: *Vado al cinema*, not *Vado a il cinema*."
+
+words:
+  - [di, "of, from"]
+  - [a, "to, at"]
+  - [da, "from, at someone's place"]
+  - [in, "in, to"]
+  - [su, on]
+  - [con, with]
+  - [per, for]
+  - [tra, "between, in"]
+  - [tavolo, table]
+  - [borsa, bag]
+  - [stazione, station]
+  - [cinema, cinema]
+  - [medico, doctor]
+  - [aeroporto, airport]
+  - [università, university]
+
+practice:
+  - type: fill
+    prompt: "Vado ___ cinema."
+    hint: (a + il)
+    translation: I'm going to the cinema.
+    answers: [al]
+    why: A + il = al.
+
+  - type: fill
+    prompt: "Il gatto è ___ tavolo."
+    hint: (su + il)
+    translation: The cat is on the table.
+    answers: [sul]
+    why: Su + il = sul.
+
+  - type: fill
+    prompt: "Le chiavi sono ___ borsa."
+    hint: (in + la)
+    translation: The keys are in the bag.
+    answers: [nella]
+    why: In + la = nella.
+
+  - type: fill
+    prompt: "la casa ___ nonni"
+    hint: (di + i)
+    translation: the grandparents' house
+    answers: [dei]
+    why: Di + i = dei.
+
+  - type: fill
+    prompt: "Vengo ___ stazione."
+    hint: (da + la)
+    translation: I'm coming from the station.
+    answers: [dalla]
+    why: Da + la = dalla.
+
+  - type: translate
+    direction: to-target
+    prompt: I'm going to the doctor's.
+    answers: ["Vado dal medico.", "Io vado dal medico."]
+    why: Da + a person means "to their place", and da + il = dal.
+
+  - type: translate
+    direction: to-target
+    prompt: We're at the airport.
+    answers: ["Siamo all'aeroporto.", "Noi siamo all'aeroporto.", "Siamo in aeroporto.", "Noi siamo in aeroporto."]
+    why: A + l' = all'.
+
+  - type: translate
+    direction: to-target
+    prompt: Marco's book
+    answers: ["il libro di Marco"]
+    why: Italian has no 's — it says "the book of Marco".
+
+  - type: translate
+    direction: to-english
+    prompt: Andiamo al mare.
+    answers: ["We're going to the sea.", "We're going to the seaside.", "We're going to the beach.", "We go to the sea.", "We go to the seaside.", "Let's go to the sea.", "Let's go to the seaside.", "Let's go to the beach."]
+    why: Al mare is a + il mare — "to the sea".
+
+  - type: translate
+    direction: to-english
+    prompt: con i miei amici
+    answers: ["with my friends"]
+    why: Con doesn't join with the article — con i.
+
+  - type: choice
+    prompt: What is *a + gli*?
+    options: [agli, ai, alle]
+    answer: agli
+    why: A + gli = agli, for nouns that take gli.
+
+  - type: choice
+    prompt: How do you say "I'm going home"?
+    options: [Vado alla casa., Vado a casa., Vado nella casa.]
+    answer: Vado a casa.
+    why: A casa is a set phrase with no article.

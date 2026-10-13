@@ -1,0 +1,160 @@
+title: Mi familia
+subtitle: Possessives and family
+goal: talk about your family, and say whose things are with *mi, tu, su* and *nuestro*
+minutes: 12
+
+sections:
+  - heading: The family
+    body: |
+      The masculine plural covers mixed groups, so **hermanos** means
+      "brothers" or "brothers and sisters", and **padres** means "parents".
+    table:
+      columns: [Spanish, English]
+      rows:
+        - [padre, father]
+        - [madre, mother]
+        - [padres, parents]
+        - [hermano / hermana, brother / sister]
+        - [hermanos, "brothers, or brothers and sisters"]
+        - [hijo / hija, son / daughter]
+        - [abuelo / abuela, grandfather / grandmother]
+        - [abuelos, grandparents]
+        - [tío / tía, uncle / aunt]
+        - [primo / prima, cousin]
+    examples:
+      - ["Tengo dos hermanos.", "I have two brothers. (or: a brother and a sister)"]
+      - ["Mi abuela tiene ochenta años.", "My grandmother is eighty."]
+
+  - heading: "My, your, his, her"
+    body: |
+      **Mi, tu** and **su** change only for singular or plural — they
+      match the thing that's owned, not the owner: *mi hermano*, *mis
+      hermanos*.
+
+      **Nuestro** (our) and **vuestro** also change for masculine and
+      feminine: *nuestra casa*, *nuestros padres*.
+
+      Don't put *el* or *la* in front: *mi madre*, not *la mi madre*.
+    table:
+      columns: ["", one thing, more than one]
+      rows:
+        - [my, mi, mis]
+        - [your (tú), tu, tus]
+        - ["his, her, your (usted), their", su, sus]
+        - [our, nuestro / nuestra, nuestros / nuestras]
+        - [your (vosotros — Spain), vuestro / vuestra, vuestros / vuestras]
+    tip: "*Tu* (your) has no accent mark; *tú* (you) has one: *Tú y tu hermano*."
+
+  - heading: "Su: his, her, your or their"
+    body: |
+      **Su** can mean "his", "her", "your" (polite) or "their". Usually the
+      conversation makes it clear. If not, Spanish speakers say *de* + the
+      person instead: *el libro de ella* (her book).
+    examples:
+      - ["Ana tiene un perro. Su perro es pequeño.", "Ana has a dog. Her dog is small."]
+      - ["Sus padres viven en Chile.", "His (or her, or their) parents live in Chile."]
+
+  - heading: "Whose is it? Use de"
+    body: |
+      Spanish has no **'s**. To say "Pablo's house", say "the house of
+      Pablo": **la casa de Pablo**.
+    examples:
+      - ["la casa de Pablo", "Pablo's house"]
+      - ["el hermano de Ana", "Ana's brother"]
+      - ["el perro de mi abuela", "my grandmother's dog"]
+
+words:
+  - [familia, family]
+  - [padre, father]
+  - [madre, mother]
+  - [padres, parents]
+  - [hermano, brother]
+  - [hermana, sister]
+  - [hijo, son]
+  - [hija, daughter]
+  - [abuelo, grandfather]
+  - [abuela, grandmother]
+  - [tío, uncle]
+  - [tía, aunt]
+  - [primo, cousin (male)]
+  - [mi, my]
+  - [tu, your]
+  - [su, "his, her, their, your (polite)"]
+  - [nuestro, our]
+
+practice:
+  - type: fill
+    prompt: "___ madre es profesora."
+    hint: my
+    translation: My mother is a teacher.
+    answers: [Mi]
+    why: Mi is "my" for one thing or person.
+
+  - type: fill
+    prompt: "___ hermanos son altos."
+    hint: my
+    translation: My brothers are tall.
+    answers: [Mis]
+    why: Hermanos is plural, so "my" is mis.
+
+  - type: fill
+    prompt: "¿Cómo se llama ___ padre?"
+    hint: your — to a friend
+    translation: What's your father's name?
+    answers: [tu]
+    why: Tu, without an accent, is "your" for a friend.
+
+  - type: fill
+    prompt: "___ casa es grande."
+    hint: our
+    translation: Our house is big.
+    answers: [Nuestra]
+    why: Casa is feminine, so "our" is nuestra.
+
+  - type: translate
+    direction: to-target
+    prompt: my parents
+    answers: [mis padres]
+    why: Padres is plural, so "my" is mis.
+
+  - type: translate
+    direction: to-target
+    prompt: Ana's brother
+    answers: [el hermano de Ana]
+    why: Spanish has no 's — it says "the brother of Ana".
+
+  - type: translate
+    direction: to-target
+    prompt: Our grandparents live in Mexico.
+    answers: [Nuestros abuelos viven en México]
+    why: Abuelos is masculine plural, so "our" is nuestros.
+
+  - type: translate
+    direction: to-target
+    prompt: I have two sisters.
+    answers: [Tengo dos hermanas, Yo tengo dos hermanas]
+    why: Hermanas is "sisters"; hermanos would include brothers.
+
+  - type: translate
+    direction: to-english
+    prompt: Su hija tiene diez años.
+    answers: [His daughter is ten, Her daughter is ten, Their daughter is ten, Your daughter is ten, His daughter is ten years old, Her daughter is ten years old, Their daughter is ten years old, Your daughter is ten years old]
+    why: Su can mean his, her, their or polite your.
+
+  - type: translate
+    direction: to-english
+    prompt: mis primos
+    answers: [my cousins]
+    why: Mis is the plural "my", and primos is "cousins".
+
+  - type: choice
+    prompt: Which one means "my sister's dog"?
+    options: [el perro de mi hermana, mi hermana de perro, el perro mi hermana]
+    answer: el perro de mi hermana
+    why: Spanish says "the dog of my sister".
+
+  - type: choice
+    prompt: "¿___ hermano es estudiante? (your)"
+    options: [Tú, Tu]
+    answer: Tu
+    why: Tu without an accent means "your"; tú with an accent means "you".

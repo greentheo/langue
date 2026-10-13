@@ -1,0 +1,176 @@
+title: Ho fame
+subtitle: Avere (to have), and c'è / ci sono
+goal: say what you have, how old you are and how you feel with avere, and say what there is with c'è and ci sono
+minutes: 12
+
+sections:
+  - heading: "Avere: to have"
+    body: |
+      **Avere** means "to have". Like *essere*, it is irregular, so learn
+      its six forms as they are.
+
+      The **h** is silent: *ho* sounds like "oh" and *hanno* like
+      AHN-noh. It is there only so you can tell *ho* (I have) apart from
+      *o* (or) when you write.
+
+      In a question, Italian doesn't need "do": *Hai un cane?* — Do you have
+      a dog?
+    table:
+      columns: [person, avere, English]
+      rows:
+        - [io, ho, I have]
+        - [tu, hai, you have]
+        - [lui / lei / Lei, ha, "he has, she has, you have (polite)"]
+        - [noi, abbiamo, we have]
+        - [voi, avete, you have (a group)]
+        - [loro, hanno, they have]
+    examples:
+      - ["Ho un cane.", "I have a dog."]
+      - ["Hai una sorella?", "Do you have a sister?"]
+      - ["Marco ha un gatto.", "Marco has a cat."]
+      - ["Non ho un fratello.", "I don't have a brother."]
+
+  - heading: How old are you?
+    body: |
+      Italians don't say "I *am* twelve". They say "I *have* twelve years":
+      **Ho dodici anni**.
+
+      To ask: **Quanti anni hai?** — literally "How many years do you
+      have?" Politely: **Quanti anni ha?**
+    examples:
+      - ["Quanti anni hai? — Ho tredici anni.", "How old are you? — I'm thirteen."]
+      - ["Luca ha 15 anni.", "Luca is 15."]
+      - ["Giulia ha 8 anni.", "Giulia is 8."]
+    tip: "Never use *essere* for age. *Sono 12 anni* is wrong — say *Ho 12 anni*."
+
+  - heading: Hungry, thirsty, cold
+    body: |
+      Many feelings also use **avere**. Instead of "I am hungry", Italian
+      says "I have hunger": **Ho fame**.
+    table:
+      columns: [Italian, English]
+      rows:
+        - [avere fame, to be hungry]
+        - [avere sete, to be thirsty]
+        - [avere caldo, to be hot]
+        - [avere freddo, to be cold]
+        - [avere sonno, to be sleepy]
+        - [avere paura, to be scared]
+        - [avere fretta, to be in a hurry]
+    examples:
+      - ["Ho fame!", "I'm hungry!"]
+      - ["Hai freddo?", "Are you cold?"]
+      - ["Non abbiamo fretta.", "We're not in a hurry."]
+    tip: "When you feel hot or cold, say *ho caldo* or *ho freddo* — not *sono caldo*."
+
+  - heading: "There is, there are: c'è and ci sono"
+    body: |
+      **C'è** (short for *ci è*) means "there is" — for one thing.
+      **Ci sono** means "there are" — for more than one.
+
+      - *C'è un problema.* — There's a problem.
+      - *Ci sono due gatti.* — There are two cats.
+
+      (*Due* is two and *tre* is three — more numbers in the next lesson.)
+
+      To ask "Is there…?", just add a question mark: *C'è un bagno?* — Is
+      there a bathroom?
+    examples:
+      - ["C'è un bar qui?", "Is there a café here?"]
+      - ["Ci sono tre ragazzi e due ragazze.", "There are three boys and two girls."]
+      - ["Non c'è acqua.", "There's no water."]
+    tip: "*C'è* (there is) sounds like CHEH; *che* (what) sounds like KEH. Remember the c and g rules from lesson 2."
+
+words:
+  - [avere, to have]
+  - [anno, year]
+  - [cane, dog]
+  - [gatto, cat]
+  - [fratello, brother]
+  - [sorella, sister]
+  - [fame, hunger]
+  - [sete, thirst]
+  - [freddo, cold]
+  - [caldo, "heat; hot"]
+  - [sonno, sleepiness]
+  - [paura, fear]
+  - [problema, problem]
+  - [bar, "café, coffee bar"]
+  - [qui, here]
+
+practice:
+  - type: fill
+    prompt: "Io ___ un cane."
+    hint: (avere)
+    translation: I have a dog.
+    answers: [ho]
+    why: With io, avere is ho — and the h is silent.
+
+  - type: fill
+    prompt: "Loro ___ un gatto."
+    hint: (avere)
+    translation: They have a cat.
+    answers: [hanno]
+    why: With loro, avere is hanno.
+
+  - type: fill
+    prompt: "Noi ___ fame."
+    hint: (avere)
+    translation: We're hungry.
+    answers: [abbiamo]
+    why: Hunger uses avere, and with noi avere is abbiamo.
+
+  - type: fill
+    prompt: "___ tre gatti."
+    hint: (there are)
+    translation: There are three cats.
+    answers: [ci sono]
+    why: For more than one thing, "there are" is ci sono.
+
+  - type: translate
+    direction: to-target
+    prompt: I'm 14 years old.
+    answers: ["Ho 14 anni.", "Ho quattordici anni.", "Io ho 14 anni.", "Io ho quattordici anni."]
+    why: Italian uses avere for age — "I have 14 years".
+
+  - type: translate
+    direction: to-target
+    prompt: Are you hungry? (to a friend)
+    answers: ["Hai fame?", "Tu hai fame?"]
+    why: Hunger is avere fame, and with tu avere is hai.
+
+  - type: translate
+    direction: to-target
+    prompt: Is there a bathroom?
+    answers: ["C'è un bagno?"]
+    why: C'è with a question mark asks "is there…?"
+
+  - type: translate
+    direction: to-target
+    prompt: I don't have a sister.
+    answers: ["Non ho una sorella.", "Io non ho una sorella.", "Non ho sorelle."]
+    why: Non goes right before ho.
+
+  - type: translate
+    direction: to-english
+    prompt: Ho freddo.
+    answers: ["I'm cold.", "I am cold.", "I feel cold."]
+    why: Feeling cold is avere freddo — "to have cold".
+
+  - type: translate
+    direction: to-english
+    prompt: Ci sono due cani.
+    answers: ["There are two dogs."]
+    why: Ci sono means "there are", and cane becomes cani in the plural.
+
+  - type: choice
+    prompt: How do you say "I'm 12"?
+    options: [Sono 12 anni., Ho 12 anni., Ho 12.]
+    answer: Ho 12 anni.
+    why: Age uses avere plus the word anni (years).
+
+  - type: choice
+    prompt: How do you say "There's a problem"?
+    options: [C'è un problema., Ci sono un problema., Che un problema.]
+    answer: C'è un problema.
+    why: One thing takes c'è, and problema is masculine, so it takes un.

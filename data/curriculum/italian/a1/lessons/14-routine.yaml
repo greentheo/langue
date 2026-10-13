@@ -1,0 +1,160 @@
+title: La mia giornata
+subtitle: Reflexive verbs, times and how often
+goal: describe your day with reflexive verbs like alzarsi, and say at what time and how often you do things
+minutes: 14
+
+sections:
+  - heading: Doing things to yourself
+    body: |
+      Some verbs describe something you do **to yourself**: you wake
+      *yourself* up, you wash *yourself*. These are **reflexive verbs**, and
+      their infinitive ends in **-si**: *alzarsi* (to get up), *svegliarsi*
+      (to wake up), *lavarsi* (to wash), *vestirsi* (to get dressed),
+      *divertirsi* (to have fun).
+
+      You already know one: *mi chiamo* — "I call myself".
+
+      Put a small word — **mi, ti, si, ci, vi, si** — before the verb, then
+      use the normal endings from lessons 7 and 8.
+    table:
+      columns: [person, "alzarsi (-are)", "vestirsi (-ire)"]
+      rows:
+        - [io, mi alzo, mi vesto]
+        - [tu, ti alzi, ti vesti]
+        - [lui / lei / Lei, si alza, si veste]
+        - [noi, ci alziamo, ci vestiamo]
+        - [voi, vi alzate, vi vestite]
+        - [loro, si alzano, si vestono]
+    examples:
+      - ["Mi sveglio presto.", "I wake up early."]
+      - ["Ti diverti?", "Are you having fun?"]
+      - ["Si veste in fretta.", "She gets dressed in a hurry."]
+    tip: "English just says \"I get up\", but Italian needs the *mi*: *Mi alzo*, never *Alzo*."
+
+  - heading: At what time?
+    body: |
+      To ask "at what time?", say **A che ora…?** In the answer, *a* (at)
+      joins with *le* to make **alle** + the hour. For one o'clock, it's
+      **all'una**.
+
+      - *A che ora ti alzi? — Mi alzo alle sette.* — What time do you get up? — I get up at seven.
+      - *Pranzo all'una.* — I have lunch at one.
+
+      Parts of the day: **la mattina** (morning), **il pomeriggio**
+      (afternoon), **la sera** (evening), **la notte** (night).
+    examples:
+      - ["La mattina faccio colazione alle otto.", "In the morning I have breakfast at eight."]
+      - ["Ceniamo alle venti.", "We have dinner at 8 pm."]
+    tip: "*Alle* is *a + le* stuck together. You'll meet more of these combinations in the next lesson."
+
+  - heading: How often?
+    body: |
+      - **sempre** — always
+      - **spesso** — often
+      - **qualche volta** — sometimes
+      - **non… mai** — never
+
+      "Never" needs two words: **non** before the verb and **mai** after
+      it: *Non mi alzo mai presto.* — I never get up early.
+
+      To say "on Mondays", "on Saturdays", put the article before the day:
+      *il lunedì*, *il sabato*, *la domenica*.
+    examples:
+      - ["Il sabato mi sveglio tardi.", "On Saturdays I wake up late."]
+      - ["Faccio sempre colazione.", "I always have breakfast."]
+      - ["Non guardo mai la TV.", "I never watch TV."]
+    tip: "*Lunedì* on its own means this Monday; *il lunedì* means every Monday."
+
+words:
+  - [alzarsi, to get up]
+  - [svegliarsi, to wake up]
+  - [lavarsi, to wash (yourself)]
+  - [vestirsi, to get dressed]
+  - [divertirsi, to have fun]
+  - [pranzare, to have lunch]
+  - [cenare, to have dinner]
+  - [mattina, morning]
+  - [pomeriggio, afternoon]
+  - [sera, evening]
+  - [presto, early]
+  - [tardi, late]
+  - [sempre, always]
+  - [spesso, often]
+  - [mai, never]
+
+practice:
+  - type: fill
+    prompt: "Io ___ alzo alle otto."
+    hint: (myself)
+    translation: I get up at eight.
+    answers: [mi]
+    why: Reflexive verbs need mi with io.
+
+  - type: fill
+    prompt: "Noi ci ___ presto."
+    hint: (svegliarsi)
+    translation: We wake up early.
+    answers: [svegliamo]
+    why: With noi, it's ci + the -iamo form.
+
+  - type: fill
+    prompt: "Lei si ___ in fretta."
+    hint: (vestirsi)
+    translation: She gets dressed in a hurry.
+    answers: [veste]
+    why: Vestirsi is an -ire verb, so lei si veste.
+
+  - type: fill
+    prompt: "A che ora ___ alzi?"
+    hint: (yourself)
+    translation: What time do you get up?
+    answers: [ti]
+    why: With tu, the little word is ti.
+
+  - type: translate
+    direction: to-target
+    prompt: I get up at seven.
+    answers: ["Mi alzo alle sette.", "Io mi alzo alle sette.", "Mi alzo alle 7.", "Io mi alzo alle 7."]
+    why: Alle is a + le, used for "at" with times.
+
+  - type: translate
+    direction: to-target
+    prompt: I never watch TV.
+    answers: ["Non guardo mai la TV.", "Io non guardo mai la TV.", "Non guardo mai la televisione.", "Io non guardo mai la televisione."]
+    why: '"Never" is non + verb + mai.'
+
+  - type: translate
+    direction: to-target
+    prompt: They have fun.
+    answers: ["Si divertono.", "Loro si divertono."]
+    why: Divertirsi is an -ire verb — loro si divertono.
+
+  - type: translate
+    direction: to-english
+    prompt: Il sabato mi sveglio tardi.
+    answers: ["On Saturdays I wake up late.", "I wake up late on Saturdays.", "On Saturday I wake up late.", "I wake up late on Saturday."]
+    why: Il sabato, with the article, means every Saturday.
+
+  - type: translate
+    direction: to-english
+    prompt: Ti diverti?
+    answers: ["Are you having fun?", "Do you have fun?", "Are you enjoying yourself?"]
+    why: Divertirsi means "to have fun", and ti diverti is the tu form.
+
+  - type: translate
+    direction: to-english
+    prompt: Pranzo all'una.
+    answers: ["I have lunch at one.", "I eat lunch at one.", "I have lunch at one o'clock.", "I eat lunch at one o'clock.", "I have lunch at 1."]
+    why: All'una means "at one o'clock".
+
+  - type: choice
+    prompt: How do you say "I get up"?
+    options: [Alzo., Mi alzo., Io alzo.]
+    answer: Mi alzo.
+    why: Reflexive verbs always need the little word — mi with io.
+
+  - type: choice
+    prompt: How do you say "I never sleep"?
+    options: [Mai dormo., Non dormo mai., Dormo non mai.]
+    answer: Non dormo mai.
+    why: Non goes before the verb and mai after it.

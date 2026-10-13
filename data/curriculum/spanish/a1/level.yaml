@@ -1,0 +1,63 @@
+title: Beginner
+summary: >-
+  Your first steps: greet people, talk about yourself and your family, and get
+  by in shops and cafés. This is the level of the DELE A1 exam.
+
+can_do:
+  - greet people and introduce yourself, with friends and politely with strangers
+  - ask and answer simple questions about your name, age, origin, where you live and what you do
+  - handle numbers, prices, times and dates
+  - order food and drink and buy simple things
+  - say what you have, want, can do and like
+  - describe your family, your home and your daily routine in simple sentences
+  - read signs, menus and short messages
+  - fill in a simple form with your personal details
+
+grammar:
+  - topic: "Greetings, and the two kinds of you: tú and usted"
+    lessons: [01-greetings]
+  - topic: Pronunciation, spelling and written accents
+    lessons: [02-sounds]
+  - topic: "Subject pronouns and ser (to be)"
+    lessons: [03-ser]
+  - topic: "Negatives with no, and yes/no questions"
+    lessons: [03-ser]
+  - topic: "Noun gender and plurals; articles el, la, los, las and un, una, unos, unas"
+    lessons: [04-articles]
+  - topic: "Tener (have, age, feelings) and hay (there is, there are)"
+    lessons: [05-tener]
+  - topic: "Estar (to be: location and feelings), and ser vs estar"
+    lessons: [06-estar]
+  - topic: Numbers, prices, time and dates
+    lessons: [07-numbers]
+  - topic: Present tense of regular -ar verbs
+    lessons: [08-ar-verbs]
+  - topic: "Question words: qué, quién, dónde, cuándo, cómo, por qué"
+    lessons: [08-ar-verbs]
+  - topic: Present tense of regular -er and -ir verbs
+    lessons: [09-er-ir-verbs]
+  - topic: "Adjective agreement and position; este, esta, estos, estas"
+    lessons: [10-adjectives]
+  - topic: "Possessives (mi, tu, su, nuestro) and de for ownership"
+    lessons: [11-family]
+  - topic: "Stem-changing verbs (querer, poder, preferir, dormir, pedir) and polite quisiera"
+    lessons: [12-stem-changing]
+  - topic: "Ir, hacer and venir; ir a + infinitive for plans"
+    lessons: [13-ir-hacer-venir]
+  - topic: "Prepositions a, de, en, con, para; al and del"
+    lessons: [13-ir-hacer-venir]
+  - topic: "Gustar; también and tampoco"
+    lessons: [14-gustar]
+  - topic: "Reflexive verbs, daily routine and how often"
+    lessons: [15-routine]
+
+themes:
+  - greetings
+  - personal details
+  - family
+  - food and cafés
+  - shopping
+  - town and directions
+  - the home
+  - daily routine
+  - free time

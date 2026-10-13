@@ -1,0 +1,184 @@
+title: How Italian sounds
+subtitle: Pronunciation and spelling
+goal: read any Italian word aloud — c and g, ch and gh, gli, gn, sc, double consonants and stress
+minutes: 12
+
+sections:
+  - heading: Five clear vowels
+    body: |
+      Italian is spelled almost exactly as it sounds. Learn a handful of
+      rules and you can read any word aloud, even one you've never seen.
+
+      There are five vowels, and they are always short and clear:
+
+      - **a** as in *father*: *casa*
+      - **e** as in *bed*: *bene*
+      - **i** as in *machine*: *vino*
+      - **o** as in *more* (without the r): *molto*
+      - **u** as in *moon*: *uno*
+
+      Every vowel is pronounced — including the last one. *Grazie* has three
+      syllables: GRAH-tsee-eh.
+    examples:
+      - ["grazie", "GRAH-tsee-eh — thank you"]
+      - ["bene", "BEH-neh — well"]
+      - ["uno", "OO-noh — one"]
+    tip: "Don't let a final *e* go silent like in English *bake*: *bene* is BEH-neh, never 'been'."
+
+  - heading: "C and G: hard or soft?"
+    body: |
+      **C** and **g** change their sound depending on the vowel after them.
+
+      - Before **a, o, u** they are **hard**: *c* = k (*casa*), *g* = g as in *go* (*gatto*)
+      - Before **e, i** they are **soft**: *c* = ch as in *church* (*cena*), *g* = j as in *jam* (*gelato*)
+
+      To keep the hard sound before *e* or *i*, Italian adds an **h**:
+      **che, chi** = keh, kee and **ghe, ghi** = geh, gee (hard g).
+
+      An **i** between *c* or *g* and another vowel usually just makes the
+      sound soft — you don't say it. *Ciao* is CHOW and *giorno* is JOR-noh.
+    table:
+      columns: ["", hard, soft]
+      rows:
+        - [c, "ca, co, cu, che, chi — *casa, chiave*", "ce, ci — *cena, ciao*"]
+        - [g, "ga, go, gu, ghe, ghi — *gatto, spaghetti*", "ge, gi — *gelato, giorno*"]
+    examples:
+      - ["ciao", "CHOW — hi, bye"]
+      - ["chiave", "KYAH-veh — key"]
+      - ["gelato", "jeh-LAH-toh — ice cream"]
+      - ["spaghetti", "spah-GET-tee"]
+    tip: "English speakers often read *ch* as in *cheese*. In Italian, *ch* is always a k sound: *chiave* is KYAH-veh."
+
+  - heading: Gli, gn, sc — and a silent h
+    body: |
+      - **gli** sounds like the *lli* in *million*: *famiglia* (fah-MEE-lyah)
+      - **gn** sounds like the *ny* in *canyon*: *bagno* (BAH-nyoh)
+      - **sc** before *e* or *i* sounds like *sh*: *pesce* (PEH-sheh)
+      - **sc** before *a, o, u*, and **sch**, sound like *sk*: *scuola* (SKWOH-lah)
+      - **z** sounds like *ts* or *dz*: *pizza* (PEET-tsah)
+      - **h** on its own is always silent: *ho* (I have) sounds like "oh"
+      - **r** is a quick tap or roll of the tongue
+    examples:
+      - ["famiglia", "fah-MEE-lyah — family"]
+      - ["bagno", "BAH-nyoh — bathroom"]
+      - ["pesce", "PEH-sheh — fish"]
+      - ["scuola", "SKWOH-lah — school"]
+
+  - heading: Double letters and stress
+    body: |
+      Double consonants are held a moment longer — and that changes the
+      meaning:
+
+      - *nono* (ninth) and *nonno* (grandfather)
+      - *sete* (thirst) and *sette* (seven)
+      - *casa* (house) and *cassa* (till, cash desk)
+
+      Most words are stressed on the **second-to-last** syllable:
+      ra-GAZ-zo, a-MI-co. When the stress falls on the **last** vowel,
+      Italian writes an accent on it: *città* (cheet-TAH), *caffè*,
+      *perché*.
+    examples:
+      - ["nonno", "NOHN-noh — grandfather"]
+      - ["sette", "SET-teh — seven"]
+      - ["città", "cheet-TAH — city"]
+      - ["perché", "pehr-KEH — why; because"]
+    tip: "The accent is part of the spelling. *È* (is) and *e* (and) are two different words."
+
+words:
+  - [ciao, "hi; bye"]
+  - [cena, dinner]
+  - [gelato, ice cream]
+  - [chiave, key]
+  - [giorno, day]
+  - [famiglia, family]
+  - [figlio, son]
+  - [bagno, bathroom]
+  - [pesce, fish]
+  - [scuola, school]
+  - [nonno, grandfather]
+  - [sette, seven]
+  - [città, city]
+  - [perché, "why; because"]
+  - [pizza, pizza]
+
+practice:
+  - type: choice
+    prompt: How is *ciao* pronounced?
+    options: [CHOW, see-OW, kee-OW]
+    answer: CHOW
+    why: Ci before another vowel is a soft "ch", and the i is silent.
+
+  - type: choice
+    prompt: In *chiave*, the *ch* sounds like…
+    options: [the k in key, the ch in cheese, the sh in shoe]
+    answer: the k in key
+    why: In Italian, ch is always a hard k sound.
+
+  - type: choice
+    prompt: Which word has a *sh* sound?
+    options: [pesce, scuola, casa]
+    answer: pesce
+    why: Sc before e or i sounds like sh; before a, o or u it is sk.
+
+  - type: choice
+    prompt: Which word means "grandfather"?
+    options: [nonno, nono]
+    answer: nonno
+    why: The double n is held longer, and it changes the word — nono means "ninth".
+
+  - type: choice
+    prompt: Where is the stress in *città*?
+    options: ["on the first syllable: CHEET-tah", "on the last syllable: cheet-TAH"]
+    answer: "on the last syllable: cheet-TAH"
+    why: A written accent on the last vowel means the stress falls there.
+
+  - type: choice
+    prompt: How is *gelato* pronounced?
+    options: [geh-LAH-toh (g as in go), jeh-LAH-toh (g as in jam)]
+    answer: jeh-LAH-toh (g as in jam)
+    why: G before e or i is soft, like the j in jam.
+
+  - type: fill
+    prompt: "___iave"
+    hint: (key — starts with a k sound)
+    translation: key
+    answers: [ch]
+    why: Before i, a k sound is spelled ch.
+
+  - type: fill
+    prompt: "spa___etti"
+    hint: (hard g, as in go)
+    answers: [gh]
+    why: To keep g hard before e or i, add an h — ghe, ghi.
+
+  - type: fill
+    prompt: "fami___a"
+    hint: (the lli sound in million)
+    translation: family
+    answers: [gli]
+    why: The sound of lli in million is spelled gli.
+
+  - type: fill
+    prompt: "ba___o"
+    hint: (the ny sound in canyon)
+    translation: bathroom
+    answers: [gn]
+    why: The ny sound in canyon is spelled gn.
+
+  - type: translate
+    direction: to-target
+    prompt: seven
+    answers: [sette]
+    why: Sette has a double t — with a single t, sete means "thirst".
+
+  - type: translate
+    direction: to-target
+    prompt: why
+    answers: [perché]
+    why: Perché has an accent because the stress falls on its last syllable.
+
+  - type: translate
+    direction: to-english
+    prompt: gelato
+    answers: [ice cream, gelato]
+    why: Gelato is Italian ice cream — and the g is soft, like a j.

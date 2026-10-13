@@ -1,0 +1,190 @@
+title: "Quanto custa?"
+subtitle: Numbers, prices, time and dates
+goal: count to a thousand, ask and give prices, tell the time and say the date
+minutes: 14
+
+sections:
+  - heading: Numbers 0 to 20
+    body: |
+      Learn these by heart — everything else is built from them. Zero is
+      **zero**.
+
+      **One** and **two** change with the noun's gender: *um livro, uma
+      casa*; *dois livros, duas casas*. The other numbers never change.
+    table:
+      columns: [number, Portuguese, number, Portuguese]
+      rows:
+        - ["1", um / uma, "11", onze]
+        - ["2", dois / duas, "12", doze]
+        - ["3", três, "13", treze]
+        - ["4", quatro, "14", catorze or quatorze]
+        - ["5", cinco, "15", quinze]
+        - ["6", seis, "16", dezesseis]
+        - ["7", sete, "17", dezessete]
+        - ["8", oito, "18", dezoito]
+        - ["9", nove, "19", dezenove]
+        - ["10", dez, "20", vinte]
+    tip: "Reading out a phone number, Brazilians say *meia* for 6 (from *meia dúzia*, half a dozen) so it isn't confused with *três*."
+
+  - heading: Tens, hundreds and a thousand
+    body: |
+      Join tens and units with **e** (and): *vinte e um* (21), *trinta e
+      cinco* (35), *noventa e nove* (99).
+
+      Exactly 100 is **cem**. From 101 it becomes **cento**: *cento e um*,
+      *cento e quarenta e oito* (148). A thousand is **mil**.
+    table:
+      columns: [number, Portuguese, number, Portuguese]
+      rows:
+        - ["30", trinta, "100", cem]
+        - ["40", quarenta, "101", cento e um]
+        - ["50", cinquenta, "200", duzentos]
+        - ["60", sessenta, "300", trezentos]
+        - ["70", setenta, "400", quatrocentos]
+        - ["80", oitenta, "500", quinhentos]
+        - ["90", noventa, "1000", mil]
+
+  - heading: How much is it?
+    body: |
+      Ask **Quanto custa?** (How much does it cost?) or, for more than one
+      thing, **Quanto custam?** Learn *custa* (it costs) and *custam* (they
+      cost) as fixed phrases for now.
+
+      Brazil's money is the **real** — plural **reais**. A real has 100
+      **centavos**. Prices are written with a comma: *R$ 15,50* is *quinze
+      reais e cinquenta* (centavos).
+    examples:
+      - ["Quanto custa?", "How much is it?"]
+      - ["Custa vinte reais.", "It costs twenty reais."]
+      - ["Os livros custam trinta reais.", "The books cost thirty reais."]
+
+  - heading: What time is it?
+    body: |
+      Ask **Que horas são?** Hours are feminine (*a hora*), so it's *uma* and
+      *duas*:
+
+      - **É uma hora.** — It's one o'clock. (singular)
+      - **São duas horas.** — It's two o'clock. (plural from 2 up)
+      - **São três e meia.** — It's half past three.
+      - **É meio-dia.** — It's noon. **É meia-noite.** — It's midnight.
+
+      To say *at* a time, use **à** or **às**: *à uma* (at one), *às duas*
+      (at two), *às sete* (at seven). Lesson 15 shows where that little
+      accent comes from.
+    examples:
+      - ["São quatro horas.", "It's four o'clock."]
+      - ["A aula é às nove.", "The class is at nine."]
+    tip: "It's *duas horas*, never *dois horas* — hora is feminine."
+
+  - heading: Days and dates
+    body: |
+      Weekdays count from Sunday: Monday is the *second* day. In speech
+      people drop *-feira*: *segunda*, *terça*…
+
+      - *segunda-feira* (Mon), *terça-feira* (Tue), *quarta-feira* (Wed),
+        *quinta-feira* (Thu), *sexta-feira* (Fri), *sábado* (Sat),
+        *domingo* (Sun)
+
+      Months are written with a small letter: *janeiro, fevereiro, março,
+      abril, maio, junho, julho, agosto, setembro, outubro, novembro,
+      dezembro*.
+
+      For the date say **dia** + number + **de** + month: *Hoje é dia 5 de
+      maio.* The 1st is **primeiro**: *primeiro de janeiro*.
+    examples:
+      - ["Hoje é sexta-feira.", "Today is Friday."]
+      - ["Hoje é dia 12 de outubro.", "Today is October 12th."]
+
+words:
+  - [quanto, how much]
+  - [real, real (Brazilian money)]
+  - [hora, hour]
+  - [meio-dia, noon]
+  - [meia-noite, midnight]
+  - [hoje, today]
+  - [amanhã, tomorrow]
+  - [dia, day]
+  - [semana, week]
+  - [mês, month]
+  - [segunda-feira, Monday]
+  - [sexta-feira, Friday]
+  - [sábado, Saturday]
+  - [domingo, Sunday]
+  - [aula, class / lesson]
+
+practice:
+  - type: fill
+    prompt: "São ___ horas."
+    hint: "2"
+    translation: It's two o'clock.
+    answers: [duas]
+    why: Hora is feminine, so 2 is duas.
+
+  - type: fill
+    prompt: "Custa ___ reais."
+    hint: "30"
+    translation: It costs thirty reais.
+    answers: [trinta]
+    why: Thirty is trinta.
+
+  - type: fill
+    prompt: "vinte ___ cinco"
+    hint: and
+    translation: twenty-five
+    answers: [e]
+    why: Tens and units are joined with e — vinte e cinco.
+
+  - type: fill
+    prompt: "Hoje é dia 10 de ___."
+    hint: March
+    translation: Today is March 10th.
+    answers: [março]
+    why: Months are written with a small letter — março.
+
+  - type: choice
+    prompt: How do you say exactly 100?
+    options: [cento, cem, cent]
+    answer: cem
+    why: Exactly 100 is cem; from 101 it becomes cento — cento e um.
+
+  - type: choice
+    prompt: "\"It's one o'clock.\""
+    options: [São uma hora., É uma hora., É um hora.]
+    answer: É uma hora.
+    why: One o'clock is singular (é) and feminine (uma).
+
+  - type: translate
+    direction: to-target
+    prompt: How much does it cost?
+    answers: [Quanto custa?, Quanto é?]
+    why: Quanto custa? — literally "how much costs?".
+
+  - type: translate
+    direction: to-target
+    prompt: fifteen
+    answers: [quinze]
+    why: Fifteen is quinze.
+
+  - type: translate
+    direction: to-target
+    prompt: It's half past three.
+    answers: [São três e meia., São três e trinta.]
+    why: The word for "half" is meia — três e meia.
+
+  - type: translate
+    direction: to-english
+    prompt: Que horas são?
+    answers: [What time is it?, What's the time?]
+    why: Literally "what hours are they?".
+
+  - type: translate
+    direction: to-english
+    prompt: sexta-feira
+    answers: [Friday]
+    why: Weekdays count from Sunday, so the sixth day, sexta, is Friday.
+
+  - type: translate
+    direction: to-english
+    prompt: quarenta e oito
+    answers: [forty-eight, forty eight, "48"]
+    why: Quarenta (40) e oito (8).

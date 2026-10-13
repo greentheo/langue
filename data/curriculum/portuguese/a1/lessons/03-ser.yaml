@@ -1,0 +1,176 @@
+title: "Eu sou…"
+subtitle: Ser, subject pronouns, negatives and questions
+goal: say who you are, what you do and where you're from with ser, and make negative sentences and yes/no questions
+minutes: 12
+
+sections:
+  - heading: I, you, he, she…
+    body: |
+      These are the **subject pronouns** — the words for who is doing
+      something.
+
+      **Eles** means "they" for men, boys or a mixed group; **elas** is only
+      for women or girls. **A gente** literally means "the people", but
+      Brazilians use it all the time to mean "we" in conversation.
+    table:
+      columns: [Portuguese, English]
+      rows:
+        - [eu, I]
+        - [você, you]
+        - [ele / ela, he / she]
+        - [nós, we]
+        - [a gente, we (informal)]
+        - [vocês, you (more than one person)]
+        - [eles / elas, they]
+    tip: "*A gente* means \"we\", but its verb takes the same form as *ele* and *ela*: *a gente é*, never *a gente somos*."
+
+  - heading: Ser — to be
+    body: |
+      Portuguese has two verbs for "to be". **Ser** is for **who or what
+      someone is**: their name, nationality, job, or where they come from.
+
+      Notice that *você*, *ele*, *ela* and *a gente* share one form, and
+      *vocês*, *eles* and *elas* share another. That makes Brazilian verbs
+      easier than they first look.
+    table:
+      columns: [pronoun, ser, English]
+      rows:
+        - [eu, sou, I am]
+        - [você / ele / ela / a gente, "é", you are / he is / she is / we are]
+        - [nós, somos, we are]
+        - [vocês / eles / elas, são, you are / they are]
+    examples:
+      - ["Eu sou estudante.", "I am a student."]
+      - ["Ela é professora.", "She is a teacher."]
+      - ["Nós somos de Miami.", "We are from Miami."]
+      - ["Eles são de Lisboa.", "They are from Lisbon."]
+    tip: "There's no word for \"a\" before a job: *sou estudante* — I'm a student. And *é* (is) needs its accent; *e* without one means \"and\"."
+
+  - heading: Where are you from?
+    body: |
+      Ask **De onde você é?** — literally "from where are you?". Answer with
+      **Sou de** and a city: *Sou de Chicago*. Or say your nationality.
+      Nationalities change for males and females:
+
+      - *americano / americana* — American
+      - *brasileiro / brasileira* — Brazilian
+      - *inglês / inglesa* — English
+      - *canadense* — Canadian (the same for both)
+
+      For more than one person, add **-s**: *brasileiros*, *americanas*,
+      *canadenses*. Nationalities are written with a small letter.
+    examples:
+      - ["Sou de Toronto.", "I'm from Toronto."]
+      - ["Ele é americano.", "He is American."]
+      - ["Ela é americana.", "She is American."]
+      - ["Nós somos brasileiros.", "We are Brazilian."]
+
+  - heading: Not, and asking questions
+    body: |
+      To make a sentence negative, put **não** right before the verb: *Não
+      sou brasileiro.* — I'm not Brazilian.
+
+      To ask a yes/no question, don't change the words at all — just raise
+      your voice at the end: *Você é brasileiro?* — Are you Brazilian?
+
+      Brazilians usually answer with the verb instead of *sim* (yes): *— Você
+      é estudante? — Sou.* (I am.) For no: *Não, não sou.*
+    examples:
+      - ["Você é professor?", "Are you a teacher?"]
+      - ["Não, não sou.", "No, I'm not."]
+      - ["Ela não é de São Paulo.", "She is not from São Paulo."]
+    tip: "Brazilians often keep the pronoun (*eu sou*), but you can drop it too: *sou estudante*. Both are correct."
+
+words:
+  - [eu, I]
+  - [ele, he]
+  - [ela, she]
+  - [nós, we]
+  - [a gente, we (informal)]
+  - [vocês, you (plural)]
+  - [eles, they (men or a mixed group)]
+  - [elas, they (women or girls)]
+  - [ser, to be]
+  - [estudante, student]
+  - [professor, teacher (male)]
+  - [professora, teacher (female)]
+  - [brasileiro, Brazilian]
+  - [americano, American]
+  - [não, no / not]
+
+practice:
+  - type: fill
+    prompt: "Eu ___ estudante."
+    hint: ser, eu
+    translation: I am a student.
+    answers: [sou]
+    why: With eu, ser is sou.
+
+  - type: fill
+    prompt: "Nós ___ americanos."
+    hint: ser, nós
+    translation: We are American.
+    answers: [somos]
+    why: With nós, ser is somos.
+
+  - type: fill
+    prompt: "Eles ___ de Lisboa."
+    hint: ser, eles
+    translation: They are from Lisbon.
+    answers: [são]
+    why: Vocês, eles and elas share the form são.
+
+  - type: fill
+    prompt: "A gente ___ de Recife."
+    hint: ser, a gente
+    translation: We are from Recife.
+    answers: ["é"]
+    why: A gente means "we", but it takes the same verb form as ele and ela — é.
+
+  - type: choice
+    prompt: Which word means "they" for a group of girls?
+    options: [eles, elas, vocês]
+    answer: elas
+    why: Elas is only for women or girls; eles is for men or mixed groups.
+
+  - type: choice
+    prompt: How does a man say "I'm not American"?
+    options: [Não sou americano., Sou não americano., Não americano sou.]
+    answer: Não sou americano.
+    why: Não goes right before the verb.
+
+  - type: translate
+    direction: to-target
+    prompt: She is a teacher.
+    answers: [Ela é professora., Ela é uma professora.]
+    why: Ser is é with ela, and professor becomes professora for a woman.
+
+  - type: translate
+    direction: to-target
+    prompt: Are you Brazilian? (to a man)
+    answers: [Você é brasileiro?, O senhor é brasileiro?]
+    why: A question uses the same words as a statement — just raise your voice at the end.
+
+  - type: translate
+    direction: to-target
+    prompt: We are from Boston.
+    answers: [Nós somos de Boston., Somos de Boston., A gente é de Boston.]
+    why: Ser + de + a city says where you are from.
+
+  - type: translate
+    direction: to-english
+    prompt: Não sou de São Paulo.
+    answers: [I'm not from São Paulo., I am not from São Paulo.]
+    why: Não before the verb makes the sentence negative.
+
+  - type: translate
+    direction: to-english
+    prompt: De onde você é?
+    answers: [Where are you from?, Where do you come from?]
+    why: De onde literally means "from where".
+
+  - type: translate
+    direction: to-english
+    prompt: Elas são canadenses.
+    answers: [They are Canadian., They're Canadian., They are Canadians.]
+    why: Canadense is the same for men and women, and -s makes it plural.

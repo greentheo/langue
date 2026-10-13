@@ -1,0 +1,161 @@
+title: Ma famille
+subtitle: Possessives and the family
+goal: say "my, your, his, her, our, their" correctly and talk about your family
+minutes: 12
+
+sections:
+  - heading: My, your, his, her…
+    body: |
+      In French, the word for "my", "your" and so on agrees with the **thing
+      you own**, not with the owner.
+
+      - *mon père* (my father) — père is masculine
+      - *ma mère* (my mother) — mère is feminine
+      - *mes parents* (my parents) — plural
+
+      This means **son** and **sa** can both mean "his" **or** "her":
+      *sa mère* is "his mother" or "her mother". Only the noun decides.
+    table:
+      columns: [owner, masculine, feminine, plural]
+      rows:
+        - [my, mon, ma, mes]
+        - ["your (tu)", ton, ta, tes]
+        - ["his / her", son, sa, ses]
+        - [our, notre, notre, nos]
+        - ["your (vous)", votre, votre, vos]
+        - [their, leur, leur, leurs]
+    tip: "*Son frère* is \"his brother\" or \"her brother\" — if you need to be clear, add the name: *le frère de Marie*."
+
+  - heading: Mon before a vowel, even for feminine words
+    body: |
+      *Ma, ta* and *sa* can't go before a vowel — it would sound like
+      "ma-a". So before a feminine noun starting with a vowel, use **mon,
+      ton, son** instead:
+
+      - *mon amie* (my friend, a girl) — not *ma amie*
+      - *ton école* (your school)
+      - *son histoire* (his/her story)
+    examples:
+      - ["mon amie Sophie", "my friend Sophie"]
+      - ["Ton école est grande ?", "Is your school big?"]
+
+  - heading: The family
+    body: |
+      Notice that **fille** means both "girl" and "daughter", and **femme**
+      means both "woman" and "wife".
+    table:
+      columns: [male, female, together]
+      rows:
+        - ["le père — father", "la mère — mother", "les parents — parents"]
+        - ["le frère — brother", "la sœur — sister", "les frères et sœurs — siblings"]
+        - ["le fils — son", "la fille — daughter", "les enfants — children"]
+        - ["le grand-père — grandfather", "la grand-mère — grandmother", "les grands-parents — grandparents"]
+        - ["l'oncle — uncle", "la tante — aunt", "les cousins — cousins"]
+        - ["le mari — husband", "la femme — wife", "le couple — couple"]
+    tip: "In *fils* (son) you pronounce the s: \"feess\"."
+
+  - heading: Talking about your family
+    body: |
+      You already have the tools: *avoir* for how many, *s'appeler* for
+      names, *avoir… ans* for ages.
+    examples:
+      - ["J'ai un frère et deux sœurs.", "I have a brother and two sisters."]
+      - ["Comment s'appelle ta sœur ?", "What's your sister's name?"]
+      - ["Elle s'appelle Emma.", "Her name is Emma."]
+      - ["Mon frère a quinze ans.", "My brother is fifteen."]
+      - ["Nos grands-parents habitent ici.", "Our grandparents live here."]
+
+words:
+  - [le père, father]
+  - [la mère, mother]
+  - [les parents, parents]
+  - [le frère, brother]
+  - [la sœur, sister]
+  - [le fils, son]
+  - [la fille, "daughter, girl"]
+  - [les enfants, children]
+  - [le grand-père, grandfather]
+  - [la grand-mère, grandmother]
+  - [les grands-parents, grandparents]
+  - ["l'oncle", uncle]
+  - [la tante, aunt]
+  - [le cousin / la cousine, cousin]
+  - [le mari, husband]
+
+practice:
+  - type: fill
+    prompt: "___ mère"
+    hint: (my)
+    translation: my mother
+    answers: [ma]
+    why: Mère is feminine, so "my" is ma.
+
+  - type: fill
+    prompt: "___ parents"
+    hint: (my)
+    translation: my parents
+    answers: [mes]
+    why: Mes is "my" for any plural noun.
+
+  - type: fill
+    prompt: "___ amie"
+    hint: (my)
+    translation: my (female) friend
+    answers: [mon]
+    why: Amie is feminine but starts with a vowel, so ma becomes mon.
+
+  - type: fill
+    prompt: "Paul et ___ sœur"
+    hint: (his)
+    translation: Paul and his sister
+    answers: [sa]
+    why: Sœur is feminine, so "his" is sa — it agrees with sœur, not with Paul.
+
+  - type: translate
+    direction: to-target
+    prompt: her brother
+    answers: [son frère]
+    why: Frère is masculine, so "her" is son — the owner doesn't matter.
+
+  - type: translate
+    direction: to-target
+    prompt: our grandparents
+    answers: [nos grands-parents, nos grands parents]
+    why: Nos is "our" for plural nouns.
+
+  - type: translate
+    direction: to-target
+    prompt: I have a sister.
+    answers: ["J'ai une sœur.", "J'ai une soeur."]
+    why: Avoir for having, and sœur is feminine, so une.
+
+  - type: translate
+    direction: to-english
+    prompt: Leur fils a dix ans.
+    answers: ["Their son is ten.", "Their son is ten years old.", "Their son's ten."]
+    why: Leur is "their" for one thing, and age uses avoir.
+
+  - type: translate
+    direction: to-english
+    prompt: "Comment s'appelle ton père ?"
+    answers: ["What is your father's name?", "What's your father's name?", "What is your dad's name?", "What's your dad's name?"]
+    why: Literally "how calls himself your father?" — the way to ask someone's name.
+
+  - type: choice
+    prompt: "*sa mère* can mean…"
+    options: [only his mother, only her mother, his mother or her mother]
+    answer: his mother or her mother
+    why: Sa agrees with mère, so it can be his or her — the context tells you which.
+
+  - type: choice
+    prompt: Which is correct?
+    options: [ma école, mon école]
+    answer: mon école
+    why: Before a vowel, ma becomes mon even though école is feminine.
+
+  - type: fill
+    prompt: "C'est ___ voiture ?"
+    hint: (your — vous)
+    translation: Is it your car?
+    answers: [votre]
+    why: Votre is the vous form of "your" for one thing.

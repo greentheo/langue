@@ -1,0 +1,313 @@
+situations:
+  - id: greetings
+    title: Greetings and politeness
+    phrases:
+      - target: ["Bonjour !"]
+        english: ["Hello!", "Good morning!", "Good afternoon!", "Good day!"]
+        note: Use it with anyone, all day until the evening. Add *madame* or *monsieur* to be extra polite.
+        literally: good day
+      - target: ["Bonsoir !"]
+        english: ["Good evening!"]
+        note: From about 6 p.m. Works for hello and goodbye.
+        literally: good evening
+      - target: ["Salut !"]
+        english: ["Hi!", "Bye!"]
+        note: Informal — friends, family, people your age.
+        literally: greetings
+      - target: ["Au revoir !"]
+        english: ["Goodbye!", "Bye!"]
+        literally: until the seeing-again
+      - target: ["Merci beaucoup."]
+        english: ["Thank you very much.", "Thanks a lot.", "Thank you so much."]
+        literally: thanks a lot
+      - target: ["De rien."]
+        english: ["You're welcome.", "No problem.", "Don't mention it."]
+        note: The usual reply to *merci*.
+        literally: of nothing
+      - target: ["S'il vous plaît.", "S'il te plaît."]
+        display: "S'il vous plaît. / S'il te plaît."
+        english: ["Please."]
+        note: "*S'il vous plaît* is polite; *s'il te plaît* is for a friend."
+        literally: if it you pleases
+      - target: ["Excusez-moi.", "Excuse-moi."]
+        display: "Excusez-moi. / Excuse-moi."
+        english: ["Excuse me."]
+        note: To get someone's attention. *Excuse-moi* is for a friend.
+        literally: excuse me
+      - target: ["Pardon !"]
+        english: ["Sorry!", "Excuse me!", "Pardon me!"]
+        note: When you bump into someone or need to get past.
+      - target: ["Bonne journée !"]
+        english: ["Have a good day!", "Have a nice day!"]
+        note: What you say when you leave a shop or café.
+        literally: good day (the whole day)
+
+  - id: meeting
+    title: Meeting people
+    phrases:
+      - target: ["Comment tu t'appelles ?", "Tu t'appelles comment ?"]
+        english: ["What's your name?", "What is your name?"]
+        note: Informal — to a friend or someone your age.
+        literally: how you yourself call?
+      - target: ["Comment vous appelez-vous ?", "Vous vous appelez comment ?"]
+        english: ["What is your name?", "What's your name?"]
+        note: Polite — to an adult you don't know.
+        literally: how you call-yourself?
+      - target: ["Je m'appelle Alex."]
+        english: ["My name is Alex.", "My name's Alex.", "I'm called Alex.", "I'm Alex.", "I am Alex."]
+        literally: I myself call Alex
+      - target: ["Enchanté.", "Enchantée."]
+        display: "Enchanté. / Enchantée."
+        english: ["Nice to meet you.", "Pleased to meet you.", "Delighted."]
+        note: Girls and women write *enchantée*; it sounds the same.
+        literally: enchanted
+      - target: ["Ça va ?"]
+        english: ["How are you?", "How's it going?", "How are things?", "Are you OK?", "Are you okay?"]
+        note: The everyday question. You can answer with the same words — *Ça va.*
+        literally: it goes?
+      - target: ["Ça va bien, merci. Et toi ?"]
+        english: ["I'm fine, thanks. And you?", "I'm good, thanks. And you?", "Fine, thanks. And you?", "Good, thanks. And you?", "I'm well, thanks. And you?"]
+        note: To an adult, end with *Et vous ?*
+        literally: it goes well, thanks. and you?
+      - target: ["Comment allez-vous ?"]
+        english: ["How are you?", "How are you doing?"]
+        note: Polite. Answer *Très bien, merci. Et vous ?*
+        literally: how go-you?
+      - target: ["Tu viens d'où ?", "D'où viens-tu ?", "Tu es d'où ?"]
+        english: ["Where are you from?", "Where do you come from?"]
+        note: Informal. Politely — *Vous venez d'où ?*
+        literally: you come from where?
+      - target: ["Je suis américain.", "Je suis américaine."]
+        display: "Je suis américain / américaine."
+        english: ["I'm American.", "I am American."]
+        note: "Add -e if you're a girl or woman. No capital letter on nationalities."
+        literally: I am American
+      - target: ["Tu as quel âge ?", "Quel âge as-tu ?", "Quel âge tu as ?"]
+        english: ["How old are you?"]
+        literally: you have what age?
+      - target: ["J'ai douze ans."]
+        english: ["I'm twelve.", "I am twelve.", "I'm twelve years old.", "I am twelve years old."]
+        note: In French you *have* your age — and always say *ans*.
+        literally: I have twelve years
+
+  - id: understanding
+    title: When you don't understand
+    phrases:
+      - target: ["Je ne comprends pas."]
+        english: ["I don't understand.", "I do not understand."]
+        note: In speech you'll often hear *Je comprends pas*.
+        literally: I not understand not
+      - target: ["Vous pouvez répéter, s'il vous plaît ?", "Pouvez-vous répéter, s'il vous plaît ?", "Tu peux répéter, s'il te plaît ?"]
+        english: ["Can you repeat that, please?", "Could you repeat that, please?", "Can you repeat, please?", "Could you repeat, please?", "Can you say that again, please?"]
+        literally: you can repeat, if it you pleases?
+      - target: ["Plus lentement, s'il vous plaît.", "Plus lentement, s'il te plaît."]
+        english: ["More slowly, please.", "Slower, please.", "Slowly, please."]
+        literally: more slowly, if it you pleases
+      - target: ["Vous parlez anglais ?", "Parlez-vous anglais ?", "Tu parles anglais ?"]
+        english: ["Do you speak English?"]
+        note: "*Anglais* has no capital letter in French."
+        literally: you speak English?
+      - target: ["Comment dit-on ça en français ?", "Comment on dit ça en français ?"]
+        english: ["How do you say that in French?", "How do you say this in French?"]
+        note: Point at something, or say the English word instead of *ça*.
+        literally: how says-one that in French?
+      - target: ["Qu'est-ce que ça veut dire ?", "Ça veut dire quoi ?"]
+        english: ["What does that mean?", "What does it mean?", "What does this mean?"]
+        literally: what is it that that wants to say?
+      - target: ["Je ne sais pas.", "Je sais pas."]
+        english: ["I don't know.", "I do not know."]
+        note: Fast speech squashes it to "chais pas".
+        literally: I not know not
+      - target: ["Je parle un peu français."]
+        english: ["I speak a little French.", "I speak a bit of French.", "I speak some French."]
+        literally: I speak a little French
+
+  - id: cafe
+    title: Café and restaurant
+    phrases:
+      - target: ["Je voudrais un café, s'il vous plaît."]
+        english: ["I would like a coffee, please.", "I'd like a coffee, please.", "Can I have a coffee, please?"]
+        note: A *café* in France is a small, strong espresso.
+        literally: I would want a coffee, if it you pleases
+      - target: ["Un croissant, s'il vous plaît."]
+        english: ["A croissant, please."]
+      - target: ["L'addition, s'il vous plaît."]
+        english: ["The bill, please.", "The check, please."]
+        note: The waiter won't bring the bill until you ask.
+        literally: the addition, if it you pleases
+      - target: ["Une table pour deux, s'il vous plaît."]
+        english: ["A table for two, please."]
+      - target: ["Qu'est-ce que vous me conseillez ?"]
+        english: ["What do you recommend?", "What would you recommend?"]
+        literally: what is it that you me advise?
+      - target: ["Je suis végétarien.", "Je suis végétarienne."]
+        display: "Je suis végétarien / végétarienne."
+        english: ["I'm vegetarian.", "I am vegetarian.", "I'm a vegetarian.", "I am a vegetarian."]
+        note: "-ne if you're a girl or woman."
+      - target: ["Je peux payer par carte ?", "Est-ce que je peux payer par carte ?", "Puis-je payer par carte ?"]
+        english: ["Can I pay by card?", "Can I pay with a card?", "May I pay by card?", "Can I pay with card?"]
+        literally: I can pay by card?
+      - target: ["Bon appétit !"]
+        english: ["Enjoy your meal!", "Enjoy your food!", "Bon appétit!"]
+        note: Said before eating. Answer *Merci, vous aussi !*
+        literally: good appetite
+      - target: ["C'était délicieux."]
+        english: ["It was delicious.", "That was delicious."]
+        literally: it was delicious
+
+  - id: shopping
+    title: Shopping
+    phrases:
+      - target: ["C'est combien ?", "Ça coûte combien ?", "Combien ça coûte ?"]
+        english: ["How much is it?", "How much is this?", "How much is that?", "How much does it cost?"]
+        literally: it is how much?
+      - target: ["Je regarde seulement, merci.", "Je regarde juste, merci.", "Je regarde, merci."]
+        english: ["I'm just looking, thanks.", "I'm only looking, thank you.", "Just looking, thanks.", "I'm just looking, thank you."]
+        literally: I look only, thanks
+      - target: ["Je le prends.", "Je la prends."]
+        display: "Je le prends. / Je la prends."
+        english: ["I'll take it."]
+        note: "*Le* for a masculine thing, *la* for a feminine one."
+        literally: I it take
+      - target: ["Vous avez une taille plus grande ?"]
+        english: ["Do you have a bigger size?", "Do you have a larger size?", "Have you got a bigger size?"]
+        literally: you have a size more big?
+      - target: ["C'est trop cher."]
+        english: ["It's too expensive.", "It is too expensive.", "That's too expensive."]
+        literally: it is too expensive
+      - target: ["Je peux l'essayer ?", "Est-ce que je peux l'essayer ?", "Puis-je l'essayer ?"]
+        english: ["Can I try it on?", "May I try it on?", "Can I try it?"]
+        literally: I can it try?
+      - target: ["Où est la caisse ?"]
+        english: ["Where is the checkout?", "Where's the checkout?", "Where is the till?", "Where's the till?", "Where is the cash register?"]
+        literally: where is the cash-box?
+      - target: ["Un sac, s'il vous plaît."]
+        english: ["A bag, please."]
+        note: Many French shops charge for bags, or don't offer them unless you ask.
+
+  - id: getting-around
+    title: Getting around
+    phrases:
+      - target: ["Où est la gare ?"]
+        english: ["Where is the train station?", "Where's the train station?", "Where is the station?", "Where's the station?"]
+        literally: where is the station?
+      - target: ["Excusez-moi, où sont les toilettes ?"]
+        english: ["Excuse me, where is the bathroom?", "Excuse me, where's the bathroom?", "Excuse me, where are the toilets?", "Excuse me, where is the toilet?", "Excuse me, where's the toilet?", "Excuse me, where is the restroom?"]
+        note: "*Toilettes* is always plural in French."
+        literally: excuse me, where are the toilets?
+      - target: ["C'est loin ?"]
+        english: ["Is it far?", "Is it far away?"]
+        literally: it is far?
+      - target: ["Tournez à droite."]
+        english: ["Turn right.", "Turn to the right."]
+        literally: turn to right
+      - target: ["Tournez à gauche."]
+        english: ["Turn left.", "Turn to the left."]
+        literally: turn to left
+      - target: ["Allez tout droit."]
+        english: ["Go straight ahead.", "Go straight on.", "Go straight."]
+        note: "Don't confuse *tout droit* (straight ahead) with *à droite* (on the right)."
+        literally: go all straight
+      - target: ["Un billet pour Paris, s'il vous plaît."]
+        english: ["A ticket to Paris, please.", "A ticket for Paris, please."]
+      - target: ["À quelle heure part le train ?"]
+        english: ["What time does the train leave?", "When does the train leave?", "At what time does the train leave?"]
+        literally: at what hour leaves the train?
+      - target: ["Je suis perdu.", "Je suis perdue."]
+        display: "Je suis perdu / perdue."
+        english: ["I'm lost.", "I am lost."]
+        note: "Add -e if you're a girl or woman."
+        literally: I am lost
+      - target: ["Où est l'arrêt de bus ?"]
+        english: ["Where is the bus stop?", "Where's the bus stop?"]
+        literally: where is the stop of bus?
+
+  - id: time
+    title: Time and plans
+    phrases:
+      - target: ["Quelle heure est-il ?", "Il est quelle heure ?"]
+        english: ["What time is it?", "What's the time?"]
+        literally: which hour is-it?
+      - target: ["À quelle heure ?"]
+        english: ["At what time?", "What time?"]
+        literally: at which hour?
+      - target: ["À demain !"]
+        english: ["See you tomorrow!", "Until tomorrow!"]
+        literally: until tomorrow
+      - target: ["À plus tard !", "À plus !"]
+        english: ["See you later!", "Later!"]
+        note: In text messages it's often written *A+*.
+        literally: until later
+      - target: ["Tu es libre ce soir ?", "Est-ce que tu es libre ce soir ?"]
+        english: ["Are you free tonight?", "Are you free this evening?"]
+        literally: you are free this evening?
+      - target: ["D'accord !"]
+        english: ["OK!", "Okay!", "All right!", "Agreed!", "Sure!"]
+        note: In casual speech, just *D'acc !*
+        literally: of agreement
+      - target: ["On y va !"]
+        english: ["Let's go!", "Here we go!"]
+        note: "*On* means \"we\" here."
+        literally: one there goes
+      - target: ["Je suis en retard."]
+        english: ["I'm late.", "I am late.", "I'm running late."]
+        literally: I am in delay
+
+  - id: help
+    title: Help and emergencies
+    phrases:
+      - target: ["Au secours !"]
+        english: ["Help!"]
+        literally: to the rescue
+      - target: ["J'ai besoin d'un médecin."]
+        english: ["I need a doctor."]
+        literally: I have need of a doctor
+      - target: ["Appelez une ambulance !"]
+        english: ["Call an ambulance!"]
+        note: The European emergency number is 112; in France the ambulance service is 15.
+      - target: ["Je ne me sens pas bien.", "Je me sens mal."]
+        english: ["I don't feel well.", "I'm not feeling well.", "I feel sick.", "I feel ill."]
+        literally: I not myself feel not well
+      - target: ["Où est la pharmacie ?"]
+        english: ["Where is the pharmacy?", "Where's the pharmacy?", "Where is the chemist?", "Where is the drugstore?"]
+        note: Look for the green cross.
+      - target: ["J'ai perdu mon passeport."]
+        english: ["I lost my passport.", "I've lost my passport.", "I have lost my passport."]
+        literally: I have lost my passport
+      - target: ["J'ai mal à la tête."]
+        english: ["I have a headache.", "I've got a headache.", "My head hurts."]
+        literally: I have pain at the head
+      - target: ["Attention !"]
+        english: ["Watch out!", "Careful!", "Look out!", "Be careful!"]
+        literally: attention
+
+  - id: small-talk
+    title: Small talk
+    phrases:
+      - target: ["C'est super !", "C'est génial !"]
+        english: ["That's great!", "It's great!", "Great!", "That's awesome!", "Awesome!"]
+        literally: it is super
+      - target: ["Quel temps fait-il ?", "Il fait quel temps ?"]
+        english: ["What's the weather like?", "What is the weather like?", "How's the weather?"]
+        literally: what weather makes-it?
+      - target: ["Il fait beau."]
+        english: ["The weather is nice.", "It's nice out.", "It's nice weather.", "It's sunny.", "It's a nice day."]
+        literally: it makes beautiful
+      - target: ["Je suis fatigué.", "Je suis fatiguée."]
+        display: "Je suis fatigué / fatiguée."
+        english: ["I'm tired.", "I am tired."]
+        note: "Add -e if you're a girl or woman — it sounds the same."
+      - target: ["J'ai faim."]
+        english: ["I'm hungry.", "I am hungry."]
+        note: Never *je suis faim*.
+        literally: I have hunger
+      - target: ["J'adore ça !"]
+        english: ["I love it!", "I love that!", "I love this!"]
+        literally: I adore that
+      - target: ["Bon anniversaire !"]
+        english: ["Happy birthday!"]
+        literally: good anniversary
+      - target: ["Santé !", "À la vôtre !", "À la tienne !"]
+        english: ["Cheers!"]
+        note: "*À la vôtre* (polite) and *à la tienne* (to a friend) mean \"to yours\" — your health."
+        literally: health

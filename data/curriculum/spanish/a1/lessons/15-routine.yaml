@@ -1,0 +1,159 @@
+title: Me levanto a las siete
+subtitle: Reflexive verbs and your daily routine
+goal: describe your day with reflexive verbs like *levantarse*, give times, and say how often you do things
+minutes: 13
+
+sections:
+  - heading: Doing it to yourself
+    body: |
+      Some infinitives end in **-se**: *levantarse* (to get up — literally
+      "to raise yourself"). These are *reflexive verbs*: the action comes
+      back to the person doing it.
+
+      You already know one: *me llamo* means "I call myself".
+
+      Put **me, te, se, nos, os** or **se** in front of the verb. The verb
+      itself has its normal endings.
+    table:
+      columns: [who, levantarse]
+      rows:
+        - [yo, me levanto]
+        - [tú, te levantas]
+        - [él / ella / usted, se levanta]
+        - [nosotros / nosotras, nos levantamos]
+        - [vosotros / vosotras, os levantáis]
+        - [ellos / ellas / ustedes, se levantan]
+    tip: "The little word goes in front, as a separate word: *me levanto*, not *levanto me*."
+
+  - heading: Your morning and evening
+    body: |
+      Some of these are also boot verbs from lesson 12:
+
+      - **despertarse** (e → ie) — to wake up: *me despierto*
+      - **levantarse** — to get up: *me levanto*
+      - **ducharse** — to take a shower: *me ducho*
+      - **lavarse los dientes** — to brush your teeth: *me lavo los dientes*
+      - **vestirse** (e → i) — to get dressed: *me visto*
+      - **acostarse** (o → ue) — to go to bed: *me acuesto*
+
+      **Desayunar** (to have breakfast) is a normal -ar verb, with no *se*.
+    examples:
+      - ["Me despierto a las siete.", "I wake up at seven."]
+      - ["Mi hermano se ducha por la mañana.", "My brother showers in the morning."]
+      - ["Nos acostamos a las diez.", "We go to bed at ten."]
+    tip: "Spanish says *me lavo los dientes* — \"I wash myself the teeth\" — not \"my teeth\". The *me* already shows whose teeth they are."
+
+  - heading: When and how often
+    body: |
+      Times use **a las** (lesson 7): *a las ocho*. For parts of the day:
+      **por la mañana** (in the morning), **por la tarde** (in the
+      afternoon), **por la noche** (at night). Also **temprano** (early)
+      and **tarde** (late).
+
+      How often:
+
+      - **siempre** — always
+      - **normalmente** — usually
+      - **a veces** — sometimes
+      - **nunca** — never
+
+      *Nunca* goes before the verb, or after it with *no* in front:
+      *Nunca desayuno* or *No desayuno nunca*.
+    examples:
+      - ["Me levanto a las siete.", "I get up at seven."]
+      - ["Siempre me ducho por la mañana.", "I always shower in the morning."]
+      - ["Los sábados me levanto tarde.", "On Saturdays I get up late."]
+      - ["Nunca desayuno.", "I never have breakfast."]
+
+words:
+  - [levantarse, to get up]
+  - [despertarse, to wake up]
+  - [ducharse, to take a shower]
+  - [vestirse, to get dressed]
+  - [acostarse, to go to bed]
+  - [desayunar, to have breakfast]
+  - [por la mañana, in the morning]
+  - [por la noche, at night]
+  - [siempre, always]
+  - [a veces, sometimes]
+  - [nunca, never]
+  - [temprano, early]
+  - [tarde, late]
+
+practice:
+  - type: fill
+    prompt: "Yo ___ levanto a las siete."
+    hint: myself
+    translation: I get up at seven.
+    answers: [me]
+    why: With yo, the reflexive word is me.
+
+  - type: fill
+    prompt: "¿A qué hora te ___?"
+    hint: acostarse, tú
+    translation: What time do you go to bed?
+    answers: [acuestas]
+    why: Acostarse is a boot verb, o → ue, so tú te acuestas.
+
+  - type: fill
+    prompt: "Ella se ___ por la mañana."
+    hint: ducharse
+    translation: She showers in the morning.
+    answers: [ducha]
+    why: Ducharse is a regular -ar verb; the ella form is se ducha.
+
+  - type: fill
+    prompt: "Nosotros ___ levantamos temprano."
+    hint: ourselves
+    translation: We get up early.
+    answers: [nos]
+    why: With nosotros, the reflexive word is nos.
+
+  - type: fill
+    prompt: "Me ___ a las siete."
+    hint: despertarse, yo
+    translation: I wake up at seven.
+    answers: [despierto]
+    why: Despertarse changes e → ie in the yo form.
+
+  - type: translate
+    direction: to-target
+    prompt: I get up at eight.
+    answers: [Me levanto a las ocho, Yo me levanto a las ocho]
+    why: Levantarse needs me in front for yo, and times use a las.
+
+  - type: translate
+    direction: to-target
+    prompt: They go to bed late.
+    answers: [Se acuestan tarde, Ellos se acuestan tarde, Ellas se acuestan tarde]
+    why: Acostarse changes o → ue, and ellos takes se.
+
+  - type: translate
+    direction: to-target
+    prompt: I never have breakfast.
+    answers: [Nunca desayuno, No desayuno nunca, Yo nunca desayuno, Yo no desayuno nunca]
+    why: Nunca goes before the verb, or after it with no in front.
+
+  - type: translate
+    direction: to-english
+    prompt: Siempre me ducho por la mañana.
+    answers: [I always shower in the morning, I always take a shower in the morning, I always have a shower in the morning]
+    why: Siempre is "always", and me ducho is "I shower".
+
+  - type: translate
+    direction: to-english
+    prompt: "¿A qué hora te levantas?"
+    answers: [What time do you get up?, At what time do you get up?, When do you get up?]
+    why: Te levantas is the tú form of levantarse, "to get up".
+
+  - type: choice
+    prompt: Which is correct?
+    options: [Levanto me temprano., Me levanto temprano., Yo levanto temprano.]
+    answer: Me levanto temprano.
+    why: The reflexive word me goes in front of the verb as a separate word.
+
+  - type: choice
+    prompt: "*Me visto* means…"
+    options: [I see myself, I get dressed, I wash myself]
+    answer: I get dressed
+    why: Me visto comes from vestirse, "to get dressed".

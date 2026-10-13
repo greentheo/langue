@@ -1,0 +1,165 @@
+title: "¡Hola!"
+subtitle: Greetings and introductions
+goal: greet people at any time of day, introduce yourself, and ask someone's name — with friends, and politely with strangers
+minutes: 10
+
+sections:
+  - heading: Hello and goodbye
+    body: |
+      **Hola** means "hi" or "hello". It works any time of day, with anyone.
+
+      For a slightly more polite hello, use the greeting for the time of day.
+      And for goodbye, the most common words are **adiós** and
+      **hasta luego** (see you later).
+    table:
+      columns: [Spanish, English, when]
+      rows:
+        - [hola, "hi, hello", "any time, anyone"]
+        - [buenos días, good morning, until lunchtime]
+        - [buenas tardes, good afternoon, "after lunch, until dark"]
+        - [buenas noches, "good evening, good night", "after dark — hello or goodbye"]
+        - [adiós, goodbye, any time]
+        - [hasta luego, see you later, a very common way to say bye]
+        - [hasta mañana, see you tomorrow, when you'll meet again tomorrow]
+    tip: "*Buenos días* is literally \"good days\". It's *buenos* with *días* but *buenas* with *tardes* and *noches* — lesson 4 explains why."
+
+  - heading: What's your name?
+    body: |
+      To say your name, use **me llamo** + your name. It literally means
+      "I call myself".
+
+      To ask a friend's name: **¿Cómo te llamas?** When you meet someone,
+      say **mucho gusto** (nice to meet you). You can also say
+      **encantado** if you're male, or **encantada** if you're female.
+
+      Notice the upside-down **¿** at the start of a question. Spanish also
+      starts exclamations with **¡**. They are part of normal spelling.
+    examples:
+      - ["Me llamo Sofía.", "My name is Sofía."]
+      - ["¿Cómo te llamas?", "What's your name?"]
+      - ["Mucho gusto.", "Nice to meet you."]
+      - ["Encantada, Pablo.", "Nice to meet you, Pablo. (said by a woman)"]
+
+  - heading: "Tú and usted: two kinds of you"
+    body: |
+      Spanish has two words for "you":
+
+      - **tú** for friends, family, children and people your age
+      - **usted** for adults you don't know, teachers, officials, and anyone you want to be polite to
+
+      With **usted**, the question words change a little: *¿Cómo se llama
+      usted?* If you're not sure which to use with an adult, start with
+      **usted**. They will tell you if *tú* is fine.
+    table:
+      columns: ["", "with tú (friendly)", "with usted (polite)"]
+      rows:
+        - [What's your name?, "¿Cómo te llamas?", "¿Cómo se llama usted?"]
+        - [How are you?, "¿Cómo estás?", "¿Cómo está usted?"]
+        - [And you?, "¿Y tú?", "¿Y usted?"]
+    tip: "In writing, *usted* is often shortened to *Ud.*"
+
+  - heading: How are you?
+    body: |
+      Ask **¿Cómo estás?** (to a friend) or **¿Cómo está usted?** (politely).
+      Typical answers:
+
+      - **muy bien** — very well
+      - **bien** — fine, well
+      - **más o menos** — so-so
+      - **mal** — bad, not well
+
+      Then say thanks and ask back: **gracias, ¿y tú?**
+    examples:
+      - ["—¿Cómo estás? —Muy bien, gracias. ¿Y tú?", "—How are you? —Very well, thanks. And you?"]
+      - ["Más o menos.", "So-so."]
+      - ["Buenos días, señora. ¿Cómo está usted?", "Good morning, ma'am. How are you?"]
+
+words:
+  - [hola, "hello, hi"]
+  - [adiós, goodbye]
+  - [buenos días, good morning]
+  - [buenas tardes, good afternoon]
+  - [buenas noches, "good evening, good night"]
+  - [hasta luego, see you later]
+  - [gracias, "thank you, thanks"]
+  - [por favor, please]
+  - [bien, "well, fine"]
+  - [mal, "bad, badly"]
+  - [mucho gusto, nice to meet you]
+  - [usted, you (polite)]
+
+practice:
+  - type: choice
+    prompt: It's 9 in the morning. Which greeting fits?
+    options: [Buenos días, Buenas tardes, Buenas noches]
+    answer: Buenos días
+    why: Buenos días is used from the morning until lunchtime.
+
+  - type: choice
+    prompt: You meet your friend's grandmother. How do you ask her name?
+    options: ["¿Cómo te llamas?", "¿Cómo se llama usted?"]
+    answer: "¿Cómo se llama usted?"
+    why: Usted is the polite "you" for older people and strangers.
+
+  - type: fill
+    prompt: "Me ___ Carlos."
+    hint: my name is…
+    translation: My name is Carlos.
+    answers: [llamo]
+    why: Me llamo literally means "I call myself".
+
+  - type: fill
+    prompt: "¿Cómo te ___?"
+    hint: what's your name? — to a friend
+    translation: What's your name?
+    answers: [llamas]
+    why: With tú, the question is ¿Cómo te llamas?
+
+  - type: fill
+    prompt: "Buenas ___."
+    hint: good night
+    translation: Good night.
+    answers: [noches]
+    why: Buenas noches is both "good evening" and "good night".
+
+  - type: translate
+    direction: to-target
+    prompt: Good afternoon!
+    answers: [Buenas tardes]
+    why: Buenas tardes is used after lunch until it gets dark.
+
+  - type: translate
+    direction: to-target
+    prompt: Nice to meet you.
+    answers: [Mucho gusto, Encantado, Encantada]
+    why: Mucho gusto works for everyone; encantado or encantada depends on whether you're male or female.
+
+  - type: translate
+    direction: to-target
+    prompt: How are you? (to a friend)
+    answers: ["¿Cómo estás?", "¿Cómo estás tú?"]
+    why: Estás is the tú form; with usted it would be ¿Cómo está usted?
+
+  - type: translate
+    direction: to-target
+    prompt: Very well, thanks. And you? (to a friend)
+    answers: ["Muy bien, gracias. ¿Y tú?"]
+    why: Muy bien means "very well", and ¿y tú? asks back to a friend.
+
+  - type: translate
+    direction: to-english
+    prompt: Hasta luego.
+    answers: [See you later, Bye, Goodbye, See you, Later]
+    why: Hasta luego literally means "until later" — a very common goodbye.
+
+  - type: translate
+    direction: to-english
+    prompt: Más o menos.
+    answers: [So-so, So so, More or less, Okay, OK]
+    why: Más o menos literally means "more or less" and is how you say "so-so".
+
+  - type: choice
+    prompt: Which one is a goodbye?
+    options: [Hola, Hasta luego, Mucho gusto]
+    answer: Hasta luego
+    why: Hasta luego means "see you later"; hola is hello and mucho gusto is "nice to meet you".

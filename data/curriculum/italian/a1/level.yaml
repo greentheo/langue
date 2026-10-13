@@ -1,0 +1,69 @@
+title: Beginner
+summary: >
+  Your first steps in Italian: enough to greet people, introduce yourself and
+  get through simple everyday situations — cafés, shops, directions — when
+  people speak slowly and clearly.
+
+can_do:
+  - greet people and introduce yourself, both informally and politely
+  - ask and answer simple questions about where you're from, where you live, your age and your job
+  - use numbers, prices, times, days and dates
+  - order food and drink and buy simple things
+  - say what you have, what you like, what you want and what you can do
+  - describe your family, your home and your day in short sentences
+  - read signs, menus and short messages
+  - fill in a simple form with your personal details
+  - understand people who speak slowly and clearly about familiar things
+
+grammar:
+  - topic: Greetings, and the two kinds of "you" — tu and Lei
+    lessons: [01-greetings]
+  - topic: "Pronunciation and spelling: c and g, ch and gh, gli, gn, sc, double consonants, stress"
+    lessons: [02-sounds]
+  - topic: Subject pronouns and essere (to be)
+    lessons: [03-essere]
+  - topic: Negative sentences with non, and yes/no questions
+    lessons: [03-essere]
+  - topic: Noun gender and plurals
+    lessons: [04-articles]
+  - topic: "Articles: il, lo, l', la, i, gli, le — un, uno, una, un'"
+    lessons: [04-articles]
+  - topic: Avere (to have) for age and feelings
+    lessons: [05-avere]
+  - topic: C'è and ci sono (there is, there are)
+    lessons: [05-avere]
+  - topic: Numbers, prices, the time, days and dates
+    lessons: [06-numbers-time]
+  - topic: Present tense of regular -are verbs
+    lessons: [07-are-verbs]
+  - topic: "Question words: chi, cosa, dove, quando, come, perché, quanto, quale"
+    lessons: [07-are-verbs]
+  - topic: Present tense of -ere, -ire and -isc- verbs
+    lessons: [08-ere-ire-verbs]
+  - topic: Adjective agreement and position, and questo (this)
+    lessons: [09-adjectives]
+  - topic: "Possessives: mio, tuo, suo, nostro, vostro, loro"
+    lessons: [10-family]
+  - topic: Irregular verbs andare, fare, stare and venire
+    lessons: [11-irregular-verbs]
+  - topic: "Going places: a, in and da"
+    lessons: [11-irregular-verbs]
+  - topic: Volere, potere and dovere, and polite vorrei
+    lessons: [12-modals]
+  - topic: Piacere — mi piace and mi piacciono
+    lessons: [13-piacere]
+  - topic: Reflexive verbs, times of day, and how often
+    lessons: [14-routine]
+  - topic: "Prepositions joined with articles: al, del, dal, nel, sul"
+    lessons: [15-prepositions]
+
+themes:
+  - greetings
+  - personal details
+  - family
+  - food and cafés
+  - shopping
+  - town and directions
+  - home
+  - daily routine
+  - free time

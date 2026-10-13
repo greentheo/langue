@@ -1,0 +1,185 @@
+title: Soy estudiante
+subtitle: Ser and the subject pronouns
+goal: say who you are, where you're from and what you do with *ser*, and make negative sentences and yes/no questions
+minutes: 12
+
+sections:
+  - heading: "I, you, he, she: the subject pronouns"
+    body: |
+      These are the words for "I", "you", "he" and so on. For groups,
+      Spanish has two forms: **-os** for a group of males or a mixed group,
+      and **-as** for a group of only females.
+    table:
+      columns: [Spanish, English]
+      rows:
+        - [yo, I]
+        - [tú, you (a friend)]
+        - [él, he]
+        - [ella, she]
+        - [usted, you (polite)]
+        - [nosotros / nosotras, we]
+        - [vosotros / vosotras, you all (friends — Spain only)]
+        - [ellos / ellas, they]
+        - [ustedes, you all]
+    tip: "*Vosotros* is only used in Spain. In Latin America, *ustedes* means \"you all\" for everyone — friends included."
+
+  - heading: "Ser: to be"
+    body: |
+      **Ser** means "to be". Like "to be" in English, it is irregular, so
+      the forms need learning one by one.
+
+      Use **ser** to say who or what someone is: their name, where they're
+      from (**ser de**), their nationality and their job.
+    table:
+      columns: [who, ser, English]
+      rows:
+        - [yo, soy, I am]
+        - [tú, eres, you are]
+        - [él / ella / usted, es, "he is, she is, you are"]
+        - [nosotros / nosotras, somos, we are]
+        - [vosotros / vosotras, sois, you all are]
+        - [ellos / ellas / ustedes, son, "they are, you all are"]
+    examples:
+      - ["Soy Ana.", "I'm Ana."]
+      - ["Eres de México.", "You're from Mexico."]
+      - ["Ella es profesora.", "She's a teacher."]
+      - ["Somos estudiantes.", "We're students."]
+    tip: "No word for \"a\" before a job: *Soy estudiante* means \"I'm a student\"."
+
+  - heading: You can drop the pronoun
+    body: |
+      The verb already shows who is doing it: **soy** can only mean "I am".
+      So Spanish speakers usually leave out *yo*, *tú* and *nosotros*:
+      *Soy de Chile.*
+
+      Keep the pronoun for emphasis, or when it's unclear — *es* could be
+      he, she or polite you: *Yo soy de Chile y ella es de Perú.*
+
+  - heading: Where are you from?
+    body: |
+      Use **ser de** + a place: *Soy de Texas.* To ask: **¿De dónde eres?**
+      (literally "from where are you?").
+
+      Nationality words change for male and female, like *mexicano* and
+      *mexicana*. Words ending in **-e** stay the same for both. Unlike
+      English, nationalities are written with a small letter.
+    table:
+      columns: [country, "he is…", "she is…"]
+      rows:
+        - [México, mexicano, mexicana]
+        - [España, español, española]
+        - [Inglaterra, inglés, inglesa]
+        - [Estados Unidos, estadounidense, estadounidense]
+        - [Canadá, canadiense, canadiense]
+    examples:
+      - ["¿De dónde eres?", "Where are you from?"]
+      - ["Soy de Canadá. Soy canadiense.", "I'm from Canada. I'm Canadian."]
+      - ["Laura es española.", "Laura is Spanish."]
+
+  - heading: "No, and asking questions"
+    body: |
+      To make a sentence negative, put **no** right before the verb:
+      *No soy de aquí.*
+
+      To ask a yes/no question, keep the same words, add **¿ ?** and raise
+      your voice at the end: *¿Eres de aquí?* There's no "do" or "does" in
+      Spanish questions.
+
+      In an answer, the first *no* means "no" and the second means "not":
+      *No, no soy de aquí.*
+    examples:
+      - ["No soy profesor.", "I'm not a teacher."]
+      - ["¿Eres estudiante?", "Are you a student?"]
+      - ["No, no soy de aquí.", "No, I'm not from here."]
+
+words:
+  - [ser, to be]
+  - [yo, I]
+  - [tú, you (informal)]
+  - [él, he]
+  - [ella, she]
+  - [nosotros, we]
+  - [ellos, they]
+  - [estudiante, student]
+  - [profesor / profesora, teacher]
+  - [médico / médica, doctor]
+  - [de, "from, of"]
+  - [aquí, here]
+  - ["no", "no, not"]
+
+practice:
+  - type: fill
+    prompt: "Yo ___ de Canadá."
+    hint: ser
+    translation: I'm from Canada.
+    answers: [soy]
+    why: Soy is the yo form of ser.
+
+  - type: fill
+    prompt: "Tú ___ estudiante."
+    hint: ser
+    translation: You're a student.
+    answers: [eres]
+    why: Eres is the tú form of ser.
+
+  - type: fill
+    prompt: "Nosotros ___ de México."
+    hint: ser
+    translation: We're from Mexico.
+    answers: [somos]
+    why: Somos is the nosotros form of ser.
+
+  - type: fill
+    prompt: "Ellas ___ profesoras."
+    hint: ser
+    translation: They're teachers.
+    answers: [son]
+    why: Son goes with ellos, ellas and ustedes.
+
+  - type: choice
+    prompt: Laura is from Spain. *Laura es…*
+    options: [española, español, españolas]
+    answer: española
+    why: Laura is one woman, so the nationality ends in -a.
+
+  - type: translate
+    direction: to-target
+    prompt: I'm a student.
+    answers: [Soy estudiante, Yo soy estudiante]
+    why: Spanish leaves out "a" before jobs, and the pronoun yo is optional.
+
+  - type: translate
+    direction: to-target
+    prompt: She isn't a doctor.
+    answers: [No es médica, Ella no es médica]
+    why: No goes right before the verb, and médica is the form for a woman.
+
+  - type: translate
+    direction: to-target
+    prompt: Are you from here? (to a friend)
+    answers: ["¿Eres de aquí?", "¿Tú eres de aquí?", "¿Eres tú de aquí?"]
+    why: A question uses the same words as a statement, with question marks.
+
+  - type: translate
+    direction: to-english
+    prompt: Somos de Estados Unidos.
+    answers: [We are from the United States, We are from the US, We are from the USA, We are from America]
+    why: Somos means "we are", and ser de means "to be from".
+
+  - type: translate
+    direction: to-english
+    prompt: Él es profesor.
+    answers: [He is a teacher, He is a professor]
+    why: Él es means "he is"; Spanish doesn't need "a" before a job, but English does.
+
+  - type: choice
+    prompt: Which one means "I'm not from here"?
+    options: [No soy de aquí., Soy no de aquí., Soy de no aquí.]
+    answer: No soy de aquí.
+    why: No always goes directly before the verb.
+
+  - type: choice
+    prompt: You're talking to two friends in Mexico. "You are" is…
+    options: [sois, son]
+    answer: son
+    why: In Latin America, ustedes — with the verb form son — is the plural "you" for everyone.

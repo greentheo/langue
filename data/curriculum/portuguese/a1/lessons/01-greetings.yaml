@@ -1,0 +1,172 @@
+title: "Oi! Tudo bem?"
+subtitle: Greetings and introductions
+goal: greet people at any time of day, say your name, ask someone's name, and choose between você and o senhor / a senhora
+minutes: 10
+
+sections:
+  - heading: Hello and goodbye
+    body: |
+      Brazilians say **oi** (hi) all day long, to almost everyone. **Olá**
+      (hello) is a little more formal. Then there is a greeting for each part
+      of the day:
+
+      - **bom dia** — good morning (until about noon)
+      - **boa tarde** — good afternoon (until it gets dark)
+      - **boa noite** — good evening, and also good night
+
+      To say goodbye: **tchau** (bye), **até logo** (see you later) or
+      **até amanhã** (see you tomorrow).
+    examples:
+      - ["Oi, Pedro!", "Hi, Pedro!"]
+      - ["Boa tarde!", "Good afternoon!"]
+      - ["Tchau, até amanhã!", "Bye, see you tomorrow!"]
+    tip: "*Bom* dia, but *boa* tarde and *boa* noite. *Dia* is masculine and *tarde* and *noite* are feminine, so the word for \"good\" changes. Lesson 4 explains why."
+
+  - heading: Tudo bem?
+    body: |
+      The most Brazilian question of all is **Tudo bem?** — literally
+      "everything well?". It means "How are you?" and often just "Hi". The
+      usual answer is **Tudo bem!** or **Tudo bom!**, and then you ask back:
+      **E você?** (And you?)
+
+      Another way to ask is **Como vai?** (How are you doing?). Answer with
+      **Bem, obrigado** — or **obrigada** if you are a girl or a woman.
+      "Thank you" agrees with the person who is speaking.
+    examples:
+      - ["— Oi, tudo bem? — Tudo bom! E você?", "— Hi, how are you? — All good! And you?"]
+      - ["— Como vai? — Bem, obrigado.", "— How are you doing? — Fine, thanks. (said by a man)"]
+      - ["Bem, obrigada.", "Fine, thanks. (said by a woman)"]
+    tip: "Whoever is talking decides: men and boys say *obrigado*, women and girls say *obrigada* — no matter who they are thanking."
+
+  - heading: What's your name?
+    body: |
+      To say your name, use **Meu nome é…** (My name is…) or **Eu me
+      chamo…** (literally "I call myself…"). In everyday speech many
+      Brazilians drop the *eu*: **Me chamo Ana**.
+
+      To ask, say **Qual é o seu nome?** (What is your name?) or **Como você
+      se chama?** (What are you called?). When you meet someone, say **Muito
+      prazer!** or just **Prazer!** — nice to meet you.
+    examples:
+      - ["Meu nome é Lucas.", "My name is Lucas."]
+      - ["Eu me chamo Júlia.", "My name is Júlia."]
+      - ["Como você se chama?", "What's your name?"]
+      - ["Muito prazer!", "Nice to meet you!"]
+
+  - heading: Você or o senhor?
+    body: |
+      Portuguese has more than one word for "you". In Brazil, **você** is the
+      normal "you" for friends, classmates and most people you meet.
+
+      To be respectful — to an older person, a customer, someone important —
+      use **o senhor** (to a man) or **a senhora** (to a woman). They work
+      just like *você*: **Como o senhor se chama?** — What is your name, sir?
+
+      In some regions, like the south and the northeast, people also say
+      **tu** to friends. You will understand it, but *você* works everywhere.
+    tip: "In Portugal it is the other way round: *tu* is the normal friendly \"you\", and *você* can sound cold. This course teaches Brazilian Portuguese."
+
+words:
+  - [oi, hi]
+  - [olá, hello]
+  - [bom dia, good morning]
+  - [boa tarde, good afternoon]
+  - [boa noite, good evening / good night]
+  - [tchau, bye]
+  - [até logo, see you later]
+  - [até amanhã, see you tomorrow]
+  - [obrigado, thank you (said by a man)]
+  - [obrigada, thank you (said by a woman)]
+  - [nome, name]
+  - [você, you]
+  - [o senhor, "you (to a man, polite)"]
+  - [a senhora, "you (to a woman, polite)"]
+  - [prazer, pleasure / nice to meet you]
+
+practice:
+  - type: choice
+    prompt: It's 9 o'clock in the morning. Which greeting fits?
+    options: [Boa noite!, Bom dia!, Boa tarde!]
+    answer: Bom dia!
+    why: Bom dia is for the morning, until about noon.
+
+  - type: choice
+    prompt: A girl wants to say thank you. What does she say?
+    options: [Obrigado., Obrigada.]
+    answer: Obrigada.
+    why: Thank you agrees with the speaker, so women and girls say obrigada.
+
+  - type: choice
+    prompt: You meet your friend's grandmother. Which "you" do you use?
+    options: [você, a senhora, tu]
+    answer: a senhora
+    why: A senhora is the respectful "you" for an older woman.
+
+  - type: fill
+    prompt: "Meu ___ é Rafael."
+    hint: name
+    translation: My name is Rafael.
+    answers: [nome]
+    why: Nome means name, so meu nome é means my name is.
+
+  - type: fill
+    prompt: "Como você se ___?"
+    hint: call
+    translation: What's your name?
+    answers: [chama]
+    why: Como você se chama? literally asks "how do you call yourself?".
+
+  - type: fill
+    prompt: "Tudo bem? E ___?"
+    hint: you
+    translation: How are you? And you?
+    answers: [você]
+    why: E você? means "and you?" — the way to ask the question back.
+
+  - type: fill
+    prompt: "Boa ___!"
+    hint: night
+    translation: Good night!
+    answers: [noite]
+    why: Noite is night; boa noite works as hello and goodbye after dark.
+
+  - type: translate
+    direction: to-target
+    prompt: Good afternoon!
+    answers: [Boa tarde!]
+    why: Tarde is feminine, so "good" is boa.
+
+  - type: translate
+    direction: to-target
+    prompt: My name is Ana.
+    answers:
+      - Meu nome é Ana.
+      - O meu nome é Ana.
+      - Eu me chamo Ana.
+      - Me chamo Ana.
+      - Sou a Ana.
+      - Eu sou a Ana.
+      - Sou Ana.
+      - Eu sou Ana.
+    why: Meu nome é… and eu me chamo… both introduce you.
+
+  - type: translate
+    direction: to-target
+    prompt: How are you?
+    answers: [Tudo bem?, Tudo bom?, Como vai?, Como vai você?]
+    why: Tudo bem? is the everyday Brazilian "how are you?"; Como vai? works too.
+
+  - type: translate
+    direction: to-english
+    prompt: Muito prazer!
+    answers: [Nice to meet you!, Pleased to meet you!, It's a pleasure!, A pleasure!]
+    why: Prazer means pleasure; muito prazer is what you say when you meet someone.
+
+  - type: translate
+    direction: to-english
+    prompt: Tchau, até amanhã!
+    answers:
+      - Bye, see you tomorrow!
+      - Goodbye, see you tomorrow!
+      - Bye, until tomorrow!
+    why: Até amanhã means "until tomorrow" — the usual "see you tomorrow".

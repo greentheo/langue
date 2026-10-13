@@ -1,0 +1,150 @@
+title: Vorrei un caffè
+subtitle: Volere, potere, dovere — and ordering politely
+goal: say what you want to do, can do and have to do with volere, potere and dovere, and order politely with vorrei
+minutes: 13
+
+sections:
+  - heading: Want, can, must
+    body: |
+      **Volere** (to want), **potere** (can, to be able to) and **dovere**
+      (must, to have to) are usually followed by a second verb in the
+      **infinitive** — the dictionary form ending in -are, -ere or -ire:
+
+      - *Voglio mangiare.* — I want to eat.
+      - *Posso entrare?* — Can I come in?
+      - *Devo studiare.* — I have to study.
+
+      All three are irregular.
+    table:
+      columns: [person, "volere (want)", "potere (can)", "dovere (must)"]
+      rows:
+        - [io, voglio, posso, devo]
+        - [tu, vuoi, puoi, devi]
+        - [lui / lei / Lei, vuole, può, deve]
+        - [noi, vogliamo, possiamo, dobbiamo]
+        - [voi, volete, potete, dovete]
+        - [loro, vogliono, possono, devono]
+    examples:
+      - ["Vuoi venire?", "Do you want to come?"]
+      - ["Non posso dormire.", "I can't sleep."]
+      - ["Dobbiamo partire domani.", "We have to leave tomorrow."]
+      - ["Volete un gelato?", "Do you (all) want an ice cream?"]
+    tip: "There's no word for \"to\" between the two verbs: *Voglio andare*, not *Voglio a andare*."
+
+  - heading: "Vorrei: I would like"
+    body: |
+      *Voglio un caffè* sounds like "I want a coffee!" — a bit demanding.
+      To ask for something politely, say **vorrei** — "I would like":
+
+      - *Vorrei un caffè, per favore.* — I'd like a coffee, please.
+      - *Vorrei andare in centro.* — I'd like to go downtown.
+
+      To ask whether you can have or do something, use *potere*:
+      **Posso avere…?** — Can I have…? To ask an adult politely, **Può…?**
+      — Can you…?
+    examples:
+      - ["Vorrei una pizza margherita.", "I'd like a margherita pizza."]
+      - ["Posso avere il conto?", "Can I have the bill?"]
+      - ["Può ripetere, per favore?", "Can you repeat that, please?"]
+    tip: "In shops and cafés, *vorrei* is the magic word. *Voglio* is fine for plans and wishes: *Voglio studiare a Roma.*"
+
+  - heading: At the bar
+    body: |
+      An Italian **bar** is a café. Often you pay first at the till (*la
+      cassa*), then take your receipt to the counter and order.
+
+      - *Un caffè, per favore.* — An espresso, please.
+      - *Vorrei un cappuccino e un cornetto.* — I'd like a cappuccino and a croissant.
+      - *Quanto costa?* — How much is it?
+      - *Il conto, per favore.* — The bill, please.
+    tip: "In Italy *un caffè* is always an espresso. For a long, weak coffee, ask for *un caffè americano*."
+
+words:
+  - [volere, to want]
+  - [potere, "can, to be able to"]
+  - [dovere, "must, to have to"]
+  - [vorrei, I would like]
+  - [per favore, please]
+  - [conto, bill]
+  - [cappuccino, cappuccino]
+  - [cornetto, croissant]
+  - [cassa, "till, cash desk"]
+  - [entrare, "to come in, to enter"]
+  - [ripetere, to repeat]
+
+practice:
+  - type: fill
+    prompt: "Io ___ un gelato."
+    hint: (volere)
+    translation: I want an ice cream.
+    answers: [voglio]
+    why: Volere with io is voglio.
+
+  - type: fill
+    prompt: "Tu ___ venire?"
+    hint: (potere)
+    translation: Can you come?
+    answers: [puoi]
+    why: Potere with tu is puoi.
+
+  - type: fill
+    prompt: "Noi ___ studiare."
+    hint: (dovere)
+    translation: We have to study.
+    answers: [dobbiamo]
+    why: Dovere with noi is dobbiamo.
+
+  - type: fill
+    prompt: "___ un cappuccino, per favore."
+    hint: (I'd like)
+    translation: I'd like a cappuccino, please.
+    answers: [vorrei]
+    why: Vorrei is the polite way to ask for something.
+
+  - type: translate
+    direction: to-target
+    prompt: I can't sleep.
+    answers: ["Non posso dormire.", "Io non posso dormire."]
+    why: Non goes before the first verb, and the second verb stays in the infinitive.
+
+  - type: translate
+    direction: to-target
+    prompt: Do you want to come? (to a friend)
+    answers: ["Vuoi venire?", "Tu vuoi venire?"]
+    why: Volere with tu is vuoi, followed by the infinitive venire.
+
+  - type: translate
+    direction: to-target
+    prompt: The bill, please.
+    answers: ["Il conto, per favore.", "Posso avere il conto, per favore?", "Posso avere il conto?"]
+    why: Il conto is the bill; per favore is please.
+
+  - type: translate
+    direction: to-target
+    prompt: I'd like a coffee, please.
+    answers: ["Vorrei un caffè, per favore.", "Vorrei un caffè."]
+    why: Vorrei is the polite "I would like".
+
+  - type: translate
+    direction: to-english
+    prompt: Devono partire.
+    answers: ["They have to leave.", "They must leave.", "They need to leave.", "They've got to leave."]
+    why: Dovere means "must" or "have to"; devono is the loro form.
+
+  - type: translate
+    direction: to-english
+    prompt: Posso entrare?
+    answers: ["Can I come in?", "May I come in?", "Can I enter?", "May I enter?", "Can I go in?"]
+    why: Posso + infinitive asks "can I…?"
+
+  - type: choice
+    prompt: Which is the most polite way to order?
+    options: [Voglio un caffè., Vorrei un caffè., Devo un caffè.]
+    answer: Vorrei un caffè.
+    why: Vorrei means "I would like" — the polite way to ask.
+
+  - type: choice
+    prompt: "You ask a shop assistant, politely: ___ ripetere, per favore?"
+    options: [Puoi, Può, Posso]
+    answer: Può
+    why: Polite Lei uses the same form as "he" or "she" — può.

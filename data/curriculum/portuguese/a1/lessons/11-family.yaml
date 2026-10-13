@@ -1,0 +1,161 @@
+title: "A minha família"
+subtitle: Possessives and family
+goal: talk about your family and say whose things are with meu, seu, nosso and dele / dela
+minutes: 12
+
+sections:
+  - heading: My, your, our
+    body: |
+      Words like *my* and *your* are **possessives**. In Portuguese they
+      agree with **the thing owned**, not with the owner: a boy and a girl
+      both say *minha casa* (my house), because *casa* is feminine.
+
+      Brazilians often put the article in front — *o meu irmão* — or leave it
+      out — *meu irmão*. Both are correct.
+    table:
+      columns: ["", masculine, feminine, masculine plural, feminine plural]
+      rows:
+        - [my, meu, minha, meus, minhas]
+        - [your, seu, sua, seus, suas]
+        - [our, nosso, nossa, nossos, nossas]
+    examples:
+      - ["meu pai e minha mãe", "my father and my mother"]
+      - ["Seus livros são novos.", "Your books are new."]
+      - ["A nossa casa é pequena.", "Our house is small."]
+
+  - heading: His, her, their
+    body: |
+      *Seu* and *sua* can mean "your", "his", "her" or "their" — confusing!
+      So in Brazil, *seu* almost always means **your**, and for his, her and
+      their people use **dele, dela, deles, delas** *after* the noun:
+
+      - *o carro dele* — his car (literally "the car of him")
+      - *a casa dela* — her house
+      - *os amigos deles* — their friends
+
+      *Dele* is just *de* (of) + *ele*. With these, the article is needed:
+      *o carro dele*, never *carro dele*.
+    examples:
+      - ["O irmão dela é professor.", "Her brother is a teacher."]
+      - ["A casa deles é grande.", "Their house is big."]
+    tip: "*Seu carro* means \"your car\" in Brazil. To say \"his car\", say *o carro dele*."
+
+  - heading: The family
+    body: |
+      The masculine plural covers mixed groups, so **os irmãos** can mean
+      "the brothers" or "the brothers and sisters", and **os filhos** can
+      mean "the sons" or "the children".
+    table:
+      columns: [Portuguese, English]
+      rows:
+        - [pai / mãe, father / mother]
+        - [pais, parents]
+        - [irmão / irmã, brother / sister]
+        - [filho / filha, son / daughter]
+        - [avô / avó, grandfather / grandmother]
+        - [avós, grandparents]
+        - [tio / tia, uncle / aunt]
+        - [primo / prima, cousin (male / female)]
+        - [marido / esposa, husband / wife]
+    tip: "*Pais* means \"parents\", not just \"fathers\". *Os meus pais* = my mum and dad."
+
+words:
+  - [família, family]
+  - [pai, father]
+  - [mãe, mother]
+  - [pais, parents]
+  - [irmã, sister]
+  - [filho, son]
+  - [filha, daughter]
+  - [filhos, children]
+  - [avô, grandfather]
+  - [avó, grandmother]
+  - [avós, grandparents]
+  - [tio, uncle]
+  - [tia, aunt]
+  - [primo, cousin]
+  - [nosso, our]
+
+practice:
+  - type: fill
+    prompt: "___ mãe é professora."
+    hint: my
+    translation: My mother is a teacher.
+    answers: [Minha, A minha]
+    why: Mãe is feminine, so "my" is minha.
+
+  - type: fill
+    prompt: "Nossos ___ moram em Salvador."
+    hint: parents
+    translation: Our parents live in Salvador.
+    answers: [pais]
+    why: Pais means parents.
+
+  - type: fill
+    prompt: "o carro ___"
+    hint: her
+    translation: her car
+    answers: [dela]
+    why: For "her", Brazilians say dela after the noun.
+
+  - type: fill
+    prompt: "Os ___ dela são pequenos."
+    hint: children
+    translation: Her children are small.
+    answers: [filhos]
+    why: Filhos covers sons and daughters together — children.
+
+  - type: choice
+    prompt: "\"his house\""
+    options: [a casa dele, a sua casa dele, a casa de ele]
+    answer: a casa dele
+    why: In Brazil "his" is usually dele, after the noun, and de + ele joins into dele.
+
+  - type: choice
+    prompt: "\"my grandparents\""
+    options: [meus avôs, meus avós, minhas avós]
+    answer: meus avós
+    why: Meus avós means my grandparents; avôs is only grandfathers and minhas avós is only grandmothers.
+
+  - type: translate
+    direction: to-target
+    prompt: my brother
+    answers: [meu irmão, o meu irmão]
+    why: Irmão is masculine, so "my" is meu.
+
+  - type: translate
+    direction: to-target
+    prompt: our house
+    answers: [nossa casa, a nossa casa]
+    why: Casa is feminine, so "our" is nossa.
+
+  - type: translate
+    direction: to-target
+    prompt: Their car is new. (their = some boys)
+    answers: [O carro deles é novo.]
+    why: Deles is "their" for a male or mixed group, and it comes after the noun.
+
+  - type: translate
+    direction: to-english
+    prompt: A avó dela tem 90 anos.
+    answers: [Her grandmother is 90 years old., Her grandmother is 90., Her grandma is 90., Her grandmother is ninety., Her grandmother is ninety years old.]
+    why: Avó (open ó) is grandmother, and age uses ter.
+
+  - type: translate
+    direction: to-english
+    prompt: Meus pais são brasileiros.
+    answers: [My parents are Brazilian., My parents are Brazilians.]
+    why: Pais means parents.
+
+  - type: translate
+    direction: to-english
+    prompt: Você tem irmãos?
+    answers:
+      - Do you have brothers and sisters?
+      - Do you have any brothers and sisters?
+      - Do you have any brothers or sisters?
+      - Do you have siblings?
+      - Do you have any siblings?
+      - Do you have brothers?
+      - Do you have any brothers?
+    why: Irmãos covers brothers and sisters together.

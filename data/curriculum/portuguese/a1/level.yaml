@@ -1,0 +1,67 @@
+title: Beginner
+summary: >
+  Your first steps in Brazilian Portuguese: enough to introduce yourself, get
+  around, order, shop and talk simply about your family and your day.
+  Portugal's CAPLE exams call this level ACESSO.
+can_do:
+  - greet people and introduce yourself, choosing between você and o senhor / a senhora
+  - ask and answer simple personal questions — name, where you're from, where you live, age, job
+  - handle numbers, prices, times and dates
+  - order food and drink and buy simple things
+  - say what you have, what you like, what you want and what you can do
+  - describe your family and your home in simple sentences
+  - describe your daily routine and your plans for tomorrow
+  - read signs, menus and short messages, and fill in a simple form
+grammar:
+  - topic: Greetings, and você vs o senhor / a senhora
+    lessons: [01-greetings]
+  - topic: Pronunciation and spelling — nasal vowels, lh, nh, ç, the Brazilian t and d, r and rr, accent marks
+    lessons: [02-sounds]
+  - topic: Subject pronouns, including a gente
+    lessons: [03-ser]
+  - topic: Ser — identity, nationality, job, origin
+    lessons: [03-ser]
+  - topic: Negation with não, and yes/no questions
+    lessons: [03-ser]
+  - topic: Noun gender and plural, including -ão → -ões / -ães / -ãos
+    lessons: [04-articles]
+  - topic: Articles — o, a, os, as; um, uma, uns, umas
+    lessons: [04-articles]
+  - topic: Ter — having, age, ter fome; tem and há for "there is"
+    lessons: [05-ter]
+  - topic: Estar, and choosing between ser and estar
+    lessons: [06-estar]
+  - topic: Numbers, prices, time and dates
+    lessons: [07-numbers]
+  - topic: Present tense of regular -ar verbs
+    lessons: [08-ar-verbs]
+  - topic: Question words — quem, o que, onde, quando, como, por que, quanto, qual
+    lessons: [08-ar-verbs]
+  - topic: Present tense of regular -er and -ir verbs
+    lessons: [09-er-ir-verbs]
+  - topic: Adjective agreement and position; muito
+    lessons: [10-adjectives]
+  - topic: Este / esse and isto / isso
+    lessons: [10-adjectives]
+  - topic: Possessives — meu, seu, nosso; dele / dela for his and her
+    lessons: [11-family]
+  - topic: Ir, fazer, querer, poder; ir + infinitive for plans
+    lessons: [12-ir-fazer]
+  - topic: Polite requests with queria and gostaria de
+    lessons: [12-ir-fazer]
+  - topic: Gostar de, and de + article (do, da, dos, das)
+    lessons: [13-gostar]
+  - topic: Reflexive verbs with Brazilian pronoun placement (eu me levanto); frequency words
+    lessons: [14-routine]
+  - topic: Prepositions and contractions — no, na, ao, à, pelo, pela, num, numa
+    lessons: [15-prepositions]
+themes:
+  - greetings and introductions
+  - personal details
+  - family
+  - food, cafés and restaurants
+  - shopping
+  - town and directions
+  - home
+  - daily routine
+  - free time

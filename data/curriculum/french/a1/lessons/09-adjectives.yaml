@@ -1,0 +1,169 @@
+title: Petit et grand
+subtitle: Adjectives, colours and ce / cette / ces
+goal: make adjectives agree with their noun, put them in the right place, and point at things with *ce, cette, ces*
+minutes: 14
+
+sections:
+  - heading: Adjectives agree with their noun
+    body: |
+      A French adjective changes to match its noun — masculine or feminine,
+      singular or plural.
+
+      - add **-e** for feminine: *petit → petite*
+      - add **-s** for plural: *petit → petits, petite → petites*
+      - if it already ends in **-e**, the feminine is the same: *rouge,
+        jeune, facile*
+
+      Adding **-e** often makes a silent consonant come back: *petit*
+      ("puh-tee") but *petite* ("puh-teet").
+    table:
+      columns: ["", singular, plural]
+      rows:
+        - [masculine, un chat noir, des chats noirs]
+        - [feminine, une voiture noire, des voitures noires]
+    tip: "Some feminines change more: *blanc → blanche, heureux → heureuse* (happy), *sportif → sportive*. You already know *canadien → canadienne*."
+
+  - heading: Where adjectives go
+    body: |
+      Most adjectives go **after** the noun — the opposite of English:
+
+      - *une voiture rouge* — a red car
+      - *un livre intéressant* — an interesting book
+
+      But a small group of very common adjectives goes **before** the noun.
+      Remember them with **BAGS**:
+
+      - **B**eauty: *beau, joli*
+      - **A**ge: *jeune, vieux, nouveau*
+      - **G**ood and bad: *bon, mauvais*
+      - **S**ize: *grand, petit*
+    examples:
+      - ["une petite maison", "a small house"]
+      - ["un bon livre", "a good book"]
+      - ["une jeune fille", "a young girl"]
+      - ["un chat noir", "a black cat"]
+
+  - heading: Three special adjectives
+    body: |
+      **beau** (beautiful), **nouveau** (new) and **vieux** (old) have a
+      special form before a masculine noun starting with a vowel — so the
+      words flow together:
+    table:
+      columns: [masculine, "masc. before a vowel", feminine]
+      rows:
+        - [beau, bel, belle]
+        - [nouveau, nouvel, nouvelle]
+        - [vieux, vieil, vieille]
+    examples:
+      - ["un bel homme", "a handsome man"]
+      - ["un vieil ami", "an old friend"]
+      - ["une belle maison", "a beautiful house"]
+
+  - heading: "This, that, these: ce, cet, cette, ces"
+    body: |
+      - **ce** before a masculine noun: *ce livre* (this book)
+      - **cet** before a masculine noun starting with a vowel: *cet ami*
+      - **cette** before a feminine noun: *cette maison*
+      - **ces** before any plural: *ces livres, ces maisons*
+
+      The same word means "this" and "that" — French doesn't need to
+      choose. Add **très** to say "very": *très grand*.
+    examples:
+      - ["Ce gâteau est très bon.", "This cake is very good."]
+      - ["Cette voiture est bleue.", "That car is blue."]
+      - ["Ces filles sont contentes.", "These girls are happy."]
+
+words:
+  - [grand / grande, "big, tall"]
+  - [petit / petite, "small, little"]
+  - [bon / bonne, good]
+  - [mauvais / mauvaise, bad]
+  - [beau / belle, "beautiful, handsome"]
+  - [jeune, young]
+  - [vieux / vieille, old]
+  - [nouveau / nouvelle, new]
+  - [noir / noire, black]
+  - [blanc / blanche, white]
+  - [rouge, red]
+  - [bleu / bleue, blue]
+  - [vert / verte, green]
+  - [intéressant / intéressante, interesting]
+  - [très, very]
+
+practice:
+  - type: fill
+    prompt: "une ___ maison"
+    hint: (petit)
+    translation: a small house
+    answers: [petite]
+    why: Maison is feminine, so petit adds -e — and petit goes before the noun.
+
+  - type: fill
+    prompt: "des chats ___"
+    hint: (noir)
+    translation: black cats
+    answers: [noirs]
+    why: Chats is masculine plural, so noir adds -s.
+
+  - type: fill
+    prompt: "une voiture ___"
+    hint: (blanc)
+    translation: a white car
+    answers: [blanche]
+    why: Blanc has an irregular feminine, blanche.
+
+  - type: fill
+    prompt: "___ livre"
+    hint: (this)
+    translation: this book
+    answers: [ce]
+    why: Livre is masculine and starts with a consonant, so "this" is ce.
+
+  - type: fill
+    prompt: "___ école"
+    hint: (this)
+    translation: this school
+    answers: [cette]
+    why: École is feminine, so "this" is cette — even before a vowel.
+
+  - type: translate
+    direction: to-target
+    prompt: a good book
+    answers: [un bon livre]
+    why: Bon is one of the BAGS adjectives, so it goes before the noun.
+
+  - type: translate
+    direction: to-target
+    prompt: a red car
+    answers: [une voiture rouge]
+    why: Colours go after the noun, and rouge is the same in the feminine.
+
+  - type: translate
+    direction: to-target
+    prompt: these girls
+    answers: [ces filles]
+    why: Ces is "these" or "those" for any plural noun.
+
+  - type: translate
+    direction: to-english
+    prompt: Elle est très contente.
+    answers: ["She is very happy.", "She's very happy.", "She is very pleased.", "She's very pleased.", "She is very glad.", "She's very glad."]
+    why: Très means very, and contente has -e because elle is feminine.
+
+  - type: translate
+    direction: to-english
+    prompt: un vieil ami
+    answers: ["an old friend"]
+    why: Vieux becomes vieil before a masculine noun starting with a vowel.
+
+  - type: choice
+    prompt: Which is correct?
+    options: [une maison grande, une grande maison]
+    answer: une grande maison
+    why: Grand is a size adjective (the S in BAGS), so it goes before the noun.
+
+  - type: choice
+    prompt: Before a masculine noun starting with a vowel, *ce* becomes…
+    options: [cet, cette, "c'"]
+    answer: cet
+    why: Cet keeps the masculine meaning and links smoothly to the vowel, as in cet ami.

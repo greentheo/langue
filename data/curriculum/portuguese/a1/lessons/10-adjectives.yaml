@@ -1,0 +1,169 @@
+title: "Grande e bonito"
+subtitle: Adjectives, agreement, and este / esse
+goal: make adjectives agree with nouns, put them in the right place, and point at things with este, esse and isso
+minutes: 13
+
+sections:
+  - heading: Adjectives agree
+    body: |
+      An adjective — a describing word like *new* or *pretty* — changes to
+      match its noun: masculine or feminine, singular or plural. You already
+      did this with nationalities in lesson 3.
+
+      - Adjectives in **-o** have four forms: *bonito, bonita, bonitos, bonitas*
+      - Adjectives in **-e** have two — they don't change for gender: *grande, grandes*
+      - Adjectives in **-l** follow the plural rule from lesson 4: *azul → azuis*
+    table:
+      columns: ["", masculine, feminine]
+      rows:
+        - [novo — singular, o carro novo, a casa nova]
+        - [novo — plural, os carros novos, as casas novas]
+        - [grande — singular, o carro grande, a casa grande]
+        - [grande — plural, os carros grandes, as casas grandes]
+    examples:
+      - ["um menino bonito", "a good-looking boy"]
+      - ["uma flor bonita", "a pretty flower"]
+      - ["as cidades grandes", "the big cities"]
+
+  - heading: Where they go
+    body: |
+      Most adjectives come **after** the noun, the opposite of English: *um
+      carro vermelho* — a red car.
+
+      A few short, common ones usually come **before**: **bom** (good) and
+      **boa** — *um bom livro*, *uma boa ideia*.
+
+      **Muito** before an adjective means "very" and never changes: *muito
+      bonito*, *muito bonitas*.
+    examples:
+      - ["uma casa pequena", "a small house"]
+      - ["um bom amigo", "a good friend"]
+      - ["As flores são muito bonitas.", "The flowers are very pretty."]
+    tip: "Before a noun, *muito* means \"a lot of\" and does agree: *muitos amigos*, *muitas casas*."
+
+  - heading: Colours
+    body: |
+      Colours are adjectives too, so they go after the noun and agree:
+      *a camiseta branca* — the white T-shirt.
+
+      - **vermelho** — red · **amarelo** — yellow · **branco** — white ·
+        **preto** — black (all four forms)
+      - **verde** — green (two forms) · **azul** — blue (*azuis* in the
+        plural)
+    examples:
+      - ["um carro preto", "a black car"]
+      - ["as flores amarelas", "the yellow flowers"]
+      - ["os olhos azuis", "blue eyes"]
+
+  - heading: This and that
+    body: |
+      Use **este** for something near you (this) and **esse** for something
+      near the person you're talking to (that). Both agree with the noun:
+
+      - *este / esta / estes / estas*
+      - *esse / essa / esses / essas*
+
+      In everyday Brazilian speech, people use *esse* for "this" as well —
+      *Essa camiseta é bonita* — so don't worry about the difference.
+
+      When there's no noun after it, use **isto** or **isso**: *O que é
+      isso?* — What is that?
+    examples:
+      - ["Este livro é caro.", "This book is expensive."]
+      - ["Essa casa é nova.", "That house is new."]
+      - ["O que é isso?", "What's that?"]
+    tip: "*Esta* (this) has no accent; *está* (is) has one: *Esta casa está fechada* — This house is closed."
+
+words:
+  - [bonito, pretty / good-looking]
+  - [grande, big]
+  - [pequeno, small]
+  - [novo, new]
+  - [velho, old]
+  - [bom, good]
+  - [barato, cheap]
+  - [muito, very]
+  - [vermelho, red]
+  - [azul, blue]
+  - [verde, green]
+  - [branco, white]
+  - [preto, black]
+  - [este, this]
+  - [esse, that]
+
+practice:
+  - type: fill
+    prompt: "uma casa ___"
+    hint: pequeno
+    translation: a small house
+    answers: [pequena]
+    why: Casa is feminine, so pequeno becomes pequena.
+
+  - type: fill
+    prompt: "os carros ___"
+    hint: novo
+    translation: the new cars
+    answers: [novos]
+    why: Carros is masculine plural, so novo becomes novos.
+
+  - type: fill
+    prompt: "as flores ___"
+    hint: vermelho
+    translation: the red flowers
+    answers: [vermelhas]
+    why: Flores is feminine plural, so vermelho becomes vermelhas.
+
+  - type: fill
+    prompt: "___ livro é caro."
+    hint: this
+    translation: This book is expensive.
+    answers: [Este, Esse]
+    why: Este (or, in everyday Brazilian speech, esse) goes with a masculine noun.
+
+  - type: choice
+    prompt: "\"two big houses\""
+    options: [duas casas grandes, duas casas grandas, duas grande casas]
+    answer: duas casas grandes
+    why: Adjectives in -e have no feminine form; just add -s for the plural.
+
+  - type: choice
+    prompt: "\"The car is blue.\""
+    options: [O carro é azul., O carro é azulo., O azul carro é.]
+    answer: O carro é azul.
+    why: Azul doesn't change for gender (its plural is azuis).
+
+  - type: choice
+    prompt: Pointing at something, you ask "What's that?"
+    options: [O que é isso?, O que é esse?, O que é essa?]
+    answer: O que é isso?
+    why: Isso is used when no noun comes after it.
+
+  - type: translate
+    direction: to-target
+    prompt: a red car
+    answers: [um carro vermelho]
+    why: The colour goes after the noun.
+
+  - type: translate
+    direction: to-target
+    prompt: The houses are very pretty.
+    answers: [As casas são muito bonitas.]
+    why: Bonito becomes bonitas to match as casas; muito never changes.
+
+  - type: translate
+    direction: to-target
+    prompt: This book is cheap.
+    answers: [Este livro é barato., Esse livro é barato.]
+    why: Este or esse with the masculine livro, and barato stays masculine too.
+
+  - type: translate
+    direction: to-english
+    prompt: um bom amigo
+    answers: [a good friend]
+    why: Bom usually comes before the noun.
+
+  - type: translate
+    direction: to-english
+    prompt: Os gatos pretos são pequenos.
+    answers: [The black cats are small., The black cats are little.]
+    why: Adjectives come after the noun and agree — pretos, pequenos.

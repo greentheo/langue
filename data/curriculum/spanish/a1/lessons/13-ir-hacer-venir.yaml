@@ -1,0 +1,180 @@
+title: Voy al cine
+subtitle: Ir, hacer, venir — and al, del
+goal: say where you're going and where you're coming from, talk about what you do, and make plans with *ir a* + infinitive
+minutes: 15
+
+sections:
+  - heading: "Ir: to go"
+    body: |
+      **Ir** is very irregular — it doesn't look like *ir* at all.
+
+      To say where you're going, use **ir a** + place. When **a** meets
+      **el**, they join to make **al**: *Voy al cine* (I'm going to the
+      cinema), never *a el cine*.
+
+      **¡Vamos!** on its own means "Let's go!"
+    table:
+      columns: [who, ir, English]
+      rows:
+        - [yo, voy, I go]
+        - [tú, vas, you go]
+        - [él / ella / usted, va, "he goes, she goes, you go"]
+        - [nosotros / nosotras, vamos, we go]
+        - [vosotros / vosotras, vais, you all go]
+        - [ellos / ellas / ustedes, van, "they go, you all go"]
+    examples:
+      - ["Vamos al parque.", "We're going to the park."]
+      - ["¿Vas a la escuela?", "Are you going to school?"]
+      - ["Voy a casa.", "I'm going home."]
+    tip: "Only *a + el* joins up. *A la*, *a los* and *a las* stay as two words."
+
+  - heading: "Venir: to come"
+    body: |
+      Use **venir de** + place for where you're coming from. When **de**
+      meets **el**, they join to make **del**: *Vengo del parque*.
+    table:
+      columns: [who, venir]
+      rows:
+        - [yo, vengo]
+        - [tú, vienes]
+        - [él / ella / usted, viene]
+        - [nosotros / nosotras, venimos]
+        - [vosotros / vosotras, venís]
+        - [ellos / ellas / ustedes, vienen]
+    examples:
+      - ["Vengo de la escuela.", "I'm coming from school."]
+      - ["Ella viene del parque.", "She's coming from the park."]
+    tip: "*Al* and *del* are the only two joined-up words like this in Spanish. And *él* (he) never joins: *de él*."
+
+  - heading: "Hacer: to do, to make"
+    body: |
+      **Hacer** is irregular only in the yo form: **hago**, then *haces,
+      hace, hacemos, hacéis, hacen*.
+
+      **¿Qué haces?** means "What are you doing?" or "What do you do?".
+      Spanish also uses **hace** for the weather: *hace frío* (it's cold),
+      *hace calor* (it's hot), *hace sol* (it's sunny).
+    examples:
+      - ["¿Qué haces el sábado?", "What are you doing on Saturday?"]
+      - ["Hago la tarea.", "I'm doing my homework."]
+      - ["Hoy hace mucho frío.", "It's very cold today."]
+
+  - heading: "Plans: ir a + infinitive"
+    body: |
+      The easiest way to talk about the future: **ir a** + a verb in the
+      infinitive. It's just like "going to" in English.
+    examples:
+      - ["Voy a comer.", "I'm going to eat."]
+      - ["Vamos a estudiar.", "We're going to study."]
+      - ["¿Qué vas a hacer mañana?", "What are you going to do tomorrow?"]
+
+  - heading: "Little words: a, de, en, con, para"
+    body: |
+      These small words are called *prepositions*. They show where, when
+      and with whom.
+    table:
+      columns: [Spanish, English, example]
+      rows:
+        - [a, "to, at", "a las tres — at three"]
+        - [de, "from, of", "de México — from Mexico"]
+        - [en, "in, on, at", "en casa — at home"]
+        - [con, with, "con Ana — with Ana"]
+        - [para, for, "para mi madre — for my mother"]
+    examples:
+      - ["¿Vienes conmigo?", "Are you coming with me?"]
+      - ["Voy contigo.", "I'm going with you."]
+      - ["Un café para mi madre.", "A coffee for my mother."]
+    tip: "\"With me\" and \"with you\" are special single words: *conmigo* and *contigo*."
+
+words:
+  - [ir, to go]
+  - [venir, to come]
+  - [hacer, "to do, to make"]
+  - [cine, "cinema, movies"]
+  - [parque, park]
+  - [playa, beach]
+  - [escuela, school]
+  - [tarea, homework]
+  - [con, with]
+  - [para, for]
+  - [conmigo, with me]
+  - [contigo, with you]
+  - [mañana, tomorrow]
+
+practice:
+  - type: fill
+    prompt: "Yo ___ al parque."
+    hint: ir
+    translation: I'm going to the park.
+    answers: [voy]
+    why: Voy is the irregular yo form of ir.
+
+  - type: fill
+    prompt: "Vamos ___ cine."
+    hint: to the
+    translation: We're going to the cinema.
+    answers: [al]
+    why: A + el always joins to make al.
+
+  - type: fill
+    prompt: "Vengo ___ parque."
+    hint: from the
+    translation: I'm coming from the park.
+    answers: [del]
+    why: De + el always joins to make del.
+
+  - type: fill
+    prompt: "¿Qué ___ hoy?"
+    hint: hacer, tú
+    translation: What are you doing today?
+    answers: [haces]
+    why: Hacer is regular in the tú form — haces.
+
+  - type: fill
+    prompt: "Ellos ___ de la playa."
+    hint: venir
+    translation: They're coming from the beach.
+    answers: [vienen]
+    why: Venir changes e → ie in the ellos form.
+
+  - type: translate
+    direction: to-target
+    prompt: I'm going to eat.
+    answers: [Voy a comer, Yo voy a comer]
+    why: Ir a + infinitive means "going to".
+
+  - type: translate
+    direction: to-target
+    prompt: It's cold. (the weather)
+    answers: [Hace frío]
+    why: Weather uses hace — literally "it makes cold".
+
+  - type: translate
+    direction: to-target
+    prompt: We're going to the beach tomorrow.
+    answers: [Mañana vamos a la playa, Vamos a la playa mañana, Nosotros vamos a la playa mañana, Mañana nosotros vamos a la playa, Vamos a ir a la playa mañana, Mañana vamos a ir a la playa]
+    why: Playa is feminine, so a la stays as two words.
+
+  - type: translate
+    direction: to-english
+    prompt: "¿Vienes conmigo?"
+    answers: [Are you coming with me?, Will you come with me?, Do you come with me?]
+    why: Conmigo means "with me", and vienes is the tú form of venir.
+
+  - type: translate
+    direction: to-english
+    prompt: "¿Qué vas a hacer?"
+    answers: [What are you going to do?, What will you do?, What are you gonna do?]
+    why: Vas a hacer is ir a + infinitive — "going to do".
+
+  - type: choice
+    prompt: Which is correct?
+    options: [Voy a el cine., Voy al cine., Voy el cine.]
+    answer: Voy al cine.
+    why: A + el must join to make al.
+
+  - type: choice
+    prompt: "*Hace sol* means…"
+    options: [It's sunny., He makes the sun., It's hot.]
+    answer: It's sunny.
+    why: Spanish uses hace for the weather — hace sol is "it's sunny".

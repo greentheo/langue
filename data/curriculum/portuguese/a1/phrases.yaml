@@ -1,0 +1,281 @@
+situations:
+  - id: greetings
+    title: Greetings and politeness
+    phrases:
+      - target: ["Oi!"]
+        english: ["Hi!", "Hello!"]
+        note: The everyday Brazilian hello, for almost anyone. In Portugal people say *Olá*.
+      - target: ["Bom dia!"]
+        english: ["Good morning!"]
+        note: Until about noon.
+        literally: good day
+      - target: ["Boa tarde!"]
+        english: ["Good afternoon!"]
+        note: From noon until it gets dark. *Tarde* is feminine, so "good" is *boa*.
+        literally: good afternoon
+      - target: ["Boa noite!"]
+        english: ["Good evening!", "Good night!"]
+        note: After dark, both as hello and as goodbye.
+        literally: good night
+      - target: ["Tchau!"]
+        english: ["Bye!", "Goodbye!"]
+        note: The usual goodbye in Brazil — borrowed from Italian *ciao*.
+      - target: ["Até logo!"]
+        english: ["See you later!", "See you soon!"]
+        literally: until soon
+      - target: ["Obrigado.", "Obrigada."]
+        display: Obrigado / Obrigada.
+        english: ["Thank you.", "Thanks."]
+        note: It agrees with the person speaking — men and boys say *obrigado*, women and girls say *obrigada*.
+        literally: obliged
+      - target: ["De nada."]
+        english: ["You're welcome.", "No problem."]
+        literally: of nothing
+      - target: ["Por favor."]
+        english: ["Please."]
+        literally: for favour
+      - target: ["Com licença."]
+        english: ["Excuse me."]
+        note: To get past someone or to interrupt politely.
+        literally: with permission
+      - target: ["Desculpa.", "Desculpe."]
+        english: ["Sorry.", "I'm sorry."]
+        note: When you bump into someone or make a mistake. *Desculpe* is a little more polite.
+
+  - id: meeting
+    title: Meeting people
+    phrases:
+      - target: ["Tudo bem?", "Tudo bom?", "Como vai?"]
+        english: ["How are you?", "How's it going?", "Is everything OK?"]
+        note: The most common Brazilian greeting — often just means "hi".
+        literally: everything well?
+      - target: ["Tudo bem!", "Tudo bom!"]
+        display: Tudo bem! / Tudo bom!
+        english: ["I'm fine!", "All good!", "Everything's fine!"]
+        note: The standard answer to *Tudo bem?*
+        literally: everything well!
+      - target: ["Como vai?", "Tudo bem?", "Como vai você?"]
+        english: ["How are you?", "How are you doing?"]
+        literally: how go?
+      - target: ["E você?"]
+        english: ["And you?", "What about you?"]
+      - target: ["Como você se chama?", "Qual é o seu nome?"]
+        english: ["What's your name?"]
+        note: To an older person, *Como o senhor se chama?* (a man) or *Como a senhora se chama?* (a woman).
+        literally: how you yourself call?
+      - target: ["Qual é o seu nome?", "Como você se chama?"]
+        english: ["What's your name?", "What is your name?"]
+        literally: which is the your name?
+      - target: ["Meu nome é...", "O meu nome é...", "Eu me chamo...", "Me chamo..."]
+        english: ["My name is...", "I'm called..."]
+        note: You can also say *Eu me chamo...* — "I call myself...".
+        literally: my name is...
+      - target: ["Muito prazer!", "Prazer!"]
+        english: ["Nice to meet you!", "Pleased to meet you!"]
+        literally: much pleasure!
+      - target: ["De onde você é?"]
+        english: ["Where are you from?"]
+        literally: from where you are?
+      - target: ["Sou dos Estados Unidos."]
+        english: ["I'm from the United States.", "I'm from the US."]
+        note: "*Dos* is *de* (from) + *os* (the): the United States is plural in Portuguese."
+        literally: (I) am of-the United States
+      - target: ["Onde você mora?"]
+        english: ["Where do you live?"]
+        literally: where you live?
+      - target: ["Quantos anos você tem?"]
+        english: ["How old are you?"]
+        note: Age is something you *have*, not something you *are*.
+        literally: how many years you have?
+      - target: ["O que você faz?"]
+        english: ["What do you do?", "What's your job?"]
+        note: Asks about work or study.
+        literally: the what you do?
+
+  - id: understanding
+    title: When you don't understand
+    phrases:
+      - target: ["Não entendi.", "Não entendo."]
+        english: ["I don't understand.", "I didn't understand.", "I didn't get that."]
+        note: Brazilians usually say it in the past — "I didn't understand (what you just said)".
+        literally: not (I) understood
+      - target: ["Pode repetir, por favor?"]
+        english: ["Can you repeat that, please?", "Could you repeat that, please?", "Can you repeat, please?"]
+        literally: (you) can repeat, for favour?
+      - target: ["Mais devagar, por favor."]
+        english: ["Slower, please.", "More slowly, please."]
+        literally: more slowly, for favour
+      - target: ["Você fala inglês?"]
+        english: ["Do you speak English?"]
+        literally: you speak English?
+      - target: ["Como se diz ... em português?"]
+        english: ["How do you say ... in Portuguese?"]
+        literally: how itself says ... in Portuguese?
+      - target: ["O que significa ...?"]
+        english: ["What does ... mean?"]
+        literally: the what signifies ...?
+      - target: ["Não sei."]
+        english: ["I don't know."]
+        literally: not (I) know
+      - target: ["Falo um pouco de português."]
+        english: ["I speak a little Portuguese."]
+        literally: (I) speak a little of Portuguese
+
+  - id: cafe
+    title: Café and restaurant
+    phrases:
+      - target: ["Um café, por favor."]
+        english: ["A coffee, please."]
+        note: In Brazil a *cafezinho* is a small, strong, sweet black coffee.
+      - target: ["Eu queria um suco de laranja.", "Queria um suco de laranja."]
+        english: ["I'd like an orange juice.", "I would like an orange juice."]
+        note: "*Queria* (literally \"I wanted\") is the polite way to ask. In Portugal juice is *sumo*."
+        literally: I wanted a juice of orange
+      - target: ["A conta, por favor."]
+        english: ["The check, please.", "The bill, please."]
+        literally: the account, for favour
+      - target: ["Uma mesa para dois, por favor."]
+        english: ["A table for two, please."]
+      - target: ["O que você recomenda?"]
+        english: ["What do you recommend?"]
+        note: To a waiter, more politely, *O que o senhor recomenda?*
+      - target: ["Sou vegetariano.", "Sou vegetariana."]
+        display: Sou vegetariano / vegetariana.
+        english: ["I'm vegetarian.", "I'm a vegetarian."]
+        note: -o if you're male, -a if you're female.
+      - target: ["Posso pagar com cartão?"]
+        english: ["Can I pay by card?", "Can I pay with a card?"]
+        literally: (I) can pay with card?
+      - target: ["Estava uma delícia!"]
+        english: ["It was delicious!"]
+        literally: (it) was a delight!
+      - target: ["Quanto custa?", "Quanto é?"]
+        english: ["How much is it?", "How much does it cost?"]
+        literally: how much costs?
+      - target: ["Quanto custam?"]
+        english: ["How much are they?", "How much do they cost?"]
+        literally: how much cost (they)?
+      - target: ["Vou levar.", "Vou levar este."]
+        english: ["I'll take it.", "I'll take this one."]
+        note: In shops, *levar* (to take away) means to buy.
+        literally: (I) go take
+      - target: ["Só estou olhando, obrigado.", "Só estou olhando, obrigada.", "Só estou olhando."]
+        display: Só estou olhando, obrigado / obrigada.
+        english: ["I'm just looking, thanks.", "Just looking, thanks."]
+        literally: only (I) am looking, obliged
+      - target: ["Vocês têm...?"]
+        english: ["Do you have...?"]
+        note: "Said to shop staff: *vocês* means \"you\" (the shop, all of you)."
+        literally: you-all have...?
+      - target: ["É muito caro."]
+        english: ["It's too expensive.", "It's very expensive."]
+        literally: (it) is very expensive
+      - target: ["Posso experimentar?"]
+        english: ["Can I try it on?", "May I try it on?"]
+        literally: (I) can try?
+      - target: ["Onde fica a estação?"]
+        english: ["Where is the station?", "Where's the station?"]
+        note: "For places that don't move, Brazilians use *ficar*: *Onde fica...?*"
+        literally: where stays the station?
+      - target: ["Onde é o banheiro?", "Onde fica o banheiro?"]
+        english: ["Where is the bathroom?", "Where's the restroom?", "Where is the toilet?"]
+        note: In Portugal it's *a casa de banho*.
+        literally: where is the bathroom?
+      - target: ["É longe?"]
+        english: ["Is it far?"]
+      - target: ["É perto daqui?"]
+        english: ["Is it near here?", "Is it close to here?"]
+        literally: (it) is near of-here?
+      - target: ["À direita."]
+        english: ["On the right.", "To the right."]
+      - target: ["À esquerda."]
+        english: ["On the left.", "To the left."]
+      - target: ["Sempre em frente."]
+        english: ["Straight ahead.", "Straight on."]
+        literally: always in front
+      - target: ["A que horas sai o ônibus?"]
+        english: ["What time does the bus leave?"]
+        note: In Portugal the bus is *o autocarro*.
+        literally: at what hours leaves the bus?
+      - target: ["Estou perdido.", "Estou perdida."]
+        display: Estou perdido / perdida.
+        english: ["I'm lost."]
+        note: -o if you're male, -a if you're female.
+
+  - id: time
+    title: Time and plans
+    phrases:
+      - target: ["Que horas são?"]
+        english: ["What time is it?"]
+        literally: what hours are (they)?
+      - target: ["Hoje à noite."]
+        english: ["Tonight.", "This evening."]
+        literally: today at night
+      - target: ["Você está livre amanhã?"]
+        english: ["Are you free tomorrow?"]
+      - target: ["Até amanhã!"]
+        english: ["See you tomorrow!"]
+        literally: until tomorrow!
+      - target: ["Tá bom!", "Está bem!", "Tá bem!", "Está bom!"]
+        english: ["OK!", "All right!", "Fine!"]
+        note: "*Tá* is the spoken short form of *está* — you'll hear it constantly."
+        literally: (it) is good!
+      - target: ["Combinado!"]
+        english: ["Deal!", "It's a deal!", "Agreed!"]
+        literally: combined!
+      - target: ["Que dia é hoje?"]
+        english: ["What day is it today?", "What's the date today?"]
+
+  - id: help
+    title: Help and emergencies
+    phrases:
+      - target: ["Socorro!"]
+        english: ["Help!"]
+      - target: ["Preciso de um médico."]
+        english: ["I need a doctor."]
+        literally: (I) need of a doctor
+      - target: ["Chame uma ambulância!"]
+        english: ["Call an ambulance!"]
+      - target: ["Estou passando mal."]
+        english: ["I feel sick.", "I'm not feeling well.", "I feel ill."]
+        note: A very Brazilian way to say you feel unwell.
+        literally: (I) am passing badly
+      - target: ["Onde fica a farmácia?"]
+        english: ["Where is the pharmacy?", "Where's the drugstore?"]
+      - target: ["Perdi meu passaporte."]
+        english: ["I lost my passport.", "I've lost my passport."]
+        literally: (I) lost my passport
+      - target: ["Pode me ajudar?"]
+        english: ["Can you help me?", "Could you help me?"]
+        literally: (you) can me help?
+      - target: ["Que legal!"]
+        english: ["How cool!", "That's cool!", "Cool!"]
+        note: In Brazil *legal* means cool or nice (and also "legal").
+        literally: what cool!
+      - target: ["Está frio.", "Tá frio."]
+        english: ["It's cold."]
+        note: About the weather. *Tá* is the spoken short form of *está*.
+        literally: (it) is cold
+      - target: ["Estou cansado.", "Estou cansada."]
+        display: Estou cansado / cansada.
+        english: ["I'm tired."]
+        note: -o if you're male, -a if you're female.
+      - target: ["Estou com fome."]
+        english: ["I'm hungry."]
+        note: You can also say *Tenho fome*.
+        literally: (I) am with hunger
+      - target: ["Gosto muito!"]
+        english: ["I really like it!", "I like it a lot!"]
+        literally: (I) like much!
+      - target: ["Parabéns!"]
+        english: ["Congratulations!", "Happy birthday!"]
+        note: Used for birthdays too.
+      - target: ["Saúde!"]
+        english: ["Cheers!", "Bless you!"]
+        note: When you raise a glass, and when someone sneezes.
+        literally: health!
+      - target: ["Bem-vindo!", "Bem-vinda!"]
+        display: Bem-vindo / Bem-vinda!
+        english: ["Welcome!"]
+        note: -o to a man or boy, -a to a woman or girl.
+        literally: well-come!

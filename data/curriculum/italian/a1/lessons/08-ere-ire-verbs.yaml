@@ -1,0 +1,168 @@
+title: Leggo, dormo, capisco
+subtitle: Verbs in -ere and -ire
+goal: use regular -ere and -ire verbs, including the -isc- verbs like capire
+minutes: 14
+
+sections:
+  - heading: Verbs in -ere
+    body: |
+      The second big group of verbs ends in **-ere**: *prendere* (to take —
+      and to have food or drink), *leggere* (to read), *scrivere* (to
+      write), *vivere* (to live), *vedere* (to see), *chiudere* (to close).
+
+      Take off **-ere** and add the endings. Only three of them differ from
+      the -are verbs: **-e**, **-ete** and **-ono**.
+    table:
+      columns: [person, ending, prendere]
+      rows:
+        - [io, "-o", prendo]
+        - [tu, "-i", prendi]
+        - [lui / lei / Lei, "-e", prende]
+        - [noi, "-iamo", prendiamo]
+        - [voi, "-ete", prendete]
+        - [loro, "-ono", prendono]
+    examples:
+      - ["Prendo un caffè.", "I'll have a coffee."]
+      - ["Leggi molto?", "Do you read a lot?"]
+      - ["Scriviamo in italiano.", "We're writing in Italian."]
+      - ["Vedete il gatto?", "Can you (all) see the cat?"]
+    tip: "Remember c and g from lesson 2: *leggo* has a hard g (LEG-go), but *leggi* and *legge* have a soft one (LEJ-jee, LEJ-jeh)."
+
+  - heading: Verbs in -ire
+    body: |
+      The third group ends in **-ire**: *dormire* (to sleep), *partire* (to
+      leave), *sentire* (to hear; to feel), *aprire* (to open).
+
+      The endings are the same as for -ere verbs, except for voi, which
+      becomes **-ite**.
+    table:
+      columns: [person, ending, dormire]
+      rows:
+        - [io, "-o", dormo]
+        - [tu, "-i", dormi]
+        - [lui / lei / Lei, "-e", dorme]
+        - [noi, "-iamo", dormiamo]
+        - [voi, "-ite", dormite]
+        - [loro, "-ono", dormono]
+    examples:
+      - ["Dormo otto ore.", "I sleep eight hours."]
+      - ["Quando partite?", "When are you (all) leaving?"]
+      - ["Apro la porta.", "I'm opening the door."]
+
+  - heading: "The -isc- verbs: capire"
+    body: |
+      Some -ire verbs add **-isc-** in four of their six forms — every form
+      except noi and voi. The most useful are *capire* (to understand),
+      *finire* (to finish) and *preferire* (to prefer).
+
+      There is no way to tell from the infinitive, so you learn these verbs
+      one by one. You'll use *capisco* and *non capisco* every day.
+    table:
+      columns: [person, capire, finire]
+      rows:
+        - [io, capisco, finisco]
+        - [tu, capisci, finisci]
+        - [lui / lei / Lei, capisce, finisce]
+        - [noi, capiamo, finiamo]
+        - [voi, capite, finite]
+        - [loro, capiscono, finiscono]
+    examples:
+      - ["Non capisco.", "I don't understand."]
+      - ["Capisci l'italiano?", "Do you understand Italian?"]
+      - ["Preferisco il tè.", "I prefer tea."]
+    tip: "Sound check from lesson 2: *capisco* is ka-PEES-koh (sc + o = sk), but *capisci* is ka-PEE-shee (sc + i = sh)."
+
+words:
+  - [prendere, "to take; to have (food, drink)"]
+  - [leggere, to read]
+  - [scrivere, to write]
+  - [vivere, to live]
+  - [vedere, to see]
+  - [chiudere, to close]
+  - [dormire, to sleep]
+  - [partire, to leave]
+  - [sentire, "to hear; to feel"]
+  - [aprire, to open]
+  - [capire, to understand]
+  - [finire, to finish]
+  - [preferire, to prefer]
+  - [porta, door]
+  - [tè, tea]
+
+practice:
+  - type: fill
+    prompt: "Io ___ un libro."
+    hint: (leggere)
+    translation: I'm reading a book.
+    answers: [leggo]
+    why: With io, -ere verbs end in -o.
+
+  - type: fill
+    prompt: "Lei ___ in italiano."
+    hint: (scrivere)
+    translation: She writes in Italian.
+    answers: [scrive]
+    why: With lui or lei, -ere verbs end in -e.
+
+  - type: fill
+    prompt: "Voi ___ molto."
+    hint: (dormire)
+    translation: You (all) sleep a lot.
+    answers: [dormite]
+    why: With voi, -ire verbs end in -ite.
+
+  - type: fill
+    prompt: "Non ___."
+    hint: (capire, io)
+    translation: I don't understand.
+    answers: [capisco]
+    why: Capire adds -isc- — io capisco.
+
+  - type: fill
+    prompt: "Noi ___ domani."
+    hint: (partire)
+    translation: We're leaving tomorrow.
+    answers: [partiamo]
+    why: Noi takes -iamo in every verb group.
+
+  - type: translate
+    direction: to-target
+    prompt: Do you understand? (to a friend)
+    answers: ["Capisci?", "Tu capisci?"]
+    why: Capire is an -isc- verb, so tu capisci.
+
+  - type: translate
+    direction: to-target
+    prompt: They prefer tea.
+    answers: ["Preferiscono il tè.", "Loro preferiscono il tè."]
+    why: With loro, preferire adds -isc- — preferiscono.
+
+  - type: translate
+    direction: to-target
+    prompt: I'll have a coffee.
+    answers: ["Prendo un caffè.", "Io prendo un caffè."]
+    why: Prendere is the verb Italians use to order food and drink.
+
+  - type: translate
+    direction: to-english
+    prompt: Vedete il gatto?
+    answers: ["Do you see the cat?", "Can you see the cat?", "Do you all see the cat?", "Can you all see the cat?"]
+    why: Vedete is the voi form of vedere, to see.
+
+  - type: translate
+    direction: to-english
+    prompt: Finisco oggi.
+    answers: ["I finish today.", "I'm finishing today.", "I'll finish today.", "I am finishing today.", "I will finish today."]
+    why: Finire adds -isc- — io finisco.
+
+  - type: choice
+    prompt: Which of these verbs adds -isc-?
+    options: [dormire, capire, partire]
+    answer: capire
+    why: Capire, finire and preferire add -isc-; dormire and partire don't.
+
+  - type: choice
+    prompt: "Voi ___ un libro. (leggere)"
+    options: [leggete, leggite, leggiamo]
+    answer: leggete
+    why: -ere verbs with voi end in -ete; -ite is for -ire verbs.

@@ -1,0 +1,169 @@
+title: "Estou bem!"
+subtitle: Estar, and when to use ser or estar
+goal: say how you are and where you are with estar, and choose between ser and estar
+minutes: 12
+
+sections:
+  - heading: Estar — the other "to be"
+    body: |
+      Portuguese has a second verb for "to be": **estar**. You use it for how
+      someone is *right now* and for where someone is.
+
+      In speech, Brazilians clip it: **tô**, **tá**, **tamo**, **tão** — *Tô
+      cansado* (I'm tired). You'll hear these everywhere, but write the full
+      forms.
+    table:
+      columns: [pronoun, estar, English]
+      rows:
+        - [eu, estou, I am]
+        - [você / ele / ela / a gente, está, you are / he is / she is / we are]
+        - [nós, estamos, we are]
+        - [vocês / eles / elas, estão, you are / they are]
+    examples:
+      - ["Estou bem, obrigado.", "I'm fine, thanks."]
+      - ["Ela está cansada.", "She is tired."]
+      - ["Vocês estão em casa?", "Are you at home?"]
+    tip: "*Está* (is) has an accent. *Esta* without one means \"this\" — a different word you'll meet in lesson 10."
+
+  - heading: Ser or estar?
+    body: |
+      Ask yourself: is this **what someone is**, or **how or where they are
+      right now**?
+
+      - **ser** — identity, nationality, job, origin, personality
+      - **estar** — feelings, moods, health, temporary states, location
+
+      The same adjective can work with both and change the meaning: *Ele é
+      feliz* (he's a happy person) but *Ele está feliz* (he's happy today).
+    table:
+      columns: [ser — what it is, estar — how or where it is now]
+      rows:
+        - ["Ela é professora. — She's a teacher.", "Ela está cansada. — She's tired."]
+        - ["Sou de Miami. — I'm from Miami.", "Estou em Miami. — I'm in Miami."]
+        - ["Ele é feliz. — He's a happy person.", "Ele está feliz. — He's happy (now)."]
+
+  - heading: Where are you?
+    body: |
+      For where a person or thing is, use **estar em** (to be in / at):
+
+      - *Estou em casa.* — I'm at home.
+      - *Ele está em São Paulo.* — He's in São Paulo.
+      - *Onde você está?* — Where are you?
+
+      For places that never move — a station, a bank — Brazilians often say
+      **fica** instead: *Onde fica a farmácia?* — Where is the pharmacy?
+    examples:
+      - ["Onde você está?", "Where are you?"]
+      - ["Estamos em casa.", "We're at home."]
+      - ["Onde fica a farmácia?", "Where is the pharmacy?"]
+
+  - heading: Estar com fome
+    body: |
+      In lesson 5 you said *tenho fome*. Brazilians very often say the same
+      thing with **estar com** — literally "to be with":
+
+      - **estar com fome** — to be hungry
+      - **estar com sede** — to be thirsty
+      - **estar com frio** — to be cold
+      - **estar com calor** — to be hot
+      - **estar com sono** — to be sleepy
+
+      *Estou com fome* and *tenho fome* mean exactly the same.
+    examples:
+      - ["Estou com fome.", "I'm hungry."]
+      - ["Você está com frio?", "Are you cold?"]
+    tip: "Say *estou com frio* for \"I'm cold\". *Estou frio* sounds like you are cold to the touch."
+
+words:
+  - [estar, to be (how or where)]
+  - [bem, well / fine]
+  - [mal, badly / unwell]
+  - [cansado, tired]
+  - [feliz, happy]
+  - [triste, sad]
+  - [doente, sick / ill]
+  - [ocupado, busy]
+  - [em casa, at home]
+  - [onde, where]
+  - [hoje, today]
+  - [frio, cold]
+  - [calor, heat]
+  - [médico, doctor (male)]
+  - [médica, doctor (female)]
+
+practice:
+  - type: fill
+    prompt: "Eu ___ cansado."
+    hint: estar, eu
+    translation: I'm tired.
+    answers: [estou]
+    why: With eu, estar is estou.
+
+  - type: fill
+    prompt: "Nós ___ em casa."
+    hint: estar, nós
+    translation: We are at home.
+    answers: [estamos]
+    why: With nós, estar is estamos.
+
+  - type: fill
+    prompt: "Onde vocês ___?"
+    hint: estar, vocês
+    translation: Where are you (all)?
+    answers: [estão]
+    why: Vocês, eles and elas share the form estão.
+
+  - type: fill
+    prompt: "Ela ___ médica."
+    hint: ser or estar?
+    translation: She is a doctor.
+    answers: ["é"]
+    why: A job is what someone is, so use ser — ela é.
+
+  - type: choice
+    prompt: "\"I'm sad today.\""
+    options: [Sou triste hoje., Estou triste hoje.]
+    answer: Estou triste hoje.
+    why: A feeling right now uses estar.
+
+  - type: choice
+    prompt: "\"We are Canadian.\""
+    options: [Estamos canadenses., Somos canadenses.]
+    answer: Somos canadenses.
+    why: Nationality is who you are, so use ser.
+
+  - type: choice
+    prompt: Which means "I'm cold"?
+    options: [Estou com frio., Sou frio., Estou frio.]
+    answer: Estou com frio.
+    why: Brazilians say estar com frio — literally "to be with cold".
+
+  - type: translate
+    direction: to-target
+    prompt: Where are you?
+    answers: [Onde você está?, Você está onde?, Onde o senhor está?, Onde a senhora está?, Onde vocês estão?]
+    why: Where a person is uses estar.
+
+  - type: translate
+    direction: to-target
+    prompt: I'm at home.
+    answers: [Estou em casa., Eu estou em casa., Tô em casa.]
+    why: Estar em casa means to be at home.
+
+  - type: translate
+    direction: to-target
+    prompt: She is happy today.
+    answers: [Ela está feliz hoje., Hoje ela está feliz.]
+    why: Happy right now is a state, so use estar.
+
+  - type: translate
+    direction: to-english
+    prompt: Vocês estão bem?
+    answers: [Are you okay?, Are you OK?, Are you all right?, Are you well?, Are you guys okay?, Are you all okay?]
+    why: Estar bem is how someone is right now — fine, okay.
+
+  - type: translate
+    direction: to-english
+    prompt: Estou com fome.
+    answers: [I'm hungry., I am hungry.]
+    why: Estar com fome is the most common way Brazilians say they're hungry.

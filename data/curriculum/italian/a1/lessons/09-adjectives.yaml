@@ -1,0 +1,174 @@
+title: Bello e buono
+subtitle: Describing things with adjectives
+goal: make adjectives agree with nouns, put them in the right place, and point at things with questo
+minutes: 13
+
+sections:
+  - heading: Adjectives agree
+    body: |
+      An **adjective** is a describing word: big, red, new, tired. In
+      Italian it changes its ending to **match its noun** — masculine or
+      feminine, singular or plural. You've already seen this with
+      *italiano / italiana* and *stanco / stanca*.
+
+      Most adjectives end in **-o** and have four forms. Adjectives ending
+      in **-e** have just two: one for the singular and one for the plural,
+      whatever the gender — *grande, grandi*.
+    table:
+      columns: ["", singular, plural]
+      rows:
+        - [masculine, "un libro rosso", "due libri rossi"]
+        - [feminine, "una casa rossa", "due case rosse"]
+        - ["either (-e)", "un libro grande, una casa grande", "libri grandi, case grandi"]
+    examples:
+      - ["un libro rosso", "a red book"]
+      - ["una casa rossa", "a red house"]
+      - ["le case grandi", "the big houses"]
+    tip: "When a group mixes males and females, use the masculine plural: *Marco e Giulia sono stanchi.*"
+
+  - heading: Where adjectives go
+    body: |
+      In English the adjective comes first: *a red car*. In Italian it
+      usually comes **after** the noun: *una macchina rossa*.
+
+      A few short, very common adjectives often go **before** the noun:
+      *piccolo* (small), *grande* (big), *nuovo* (new), *vecchio* (old),
+      *bello* (beautiful), *buono* (good), *brutto* (ugly).
+
+      After *essere*, the adjective simply follows the verb, as in English:
+      *La casa è piccola.* — The house is small.
+    examples:
+      - ["un piccolo problema", "a small problem"]
+      - ["una ragazza italiana", "an Italian girl"]
+      - ["Il gelato è buono.", "The ice cream is good."]
+      - ["La città è bella.", "The city is beautiful."]
+    tip: "Before a noun, *bello* and *buono* change shape a little (*un bel libro, un buon caffè*). Until you've learned those forms, use them after *essere*: *Il libro è bello.*"
+
+  - heading: Colours, and molto
+    body: |
+      Colours are adjectives too, and they go **after** the noun: *rosso*
+      (red), *bianco* (white), *nero* (black), *giallo* (yellow), *verde*
+      (green), *azzurro* (light blue).
+
+      A few never change at all: **blu** (dark blue) and **rosa** (pink) —
+      *una macchina blu, due macchine blu*.
+
+      **Molto** before an adjective means "very", and in that job it never
+      changes: *una casa molto grande* — a very big house.
+    examples:
+      - ["un gatto nero", "a black cat"]
+      - ["le case bianche", "the white houses"]
+      - ["Il cane è molto piccolo.", "The dog is very small."]
+    tip: "*Bianco* adds an *h* in the plural to keep the hard sound — *bianchi, bianche* — just like *amica, amiche* in lesson 4."
+
+  - heading: "This one: questo"
+    body: |
+      **Questo** means "this", and it agrees like any adjective — but it
+      goes **before** the noun. Before a vowel, *questo* and *questa* often
+      shorten to **quest'**: *quest'anno* (this year).
+
+      On its own it means "this one" or "this is": *Questo è Marco.* — This
+      is Marco.
+    table:
+      columns: ["", singular, plural]
+      rows:
+        - [masculine, questo libro, questi libri]
+        - [feminine, questa casa, queste case]
+    examples:
+      - ["Questa pizza è buona.", "This pizza is good."]
+      - ["Questi ragazzi sono italiani.", "These boys are Italian."]
+      - ["Questo è un problema.", "This is a problem."]
+
+words:
+  - [bello, beautiful]
+  - [buono, good]
+  - [grande, big]
+  - [piccolo, small]
+  - [nuovo, new]
+  - [vecchio, old]
+  - [brutto, ugly]
+  - [rosso, red]
+  - [bianco, white]
+  - [nero, black]
+  - [verde, green]
+  - [giallo, yellow]
+  - [macchina, car]
+  - [molto, very]
+  - [questo, this]
+
+practice:
+  - type: fill
+    prompt: "una casa ___"
+    hint: (rosso)
+    translation: a red house
+    answers: [rossa]
+    why: Casa is feminine and singular, so rosso becomes rossa.
+
+  - type: fill
+    prompt: "due gatti ___"
+    hint: (nero)
+    translation: two black cats
+    answers: [neri]
+    why: Gatti is masculine plural, so the adjective ends in -i.
+
+  - type: fill
+    prompt: "le ragazze ___"
+    hint: (inglese)
+    translation: the English girls
+    answers: [inglesi]
+    why: Adjectives ending in -e have one plural for both genders — -i.
+
+  - type: fill
+    prompt: "___ macchina"
+    hint: (this)
+    translation: this car
+    answers: [questa]
+    why: Macchina is feminine, so questo becomes questa.
+
+  - type: translate
+    direction: to-target
+    prompt: a small dog
+    answers: ["un piccolo cane", "un cane piccolo"]
+    why: Piccolo can go before or after the noun.
+
+  - type: translate
+    direction: to-target
+    prompt: The houses are very big.
+    answers: ["Le case sono molto grandi."]
+    why: Molto meaning "very" doesn't change, and grande becomes grandi.
+
+  - type: translate
+    direction: to-target
+    prompt: an Italian (female) friend
+    answers: ["un'amica italiana"]
+    why: The adjective follows the noun and agrees with it — -a for feminine.
+
+  - type: translate
+    direction: to-english
+    prompt: Questi libri sono nuovi.
+    answers: ["These books are new."]
+    why: Questi is the masculine plural of questo, and nuovo agrees with libri.
+
+  - type: translate
+    direction: to-english
+    prompt: una macchina blu
+    answers: ["a blue car", "a dark blue car", "a navy car", "a navy blue car"]
+    why: Blu never changes, even with a feminine noun.
+
+  - type: choice
+    prompt: Which is correct?
+    options: [la macchina rosso, la macchina rossa, la rossa macchina]
+    answer: la macchina rossa
+    why: Colours come after the noun and agree with it.
+
+  - type: choice
+    prompt: "Marco e Giulia sono ___."
+    options: [stanchi, stanche, stanco]
+    answer: stanchi
+    why: A mixed group takes the masculine plural.
+
+  - type: choice
+    prompt: "Il gelato è ___ buono. (very)"
+    options: [molto, molta, molti]
+    answer: molto
+    why: Molto meaning "very" never changes.

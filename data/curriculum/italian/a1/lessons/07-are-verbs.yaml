@@ -1,0 +1,174 @@
+title: Parlo italiano
+subtitle: Regular -are verbs and question words
+goal: use regular -are verbs in the present tense, and ask questions with chi, cosa, dove, quando, come, perché and quanto
+minutes: 14
+
+sections:
+  - heading: Verbs in -are
+    body: |
+      Verbs are listed in the dictionary in their **infinitive** — the
+      "to…" form. Most Italian verbs end in **-are**: *parlare* (to speak),
+      *abitare* (to live), *lavorare* (to work).
+
+      To use one, take off **-are** and add an ending that shows who is
+      doing it.
+
+      One present tense covers "I speak", "I am speaking" and "do you
+      speak?": *Parli italiano?* — Do you speak Italian?
+    table:
+      columns: [person, ending, parlare]
+      rows:
+        - [io, "-o", parlo]
+        - [tu, "-i", parli]
+        - [lui / lei / Lei, "-a", parla]
+        - [noi, "-iamo", parliamo]
+        - [voi, "-ate", parlate]
+        - [loro, "-ano", parlano]
+    examples:
+      - ["Parlo inglese.", "I speak English."]
+      - ["Parliamo italiano!", "We're speaking Italian!"]
+    tip: "In *parlano*, the stress is on the first syllable: PAR-la-no, not par-LA-no."
+
+  - heading: Some useful -are verbs
+    body: |
+      All of these follow *parlare* exactly.
+
+      To say which city you live in, use **a**: *Abito a Roma* — I live in
+      Rome. (There's more about *a* and *in* in lesson 11.)
+    table:
+      columns: [verb, meaning, io]
+      rows:
+        - [abitare, to live, abito]
+        - [lavorare, to work, lavoro]
+        - [studiare, to study, studio]
+        - [ascoltare, to listen (to), ascolto]
+        - [guardare, to watch, guardo]
+        - [mangiare, to eat, mangio]
+        - [giocare, to play, gioco]
+        - [cercare, to look for, cerco]
+    examples:
+      - ["Abito a Torino.", "I live in Turin."]
+      - ["Lavoriamo oggi.", "We're working today."]
+      - ["Guardate la TV?", "Are you (all) watching TV?"]
+      - ["Marco ascolta la musica.", "Marco is listening to music."]
+    tip: "Spelling: *mangiare* and *studiare* keep just one *i* — *tu mangi*, *tu studi*. *Cercare* and *giocare* add an *h* to keep the hard sound — *tu cerchi*, *noi giochiamo*."
+
+  - heading: Question words
+    body: |
+      Put the question word first, then the verb. If you name the person,
+      they often come at the end: *Dove abita Marco?* — Where does Marco
+      live?
+
+      **Perché** also means "because": *Perché mangi? — Perché ho fame!*
+      (Why are you eating? — Because I'm hungry!)
+    table:
+      columns: [Italian, English, example]
+      rows:
+        - [chi, who, "Chi parla?"]
+        - ["che cosa, cosa", what, "Cosa mangi?"]
+        - [dove, where, "Dove abiti?"]
+        - [quando, when, "Quando lavori?"]
+        - [come, how, "Come stai?"]
+        - [perché, why, "Perché studi?"]
+        - [quanto, how much, "Quanto costa?"]
+        - [quale, which, "Quale gelato?"]
+    examples:
+      - ["Dove abiti? — Abito a Milano.", "Where do you live? — I live in Milan."]
+      - ["Cosa studiate?", "What are you (all) studying?"]
+      - ["Chi parla inglese?", "Who speaks English?"]
+    tip: "*Come* means \"how\", not \"what\". *Come ti chiami?* is literally \"How do you call yourself?\""
+
+words:
+  - [parlare, to speak]
+  - [abitare, to live]
+  - [lavorare, to work]
+  - [studiare, to study]
+  - [mangiare, to eat]
+  - [ascoltare, to listen (to)]
+  - [guardare, to watch]
+  - [cercare, to look for]
+  - [giocare, to play]
+  - [chi, who]
+  - [cosa, what]
+  - [quando, when]
+  - [come, how]
+  - [quale, which]
+  - [musica, music]
+
+practice:
+  - type: fill
+    prompt: "Io ___ inglese."
+    hint: (parlare)
+    translation: I speak English.
+    answers: [parlo]
+    why: With io, -are verbs end in -o.
+
+  - type: fill
+    prompt: "Noi ___ a Napoli."
+    hint: (abitare)
+    translation: We live in Naples.
+    answers: [abitiamo]
+    why: With noi, the ending is -iamo.
+
+  - type: fill
+    prompt: "Tu ___ la pizza?"
+    hint: (mangiare)
+    translation: Are you eating the pizza?
+    answers: [mangi]
+    why: Mangiare keeps only one i — mangi, not mangii.
+
+  - type: fill
+    prompt: "Loro ___ la TV."
+    hint: (guardare)
+    translation: They're watching TV.
+    answers: [guardano]
+    why: Loro takes -ano, stressed on the first syllable — GUAR-da-no.
+
+  - type: fill
+    prompt: "___ abiti? — A Roma."
+    hint: (where)
+    translation: Where do you live? — In Rome.
+    answers: [dove]
+    why: Dove means "where".
+
+  - type: translate
+    direction: to-target
+    prompt: Do you speak Italian? (to a friend)
+    answers: ["Parli italiano?", "Tu parli italiano?", "Parli l'italiano?"]
+    why: A question is the normal sentence with a question mark — no "do" needed.
+
+  - type: translate
+    direction: to-target
+    prompt: We study English.
+    answers: ["Studiamo inglese.", "Noi studiamo inglese.", "Studiamo l'inglese.", "Noi studiamo l'inglese."]
+    why: Studiare with noi is studiamo — just one i.
+
+  - type: translate
+    direction: to-target
+    prompt: What are you looking for? (to a friend)
+    answers: ["Cosa cerchi?", "Che cosa cerchi?", "Che cerchi?", "Tu cosa cerchi?", "Cosa cerchi tu?"]
+    why: Cercare adds an h before i to keep the k sound — cerchi.
+
+  - type: translate
+    direction: to-english
+    prompt: Lavorate oggi?
+    answers: ["Are you working today?", "Do you work today?", "Are you all working today?", "Are you guys working today?"]
+    why: The -ate ending is for voi — "you" talking to a group.
+
+  - type: translate
+    direction: to-english
+    prompt: Chi ascolta?
+    answers: ["Who is listening?", "Who's listening?", "Who listens?"]
+    why: Chi means "who", and ascolta is the lui/lei form of ascoltare.
+
+  - type: choice
+    prompt: "In *Perché mangi? — Perché ho fame!*, what does the second *perché* mean?"
+    options: [why, because, when]
+    answer: because
+    why: Perché asks "why", and it also answers "because".
+
+  - type: choice
+    prompt: Which is the tu form of *giocare*?
+    options: [gioci, giochi, giocchi]
+    answer: giochi
+    why: Giocare adds an h before i to keep the hard c sound.

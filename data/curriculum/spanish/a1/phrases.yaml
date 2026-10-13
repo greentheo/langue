@@ -1,0 +1,301 @@
+situations:
+  - id: greetings
+    title: Greetings and politeness
+    phrases:
+      - target: ["¡Hola!"]
+        english: ["Hello!", "Hi!"]
+        note: Works any time of day, with anyone.
+      - target: ["Buenos días."]
+        english: ["Good morning.", "Good day."]
+        note: From the morning until lunchtime.
+        literally: good days
+      - target: ["Buenas tardes."]
+        english: ["Good afternoon.", "Good evening."]
+        note: From lunchtime until it gets dark.
+        literally: good afternoons
+      - target: ["Buenas noches."]
+        english: ["Good evening.", "Good night."]
+        note: After dark — as a hello or a goodbye.
+        literally: good nights
+      - target: ["Adiós."]
+        english: ["Goodbye.", "Bye."]
+      - target: ["Hasta luego."]
+        english: ["See you later.", "Bye.", "See you."]
+        note: The most common everyday goodbye, even if you won't see them later.
+        literally: until later
+      - target: ["Gracias."]
+        english: ["Thank you.", "Thanks."]
+        note: "For extra thanks: *muchas gracias*."
+      - target: ["De nada."]
+        english: ["You're welcome.", "No problem."]
+        literally: of nothing
+      - target: ["Por favor."]
+        english: ["Please."]
+        literally: for favour
+      - target: ["Perdón."]
+        english: ["Excuse me.", "Sorry.", "Pardon."]
+        note: "To get a stranger's attention politely, you can also say *disculpe*."
+      - target: ["Lo siento."]
+        english: ["I'm sorry.", "Sorry."]
+        note: For real apologies, not just bumping past someone.
+        literally: it I-feel
+
+  - id: meeting
+    title: Meeting people
+    phrases:
+      - target: ["¿Cómo te llamas?"]
+        english: ["What's your name? (to a friend)", "What's your name?"]
+        note: "Friendly. To an adult you don't know, say *¿Cómo se llama usted?*"
+        literally: how yourself you-call?
+      - target: ["¿Cómo se llama usted?", "¿Cómo se llama?"]
+        english: ["What's your name? (polite)", "What's your name?"]
+        note: The polite form, for adults you don't know.
+        literally: how yourself calls you(polite)?
+      - target: ["Me llamo Ana."]
+        english: ["My name is Ana.", "I'm Ana.", "I am called Ana."]
+        note: Swap in your own name.
+        literally: myself I-call Ana
+      - target: ["Mucho gusto."]
+        english: ["Nice to meet you.", "Pleased to meet you."]
+        literally: much pleasure
+      - target: ["Encantado.", "Encantada."]
+        display: Encantado / Encantada.
+        english: ["Delighted to meet you.", "Nice to meet you.", "Pleased to meet you.", "Delighted."]
+        note: "-o if you're male, -a if you're female."
+        literally: delighted
+      - target: ["¿Cómo estás?"]
+        english: ["How are you? (to a friend)", "How are you?", "How are you doing?"]
+        note: "Friendly. Politely: *¿Cómo está usted?*"
+        literally: how are-you?
+      - target: ["Bien, gracias. ¿Y tú?"]
+        english: ["Fine, thanks. And you?", "Good, thanks. And you?", "Well, thanks. And you?", "I'm fine, thanks. And you?"]
+        note: "Politely: *Bien, gracias. ¿Y usted?*"
+      - target: ["¿De dónde eres?"]
+        english: ["Where are you from?"]
+        note: "Politely: *¿De dónde es usted?*"
+        literally: from where are-you?
+      - target: ["Soy de Estados Unidos.", "Soy de los Estados Unidos."]
+        english: ["I'm from the United States.", "I'm from the US.", "I'm from the USA."]
+        literally: I-am from United States
+      - target: ["¿Cuántos años tienes?"]
+        english: ["How old are you?"]
+        literally: how-many years you-have?
+      - target: ["Tengo doce años.", "Tengo 12 años."]
+        english: ["I'm twelve years old.", "I'm twelve.", "I'm 12."]
+        note: Spanish uses tener (to have) for age — never ser.
+        literally: I-have twelve years
+
+  - id: understanding
+    title: When you don't understand
+    phrases:
+      - target: ["No entiendo."]
+        english: ["I don't understand."]
+        literally: not I-understand
+      - target: ["¿Puede repetir, por favor?"]
+        english: ["Can you repeat that, please?", "Could you repeat that, please?", "Can you repeat, please?", "Please repeat."]
+        note: "Polite. To a friend: *¿Puedes repetir?*"
+        literally: can-you(polite) repeat, please?
+      - target: ["Más despacio, por favor."]
+        english: ["Slower, please.", "More slowly, please.", "Slowly, please."]
+        literally: more slowly, please
+      - target: ["¿Habla inglés?", "¿Habla usted inglés?"]
+        english: ["Do you speak English? (polite)", "Do you speak English?"]
+        note: "To a friend: *¿Hablas inglés?*"
+        literally: speaks-you(polite) English?
+      - target: ["¿Cómo se dice «dog» en español?", "¿Cómo se dice dog en español?"]
+        display: ¿Cómo se dice «dog» en español?
+        english: ["How do you say \"dog\" in Spanish?", "How do you say dog in Spanish?"]
+        note: Swap in any English word. Spanish often uses «these» as quotation marks.
+        literally: how itself says "dog" in Spanish?
+      - target: ["¿Qué significa «perro»?", "¿Qué significa perro?"]
+        display: ¿Qué significa «perro»?
+        english: ["What does \"perro\" mean?", "What does perro mean?"]
+        literally: what means "perro"?
+      - target: ["No sé."]
+        english: ["I don't know."]
+        literally: not I-know
+      - target: ["Hablo un poco de español."]
+        english: ["I speak a little Spanish.", "I speak a bit of Spanish."]
+        literally: I-speak a little of Spanish
+
+  - id: cafe
+    title: Café and restaurant
+    phrases:
+      - target: ["Un café, por favor."]
+        english: ["A coffee, please.", "One coffee, please."]
+      - target: ["Quisiera un té."]
+        english: ["I'd like a tea.", "I would like a tea.", "I'd like some tea."]
+        note: "Quisiera is the polite \"I'd like\". *Quiero* (I want) is fine with friends but blunt with waiters."
+        literally: I-would-like a tea
+      - target: ["La cuenta, por favor."]
+        english: ["The check, please.", "The bill, please."]
+        literally: the account, please
+      - target: ["Una mesa para dos, por favor."]
+        english: ["A table for two, please."]
+      - target: ["¿Qué me recomienda?"]
+        english: ["What do you recommend?", "What would you recommend?"]
+        note: Polite form, for a waiter.
+        literally: what to-me recommends-you(polite)?
+      - target: ["Soy vegetariano.", "Soy vegetariana."]
+        display: Soy vegetariano / vegetariana.
+        english: ["I'm vegetarian.", "I'm a vegetarian."]
+        note: "-o if you're male, -a if you're female."
+      - target: ["¿Puedo pagar con tarjeta?"]
+        english: ["Can I pay by card?", "Can I pay with a card?", "May I pay by card?"]
+        literally: can-I pay with card?
+      - target: ["¡Buen provecho!"]
+        english: ["Enjoy your meal!", "Bon appétit!", "Enjoy!"]
+        note: Said to people who are eating — even strangers at the next table.
+        literally: good benefit!
+      - target: ["Está muy rico.", "Está muy bueno."]
+        english: ["It's delicious.", "It's very tasty.", "It's really good.", "It's very good."]
+        note: "*Rico* is the usual word in Latin America; in Spain you'll hear *está muy bueno* too."
+        literally: it-is very rich
+
+  - id: shopping
+    title: Shopping
+    phrases:
+      - target: ["¿Cuánto cuesta?"]
+        english: ["How much is it?", "How much does it cost?"]
+        note: "For more than one thing: *¿Cuánto cuestan?*"
+        literally: how-much costs-it?
+      - target: ["Me lo llevo."]
+        english: ["I'll take it."]
+        literally: for-myself it I-take
+      - target: ["Solo estoy mirando, gracias.", "Solo estoy mirando."]
+        english: ["I'm just looking, thanks.", "I'm just looking."]
+        literally: only I-am looking, thanks
+      - target: ["¿Tiene esto en otra talla?"]
+        english: ["Do you have this in another size?", "Do you have this in a different size?"]
+        literally: have-you(polite) this in other size?
+      - target: ["Es muy caro."]
+        english: ["It's very expensive.", "It's too expensive."]
+        literally: it-is very expensive
+      - target: ["¿Me lo puedo probar?", "¿Puedo probármelo?"]
+        english: ["Can I try it on?", "May I try it on?"]
+        literally: on-me it can-I try?
+
+  - id: getting-around
+    title: Getting around
+    phrases:
+      - target: ["¿Dónde está la estación?"]
+        english: ["Where is the station?", "Where's the station?"]
+      - target: ["Perdón, ¿dónde está el baño?", "¿Dónde está el baño?"]
+        english: ["Excuse me, where is the bathroom?", "Excuse me, where's the toilet?", "Where is the bathroom?", "Where is the restroom?"]
+        note: "In Spain you'll also see *los servicios* or *los aseos*."
+        literally: sorry, where is the bath?
+      - target: ["¿Está lejos?"]
+        english: ["Is it far?", "Is it far away?"]
+      - target: ["Está cerca."]
+        english: ["It's close.", "It's near.", "It's nearby.", "It's close by."]
+      - target: ["A la derecha."]
+        english: ["To the right.", "On the right."]
+      - target: ["A la izquierda."]
+        english: ["To the left.", "On the left."]
+      - target: ["Todo recto.", "Todo derecho.", "Derecho."]
+        english: ["Straight ahead.", "Straight on."]
+        note: "*Todo recto* in Spain; *derecho* or *todo derecho* in most of Latin America."
+        literally: all straight
+      - target: ["Un boleto para Madrid, por favor.", "Un billete para Madrid, por favor."]
+        english: ["A ticket to Madrid, please.", "One ticket to Madrid, please."]
+        note: "*Boleto* in Latin America, *billete* in Spain."
+        literally: a ticket for Madrid, please
+      - target: ["¿Dónde está la parada de autobús?"]
+        english: ["Where is the bus stop?", "Where's the bus stop?"]
+        note: "The word for bus changes by country: *camión* in Mexico, *colectivo* in Argentina, *guagua* in Cuba and the Canary Islands."
+        literally: where is the stop of bus?
+      - target: ["Estoy perdido.", "Estoy perdida."]
+        display: Estoy perdido / perdida.
+        english: ["I'm lost."]
+        note: "-o if you're male, -a if you're female."
+        literally: I-am lost
+
+  - id: time
+    title: Time and plans
+    phrases:
+      - target: ["¿Qué hora es?"]
+        english: ["What time is it?"]
+        literally: what hour is-it?
+      - target: ["Son las tres."]
+        english: ["It's three o'clock.", "It's three."]
+        note: "For one o'clock: *es la una*."
+        literally: they-are the three
+      - target: ["¿A qué hora?"]
+        english: ["At what time?", "What time?"]
+        literally: at what hour?
+      - target: ["¿Qué día es hoy?"]
+        english: ["What day is it today?", "What day is today?", "What day is it?"]
+        literally: what day is today?
+      - target: ["¿Estás libre esta noche?"]
+        english: ["Are you free tonight?", "Are you free this evening?"]
+        literally: are-you free this night?
+      - target: ["Nos vemos."]
+        english: ["See you around.", "See you.", "See you later.", "See ya."]
+        literally: ourselves we-see
+      - target: ["De acuerdo."]
+        english: ["Agreed.", "OK.", "Okay.", "All right."]
+        note: "In Spain you'll hear *vale* for \"OK\" all the time."
+        literally: of agreement
+
+  - id: help
+    title: Help and emergencies
+    phrases:
+      - target: ["¡Ayuda!", "¡Socorro!"]
+        english: ["Help!"]
+      - target: ["Necesito un médico."]
+        english: ["I need a doctor."]
+      - target: ["¡Llame a una ambulancia!"]
+        english: ["Call an ambulance!"]
+        note: A polite command, for a stranger.
+      - target: ["Me siento mal."]
+        english: ["I feel sick.", "I don't feel well.", "I feel ill.", "I feel bad.", "I'm not feeling well."]
+        literally: myself I-feel bad
+      - target: ["¿Dónde está la farmacia?"]
+        english: ["Where is the pharmacy?", "Where's the pharmacy?", "Where is the drugstore?", "Where is the chemist?"]
+      - target: ["Perdí mi pasaporte.", "He perdido mi pasaporte."]
+        english: ["I lost my passport.", "I've lost my passport."]
+        note: "Both mean the same. *He perdido* is more common in Spain."
+        literally: I-lost my passport
+      - target: ["Me duele la cabeza."]
+        english: ["My head hurts.", "I have a headache.", "I've got a headache."]
+        literally: to-me hurts the head
+      - target: ["¡Cuidado!"]
+        english: ["Careful!", "Watch out!", "Be careful!", "Look out!"]
+        literally: care!
+
+  - id: small-talk
+    title: Small talk
+    phrases:
+      - target: ["¡Qué bonito!"]
+        english: ["How beautiful!", "How pretty!", "How nice!", "So pretty!"]
+        note: "With a feminine word, it's *¡Qué bonita!*"
+        literally: what pretty!
+      - target: ["¿Qué tiempo hace?"]
+        english: ["What's the weather like?", "How's the weather?"]
+        literally: what weather does-it-make?
+      - target: ["Hace calor."]
+        english: ["It's hot.", "It's warm."]
+        literally: it-makes heat
+      - target: ["Hace frío."]
+        english: ["It's cold."]
+        literally: it-makes cold
+      - target: ["Tengo hambre."]
+        english: ["I'm hungry."]
+        literally: I-have hunger
+      - target: ["¡Me gusta mucho!"]
+        english: ["I like it a lot!", "I really like it!", "I like it very much!"]
+        literally: to-me it-pleases a-lot
+      - target: ["¡Bienvenido!", "¡Bienvenida!"]
+        display: ¡Bienvenido / Bienvenida!
+        english: ["Welcome!"]
+        note: "-o to a male, -a to a female, *¡Bienvenidos!* to a group."
+        literally: well-come
+      - target: ["¡Feliz cumpleaños!"]
+        english: ["Happy birthday!"]
+        literally: happy birthday
+      - target: ["¡Salud!"]
+        english: ["Cheers!", "Bless you!"]
+        note: Said when you clink glasses — and when someone sneezes.
+        literally: health!
+      - target: ["¡Genial!"]
+        english: ["Great!", "Awesome!", "Cool!", "Brilliant!"]
