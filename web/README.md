@@ -38,6 +38,9 @@ npm run dev                 # http://localhost:3000
 
 Register with the code `npm run invite` printed. **The first account to
 register becomes the admin**, and can mint further codes at `/learn/invites`.
+A code can be single-use or shared by up to 100 people, and each one has a
+"Copy invite email" button that produces a ready-to-send message with a link
+that fills the code in.
 
 ### Scripts
 
@@ -48,7 +51,7 @@ register becomes the admin**, and can mint further codes at `/learn/invites`.
 | `npm run codegen` | Compile vocabulary + generate the Prisma client |
 | `npm run typecheck` | `tsc --noEmit` |
 | `npm test` | Unit tests for the grading and parsing engine |
-| `npm run invite -- --note "for Sam" --days 14` | Mint invite codes |
+| `npm run invite -- --note "book club" --uses 8 --days 14` | Mint invite codes (`--uses` = accounts per code, default 1) |
 | `npm run db:deploy` | Apply migrations (production-safe) |
 | `npm run db:migrate` | Create a new migration from schema changes |
 

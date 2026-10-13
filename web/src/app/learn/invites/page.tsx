@@ -2,8 +2,18 @@ import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import { verifySession, requireUser } from "@/lib/auth/session";
 import { createInvite, listInvites } from "@/lib/auth/invites";
+import {
+  inviteStatus,
+  parseInviteUses,
+  remainingUses,
+  MAX_INVITE_USES,
+  MIN_INVITE_USES,
+  type InviteStatus,
+} from "@/lib/auth/invite-status";
+import { availableLanguages, languageLabel } from "@/lib/vocab";
 import { Panel } from "@/components/crt";
 import { ActivityHeader } from "@/components/activity-shell";
+import { CopyInviteEmail } from "@/components/copy-invite-email";
 
 export const metadata = { title: "Invites — LANGUE" };
 
@@ -24,9 +34,20 @@ async function mintInvite(formData: FormData) {
   const note = String(formData.get("note") ?? "").trim() || undefined;
   const daysRaw = Number(formData.get("days"));
   const expiresInDays = Number.isFinite(daysRaw) && daysRaw > 0 ? daysRaw : undefined;
+  const maxUses = parseInviteUses(formData.get("uses") || 1);
 
-  await createInvite({ note, createdById: user.id, expiresInDays });
+  await createInvite({ note, createdById: user.id, expiresInDays, maxUses });
   revalidatePath("/learn/invites");
+}
+
+const STATUS_LABEL: Record<InviteStatus, string> = {
+  active: "active",
+  "used-up": "used up",
+  expired: "expired",
+};
+
+function formatDay(date: Date): string {
+  return date.toISOString().slice(0, 10);
 }
 
 export default async function InvitesPage() {
@@ -35,13 +56,17 @@ export default async function InvitesPage() {
   if (!user.isAdmin) redirect("/learn");
 
   const invites = await listInvites();
-  const unused = invites.filter((invite) => !invite.redeemedAt);
+  const now = new Date();
+  const withStatus = invites.map((invite) => ({ ...invite, status: inviteStatus(invite, now) }));
+  const active = withStatus.filter((invite) => invite.status === "active");
+  const finished = withStatus.filter((invite) => invite.status !== "active");
+  const languages = availableLanguages().map(languageLabel);
 
   return (
     <>
       <ActivityHeader
         title="Invite codes"
-        subtitle="Each code creates exactly one account. Send one per friend."
+        subtitle="A code creates as many accounts as its uses allow. Copy the email and send it on."
       />
 
       <Panel title="New code">
@@ -51,6 +76,20 @@ export default async function InvitesPage() {
               Note (optional)
             </label>
             <input id="note" name="note" placeholder="for Sam" className="crt-input" />
+          </div>
+          <div className="w-24">
+            <label className="crt-label" htmlFor="uses">
+              Uses
+            </label>
+            <input
+              id="uses"
+              name="uses"
+              type="number"
+              min={MIN_INVITE_USES}
+              max={MAX_INVITE_USES}
+              defaultValue={1}
+              className="crt-input"
+            />
           </div>
           <div className="w-32">
             <label className="crt-label" htmlFor="days">
@@ -72,44 +111,62 @@ export default async function InvitesPage() {
         </form>
       </Panel>
 
-      <Panel title={`Unused (${unused.length})`} className="mt-8">
-        {unused.length === 0 ? (
-          <p className="text-sm text-[var(--crt-fg-dim)]">No unused codes.</p>
+      <Panel title={`Active (${active.length})`} className="mt-8">
+        {active.length === 0 ? (
+          <p className="text-sm text-[var(--crt-fg-dim)]">No active codes.</p>
         ) : (
-          <ul className="space-y-2">
-            {unused.map((invite) => (
-              <li key={invite.id} className="flex flex-wrap items-baseline justify-between gap-3">
-                <code className="text-lg tracking-[0.2em] text-[var(--crt-fg-bright)] crt-glow">
-                  {invite.code}
-                </code>
-                <span className="text-xs text-[var(--crt-fg-dim)]">
-                  {invite.note ? `${invite.note} · ` : ""}
-                  {invite.expiresAt
-                    ? `expires ${invite.expiresAt.toISOString().slice(0, 10)}`
-                    : "no expiry"}
-                </span>
+          <ul className="space-y-5">
+            {active.map((invite) => (
+              <li key={invite.id} className="space-y-2">
+                <div className="flex flex-wrap items-baseline justify-between gap-3">
+                  <code className="text-lg tracking-[0.2em] text-[var(--crt-fg-bright)] crt-glow">
+                    {invite.code}
+                  </code>
+                  <span className="text-xs text-[var(--crt-fg-dim)]">
+                    {invite.note ? `${invite.note} · ` : ""}
+                    {invite.useCount}/{invite.maxUses} used ·{" "}
+                    {invite.expiresAt ? `expires ${formatDay(invite.expiresAt)}` : "no expiry"}
+                  </span>
+                </div>
+                {invite.members.length > 0 ? (
+                  <p className="text-xs text-[var(--crt-fg-dim)]">
+                    Joined: {invite.members.map((member) => member.displayName).join(", ")}
+                  </p>
+                ) : null}
+                <CopyInviteEmail
+                  inviterName={user.displayName}
+                  code={invite.code}
+                  expiresAt={invite.expiresAt?.toISOString() ?? null}
+                  languages={languages}
+                  remainingUses={remainingUses(invite)}
+                />
               </li>
             ))}
           </ul>
         )}
       </Panel>
 
-      <Panel title="Redeemed" className="mt-8">
-        {invites.filter((invite) => invite.redeemedAt).length === 0 ? (
-          <p className="text-sm text-[var(--crt-fg-dim)]">Nothing redeemed yet.</p>
+      <Panel title="Used up or expired" className="mt-8">
+        {finished.length === 0 ? (
+          <p className="text-sm text-[var(--crt-fg-dim)]">Nothing here yet.</p>
         ) : (
-          <ul className="space-y-1 text-xs">
-            {invites
-              .filter((invite) => invite.redeemedAt)
-              .map((invite) => (
-                <li key={invite.id} className="flex justify-between gap-3">
+          <ul className="space-y-2 text-xs">
+            {finished.map((invite) => (
+              <li key={invite.id}>
+                <div className="flex flex-wrap justify-between gap-3">
                   <code className="text-[var(--crt-fg-dim)]">{invite.code}</code>
-                  <span>{invite.redeemedBy?.displayName ?? "unknown"}</span>
                   <span className="text-[var(--crt-fg-dim)]">
-                    {invite.redeemedAt?.toISOString().slice(0, 10)}
+                    {invite.note ? `${invite.note} · ` : ""}
+                    {invite.useCount}/{invite.maxUses} used · {STATUS_LABEL[invite.status]}
                   </span>
-                </li>
-              ))}
+                </div>
+                <p className="mt-0.5">
+                  {invite.members.length > 0
+                    ? invite.members.map((member) => member.displayName).join(", ")
+                    : "Nobody joined with this code."}
+                </p>
+              </li>
+            ))}
           </ul>
         )}
       </Panel>

@@ -3,7 +3,7 @@
 /**
  * Authentication server actions.
  *
- * Registration requires a valid, unredeemed invite code. That is the whole
+ * Registration requires an invite code with uses left. That is the whole
  * access-control model: this deployment is for the owner and their friends, and
  * every session spends the owner's Anthropic budget, so open signup is not a
  * feature to add later — it is the thing being prevented.
@@ -15,6 +15,8 @@ import { z } from "zod";
 import { prisma } from "@/lib/db";
 import { hashPassword, verifyPassword } from "./password";
 import { createSession, destroySession, pruneExpiredSessions } from "./session";
+import { claimInviteUse } from "./claim-invite";
+import { inviteStatus } from "./invite-status";
 import { availableLanguages } from "@/lib/vocab";
 
 export interface AuthFormState {
@@ -89,13 +91,23 @@ export async function register(
     where: { code: inviteCode.toUpperCase() },
   });
 
-  if (!invite || invite.redeemedAt) {
+  if (!invite) {
     return {
       fieldErrors: { inviteCode: ["That invite code is not valid."] },
       values: submitted,
     };
   }
-  if (invite.expiresAt && invite.expiresAt.getTime() < Date.now()) {
+
+  // A friendly early answer. The binding check is claimInviteUse below, which
+  // also covers a code that runs out between this read and the insert.
+  const status = inviteStatus(invite);
+  if (status === "used-up") {
+    return {
+      fieldErrors: { inviteCode: [USED_UP] },
+      values: submitted,
+    };
+  }
+  if (status === "expired") {
     return {
       fieldErrors: { inviteCode: ["That invite code has expired."] },
       values: submitted,
@@ -118,37 +130,31 @@ export async function register(
 
   let userId: string;
   try {
-    // One transaction: redeeming the invite and creating the user must not be
-    // separable, or a crash between them burns the code with no account.
+    // One transaction: spending a use and creating the user must not be
+    // separable, or a crash between them burns a use with no account.
     const user = await prisma.$transaction(async (tx) => {
-      const created = await tx.user.create({
+      // If a concurrent registration took the last use, this matches no row
+      // and we abort rather than letting the code go over its limit.
+      if (!(await claimInviteUse(tx, invite.id))) {
+        throw new InviteUnavailableError();
+      }
+
+      return tx.user.create({
         data: {
           email,
           displayName,
           passwordHash,
           isAdmin: isFirstUser,
           currentLanguage: defaultLanguage,
+          inviteCodeId: invite.id,
         },
       });
-
-      // Conditional update: if a concurrent registration redeemed this code
-      // first, count is 0 and we abort rather than double-spending it.
-      const claimed = await tx.inviteCode.updateMany({
-        where: { id: invite.id, redeemedAt: null },
-        data: { redeemedAt: new Date(), redeemedById: created.id },
-      });
-
-      if (claimed.count === 0) {
-        throw new InviteAlreadyRedeemedError();
-      }
-
-      return created;
     });
     userId = user.id;
   } catch (error) {
-    if (error instanceof InviteAlreadyRedeemedError) {
+    if (error instanceof InviteUnavailableError) {
       return {
-        fieldErrors: { inviteCode: ["That invite code was just used."] },
+        fieldErrors: { inviteCode: ["That invite code just ran out. Ask whoever sent it for a new one."] },
         values: submitted,
       };
     }
@@ -161,7 +167,10 @@ export async function register(
   redirect("/learn");
 }
 
-class InviteAlreadyRedeemedError extends Error {}
+class InviteUnavailableError extends Error {}
+
+const USED_UP =
+  "That invite code has been used by everyone it was made for. Ask whoever sent it for a new one.";
 
 export async function login(
   _prev: AuthFormState,

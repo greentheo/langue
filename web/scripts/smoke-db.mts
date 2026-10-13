@@ -2,7 +2,7 @@
  * Database smoke test.
  *
  * Exercises the parts of the app that only fail against a real Postgres:
- * the invite-redemption transaction, the session token lookup, and the
+ * the invite-claim race, the session token lookup, and the
  * progress/streak accounting. Unit tests cannot cover these because the bugs
  * they guard against are concurrency and constraint bugs.
  *
@@ -16,6 +16,7 @@ import { existsSync } from "node:fs";
 import { createHash, randomBytes } from "node:crypto";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient } from "../src/generated/prisma/client.js";
+import { claimInviteUse } from "../src/lib/auth/claim-invite.js";
 
 if (existsSync(".env")) process.loadEnvFile(".env");
 
@@ -44,35 +45,64 @@ const email = `smoke-${stamp}@example.test`;
 async function main() {
   console.log("Invite redemption");
 
+  // A two-use code: two accounts get in, the third is refused.
   const invite = await prisma.inviteCode.create({
-    data: { code: `SMOKE-${stamp.toUpperCase()}`, note: "smoke test" },
+    data: { code: `SMOKE-${stamp.toUpperCase()}`, note: "smoke test", maxUses: 2 },
   });
 
   const user = await prisma.$transaction(async (tx) => {
-    const created = await tx.user.create({
+    check("first use of a two-use code is claimed", await claimInviteUse(tx, invite.id));
+    return tx.user.create({
       data: {
         email,
         displayName: "Smoke Test",
         passwordHash: "scrypt$131072$8$1$c2FsdA==$aGFzaA==",
         currentLanguage: "italian",
         currentLevel: "a1",
+        inviteCodeId: invite.id,
       },
     });
-    const claimed = await tx.inviteCode.updateMany({
-      where: { id: invite.id, redeemedAt: null },
-      data: { redeemedAt: new Date(), redeemedById: created.id },
-    });
-    check("invite claimed exactly once", claimed.count === 1);
-    return created;
   });
 
-  // The conditional update is what stops two concurrent registrations from
-  // spending the same code. Re-running it must be a no-op.
-  const second = await prisma.inviteCode.updateMany({
-    where: { id: invite.id, redeemedAt: null },
-    data: { redeemedAt: new Date() },
+  check(
+    "second use of a two-use code is claimed",
+    await prisma.$transaction((tx) => claimInviteUse(tx, invite.id)),
+  );
+  check(
+    "a third use is refused",
+    !(await prisma.$transaction((tx) => claimInviteUse(tx, invite.id))),
+  );
+
+  const afterClaims = await prisma.inviteCode.findUniqueOrThrow({ where: { id: invite.id } });
+  check("useCount stops at maxUses", afterClaims.useCount === 2, `got ${afterClaims.useCount}`);
+
+  // The race the conditional UPDATE exists for: many registrations hitting a
+  // single-use code at once. Exactly one may win.
+  const contested = await prisma.inviteCode.create({
+    data: { code: `RACE-${stamp.toUpperCase()}`, maxUses: 1 },
   });
-  check("already-redeemed invite cannot be claimed again", second.count === 0);
+  const racers = await Promise.all(
+    Array.from({ length: 8 }, () =>
+      prisma.$transaction((tx) => claimInviteUse(tx, contested.id)),
+    ),
+  );
+  check(
+    "concurrent claims on a single-use code: exactly one wins",
+    racers.filter(Boolean).length === 1,
+    `${racers.filter(Boolean).length} won`,
+  );
+
+  const expired = await prisma.inviteCode.create({
+    data: {
+      code: `OLD-${stamp.toUpperCase()}`,
+      maxUses: 5,
+      expiresAt: new Date(Date.now() - 60_000),
+    },
+  });
+  check(
+    "an expired code cannot be claimed",
+    !(await prisma.$transaction((tx) => claimInviteUse(tx, expired.id))),
+  );
 
   console.log("\nSessions");
 
@@ -172,7 +202,9 @@ async function main() {
   await prisma.user.delete({ where: { id: user.id } });
   const orphans = await prisma.wordStat.count({ where: { userId: user.id } });
   check("deleting a user cascades to their data", orphans === 0);
-  await prisma.inviteCode.deleteMany({ where: { id: invite.id } });
+  await prisma.inviteCode.deleteMany({
+    where: { id: { in: [invite.id, contested.id, expired.id] } },
+  });
 
   console.log(failures === 0 ? "\nAll checks passed" : `\n${failures} check(s) FAILED`);
   if (failures > 0) process.exitCode = 1;

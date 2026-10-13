@@ -36,16 +36,21 @@ model User {
   points     Int @default(0)
   streakDays Int @default(0)
 
+  /// The invite code this account registered with. Null for accounts whose
+  /// code was later deleted.
+  inviteCodeId String?
+  inviteCode   InviteCode? @relation("InviteMembers", fields: [inviteCodeId], references: [id], onDelete: SetNull)
+
   sessions     Session[]
   progress     LanguageProgress[]
   wordStats    WordStat[]
   activityLog  ActivityLog[]
   achievements Achievement[]
   reviews      FlashcardReview[]
-  invitesUsed  InviteCode[]      @relation("InviteRedeemedBy")
   invitesMade  InviteCode[]      @relation("InviteCreatedBy")
 
   @@index([email])
+  @@index([inviteCodeId])
 }
 
 /// Server-side session. The cookie holds only a random token; revoking a
@@ -63,19 +68,22 @@ model Session {
   @@index([expiresAt])
 }
 
-/// Single-use registration code. Keeps the deployment private and caps who can
-/// spend the owner's Anthropic budget.
+/// Registration code, good for `maxUses` accounts. Keeps the deployment
+/// private and caps who can spend the owner's Anthropic budget.
 model InviteCode {
-  id           String    @id @default(cuid())
-  code         String    @unique
-  note         String?
-  createdAt    DateTime  @default(now())
-  expiresAt    DateTime?
-  redeemedAt   DateTime?
-  createdById  String?
-  createdBy    User?     @relation("InviteCreatedBy", fields: [createdById], references: [id], onDelete: SetNull)
-  redeemedById String?   @unique
-  redeemedBy   User?     @relation("InviteRedeemedBy", fields: [redeemedById], references: [id], onDelete: SetNull)
+  id          String    @id @default(cuid())
+  code        String    @unique
+  note        String?
+  createdAt   DateTime  @default(now())
+  expiresAt   DateTime?
+  /// How many accounts this code may create.
+  maxUses     Int       @default(1)
+  /// How many it has created. Only ever changed by the conditional increment in
+  /// claimInviteUse, which refuses to go past maxUses.
+  useCount    Int       @default(0)
+  createdById String?
+  createdBy   User?     @relation("InviteCreatedBy", fields: [createdById], references: [id], onDelete: SetNull)
+  members     User[]    @relation("InviteMembers")
 
   @@index([code])
 }
