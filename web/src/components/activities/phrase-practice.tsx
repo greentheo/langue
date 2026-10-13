@@ -9,7 +9,9 @@
  */
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { postJson, reportProgress, type ActivityContext } from "@/lib/client-api";
+import { postJson, type ActivityContext } from "@/lib/client-api";
+import { useReportProgress } from "@/lib/use-report-progress";
+import { useStableContext } from "@/lib/use-stable-context";
 import { languageLabel } from "@/lib/languages";
 import { ErrorBox } from "@/components/crt";
 import { Loading, ProgressDots, SessionSummary } from "@/components/activity-shell";
@@ -41,12 +43,14 @@ interface PhraseResult {
 const ROUND_SIZE = 10;
 
 export function PhrasePractice({
-  context,
+  context: contextProp,
   situations,
 }: {
   context: ActivityContext;
   situations: { id: string; title: string; count: number }[];
 }) {
+  const context = useStableContext(contextProp);
+  const report = useReportProgress();
   const label = languageLabel(context.language);
 
   const [direction, setDirection] = useState<Direction>("to-english");
@@ -138,7 +142,7 @@ export function PhrasePractice({
     if (!cards) return;
     if (index + 1 >= cards.length) {
       setDone(true);
-      void reportProgress(context, {
+      void report(context, {
         activityType: "phrases",
         pointsEarned: tally.points,
         itemsTotal: cards.length,

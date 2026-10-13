@@ -89,7 +89,7 @@ export async function leaderboard(
   const ids = [...memberIds(code)];
   if (!ids.includes(viewerId)) return null;
 
-  const [users, week, lessons] = await Promise.all([
+  const [users, week] = await Promise.all([
     prisma.user.findMany({
       where: { id: { in: ids } },
       select: { id: true, displayName: true, points: true, streakDays: true, lastActiveAt: true },
@@ -99,15 +99,9 @@ export async function leaderboard(
       where: { userId: { in: ids }, completedAt: { gte: weekStart(now) } },
       _sum: { pointsEarned: true },
     }),
-    prisma.lessonProgress.groupBy({
-      by: ["userId"],
-      where: { userId: { in: ids }, completedAt: { not: null } },
-      _count: { _all: true },
-    }),
   ]);
 
   const weekPoints = new Map(week.map((row) => [row.userId, row._sum.pointsEarned ?? 0]));
-  const lessonCounts = new Map(lessons.map((row) => [row.userId, row._count._all]));
 
   const standings: Standing[] = users.map((user) => ({
     userId: user.id,
@@ -115,7 +109,6 @@ export async function leaderboard(
     weekPoints: weekPoints.get(user.id) ?? 0,
     totalPoints: user.points,
     streak: liveStreak(user.streakDays, user.lastActiveAt, now),
-    lessonsCompleted: lessonCounts.get(user.id) ?? 0,
   }));
 
   return rankStandings(standings, period);

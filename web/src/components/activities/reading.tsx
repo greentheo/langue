@@ -10,7 +10,9 @@
  */
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { postJson, reportProgress, type ActivityContext } from "@/lib/client-api";
+import { postJson, type ActivityContext } from "@/lib/client-api";
+import { useReportProgress } from "@/lib/use-report-progress";
+import { useStableContext } from "@/lib/use-stable-context";
 import { ErrorBox, Panel } from "@/components/crt";
 import {
   ActivityHeader,
@@ -35,7 +37,9 @@ interface Passage {
 
 const QUESTION_COUNT = 4;
 
-export function Reading({ context }: { context: ActivityContext }) {
+export function Reading({ context: contextProp }: { context: ActivityContext }) {
+  const context = useStableContext(contextProp);
+  const report = useReportProgress();
   const [passage, setPassage] = useState<Passage | null>(null);
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<number | null>(null);
@@ -97,7 +101,7 @@ export function Reading({ context }: { context: ActivityContext }) {
 
     if (index + 1 >= passage.questions.length) {
       setDone(true);
-      void reportProgress(context, {
+      void report(context, {
         activityType: "reading",
         pointsEarned: tally.points,
         itemsTotal: passage.questions.length,

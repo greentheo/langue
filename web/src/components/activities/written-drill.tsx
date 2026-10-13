@@ -11,7 +11,9 @@
  */
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { postJson, reportProgress, type ActivityContext } from "@/lib/client-api";
+import { postJson, type ActivityContext } from "@/lib/client-api";
+import { useReportProgress } from "@/lib/use-report-progress";
+import { useStableContext } from "@/lib/use-stable-context";
 import { ErrorBox, Panel } from "@/components/crt";
 import {
   ActivityHeader,
@@ -53,7 +55,7 @@ const TITLES: Record<DrillKind, string> = {
 };
 
 export function WrittenDrill({
-  context,
+  context: contextProp,
   kind,
   direction = "to-target",
 }: {
@@ -61,6 +63,8 @@ export function WrittenDrill({
   kind: DrillKind;
   direction?: "to-target" | "to-native";
 }) {
+  const context = useStableContext(contextProp);
+  const report = useReportProgress();
   const [items, setItems] = useState<(FillBlankExercise | TranslationExercise)[] | null>(null);
   const [index, setIndex] = useState(0);
   const [answer, setAnswer] = useState("");
@@ -146,7 +150,7 @@ export function WrittenDrill({
 
     if (index + 1 >= items.length) {
       setDone(true);
-      void reportProgress(context, {
+      void report(context, {
         activityType: kind,
         pointsEarned: tally.points,
         itemsTotal: items.length,

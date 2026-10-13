@@ -11,6 +11,7 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
 import { postJson } from "@/lib/client-api";
 import type { PublicPracticeItem } from "@/lib/curriculum/types";
 import { languageLabel } from "@/lib/languages";
@@ -68,6 +69,7 @@ export function LessonPractice({
   const [outcome, setOutcome] = useState<Outcome | null>(null);
   const [finished, setFinished] = useState(false);
 
+  const router = useRouter();
   const startedAt = useRef(Date.now());
   const inputRef = useRef<HTMLInputElement>(null);
   const nextRef = useRef<HTMLButtonElement>(null);
@@ -156,6 +158,9 @@ export function LessonPractice({
           durationSec: Math.round((Date.now() - startedAt.current) / 1000),
         }),
       );
+      // Points, streak and the lesson's tick live in server-rendered parts of
+      // the page (header, lesson list); refresh them in place.
+      router.refresh();
     } catch (cause) {
       setError(`Your score could not be saved: ${(cause as Error).message}`);
     }

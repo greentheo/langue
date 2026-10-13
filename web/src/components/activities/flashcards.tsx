@@ -14,7 +14,9 @@
  */
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { postJson, reportProgress, type ActivityContext } from "@/lib/client-api";
+import { postJson, type ActivityContext } from "@/lib/client-api";
+import { useReportProgress } from "@/lib/use-report-progress";
+import { useStableContext } from "@/lib/use-stable-context";
 import { ErrorBox, Panel } from "@/components/crt";
 import { ChoiceOptions } from "@/components/choice-options";
 import { autoSpeak, stopSpeaking } from "@/lib/speech";
@@ -50,7 +52,9 @@ interface AnswerResult {
 
 const ROUND_SIZE = 10;
 
-export function Flashcards({ context }: { context: ActivityContext }) {
+export function Flashcards({ context: contextProp }: { context: ActivityContext }) {
+  const context = useStableContext(contextProp);
+  const report = useReportProgress();
   // null until the saved preference has been read, so the first deal uses it.
   const [mode, setMode] = useState<Mode | null>(null);
   const [chosen, setChosen] = useState<string | null>(null);
@@ -167,7 +171,7 @@ export function Flashcards({ context }: { context: ActivityContext }) {
 
     if (index + 1 >= cards.length) {
       setDone(true);
-      void reportProgress(context, {
+      void report(context, {
         activityType: "flashcards",
         pointsEarned: tally.points,
         itemsTotal: cards.length,

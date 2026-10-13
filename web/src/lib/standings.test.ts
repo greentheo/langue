@@ -37,7 +37,6 @@ describe("rankStandings", () => {
     weekPoints,
     totalPoints,
     streak: 0,
-    lessonsCompleted: 0,
   });
   const rows = [row("Ada", 40, 100), row("Ben", 90, 90), row("Cal", 40, 500), row("Dee", 0, 10)];
 
