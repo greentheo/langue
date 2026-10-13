@@ -6,6 +6,7 @@ import { languageLabel } from "@/lib/vocab";
 import { LEVEL_LABELS } from "@/lib/vocab/types";
 import { PhosphorToggle } from "@/components/phosphor-toggle";
 import type { Level } from "@/lib/vocab/types";
+import { liveStreak } from "@/lib/standings";
 
 export default async function LearnLayout({ children }: { children: React.ReactNode }) {
   // proxy.ts only checks that a cookie exists. This is the real check.
@@ -30,8 +31,16 @@ export default async function LearnLayout({ children }: { children: React.ReactN
         </div>
 
         <div className="flex items-center gap-4">
+          <Link
+            href="/accounts"
+            title="Switch learner"
+            className="crt-button px-2 py-0.5 text-xs normal-case tracking-normal no-underline"
+          >
+            {user.displayName} <span aria-hidden="true">⇄</span>
+          </Link>
           <span className="text-xs text-[var(--crt-fg-dim)]">
-            {user.points.toLocaleString()} pts &middot; {user.streakDays}d streak
+            {user.points.toLocaleString()} pts &middot;{" "}
+            {liveStreak(user.streakDays, user.lastActiveAt, new Date())}d streak
           </span>
           <PhosphorToggle />
           <form action={logout}>

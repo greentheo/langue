@@ -143,7 +143,13 @@ export async function getSummary(userId: string) {
   const [user, languages, recent, totalSessions] = await Promise.all([
     prisma.user.findUniqueOrThrow({
       where: { id: userId },
-      select: { points: true, streakDays: true, currentLanguage: true, currentLevel: true },
+      select: {
+        points: true,
+        streakDays: true,
+        lastActiveAt: true,
+        currentLanguage: true,
+        currentLevel: true,
+      },
     }),
     prisma.languageProgress.findMany({
       where: { userId },

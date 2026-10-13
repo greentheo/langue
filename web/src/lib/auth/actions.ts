@@ -14,7 +14,13 @@ import { headers } from "next/headers";
 import { z } from "zod";
 import { prisma } from "@/lib/db";
 import { hashPassword, verifyPassword } from "./password";
-import { createSession, destroySession, pruneExpiredSessions } from "./session";
+import {
+  createSession,
+  destroyAllSessions,
+  destroySession,
+  pruneExpiredSessions,
+  switchSession,
+} from "./session";
 import { claimInviteUse } from "./claim-invite";
 import { inviteStatus } from "./invite-status";
 import { availableLanguages } from "@/lib/vocab";
@@ -202,17 +208,34 @@ export async function login(
 
   await pruneExpiredSessions();
 
+  // lastActiveAt is deliberately not touched here: it is "last practised",
+  // which the streak is computed from. Bumping it on sign-in made a session
+  // later the same day look like a repeat of today, so streaks never grew.
   const userAgent = (await headers()).get("user-agent") ?? undefined;
   await createSession(user.id, userAgent);
-  await prisma.user.update({
-    where: { id: user.id },
-    data: { lastActiveAt: new Date() },
-  });
 
   redirect("/learn");
 }
 
+/**
+ * Sign out the learner using the app right now. If others are signed in on
+ * this device, go to the picker so the next person can choose themselves.
+ */
 export async function logout(): Promise<void> {
-  await destroySession();
+  const someoneLeft = await destroySession();
+  redirect(someoneLeft ? "/accounts" : "/login");
+}
+
+/** Sign out everyone on this device — handing the iPad back, say. */
+export async function logoutEveryone(): Promise<void> {
+  await destroyAllSessions();
   redirect("/login");
+}
+
+/** Switch to another learner already signed in on this device. */
+export async function switchAccount(formData: FormData): Promise<void> {
+  const userId = String(formData.get("userId") ?? "");
+  const switched = userId ? await switchSession(userId) : false;
+  // A stale picker (that learner's session expired) lands back on the picker.
+  redirect(switched ? "/learn" : "/accounts");
 }

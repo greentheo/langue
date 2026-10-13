@@ -9,6 +9,9 @@ import { Panel, Stat } from "@/components/crt";
 import { RichInline } from "@/components/rich-text";
 import { getLevelCurriculum, levelsWithLessons, levelsWithPhrases } from "@/lib/curriculum";
 import { lessonStatuses, nextLesson } from "@/lib/lessons";
+import { liveStreak } from "@/lib/standings";
+import { groupsFor, leaderboard } from "@/lib/leaderboard";
+import { StandingsTable } from "@/components/standings-table";
 
 interface MenuEntry {
   href: string;
@@ -73,6 +76,10 @@ export default async function LearnPage() {
   const upNext = nextLesson(pathLessons, statuses);
   const doneCount = pathLessons.filter((lesson) => statuses.get(lesson.id)?.completed).length;
 
+  // The home screen shows the biggest group's week, top five.
+  const groups = await groupsFor(user.id);
+  const board = groups[0] ? await leaderboard(groups[0].id, user.id, "week") : null;
+
   const learn: MenuEntry[] = [
     {
       href: "/learn/lessons",
@@ -101,7 +108,10 @@ export default async function LearnPage() {
         <h1 className="text-xl crt-glow">Hello, {user.displayName}</h1>
         <div className="mt-4 grid grid-cols-3 gap-4">
           <Stat label="Points" value={summary.user.points.toLocaleString()} />
-          <Stat label="Streak" value={`${summary.user.streakDays}d`} />
+          <Stat
+            label="Streak"
+            value={`${liveStreak(summary.user.streakDays, summary.user.lastActiveAt, new Date())}d`}
+          />
           <Stat label="Sessions" value={summary.totalSessions} />
         </div>
       </section>
@@ -169,6 +179,24 @@ export default async function LearnPage() {
             <RichInline text={upNext.goal} />
           </span>
         </Link>
+      ) : null}
+
+      {board && groups[0] ? (
+        <Panel title={`This week · ${groups[0].name}`}>
+          <StandingsTable
+            rows={[
+              ...board.slice(0, 5),
+              // Always show where you are, even below the top five.
+              ...board.slice(5).filter((row) => row.userId === user.id),
+            ]}
+            period="week"
+            viewerId={user.id}
+            compact
+          />
+          <p className="mt-3 text-xs">
+            <Link href="/learn/leaderboard">Full leaderboard &rarr;</Link>
+          </p>
+        </Panel>
       ) : null}
 
       <Panel title="Learn">

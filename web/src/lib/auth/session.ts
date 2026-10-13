@@ -13,8 +13,16 @@ import { cache } from "react";
 import { createHash, randomBytes, timingSafeEqual } from "node:crypto";
 import { cookies } from "next/headers";
 import { prisma } from "@/lib/db";
+import { activate, parseTokenList, serializeTokenList } from "./account-list";
 
 export const SESSION_COOKIE = "langue_session";
+
+/**
+ * Other learners signed in on this device, waiting to be switched to. See
+ * account-list.ts. The active learner is always SESSION_COOKIE, so everything
+ * that only cares about "who is this?" is unaffected by multiple accounts.
+ */
+export const ACCOUNTS_COOKIE = "langue_accounts";
 
 /** Sessions last 30 days; long enough that friends aren't re-logging in weekly. */
 const SESSION_TTL_MS = 30 * 24 * 60 * 60 * 1000;
@@ -40,9 +48,71 @@ export interface SessionUser {
   nativeLanguage: string;
   points: number;
   streakDays: number;
+  /** Last time the user practised; the streak is only live if this is recent. */
+  lastActiveAt: Date;
 }
 
-/** Create a session row and set the cookie. Returns the raw token. */
+function cookieOptions(expires: Date) {
+  return {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === "production",
+    sameSite: "lax" as const,
+    path: "/",
+    expires,
+  };
+}
+
+/** The active token and the waiting ones, as the browser sent them. */
+async function readTokens(): Promise<{ active: string | null; waiting: string[] }> {
+  const cookieStore = await cookies();
+  return {
+    active: cookieStore.get(SESSION_COOKIE)?.value ?? null,
+    waiting: parseTokenList(cookieStore.get(ACCOUNTS_COOKIE)?.value),
+  };
+}
+
+/** Write both cookies. Only callable from server actions and route handlers. */
+async function writeTokens(active: string | null, waiting: string[]): Promise<void> {
+  const cookieStore = await cookies();
+  const expires = new Date(Date.now() + SESSION_TTL_MS);
+
+  if (active) cookieStore.set(SESSION_COOKIE, active, cookieOptions(expires));
+  else cookieStore.delete(SESSION_COOKIE);
+
+  if (waiting.length > 0) {
+    cookieStore.set(ACCOUNTS_COOKIE, serializeTokenList(waiting), cookieOptions(expires));
+  } else {
+    cookieStore.delete(ACCOUNTS_COOKIE);
+  }
+}
+
+/** Live sessions behind a set of tokens, keyed by token. Expired ones are absent. */
+async function liveSessions(tokens: string[]) {
+  if (tokens.length === 0) return new Map<string, { userId: string }>();
+
+  const byHash = new Map(tokens.map((token) => [hashToken(token), token]));
+  const rows = await prisma.session.findMany({
+    where: { tokenHash: { in: [...byHash.keys()] }, expiresAt: { gt: new Date() } },
+    select: { tokenHash: true, userId: true },
+  });
+
+  return new Map(rows.map((row) => [byHash.get(row.tokenHash)!, { userId: row.userId }]));
+}
+
+async function deleteSessions(tokens: string[]): Promise<void> {
+  if (tokens.length === 0) return;
+  // deleteMany, not delete: an already-expired or swept row must not throw.
+  await prisma.session.deleteMany({ where: { tokenHash: { in: tokens.map(hashToken) } } });
+}
+
+/**
+ * Sign a user in on this device. Returns the raw token.
+ *
+ * Additive: whoever was active stays signed in and moves to the waiting list,
+ * so a second child signing in on the family iPad does not sign out the
+ * first. Signing in again as someone already on the device replaces their old
+ * session rather than listing them twice.
+ */
 export async function createSession(userId: string, userAgent?: string): Promise<string> {
   const token = randomBytes(32).toString("base64url");
   const expiresAt = new Date(Date.now() + SESSION_TTL_MS);
@@ -51,30 +121,111 @@ export async function createSession(userId: string, userAgent?: string): Promise
     data: { tokenHash: hashToken(token), userId, expiresAt, userAgent },
   });
 
-  const cookieStore = await cookies();
-  cookieStore.set(SESSION_COOKIE, token, {
-    httpOnly: true,
-    secure: process.env.NODE_ENV === "production",
-    sameSite: "lax",
-    path: "/",
-    expires: expiresAt,
-  });
+  const { active, waiting } = await readTokens();
+  const live = await liveSessions([active, ...waiting].filter((t): t is string => Boolean(t)));
+
+  const sameUser = [...live].filter(([, session]) => session.userId === userId).map(([t]) => t);
+  const keep = (t: string | null) => Boolean(t) && live.has(t!) && !sameUser.includes(t!);
+
+  const next = activate(token, keep(active) ? active : null, waiting.filter(keep));
+  await deleteSessions([...sameUser, ...next.evicted]);
+  await writeTokens(token, next.waiting);
 
   return token;
 }
 
-/** Delete the current session server-side and clear the cookie. */
-export async function destroySession(): Promise<void> {
-  const cookieStore = await cookies();
-  const token = cookieStore.get(SESSION_COOKIE)?.value;
+/**
+ * Sign out the active learner only. Another learner signed in on this device,
+ * if any, becomes active. Returns whether anyone is still signed in.
+ */
+export async function destroySession(): Promise<boolean> {
+  const { active, waiting } = await readTokens();
+  if (active) await deleteSessions([active]);
 
-  if (token) {
-    // deleteMany, not delete: an already-expired or swept row must not throw.
-    await prisma.session.deleteMany({ where: { tokenHash: hashToken(token) } });
+  const live = await liveSessions(waiting);
+  const remaining = waiting.filter((token) => live.has(token));
+
+  await writeTokens(remaining[0] ?? null, remaining.slice(1));
+  return remaining.length > 0;
+}
+
+/** Sign out every learner on this device. */
+export async function destroyAllSessions(): Promise<void> {
+  const { active, waiting } = await readTokens();
+  await deleteSessions([active, ...waiting].filter((t): t is string => Boolean(t)));
+  await writeTokens(null, []);
+}
+
+/**
+ * Make a learner already signed in on this device the active one. Returns
+ * false if they are not among this device's live sessions — the user id comes
+ * from a form, so it is only honoured if a waiting token really belongs to it.
+ */
+export async function switchSession(userId: string): Promise<boolean> {
+  const { active, waiting } = await readTokens();
+  const live = await liveSessions(waiting);
+  const target = waiting.find((token) => live.get(token)?.userId === userId);
+  if (!target) return false;
+
+  const next = activate(target, active, waiting.filter((token) => live.has(token)));
+  await deleteSessions(next.evicted);
+  await writeTokens(target, next.waiting);
+  return true;
+}
+
+export interface DeviceAccount {
+  id: string;
+  displayName: string;
+  currentLanguage: string;
+  currentLevel: string;
+  points: number;
+  streakDays: number;
+  lastActiveAt: Date;
+  active: boolean;
+}
+
+/**
+ * Everyone signed in on this device, active learner first. Read-only: tokens
+ * whose sessions have expired are skipped here and cleaned up the next time
+ * a server action rewrites the cookies.
+ */
+export const deviceAccounts = cache(async (): Promise<DeviceAccount[]> => {
+  const { active, waiting } = await readTokens();
+  const ordered = [active, ...waiting].filter((t): t is string => Boolean(t));
+  if (ordered.length === 0) return [];
+
+  const byHash = new Map(ordered.map((token) => [hashToken(token), token]));
+  const sessions = await prisma.session.findMany({
+    where: { tokenHash: { in: [...byHash.keys()] }, expiresAt: { gt: new Date() } },
+    select: {
+      tokenHash: true,
+      user: {
+        select: {
+          id: true,
+          displayName: true,
+          currentLanguage: true,
+          currentLevel: true,
+          points: true,
+          streakDays: true,
+          lastActiveAt: true,
+        },
+      },
+    },
+  });
+
+  const userByToken = new Map(sessions.map((row) => [byHash.get(row.tokenHash)!, row.user]));
+  const seen = new Set<string>();
+  const accounts: DeviceAccount[] = [];
+
+  for (const token of ordered) {
+    const user = userByToken.get(token);
+    if (!user || seen.has(user.id)) continue;
+    seen.add(user.id);
+    accounts.push({ ...user, active: token === active });
   }
 
-  cookieStore.delete(SESSION_COOKIE);
-}
+  return accounts;
+});
 
 /**
  * Resolve the current user, or null.
@@ -110,6 +261,7 @@ export const verifySession = cache(async (): Promise<SessionUser | null> => {
     nativeLanguage: user.nativeLanguage,
     points: user.points,
     streakDays: user.streakDays,
+    lastActiveAt: user.lastActiveAt,
   };
 });
 
