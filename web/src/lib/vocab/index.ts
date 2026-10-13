@@ -61,13 +61,13 @@ export function getWordsUpToLevel(language: string, level: string): VocabWord[] 
 }
 
 /**
- * Pick `count` distinct words at random.
+ * Pick `count` distinct items at random (words, phrases — anything).
  *
  * Uses a partial Fisher-Yates shuffle rather than `sort(() => Math.random())`,
  * which is biased, or repeated random indexing, which can return duplicates —
  * seeing the same card twice in one round reads as a bug to the learner.
  */
-export function sampleWords(pool: VocabWord[], count: number): VocabWord[] {
+export function sampleWords<T>(pool: T[], count: number): T[] {
   const items = [...pool];
   const take = Math.min(count, items.length);
 
@@ -84,7 +84,6 @@ export function wordCount(language: string): number {
   return getWordsUpToLevel(language, "c2").length;
 }
 
-/** Display name for a language directory ("italian" -> "Italian"). */
-export function languageLabel(language: string): string {
-  return language.charAt(0).toUpperCase() + language.slice(1);
-}
+// Lives in the client-safe module so components can use it without importing
+// the vocabulary catalog.
+export { languageLabel } from "@/lib/languages";

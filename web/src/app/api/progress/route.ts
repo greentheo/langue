@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { handler, readJson, resolveContext, BadRequestError } from "@/lib/api";
 import { recordSession } from "@/lib/progress";
+import { ACTIVITY_TYPES } from "@/lib/activity-types";
 
 /**
  * Record a completed activity session.
@@ -10,7 +11,7 @@ import { recordSession } from "@/lib/progress";
  */
 
 const BodySchema = z.object({
-  activityType: z.enum(["flashcards", "conversation", "fill_blank", "translation", "reading"]),
+  activityType: z.enum(ACTIVITY_TYPES),
   pointsEarned: z.number().int().min(0).max(10_000),
   itemsTotal: z.number().int().min(0).max(1000),
   itemsCorrect: z.number().int().min(0).max(1000),

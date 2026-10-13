@@ -48,7 +48,8 @@ that fills the code in.
 |---|---|
 | `npm run dev` | Dev server (runs `codegen` first) |
 | `npm run build` | Production build (runs `codegen` first) |
-| `npm run codegen` | Compile vocabulary + generate the Prisma client |
+| `npm run codegen` | Compile vocabulary and curriculum + generate the Prisma client |
+| `npm run curriculum:check` | Validate `data/curriculum` without writing anything |
 | `npm run typecheck` | `tsc --noEmit` |
 | `npm test` | Unit tests for the grading and parsing engine |
 | `npm run invite -- --note "book club" --uses 8 --days 14` | Mint invite codes (`--uses` = accounts per code, default 1) |
@@ -112,6 +113,20 @@ code, and a missing catalog becomes a build failure instead of a production one.
 
 To change vocabulary: edit `data/vocab_sources/<language>/<level>.psv` at the
 repo root, run `python -m langue.tools.vocab_build`, then rebuild.
+
+### Lessons and phrases are written content
+
+The **Lessons** and **Phrases** sections are authored YAML in
+`data/curriculum/<language>/<level>/`, compiled by
+`scripts/build-curriculum.mts` into `src/lib/curriculum/generated.ts` and
+validated against `src/lib/curriculum/schema.ts`. A malformed lesson fails
+the build. See `data/curriculum/README.md` for the format and the writing
+rules, and `docs/learning-path.md` for the design.
+
+Practice answers stay on the server: lesson and phrase pages receive prompts
+only, and `/api/lessons/answer` and `/api/phrases/answer` grade and reveal.
+The one model call is `/api/lessons/ask`, which answers questions with the
+lesson as context.
 
 ### Model failures are never disguised
 

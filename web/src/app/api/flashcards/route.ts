@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { handler, readJson, resolveContext, BadRequestError } from "@/lib/api";
 import { getWordsUpToLevel, sampleWords } from "@/lib/vocab";
+import { buildChoices } from "@/lib/engine/choices";
 
 /**
  * Deal a flashcard round.
@@ -9,10 +10,14 @@ import { getWordsUpToLevel, sampleWords } from "@/lib/vocab";
  * and its example sentence only, and answers are graded by
  * /api/flashcards/answer. Shipping the answers to the browser would put them
  * one devtools panel away from the input box.
+ *
+ * In multiple-choice mode each card also carries four options. The correct
+ * one is among them by definition, but which one is not marked.
  */
 
 const BodySchema = z.object({
   count: z.number().int().min(1).max(30).default(10),
+  mode: z.enum(["choice", "type"]).default("type"),
 });
 
 export const POST = handler(async (request) => {
@@ -36,6 +41,7 @@ export const POST = handler(async (request) => {
     // The example shows the word in context without giving away the English.
     example: word.examples[0] ?? null,
     translationCount: word.translations.length,
+    options: parsed.data.mode === "choice" ? buildChoices(word, pool) : null,
   }));
 
   return Response.json({ cards });

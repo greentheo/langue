@@ -6,6 +6,8 @@
  * that means no component silently renders an empty state on a 503.
  */
 
+import type { ActivityType } from "@/lib/activity-types";
+
 export class ApiError extends Error {
   readonly status: number;
 
@@ -53,7 +55,7 @@ export interface ActivityContext {
 export async function reportProgress(
   context: ActivityContext,
   payload: {
-    activityType: "flashcards" | "conversation" | "fill_blank" | "translation" | "reading";
+    activityType: ActivityType;
     pointsEarned: number;
     itemsTotal: number;
     itemsCorrect: number;

@@ -8,7 +8,7 @@
     "prebuild": "npm run codegen",
     "build": "next build",
     "start": "next start",
-    "codegen": "node scripts/build-vocab.mjs && prisma generate",
+    "codegen": "node scripts/build-vocab.mjs && tsx scripts/build-curriculum.mts && prisma generate",
     "typecheck": "tsc --noEmit",
     "test": "node --conditions=react-server --import tsx --test \"src/**/*.test.ts\"",
     "invite": "tsx scripts/mint-invite.mts",
@@ -16,7 +16,8 @@
     "db:migrate": "prisma migrate dev",
     "db:deploy": "prisma migrate deploy",
     "db:studio": "prisma studio",
-    "smoke:db": "node --conditions=react-server --import tsx scripts/smoke-db.mts"
+    "smoke:db": "node --conditions=react-server --import tsx scripts/smoke-db.mts",
+    "curriculum:check": "tsx scripts/build-curriculum.mts --check"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.116.0",
@@ -36,6 +37,7 @@
     "prisma": "^7.9.1",
     "tailwindcss": "^4",
     "tsx": "^4.23.12",
-    "typescript": "^5"
+    "typescript": "^5",
+    "yaml": "^2.9.1"
   }
 }
