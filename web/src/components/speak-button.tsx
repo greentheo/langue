@@ -12,27 +12,7 @@
  */
 
 import { useEffect, useState } from "react";
-import { languageSettings } from "@/lib/languages";
-
-function speak(text: string, language: string) {
-  const synth = window.speechSynthesis;
-  synth.cancel();
-
-  const { speechLang } = languageSettings(language);
-  const prefix = speechLang.split("-")[0];
-  const voices = synth.getVoices();
-
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = speechLang;
-  // Slightly slower than conversational speed — this is for learners.
-  utterance.rate = 0.9;
-  utterance.voice =
-    voices.find((voice) => voice.lang === speechLang) ??
-    voices.find((voice) => voice.lang.startsWith(prefix)) ??
-    null;
-
-  synth.speak(utterance);
-}
+import { speak } from "@/lib/speech";
 
 export function SpeakButton({
   text,
@@ -55,11 +35,7 @@ export function SpeakButton({
   if (!available) return null;
 
   function play() {
-    if (src) {
-      new Audio(src).play().catch(() => speak(text, language));
-      return;
-    }
-    speak(text, language);
+    speak(text, language, src);
   }
 
   return (

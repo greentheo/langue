@@ -5,6 +5,7 @@ import { logout, logoutEveryone, switchAccount } from "@/lib/auth/actions";
 import { MAX_ACCOUNTS } from "@/lib/auth/account-list";
 import { languageLabel } from "@/lib/vocab";
 import { liveStreak } from "@/lib/standings";
+import { SoundToggle } from "@/components/sound-toggle";
 
 export const metadata = { title: "Who's learning? — LANGUE" };
 
@@ -22,12 +23,15 @@ export default async function AccountsPage() {
 
   return (
     <main className="mx-auto max-w-3xl px-5 py-10">
-      <Link
-        href="/learn"
-        className="text-xs uppercase tracking-[0.2em] no-underline text-[var(--crt-fg-dim)]"
-      >
-        &larr; Back
-      </Link>
+      <div className="flex items-center justify-between gap-4">
+        <Link
+          href="/learn"
+          className="text-xs uppercase tracking-[0.2em] no-underline text-[var(--crt-fg-dim)]"
+        >
+          &larr; Back
+        </Link>
+        <SoundToggle />
+      </div>
       <h1 className="mt-4 text-2xl crt-glow">Who&apos;s learning?</h1>
 
       <ul className="mt-8 grid gap-4 sm:grid-cols-2">

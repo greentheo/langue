@@ -17,6 +17,7 @@ import { languageLabel } from "@/lib/languages";
 import { ErrorBox } from "@/components/crt";
 import { AnswerInput } from "@/components/answer-input";
 import { ChoiceOptions } from "@/components/choice-options";
+import { autoSpeak, stopSpeaking } from "@/lib/speech";
 import { RichInline } from "@/components/rich-text";
 import { ProgressDots } from "@/components/activity-shell";
 
@@ -77,6 +78,27 @@ export function LessonPractice({
     if (result) nextRef.current?.focus();
     else if (item?.type !== "choice") inputRef.current?.focus({ preventScroll: true });
   }, [index, result, item?.type]);
+
+  // Speak target-language text as it appears: a prompt to translate into
+  // English, and after answering, the corrected sentence — a fill-in-the-blank
+  // read back whole, so the learner hears the answer in context.
+  useEffect(() => {
+    if (finished || !item) return;
+    if (item.type === "translate" && item.direction === "to-english") {
+      autoSpeak(item.prompt, language);
+    }
+  }, [item, finished, language]);
+
+  useEffect(() => {
+    if (!result || !item) return;
+    if (item.type === "fill") {
+      autoSpeak(item.prompt.replace("___", result.answers[0] ?? ""), language);
+    } else if (item.type === "translate" && item.direction === "to-target") {
+      autoSpeak(result.answers[0], language);
+    }
+  }, [result, item, language]);
+
+  useEffect(() => stopSpeaking, []);
 
   function restart() {
     setIndex(0);

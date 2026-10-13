@@ -17,6 +17,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { postJson, reportProgress, type ActivityContext } from "@/lib/client-api";
 import { ErrorBox, Panel } from "@/components/crt";
 import { ChoiceOptions } from "@/components/choice-options";
+import { autoSpeak, stopSpeaking } from "@/lib/speech";
 import {
   ActivityHeader,
   Loading,
@@ -114,6 +115,14 @@ export function Flashcards({ context }: { context: ActivityContext }) {
   useEffect(() => {
     void deal();
   }, [deal]);
+
+  // Read each new card's word aloud, unless sound is off.
+  useEffect(() => {
+    if (cards && !done) autoSpeak(cards[index]?.word, context.language);
+  }, [cards, index, done, context.language]);
+
+  // Leaving the page should not leave a word half-spoken.
+  useEffect(() => stopSpeaking, []);
 
   // Return focus to the input whenever a new card is shown.
   useEffect(() => {

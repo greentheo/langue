@@ -16,6 +16,7 @@ import { Loading, ProgressDots, SessionSummary } from "@/components/activity-she
 import { AnswerInput } from "@/components/answer-input";
 import { RichInline } from "@/components/rich-text";
 import { SpeakButton } from "@/components/speak-button";
+import { autoSpeak, stopSpeaking } from "@/lib/speech";
 
 type Direction = "to-english" | "to-target";
 
@@ -96,6 +97,19 @@ export function PhrasePractice({
     if (result) nextRef.current?.focus();
     else inputRef.current?.focus();
   }, [cards, index, result, done]);
+
+  // Speak the target language as it appears: the prompt when it is the
+  // phrase, or the phrase once revealed when the prompt was English.
+  useEffect(() => {
+    if (!cards || done || dealing || direction !== "to-english") return;
+    autoSpeak(cards[index]?.prompt, context.language);
+  }, [cards, index, done, dealing, direction, context.language]);
+
+  useEffect(() => {
+    if (result && direction === "to-target") autoSpeak(result.target[0], context.language);
+  }, [result, direction, context.language]);
+
+  useEffect(() => stopSpeaking, []);
 
   async function check(event: React.FormEvent) {
     event.preventDefault();

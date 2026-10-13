@@ -5,6 +5,7 @@ import { logout } from "@/lib/auth/actions";
 import { languageLabel } from "@/lib/vocab";
 import { LEVEL_LABELS } from "@/lib/vocab/types";
 import { PhosphorToggle } from "@/components/phosphor-toggle";
+import { SoundToggle } from "@/components/sound-toggle";
 import type { Level } from "@/lib/vocab/types";
 import { liveStreak } from "@/lib/standings";
 
@@ -30,7 +31,8 @@ export default async function LearnLayout({ children }: { children: React.ReactN
           </span>
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex flex-wrap items-center gap-4">
+          <SoundToggle />
           <Link
             href="/accounts"
             title="Switch learner"
