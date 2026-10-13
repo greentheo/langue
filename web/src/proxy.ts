@@ -27,10 +27,10 @@ export function proxy(request: NextRequest) {
     return NextResponse.redirect(target);
   }
 
-  // Signed-in users have no use for the auth screens.
-  if (hasSessionCookie && (pathname === "/login" || pathname === "/register")) {
-    return NextResponse.redirect(new URL("/learn", request.url));
-  }
+  // No redirect away from /login or /register for signed-in visitors here: a
+  // cookie's presence is not proof of a live session, and bouncing a stale
+  // cookie from /login to /learn (which bounces it back) loops forever. The
+  // login page redirects after a real check instead.
 
   return NextResponse.next();
 }

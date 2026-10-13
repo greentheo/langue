@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Panel } from "@/components/crt";
 import { RegisterForm } from "@/components/auth-forms";
+import { DeviceAccountsNote } from "@/components/device-accounts-note";
+import { deviceAccounts } from "@/lib/auth/session";
 
 export const metadata = { title: "Create account — LANGUE" };
 
@@ -20,6 +22,7 @@ export default async function RegisterPage({
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }) {
   const initialCode = codeFromQuery((await searchParams).code);
+  const accounts = await deviceAccounts();
 
   return (
     <main className="mx-auto flex min-h-dvh max-w-md flex-col justify-center px-5 py-10">
@@ -31,6 +34,7 @@ export default async function RegisterPage({
       <p className="mt-1 text-sm text-[var(--crt-fg-dim)]">
         Registration is invite-only.
       </p>
+      <DeviceAccountsNote accounts={accounts} />
 
       <Panel className="mt-6">
         <RegisterForm initialCode={initialCode} />

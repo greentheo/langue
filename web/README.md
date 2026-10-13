@@ -128,6 +128,23 @@ only, and `/api/lessons/answer` and `/api/phrases/answer` grade and reveal.
 The one model call is `/api/lessons/ask`, which answers questions with the
 lesson as context.
 
+### Several learners per device
+
+A family iPad keeps up to six learners signed in at once. The active learner's
+token is the usual `langue_session` cookie; the others wait in
+`langue_accounts`. Signing in or registering on a device adds a learner
+instead of replacing one; `/accounts` switches between them with one tap and
+no password (like profiles on a family TV), and *Sign out* signs out only the
+current learner. Every switch is checked against the sessions the device
+really holds, so a forged user id gets nowhere.
+
+### Leaderboards are per invite code
+
+Everyone who joined with a code, plus whoever made it, shares a board at
+`/learn/leaderboard` — ranked by points since Monday (UTC) or all time. Only
+members can see it. There is no group table: membership is
+`User.inviteCodeId` and `InviteCode.createdById`.
+
 ### Model failures are never disguised
 
 The CLI's worst behaviour was converting every API error into a plausible canned
