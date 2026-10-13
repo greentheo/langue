@@ -37,7 +37,6 @@ export interface Standing {
   weekPoints: number;
   totalPoints: number;
   streak: number;
-  lessonsCompleted: number;
 }
 
 export type BoardPeriod = "week" | "all";

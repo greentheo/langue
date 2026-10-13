@@ -72,7 +72,8 @@ export default async function LeaderboardPage({
         </nav>
       ) : null}
 
-      <nav aria-label="Period" className="mb-6 flex gap-2">
+      <nav aria-label="Rank by" className="mb-6 flex flex-wrap items-center gap-2">
+        <span className="text-xs uppercase tracking-[0.14em] text-[var(--crt-fg-dim)]">Rank by</span>
         {(["week", "all"] as const).map((option) => (
           <Link
             key={option}
@@ -82,7 +83,7 @@ export default async function LeaderboardPage({
               option === period ? "crt-button-primary" : ""
             }`}
           >
-            {option === "week" ? "This week" : "All time"}
+            {option === "week" ? "Weekly points" : "Total points"}
           </Link>
         ))}
       </nav>
@@ -90,10 +91,9 @@ export default async function LeaderboardPage({
       <Panel>
         <StandingsTable rows={rows} period={period} viewerId={user.id} />
         <p className="mt-4 text-xs text-[var(--crt-fg-dim)]">
-          {period === "week"
-            ? "Points earned since Monday. Everyone starts fresh each week."
-            : "Every point since joining."}{" "}
-          Only people in this group can see this board.
+          Weekly points start again from zero every Monday, so anyone can top the
+          week. Total points and streaks carry on. Only people in this group can
+          see this board.
         </p>
       </Panel>
     </>

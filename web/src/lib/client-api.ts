@@ -51,23 +51,31 @@ export interface ActivityContext {
   level: string;
 }
 
-/** Report a finished session. Failures here must not lose the learner's round. */
+export interface ProgressPayload {
+  activityType: ActivityType;
+  pointsEarned: number;
+  itemsTotal: number;
+  itemsCorrect: number;
+  durationSec: number;
+  words?: { word: string; correct: boolean }[];
+}
+
+/**
+ * Report a finished session. Failures here must not lose the learner's round.
+ * Returns whether it was recorded. Components use useReportProgress, which
+ * also refreshes the header's totals.
+ */
 export async function reportProgress(
   context: ActivityContext,
-  payload: {
-    activityType: ActivityType;
-    pointsEarned: number;
-    itemsTotal: number;
-    itemsCorrect: number;
-    durationSec: number;
-    words?: { word: string; correct: boolean }[];
-  },
-): Promise<void> {
+  payload: ProgressPayload,
+): Promise<boolean> {
   try {
     await postJson("/api/progress", { ...context, ...payload });
+    return true;
   } catch (error) {
     // The round already happened and the learner saw their results. Losing the
     // points row is worth a console warning, not an error screen.
     console.warn("[langue] could not record progress:", error);
+    return false;
   }
 }

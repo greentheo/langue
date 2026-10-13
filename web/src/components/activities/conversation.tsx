@@ -10,7 +10,8 @@
  */
 
 import { useEffect, useRef, useState } from "react";
-import { reportProgress, type ActivityContext } from "@/lib/client-api";
+import { type ActivityContext } from "@/lib/client-api";
+import { useReportProgress } from "@/lib/use-report-progress";
 import { ErrorBox, Panel } from "@/components/crt";
 import { ActivityHeader } from "@/components/activity-shell";
 
@@ -35,6 +36,7 @@ export function Conversation({
   context: ActivityContext;
   beginner: boolean;
 }) {
+  const report = useReportProgress();
   const [turns, setTurns] = useState<Turn[]>([
     { role: "assistant", content: OPENERS[context.language] ?? "Hello! What shall we talk about?" },
   ]);
@@ -57,14 +59,24 @@ export function Conversation({
     });
   }, [turns]);
 
-  // Record the session when the learner leaves the page.
+  // The leave-the-page recorder below must see the latest values, but must
+  // not re-run when they change: an effect's cleanup also fires before every
+  // re-run, which used to record the session after the first exchange and
+  // never again.
+  const latest = useRef({ turns, context, report });
+  useEffect(() => {
+    latest.current = { turns, context, report };
+  });
+
+  // Record the session once, when the learner leaves the page.
   useEffect(() => {
     return () => {
+      const { turns, context, report } = latest.current;
       const userTurns = turns.filter((turn) => turn.role === "user").length;
       if (reported.current || userTurns === 0) return;
       reported.current = true;
 
-      void reportProgress(context, {
+      void report(context, {
         activityType: "conversation",
         // Conversation has no right answer to score, so points reward
         // participation: one per exchange, capped so a marathon session cannot
@@ -75,7 +87,7 @@ export function Conversation({
         durationSec: Math.round((Date.now() - startedAt.current) / 1000),
       });
     };
-  }, [context, turns]);
+  }, []);
 
   async function send(event: React.FormEvent) {
     event.preventDefault();
