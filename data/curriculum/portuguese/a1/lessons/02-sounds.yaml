@@ -1,0 +1,178 @@
+title: "Pão, mãe, filho"
+subtitle: How Brazilian Portuguese sounds
+goal: read Portuguese words aloud — nasal vowels, lh and nh, ç, the Brazilian t and d, r and rr, and the accent marks
+minutes: 12
+
+sections:
+  - heading: Nasal vowels
+    body: |
+      The sound learners notice first is the **nasal vowel** — a vowel said
+      partly through your nose. Try saying *ah* while letting some air out
+      of your nose. Portuguese marks it in two ways:
+
+      - a **til** (~) on top: **ã**, **õ** — *mãe* (mother), *pão* (bread)
+      - an **m** or **n** at the end of a syllable: *bom* (good), *sim*
+        (yes), *tempo* (time). You barely say the m or n — it just makes the
+        vowel nasal.
+
+      **-ão** sounds roughly like *own* in *town*, said through the nose.
+    examples:
+      - ["pão", "bread"]
+      - ["mãe", "mother"]
+      - ["sim", "yes"]
+      - ["bom", "good"]
+    tip: "Don't close your lips hard on the *m* of *bom* or *sim* the way you would in English. The sound lives in the vowel."
+
+  - heading: lh, nh and ç
+    body: |
+      Two pairs of letters make a single sound each:
+
+      - **lh** sounds like the *lli* in *million*: *filho* (son)
+      - **nh** sounds like the *ny* in *canyon*: *manhã* (morning), *vinho* (wine)
+
+      The letter **ç** (a c with a little tail) always sounds like **s**:
+      *coração* (heart). A plain **c** sounds like **s** before *e* and *i*
+      (*cidade*, city) and like **k** before *a*, *o* and *u* (*casa*, house).
+    table:
+      columns: [spelling, sounds like, example]
+      rows:
+        - [lh, "the *lli* in *million*", "filho — son"]
+        - [nh, "the *ny* in *canyon*", "vinho — wine"]
+        - ["ç", s, "coração — heart"]
+        - [c before e or i, s, "cidade — city"]
+        - ["c before a, o or u", k, "casa — house"]
+
+  - heading: The Brazilian t and d
+    body: |
+      In most of Brazil, **t** and **d** change before an *i* sound:
+
+      - **ti** sounds like "chee": *tia* (aunt) ≈ CHEE-a
+      - **di** sounds like "jee": *dia* (day) ≈ JEE-a
+
+      An unstressed **-e** at the end of a word sounds like *i*, so the same
+      thing happens there: *leite* (milk) ≈ LAY-chee, *cidade* ≈ see-DAH-jee.
+      An unstressed **-o** at the end sounds like *u*: *obrigado* ≈
+      oh-bree-GAH-doo.
+    examples:
+      - ["noite", "night — sounds like NOY-chee"]
+      - ["tarde", "afternoon — sounds like TAR-jee"]
+      - ["leite", "milk — sounds like LAY-chee"]
+    tip: "This is a Brazilian sound. In Portugal *tia* keeps a plain t. Both are correct — you are learning the Brazilian one."
+
+  - heading: R, RR and the accent marks
+    body: |
+      **r** at the start of a word and **rr** in the middle sound like an
+      English **h**: *Rio* ≈ HEE-oo, *carro* (car) ≈ KAH-hoo. A single **r**
+      between vowels is a quick tap, like the *tt* in American *butter*:
+      *caro* (expensive). So *carro* and *caro* are different words.
+
+      A single **s** between two vowels sounds like **z**: *casa* ≈ KAH-za.
+      For an s sound there, Portuguese writes **ss**: *passo* (step).
+
+      Accent marks show the stressed syllable and the kind of vowel: **á, é,
+      ó** are open, **â, ê, ô** are closed. *Avó* (grandmother) and *avô*
+      (grandfather) differ only in that vowel.
+    table:
+      columns: [spelling, sounds like, example]
+      rows:
+        - [r at the start or rr, "English *h*", "Rio, carro — car"]
+        - [r between vowels, "a quick tap", "caro — expensive"]
+        - [s between vowels, z, "casa — house"]
+        - [ss, s, "passo — step"]
+    tip: "*Avó* (open ó, like *awe*) is grandma; *avô* (closed ô, like *oh*) is grandpa."
+
+words:
+  - [pão, bread]
+  - [mãe, mother]
+  - [sim, yes]
+  - [filho, son]
+  - [manhã, morning]
+  - [vinho, wine]
+  - [coração, heart]
+  - [cidade, city]
+  - [tia, aunt]
+  - [dia, day]
+  - [leite, milk]
+  - [carro, car]
+  - [caro, expensive]
+  - [avó, grandmother]
+  - [avô, grandfather]
+
+practice:
+  - type: fill
+    prompt: "fi___o"
+    hint: the "lli" sound of million
+    translation: son
+    answers: [lh]
+    why: lh makes the lli sound of million — filho.
+
+  - type: fill
+    prompt: "vi___o"
+    hint: the "ny" sound of canyon
+    translation: wine
+    answers: [nh]
+    why: nh makes the ny sound of canyon — vinho.
+
+  - type: fill
+    strict_accents: true
+    prompt: "cora___ão"
+    hint: an s sound before a
+    translation: heart
+    answers: ["ç"]
+    why: Before a, o and u, an s sound is spelled ç — coração.
+
+  - type: fill
+    prompt: "ca___o"
+    hint: the strong, h-like r
+    translation: car
+    answers: [rr]
+    why: rr between vowels gives the strong h-like sound — carro.
+
+  - type: choice
+    prompt: Which word means grandmother?
+    options: [avó, avô]
+    answer: avó
+    why: Open ó is grandma (avó); closed ô is grandpa (avô).
+
+  - type: choice
+    prompt: How does a Brazilian say *dia*?
+    options: [DEE-a with a hard d, JEE-a, DYE-a]
+    answer: JEE-a
+    why: In Brazil, d before an i sound sounds like j — dia ≈ JEE-a.
+
+  - type: choice
+    prompt: How is *pão* pronounced?
+    options: [pay-oh, "like \"pown\", through the nose", pa-oh with a hard o]
+    answer: "like \"pown\", through the nose"
+    why: -ão is a nasal vowel that sounds roughly like own in town.
+
+  - type: choice
+    prompt: In *casa*, the s sounds like…
+    options: [s, z, sh]
+    answer: z
+    why: A single s between two vowels sounds like z.
+
+  - type: translate
+    direction: to-english
+    prompt: carro
+    answers: [car]
+    why: The rr makes a strong, h-like sound — carro means car.
+
+  - type: translate
+    direction: to-english
+    prompt: caro
+    answers: [expensive, dear]
+    why: A single r between vowels is a quick tap, so caro (expensive) is a different word from carro (car).
+
+  - type: translate
+    direction: to-target
+    strict_accents: true
+    prompt: mother
+    answers: [mãe]
+    why: Mãe has a nasal ã — don't forget the til.
+
+  - type: translate
+    direction: to-target
+    prompt: good morning
+    answers: [bom dia]
+    why: The m of bom just makes the o nasal, and dia sounds like JEE-a.

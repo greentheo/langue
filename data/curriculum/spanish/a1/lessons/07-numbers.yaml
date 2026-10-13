@@ -1,0 +1,180 @@
+title: "¿Cuánto cuesta?"
+subtitle: Numbers, prices, time and dates
+goal: count to 100, ask and understand prices, tell the time, and say the day and date
+minutes: 15
+
+sections:
+  - heading: 0 to 20
+    body: |
+      Learn these first — the rest are built from them. Numbers 16 to 19
+      are written as one word: *dieciséis* is "ten-and-six".
+    table:
+      columns: [number, Spanish, number, Spanish]
+      rows:
+        - ["0", cero, "11", once]
+        - ["1", uno, "12", doce]
+        - ["2", dos, "13", trece]
+        - ["3", tres, "14", catorce]
+        - ["4", cuatro, "15", quince]
+        - ["5", cinco, "16", dieciséis]
+        - ["6", seis, "17", diecisiete]
+        - ["7", siete, "18", dieciocho]
+        - ["8", ocho, "19", diecinueve]
+        - ["9", nueve, "20", veinte]
+        - ["10", diez, "—", "—"]
+    tip: "*Uno* becomes *un* before a masculine noun and *una* before a feminine one: *un libro*, *una casa*."
+
+  - heading: 21 to 100
+    body: |
+      From 21 to 29, the numbers are one word: *veintiuno, veintidós,
+      veintitrés…*
+
+      From 31 on, use **y** (and): *treinta y uno* (31), *cuarenta y cinco*
+      (45). Exactly 100 is **cien**.
+    table:
+      columns: [number, Spanish]
+      rows:
+        - ["30", treinta]
+        - ["40", cuarenta]
+        - ["50", cincuenta]
+        - ["60", sesenta]
+        - ["70", setenta]
+        - ["80", ochenta]
+        - ["90", noventa]
+        - ["100", cien]
+    examples:
+      - ["veintidós", "22"]
+      - ["treinta y dos", "32"]
+      - ["setenta y cinco", "75"]
+      - ["noventa y nueve", "99"]
+
+  - heading: "Prices: ¿Cuánto cuesta?"
+    body: |
+      Ask **¿Cuánto cuesta?** for one thing and **¿Cuánto cuestan?** for
+      more than one. The answer uses the same word: *Cuesta cinco euros*,
+      *Cuestan diez dólares*. Many Latin American countries use **pesos**.
+    examples:
+      - ["¿Cuánto cuesta el libro?", "How much is the book?"]
+      - ["Cuesta un dólar.", "It costs one dollar."]
+      - ["Cuestan veinte pesos.", "They cost twenty pesos."]
+
+  - heading: "What time is it? ¿Qué hora es?"
+    body: |
+      - one o'clock is singular: **Es la una.**
+      - every other hour is plural: **Son las dos, son las tres…**
+      - **y media** = half past, **y cuarto** = quarter past
+      - **menos cuarto** = quarter to (literally "minus a quarter")
+
+      To say *when* something happens: **¿A qué hora?** — **A las ocho.**
+    examples:
+      - ["Son las tres y media.", "It's half past three."]
+      - ["Es la una y cuarto.", "It's quarter past one."]
+      - ["Son las nueve menos cuarto.", "It's quarter to nine."]
+      - ["A las diez.", "At ten o'clock."]
+    tip: "*La* and *las* stand for *hora* and *horas* (hours), which are feminine — that's why it's *la una*, *las dos*."
+
+  - heading: Days and dates
+    body: |
+      The days: **lunes, martes, miércoles, jueves, viernes, sábado,
+      domingo** (Monday to Sunday).
+
+      The months: **enero, febrero, marzo, abril, mayo, junio, julio,
+      agosto, septiembre, octubre, noviembre, diciembre**.
+
+      A date is *el* + number + *de* + month: **el cinco de mayo**. "On
+      Monday" is just **el lunes** — no word for "on".
+    examples:
+      - ["Hoy es lunes.", "Today is Monday."]
+      - ["el catorce de febrero", "February 14th"]
+      - ["El examen es el sábado.", "The exam is on Saturday."]
+    tip: "Days and months are written with a small letter in Spanish."
+
+words:
+  - [cero, zero]
+  - [cien, one hundred]
+  - [cuánto, how much]
+  - [cuesta, it costs]
+  - [hora, "hour, time"]
+  - [media, half]
+  - [cuarto, quarter]
+  - [lunes, Monday]
+  - [sábado, Saturday]
+  - [domingo, Sunday]
+  - [mayo, May]
+  - [hoy, today]
+
+practice:
+  - type: translate
+    direction: to-target
+    prompt: fifteen
+    answers: [quince]
+    why: Fifteen is quince — one of the numbers to learn by heart.
+
+  - type: translate
+    direction: to-target
+    prompt: forty-five
+    answers: [cuarenta y cinco]
+    why: From 31 on, Spanish joins the tens and units with y.
+
+  - type: translate
+    direction: to-target
+    prompt: twenty-two
+    answers: [veintidós]
+    why: Numbers from 21 to 29 are written as one word.
+
+  - type: translate
+    direction: to-english
+    prompt: setenta y tres
+    answers: [seventy-three, seventy three, "73"]
+    why: Setenta is 70, and y tres adds 3.
+
+  - type: fill
+    prompt: "¿Cuánto ___?"
+    hint: how much are they?
+    translation: How much do they cost?
+    answers: [cuestan]
+    why: Cuestan is for more than one thing; cuesta is for one.
+
+  - type: fill
+    prompt: "___ las cuatro y media."
+    hint: it is
+    translation: It's half past four.
+    answers: [Son]
+    why: Every hour except one o'clock is plural, so it's son las.
+
+  - type: fill
+    prompt: "Es ___ una."
+    hint: the
+    translation: It's one o'clock.
+    answers: [la]
+    why: One o'clock is singular — es la una — because it's one hora.
+
+  - type: translate
+    direction: to-target
+    prompt: What time is it?
+    answers: ["¿Qué hora es?"]
+    why: Spanish asks "what hour is it?".
+
+  - type: translate
+    direction: to-target
+    prompt: It's ten o'clock.
+    answers: [Son las diez]
+    why: Ten is more than one, so it's son las diez.
+
+  - type: translate
+    direction: to-english
+    prompt: Hoy es sábado.
+    answers: [Today is Saturday, "Today's Saturday", It is Saturday today]
+    why: Hoy means "today" and sábado means "Saturday".
+
+  - type: choice
+    prompt: How do you write May 5th in Spanish?
+    options: [el cinco de mayo, el mayo cinco, cinco mayo de]
+    answer: el cinco de mayo
+    why: Dates are el + number + de + month.
+
+  - type: choice
+    prompt: Which one is exactly 100?
+    options: [ciento, cien, cientos]
+    answer: cien
+    why: Exactly one hundred is cien.

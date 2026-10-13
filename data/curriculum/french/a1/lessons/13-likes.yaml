@@ -1,0 +1,161 @@
+title: "J'aime le chocolat"
+subtitle: Likes, dislikes, "some" and "not any"
+goal: say what you like and don't like, talk about amounts of food with *du, de la, des*, and say "not any" with *pas de*
+minutes: 15
+
+sections:
+  - heading: Saying what you like
+    body: |
+      Four verbs, from love to hate:
+
+      - **adorer** — to love
+      - **aimer** — to like, to love
+      - **préférer** — to prefer (*je préfère, nous préférons*)
+      - **détester** — to hate
+
+      When you talk about something **in general**, French uses **le, la,
+      les** — even where English uses nothing:
+
+      - *J'aime le chocolat.* — I like chocolate.
+      - *J'adore les chats.* — I love cats.
+      - *Je déteste la pluie.* — I hate rain.
+    tip: "*J'aime chocolat* is wrong. After *aimer, adorer, préférer* and *détester*, a noun always takes *le, la* or *les*."
+
+  - heading: '"Some": du, de la, de l'', des'
+    body: |
+      When you mean **an amount of** something — some bread, some water —
+      French uses the **partitive**:
+    table:
+      columns: ["", "some", example]
+      rows:
+        - [masculine, du, "du pain — (some) bread"]
+        - [feminine, de la, "de la salade — (some) salad"]
+        - [before a vowel, "de l'", "de l'eau — (some) water"]
+        - [plural, des, "des légumes — (some) vegetables"]
+    examples:
+      - ["Je mange du pain.", "I eat bread."]
+      - ["Tu veux de l'eau ?", "Do you want some water?"]
+      - ["Nous prenons du fromage.", "We're having some cheese."]
+    tip: "English often drops \"some\", but French can't: *I eat bread* is *Je mange **du** pain*."
+
+  - heading: Liking versus eating
+    body: |
+      This is the key difference:
+
+      - *J'aime **le** pain.* — I like bread (bread in general).
+      - *Je mange **du** pain.* — I'm eating bread (some bread).
+
+      Verbs of liking take **le, la, les**. Verbs like *manger, prendre,
+      vouloir* and *avoir* usually take **du, de la, des** or **un, une**.
+
+  - heading: '"Not any": pas de'
+    body: |
+      After a negative, **un, une, des, du, de la** all become **de** (or
+      **d'** before a vowel):
+
+      - *J'ai un frère.* → *Je n'ai **pas de** frère.*
+      - *Je mange de la viande.* → *Je ne mange **pas de** viande.*
+      - *Il y a du lait.* → *Il n'y a **pas de** lait.*
+      - *Je veux de l'eau.* → *Je ne veux **pas d'**eau.*
+
+      **The exception:** after *aimer, adorer, préférer, détester*, the
+      article stays: *Je n'aime pas **le** café.*
+    examples:
+      - ["Je ne mange pas de viande.", "I don't eat meat."]
+      - ["Il n'y a pas de lait.", "There's no milk."]
+      - ["Je n'aime pas le fromage.", "I don't like cheese."]
+
+words:
+  - [adorer, to love]
+  - [détester, to hate]
+  - [préférer, to prefer]
+  - [le chocolat, chocolate]
+  - [le fromage, cheese]
+  - [le pain, bread]
+  - [la viande, meat]
+  - [le poisson, fish]
+  - [les légumes, vegetables]
+  - [les fruits, fruit]
+  - [le lait, milk]
+  - ["l'eau (f)", water]
+  - [la salade, salad]
+  - [le sport, sport]
+  - [la musique, music]
+
+practice:
+  - type: fill
+    prompt: "J'aime ___ chocolat."
+    hint: (the — in general)
+    translation: I like chocolate.
+    answers: [le]
+    why: After aimer, a noun takes le, la or les, even when English has no article.
+
+  - type: fill
+    prompt: "Je mange ___ pain."
+    hint: (some)
+    translation: I eat bread.
+    answers: [du]
+    why: Pain is masculine, so "some bread" is du pain.
+
+  - type: fill
+    prompt: "Nous prenons ___ fromage."
+    hint: (some)
+    translation: We're having some cheese.
+    answers: [du]
+    why: Fromage is masculine, so "some" is du.
+
+  - type: fill
+    prompt: "Je ne mange pas ___ viande."
+    hint: (any)
+    translation: I don't eat meat.
+    answers: [de]
+    why: After a negative, de la becomes de.
+
+  - type: fill
+    prompt: "Elle prend ___ salade."
+    hint: (some)
+    translation: She's having some salad.
+    answers: [de la]
+    why: Salade is feminine, so "some" is de la.
+
+  - type: translate
+    direction: to-target
+    prompt: I love cats.
+    answers: ["J'adore les chats.", "J'aime les chats."]
+    why: Adorer or aimer, and cats in general takes les.
+
+  - type: translate
+    direction: to-target
+    prompt: I don't have a brother.
+    answers: ["Je n'ai pas de frère."]
+    why: After a negative, un becomes de.
+
+  - type: translate
+    direction: to-target
+    prompt: I don't like coffee.
+    answers: ["Je n'aime pas le café."]
+    why: After aimer the article stays, even in a negative sentence.
+
+  - type: translate
+    direction: to-english
+    prompt: Il préfère le thé.
+    answers: ["He prefers tea.", "He prefers the tea."]
+    why: Préférer takes le like the other liking verbs; English needs no article.
+
+  - type: translate
+    direction: to-english
+    prompt: Nous mangeons des légumes.
+    answers: ["We eat vegetables.", "We are eating vegetables.", "We're eating vegetables.", "We eat some vegetables.", "We're eating some vegetables."]
+    why: Des is "some" for plurals — English often leaves it out.
+
+  - type: choice
+    prompt: Which is correct?
+    options: [Je n'aime pas de fromage., Je n'aime pas le fromage.]
+    answer: Je n'aime pas le fromage.
+    why: After aimer the article stays as le, even after ne… pas.
+
+  - type: choice
+    prompt: Which is correct?
+    options: [Il n'y a pas de lait., Il n'y a pas du lait.]
+    answer: Il n'y a pas de lait.
+    why: After a negative, du becomes de.

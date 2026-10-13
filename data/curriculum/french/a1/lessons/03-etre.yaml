@@ -1,0 +1,170 @@
+title: Je suis…
+subtitle: Être, subject pronouns, negatives and questions
+goal: say who you are and where you're from with *être*, make a sentence negative, and ask yes/no questions
+minutes: 13
+
+sections:
+  - heading: I, you, he, she… the subject pronouns
+    body: |
+      These are the words for "I", "you", "he" and so on:
+
+      - **je** (I) — becomes **j'** before a vowel: *j'habite*
+      - **tu** (you, to a friend), **vous** (you, polite or plural)
+      - **il** (he), **elle** (she)
+      - **nous** (we) and **on** (we, in everyday speech)
+      - **ils** (they — any group with at least one male), **elles**
+        (they — a group that is all female)
+
+      **On** is very common: French people say *on* for "we" far more often
+      than *nous*. It takes the same verb form as *il* and *elle*.
+    tip: "A group of nine girls and one boy is still *ils*. Only an all-female group is *elles*."
+
+  - heading: "Être: to be"
+    body: |
+      **Être** is the most important verb in French, and it is irregular —
+      you have to learn each form.
+
+      Use it to say who or what you are, where you're from, and how you are.
+      Notice there is no word for "a" before a job: *Je suis étudiant* —
+      I'm a student.
+    table:
+      columns: [person, être, English]
+      rows:
+        - [je, suis, I am]
+        - [tu, es, you are]
+        - ["il / elle / on", est, "he / she is, we are"]
+        - [nous, sommes, we are]
+        - [vous, êtes, you are]
+        - ["ils / elles", sont, they are]
+    examples:
+      - ["Je suis américain.", "I'm American. (a boy or man)"]
+      - ["Je suis américaine.", "I'm American. (a girl or woman)"]
+      - ["Elle est française.", "She is French."]
+      - ["Vous êtes ici ?", "Are you here?"]
+    tip: "Words for nationalities add *-e* for a girl or woman: *américain → américaine, anglais → anglaise, français → française*. *Canadien* doubles its n: *canadienne*. And no capital letter: *français*, not *Français*."
+
+  - heading: "Saying no: ne… pas"
+    body: |
+      To make a sentence negative, put **ne** before the verb and **pas**
+      after it. They wrap around the verb like a sandwich.
+
+      - *Je suis fatigué.* → *Je **ne** suis **pas** fatigué.*
+
+      Before a vowel, **ne** becomes **n'**:
+
+      - *Il est là.* → *Il **n'**est **pas** là.*
+    examples:
+      - ["Je ne suis pas anglais.", "I'm not English."]
+      - ["Elle n'est pas ici.", "She isn't here."]
+      - ["Nous ne sommes pas là.", "We aren't there."]
+    tip: "In fast speech people often drop the *ne* — *Je suis pas fatigué* — but always write it."
+
+  - heading: Asking yes/no questions
+    body: |
+      French has three ways to ask the same question:
+
+      - **Raise your voice** at the end: *Tu es français ?* — the most
+        common way when speaking.
+      - Put **est-ce que** in front: *Est-ce que tu es français ?* — it
+        works everywhere. Before a vowel it becomes **est-ce qu'**:
+        *Est-ce qu'il est là ?*
+      - **Swap the verb and pronoun** and add a hyphen: *Es-tu français ?*
+        — this is formal and mostly written. Recognise it; you don't need
+        to use it yet.
+    examples:
+      - ["Tu es canadienne ?", "Are you Canadian? (to a girl)"]
+      - ["Est-ce que vous êtes étudiant ?", "Are you a student?"]
+      - ["Est-ce qu'elle est là ?", "Is she there?"]
+
+words:
+  - [être, to be]
+  - [je, I]
+  - [nous, we]
+  - [on, "we (everyday), one"]
+  - [américain / américaine, American]
+  - [anglais / anglaise, English]
+  - [français / française, French]
+  - [canadien / canadienne, Canadian]
+  - [étudiant / étudiante, student]
+  - [fatigué / fatiguée, tired]
+  - [content / contente, happy]
+  - [ici, here]
+  - [là, "there, here"]
+  - [aussi, "also, too"]
+
+practice:
+  - type: fill
+    prompt: "Je ___ américain."
+    hint: (être, je)
+    translation: I'm American.
+    answers: [suis]
+    why: With je, être is suis.
+
+  - type: fill
+    prompt: "Nous ___ ici."
+    hint: (être, nous)
+    translation: We are here.
+    answers: [sommes]
+    why: With nous, être is sommes.
+
+  - type: fill
+    prompt: "Vous ___ française ?"
+    hint: (être, vous)
+    translation: Are you French?
+    answers: [êtes]
+    why: With vous, être is êtes — don't forget the accent on the first e.
+
+  - type: fill
+    prompt: "Elles ___ là."
+    hint: (être, elles)
+    translation: They are there.
+    answers: [sont]
+    why: With ils and elles, être is sont.
+
+  - type: choice
+    prompt: Which pronoun do you use for a group of two girls and one boy?
+    options: [ils, elles]
+    answer: ils
+    why: Any group with at least one male is ils.
+
+  - type: translate
+    direction: to-target
+    prompt: I'm not tired. (a boy speaking)
+    answers: ["Je ne suis pas fatigué."]
+    why: Ne goes before the verb and pas after it.
+
+  - type: translate
+    direction: to-target
+    prompt: She is French.
+    answers: ["Elle est française."]
+    why: Elle takes est, and française has an -e because she is female.
+
+  - type: translate
+    direction: to-english
+    prompt: "Est-ce que tu es canadien ?"
+    answers: ["Are you Canadian?"]
+    why: Est-ce que at the front turns a statement into a yes/no question.
+
+  - type: translate
+    direction: to-english
+    prompt: "On est ici."
+    answers: ["We are here.", "We're here."]
+    why: In everyday French, on means "we" and takes the same verb as il and elle.
+
+  - type: translate
+    direction: to-target
+    prompt: Are you English? (asking a boy who is your friend)
+    answers: ["Tu es anglais ?", "Est-ce que tu es anglais ?", "Es-tu anglais ?"]
+    why: With a friend use tu; any of the three question styles is correct.
+
+  - type: choice
+    prompt: Which sentence is a correct negative?
+    options: ["Il n'est pas là.", "Il ne est pas là.", "Il est ne pas là."]
+    answer: "Il n'est pas là."
+    why: Ne goes before the verb and shortens to n' before a vowel.
+
+  - type: choice
+    prompt: What is *Es-tu content ?*
+    options: ["a formal way to ask a question", "a negative sentence", "an order"]
+    answer: "a formal way to ask a question"
+    why: Swapping the verb and pronoun (es-tu) is the formal way to ask a yes/no question.

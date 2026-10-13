@@ -8,16 +8,63 @@
  * and explaining mistakes.
  */
 
+/**
+ * Punctuation that never changes meaning for grading. Includes the curly
+ * quotes and apostrophes phone keyboards insert by default: without them,
+ * "l’acqua" typed on an iPhone would not match "l'acqua".
+ */
+const PUNCTUATION = /[.,!?¡¿;:"'`’‘“”«»…()[\]]/g;
+
+/** Hyphens and dashes separate words: "twenty-one" matches "twenty one". */
+const DASHES = /[-‐–—]/g;
+
+/** Ligatures people type as two letters: "soeur" is a fine way to write "sœur". */
+function unligature(value: string): string {
+  return value.replace(/œ/g, "oe").replace(/æ/g, "ae");
+}
+
 /** Normalize for comparison: casefold, strip accents, punctuation, articles. */
 export function normalizeAnswer(value: string): string {
-  return value
-    .toLowerCase()
+  return unligature(value.toLowerCase())
     .normalize("NFD")
     // Strip combining diacritics so "cafe" matches "café".
     .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[.,!?¡¿;:"'`()[\]]/g, "")
+    .replace(PUNCTUATION, "")
+    .replace(DASHES, " ")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+/** As normalizeAnswer, but keeps accents, for target-language accent checks. */
+export function normalizeKeepingAccents(value: string): string {
+  return unligature(value.toLowerCase())
+    .normalize("NFC")
+    .replace(PUNCTUATION, "")
+    .replace(DASHES, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+/**
+ * Expand English contractions so "what's your name" and "what is your name"
+ * compare equal. Applied to both sides, so ambiguous expansions ("he'd") are
+ * harmless: the answer and the key are rewritten the same way.
+ */
+export function expandContractions(value: string): string {
+  return value
+    .replace(/[’‘]/g, "'")
+    .replace(/\bcan't\b/gi, "can not")
+    .replace(/\bcannot\b/gi, "can not")
+    .replace(/\bwon't\b/gi, "will not")
+    .replace(/\bshan't\b/gi, "shall not")
+    .replace(/\blet's\b/gi, "let us")
+    .replace(/\b(\w+)n't\b/gi, "$1 not")
+    .replace(/\b(\w+)'re\b/gi, "$1 are")
+    .replace(/\b(\w+)'m\b/gi, "$1 am")
+    .replace(/\b(\w+)'ve\b/gi, "$1 have")
+    .replace(/\b(\w+)'ll\b/gi, "$1 will")
+    .replace(/\b(\w+)'d\b/gi, "$1 would")
+    .replace(/\b(\w+)'s\b/gi, "$1 is");
 }
 
 /**
@@ -139,6 +186,68 @@ export function gradeAnswer(userAnswer: string, accepted: string[]): GradeResult
   }
 
   return { verdict: "incorrect", score: 0, matched: null, note: null };
+}
+
+/** Which language the learner is typing in, for language-specific leniency. */
+export type AnswerLanguage = "english" | "target";
+
+/**
+ * Grade an English answer: contractions are expanded on both sides first, so
+ * "I'm tired" and "I am tired" are the same answer.
+ */
+export function gradeEnglishAnswer(userAnswer: string, accepted: string[]): GradeResult {
+  return gradeAnswer(expandContractions(userAnswer), accepted.map(expandContractions));
+}
+
+/**
+ * Grade a target-language answer, where accents carry meaning.
+ *
+ * gradeAnswer ignores accents, which is right for English and for recognising
+ * a word, but in Italian *e* is "and" and *è* is "is". An answer that is only
+ * correct once accents are stripped is graded *close*, with the accented form
+ * shown, rather than silently right or harshly wrong — typing accents on an
+ * English keyboard is hard, and the learner should see what they missed.
+ */
+export function gradeTargetAnswer(userAnswer: string, accepted: string[]): GradeResult {
+  const result = gradeAnswer(userAnswer, accepted);
+  if (result.verdict !== "correct") return result;
+
+  const typed = normalizeKeepingAccents(userAnswer);
+  const typedWithoutArticle = stripArticle(typed);
+
+  const exact = accepted.some((value) => {
+    const candidate = normalizeKeepingAccents(value);
+    const candidateWithoutArticle = stripArticle(candidate);
+    return [candidate, candidateWithoutArticle].some(
+      (form) =>
+        form === typed ||
+        form === typedWithoutArticle ||
+        (form.length >= 4 && typed.includes(form)),
+    );
+  });
+  if (exact) return result;
+
+  const intended =
+    accepted.find((value) => gradeAnswer(userAnswer, [value]).verdict === "correct") ??
+    accepted[0];
+
+  return {
+    verdict: "close",
+    score: 80,
+    matched: result.matched,
+    note: `Watch the accents: "${intended}".`,
+  };
+}
+
+/** Grade in whichever language the learner is typing. */
+export function gradeIn(
+  language: AnswerLanguage,
+  userAnswer: string,
+  accepted: string[],
+): GradeResult {
+  return language === "english"
+    ? gradeEnglishAnswer(userAnswer, accepted)
+    : gradeTargetAnswer(userAnswer, accepted);
 }
 
 /**

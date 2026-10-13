@@ -1,0 +1,163 @@
+title: Je parle français
+subtitle: Regular -er verbs and question words
+goal: use the present tense of regular *-er* verbs, and ask questions with *qui, où, quand, comment, pourquoi*
+minutes: 14
+
+sections:
+  - heading: The biggest verb family
+    body: |
+      The **infinitive** is the dictionary form of a verb, like "to speak":
+      **parler**. About nine out of ten French verbs end in **-er**, and
+      almost all of them follow the same pattern.
+
+      Take off **-er** to get the stem — *parl-* — and add an ending for each
+      person.
+
+      You can also put an infinitive straight after *aimer* (to like):
+      *J'aime chanter.* — I like to sing.
+    table:
+      columns: [person, ending, parler]
+      rows:
+        - [je, -e, parle]
+        - [tu, -es, parles]
+        - ["il / elle / on", -e, parle]
+        - [nous, -ons, parlons]
+        - [vous, -ez, parlez]
+        - ["ils / elles", -ent, parlent]
+    tip: "*Je parle* is \"I speak\" and \"I am speaking\" — French has one present tense for both."
+
+  - heading: Four forms that sound the same
+    body: |
+      Here is the good news: **parle, parles, parle** and **parlent** all
+      sound exactly the same — "parl". The endings **-e, -es, -ent** are
+      silent. Only the *nous* and *vous* forms sound different.
+
+      Before a vowel or silent h, **je** becomes **j'**:
+      *j'aime, j'habite, j'écoute*.
+    examples:
+      - ["Ils parlent anglais.", "They speak English."]
+      - ["J'habite ici.", "I live here."]
+      - ["Vous regardez la télé ?", "Are you watching TV?"]
+
+  - heading: Two spelling quirks with nous
+    body: |
+      Two kinds of verbs change their spelling with **nous**, to keep the
+      sound soft (remember *ç* from the sounds lesson):
+
+      - verbs in **-ger** keep an **e**: *manger → nous mangeons*
+      - verbs in **-cer** take a **ç**: *commencer → nous commençons*
+    examples:
+      - ["Nous mangeons une pizza.", "We are eating a pizza."]
+      - ["Nous commençons.", "We're starting."]
+
+  - heading: Question words
+    body: |
+      - **qui** — who
+      - **qu'est-ce que** — what
+      - **où** — where
+      - **quand** — when
+      - **comment** — how
+      - **pourquoi** — why (answer with **parce que** — because)
+      - **combien** — how much, how many
+
+      Put the question word in front of *est-ce que*, or — in relaxed
+      speech — at the end:
+
+      - *Où est-ce que tu habites ?* / *Tu habites où ?*
+      - *Qu'est-ce que tu manges ?* — What are you eating?
+    tip: "*Où* (where) has an accent; *ou* without one means \"or\"."
+
+words:
+  - [parler, to speak]
+  - [habiter, to live (somewhere)]
+  - [travailler, to work]
+  - [aimer, "to like, to love"]
+  - [manger, to eat]
+  - [écouter, to listen (to)]
+  - [regarder, to watch]
+  - [chanter, to sing]
+  - [jouer, to play]
+  - [commencer, "to start, to begin"]
+  - [où, where]
+  - [quand, when]
+  - [pourquoi, why]
+  - [parce que, because]
+  - [qui, who]
+
+practice:
+  - type: fill
+    prompt: "Je ___ français."
+    hint: (parler)
+    translation: I speak French.
+    answers: [parle]
+    why: For je, take off -er and add -e.
+
+  - type: fill
+    prompt: "Nous ___ ici."
+    hint: (habiter)
+    translation: We live here.
+    answers: [habitons]
+    why: For nous, take off -er and add -ons.
+
+  - type: fill
+    prompt: "Vous ___ la télé ?"
+    hint: (regarder)
+    translation: Are you watching TV?
+    answers: [regardez]
+    why: For vous, take off -er and add -ez.
+
+  - type: fill
+    prompt: "Nous ___ une pizza."
+    hint: (manger)
+    translation: We're eating a pizza.
+    answers: [mangeons]
+    why: Verbs in -ger keep an e before -ons so the g stays soft.
+
+  - type: translate
+    direction: to-target
+    prompt: They play. (a group of boys)
+    answers: [Ils jouent.]
+    why: For ils, add -ent — which is silent.
+
+  - type: translate
+    direction: to-target
+    prompt: Where do you live? (to a friend)
+    answers: ["Où est-ce que tu habites ?", "Tu habites où ?", "Où habites-tu ?", "Où tu habites ?"]
+    why: Où means where; put it before est-ce que, or at the end in everyday speech.
+
+  - type: translate
+    direction: to-english
+    prompt: "Qu'est-ce que tu manges ?"
+    answers: ["What are you eating?", "What do you eat?"]
+    why: Qu'est-ce que means "what" at the start of a question.
+
+  - type: translate
+    direction: to-english
+    prompt: Elle travaille aujourd'hui.
+    answers: ["She works today.", "She is working today.", "She's working today."]
+    why: The French present tense covers both "she works" and "she is working".
+
+  - type: choice
+    prompt: Which forms sound exactly the same?
+    options: ["parle, parles, parlent", "parlons, parlez"]
+    answer: "parle, parles, parlent"
+    why: The endings -e, -es and -ent are all silent.
+
+  - type: choice
+    prompt: "*Pourquoi… ?* The answer usually starts with…"
+    options: [parce que, quand, comment]
+    answer: parce que
+    why: Pourquoi means why, and parce que means because.
+
+  - type: translate
+    direction: to-target
+    prompt: I like to sing.
+    answers: ["J'aime chanter.", "J'aime bien chanter."]
+    why: Aimer can be followed directly by an infinitive, and je becomes j' before the vowel.
+
+  - type: fill
+    prompt: "___ est-ce que tu travailles ?"
+    hint: (when)
+    translation: When do you work?
+    answers: [Quand]
+    why: Quand means when, and it goes in front of est-ce que.

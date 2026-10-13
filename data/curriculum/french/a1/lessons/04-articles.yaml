@@ -1,0 +1,162 @@
+title: "Le, la, les"
+subtitle: Nouns, plurals and articles
+goal: learn nouns with their gender, make them plural, and pick the right word for "the", "a" and "some"
+minutes: 12
+
+sections:
+  - heading: Every noun is masculine or feminine
+    body: |
+      In French every noun — every thing, person or idea — is either
+      **masculine** or **feminine**. It is grammar, not meaning: a car is
+      feminine, a book is masculine.
+
+      The ending gives a few clues:
+
+      - nouns ending in **-tion** are feminine: *la question*
+      - nouns ending in **-age** and **-ment** are usually masculine:
+        *le fromage*, *le moment*
+      - many nouns ending in **-e** are feminine: *la table*, *la voiture*
+
+      But there are lots of exceptions, so always learn a noun **with its
+      article**: not *livre* but *le livre*.
+    examples:
+      - ["le garçon", "the boy"]
+      - ["la fille", "the girl"]
+      - ["le livre", "the book"]
+      - ["la voiture", "the car"]
+
+  - heading: '"The": le, la, l'', les'
+    body: |
+      - **le** for masculine nouns: *le chat*
+      - **la** for feminine nouns: *la maison*
+      - **l'** for any noun starting with a vowel or a silent h:
+        *l'ami*, *l'école*, *l'hôtel*
+      - **les** for all plurals, masculine or feminine: *les chats*,
+        *les maisons*
+    table:
+      columns: ["", singular, plural]
+      rows:
+        - [masculine, le livre, les livres]
+        - [feminine, la table, les tables]
+        - [before a vowel, "l'ami, l'école", "les amis, les écoles"]
+    tip: "Before a vowel, *les* links with a z sound: *les amis* sounds like \"lay-za-mee\"."
+
+  - heading: '"A" and "some": un, une, des'
+    body: |
+      - **un** for masculine nouns: *un chien* (a dog)
+      - **une** for feminine nouns: *une pomme* (an apple)
+      - **des** for plurals: *des pommes* (some apples, or just "apples")
+
+      English often uses no word at all where French needs **des**:
+      *J'ai des amis* — I have friends.
+    examples:
+      - ["un garçon et une fille", "a boy and a girl"]
+      - ["un ami", "a (male) friend"]
+      - ["une amie", "a (female) friend"]
+      - ["des livres", "(some) books"]
+
+  - heading: Making nouns plural
+    body: |
+      Most nouns add **-s** — but you don't pronounce it. *Le livre* and
+      *les livres* sound different only because of the article. That is why
+      the article matters so much in French.
+
+      Some endings change:
+
+      - **-eau → -eaux**: *le gâteau → les gâteaux* (cakes)
+      - **-al → -aux**: *le journal → les journaux* (newspapers)
+      - nouns already ending in **-s**, **-x** or **-z** don't change:
+        *le bus → les bus*
+    tip: "*Un* before a vowel links with an n sound: *un ami* sounds like \"uh-na-mee\"."
+
+words:
+  - [le livre, the book]
+  - [la table, the table]
+  - [la maison, the house]
+  - [la voiture, the car]
+  - ["l'ami / l'amie", the friend]
+  - ["l'école (f)", the school]
+  - [le chat, the cat]
+  - [le chien, the dog]
+  - [la fille, the girl]
+  - [le gâteau, the cake]
+  - [la pomme, the apple]
+  - [l'homme (m), the man]
+  - [la femme, the woman]
+
+practice:
+  - type: fill
+    prompt: "___ maison"
+    hint: (the)
+    translation: the house
+    answers: [la]
+    why: Maison is feminine, so "the" is la.
+
+  - type: fill
+    prompt: "___ livres"
+    hint: (the)
+    translation: the books
+    answers: [les]
+    why: Les is "the" for every plural noun.
+
+  - type: fill
+    prompt: "___ voiture"
+    hint: (a)
+    translation: a car
+    answers: [une]
+    why: Voiture is feminine, so "a" is une.
+
+  - type: fill
+    prompt: "___ chats"
+    hint: (some)
+    translation: (some) cats
+    answers: [des]
+    why: Des is the plural of un and une — "some", or no word in English.
+
+  - type: translate
+    direction: to-target
+    prompt: the friend (a boy)
+    answers: ["l'ami"]
+    why: Ami starts with a vowel, so le becomes l'.
+
+  - type: translate
+    direction: to-target
+    prompt: a cake
+    answers: [un gâteau]
+    why: Gâteau is masculine, so "a" is un.
+
+  - type: translate
+    direction: to-target
+    prompt: the cakes
+    answers: [les gâteaux]
+    why: Nouns ending in -eau add -x in the plural, not -s.
+
+  - type: translate
+    direction: to-english
+    prompt: une fille et un garçon
+    answers: ["a girl and a boy"]
+    why: Une goes with feminine fille, un with masculine garçon.
+
+  - type: translate
+    direction: to-english
+    prompt: des pommes
+    answers: ["apples", "some apples"]
+    why: Des means "some" — English often leaves it out.
+
+  - type: choice
+    prompt: Which is correct?
+    options: ["le école", "la école", "l'école"]
+    answer: "l'école"
+    why: Before a vowel, le and la both shorten to l'.
+
+  - type: choice
+    prompt: In speech, how can you tell that *les livres* is plural?
+    options: ["from the -s on livres", "from the article les"]
+    answer: "from the article les"
+    why: The plural -s is silent, so the article does the work.
+
+  - type: choice
+    prompt: Which noun is masculine?
+    options: [table, voiture, gâteau]
+    answer: gâteau
+    why: You say le gâteau, but la table and la voiture.

@@ -1,0 +1,170 @@
+title: "O, a, os, as"
+subtitle: Nouns, plurals and articles
+goal: tell masculine from feminine, make nouns plural, and pick the right word for "the" and "a"
+minutes: 12
+
+sections:
+  - heading: Every noun is masculine or feminine
+    body: |
+      In Portuguese every noun — every thing, person or idea — is either
+      **masculine** or **feminine**. It's grammar, not meaning: a table is
+      feminine, a book is masculine.
+
+      The ending usually tells you which:
+
+      - **-o** is almost always masculine: *o livro* (the book)
+      - **-a** is almost always feminine: *a casa* (the house)
+      - **-ção**, **-dade** and **-agem** are feminine: *a lição* (the
+        lesson), *a cidade* (the city), *a viagem* (the trip)
+      - **-e** can be either: *o leite* (the milk), *a noite* (the night) —
+        learn those with their article
+    examples:
+      - ["o menino", "the boy"]
+      - ["a menina", "the girl"]
+      - ["o pão", "the bread"]
+      - ["a cidade", "the city"]
+    tip: "A few common words break the pattern: *o dia* (the day), *o mapa* and *o problema* are masculine; *a mão* (the hand) and *a foto* are feminine."
+
+  - heading: '"The" and "a"'
+    body: |
+      Good news: Portuguese articles are simple. There is one "the" and one
+      "a" for each gender, and they add **-s** in the plural.
+
+      In the plural, **uns** and **umas** mean "some": *uns amigos* — some
+      friends.
+    table:
+      columns: ["", the, a / some]
+      rows:
+        - [masculine singular, o, um]
+        - [feminine singular, a, uma]
+        - [masculine plural, os, uns]
+        - [feminine plural, as, umas]
+    examples:
+      - ["o livro, os livros", "the book, the books"]
+      - ["a casa, as casas", "the house, the houses"]
+      - ["um amigo e uma amiga", "a (male) friend and a (female) friend"]
+    tip: "A group of mixed men and women is masculine: *os amigos* can mean \"the friends\" of both sexes. Brazilians also often put *o* or *a* before people's names — *a Ana*, *o Pedro*. It's friendly, not a mistake."
+
+  - heading: Making nouns plural
+    body: |
+      Most nouns just add **-s**, as in English: *livro → livros*, *casa →
+      casas*. A few endings change:
+
+      - **-r** and **-z** add **-es**: *flor → flores* (flowers), *mulher →
+        mulheres* (women), *luz → luzes* (lights)
+      - **-m** becomes **-ns**: *homem → homens* (men)
+      - **-l** becomes **-is**: *hotel → hotéis*, *animal → animais*
+    table:
+      columns: [ending, singular, plural]
+      rows:
+        - [vowel, casa, casas]
+        - ["-r / -z", flor, flores]
+        - ["-m", homem, homens]
+        - ["-l", hotel, hotéis]
+
+  - heading: Words ending in -ão
+    body: |
+      Words ending in **-ão** have three possible plurals. Most take
+      **-ões**, but a few common ones don't:
+
+      - **-ões** (most): *a lição → as lições*, *o avião → os aviões* (planes)
+      - **-ães**: *o pão → os pães*, *o alemão → os alemães* (Germans)
+      - **-ãos**: *a mão → as mãos* (hands), *o irmão → os irmãos* (brothers)
+    examples:
+      - ["as lições", "the lessons"]
+      - ["os pães", "the loaves of bread"]
+      - ["as mãos", "the hands"]
+    tip: "Not sure? Guess -ões — it's by far the most common. Learn *pão*, *mão* and *irmão* as the exceptions."
+
+words:
+  - [livro, book]
+  - [casa, house]
+  - [menino, boy]
+  - [menina, girl]
+  - [amigo, friend (male)]
+  - [amiga, friend (female)]
+  - [homem, man]
+  - [mulher, woman]
+  - [flor, flower]
+  - [hotel, hotel]
+  - [lição, lesson]
+  - [viagem, trip]
+  - [mão, hand]
+  - [irmão, brother]
+
+practice:
+  - type: choice
+    prompt: Which word is feminine?
+    options: [livro, cidade, pão]
+    answer: cidade
+    why: Words ending in -dade are always feminine — a cidade.
+
+  - type: fill
+    prompt: "___ livros"
+    hint: the
+    translation: the books
+    answers: [os]
+    why: Livro is masculine, and the masculine plural "the" is os.
+
+  - type: fill
+    prompt: "___ amiga"
+    hint: a
+    translation: a (female) friend
+    answers: [uma]
+    why: Amiga is feminine, so "a" is uma.
+
+  - type: fill
+    prompt: "as ___"
+    hint: plural of flor
+    translation: the flowers
+    answers: [flores]
+    why: Nouns ending in -r add -es — flor becomes flores.
+
+  - type: fill
+    prompt: "os ___"
+    hint: plural of homem
+    translation: the men
+    answers: [homens]
+    why: -m becomes -ns in the plural — homem becomes homens.
+
+  - type: translate
+    direction: to-target
+    prompt: the houses
+    answers: [as casas]
+    why: Casa is feminine; the feminine plural "the" is as, and you add -s.
+
+  - type: translate
+    direction: to-target
+    prompt: the lessons
+    answers: [as lições]
+    why: Lição ends in -ção, so it's feminine, and most -ão words make their plural in -ões.
+
+  - type: translate
+    direction: to-target
+    prompt: a man and a woman
+    answers: [um homem e uma mulher]
+    why: Um goes with masculine homem, uma with feminine mulher.
+
+  - type: translate
+    direction: to-english
+    prompt: os pães
+    answers: [the breads, the loaves, the loaves of bread, the bread rolls, the rolls]
+    why: Pão is one of the -ão words that makes its plural in -ães.
+
+  - type: translate
+    direction: to-english
+    prompt: uma viagem
+    answers: [a trip, a journey]
+    why: Viagem ends in -agem, so it's feminine and takes uma.
+
+  - type: choice
+    prompt: What is the plural of *a mão* (the hand)?
+    options: [as mões, as mãos, as mães]
+    answer: as mãos
+    why: Mão is one of the few -ão words that just adds -s. (As mães means "the mothers"!)
+
+  - type: choice
+    prompt: Which is correct?
+    options: [o problema, a problema]
+    answer: o problema
+    why: Problema ends in -a but is masculine — one of the exceptions to learn.

@@ -1,0 +1,171 @@
+title: Tengo hambre
+subtitle: Tener and hay
+goal: say what you have, how old you are and how you feel — hungry, cold, sleepy — and say what there is with *hay*
+minutes: 12
+
+sections:
+  - heading: "Tener: to have"
+    body: |
+      **Tener** means "to have". It's irregular: the yo form is **tengo**,
+      and in most other forms the *e* becomes *ie*.
+    table:
+      columns: [who, tener, English]
+      rows:
+        - [yo, tengo, I have]
+        - [tú, tienes, you have]
+        - [él / ella / usted, tiene, "he has, she has, you have"]
+        - [nosotros / nosotras, tenemos, we have]
+        - [vosotros / vosotras, tenéis, you all have]
+        - [ellos / ellas / ustedes, tienen, "they have, you all have"]
+    examples:
+      - ["Tengo un perro.", "I have a dog."]
+      - ["¿Tienes un lápiz?", "Do you have a pencil?"]
+      - ["Tenemos una casa en la ciudad.", "We have a house in the city."]
+
+  - heading: "Age: you have years"
+    body: |
+      Spanish uses **tener** for age: *Tengo doce años* — literally "I have
+      twelve years". To ask: **¿Cuántos años tienes?** (how many years do
+      you have?).
+
+      Numbers come in lesson 7. For now, here are a few:
+    table:
+      columns: [number, Spanish]
+      rows:
+        - ["10", diez]
+        - ["11", once]
+        - ["12", doce]
+        - ["13", trece]
+        - ["14", catorce]
+        - ["15", quince]
+        - ["20", veinte]
+        - ["30", treinta]
+        - ["40", cuarenta]
+    examples:
+      - ["¿Cuántos años tienes?", "How old are you?"]
+      - ["Tengo trece años.", "I'm thirteen."]
+      - ["Ella tiene cuarenta años.", "She's forty."]
+    tip: "Never use *ser* for age. It's always *tener*: *Tengo doce años*, not *soy doce*."
+
+  - heading: Feelings with tener
+    body: |
+      For many feelings, English says "I am…" but Spanish says "I have…":
+
+      - **tener hambre** — to be hungry (have hunger)
+      - **tener sed** — to be thirsty
+      - **tener frío** — to be cold
+      - **tener calor** — to be hot
+      - **tener sueño** — to be sleepy
+      - **tener miedo** — to be scared
+
+      To say "very", use **mucho**: *Tengo mucho frío*. With *hambre* it's
+      **mucha**, because *hambre* is a feminine word: *Tengo mucha hambre*.
+    examples:
+      - ["Tengo hambre.", "I'm hungry."]
+      - ["¿Tienes frío?", "Are you cold?"]
+      - ["Tenemos mucho sueño.", "We're very sleepy."]
+
+  - heading: "Hay: there is, there are"
+    body: |
+      **Hay** (said like "eye") means both "there is" and "there are". It
+      never changes.
+
+      Use it with **un**, **una**, a number, or no article at all — not with
+      *el* or *la*. The little word **en** means "in" or "on".
+    examples:
+      - ["Hay un perro en la casa.", "There's a dog in the house."]
+      - ["Hay dos chicas aquí.", "There are two girls here."]
+      - ["¿Hay agua?", "Is there any water?"]
+      - ["No hay lápices.", "There are no pencils."]
+    tip: "*Hay un libro en la mesa* (there's a book on the table) — not *hay el libro*."
+
+words:
+  - [tener, to have]
+  - [año, year]
+  - [hambre, hunger]
+  - [sed, thirst]
+  - [frío, cold]
+  - [calor, heat]
+  - [sueño, "sleepiness (tener sueño: to be sleepy)"]
+  - [miedo, fear]
+  - [perro, dog]
+  - [hay, "there is, there are"]
+  - [en, "in, on"]
+  - [mucho, "a lot, very (with tener)"]
+
+practice:
+  - type: fill
+    prompt: "Yo ___ un perro."
+    hint: tener
+    translation: I have a dog.
+    answers: [tengo]
+    why: Tengo is the irregular yo form of tener.
+
+  - type: fill
+    prompt: "¿Cuántos años ___?"
+    hint: tener, tú
+    translation: How old are you?
+    answers: [tienes]
+    why: Spanish asks age with tener; tienes is the tú form.
+
+  - type: fill
+    prompt: "Ellos ___ una casa."
+    hint: tener
+    translation: They have a house.
+    answers: [tienen]
+    why: Tienen goes with ellos, ellas and ustedes.
+
+  - type: fill
+    prompt: "___ un libro en la mesa."
+    hint: there is
+    translation: There's a book on the table.
+    answers: [Hay]
+    why: Hay means "there is" and "there are".
+
+  - type: translate
+    direction: to-target
+    prompt: I'm hungry.
+    answers: [Tengo hambre, Yo tengo hambre]
+    why: Spanish says "I have hunger" — tener hambre.
+
+  - type: translate
+    direction: to-target
+    prompt: She's twelve years old.
+    answers: [Tiene doce años, Ella tiene doce años, Tiene 12 años, Ella tiene 12 años]
+    why: Age always uses tener + años.
+
+  - type: translate
+    direction: to-target
+    prompt: We're cold.
+    answers: [Tenemos frío, Nosotros tenemos frío, Nosotras tenemos frío]
+    why: Being cold is tener frío; tenemos is the nosotros form.
+
+  - type: translate
+    direction: to-english
+    prompt: No hay agua.
+    answers: [There is no water, There is not any water, There isn't any water]
+    why: No hay means "there isn't" or "there aren't".
+
+  - type: translate
+    direction: to-english
+    prompt: "¿Tienes sueño?"
+    answers: [Are you sleepy?, Are you tired?]
+    why: Tener sueño means "to be sleepy" — literally "to have sleepiness".
+
+  - type: choice
+    prompt: How do you say "I'm 13"?
+    options: [Soy trece años., Tengo trece años.]
+    answer: Tengo trece años.
+    why: Age uses tener, never ser.
+
+  - type: choice
+    prompt: "*Hay* means…"
+    options: [there is / there are, he has, I have]
+    answer: there is / there are
+    why: Hay is one word for both "there is" and "there are".
+
+  - type: choice
+    prompt: Which is correct?
+    options: [Hay el perro en la casa., Hay un perro en la casa.]
+    answer: Hay un perro en la casa.
+    why: Hay goes with un, una or a number — not with el or la.

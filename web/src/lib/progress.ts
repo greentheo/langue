@@ -11,6 +11,7 @@ import "server-only";
  */
 
 import { prisma } from "@/lib/db";
+import type { ActivityType } from "@/lib/activity-types";
 
 export interface WordOutcome {
   word: string;
@@ -19,7 +20,7 @@ export interface WordOutcome {
 
 export interface SessionResult {
   userId: string;
-  activityType: "flashcards" | "conversation" | "fill_blank" | "translation" | "reading";
+  activityType: ActivityType;
   language: string;
   level: string;
   pointsEarned: number;

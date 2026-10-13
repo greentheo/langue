@@ -7,11 +7,16 @@
  * submitted — the server deals prompts and grades responses. That also means a
  * round works with the Anthropic API completely down: grading is local string
  * comparison, and only the optional explanation on a miss needs the model.
+ *
+ * Two modes: multiple choice (the default — four options to click, easiest
+ * for beginners and kids) and typing the answer. The choice is remembered per
+ * browser.
  */
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { postJson, reportProgress, type ActivityContext } from "@/lib/client-api";
 import { ErrorBox, Panel } from "@/components/crt";
+import { ChoiceOptions } from "@/components/choice-options";
 import {
   ActivityHeader,
   Loading,
@@ -25,7 +30,12 @@ interface Card {
   difficulty: number;
   example: string | null;
   translationCount: number;
+  options: string[] | null;
 }
+
+type Mode = "choice" | "type";
+
+const MODE_KEY = "langue.flashcards.mode";
 
 interface AnswerResult {
   verdict: "correct" | "close" | "incorrect";
@@ -40,6 +50,9 @@ interface AnswerResult {
 const ROUND_SIZE = 10;
 
 export function Flashcards({ context }: { context: ActivityContext }) {
+  // null until the saved preference has been read, so the first deal uses it.
+  const [mode, setMode] = useState<Mode | null>(null);
+  const [chosen, setChosen] = useState<string | null>(null);
   const [cards, setCards] = useState<Card[] | null>(null);
   const [index, setIndex] = useState(0);
   const [answer, setAnswer] = useState("");
@@ -53,8 +66,30 @@ export function Flashcards({ context }: { context: ActivityContext }) {
   const startedAt = useRef(Date.now());
   const inputRef = useRef<HTMLInputElement>(null);
 
+  useEffect(() => {
+    let saved: string | null = null;
+    try {
+      saved = window.localStorage.getItem(MODE_KEY);
+    } catch {
+      // Storage blocked (private mode); the default stands.
+    }
+    setMode(saved === "type" ? "type" : "choice");
+  }, []);
+
+  function switchMode(next: Mode) {
+    if (next === mode) return;
+    try {
+      window.localStorage.setItem(MODE_KEY, next);
+    } catch {
+      // Not remembered, but the switch still applies to this visit.
+    }
+    setMode(next);
+  }
+
   const deal = useCallback(async () => {
+    if (!mode) return;
     setCards(null);
+    setChosen(null);
     setError(null);
     setIndex(0);
     setAnswer("");
@@ -68,12 +103,13 @@ export function Flashcards({ context }: { context: ActivityContext }) {
       const data = await postJson<{ cards: Card[] }>("/api/flashcards", {
         ...context,
         count: ROUND_SIZE,
+        mode,
       });
       setCards(data.cards);
     } catch (cause) {
       setError((cause as Error).message);
     }
-  }, [context]);
+  }, [context, mode]);
 
   useEffect(() => {
     void deal();
@@ -86,7 +122,11 @@ export function Flashcards({ context }: { context: ActivityContext }) {
 
   async function check(event: React.FormEvent) {
     event.preventDefault();
-    if (!cards || result || checking) return;
+    await submit(answer);
+  }
+
+  async function submit(value: string) {
+    if (!cards || result || checking || !mode) return;
 
     setChecking(true);
     setError(null);
@@ -95,7 +135,8 @@ export function Flashcards({ context }: { context: ActivityContext }) {
       const data = await postJson<AnswerResult>("/api/flashcards/answer", {
         ...context,
         word: cards[index].word,
-        answer,
+        answer: value,
+        mode,
       });
 
       setResult(data);
@@ -130,8 +171,25 @@ export function Flashcards({ context }: { context: ActivityContext }) {
 
     setIndex((prev) => prev + 1);
     setAnswer("");
+    setChosen(null);
     setResult(null);
   }
+
+  const modeToggle = (
+    <div className="flex gap-1" role="group" aria-label="Answer mode">
+      {(["choice", "type"] as const).map((option) => (
+        <button
+          key={option}
+          type="button"
+          onClick={() => switchMode(option)}
+          aria-pressed={mode === option}
+          className={`crt-button px-2 py-0.5 text-[0.6875rem] ${mode === option ? "crt-button-primary" : ""}`}
+        >
+          {option === "choice" ? "Multiple choice" : "Type it"}
+        </button>
+      ))}
+    </div>
+  );
 
   if (error && !cards) {
     return (
@@ -181,6 +239,7 @@ export function Flashcards({ context }: { context: ActivityContext }) {
       <ActivityHeader title="Flashcards" subtitle={`${card.category} · difficulty ${card.difficulty}`}>
         <ProgressDots total={cards.length} current={index} />
       </ActivityHeader>
+      <div className="-mt-3 mb-4">{modeToggle}</div>
 
       <Panel>
         <p className="text-[0.6875rem] uppercase tracking-[0.18em] text-[var(--crt-fg-dim)]">
@@ -192,38 +251,51 @@ export function Flashcards({ context }: { context: ActivityContext }) {
         {card.example ? (
           <p className="mt-3 text-sm text-[var(--crt-fg-dim)] italic">{card.example}</p>
         ) : null}
-        {card.translationCount > 1 ? (
+        {card.translationCount > 1 && !card.options ? (
           <p className="mt-2 text-xs text-[var(--crt-fg-dim)]">
             {card.translationCount} accepted answers — any one will do.
           </p>
         ) : null}
 
-        <form onSubmit={check} className="mt-5">
-          <label className="crt-label" htmlFor="answer">
-            Your answer
-          </label>
-          <input
-            id="answer"
-            ref={inputRef}
-            value={answer}
-            onChange={(event) => setAnswer(event.target.value)}
+        {card.options ? (
+          <ChoiceOptions
+            options={card.options}
+            chosen={chosen}
+            correct={result?.translations ?? null}
             disabled={Boolean(result) || checking}
-            autoComplete="off"
-            autoCapitalize="off"
-            spellCheck={false}
-            className="crt-input"
+            onPick={(option) => {
+              setChosen(option);
+              void submit(option);
+            }}
           />
+        ) : (
+          <form onSubmit={check} className="mt-5">
+            <label className="crt-label" htmlFor="answer">
+              Your answer
+            </label>
+            <input
+              id="answer"
+              ref={inputRef}
+              value={answer}
+              onChange={(event) => setAnswer(event.target.value)}
+              disabled={Boolean(result) || checking}
+              autoComplete="off"
+              autoCapitalize="off"
+              spellCheck={false}
+              className="crt-input"
+            />
 
-          {!result ? (
-            <button
-              type="submit"
-              className="crt-button crt-button-primary mt-4"
-              disabled={checking}
-            >
-              {checking ? "Checking…" : "Check"}
-            </button>
-          ) : null}
-        </form>
+            {!result ? (
+              <button
+                type="submit"
+                className="crt-button crt-button-primary mt-4"
+                disabled={checking}
+              >
+                {checking ? "Checking…" : "Check"}
+              </button>
+            ) : null}
+          </form>
+        )}
 
         {result ? (
           <div className="mt-5 border-t border-[var(--crt-rule)] pt-4">

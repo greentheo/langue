@@ -1,0 +1,155 @@
+title: Hablo español
+subtitle: Regular -ar verbs and question words
+goal: use regular *-ar* verbs in the present, and ask questions with *qué, quién, dónde, cuándo, cómo* and *por qué*
+minutes: 13
+
+sections:
+  - heading: The dictionary form
+    body: |
+      The *infinitive* is a verb's dictionary form, like "to speak". In
+      Spanish, every infinitive ends in **-ar**, **-er** or **-ir**:
+      *hablar*, *comer*, *vivir*.
+
+      To use a verb, drop that ending and add a new one that shows who is
+      doing it. This lesson covers **-ar** verbs, the biggest group.
+
+  - heading: "Hablar: to speak"
+    body: |
+      Take *hablar*, drop **-ar** to get *habl-*, and add these endings. The
+      same endings work for every regular -ar verb: *trabajar, estudiar,
+      escuchar, mirar, bailar, cocinar, llegar…*
+
+      One Spanish form covers three English ones: *hablo* means "I speak",
+      "I'm speaking" and "I do speak".
+    table:
+      columns: [who, ending, hablar]
+      rows:
+        - [yo, "-o", hablo]
+        - [tú, "-as", hablas]
+        - [él / ella / usted, "-a", habla]
+        - [nosotros / nosotras, "-amos", hablamos]
+        - [vosotros / vosotras, "-áis", habláis]
+        - [ellos / ellas / ustedes, "-an", hablan]
+    examples:
+      - ["Hablo inglés y un poco de español.", "I speak English and a little Spanish."]
+      - ["¿Trabajas hoy?", "Are you working today?"]
+      - ["Estudiamos en casa.", "We study at home."]
+      - ["Ellos bailan muy bien.", "They dance very well."]
+    tip: "Spanish questions never need \"do\": *¿Hablas inglés?* = Do you speak English?"
+
+  - heading: Question words
+    body: |
+      Every question word has an accent mark. To answer "why?", use
+      **porque** (because) — one word, no accent.
+    table:
+      columns: [Spanish, English]
+      rows:
+        - [qué, what]
+        - [quién, who]
+        - [dónde, where]
+        - [cuándo, when]
+        - [cómo, how]
+        - [cuánto, how much]
+        - [cuántos / cuántas, how many]
+        - [por qué, why]
+        - [cuál, which]
+    examples:
+      - ["¿Qué estudias?", "What are you studying?"]
+      - ["¿Dónde trabaja Ana?", "Where does Ana work?"]
+      - ["¿Cuándo llegas?", "When are you arriving?"]
+      - ["¿Por qué estudias español? —Porque trabajo en México.", "Why are you studying Spanish? —Because I work in Mexico."]
+    tip: "*Por qué* (why) is two words with an accent. *Porque* (because) is one word without."
+
+words:
+  - [hablar, "to speak, to talk"]
+  - [trabajar, to work]
+  - [estudiar, to study]
+  - [escuchar, to listen (to)]
+  - [mirar, "to look at, to watch"]
+  - [llegar, to arrive]
+  - [bailar, to dance]
+  - [cocinar, to cook]
+  - [qué, what]
+  - [quién, who]
+  - [cuándo, when]
+  - [por qué, why]
+  - [porque, because]
+
+practice:
+  - type: fill
+    prompt: "Yo ___ inglés."
+    hint: hablar
+    translation: I speak English.
+    answers: [hablo]
+    why: The yo ending for -ar verbs is -o.
+
+  - type: fill
+    prompt: "Tú ___ mucho."
+    hint: trabajar
+    translation: You work a lot.
+    answers: [trabajas]
+    why: The tú ending for -ar verbs is -as.
+
+  - type: fill
+    prompt: "Nosotros ___ español."
+    hint: estudiar
+    translation: We study Spanish.
+    answers: [estudiamos]
+    why: The nosotros ending for -ar verbs is -amos.
+
+  - type: fill
+    prompt: "Ellas ___ muy bien."
+    hint: bailar
+    translation: They dance very well.
+    answers: [bailan]
+    why: The ellos/ellas ending for -ar verbs is -an.
+
+  - type: fill
+    strict_accents: true
+    prompt: "¿___ hablas español?"
+    hint: why
+    translation: Why do you speak Spanish?
+    answers: [Por qué]
+    why: "\"Why\" is por qué — two words with an accent."
+
+  - type: translate
+    direction: to-target
+    prompt: Do you speak English? (to a friend)
+    answers: ["¿Hablas inglés?", "¿Tú hablas inglés?", "¿Hablas tú inglés?"]
+    why: Hablas is the tú form, and Spanish questions don't need "do".
+
+  - type: translate
+    direction: to-target
+    prompt: We work on Saturday.
+    answers: [Trabajamos el sábado, Nosotros trabajamos el sábado, Nosotras trabajamos el sábado, Trabajamos los sábados, Nosotros trabajamos los sábados, Nosotras trabajamos los sábados]
+    why: Trabajamos is the nosotros form, and "on Saturday" is el sábado.
+
+  - type: translate
+    direction: to-target
+    prompt: Where do you work? (to a friend)
+    answers: ["¿Dónde trabajas?", "¿Dónde trabajas tú?"]
+    why: Dónde means "where", and trabajas is the tú form.
+
+  - type: translate
+    direction: to-english
+    prompt: "¿Cuándo llega Ana?"
+    answers: [When does Ana arrive?, When is Ana arriving?, When does Ana get here?]
+    why: Cuándo means "when", and llega is the él/ella form of llegar.
+
+  - type: translate
+    direction: to-english
+    prompt: Él cocina muy bien.
+    answers: [He cooks very well, He cooks really well]
+    why: Cocina is the él form of cocinar, "to cook".
+
+  - type: choice
+    prompt: Which word means "because"?
+    options: [por qué, porque, qué]
+    answer: porque
+    why: Porque, one word with no accent, means "because".
+
+  - type: choice
+    prompt: "*Escuchamos* means…"
+    options: [I listen, we listen, they listen]
+    answer: we listen
+    why: The -amos ending belongs to nosotros, "we".

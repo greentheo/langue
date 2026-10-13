@@ -1,0 +1,165 @@
+title: "J'ai faim"
+subtitle: Avoir, age, feelings and il y a
+goal: say what you have, how old you are and how you feel with *avoir*, and say what there is with *il y a*
+minutes: 12
+
+sections:
+  - heading: "Avoir: to have"
+    body: |
+      **Avoir** is the second most important French verb, and like *être*
+      it is irregular.
+
+      Notice **j'ai**: *je* becomes *j'* because *ai* starts with a vowel.
+
+      With *nous, vous, ils* and *elles* you hear a liaison **z** sound:
+      *nous‿avons* ("noo-za-von"), *ils‿ont* ("eel-zon").
+    table:
+      columns: [person, avoir, English]
+      rows:
+        - [je, "j'ai", I have]
+        - [tu, as, you have]
+        - ["il / elle / on", a, "he / she has, we have"]
+        - [nous, avons, we have]
+        - [vous, avez, you have]
+        - ["ils / elles", ont, they have]
+    examples:
+      - ["J'ai un chien.", "I have a dog."]
+      - ["Tu as un stylo ?", "Do you have a pen?"]
+      - ["Ils ont des livres.", "They have (some) books."]
+    tip: "Don't mix up *ils ont* (they have — a z sound) and *ils sont* (they are — an s sound)."
+
+  - heading: How old are you? Use avoir
+    body: |
+      In French you don't "are" an age — you **have** it. Use *avoir* +
+      the number + **ans** (years):
+
+      - *J'ai douze ans.* — I'm twelve. (literally "I have twelve years")
+      - *Tu as quel âge ?* — How old are you?
+
+      Always say **ans**, even when English would just say the number.
+    examples:
+      - ["J'ai dix ans.", "I'm ten."]
+      - ["Elle a vingt ans.", "She is twenty."]
+      - ["Tu as quel âge ?", "How old are you?"]
+
+  - heading: Hungry, thirsty, cold… also avoir
+    body: |
+      Where English says "I **am** hungry", French says "I **have** hunger":
+      **J'ai faim.** The same pattern works for lots of feelings:
+
+      - **avoir faim** — to be hungry
+      - **avoir soif** — to be thirsty
+      - **avoir froid** — to be cold
+      - **avoir chaud** — to be hot
+      - **avoir peur** — to be scared
+      - **avoir sommeil** — to be sleepy
+
+      Make them negative with *ne… pas*: *Je n'ai pas faim.*
+    tip: "*Je suis faim* is a very common mistake. It has to be *J'ai faim*."
+
+  - heading: "There is, there are: il y a"
+    body: |
+      **Il y a** means both "there is" and "there are". It never changes:
+
+      - *Il y a un chat.* — There is a cat.
+      - *Il y a des pommes.* — There are (some) apples.
+
+      To ask, raise your voice or use *est-ce que*:
+      *Est-ce qu'il y a un bus ?* — Is there a bus?
+    examples:
+      - ["Il y a un garçon ici.", "There is a boy here."]
+      - ["Il y a des livres ici.", "There are (some) books here."]
+
+words:
+  - [avoir, to have]
+  - [faim, hunger]
+  - [soif, thirst]
+  - [froid, cold]
+  - [chaud, hot]
+  - [peur, fear]
+  - [ans, years (of age)]
+  - [quel âge, how old]
+  - [il y a, "there is, there are"]
+  - [un stylo, a pen]
+  - [un sac, a bag]
+  - [un téléphone, a phone]
+  - [dix, ten]
+  - [douze, twelve]
+  - [vingt, twenty]
+
+practice:
+  - type: fill
+    prompt: "J'___ un chien."
+    hint: (avoir, je)
+    translation: I have a dog.
+    answers: [ai]
+    why: With je, avoir is ai — and je shortens to j'.
+
+  - type: fill
+    prompt: "Nous ___ un chat."
+    hint: (avoir, nous)
+    translation: We have a cat.
+    answers: [avons]
+    why: With nous, avoir is avons.
+
+  - type: fill
+    prompt: "Ils ___ des livres."
+    hint: (avoir, ils)
+    translation: They have (some) books.
+    answers: [ont]
+    why: With ils and elles, avoir is ont.
+
+  - type: fill
+    prompt: "Tu ___ quel âge ?"
+    hint: (avoir, tu)
+    translation: How old are you?
+    answers: [as]
+    why: In French you have an age, and with tu, avoir is as.
+
+  - type: translate
+    direction: to-target
+    prompt: I'm hungry.
+    answers: ["J'ai faim."]
+    why: French says "I have hunger" — avoir faim.
+
+  - type: translate
+    direction: to-target
+    prompt: I'm twelve years old.
+    answers: ["J'ai douze ans."]
+    why: Age uses avoir and always needs ans.
+
+  - type: translate
+    direction: to-target
+    prompt: There is a cat.
+    answers: ["Il y a un chat."]
+    why: Il y a means "there is" and "there are".
+
+  - type: translate
+    direction: to-english
+    prompt: Elle a froid.
+    answers: ["She is cold.", "She's cold.", "She feels cold."]
+    why: Avoir froid means to be cold — literally "to have cold".
+
+  - type: translate
+    direction: to-english
+    prompt: "Vous avez un stylo ?"
+    answers: ["Do you have a pen?", "Have you got a pen?"]
+    why: Avez is the vous form of avoir, and raising your voice makes it a question.
+
+  - type: choice
+    prompt: Which means "they are"?
+    options: [ils ont, ils sont]
+    answer: ils sont
+    why: Ils sont (an s sound) is être; ils ont (a z sound) is avoir.
+
+  - type: choice
+    prompt: How do you say "I'm scared"?
+    options: ["Je suis peur.", "J'ai peur."]
+    answer: "J'ai peur."
+    why: Fear, hunger, thirst, cold and heat all use avoir in French.
+
+  - type: translate
+    direction: to-target
+    prompt: We're not hungry.
+    answers: ["Nous n'avons pas faim.", "On n'a pas faim."]
+    why: Ne becomes n' before the vowel of avons or a, and pas comes after the verb.

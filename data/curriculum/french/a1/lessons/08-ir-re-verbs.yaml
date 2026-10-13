@@ -1,0 +1,159 @@
+title: Je finis, j'attends
+subtitle: Regular -ir and -re verbs
+goal: use the present tense of *-ir* verbs like *finir* and *-re* verbs like *attendre*
+minutes: 12
+
+sections:
+  - heading: -ir verbs like finir
+    body: |
+      The second family of regular verbs ends in **-ir**. Take off **-ir**
+      to get the stem — *fin-* — and add these endings.
+
+      Watch the plural: *nous, vous, ils* and *elles* add **-iss-** before
+      the ending. That **-iss-** is the sign of this family.
+    table:
+      columns: [person, ending, finir]
+      rows:
+        - [je, -is, finis]
+        - [tu, -is, finis]
+        - ["il / elle / on", -it, finit]
+        - [nous, -issons, finissons]
+        - [vous, -issez, finissez]
+        - ["ils / elles", -issent, finissent]
+    examples:
+      - ["Je finis le gâteau.", "I'm finishing the cake."]
+      - ["Nous choisissons une table.", "We're choosing a table."]
+      - ["Ils grandissent.", "They're growing up."]
+    tip: "*Je finis, tu finis, il finit* all sound the same: \"fee-nee\"."
+
+  - heading: -re verbs like attendre
+    body: |
+      The third family ends in **-re**. Take off **-re** — *attend-* — and
+      add the endings below.
+
+      The **il / elle / on** form has **no ending at all**: *il attend*.
+      And the final **d** is silent in the singular, but you hear it in
+      the plural: *ils attendent* ("ah-tond").
+    table:
+      columns: [person, ending, attendre]
+      rows:
+        - [je, -s, attends]
+        - [tu, -s, attends]
+        - ["il / elle / on", (nothing), attend]
+        - [nous, -ons, attendons]
+        - [vous, -ez, attendez]
+        - ["ils / elles", -ent, attendent]
+    examples:
+      - ["J'attends le bus.", "I'm waiting for the bus."]
+      - ["Elle vend la voiture.", "She's selling the car."]
+      - ["Tu entends ?", "Can you hear?"]
+    tip: "*Attendre* already means \"to wait for\" — don't add a word for \"for\": *J'attends le train*."
+
+  - heading: The three families side by side
+    body: |
+      Most regular verbs follow one of these three patterns. Once you know
+      them, you can conjugate thousands of verbs.
+
+      In all three families, **nous** ends in **-ons** and **vous** in
+      **-ez**. That will be true of almost every verb you meet.
+    table:
+      columns: [person, "-er (parler)", "-ir (finir)", "-re (attendre)"]
+      rows:
+        - [je, parle, finis, attends]
+        - [tu, parles, finis, attends]
+        - ["il / elle", parle, finit, attend]
+        - [nous, parlons, finissons, attendons]
+        - [vous, parlez, finissez, attendez]
+        - ["ils / elles", parlent, finissent, attendent]
+
+words:
+  - [finir, to finish]
+  - [choisir, to choose]
+  - [réussir, to succeed]
+  - [grandir, to grow (up)]
+  - [attendre, to wait (for)]
+  - [vendre, to sell]
+  - [entendre, to hear]
+  - [répondre, to answer]
+  - [perdre, to lose]
+  - [le bus, the bus]
+  - [le train, the train]
+  - [la réponse, the answer]
+
+practice:
+  - type: fill
+    prompt: "Je ___ le gâteau."
+    hint: (finir)
+    translation: I'm finishing the cake.
+    answers: [finis]
+    why: For je, -ir verbs end in -is.
+
+  - type: fill
+    prompt: "Nous ___ le bus."
+    hint: (attendre)
+    translation: We're waiting for the bus.
+    answers: [attendons]
+    why: For nous, take off -re and add -ons.
+
+  - type: fill
+    prompt: "Ils ___ une pizza."
+    hint: (choisir)
+    translation: They're choosing a pizza.
+    answers: [choisissent]
+    why: In the plural, -ir verbs add -iss- before the ending.
+
+  - type: fill
+    prompt: "Elle ___ la voiture."
+    hint: (vendre)
+    translation: She's selling the car.
+    answers: [vend]
+    why: The il and elle form of an -re verb is just the stem, with no ending.
+
+  - type: translate
+    direction: to-target
+    prompt: I'm waiting for the train.
+    answers: ["J'attends le train."]
+    why: Attendre already includes "for", so you just add le train.
+
+  - type: translate
+    direction: to-target
+    prompt: We're choosing a cake.
+    answers: ["Nous choisissons un gâteau.", "On choisit un gâteau."]
+    why: Choisir follows finir — nous choisissons, or on choisit.
+
+  - type: translate
+    direction: to-english
+    prompt: "Tu entends ?"
+    answers: ["Can you hear?", "Do you hear?", "Can you hear that?", "Do you hear that?", "Can you hear it?", "Do you hear it?"]
+    why: Entendre means to hear; tu entends ends in -s like all tu forms here.
+
+  - type: translate
+    direction: to-english
+    prompt: Ils perdent.
+    answers: ["They lose.", "They are losing.", "They're losing."]
+    why: Perdre is an -re verb, and the ils form ends in -ent.
+
+  - type: choice
+    prompt: Which is the vous form of *finir*?
+    options: [vous finez, vous finissez, vous finissiez]
+    answer: vous finissez
+    why: -ir verbs add -iss- in the plural, then the usual vous ending -ez.
+
+  - type: choice
+    prompt: In *il attend*, what ending is added to the stem *attend-*?
+    options: ["-e", "-t", "no ending"]
+    answer: "no ending"
+    why: The il and elle form of a regular -re verb is just the bare stem.
+
+  - type: translate
+    direction: to-target
+    prompt: She answers.
+    answers: [Elle répond.]
+    why: Répondre loses -re, and the elle form has no ending.
+
+  - type: fill
+    prompt: "Qu'est-ce que vous ___ ?"
+    hint: (choisir, vous)
+    translation: What are you choosing?
+    answers: [choisissez]
+    why: For vous, -ir verbs end in -issez.

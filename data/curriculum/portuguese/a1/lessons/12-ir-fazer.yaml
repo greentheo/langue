@@ -1,0 +1,166 @@
+title: "Vou, faço, quero, posso"
+subtitle: Ir, fazer, querer and poder
+goal: use ir, fazer, querer and poder, talk about plans with vou + infinitive, and ask politely with queria and gostaria de
+minutes: 14
+
+sections:
+  - heading: Four verbs you'll use every day
+    body: |
+      These four verbs are **irregular** — they don't follow the -ar, -er,
+      -ir patterns, so learn them by heart:
+
+      - **ir** — to go
+      - **fazer** — to do, to make
+      - **querer** — to want
+      - **poder** — can, to be able to
+    table:
+      columns: [pronoun, ir, fazer, querer, poder]
+      rows:
+        - [eu, vou, faço, quero, posso]
+        - [você / ele / ela / a gente, vai, faz, quer, pode]
+        - [nós, vamos, fazemos, queremos, podemos]
+        - [vocês / eles / elas, vão, fazem, querem, podem]
+    examples:
+      - ["O que você faz?", "What do you do?"]
+      - ["Ela faz a lição de casa.", "She does her homework."]
+      - ["Você quer um café?", "Do you want a coffee?"]
+    tip: "*Vamos!* on its own means \"Let's go!\" — and *Vamos comer?* means \"Shall we eat?\""
+
+  - heading: Going places
+    body: |
+      To say where you're going, Brazilians use **ir para** (to go to):
+
+      - *Vou para casa.* — I'm going home.
+      - *Ela vai para Salvador.* — She's going to Salvador.
+      - *Vamos para a praia.* — We're going to the beach.
+
+      In speech, *para* shrinks to **pra**: *Vou pra casa*. You'll hear it
+      all the time.
+    examples:
+      - ["Eles vão para o Rio.", "They're going to Rio."]
+      - ["Vou pra casa.", "I'm going home. (spoken)"]
+
+  - heading: Plans, wants and can
+    body: |
+      **Ir + infinitive** talks about the future, just like "going to" in
+      English:
+
+      - *Vou estudar amanhã.* — I'm going to study tomorrow.
+      - *O que você vai fazer hoje?* — What are you going to do today?
+
+      **Querer** and **poder** also take an infinitive straight after:
+
+      - *Quero aprender português.* — I want to learn Portuguese.
+      - *Você pode repetir?* — Can you repeat that?
+    tip: "The second verb stays in the infinitive (the -r form): *vou comer*, never *vou como*."
+
+  - heading: Asking politely
+    body: |
+      In a shop or café, *quero* (I want) sounds a bit blunt. Brazilians say:
+
+      - **queria** + a thing — *Queria um café, por favor.* (literally "I
+        wanted a coffee")
+      - **gostaria de** + an infinitive — *Gostaria de pagar.* (I would like
+        to pay.)
+    examples:
+      - ["Queria uma água, por favor.", "I'd like a water, please."]
+      - ["Eu gostaria de pagar com cartão.", "I'd like to pay by card."]
+
+words:
+  - [ir, to go]
+  - [fazer, to do / to make]
+  - [querer, to want]
+  - [poder, can / to be able to]
+  - [para, to (a place)]
+  - [pra, to (spoken form of para)]
+  - [praia, beach]
+  - [amanhã, tomorrow]
+  - [queria, I'd like (literally "I wanted")]
+  - [gostaria de, I would like to]
+  - [pagar, to pay]
+  - [fazer compras, to go shopping]
+  - [lição de casa, homework]
+  - [repetir, to repeat]
+
+practice:
+  - type: fill
+    prompt: "Eu ___ para a praia."
+    hint: ir, eu
+    translation: I'm going to the beach.
+    answers: [vou]
+    why: Ir is irregular — with eu it is vou.
+
+  - type: fill
+    prompt: "Ela ___ a lição de casa."
+    hint: fazer, ela
+    translation: She does her homework.
+    answers: [faz]
+    why: Fazer is irregular — with ela it is faz.
+
+  - type: fill
+    prompt: "Nós ___ ir amanhã."
+    hint: poder, nós
+    translation: We can go tomorrow.
+    answers: [podemos]
+    why: Poder with nós is podemos, followed by an infinitive.
+
+  - type: fill
+    prompt: "Eles ___ estudar."
+    hint: querer, eles
+    translation: They want to study.
+    answers: [querem]
+    why: Querer with eles is querem.
+
+  - type: choice
+    prompt: "\"I'm going to eat.\""
+    options: [Vou comer., Vou como., Vou a comer.]
+    answer: Vou comer.
+    why: Ir + infinitive (the -r form) talks about the future.
+
+  - type: choice
+    prompt: Which is the most polite in a café?
+    options: [Quero um café., "Queria um café, por favor.", Um café!]
+    answer: "Queria um café, por favor."
+    why: Queria plus por favor is the polite way to ask.
+
+  - type: translate
+    direction: to-target
+    prompt: I'm going home.
+    answers: [Vou para casa., Eu vou para casa., Vou pra casa., Eu vou pra casa.]
+    why: Ir para casa means to go home.
+
+  - type: translate
+    direction: to-target
+    prompt: Can you repeat that?
+    answers: [Você pode repetir?, Pode repetir?, O senhor pode repetir?, A senhora pode repetir?]
+    why: Poder + infinitive means you can do something.
+
+  - type: translate
+    direction: to-target
+    prompt: We're going to study tomorrow.
+    answers:
+      - Nós vamos estudar amanhã.
+      - Vamos estudar amanhã.
+      - A gente vai estudar amanhã.
+      - Amanhã nós vamos estudar.
+      - Amanhã vamos estudar.
+      - Amanhã a gente vai estudar.
+    why: Ir + infinitive talks about plans — vamos estudar.
+
+  - type: translate
+    direction: to-target
+    prompt: I would like to pay.
+    answers: [Gostaria de pagar., Eu gostaria de pagar., Queria pagar., Eu queria pagar.]
+    why: Gostaria de + infinitive is the polite "I would like to".
+
+  - type: translate
+    direction: to-english
+    prompt: Eles vão fazer compras.
+    answers: [They are going to go shopping., They're going to go shopping., They are going shopping., They're going shopping., They will go shopping.]
+    why: Vão fazer is ir + infinitive — a plan; fazer compras means to go shopping.
+
+  - type: translate
+    direction: to-english
+    prompt: Você quer ir?
+    answers: [Do you want to go?, Do you want to come?, Want to go?]
+    why: Querer + infinitive means to want to do something.

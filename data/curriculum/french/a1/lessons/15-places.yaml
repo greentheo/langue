@@ -1,0 +1,163 @@
+title: Au café, à la plage
+subtitle: À and de with articles; countries and places
+goal: combine *à* and *de* with *le* and *les* (*au, aux, du, des*), say which country you're in, and say where things are
+minutes: 15
+
+sections:
+  - heading: "À + le = au"
+    body: |
+      **À** means "to" or "at". When it meets **le** or **les**, the two
+      words merge:
+
+      - **à + le = au**: *Je vais au cinéma.* (to the cinema)
+      - **à + les = aux**: *Je vais aux toilettes.* (to the toilets)
+
+      **À la** and **à l'** never change: *à la plage* (to the beach), *à
+      l'école* (to school).
+    table:
+      columns: ["", "à + article", example]
+      rows:
+        - [masculine, au, "au parc — to the park"]
+        - [feminine, à la, "à la gare — to the station"]
+        - [before a vowel, "à l'", "à l'hôpital — to the hospital"]
+        - [plural, aux, "aux magasins — to the shops"]
+    tip: "*À le* and *à les* are always wrong — they must become *au* and *aux*."
+
+  - heading: "De + le = du"
+    body: |
+      **De** means "from" or "of", and it merges the same way:
+
+      - **de + le = du**: *Je viens du parc.* (from the park)
+      - **de + les = des**: *la maison des voisins* (the neighbours' house)
+
+      **De la** and **de l'** don't change.
+
+      French has no 's for owning things. It says "the book **of** the
+      teacher": *le livre **du** professeur* — the teacher's book.
+    examples:
+      - ["Elle vient de la plage.", "She's coming from the beach."]
+      - ["le chien du voisin", "the neighbour's dog"]
+      - ["la voiture des parents", "the parents' car"]
+    tip: "*Du* and *des* also mean \"some\" (from the likes lesson). Same spelling, different job: *du pain* is some bread; *la porte du parc* is the gate of the park."
+
+  - heading: Countries and cities
+    body: |
+      With **cities**, use **à**: *Je suis à Paris. Je vais à Rome.*
+
+      With **countries**, it depends on the country's gender:
+
+      - feminine countries (most end in **-e**) take **en**: *en France,
+        en Italie, en Espagne*
+      - masculine countries take **au**: *au Canada, au Japon, au Mexique*
+      - plural countries take **aux**: *aux États-Unis* (in/to the US)
+
+      The same word means both "in" and "to": *J'habite en France* and
+      *Je vais en France*.
+
+  - heading: Where things are
+    body: |
+      - **dans** — in, inside
+      - **sur** — on
+      - **sous** — under
+      - **devant** — in front of
+      - **derrière** — behind
+      - **à côté de** — next to (and *de* merges: *à côté **du** lit*)
+    examples:
+      - ["Le chat est sous la table.", "The cat is under the table."]
+      - ["Le livre est sur le lit.", "The book is on the bed."]
+      - ["La gare est à côté du parc.", "The station is next to the park."]
+
+words:
+  - [le cinéma, the cinema]
+  - [la plage, the beach]
+  - [le parc, the park]
+  - [la gare, the train station]
+  - ["l'hôpital (m)", the hospital]
+  - [les toilettes, "the toilet, the bathroom"]
+  - [le professeur, the teacher]
+  - [le voisin / la voisine, the neighbour]
+  - [le lit, the bed]
+  - [la France, France]
+  - [le Canada, Canada]
+  - [les États-Unis, the United States]
+  - [dans, in]
+  - [sur, on]
+  - [sous, under]
+
+practice:
+  - type: fill
+    prompt: "Je vais ___ cinéma."
+    hint: (to the)
+    translation: I'm going to the cinema.
+    answers: [au]
+    why: Cinéma is masculine, and à + le always becomes au.
+
+  - type: fill
+    prompt: "Nous allons ___ plage."
+    hint: (to the)
+    translation: We're going to the beach.
+    answers: [à la]
+    why: Plage is feminine, and à la never changes.
+
+  - type: fill
+    prompt: "Il vient ___ parc."
+    hint: (from the)
+    translation: He's coming from the park.
+    answers: [du]
+    why: Parc is masculine, and de + le always becomes du.
+
+  - type: fill
+    prompt: "Elle habite ___ États-Unis."
+    hint: (in the)
+    translation: She lives in the United States.
+    answers: [aux]
+    why: États-Unis is plural, so à + les becomes aux.
+
+  - type: fill
+    prompt: "J'habite ___ France."
+    hint: (in)
+    translation: I live in France.
+    answers: [en]
+    why: France is a feminine country, so "in" is en.
+
+  - type: translate
+    direction: to-target
+    prompt: I'm going to the station.
+    answers: [Je vais à la gare.]
+    why: Gare is feminine, so à la stays as it is.
+
+  - type: translate
+    direction: to-target
+    prompt: the teacher's book
+    answers: [le livre du professeur, le livre du prof]
+    why: French says "the book of the teacher", and de + le becomes du.
+
+  - type: translate
+    direction: to-target
+    prompt: They live in Canada.
+    answers: [Ils habitent au Canada., Elles habitent au Canada.]
+    why: Canada is a masculine country, so "in" is au.
+
+  - type: translate
+    direction: to-english
+    prompt: Le chat est sous la table.
+    answers: ["The cat is under the table.", "The cat's under the table."]
+    why: Sous means under.
+
+  - type: translate
+    direction: to-english
+    prompt: "Le parc est à côté de l'école."
+    answers: ["The park is next to the school.", "The park's next to the school.", "The park is beside the school."]
+    why: À côté de means next to; de l' doesn't change.
+
+  - type: choice
+    prompt: Which is correct?
+    options: [Je vais à le parc., Je vais au parc.]
+    answer: Je vais au parc.
+    why: À + le must always become au.
+
+  - type: choice
+    prompt: In *la maison des voisins*, what does *des* mean?
+    options: [some, of the]
+    answer: of the
+    why: Here des is de + les — "the house of the neighbours".

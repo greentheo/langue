@@ -1,0 +1,181 @@
+title: Les nombres
+subtitle: Numbers, prices, time and dates
+goal: count to 100, ask and understand prices, tell the time, and say the date
+minutes: 15
+
+sections:
+  - heading: 0 to 20
+    body: |
+      These have to be learned by heart. From 17 to 19 French adds:
+      *dix-sept* is "ten-seven".
+    table:
+      columns: [number, French, number, French]
+      rows:
+        - [0, zéro, 11, onze]
+        - [1, "un, une", 12, douze]
+        - [2, deux, 13, treize]
+        - [3, trois, 14, quatorze]
+        - [4, quatre, 15, quinze]
+        - [5, cinq, 16, seize]
+        - [6, six, 17, dix-sept]
+        - [7, sept, 18, dix-huit]
+        - [8, huit, 19, dix-neuf]
+        - [9, neuf, 20, vingt]
+        - [10, dix, 21, vingt et un]
+
+  - heading: 20 to 100, and the famous 70, 80, 90
+    body: |
+      The tens are **vingt** (20), **trente** (30), **quarante** (40),
+      **cinquante** (50), **soixante** (60). Add units with a hyphen:
+      *trente-deux* (32). For 21, 31, 41, 51 and 61 say **et un**:
+      *vingt et un*.
+
+      Then French starts doing maths:
+
+      - **70** = *soixante-dix* — "sixty-ten"; 71 is *soixante et onze*
+      - **80** = *quatre-vingts* — "four twenties"
+      - **90** = *quatre-vingt-dix* — "four twenties ten"
+
+      **100** is *cent* and **1,000** is *mille*.
+    examples:
+      - ["soixante-quinze", "75 (sixty-fifteen)"]
+      - ["quatre-vingt-trois", "83 (four twenties three)"]
+      - ["quatre-vingt-dix-neuf", "99 (four twenties nineteen)"]
+    tip: "In Belgium and Switzerland people say *septante* (70) and *nonante* (90) — much easier, but in France stick to *soixante-dix* and *quatre-vingt-dix*."
+
+  - heading: How much is it?
+    body: |
+      To ask a price: **C'est combien ?** or **Ça coûte combien ?**
+
+      The answer: **Ça fait cinq euros.** (That's five euros.)
+
+      French writes a **comma** where English uses a decimal point, and
+      says the cents after the euros: 3,50 € is *trois euros cinquante*.
+    examples:
+      - ["C'est combien ?", "How much is it?"]
+      - ["Ça fait douze euros.", "That's twelve euros."]
+      - ["Ça coûte deux euros cinquante.", "It costs two euros fifty."]
+
+  - heading: What time is it?
+    body: |
+      Ask **Quelle heure est-il ?** and answer with **Il est** + the number
+      + **heure(s)**:
+
+      - *Il est une heure.* — It's one o'clock.
+      - *Il est trois heures.* — It's three o'clock.
+      - *Il est midi / minuit.* — It's noon / midnight.
+
+      For quarters and halves: **et quart** (quarter past), **et demie**
+      (half past), **moins le quart** (quarter to). Timetables use the
+      24-hour clock: *Il est quinze heures trente* — 3:30 p.m.
+    examples:
+      - ["Il est deux heures et demie.", "It's half past two."]
+      - ["Il est six heures et quart.", "It's a quarter past six."]
+      - ["Il est huit heures moins le quart.", "It's a quarter to eight."]
+
+  - heading: Days, months and dates
+    body: |
+      Days: *lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche.*
+      Months: *janvier, février, mars, avril, mai, juin, juillet, août,
+      septembre, octobre, novembre, décembre.*
+
+      Both are written **without a capital letter**.
+
+      For a date, say **le** + number + month: *le 14 juillet*. The 1st is
+      special: **le premier** mai.
+    examples:
+      - ["Aujourd'hui, c'est lundi.", "Today is Monday."]
+      - ["C'est le premier janvier.", "It's the first of January."]
+      - ["C'est le vingt-cinq décembre.", "It's the twenty-fifth of December."]
+
+words:
+  - [trente, thirty]
+  - [cinquante, fifty]
+  - [soixante, sixty]
+  - [soixante-dix, seventy]
+  - [quatre-vingts, eighty]
+  - [quatre-vingt-dix, ninety]
+  - [cent, a hundred]
+  - [combien, how much]
+  - [un euro, a euro]
+  - [une heure, "an hour, o'clock"]
+  - [midi, noon]
+  - [aujourd'hui, today]
+  - [lundi, Monday]
+  - [mai, May]
+
+practice:
+  - type: fill
+    prompt: "Il est ___ heures."
+    hint: (3)
+    translation: It's three o'clock.
+    answers: [trois]
+    why: Il est + the number + heures tells the time.
+
+  - type: translate
+    direction: to-target
+    prompt: seventy
+    answers: [soixante-dix, soixante dix]
+    why: Seventy is "sixty-ten" in French.
+
+  - type: translate
+    direction: to-target
+    prompt: eighty
+    answers: [quatre-vingts, quatre vingts]
+    why: Eighty is "four twenties"; on its own, vingts takes an -s.
+
+  - type: translate
+    direction: to-english
+    prompt: quatre-vingt-dix
+    answers: ["ninety", "90"]
+    why: Ninety is "four twenties ten".
+
+  - type: translate
+    direction: to-english
+    prompt: "C'est combien ?"
+    answers: ["How much is it?", "How much is this?", "How much is that?", "How much does it cost?", "How much?"]
+    why: C'est combien? literally means "it is how much?".
+
+  - type: translate
+    direction: to-target
+    prompt: It's one o'clock.
+    answers: ["Il est une heure."]
+    why: Heure is feminine, so one o'clock is une heure — and only one, so no -s.
+
+  - type: fill
+    prompt: "Aujourd'hui, c'est le ___ mai."
+    hint: (1st)
+    translation: Today is the first of May.
+    answers: [premier]
+    why: The 1st of the month is le premier; every other date uses the plain number.
+
+  - type: choice
+    prompt: How do you say 71?
+    options: [soixante-onze, soixante et onze, septante-un]
+    answer: soixante et onze
+    why: Like 21 and 31, 71 uses et — and 71 is "sixty and eleven".
+
+  - type: choice
+    prompt: Which is written correctly?
+    options: [Lundi 3 Mai, lundi 3 mai]
+    answer: lundi 3 mai
+    why: French days and months have no capital letter.
+
+  - type: translate
+    direction: to-target
+    prompt: It's half past two.
+    answers: ["Il est deux heures et demie.", "Il est deux heures trente."]
+    why: Et demie means "and a half"; deux heures trente also works.
+
+  - type: fill
+    prompt: "Ça ___ dix euros."
+    hint: (makes — that's)
+    translation: That's ten euros.
+    answers: [fait]
+    why: When giving a total price, French says ça fait — literally "that makes".
+
+  - type: translate
+    direction: to-english
+    prompt: Il est midi.
+    answers: ["It's noon.", "It is noon.", "It's midday.", "It is midday.", "It's twelve o'clock.", "It's twelve noon."]
+    why: Midi is noon; midnight is minuit.

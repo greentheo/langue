@@ -1,0 +1,155 @@
+title: "Como, bebo, abro"
+subtitle: Regular -er and -ir verbs
+goal: use regular -er and -ir verbs in the present
+minutes: 12
+
+sections:
+  - heading: -er verbs
+    body: |
+      Verbs ending in **-er** follow the same idea as *falar*: take off the
+      ending and add a new one. The endings use **e** where -ar verbs use
+      **a**.
+
+      Some everyday -er verbs:
+
+      - **comer** — to eat
+      - **beber** — to drink
+      - **aprender** — to learn
+      - **escrever** — to write
+      - **vender** — to sell
+      - **entender** — to understand
+    examples:
+      - ["Eu como pão.", "I eat bread."]
+      - ["Ela bebe água.", "She drinks water."]
+      - ["Nós aprendemos português.", "We are learning Portuguese."]
+      - ["Eles vendem livros.", "They sell books."]
+    tip: "*Como* means \"I eat\" and also \"how\". The sentence tells you which: *Como você se chama?* vs *Eu como pão.*"
+
+  - heading: -ir verbs
+    body: |
+      Verbs ending in **-ir** are almost the same as -er verbs. Only the
+      **nós** form is different: *comemos* but *abrimos*.
+
+      Some everyday -ir verbs:
+
+      - **abrir** — to open
+      - **partir** — to leave, to depart
+      - **decidir** — to decide
+      - **assistir** — to watch (TV, a film, a game)
+      - **dividir** — to share, to split
+    table:
+      columns: [pronoun, falar, comer, abrir]
+      rows:
+        - [eu, falo, como, abro]
+        - [você / ele / ela / a gente, fala, come, abre]
+        - [nós, falamos, comemos, abrimos]
+        - [vocês / eles / elas, falam, comem, abrem]
+    examples:
+      - ["A loja abre às nove.", "The shop opens at nine."]
+      - ["Nós dividimos a conta.", "We split the bill."]
+      - ["Eles assistem TV.", "They watch TV."]
+    tip: "*Assistir* means to watch, not to assist. In careful writing you'll see *assistir a um filme*; in everyday speech Brazilians say *assistir um filme*."
+
+  - heading: How they sound
+    body: |
+      Remember from lesson 2: a final unstressed **-e** sounds like **i**.
+      So *come* sounds like KO-mee, *abre* like AH-bree, *bebe* like BEH-bee.
+
+      A few common -er and -ir verbs are irregular in the *eu* form only —
+      *dormir* (to sleep) becomes *durmo*, *ouvir* (to hear) becomes *ouço*.
+      You'll meet them later; everything in this lesson is regular.
+
+words:
+  - [comer, to eat]
+  - [beber, to drink]
+  - [aprender, to learn]
+  - [escrever, to write]
+  - [vender, to sell]
+  - [entender, to understand]
+  - [abrir, to open]
+  - [partir, to leave]
+  - [decidir, to decide]
+  - [assistir, to watch]
+  - [dividir, to share / to split]
+  - [água, water]
+  - [carta, letter]
+  - [janela, window]
+  - [loja, shop / store]
+  - [conta, bill / check]
+
+practice:
+  - type: fill
+    prompt: "Eu ___ pão."
+    hint: comer, eu
+    translation: I eat bread.
+    answers: [como]
+    why: -er verbs end in -o with eu, just like -ar verbs.
+
+  - type: fill
+    prompt: "Nós ___ português."
+    hint: aprender, nós
+    translation: We are learning Portuguese.
+    answers: [aprendemos]
+    why: -er verbs end in -emos with nós.
+
+  - type: fill
+    prompt: "Eles ___ a janela."
+    hint: abrir, eles
+    translation: They open the window.
+    answers: [abrem]
+    why: -ir verbs end in -em with eles — the same as -er verbs.
+
+  - type: fill
+    prompt: "Nós ___ a conta."
+    hint: dividir, nós
+    translation: We split the bill.
+    answers: [dividimos]
+    why: -ir verbs keep the i in the nós form — dividimos.
+
+  - type: choice
+    prompt: What is the nós form of *partir*?
+    options: [partemos, partimos, partamos]
+    answer: partimos
+    why: -ir verbs end in -imos with nós.
+
+  - type: choice
+    prompt: "\"Você ___ português?\" (understand)"
+    options: [entende, entendem, entendo]
+    answer: entende
+    why: Você uses the same form as ele and ela — entende.
+
+  - type: translate
+    direction: to-target
+    prompt: I drink water.
+    answers: [Eu bebo água., Bebo água., Eu tomo água., Tomo água.]
+    why: Beber with eu is bebo (and tomar from lesson 8 works too).
+
+  - type: translate
+    direction: to-target
+    prompt: She writes a letter.
+    answers: [Ela escreve uma carta.]
+    why: -er verbs end in -e with ela.
+
+  - type: translate
+    direction: to-target
+    prompt: Do you understand?
+    answers: [Você entende?, Entende?, O senhor entende?, A senhora entende?, Vocês entendem?]
+    why: Raise your voice at the end and entende becomes a question.
+
+  - type: translate
+    direction: to-english
+    prompt: Eles vendem livros.
+    answers: [They sell books., They are selling books., They're selling books.]
+    why: Vender is to sell, and -em is the eles ending.
+
+  - type: translate
+    direction: to-english
+    prompt: Nós assistimos TV.
+    answers: [We watch TV., We are watching TV., We're watching TV., We watch television.]
+    why: Assistir means to watch, not to assist.
+
+  - type: translate
+    direction: to-english
+    prompt: A loja abre às nove.
+    answers: [The shop opens at nine., The store opens at nine., The shop opens at 9., The store opens at 9.]
+    why: With a loja (it), abrir is abre.

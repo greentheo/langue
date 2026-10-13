@@ -1,0 +1,167 @@
+title: Les sons du français
+subtitle: How French sounds
+goal: read French words aloud — silent letters, accents, the vowels English doesn't have, and liaison
+minutes: 12
+
+sections:
+  - heading: Many letters are silent
+    body: |
+      French spelling has a lot of letters you don't say, especially at the
+      end of a word.
+
+      - A final **e** is silent: *table* sounds like "tabl".
+      - Most final consonants are silent: *petit* ("puh-tee"), *Paris*
+        ("pa-ree"), *trois* ("trwa"), *vous* ("voo").
+      - The letter **h** is always silent: *hôtel* sounds like "o-tel".
+
+      Four final consonants are usually pronounced. Remember the word
+      **CaReFuL**: *c, r, f, l* — as in *avec*, *bonjour*, *neuf*, *il*.
+    examples:
+      - ["petit", "small — the t is silent"]
+      - ["trois", "three — say \"trwa\""]
+      - ["avec", "with — the c is pronounced"]
+      - ["neuf", "nine — the f is pronounced"]
+    tip: "Verbs ending in *-er* are the big exception to CaReFuL: *parler* sounds like \"par-lay\", with no r at the end."
+
+  - heading: What the accents do
+    body: |
+      Accents are part of the spelling — leaving them out is a spelling
+      mistake.
+
+      - **é** sounds like "ay": *café*, *été* (summer)
+      - **è** and **ê** sound like the "e" in *bed*: *très*, *fête* (party)
+      - **ç** (c with a little tail, the *cédille*) makes c sound like "s"
+        before a, o or u: *ça*, *garçon*, *français*
+
+      The accent on **à** and **où** doesn't change the sound, but it changes
+      the meaning: *a* = has, *à* = to; *ou* = or, *où* = where.
+    table:
+      columns: [letter, sounds like, example]
+      rows:
+        - [é, "\"ay\" in *say*", café]
+        - ["è, ê", "\"e\" in *bed*", "très, fête"]
+        - [ç, "\"s\"", "garçon"]
+        - [c + a/o/u, "\"k\"", "café, comment"]
+
+  - heading: Sounds English doesn't have
+    body: |
+      **u** and **ou** are different sounds:
+
+      - **ou** is like "oo" in *food*: *tout* (all), *vous*
+      - **u** has no English match. Say "ee", then round your lips as if
+        to whistle, without moving your tongue: *tu*, *rue* (street)
+
+      **Nasal vowels** come from a vowel + **n** or **m**. You don't say the
+      n — the vowel goes partly through your nose: **an/en** in *France*,
+      **on** in *bon*, **in/ain** in *vin* (wine) and *pain* (bread).
+
+      The French **r** is made at the back of the throat, a little like a
+      soft gargle.
+    examples:
+      - ["tu / tout", "you / all — two different vowels"]
+      - ["bon", "good — no n sound at the end"]
+      - ["pain", "bread — nothing like English \"pain\""]
+
+  - heading: "Liaison: silent letters that wake up"
+    body: |
+      A silent final consonant can come back to life when the next word
+      starts with a vowel. This is called **liaison**. A linking **s** or
+      **x** sounds like **z**.
+
+      - *deux* ("duh") but *deux amis* ("duh-za-mee")
+      - *trois* ("trwa") but *trois enfants* ("trwa-zon-fon")
+      - *vous* ("voo") but *vous êtes* ("voo-zet")
+    tip: "You will hear liaison all the time after *les, des, deux, trois, nous, vous, ils* and *elles*."
+
+words:
+  - [café, coffee]
+  - [garçon, boy]
+  - [français, French]
+  - [école, school]
+  - [rue, street]
+  - [tout, "all, everything"]
+  - [pain, bread]
+  - [vin, wine]
+  - [bon, good]
+  - [deux, two]
+  - [trois, three]
+  - [avec, with]
+
+practice:
+  - type: choice
+    prompt: Is the final t of *petit* pronounced?
+    options: ["Yes", "No"]
+    answer: "No"
+    why: Most final consonants in French are silent, and t is one of them.
+
+  - type: choice
+    prompt: Which word has the "oo" sound, as in *food*?
+    options: [tu, tout]
+    answer: tout
+    why: The spelling ou makes the "oo" sound; u on its own is the rounded "ee" sound.
+
+  - type: fill
+    strict_accents: true
+    prompt: "gar___on"
+    hint: (c or ç?)
+    translation: boy
+    answers: [ç]
+    why: Before o, a plain c sounds like k; the cédille in ç keeps it soft, like s.
+
+  - type: fill
+    strict_accents: true
+    prompt: "caf___"
+    hint: (e or é?)
+    translation: coffee
+    answers: [é]
+    why: A final é is pronounced "ay"; a plain final e would be silent.
+
+  - type: fill
+    strict_accents: true
+    prompt: "fran___ais"
+    hint: (c or ç?)
+    translation: French
+    answers: [ç]
+    why: Before a, c needs a cédille to sound like s.
+
+  - type: choice
+    prompt: What happens to the n in *bon*?
+    options: ["It is pronounced like an English n", "It is silent, and the o goes through the nose"]
+    answer: "It is silent, and the o goes through the nose"
+    why: Vowel + n at the end of a syllable makes a nasal vowel; the n itself is not pronounced.
+
+  - type: choice
+    prompt: How is *deux amis* pronounced?
+    options: ["duh-a-mee", "duh-za-mee"]
+    answer: "duh-za-mee"
+    why: In liaison the silent x of deux comes back as a z sound before the vowel.
+
+  - type: translate
+    direction: to-english
+    prompt: deux
+    answers: ["two"]
+    why: Deux is pronounced "duh" — the x is silent.
+
+  - type: translate
+    direction: to-english
+    prompt: pain
+    answers: ["bread"]
+    why: Pain means bread, and its ain is a nasal vowel, so it sounds nothing like English "pain".
+
+  - type: translate
+    direction: to-target
+    prompt: three
+    answers: [trois]
+    why: Trois is pronounced "trwa" — the final s is silent.
+
+  - type: translate
+    direction: to-target
+    prompt: boy
+    answers: [garçon]
+    why: Garçon needs the cédille so the c sounds like s.
+
+  - type: translate
+    direction: to-target
+    prompt: coffee
+    answers: [café]
+    why: The é at the end is pronounced "ay".

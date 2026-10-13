@@ -1,0 +1,178 @@
+title: How Spanish sounds
+subtitle: Read any word aloud
+goal: read any Spanish word aloud — the five vowels, ñ, j, ll, the silent h, the two r's, and where the stress goes
+minutes: 12
+
+sections:
+  - heading: Five clean vowels
+    body: |
+      Spanish has only five vowel sounds, and they never change. Every vowel
+      is said clearly, even at the end of a word: *noche* is NO-cheh.
+
+      The good news: Spanish is spelled the way it sounds. Once you know the
+      rules in this lesson, you can read any word aloud — even one you've
+      never seen.
+    table:
+      columns: [letter, sounds like, example]
+      rows:
+        - [a, "a in \"father\"", casa]
+        - [e, "e in \"bet\"", mesa]
+        - [i, "ee in \"see\"", sí]
+        - [o, "o in \"go\", but short", "no"]
+        - [u, "oo in \"food\"", uno]
+    tip: "English speakers tend to turn final vowels into \"uh\". Keep them clear: *casa* is KAH-sah, not KAH-suh."
+
+  - heading: Letters that surprise English speakers
+    body: |
+      A few letters don't sound like they do in English:
+
+      - **h** is always silent: *hola* is OH-lah
+      - **j** is a rough h from the back of the throat: *jugo* (juice)
+      - **g** before **e** or **i** sounds the same as j: *gente* (people)
+      - **ll** and **y** sound like the y in "yes": *llamo*, *yo*
+      - **ñ** is "ny", like in "canyon": *niño* (child), *año* (year)
+      - **b** and **v** sound the same — a soft b: *vaso*, *beso*
+    table:
+      columns: [spelling, sound, examples]
+      rows:
+        - [h, silent, "hola, hasta"]
+        - [j, rough h, "jugo, ojo"]
+        - ["ge, gi", rough h, "gente, gigante"]
+        - ["ga, go, gu", "g in \"go\"", "gato, amigo"]
+        - ["ll, y", "y in \"yes\"", "llamo, yo"]
+        - [ñ, "ny in \"canyon\"", "niño, año"]
+    tip: "In Argentina and Uruguay, *ll* and *y* sound like \"sh\": *yo* sounds like \"sho\"."
+
+  - heading: "C, Z and QU"
+    body: |
+      - **c** before **a, o, u** is a k sound: *casa*, *cosa*, *Cuba*
+      - **c** before **e, i** is an s sound in Latin America, and a "th" sound in most of Spain: *cinco*, *cena*
+      - **z** sounds like that soft c: *zapato* (shoe)
+
+      To write a k sound before e or i, Spanish uses **qu**, and the u is
+      silent: *queso* (cheese), *aquí* (here). In the same way, **gue** and
+      **gui** keep the g hard: *guitarra*.
+    examples:
+      - ["cinco", "five"]
+      - ["queso", "cheese"]
+      - ["zapato", "shoe"]
+      - ["guitarra", "guitar"]
+
+  - heading: "R and RR"
+    body: |
+      A single **r** in the middle of a word is a quick tap of the tongue,
+      like the tt in American "butter": *pero* (but).
+
+      A double **rr**, and an **r** at the start of a word, is rolled:
+      *perro* (dog), *Roma*. Getting it right matters — *pero* and *perro*
+      are different words.
+    examples:
+      - ["pero", "but"]
+      - ["perro", "dog"]
+      - ["Roma", "Rome"]
+
+  - heading: Where the stress goes
+    body: |
+      Every word has one syllable that is said a little louder. Two rules
+      tell you which:
+
+      - word ends in a **vowel, n or s** → stress the second-to-last syllable: CA-sa, HA-blan
+      - word ends in **any other consonant** → stress the last syllable: ha-BLAR, es-pa-ÑOL
+
+      When a word breaks these rules, it gets an **accent mark** on the
+      stressed vowel: *ca-FÉ*, *MÉ-di-co*, *a-QUÍ*.
+
+      Accent marks also tell apart words that sound the same: **sí** (yes)
+      and **si** (if), **tú** (you) and **tu** (your), **él** (he) and
+      **el** (the).
+    tip: "An accent mark never changes how the vowel sounds — it only shows where the stress is."
+
+words:
+  - [casa, house]
+  - [gente, people]
+  - [jugo, juice]
+  - [niño, "boy, child"]
+  - [año, year]
+  - [queso, cheese]
+  - [zapato, shoe]
+  - [perro, dog]
+  - [pero, but]
+  - [cinco, five]
+  - [aquí, here]
+  - [sí, "yes"]
+
+practice:
+  - type: choice
+    prompt: How do you say *hola*?
+    options: [OH-lah, HOH-lah, oh-LAH]
+    answer: OH-lah
+    why: The h is always silent, and hola ends in a vowel, so the stress is on the second-to-last syllable.
+
+  - type: choice
+    prompt: Which letter is always silent?
+    options: [h, j, ñ]
+    answer: h
+    why: H is never pronounced in Spanish; j is a rough h sound and ñ is "ny".
+
+  - type: choice
+    prompt: In *gente*, the g sounds like…
+    options: [the g in "go", a rough h, the y in "yes"]
+    answer: a rough h
+    why: G before e or i sounds like the Spanish j.
+
+  - type: choice
+    prompt: Which word means "dog"?
+    options: [pero, perro]
+    answer: perro
+    why: Perro has a rolled rr; pero, with a single tapped r, means "but".
+
+  - type: choice
+    prompt: How do you spell the k sound before e?
+    options: [ke, que, ce]
+    answer: que
+    why: Spanish writes qu before e and i, and the u is silent — like queso.
+
+  - type: choice
+    prompt: Where is the stress in *hablan*?
+    options: [HA-blan, ha-BLAN]
+    answer: HA-blan
+    why: Words ending in n stress the second-to-last syllable.
+
+  - type: choice
+    prompt: Where is the stress in *español*?
+    options: [es-PA-ñol, es-pa-ÑOL]
+    answer: es-pa-ÑOL
+    why: Español ends in l, not a vowel, n or s, so the stress is on the last syllable.
+
+  - type: choice
+    prompt: Why does *café* have an accent mark?
+    options: ["It changes the sound of the e", "It shows the stress is on the last syllable", "It means the word is plural"]
+    answer: It shows the stress is on the last syllable
+    why: Café ends in a vowel, so without the accent the stress would fall on CA-.
+
+  - type: choice
+    prompt: In most of Latin America, *cinco* starts with the sound of…
+    options: [s in "sun", th in "think", k in "kite"]
+    answer: s in "sun"
+    why: C before e or i sounds like s in Latin America, and like th in most of Spain.
+
+  - type: fill
+    strict_accents: true
+    prompt: "ma___ana"
+    hint: tomorrow — the "ny" sound
+    translation: tomorrow
+    answers: [ñ]
+    why: The letter ñ spells the "ny" sound, as in mañana.
+
+  - type: translate
+    direction: to-target
+    strict_accents: true
+    prompt: "yes"
+    answers: [sí]
+    why: Sí with an accent means "yes"; si without one means "if".
+
+  - type: choice
+    prompt: How does *ll* sound in *llamo*, in most places?
+    options: [like the l in "lamp", like the y in "yes", like the j in "jam"]
+    answer: like the y in "yes"
+    why: In most of the Spanish-speaking world, ll sounds just like y.

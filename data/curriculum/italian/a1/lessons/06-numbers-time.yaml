@@ -1,0 +1,182 @@
+title: Numbers and time
+subtitle: Counting, prices, the time, days and dates
+goal: count to a thousand, ask prices, tell the time, and give the day and the date
+minutes: 15
+
+sections:
+  - heading: 0 to 19
+    body: |
+      The first numbers just have to be learned. Two patterns help:
+      11 to 16 end in **-dici**, and 17 to 19 start with **dici-**.
+    table:
+      columns: ["#", Italian, "#", Italian]
+      rows:
+        - [0, zero, 10, dieci]
+        - [1, uno, 11, undici]
+        - [2, due, 12, dodici]
+        - [3, tre, 13, tredici]
+        - [4, quattro, 14, quattordici]
+        - [5, cinque, 15, quindici]
+        - [6, sei, 16, sedici]
+        - [7, sette, 17, diciassette]
+        - [8, otto, 18, diciotto]
+        - [9, nove, 19, diciannove]
+    tip: "*Sei* means both \"six\" and \"you are\" (from *essere*). The sentence tells you which."
+
+  - heading: Tens, hundreds, thousands — and prices
+    body: |
+      The tens: **venti** (20), **trenta** (30), **quaranta** (40),
+      **cinquanta** (50), **sessanta** (60), **settanta** (70), **ottanta**
+      (80), **novanta** (90).
+
+      For 21 to 99, join the ten and the unit into one word: *venti + due =
+      ventidue*, *trenta + cinque = trentacinque*. Before **uno** and
+      **otto**, which start with a vowel, the ten drops its last vowel:
+      *ventuno*, *ventotto*, *trentuno*.
+
+      Then **cento** (100), **duecento** (200), **mille** (1,000) and
+      **duemila** (2,000).
+
+      To ask a price: **Quanto costa?** — How much is it? For more than one
+      thing: **Quanto costano?** — How much are they?
+    examples:
+      - ["trentatré", "33"]
+      - ["quarantotto", "48"]
+      - ["centocinquanta", "150"]
+      - ["Quanto costa il gelato? — Costa tre euro.", "How much is the ice cream? — It's three euros."]
+      - ["Quanto costano due caffè?", "How much are two coffees?"]
+    tip: "*Euro* never changes in the plural: *un euro, dieci euro*. Numbers ending in *-tré* take an accent: *ventitré*."
+
+  - heading: What time is it?
+    body: |
+      Ask **Che ore sono?** The answer uses **sono le** + the hour, because
+      the hours are plural:
+
+      - *Sono le tre.* — It's three o'clock.
+      - *Sono le otto e un quarto.* — It's quarter past eight.
+      - *Sono le dieci e mezza.* — It's half past ten.
+      - *Sono le nove meno un quarto.* — It's quarter to nine.
+      - *Sono le sei e venti.* — It's twenty past six.
+
+      One o'clock, noon and midnight are singular, so they use **è**:
+      *È l'una*, *È mezzogiorno*, *È mezzanotte*.
+    examples:
+      - ["Che ore sono? — Sono le due.", "What time is it? — It's two o'clock."]
+      - ["È l'una e dieci.", "It's ten past one."]
+      - ["Sono le venti.", "It's 8 pm. (24-hour clock)"]
+    tip: "Never *sono le una*. One o'clock is singular: *è l'una*."
+
+  - heading: Days, months and dates
+    body: |
+      Days and months are written with a **small letter**.
+
+      The week starts on Monday: **lunedì, martedì, mercoledì, giovedì,
+      venerdì, sabato, domenica**.
+
+      The months: **gennaio, febbraio, marzo, aprile, maggio, giugno,
+      luglio, agosto, settembre, ottobre, novembre, dicembre**.
+
+      Dates use **il** + the number + the month: *il 5 maggio* (5 May). The
+      first of the month is **il primo**: *il primo gennaio*.
+
+      Also useful: **oggi** (today), **domani** (tomorrow), **ieri**
+      (yesterday).
+    examples:
+      - ["Oggi è lunedì.", "Today is Monday."]
+      - ["Che giorno è oggi? — È venerdì.", "What day is it today? — It's Friday."]
+      - ["Domani è il primo maggio.", "Tomorrow is the first of May."]
+      - ["Il concerto è il 12 luglio.", "The concert is on 12 July."]
+    tip: "*Lunedì* to *venerdì* end in an accented *ì*: the stress is on the last syllable — lu-ne-DÌ."
+
+words:
+  - [quanto, how much]
+  - [costare, to cost]
+  - [euro, euro]
+  - [ora, hour]
+  - [mezza, half]
+  - [quarto, quarter]
+  - [giorno, day]
+  - [settimana, week]
+  - [mese, month]
+  - [oggi, today]
+  - [domani, tomorrow]
+  - [ieri, yesterday]
+  - [mezzogiorno, noon]
+  - [mezzanotte, midnight]
+  - [primo, first]
+
+practice:
+  - type: translate
+    direction: to-target
+    prompt: "17 (write it as a word)"
+    answers: [diciassette]
+    why: 17, 18 and 19 start with dici-.
+
+  - type: translate
+    direction: to-target
+    prompt: "21 (write it as a word)"
+    answers: [ventuno]
+    why: Before uno, venti drops its final i.
+
+  - type: translate
+    direction: to-target
+    prompt: "38 (write it as a word)"
+    answers: [trentotto]
+    why: Before otto, trenta drops its final a.
+
+  - type: translate
+    direction: to-english
+    prompt: quarantacinque
+    answers: ["45", "forty-five", "forty five"]
+    why: Quaranta (40) plus cinque (5) makes one word.
+
+  - type: fill
+    prompt: "Quanto ___ il gelato?"
+    hint: (costare — one thing)
+    translation: How much is the ice cream?
+    answers: [costa]
+    why: One thing costa; two or more things costano.
+
+  - type: fill
+    prompt: "___ l'una."
+    hint: (it is)
+    translation: It's one o'clock.
+    answers: [è]
+    why: One o'clock is singular, so it takes è — not sono le.
+
+  - type: fill
+    prompt: "Sono le tre e ___."
+    hint: (half)
+    translation: It's half past three.
+    answers: [mezza, mezzo]
+    why: Half past is e mezza (some people say e mezzo).
+
+  - type: translate
+    direction: to-target
+    prompt: It's eight o'clock.
+    answers: ["Sono le otto.", "Sono le 8.", "Sono le venti.", "Sono le 20."]
+    why: The hours are plural, so you say sono le + the number.
+
+  - type: translate
+    direction: to-target
+    prompt: Today is Saturday.
+    answers: ["Oggi è sabato.", "È sabato oggi."]
+    why: Days of the week take a small letter.
+
+  - type: translate
+    direction: to-english
+    prompt: il primo marzo
+    answers: ["the first of March", "March first", "March 1", "1 March", "the 1st of March", "March 1st"]
+    why: The first of the month is il primo; other dates use the plain number.
+
+  - type: choice
+    prompt: Which one is "quarter to nine"?
+    options: [Sono le nove meno un quarto., Sono le nove e un quarto., Sono le otto e mezza.]
+    answer: Sono le nove meno un quarto.
+    why: Meno means "minus" — nine minus a quarter.
+
+  - type: choice
+    prompt: Which is spelled correctly?
+    options: [Lunedì, lunedì, lunedi]
+    answer: lunedì
+    why: Days take a small letter and an accent on the final ì.

@@ -1,0 +1,153 @@
+title: "Eu gosto de…"
+subtitle: Saying what you like with gostar de
+goal: say what you like and don't like with gostar de, and join de with o, a, os and as
+minutes: 11
+
+sections:
+  - heading: Gostar always takes de
+    body: |
+      **Gostar** (to like) is a regular -ar verb, but it always comes with
+      **de** — think of it as "to be fond **of**":
+
+      - *Gosto de café.* — I like coffee.
+      - *Ela gosta de chocolate.* — She likes chocolate.
+
+      Before another verb, keep the *de* and use the infinitive: *Gosto de
+      dançar.* — I like dancing.
+    table:
+      columns: [pronoun, gostar de]
+      rows:
+        - [eu, gosto de]
+        - [você / ele / ela / a gente, gosta de]
+        - [nós, gostamos de]
+        - [vocês / eles / elas, gostam de]
+    tip: "Never drop the *de*: *gosto de dançar*, not *gosto dançar*."
+
+  - heading: de + o = do
+    body: |
+      When **de** meets the article *o, a, os* or *as*, they join into one
+      word:
+
+      - *Gosto do Brasil.* — I like Brazil. (de + o = **do**)
+      - *Ela gosta da música.* — She likes the music. (de + a = **da**)
+      - *Eles gostam dos livros.* — They like the books. (de + os = **dos**)
+
+      You've seen this before: *dele* in lesson 11 is *de + ele*. And
+      **disso** is *de + isso*: *Gosto disso.* — I like that.
+    table:
+      columns: [de +, becomes]
+      rows:
+        - [o, do]
+        - [a, da]
+        - [os, dos]
+        - [as, das]
+    examples:
+      - ["Gostamos das flores.", "We like the flowers."]
+      - ["Você gosta do seu professor?", "Do you like your teacher?"]
+
+  - heading: Yes, no, me too
+    body: |
+      Brazilians answer a yes/no question by repeating the verb.
+      To *Você gosta de pizza?* you say **Gosto!** (I do!) or **Não, não
+      gosto.** (No, I don't.)
+
+      - **Eu também.** — Me too.
+      - **Eu também não.** — Me neither.
+
+      For something you really love, use **adorar** — with no *de*: *Adoro
+      chocolate!*
+    examples:
+      - ["— Gosto de futebol. — Eu também!", "— I like soccer. — Me too!"]
+      - ["— Não gosto de peixe. — Eu também não.", "— I don't like fish. — Me neither."]
+
+words:
+  - [gostar de, to like]
+  - [adorar, to love (things)]
+  - [também, also / too]
+  - [música, music]
+  - [chocolate, chocolate]
+  - [futebol, soccer / football]
+  - [pizza, pizza]
+  - [peixe, fish]
+  - [dançar, to dance]
+  - [cantar, to sing]
+  - [nadar, to swim]
+  - [jogar, to play (a game or sport)]
+  - [disso, of that (de + isso)]
+
+practice:
+  - type: fill
+    prompt: "Eu ___ de chocolate."
+    hint: gostar, eu
+    translation: I like chocolate.
+    answers: [gosto]
+    why: Gostar is a regular -ar verb — with eu it is gosto.
+
+  - type: fill
+    prompt: "Ela gosta ___ música."
+    hint: de + a
+    translation: She likes the music.
+    answers: [da]
+    why: De + a joins into da.
+
+  - type: fill
+    prompt: "Nós gostamos ___ livros."
+    hint: de + os
+    translation: We like the books.
+    answers: [dos]
+    why: De + os joins into dos.
+
+  - type: fill
+    prompt: "Eles gostam ___ dançar."
+    hint: the little word gostar needs
+    translation: They like dancing.
+    answers: [de]
+    why: Gostar always takes de, even before another verb.
+
+  - type: choice
+    prompt: "\"I like Brazil.\""
+    options: [Gosto Brasil., Gosto do Brasil., Gosto de o Brasil.]
+    answer: Gosto do Brasil.
+    why: Gostar needs de, and de + o always joins into do.
+
+  - type: choice
+    prompt: "\"Você gosta de futebol?\" The most natural Brazilian \"yes\" is…"
+    options: [Sim gosta., Gosto!, "Sim, eu gosta."]
+    answer: Gosto!
+    why: Brazilians say yes by repeating the verb in their own form.
+
+  - type: choice
+    prompt: "\"Me neither.\""
+    options: [Eu também., Eu também não., Não também.]
+    answer: Eu também não.
+    why: Também não means "not either" — eu também não, me neither.
+
+  - type: translate
+    direction: to-target
+    prompt: I like to swim.
+    answers: [Gosto de nadar., Eu gosto de nadar.]
+    why: Gostar de + infinitive.
+
+  - type: translate
+    direction: to-target
+    prompt: Do you like pizza?
+    answers: [Você gosta de pizza?, Gosta de pizza?, O senhor gosta de pizza?, A senhora gosta de pizza?, Vocês gostam de pizza?]
+    why: Don't forget the de after gostar.
+
+  - type: translate
+    direction: to-target
+    prompt: We don't like the beach.
+    answers: [Nós não gostamos da praia., Não gostamos da praia., A gente não gosta da praia.]
+    why: Não goes before the verb, and de + a joins into da.
+
+  - type: translate
+    direction: to-english
+    prompt: Adoro música brasileira.
+    answers: [I love Brazilian music.]
+    why: Adorar means to love (things), and it takes no de.
+
+  - type: translate
+    direction: to-english
+    prompt: Minha irmã gosta de jogar futebol.
+    answers: [My sister likes to play soccer., My sister likes playing soccer., My sister likes to play football., My sister likes playing football.]
+    why: Gostar de + infinitive — and jogar is to play a game or sport.

@@ -1,0 +1,193 @@
+title: Io sono
+subtitle: Essere (to be) and the subject pronouns
+goal: say who you are and where you're from with essere, and make negative sentences and yes/no questions
+minutes: 12
+
+sections:
+  - heading: I, you, he, she…
+    body: |
+      **Subject pronouns** are the words for who is doing something — I,
+      you, she, we and so on.
+
+      Notice there are three kinds of "you": **tu** for one friend, **Lei**
+      for one person you're being polite to, and **voi** for a group.
+    table:
+      columns: [Italian, English]
+      rows:
+        - [io, I]
+        - [tu, you (one friend)]
+        - [lui, he]
+        - [lei, she]
+        - [Lei, you (polite)]
+        - [noi, we]
+        - [voi, you (a group)]
+        - [loro, they]
+    tip: "Unlike English *I*, *io* has no capital letter in the middle of a sentence. Polite *Lei* is often written with a capital to tell it apart from *lei* (she)."
+
+  - heading: "Essere: to be"
+    body: |
+      **Essere** means "to be". Like *to be* in English, it doesn't follow
+      the usual patterns, so learn it as it is.
+
+      Because the verb already shows who you mean, Italians usually **leave
+      the pronoun out**: *Sono Anna* is more natural than *Io sono Anna*.
+      Use the pronoun only for emphasis or contrast.
+    table:
+      columns: [person, essere, English]
+      rows:
+        - [io, sono, I am]
+        - [tu, sei, you are]
+        - [lui / lei / Lei, è, "he is, she is, you are (polite)"]
+        - [noi, siamo, we are]
+        - [voi, siete, you are (a group)]
+        - [loro, sono, they are]
+    examples:
+      - ["Sono Anna.", "I'm Anna."]
+      - ["Sei italiano?", "Are you Italian?"]
+      - ["Lei è Giulia.", "She is Giulia."]
+      - ["Siamo di Roma.", "We're from Rome."]
+    tip: "*Sono* means both \"I am\" and \"they are\". The rest of the sentence makes it clear which."
+
+  - heading: Where are you from?
+    body: |
+      To say where you're from, use **essere di** + a city: *Sono di Roma* —
+      I'm from Rome. To ask: **Di dove sei?** (friendly) or **Di dov'è?**
+      (polite) — literally "Of where are you?"
+
+      Nationalities ending in **-o** change to **-a** for a woman or girl:
+      *Marco è italiano, Giulia è italiana*. Those ending in **-e** stay the
+      same: *Tom è inglese, Kate è inglese*.
+
+      The word for "tired", **stanco**, works the same way: *stanco* for a
+      boy or man, *stanca* for a girl or woman.
+    table:
+      columns: ["", male, female]
+      rows:
+        - [American, americano, americana]
+        - [Italian, italiano, italiana]
+        - [Spanish, spagnolo, spagnola]
+        - [English, inglese, inglese]
+        - [Canadian, canadese, canadese]
+    examples:
+      - ["Di dove sei? — Sono di Chicago.", "Where are you from? — I'm from Chicago."]
+      - ["Sono americana.", "I'm American. (a woman or girl speaking)"]
+      - ["Kate è inglese.", "Kate is English."]
+    tip: "Nationalities and languages have a small letter in Italian: *italiano*, *inglese*."
+
+  - heading: "Not, and questions"
+    body: |
+      To make a sentence negative, put **non** right before the verb:
+
+      - *Non sono italiano.* — I'm not Italian.
+
+      To ask a yes/no question, you don't change the words at all. Just
+      raise your voice at the end — and write a question mark:
+
+      - *Sei stanco?* — Are you tired?
+
+      Answer **sì** or **no**.
+    examples:
+      - ["Non sono stanca.", "I'm not tired. (a girl speaking)"]
+      - ["È italiano? — No, è inglese.", "Is he Italian? — No, he's English."]
+      - ["Sei di Milano? — Sì!", "Are you from Milan? — Yes!"]
+    tip: "*È* with an accent means \"is\"; *e* without one means \"and\": *Lui è di Roma e lei è di Napoli.*"
+
+words:
+  - [io, I]
+  - [tu, you (friendly)]
+  - [lui, he]
+  - [lei, she]
+  - [noi, we]
+  - [voi, you (a group)]
+  - [loro, they]
+  - [essere, to be]
+  - [di, "from, of"]
+  - [italiano, Italian]
+  - [americano, American]
+  - [inglese, English]
+  - [stanco, tired]
+  - [non, not]
+  - [dove, where]
+
+practice:
+  - type: fill
+    prompt: "Io ___ di Boston."
+    hint: (essere)
+    translation: I'm from Boston.
+    answers: [sono]
+    why: With io, essere is sono.
+
+  - type: fill
+    prompt: "Tu ___ italiano?"
+    hint: (essere)
+    translation: Are you Italian?
+    answers: [sei]
+    why: With tu, essere is sei.
+
+  - type: fill
+    prompt: "Noi ___ di Londra."
+    hint: (essere)
+    translation: We're from London.
+    answers: [siamo]
+    why: With noi, essere is siamo.
+
+  - type: fill
+    prompt: "Lei ___ Giulia."
+    hint: (essere)
+    translation: She is Giulia.
+    answers: [è]
+    why: Lui, lei and polite Lei all use è — with an accent.
+
+  - type: translate
+    direction: to-target
+    prompt: I'm not Italian. (a man speaking)
+    answers: ["Non sono italiano.", "Io non sono italiano."]
+    why: Non goes right before the verb.
+
+  - type: translate
+    direction: to-target
+    prompt: Where are you from? (to a friend)
+    answers: ["Di dove sei?", "Di dove sei tu?", "Tu di dove sei?"]
+    why: Di dove sei? is literally "of where are you?"
+
+  - type: translate
+    direction: to-target
+    prompt: We are from Rome.
+    answers: ["Siamo di Roma.", "Noi siamo di Roma."]
+    why: Essere di + a city says where you're from.
+
+  - type: translate
+    direction: to-english
+    prompt: Sono americana.
+    answers: ["I'm American.", "I am American."]
+    why: Americana with -a tells you the speaker is female.
+
+  - type: translate
+    direction: to-english
+    prompt: Non sono stanco.
+    answers: ["I'm not tired.", "I am not tired."]
+    why: Non before the verb makes the sentence negative.
+
+  - type: translate
+    direction: to-english
+    prompt: Sei di Milano?
+    answers: ["Are you from Milan?", "Are you from Milano?"]
+    why: A question is just the normal sentence said with a rising voice.
+
+  - type: choice
+    prompt: Which one means "they are"?
+    options: [sono, siete, siamo]
+    answer: sono
+    why: Sono means both "I am" and "they are".
+
+  - type: choice
+    prompt: You ask a woman you've just met, politely, where she's from. Which question fits?
+    options: [Di dove sei?, Di dov'è?]
+    answer: Di dov'è?
+    why: Polite Lei uses the same verb form as "she" — è.
+
+  - type: choice
+    prompt: "Kate is from London. Kate è…"
+    options: [inglese, inglesa]
+    answer: inglese
+    why: Nationalities ending in -e are the same for males and females.

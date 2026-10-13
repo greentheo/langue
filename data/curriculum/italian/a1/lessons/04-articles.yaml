@@ -1,0 +1,175 @@
+title: "Il, lo, la"
+subtitle: Nouns, plurals and articles
+goal: tell masculine from feminine, make nouns plural, and pick the right word for "the" and "a"
+minutes: 12
+
+sections:
+  - heading: Every noun is masculine or feminine
+    body: |
+      In Italian every noun — every thing, person or idea — is either
+      **masculine** or **feminine**. It is grammar, not meaning: a house is
+      feminine, a book is masculine.
+
+      The ending usually tells you which:
+
+      - **-o** is almost always masculine: *il libro* (the book)
+      - **-a** is almost always feminine: *la casa* (the house)
+      - **-e** can be either: *il pane* (the bread), *la notte* (the night)
+
+      For words ending in **-e**, learn the noun together with its article.
+    examples:
+      - ["il ragazzo", "the boy"]
+      - ["la ragazza", "the girl"]
+      - ["il caffè", "the coffee"]
+      - ["la chiave", "the key"]
+    tip: "A few common words break the pattern: *il problema* and *il cinema* are masculine, *la mano* (the hand) is feminine."
+
+  - heading: Making nouns plural
+    body: |
+      Italian does not add **-s**. It changes the last vowel:
+
+      - **-o → -i**: *libro → libri*
+      - **-a → -e**: *casa → case*
+      - **-e → -i**: *notte → notti*, *chiave → chiavi*
+
+      Words that end in an accented vowel, like *caffè* or *città*, do not
+      change at all: *un caffè, due caffè*.
+    table:
+      columns: [ending, singular, plural]
+      rows:
+        - ["-o", ragazzo, ragazzi]
+        - ["-a", ragazza, ragazze]
+        - ["-e", studente, studenti]
+        - [accented vowel, città, città]
+    tip: "Words in *-ca* and *-ga* add an *h* to keep the hard sound: *amica → amiche*, *banca → banche*."
+
+  - heading: '"The": il, lo, l'', la, i, gli, le'
+    body: |
+      English has one "the". Italian has seven, and the choice depends on
+      the noun's gender, whether it is plural, and **the sound it starts
+      with**.
+
+      Most masculine nouns take **il** (plural **i**). Masculine nouns
+      starting with **s + consonant**, **z**, **gn** or **ps** take **lo**
+      (plural **gli**). Any noun starting with a vowel takes **l'** in the
+      singular.
+    table:
+      columns: ["", singular, plural, "used before"]
+      rows:
+        - [masculine, il, i, "most consonants: *il libro, i libri*"]
+        - [masculine, lo, gli, "s + consonant, z, gn, ps: *lo studente, gli studenti*"]
+        - [masculine, "l'", gli, "a vowel: *l'amico, gli amici*"]
+        - [feminine, la, le, "a consonant: *la casa, le case*"]
+        - [feminine, "l'", le, "a vowel: *l'amica, le amiche*"]
+    examples:
+      - ["lo zaino", "the backpack"]
+      - ["gli zaini", "the backpacks"]
+      - ["l'acqua", "the water"]
+      - ["le chiavi", "the keys"]
+    tip: "Gli is pronounced like the *lli* in *million*, not with a hard g."
+
+  - heading: '"A" and "an": un, uno, una, un'''
+    body: |
+      The word for "a" follows the same sound rules as "the":
+
+      - **un** for most masculine nouns: *un libro, un amico*
+      - **uno** where you would use *lo*: *uno studente, uno zaino*
+      - **una** for feminine nouns: *una casa*
+      - **un'** for feminine nouns starting with a vowel: *un'amica*
+    examples:
+      - ["un ragazzo e una ragazza", "a boy and a girl"]
+      - ["uno studente", "a student"]
+      - ["un'amica", "a (female) friend"]
+      - ["un amico", "a (male) friend"]
+    tip: "*Un amico* has no apostrophe, because *un* is already a complete masculine word. *Un'amica* has one, because it is *una* with the *a* dropped."
+
+words:
+  - [libro, book]
+  - [casa, house]
+  - [ragazzo, boy]
+  - [ragazza, girl]
+  - [amico, friend (male)]
+  - [amica, friend (female)]
+  - [studente, student]
+  - [zaino, backpack]
+  - [chiave, key]
+  - [notte, night]
+  - [acqua, water]
+  - [città, city]
+
+practice:
+  - type: choice
+    prompt: Which word is feminine?
+    options: [libro, casa, zaino]
+    answer: casa
+    why: Nouns ending in -a are almost always feminine.
+
+  - type: fill
+    prompt: "___ studente"
+    hint: the
+    translation: the student
+    answers: [lo]
+    why: Studente starts with s + consonant, so the masculine article is lo.
+
+  - type: fill
+    prompt: "___ libri"
+    hint: the
+    translation: the books
+    answers: [i]
+    why: Libro takes il, and the plural of il is i.
+
+  - type: fill
+    prompt: "___ amica"
+    hint: a
+    translation: a (female) friend
+    answers: ["un'"]
+    why: Amica is feminine and starts with a vowel, so una shortens to un'.
+
+  - type: fill
+    prompt: "___ zaino"
+    hint: a
+    translation: a backpack
+    answers: [uno]
+    why: Zaino starts with z, so it takes uno — the "a" that goes with lo.
+
+  - type: translate
+    direction: to-target
+    prompt: the friends (all male)
+    answers: [gli amici]
+    why: Amico starts with a vowel, so its plural article is gli.
+
+  - type: translate
+    direction: to-target
+    prompt: the houses
+    answers: [le case]
+    why: Casa is feminine; the feminine plural is le, and -a becomes -e.
+
+  - type: translate
+    direction: to-target
+    prompt: the water
+    answers: ["l'acqua"]
+    why: Acqua starts with a vowel, so la becomes l'.
+
+  - type: translate
+    direction: to-english
+    prompt: le chiavi
+    answers: [the keys]
+    why: Le is the feminine plural "the", and chiave becomes chiavi.
+
+  - type: translate
+    direction: to-english
+    prompt: un ragazzo e una ragazza
+    answers: [a boy and a girl]
+    why: Un goes with masculine ragazzo, una with feminine ragazza.
+
+  - type: choice
+    prompt: What is the plural of *la città*?
+    options: [le città, le cittè, le citte]
+    answer: le città
+    why: Nouns ending in an accented vowel never change in the plural; only the article does.
+
+  - type: choice
+    prompt: Which is correct?
+    options: [il zaino, lo zaino, l'zaino]
+    answer: lo zaino
+    why: Masculine nouns starting with z take lo.

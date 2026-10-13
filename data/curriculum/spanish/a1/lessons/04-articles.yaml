@@ -1,0 +1,160 @@
+title: "El, la, los, las"
+subtitle: Nouns, plurals and articles
+goal: tell masculine from feminine, make nouns plural, and pick the right word for "the" and "a"
+minutes: 12
+
+sections:
+  - heading: Every noun is masculine or feminine
+    body: |
+      In Spanish every noun — every thing, person or idea — is either
+      **masculine** or **feminine**. It is grammar, not meaning: a table is
+      feminine, a book is masculine.
+
+      The ending usually tells you which:
+
+      - **-o** is almost always masculine: *el libro* (the book)
+      - **-a** is almost always feminine: *la casa* (the house)
+      - **-ción** and **-dad** are feminine: *la canción* (the song), *la ciudad* (the city)
+      - **-e** or a consonant can be either: *el café*, *la noche*, *el hotel*
+
+      For those last ones, learn the noun together with its article.
+    examples:
+      - ["el chico", "the boy"]
+      - ["la chica", "the girl"]
+      - ["el café", "the coffee"]
+      - ["la noche", "the night"]
+    tip: "A few common words break the pattern: *el día* (the day), *el mapa* and *el problema* are masculine, and *la mano* (the hand) is feminine."
+
+  - heading: Making nouns plural
+    body: |
+      - word ends in a **vowel** → add **-s**: *libro → libros*, *café → cafés*
+      - word ends in a **consonant** → add **-es**: *ciudad → ciudades*, *hotel → hoteles*
+      - word ends in **-z** → change it to **-ces**: *lápiz → lápices*
+    table:
+      columns: [ending, singular, plural]
+      rows:
+        - [vowel, libro, libros]
+        - [vowel, chica, chicas]
+        - [consonant, ciudad, ciudades]
+        - ["-z", lápiz, lápices]
+    tip: "Words ending in *-ción* drop the accent mark in the plural: *canción → canciones*. The stress doesn't move — the stress rules from lesson 2 just don't need the mark any more."
+
+  - heading: '"The": el, la, los, las'
+    body: |
+      English has one "the". Spanish has four, depending on whether the
+      noun is masculine or feminine, and singular or plural.
+
+      A group of males, or a mixed group, uses the masculine form:
+      *los chicos* can mean "the boys" or "the boys and girls".
+    table:
+      columns: ["", singular, plural]
+      rows:
+        - [masculine, el libro, los libros]
+        - [feminine, la casa, las casas]
+    examples:
+      - ["el amigo", "the friend (male)"]
+      - ["las amigas", "the friends (all female)"]
+      - ["los días", "the days"]
+    tip: "*El* (the) has no accent mark. *Él* with an accent means \"he\"."
+
+  - heading: '"A", "an" and "some": un, una, unos, unas'
+    body: |
+      - **un** with masculine nouns: *un libro*
+      - **una** with feminine nouns: *una casa*
+      - **unos** and **unas** mean "some": *unos libros* (some books), *unas casas* (some houses)
+    examples:
+      - ["un chico y una chica", "a boy and a girl"]
+      - ["unos amigos", "some friends"]
+      - ["una ciudad", "a city"]
+    tip: "Feminine nouns that start with a stressed *a* take *el* and *un* in the singular, so two a-sounds don't bump into each other: *el agua* (the water). They're still feminine words."
+
+words:
+  - [libro, book]
+  - [casa, house]
+  - [chico, boy]
+  - [chica, girl]
+  - [amigo, friend (male)]
+  - [amiga, friend (female)]
+  - [ciudad, city]
+  - [noche, night]
+  - [día, day]
+  - [mesa, table]
+  - [lápiz, pencil]
+  - [agua, water]
+
+practice:
+  - type: choice
+    prompt: Which word is feminine?
+    options: [libro, mesa, día]
+    answer: mesa
+    why: Nouns ending in -a are usually feminine — but día is one of the exceptions.
+
+  - type: fill
+    prompt: "___ libros"
+    hint: the
+    translation: the books
+    answers: [los]
+    why: Libro is masculine, and the masculine plural "the" is los.
+
+  - type: fill
+    prompt: "___ ciudad"
+    hint: the
+    translation: the city
+    answers: [la]
+    why: Nouns ending in -dad are feminine.
+
+  - type: fill
+    prompt: "___ amiga"
+    hint: a
+    translation: a (female) friend
+    answers: [una]
+    why: Amiga is feminine, so "a" is una.
+
+  - type: fill
+    prompt: "___ día"
+    hint: the
+    translation: the day
+    answers: [el]
+    why: Día ends in -a but is masculine — one of the exceptions.
+
+  - type: translate
+    direction: to-target
+    prompt: the girls
+    answers: [las chicas]
+    why: Chica is feminine, so the plural "the" is las.
+
+  - type: translate
+    direction: to-target
+    prompt: some books
+    answers: [unos libros]
+    why: Unos is the masculine "some".
+
+  - type: translate
+    direction: to-target
+    prompt: the cities
+    answers: [las ciudades]
+    why: Ciudad ends in a consonant, so it adds -es.
+
+  - type: translate
+    direction: to-english
+    prompt: los amigos
+    answers: [the friends]
+    why: Los is the masculine plural "the" — used for a group of males or a mixed group.
+
+  - type: translate
+    direction: to-english
+    prompt: una mesa y un lápiz
+    answers: [a table and a pencil]
+    why: Una goes with feminine mesa, un with masculine lápiz.
+
+  - type: choice
+    prompt: What is the plural of *lápiz*?
+    options: [lápizs, lápices, lápizes]
+    answer: lápices
+    why: Nouns ending in -z change it to -ces.
+
+  - type: choice
+    prompt: Which is correct?
+    options: [la agua, el agua]
+    answer: el agua
+    why: Agua is feminine but starts with a stressed a, so it takes el in the singular.

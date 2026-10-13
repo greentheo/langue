@@ -1,0 +1,153 @@
+title: Ma journée
+subtitle: Reflexive verbs and your daily routine
+goal: describe your day with reflexive verbs, say what time you do things, and say how often
+minutes: 14
+
+sections:
+  - heading: Doing things to yourself
+    body: |
+      Some verbs describe something you do **to yourself**: you wash
+      yourself, you get yourself up. These are **reflexive verbs**, and
+      their infinitive starts with **se**: *se laver* (to wash).
+
+      You already know one: *je **m'**appelle* — "I call myself".
+
+      The little pronoun matches the subject, and goes **before** the verb.
+      Before a vowel, **me, te, se** become **m', t', s'**: *je m'habille*
+      (I get dressed).
+    table:
+      columns: [person, se lever (to get up)]
+      rows:
+        - [je, me lève]
+        - [tu, te lèves]
+        - ["il / elle / on", se lève]
+        - [nous, nous levons]
+        - [vous, vous levez]
+        - ["ils / elles", se lèvent]
+    tip: "*Lever* adds a grave accent when the ending is silent: *je me lève*, but *nous nous levons*."
+
+  - heading: My day
+    body: |
+      To say **at** what time, use **à**: *à sept heures* (at seven
+      o'clock). For parts of the day: **le matin** (in the morning),
+      **l'après-midi** (in the afternoon), **le soir** (in the evening).
+    examples:
+      - ["Je me réveille à sept heures.", "I wake up at seven o'clock."]
+      - ["Je me lève et je me douche.", "I get up and I have a shower."]
+      - ["Je m'habille.", "I get dressed."]
+      - ["Je prends le petit déjeuner.", "I have breakfast."]
+      - ["Le soir, je me couche à dix heures.", "In the evening, I go to bed at ten."]
+    tip: "*Le matin* without *à* means \"in the morning\" — or \"every morning\"."
+
+  - heading: How often, and saying no
+    body: |
+      - **toujours** — always
+      - **souvent** — often
+      - **parfois** — sometimes
+      - **ne… jamais** — never (it works like *ne… pas*)
+
+      These usually go right after the verb: *Je me lève souvent tôt.*
+
+      In a negative, **ne** goes before the little pronoun, and **pas** or
+      **jamais** after the verb:
+
+      - *Je **ne** me lève **pas** tôt.*
+      - *Il **ne** se couche **jamais** tard.*
+    examples:
+      - ["Je me couche toujours à dix heures.", "I always go to bed at ten."]
+      - ["Tu te lèves tôt ?", "Do you get up early?"]
+      - ["Nous ne nous levons jamais tard.", "We never get up late."]
+
+words:
+  - [se réveiller, to wake up]
+  - [se lever, to get up]
+  - [se laver, to wash (yourself)]
+  - [se doucher, to have a shower]
+  - ["s'habiller", to get dressed]
+  - [se coucher, to go to bed]
+  - [le petit déjeuner, breakfast]
+  - [le matin, "the morning, in the morning"]
+  - [le soir, "the evening, in the evening"]
+  - [toujours, always]
+  - [souvent, often]
+  - [parfois, sometimes]
+  - [ne… jamais, never]
+  - [tôt, early]
+  - [tard, late]
+
+practice:
+  - type: fill
+    prompt: "Je ___ lève à sept heures."
+    hint: (myself)
+    translation: I get up at seven o'clock.
+    answers: [me]
+    why: With je, the reflexive pronoun is me.
+
+  - type: fill
+    prompt: "Tu ___ couches tard."
+    hint: (yourself)
+    translation: You go to bed late.
+    answers: [te]
+    why: With tu, the reflexive pronoun is te.
+
+  - type: fill
+    prompt: "Nous nous ___ à huit heures."
+    hint: (se réveiller)
+    translation: We wake up at eight o'clock.
+    answers: [réveillons]
+    why: Se réveiller is a regular -er verb, so nous takes -ons.
+
+  - type: choice
+    prompt: Which is correct?
+    options: [Elle se habille., "Elle s'habille."]
+    answer: "Elle s'habille."
+    why: Before a vowel or silent h, se becomes s'.
+
+  - type: translate
+    direction: to-target
+    prompt: I get up early.
+    answers: [Je me lève tôt.]
+    why: Se lever becomes je me lève, and tôt means early.
+
+  - type: translate
+    direction: to-target
+    prompt: We go to bed at ten o'clock.
+    answers: [Nous nous couchons à dix heures., On se couche à dix heures.]
+    why: Se coucher is reflexive, and à goes before a time.
+
+  - type: translate
+    direction: to-target
+    prompt: I never get up late.
+    answers: [Je ne me lève jamais tard.]
+    why: Ne goes before the little pronoun, jamais after the verb.
+
+  - type: translate
+    direction: to-english
+    prompt: Ils se douchent le matin.
+    answers: ["They shower in the morning.", "They take a shower in the morning.", "They have a shower in the morning.", "They shower in the mornings.", "They shower every morning."]
+    why: Se doucher is to have a shower, and le matin means in the morning.
+
+  - type: translate
+    direction: to-english
+    prompt: "Tu te réveilles souvent tôt ?"
+    answers: ["Do you often wake up early?", "Do you wake up early often?", "Do you often get up early?"]
+    why: Souvent means often, and te goes with tu.
+
+  - type: choice
+    prompt: Where does *ne* go in a negative reflexive sentence?
+    options: [Je me ne lève pas., Je ne me lève pas., Ne je me lève pas.]
+    answer: Je ne me lève pas.
+    why: Ne goes before the little pronoun, which stays glued to the verb.
+
+  - type: fill
+    prompt: "Comment vous ___ appelez ?"
+    hint: (yourself — vous)
+    translation: What's your name?
+    answers: [vous]
+    why: With vous, the reflexive pronoun is also vous — so vous appears twice.
+
+  - type: choice
+    prompt: "*parfois* means…"
+    options: [always, sometimes, never]
+    answer: sometimes
+    why: Parfois is sometimes; toujours is always and ne… jamais is never.

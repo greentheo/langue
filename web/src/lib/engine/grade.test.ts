@@ -2,7 +2,10 @@ import { test, describe } from "node:test";
 import assert from "node:assert/strict";
 import {
   editDistance,
+  expandContractions,
   gradeAnswer,
+  gradeEnglishAnswer,
+  gradeTargetAnswer,
   normalizeAnswer,
   pointsForResult,
   stripArticle,
@@ -125,5 +128,71 @@ describe("pointsForResult", () => {
     const right = gradeAnswer("hello", ["hello"]);
     assert.equal(pointsForResult(right, 99), 18);
     assert.equal(pointsForResult(right, -5), 10);
+  });
+});
+
+describe("phone keyboards", () => {
+  test("curly apostrophes and quotes are ignored like straight ones", () => {
+    assert.equal(normalizeAnswer("l’acqua"), normalizeAnswer("l'acqua"));
+    assert.equal(gradeAnswer("l’acqua", ["l'acqua"]).verdict, "correct");
+  });
+
+  test("œ can be typed as oe, without counting as an accent slip", () => {
+    assert.equal(gradeTargetAnswer("J'ai une soeur", ["J'ai une sœur."]).verdict, "correct");
+  });
+
+  test("hyphens separate words", () => {
+    assert.equal(gradeAnswer("twenty one", ["twenty-one"]).verdict, "correct");
+  });
+});
+
+describe("gradeEnglishAnswer", () => {
+  test("treats contractions and full forms as the same answer", () => {
+    assert.equal(gradeEnglishAnswer("What is your name?", ["What's your name?"]).verdict, "correct");
+    assert.equal(gradeEnglishAnswer("I'm tired", ["I am tired"]).verdict, "correct");
+    assert.equal(gradeEnglishAnswer("I don't understand", ["I do not understand"]).verdict, "correct");
+    assert.equal(gradeEnglishAnswer("I can’t", ["I cannot"]).verdict, "correct");
+  });
+
+  test("expands the irregular negatives correctly", () => {
+    assert.equal(expandContractions("won't"), "will not");
+    assert.equal(expandContractions("can't"), "can not");
+    assert.equal(expandContractions("let's go"), "let us go");
+  });
+
+  test("still rejects a wrong answer", () => {
+    assert.equal(gradeEnglishAnswer("I am hungry", ["I am tired"]).verdict, "incorrect");
+  });
+});
+
+describe("gradeTargetAnswer", () => {
+  test("an exact answer with accents is correct", () => {
+    assert.equal(gradeTargetAnswer("Lui è stanco", ["Lui è stanco"]).verdict, "correct");
+  });
+
+  test("a missing accent is close, with the accented form shown", () => {
+    const result = gradeTargetAnswer("lui e stanco", ["Lui è stanco"]);
+    assert.equal(result.verdict, "close");
+    assert.match(result.note ?? "", /è/);
+  });
+
+  test("a wrong accent is close too", () => {
+    assert.equal(gradeTargetAnswer("perchè", ["perché"]).verdict, "close");
+  });
+
+  test("an accented answer still gets article and containment leniency", () => {
+    assert.equal(gradeTargetAnswer("la città", ["città"]).verdict, "correct");
+    assert.equal(gradeTargetAnswer("io sono stanco", ["sono stanco"]).verdict, "correct");
+  });
+
+  test("picks the accepted form the learner was aiming at", () => {
+    const result = gradeTargetAnswer("e", ["è", "sei"]);
+    assert.equal(result.verdict, "close");
+    assert.match(result.note ?? "", /"è"/);
+  });
+
+  test("leaves wrong and typo verdicts alone", () => {
+    assert.equal(gradeTargetAnswer("ciao", ["grazie"]).verdict, "incorrect");
+    assert.equal(gradeTargetAnswer("arrivederchi", ["arrivederci"]).verdict, "close");
   });
 });

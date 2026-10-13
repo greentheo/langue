@@ -47,6 +47,7 @@ model User {
   activityLog  ActivityLog[]
   achievements Achievement[]
   reviews      FlashcardReview[]
+  lessons      LessonProgress[]
   invitesMade  InviteCode[]      @relation("InviteCreatedBy")
 
   @@index([email])
@@ -172,4 +173,25 @@ model FlashcardReview {
   answeredAt DateTime @default(now())
 
   @@index([userId, language, answeredAt])
+}
+
+/// A learner's record for one lesson. Lessons live in the compiled curriculum
+/// (data/curriculum), not the database, so lessonId is a curriculum id such as
+/// "italian-a1-04-articles" rather than a foreign key.
+model LessonProgress {
+  id          String    @id @default(cuid())
+  userId      String
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  lessonId    String
+  language    String
+  level       String
+  /// Best practice score so far, 0-100.
+  bestScore   Int       @default(0)
+  attempts    Int       @default(0)
+  /// First time the learner scored at least the pass mark; null until then.
+  completedAt DateTime?
+  updatedAt   DateTime  @updatedAt
+
+  @@unique([userId, lessonId])
+  @@index([userId, language, level])
 }

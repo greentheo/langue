@@ -1,0 +1,62 @@
+title: Beginner
+summary: >
+  The first steps: enough French to introduce yourself, get through
+  everyday situations like cafés and shops, and talk simply about yourself,
+  your family and your day. This is the level of the DELF A1 exam.
+
+can_do:
+  - greet people and introduce yourself, choosing *tu* or *vous* correctly
+  - ask and answer simple questions about your name, age, where you live and where you're from
+  - use numbers, prices, times and dates
+  - order food and drink and buy simple things
+  - say what you have, like, want, can do and are going to do
+  - describe your family, your home and the things around you in simple sentences
+  - describe your daily routine
+  - understand slow, clear speech on these topics, and read signs, menus and short messages
+  - fill in a simple form and write a short message or postcard
+
+grammar:
+  - topic: "Greetings, and tu vs vous"
+    lessons: [01-greetings]
+  - topic: "Pronunciation and spelling: silent letters, accents, nasal vowels, liaison"
+    lessons: [02-sounds]
+  - topic: "Subject pronouns (including on) and être"
+    lessons: [03-etre]
+  - topic: "Negation with ne… pas; yes/no questions with intonation and est-ce que"
+    lessons: [03-etre]
+  - topic: "Noun gender and plurals; articles le, la, l', les and un, une, des"
+    lessons: [04-articles]
+  - topic: "Avoir; age, avoir faim and similar expressions; il y a"
+    lessons: [05-avoir]
+  - topic: "Numbers to 100, prices, time and dates"
+    lessons: [06-numbers]
+  - topic: "Present tense of regular -er verbs; question words"
+    lessons: [07-er-verbs]
+  - topic: "Present tense of -ir verbs like finir and -re verbs like attendre"
+    lessons: [08-ir-re-verbs]
+  - topic: "Adjective agreement and position; ce, cet, cette, ces"
+    lessons: [09-adjectives]
+  - topic: "Possessive adjectives: mon, ma, mes and the rest"
+    lessons: [10-family]
+  - topic: "Aller, faire, venir, prendre; the near future with aller + infinitive"
+    lessons: [11-aller-faire]
+  - topic: "Vouloir, pouvoir, devoir; polite je voudrais"
+    lessons: [12-modals]
+  - topic: "Aimer, adorer, préférer, détester; the partitive du, de la, des; pas de"
+    lessons: [13-likes]
+  - topic: "Reflexive verbs for the daily routine; ne… jamais"
+    lessons: [14-routine]
+  - topic: "À and de with articles (au, aux, du, des); countries, cities, place words"
+    lessons: [15-places]
+
+themes:
+  - greetings and introductions
+  - personal details
+  - family
+  - food, cafés and restaurants
+  - shopping and prices
+  - numbers, time and dates
+  - town and directions
+  - home
+  - daily routine
+  - free time and hobbies

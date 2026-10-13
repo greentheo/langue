@@ -1,0 +1,163 @@
+title: La mia famiglia
+subtitle: Family and possessives
+goal: talk about your family and say whose things are whose with mio, tuo, suo, nostro, vostro and loro
+minutes: 14
+
+sections:
+  - heading: My, your, his, her…
+    body: |
+      Possessives — my, your, his, her, our, their — are adjectives, so
+      they **agree with the thing owned**, not with the owner. They usually
+      come with an article too: *il mio libro* is literally "the my book".
+    table:
+      columns: ["", masculine, feminine, "masculine plural", "feminine plural"]
+      rows:
+        - [my, il mio, la mia, i miei, le mie]
+        - [your (tu), il tuo, la tua, i tuoi, le tue]
+        - ["his, her, your (Lei)", il suo, la sua, i suoi, le sue]
+        - [our, il nostro, la nostra, i nostri, le nostre]
+        - [your (voi), il vostro, la vostra, i vostri, le vostre]
+        - [their, il loro, la loro, i loro, le loro]
+    examples:
+      - ["il mio libro", "my book"]
+      - ["la tua macchina", "your car"]
+      - ["i nostri amici", "our friends"]
+    tip: "*Loro* (their) never changes its ending: *il loro gatto, le loro case*."
+
+  - heading: His or her? Suo agrees with the thing
+    body: |
+      **Suo** can mean "his", "her" or polite "your". It agrees with the
+      noun that follows, not with the person who owns it:
+
+      - *la sua casa* — his house **or** her house (*casa* is feminine)
+      - *il suo libro* — his book **or** her book (*libro* is masculine)
+
+      The rest of the sentence makes it clear whose it is.
+    examples:
+      - ["Marco cerca la sua chiave.", "Marco is looking for his key."]
+      - ["Giulia legge il suo libro.", "Giulia is reading her book."]
+      - ["Signora, è il Suo cane?", "Madam, is this your dog?"]
+    tip: "English speakers often use *la sua* for \"her\" and *il suo* for \"his\". But the gender comes from the noun: *il suo libro* can be her book."
+
+  - heading: "Family: mia madre, no article"
+    body: |
+      With a single family member, **drop the article**: *mia madre* (my
+      mother), *tuo padre* (your father), *suo fratello* (his or her
+      brother).
+
+      Keep the article when:
+
+      - the family members are **plural**: *i miei fratelli* (my brothers)
+      - the possessive is **loro**: *il loro padre* (their father)
+      - you use a pet name like *mamma* or *papà*: *la mia mamma*
+    table:
+      columns: [Italian, English]
+      rows:
+        - ["madre, padre", "mother, father"]
+        - [genitori, parents]
+        - ["fratello, sorella", "brother, sister"]
+        - ["figlio, figlia", "son, daughter"]
+        - ["nonno, nonna", "grandfather, grandmother"]
+        - ["zio, zia", "uncle, aunt"]
+        - ["cugino, cugina", "cousin (male, female)"]
+        - ["marito, moglie", "husband, wife"]
+    examples:
+      - ["Mia sorella ha dieci anni.", "My sister is ten."]
+      - ["I miei genitori abitano a Roma.", "My parents live in Rome."]
+      - ["Come si chiama tuo padre?", "What's your father's name?"]
+      - ["Il loro nonno è italiano.", "Their grandfather is Italian."]
+    tip: "*Famiglia* isn't a family member, so it keeps the article: *la mia famiglia*."
+
+words:
+  - [famiglia, family]
+  - [madre, mother]
+  - [padre, father]
+  - [genitori, parents]
+  - [fratello, brother]
+  - [sorella, sister]
+  - [figlio, son]
+  - [figlia, daughter]
+  - [nonno, grandfather]
+  - [nonna, grandmother]
+  - [zio, uncle]
+  - [zia, aunt]
+  - [cugino, cousin]
+  - [marito, husband]
+  - [moglie, wife]
+
+practice:
+  - type: fill
+    prompt: "___ madre è italiana."
+    hint: (my)
+    translation: My mother is Italian.
+    answers: [mia]
+    why: A single family member takes no article — mia madre.
+
+  - type: fill
+    prompt: "___ fratelli abitano a Milano."
+    hint: (my)
+    translation: My brothers live in Milan.
+    answers: [i miei]
+    why: Plural family members keep the article — i miei fratelli.
+
+  - type: fill
+    prompt: "Giulia cerca ___ libro."
+    hint: (her)
+    translation: Giulia is looking for her book.
+    answers: [il suo]
+    why: Libro is masculine, so "her book" is il suo libro.
+
+  - type: fill
+    prompt: "___ padre è inglese."
+    hint: (their)
+    translation: Their father is English.
+    answers: [il loro]
+    why: Loro always keeps the article, even with family.
+
+  - type: translate
+    direction: to-target
+    prompt: my family
+    answers: ["la mia famiglia"]
+    why: Famiglia isn't a single family member, so it keeps the article.
+
+  - type: translate
+    direction: to-target
+    prompt: Your sister is 12. (to a friend)
+    answers: ["Tua sorella ha 12 anni.", "Tua sorella ha dodici anni."]
+    why: A single family member with tua takes no article, and age uses avere.
+
+  - type: translate
+    direction: to-target
+    prompt: our house
+    answers: ["la nostra casa"]
+    why: Casa is feminine, so "our" is la nostra.
+
+  - type: translate
+    direction: to-target
+    prompt: his car
+    answers: ["la sua macchina"]
+    why: Macchina is feminine, so even "his" is la sua.
+
+  - type: translate
+    direction: to-english
+    prompt: i miei nonni
+    answers: ["my grandparents", "my grandfathers"]
+    why: Nonni can mean grandfathers or grandparents — the masculine plural covers a mixed group.
+
+  - type: translate
+    direction: to-english
+    prompt: Come si chiama tua madre?
+    answers: ["What's your mother's name?", "What is your mother called?"]
+    why: Come si chiama…? asks what someone is called.
+
+  - type: choice
+    prompt: How do you say "her brother"?
+    options: [la sua fratello, suo fratello, sua fratello]
+    answer: suo fratello
+    why: Fratello is masculine and a single family member, so it's suo with no article.
+
+  - type: choice
+    prompt: How do you say "their sisters"?
+    options: [le loro sorelle, le lore sorelle, loro sorelle]
+    answer: le loro sorelle
+    why: Loro never changes and always keeps the article.

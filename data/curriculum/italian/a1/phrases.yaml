@@ -1,0 +1,387 @@
+situations:
+  - id: greetings
+    title: Greetings and politeness
+    phrases:
+      - target: ["Ciao!"]
+        english: ["Hi!", "Hello!", "Bye!"]
+        note: Friendly — for friends, family and people your own age. It means both hi and bye.
+
+      - target: ["Buongiorno!"]
+        english: ["Good morning!", "Good day!", "Hello!"]
+        note: The polite greeting until mid-afternoon.
+        literally: good day
+
+      - target: ["Buonasera!"]
+        english: ["Good evening!"]
+        note: The polite greeting from late afternoon.
+        literally: good evening
+
+      - target: ["Arrivederci!"]
+        english: ["Goodbye!", "Bye!"]
+        note: The polite goodbye.
+        literally: until we see each other again
+
+      - target: ["A presto!"]
+        english: ["See you soon!"]
+        literally: at soon
+
+      - target: ["Grazie mille!"]
+        english: ["Thanks a lot!", "Thank you very much!", "Thanks so much!", "Many thanks!"]
+        literally: thanks a thousand
+
+      - target: ["Prego."]
+        english: ["You're welcome.", "Don't mention it.", "Please, go ahead."]
+        note: The answer to grazie. Also used to invite someone in or to let them go first.
+
+      - target: ["Per favore."]
+        english: ["Please."]
+        literally: for favour
+
+      - target: ["Scusa!", "Scusi!"]
+        display: Scusa! / Scusi!
+        english: ["Excuse me!", "Sorry!"]
+        note: "*Scusa* to a friend, *Scusi* to someone you're being polite to."
+
+      - target: ["Mi dispiace."]
+        english: ["I'm sorry."]
+        note: For real apologies or sad news. For bumping into someone, *scusa* or *scusi* is enough.
+        literally: to me (it) displeases
+
+  - id: meeting
+    title: Meeting people
+    phrases:
+      - target: ["Come ti chiami?"]
+        english: ["What's your name? (friendly)", "What's your name?"]
+        note: Friendly. To an adult you don't know, say *Come si chiama?*
+        literally: how yourself (you) call?
+
+      - target: ["Come si chiama?"]
+        english: ["What's your name? (polite)", "What's your name?", "What is his name?", "What is her name?"]
+        note: The polite form (Lei). It also means "What's his name?" or "What's her name?"
+        literally: how himself/herself (he/she) calls?
+
+      - target: ["Mi chiamo Anna.", "Io mi chiamo Anna.", "Sono Anna."]
+        english: ["My name is Anna.", "I'm Anna."]
+        note: Put your own name in.
+        literally: myself (I) call Anna
+
+      - target: ["Piacere!"]
+        english: ["Nice to meet you!", "Pleased to meet you!"]
+        literally: pleasure
+
+      - target: ["Come stai?"]
+        english: ["How are you? (friendly)", "How are you?"]
+        note: Friendly. To an adult you don't know, say *Come sta?*
+        literally: how (do) you stay?
+
+      - target: ["Bene, grazie. E tu?"]
+        english: ["Fine, thanks. And you?", "Good, thanks. And you?", "Well, thanks. And you?", "Fine, thank you. And you?"]
+        note: Politely, *E Lei?*
+
+      - target: ["Di dove sei?"]
+        english: ["Where are you from?"]
+        note: Politely, *Di dov'è?*
+        literally: of where are you?
+
+      - target: ["Sono americano.", "Sono americana."]
+        display: Sono americano / americana.
+        english: ["I'm American."]
+        note: "*Americano* if you're male, *americana* if you're female."
+        literally: (I) am American
+
+      - target: ["Dove abiti?"]
+        english: ["Where do you live?"]
+        note: Politely, *Dove abita?*
+        literally: where (do) you live?
+
+      - target: ["Quanti anni hai?"]
+        english: ["How old are you?"]
+        note: "Italians give their age with *avere*: *Ho 14 anni*."
+        literally: how many years (do) you have?
+
+      - target: ["Che lavoro fai?"]
+        english: ["What do you do?", "What's your job?", "What do you do for a living?", "What work do you do?"]
+        literally: what work (do) you do?
+
+  - id: understanding
+    title: When you don't understand
+    phrases:
+      - target: ["Non capisco."]
+        english: ["I don't understand."]
+        literally: not (I) understand
+
+      - target: ["Può ripetere, per favore?"]
+        english: ["Can you repeat that, please?", "Could you repeat that, please?", "Can you repeat, please?", "Could you repeat, please?"]
+        note: Polite. To a friend, *Puoi ripetere?*
+        literally: can (you) repeat, for favour?
+
+      - target: ["Più lentamente, per favore."]
+        english: ["More slowly, please.", "Slower, please.", "Slowly, please."]
+        literally: more slowly, for favour
+
+      - target: ["Parla inglese?"]
+        english: ["Do you speak English?"]
+        note: Polite. To a friend, *Parli inglese?*
+        literally: speaks (Lei) English?
+
+      - target: ["Come si dice \"dog\" in italiano?"]
+        display: Come si dice "dog" in italiano?
+        english: ["How do you say \"dog\" in Italian?"]
+        note: Put any English word in.
+        literally: how does one say "dog" in Italian?
+
+      - target: ["Che cosa vuol dire?", "Cosa vuol dire?", "Che cosa significa?", "Cosa significa?"]
+        english: ["What does it mean?", "What does that mean?"]
+        literally: what thing (does it) want to say?
+
+      - target: ["Non lo so."]
+        english: ["I don't know."]
+        literally: not it (I) know
+
+      - target: ["Parlo un po' di italiano.", "Parlo un po' d'italiano."]
+        english: ["I speak a little Italian.", "I speak a bit of Italian."]
+        literally: (I) speak a bit of Italian
+
+      - target: ["Può scriverlo, per favore?", "Può scriverlo?"]
+        english: ["Can you write it down, please?", "Could you write it down, please?", "Can you write it down?"]
+        note: Polite. To a friend, *Puoi scriverlo?*
+        literally: can (you) write-it, for favour?
+
+  - id: cafe
+    title: Café and restaurant
+    phrases:
+      - target: ["Un caffè, per favore."]
+        english: ["A coffee, please.", "An espresso, please."]
+        note: In Italy, *un caffè* is always an espresso.
+
+      - target: ["Vorrei un cappuccino."]
+        english: ["I'd like a cappuccino.", "I would like a cappuccino."]
+        note: Italians mostly drink cappuccino at breakfast, not after a meal.
+        literally: (I) would like a cappuccino
+
+      - target: ["Un tavolo per due, per favore."]
+        english: ["A table for two, please."]
+        literally: a table for two, for favour
+
+      - target: ["Cosa mi consiglia?", "Che cosa mi consiglia?"]
+        english: ["What do you recommend?", "What would you recommend?"]
+        note: Polite — what you'd ask a waiter.
+        literally: what to-me (do you) advise?
+
+      - target: ["Sono vegetariano.", "Sono vegetariana."]
+        display: Sono vegetariano / vegetariana.
+        english: ["I'm vegetarian.", "I'm a vegetarian."]
+        note: "*Vegetariano* if you're male, *vegetariana* if you're female."
+
+      - target: ["Il conto, per favore."]
+        english: ["The bill, please.", "The check, please."]
+
+      - target: ["Posso pagare con la carta?"]
+        english: ["Can I pay by card?", "Can I pay with a card?", "Can I pay with my card?"]
+        literally: can (I) pay with the card?
+
+      - target: ["Buon appetito!"]
+        english: ["Enjoy your meal!", "Enjoy!", "Bon appétit!"]
+        note: Said just before everyone starts eating.
+        literally: good appetite
+
+      - target: ["Era tutto buonissimo."]
+        english: ["Everything was delicious.", "It was all delicious.", "Everything was very good."]
+        note: A nice thing to say to the waiter or the cook.
+        literally: (it) was all very-good
+
+  - id: shopping
+    title: Shopping
+    phrases:
+      - target: ["Quanto costa?"]
+        english: ["How much is it?", "How much does it cost?", "How much is this?"]
+        note: For more than one thing, *Quanto costano?*
+        literally: how much (does it) cost?
+
+      - target: ["Quanto costano?"]
+        english: ["How much are they?", "How much do they cost?"]
+        literally: how much (do they) cost?
+
+      - target: ["Lo prendo."]
+        english: ["I'll take it."]
+        note: For something feminine, like *la borsa*, say *La prendo*.
+        literally: it (I) take
+
+      - target: ["Sto solo guardando, grazie."]
+        english: ["I'm just looking, thanks.", "I'm just looking, thank you.", "Just looking, thanks."]
+        literally: (I) stay only looking, thanks
+
+      - target: ["È troppo caro."]
+        english: ["It's too expensive."]
+        note: For something feminine, *È troppo cara*.
+        literally: (it) is too dear
+
+      - target: ["Posso provarlo?"]
+        english: ["Can I try it on?", "May I try it on?"]
+        note: For something feminine, *Posso provarla?*
+        literally: can (I) try-it?
+
+      - target: ["Posso pagare in contanti?"]
+        english: ["Can I pay in cash?", "Can I pay cash?", "Can I pay with cash?"]
+        literally: can (I) pay in cash?
+
+  - id: getting-around
+    title: Getting around
+    phrases:
+      - target: ["Dov'è la stazione?"]
+        english: ["Where's the station?", "Where is the train station?"]
+        literally: where is the station?
+
+      - target: ["Scusi, dov'è il bagno?"]
+        english: ["Excuse me, where's the bathroom?", "Excuse me, where's the toilet?", "Excuse me, where's the restroom?"]
+        note: Polite, to a stranger or a waiter.
+        literally: excuse (me), where is the bathroom?
+
+      - target: ["È lontano?"]
+        english: ["Is it far?", "Is it far away?"]
+        literally: is (it) far?
+
+      - target: ["Giri a destra."]
+        english: ["Turn right.", "Turn to the right."]
+        note: What someone giving you directions says (polite form).
+        literally: (you) turn to right
+
+      - target: ["Giri a sinistra."]
+        english: ["Turn left.", "Turn to the left."]
+        literally: (you) turn to left
+
+      - target: ["Sempre dritto."]
+        english: ["Straight ahead.", "Straight on.", "Keep going straight."]
+        literally: always straight
+
+      - target: ["Un biglietto per Roma, per favore."]
+        english: ["A ticket to Rome, please.", "One ticket to Rome, please."]
+        literally: a ticket for Rome, for favour
+
+      - target: ["A che ora parte il treno?"]
+        english: ["What time does the train leave?", "When does the train leave?"]
+        literally: at what hour leaves the train?
+
+      - target: ["Mi sono perso.", "Mi sono persa."]
+        display: Mi sono perso / persa.
+        english: ["I'm lost.", "I got lost.", "I've got lost."]
+        note: "*Perso* if you're male, *persa* if you're female."
+        literally: myself (I) am lost
+
+      - target: ["Dove si prende l'autobus?"]
+        english: ["Where do I catch the bus?", "Where do you get the bus?", "Where can I get the bus?", "Where do I take the bus?"]
+        literally: where does one take the bus?
+
+  - id: time
+    title: Time and plans
+    phrases:
+      - target: ["Che ore sono?"]
+        english: ["What time is it?", "What's the time?"]
+        literally: what hours are (they)?
+
+      - target: ["A che ora?"]
+        english: ["At what time?", "What time?"]
+        literally: at what hour?
+
+      - target: ["Sei libero stasera?", "Sei libera stasera?"]
+        display: Sei libero / libera stasera?
+        english: ["Are you free tonight?", "Are you free this evening?"]
+        note: "*Libero* to a boy or man, *libera* to a girl or woman."
+        literally: (you) are free this-evening?
+
+      - target: ["Ci vediamo domani!"]
+        english: ["See you tomorrow!"]
+        literally: (we) see each other tomorrow
+
+      - target: ["Va bene!"]
+        english: ["OK!", "Okay!", "All right!", "Fine!"]
+        literally: (it) goes well
+
+      - target: ["D'accordo."]
+        english: ["Agreed.", "OK.", "All right."]
+        literally: of agreement
+
+      - target: ["Non posso, mi dispiace."]
+        english: ["I can't, sorry.", "I can't, I'm sorry.", "Sorry, I can't."]
+        literally: not (I) can, to me (it) displeases
+
+      - target: ["Domani sono occupato.", "Domani sono occupata."]
+        display: Domani sono occupato / occupata.
+        english: ["I'm busy tomorrow.", "Tomorrow I'm busy."]
+        note: "*Occupato* if you're male, *occupata* if you're female."
+        literally: tomorrow (I) am busy
+
+  - id: help
+    title: Help and emergencies
+    phrases:
+      - target: ["Aiuto!"]
+        english: ["Help!"]
+        note: The emergency number in Italy, and across Europe, is 112.
+
+      - target: ["Mi può aiutare?", "Può aiutarmi?"]
+        english: ["Can you help me?", "Could you help me?"]
+        note: Polite. To a friend, *Mi puoi aiutare?*
+        literally: me (you) can help?
+
+      - target: ["Ho bisogno di un medico."]
+        english: ["I need a doctor."]
+        literally: (I) have need of a doctor
+
+      - target: ["Chiamate un'ambulanza!"]
+        english: ["Call an ambulance!"]
+        literally: call (all of you) an ambulance
+
+      - target: ["Mi sento male."]
+        english: ["I feel sick.", "I don't feel well.", "I feel ill.", "I feel bad."]
+        literally: myself (I) feel badly
+
+      - target: ["Mi fa male la testa."]
+        english: ["My head hurts.", "I have a headache."]
+        literally: to me (it) does bad the head
+
+      - target: ["Dov'è la farmacia?"]
+        english: ["Where's the pharmacy?", "Where is the chemist's?", "Where's the drugstore?"]
+        literally: where is the pharmacy?
+
+      - target: ["Ho perso il passaporto."]
+        english: ["I've lost my passport.", "I lost my passport."]
+        note: Italian says "the passport" where English says "my passport".
+        literally: (I) have lost the passport
+
+  - id: small-talk
+    title: Small talk
+    phrases:
+      - target: ["Che bello!"]
+        english: ["How lovely!", "How nice!", "How beautiful!", "That's great!"]
+        literally: what beautiful!
+
+      - target: ["Che tempo fa?"]
+        english: ["What's the weather like?", "How's the weather?"]
+        literally: what weather (does it) make?
+
+      - target: ["Fa freddo!"]
+        english: ["It's cold!"]
+        note: And when it's hot, *Fa caldo!*
+        literally: (it) makes cold
+
+      - target: ["Sono stanco.", "Sono stanca."]
+        display: Sono stanco / stanca.
+        english: ["I'm tired."]
+        note: "*Stanco* if you're male, *stanca* if you're female."
+
+      - target: ["Mi piace molto!"]
+        english: ["I like it a lot!", "I really like it!", "I like it very much!"]
+        literally: to me (it) pleases a lot
+
+      - target: ["Buon compleanno!"]
+        english: ["Happy birthday!"]
+        literally: good birthday
+
+      - target: ["Salute!"]
+        english: ["Bless you!", "Cheers!"]
+        note: Said after someone sneezes — and when you clink glasses.
+        literally: health!
+
+      - target: ["Che peccato!"]
+        english: ["What a pity!", "What a shame!", "Too bad!"]
+        literally: what a sin!

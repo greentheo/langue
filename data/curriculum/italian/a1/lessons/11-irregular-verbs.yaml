@@ -1,0 +1,168 @@
+title: Vado, faccio, sto
+subtitle: Andare, fare, stare, venire — and going places
+goal: use the irregular verbs andare, fare, stare and venire, and say where you're going with a and in
+minutes: 14
+
+sections:
+  - heading: Four verbs you'll use all the time
+    body: |
+      These four verbs don't follow the patterns from lessons 7 and 8, so
+      learn them as they are. They are some of the most common verbs in
+      Italian.
+
+      You already know *stare* from *Come stai? — Sto bene.* Besides how
+      you are, it means staying somewhere: *Sto a casa* — I'm staying at
+      home.
+    table:
+      columns: [person, "andare (to go)", "fare (to do, make)", "stare (to stay, be)", "venire (to come)"]
+      rows:
+        - [io, vado, faccio, sto, vengo]
+        - [tu, vai, fai, stai, vieni]
+        - [lui / lei / Lei, va, fa, sta, viene]
+        - [noi, andiamo, facciamo, stiamo, veniamo]
+        - [voi, andate, fate, state, venite]
+        - [loro, vanno, fanno, stanno, vengono]
+    examples:
+      - ["Dove vai?", "Where are you going?"]
+      - ["Vengo anch'io!", "I'm coming too!"]
+      - ["Stiamo bene, grazie.", "We're fine, thanks."]
+
+  - heading: "Going places: a or in?"
+    body: |
+      With *andare* (and *abitare*, *essere* and many other verbs), use:
+
+      - **a** with cities and towns: *Vado a Roma.*
+      - **in** with countries and regions: *Vado in Italia, in Toscana.*
+
+      Some everyday places take **a** and some take **in**, with no
+      article. Learn them as set phrases.
+
+      To say where you're coming from, use **da**: *Vengo da Roma* — I'm
+      coming from Rome.
+    table:
+      columns: ["with a", "with in"]
+      rows:
+        - ["a casa — home", "in centro — downtown"]
+        - ["a scuola — to school", "in banca — to the bank"]
+        - ["a letto — to bed", "in ufficio — to the office"]
+        - ["a piedi — on foot", "in macchina — by car"]
+    examples:
+      - ["Andiamo a casa.", "We're going home."]
+      - ["Vai in Italia?", "Are you going to Italy?"]
+      - ["Vado a scuola a piedi.", "I walk to school."]
+      - ["Vengono in treno.", "They're coming by train."]
+    tip: "Ways of travelling take *in*: *in treno, in macchina, in autobus*. Only \"on foot\" is different: *a piedi*."
+
+  - heading: "Fare: do, make — and more"
+    body: |
+      **Fare** means "to do" or "to make", and it turns up in lots of
+      everyday expressions:
+
+      - *fare colazione* — to have breakfast
+      - *fare la spesa* — to do the food shopping
+      - *fare i compiti* — to do homework
+      - *fare sport* — to do sport
+
+      It's also how you talk about the weather. **Che tempo fa?** — What's
+      the weather like? **Fa caldo. Fa freddo. Fa bello.** — It's hot.
+      It's cold. It's nice out.
+    examples:
+      - ["Cosa fai oggi?", "What are you doing today?"]
+      - ["Faccio i compiti.", "I'm doing my homework."]
+      - ["Oggi fa freddo.", "It's cold today."]
+    tip: "Compare *Ho freddo* (I feel cold — lesson 5) with *Fa freddo* (the weather is cold)."
+
+words:
+  - [andare, to go]
+  - [fare, "to do, to make"]
+  - [stare, "to stay, to be"]
+  - [venire, to come]
+  - [casa, "house, home"]
+  - [scuola, school]
+  - [letto, bed]
+  - [centro, "centre, downtown"]
+  - [banca, bank]
+  - [ufficio, office]
+  - [treno, train]
+  - [colazione, breakfast]
+  - [spesa, food shopping]
+  - [compiti, homework]
+  - [tempo, "weather; time"]
+
+practice:
+  - type: fill
+    prompt: "Io ___ a scuola."
+    hint: (andare)
+    translation: I'm going to school.
+    answers: [vado]
+    why: Andare is irregular — io vado.
+
+  - type: fill
+    prompt: "Cosa ___ oggi?"
+    hint: (fare, tu)
+    translation: What are you doing today?
+    answers: [fai]
+    why: Fare with tu is fai.
+
+  - type: fill
+    prompt: "Loro ___ a casa."
+    hint: (stare)
+    translation: They're staying at home.
+    answers: [stanno]
+    why: Stare with loro is stanno.
+
+  - type: fill
+    prompt: "Noi ___ in Italia."
+    hint: (andare)
+    translation: We're going to Italy.
+    answers: [andiamo]
+    why: Noi andiamo — and countries take in.
+
+  - type: fill
+    prompt: "Vado ___ Roma."
+    hint: (to)
+    translation: I'm going to Rome.
+    answers: [a]
+    why: Cities and towns take a.
+
+  - type: translate
+    direction: to-target
+    prompt: Are you coming? (to a friend)
+    answers: ["Vieni?", "Tu vieni?"]
+    why: Venire with tu is vieni.
+
+  - type: translate
+    direction: to-target
+    prompt: It's hot today.
+    answers: ["Oggi fa caldo.", "Fa caldo oggi."]
+    why: The weather uses fare — fa caldo.
+
+  - type: translate
+    direction: to-target
+    prompt: I'm going home.
+    answers: ["Vado a casa.", "Io vado a casa."]
+    why: '"Home" is a casa, with no article.'
+
+  - type: translate
+    direction: to-english
+    prompt: Facciamo colazione.
+    answers: ["We have breakfast.", "We're having breakfast.", "We eat breakfast.", "We're eating breakfast.", "Let's have breakfast."]
+    why: Fare colazione means "to have breakfast".
+
+  - type: translate
+    direction: to-english
+    prompt: Vengono da Milano.
+    answers: ["They come from Milan.", "They're coming from Milan.", "They are from Milan.", "They come from Milano.", "They're coming from Milano."]
+    why: Venire da says where someone comes from.
+
+  - type: choice
+    prompt: How do you say "I'm going to the bank"?
+    options: [Vado a banca., Vado in banca., Vado in la banca.]
+    answer: Vado in banca.
+    why: Banca is one of the places that takes in, with no article.
+
+  - type: choice
+    prompt: How do you ask "What's the weather like?"
+    options: [Che tempo fa?, Che tempo è?, Come è il tempo?]
+    answer: Che tempo fa?
+    why: Italian talks about the weather with fare.

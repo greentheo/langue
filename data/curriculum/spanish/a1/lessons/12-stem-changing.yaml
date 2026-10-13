@@ -1,0 +1,160 @@
+title: "Quiero, puedo, prefiero"
+subtitle: Stem-changing verbs and polite requests
+goal: use *querer, poder, preferir, dormir* and *pedir*, and ask for things politely with *quisiera* and *me gustaría*
+minutes: 14
+
+sections:
+  - heading: Verbs that change inside
+    body: |
+      Some verbs change a vowel in their *stem* — the part before -ar, -er
+      or -ir. There are three kinds of change:
+
+      - **e → ie**: *querer → quiero* (to want)
+      - **o → ue**: *poder → puedo* (to be able to, can)
+      - **e → i**: *pedir → pido* (to ask for, to order)
+
+      The endings are completely regular. And *nosotros* and *vosotros*
+      never change. In a table, the changed forms make the shape of a boot,
+      so these are often called "boot verbs".
+    table:
+      columns: [who, "querer (e→ie)", "poder (o→ue)", "pedir (e→i)"]
+      rows:
+        - [yo, quiero, puedo, pido]
+        - [tú, quieres, puedes, pides]
+        - [él / ella / usted, quiere, puede, pide]
+        - [nosotros / nosotras, queremos, podemos, pedimos]
+        - [vosotros / vosotras, queréis, podéis, pedís]
+        - [ellos / ellas / ustedes, quieren, pueden, piden]
+    tip: "You've already met two: *tener → tienes* (lesson 5) and *costar → cuesta* (lesson 7)."
+
+  - heading: Two more you'll use every day
+    body: |
+      - **preferir** (to prefer), e → ie: *prefiero, prefieres, prefiere, preferimos, preferís, prefieren*
+      - **dormir** (to sleep), o → ue: *duermo, duermes, duerme, dormimos, dormís, duermen*
+
+      And one special one: **jugar** (to play) changes u → ue: *juego,
+      juegas, juega, jugamos, jugáis, juegan*.
+    examples:
+      - ["Prefiero el té.", "I prefer tea."]
+      - ["¿Duermes bien?", "Do you sleep well?"]
+      - ["Mis hermanos juegan mucho.", "My brothers play a lot."]
+
+  - heading: "Want to, can: + infinitive"
+    body: |
+      **Querer**, **poder** and **preferir** are often followed by a verb
+      in the infinitive (the dictionary form), just like in English:
+    examples:
+      - ["Quiero comer.", "I want to eat."]
+      - ["No puedo bailar.", "I can't dance."]
+      - ["¿Puedes hablar más despacio?", "Can you speak more slowly?"]
+      - ["Preferimos estudiar en casa.", "We prefer to study at home."]
+
+  - heading: Asking politely
+    body: |
+      *Quiero un café* is fine with friends, but it can sound bossy in a
+      shop or restaurant. To be polite, use one of these fixed phrases
+      (you'll learn how they're built later):
+
+      - **quisiera** — I would like
+      - **me gustaría** — I'd like
+
+      **¿Puedo…?** means "Can I…?" or "May I…?". And **pedir** is what you
+      do when you order in a restaurant.
+    examples:
+      - ["Quisiera un café, por favor.", "I'd like a coffee, please."]
+      - ["Me gustaría una mesa para dos.", "I'd like a table for two."]
+      - ["¿Puedo pagar con tarjeta?", "Can I pay by card?"]
+      - ["Ella pide una pizza.", "She orders a pizza."]
+    tip: "*Pedir* means to ask *for* something. To ask a question, Spanish uses a different verb, *preguntar*."
+
+words:
+  - [querer, to want]
+  - [poder, "to be able to, can"]
+  - [preferir, to prefer]
+  - [dormir, to sleep]
+  - [pedir, "to ask for, to order"]
+  - [jugar, to play]
+  - [quisiera, I would like]
+  - [me gustaría, I'd like]
+  - [té, tea]
+  - [café, coffee]
+  - [cuenta, "bill, check"]
+  - [tarjeta, card]
+
+practice:
+  - type: fill
+    prompt: "Yo ___ un café."
+    hint: querer
+    translation: I want a coffee.
+    answers: [quiero]
+    why: Querer changes e → ie, so yo quiero.
+
+  - type: fill
+    prompt: "¿___ hablar más despacio?"
+    hint: poder, tú
+    translation: Can you speak more slowly?
+    answers: [Puedes]
+    why: Poder changes o → ue, so tú puedes.
+
+  - type: fill
+    prompt: "Nosotros ___ el té."
+    hint: preferir
+    translation: We prefer tea.
+    answers: [preferimos]
+    why: Nosotros never changes its stem, so it stays preferimos.
+
+  - type: fill
+    prompt: "Ellos ___ mucho."
+    hint: dormir
+    translation: They sleep a lot.
+    answers: [duermen]
+    why: Dormir changes o → ue, so ellos duermen.
+
+  - type: fill
+    prompt: "Ella ___ una pizza."
+    hint: pedir
+    translation: She orders a pizza.
+    answers: [pide]
+    why: Pedir changes e → i, so ella pide.
+
+  - type: translate
+    direction: to-target
+    prompt: I can't dance.
+    answers: [No puedo bailar, Yo no puedo bailar]
+    why: Poder is followed by the infinitive, and no goes before the verb.
+
+  - type: translate
+    direction: to-target
+    prompt: I'd like a coffee, please.
+    answers: ["Quisiera un café, por favor", "Me gustaría un café, por favor"]
+    why: Quisiera and me gustaría are the polite ways to say "I'd like".
+
+  - type: translate
+    direction: to-target
+    prompt: Do you want to eat? (to a friend)
+    answers: ["¿Quieres comer?", "¿Tú quieres comer?", "¿Quieres tú comer?"]
+    why: Querer changes e → ie in the tú form, then takes the infinitive.
+
+  - type: translate
+    direction: to-english
+    prompt: "¿Puedo pagar con tarjeta?"
+    answers: [Can I pay by card?, Can I pay with a card?, Can I pay with card?, May I pay by card?, May I pay with a card?, Can I pay by credit card?]
+    why: Puedo is the yo form of poder, "can".
+
+  - type: translate
+    direction: to-english
+    prompt: Ellos prefieren dormir.
+    answers: [They prefer to sleep, They prefer sleeping, They would rather sleep]
+    why: Prefieren is the ellos form of preferir (e → ie).
+
+  - type: choice
+    prompt: Which is correct?
+    options: [Yo podo, Yo puedo, Yo pudo]
+    answer: Yo puedo
+    why: Poder changes o → ue in the yo form.
+
+  - type: choice
+    prompt: In a shop, which is the most polite way to ask for something?
+    options: [Quiero…, Quisiera…]
+    answer: Quisiera…
+    why: Quisiera means "I would like" — softer than quiero, "I want".

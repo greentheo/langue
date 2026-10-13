@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { handler, readJson, resolveContext, BadRequestError } from "@/lib/api";
 import { getWordsUpToLevel } from "@/lib/vocab";
-import { gradeAnswer, pointsForResult } from "@/lib/engine/grade";
+import { gradeAnswer, normalizeAnswer, pointsForResult, type GradeResult } from "@/lib/engine/grade";
 import { explainFlashcard } from "@/lib/engine/activities";
 import { prisma } from "@/lib/db";
 
@@ -18,6 +18,8 @@ const BodySchema = z.object({
   answer: z.string().default(""),
   /** Ask for an explanation on a miss. Off for rapid drilling. */
   explain: z.boolean().default(true),
+  /** A clicked option is right or wrong; typo tolerance only applies to typing. */
+  mode: z.enum(["choice", "type"]).default("type"),
 });
 
 export const POST = handler(async (request) => {
@@ -29,7 +31,7 @@ export const POST = handler(async (request) => {
     throw new BadRequestError("A word and an answer are required.");
   }
 
-  const { word: wordText, answer, explain } = parsed.data;
+  const { word: wordText, answer, explain, mode } = parsed.data;
 
   const entry = getWordsUpToLevel(language, level).find(
     (candidate) => candidate.word.toLowerCase() === wordText.toLowerCase(),
@@ -39,7 +41,13 @@ export const POST = handler(async (request) => {
     throw new BadRequestError(`"${wordText}" is not in the ${language} ${level} deck.`);
   }
 
-  const result = gradeAnswer(answer, entry.translations);
+  const picked = normalizeAnswer(answer);
+  const result: GradeResult =
+    mode === "choice"
+      ? entry.translations.some((meaning) => normalizeAnswer(meaning) === picked)
+        ? { verdict: "correct", score: 100, matched: answer, note: null }
+        : { verdict: "incorrect", score: 0, matched: null, note: null }
+      : gradeAnswer(answer, entry.translations);
   const points = pointsForResult(result, entry.difficulty);
 
   // The review row is the per-answer audit trail; session totals are written

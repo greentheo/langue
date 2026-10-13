@@ -1,0 +1,150 @@
+title: Mi piace
+subtitle: Saying what you like with piacere
+goal: say what you and other people like with piacere — and know when to say mi piacciono
+minutes: 12
+
+sections:
+  - heading: It pleases me
+    body: |
+      Italian has no simple verb for "to like". Instead it says the thing
+      **pleases** you: *Mi piace la pizza* — literally "to me pleases the
+      pizza".
+
+      So the verb agrees with **the thing you like**, not with you:
+
+      - one thing → **piace**: *Mi piace il gelato.*
+      - more than one thing → **piacciono**: *Mi piacciono i gatti.*
+      - an activity (a verb in the infinitive) → **piace**: *Mi piace leggere.*
+    examples:
+      - ["Mi piace la musica.", "I like music."]
+      - ["Mi piacciono gli spaghetti.", "I like spaghetti."]
+      - ["Mi piace dormire.", "I like sleeping."]
+    tip: "Use the article with the thing you like: *Mi piace la pizza*, not *Mi piace pizza*."
+
+  - heading: To me, to you, to him…
+    body: |
+      The little word in front changes with **who** does the liking. To
+      name the person, use **a** + the name: *A Marco piace il calcio* —
+      Marco likes football.
+
+      **Non** goes in front of everything: *Non mi piace*, never *Mi non
+      piace*.
+    table:
+      columns: [who likes it, one thing, more than one thing]
+      rows:
+        - [I, mi piace, mi piacciono]
+        - [you (tu), ti piace, ti piacciono]
+        - [he, gli piace, gli piacciono]
+        - [she, le piace, le piacciono]
+        - [you (Lei), Le piace, Le piacciono]
+        - [we, ci piace, ci piacciono]
+        - [you (voi), vi piace, vi piacciono]
+        - [they, gli piace, gli piacciono]
+    examples:
+      - ["Ti piace il gelato?", "Do you like ice cream?"]
+      - ["A Giulia piacciono i cani.", "Giulia likes dogs."]
+      - ["Ci piace fare sport.", "We like doing sport."]
+      - ["Non gli piace studiare.", "He doesn't like studying."]
+
+  - heading: Me too! Me neither!
+    body: |
+      To agree or disagree with someone, use **a me** (to me):
+
+      - **Anche a me!** — Me too!
+      - **Neanche a me.** — Me neither.
+      - **A me sì.** — I do. (when the other person doesn't)
+      - **A me no.** — I don't. (when the other person does)
+    examples:
+      - ["Mi piace il tè. — Anche a me!", "I like tea. — Me too!"]
+      - ["Non mi piace il caffè. — A me sì!", "I don't like coffee. — I do!"]
+      - ["Mi piacciono i film. — A me no.", "I like films. — I don't."]
+    tip: "It's *Anche a me*, not *Anche io*, because it matches *a me piace*."
+
+words:
+  - [piacere, "to please; to like"]
+  - [musica, music]
+  - [calcio, "football, soccer"]
+  - [film, film]
+  - [mare, sea]
+  - [sport, sport]
+  - [cioccolato, chocolate]
+  - [verdura, vegetables]
+  - [anche, "also, too"]
+  - [neanche, "not even, neither"]
+
+practice:
+  - type: fill
+    prompt: "Mi ___ il cioccolato."
+    hint: (piacere)
+    translation: I like chocolate.
+    answers: [piace]
+    why: One thing liked takes piace.
+
+  - type: fill
+    prompt: "Mi ___ i gatti."
+    hint: (piacere)
+    translation: I like cats.
+    answers: [piacciono]
+    why: More than one thing liked takes piacciono.
+
+  - type: fill
+    prompt: "___ piace la pizza?"
+    hint: (to you, friendly)
+    translation: Do you like pizza?
+    answers: [ti]
+    why: Ti piace means "you like" when you're talking to a friend.
+
+  - type: fill
+    prompt: "A Marco ___ leggere."
+    hint: (piacere)
+    translation: Marco likes reading.
+    answers: [piace]
+    why: An activity — a verb in the infinitive — always takes piace.
+
+  - type: translate
+    direction: to-target
+    prompt: I like music.
+    answers: ["Mi piace la musica.", "A me piace la musica."]
+    why: The thing you like takes its article — la musica.
+
+  - type: translate
+    direction: to-target
+    prompt: She doesn't like vegetables.
+    answers: ["Non le piace la verdura.", "A lei non piace la verdura.", "Non le piacciono le verdure.", "A lei non piacciono le verdure."]
+    why: '"She likes" is le piace, and non goes in front of everything.'
+
+  - type: translate
+    direction: to-target
+    prompt: Do you like dogs? (to a friend)
+    answers: ["Ti piacciono i cani?", "A te piacciono i cani?"]
+    why: Dogs are plural, so it's piacciono.
+
+  - type: translate
+    direction: to-target
+    prompt: "Me too! (agreeing with *Mi piace il tè*)"
+    answers: ["Anche a me!"]
+    why: Anche a me matches the a me of a me piace.
+
+  - type: translate
+    direction: to-english
+    prompt: Ci piace il mare.
+    answers: ["We like the sea.", "We like the seaside."]
+    why: Ci piace means "we like".
+
+  - type: translate
+    direction: to-english
+    prompt: Non gli piacciono i film.
+    answers: ["He doesn't like films.", "He doesn't like movies.", "They don't like films.", "They don't like movies."]
+    why: Gli piacciono can mean "he likes" or "they like"; film doesn't change in the plural.
+
+  - type: choice
+    prompt: "Your friend says *Non mi piace il calcio.* You love it. You say…"
+    options: [Anche a me., Neanche a me., A me sì.]
+    answer: A me sì.
+    why: A me sì means "I do" — it disagrees with a negative.
+
+  - type: choice
+    prompt: Which is correct?
+    options: [Mi piacciono la pizza., Mi piace la pizza., Io piace la pizza.]
+    answer: Mi piace la pizza.
+    why: One thing takes piace, and the person who likes it is mi.

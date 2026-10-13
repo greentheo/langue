@@ -1,0 +1,177 @@
+title: Je vais, je fais
+subtitle: "Aller, faire, venir, prendre — and the near future"
+goal: use four everyday irregular verbs, and talk about what you're going to do with *aller* + infinitive
+minutes: 15
+
+sections:
+  - heading: "Aller: to go"
+    body: |
+      **Aller** ends in -er but is completely irregular. To say where you
+      are going in a town or city, use **à**: *Je vais à Paris.*
+
+      You can also say *à la maison* (home) or *à l'école* (to school).
+    table:
+      columns: [person, aller]
+      rows:
+        - [je, vais]
+        - [tu, vas]
+        - ["il / elle / on", va]
+        - [nous, allons]
+        - [vous, allez]
+        - ["ils / elles", vont]
+    examples:
+      - ["Je vais à Paris.", "I'm going to Paris."]
+      - ["On va à l'école.", "We're going to school."]
+      - ["Ça va ?", "How's it going? — this is aller too!"]
+
+  - heading: "Faire: to do, to make"
+    body: |
+      **Faire** means both "to do" and "to make". Watch out for **vous
+      faites** — it does not end in -ez.
+
+      *Faire* appears in lots of everyday expressions:
+
+      - *faire la cuisine* — to cook
+      - *faire les courses* — to do the shopping
+      - *faire une promenade* — to go for a walk
+      - *Il fait beau / froid / chaud.* — The weather is nice / cold / hot.
+    table:
+      columns: [person, faire]
+      rows:
+        - [je, fais]
+        - [tu, fais]
+        - ["il / elle / on", fait]
+        - [nous, faisons]
+        - [vous, faites]
+        - ["ils / elles", font]
+    examples:
+      - ["Qu'est-ce que tu fais ?", "What are you doing?"]
+      - ["Elle fait les courses.", "She's doing the shopping."]
+      - ["Il fait froid aujourd'hui.", "It's cold today."]
+    tip: "For weather, French says *il fait* (\"it makes\"): never *il est froid* when you mean the weather."
+
+  - heading: "Venir and prendre"
+    body: |
+      **Venir** (to come) — to say where you come from, use **de**:
+      *Je viens de Londres.* Before a vowel, **de** becomes **d'**.
+
+      **Prendre** (to take) is used for transport and for food and drink:
+      *prendre le bus, prendre un café*.
+    table:
+      columns: [person, venir, prendre]
+      rows:
+        - [je, viens, prends]
+        - [tu, viens, prends]
+        - ["il / elle / on", vient, prend]
+        - [nous, venons, prenons]
+        - [vous, venez, prenez]
+        - ["ils / elles", viennent, prennent]
+    examples:
+      - ["Tu viens d'où ?", "Where are you from?"]
+      - ["Nous prenons le train.", "We're taking the train."]
+
+  - heading: "The near future: aller + infinitive"
+    body: |
+      To say what you are **going to do**, use **aller** + an infinitive —
+      just like English "going to":
+
+      - *Je vais manger.* — I'm going to eat.
+      - *Nous allons regarder un film.* — We're going to watch a film.
+
+      To make it negative, wrap *ne… pas* around **aller**:
+      *Je ne vais pas travailler.*
+    examples:
+      - ["Il va faire beau demain.", "It's going to be nice tomorrow."]
+      - ["Ce soir, on va jouer.", "Tonight we're going to play."]
+      - ["Elle ne va pas venir.", "She isn't going to come."]
+
+words:
+  - [aller, to go]
+  - [faire, "to do, to make"]
+  - [venir, to come]
+  - [prendre, to take]
+  - [la cuisine, "cooking, the kitchen"]
+  - [les courses, the shopping]
+  - [une promenade, a walk]
+  - [un film, a film]
+  - [demain, tomorrow]
+  - [ce soir, "tonight, this evening"]
+  - [le week-end, the weekend]
+  - [beau, nice (weather)]
+
+practice:
+  - type: fill
+    prompt: "Je ___ à Rome."
+    hint: (aller)
+    translation: I'm going to Rome.
+    answers: [vais]
+    why: Aller is irregular — with je it is vais.
+
+  - type: fill
+    prompt: "Qu'est-ce que vous ___ ?"
+    hint: (faire)
+    translation: What are you doing?
+    answers: [faites]
+    why: Vous faites is irregular — it doesn't end in -ez.
+
+  - type: fill
+    prompt: "Ils ___ le bus."
+    hint: (prendre)
+    translation: They're taking the bus.
+    answers: [prennent]
+    why: Prendre doubles the n in the ils form — prennent.
+
+  - type: fill
+    prompt: "Nous ___ de Montréal."
+    hint: (venir)
+    translation: We come from Montreal.
+    answers: [venons]
+    why: With nous, venir is venons.
+
+  - type: translate
+    direction: to-target
+    prompt: I'm going to eat.
+    answers: [Je vais manger.]
+    why: Aller + an infinitive talks about the near future.
+
+  - type: translate
+    direction: to-target
+    prompt: It's cold. (the weather)
+    answers: [Il fait froid.]
+    why: For weather, French uses il fait.
+
+  - type: translate
+    direction: to-target
+    prompt: They're going to Paris. (a group of boys)
+    answers: [Ils vont à Paris.]
+    why: With ils, aller is vont, and à goes before a city.
+
+  - type: translate
+    direction: to-english
+    prompt: Elle fait les courses.
+    answers: ["She does the shopping.", "She is doing the shopping.", "She's doing the shopping.", "She is shopping.", "She's shopping.", "She goes shopping."]
+    why: Faire les courses means to do the (food) shopping.
+
+  - type: translate
+    direction: to-english
+    prompt: Nous allons regarder un film.
+    answers: ["We are going to watch a film.", "We're going to watch a film.", "We are going to watch a movie.", "We're going to watch a movie."]
+    why: Allons + infinitive is "we're going to…".
+
+  - type: choice
+    prompt: Which means "you do" (vous)?
+    options: [vous faisez, vous faites, vous fais]
+    answer: vous faites
+    why: Faites is one of only three vous forms that don't end in -ez (with êtes and dites).
+
+  - type: choice
+    prompt: "*Je vais travailler* talks about…"
+    options: [the past, right now, the near future]
+    answer: the near future
+    why: Aller + infinitive means "going to" do something.
+
+  - type: translate
+    direction: to-target
+    prompt: I'm not going to work tomorrow.
+    answers: ["Je ne vais pas travailler demain.", "Demain, je ne vais pas travailler."]
+    why: Ne… pas wraps around aller, not around the infinitive.

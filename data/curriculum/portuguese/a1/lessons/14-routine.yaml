@@ -1,0 +1,163 @@
+title: "Eu me levanto às sete"
+subtitle: Reflexive verbs and your daily routine
+goal: describe your day with reflexive verbs, times of day, and words like sempre, às vezes and nunca
+minutes: 13
+
+sections:
+  - heading: Doing something to yourself
+    body: |
+      Some verbs come with a little word meaning *myself*, *yourself* and so
+      on. These are **reflexive verbs**. You've used one since lesson 1:
+      *Eu me chamo Ana* — "I call myself Ana".
+
+      **Levantar-se** means "to get up" (literally "to raise oneself"). In
+      Brazil the little word goes **before** the verb: *eu me levanto*.
+    table:
+      columns: [pronoun, little word, levantar-se]
+      rows:
+        - [eu, me, me levanto]
+        - [você / ele / ela / a gente, se, se levanta]
+        - [nós, nos, nos levantamos]
+        - [vocês / eles / elas, se, se levantam]
+    examples:
+      - ["Eu me levanto às sete.", "I get up at seven."]
+      - ["Ela se deita às dez.", "She goes to bed at ten."]
+      - ["A gente se levanta cedo.", "We get up early."]
+    tip: "In Portugal the little word goes after the verb: *levanto-me*. You'll see that in writing, but in Brazil say *eu me levanto*."
+
+  - heading: Your day
+    body: |
+      Some routine verbs are reflexive and some aren't. Note that in Brazil
+      **acordar** (to wake up) is *not* reflexive: *Eu acordo às seis.*
+
+      - **acordar** — to wake up
+      - **levantar-se** — to get up
+      - **tomar banho** — to take a shower
+      - **tomar café da manhã** — to have breakfast
+      - **almoçar** — to have lunch · **jantar** — to have dinner
+      - **deitar-se** — to go to bed, to lie down
+      - **dormir** — to sleep (irregular with *eu*: *durmo*)
+    examples:
+      - ["Eu acordo às seis e me levanto às seis e meia.", "I wake up at six and get up at half past six."]
+      - ["Tomo banho e tomo café da manhã.", "I take a shower and have breakfast."]
+      - ["Nós jantamos às oito.", "We have dinner at eight."]
+
+  - heading: When and how often
+    body: |
+      Parts of the day — learn these as fixed phrases:
+
+      - **de manhã** — in the morning
+      - **à tarde** — in the afternoon
+      - **à noite** — in the evening, at night
+
+      How often:
+
+      - **sempre** — always · **todo dia** — every day
+      - **às vezes** — sometimes
+      - **nunca** — never. It goes before the verb: *Nunca tomo café.* You'll
+        also hear *não… nunca*: *Não tomo café nunca.*
+    examples:
+      - ["De manhã eu sempre tomo café.", "In the morning I always have coffee."]
+      - ["Às vezes eu almoço em casa.", "Sometimes I have lunch at home."]
+      - ["Ele nunca dorme à tarde.", "He never sleeps in the afternoon."]
+    tip: "*Às vezes* means \"sometimes\" — it isn't about a time of day. *À tarde* is."
+
+words:
+  - [acordar, to wake up]
+  - [levantar-se, to get up]
+  - [deitar-se, to go to bed]
+  - [tomar banho, to take a shower]
+  - [café da manhã, breakfast]
+  - [almoçar, to have lunch]
+  - [jantar, to have dinner]
+  - [dormir, to sleep]
+  - [cedo, early]
+  - [tarde, late]
+  - [sempre, always]
+  - [às vezes, sometimes]
+  - [nunca, never]
+  - [todo dia, every day]
+  - [de manhã, in the morning]
+
+practice:
+  - type: fill
+    prompt: "Eu ___ levanto às sete."
+    hint: myself
+    translation: I get up at seven.
+    answers: [me]
+    why: With eu, the little reflexive word is me, before the verb.
+
+  - type: fill
+    prompt: "Nós ___ deitamos às dez."
+    hint: ourselves
+    translation: We go to bed at ten.
+    answers: [nos]
+    why: With nós, the reflexive word is nos.
+
+  - type: fill
+    prompt: "Ela se ___ cedo."
+    hint: levantar
+    translation: She gets up early.
+    answers: [levanta]
+    why: Levantar is a regular -ar verb — with ela it is levanta.
+
+  - type: fill
+    prompt: "Eles ___ deitam tarde."
+    hint: themselves
+    translation: They go to bed late.
+    answers: [se]
+    why: With eles, the reflexive word is se.
+
+  - type: choice
+    prompt: How do Brazilians say "I get up"?
+    options: [Eu me levanto., Eu levanto-me., Eu levanto me.]
+    answer: Eu me levanto.
+    why: In Brazilian Portuguese the little word goes before the verb.
+
+  - type: choice
+    prompt: Which means "sometimes"?
+    options: [à tarde, às vezes, às sete]
+    answer: às vezes
+    why: Às vezes is sometimes; à tarde is in the afternoon.
+
+  - type: choice
+    prompt: "\"I never drink coffee.\""
+    options: [Nunca tomo café., Tomo nunca café., Eu nunca não tomo café.]
+    answer: Nunca tomo café.
+    why: Nunca goes before the verb.
+
+  - type: translate
+    direction: to-target
+    prompt: I wake up at seven.
+    answers: [Acordo às sete., Eu acordo às sete., Acordo às sete horas., Eu acordo às sete horas.]
+    why: In Brazil acordar isn't reflexive — eu acordo.
+
+  - type: translate
+    direction: to-target
+    prompt: She takes a shower in the morning.
+    answers: [Ela toma banho de manhã., De manhã ela toma banho.]
+    why: Tomar banho is to take a shower, and de manhã is in the morning.
+
+  - type: translate
+    direction: to-target
+    prompt: We have dinner at eight.
+    answers:
+      - Nós jantamos às oito.
+      - Jantamos às oito.
+      - A gente janta às oito.
+      - Nós jantamos às oito horas.
+      - Jantamos às oito horas.
+      - A gente janta às oito horas.
+    why: Jantar is a regular -ar verb, and "at eight" is às oito.
+
+  - type: translate
+    direction: to-english
+    prompt: Ele sempre dorme tarde.
+    answers: [He always sleeps late., He always goes to sleep late., He always goes to bed late.]
+    why: Sempre is always, and tarde here means late.
+
+  - type: translate
+    direction: to-english
+    prompt: Às vezes eu almoço em casa.
+    answers: [Sometimes I have lunch at home., Sometimes I eat lunch at home., I sometimes have lunch at home., I sometimes eat lunch at home.]
+    why: Às vezes is sometimes, and almoçar is to have lunch.

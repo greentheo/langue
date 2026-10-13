@@ -1,0 +1,176 @@
+title: "Eu tenho fome"
+subtitle: Ter — having, age, hunger — and "there is"
+goal: say what you have, how old you are and how you feel with ter, and say what there is with tem and há
+minutes: 12
+
+sections:
+  - heading: Ter — to have
+    body: |
+      **Ter** means "to have". Like *ser*, it doesn't follow a regular
+      pattern, so learn it by heart. It's one of the most useful verbs in the
+      language.
+
+      *Têm* (with a little hat) is the plural form. In most of Brazil it
+      sounds just like *tem*.
+    table:
+      columns: [pronoun, ter, English]
+      rows:
+        - [eu, tenho, I have]
+        - [você / ele / ela / a gente, tem, you have / he has / she has / we have]
+        - [nós, temos, we have]
+        - [vocês / eles / elas, têm, you have / they have]
+    examples:
+      - ["Eu tenho um irmão.", "I have a brother."]
+      - ["Você tem um carro?", "Do you have a car?"]
+      - ["Nós temos um cachorro.", "We have a dog."]
+      - ["Elas têm uma casa em Recife.", "They have a house in Recife."]
+
+  - heading: How old are you?
+    body: |
+      In Portuguese you don't *are* an age — you *have* years. **Tenho 12
+      anos** means "I am 12 years old" (literally "I have 12 years").
+
+      To ask: **Quantos anos você tem?** — How old are you? (literally "how
+      many years do you have?")
+
+      For now, write ages with numbers; lesson 7 teaches the words.
+    examples:
+      - ["Tenho 14 anos.", "I'm 14 years old."]
+      - ["A Ana tem 9 anos.", "Ana is 9."]
+      - ["Quantos anos você tem?", "How old are you?"]
+    tip: "Never use ser for age: *sou 12 anos* is wrong. Age is something you *have*."
+
+  - heading: Hungry, thirsty, scared
+    body: |
+      Portuguese also uses **ter** for many feelings that English describes
+      with "to be":
+
+      - **ter fome** — to be hungry (to have hunger)
+      - **ter sede** — to be thirsty
+      - **ter medo** — to be afraid
+      - **ter sono** — to be sleepy
+      - **ter razão** — to be right
+    examples:
+      - ["Tenho fome.", "I'm hungry."]
+      - ["Você tem sede?", "Are you thirsty?"]
+      - ["Ela tem medo de cachorro.", "She's afraid of dogs."]
+      - ["Você tem razão.", "You're right."]
+
+  - heading: There is, there are
+    body: |
+      In everyday Brazilian speech, **tem** also means "there is" and
+      "there are":
+
+      - *Tem uma farmácia aqui perto.* — There's a pharmacy nearby.
+      - *Tem pão?* — Is there any bread?
+
+      In writing and formal speech you'll see **há** instead: *Há um
+      problema.* — There is a problem.
+    examples:
+      - ["Tem um hotel aqui perto?", "Is there a hotel nearby?"]
+      - ["Não tem leite.", "There's no milk."]
+      - ["Há hotéis aqui?", "Are there hotels here?"]
+    tip: "*Tem* and *há* stay the same for one thing or many: *tem um hotel*, *tem hotéis*. Never *têm* here."
+
+words:
+  - [ter, to have]
+  - [ano, year]
+  - [fome, hunger]
+  - [sede, thirst]
+  - [medo, fear]
+  - [sono, sleepiness]
+  - [ter razão, to be right]
+  - [irmã, sister]
+  - [cachorro, dog]
+  - [gato, cat]
+  - [carro, car]
+  - [aqui, here]
+  - [aqui perto, nearby]
+  - [farmácia, pharmacy]
+  - [há, there is / there are]
+
+practice:
+  - type: fill
+    prompt: "Eu ___ um irmão."
+    hint: ter, eu
+    translation: I have a brother.
+    answers: [tenho]
+    why: With eu, ter is tenho.
+
+  - type: fill
+    prompt: "Nós ___ um cachorro."
+    hint: ter, nós
+    translation: We have a dog.
+    answers: [temos]
+    why: With nós, ter is temos.
+
+  - type: fill
+    strict_accents: true
+    prompt: "Elas ___ uma casa em Recife."
+    hint: ter, elas
+    translation: They have a house in Recife.
+    answers: [têm]
+    why: With vocês, eles and elas, ter is têm — with a little hat.
+
+  - type: fill
+    prompt: "Eu tenho 13 ___."
+    hint: years
+    translation: I am 13 years old.
+    answers: [anos]
+    why: Age is ter + number + anos.
+
+  - type: choice
+    prompt: How do you say "I'm hungry"?
+    options: [Sou fome., Tenho fome., Tem fome.]
+    answer: Tenho fome.
+    why: Hunger is something you have — ter fome.
+
+  - type: choice
+    prompt: In everyday Brazilian speech, "There's a pharmacy here" is…
+    options: [Tem uma farmácia aqui., Têm uma farmácia aqui., É uma farmácia aqui.]
+    answer: Tem uma farmácia aqui.
+    why: In everyday Brazilian Portuguese, tem means "there is" — and it never changes to têm.
+
+  - type: translate
+    direction: to-target
+    prompt: How old are you?
+    answers:
+      - Quantos anos você tem?
+      - Você tem quantos anos?
+      - Quantos anos o senhor tem?
+      - Quantos anos a senhora tem?
+    why: Literally "how many years do you have?".
+
+  - type: translate
+    direction: to-target
+    prompt: I'm thirsty.
+    answers: [Tenho sede., Eu tenho sede., Estou com sede., Eu estou com sede.]
+    why: Thirst is something you have — ter sede.
+
+  - type: translate
+    direction: to-target
+    prompt: Is there any bread?
+    answers: [Tem pão?, Há pão?]
+    why: Tem (or há) means "there is", and a rising voice makes it a question.
+
+  - type: translate
+    direction: to-english
+    prompt: Você tem razão.
+    answers: [You're right., You are right.]
+    why: Ter razão — literally "to have reason" — means to be right.
+
+  - type: translate
+    direction: to-english
+    prompt: Tem um hotel aqui perto?
+    answers:
+      - Is there a hotel nearby?
+      - Is there a hotel near here?
+      - Is there a hotel close by?
+      - Is there a hotel around here?
+    why: Tem at the start means "there is", and aqui perto means nearby.
+
+  - type: translate
+    direction: to-english
+    prompt: Ela tem medo de gato.
+    answers: [She's afraid of cats., She is afraid of cats., She's scared of cats., She is scared of cats.]
+    why: Ter medo de — literally "to have fear of" — means to be afraid of.

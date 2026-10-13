@@ -1,0 +1,162 @@
+title: Je voudrais un café
+subtitle: "Vouloir, pouvoir, devoir — and asking politely"
+goal: say what you want, can and must do, and order politely with *je voudrais*
+minutes: 13
+
+sections:
+  - heading: "Vouloir: to want"
+    body: |
+      **Vouloir** is followed by a noun or an infinitive:
+
+      - *Je veux un chien.* — I want a dog.
+      - *Tu veux manger ?* — Do you want to eat?
+
+      *Veux, veux* and *veut* all sound the same — "vuh" — because the
+      final x and t are silent.
+    table:
+      columns: [person, vouloir]
+      rows:
+        - [je, veux]
+        - [tu, veux]
+        - ["il / elle / on", veut]
+        - [nous, voulons]
+        - [vous, voulez]
+        - ["ils / elles", veulent]
+
+  - heading: "Pouvoir and devoir: can and must"
+    body: |
+      **Pouvoir** means "can" or "may". **Devoir** means "must" or "have
+      to". Like *vouloir*, they are followed straight away by an
+      infinitive — no extra word in between.
+
+      - *Je peux venir.* — I can come.
+      - *Tu dois travailler.* — You have to work.
+    table:
+      columns: [person, pouvoir, devoir]
+      rows:
+        - [je, peux, dois]
+        - [tu, peux, dois]
+        - ["il / elle / on", peut, doit]
+        - [nous, pouvons, devons]
+        - [vous, pouvez, devez]
+        - ["ils / elles", peuvent, doivent]
+    tip: "After *vouloir, pouvoir* and *devoir* the next verb stays in the infinitive: *Je peux venir*, never *Je peux viens*."
+
+  - heading: Asking politely
+    body: |
+      *Je veux* ("I want") can sound bossy, like a small child. In shops and
+      cafés, say **je voudrais** — "I would like".
+
+      - *Je voudrais un croissant, s'il vous plaît.*
+
+      To ask permission: **Je peux… ?** or **Est-ce que je peux… ?**
+
+      "Please" is **s'il vous plaît** (polite) or **s'il te plaît** (to a
+      friend).
+    examples:
+      - ["Je voudrais un thé, s'il vous plaît.", "I'd like a tea, please."]
+      - ["Est-ce que je peux venir ?", "Can I come?"]
+      - ["Vous pouvez répéter, s'il vous plaît ?", "Can you repeat that, please?"]
+
+  - heading: At the café
+    body: |
+      Put it all together and you can order anything:
+    examples:
+      - ["Bonjour ! Je voudrais un café, s'il vous plaît.", "Hello! I'd like a coffee, please."]
+      - ["Et pour moi, un jus d'orange.", "And for me, an orange juice."]
+      - ["Vous voulez un dessert ?", "Do you want a dessert?"]
+      - ["L'addition, s'il vous plaît.", "The bill, please."]
+    tip: "In a French café, the waiter won't bring the bill until you ask for it — so *L'addition, s'il vous plaît* is a phrase you'll need."
+
+words:
+  - [vouloir, to want]
+  - [pouvoir, "can, to be able to"]
+  - [devoir, "must, to have to"]
+  - [je voudrais, I would like]
+  - [s'il vous plaît, please (polite)]
+  - [s'il te plaît, please (to a friend)]
+  - [un thé, a tea]
+  - [un jus d'orange, an orange juice]
+  - [un croissant, a croissant]
+  - [un sandwich, a sandwich]
+  - [un dessert, a dessert]
+  - ["l'addition (f)", the bill]
+  - [répéter, to repeat]
+
+practice:
+  - type: fill
+    prompt: "Je ___ un croissant, s'il vous plaît."
+    hint: (polite — I would like)
+    translation: I'd like a croissant, please.
+    answers: [voudrais]
+    why: Je voudrais is the polite way to ask for something.
+
+  - type: fill
+    prompt: "Tu ___ venir ?"
+    hint: (pouvoir)
+    translation: Can you come?
+    answers: [peux]
+    why: With tu, pouvoir is peux.
+
+  - type: fill
+    prompt: "Nous ___ travailler."
+    hint: (devoir)
+    translation: We have to work.
+    answers: [devons]
+    why: With nous, devoir is devons.
+
+  - type: fill
+    prompt: "Ils ___ un chat."
+    hint: (vouloir)
+    translation: They want a cat.
+    answers: [veulent]
+    why: With ils and elles, vouloir is veulent.
+
+  - type: translate
+    direction: to-target
+    prompt: I would like a tea, please.
+    answers: ["Je voudrais un thé, s'il vous plaît.", "Je voudrais un thé, s'il te plaît.", "Je voudrais un thé."]
+    why: Je voudrais is polite, and s'il vous plaît means please.
+
+  - type: translate
+    direction: to-target
+    prompt: Can I come?
+    answers: ["Je peux venir ?", "Est-ce que je peux venir ?", "Puis-je venir ?"]
+    why: Pouvoir + infinitive asks permission.
+
+  - type: translate
+    direction: to-target
+    prompt: The bill, please. (in a restaurant)
+    answers: ["L'addition, s'il vous plaît."]
+    why: The bill in a café or restaurant is l'addition.
+
+  - type: translate
+    direction: to-english
+    prompt: "Vous pouvez répéter, s'il vous plaît ?"
+    answers: ["Can you repeat that, please?", "Could you repeat that, please?", "Can you repeat, please?", "Could you repeat, please?", "Can you say that again, please?"]
+    why: Pouvoir + répéter — a phrase you'll use a lot while learning.
+
+  - type: translate
+    direction: to-english
+    prompt: Elle doit travailler.
+    answers: ["She must work.", "She has to work.", "She needs to work.", "She's got to work."]
+    why: Devoir means must or have to.
+
+  - type: choice
+    prompt: Which is the most polite in a café?
+    options: ["Je veux un café.", "Je voudrais un café, s'il vous plaît."]
+    answer: "Je voudrais un café, s'il vous plaît."
+    why: Je voudrais plus s'il vous plaît is polite; je veux sounds demanding.
+
+  - type: choice
+    prompt: Which is correct?
+    options: [Je peux venir., Je peux viens., Je peux à venir.]
+    answer: Je peux venir.
+    why: After pouvoir, the next verb stays in the infinitive, with no word in between.
+
+  - type: fill
+    prompt: "Vous ___ un dessert ?"
+    hint: (vouloir)
+    translation: Do you want a dessert?
+    answers: [voulez]
+    why: With vous, vouloir is voulez.
