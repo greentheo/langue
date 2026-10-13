@@ -4,13 +4,14 @@ import "server-only";
  * Invite code creation and listing.
  *
  * Codes are short and human-readable because they get pasted into a chat
- * message, not scanned. They are single-use and only grant the right to create
- * one account, so the entropy budget is small — but they are still CSPRNG
- * output, never sequential.
+ * message, not scanned. Each grants the right to create `maxUses` accounts and
+ * no more, so the entropy budget is small — but they are still CSPRNG output,
+ * never sequential.
  */
 
 import { randomInt } from "node:crypto";
 import { prisma } from "@/lib/db";
+import { parseInviteUses } from "./invite-status";
 
 /**
  * Crockford base32 without I, L, O, U: no character pairs a person can confuse
@@ -37,10 +38,13 @@ export interface CreateInviteOptions {
   note?: string;
   createdById?: string;
   expiresInDays?: number;
+  /** Accounts this code may create. Clamped to 1-100; defaults to 1. */
+  maxUses?: number;
 }
 
 export async function createInvite(options: CreateInviteOptions = {}) {
   const { note, createdById, expiresInDays } = options;
+  const maxUses = parseInviteUses(options.maxUses ?? 1);
 
   const expiresAt = expiresInDays
     ? new Date(Date.now() + expiresInDays * 24 * 60 * 60 * 1000)
@@ -53,7 +57,7 @@ export async function createInvite(options: CreateInviteOptions = {}) {
     if (existing) continue;
 
     return prisma.inviteCode.create({
-      data: { code, note, createdById, expiresAt },
+      data: { code, note, createdById, expiresAt, maxUses },
     });
   }
 
@@ -64,7 +68,10 @@ export async function listInvites() {
   return prisma.inviteCode.findMany({
     orderBy: { createdAt: "desc" },
     include: {
-      redeemedBy: { select: { displayName: true, email: true } },
+      members: {
+        select: { id: true, displayName: true, createdAt: true },
+        orderBy: { createdAt: "asc" },
+      },
     },
     take: 100,
   });

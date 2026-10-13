@@ -78,7 +78,7 @@ export function LoginForm() {
   );
 }
 
-export function RegisterForm() {
+export function RegisterForm({ initialCode = "" }: { initialCode?: string }) {
   const [state, formAction] = useActionState(register, EMPTY);
 
   return (
@@ -96,7 +96,7 @@ export function RegisterForm() {
           placeholder="XXXX-XXXX-XXXX"
           autoComplete="off"
           spellCheck={false}
-          defaultValue={state.values?.inviteCode ?? ""}
+          defaultValue={state.values?.inviteCode ?? initialCode}
           className="crt-input uppercase tracking-[0.2em]"
         />
         <FieldError errors={state.fieldErrors?.inviteCode} />
