@@ -12,6 +12,10 @@ import "server-only";
 
 import { prisma } from "@/lib/db";
 import type { ActivityType } from "@/lib/activity-types";
+import { nextStreak } from "@/lib/standings";
+
+// Streak arithmetic is pure and lives with the leaderboard's (lib/standings.ts).
+export { nextStreak };
 
 export interface WordOutcome {
   word: string;
@@ -30,30 +34,6 @@ export interface SessionResult {
   /** Words the learner was exposed to, with whether they got each right. */
   words?: WordOutcome[];
   metadata?: Record<string, unknown>;
-}
-
-/** A day in ms, for streak arithmetic. */
-const DAY_MS = 24 * 60 * 60 * 1000;
-
-/** Midnight-aligned day index, so a streak is about calendar days not 24h gaps. */
-function dayIndex(date: Date): number {
-  return Math.floor(
-    Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()) / DAY_MS,
-  );
-}
-
-/**
- * Recompute the streak from the previous activity date.
- *
- * Same day: unchanged. Next day: +1. Any longer gap: back to 1. The CLI
- * increments on every session, so five sessions in one evening read as a
- * five-day streak.
- */
-export function nextStreak(previousActive: Date, currentStreak: number, now: Date): number {
-  const gap = dayIndex(now) - dayIndex(previousActive);
-  if (gap <= 0) return Math.max(1, currentStreak);
-  if (gap === 1) return currentStreak + 1;
-  return 1;
 }
 
 export async function recordSession(result: SessionResult): Promise<void> {
@@ -133,6 +113,8 @@ export async function recordSession(result: SessionResult): Promise<void> {
         points: { increment: pointsEarned },
         streakDays: nextStreak(user.lastActiveAt, user.streakDays, now),
         lastActiveAt: now,
+        // Back practising: the reminder schedule starts over.
+        reminderCount: 0,
       },
     });
   });

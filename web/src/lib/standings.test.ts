@@ -1,6 +1,6 @@
 import { test, describe } from "node:test";
 import assert from "node:assert/strict";
-import { levelBadges, liveStreak, rankStandings, weekStart, type Standing } from "./standings";
+import { daysAway, levelBadges, liveStreak, nextStreak, rankStandings, weekStart, type Standing } from "./standings";
 import { activate, MAX_ACCOUNTS, parseTokenList, serializeTokenList } from "./auth/account-list";
 
 describe("weekStart", () => {
@@ -25,8 +25,22 @@ describe("liveStreak", () => {
     assert.equal(liveStreak(5, new Date("2026-10-13T23:00:00Z"), now), 5);
   });
 
-  test("a missed day breaks it", () => {
-    assert.equal(liveStreak(5, new Date("2026-10-12T20:00:00Z"), now), 0);
+  test("missed days never take it away: the streak waits", () => {
+    assert.equal(liveStreak(5, new Date("2026-10-12T20:00:00Z"), now), 5);
+    assert.equal(liveStreak(5, new Date("2026-09-01T20:00:00Z"), now), 5);
+  });
+
+  test("a new day adds one, after a break too; the same day changes nothing", () => {
+    assert.equal(nextStreak(new Date("2026-10-14T08:00:00Z"), 5, now), 5);
+    assert.equal(nextStreak(new Date("2026-10-13T08:00:00Z"), 5, now), 6);
+    assert.equal(nextStreak(new Date("2026-09-01T08:00:00Z"), 5, now), 6);
+    assert.equal(nextStreak(new Date("2026-10-14T08:00:00Z"), 0, now), 1);
+  });
+
+  test("days away counts calendar days", () => {
+    assert.equal(daysAway(new Date("2026-10-14T01:00:00Z"), now), 0);
+    assert.equal(daysAway(new Date("2026-10-13T23:00:00Z"), now), 1);
+    assert.equal(daysAway(new Date("2026-10-11T12:00:00Z"), now), 3);
   });
 });
 

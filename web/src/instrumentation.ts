@@ -5,6 +5,8 @@
  * adds words to units can never lower anyone's bar (lib/path/store.ts). It
  * only raises marks, so running it on every start is harmless, and a failure
  * is logged rather than keeping the server from starting.
+ *
+ * Then starts the hourly check for streak reminders (lib/reminder-sender.ts).
  */
 export async function register() {
   if (process.env.NEXT_RUNTIME !== "nodejs") return;
@@ -13,5 +15,11 @@ export async function register() {
     await rememberProgressOnStart();
   } catch (error) {
     console.error("[langue] could not record progress on start:", error);
+  }
+  try {
+    const { startReminderSchedule } = await import("./lib/reminder-sender");
+    startReminderSchedule();
+  } catch (error) {
+    console.error("[langue] could not start streak reminders:", error);
   }
 }

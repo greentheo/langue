@@ -21,14 +21,35 @@ function dayIndex(date: Date): number {
 }
 
 /**
- * The streak as it stands today.
- *
- * The stored streak only changes when the learner practises, so someone who
- * stopped a week ago would still show their old streak. A streak is alive if
- * they practised today or yesterday; otherwise it is zero.
+ * The streak as it stands today. Langue never takes a streak away: a learner
+ * who misses days keeps it, and picks it up again when they come back (see
+ * nextStreak). Losing a long streak is as likely to make someone give up as
+ * to bring them back — the reminders nudge, the streak waits.
  */
-export function liveStreak(streakDays: number, lastActiveAt: Date, now: Date): number {
-  return dayIndex(now) - dayIndex(lastActiveAt) <= 1 ? streakDays : 0;
+export function liveStreak(streakDays: number, _lastActiveAt: Date, _now: Date): number {
+  return streakDays;
+}
+
+/**
+ * Recompute the streak from the previous activity date.
+ *
+ * Same day: unchanged. A new day: +1 — whether it's the next day or the
+ * first day back after a break. Langue never resets a streak; reminders
+ * nudge people back before it "slips", but it is always there when they
+ * return (lib/standings.ts: liveStreak).
+ */
+export function nextStreak(previousActive: Date, currentStreak: number, now: Date): number {
+  const gap = dayIndex(now) - dayIndex(previousActive);
+  if (gap <= 0) return Math.max(1, currentStreak);
+  return currentStreak + 1;
+}
+
+/**
+ * Days since the learner last practised, by calendar day: 0 today, 1 for
+ * yesterday. Two or more means the streak is waiting for them.
+ */
+export function daysAway(lastActiveAt: Date, now: Date): number {
+  return Math.max(0, dayIndex(now) - dayIndex(lastActiveAt));
 }
 
 export interface Standing {

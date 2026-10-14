@@ -24,7 +24,9 @@ import { levelProgress } from "@/lib/path/levels";
 import { StandingsTable } from "@/components/standings-table";
 import { LanguageChooser } from "@/components/language-chooser";
 import { prisma } from "@/lib/db";
-import { InstallHint } from "@/components/pwa";
+import { InstallHint, ReminderToggle } from "@/components/pwa";
+import { vapidPublicKey } from "@/lib/reminder-sender";
+import { daysAway } from "@/lib/standings";
 
 interface MenuEntry {
   href: string;
@@ -157,9 +159,15 @@ export default async function LearnPage() {
             Learning {languageName} &middot; <Link href="/learn/language">change language</Link>
           </p>
         )}
+        {user.streakDays > 0 && daysAway(user.lastActiveAt, now) >= 2 ? (
+          <p className="mt-2 text-sm text-[var(--crt-accent)]">
+            Welcome back! Your {user.streakDays}-day streak waited for you — one step today keeps it growing.
+          </p>
+        ) : null}
       </div>
 
       {brandNew ? null : <InstallHint />}
+      {brandNew ? null : <ReminderToggle publicKey={vapidPublicKey()} />}
 
       {brandNew ? (
         <Panel title="What do you want to learn?">

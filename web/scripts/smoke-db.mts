@@ -195,7 +195,7 @@ async function main() {
   const day = 24 * 60 * 60 * 1000;
   const now = new Date("2026-08-12T10:00:00Z");
   check("next-day session extends the streak", nextStreak(new Date(now.getTime() - day), 3, now) === 4);
-  check("a two-day gap resets the streak", nextStreak(new Date(now.getTime() - 3 * day), 9, now) === 1);
+  check("a gap never resets the streak: it picks up again", nextStreak(new Date(now.getTime() - 3 * day), 9, now) === 10);
 
   console.log("\nCleanup");
   // Cascades should remove sessions, stats, logs, and progress with the user.

@@ -36,6 +36,10 @@ model User {
   points     Int @default(0)
   streakDays Int @default(0)
 
+  /// Streak reminders sent since the learner last practised (lib/reminders.ts).
+  reminderCount  Int       @default(0)
+  lastRemindedAt DateTime?
+
   /// The invite code this account registered with. Null for accounts whose
   /// code was later deleted.
   inviteCodeId String?
@@ -51,6 +55,7 @@ model User {
   items        ItemProgress[]
   unitMarks    UnitMark[]
   groups       GroupMember[]
+  pushSubscriptions PushSubscription[]
   invitesMade  InviteCode[]      @relation("InviteCreatedBy")
 
   @@index([email])
@@ -264,4 +269,22 @@ model UnitMark {
   updatedAt   DateTime  @updatedAt
 
   @@unique([userId, unitId])
+}
+
+/// A phone or browser that agreed to streak reminders, for one learner. A
+/// device shared by a family has a row per learner signed in on it, so one
+/// "turn on" covers everyone, and each reminder says whose streak it is.
+model PushSubscription {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  endpoint  String
+  p256dh    String
+  auth      String
+  /// The device's time zone ("Europe/Rome"), so reminders arrive in the evening there.
+  timeZone  String?
+  createdAt DateTime @default(now())
+
+  @@unique([userId, endpoint])
+  @@index([endpoint])
 }
