@@ -282,8 +282,9 @@ function buildCourse(language: string): Course {
     }
   }
 
+  const index = indexSentences(sentences);
   for (const item of items.values()) {
-    if (item.kind === "word") item.clozes = clozesFor(item, sentences);
+    if (item.kind === "word") item.clozes = clozesFor(item, index);
   }
   const dialogues = new Map<string, CourseDialogue>();
   for (const { dialogue, unitIndex } of scripts) {
@@ -314,20 +315,49 @@ function buildCourse(language: string): Course {
   return { language, units, items, sentences, dialogues };
 }
 
+interface IndexedSentence {
+  sentence: Sentence;
+  /** Its words, lower-case, for a quick look before the exact match. */
+  words: Set<string>;
+  lower: string;
+  plain: string;
+}
+
+/** Sentences long enough to blank a word out of, with their words looked up once. */
+function indexSentences(sentences: Map<string, Sentence>): IndexedSentence[] {
+  return [...sentences.values()].flatMap((sentence) => {
+    const tiles = tilesOf(sentence.target);
+    if (tiles.length < 3) return [];
+    return [
+      {
+        sentence,
+        words: new Set(tiles.map((tile) => tile.toLowerCase())),
+        lower: sentence.target.toLowerCase(),
+        plain: normalizeAnswer(sentence.target),
+      },
+    ];
+  });
+}
+
 /**
  * Sentences a word can be blanked out of: ones the learner can read by then
  * (from its unit or the next), not the word on its own, translated ones first.
  */
-function clozesFor(word: WordItem, sentences: Map<string, Sentence>): string[] {
+function clozesFor(word: WordItem, sentences: IndexedSentence[]): string[] {
   const own = normalizeAnswer(word.target);
-  return [...sentences.values()]
+  const forms = word.accepted.map((form) => form.trim().toLowerCase()).filter(Boolean);
+  // Cheap checks first; blankOut has the final say on word boundaries.
+  const mayContain = (entry: IndexedSentence) =>
+    forms.some((form) => (form.includes(" ") || form.includes("'") ? entry.lower.includes(form) : entry.words.has(form)));
+  return sentences
     .filter(
-      (sentence) =>
-        sentence.unitIndex <= word.unitIndex + 1 &&
-        tilesOf(sentence.target).length >= 3 &&
-        normalizeAnswer(sentence.target) !== own &&
-        blankOut(sentence.target, word.accepted) !== null,
+      (entry) =>
+        entry.sentence.unitIndex <= word.unitIndex + 1 &&
+        entry.plain !== own &&
+        mayContain(entry) &&
+        blankOut(entry.sentence.target, word.accepted) !== null,
     )
+    .map((entry) => entry.sentence)
     .sort(
       (a, b) =>
         Number(a.english === null) - Number(b.english === null) ||
@@ -342,6 +372,32 @@ function containsWords(text: string, phrase: string): boolean {
   return phrase.length > 0 && ` ${text} `.includes(` ${phrase} `);
 }
 
+const taggableCache = new WeakMap<Map<string, Item>, { item: WordItem | PhraseItem; forms: string[] }[]>();
+
+/**
+ * Words and phrases a role-play turn can be tagged with, with their forms
+ * normalized once: phrases compared without accents (they are whole
+ * sentences), words with them (è is not e), and words too short to mean
+ * anything on their own left out.
+ */
+function taggable(items: Map<string, Item>): { item: WordItem | PhraseItem; forms: string[] }[] {
+  let cached = taggableCache.get(items);
+  if (!cached) {
+    cached = [...items.values()].flatMap((item) => {
+      if (item.kind === "grammar") return [];
+      const forms =
+        item.kind === "phrase"
+          ? item.accepted.map(normalizeAnswer)
+          : item.accepted
+              .filter((form) => form.replace(/[^\p{L}]/gu, "").length >= MIN_TAGGED_LENGTH)
+              .map(normalizeKeepingAccents);
+      return forms.length > 0 ? [{ item, forms }] : [];
+    });
+    taggableCache.set(items, cached);
+  }
+  return cached;
+}
+
 /**
  * A role-play as the path uses it. Each of the learner's turns is tagged with
  * the words and phrases its model answer says — taught by the dialogue's unit
@@ -349,9 +405,7 @@ function containsWords(text: string, phrase: string): boolean {
  */
 function buildDialogue(dialogue: Dialogue, unitIndex: number, items: Map<string, Item>): CourseDialogue {
   const key = `d:${dialogue.id}`;
-  const candidates = [...items.values()].filter(
-    (item): item is WordItem | PhraseItem => item.kind !== "grammar" && item.unitIndex <= unitIndex,
-  );
+  const candidates = taggable(items).filter((candidate) => candidate.item.unitIndex <= unitIndex);
   const all = new Set<string>();
 
   const lines = dialogue.lines.map((line, lineIndex) => {
@@ -360,16 +414,8 @@ function buildDialogue(dialogue: Dialogue, unitIndex: number, items: Map<string,
     const plain = normalizeAnswer(line.answers[0]);
     const accented = normalizeKeepingAccents(line.answers[0]);
     const itemKeys = candidates
-      .filter((item) =>
-        item.kind === "phrase"
-          ? item.accepted.some((form) => containsWords(plain, normalizeAnswer(form)))
-          : item.accepted.some(
-              (form) =>
-                form.replace(/[^\p{L}]/gu, "").length >= MIN_TAGGED_LENGTH &&
-                containsWords(accented, normalizeKeepingAccents(form)),
-            ),
-      )
-      .map((item) => {
+      .filter(({ item, forms }) => forms.some((form) => containsWords(item.kind === "phrase" ? plain : accented, form)))
+      .map(({ item }) => {
         item.replies.push({ dialogue: key, line: lineIndex });
         all.add(item.key);
         return item.key;
