@@ -69,6 +69,7 @@ words:
 
 practice:
   - type: fill
+    section: 1
     prompt: "Me ___ el chocolate."
     hint: gustar
     translation: I like chocolate.
@@ -76,6 +77,7 @@ practice:
     why: One thing, so the verb is gusta.
 
   - type: fill
+    section: 1
     prompt: "Me ___ los perros."
     hint: gustar
     translation: I like dogs.
@@ -83,6 +85,7 @@ practice:
     why: Perros is plural, so the verb is gustan.
 
   - type: fill
+    section: 2
     prompt: "¿___ gusta bailar?"
     hint: do you…? — to a friend
     translation: Do you like dancing?
@@ -90,6 +93,7 @@ practice:
     why: Te gusta means "you like".
 
   - type: fill
+    section: 2
     prompt: "A Pablo ___ gusta el fútbol."
     hint: him
     translation: Pablo likes soccer.
@@ -97,6 +101,7 @@ practice:
     why: Le gusta means "he likes" or "she likes".
 
   - type: fill
+    section: 3
     prompt: "—Me gusta leer. —A mí ___."
     hint: me too
     translation: "—I like reading. —Me too."
@@ -104,42 +109,49 @@ practice:
     why: A mí también agrees with something positive.
 
   - type: translate
+    section: 1
     direction: to-target
     prompt: I like music.
     answers: [Me gusta la música, A mí me gusta la música]
     why: Música is one thing, so it's gusta — and it needs la.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: We like movies.
     answers: [Nos gustan las películas, A nosotros nos gustan las películas, A nosotras nos gustan las películas]
     why: Películas is plural, so it's gustan; nos means "to us".
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: I don't like coffee.
     answers: [No me gusta el café, A mí no me gusta el café]
     why: No goes in front of me gusta.
 
   - type: translate
+    section: 2
     direction: to-english
     prompt: "¿Te gusta el fútbol?"
     answers: [Do you like soccer?, Do you like football?]
     why: Te gusta means "you like".
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: A mí tampoco.
     answers: [Me neither, Neither do I, Nor do I, Me either, I do not either]
     why: A mí tampoco agrees with something negative.
 
   - type: choice
+    section: 1
     prompt: Which is correct?
     options: [Yo gusto la pizza., Me gusta la pizza., Me gustan la pizza.]
     answer: Me gusta la pizza.
     why: The pizza does the pleasing, and it's one thing, so me gusta.
 
   - type: choice
+    section: 3
     prompt: "Your friend says *No me gustan los lunes.* You agree:"
     options: [A mí también., A mí tampoco.]
     answer: A mí tampoco.

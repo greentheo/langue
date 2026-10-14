@@ -62,10 +62,27 @@ export interface Situation {
   phrases: Phrase[];
 }
 
+/** One sub-level of a CEFR level: A1.1, A1.2, … */
+export interface Unit {
+  /** "italian-a1-3". */
+  id: string;
+  language: string;
+  level: string;
+  /** 1-based: unit 3 of A1 is shown as A1.3. */
+  number: number;
+  title: string;
+  lessonIds: string[];
+  situationIds: string[];
+  /** Vocabulary-library categories whose words this unit teaches. */
+  categories: string[];
+}
+
 export interface LevelCurriculum {
   overview: LevelOverview | null;
   lessons: Lesson[];
   situations: Situation[];
+  /** Empty while a level has no guided path yet. */
+  units: Unit[];
 }
 
 export type CurriculumCatalog = Record<string, Partial<Record<string, LevelCurriculum>>>;

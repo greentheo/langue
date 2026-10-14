@@ -84,6 +84,7 @@ words:
 
 practice:
   - type: fill
+    section: 1
     prompt: "___ mère"
     hint: (my)
     translation: my mother
@@ -91,6 +92,7 @@ practice:
     why: Mère is feminine, so "my" is ma.
 
   - type: fill
+    section: 1
     prompt: "___ parents"
     hint: (my)
     translation: my parents
@@ -98,6 +100,7 @@ practice:
     why: Mes is "my" for any plural noun.
 
   - type: fill
+    section: 2
     prompt: "___ amie"
     hint: (my)
     translation: my (female) friend
@@ -105,6 +108,7 @@ practice:
     why: Amie is feminine but starts with a vowel, so ma becomes mon.
 
   - type: fill
+    section: 3
     prompt: "Paul et ___ sœur"
     hint: (his)
     translation: Paul and his sister
@@ -112,48 +116,56 @@ practice:
     why: Sœur is feminine, so "his" is sa — it agrees with sœur, not with Paul.
 
   - type: translate
+    section: 1
     direction: to-target
     prompt: her brother
     answers: [son frère]
     why: Frère is masculine, so "her" is son — the owner doesn't matter.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: our grandparents
     answers: [nos grands-parents, nos grands parents]
     why: Nos is "our" for plural nouns.
 
   - type: translate
+    section: 4
     direction: to-target
     prompt: I have a sister.
     answers: ["J'ai une sœur.", "J'ai une soeur."]
     why: Avoir for having, and sœur is feminine, so une.
 
   - type: translate
+    section: 4
     direction: to-english
     prompt: Leur fils a dix ans.
     answers: ["Their son is ten.", "Their son is ten years old.", "Their son's ten."]
     why: Leur is "their" for one thing, and age uses avoir.
 
   - type: translate
+    section: 4
     direction: to-english
     prompt: "Comment s'appelle ton père ?"
     answers: ["What is your father's name?", "What's your father's name?", "What is your dad's name?", "What's your dad's name?"]
     why: Literally "how calls himself your father?" — the way to ask someone's name.
 
   - type: choice
+    section: 1
     prompt: "*sa mère* can mean…"
     options: [only his mother, only her mother, his mother or her mother]
     answer: his mother or her mother
     why: Sa agrees with mère, so it can be his or her — the context tells you which.
 
   - type: choice
+    section: 2
     prompt: Which is correct?
     options: [ma école, mon école]
     answer: mon école
     why: Before a vowel, ma becomes mon even though école is feminine.
 
   - type: fill
+    section: 1
     prompt: "C'est ___ voiture ?"
     hint: (your — vous)
     translation: Is it your car?

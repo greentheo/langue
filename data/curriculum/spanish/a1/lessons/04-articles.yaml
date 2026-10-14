@@ -84,12 +84,14 @@ words:
 
 practice:
   - type: choice
+    section: 1
     prompt: Which word is feminine?
     options: [libro, mesa, día]
     answer: mesa
     why: Nouns ending in -a are usually feminine — but día is one of the exceptions.
 
   - type: fill
+    section: 3
     prompt: "___ libros"
     hint: the
     translation: the books
@@ -97,6 +99,7 @@ practice:
     why: Libro is masculine, and the masculine plural "the" is los.
 
   - type: fill
+    section: 1
     prompt: "___ ciudad"
     hint: the
     translation: the city
@@ -104,6 +107,7 @@ practice:
     why: Nouns ending in -dad are feminine.
 
   - type: fill
+    section: 4
     prompt: "___ amiga"
     hint: a
     translation: a (female) friend
@@ -111,6 +115,7 @@ practice:
     why: Amiga is feminine, so "a" is una.
 
   - type: fill
+    section: 1
     prompt: "___ día"
     hint: the
     translation: the day
@@ -118,42 +123,49 @@ practice:
     why: Día ends in -a but is masculine — one of the exceptions.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: the girls
     answers: [las chicas]
     why: Chica is feminine, so the plural "the" is las.
 
   - type: translate
+    section: 4
     direction: to-target
     prompt: some books
     answers: [unos libros]
     why: Unos is the masculine "some".
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: the cities
     answers: [las ciudades]
     why: Ciudad ends in a consonant, so it adds -es.
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: los amigos
     answers: [the friends]
     why: Los is the masculine plural "the" — used for a group of males or a mixed group.
 
   - type: translate
+    section: 4
     direction: to-english
     prompt: una mesa y un lápiz
     answers: [a table and a pencil]
     why: Una goes with feminine mesa, un with masculine lápiz.
 
   - type: choice
+    section: 2
     prompt: What is the plural of *lápiz*?
     options: [lápizs, lápices, lápizes]
     answer: lápices
     why: Nouns ending in -z change it to -ces.
 
   - type: choice
+    section: 4
     prompt: Which is correct?
     options: [la agua, el agua]
     answer: el agua

@@ -93,6 +93,7 @@ words:
 
 practice:
   - type: fill
+    section: 1
     prompt: "uma casa ___"
     hint: pequeno
     translation: a small house
@@ -100,6 +101,7 @@ practice:
     why: Casa is feminine, so pequeno becomes pequena.
 
   - type: fill
+    section: 1
     prompt: "os carros ___"
     hint: novo
     translation: the new cars
@@ -107,6 +109,7 @@ practice:
     why: Carros is masculine plural, so novo becomes novos.
 
   - type: fill
+    section: 3
     prompt: "as flores ___"
     hint: vermelho
     translation: the red flowers
@@ -114,6 +117,7 @@ practice:
     why: Flores is feminine plural, so vermelho becomes vermelhas.
 
   - type: fill
+    section: 4
     prompt: "___ livro é caro."
     hint: this
     translation: This book is expensive.
@@ -121,48 +125,56 @@ practice:
     why: Este (or, in everyday Brazilian speech, esse) goes with a masculine noun.
 
   - type: choice
+    section: 1
     prompt: "\"two big houses\""
     options: [duas casas grandes, duas casas grandas, duas grande casas]
     answer: duas casas grandes
     why: Adjectives in -e have no feminine form; just add -s for the plural.
 
   - type: choice
+    section: 3
     prompt: "\"The car is blue.\""
     options: [O carro é azul., O carro é azulo., O azul carro é.]
     answer: O carro é azul.
     why: Azul doesn't change for gender (its plural is azuis).
 
   - type: choice
+    section: 4
     prompt: Pointing at something, you ask "What's that?"
     options: [O que é isso?, O que é esse?, O que é essa?]
     answer: O que é isso?
     why: Isso is used when no noun comes after it.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: a red car
     answers: [um carro vermelho]
     why: The colour goes after the noun.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: The houses are very pretty.
     answers: [As casas são muito bonitas.]
     why: Bonito becomes bonitas to match as casas; muito never changes.
 
   - type: translate
+    section: 4
     direction: to-target
     prompt: This book is cheap.
     answers: [Este livro é barato., Esse livro é barato.]
     why: Este or esse with the masculine livro, and barato stays masculine too.
 
   - type: translate
+    section: 2
     direction: to-english
     prompt: um bom amigo
     answers: [a good friend]
     why: Bom usually comes before the noun.
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: Os gatos pretos são pequenos.
     answers: [The black cats are small., The black cats are little.]

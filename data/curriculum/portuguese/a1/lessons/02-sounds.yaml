@@ -100,6 +100,7 @@ words:
 
 practice:
   - type: fill
+    section: 2
     prompt: "fi___o"
     hint: the "lli" sound of million
     translation: son
@@ -107,6 +108,7 @@ practice:
     why: lh makes the lli sound of million — filho.
 
   - type: fill
+    section: 2
     prompt: "vi___o"
     hint: the "ny" sound of canyon
     translation: wine
@@ -114,6 +116,7 @@ practice:
     why: nh makes the ny sound of canyon — vinho.
 
   - type: fill
+    section: 2
     strict_accents: true
     prompt: "cora___ão"
     hint: an s sound before a
@@ -122,6 +125,7 @@ practice:
     why: Before a, o and u, an s sound is spelled ç — coração.
 
   - type: fill
+    section: 4
     prompt: "ca___o"
     hint: the strong, h-like r
     translation: car
@@ -129,42 +133,49 @@ practice:
     why: rr between vowels gives the strong h-like sound — carro.
 
   - type: choice
+    section: 4
     prompt: Which word means grandmother?
     options: [avó, avô]
     answer: avó
     why: Open ó is grandma (avó); closed ô is grandpa (avô).
 
   - type: choice
+    section: 3
     prompt: How does a Brazilian say *dia*?
     options: [DEE-a with a hard d, JEE-a, DYE-a]
     answer: JEE-a
     why: In Brazil, d before an i sound sounds like j — dia ≈ JEE-a.
 
   - type: choice
+    section: 1
     prompt: How is *pão* pronounced?
     options: [pay-oh, "like \"pown\", through the nose", pa-oh with a hard o]
     answer: "like \"pown\", through the nose"
     why: -ão is a nasal vowel that sounds roughly like own in town.
 
   - type: choice
+    section: 4
     prompt: In *casa*, the s sounds like…
     options: [s, z, sh]
     answer: z
     why: A single s between two vowels sounds like z.
 
   - type: translate
+    section: 4
     direction: to-english
     prompt: carro
     answers: [car]
     why: The rr makes a strong, h-like sound — carro means car.
 
   - type: translate
+    section: 4
     direction: to-english
     prompt: caro
     answers: [expensive, dear]
     why: A single r between vowels is a quick tap, so caro (expensive) is a different word from carro (car).
 
   - type: translate
+    section: 1
     direction: to-target
     strict_accents: true
     prompt: mother
@@ -172,6 +183,7 @@ practice:
     why: Mãe has a nasal ã — don't forget the til.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: good morning
     answers: [bom dia]

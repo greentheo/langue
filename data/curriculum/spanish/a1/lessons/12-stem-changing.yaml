@@ -83,6 +83,7 @@ words:
 
 practice:
   - type: fill
+    section: 1
     prompt: "Yo ___ un café."
     hint: querer
     translation: I want a coffee.
@@ -90,6 +91,7 @@ practice:
     why: Querer changes e → ie, so yo quiero.
 
   - type: fill
+    section: 1
     prompt: "¿___ hablar más despacio?"
     hint: poder, tú
     translation: Can you speak more slowly?
@@ -97,6 +99,7 @@ practice:
     why: Poder changes o → ue, so tú puedes.
 
   - type: fill
+    section: 2
     prompt: "Nosotros ___ el té."
     hint: preferir
     translation: We prefer tea.
@@ -104,6 +107,7 @@ practice:
     why: Nosotros never changes its stem, so it stays preferimos.
 
   - type: fill
+    section: 2
     prompt: "Ellos ___ mucho."
     hint: dormir
     translation: They sleep a lot.
@@ -111,6 +115,7 @@ practice:
     why: Dormir changes o → ue, so ellos duermen.
 
   - type: fill
+    section: 1
     prompt: "Ella ___ una pizza."
     hint: pedir
     translation: She orders a pizza.
@@ -118,42 +123,49 @@ practice:
     why: Pedir changes e → i, so ella pide.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: I can't dance.
     answers: [No puedo bailar, Yo no puedo bailar]
     why: Poder is followed by the infinitive, and no goes before the verb.
 
   - type: translate
+    section: 4
     direction: to-target
     prompt: I'd like a coffee, please.
     answers: ["Quisiera un café, por favor", "Me gustaría un café, por favor"]
     why: Quisiera and me gustaría are the polite ways to say "I'd like".
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: Do you want to eat? (to a friend)
     answers: ["¿Quieres comer?", "¿Tú quieres comer?", "¿Quieres tú comer?"]
     why: Querer changes e → ie in the tú form, then takes the infinitive.
 
   - type: translate
+    section: 4
     direction: to-english
     prompt: "¿Puedo pagar con tarjeta?"
     answers: [Can I pay by card?, Can I pay with a card?, Can I pay with card?, May I pay by card?, May I pay with a card?, Can I pay by credit card?]
     why: Puedo is the yo form of poder, "can".
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: Ellos prefieren dormir.
     answers: [They prefer to sleep, They prefer sleeping, They would rather sleep]
     why: Prefieren is the ellos form of preferir (e → ie).
 
   - type: choice
+    section: 1
     prompt: Which is correct?
     options: [Yo podo, Yo puedo, Yo pudo]
     answer: Yo puedo
     why: Poder changes o → ue in the yo form.
 
   - type: choice
+    section: 4
     prompt: In a shop, which is the most polite way to ask for something?
     options: [Quiero…, Quisiera…]
     answer: Quisiera…

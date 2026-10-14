@@ -94,12 +94,14 @@ words:
 
 practice:
   - type: choice
+    section: 1
     prompt: Which word is feminine?
     options: [livro, cidade, pão]
     answer: cidade
     why: Words ending in -dade are always feminine — a cidade.
 
   - type: fill
+    section: 2
     prompt: "___ livros"
     hint: the
     translation: the books
@@ -107,6 +109,7 @@ practice:
     why: Livro is masculine, and the masculine plural "the" is os.
 
   - type: fill
+    section: 2
     prompt: "___ amiga"
     hint: a
     translation: a (female) friend
@@ -114,6 +117,7 @@ practice:
     why: Amiga is feminine, so "a" is uma.
 
   - type: fill
+    section: 3
     prompt: "as ___"
     hint: plural of flor
     translation: the flowers
@@ -121,6 +125,7 @@ practice:
     why: Nouns ending in -r add -es — flor becomes flores.
 
   - type: fill
+    section: 3
     prompt: "os ___"
     hint: plural of homem
     translation: the men
@@ -128,42 +133,49 @@ practice:
     why: -m becomes -ns in the plural — homem becomes homens.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: the houses
     answers: [as casas]
     why: Casa is feminine; the feminine plural "the" is as, and you add -s.
 
   - type: translate
+    section: 4
     direction: to-target
     prompt: the lessons
     answers: [as lições]
     why: Lição ends in -ção, so it's feminine, and most -ão words make their plural in -ões.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: a man and a woman
     answers: [um homem e uma mulher]
     why: Um goes with masculine homem, uma with feminine mulher.
 
   - type: translate
+    section: 4
     direction: to-english
     prompt: os pães
     answers: [the breads, the loaves, the loaves of bread, the bread rolls, the rolls]
     why: Pão is one of the -ão words that makes its plural in -ães.
 
   - type: translate
+    section: 2
     direction: to-english
     prompt: uma viagem
     answers: [a trip, a journey]
     why: Viagem ends in -agem, so it's feminine and takes uma.
 
   - type: choice
+    section: 4
     prompt: What is the plural of *a mão* (the hand)?
     options: [as mões, as mãos, as mães]
     answer: as mãos
     why: Mão is one of the few -ão words that just adds -s. (As mães means "the mothers"!)
 
   - type: choice
+    section: 1
     prompt: Which is correct?
     options: [o problema, a problema]
     answer: o problema

@@ -30,12 +30,14 @@ import type {
   LevelCurriculum,
   LevelOverview,
   Situation,
+  Unit,
 } from "../src/lib/curriculum/types.js";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const WEB_ROOT = resolve(HERE, "..");
 const REPO_ROOT = resolve(WEB_ROOT, "..");
 const CURRICULUM_DIR = join(REPO_ROOT, "data", "curriculum");
+const VOCAB_DIR = join(REPO_ROOT, "data", "flashcard_libraries");
 const OUT_FILE = join(WEB_ROOT, "src", "lib", "curriculum", "generated.ts");
 
 const LEVELS = ["a1", "a2", "b1", "b2", "c1", "c2"];
@@ -94,6 +96,26 @@ async function buildLevel(language: string, level: string, dir: string): Promise
       const file = await load(join(lessonsDir, name), LessonFileSchema);
       if (!file) continue;
 
+      // The guided path teaches a section, then asks its questions, so each
+      // question must point at a real section and each section needs one.
+      const perSection = file.sections.map(() => 0);
+      file.practice.forEach((item, index) => {
+        if (item.section > file.sections.length) {
+          errors.push(
+            `${where(join(lessonsDir, name))}: practice.${index}: section ${item.section} does not exist (the lesson has ${file.sections.length})`,
+          );
+        } else {
+          perSection[item.section - 1] += 1;
+        }
+      });
+      perSection.forEach((count, index) => {
+        if (count === 0) {
+          errors.push(
+            `${where(join(lessonsDir, name))}: section ${index + 1} ("${file.sections[index].heading}") has no practice questions`,
+          );
+        }
+      });
+
       const slug = name.replace(/\.ya?ml$/, "");
       lessons.push({
         id: `${language}-${level}-${slug}`,
@@ -113,10 +135,12 @@ async function buildLevel(language: string, level: string, dir: string): Promise
   }
 
   let overview: LevelOverview | null = null;
+  let unitFiles: NonNullable<z.infer<typeof LevelFileSchema>["units"]> = [];
   const levelPath = join(dir, "level.yaml");
   if (existsSync(levelPath)) {
     const file = await load(levelPath, LevelFileSchema);
     if (file) {
+      unitFiles = file.units ?? [];
       const slugs = new Set(lessons.map((lesson) => lesson.slug));
       for (const topic of file.grammar) {
         for (const slug of topic.lessons) {
@@ -194,8 +218,104 @@ async function buildLevel(language: string, level: string, dir: string): Promise
     }
   }
 
+  const units = await buildUnits(language, level, levelPath, unitFiles, lessons, situations);
+
   if (!overview && lessons.length === 0 && situations.length === 0) return null;
-  return { overview, lessons, situations };
+  return { overview, lessons, situations, units };
+}
+
+/** Vocabulary-library categories at a level, from the JSON the vocab build reads. */
+async function libraryCategories(language: string, level: string): Promise<Set<string>> {
+  const path = join(VOCAB_DIR, language, `${level}.json`);
+  if (!existsSync(path)) return new Set();
+  const library = JSON.parse(await readFile(path, "utf8")) as { words?: { category?: string }[] };
+  return new Set((library.words ?? []).map((word) => word.category ?? "").filter(Boolean));
+}
+
+/**
+ * Resolve a level's units and check they partition it: every lesson,
+ * situation and vocabulary category belongs to exactly one unit, and lessons
+ * stay in number order (a lesson's practice may use earlier lessons).
+ */
+async function buildUnits(
+  language: string,
+  level: string,
+  levelPath: string,
+  unitFiles: NonNullable<z.infer<typeof LevelFileSchema>["units"]>,
+  lessons: Lesson[],
+  situations: Situation[],
+): Promise<Unit[]> {
+  if (unitFiles.length === 0) return [];
+
+  const lessonBySlug = new Map(lessons.map((lesson) => [lesson.slug, lesson]));
+  const situationIds = new Set(situations.map((situation) => situation.id));
+  const categories = await libraryCategories(language, level);
+
+  const claimed = { lessons: new Map<string, number>(), situations: new Map<string, number>(), categories: new Map<string, number>() };
+  const claim = (kind: keyof typeof claimed, key: string, unit: number) => {
+    const previous = claimed[kind].get(key);
+    if (previous !== undefined) {
+      const noun = { lessons: "lesson", situations: "situation", categories: "category" }[kind];
+      errors.push(`${where(levelPath)}: ${noun} "${key}" is in both unit ${previous} and unit ${unit}`);
+    }
+    claimed[kind].set(key, unit);
+  };
+
+  let lastLessonNumber = 0;
+  const units = unitFiles.map((file, index): Unit => {
+    const number = index + 1;
+    if (file.lessons.length + file.situations.length + file.categories.length === 0) {
+      errors.push(`${where(levelPath)}: unit ${number} ("${file.title}") is empty`);
+    }
+
+    for (const slug of file.lessons) {
+      claim("lessons", slug, number);
+      const lesson = lessonBySlug.get(slug);
+      if (!lesson) {
+        errors.push(`${where(levelPath)}: unit ${number} names missing lesson "${slug}"`);
+        continue;
+      }
+      if (lesson.number < lastLessonNumber) {
+        errors.push(`${where(levelPath)}: unit ${number} puts lesson "${slug}" after a later lesson`);
+      }
+      lastLessonNumber = lesson.number;
+    }
+    for (const id of file.situations) {
+      claim("situations", id, number);
+      if (!situationIds.has(id)) {
+        errors.push(`${where(levelPath)}: unit ${number} names missing phrasebook situation "${id}"`);
+      }
+    }
+    for (const category of file.categories) {
+      claim("categories", category, number);
+      if (!categories.has(category)) {
+        errors.push(`${where(levelPath)}: unit ${number} names vocabulary category "${category}", which the ${level} library does not have`);
+      }
+    }
+
+    return {
+      id: `${language}-${level}-${number}`,
+      language,
+      level,
+      number,
+      title: file.title,
+      lessonIds: file.lessons.map((slug) => `${language}-${level}-${slug}`),
+      situationIds: file.situations,
+      categories: file.categories,
+    };
+  });
+
+  for (const lesson of lessons) {
+    if (!claimed.lessons.has(lesson.slug)) errors.push(`${where(levelPath)}: lesson "${lesson.slug}" is in no unit`);
+  }
+  for (const id of situationIds) {
+    if (!claimed.situations.has(id)) errors.push(`${where(levelPath)}: phrasebook situation "${id}" is in no unit`);
+  }
+  for (const category of categories) {
+    if (!claimed.categories.has(category)) errors.push(`${where(levelPath)}: vocabulary category "${category}" is in no unit`);
+  }
+
+  return units;
 }
 
 async function main() {

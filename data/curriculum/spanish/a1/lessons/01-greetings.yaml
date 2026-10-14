@@ -90,18 +90,21 @@ words:
 
 practice:
   - type: choice
+    section: 1
     prompt: It's 9 in the morning. Which greeting fits?
     options: [Buenos días, Buenas tardes, Buenas noches]
     answer: Buenos días
     why: Buenos días is used from the morning until lunchtime.
 
   - type: choice
+    section: 3
     prompt: You meet your friend's grandmother. How do you ask her name?
     options: ["¿Cómo te llamas?", "¿Cómo se llama usted?"]
     answer: "¿Cómo se llama usted?"
     why: Usted is the polite "you" for older people and strangers.
 
   - type: fill
+    section: 2
     prompt: "Me ___ Carlos."
     hint: my name is…
     translation: My name is Carlos.
@@ -109,6 +112,7 @@ practice:
     why: Me llamo literally means "I call myself".
 
   - type: fill
+    section: 2
     prompt: "¿Cómo te ___?"
     hint: what's your name? — to a friend
     translation: What's your name?
@@ -116,6 +120,7 @@ practice:
     why: With tú, the question is ¿Cómo te llamas?
 
   - type: fill
+    section: 1
     prompt: "Buenas ___."
     hint: good night
     translation: Good night.
@@ -123,42 +128,49 @@ practice:
     why: Buenas noches is both "good evening" and "good night".
 
   - type: translate
+    section: 1
     direction: to-target
     prompt: Good afternoon!
     answers: [Buenas tardes]
     why: Buenas tardes is used after lunch until it gets dark.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: Nice to meet you.
     answers: [Mucho gusto, Encantado, Encantada]
     why: Mucho gusto works for everyone; encantado or encantada depends on whether you're male or female.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: How are you? (to a friend)
     answers: ["¿Cómo estás?", "¿Cómo estás tú?"]
     why: Estás is the tú form; with usted it would be ¿Cómo está usted?
 
   - type: translate
+    section: 4
     direction: to-target
     prompt: Very well, thanks. And you? (to a friend)
     answers: ["Muy bien, gracias. ¿Y tú?"]
     why: Muy bien means "very well", and ¿y tú? asks back to a friend.
 
   - type: translate
+    section: 1
     direction: to-english
     prompt: Hasta luego.
     answers: [See you later, Bye, Goodbye, See you, Later]
     why: Hasta luego literally means "until later" — a very common goodbye.
 
   - type: translate
+    section: 4
     direction: to-english
     prompt: Más o menos.
     answers: [So-so, So so, More or less, Okay, OK]
     why: Más o menos literally means "more or less" and is how you say "so-so".
 
   - type: choice
+    section: 1
     prompt: Which one is a goodbye?
     options: [Hola, Hasta luego, Mucho gusto]
     answer: Hasta luego

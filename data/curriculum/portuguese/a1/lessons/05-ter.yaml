@@ -91,6 +91,7 @@ words:
 
 practice:
   - type: fill
+    section: 1
     prompt: "Eu ___ um irmão."
     hint: ter, eu
     translation: I have a brother.
@@ -98,6 +99,7 @@ practice:
     why: With eu, ter is tenho.
 
   - type: fill
+    section: 1
     prompt: "Nós ___ um cachorro."
     hint: ter, nós
     translation: We have a dog.
@@ -105,6 +107,7 @@ practice:
     why: With nós, ter is temos.
 
   - type: fill
+    section: 1
     strict_accents: true
     prompt: "Elas ___ uma casa em Recife."
     hint: ter, elas
@@ -113,6 +116,7 @@ practice:
     why: With vocês, eles and elas, ter is têm — with a little hat.
 
   - type: fill
+    section: 2
     prompt: "Eu tenho 13 ___."
     hint: years
     translation: I am 13 years old.
@@ -120,18 +124,21 @@ practice:
     why: Age is ter + number + anos.
 
   - type: choice
+    section: 3
     prompt: How do you say "I'm hungry"?
     options: [Sou fome., Tenho fome., Tem fome.]
     answer: Tenho fome.
     why: Hunger is something you have — ter fome.
 
   - type: choice
+    section: 4
     prompt: In everyday Brazilian speech, "There's a pharmacy here" is…
     options: [Tem uma farmácia aqui., Têm uma farmácia aqui., É uma farmácia aqui.]
     answer: Tem uma farmácia aqui.
     why: In everyday Brazilian Portuguese, tem means "there is" — and it never changes to têm.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: How old are you?
     answers:
@@ -142,24 +149,28 @@ practice:
     why: Literally "how many years do you have?".
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: I'm thirsty.
     answers: [Tenho sede., Eu tenho sede., Estou com sede., Eu estou com sede.]
     why: Thirst is something you have — ter sede.
 
   - type: translate
+    section: 4
     direction: to-target
     prompt: Is there any bread?
     answers: [Tem pão?, Há pão?]
     why: Tem (or há) means "there is", and a rising voice makes it a question.
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: Você tem razão.
     answers: [You're right., You are right.]
     why: Ter razão — literally "to have reason" — means to be right.
 
   - type: translate
+    section: 4
     direction: to-english
     prompt: Tem um hotel aqui perto?
     answers:
@@ -170,6 +181,7 @@ practice:
     why: Tem at the start means "there is", and aqui perto means nearby.
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: Ela tem medo de gato.
     answers: [She's afraid of cats., She is afraid of cats., She's scared of cats., She is scared of cats.]

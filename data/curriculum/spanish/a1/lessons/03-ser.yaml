@@ -109,6 +109,7 @@ words:
 
 practice:
   - type: fill
+    section: 2
     prompt: "Yo ___ de Canadá."
     hint: ser
     translation: I'm from Canada.
@@ -116,6 +117,7 @@ practice:
     why: Soy is the yo form of ser.
 
   - type: fill
+    section: 2
     prompt: "Tú ___ estudiante."
     hint: ser
     translation: You're a student.
@@ -123,6 +125,7 @@ practice:
     why: Eres is the tú form of ser.
 
   - type: fill
+    section: 2
     prompt: "Nosotros ___ de México."
     hint: ser
     translation: We're from Mexico.
@@ -130,6 +133,7 @@ practice:
     why: Somos is the nosotros form of ser.
 
   - type: fill
+    section: 2
     prompt: "Ellas ___ profesoras."
     hint: ser
     translation: They're teachers.
@@ -137,49 +141,71 @@ practice:
     why: Son goes with ellos, ellas and ustedes.
 
   - type: choice
+    section: 4
     prompt: Laura is from Spain. *Laura es…*
     options: [española, español, españolas]
     answer: española
     why: Laura is one woman, so the nationality ends in -a.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: I'm a student.
     answers: [Soy estudiante, Yo soy estudiante]
     why: Spanish leaves out "a" before jobs, and the pronoun yo is optional.
 
   - type: translate
+    section: 5
     direction: to-target
     prompt: She isn't a doctor.
     answers: [No es médica, Ella no es médica]
     why: No goes right before the verb, and médica is the form for a woman.
 
   - type: translate
+    section: 5
     direction: to-target
     prompt: Are you from here? (to a friend)
     answers: ["¿Eres de aquí?", "¿Tú eres de aquí?", "¿Eres tú de aquí?"]
     why: A question uses the same words as a statement, with question marks.
 
   - type: translate
+    section: 4
     direction: to-english
     prompt: Somos de Estados Unidos.
     answers: [We are from the United States, We are from the US, We are from the USA, We are from America]
     why: Somos means "we are", and ser de means "to be from".
 
   - type: translate
+    section: 2
     direction: to-english
     prompt: Él es profesor.
     answers: [He is a teacher, He is a professor]
     why: Él es means "he is"; Spanish doesn't need "a" before a job, but English does.
 
   - type: choice
+    section: 5
     prompt: Which one means "I'm not from here"?
     options: [No soy de aquí., Soy no de aquí., Soy de no aquí.]
     answer: No soy de aquí.
     why: No always goes directly before the verb.
 
   - type: choice
+    section: 2
     prompt: You're talking to two friends in Mexico. "You are" is…
     options: [sois, son]
     answer: son
     why: In Latin America, ustedes — with the verb form son — is the plural "you" for everyone.
+
+  - type: choice
+    section: 1
+    prompt: You're talking about a group of boys and girls. "They" is…
+    options: [ellos, ellas]
+    answer: ellos
+    why: Ellos is for a group of males or a mixed group; ellas is only for a group of females.
+
+  - type: translate
+    section: 1
+    direction: to-target
+    prompt: we (a group of only girls)
+    answers: [nosotras]
+    why: Nosotras is "we" for a group of only females; nosotros is for males or a mixed group.

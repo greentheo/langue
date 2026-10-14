@@ -103,6 +103,7 @@ words:
 
 practice:
   - type: fill
+    section: 1
     prompt: "Yo ___ al parque."
     hint: ir
     translation: I'm going to the park.
@@ -110,6 +111,7 @@ practice:
     why: Voy is the irregular yo form of ir.
 
   - type: fill
+    section: 1
     prompt: "Vamos ___ cine."
     hint: to the
     translation: We're going to the cinema.
@@ -117,6 +119,7 @@ practice:
     why: A + el always joins to make al.
 
   - type: fill
+    section: 2
     prompt: "Vengo ___ parque."
     hint: from the
     translation: I'm coming from the park.
@@ -124,6 +127,7 @@ practice:
     why: De + el always joins to make del.
 
   - type: fill
+    section: 3
     prompt: "¿Qué ___ hoy?"
     hint: hacer, tú
     translation: What are you doing today?
@@ -131,6 +135,7 @@ practice:
     why: Hacer is regular in the tú form — haces.
 
   - type: fill
+    section: 2
     prompt: "Ellos ___ de la playa."
     hint: venir
     translation: They're coming from the beach.
@@ -138,42 +143,49 @@ practice:
     why: Venir changes e → ie in the ellos form.
 
   - type: translate
+    section: 4
     direction: to-target
     prompt: I'm going to eat.
     answers: [Voy a comer, Yo voy a comer]
     why: Ir a + infinitive means "going to".
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: It's cold. (the weather)
     answers: [Hace frío]
     why: Weather uses hace — literally "it makes cold".
 
   - type: translate
+    section: 1
     direction: to-target
     prompt: We're going to the beach tomorrow.
     answers: [Mañana vamos a la playa, Vamos a la playa mañana, Nosotros vamos a la playa mañana, Mañana nosotros vamos a la playa, Vamos a ir a la playa mañana, Mañana vamos a ir a la playa]
     why: Playa is feminine, so a la stays as two words.
 
   - type: translate
+    section: 5
     direction: to-english
     prompt: "¿Vienes conmigo?"
     answers: [Are you coming with me?, Will you come with me?, Do you come with me?]
     why: Conmigo means "with me", and vienes is the tú form of venir.
 
   - type: translate
+    section: 4
     direction: to-english
     prompt: "¿Qué vas a hacer?"
     answers: [What are you going to do?, What will you do?, What are you gonna do?]
     why: Vas a hacer is ir a + infinitive — "going to do".
 
   - type: choice
+    section: 1
     prompt: Which is correct?
     options: [Voy a el cine., Voy al cine., Voy el cine.]
     answer: Voy al cine.
     why: A + el must join to make al.
 
   - type: choice
+    section: 3
     prompt: "*Hace sol* means…"
     options: [It's sunny., He makes the sun., It's hot.]
     answer: It's sunny.

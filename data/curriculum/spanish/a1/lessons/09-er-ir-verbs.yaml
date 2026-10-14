@@ -78,6 +78,7 @@ words:
 
 practice:
   - type: fill
+    section: 1
     prompt: "Yo ___ agua."
     hint: beber
     translation: I drink water.
@@ -85,6 +86,7 @@ practice:
     why: The yo form of every regular verb ends in -o.
 
   - type: fill
+    section: 2
     prompt: "¿Dónde ___?"
     hint: vivir, tú
     translation: Where do you live?
@@ -92,6 +94,7 @@ practice:
     why: The tú ending for -ir verbs is -es.
 
   - type: fill
+    section: 2
     prompt: "Nosotros ___ en Madrid."
     hint: vivir
     translation: We live in Madrid.
@@ -99,6 +102,7 @@ practice:
     why: For -ir verbs, the nosotros ending is -imos.
 
   - type: fill
+    section: 1
     prompt: "Ella ___ un libro."
     hint: leer
     translation: She's reading a book.
@@ -106,6 +110,7 @@ practice:
     why: The él/ella ending for -er verbs is -e.
 
   - type: fill
+    section: 1
     prompt: "Ustedes ___ mucho."
     hint: comer
     translation: You all eat a lot.
@@ -113,43 +118,65 @@ practice:
     why: Ustedes uses the same form as ellos — the -en ending.
 
   - type: translate
+    section: 1
     direction: to-target
     prompt: We eat bread.
     answers: [Comemos pan, Nosotros comemos pan, Nosotras comemos pan]
     why: The nosotros ending for -er verbs is -emos.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: They write a letter.
     answers: [Escriben una carta, Ellos escriben una carta, Ellas escriben una carta]
     why: The ellos ending for -ir verbs is -en.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: Where do you live? (polite)
     answers: ["¿Dónde vive usted?", "¿Dónde vive?", "¿Usted dónde vive?"]
     why: Usted uses the same verb form as él and ella — vive.
 
   - type: translate
+    section: 1
     direction: to-english
     prompt: Aprendo español.
     answers: [I learn Spanish, I am learning Spanish]
     why: Aprendo is the yo form of aprender, "to learn".
 
   - type: translate
+    section: 2
     direction: to-english
     prompt: "¿Abres la ventana?"
     answers: [Are you opening the window?, Do you open the window?, Will you open the window?, Can you open the window?]
     why: Abres is the tú form of abrir, "to open".
 
   - type: choice
+    section: 2
     prompt: Which form of *vivir* goes with *nosotros*?
     options: [vivemos, vivimos, vivamos]
     answer: vivimos
     why: -ir verbs use -imos for nosotros; -emos is for -er verbs.
 
   - type: choice
+    section: 1
     prompt: "*Comen* means…"
     options: [I eat, we eat, they eat]
     answer: they eat
     why: The -en ending belongs to ellos, ellas and ustedes.
+
+  - type: choice
+    section: 3
+    prompt: Which one comes from an -ar verb?
+    options: [bailas, bebes, vives]
+    answer: bailas
+    why: Endings with a belong to -ar verbs, while -er and -ir verbs use e.
+
+  - type: fill
+    section: 3
+    prompt: "Ana habla inglés y ___ en Madrid."
+    hint: vivir
+    translation: Ana speaks English and lives in Madrid.
+    answers: [vive]
+    why: The él/ella form ends in -a for -ar verbs but in -e for -er and -ir verbs.

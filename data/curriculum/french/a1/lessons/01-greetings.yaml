@@ -92,12 +92,14 @@ words:
 
 practice:
   - type: choice
+    section: 1
     prompt: You meet your friend's grandmother for the first time. What do you say?
     options: ["Salut !", "Bonjour, madame !"]
     answer: "Bonjour, madame !"
     why: Salut is only for friends; with an adult you don't know, say bonjour and add madame or monsieur.
 
   - type: fill
+    section: 3
     prompt: "Je m'___ Léa."
     hint: (call)
     translation: My name is Léa.
@@ -105,24 +107,28 @@ practice:
     why: Je m'appelle — literally "I call myself" — is how you give your name.
 
   - type: translate
+    section: 1
     direction: to-target
     prompt: Hello!
     answers: ["Bonjour !", "Salut !"]
     why: Bonjour works with anyone; salut is the friendly version.
 
   - type: translate
+    section: 4
     direction: to-english
     prompt: "Ça va ?"
     answers: ["How are you?", "How are you doing?", "How's it going?", "How are things?", "Are you OK?", "Are you okay?"]
     why: Ça va? literally means "it goes?" and is the everyday way to ask how someone is.
 
   - type: choice
+    section: 2
     prompt: Which word for "you" do you use with a shop assistant?
     options: [tu, vous]
     answer: vous
     why: Vous is the polite "you" for adults you don't know.
 
   - type: fill
+    section: 3
     prompt: "Comment tu t'___ ?"
     hint: (call — to a friend)
     translation: What's your name?
@@ -130,18 +136,21 @@ practice:
     why: With tu the verb is t'appelles — the friendly way to ask a name.
 
   - type: translate
+    section: 1
     direction: to-target
     prompt: Goodbye!
     answers: ["Au revoir !"]
     why: Au revoir works with anyone; it literally means "until seeing again".
 
   - type: translate
+    section: 1
     direction: to-target
     prompt: Good evening, sir.
     answers: ["Bonsoir, monsieur."]
     why: In the evening bonjour becomes bonsoir, and monsieur makes it polite.
 
   - type: fill
+    section: 4
     prompt: "Ça va bien, merci. Et ___ ?"
     hint: (you — to a friend)
     translation: I'm fine, thanks. And you?
@@ -149,18 +158,21 @@ practice:
     why: Et toi? is the friendly "and you?"; to an adult you would say Et vous?
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: "Comment vous appelez-vous ?"
     answers: ["What is your name?", "What's your name?"]
     why: This is the polite way to ask a name, using vous.
 
   - type: choice
+    section: 3
     prompt: A girl writes "Nice to meet you." Which spelling is right?
     options: [Enchanté, Enchantée]
     answer: Enchantée
     why: A girl or woman adds -e in writing; it sounds exactly the same.
 
   - type: translate
+    section: 1
     direction: to-target
     prompt: See you tomorrow!
     answers: ["À demain !"]

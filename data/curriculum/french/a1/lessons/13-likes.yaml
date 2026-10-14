@@ -84,6 +84,7 @@ words:
 
 practice:
   - type: fill
+    section: 1
     prompt: "J'aime ___ chocolat."
     hint: (the — in general)
     translation: I like chocolate.
@@ -91,6 +92,7 @@ practice:
     why: After aimer, a noun takes le, la or les, even when English has no article.
 
   - type: fill
+    section: 2
     prompt: "Je mange ___ pain."
     hint: (some)
     translation: I eat bread.
@@ -98,6 +100,7 @@ practice:
     why: Pain is masculine, so "some bread" is du pain.
 
   - type: fill
+    section: 2
     prompt: "Nous prenons ___ fromage."
     hint: (some)
     translation: We're having some cheese.
@@ -105,6 +108,7 @@ practice:
     why: Fromage is masculine, so "some" is du.
 
   - type: fill
+    section: 4
     prompt: "Je ne mange pas ___ viande."
     hint: (any)
     translation: I don't eat meat.
@@ -112,6 +116,7 @@ practice:
     why: After a negative, de la becomes de.
 
   - type: fill
+    section: 2
     prompt: "Elle prend ___ salade."
     hint: (some)
     translation: She's having some salad.
@@ -119,43 +124,65 @@ practice:
     why: Salade is feminine, so "some" is de la.
 
   - type: translate
+    section: 1
     direction: to-target
     prompt: I love cats.
     answers: ["J'adore les chats.", "J'aime les chats."]
     why: Adorer or aimer, and cats in general takes les.
 
   - type: translate
+    section: 4
     direction: to-target
     prompt: I don't have a brother.
     answers: ["Je n'ai pas de frère."]
     why: After a negative, un becomes de.
 
   - type: translate
+    section: 4
     direction: to-target
     prompt: I don't like coffee.
     answers: ["Je n'aime pas le café."]
     why: After aimer the article stays, even in a negative sentence.
 
   - type: translate
+    section: 1
     direction: to-english
     prompt: Il préfère le thé.
     answers: ["He prefers tea.", "He prefers the tea."]
     why: Préférer takes le like the other liking verbs; English needs no article.
 
   - type: translate
+    section: 2
     direction: to-english
     prompt: Nous mangeons des légumes.
     answers: ["We eat vegetables.", "We are eating vegetables.", "We're eating vegetables.", "We eat some vegetables.", "We're eating some vegetables."]
     why: Des is "some" for plurals — English often leaves it out.
 
   - type: choice
+    section: 4
     prompt: Which is correct?
     options: [Je n'aime pas de fromage., Je n'aime pas le fromage.]
     answer: Je n'aime pas le fromage.
     why: After aimer the article stays as le, even after ne… pas.
 
   - type: choice
+    section: 4
     prompt: Which is correct?
     options: [Il n'y a pas de lait., Il n'y a pas du lait.]
     answer: Il n'y a pas de lait.
     why: After a negative, du becomes de.
+
+  - type: fill
+    section: 3
+    prompt: "Je mange ___ poisson."
+    hint: le or du?
+    translation: I'm eating fish.
+    answers: [du]
+    why: Manger is about an amount of food, so it takes du; le is only for verbs of liking.
+
+  - type: choice
+    section: 3
+    prompt: Which is correct?
+    options: [J'adore du chocolat., J'adore le chocolat.]
+    answer: J'adore le chocolat.
+    why: Adorer is a verb of liking, so it takes le for chocolate in general.

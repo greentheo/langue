@@ -98,6 +98,7 @@ words:
 
 practice:
   - type: fill
+    section: 1
     prompt: "una casa ___"
     hint: (rosso)
     translation: a red house
@@ -105,6 +106,7 @@ practice:
     why: Casa is feminine and singular, so rosso becomes rossa.
 
   - type: fill
+    section: 1
     prompt: "due gatti ___"
     hint: (nero)
     translation: two black cats
@@ -112,6 +114,7 @@ practice:
     why: Gatti is masculine plural, so the adjective ends in -i.
 
   - type: fill
+    section: 1
     prompt: "le ragazze ___"
     hint: (inglese)
     translation: the English girls
@@ -119,6 +122,7 @@ practice:
     why: Adjectives ending in -e have one plural for both genders — -i.
 
   - type: fill
+    section: 4
     prompt: "___ macchina"
     hint: (this)
     translation: this car
@@ -126,48 +130,56 @@ practice:
     why: Macchina is feminine, so questo becomes questa.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: a small dog
     answers: ["un piccolo cane", "un cane piccolo"]
     why: Piccolo can go before or after the noun.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: The houses are very big.
     answers: ["Le case sono molto grandi."]
     why: Molto meaning "very" doesn't change, and grande becomes grandi.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: an Italian (female) friend
     answers: ["un'amica italiana"]
     why: The adjective follows the noun and agrees with it — -a for feminine.
 
   - type: translate
+    section: 4
     direction: to-english
     prompt: Questi libri sono nuovi.
     answers: ["These books are new."]
     why: Questi is the masculine plural of questo, and nuovo agrees with libri.
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: una macchina blu
     answers: ["a blue car", "a dark blue car", "a navy car", "a navy blue car"]
     why: Blu never changes, even with a feminine noun.
 
   - type: choice
+    section: 3
     prompt: Which is correct?
     options: [la macchina rosso, la macchina rossa, la rossa macchina]
     answer: la macchina rossa
     why: Colours come after the noun and agree with it.
 
   - type: choice
+    section: 1
     prompt: "Marco e Giulia sono ___."
     options: [stanchi, stanche, stanco]
     answer: stanchi
     why: A mixed group takes the masculine plural.
 
   - type: choice
+    section: 3
     prompt: "Il gelato è ___ buono. (very)"
     options: [molto, molta, molti]
     answer: molto

@@ -97,18 +97,21 @@ words:
 
 practice:
   - type: choice
+    section: 1
     prompt: You meet your friend's grandmother in the morning. What do you say?
     options: ["Ciao!", "Buongiorno!", "Buonanotte!"]
     answer: "Buongiorno!"
     why: With an older person you don't know, use the polite greeting for the time of day.
 
   - type: choice
+    section: 1
     prompt: It's eight in the evening and you walk into a restaurant. What do you say?
     options: ["Buongiorno!", "Buonasera!", "Buonanotte!"]
     answer: "Buonasera!"
     why: In the evening you greet people with buonasera; buonanotte is only for going to bed.
 
   - type: fill
+    section: 2
     prompt: "Come ___ chiami?"
     hint: (you, friendly)
     translation: What's your name?
@@ -116,6 +119,7 @@ practice:
     why: With tu, the question is Come ti chiami? — "how do you call yourself?"
 
   - type: fill
+    section: 2
     prompt: "Mi ___ Giulia."
     hint: (I call myself)
     translation: My name is Giulia.
@@ -123,6 +127,7 @@ practice:
     why: Mi chiamo means "I call myself" — it's how Italians give their name.
 
   - type: fill
+    section: 3
     prompt: "Come ___, signora?"
     hint: (polite "are you")
     translation: How are you, madam?
@@ -130,30 +135,35 @@ practice:
     why: Sta is the polite Lei form; stai is for friends.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: My name is Marco.
     answers: ["Mi chiamo Marco.", "Io mi chiamo Marco.", "Sono Marco.", "Io sono Marco."]
     why: Italians give their name with mi chiamo — "I call myself".
 
   - type: translate
+    section: 1
     direction: to-target
     prompt: Thank you, goodbye! (polite)
     answers: ["Grazie, arrivederci!", "Grazie e arrivederci!", "Arrivederci, grazie!", "Arrivederci e grazie!"]
     why: Arrivederci is the polite goodbye; ciao is for friends.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: How are you? (to a friend)
     answers: ["Come stai?", "Come stai tu?"]
     why: Come stai? is the friendly form you use with tu.
 
   - type: translate
+    section: 2
     direction: to-english
     prompt: "Piacere!"
     answers: ["Nice to meet you!", "Pleased to meet you!", "A pleasure!", "Pleasure!"]
     why: Piacere literally means "pleasure" — you say it when you meet someone.
 
   - type: translate
+    section: 4
     direction: to-english
     prompt: "Bene, grazie. E tu?"
     answers:
@@ -167,12 +177,14 @@ practice:
     why: Bene means well or fine, and E tu? turns the question back to a friend.
 
   - type: translate
+    section: 1
     direction: to-english
     prompt: "Buonasera, signora."
     answers: ["Good evening, madam.", "Good evening, ma'am.", "Good evening, Mrs."]
     why: Buonasera is the polite evening greeting, and signora is a polite way to address a woman.
 
   - type: choice
+    section: 4
     prompt: Your teacher asks "Come sta?" Which reply fits?
     options: ["Bene, grazie. E tu?", "Bene, grazie. E Lei?"]
     answer: "Bene, grazie. E Lei?"

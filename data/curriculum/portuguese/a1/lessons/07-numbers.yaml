@@ -114,6 +114,7 @@ words:
 
 practice:
   - type: fill
+    section: 4
     prompt: "São ___ horas."
     hint: "2"
     translation: It's two o'clock.
@@ -121,6 +122,7 @@ practice:
     why: Hora is feminine, so 2 is duas.
 
   - type: fill
+    section: 3
     prompt: "Custa ___ reais."
     hint: "30"
     translation: It costs thirty reais.
@@ -128,6 +130,7 @@ practice:
     why: Thirty is trinta.
 
   - type: fill
+    section: 2
     prompt: "vinte ___ cinco"
     hint: and
     translation: twenty-five
@@ -135,6 +138,7 @@ practice:
     why: Tens and units are joined with e — vinte e cinco.
 
   - type: fill
+    section: 5
     prompt: "Hoje é dia 10 de ___."
     hint: March
     translation: Today is March 10th.
@@ -142,48 +146,56 @@ practice:
     why: Months are written with a small letter — março.
 
   - type: choice
+    section: 2
     prompt: How do you say exactly 100?
     options: [cento, cem, cent]
     answer: cem
     why: Exactly 100 is cem; from 101 it becomes cento — cento e um.
 
   - type: choice
+    section: 4
     prompt: "\"It's one o'clock.\""
     options: [São uma hora., É uma hora., É um hora.]
     answer: É uma hora.
     why: One o'clock is singular (é) and feminine (uma).
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: How much does it cost?
     answers: [Quanto custa?, Quanto é?]
     why: Quanto custa? — literally "how much costs?".
 
   - type: translate
+    section: 1
     direction: to-target
     prompt: fifteen
     answers: [quinze]
     why: Fifteen is quinze.
 
   - type: translate
+    section: 4
     direction: to-target
     prompt: It's half past three.
     answers: [São três e meia., São três e trinta.]
     why: The word for "half" is meia — três e meia.
 
   - type: translate
+    section: 4
     direction: to-english
     prompt: Que horas são?
     answers: [What time is it?, What's the time?]
     why: Literally "what hours are they?".
 
   - type: translate
+    section: 5
     direction: to-english
     prompt: sexta-feira
     answers: [Friday]
     why: Weekdays count from Sunday, so the sixth day, sexta, is Friday.
 
   - type: translate
+    section: 2
     direction: to-english
     prompt: quarenta e oito
     answers: [forty-eight, forty eight, "48"]

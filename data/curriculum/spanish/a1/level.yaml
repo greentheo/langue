@@ -61,3 +61,44 @@ themes:
   - the home
   - daily routine
   - free time
+
+# The ten sub-levels, A1.1 to A1.10, in teaching order. Lessons stay in
+# number order, because each lesson's practice may use earlier lessons.
+units:
+  - title: ¡Hola!
+    lessons: [01-greetings]
+    situations: [greetings]
+    categories: [greetings]
+  - title: How Spanish sounds
+    lessons: [02-sounds]
+    situations: [understanding]
+    categories: [basics]
+  - title: Who are you?
+    lessons: [03-ser]
+    situations: [meeting]
+  - title: Things you have
+    lessons: [04-articles, 05-tener]
+    categories: [housing, technology, education, emotions]
+  - title: Where is it?
+    lessons: [06-estar]
+    situations: [getting-around]
+    categories: [transportation, travel]
+  - title: Numbers and prices
+    lessons: [07-numbers]
+    situations: [shopping]
+    categories: [numbers, time, shopping]
+  - title: Everyday verbs
+    lessons: [08-ar-verbs, 09-er-ir-verbs]
+    situations: [help]
+    categories: [work]
+  - title: Family and friends
+    lessons: [10-adjectives, 11-family]
+    categories: [family]
+  - title: Wants and plans
+    lessons: [12-stem-changing, 13-ir-hacer-venir]
+    situations: [cafe]
+    categories: [food]
+  - title: Likes and your day
+    lessons: [14-gustar, 15-routine]
+    situations: [time, small-talk]
+    categories: [weather]

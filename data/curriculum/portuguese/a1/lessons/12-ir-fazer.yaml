@@ -84,6 +84,7 @@ words:
 
 practice:
   - type: fill
+    section: 2
     prompt: "Eu ___ para a praia."
     hint: ir, eu
     translation: I'm going to the beach.
@@ -91,6 +92,7 @@ practice:
     why: Ir is irregular — with eu it is vou.
 
   - type: fill
+    section: 1
     prompt: "Ela ___ a lição de casa."
     hint: fazer, ela
     translation: She does her homework.
@@ -98,6 +100,7 @@ practice:
     why: Fazer is irregular — with ela it is faz.
 
   - type: fill
+    section: 1
     prompt: "Nós ___ ir amanhã."
     hint: poder, nós
     translation: We can go tomorrow.
@@ -105,6 +108,7 @@ practice:
     why: Poder with nós is podemos, followed by an infinitive.
 
   - type: fill
+    section: 1
     prompt: "Eles ___ estudar."
     hint: querer, eles
     translation: They want to study.
@@ -112,30 +116,35 @@ practice:
     why: Querer with eles is querem.
 
   - type: choice
+    section: 3
     prompt: "\"I'm going to eat.\""
     options: [Vou comer., Vou como., Vou a comer.]
     answer: Vou comer.
     why: Ir + infinitive (the -r form) talks about the future.
 
   - type: choice
+    section: 4
     prompt: Which is the most polite in a café?
     options: [Quero um café., "Queria um café, por favor.", Um café!]
     answer: "Queria um café, por favor."
     why: Queria plus por favor is the polite way to ask.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: I'm going home.
     answers: [Vou para casa., Eu vou para casa., Vou pra casa., Eu vou pra casa.]
     why: Ir para casa means to go home.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: Can you repeat that?
     answers: [Você pode repetir?, Pode repetir?, O senhor pode repetir?, A senhora pode repetir?]
     why: Poder + infinitive means you can do something.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: We're going to study tomorrow.
     answers:
@@ -148,18 +157,21 @@ practice:
     why: Ir + infinitive talks about plans — vamos estudar.
 
   - type: translate
+    section: 4
     direction: to-target
     prompt: I would like to pay.
     answers: [Gostaria de pagar., Eu gostaria de pagar., Queria pagar., Eu queria pagar.]
     why: Gostaria de + infinitive is the polite "I would like to".
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: Eles vão fazer compras.
     answers: [They are going to go shopping., They're going to go shopping., They are going shopping., They're going shopping., They will go shopping.]
     why: Vão fazer is ir + infinitive — a plan; fazer compras means to go shopping.
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: Você quer ir?
     answers: [Do you want to go?, Do you want to come?, Want to go?]

@@ -88,6 +88,7 @@ words:
 
 practice:
   - type: fill
+    section: 1
     prompt: "una casa ___"
     hint: small
     translation: a small house
@@ -95,6 +96,7 @@ practice:
     why: Casa is feminine, so pequeño becomes pequeña.
 
   - type: fill
+    section: 1
     prompt: "los chicos ___"
     hint: tall
     translation: the tall boys
@@ -102,6 +104,7 @@ practice:
     why: Chicos is masculine plural, so alto becomes altos.
 
   - type: fill
+    section: 4
     prompt: "___ libro"
     hint: this
     translation: this book
@@ -109,6 +112,7 @@ practice:
     why: Libro is masculine, so "this" is este.
 
   - type: fill
+    section: 2
     prompt: "Las mesas son ___."
     hint: blue
     translation: The tables are blue.
@@ -116,6 +120,7 @@ practice:
     why: Azul ends in a consonant, so the plural adds -es.
 
   - type: fill
+    section: 3
     prompt: "Es un ___ amigo."
     hint: good
     translation: He's a good friend.
@@ -123,42 +128,49 @@ practice:
     why: Bueno drops its -o before a masculine singular noun.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: a red book
     answers: [un libro rojo]
     why: Colours go after the noun in Spanish.
 
   - type: translate
+    section: 4
     direction: to-target
     prompt: These houses are very big.
     answers: [Estas casas son muy grandes]
     why: Estas matches feminine plural casas, and grande adds -s.
 
   - type: translate
+    section: 1
     direction: to-target
     prompt: The girl is tall.
     answers: [La chica es alta]
     why: Describing what someone is like uses ser, and alto becomes alta for a girl.
 
   - type: translate
+    section: 4
     direction: to-english
     prompt: Esta ciudad es muy bonita.
     answers: [This city is very pretty, This city is very beautiful, This city is very nice, This city is really pretty, This city is really beautiful]
     why: Esta is the feminine "this", and bonita matches ciudad.
 
   - type: translate
+    section: 2
     direction: to-english
     prompt: El español no es difícil.
     answers: [Spanish is not difficult, Spanish is not hard]
     why: Difícil means "difficult"; no before the verb makes it negative.
 
   - type: choice
+    section: 3
     prompt: Which is correct?
     options: [una casa blanco, una casa blanca, una blanca casa]
     answer: una casa blanca
     why: The adjective goes after the noun and matches it — casa is feminine.
 
   - type: choice
+    section: 4
     prompt: "___ chica es de Perú. (this)"
     options: [Está, Esta]
     answer: Esta

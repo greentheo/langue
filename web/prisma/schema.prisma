@@ -48,6 +48,7 @@ model User {
   achievements Achievement[]
   reviews      FlashcardReview[]
   lessons      LessonProgress[]
+  items        ItemProgress[]
   invitesMade  InviteCode[]      @relation("InviteCreatedBy")
 
   @@index([email])
@@ -194,4 +195,36 @@ model LessonProgress {
 
   @@unique([userId, lessonId])
   @@index([userId, language, level])
+}
+
+/// One learnable item on the guided path — a word, a phrase, or a grammar
+/// idea (a lesson section) — and how well this learner knows it. See
+/// docs/guided-path.md for the stage ladder and review schedule.
+model ItemProgress {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  language  String
+  /// "w:italian:stanco", "p:italian-a1-cafe-3", "g:italian-a1-03-essere#2"
+  itemKey   String
+  kind      String
+  /// 0 introduced · 1 recognises · 2 recalls · 3 produces · 4 uses · 5 says
+  stage     Int      @default(0)
+  /// The highest stage ever reached. Progress bars count this, so they
+  /// never go down when an item fades.
+  bestStage Int      @default(0)
+  dueAt     DateTime @default(now())
+  /// Days until the next review once the item is at the top stage.
+  intervalDays Float @default(0)
+  right     Int      @default(0)
+  wrong     Int      @default(0)
+  /// Consecutive right and consecutive wrong answers.
+  rightStreak Int    @default(0)
+  missStreak  Int    @default(0)
+  tricky    Boolean  @default(false)
+  introducedAt DateTime @default(now())
+  lastSeenAt   DateTime @default(now())
+
+  @@unique([userId, itemKey])
+  @@index([userId, language, dueAt])
 }

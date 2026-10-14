@@ -87,6 +87,7 @@ words:
 
 practice:
   - type: fill
+    section: 1
     prompt: "Yo ___ en casa."
     hint: estar
     translation: I'm at home.
@@ -94,6 +95,7 @@ practice:
     why: Estoy is the yo form of estar, used for location.
 
   - type: fill
+    section: 2
     prompt: "¿Dónde ___ el baño?"
     hint: estar
     translation: Where's the bathroom?
@@ -101,6 +103,7 @@ practice:
     why: Location uses estar; está is the form for one thing.
 
   - type: fill
+    section: 3
     prompt: "Nosotros ___ cansados."
     hint: estar
     translation: We're tired.
@@ -108,6 +111,7 @@ practice:
     why: Feelings use estar; estamos is the nosotros form.
 
   - type: fill
+    section: 3
     prompt: "Las chicas ___ contentas."
     hint: estar
     translation: The girls are happy.
@@ -115,48 +119,56 @@ practice:
     why: Están goes with ellos, ellas and ustedes.
 
   - type: choice
+    section: 4
     prompt: "Ana ___ de Colombia."
     options: [es, está]
     answer: es
     why: Where someone is from uses ser.
 
   - type: choice
+    section: 4
     prompt: "Ana ___ en Colombia."
     options: [es, está]
     answer: está
     why: Where someone is right now uses estar.
 
   - type: choice
+    section: 4
     prompt: "Ellos ___ estudiantes."
     options: [son, están]
     answer: son
     why: What someone is — like their job — uses ser.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: I'm tired. (a man speaking)
     answers: [Estoy cansado, Yo estoy cansado]
     why: Feelings use estar, and a man says cansado.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: Where's the station?
     answers: ["¿Dónde está la estación?"]
     why: Location uses estar; estación is feminine, so it's la estación.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: She's sad.
     answers: [Está triste, Ella está triste]
     why: How someone feels right now uses estar.
 
   - type: translate
+    section: 2
     direction: to-english
     prompt: Estamos en casa.
     answers: [We are at home, We are home]
     why: En casa means "at home", without an article.
 
   - type: translate
+    section: 2
     direction: to-english
     prompt: El hotel está cerca.
     answers: [The hotel is near, The hotel is close, The hotel is nearby, The hotel is close by]

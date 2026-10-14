@@ -106,6 +106,7 @@ words:
 
 practice:
   - type: fill
+    section: 4
     prompt: "Il est ___ heures."
     hint: (3)
     translation: It's three o'clock.
@@ -113,36 +114,42 @@ practice:
     why: Il est + the number + heures tells the time.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: seventy
     answers: [soixante-dix, soixante dix]
     why: Seventy is "sixty-ten" in French.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: eighty
     answers: [quatre-vingts, quatre vingts]
     why: Eighty is "four twenties"; on its own, vingts takes an -s.
 
   - type: translate
+    section: 2
     direction: to-english
     prompt: quatre-vingt-dix
     answers: ["ninety", "90"]
     why: Ninety is "four twenties ten".
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: "C'est combien ?"
     answers: ["How much is it?", "How much is this?", "How much is that?", "How much does it cost?", "How much?"]
     why: C'est combien? literally means "it is how much?".
 
   - type: translate
+    section: 4
     direction: to-target
     prompt: It's one o'clock.
     answers: ["Il est une heure."]
     why: Heure is feminine, so one o'clock is une heure — and only one, so no -s.
 
   - type: fill
+    section: 5
     prompt: "Aujourd'hui, c'est le ___ mai."
     hint: (1st)
     translation: Today is the first of May.
@@ -150,24 +157,28 @@ practice:
     why: The 1st of the month is le premier; every other date uses the plain number.
 
   - type: choice
+    section: 2
     prompt: How do you say 71?
     options: [soixante-onze, soixante et onze, septante-un]
     answer: soixante et onze
     why: Like 21 and 31, 71 uses et — and 71 is "sixty and eleven".
 
   - type: choice
+    section: 5
     prompt: Which is written correctly?
     options: [Lundi 3 Mai, lundi 3 mai]
     answer: lundi 3 mai
     why: French days and months have no capital letter.
 
   - type: translate
+    section: 4
     direction: to-target
     prompt: It's half past two.
     answers: ["Il est deux heures et demie.", "Il est deux heures trente."]
     why: Et demie means "and a half"; deux heures trente also works.
 
   - type: fill
+    section: 3
     prompt: "Ça ___ dix euros."
     hint: (makes — that's)
     translation: That's ten euros.
@@ -175,7 +186,23 @@ practice:
     why: When giving a total price, French says ça fait — literally "that makes".
 
   - type: translate
+    section: 4
     direction: to-english
     prompt: Il est midi.
     answers: ["It's noon.", "It is noon.", "It's midday.", "It is midday.", "It's twelve o'clock.", "It's twelve noon."]
     why: Midi is noon; midnight is minuit.
+
+  - type: fill
+    section: 1
+    prompt: "J'ai ___ ans."
+    hint: "13"
+    translation: I'm thirteen.
+    answers: [treize]
+    why: Thirteen is treize, one of the numbers from 11 to 16 that have their own word.
+
+  - type: choice
+    section: 1
+    prompt: How do you say 17?
+    options: [dix-sept, sept-dix, dix-six]
+    answer: dix-sept
+    why: From 17 to 19 French says ten and then the unit, so 17 is dix-sept.
