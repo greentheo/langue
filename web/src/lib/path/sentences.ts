@@ -78,7 +78,8 @@ const RIGHT: GradeResult = { verdict: "correct", score: 100, matched: null, note
  */
 export function gradeReply(answer: string, accepted: string[]): GradeResult {
   const exact = accepted.filter((reply) => !reply.includes("*"));
-  const result = gradeTargetAnswer(answer, exact);
+  // A reply may carry a little more than listed: "Sì, bene, grazie" for "Bene, grazie".
+  const result = gradeTargetAnswer(answer, exact, { extraWords: "any" });
   if (result.verdict !== "incorrect") return result;
 
   const typed = normalizeAnswer(answer);

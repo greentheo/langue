@@ -89,6 +89,29 @@ export function stripArticle(value: string): string {
   return value;
 }
 
+/**
+ * Drop a leading article only from a noun on its own: "il cane" → "cane". In
+ * a longer answer a leading "le", "lo" or "la" may be a pronoun — "Le regalo
+ * un libro" is not "Gli regalo un libro" — so the target language keeps it.
+ */
+export function stripNounArticle(value: string): string {
+  return value.split(" ").length === 2 ? stripArticle(value) : value;
+}
+
+/**
+ * Subject pronouns a learner may add in front of an answer that leaves them
+ * out: "io sono stanco" for "sono stanco". (French needs its pronouns, so
+ * they are always in the accepted answer already.)
+ */
+const SUBJECT_PRONOUNS = new Set([
+  // Italian
+  "io", "tu", "lui", "lei", "noi", "voi", "loro",
+  // Spanish
+  "yo", "tu", "el", "ella", "usted", "nosotros", "nosotras", "vosotros", "vosotras", "ellos", "ellas", "ustedes",
+  // Portuguese
+  "eu", "voce", "ele", "ela", "nos", "voces", "eles", "elas",
+]);
+
 /** Levenshtein distance, capped for early exit on clearly different strings. */
 export function editDistance(a: string, b: string): number {
   if (a === b) return 0;
@@ -125,15 +148,68 @@ export interface GradeResult {
   note: string | null;
 }
 
+/** How lenient a grade is. The defaults suit English answers. */
+export interface GradeOptions {
+  /**
+   * Extra words around a right answer: "any" (English: "to fire someone" for
+   * "to fire"), "pronoun" (only a subject pronoun in front: "io sono stanco"),
+   * or "none".
+   */
+  extraWords?: "any" | "pronoun" | "none";
+  /**
+   * Drop a leading article only from a noun on its own — for the target
+   * language, where the same little words are also pronouns.
+   */
+  nounArticlesOnly?: boolean;
+  /** Accept a typo or two as close. Off where one letter is the whole point, as in a conjugation. */
+  typos?: boolean;
+  /**
+   * A typo must leave a word's last letter alone. In the target language the
+   * end of a word is its grammar — stanco/stanca, parlo/parla — so a slip
+   * there is the mistake, not a typo.
+   */
+  keepEndings?: boolean;
+}
+
+/**
+ * Is `answer` a typo of `candidate`? Word by word: the same number of words,
+ * short words (three letters or fewer) exactly right, at most two longer
+ * words a letter or two off — the allowance growing with the word.
+ */
+function typoOf(answer: string, candidate: string, keepEndings: boolean): boolean {
+  const typed = answer.split(" ");
+  const expected = candidate.split(" ");
+  if (typed.length !== expected.length) return false;
+
+  let slips = 0;
+  for (let i = 0; i < expected.length; i += 1) {
+    const [a, b] = [typed[i], expected[i]];
+    if (a === b) continue;
+    if (a.length <= 3 || b.length <= 3) return false;
+    if (keepEndings && a.at(-1) !== b.at(-1)) return false;
+    const tolerance = b.length <= 5 ? 1 : b.length <= 9 ? 2 : 3;
+    if (editDistance(a, b) > tolerance) return false;
+    slips += 1;
+  }
+  return slips > 0 && slips <= 2;
+}
+
+/** Does `text` contain `phrase` as whole words? Both normalized. */
+function hasWords(text: string, phrase: string): boolean {
+  return ` ${text} `.includes(` ${phrase} `);
+}
+
 /**
  * Grade a free-text answer against the accepted translations.
  *
  * A "close" verdict covers typos: one or two characters off a real answer is a
  * spelling slip, not a vocabulary failure, and marking it wrong teaches the
- * learner nothing. The threshold scales with word length so "si"/"sa" is not
- * treated as generously as "arrivederci"/"arrivederchi".
+ * learner nothing. The threshold scales with word length, and words of three
+ * letters or fewer get none — "lo" and "la" are different words, not a typo.
  */
-export function gradeAnswer(userAnswer: string, accepted: string[]): GradeResult {
+export function gradeAnswer(userAnswer: string, accepted: string[], options: GradeOptions = {}): GradeResult {
+  const { extraWords = "any", nounArticlesOnly = false, typos = true, keepEndings = false } = options;
+  const strip = nounArticlesOnly ? stripNounArticle : stripArticle;
   const answer = normalizeAnswer(userAnswer);
 
   if (!answer) {
@@ -142,47 +218,50 @@ export function gradeAnswer(userAnswer: string, accepted: string[]): GradeResult
 
   const candidates = accepted.flatMap((value) => {
     const normalized = normalizeAnswer(value);
-    const withoutArticle = stripArticle(normalized);
+    const withoutArticle = strip(normalized);
     return normalized === withoutArticle ? [normalized] : [normalized, withoutArticle];
   });
 
-  const answerWithoutArticle = stripArticle(answer);
+  const answerWithoutArticle = strip(answer);
+  const [first, ...rest] = answer.split(" ");
+  const answerWithoutPronoun = extraWords !== "none" && SUBJECT_PRONOUNS.has(first) ? rest.join(" ") : null;
 
   for (const candidate of candidates) {
-    if (answer === candidate || answerWithoutArticle === candidate) {
+    if (answer === candidate || answerWithoutArticle === candidate || answerWithoutPronoun === candidate) {
       return { verdict: "correct", score: 100, matched: candidate, note: null };
     }
   }
 
   // Accept an answer that supplies one of several valid translations plus
-  // extra words, e.g. "to fire someone" for "to fire".
-  for (const candidate of candidates) {
-    if (candidate.length >= 4 && answer.includes(candidate)) {
-      return {
-        verdict: "correct",
-        score: 90,
-        matched: candidate,
-        note: "Accepted — you included the expected answer.",
-      };
+  // extra words, e.g. "to fire someone" for "to fire" — whole words only, so
+  // "conosciamo" is not "conosci".
+  if (extraWords === "any") {
+    for (const candidate of candidates) {
+      if (candidate.length >= 4 && hasWords(answer, candidate)) {
+        return {
+          verdict: "correct",
+          score: 90,
+          matched: candidate,
+          note: "Accepted — you included the expected answer.",
+        };
+      }
     }
   }
 
-  let best: { candidate: string; distance: number } | null = null;
-  for (const candidate of candidates) {
-    const distance = editDistance(answer, candidate);
-    if (!best || distance < best.distance) best = { candidate, distance };
-  }
-
-  if (best) {
-    const tolerance = best.candidate.length <= 4 ? 1 : best.candidate.length <= 8 ? 2 : 3;
-    if (best.distance <= tolerance) {
-      return {
-        verdict: "close",
-        score: 70,
-        matched: best.candidate,
-        note: `Close — the expected spelling is "${best.candidate}".`,
-      };
-    }
+  const typo = typos
+    ? candidates.find(
+        (candidate) =>
+          typoOf(answer, candidate, keepEndings) ||
+          (answerWithoutPronoun !== null && typoOf(answerWithoutPronoun, candidate, keepEndings)),
+      )
+    : undefined;
+  if (typo) {
+    return {
+      verdict: "close",
+      score: 70,
+      matched: typo,
+      note: `Close — the expected spelling is "${typo}".`,
+    };
   }
 
   return { verdict: "incorrect", score: 0, matched: null, note: null };
@@ -199,6 +278,26 @@ export function gradeEnglishAnswer(userAnswer: string, accepted: string[]): Grad
   return gradeAnswer(expandContractions(userAnswer), accepted.map(expandContractions));
 }
 
+/** The target language: no extra words but a subject pronoun, articles only off a lone noun. */
+const TARGET: GradeOptions = { extraWords: "pronoun", nounArticlesOnly: true, typos: true, keepEndings: true };
+
+/** The same leniency as gradeAnswer's exact matches, but accents count. */
+function matchesKeepingAccents(userAnswer: string, accepted: string[], options: GradeOptions): boolean {
+  const strip = options.nounArticlesOnly ? stripNounArticle : stripArticle;
+  const typed = normalizeKeepingAccents(userAnswer);
+  const [first, ...rest] = typed.split(" ");
+  const variants = [typed, strip(typed)];
+  if (options.extraWords !== "none" && SUBJECT_PRONOUNS.has(normalizeAnswer(first))) variants.push(rest.join(" "));
+
+  return accepted.some((value) => {
+    const candidate = normalizeKeepingAccents(value);
+    return [candidate, strip(candidate)].some(
+      (form) =>
+        variants.includes(form) || (options.extraWords !== "pronoun" && options.extraWords !== "none" && form.length >= 4 && hasWords(typed, form)),
+    );
+  });
+}
+
 /**
  * Grade a target-language answer, where accents carry meaning.
  *
@@ -208,27 +307,20 @@ export function gradeEnglishAnswer(userAnswer: string, accepted: string[]): Grad
  * shown, rather than silently right or harshly wrong — typing accents on an
  * English keyboard is hard, and the learner should see what they missed.
  */
-export function gradeTargetAnswer(userAnswer: string, accepted: string[]): GradeResult {
-  const result = gradeAnswer(userAnswer, accepted);
+export function gradeTargetAnswer(
+  userAnswer: string,
+  accepted: string[],
+  overrides: GradeOptions = {},
+): GradeResult {
+  const options = { ...TARGET, ...overrides };
+  const result = gradeAnswer(userAnswer, accepted, options);
   if (result.verdict !== "correct") return result;
 
-  const typed = normalizeKeepingAccents(userAnswer);
-  const typedWithoutArticle = stripArticle(typed);
-
-  const exact = accepted.some((value) => {
-    const candidate = normalizeKeepingAccents(value);
-    const candidateWithoutArticle = stripArticle(candidate);
-    return [candidate, candidateWithoutArticle].some(
-      (form) =>
-        form === typed ||
-        form === typedWithoutArticle ||
-        (form.length >= 4 && typed.includes(form)),
-    );
-  });
-  if (exact) return result;
+  // Right once accents are ignored; is it right with them?
+  if (matchesKeepingAccents(userAnswer, accepted, options)) return result;
 
   const intended =
-    accepted.find((value) => gradeAnswer(userAnswer, [value]).verdict === "correct") ??
+    accepted.find((value) => gradeAnswer(userAnswer, [value], options).verdict === "correct") ??
     accepted[0];
 
   return {
