@@ -77,6 +77,7 @@ words:
 
 practice:
   - type: fill
+    section: 1
     prompt: "Je ___ lève à sept heures."
     hint: (myself)
     translation: I get up at seven o'clock.
@@ -84,6 +85,7 @@ practice:
     why: With je, the reflexive pronoun is me.
 
   - type: fill
+    section: 1
     prompt: "Tu ___ couches tard."
     hint: (yourself)
     translation: You go to bed late.
@@ -91,6 +93,7 @@ practice:
     why: With tu, the reflexive pronoun is te.
 
   - type: fill
+    section: 1
     prompt: "Nous nous ___ à huit heures."
     hint: (se réveiller)
     translation: We wake up at eight o'clock.
@@ -98,48 +101,56 @@ practice:
     why: Se réveiller is a regular -er verb, so nous takes -ons.
 
   - type: choice
+    section: 1
     prompt: Which is correct?
     options: [Elle se habille., "Elle s'habille."]
     answer: "Elle s'habille."
     why: Before a vowel or silent h, se becomes s'.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: I get up early.
     answers: [Je me lève tôt.]
     why: Se lever becomes je me lève, and tôt means early.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: We go to bed at ten o'clock.
     answers: [Nous nous couchons à dix heures., On se couche à dix heures.]
     why: Se coucher is reflexive, and à goes before a time.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: I never get up late.
     answers: [Je ne me lève jamais tard.]
     why: Ne goes before the little pronoun, jamais after the verb.
 
   - type: translate
+    section: 2
     direction: to-english
     prompt: Ils se douchent le matin.
     answers: ["They shower in the morning.", "They take a shower in the morning.", "They have a shower in the morning.", "They shower in the mornings.", "They shower every morning."]
     why: Se doucher is to have a shower, and le matin means in the morning.
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: "Tu te réveilles souvent tôt ?"
     answers: ["Do you often wake up early?", "Do you wake up early often?", "Do you often get up early?"]
     why: Souvent means often, and te goes with tu.
 
   - type: choice
+    section: 3
     prompt: Where does *ne* go in a negative reflexive sentence?
     options: [Je me ne lève pas., Je ne me lève pas., Ne je me lève pas.]
     answer: Je ne me lève pas.
     why: Ne goes before the little pronoun, which stays glued to the verb.
 
   - type: fill
+    section: 1
     prompt: "Comment vous ___ appelez ?"
     hint: (yourself — vous)
     translation: What's your name?
@@ -147,6 +158,7 @@ practice:
     why: With vous, the reflexive pronoun is also vous — so vous appears twice.
 
   - type: choice
+    section: 3
     prompt: "*parfois* means…"
     options: [always, sometimes, never]
     answer: sometimes

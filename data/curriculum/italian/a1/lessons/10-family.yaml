@@ -87,6 +87,7 @@ words:
 
 practice:
   - type: fill
+    section: 3
     prompt: "___ madre è italiana."
     hint: (my)
     translation: My mother is Italian.
@@ -94,6 +95,7 @@ practice:
     why: A single family member takes no article — mia madre.
 
   - type: fill
+    section: 3
     prompt: "___ fratelli abitano a Milano."
     hint: (my)
     translation: My brothers live in Milan.
@@ -101,6 +103,7 @@ practice:
     why: Plural family members keep the article — i miei fratelli.
 
   - type: fill
+    section: 2
     prompt: "Giulia cerca ___ libro."
     hint: (her)
     translation: Giulia is looking for her book.
@@ -108,6 +111,7 @@ practice:
     why: Libro is masculine, so "her book" is il suo libro.
 
   - type: fill
+    section: 3
     prompt: "___ padre è inglese."
     hint: (their)
     translation: Their father is English.
@@ -115,48 +119,56 @@ practice:
     why: Loro always keeps the article, even with family.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: my family
     answers: ["la mia famiglia"]
     why: Famiglia isn't a single family member, so it keeps the article.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: Your sister is 12. (to a friend)
     answers: ["Tua sorella ha 12 anni.", "Tua sorella ha dodici anni."]
     why: A single family member with tua takes no article, and age uses avere.
 
   - type: translate
+    section: 1
     direction: to-target
     prompt: our house
     answers: ["la nostra casa"]
     why: Casa is feminine, so "our" is la nostra.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: his car
     answers: ["la sua macchina"]
     why: Macchina is feminine, so even "his" is la sua.
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: i miei nonni
     answers: ["my grandparents", "my grandfathers"]
     why: Nonni can mean grandfathers or grandparents — the masculine plural covers a mixed group.
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: Come si chiama tua madre?
     answers: ["What's your mother's name?", "What is your mother called?"]
     why: Come si chiama…? asks what someone is called.
 
   - type: choice
+    section: 3
     prompt: How do you say "her brother"?
     options: [la sua fratello, suo fratello, sua fratello]
     answer: suo fratello
     why: Fratello is masculine and a single family member, so it's suo with no article.
 
   - type: choice
+    section: 1
     prompt: How do you say "their sisters"?
     options: [le loro sorelle, le lore sorelle, loro sorelle]
     answer: le loro sorelle

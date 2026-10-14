@@ -81,6 +81,7 @@ words:
 
 practice:
   - type: fill
+    section: 1
     prompt: "Eu ___ levanto às sete."
     hint: myself
     translation: I get up at seven.
@@ -88,6 +89,7 @@ practice:
     why: With eu, the little reflexive word is me, before the verb.
 
   - type: fill
+    section: 1
     prompt: "Nós ___ deitamos às dez."
     hint: ourselves
     translation: We go to bed at ten.
@@ -95,6 +97,7 @@ practice:
     why: With nós, the reflexive word is nos.
 
   - type: fill
+    section: 1
     prompt: "Ela se ___ cedo."
     hint: levantar
     translation: She gets up early.
@@ -102,6 +105,7 @@ practice:
     why: Levantar is a regular -ar verb — with ela it is levanta.
 
   - type: fill
+    section: 1
     prompt: "Eles ___ deitam tarde."
     hint: themselves
     translation: They go to bed late.
@@ -109,36 +113,42 @@ practice:
     why: With eles, the reflexive word is se.
 
   - type: choice
+    section: 1
     prompt: How do Brazilians say "I get up"?
     options: [Eu me levanto., Eu levanto-me., Eu levanto me.]
     answer: Eu me levanto.
     why: In Brazilian Portuguese the little word goes before the verb.
 
   - type: choice
+    section: 3
     prompt: Which means "sometimes"?
     options: [à tarde, às vezes, às sete]
     answer: às vezes
     why: Às vezes is sometimes; à tarde is in the afternoon.
 
   - type: choice
+    section: 3
     prompt: "\"I never drink coffee.\""
     options: [Nunca tomo café., Tomo nunca café., Eu nunca não tomo café.]
     answer: Nunca tomo café.
     why: Nunca goes before the verb.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: I wake up at seven.
     answers: [Acordo às sete., Eu acordo às sete., Acordo às sete horas., Eu acordo às sete horas.]
     why: In Brazil acordar isn't reflexive — eu acordo.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: She takes a shower in the morning.
     answers: [Ela toma banho de manhã., De manhã ela toma banho.]
     why: Tomar banho is to take a shower, and de manhã is in the morning.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: We have dinner at eight.
     answers:
@@ -151,12 +161,14 @@ practice:
     why: Jantar is a regular -ar verb, and "at eight" is às oito.
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: Ele sempre dorme tarde.
     answers: [He always sleeps late., He always goes to sleep late., He always goes to bed late.]
     why: Sempre is always, and tarde here means late.
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: Às vezes eu almoço em casa.
     answers: [Sometimes I have lunch at home., Sometimes I eat lunch at home., I sometimes have lunch at home., I sometimes eat lunch at home.]

@@ -93,6 +93,7 @@ words:
 
 practice:
   - type: fill
+    section: 1
     prompt: "Eu ___ cansado."
     hint: estar, eu
     translation: I'm tired.
@@ -100,6 +101,7 @@ practice:
     why: With eu, estar is estou.
 
   - type: fill
+    section: 1
     prompt: "Nós ___ em casa."
     hint: estar, nós
     translation: We are at home.
@@ -107,6 +109,7 @@ practice:
     why: With nós, estar is estamos.
 
   - type: fill
+    section: 1
     prompt: "Onde vocês ___?"
     hint: estar, vocês
     translation: Where are you (all)?
@@ -114,6 +117,7 @@ practice:
     why: Vocês, eles and elas share the form estão.
 
   - type: fill
+    section: 2
     prompt: "Ela ___ médica."
     hint: ser or estar?
     translation: She is a doctor.
@@ -121,48 +125,56 @@ practice:
     why: A job is what someone is, so use ser — ela é.
 
   - type: choice
+    section: 2
     prompt: "\"I'm sad today.\""
     options: [Sou triste hoje., Estou triste hoje.]
     answer: Estou triste hoje.
     why: A feeling right now uses estar.
 
   - type: choice
+    section: 2
     prompt: "\"We are Canadian.\""
     options: [Estamos canadenses., Somos canadenses.]
     answer: Somos canadenses.
     why: Nationality is who you are, so use ser.
 
   - type: choice
+    section: 4
     prompt: Which means "I'm cold"?
     options: [Estou com frio., Sou frio., Estou frio.]
     answer: Estou com frio.
     why: Brazilians say estar com frio — literally "to be with cold".
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: Where are you?
     answers: [Onde você está?, Você está onde?, Onde o senhor está?, Onde a senhora está?, Onde vocês estão?]
     why: Where a person is uses estar.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: I'm at home.
     answers: [Estou em casa., Eu estou em casa., Tô em casa.]
     why: Estar em casa means to be at home.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: She is happy today.
     answers: [Ela está feliz hoje., Hoje ela está feliz.]
     why: Happy right now is a state, so use estar.
 
   - type: translate
+    section: 1
     direction: to-english
     prompt: Vocês estão bem?
     answers: [Are you okay?, Are you OK?, Are you all right?, Are you well?, Are you guys okay?, Are you all okay?]
     why: Estar bem is how someone is right now — fine, okay.
 
   - type: translate
+    section: 4
     direction: to-english
     prompt: Estou com fome.
     answers: [I'm hungry., I am hungry.]

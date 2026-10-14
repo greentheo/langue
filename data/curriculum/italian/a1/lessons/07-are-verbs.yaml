@@ -97,6 +97,7 @@ words:
 
 practice:
   - type: fill
+    section: 1
     prompt: "Io ___ inglese."
     hint: (parlare)
     translation: I speak English.
@@ -104,6 +105,7 @@ practice:
     why: With io, -are verbs end in -o.
 
   - type: fill
+    section: 1
     prompt: "Noi ___ a Napoli."
     hint: (abitare)
     translation: We live in Naples.
@@ -111,6 +113,7 @@ practice:
     why: With noi, the ending is -iamo.
 
   - type: fill
+    section: 2
     prompt: "Tu ___ la pizza?"
     hint: (mangiare)
     translation: Are you eating the pizza?
@@ -118,6 +121,7 @@ practice:
     why: Mangiare keeps only one i — mangi, not mangii.
 
   - type: fill
+    section: 1
     prompt: "Loro ___ la TV."
     hint: (guardare)
     translation: They're watching TV.
@@ -125,6 +129,7 @@ practice:
     why: Loro takes -ano, stressed on the first syllable — GUAR-da-no.
 
   - type: fill
+    section: 3
     prompt: "___ abiti? — A Roma."
     hint: (where)
     translation: Where do you live? — In Rome.
@@ -132,42 +137,49 @@ practice:
     why: Dove means "where".
 
   - type: translate
+    section: 1
     direction: to-target
     prompt: Do you speak Italian? (to a friend)
     answers: ["Parli italiano?", "Tu parli italiano?", "Parli l'italiano?"]
     why: A question is the normal sentence with a question mark — no "do" needed.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: We study English.
     answers: ["Studiamo inglese.", "Noi studiamo inglese.", "Studiamo l'inglese.", "Noi studiamo l'inglese."]
     why: Studiare with noi is studiamo — just one i.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: What are you looking for? (to a friend)
     answers: ["Cosa cerchi?", "Che cosa cerchi?", "Che cerchi?", "Tu cosa cerchi?", "Cosa cerchi tu?"]
     why: Cercare adds an h before i to keep the k sound — cerchi.
 
   - type: translate
+    section: 1
     direction: to-english
     prompt: Lavorate oggi?
     answers: ["Are you working today?", "Do you work today?", "Are you all working today?", "Are you guys working today?"]
     why: The -ate ending is for voi — "you" talking to a group.
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: Chi ascolta?
     answers: ["Who is listening?", "Who's listening?", "Who listens?"]
     why: Chi means "who", and ascolta is the lui/lei form of ascoltare.
 
   - type: choice
+    section: 3
     prompt: "In *Perché mangi? — Perché ho fame!*, what does the second *perché* mean?"
     options: [why, because, when]
     answer: because
     why: Perché asks "why", and it also answers "because".
 
   - type: choice
+    section: 2
     prompt: Which is the tu form of *giocare*?
     options: [gioci, giochi, giocchi]
     answer: giochi

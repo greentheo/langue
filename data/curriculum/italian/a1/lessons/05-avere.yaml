@@ -100,6 +100,7 @@ words:
 
 practice:
   - type: fill
+    section: 1
     prompt: "Io ___ un cane."
     hint: (avere)
     translation: I have a dog.
@@ -107,6 +108,7 @@ practice:
     why: With io, avere is ho — and the h is silent.
 
   - type: fill
+    section: 1
     prompt: "Loro ___ un gatto."
     hint: (avere)
     translation: They have a cat.
@@ -114,6 +116,7 @@ practice:
     why: With loro, avere is hanno.
 
   - type: fill
+    section: 3
     prompt: "Noi ___ fame."
     hint: (avere)
     translation: We're hungry.
@@ -121,6 +124,7 @@ practice:
     why: Hunger uses avere, and with noi avere is abbiamo.
 
   - type: fill
+    section: 4
     prompt: "___ tre gatti."
     hint: (there are)
     translation: There are three cats.
@@ -128,48 +132,56 @@ practice:
     why: For more than one thing, "there are" is ci sono.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: I'm 14 years old.
     answers: ["Ho 14 anni.", "Ho quattordici anni.", "Io ho 14 anni.", "Io ho quattordici anni."]
     why: Italian uses avere for age — "I have 14 years".
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: Are you hungry? (to a friend)
     answers: ["Hai fame?", "Tu hai fame?"]
     why: Hunger is avere fame, and with tu avere is hai.
 
   - type: translate
+    section: 4
     direction: to-target
     prompt: Is there a bathroom?
     answers: ["C'è un bagno?"]
     why: C'è with a question mark asks "is there…?"
 
   - type: translate
+    section: 1
     direction: to-target
     prompt: I don't have a sister.
     answers: ["Non ho una sorella.", "Io non ho una sorella.", "Non ho sorelle."]
     why: Non goes right before ho.
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: Ho freddo.
     answers: ["I'm cold.", "I am cold.", "I feel cold."]
     why: Feeling cold is avere freddo — "to have cold".
 
   - type: translate
+    section: 4
     direction: to-english
     prompt: Ci sono due cani.
     answers: ["There are two dogs."]
     why: Ci sono means "there are", and cane becomes cani in the plural.
 
   - type: choice
+    section: 2
     prompt: How do you say "I'm 12"?
     options: [Sono 12 anni., Ho 12 anni., Ho 12.]
     answer: Ho 12 anni.
     why: Age uses avere plus the word anni (years).
 
   - type: choice
+    section: 4
     prompt: How do you say "There's a problem"?
     options: [C'è un problema., Ci sono un problema., Che un problema.]
     answer: C'è un problema.

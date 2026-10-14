@@ -86,6 +86,7 @@ words:
 
 practice:
   - type: fill
+    section: 2
     prompt: "___ maison"
     hint: (the)
     translation: the house
@@ -93,6 +94,7 @@ practice:
     why: Maison is feminine, so "the" is la.
 
   - type: fill
+    section: 2
     prompt: "___ livres"
     hint: (the)
     translation: the books
@@ -100,6 +102,7 @@ practice:
     why: Les is "the" for every plural noun.
 
   - type: fill
+    section: 3
     prompt: "___ voiture"
     hint: (a)
     translation: a car
@@ -107,6 +110,7 @@ practice:
     why: Voiture is feminine, so "a" is une.
 
   - type: fill
+    section: 3
     prompt: "___ chats"
     hint: (some)
     translation: (some) cats
@@ -114,48 +118,56 @@ practice:
     why: Des is the plural of un and une — "some", or no word in English.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: the friend (a boy)
     answers: ["l'ami"]
     why: Ami starts with a vowel, so le becomes l'.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: a cake
     answers: [un gâteau]
     why: Gâteau is masculine, so "a" is un.
 
   - type: translate
+    section: 4
     direction: to-target
     prompt: the cakes
     answers: [les gâteaux]
     why: Nouns ending in -eau add -x in the plural, not -s.
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: une fille et un garçon
     answers: ["a girl and a boy"]
     why: Une goes with feminine fille, un with masculine garçon.
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: des pommes
     answers: ["apples", "some apples"]
     why: Des means "some" — English often leaves it out.
 
   - type: choice
+    section: 2
     prompt: Which is correct?
     options: ["le école", "la école", "l'école"]
     answer: "l'école"
     why: Before a vowel, le and la both shorten to l'.
 
   - type: choice
+    section: 4
     prompt: In speech, how can you tell that *les livres* is plural?
     options: ["from the -s on livres", "from the article les"]
     answer: "from the article les"
     why: The plural -s is silent, so the article does the work.
 
   - type: choice
+    section: 1
     prompt: Which noun is masculine?
     options: [table, voiture, gâteau]
     answer: gâteau

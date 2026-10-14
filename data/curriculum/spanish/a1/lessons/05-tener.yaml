@@ -95,6 +95,7 @@ words:
 
 practice:
   - type: fill
+    section: 1
     prompt: "Yo ___ un perro."
     hint: tener
     translation: I have a dog.
@@ -102,6 +103,7 @@ practice:
     why: Tengo is the irregular yo form of tener.
 
   - type: fill
+    section: 2
     prompt: "¿Cuántos años ___?"
     hint: tener, tú
     translation: How old are you?
@@ -109,6 +111,7 @@ practice:
     why: Spanish asks age with tener; tienes is the tú form.
 
   - type: fill
+    section: 1
     prompt: "Ellos ___ una casa."
     hint: tener
     translation: They have a house.
@@ -116,6 +119,7 @@ practice:
     why: Tienen goes with ellos, ellas and ustedes.
 
   - type: fill
+    section: 4
     prompt: "___ un libro en la mesa."
     hint: there is
     translation: There's a book on the table.
@@ -123,48 +127,56 @@ practice:
     why: Hay means "there is" and "there are".
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: I'm hungry.
     answers: [Tengo hambre, Yo tengo hambre]
     why: Spanish says "I have hunger" — tener hambre.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: She's twelve years old.
     answers: [Tiene doce años, Ella tiene doce años, Tiene 12 años, Ella tiene 12 años]
     why: Age always uses tener + años.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: We're cold.
     answers: [Tenemos frío, Nosotros tenemos frío, Nosotras tenemos frío]
     why: Being cold is tener frío; tenemos is the nosotros form.
 
   - type: translate
+    section: 4
     direction: to-english
     prompt: No hay agua.
     answers: [There is no water, There is not any water, There isn't any water]
     why: No hay means "there isn't" or "there aren't".
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: "¿Tienes sueño?"
     answers: [Are you sleepy?, Are you tired?]
     why: Tener sueño means "to be sleepy" — literally "to have sleepiness".
 
   - type: choice
+    section: 2
     prompt: How do you say "I'm 13"?
     options: [Soy trece años., Tengo trece años.]
     answer: Tengo trece años.
     why: Age uses tener, never ser.
 
   - type: choice
+    section: 4
     prompt: "*Hay* means…"
     options: [there is / there are, he has, I have]
     answer: there is / there are
     why: Hay is one word for both "there is" and "there are".
 
   - type: choice
+    section: 4
     prompt: Which is correct?
     options: [Hay el perro en la casa., Hay un perro en la casa.]
     answer: Hay un perro en la casa.

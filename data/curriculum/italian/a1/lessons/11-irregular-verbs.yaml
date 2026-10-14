@@ -91,6 +91,7 @@ words:
 
 practice:
   - type: fill
+    section: 1
     prompt: "Io ___ a scuola."
     hint: (andare)
     translation: I'm going to school.
@@ -98,6 +99,7 @@ practice:
     why: Andare is irregular — io vado.
 
   - type: fill
+    section: 1
     prompt: "Cosa ___ oggi?"
     hint: (fare, tu)
     translation: What are you doing today?
@@ -105,6 +107,7 @@ practice:
     why: Fare with tu is fai.
 
   - type: fill
+    section: 1
     prompt: "Loro ___ a casa."
     hint: (stare)
     translation: They're staying at home.
@@ -112,6 +115,7 @@ practice:
     why: Stare with loro is stanno.
 
   - type: fill
+    section: 1
     prompt: "Noi ___ in Italia."
     hint: (andare)
     translation: We're going to Italy.
@@ -119,6 +123,7 @@ practice:
     why: Noi andiamo — and countries take in.
 
   - type: fill
+    section: 2
     prompt: "Vado ___ Roma."
     hint: (to)
     translation: I'm going to Rome.
@@ -126,42 +131,49 @@ practice:
     why: Cities and towns take a.
 
   - type: translate
+    section: 1
     direction: to-target
     prompt: Are you coming? (to a friend)
     answers: ["Vieni?", "Tu vieni?"]
     why: Venire with tu is vieni.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: It's hot today.
     answers: ["Oggi fa caldo.", "Fa caldo oggi."]
     why: The weather uses fare — fa caldo.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: I'm going home.
     answers: ["Vado a casa.", "Io vado a casa."]
     why: '"Home" is a casa, with no article.'
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: Facciamo colazione.
     answers: ["We have breakfast.", "We're having breakfast.", "We eat breakfast.", "We're eating breakfast.", "Let's have breakfast."]
     why: Fare colazione means "to have breakfast".
 
   - type: translate
+    section: 2
     direction: to-english
     prompt: Vengono da Milano.
     answers: ["They come from Milan.", "They're coming from Milan.", "They are from Milan.", "They come from Milano.", "They're coming from Milano."]
     why: Venire da says where someone comes from.
 
   - type: choice
+    section: 2
     prompt: How do you say "I'm going to the bank"?
     options: [Vado a banca., Vado in banca., Vado in la banca.]
     answer: Vado in banca.
     why: Banca is one of the places that takes in, with no article.
 
   - type: choice
+    section: 3
     prompt: How do you ask "What's the weather like?"
     options: [Che tempo fa?, Che tempo è?, Come è il tempo?]
     answer: Che tempo fa?

@@ -86,6 +86,7 @@ words:
 
 practice:
   - type: fill
+    section: 1
     prompt: "Je ___ français."
     hint: (parler)
     translation: I speak French.
@@ -93,6 +94,7 @@ practice:
     why: For je, take off -er and add -e.
 
   - type: fill
+    section: 1
     prompt: "Nous ___ ici."
     hint: (habiter)
     translation: We live here.
@@ -100,6 +102,7 @@ practice:
     why: For nous, take off -er and add -ons.
 
   - type: fill
+    section: 1
     prompt: "Vous ___ la télé ?"
     hint: (regarder)
     translation: Are you watching TV?
@@ -107,6 +110,7 @@ practice:
     why: For vous, take off -er and add -ez.
 
   - type: fill
+    section: 3
     prompt: "Nous ___ une pizza."
     hint: (manger)
     translation: We're eating a pizza.
@@ -114,48 +118,56 @@ practice:
     why: Verbs in -ger keep an e before -ons so the g stays soft.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: They play. (a group of boys)
     answers: [Ils jouent.]
     why: For ils, add -ent — which is silent.
 
   - type: translate
+    section: 4
     direction: to-target
     prompt: Where do you live? (to a friend)
     answers: ["Où est-ce que tu habites ?", "Tu habites où ?", "Où habites-tu ?", "Où tu habites ?"]
     why: Où means where; put it before est-ce que, or at the end in everyday speech.
 
   - type: translate
+    section: 4
     direction: to-english
     prompt: "Qu'est-ce que tu manges ?"
     answers: ["What are you eating?", "What do you eat?"]
     why: Qu'est-ce que means "what" at the start of a question.
 
   - type: translate
+    section: 1
     direction: to-english
     prompt: Elle travaille aujourd'hui.
     answers: ["She works today.", "She is working today.", "She's working today."]
     why: The French present tense covers both "she works" and "she is working".
 
   - type: choice
+    section: 2
     prompt: Which forms sound exactly the same?
     options: ["parle, parles, parlent", "parlons, parlez"]
     answer: "parle, parles, parlent"
     why: The endings -e, -es and -ent are all silent.
 
   - type: choice
+    section: 4
     prompt: "*Pourquoi… ?* The answer usually starts with…"
     options: [parce que, quand, comment]
     answer: parce que
     why: Pourquoi means why, and parce que means because.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: I like to sing.
     answers: ["J'aime chanter.", "J'aime bien chanter."]
     why: Aimer can be followed directly by an infinitive, and je becomes j' before the vowel.
 
   - type: fill
+    section: 4
     prompt: "___ est-ce que tu travailles ?"
     hint: (when)
     translation: When do you work?

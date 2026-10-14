@@ -103,60 +103,70 @@ words:
 
 practice:
   - type: choice
+    section: 5
     prompt: How do you say *hola*?
     options: [OH-lah, HOH-lah, oh-LAH]
     answer: OH-lah
     why: The h is always silent, and hola ends in a vowel, so the stress is on the second-to-last syllable.
 
   - type: choice
+    section: 2
     prompt: Which letter is always silent?
     options: [h, j, ñ]
     answer: h
     why: H is never pronounced in Spanish; j is a rough h sound and ñ is "ny".
 
   - type: choice
+    section: 2
     prompt: In *gente*, the g sounds like…
     options: [the g in "go", a rough h, the y in "yes"]
     answer: a rough h
     why: G before e or i sounds like the Spanish j.
 
   - type: choice
+    section: 4
     prompt: Which word means "dog"?
     options: [pero, perro]
     answer: perro
     why: Perro has a rolled rr; pero, with a single tapped r, means "but".
 
   - type: choice
+    section: 3
     prompt: How do you spell the k sound before e?
     options: [ke, que, ce]
     answer: que
     why: Spanish writes qu before e and i, and the u is silent — like queso.
 
   - type: choice
+    section: 5
     prompt: Where is the stress in *hablan*?
     options: [HA-blan, ha-BLAN]
     answer: HA-blan
     why: Words ending in n stress the second-to-last syllable.
 
   - type: choice
+    section: 5
     prompt: Where is the stress in *español*?
     options: [es-PA-ñol, es-pa-ÑOL]
     answer: es-pa-ÑOL
     why: Español ends in l, not a vowel, n or s, so the stress is on the last syllable.
 
   - type: choice
+    section: 5
     prompt: Why does *café* have an accent mark?
     options: ["It changes the sound of the e", "It shows the stress is on the last syllable", "It means the word is plural"]
     answer: It shows the stress is on the last syllable
     why: Café ends in a vowel, so without the accent the stress would fall on CA-.
 
   - type: choice
+    section: 3
     prompt: In most of Latin America, *cinco* starts with the sound of…
     options: [s in "sun", th in "think", k in "kite"]
     answer: s in "sun"
     why: C before e or i sounds like s in Latin America, and like th in most of Spain.
 
   - type: fill
+    section: 2
     strict_accents: true
     prompt: "ma___ana"
     hint: tomorrow — the "ny" sound
@@ -165,6 +175,7 @@ practice:
     why: The letter ñ spells the "ny" sound, as in mañana.
 
   - type: translate
+    section: 5
     direction: to-target
     strict_accents: true
     prompt: "yes"
@@ -172,7 +183,22 @@ practice:
     why: Sí with an accent means "yes"; si without one means "if".
 
   - type: choice
+    section: 2
     prompt: How does *ll* sound in *llamo*, in most places?
     options: [like the l in "lamp", like the y in "yes", like the j in "jam"]
     answer: like the y in "yes"
     why: In most of the Spanish-speaking world, ll sounds just like y.
+
+  - type: choice
+    section: 1
+    prompt: How do you say *casa*?
+    options: [KAH-sah, KAH-suh, KAY-sah]
+    answer: KAH-sah
+    why: Spanish vowels never change, so both a's sound like the a in "father", even at the end of the word.
+
+  - type: choice
+    section: 1
+    prompt: The *i* in *sí* sounds like…
+    options: [the ee in "see", the i in "sit", the i in "five"]
+    answer: the ee in "see"
+    why: The Spanish i always sounds like the ee in "see".

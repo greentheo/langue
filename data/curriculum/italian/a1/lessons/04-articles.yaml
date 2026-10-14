@@ -99,12 +99,14 @@ words:
 
 practice:
   - type: choice
+    section: 1
     prompt: Which word is feminine?
     options: [libro, casa, zaino]
     answer: casa
     why: Nouns ending in -a are almost always feminine.
 
   - type: fill
+    section: 3
     prompt: "___ studente"
     hint: the
     translation: the student
@@ -112,6 +114,7 @@ practice:
     why: Studente starts with s + consonant, so the masculine article is lo.
 
   - type: fill
+    section: 3
     prompt: "___ libri"
     hint: the
     translation: the books
@@ -119,6 +122,7 @@ practice:
     why: Libro takes il, and the plural of il is i.
 
   - type: fill
+    section: 4
     prompt: "___ amica"
     hint: a
     translation: a (female) friend
@@ -126,6 +130,7 @@ practice:
     why: Amica is feminine and starts with a vowel, so una shortens to un'.
 
   - type: fill
+    section: 4
     prompt: "___ zaino"
     hint: a
     translation: a backpack
@@ -133,42 +138,49 @@ practice:
     why: Zaino starts with z, so it takes uno — the "a" that goes with lo.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: the friends (all male)
     answers: [gli amici]
     why: Amico starts with a vowel, so its plural article is gli.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: the houses
     answers: [le case]
     why: Casa is feminine; the feminine plural is le, and -a becomes -e.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: the water
     answers: ["l'acqua"]
     why: Acqua starts with a vowel, so la becomes l'.
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: le chiavi
     answers: [the keys]
     why: Le is the feminine plural "the", and chiave becomes chiavi.
 
   - type: translate
+    section: 4
     direction: to-english
     prompt: un ragazzo e una ragazza
     answers: [a boy and a girl]
     why: Un goes with masculine ragazzo, una with feminine ragazza.
 
   - type: choice
+    section: 2
     prompt: What is the plural of *la città*?
     options: [le città, le cittè, le citte]
     answer: le città
     why: Nouns ending in an accented vowel never change in the plural; only the article does.
 
   - type: choice
+    section: 3
     prompt: Which is correct?
     options: [il zaino, lo zaino, l'zaino]
     answer: lo zaino

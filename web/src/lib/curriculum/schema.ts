@@ -56,6 +56,13 @@ const BLANK = "___";
  */
 const StrictAccents = z.boolean().optional();
 
+/**
+ * The lesson section (1 = the first) whose idea the item tests. The guided
+ * path teaches one section at a time and asks that section's questions right
+ * after it, so every item needs one.
+ */
+const Section = z.number().int().min(1).max(8);
+
 const FillItemSchema = z.object({
   type: z.literal("fill"),
   prompt: Text.refine((prompt) => prompt.split(BLANK).length === 2, {
@@ -68,6 +75,7 @@ const FillItemSchema = z.object({
   answers: TextList,
   why: Text,
   strict_accents: StrictAccents,
+  section: Section,
 });
 
 const TranslateItemSchema = z.object({
@@ -77,6 +85,7 @@ const TranslateItemSchema = z.object({
   answers: TextList,
   why: Text,
   strict_accents: StrictAccents,
+  section: Section,
 });
 
 const ChoiceItemSchema = z
@@ -86,6 +95,7 @@ const ChoiceItemSchema = z
     options: z.array(Text).min(2).max(5),
     answer: Text,
     why: Text,
+    section: Section,
   })
   .refine((item) => item.options.includes(item.answer), {
     message: "a choice answer must be exactly one of its options",
@@ -122,6 +132,22 @@ export const LevelFileSchema = z.object({
     )
     .min(3),
   themes: z.array(Text).min(1),
+  /**
+   * The level's sub-levels, in order (A1.1, A1.2, …). Each groups lessons,
+   * phrasebook situations and vocabulary-library categories; the guided path
+   * teaches a unit's contents and counts its progress. Every lesson,
+   * situation and category of the level belongs to exactly one unit.
+   */
+  units: z
+    .array(
+      z.object({
+        title: Text,
+        lessons: z.array(Slug).default([]),
+        situations: z.array(Slug).default([]),
+        categories: z.array(z.string().min(1)).default([]),
+      }),
+    )
+    .optional(),
 });
 
 export const PhraseSchema = z.object({

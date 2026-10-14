@@ -83,6 +83,7 @@ words:
 
 practice:
   - type: fill
+    section: 2
     prompt: "Vado ___ cinema."
     hint: (a + il)
     translation: I'm going to the cinema.
@@ -90,6 +91,7 @@ practice:
     why: A + il = al.
 
   - type: fill
+    section: 2
     prompt: "Il gatto è ___ tavolo."
     hint: (su + il)
     translation: The cat is on the table.
@@ -97,6 +99,7 @@ practice:
     why: Su + il = sul.
 
   - type: fill
+    section: 2
     prompt: "Le chiavi sono ___ borsa."
     hint: (in + la)
     translation: The keys are in the bag.
@@ -104,6 +107,7 @@ practice:
     why: In + la = nella.
 
   - type: fill
+    section: 2
     prompt: "la casa ___ nonni"
     hint: (di + i)
     translation: the grandparents' house
@@ -111,6 +115,7 @@ practice:
     why: Di + i = dei.
 
   - type: fill
+    section: 2
     prompt: "Vengo ___ stazione."
     hint: (da + la)
     translation: I'm coming from the station.
@@ -118,42 +123,49 @@ practice:
     why: Da + la = dalla.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: I'm going to the doctor's.
     answers: ["Vado dal medico.", "Io vado dal medico."]
     why: Da + a person means "to their place", and da + il = dal.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: We're at the airport.
     answers: ["Siamo all'aeroporto.", "Noi siamo all'aeroporto.", "Siamo in aeroporto.", "Noi siamo in aeroporto."]
     why: A + l' = all'.
 
   - type: translate
+    section: 1
     direction: to-target
     prompt: Marco's book
     answers: ["il libro di Marco"]
     why: Italian has no 's — it says "the book of Marco".
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: Andiamo al mare.
     answers: ["We're going to the sea.", "We're going to the seaside.", "We're going to the beach.", "We go to the sea.", "We go to the seaside.", "Let's go to the sea.", "Let's go to the seaside.", "Let's go to the beach."]
     why: Al mare is a + il mare — "to the sea".
 
   - type: translate
+    section: 2
     direction: to-english
     prompt: con i miei amici
     answers: ["with my friends"]
     why: Con doesn't join with the article — con i.
 
   - type: choice
+    section: 2
     prompt: What is *a + gli*?
     options: [agli, ai, alle]
     answer: agli
     why: A + gli = agli, for nouns that take gli.
 
   - type: choice
+    section: 3
     prompt: How do you say "I'm going home"?
     options: [Vado alla casa., Vado a casa., Vado nella casa.]
     answer: Vado a casa.

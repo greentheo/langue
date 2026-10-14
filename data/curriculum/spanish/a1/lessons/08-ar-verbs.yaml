@@ -77,6 +77,7 @@ words:
 
 practice:
   - type: fill
+    section: 2
     prompt: "Yo ___ inglés."
     hint: hablar
     translation: I speak English.
@@ -84,6 +85,7 @@ practice:
     why: The yo ending for -ar verbs is -o.
 
   - type: fill
+    section: 2
     prompt: "Tú ___ mucho."
     hint: trabajar
     translation: You work a lot.
@@ -91,6 +93,7 @@ practice:
     why: The tú ending for -ar verbs is -as.
 
   - type: fill
+    section: 2
     prompt: "Nosotros ___ español."
     hint: estudiar
     translation: We study Spanish.
@@ -98,6 +101,7 @@ practice:
     why: The nosotros ending for -ar verbs is -amos.
 
   - type: fill
+    section: 2
     prompt: "Ellas ___ muy bien."
     hint: bailar
     translation: They dance very well.
@@ -105,6 +109,7 @@ practice:
     why: The ellos/ellas ending for -ar verbs is -an.
 
   - type: fill
+    section: 3
     strict_accents: true
     prompt: "¿___ hablas español?"
     hint: why
@@ -113,43 +118,64 @@ practice:
     why: "\"Why\" is por qué — two words with an accent."
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: Do you speak English? (to a friend)
     answers: ["¿Hablas inglés?", "¿Tú hablas inglés?", "¿Hablas tú inglés?"]
     why: Hablas is the tú form, and Spanish questions don't need "do".
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: We work on Saturday.
     answers: [Trabajamos el sábado, Nosotros trabajamos el sábado, Nosotras trabajamos el sábado, Trabajamos los sábados, Nosotros trabajamos los sábados, Nosotras trabajamos los sábados]
     why: Trabajamos is the nosotros form, and "on Saturday" is el sábado.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: Where do you work? (to a friend)
     answers: ["¿Dónde trabajas?", "¿Dónde trabajas tú?"]
     why: Dónde means "where", and trabajas is the tú form.
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: "¿Cuándo llega Ana?"
     answers: [When does Ana arrive?, When is Ana arriving?, When does Ana get here?]
     why: Cuándo means "when", and llega is the él/ella form of llegar.
 
   - type: translate
+    section: 2
     direction: to-english
     prompt: Él cocina muy bien.
     answers: [He cooks very well, He cooks really well]
     why: Cocina is the él form of cocinar, "to cook".
 
   - type: choice
+    section: 3
     prompt: Which word means "because"?
     options: [por qué, porque, qué]
     answer: porque
     why: Porque, one word with no accent, means "because".
 
   - type: choice
+    section: 2
     prompt: "*Escuchamos* means…"
     options: [I listen, we listen, they listen]
     answer: we listen
     why: The -amos ending belongs to nosotros, "we".
+
+  - type: choice
+    section: 1
+    prompt: Which one is an infinitive — the dictionary form?
+    options: [hablo, hablar, hablas]
+    answer: hablar
+    why: Every Spanish infinitive ends in -ar, -er or -ir, like hablar.
+
+  - type: choice
+    section: 1
+    prompt: Drop the ending from *trabajar*. What is left?
+    options: [trabaj-, trabaja-, traba-]
+    answer: trabaj-
+    why: To use a verb, you drop its -ar, -er or -ir ending and keep the part before it.

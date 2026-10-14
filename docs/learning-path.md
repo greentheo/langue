@@ -1,5 +1,8 @@
 # Learning path: Lessons and Phrases
 
+> The guided path that teaches this content step by step is designed in
+> [guided-path.md](guided-path.md).
+
 Status: **v1 built** — A1 lessons and phrasebooks for Italian, Spanish, French and Portuguese; level overviews A1–C2 for all four.
 
 ## The problem

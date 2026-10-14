@@ -86,6 +86,7 @@ words:
 
 practice:
   - type: fill
+    section: 1
     prompt: "Je vais ___ cinéma."
     hint: (to the)
     translation: I'm going to the cinema.
@@ -93,6 +94,7 @@ practice:
     why: Cinéma is masculine, and à + le always becomes au.
 
   - type: fill
+    section: 1
     prompt: "Nous allons ___ plage."
     hint: (to the)
     translation: We're going to the beach.
@@ -100,6 +102,7 @@ practice:
     why: Plage is feminine, and à la never changes.
 
   - type: fill
+    section: 2
     prompt: "Il vient ___ parc."
     hint: (from the)
     translation: He's coming from the park.
@@ -107,6 +110,7 @@ practice:
     why: Parc is masculine, and de + le always becomes du.
 
   - type: fill
+    section: 3
     prompt: "Elle habite ___ États-Unis."
     hint: (in the)
     translation: She lives in the United States.
@@ -114,6 +118,7 @@ practice:
     why: États-Unis is plural, so à + les becomes aux.
 
   - type: fill
+    section: 3
     prompt: "J'habite ___ France."
     hint: (in)
     translation: I live in France.
@@ -121,42 +126,49 @@ practice:
     why: France is a feminine country, so "in" is en.
 
   - type: translate
+    section: 1
     direction: to-target
     prompt: I'm going to the station.
     answers: [Je vais à la gare.]
     why: Gare is feminine, so à la stays as it is.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: the teacher's book
     answers: [le livre du professeur, le livre du prof]
     why: French says "the book of the teacher", and de + le becomes du.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: They live in Canada.
     answers: [Ils habitent au Canada., Elles habitent au Canada.]
     why: Canada is a masculine country, so "in" is au.
 
   - type: translate
+    section: 4
     direction: to-english
     prompt: Le chat est sous la table.
     answers: ["The cat is under the table.", "The cat's under the table."]
     why: Sous means under.
 
   - type: translate
+    section: 4
     direction: to-english
     prompt: "Le parc est à côté de l'école."
     answers: ["The park is next to the school.", "The park's next to the school.", "The park is beside the school."]
     why: À côté de means next to; de l' doesn't change.
 
   - type: choice
+    section: 1
     prompt: Which is correct?
     options: [Je vais à le parc., Je vais au parc.]
     answer: Je vais au parc.
     why: À + le must always become au.
 
   - type: choice
+    section: 2
     prompt: In *la maison des voisins*, what does *des* mean?
     options: [some, of the]
     answer: of the

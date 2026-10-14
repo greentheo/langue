@@ -79,6 +79,7 @@ words:
 
 practice:
   - type: fill
+    section: 1
     prompt: "Eu ___ pão."
     hint: comer, eu
     translation: I eat bread.
@@ -86,6 +87,7 @@ practice:
     why: -er verbs end in -o with eu, just like -ar verbs.
 
   - type: fill
+    section: 1
     prompt: "Nós ___ português."
     hint: aprender, nós
     translation: We are learning Portuguese.
@@ -93,6 +95,7 @@ practice:
     why: -er verbs end in -emos with nós.
 
   - type: fill
+    section: 2
     prompt: "Eles ___ a janela."
     hint: abrir, eles
     translation: They open the window.
@@ -100,6 +103,7 @@ practice:
     why: -ir verbs end in -em with eles — the same as -er verbs.
 
   - type: fill
+    section: 2
     prompt: "Nós ___ a conta."
     hint: dividir, nós
     translation: We split the bill.
@@ -107,49 +111,71 @@ practice:
     why: -ir verbs keep the i in the nós form — dividimos.
 
   - type: choice
+    section: 2
     prompt: What is the nós form of *partir*?
     options: [partemos, partimos, partamos]
     answer: partimos
     why: -ir verbs end in -imos with nós.
 
   - type: choice
+    section: 1
     prompt: "\"Você ___ português?\" (understand)"
     options: [entende, entendem, entendo]
     answer: entende
     why: Você uses the same form as ele and ela — entende.
 
   - type: translate
+    section: 1
     direction: to-target
     prompt: I drink water.
     answers: [Eu bebo água., Bebo água., Eu tomo água., Tomo água.]
     why: Beber with eu is bebo (and tomar from lesson 8 works too).
 
   - type: translate
+    section: 1
     direction: to-target
     prompt: She writes a letter.
     answers: [Ela escreve uma carta.]
     why: -er verbs end in -e with ela.
 
   - type: translate
+    section: 1
     direction: to-target
     prompt: Do you understand?
     answers: [Você entende?, Entende?, O senhor entende?, A senhora entende?, Vocês entendem?]
     why: Raise your voice at the end and entende becomes a question.
 
   - type: translate
+    section: 1
     direction: to-english
     prompt: Eles vendem livros.
     answers: [They sell books., They are selling books., They're selling books.]
     why: Vender is to sell, and -em is the eles ending.
 
   - type: translate
+    section: 2
     direction: to-english
     prompt: Nós assistimos TV.
     answers: [We watch TV., We are watching TV., We're watching TV., We watch television.]
     why: Assistir means to watch, not to assist.
 
   - type: translate
+    section: 2
     direction: to-english
     prompt: A loja abre às nove.
     answers: [The shop opens at nine., The store opens at nine., The shop opens at 9., The store opens at 9.]
     why: With a loja (it), abrir is abre.
+
+  - type: choice
+    section: 3
+    prompt: In Brazil, the last letter of *escreve* (she writes) sounds like…
+    options: [the e in bed, the ee in see, nothing — it is silent]
+    answer: the ee in see
+    why: A final unstressed -e sounds like i, so escreve ends with an ee sound.
+
+  - type: choice
+    section: 3
+    prompt: How does a Brazilian say *vende* (he sells)?
+    options: [VEN-day, VEN-jee, VEND]
+    answer: VEN-jee
+    why: The final -e sounds like i, and d before an i sound sounds like j, so vende is VEN-jee.

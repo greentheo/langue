@@ -105,30 +105,35 @@ words:
 
 practice:
   - type: translate
+    section: 1
     direction: to-target
     prompt: fifteen
     answers: [quince]
     why: Fifteen is quince — one of the numbers to learn by heart.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: forty-five
     answers: [cuarenta y cinco]
     why: From 31 on, Spanish joins the tens and units with y.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: twenty-two
     answers: [veintidós]
     why: Numbers from 21 to 29 are written as one word.
 
   - type: translate
+    section: 2
     direction: to-english
     prompt: setenta y tres
     answers: [seventy-three, seventy three, "73"]
     why: Setenta is 70, and y tres adds 3.
 
   - type: fill
+    section: 3
     prompt: "¿Cuánto ___?"
     hint: how much are they?
     translation: How much do they cost?
@@ -136,6 +141,7 @@ practice:
     why: Cuestan is for more than one thing; cuesta is for one.
 
   - type: fill
+    section: 4
     prompt: "___ las cuatro y media."
     hint: it is
     translation: It's half past four.
@@ -143,6 +149,7 @@ practice:
     why: Every hour except one o'clock is plural, so it's son las.
 
   - type: fill
+    section: 4
     prompt: "Es ___ una."
     hint: the
     translation: It's one o'clock.
@@ -150,30 +157,35 @@ practice:
     why: One o'clock is singular — es la una — because it's one hora.
 
   - type: translate
+    section: 4
     direction: to-target
     prompt: What time is it?
     answers: ["¿Qué hora es?"]
     why: Spanish asks "what hour is it?".
 
   - type: translate
+    section: 4
     direction: to-target
     prompt: It's ten o'clock.
     answers: [Son las diez]
     why: Ten is more than one, so it's son las diez.
 
   - type: translate
+    section: 5
     direction: to-english
     prompt: Hoy es sábado.
     answers: [Today is Saturday, "Today's Saturday", It is Saturday today]
     why: Hoy means "today" and sábado means "Saturday".
 
   - type: choice
+    section: 5
     prompt: How do you write May 5th in Spanish?
     options: [el cinco de mayo, el mayo cinco, cinco mayo de]
     answer: el cinco de mayo
     why: Dates are el + number + de + month.
 
   - type: choice
+    section: 2
     prompt: Which one is exactly 100?
     options: [ciento, cien, cientos]
     answer: cien

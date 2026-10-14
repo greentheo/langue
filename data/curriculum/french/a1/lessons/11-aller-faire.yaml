@@ -101,6 +101,7 @@ words:
 
 practice:
   - type: fill
+    section: 1
     prompt: "Je ___ à Rome."
     hint: (aller)
     translation: I'm going to Rome.
@@ -108,6 +109,7 @@ practice:
     why: Aller is irregular — with je it is vais.
 
   - type: fill
+    section: 2
     prompt: "Qu'est-ce que vous ___ ?"
     hint: (faire)
     translation: What are you doing?
@@ -115,6 +117,7 @@ practice:
     why: Vous faites is irregular — it doesn't end in -ez.
 
   - type: fill
+    section: 3
     prompt: "Ils ___ le bus."
     hint: (prendre)
     translation: They're taking the bus.
@@ -122,6 +125,7 @@ practice:
     why: Prendre doubles the n in the ils form — prennent.
 
   - type: fill
+    section: 3
     prompt: "Nous ___ de Montréal."
     hint: (venir)
     translation: We come from Montreal.
@@ -129,48 +133,56 @@ practice:
     why: With nous, venir is venons.
 
   - type: translate
+    section: 4
     direction: to-target
     prompt: I'm going to eat.
     answers: [Je vais manger.]
     why: Aller + an infinitive talks about the near future.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: It's cold. (the weather)
     answers: [Il fait froid.]
     why: For weather, French uses il fait.
 
   - type: translate
+    section: 1
     direction: to-target
     prompt: They're going to Paris. (a group of boys)
     answers: [Ils vont à Paris.]
     why: With ils, aller is vont, and à goes before a city.
 
   - type: translate
+    section: 2
     direction: to-english
     prompt: Elle fait les courses.
     answers: ["She does the shopping.", "She is doing the shopping.", "She's doing the shopping.", "She is shopping.", "She's shopping.", "She goes shopping."]
     why: Faire les courses means to do the (food) shopping.
 
   - type: translate
+    section: 4
     direction: to-english
     prompt: Nous allons regarder un film.
     answers: ["We are going to watch a film.", "We're going to watch a film.", "We are going to watch a movie.", "We're going to watch a movie."]
     why: Allons + infinitive is "we're going to…".
 
   - type: choice
+    section: 2
     prompt: Which means "you do" (vous)?
     options: [vous faisez, vous faites, vous fais]
     answer: vous faites
     why: Faites is one of only three vous forms that don't end in -ez (with êtes and dites).
 
   - type: choice
+    section: 4
     prompt: "*Je vais travailler* talks about…"
     options: [the past, right now, the near future]
     answer: the near future
     why: Aller + infinitive means "going to" do something.
 
   - type: translate
+    section: 4
     direction: to-target
     prompt: I'm not going to work tomorrow.
     answers: ["Je ne vais pas travailler demain.", "Demain, je ne vais pas travailler."]

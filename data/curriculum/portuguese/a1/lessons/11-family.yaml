@@ -78,6 +78,7 @@ words:
 
 practice:
   - type: fill
+    section: 1
     prompt: "___ mãe é professora."
     hint: my
     translation: My mother is a teacher.
@@ -85,6 +86,7 @@ practice:
     why: Mãe is feminine, so "my" is minha.
 
   - type: fill
+    section: 3
     prompt: "Nossos ___ moram em Salvador."
     hint: parents
     translation: Our parents live in Salvador.
@@ -92,6 +94,7 @@ practice:
     why: Pais means parents.
 
   - type: fill
+    section: 2
     prompt: "o carro ___"
     hint: her
     translation: her car
@@ -99,6 +102,7 @@ practice:
     why: For "her", Brazilians say dela after the noun.
 
   - type: fill
+    section: 3
     prompt: "Os ___ dela são pequenos."
     hint: children
     translation: Her children are small.
@@ -106,48 +110,56 @@ practice:
     why: Filhos covers sons and daughters together — children.
 
   - type: choice
+    section: 2
     prompt: "\"his house\""
     options: [a casa dele, a sua casa dele, a casa de ele]
     answer: a casa dele
     why: In Brazil "his" is usually dele, after the noun, and de + ele joins into dele.
 
   - type: choice
+    section: 3
     prompt: "\"my grandparents\""
     options: [meus avôs, meus avós, minhas avós]
     answer: meus avós
     why: Meus avós means my grandparents; avôs is only grandfathers and minhas avós is only grandmothers.
 
   - type: translate
+    section: 1
     direction: to-target
     prompt: my brother
     answers: [meu irmão, o meu irmão]
     why: Irmão is masculine, so "my" is meu.
 
   - type: translate
+    section: 1
     direction: to-target
     prompt: our house
     answers: [nossa casa, a nossa casa]
     why: Casa is feminine, so "our" is nossa.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: Their car is new. (their = some boys)
     answers: [O carro deles é novo.]
     why: Deles is "their" for a male or mixed group, and it comes after the noun.
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: A avó dela tem 90 anos.
     answers: [Her grandmother is 90 years old., Her grandmother is 90., Her grandma is 90., Her grandmother is ninety., Her grandmother is ninety years old.]
     why: Avó (open ó) is grandmother, and age uses ter.
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: Meus pais são brasileiros.
     answers: [My parents are Brazilian., My parents are Brazilians.]
     why: Pais means parents.
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: Você tem irmãos?
     answers:

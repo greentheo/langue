@@ -94,6 +94,7 @@ words:
 
 practice:
   - type: fill
+    section: 2
     prompt: "Je ___ américain."
     hint: (être, je)
     translation: I'm American.
@@ -101,6 +102,7 @@ practice:
     why: With je, être is suis.
 
   - type: fill
+    section: 2
     prompt: "Nous ___ ici."
     hint: (être, nous)
     translation: We are here.
@@ -108,6 +110,7 @@ practice:
     why: With nous, être is sommes.
 
   - type: fill
+    section: 2
     prompt: "Vous ___ française ?"
     hint: (être, vous)
     translation: Are you French?
@@ -115,6 +118,7 @@ practice:
     why: With vous, être is êtes — don't forget the accent on the first e.
 
   - type: fill
+    section: 2
     prompt: "Elles ___ là."
     hint: (être, elles)
     translation: They are there.
@@ -122,48 +126,56 @@ practice:
     why: With ils and elles, être is sont.
 
   - type: choice
+    section: 1
     prompt: Which pronoun do you use for a group of two girls and one boy?
     options: [ils, elles]
     answer: ils
     why: Any group with at least one male is ils.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: I'm not tired. (a boy speaking)
     answers: ["Je ne suis pas fatigué."]
     why: Ne goes before the verb and pas after it.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: She is French.
     answers: ["Elle est française."]
     why: Elle takes est, and française has an -e because she is female.
 
   - type: translate
+    section: 4
     direction: to-english
     prompt: "Est-ce que tu es canadien ?"
     answers: ["Are you Canadian?"]
     why: Est-ce que at the front turns a statement into a yes/no question.
 
   - type: translate
+    section: 2
     direction: to-english
     prompt: "On est ici."
     answers: ["We are here.", "We're here."]
     why: In everyday French, on means "we" and takes the same verb as il and elle.
 
   - type: translate
+    section: 4
     direction: to-target
     prompt: Are you English? (asking a boy who is your friend)
     answers: ["Tu es anglais ?", "Est-ce que tu es anglais ?", "Es-tu anglais ?"]
     why: With a friend use tu; any of the three question styles is correct.
 
   - type: choice
+    section: 3
     prompt: Which sentence is a correct negative?
     options: ["Il n'est pas là.", "Il ne est pas là.", "Il est ne pas là."]
     answer: "Il n'est pas là."
     why: Ne goes before the verb and shortens to n' before a vowel.
 
   - type: choice
+    section: 4
     prompt: What is *Es-tu content ?*
     options: ["a formal way to ask a question", "a negative sentence", "an order"]
     answer: "a formal way to ask a question"

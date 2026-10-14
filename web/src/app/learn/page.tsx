@@ -5,12 +5,21 @@ import { availableLanguages, availableLevels, languageLabel } from "@/lib/vocab"
 import { LEVEL_LABELS, type Level } from "@/lib/vocab/types";
 import { getSummary } from "@/lib/progress";
 import { updatePreferences } from "@/lib/settings-actions";
-import { Panel, Stat } from "@/components/crt";
+import { Panel } from "@/components/crt";
 import { RichInline } from "@/components/rich-text";
-import { getLevelCurriculum, levelsWithLessons, levelsWithPhrases } from "@/lib/curriculum";
-import { lessonStatuses, nextLesson } from "@/lib/lessons";
-import { liveStreak } from "@/lib/standings";
+import { getLesson, levelsWithLessons, levelsWithPhrases } from "@/lib/curriculum";
 import { groupsFor, leaderboard } from "@/lib/leaderboard";
+import { getCourse } from "@/lib/path/course";
+import {
+  dueCount,
+  firstOpenUnit,
+  nextIntro,
+  unitIdeas,
+  unitProgress,
+  type IdeaStatus,
+  type UnitProgress,
+} from "@/lib/path/planner";
+import { loadStates, seedFromLessons } from "@/lib/path/store";
 import { StandingsTable } from "@/components/standings-table";
 
 interface MenuEntry {
@@ -66,15 +75,22 @@ export default async function LearnPage() {
   const languageName = languageLabel(language);
   const lessonLevels = levelsWithLessons(language);
   const phraseLevels = levelsWithPhrases(language);
-  const lessonLevel = lessonLevels.includes(user.currentLevel as Level)
-    ? (user.currentLevel as Level)
-    : (lessonLevels[0] ?? null);
-  const pathLessons = lessonLevel ? (getLevelCurriculum(language, lessonLevel)?.lessons ?? []) : [];
-  const statuses = lessonLevel
-    ? await lessonStatuses(user.id, language, lessonLevel)
-    : new Map<string, { bestScore: number; completed: boolean }>();
-  const upNext = nextLesson(pathLessons, statuses);
-  const doneCount = pathLessons.filter((lesson) => statuses.get(lesson.id)?.completed).length;
+
+  // The guided path: what to do next, and how far along each unit is.
+  const course = getCourse(language);
+  const hasPath = course.units.length > 0;
+  const now = new Date();
+  if (hasPath) await seedFromLessons(user.id, language, course, now);
+  const states = hasPath ? await loadStates(user.id, language) : new Map();
+  const units = unitProgress(course, states);
+  const currentIndex = Math.min(firstOpenUnit(course, states), Math.max(0, units.length - 1));
+  const current = units[currentIndex];
+  const ideas = unitIdeas(course, currentIndex, states);
+  const waiting = dueCount(course, states, now);
+  const upNext = nextIntro(course, states);
+  const upNextIdea =
+    upNext?.entry.type === "grammar" ? course.items.get(upNext.entry.key) : undefined;
+  const levelUnits = current ? units.filter((unit) => unit.level === current.level) : [];
 
   // The home screen shows the biggest group's week, top five.
   const groups = await groupsFor(user.id);
@@ -102,21 +118,97 @@ export default async function LearnPage() {
     },
   ];
 
+  const started = states.size > 0;
+
   return (
     <div className="space-y-8">
-      <section>
-        <h1 className="text-xl crt-glow">Hello, {user.displayName}</h1>
-        <div className="mt-4 grid grid-cols-3 gap-4">
-          <Stat label="Points" value={summary.user.points.toLocaleString()} />
-          <Stat
-            label="Streak"
-            value={`${liveStreak(summary.user.streakDays, summary.user.lastActiveAt, new Date())}d`}
-          />
-          <Stat label="Sessions" value={summary.totalSessions} />
-        </div>
-      </section>
+      <h1 className="text-xl crt-glow">Hello, {user.displayName}</h1>
 
-      <Panel title="Course">
+      {hasPath && current ? (
+        <>
+          <Link
+            href="/learn/step"
+            className="block border-2 border-[var(--crt-accent)] px-5 py-4 no-underline hover:bg-[var(--crt-selection)]"
+          >
+            <span className="block text-2xl text-[var(--crt-fg-bright)] crt-glow">
+              ▶ {started ? "Continue" : `Start ${languageName}`}
+            </span>
+            <span className="mt-1 block text-sm text-[var(--crt-fg)]">
+              {current.code} · {current.title} · about 3 minutes
+            </span>
+            <span className="mt-1 block text-xs text-[var(--crt-fg-dim)]">
+              {upNextIdea?.kind === "grammar" ? (
+                <>
+                  Next new idea: <RichInline text={upNextIdea.heading} />
+                  {waiting > 0 ? ` · ${waiting} to review` : ""}
+                </>
+              ) : waiting > 0 ? (
+                `${waiting} to review`
+              ) : (
+                "New words and phrases"
+              )}
+            </span>
+          </Link>
+
+          <Panel title={`Your path · ${languageName} ${current.level.toUpperCase()}`}>
+            <ol className="space-y-3">
+              {levelUnits.map((unit) => (
+                <li key={unit.id}>
+                  <UnitRow unit={unit} current={unit.index === currentIndex} />
+                  {unit.index === currentIndex ? (
+                    <IdeaList ideas={ideas} />
+                  ) : null}
+                </li>
+              ))}
+            </ol>
+            <p className="mt-4 text-xs text-[var(--crt-fg-dim)]">
+              A unit is learned when you can produce everything in it: type the words and phrases,
+              and answer each idea&apos;s questions on three different days. Progress never goes
+              backwards.
+            </p>
+          </Panel>
+        </>
+      ) : (
+        <Panel title="Guided path">
+          <p className="text-sm">
+            The guided path isn&apos;t ready for {languageName} yet. Everything below works.
+          </p>
+        </Panel>
+      )}
+
+      {board && groups[0] ? (
+        <Panel title={`This week · ${groups[0].name}`}>
+          <StandingsTable
+            rows={[
+              ...board.slice(0, 5),
+              // Always show where you are, even below the top five.
+              ...board.slice(5).filter((row) => row.userId === user.id),
+            ]}
+            period="week"
+            viewerId={user.id}
+            compact
+          />
+          <p className="mt-3 text-xs">
+            <Link href="/learn/leaderboard">Full leaderboard &rarr;</Link>
+          </p>
+        </Panel>
+      ) : null}
+
+      <details className="crt-panel p-5" open={!hasPath}>
+        <summary className="cursor-pointer text-sm uppercase tracking-[0.18em] text-[var(--crt-fg-bright)]">
+          More practice
+        </summary>
+        <p className="mt-2 text-xs text-[var(--crt-fg-dim)]">
+          Pick your own activity: read whole lessons, browse phrases, drill, or talk with the tutor.
+        </p>
+
+        <h3 className="mt-5 crt-label">Learn</h3>
+        <MenuList entries={learn} />
+
+        <h3 className="mt-5 crt-label">Practise</h3>
+        <MenuList entries={ACTIVITIES} />
+
+        <h3 className="mt-5 crt-label">Course</h3>
         <form action={updatePreferences} className="flex flex-wrap items-end gap-4">
           <div className="min-w-[10rem]">
             <label className="crt-label" htmlFor="language">
@@ -159,80 +251,108 @@ export default async function LearnPage() {
           </button>
         </form>
         <p className="mt-3 text-xs text-[var(--crt-fg-dim)]">
-          Sessions draw on your level and everything below it.
+          The level sets what the activities above draw on. The guided path keeps its own place.
         </p>
-      </Panel>
 
-      {upNext ? (
-        <Link
-          href={`/learn/lessons/${upNext.id}`}
-          className="block border border-[var(--crt-accent)] px-4 py-3 no-underline hover:bg-[var(--crt-selection)]"
-        >
-          <span className="block text-[0.6875rem] uppercase tracking-[0.18em] text-[var(--crt-accent)]">
-            {doneCount === 0 ? "Start here" : "Continue"} · {lessonLevel?.toUpperCase()} lesson{" "}
-            {upNext.number} of {pathLessons.length}
-          </span>
-          <span className="mt-1 block text-lg text-[var(--crt-fg-bright)] crt-glow">
-            {upNext.title}
-          </span>
-          <span className="block text-xs text-[var(--crt-fg-dim)]">
-            <RichInline text={upNext.goal} />
-          </span>
-        </Link>
-      ) : null}
-
-      {board && groups[0] ? (
-        <Panel title={`This week · ${groups[0].name}`}>
-          <StandingsTable
-            rows={[
-              ...board.slice(0, 5),
-              // Always show where you are, even below the top five.
-              ...board.slice(5).filter((row) => row.userId === user.id),
-            ]}
-            period="week"
-            viewerId={user.id}
-            compact
-          />
-          <p className="mt-3 text-xs">
-            <Link href="/learn/leaderboard">Full leaderboard &rarr;</Link>
-          </p>
-        </Panel>
-      ) : null}
-
-      <Panel title="Learn">
-        <MenuList entries={learn} />
-      </Panel>
-
-      <Panel title="Practise">
-        <MenuList entries={ACTIVITIES} />
-      </Panel>
-
-      {summary.recent.length > 0 ? (
-        <Panel title="Recent">
-          <ul className="space-y-1 text-xs">
-            {summary.recent.map((entry) => (
-              <li key={entry.id} className="flex justify-between gap-4">
-                <span className="text-[var(--crt-fg-dim)]">
-                  {entry.completedAt.toISOString().slice(0, 16).replace("T", " ")}
-                </span>
-                <span>
-                  {entry.activityType.replace("_", " ")} &middot;{" "}
-                  {languageLabel(entry.language)} {entry.level.toUpperCase()}
-                </span>
-                <span className="text-[var(--crt-fg-bright)]">
-                  {entry.itemsCorrect}/{entry.itemsTotal} &middot; +{entry.pointsEarned}
-                </span>
-              </li>
-            ))}
-          </ul>
-        </Panel>
-      ) : null}
+        {summary.recent.length > 0 ? (
+          <>
+            <h3 className="mt-5 crt-label">Recent</h3>
+            <ul className="space-y-1 text-xs">
+              {summary.recent.map((entry) => (
+                <li key={entry.id} className="flex justify-between gap-4">
+                  <span className="text-[var(--crt-fg-dim)]">
+                    {entry.completedAt.toISOString().slice(0, 16).replace("T", " ")}
+                  </span>
+                  <span>
+                    {entry.activityType.replace("_", " ")} &middot;{" "}
+                    {languageLabel(entry.language)} {entry.level.toUpperCase()}
+                  </span>
+                  <span className="text-[var(--crt-fg-bright)]">
+                    {entry.itemsCorrect}/{entry.itemsTotal} &middot; +{entry.pointsEarned}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </>
+        ) : null}
+      </details>
 
       {user.isAdmin ? (
         <p className="text-xs text-[var(--crt-fg-dim)]">
           <Link href="/learn/invites">Manage invite codes &rarr;</Link>
         </p>
       ) : null}
+    </div>
+  );
+}
+
+const IDEA_MARK: Record<IdeaStatus, string> = { new: "○", learning: "◐", learned: "★" };
+
+function UnitRow({ unit, current }: { unit: UnitProgress; current: boolean }) {
+  const percent = unit.percent;
+  return (
+    <div className={current ? "" : "opacity-80"}>
+      <p className="flex items-baseline justify-between gap-3 text-sm">
+        <span>
+          <span className={current ? "text-[var(--crt-accent)]" : "text-[var(--crt-fg-dim)]"}>
+            {unit.code}
+          </span>{" "}
+          <span className={current ? "text-[var(--crt-fg-bright)]" : ""}>{unit.title}</span>
+          {unit.complete ? <span className="ml-2 text-[var(--crt-accent)]">✓</span> : null}
+          {current ? (
+            <span className="ml-2 text-[0.6875rem] uppercase tracking-[0.18em] text-[var(--crt-accent)]">
+              you are here
+            </span>
+          ) : null}
+        </span>
+        <span className="shrink-0 text-xs text-[var(--crt-fg-dim)]">
+          {unit.started || unit.complete ? `${percent}%` : ""}
+        </span>
+      </p>
+      <div className="mt-1 h-1.5 border border-[var(--crt-rule)]">
+        <div className="h-full bg-[var(--crt-accent)]" style={{ width: `${percent}%` }} />
+      </div>
+    </div>
+  );
+}
+
+function IdeaList({ ideas }: { ideas: ReturnType<typeof unitIdeas> }) {
+  // Grouped by lesson, with a link to read each one whole.
+  const lessons = [...new Set(ideas.map((idea) => idea.lessonId))];
+  return (
+    <div className="mt-3 space-y-3 border-l border-[var(--crt-rule)] pl-4">
+      {lessons.map((lessonId) => {
+        const lesson = getLesson(lessonId);
+        return (
+          <div key={lessonId} className="text-sm">
+            <p className="text-xs text-[var(--crt-fg-dim)]">
+              {lesson?.title}{" "}
+              <Link href={`/learn/lessons/${lessonId}`} className="ml-1">
+                read the whole lesson
+              </Link>
+            </p>
+            <ul className="mt-1 space-y-0.5">
+              {ideas
+                .filter((idea) => idea.lessonId === lessonId)
+                .map((idea) => (
+                  <li key={idea.key} title={idea.status}>
+                    <span
+                      className={
+                        idea.status === "new" ? "text-[var(--crt-fg-dim)]" : "text-[var(--crt-accent)]"
+                      }
+                      aria-label={idea.status}
+                    >
+                      {IDEA_MARK[idea.status]}
+                    </span>{" "}
+                    <span className={idea.status === "new" ? "text-[var(--crt-fg-dim)]" : ""}>
+                      <RichInline text={idea.heading} />
+                    </span>
+                  </li>
+                ))}
+            </ul>
+          </div>
+        );
+      })}
     </div>
   );
 }

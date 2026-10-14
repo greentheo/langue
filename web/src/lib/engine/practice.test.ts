@@ -5,6 +5,7 @@ import type { PracticeItem } from "@/lib/curriculum/schema";
 
 const fill: PracticeItem = {
   type: "fill",
+  section: 1,
   prompt: "Lui ___ stanco.",
   hint: "essere",
   answers: ["è"],
@@ -13,6 +14,7 @@ const fill: PracticeItem = {
 
 const toEnglish: PracticeItem = {
   type: "translate",
+  section: 1,
   direction: "to-english",
   prompt: "Come ti chiami?",
   answers: ["What's your name?"],
@@ -21,6 +23,7 @@ const toEnglish: PracticeItem = {
 
 const toTarget: PracticeItem = {
   type: "translate",
+  section: 1,
   direction: "to-target",
   prompt: "I am tired (a woman speaking)",
   answers: ["Sono stanca.", "Io sono stanca."],
@@ -29,6 +32,7 @@ const toTarget: PracticeItem = {
 
 const choice: PracticeItem = {
   type: "choice",
+  section: 1,
   prompt: "Which article does *zaino* take?",
   options: ["il", "lo"],
   answer: "lo",
@@ -37,6 +41,7 @@ const choice: PracticeItem = {
 
 const cedilla: PracticeItem = {
   type: "fill",
+  section: 1,
   prompt: "gar___on",
   hint: "c or ç?",
   answers: ["ç"],
@@ -70,6 +75,7 @@ describe("gradePracticeItem", () => {
   test("a choice compares capitals and accents exactly", () => {
     const spelling: PracticeItem = {
       type: "choice",
+      section: 1,
       prompt: "Which is spelled correctly?",
       options: ["Lunedì", "lunedì", "lunedi"],
       answer: "lunedì",

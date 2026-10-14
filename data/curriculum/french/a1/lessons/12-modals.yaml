@@ -85,6 +85,7 @@ words:
 
 practice:
   - type: fill
+    section: 3
     prompt: "Je ___ un croissant, s'il vous plaît."
     hint: (polite — I would like)
     translation: I'd like a croissant, please.
@@ -92,6 +93,7 @@ practice:
     why: Je voudrais is the polite way to ask for something.
 
   - type: fill
+    section: 2
     prompt: "Tu ___ venir ?"
     hint: (pouvoir)
     translation: Can you come?
@@ -99,6 +101,7 @@ practice:
     why: With tu, pouvoir is peux.
 
   - type: fill
+    section: 2
     prompt: "Nous ___ travailler."
     hint: (devoir)
     translation: We have to work.
@@ -106,6 +109,7 @@ practice:
     why: With nous, devoir is devons.
 
   - type: fill
+    section: 1
     prompt: "Ils ___ un chat."
     hint: (vouloir)
     translation: They want a cat.
@@ -113,48 +117,56 @@ practice:
     why: With ils and elles, vouloir is veulent.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: I would like a tea, please.
     answers: ["Je voudrais un thé, s'il vous plaît.", "Je voudrais un thé, s'il te plaît.", "Je voudrais un thé."]
     why: Je voudrais is polite, and s'il vous plaît means please.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: Can I come?
     answers: ["Je peux venir ?", "Est-ce que je peux venir ?", "Puis-je venir ?"]
     why: Pouvoir + infinitive asks permission.
 
   - type: translate
+    section: 4
     direction: to-target
     prompt: The bill, please. (in a restaurant)
     answers: ["L'addition, s'il vous plaît."]
     why: The bill in a café or restaurant is l'addition.
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: "Vous pouvez répéter, s'il vous plaît ?"
     answers: ["Can you repeat that, please?", "Could you repeat that, please?", "Can you repeat, please?", "Could you repeat, please?", "Can you say that again, please?"]
     why: Pouvoir + répéter — a phrase you'll use a lot while learning.
 
   - type: translate
+    section: 2
     direction: to-english
     prompt: Elle doit travailler.
     answers: ["She must work.", "She has to work.", "She needs to work.", "She's got to work."]
     why: Devoir means must or have to.
 
   - type: choice
+    section: 4
     prompt: Which is the most polite in a café?
     options: ["Je veux un café.", "Je voudrais un café, s'il vous plaît."]
     answer: "Je voudrais un café, s'il vous plaît."
     why: Je voudrais plus s'il vous plaît is polite; je veux sounds demanding.
 
   - type: choice
+    section: 2
     prompt: Which is correct?
     options: [Je peux venir., Je peux viens., Je peux à venir.]
     answer: Je peux venir.
     why: After pouvoir, the next verb stays in the infinitive, with no word in between.
 
   - type: fill
+    section: 1
     prompt: "Vous ___ un dessert ?"
     hint: (vouloir)
     translation: Do you want a dessert?

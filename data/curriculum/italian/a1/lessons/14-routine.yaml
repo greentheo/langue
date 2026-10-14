@@ -84,6 +84,7 @@ words:
 
 practice:
   - type: fill
+    section: 1
     prompt: "Io ___ alzo alle otto."
     hint: (myself)
     translation: I get up at eight.
@@ -91,6 +92,7 @@ practice:
     why: Reflexive verbs need mi with io.
 
   - type: fill
+    section: 1
     prompt: "Noi ci ___ presto."
     hint: (svegliarsi)
     translation: We wake up early.
@@ -98,6 +100,7 @@ practice:
     why: With noi, it's ci + the -iamo form.
 
   - type: fill
+    section: 1
     prompt: "Lei si ___ in fretta."
     hint: (vestirsi)
     translation: She gets dressed in a hurry.
@@ -105,6 +108,7 @@ practice:
     why: Vestirsi is an -ire verb, so lei si veste.
 
   - type: fill
+    section: 1
     prompt: "A che ora ___ alzi?"
     hint: (yourself)
     translation: What time do you get up?
@@ -112,48 +116,56 @@ practice:
     why: With tu, the little word is ti.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: I get up at seven.
     answers: ["Mi alzo alle sette.", "Io mi alzo alle sette.", "Mi alzo alle 7.", "Io mi alzo alle 7."]
     why: Alle is a + le, used for "at" with times.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: I never watch TV.
     answers: ["Non guardo mai la TV.", "Io non guardo mai la TV.", "Non guardo mai la televisione.", "Io non guardo mai la televisione."]
     why: '"Never" is non + verb + mai.'
 
   - type: translate
+    section: 1
     direction: to-target
     prompt: They have fun.
     answers: ["Si divertono.", "Loro si divertono."]
     why: Divertirsi is an -ire verb — loro si divertono.
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: Il sabato mi sveglio tardi.
     answers: ["On Saturdays I wake up late.", "I wake up late on Saturdays.", "On Saturday I wake up late.", "I wake up late on Saturday."]
     why: Il sabato, with the article, means every Saturday.
 
   - type: translate
+    section: 1
     direction: to-english
     prompt: Ti diverti?
     answers: ["Are you having fun?", "Do you have fun?", "Are you enjoying yourself?"]
     why: Divertirsi means "to have fun", and ti diverti is the tu form.
 
   - type: translate
+    section: 2
     direction: to-english
     prompt: Pranzo all'una.
     answers: ["I have lunch at one.", "I eat lunch at one.", "I have lunch at one o'clock.", "I eat lunch at one o'clock.", "I have lunch at 1."]
     why: All'una means "at one o'clock".
 
   - type: choice
+    section: 1
     prompt: How do you say "I get up"?
     options: [Alzo., Mi alzo., Io alzo.]
     answer: Mi alzo.
     why: Reflexive verbs always need the little word — mi with io.
 
   - type: choice
+    section: 3
     prompt: How do you say "I never sleep"?
     options: [Mai dormo., Non dormo mai., Dormo non mai.]
     answer: Non dormo mai.

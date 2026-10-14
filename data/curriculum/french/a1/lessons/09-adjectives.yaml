@@ -92,6 +92,7 @@ words:
 
 practice:
   - type: fill
+    section: 1
     prompt: "une ___ maison"
     hint: (petit)
     translation: a small house
@@ -99,6 +100,7 @@ practice:
     why: Maison is feminine, so petit adds -e — and petit goes before the noun.
 
   - type: fill
+    section: 1
     prompt: "des chats ___"
     hint: (noir)
     translation: black cats
@@ -106,6 +108,7 @@ practice:
     why: Chats is masculine plural, so noir adds -s.
 
   - type: fill
+    section: 1
     prompt: "une voiture ___"
     hint: (blanc)
     translation: a white car
@@ -113,6 +116,7 @@ practice:
     why: Blanc has an irregular feminine, blanche.
 
   - type: fill
+    section: 4
     prompt: "___ livre"
     hint: (this)
     translation: this book
@@ -120,6 +124,7 @@ practice:
     why: Livre is masculine and starts with a consonant, so "this" is ce.
 
   - type: fill
+    section: 4
     prompt: "___ école"
     hint: (this)
     translation: this school
@@ -127,42 +132,49 @@ practice:
     why: École is feminine, so "this" is cette — even before a vowel.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: a good book
     answers: [un bon livre]
     why: Bon is one of the BAGS adjectives, so it goes before the noun.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: a red car
     answers: [une voiture rouge]
     why: Colours go after the noun, and rouge is the same in the feminine.
 
   - type: translate
+    section: 4
     direction: to-target
     prompt: these girls
     answers: [ces filles]
     why: Ces is "these" or "those" for any plural noun.
 
   - type: translate
+    section: 4
     direction: to-english
     prompt: Elle est très contente.
     answers: ["She is very happy.", "She's very happy.", "She is very pleased.", "She's very pleased.", "She is very glad.", "She's very glad."]
     why: Très means very, and contente has -e because elle is feminine.
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: un vieil ami
     answers: ["an old friend"]
     why: Vieux becomes vieil before a masculine noun starting with a vowel.
 
   - type: choice
+    section: 2
     prompt: Which is correct?
     options: [une maison grande, une grande maison]
     answer: une grande maison
     why: Grand is a size adjective (the S in BAGS), so it goes before the noun.
 
   - type: choice
+    section: 4
     prompt: Before a masculine noun starting with a vowel, *ce* becomes…
     options: [cet, cette, "c'"]
     answer: cet

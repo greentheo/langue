@@ -11,6 +11,7 @@ export const ACTIVITY_TYPES = [
   "reading",
   "lesson",
   "phrases",
+  "step",
 ] as const;
 
 export type ActivityType = (typeof ACTIVITY_TYPES)[number];

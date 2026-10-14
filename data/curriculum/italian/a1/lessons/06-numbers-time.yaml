@@ -107,30 +107,35 @@ words:
 
 practice:
   - type: translate
+    section: 1
     direction: to-target
     prompt: "17 (write it as a word)"
     answers: [diciassette]
     why: 17, 18 and 19 start with dici-.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: "21 (write it as a word)"
     answers: [ventuno]
     why: Before uno, venti drops its final i.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: "38 (write it as a word)"
     answers: [trentotto]
     why: Before otto, trenta drops its final a.
 
   - type: translate
+    section: 2
     direction: to-english
     prompt: quarantacinque
     answers: ["45", "forty-five", "forty five"]
     why: Quaranta (40) plus cinque (5) makes one word.
 
   - type: fill
+    section: 2
     prompt: "Quanto ___ il gelato?"
     hint: (costare — one thing)
     translation: How much is the ice cream?
@@ -138,6 +143,7 @@ practice:
     why: One thing costa; two or more things costano.
 
   - type: fill
+    section: 3
     prompt: "___ l'una."
     hint: (it is)
     translation: It's one o'clock.
@@ -145,6 +151,7 @@ practice:
     why: One o'clock is singular, so it takes è — not sono le.
 
   - type: fill
+    section: 3
     prompt: "Sono le tre e ___."
     hint: (half)
     translation: It's half past three.
@@ -152,30 +159,35 @@ practice:
     why: Half past is e mezza (some people say e mezzo).
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: It's eight o'clock.
     answers: ["Sono le otto.", "Sono le 8.", "Sono le venti.", "Sono le 20."]
     why: The hours are plural, so you say sono le + the number.
 
   - type: translate
+    section: 4
     direction: to-target
     prompt: Today is Saturday.
     answers: ["Oggi è sabato.", "È sabato oggi."]
     why: Days of the week take a small letter.
 
   - type: translate
+    section: 4
     direction: to-english
     prompt: il primo marzo
     answers: ["the first of March", "March first", "March 1", "1 March", "the 1st of March", "March 1st"]
     why: The first of the month is il primo; other dates use the plain number.
 
   - type: choice
+    section: 3
     prompt: Which one is "quarter to nine"?
     options: [Sono le nove meno un quarto., Sono le nove e un quarto., Sono le otto e mezza.]
     answer: Sono le nove meno un quarto.
     why: Meno means "minus" — nine minus a quarter.
 
   - type: choice
+    section: 4
     prompt: Which is spelled correctly?
     options: [Lunedì, lunedì, lunedi]
     answer: lunedì

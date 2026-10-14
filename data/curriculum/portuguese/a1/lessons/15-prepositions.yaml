@@ -80,6 +80,7 @@ words:
 
 practice:
   - type: fill
+    section: 2
     prompt: "Moro ___ Brasil."
     hint: em + o
     translation: I live in Brazil.
@@ -87,6 +88,7 @@ practice:
     why: Em + o joins into no.
 
   - type: fill
+    section: 2
     prompt: "Ela está ___ escola."
     hint: em + a
     translation: She is at school.
@@ -94,6 +96,7 @@ practice:
     why: Em + a joins into na.
 
   - type: fill
+    section: 3
     prompt: "Vamos ___ cinema."
     hint: a + o
     translation: Let's go to the cinema.
@@ -101,6 +104,7 @@ practice:
     why: A + o joins into ao.
 
   - type: fill
+    section: 4
     prompt: "Obrigada ___ ajuda."
     hint: por + a
     translation: Thanks for the help.
@@ -108,6 +112,7 @@ practice:
     why: Thanking someone for something uses por, and por + a becomes pela.
 
   - type: fill
+    section: 1
     prompt: "Eles são ___ Estados Unidos."
     hint: de + os
     translation: They are from the United States.
@@ -115,42 +120,49 @@ practice:
     why: Os Estados Unidos is plural, so de + os becomes dos.
 
   - type: choice
+    section: 2
     prompt: "\"I live in São Paulo.\""
     options: [Moro no São Paulo., Moro em São Paulo., Moro na São Paulo.]
     answer: Moro em São Paulo.
     why: Most cities take no article, so em stays em.
 
   - type: choice
+    section: 1
     prompt: "\"at three o'clock\""
     options: [às três, as três, a três]
     answer: às três
     why: At + a time is a + as (horas), which joins into às.
 
   - type: choice
+    section: 3
     prompt: "\"We're going to the beach.\" (written Portuguese)"
     options: [Vamos à praia., Vamos a praia., Vamos na praia.]
     answer: Vamos à praia.
     why: A + a joins into à, with a backwards accent.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: The book is on the table.
     answers: [O livro está na mesa., O livro está em cima da mesa.]
     why: Em means "on" as well as "in", and em + a mesa becomes na mesa.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: I live in a big house.
     answers: [Moro numa casa grande., Eu moro numa casa grande., Moro em uma casa grande., Eu moro em uma casa grande.]
     why: Em + uma can join into numa.
 
   - type: translate
+    section: 4
     direction: to-english
     prompt: Passamos pelo parque.
     answers: [We go through the park., We pass through the park., We walk through the park., We go by the park., We pass by the park.]
     why: Pelo is por + o — through (or by) the park.
 
   - type: translate
+    section: 2
     direction: to-english
     prompt: Ele trabalha no mercado.
     answers: [He works at the market., He works in the market., He works at the supermarket., He works at the grocery store.]

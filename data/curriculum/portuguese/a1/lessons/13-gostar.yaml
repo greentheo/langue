@@ -77,6 +77,7 @@ words:
 
 practice:
   - type: fill
+    section: 1
     prompt: "Eu ___ de chocolate."
     hint: gostar, eu
     translation: I like chocolate.
@@ -84,6 +85,7 @@ practice:
     why: Gostar is a regular -ar verb — with eu it is gosto.
 
   - type: fill
+    section: 2
     prompt: "Ela gosta ___ música."
     hint: de + a
     translation: She likes the music.
@@ -91,6 +93,7 @@ practice:
     why: De + a joins into da.
 
   - type: fill
+    section: 2
     prompt: "Nós gostamos ___ livros."
     hint: de + os
     translation: We like the books.
@@ -98,6 +101,7 @@ practice:
     why: De + os joins into dos.
 
   - type: fill
+    section: 1
     prompt: "Eles gostam ___ dançar."
     hint: the little word gostar needs
     translation: They like dancing.
@@ -105,48 +109,56 @@ practice:
     why: Gostar always takes de, even before another verb.
 
   - type: choice
+    section: 2
     prompt: "\"I like Brazil.\""
     options: [Gosto Brasil., Gosto do Brasil., Gosto de o Brasil.]
     answer: Gosto do Brasil.
     why: Gostar needs de, and de + o always joins into do.
 
   - type: choice
+    section: 3
     prompt: "\"Você gosta de futebol?\" The most natural Brazilian \"yes\" is…"
     options: [Sim gosta., Gosto!, "Sim, eu gosta."]
     answer: Gosto!
     why: Brazilians say yes by repeating the verb in their own form.
 
   - type: choice
+    section: 3
     prompt: "\"Me neither.\""
     options: [Eu também., Eu também não., Não também.]
     answer: Eu também não.
     why: Também não means "not either" — eu também não, me neither.
 
   - type: translate
+    section: 1
     direction: to-target
     prompt: I like to swim.
     answers: [Gosto de nadar., Eu gosto de nadar.]
     why: Gostar de + infinitive.
 
   - type: translate
+    section: 1
     direction: to-target
     prompt: Do you like pizza?
     answers: [Você gosta de pizza?, Gosta de pizza?, O senhor gosta de pizza?, A senhora gosta de pizza?, Vocês gostam de pizza?]
     why: Don't forget the de after gostar.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: We don't like the beach.
     answers: [Nós não gostamos da praia., Não gostamos da praia., A gente não gosta da praia.]
     why: Não goes before the verb, and de + a joins into da.
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: Adoro música brasileira.
     answers: [I love Brazilian music.]
     why: Adorar means to love (things), and it takes no de.
 
   - type: translate
+    section: 1
     direction: to-english
     prompt: Minha irmã gosta de jogar futebol.
     answers: [My sister likes to play soccer., My sister likes playing soccer., My sister likes to play football., My sister likes playing football.]

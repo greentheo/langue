@@ -103,42 +103,49 @@ words:
 
 practice:
   - type: choice
+    section: 2
     prompt: How is *ciao* pronounced?
     options: [CHOW, see-OW, kee-OW]
     answer: CHOW
     why: Ci before another vowel is a soft "ch", and the i is silent.
 
   - type: choice
+    section: 2
     prompt: In *chiave*, the *ch* sounds like…
     options: [the k in key, the ch in cheese, the sh in shoe]
     answer: the k in key
     why: In Italian, ch is always a hard k sound.
 
   - type: choice
+    section: 3
     prompt: Which word has a *sh* sound?
     options: [pesce, scuola, casa]
     answer: pesce
     why: Sc before e or i sounds like sh; before a, o or u it is sk.
 
   - type: choice
+    section: 4
     prompt: Which word means "grandfather"?
     options: [nonno, nono]
     answer: nonno
     why: The double n is held longer, and it changes the word — nono means "ninth".
 
   - type: choice
+    section: 4
     prompt: Where is the stress in *città*?
     options: ["on the first syllable: CHEET-tah", "on the last syllable: cheet-TAH"]
     answer: "on the last syllable: cheet-TAH"
     why: A written accent on the last vowel means the stress falls there.
 
   - type: choice
+    section: 2
     prompt: How is *gelato* pronounced?
     options: [geh-LAH-toh (g as in go), jeh-LAH-toh (g as in jam)]
     answer: jeh-LAH-toh (g as in jam)
     why: G before e or i is soft, like the j in jam.
 
   - type: fill
+    section: 2
     prompt: "___iave"
     hint: (key — starts with a k sound)
     translation: key
@@ -146,12 +153,14 @@ practice:
     why: Before i, a k sound is spelled ch.
 
   - type: fill
+    section: 2
     prompt: "spa___etti"
     hint: (hard g, as in go)
     answers: [gh]
     why: To keep g hard before e or i, add an h — ghe, ghi.
 
   - type: fill
+    section: 3
     prompt: "fami___a"
     hint: (the lli sound in million)
     translation: family
@@ -159,6 +168,7 @@ practice:
     why: The sound of lli in million is spelled gli.
 
   - type: fill
+    section: 3
     prompt: "ba___o"
     hint: (the ny sound in canyon)
     translation: bathroom
@@ -166,19 +176,36 @@ practice:
     why: The ny sound in canyon is spelled gn.
 
   - type: translate
+    section: 4
     direction: to-target
     prompt: seven
     answers: [sette]
     why: Sette has a double t — with a single t, sete means "thirst".
 
   - type: translate
+    section: 4
     direction: to-target
     prompt: why
     answers: [perché]
     why: Perché has an accent because the stress falls on its last syllable.
 
   - type: translate
+    section: 2
     direction: to-english
     prompt: gelato
     answers: [ice cream, gelato]
     why: Gelato is Italian ice cream — and the g is soft, like a j.
+
+  - type: choice
+    section: 1
+    prompt: How is *bene* pronounced?
+    options: [BEH-neh, BEEN, BAYN]
+    answer: BEH-neh
+    why: Every Italian vowel is pronounced, even a final e, so bene is BEH-neh.
+
+  - type: choice
+    section: 1
+    prompt: In *uno*, the *u* sounds like…
+    options: [the oo in moon, the u in cup, the u in use]
+    answer: the oo in moon
+    why: Italian u always sounds like the oo in moon.

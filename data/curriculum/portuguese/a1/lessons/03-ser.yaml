@@ -100,6 +100,7 @@ words:
 
 practice:
   - type: fill
+    section: 2
     prompt: "Eu ___ estudante."
     hint: ser, eu
     translation: I am a student.
@@ -107,6 +108,7 @@ practice:
     why: With eu, ser is sou.
 
   - type: fill
+    section: 2
     prompt: "Nós ___ americanos."
     hint: ser, nós
     translation: We are American.
@@ -114,6 +116,7 @@ practice:
     why: With nós, ser is somos.
 
   - type: fill
+    section: 2
     prompt: "Eles ___ de Lisboa."
     hint: ser, eles
     translation: They are from Lisbon.
@@ -121,6 +124,7 @@ practice:
     why: Vocês, eles and elas share the form são.
 
   - type: fill
+    section: 1
     prompt: "A gente ___ de Recife."
     hint: ser, a gente
     translation: We are from Recife.
@@ -128,48 +132,56 @@ practice:
     why: A gente means "we", but it takes the same verb form as ele and ela — é.
 
   - type: choice
+    section: 1
     prompt: Which word means "they" for a group of girls?
     options: [eles, elas, vocês]
     answer: elas
     why: Elas is only for women or girls; eles is for men or mixed groups.
 
   - type: choice
+    section: 4
     prompt: How does a man say "I'm not American"?
     options: [Não sou americano., Sou não americano., Não americano sou.]
     answer: Não sou americano.
     why: Não goes right before the verb.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: She is a teacher.
     answers: [Ela é professora., Ela é uma professora.]
     why: Ser is é with ela, and professor becomes professora for a woman.
 
   - type: translate
+    section: 4
     direction: to-target
     prompt: Are you Brazilian? (to a man)
     answers: [Você é brasileiro?, O senhor é brasileiro?]
     why: A question uses the same words as a statement — just raise your voice at the end.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: We are from Boston.
     answers: [Nós somos de Boston., Somos de Boston., A gente é de Boston.]
     why: Ser + de + a city says where you are from.
 
   - type: translate
+    section: 4
     direction: to-english
     prompt: Não sou de São Paulo.
     answers: [I'm not from São Paulo., I am not from São Paulo.]
     why: Não before the verb makes the sentence negative.
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: De onde você é?
     answers: [Where are you from?, Where do you come from?]
     why: De onde literally means "from where".
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: Elas são canadenses.
     answers: [They are Canadian., They're Canadian., They are Canadians.]

@@ -89,18 +89,21 @@ words:
 
 practice:
   - type: choice
+    section: 1
     prompt: Is the final t of *petit* pronounced?
     options: ["Yes", "No"]
     answer: "No"
     why: Most final consonants in French are silent, and t is one of them.
 
   - type: choice
+    section: 3
     prompt: Which word has the "oo" sound, as in *food*?
     options: [tu, tout]
     answer: tout
     why: The spelling ou makes the "oo" sound; u on its own is the rounded "ee" sound.
 
   - type: fill
+    section: 2
     strict_accents: true
     prompt: "gar___on"
     hint: (c or ç?)
@@ -109,6 +112,7 @@ practice:
     why: Before o, a plain c sounds like k; the cédille in ç keeps it soft, like s.
 
   - type: fill
+    section: 2
     strict_accents: true
     prompt: "caf___"
     hint: (e or é?)
@@ -117,6 +121,7 @@ practice:
     why: A final é is pronounced "ay"; a plain final e would be silent.
 
   - type: fill
+    section: 2
     strict_accents: true
     prompt: "fran___ais"
     hint: (c or ç?)
@@ -125,42 +130,49 @@ practice:
     why: Before a, c needs a cédille to sound like s.
 
   - type: choice
+    section: 3
     prompt: What happens to the n in *bon*?
     options: ["It is pronounced like an English n", "It is silent, and the o goes through the nose"]
     answer: "It is silent, and the o goes through the nose"
     why: Vowel + n at the end of a syllable makes a nasal vowel; the n itself is not pronounced.
 
   - type: choice
+    section: 4
     prompt: How is *deux amis* pronounced?
     options: ["duh-a-mee", "duh-za-mee"]
     answer: "duh-za-mee"
     why: In liaison the silent x of deux comes back as a z sound before the vowel.
 
   - type: translate
+    section: 4
     direction: to-english
     prompt: deux
     answers: ["two"]
     why: Deux is pronounced "duh" — the x is silent.
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: pain
     answers: ["bread"]
     why: Pain means bread, and its ain is a nasal vowel, so it sounds nothing like English "pain".
 
   - type: translate
+    section: 1
     direction: to-target
     prompt: three
     answers: [trois]
     why: Trois is pronounced "trwa" — the final s is silent.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: boy
     answers: [garçon]
     why: Garçon needs the cédille so the c sounds like s.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: coffee
     answers: [café]

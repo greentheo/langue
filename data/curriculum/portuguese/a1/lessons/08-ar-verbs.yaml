@@ -84,6 +84,7 @@ words:
 
 practice:
   - type: fill
+    section: 1
     prompt: "Eu ___ em Curitiba."
     hint: morar, eu
     translation: I live in Curitiba.
@@ -91,6 +92,7 @@ practice:
     why: -ar verbs end in -o with eu.
 
   - type: fill
+    section: 2
     prompt: "Nós ___ português."
     hint: estudar, nós
     translation: We study Portuguese.
@@ -98,6 +100,7 @@ practice:
     why: -ar verbs end in -amos with nós.
 
   - type: fill
+    section: 2
     prompt: "Eles ___ aqui."
     hint: trabalhar, eles
     translation: They work here.
@@ -105,6 +108,7 @@ practice:
     why: -ar verbs end in -am with vocês, eles and elas.
 
   - type: fill
+    section: 3
     prompt: "___ você mora?"
     hint: where
     translation: Where do you live?
@@ -112,48 +116,56 @@ practice:
     why: Onde means where, and it goes first in the question.
 
   - type: choice
+    section: 3
     prompt: "\"Why do you study Portuguese?\""
     options: [Por que você estuda português?, Porque você estuda português?, Por quê você estuda português?]
     answer: Por que você estuda português?
     why: At the start of a question, "why" is por que — two words, no accent.
 
   - type: choice
+    section: 3
     prompt: "\"What's your name?\""
     options: [Qual é o seu nome?, O que é o seu nome?]
     answer: Qual é o seu nome?
     why: To ask for a specific piece of information like a name, use qual é.
 
   - type: translate
+    section: 1
     direction: to-target
     prompt: She speaks English.
     answers: [Ela fala inglês.]
     why: With ela, -ar verbs end in -a.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: Where do you work?
     answers: [Onde você trabalha?, Você trabalha onde?, Onde o senhor trabalha?, Onde a senhora trabalha?, Onde vocês trabalham?]
     why: Question word first, then the verb — no "do" needed.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: We buy bread.
     answers: [Nós compramos pão., Compramos pão., A gente compra pão.]
     why: Comprar with nós is compramos — and with a gente it is compra.
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: Quando vocês chegam?
     answers: [When do you arrive?, When are you arriving?, When do you get here?, When do you guys arrive?, When do you all arrive?]
     why: Quando means when; chegam is the vocês form of chegar.
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: O que você estuda?
     answers: [What do you study?, What are you studying?]
     why: O que means what.
 
   - type: translate
+    section: 1
     direction: to-english
     prompt: Eu não falo inglês.
     answers: [I don't speak English., I do not speak English.]

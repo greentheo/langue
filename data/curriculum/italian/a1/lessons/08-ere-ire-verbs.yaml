@@ -91,6 +91,7 @@ words:
 
 practice:
   - type: fill
+    section: 1
     prompt: "Io ___ un libro."
     hint: (leggere)
     translation: I'm reading a book.
@@ -98,6 +99,7 @@ practice:
     why: With io, -ere verbs end in -o.
 
   - type: fill
+    section: 1
     prompt: "Lei ___ in italiano."
     hint: (scrivere)
     translation: She writes in Italian.
@@ -105,6 +107,7 @@ practice:
     why: With lui or lei, -ere verbs end in -e.
 
   - type: fill
+    section: 2
     prompt: "Voi ___ molto."
     hint: (dormire)
     translation: You (all) sleep a lot.
@@ -112,6 +115,7 @@ practice:
     why: With voi, -ire verbs end in -ite.
 
   - type: fill
+    section: 3
     prompt: "Non ___."
     hint: (capire, io)
     translation: I don't understand.
@@ -119,6 +123,7 @@ practice:
     why: Capire adds -isc- — io capisco.
 
   - type: fill
+    section: 2
     prompt: "Noi ___ domani."
     hint: (partire)
     translation: We're leaving tomorrow.
@@ -126,42 +131,49 @@ practice:
     why: Noi takes -iamo in every verb group.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: Do you understand? (to a friend)
     answers: ["Capisci?", "Tu capisci?"]
     why: Capire is an -isc- verb, so tu capisci.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: They prefer tea.
     answers: ["Preferiscono il tè.", "Loro preferiscono il tè."]
     why: With loro, preferire adds -isc- — preferiscono.
 
   - type: translate
+    section: 1
     direction: to-target
     prompt: I'll have a coffee.
     answers: ["Prendo un caffè.", "Io prendo un caffè."]
     why: Prendere is the verb Italians use to order food and drink.
 
   - type: translate
+    section: 1
     direction: to-english
     prompt: Vedete il gatto?
     answers: ["Do you see the cat?", "Can you see the cat?", "Do you all see the cat?", "Can you all see the cat?"]
     why: Vedete is the voi form of vedere, to see.
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: Finisco oggi.
     answers: ["I finish today.", "I'm finishing today.", "I'll finish today.", "I am finishing today.", "I will finish today."]
     why: Finire adds -isc- — io finisco.
 
   - type: choice
+    section: 3
     prompt: Which of these verbs adds -isc-?
     options: [dormire, capire, partire]
     answer: capire
     why: Capire, finire and preferire add -isc-; dormire and partire don't.
 
   - type: choice
+    section: 2
     prompt: "Voi ___ un libro. (leggere)"
     options: [leggete, leggite, leggiamo]
     answer: leggete

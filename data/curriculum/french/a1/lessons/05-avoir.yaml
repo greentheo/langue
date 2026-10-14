@@ -89,6 +89,7 @@ words:
 
 practice:
   - type: fill
+    section: 1
     prompt: "J'___ un chien."
     hint: (avoir, je)
     translation: I have a dog.
@@ -96,6 +97,7 @@ practice:
     why: With je, avoir is ai — and je shortens to j'.
 
   - type: fill
+    section: 1
     prompt: "Nous ___ un chat."
     hint: (avoir, nous)
     translation: We have a cat.
@@ -103,6 +105,7 @@ practice:
     why: With nous, avoir is avons.
 
   - type: fill
+    section: 1
     prompt: "Ils ___ des livres."
     hint: (avoir, ils)
     translation: They have (some) books.
@@ -110,6 +113,7 @@ practice:
     why: With ils and elles, avoir is ont.
 
   - type: fill
+    section: 2
     prompt: "Tu ___ quel âge ?"
     hint: (avoir, tu)
     translation: How old are you?
@@ -117,48 +121,56 @@ practice:
     why: In French you have an age, and with tu, avoir is as.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: I'm hungry.
     answers: ["J'ai faim."]
     why: French says "I have hunger" — avoir faim.
 
   - type: translate
+    section: 2
     direction: to-target
     prompt: I'm twelve years old.
     answers: ["J'ai douze ans."]
     why: Age uses avoir and always needs ans.
 
   - type: translate
+    section: 4
     direction: to-target
     prompt: There is a cat.
     answers: ["Il y a un chat."]
     why: Il y a means "there is" and "there are".
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: Elle a froid.
     answers: ["She is cold.", "She's cold.", "She feels cold."]
     why: Avoir froid means to be cold — literally "to have cold".
 
   - type: translate
+    section: 1
     direction: to-english
     prompt: "Vous avez un stylo ?"
     answers: ["Do you have a pen?", "Have you got a pen?"]
     why: Avez is the vous form of avoir, and raising your voice makes it a question.
 
   - type: choice
+    section: 1
     prompt: Which means "they are"?
     options: [ils ont, ils sont]
     answer: ils sont
     why: Ils sont (an s sound) is être; ils ont (a z sound) is avoir.
 
   - type: choice
+    section: 3
     prompt: How do you say "I'm scared"?
     options: ["Je suis peur.", "J'ai peur."]
     answer: "J'ai peur."
     why: Fear, hunger, thirst, cold and heat all use avoir in French.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: We're not hungry.
     answers: ["Nous n'avons pas faim.", "On n'a pas faim."]

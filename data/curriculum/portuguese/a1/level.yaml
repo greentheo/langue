@@ -65,3 +65,42 @@ themes:
   - home
   - daily routine
   - free time
+
+# The ten sub-levels, A1.1 to A1.10, in teaching order. Lessons stay in
+# number order, because each lesson's practice may use earlier lessons.
+units:
+  - title: Oi!
+    lessons: [01-greetings]
+    situations: [greetings]
+    categories: [greetings]
+  - title: How Portuguese sounds
+    lessons: [02-sounds]
+    situations: [understanding]
+    categories: [basics]
+  - title: Who are you?
+    lessons: [03-ser]
+    situations: [meeting]
+  - title: Things you have
+    lessons: [04-articles, 05-ter]
+    categories: [housing, technology, education, emotions]
+  - title: How are you?
+    lessons: [06-estar]
+    categories: [transportation, travel]
+  - title: Numbers and prices
+    lessons: [07-numbers]
+    categories: [numbers, time, shopping]
+  - title: Everyday verbs
+    lessons: [08-ar-verbs, 09-er-ir-verbs]
+    situations: [help]
+    categories: [work]
+  - title: Family and friends
+    lessons: [10-adjectives, 11-family]
+    categories: [family]
+  - title: Going and liking
+    lessons: [12-ir-fazer, 13-gostar]
+    situations: [cafe]
+    categories: [food]
+  - title: Your day
+    lessons: [14-routine, 15-prepositions]
+    situations: [time]
+    categories: [weather]

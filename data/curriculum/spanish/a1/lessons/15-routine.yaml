@@ -82,6 +82,7 @@ words:
 
 practice:
   - type: fill
+    section: 1
     prompt: "Yo ___ levanto a las siete."
     hint: myself
     translation: I get up at seven.
@@ -89,6 +90,7 @@ practice:
     why: With yo, the reflexive word is me.
 
   - type: fill
+    section: 2
     prompt: "¿A qué hora te ___?"
     hint: acostarse, tú
     translation: What time do you go to bed?
@@ -96,6 +98,7 @@ practice:
     why: Acostarse is a boot verb, o → ue, so tú te acuestas.
 
   - type: fill
+    section: 2
     prompt: "Ella se ___ por la mañana."
     hint: ducharse
     translation: She showers in the morning.
@@ -103,6 +106,7 @@ practice:
     why: Ducharse is a regular -ar verb; the ella form is se ducha.
 
   - type: fill
+    section: 1
     prompt: "Nosotros ___ levantamos temprano."
     hint: ourselves
     translation: We get up early.
@@ -110,6 +114,7 @@ practice:
     why: With nosotros, the reflexive word is nos.
 
   - type: fill
+    section: 2
     prompt: "Me ___ a las siete."
     hint: despertarse, yo
     translation: I wake up at seven.
@@ -117,42 +122,49 @@ practice:
     why: Despertarse changes e → ie in the yo form.
 
   - type: translate
+    section: 1
     direction: to-target
     prompt: I get up at eight.
     answers: [Me levanto a las ocho, Yo me levanto a las ocho]
     why: Levantarse needs me in front for yo, and times use a las.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: They go to bed late.
     answers: [Se acuestan tarde, Ellos se acuestan tarde, Ellas se acuestan tarde]
     why: Acostarse changes o → ue, and ellos takes se.
 
   - type: translate
+    section: 3
     direction: to-target
     prompt: I never have breakfast.
     answers: [Nunca desayuno, No desayuno nunca, Yo nunca desayuno, Yo no desayuno nunca]
     why: Nunca goes before the verb, or after it with no in front.
 
   - type: translate
+    section: 3
     direction: to-english
     prompt: Siempre me ducho por la mañana.
     answers: [I always shower in the morning, I always take a shower in the morning, I always have a shower in the morning]
     why: Siempre is "always", and me ducho is "I shower".
 
   - type: translate
+    section: 1
     direction: to-english
     prompt: "¿A qué hora te levantas?"
     answers: [What time do you get up?, At what time do you get up?, When do you get up?]
     why: Te levantas is the tú form of levantarse, "to get up".
 
   - type: choice
+    section: 1
     prompt: Which is correct?
     options: [Levanto me temprano., Me levanto temprano., Yo levanto temprano.]
     answer: Me levanto temprano.
     why: The reflexive word me goes in front of the verb as a separate word.
 
   - type: choice
+    section: 2
     prompt: "*Me visto* means…"
     options: [I see myself, I get dressed, I wash myself]
     answer: I get dressed

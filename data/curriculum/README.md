@@ -61,24 +61,28 @@ sections:
     tip: "*Problema* ends in -a but is masculine: *il problema*."
 words:                                 # 8–15 pairs this lesson introduces
   - [libro, book]
-practice:                              # 10–12 items
+practice:                              # 10–16 items
   - type: fill
+    section: 1                         # the section this question tests (1 = first)
     prompt: "___ studente"             # exactly one ___
     hint: the                          # shown beside the blank
     translation: the student           # optional English for the whole thing
     answers: [lo]
     why: Studente starts with s + consonant, so it takes lo.
   - type: translate
+    section: 1
     direction: to-target               # English prompt, target-language answer
     prompt: the friends (all male)
     answers: [gli amici]
     why: Amico starts with a vowel, so the plural article is gli.
   - type: translate
+    section: 1
     direction: to-english              # target-language prompt, English answer
     prompt: le case
     answers: [the houses, the homes]
     why: Le is the feminine plural "the".
   - type: choice
+    section: 1
     prompt: Which article does *zaino* take?
     options: [il, lo]
     answer: lo                         # must match one option exactly
@@ -89,6 +93,16 @@ practice:                              # 10–12 items
 *italic*, paragraphs separated by a blank line, and `- ` bullet lists.
 
 ### Practice rules
+
+- **Every question names its `section`.** The guided path
+  ([docs/guided-path.md](../../docs/guided-path.md)) teaches one section as a
+  short card and asks that section's questions straight after it, then keeps
+  using them for review. Tag a question with the section that teaches what it
+  tests; if it needs two sections, the later one. Every section needs at least
+  one question, and two or three is better — the build fails on a section
+  with none.
+- **Keep sections card-sized.** A section is read on its own, on a phone, in
+  about thirty seconds: one idea, a few short paragraphs, a table or examples.
 
 - **Only use what has been taught.** Lesson 7's items may use grammar and
   words from lessons 1–7, plus the level's phrasebook as fixed chunks. Nothing
@@ -125,7 +139,17 @@ grammar:                    # the grammar inventory for this level, in teaching 
   - topic: Articles — il, lo, la, i, gli, le; un, uno, una
     lessons: [04-articles]  # slugs of lessons at this level that teach it (A1 only for now)
 themes: [greetings, family, food and cafés]
+units:                      # the 10 sub-levels (A1.1 … A1.10) of the guided path
+  - title: Hello!
+    lessons: [01-greetings]       # in lesson-number order across all units
+    situations: [greetings]       # phrasebook situation ids
+    categories: [greetings]       # vocabulary-library categories at this level
 ```
+
+`units` split the level into ten steps a motivated learner can finish in about
+a week each. Every lesson, phrasebook situation and vocabulary category of the
+level belongs to exactly one unit — the build checks this. Lessons must stay in
+number order, because a lesson's practice may use earlier lessons.
 
 `can_do` items complete the sentence "At this level you can…", so start them
 with a lowercase verb.

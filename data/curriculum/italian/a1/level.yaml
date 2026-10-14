@@ -67,3 +67,44 @@ themes:
   - home
   - daily routine
   - free time
+
+# The ten sub-levels, A1.1 to A1.10, in teaching order. Lessons stay in
+# number order, because each lesson's practice may use earlier lessons.
+units:
+  - title: Hello!
+    lessons: [01-greetings]
+    situations: [greetings]
+    categories: [greetings]
+  - title: How Italian sounds
+    lessons: [02-sounds]
+    situations: [understanding]
+    categories: [basics]
+  - title: Who are you?
+    lessons: [03-essere]
+    situations: [meeting]
+  - title: Things you have
+    lessons: [04-articles, 05-avere]
+    categories: [housing, technology, education, emotions]
+  - title: Numbers and time
+    lessons: [06-numbers-time]
+    situations: [time]
+    categories: [numbers, time]
+  - title: Everyday verbs
+    lessons: [07-are-verbs, 08-ere-ire-verbs]
+    situations: [help]
+    categories: [work]
+  - title: Family and friends
+    lessons: [09-adjectives, 10-family]
+    categories: [family]
+  - title: Going places
+    lessons: [11-irregular-verbs, 12-modals]
+    situations: [getting-around]
+    categories: [transportation, travel]
+  - title: What you like
+    lessons: [13-piacere]
+    situations: [cafe, shopping]
+    categories: [food, shopping]
+  - title: Your day
+    lessons: [14-routine, 15-prepositions]
+    situations: [small-talk]
+    categories: [weather]
