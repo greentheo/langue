@@ -15,6 +15,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { postJson } from "@/lib/client-api";
 import { languageLabel } from "@/lib/languages";
+import { CUE_MS, playCue, primeSounds } from "@/lib/sounds";
 import { autoSpeak, stopSpeaking } from "@/lib/speech";
 import type { PublicExercise, PublicStep, StepAnswerResult } from "@/lib/path/types";
 import type { UnitProgress } from "@/lib/path/planner";
@@ -128,22 +129,24 @@ export function StepRunner({ language }: { language: string }) {
     }
   }, [card, finish, language]);
 
-  // …and the right answer once it is revealed.
+  // …and the right answer once it is revealed, after the answer's chime.
   useEffect(() => {
     if (!card || !result) return;
-    if (card.mode === "recall" || card.mode === "type") autoSpeak(result.answers[0], language);
+    let text: string | undefined;
+    if (card.mode === "recall" || card.mode === "type") text = result.answers[0];
     else if (card.mode === "question") {
-      if (card.question.type === "fill") {
-        autoSpeak(card.question.prompt.replace("___", result.answers[0] ?? ""), language);
-      } else if (card.question.direction === "to-target") {
-        autoSpeak(result.answers[0], language);
-      }
+      if (card.question.type === "fill") text = card.question.prompt.replace("___", result.answers[0] ?? "");
+      else if (card.question.direction === "to-target") text = result.answers[0];
     }
+    if (!text) return;
+    const timer = window.setTimeout(() => autoSpeak(text, language), CUE_MS);
+    return () => window.clearTimeout(timer);
   }, [card, result, language]);
 
   async function submit(value: string) {
     if (!card || result || checking) return;
     if (card.mode === "learn" || card.mode === "meet") return;
+    primeSounds();
     setChecking(true);
     setError(null);
 
@@ -156,6 +159,7 @@ export function StepRunner({ language }: { language: string }) {
       });
       setResult(graded);
       const right = graded.verdict !== "incorrect";
+      playCue(right ? "right" : "wrong");
       setTally((prev) => ({
         // Accuracy counts first tries; a retry still earns its points.
         total: prev.total + (card.retry ? 0 : 1),
@@ -183,6 +187,7 @@ export function StepRunner({ language }: { language: string }) {
     if (!step || finishing) return;
 
     setFinishing(true);
+    primeSounds();
     try {
       setFinish(
         await postJson<Finish>("/api/steps/complete", {
@@ -193,6 +198,7 @@ export function StepRunner({ language }: { language: string }) {
           durationSec: Math.round((Date.now() - startedAt.current) / 1000),
         }),
       );
+      playCue("done");
       // Points and streak live in the server-rendered header.
       router.refresh();
     } catch (cause) {

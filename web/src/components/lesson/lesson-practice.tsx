@@ -18,6 +18,7 @@ import { languageLabel } from "@/lib/languages";
 import { ErrorBox } from "@/components/crt";
 import { AnswerInput } from "@/components/answer-input";
 import { ChoiceOptions } from "@/components/choice-options";
+import { CUE_MS, playCue, primeSounds } from "@/lib/sounds";
 import { autoSpeak, stopSpeaking } from "@/lib/speech";
 import { RichInline } from "@/components/rich-text";
 import { ProgressDots } from "@/components/activity-shell";
@@ -93,11 +94,16 @@ export function LessonPractice({
 
   useEffect(() => {
     if (!result || !item) return;
-    if (item.type === "fill") {
-      autoSpeak(item.prompt.replace("___", result.answers[0] ?? ""), language);
-    } else if (item.type === "translate" && item.direction === "to-target") {
-      autoSpeak(result.answers[0], language);
-    }
+    const text =
+      item.type === "fill"
+        ? item.prompt.replace("___", result.answers[0] ?? "")
+        : item.type === "translate" && item.direction === "to-target"
+          ? result.answers[0]
+          : undefined;
+    if (!text) return;
+    // After the answer's chime, not over it.
+    const timer = window.setTimeout(() => autoSpeak(text, language), CUE_MS);
+    return () => window.clearTimeout(timer);
   }, [result, item, language]);
 
   useEffect(() => stopSpeaking, []);
@@ -116,6 +122,7 @@ export function LessonPractice({
 
   async function submit(value: string) {
     if (result || checking) return;
+    primeSounds();
     setChecking(true);
     setError(null);
 
@@ -127,6 +134,7 @@ export function LessonPractice({
       });
       setResult(graded);
       const right = graded.verdict !== "incorrect";
+      playCue(right ? "right" : "wrong");
       setTally((prev) => ({
         correct: prev.correct + (right ? 1 : 0),
         points: prev.points + graded.points,
@@ -148,6 +156,7 @@ export function LessonPractice({
     }
 
     setFinished(true);
+    playCue("done");
     try {
       setOutcome(
         await postJson<Outcome>("/api/lessons/complete", {
