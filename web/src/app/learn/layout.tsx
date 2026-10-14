@@ -24,11 +24,16 @@ export default async function LearnLayout({ children }: { children: React.ReactN
           >
             LANGUE
           </Link>
-          <span className="text-xs text-[var(--crt-fg-dim)]">
+          <Link
+            href="/learn/language"
+            title="Change language"
+            className="text-xs no-underline text-[var(--crt-fg-dim)] hover:text-[var(--crt-fg-bright)]"
+          >
             {languageLabel(user.currentLanguage)} &middot;{" "}
             {user.currentLevel.toUpperCase()}{" "}
-            {LEVEL_LABELS[user.currentLevel as Level] ?? ""}
-          </span>
+            {LEVEL_LABELS[user.currentLevel as Level] ?? ""}{" "}
+            <span className="underline">change</span>
+          </Link>
         </div>
 
         <div className="flex flex-wrap items-center gap-4">
