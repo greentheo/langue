@@ -57,7 +57,15 @@ export async function createInvite(options: CreateInviteOptions = {}) {
     if (existing) continue;
 
     return prisma.inviteCode.create({
-      data: { code, note, createdById, expiresAt, maxUses },
+      data: {
+        code,
+        note,
+        createdById,
+        expiresAt,
+        maxUses,
+        // Whoever makes a code is in its group, and sees its leaderboard.
+        ...(createdById ? { groupMembers: { create: { userId: createdById } } } : {}),
+      },
     });
   }
 

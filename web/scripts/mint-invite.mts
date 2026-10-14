@@ -74,10 +74,20 @@ async function main() {
 
   const expiresAt = days ? new Date(Date.now() + days * 24 * 60 * 60 * 1000) : null;
   const userCount = await prisma.user.count();
+  // Only the owner runs this script, so their codes are theirs: they are in
+  // each code's group and see its leaderboard.
+  const owner = await prisma.user.findFirst({ where: { isAdmin: true }, orderBy: { createdAt: "asc" } });
 
   for (let i = 0; i < count; i += 1) {
     const invite = await prisma.inviteCode.create({
-      data: { code: generateCode(), note, expiresAt, maxUses: uses },
+      data: {
+        code: generateCode(),
+        note,
+        expiresAt,
+        maxUses: uses,
+        createdById: owner?.id,
+        ...(owner ? { groupMembers: { create: { userId: owner.id } } } : {}),
+      },
     });
 
     console.log(invite.code);
