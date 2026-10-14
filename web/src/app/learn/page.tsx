@@ -85,7 +85,7 @@ export default async function LearnPage() {
   const now = new Date();
   if (hasPath) await seedFromLessons(user.id, language, course, now);
   const states = hasPath ? await loadStates(user.id, language) : new Map();
-  const marks = hasPath ? await loadMarks(user.id) : new Map();
+  const marks = hasPath ? await loadMarks(user.id, course) : new Map();
   const units = unitProgress(course, states, marks);
   if (hasPath) await rememberProgress(user.id, units, marks, now);
   const currentIndex = Math.min(firstOpenUnit(course, states), Math.max(0, units.length - 1));

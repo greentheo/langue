@@ -45,7 +45,7 @@ export default async function CertificatePage({
     );
   }
 
-  const [states, marks] = await Promise.all([loadStates(user.id, language), loadMarks(user.id)]);
+  const [states, marks] = await Promise.all([loadStates(user.id, language), loadMarks(user.id, course)]);
   const progress = levelProgress(course, states, level, marks);
   const practised = await prisma.activityLog.aggregate({
     where: { userId: user.id, language, level },

@@ -63,7 +63,7 @@ export default async function LevelPage({
 
   const now = new Date();
   await seedFromLessons(user.id, language, course, now);
-  const [states, marks] = await Promise.all([loadStates(user.id, language), loadMarks(user.id)]);
+  const [states, marks] = await Promise.all([loadStates(user.id, language), loadMarks(user.id, course)]);
 
   const requested = (await searchParams).level;
   const open = course.units[Math.min(firstOpenUnit(course, states), course.units.length - 1)];
