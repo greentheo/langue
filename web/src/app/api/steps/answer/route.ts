@@ -7,7 +7,7 @@ import { difficultyForLevel, gradePracticeItem } from "@/lib/engine/practice";
 import { getCourse } from "@/lib/path/course";
 import { rungOf } from "@/lib/path/schedule";
 import { blankOut, gradeReply, sameSentence } from "@/lib/path/sentences";
-import { recordAnswer, recordDialoguePlayed } from "@/lib/path/store";
+import { recordAnswer, recordChallengeAnswer, recordDialoguePlayed } from "@/lib/path/store";
 import type { Course, CourseDialogue, Item, StepAnswerResult } from "@/lib/path/types";
 
 /**
@@ -35,6 +35,8 @@ const BodySchema = z.object({
   typed: z.boolean().optional(),
   /** A role-play turn: the last of the learner's turns. */
   last: z.boolean().optional(),
+  /** Part of a level-up challenge: a right answer counts as learned, a wrong one costs nothing. */
+  challenge: z.boolean().optional(),
   answer: z.string().max(500).default(""),
 });
 
@@ -184,13 +186,10 @@ export const POST = handler(async (request) => {
   const level = course.units[item.unitIndex].level;
   const result = gradeItem(course, item, body, level);
 
-  const { before, after } = await recordAnswer(
-    user.id,
-    language,
-    item,
-    { correct: result.verdict !== "incorrect", rung: rungOf(body.mode, item) },
-    new Date(),
-  );
+  const correct = result.verdict !== "incorrect";
+  const { before, after } = body.challenge
+    ? await recordChallengeAnswer(user.id, language, item, correct, new Date())
+    : await recordAnswer(user.id, language, item, { correct, rung: rungOf(body.mode, item) }, new Date());
 
   const response: StepAnswerResult = { ...result, stage: after.stage, promoted: after.stage > before.stage };
   return Response.json(response);

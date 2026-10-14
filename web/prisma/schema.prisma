@@ -49,6 +49,7 @@ model User {
   reviews      FlashcardReview[]
   lessons      LessonProgress[]
   items        ItemProgress[]
+  unitMarks    UnitMark[]
   invitesMade  InviteCode[]      @relation("InviteCreatedBy")
 
   @@index([email])
@@ -227,4 +228,21 @@ model ItemProgress {
 
   @@unique([userId, itemKey])
   @@index([userId, language, dueAt])
+}
+
+/// The best a learner's progress in a guided-path unit has ever shown.
+/// Adding words or ideas to a unit raises its item count, which would pull the
+/// learner's bar down; the bar shows whichever is higher, so it never goes
+/// backwards, and a unit once complete stays complete.
+model UnitMark {
+  id          String    @id @default(cuid())
+  userId      String
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  /// "italian-a1-3"
+  unitId      String
+  bestPercent Int       @default(0)
+  completedAt DateTime?
+  updatedAt   DateTime  @updatedAt
+
+  @@unique([userId, unitId])
 }

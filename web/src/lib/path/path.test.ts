@@ -1,12 +1,25 @@
 import { test, describe } from "node:test";
 import assert from "node:assert/strict";
-import { applyAnswer, completeDialogue, isLearned, MAX_STAGE, newItemState, rungOf } from "./schedule";
+import {
+  applyAnswer,
+  applyChallenge,
+  assumeKnown,
+  completeDialogue,
+  isLearned,
+  LEARNED_STAGE,
+  MAX_STAGE,
+  newItemState,
+  rungOf,
+} from "./schedule";
+import { completedLevels, daysToFinish, levelProgress } from "./levels";
 import {
   dialogueReady,
   firstOpenUnit,
   grammarPick,
   nextIntro,
+  planChallenge,
   planStep,
+  raisedMarks,
   typedTurns,
   unitProgress,
 } from "./planner";
@@ -108,6 +121,28 @@ describe("applyAnswer", () => {
     assert.equal(rungOf("question", grammar("g", 0)), MAX_STAGE);
     assert.equal(rungOf("build", grammar("g", 0)), MAX_STAGE);
     assert.equal(rungOf("recognize", grammar("g", 0)), 0);
+  });
+
+  test("a challenge: right counts as learned at once, wrong costs nothing", () => {
+    const right = applyChallenge(state({ stage: 1, bestStage: 1 }), true, NOW);
+    assert.equal(right.stage, LEARNED_STAGE);
+    assert.ok(isLearned(right));
+    assert.equal(right.dueAt.getTime(), at(3 * DAY).getTime(), "confirmed in a few days");
+
+    const wrong = applyChallenge(state({ stage: 2, bestStage: 2 }), false, NOW);
+    assert.equal(wrong.stage, 2);
+    assert.equal(wrong.wrong, 1);
+
+    const high = state({ stage: 4, bestStage: 4, dueAt: at(5 * DAY) });
+    assert.equal(applyChallenge(high, true, NOW).dueAt.getTime(), high.dueAt.getTime(), "never lowers or reschedules");
+  });
+
+  test("a passed unit takes the rest as probably known, confirmed later", () => {
+    const fresh = assumeKnown(newItemState(NOW), NOW, 5);
+    assert.equal(fresh.bestStage, LEARNED_STAGE);
+    assert.equal(fresh.dueAt.getTime(), at(5 * DAY).getTime());
+    const known = state({ stage: 5, bestStage: 5 });
+    assert.equal(assumeKnown(known, NOW, 5), known);
   });
 
   test("a role-play comes round less and less often", () => {
@@ -377,6 +412,74 @@ describe("planStep", () => {
     assert.equal(first.percent, Math.floor((5 / 24) * 100));
   });
 
+  test("a challenge covers the unit's ideas and its unlearned words first, at the learned rung", () => {
+    const states = new Map<string, ItemState>([
+      ["w00", state({ stage: 3, bestStage: 3 })],
+      ["w01", state({ stage: 1, bestStage: 1 })],
+    ]);
+    const plan = planChallenge(course, 0, states, steady);
+    assert.ok(plan.exercises.every((e) => e.role === "challenge"));
+    assert.ok(plan.exercises.length <= 16);
+    const keys = plan.exercises.map((e) => e.keys[0]);
+    assert.ok(keys.includes("g0a") && keys.includes("g0b"), "every idea");
+    assert.ok(keys.includes("w01"));
+    // Six words in the unit, seven slots: the learned one too, but last in line.
+    for (const exercise of plan.exercises) {
+      const item = course.items.get(exercise.keys[0]);
+      if (item?.kind === "word") assert.equal(exercise.mode, "type");
+      if (item?.kind === "grammar") assert.ok(exercise.mode === "question" || exercise.mode === "build");
+    }
+  });
+
+  test("level progress: a bar per kind, complete when every unit is", () => {
+    const states = new Map<string, ItemState>();
+    for (const key of course.units[0].itemKeys) states.set(key, state({ stage: 3, bestStage: 3 }));
+    const progress = levelProgress(course, states, "a1");
+    assert.equal(progress.units.length, 4);
+    assert.equal(progress.words.done, 6);
+    assert.equal(progress.words.total, 24);
+    assert.equal(progress.grammar.done, 2);
+    assert.equal(progress.percent, 25);
+    assert.equal(progress.complete, false);
+    assert.equal(progress.speaking.total, 1);
+    assert.equal(progress.speaking.done, 0);
+
+    for (const unit of course.units) for (const key of unit.itemKeys) states.set(key, state({ stage: 3, bestStage: 3 }));
+    states.set("d:chat", state({ right: 1 }));
+    const done = levelProgress(course, states, "a1");
+    assert.equal(done.complete, true);
+    assert.equal(done.speaking.done, 1);
+    assert.deepEqual(completedLevels(course, states), ["a1"]);
+  });
+
+  test("new content in a unit never lowers its bar: the best it showed is kept", () => {
+    const states = new Map<string, ItemState>([["w00", state({ stage: 3, bestStage: 3 })]]);
+    const now = unitProgress(course, states)[0];
+    assert.equal(now.percent, Math.floor((3 / 24) * 100));
+
+    // The learner once saw 40% here, before words were added to the unit.
+    const marks = new Map([["u0", { bestPercent: 40, complete: false }]]);
+    assert.equal(unitProgress(course, states, marks)[0].percent, 40);
+    assert.deepEqual(raisedMarks(unitProgress(course, states, marks), marks), [], "nothing to raise");
+
+    // A unit once complete stays complete.
+    const done = unitProgress(course, states, new Map([["u0", { bestPercent: 100, complete: true }]]))[0];
+    assert.equal(done.complete, true);
+    assert.equal(done.percent, 100);
+
+    // Progress above the mark raises it.
+    for (const key of course.units[1].itemKeys) states.set(key, state({ stage: 2, bestStage: 2 }));
+    assert.deepEqual(raisedMarks(unitProgress(course, states, marks), marks).map((m) => m.unitId), ["u1"]);
+  });
+
+  test("days to finish at the learner's pace, once there is something to go on", () => {
+    // 10 hours covered 25%: 30 more hours at 30 minutes a day is 60 days.
+    assert.equal(daysToFinish(25, 10, 30), 60);
+    assert.equal(daysToFinish(0, 10, 30), null);
+    assert.equal(daysToFinish(25, 0.1, 30), null);
+    assert.equal(daysToFinish(25, 10, 0), null);
+  });
+
   test("ideas start with multiple choice, add sentence building, and lead with translation once familiar", () => {
     const item = { ...grammar("g", 0), builds: ["s:example"] };
     assert.deepEqual(grammarPick(item, undefined), { mode: "question", question: 0 });
@@ -478,6 +581,19 @@ describe("course from the real curriculum", () => {
           assert.ok(line.options!.length >= 2, `${dialogue.key} line ${line.line} has a wrong option`);
         }
       }
+    });
+  }
+
+  for (const language of ["italian", "spanish", "french", "portuguese"]) {
+    test(`${language}: every unit's challenge can be shown in full`, () => {
+      const course = getCourse(language);
+      course.units.forEach((unit, index) => {
+        const plan = planChallenge(course, index, new Map(), Math.random);
+        assert.ok(plan.exercises.length >= 8, `${unit.id} has a real challenge`);
+        const step = presentStep(course, plan, Math.random);
+        assert.equal(step.exercises.length, plan.exercises.length, `${unit.id}: no card dropped`);
+        assert.equal(step.challenge, true);
+      });
     });
   }
 

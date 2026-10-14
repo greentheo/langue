@@ -446,6 +446,73 @@ function shuffle<T>(items: T[], random: () => number): T[] {
   return copy;
 }
 
+/* ---- Level-up challenges. ---- */
+
+/** Share of a challenge to get right to complete its unit. */
+export const CHALLENGE_PASS = 0.8;
+const CHALLENGE_WORDS = 7;
+const CHALLENGE_PHRASES = 3;
+const CHALLENGE_MAX = 16;
+
+/**
+ * A level-up challenge: a slightly longer step across a whole unit, each
+ * item asked at the level that proves it is learned — type the word, build
+ * or type the phrase, the idea's harder questions. Things not yet learned
+ * come first. Open to any unit, so a learner who already knows some of a
+ * level can test out of it.
+ */
+export function planChallenge(
+  course: Course,
+  unitIndex: number,
+  states: Map<string, ItemState>,
+  random: () => number,
+): Plan {
+  const unit = course.units[unitIndex];
+  const items = (unit?.itemKeys ?? [])
+    .map((key) => course.items.get(key))
+    .filter((item): item is Item => Boolean(item));
+  const notLearnedFirst = (list: Item[]) =>
+    shuffle(list, random).sort(
+      (a, b) => Number(isLearned(states.get(a.key))) - Number(isLearned(states.get(b.key))),
+    );
+
+  const exercises: PlannedExercise[] = [];
+  for (const item of items) {
+    if (item.kind !== "grammar") continue;
+    // As if familiar: translation and building lead, rotated so a retry differs.
+    const familiar = { ...(states.get(item.key) ?? newChallengeState()), stage: LEARNED_STAGE };
+    familiar.right = Math.floor(random() * 12);
+    const exercise = grammarExercise(item, familiar, "challenge");
+    if (exercise) exercises.push(exercise);
+  }
+  const vocab = (kind: "word" | "phrase", count: number) => {
+    for (const item of notLearnedFirst(items.filter((candidate) => candidate.kind === kind)).slice(0, count)) {
+      if (item.kind === "grammar") continue;
+      // The rung that proves stage 3: typing a word, building (or typing) a phrase.
+      const mode = item.ladder[Math.min(LEARNED_STAGE - 1, item.ladder.length - 1)];
+      exercises.push(vocabExercise(item, mode, states.get(item.key), "challenge"));
+    }
+  };
+  vocab("word", CHALLENGE_WORDS);
+  vocab("phrase", CHALLENGE_PHRASES);
+
+  return { exercises: shuffle(exercises, random).slice(0, CHALLENGE_MAX), unitIndex };
+}
+
+function newChallengeState(): ItemState {
+  return {
+    stage: 0,
+    bestStage: 0,
+    dueAt: new Date(0),
+    intervalDays: 0,
+    right: 0,
+    wrong: 0,
+    rightStreak: 0,
+    missStreak: 0,
+    tricky: false,
+  };
+}
+
 /* ---- Progress, for the home page and the end of a step. ---- */
 
 export interface UnitProgress {
@@ -466,7 +533,17 @@ export interface UnitProgress {
   started: boolean;
 }
 
-export function unitProgress(course: Course, states: Map<string, ItemState>): UnitProgress[] {
+/** The best a unit's bar has shown a learner: kept so that adding content never lowers it. */
+export interface UnitMark {
+  bestPercent: number;
+  complete: boolean;
+}
+
+export function unitProgress(
+  course: Course,
+  states: Map<string, ItemState>,
+  marks: Map<string, UnitMark> = new Map(),
+): UnitProgress[] {
   return course.units.map((unit, index) => {
     const learned = unit.itemKeys.filter((key) => isLearned(states.get(key))).length;
     const climbed = unit.itemKeys.reduce(
@@ -474,6 +551,9 @@ export function unitProgress(course: Course, states: Map<string, ItemState>): Un
       0,
     );
     const total = unit.itemKeys.length * LEARNED_STAGE;
+    const mark = marks.get(unit.id);
+    const complete = learned === unit.itemKeys.length || Boolean(mark?.complete);
+    const percent = total > 0 ? Math.floor((climbed / total) * 100) : 0;
     return {
       index,
       id: unit.id,
@@ -482,11 +562,27 @@ export function unitProgress(course: Course, states: Map<string, ItemState>): Un
       level: unit.level,
       learned,
       total: unit.itemKeys.length,
-      percent: total > 0 ? Math.floor((climbed / total) * 100) : 0,
-      complete: learned === unit.itemKeys.length,
+      percent: complete ? 100 : Math.max(percent, mark?.bestPercent ?? 0),
+      complete,
       started: unit.itemKeys.some((key) => states.has(key)),
     };
   });
+}
+
+/**
+ * Marks that need raising after this progress: units whose bar is now higher
+ * than its mark, or newly complete.
+ */
+export function raisedMarks(
+  progress: UnitProgress[],
+  marks: Map<string, UnitMark>,
+): { unitId: string; bestPercent: number; complete: boolean }[] {
+  return progress
+    .filter((unit) => {
+      const mark = marks.get(unit.id);
+      return unit.percent > (mark?.bestPercent ?? 0) || (unit.complete && !mark?.complete);
+    })
+    .map((unit) => ({ unitId: unit.id, bestPercent: unit.percent, complete: unit.complete }));
 }
 
 export type IdeaStatus = "new" | "learning" | "learned";

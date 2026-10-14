@@ -1,6 +1,6 @@
 # Guided path: steps, stages and levels
 
-Status: agreed 2026-10-13; phase 1 built (#35); phase 2 built (#36). Builds on
+Status: agreed 2026-10-13; phase 1 built (#35); phase 2 built (#36); phase 3 built (#37). Builds on
 [learning-path.md](learning-path.md), which covers the lessons and phrases this
 path is made of.
 
@@ -145,10 +145,19 @@ unit is 1–2 lessons, about 25 words, 8 phrases and 6 grammar ideas.
 - **Progress in a unit** fills as items climb: each item counts its best
   stage up to 3, so the bar moves from the first step, and 100% means every
   item is learned (best stage 3 or more). It only ever goes up.
-- **A unit is complete** at 100%, or by passing its **level-up challenge**
-  (phase 3). The challenge is a slightly longer step that mixes the whole
-  unit and feels like the next step, not an exam: no fail screen, retry right
-  away, and whatever it shows you've mastered counts.
+- **A unit is complete** at 100%, or by passing its **level-up challenge**.
+  The challenge is a slightly longer step (up to 16 cards) across the whole
+  unit: every grammar idea, then up to seven words and three phrases, the
+  ones not yet learned first, each asked at the rung that proves it is
+  learned. It feels like the next step, not an exam:
+  - a right answer counts as learned at once (stage 3), confirmed by a review
+    three days later;
+  - a wrong answer costs nothing — no stage drops, no second try, no fail
+    screen, just "not quite yet" and **Try again**;
+  - 80% right completes the unit: everything in it not yet learned is taken
+    as probably known (stage 3), with confirming reviews spread over the next
+    3–14 days so passing several units at once doesn't bury anyone;
+  - after a pass, the next unit's challenge is one tap away.
 - **New material** may run one unit ahead of the oldest unfinished one, so a
   learner is never stuck waiting for reviews to come due.
 
@@ -166,8 +175,19 @@ is measured by mastery, never by time.
 
 Moving up to the next CEFR level works the same way as a sub-level: finish
 the last unit at 100%, or pass its challenge. A learner who already knows some
-of a level can take the challenges from the start; passing marks those items
-"probably known" (stage 3), and quick reviews confirm them.
+of a level can take the challenges from the start ("Test out" on the level
+page); passing marks those items "probably known" (stage 3), and quick reviews
+confirm them.
+
+**The level page** (`/learn/level`) shows the level's overall bar, one bar
+each for words, phrases, grammar and speaking (role-plays played), every unit
+with its challenge, the can-do list, and time practised against the guide
+hours with an estimated finish at the learner's own pace (the share of the
+level each hour has covered so far, and minutes a day over the last two
+weeks). **Finishing a level** is stored as an `Achievement` named
+`level:<language>:<level>`: it unlocks a printable certificate
+(`/learn/level/certificate`) and a ★ badge next to the learner's name on the
+leaderboard ("★ IT A1").
 
 ## Content scope
 

@@ -349,5 +349,6 @@ export function presentStep(course: Course, plan: Plan, random: () => number): P
       .map((exercise, index) => present(course, exercise, String(index), random))
       .filter((exercise): exercise is PublicExercise => exercise !== null),
     unit: { id: unit.id, code: unitCode(unit), title: unit.title, level: unit.level },
+    challenge: plan.exercises.some((exercise) => exercise.role === "challenge"),
   };
 }
