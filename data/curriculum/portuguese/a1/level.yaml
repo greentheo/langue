@@ -80,27 +80,30 @@ units:
   - title: Who are you?
     lessons: [03-ser]
     situations: [meeting]
+    categories: [work, language]
   - title: Things you have
     lessons: [04-articles, 05-ter]
-    categories: [housing, technology, education, emotions]
+    categories: [housing, technology, education, clothing]
   - title: How are you?
     lessons: [06-estar]
-    categories: [transportation, travel]
+    situations: [small-talk]
+    categories: [emotions, body, transportation, travel]
   - title: Numbers and prices
     lessons: [07-numbers]
-    categories: [numbers, time, shopping]
+    situations: [shopping]
+    categories: [numbers, shopping]
   - title: Everyday verbs
     lessons: [08-ar-verbs, 09-er-ir-verbs]
     situations: [help]
-    categories: [work]
+    categories: [verbs]
   - title: Family and friends
     lessons: [10-adjectives, 11-family]
-    categories: [family]
+    categories: [family, animals, colors]
   - title: Going and liking
     lessons: [12-ir-fazer, 13-gostar]
-    situations: [cafe]
-    categories: [food]
+    situations: [cafe, getting-around]
+    categories: [food, leisure]
   - title: Your day
     lessons: [14-routine, 15-prepositions]
     situations: [time]
-    categories: [weather]
+    categories: [time, weather]

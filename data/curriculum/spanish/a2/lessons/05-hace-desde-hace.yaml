@@ -1,0 +1,185 @@
+title: "Hace dos años"
+subtitle: "*Hace* for \"ago\"; *desde* and *desde hace* for \"since\" and \"for\""
+goal: say how long ago something happened, and how long something has been going on, with *hace*, *desde* and *desde hace*
+minutes: 13
+
+sections:
+  - heading: "Hace + time = ago"
+    body: |
+      To say how long *ago* something happened, put **hace** in front of
+      the amount of time. The verb is in the preterite.
+
+      *Hace dos años* means "two years ago". It can go at the start or at
+      the end of the sentence.
+    table:
+      columns: [Spanish, English]
+      rows:
+        - [hace cinco minutos, five minutes ago]
+        - [hace un rato, a little while ago]
+        - [hace tres días, three days ago]
+        - [hace un mes, a month ago]
+        - [hace mucho tiempo, a long time ago]
+    examples:
+      - ["Llegué hace una hora.", "I arrived an hour ago."]
+      - ["Hace dos años fuimos a Perú.", "Two years ago we went to Peru."]
+      - ["—¿Cuándo empezó la película? —Hace diez minutos.", "—When did the movie start? —Ten minutes ago."]
+    tip: "English puts \"ago\" after the time; Spanish puts *hace* before it. Nothing goes at the end: *hace dos días*."
+
+  - heading: "Desde hace = for (and still going)"
+    body: |
+      For something that started in the past and is **still going on**,
+      English says "I have lived here for three years". Spanish uses the
+      **present** tense with **desde hace**:
+
+      *Vivo aquí desde hace tres años.*
+
+      The present makes sense: you still live here.
+    examples:
+      - ["Estudio español desde hace seis meses.", "I've been studying Spanish for six months."]
+      - ["Mi padre trabaja en un hospital desde hace diez años.", "My dad has worked at a hospital for ten years."]
+      - ["Está enferma desde hace tres días.", "She's been sick for three days."]
+    tip: "Don't use the past here. *Viví allí tres años* means you lived there for three years and then left."
+
+  - heading: "Desde = since"
+    body: |
+      **Desde** on its own means "since". Use it with a point in time — a
+      day, a month, a year — instead of an amount of time.
+
+      Again, the verb is in the present if the thing is still going on.
+    table:
+      columns: [a point in time → desde, an amount of time → desde hace]
+      rows:
+        - [desde el lunes, desde hace tres días]
+        - [desde junio, desde hace dos meses]
+        - [desde ayer, desde hace un rato]
+    examples:
+      - ["Estoy enfermo desde el lunes.", "I've been sick since Monday."]
+      - ["Vivimos en Quito desde 2022.", "We've lived in Quito since 2022."]
+      - ["Tengo dolor de cabeza desde ayer.", "I've had a headache since yesterday."]
+
+  - heading: Asking how long
+    body: |
+      Two ways to ask how long something has been going on, both with the
+      present tense:
+
+      - **¿Desde cuándo…?** — since when…?
+      - **¿Cuánto tiempo hace que…?** — how long…?
+
+      You can answer the same way round: **hace** + time + **que** +
+      present. *Hace dos años que vivo aquí* means the same as *Vivo aquí
+      desde hace dos años*.
+    examples:
+      - ["—¿Desde cuándo estudias español? —Desde septiembre.", "—How long have you been studying Spanish? —Since September."]
+      - ["—¿Cuánto tiempo hace que vives aquí? —Tres años.", "—How long have you lived here? —Three years."]
+      - ["Hace un año que trabajo en esta empresa.", "I've worked at this company for a year."]
+
+words:
+  - [hace (+ time), ago]
+  - [desde, since]
+  - [desde hace, "for (and still going)"]
+  - ["¿desde cuándo?", since when?]
+  - [tiempo, time]
+  - [un rato, a while]
+  - [minuto, minute]
+  - [mes, month]
+  - [mucho tiempo, a long time]
+  - [dolor de cabeza, headache]
+  - [mudarse, to move (house)]
+  - [empresa, company]
+
+practice:
+  - type: translate
+    section: 1
+    direction: to-target
+    prompt: two days ago
+    answers: [hace dos días]
+    why: Hace goes before the amount of time to mean "ago".
+
+  - type: fill
+    section: 1
+    prompt: "Llegué ___ una hora."
+    hint: ago
+    translation: I arrived an hour ago.
+    answers: [hace]
+    why: Hace + an amount of time means "ago".
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: Nos mudamos hace un año.
+    answers: [We moved a year ago, We moved one year ago, We moved house a year ago, We moved house one year ago]
+    why: Hace un año means "a year ago", and mudarse means "to move house".
+
+  - type: choice
+    section: 1
+    prompt: "*Hace un rato* means…"
+    options: [a little while ago, in a little while, for a while]
+    answer: a little while ago
+    why: Hace + an amount of time means "ago".
+
+  - type: fill
+    section: 2
+    prompt: "Vivo aquí ___ tres años."
+    hint: for — and still going
+    translation: I've lived here for three years.
+    answers: [desde hace]
+    why: For something still going on, Spanish uses the present with desde hace.
+
+  - type: choice
+    section: 2
+    prompt: "I've been studying Spanish for six months (and I still am):"
+    options: [Estudié español hace seis meses., Estudio español desde hace seis meses., Estudio español hace seis meses.]
+    answer: Estudio español desde hace seis meses.
+    why: Something still going on takes the present tense and desde hace.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: My father has worked at a hospital for ten years.
+    answers: [Mi padre trabaja en un hospital desde hace diez años, Mi papá trabaja en un hospital desde hace diez años, Mi padre trabaja desde hace diez años en un hospital, Mi papá trabaja desde hace diez años en un hospital, Hace diez años que mi padre trabaja en un hospital, Hace diez años que mi papá trabaja en un hospital]
+    why: He still works there, so Spanish uses the present with desde hace.
+
+  - type: fill
+    section: 3
+    prompt: "Estoy enfermo ___ el lunes."
+    hint: since
+    translation: I've been sick since Monday.
+    answers: [desde]
+    why: Desde on its own means "since" and goes with a point in time.
+
+  - type: choice
+    section: 3
+    prompt: Which one means "since June"?
+    options: [desde junio, desde hace junio, hace junio]
+    answer: desde junio
+    why: A point in time, like a month, takes desde on its own.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: Tengo dolor de cabeza desde ayer.
+    answers: [I have had a headache since yesterday, I have been having a headache since yesterday, I have got a headache since yesterday]
+    why: Desde means "since", and Spanish uses the present because the headache is still going on.
+
+  - type: fill
+    section: 4
+    prompt: "¿Desde ___ estudias español?"
+    hint: when
+    translation: Since when have you been studying Spanish?
+    answers: [cuándo]
+    why: ¿Desde cuándo…? asks since when something has been going on.
+
+  - type: fill
+    section: 4
+    prompt: "___ dos años que vivo en Lima."
+    hint: it's been
+    translation: I've lived in Lima for two years.
+    answers: [Hace]
+    why: Hace + time + que + present is another way to say "for".
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: How long have you lived here? (to a friend)
+    answers: ["¿Cuánto tiempo hace que vives aquí?", "¿Cuánto tiempo hace que tú vives aquí?", "¿Desde cuándo vives aquí?", "¿Desde cuándo vives tú aquí?", "¿Hace cuánto tiempo que vives aquí?", "¿Hace cuánto que vives aquí?", "¿Cuánto tiempo llevas viviendo aquí?", "¿Cuánto tiempo llevas aquí?"]
+    why: Ask with ¿Cuánto tiempo hace que…? or ¿Desde cuándo…?, and use the present tense.

@@ -1,0 +1,186 @@
+title: "¿Sabes o conoces?"
+subtitle: "*Saber* or *conocer*; *por* or *para*"
+goal: choose between *saber* and *conocer* for "to know", and between *por* and *para* for "for", in everyday sentences
+minutes: 16
+
+sections:
+  - heading: "Saber: to know facts, to know how"
+    body: |
+      Spanish has two verbs for "to know". **Saber** is for facts and
+      information — and, with an infinitive, for skills: *saber nadar*
+      means "to know how to swim".
+
+      Only the *yo* form is irregular: **sé**, with an accent mark.
+    table:
+      columns: [who, saber]
+      rows:
+        - [yo, sé]
+        - [tú, sabes]
+        - [él / ella / usted, sabe]
+        - [nosotros / nosotras, sabemos]
+        - [vosotros / vosotras (Spain), sabéis]
+        - [ellos / ellas / ustedes, saben]
+    examples:
+      - ["¿Sabes dónde está el museo?", "Do you know where the museum is?"]
+      - ["No sé su nombre.", "I don't know her name."]
+      - ["Mi hermano sabe cocinar muy bien.", "My brother can cook really well."]
+    tip: "For skills, Spanish says *saber*, not *poder*: \"I can swim\" is *Sé nadar*."
+
+  - heading: "Conocer: to know people and places"
+    body: |
+      **Conocer** means to know a person, or to know a place because
+      you've been there. Only *yo* is irregular: **conozco**, then
+      *conoces, conoce, conocemos, conocen*.
+
+      Remember the personal **a** before people: *Conozco a tu hermano.*
+
+      In the preterite, *conocer* means "to meet" for the first time:
+      **Conocí a Ana en Lima** — I met Ana in Lima.
+    examples:
+      - ["¿Conoces Buenos Aires?", "Have you been to Buenos Aires?"]
+      - ["No conozco a nadie aquí.", "I don't know anyone here."]
+      - ["Conocí a mi mejor amiga en la escuela.", "I met my best friend at school."]
+    tip: "Don't use *saber* for people: *Conozco a Pablo* — never *sé Pablo*."
+
+  - heading: "Para: for, in order to"
+    body: |
+      "For" is sometimes **para** and sometimes **por**. **Para** points
+      ahead — to a goal, a person or a place:
+
+      - **purpose**: *para* + infinitive means "(in order) to"
+      - **who it's for**: *Este regalo es para ti.*
+      - **where you're heading**: *el tren para Cusco*
+      - **a deadline**: *La tarea es para el lunes.*
+    examples:
+      - ["Estudio español para viajar.", "I'm studying Spanish to travel."]
+      - ["Este regalo es para ti.", "This present is for you."]
+      - ["¿A qué hora sale el tren para Cusco?", "What time does the train for Cusco leave?"]
+    tip: "After *para* and *por*, \"me\" and \"you\" are **mí** and **ti**: *para mí*, *para ti* — never *para yo*."
+
+  - heading: "Por: because of, through, by, per"
+    body: |
+      **Por** looks at the cause, the route or the way something happens:
+
+      - **cause**: *Llegué tarde por el tráfico.*
+      - **through, around**: *Caminamos por el parque.*
+      - **by, means**: *por teléfono*
+      - **per**: *tres veces por semana*
+      - **parts of the day**: *por la mañana* (you know this one)
+    examples:
+      - ["Gracias por la invitación.", "Thanks for the invitation."]
+      - ["Hablé con ella por teléfono.", "I talked to her on the phone."]
+      - ["Voy al gimnasio tres veces por semana.", "I go to the gym three times a week."]
+    tip: "*Gracias* is always followed by *por*: *gracias por todo* — thanks for everything."
+
+words:
+  - [saber, "to know (facts, how to)"]
+  - [conocer, "to know (people, places), to meet"]
+  - [nadie, "nobody, anyone"]
+  - [mejor amigo / mejor amiga, best friend]
+  - [por, "because of, through, by, per"]
+  - [mí, me (after para and por)]
+  - [ti, you (after para and por)]
+  - [ayuda, help]
+  - [tráfico, traffic]
+  - [caminar, to walk]
+  - [invitación, invitation]
+  - [respuesta, answer]
+
+practice:
+  - type: fill
+    section: 1
+    strict_accents: true
+    prompt: "No ___ dónde está el museo."
+    hint: saber, yo
+    translation: I don't know where the museum is.
+    answers: [sé]
+    why: The yo form of saber is sé, with an accent — se without it is a different word.
+
+  - type: fill
+    section: 1
+    prompt: "¿___ nadar?"
+    hint: saber, tú
+    translation: Can you swim?
+    answers: [Sabes]
+    why: Saber + infinitive is for skills — knowing how to do something.
+
+  - type: translate
+    section: 1
+    direction: to-target
+    prompt: I can't swim. (I don't know how)
+    answers: [No sé nadar, Yo no sé nadar]
+    why: For skills, Spanish uses saber — no sé nadar.
+
+  - type: fill
+    section: 2
+    prompt: "¿___ a mi hermano?"
+    hint: conocer, tú
+    translation: Do you know my brother?
+    answers: [Conoces]
+    why: Conocer is for knowing people.
+
+  - type: choice
+    section: 2
+    prompt: "I know where she lives:"
+    options: [Sé dónde vive., Conozco dónde vive.]
+    answer: Sé dónde vive.
+    why: Where someone lives is a piece of information, so it takes saber.
+
+  - type: choice
+    section: 2
+    prompt: Have you been to Buenos Aires?
+    options: ["¿Sabes Buenos Aires?", "¿Conoces Buenos Aires?"]
+    answer: "¿Conoces Buenos Aires?"
+    why: To know a place — to have been there — is conocer.
+
+  - type: translate
+    section: 2
+    direction: to-english
+    prompt: Conocí a Pablo en Lima.
+    answers: [I met Pablo in Lima, I got to know Pablo in Lima]
+    why: In the preterite, conocer means "to meet" for the first time.
+
+  - type: fill
+    section: 3
+    prompt: "Este regalo es ___ ti."
+    hint: for
+    translation: This present is for you.
+    answers: [para]
+    why: Para says who something is for.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: I'm studying Spanish to travel.
+    answers: [Estudio español para viajar, Yo estudio español para viajar, Estoy estudiando español para viajar, Yo estoy estudiando español para viajar]
+    why: Para + infinitive means "(in order) to".
+
+  - type: choice
+    section: 3
+    prompt: "*La tarea es ___ el lunes.* (it's due on Monday)"
+    options: [por, para]
+    answer: para
+    why: Para marks a deadline.
+
+  - type: fill
+    section: 4
+    prompt: "Gracias ___ tu ayuda."
+    hint: for
+    translation: Thanks for your help.
+    answers: [por]
+    why: Gracias is always followed by por.
+
+  - type: fill
+    section: 4
+    prompt: "Voy al gimnasio tres veces ___ semana."
+    hint: per
+    translation: I go to the gym three times a week.
+    answers: [por, a la]
+    why: Por means "per" — tres veces por semana.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Hablé con ella por teléfono.
+    answers: [I talked to her on the phone, I spoke to her on the phone, I talked with her on the phone, I spoke with her on the phone, I talked to her by phone, I spoke to her by phone, I talked with her by phone, I spoke with her by phone]
+    why: Por teléfono means "on the phone" or "by phone".

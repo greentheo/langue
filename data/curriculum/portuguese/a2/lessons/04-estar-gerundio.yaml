@@ -1,0 +1,182 @@
+title: "Estou falando"
+subtitle: Estar + -ndo for things happening now
+goal: say what is happening right now, and what's going on in your life these days, with estar + the -ndo form
+minutes: 13
+
+sections:
+  - heading: The -ndo form
+    body: |
+      English adds **-ing** to a verb: speak → speaking. Portuguese takes
+      the infinitive and swaps the final **-r** for **-ndo**. This form is
+      called the **gerund**.
+
+      It's the easiest form in the language: it works the same way for
+      every verb, even the irregular ones. *Fazer* → *fazendo*, *ir* →
+      *indo*, *ver* → *vendo*.
+    table:
+      columns: [infinitive, gerund, English]
+      rows:
+        - [falar, falando, speaking]
+        - [comer, comendo, eating]
+        - [abrir, abrindo, opening]
+        - [fazer, fazendo, doing]
+        - [ir, indo, going]
+    examples:
+      - ["Estou indo.", "I'm on my way."]
+      - ["Ela está comendo.", "She's eating."]
+
+  - heading: Right now
+    body: |
+      **Estar** + gerund says what is happening at this moment, just like
+      "I am doing" in English:
+
+      - *Estou estudando.* — I'm studying.
+      - *O que você está fazendo?* — What are you doing?
+
+      In speech you'll hear the short forms of *estar*: *Tô chegando!* —
+      I'm almost there! (literally "I'm arriving")
+    examples:
+      - ["Ela está tomando banho.", "She's taking a shower."]
+      - ["Estamos esperando o ônibus.", "We're waiting for the bus."]
+      - ["Os meninos estão jogando futebol.", "The boys are playing football."]
+    tip: "*Esperar* needs no word for \"for\": *estou esperando o ônibus* — I'm waiting for the bus."
+
+  - heading: These days
+    body: |
+      Like English, *estar* + gerund also covers something going on for a
+      while, but not for ever:
+
+      - *Estou morando em Salvador.* — I'm living in Salvador (for now).
+      - *Ela está trabalhando muito.* — She's working a lot (these days).
+
+      Compare the plain present, for what is simply true: *Moro em
+      Salvador.* — I live in Salvador (it's my home).
+    examples:
+      - ["Estou aprendendo português.", "I'm learning Portuguese."]
+      - ["A gente está procurando um apartamento.", "We're looking for an apartment."]
+      - ["O que você está lendo?", "What are you reading?"]
+
+  - heading: Weather, and "I'm not following"
+    body: |
+      Weather that is happening now uses it too. There's no word for "it":
+
+      - **Está chovendo.** — It's raining.
+      - **Está ventando.** — It's windy.
+
+      For the negative, put **não** before *estar*: *Não estou entendendo.*
+      — I'm not following. It's a very useful sentence.
+
+      Answer a question with just *estar*: *— Você está ouvindo? —
+      Estou.* — Are you listening? — Yes, I am.
+    examples:
+      - ["Está chovendo em São Paulo.", "It's raining in São Paulo."]
+      - ["Desculpa, não estou entendendo.", "Sorry, I'm not following."]
+    tip: "Don't use *-ndo* for plans the way English does (\"I'm travelling tomorrow\"). For plans, use *vou* + infinitive: *Vou viajar amanhã*."
+
+words:
+  - [agora, now]
+  - [no momento, at the moment]
+  - [esperar, to wait / to wait for]
+  - [procurar, to look for]
+  - [ler, to read]
+  - [ouvir, to hear / to listen]
+  - [chover, to rain]
+  - [ventar, to be windy]
+  - [apartamento, apartment / flat]
+  - [ainda, still]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Ela está ___."
+    hint: comer
+    translation: She's eating.
+    answers: [comendo]
+    why: Swap the -r of the infinitive for -ndo — comer, comendo.
+
+  - type: fill
+    section: 1
+    prompt: "Estamos ___ a janela."
+    hint: abrir
+    translation: We're opening the window.
+    answers: [abrindo]
+    why: Abrir becomes abrindo — the rule works for -ir verbs too.
+
+  - type: choice
+    section: 1
+    prompt: What is the -ndo form of *fazer*?
+    options: [fazendo, faziendo, fazindo]
+    answer: fazendo
+    why: Every verb just swaps -r for -ndo, even irregular ones like fazer.
+
+  - type: fill
+    section: 2
+    prompt: "Eu ___ esperando o ônibus."
+    hint: estar, eu
+    translation: I'm waiting for the bus.
+    answers: [estou, tô]
+    why: The -ndo form goes with estar — with eu that's estou.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: "He's having breakfast."
+    answers:
+      - "Ele está tomando café da manhã."
+      - "Ele tá tomando café da manhã."
+    why: "Estar + tomando says what he is doing right now."
+
+  - type: translate
+    section: 2
+    direction: to-english
+    prompt: "As meninas estão nadando."
+    answers:
+      - "The girls are swimming."
+    why: "Estão nadando is estar + gerund — they are swimming right now."
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: "We're studying a lot these days."
+    answers:
+      - "Estamos estudando muito."
+      - "Nós estamos estudando muito."
+      - "A gente está estudando muito."
+      - "A gente tá estudando muito."
+    why: "Estar + -ndo also covers what's going on in your life these days."
+
+  - type: choice
+    section: 3
+    prompt: "\"I live in Recife.\" (It's my home.)"
+    options: [Moro em Recife., Estou morando em Recife.]
+    answer: Moro em Recife.
+    why: For what is simply true, use the plain present; estar + -ndo is for now, or for a while.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: Estamos procurando um apartamento.
+    answers: [We're looking for an apartment., We're looking for a flat., We are looking for an apartment., We are looking for a flat.]
+    why: Procurar is to look for, and estamos procurando is "we're looking for".
+
+  - type: fill
+    section: 4
+    prompt: "Está ___ em São Paulo."
+    hint: chover
+    translation: It's raining in São Paulo.
+    answers: [chovendo]
+    why: Weather happening now is está + gerund, with no word for "it".
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Não estou entendendo.
+    answers: [I'm not following., I don't understand., I'm not understanding., I'm not getting it.]
+    why: Não goes before estar — I'm not understanding (right now).
+
+  - type: choice
+    section: 4
+    prompt: "\"I'm travelling tomorrow.\""
+    options: [Vou viajar amanhã., Estou viajando amanhã., Estou viajar amanhã.]
+    answer: Vou viajar amanhã.
+    why: For plans, Portuguese uses ir + infinitive, not estar + -ndo.

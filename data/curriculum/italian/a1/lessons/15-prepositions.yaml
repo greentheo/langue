@@ -143,6 +143,21 @@ practice:
     answers: ["il libro di Marco"]
     why: Italian has no 's — it says "the book of Marco".
 
+  - type: fill
+    section: 1
+    prompt: "Vado ___ Marco."
+    hint: to Marco's place
+    translation: I'm going to Marco's.
+    answers: [da]
+    why: Da + a person means "to their place" (or "at their place").
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: un libro su Roma
+    answers: ["a book about Rome", "a book on Rome"]
+    why: Su means "on", and also "about" when it introduces a topic.
+
   - type: translate
     section: 3
     direction: to-english

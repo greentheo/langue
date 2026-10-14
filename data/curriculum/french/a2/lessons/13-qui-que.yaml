@@ -1,0 +1,188 @@
+title: "Le garçon qui chante"
+subtitle: Joining sentences with qui and que
+goal: join two sentences with *qui* and *que* (and *où*) to say exactly which person, thing or place you mean
+minutes: 14
+
+sections:
+  - heading: "Qui: who, which, that"
+    body: |
+      **Qui** joins two sentences about the same person or thing. It
+      replaces the **subject**, the one doing the action, so a **verb**
+      comes straight after it.
+
+      - *J'ai une amie. Elle habite à Rome.* → *J'ai une amie **qui**
+        habite à Rome.*
+      - *C'est le train **qui** va à Lyon.* — It's the train that goes to
+        Lyon.
+
+      *Qui* works for both people and things.
+    examples:
+      - ["Le garçon qui parle est mon frère.", "The boy who's talking is my brother."]
+      - ["Je prends le bus qui part à huit heures.", "I take the bus that leaves at eight."]
+
+  - heading: "Que: who, which, that"
+    body: |
+      **Que** replaces the **object**, the person or thing that the action
+      is done to, so a **subject** comes after it (*je, tu, Paul…*).
+
+      - *J'ai lu un livre. Tu aimes ce livre.* → *J'ai lu le livre **que**
+        tu aimes.*
+
+      Before a vowel, *que* becomes **qu'**: *le film **qu'**il regarde*.
+    examples:
+      - ["Le film que nous avons vu était super.", "The film we saw was great."]
+      - ["La ville qu'il préfère, c'est Nice.", "The city he likes best is Nice."]
+    tip: "English often leaves \"that\" out: \"the film we saw\". French can't: *le film **que** nous avons vu*."
+
+  - heading: Qui or que?
+    body: |
+      Don't use the English to decide, because "who", "which" and "that"
+      can be either. Look at what comes **straight after** the gap:
+
+      - a **verb** → **qui**: *la dame **qui** parle*
+      - a **subject** (*je, tu, il, Marie…*) → **que**: *la dame **que**
+        je connais*
+    table:
+      columns: ["", followed by, example]
+      rows:
+        - [qui, a verb, "l'homme qui chante — the man who sings"]
+        - ["que, qu'", "a subject, then a verb", "l'homme que je vois — the man I see"]
+    examples:
+      - ["C'est le bus qui va à la gare.", "It's the bus that goes to the station."]
+      - ["C'est le bus que je prends.", "It's the bus I take."]
+    tip: "*Qui* never shortens: *l'ami qui arrive*. Only *que* becomes *qu'*."
+
+  - heading: "Où: where — and describing things"
+    body: |
+      **Où** joins sentences about places and times: *la ville **où**
+      j'habite* — the town where I live.
+
+      *Qui, que* and *où* are a lifesaver when you don't know a word.
+      Just describe it:
+
+      - *C'est **quelqu'un qui** travaille dans un hôpital.* — It's
+        someone who works in a hospital.
+      - *C'est **une chose qu'**on utilise pour manger.* — It's a thing
+        you use to eat.
+      - *C'est **un endroit où** on achète du pain.* — It's a place where
+        you buy bread.
+    examples:
+      - ["C'est la maison où j'ai grandi.", "This is the house where I grew up."]
+      - ["C'est le quartier où j'habite.", "This is the area where I live."]
+      - ["C'est un pays où il fait chaud.", "It's a country where it's hot."]
+
+words:
+  - [que / qu', "who, which, that (object)"]
+  - [la chanson, the song]
+  - [la radio, the radio]
+  - [la dame, the lady]
+  - ["quelqu'un", someone]
+  - [une chose, a thing]
+  - [un endroit, a place]
+  - [utiliser, to use]
+  - [le quartier, "the area, the neighbourhood"]
+  - [le pays, the country]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "J'ai une amie ___ habite à Rome."
+    hint: (who)
+    translation: I have a friend who lives in Rome.
+    answers: [qui]
+    why: A verb comes straight after the gap, so it's qui.
+
+  - type: translate
+    section: 1
+    direction: to-target
+    prompt: It's the train that goes to Lyon.
+    answers: ["C'est le train qui va à Lyon."]
+    why: The train is doing the going, so it's qui + verb.
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: Le garçon qui parle est mon frère.
+    answers: ["The boy who is talking is my brother.", "The boy who's talking is my brother.", "The boy talking is my brother.", "The boy who is speaking is my brother.", "The boy who speaks is my brother.", "The boy that is talking is my brother."]
+    why: Qui links "the boy" to what he's doing.
+
+  - type: fill
+    section: 2
+    prompt: "J'ai lu le livre ___ tu aimes."
+    hint: (that)
+    translation: I read the book that you like.
+    answers: [que]
+    why: A subject (tu) comes after the gap, so it's que.
+
+  - type: choice
+    section: 2
+    prompt: "*Le film ___ regarde est long.* Which fits?"
+    options: [que il, "qu'il", qui il]
+    answer: "qu'il"
+    why: Que becomes qu' before a vowel.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: The film we saw was great.
+    answers: ["Le film que nous avons vu était super.", "Le film qu'on a vu était super.", "Le film que nous avons vu était génial.", "Le film qu'on a vu était génial.", "Le film que nous avons vu était très bien.", "Le film qu'on a vu était très bien."]
+    why: French can't drop "that", so que joins le film to nous avons vu.
+
+  - type: translate
+    section: 2
+    direction: to-english
+    prompt: "La ville qu'il préfère, c'est Nice."
+    answers: ["The city he prefers is Nice.", "The town he prefers is Nice.", "The city he likes best is Nice.", "The town he likes best is Nice.", "The city that he prefers is Nice.", "His favourite city is Nice.", "His favorite city is Nice."]
+    why: Qu'il préfère means "that he prefers".
+
+  - type: choice
+    section: 3
+    prompt: "*C'est la dame ___ je connais.*"
+    options: [qui, que]
+    answer: que
+    why: A subject (je) comes after the gap, so it's que.
+
+  - type: choice
+    section: 3
+    prompt: "*C'est la dame ___ habite ici.*"
+    options: [qui, que]
+    answer: qui
+    why: A verb (habite) comes straight after the gap, so it's qui.
+
+  - type: fill
+    section: 3
+    prompt: "C'est la chanson ___ passe à la radio."
+    hint: (that)
+    translation: It's the song that's on the radio.
+    answers: [qui]
+    why: A verb (passe) comes straight after the gap, so it's qui.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: the man I see
+    answers: ["l'homme que je vois"]
+    why: A subject (je) follows, so it's que, and French can't leave it out.
+
+  - type: fill
+    section: 4
+    prompt: "C'est un endroit ___ on achète du pain."
+    hint: (where)
+    translation: It's a place where you buy bread.
+    answers: [où]
+    why: Où joins sentences about places.
+    strict_accents: true
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: It's someone who works in a hospital.
+    answers: ["C'est quelqu'un qui travaille dans un hôpital.", "C'est quelqu'un qui travaille à l'hôpital."]
+    why: Quelqu'un qui + verb describes a person when you don't know the word.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: "C'est la maison où j'ai grandi."
+    answers: ["This is the house where I grew up.", "It's the house where I grew up.", "That's the house where I grew up.", "This is the house I grew up in.", "It's the house I grew up in.", "That's the house I grew up in."]
+    why: Où means "where" when it joins two sentences about a place.

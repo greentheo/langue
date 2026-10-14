@@ -1,0 +1,243 @@
+title: "Gli scrivo"
+subtitle: Indirect object pronouns — to me, to him, to her
+goal: say who you give, send, write or say things to with mi, ti, gli, le, ci and vi
+minutes: 14
+
+sections:
+  - heading: "To me, to you, to him…"
+    body: |
+      Some verbs have a person they're done **to**: you write **to** a
+      friend, you give a present **to** your mum. That person is the
+      **indirect object**.
+
+      Instead of "to + person", Italian uses a short word **before** the
+      verb:
+
+      - *Scrivo a Marco. → Gli scrivo.* — I'm writing to him.
+      - *Mando una foto a Giulia. → Le mando una foto.* — I'm sending her a photo.
+
+      Useful verbs: **dare** (to give), **mandare** (to send), **regalare**
+      (to give as a present), **portare** (to bring), **dire**, **scrivere**.
+    table:
+      columns: [to…, pronoun]
+      rows:
+        - [to me, mi]
+        - [to you (tu), ti]
+        - [to him, gli]
+        - [to her, le]
+        - [to you (Lei), Le]
+        - [to us, ci]
+        - [to you (voi), vi]
+        - [to them, gli]
+    examples:
+      - ["Gli scrivo un messaggio.", "I'm writing him a message."]
+      - ["Mi dai il tuo numero?", "Will you give me your number?"]
+      - ["Vi porto un caffè.", "I'll bring you (all) a coffee."]
+    tip: "You already know this table: *mi piace, ti piace, gli piace, le piace*. *Piacere* takes these pronouns because it means \"to be pleasing **to**\" someone."
+
+  - heading: Verbs that need "to"
+    body: |
+      Some verbs need "to" in Italian where English doesn't. The pronoun
+      shows it:
+
+      - **telefonare a** — to phone (someone): *Gli telefono.* — I'll phone him.
+      - **chiedere a** — to ask (someone): *Le chiedo l'indirizzo.* — I'll ask her for the address.
+      - **rispondere a** — to answer (someone): *Ti rispondo subito.* — I'll answer you straight away.
+
+      **Dare** (to give) is irregular in the present: *do, dai, dà, diamo,
+      date, danno*.
+    examples:
+      - ["Gli telefono domani.", "I'll call him tomorrow."]
+      - ["Ci danno la chiave alle tre.", "They're giving us the key at three."]
+      - ["Le chiedo dov'è la stazione.", "I'll ask her where the station is."]
+    tip: "You phone **to** someone in Italian, so it's *gli telefono*, not *lo telefono*. With *chiamare* it's direct: *lo chiamo*."
+
+  - heading: "Gli, le — and two kinds of le"
+    body: |
+      **Gli** means "to him" and, in everyday Italian, "to them". **Le**
+      means "to her". Polite **Le**, often with a capital, means "to you"
+      for someone you call *Lei*.
+
+      Careful: in lesson 6, *le* meant "them" (feminine). Ask yourself if
+      the verb needs "to":
+
+      - *Le vedo.* — I see them. (*vedere* someone — no "to")
+      - *Le parlo.* — I talk to her. (*parlare a* someone)
+    examples:
+      - ["Cosa regali a tua madre? Le regalo un libro.", "What are you giving your mother? I'm giving her a book."]
+      - ["Gli ho mandato una foto.", "I sent him a photo."]
+      - ["Le porto il menù?", "Shall I bring you the menu? (polite)"]
+    tip: "*Gli* is both \"to him\" and \"to them\": *Gli scrivo* can mean either. The story tells you which."
+
+  - heading: In the past, and with infinitives
+    body: |
+      Indirect pronouns go in the same places as the ones in lesson 6:
+      before the verb, before the helper, or on the end of an infinitive.
+
+      - *Le ho scritto ieri.* — I wrote to her yesterday.
+      - *Gli devo telefonare.* = *Devo telefonargli.* — I have to phone him.
+
+      There's one big difference: **the participle never changes**. It's
+      *Le ho scritto*, never *Le ho scritta*. And *le* and *gli* never
+      shorten to *l'*.
+    examples:
+      - ["Gli abbiamo regalato una bici.", "We gave him a bike (as a present)."]
+      - ["Mi hai mandato il messaggio?", "Did you send me the message?"]
+      - ["Posso farti una domanda?", "Can I ask you a question?"]
+    tip: "Compare: *L'ho vista* (I saw her — the ending changes) and *Le ho parlato* (I spoke to her — no change)."
+
+words:
+  - [dare, to give]
+  - [mandare, to send]
+  - [regalare, to give as a present]
+  - [portare, "to bring, to carry"]
+  - [messaggio, message]
+  - [numero, number]
+  - [indirizzo, address]
+  - [foto, photo]
+  - [regalo, present]
+  - [compleanno, birthday]
+  - [domanda, question]
+  - [bici, bike]
+  - [menù, menu]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "___ scrivo un messaggio."
+    hint: to him
+    translation: I'm writing him a message.
+    answers: [gli]
+    why: '"To him" is gli, and it goes before the verb.'
+
+  - type: fill
+    section: 1
+    prompt: "Per il suo compleanno ___ mando una foto."
+    hint: to her
+    translation: For her birthday I'm sending her a photo.
+    answers: [le]
+    why: '"To her" is le.'
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: Mi dai il tuo numero?
+    answers:
+      - Will you give me your number?
+      - Can you give me your number?
+      - Are you giving me your number?
+      - Could you give me your number?
+    why: Mi is "to me" — "give (to) me".
+
+  - type: choice
+    section: 1
+    prompt: Which word means "to us"?
+    options: [ci, vi, gli]
+    answer: ci
+    why: Ci is "to us"; vi is "to you (a group)" and gli is "to him" or "to them".
+
+  - type: fill
+    section: 2
+    prompt: "I nonni ci ___ un regalo."
+    hint: dare, loro
+    translation: Our grandparents are giving us a present.
+    answers: [danno]
+    why: Dare is irregular — the loro form is danno.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: I'll call him tomorrow.
+    answers:
+      - Gli telefono domani.
+      - Domani gli telefono.
+      - Io gli telefono domani.
+      - Lo chiamo domani.
+      - Domani lo chiamo.
+      - Io lo chiamo domani.
+    why: Telefonare takes "to" someone, so it's gli telefono — or use chiamare, which takes lo.
+
+  - type: choice
+    section: 2
+    prompt: How do you say "I'm phoning Marco" with a pronoun?
+    options: [Lo telefono., Gli telefono., Telefono lo.]
+    answer: Gli telefono.
+    why: In Italian you phone "to" someone — telefonare a — so it's gli.
+
+  - type: fill
+    section: 3
+    prompt: "Cosa regali a tua madre? ___ regalo un libro."
+    hint: to her
+    translation: What are you giving your mother? I'm giving her a book.
+    answers: [le]
+    why: Your mother is "her", so "to her" is le.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: Le porto il menù?
+    answers:
+      - Shall I bring you the menu?
+      - Can I bring you the menu?
+      - Should I bring you the menu?
+      - Shall I bring her the menu?
+      - Can I bring her the menu?
+      - Should I bring her the menu?
+    why: Polite Le is "to you" for someone you call Lei — it can also mean "to her".
+
+  - type: choice
+    section: 3
+    prompt: What does *Le parlo* mean?
+    options: [I talk to her., I talk to them., I see her.]
+    answer: I talk to her.
+    why: Parlare takes "to" someone, so this le is "to her".
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: I'm giving her a book. (as a present)
+    answers:
+      - Le regalo un libro.
+      - Io le regalo un libro.
+      - Le do un libro.
+      - Io le do un libro.
+    why: '"To her" is le, before the verb.'
+
+  - type: fill
+    section: 4
+    prompt: "Le ho ___ ieri."
+    hint: scrivere
+    translation: I wrote to her yesterday.
+    answers: [scritto]
+    why: With indirect pronouns the participle never changes — always scritto.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: Did you send me the message? (to a friend)
+    answers:
+      - Mi hai mandato il messaggio?
+      - Tu mi hai mandato il messaggio?
+    why: Mi goes before the helper hai.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Gli abbiamo regalato una bici.
+    answers:
+      - We gave him a bike.
+      - We gave him a bicycle.
+      - We gave them a bike.
+      - We gave them a bicycle.
+      - We've given him a bike.
+      - We got him a bike.
+      - We've given them a bike.
+      - We got them a bike.
+    why: Gli is "to him" (or "to them"), and regalare is "to give as a present".
+
+  - type: choice
+    section: 4
+    prompt: How do you say "I spoke to her"?
+    options: [Le ho parlato., Le ho parlata., L'ho parlato.]
+    answer: Le ho parlato.
+    why: Le (to her) never shortens, and the participle doesn't change.

@@ -172,3 +172,17 @@ practice:
     options: [table, voiture, gâteau]
     answer: gâteau
     why: You say le gâteau, but la table and la voiture.
+
+  - type: choice
+    section: 1
+    prompt: Which noun is feminine?
+    options: [fromage, moment, question]
+    answer: question
+    why: Nouns ending in -tion are feminine (la question), while -age and -ment nouns like le fromage and le moment are usually masculine.
+
+  - type: choice
+    section: 1
+    prompt: What is the best way to learn a new noun?
+    options: ["on its own: livre", "with its article: le livre"]
+    answer: "with its article: le livre"
+    why: The article tells you the gender, and the rules about endings have lots of exceptions.

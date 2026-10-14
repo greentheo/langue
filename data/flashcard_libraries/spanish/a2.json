@@ -3,7 +3,7 @@
     "language": "spanish",
     "level": "a2",
     "version": "1.0",
-    "word_count": 120,
+    "word_count": 405,
     "created_at": "2026-08-12T22:26:56.541747+00:00",
     "description": "Elementary (A2) Spanish vocabulary: personal information, shopping, local geography",
     "source": "data/vocab_sources/spanish/a2.psv",
@@ -11,463 +11,1131 @@
   },
   "words": [
     {
-      "word": "despertarse",
+      "word": "viaje",
       "translations": [
-        "to wake up"
+        "trip",
+        "journey"
       ],
       "examples": [
-        "Me despierto a las seis y media."
+        "El viaje en autobús duró tres horas."
       ],
-      "category": "daily_routines",
-      "difficulty": 2
+      "category": "travel",
+      "difficulty": 2,
+      "examples_en": [
+        "The bus trip took three hours."
+      ]
     },
     {
-      "word": "levantarse",
+      "word": "maleta",
       "translations": [
-        "to get up"
+        "suitcase"
       ],
       "examples": [
-        "Me levanto en cuanto suena el despertador."
+        "Anoche hice la maleta para el viaje."
       ],
-      "category": "daily_routines",
-      "difficulty": 2
+      "category": "travel",
+      "difficulty": 2,
+      "examples_en": [
+        "Last night I packed my suitcase for the trip."
+      ]
     },
     {
-      "word": "ducharse",
+      "word": "vacaciones",
       "translations": [
-        "to take a shower"
+        "vacation",
+        "holidays"
       ],
       "examples": [
-        "Me ducho antes de salir."
+        "Tomo dos semanas de vacaciones en agosto."
       ],
-      "category": "daily_routines",
-      "difficulty": 2
+      "category": "travel",
+      "difficulty": 2,
+      "examples_en": [
+        "I take two weeks of vacation in August."
+      ]
     },
     {
-      "word": "vestirse",
+      "word": "reservar",
       "translations": [
-        "to get dressed"
+        "to book",
+        "to reserve"
       ],
       "examples": [
-        "Se viste muy deprisa por la mañana."
+        "Tenemos que reservar el hotel esta semana."
       ],
-      "category": "daily_routines",
-      "difficulty": 2
+      "category": "travel",
+      "difficulty": 3,
+      "examples_en": [
+        "We have to book the hotel this week."
+      ]
     },
     {
-      "word": "peinarse",
+      "word": "reserva",
       "translations": [
-        "to comb one's hair"
+        "reservation",
+        "booking (in Mexico also: reservación)"
       ],
       "examples": [
-        "Se peina delante del espejo."
+        "Hice la reserva del hotel por internet."
       ],
-      "category": "daily_routines",
-      "difficulty": 3
+      "category": "travel",
+      "difficulty": 3,
+      "examples_en": [
+        "I made the hotel reservation online."
+      ]
     },
     {
-      "word": "acostarse",
+      "word": "habitación doble",
       "translations": [
-        "to go to bed"
+        "double room"
       ],
       "examples": [
-        "Me acuesto sobre las once."
+        "Quisiera una habitación doble para tres noches."
       ],
-      "category": "daily_routines",
-      "difficulty": 2
+      "category": "travel",
+      "difficulty": 3,
+      "examples_en": [
+        "I'd like a double room for three nights."
+      ]
     },
     {
-      "word": "dormirse",
+      "word": "habitación individual",
       "translations": [
-        "to fall asleep"
+        "single room (also: habitación sencilla)"
       ],
       "examples": [
-        "Siempre me duermo viendo la tele."
+        "¿Tienen una habitación individual para esta noche?"
       ],
-      "category": "daily_routines",
-      "difficulty": 3
+      "category": "travel",
+      "difficulty": 3,
+      "examples_en": [
+        "Do you have a single room for tonight?"
+      ]
     },
     {
-      "word": "descansar",
+      "word": "alojamiento",
       "translations": [
-        "to rest"
+        "accommodation",
+        "lodging",
+        "place to stay"
       ],
       "examples": [
-        "Después de comer descanso un rato."
+        "Encontramos un alojamiento barato cerca de la playa."
       ],
-      "category": "daily_routines",
-      "difficulty": 2
+      "category": "travel",
+      "difficulty": 3,
+      "examples_en": [
+        "We found a cheap place to stay near the beach."
+      ]
     },
     {
-      "word": "costumbre",
+      "word": "huésped",
       "translations": [
-        "habit",
-        "custom"
+        "guest (at a hotel or in a home)"
       ],
       "examples": [
-        "Leer antes de dormir es una buena costumbre."
+        "Cada huésped recibe una toalla y una llave."
       ],
-      "category": "daily_routines",
-      "difficulty": 3
+      "category": "travel",
+      "difficulty": 4,
+      "examples_en": [
+        "Each guest gets a towel and a key."
+      ]
     },
     {
-      "word": "horario",
+      "word": "pasaporte",
       "translations": [
-        "schedule",
-        "timetable"
+        "passport"
       ],
       "examples": [
-        "El horario de trenes ha cambiado."
+        "Mi pasaporte vence en marzo."
       ],
-      "category": "time",
-      "difficulty": 3
+      "category": "travel",
+      "difficulty": 2,
+      "examples_en": [
+        "My passport expires in March."
+      ]
     },
     {
-      "word": "piso",
+      "word": "frontera",
       "translations": [
-        "flat",
-        "apartment",
-        "floor"
+        "border"
       ],
       "examples": [
-        "Busco un piso de alquiler."
+        "Cruzamos la frontera en autobús."
       ],
-      "category": "housing",
-      "difficulty": 2
+      "category": "travel",
+      "difficulty": 3,
+      "examples_en": [
+        "We crossed the border by bus."
+      ]
     },
     {
-      "word": "cocina",
+      "word": "extranjero",
       "translations": [
-        "kitchen"
+        "abroad",
+        "foreigner",
+        "foreign"
       ],
       "examples": [
-        "La cocina es pequeña pero luminosa."
+        "Mi tía trabaja en el extranjero."
       ],
-      "category": "housing",
-      "difficulty": 2
+      "category": "travel",
+      "difficulty": 3,
+      "examples_en": [
+        "My aunt works abroad."
+      ]
     },
     {
-      "word": "habitación",
+      "word": "excursión",
       "translations": [
-        "room",
-        "bedroom"
+        "trip",
+        "outing",
+        "excursion"
       ],
       "examples": [
-        "La habitación da al patio."
+        "Ayer hicimos una excursión a la montaña."
       ],
-      "category": "housing",
-      "difficulty": 2
+      "category": "travel",
+      "difficulty": 2,
+      "examples_en": [
+        "Yesterday we went on a trip to the mountains."
+      ]
     },
     {
-      "word": "baño",
+      "word": "visitar",
       "translations": [
-        "bathroom"
+        "to visit"
       ],
       "examples": [
-        "El baño está al final del pasillo."
+        "Mañana vamos a visitar a mis abuelos."
       ],
-      "category": "housing",
-      "difficulty": 2
+      "category": "travel",
+      "difficulty": 2,
+      "examples_en": [
+        "Tomorrow we're going to visit my grandparents."
+      ]
     },
     {
-      "word": "salón",
+      "word": "guía",
       "translations": [
-        "living room"
+        "guide",
+        "guidebook"
       ],
       "examples": [
-        "Vemos el partido en el salón."
+        "El guía nos contó la historia del castillo."
       ],
-      "category": "housing",
-      "difficulty": 3
+      "category": "travel",
+      "difficulty": 2,
+      "examples_en": [
+        "The guide told us the history of the castle."
+      ]
     },
     {
-      "word": "jardín",
+      "word": "castillo",
       "translations": [
-        "garden"
+        "castle"
       ],
       "examples": [
-        "Tenemos un jardín pequeño detrás."
+        "El verano pasado visitamos un castillo en España."
       ],
-      "category": "housing",
-      "difficulty": 2
+      "category": "travel",
+      "difficulty": 2,
+      "examples_en": [
+        "Last summer we visited a castle in Spain."
+      ]
     },
     {
-      "word": "ventana",
+      "word": "monumento",
       "translations": [
-        "window"
+        "monument"
       ],
       "examples": [
-        "Abre la ventana, hace calor."
+        "El monumento más famoso está en la plaza."
       ],
-      "category": "housing",
-      "difficulty": 2
+      "category": "travel",
+      "difficulty": 3,
+      "examples_en": [
+        "The most famous monument is in the square."
+      ]
     },
     {
-      "word": "puerta",
+      "word": "capital",
       "translations": [
-        "door"
+        "capital (city)"
       ],
       "examples": [
-        "Cierra la puerta, por favor."
+        "Lima es la capital de Perú."
       ],
-      "category": "housing",
-      "difficulty": 2
+      "category": "travel",
+      "difficulty": 2,
+      "examples_en": [
+        "Lima is the capital of Peru."
+      ]
     },
     {
-      "word": "cama",
+      "word": "lugar",
       "translations": [
-        "bed"
+        "place"
       ],
       "examples": [
-        "La cama es demasiado dura."
+        "Este es mi lugar favorito de la ciudad."
       ],
-      "category": "housing",
-      "difficulty": 2
+      "category": "travel",
+      "difficulty": 2,
+      "examples_en": [
+        "This is my favorite place in the city."
+      ]
     },
     {
-      "word": "mesa",
+      "word": "vista",
       "translations": [
-        "table"
+        "view"
       ],
       "examples": [
-        "Pon la mesa para cuatro."
+        "Desde el hotel hay una vista increíble del mar."
       ],
-      "category": "housing",
-      "difficulty": 2
+      "category": "travel",
+      "difficulty": 2,
+      "examples_en": [
+        "From the hotel there's an amazing view of the sea."
+      ]
     },
     {
-      "word": "silla",
+      "word": "acampar",
       "translations": [
-        "chair"
+        "to camp",
+        "to go camping"
       ],
       "examples": [
-        "Coge una silla y siéntate."
+        "El verano pasado fuimos a acampar al lago."
       ],
-      "category": "housing",
-      "difficulty": 2
+      "category": "travel",
+      "difficulty": 3,
+      "examples_en": [
+        "Last summer we went camping at the lake."
+      ]
     },
     {
-      "word": "armario",
+      "word": "tomar el sol",
       "translations": [
-        "wardrobe",
-        "closet"
+        "to sunbathe"
       ],
       "examples": [
-        "El armario está lleno de ropa."
+        "Me encanta tomar el sol en la playa."
       ],
-      "category": "housing",
-      "difficulty": 3
+      "category": "travel",
+      "difficulty": 2,
+      "examples_en": [
+        "I love sunbathing on the beach."
+      ]
     },
     {
-      "word": "alquiler",
+      "word": "postal",
       "translations": [
-        "rent"
+        "postcard"
       ],
       "examples": [
-        "El alquiler se paga el día uno."
+        "Les mandé una postal a mis abuelos."
       ],
-      "category": "housing",
-      "difficulty": 3
+      "category": "travel",
+      "difficulty": 2,
+      "examples_en": [
+        "I sent my grandparents a postcard."
+      ]
     },
     {
-      "word": "vecino",
+      "word": "seguro",
       "translations": [
-        "neighbour"
+        "safe",
+        "sure"
       ],
       "examples": [
-        "Mi vecino es muy ruidoso."
+        "Este barrio es muy seguro de noche."
       ],
-      "category": "housing",
-      "difficulty": 2
+      "category": "travel",
+      "difficulty": 2,
+      "examples_en": [
+        "This neighborhood is very safe at night."
+      ]
     },
     {
-      "word": "comprar",
+      "word": "peligroso",
       "translations": [
-        "to buy"
+        "dangerous"
       ],
       "examples": [
-        "Tengo que comprar pan."
+        "Es peligroso nadar cuando hay olas grandes."
       ],
-      "category": "shopping",
-      "difficulty": 2
+      "category": "travel",
+      "difficulty": 3,
+      "examples_en": [
+        "It's dangerous to swim when there are big waves."
+      ]
     },
     {
-      "word": "vender",
+      "word": "antiguo",
       "translations": [
-        "to sell"
+        "old",
+        "ancient",
+        "former"
       ],
       "examples": [
-        "Venden fruta ecológica."
+        "La catedral es el edificio más antiguo de la ciudad."
       ],
-      "category": "shopping",
-      "difficulty": 2
+      "category": "travel",
+      "difficulty": 3,
+      "examples_en": [
+        "The cathedral is the oldest building in the city."
+      ]
     },
     {
-      "word": "pagar",
+      "word": "girar",
       "translations": [
-        "to pay"
+        "to turn"
       ],
       "examples": [
-        "¿Puedo pagar con tarjeta?"
+        "En el semáforo tienes que girar a la izquierda."
       ],
-      "category": "shopping",
-      "difficulty": 2
+      "category": "transportation",
+      "difficulty": 2,
+      "examples_en": [
+        "At the traffic light you have to turn left."
+      ]
     },
     {
-      "word": "costar",
+      "word": "cruzar",
       "translations": [
-        "to cost"
+        "to cross"
       ],
       "examples": [
-        "¿Cuánto cuesta el envío?"
+        "Hay que cruzar la calle con cuidado."
       ],
-      "category": "shopping",
-      "difficulty": 2
+      "category": "transportation",
+      "difficulty": 2,
+      "examples_en": [
+        "You have to cross the street carefully."
+      ]
     },
     {
-      "word": "precio",
+      "word": "esquina",
       "translations": [
-        "price"
+        "corner"
       ],
       "examples": [
-        "El precio me parece muy alto."
+        "Te espero en la esquina de mi calle."
       ],
-      "category": "shopping",
-      "difficulty": 2
+      "category": "transportation",
+      "difficulty": 2,
+      "examples_en": [
+        "I'll wait for you on the corner of my street."
+      ]
     },
     {
-      "word": "descuento",
+      "word": "semáforo",
       "translations": [
-        "discount"
+        "traffic light"
       ],
       "examples": [
-        "Hay un descuento del veinte por ciento."
+        "Espera, el semáforo está en rojo."
       ],
-      "category": "shopping",
-      "difficulty": 3
+      "category": "transportation",
+      "difficulty": 3,
+      "examples_en": [
+        "Wait, the traffic light is red."
+      ]
     },
     {
-      "word": "caja",
+      "word": "parada",
       "translations": [
-        "checkout",
-        "box"
+        "stop (bus, tram)"
       ],
       "examples": [
-        "La cola de la caja es larga."
+        "Me bajo en la próxima parada."
       ],
-      "category": "shopping",
-      "difficulty": 3
+      "category": "transportation",
+      "difficulty": 2,
+      "examples_en": [
+        "I get off at the next stop."
+      ]
     },
     {
-      "word": "recibo",
+      "word": "subir",
       "translations": [
-        "receipt"
+        "to get on",
+        "to go up"
       ],
       "examples": [
-        "Guarde el recibo para la devolución."
+        "Vamos a subir al tren."
       ],
-      "category": "shopping",
-      "difficulty": 3
+      "category": "transportation",
+      "difficulty": 2,
+      "examples_en": [
+        "We're going to get on the train."
+      ]
     },
     {
-      "word": "tarjeta",
+      "word": "bajar",
       "translations": [
-        "card"
+        "to get off",
+        "to go down"
       ],
       "examples": [
-        "No aceptan tarjeta aquí."
+        "Tenemos que bajar en la próxima estación."
       ],
-      "category": "shopping",
-      "difficulty": 2
+      "category": "transportation",
+      "difficulty": 2,
+      "examples_en": [
+        "We have to get off at the next station."
+      ]
     },
     {
-      "word": "efectivo",
+      "word": "pasajero",
       "translations": [
-        "cash"
+        "passenger"
       ],
       "examples": [
-        "Prefiero pagar en efectivo."
+        "Cada pasajero puede llevar una maleta."
       ],
-      "category": "shopping",
-      "difficulty": 3
+      "category": "transportation",
+      "difficulty": 2,
+      "examples_en": [
+        "Each passenger can bring one suitcase."
+      ]
     },
     {
-      "word": "rebajas",
+      "word": "asiento",
       "translations": [
-        "sales"
+        "seat"
       ],
       "examples": [
-        "Las rebajas empiezan en enero."
+        "Mi asiento está al lado de la ventana."
       ],
-      "category": "shopping",
-      "difficulty": 3
+      "category": "transportation",
+      "difficulty": 2,
+      "examples_en": [
+        "My seat is next to the window."
+      ]
     },
     {
-      "word": "talla",
+      "word": "ida y vuelta",
       "translations": [
-        "size (clothing)"
+        "round trip",
+        "return (ticket)"
       ],
       "examples": [
-        "¿Qué talla usa?"
+        "Compré un boleto de ida y vuelta."
+      ],
+      "category": "transportation",
+      "difficulty": 3,
+      "examples_en": [
+        "I bought a round-trip ticket."
+      ]
+    },
+    {
+      "word": "aterrizar",
+      "translations": [
+        "to land"
+      ],
+      "examples": [
+        "El avión va a aterrizar en diez minutos."
+      ],
+      "category": "transportation",
+      "difficulty": 3,
+      "examples_en": [
+        "The plane is going to land in ten minutes."
+      ]
+    },
+    {
+      "word": "transporte",
+      "translations": [
+        "transportation",
+        "transport"
+      ],
+      "examples": [
+        "El transporte público aquí es muy bueno."
+      ],
+      "category": "transportation",
+      "difficulty": 2,
+      "examples_en": [
+        "Public transportation here is very good."
+      ]
+    },
+    {
+      "word": "conducir",
+      "translations": [
+        "to drive (in much of Latin America: manejar)"
+      ],
+      "examples": [
+        "Mi madre me está enseñando a conducir."
+      ],
+      "category": "transportation",
+      "difficulty": 2,
+      "examples_en": [
+        "My mother is teaching me to drive."
+      ]
+    },
+    {
+      "word": "manejar",
+      "translations": [
+        "to drive (Latin America",
+        "in Spain: conducir)"
+      ],
+      "examples": [
+        "Mi abuelo ya no puede manejar."
+      ],
+      "category": "transportation",
+      "difficulty": 2,
+      "examples_en": [
+        "My grandfather can't drive anymore."
+      ]
+    },
+    {
+      "word": "licencia de conducir",
+      "translations": [
+        "driver's license (in Spain: carné de conducir)"
+      ],
+      "examples": [
+        "Mi hermano sacó la licencia de conducir a los dieciocho."
+      ],
+      "category": "transportation",
+      "difficulty": 3,
+      "examples_en": [
+        "My brother got his driver's license at eighteen."
+      ]
+    },
+    {
+      "word": "carretera",
+      "translations": [
+        "road",
+        "highway"
+      ],
+      "examples": [
+        "La carretera estaba cerrada por la nieve."
+      ],
+      "category": "transportation",
+      "difficulty": 3,
+      "examples_en": [
+        "The road was closed because of the snow."
+      ]
+    },
+    {
+      "word": "autopista",
+      "translations": [
+        "highway",
+        "freeway",
+        "motorway"
+      ],
+      "examples": [
+        "Tomamos la autopista para llegar antes."
+      ],
+      "category": "transportation",
+      "difficulty": 3,
+      "examples_en": [
+        "We took the highway to get there sooner."
+      ]
+    },
+    {
+      "word": "puente",
+      "translations": [
+        "bridge"
+      ],
+      "examples": [
+        "Cruzamos el puente a pie."
+      ],
+      "category": "transportation",
+      "difficulty": 2,
+      "examples_en": [
+        "We crossed the bridge on foot."
+      ]
+    },
+    {
+      "word": "gasolina",
+      "translations": [
+        "gas",
+        "gasoline",
+        "petrol (in Argentina: nafta)"
+      ],
+      "examples": [
+        "La gasolina subió mucho este año."
+      ],
+      "category": "transportation",
+      "difficulty": 3,
+      "examples_en": [
+        "Gas went up a lot this year."
+      ]
+    },
+    {
+      "word": "estacionamiento",
+      "translations": [
+        "parking lot",
+        "parking",
+        "car park (in Spain: aparcamiento)"
+      ],
+      "examples": [
+        "El estacionamiento del hotel es gratis."
+      ],
+      "category": "transportation",
+      "difficulty": 3,
+      "examples_en": [
+        "The hotel parking is free."
+      ]
+    },
+    {
+      "word": "accidente",
+      "translations": [
+        "accident"
+      ],
+      "examples": [
+        "Ayer hubo un accidente en la autopista."
+      ],
+      "category": "transportation",
+      "difficulty": 2,
+      "examples_en": [
+        "Yesterday there was an accident on the highway."
+      ]
+    },
+    {
+      "word": "multa",
+      "translations": [
+        "fine",
+        "ticket"
+      ],
+      "examples": [
+        "La policía le puso una multa a mi tío."
+      ],
+      "category": "transportation",
+      "difficulty": 3,
+      "examples_en": [
+        "The police gave my uncle a ticket."
+      ]
+    },
+    {
+      "word": "rápido",
+      "translations": [
+        "fast",
+        "quick"
+      ],
+      "examples": [
+        "El tren es más rápido que el autobús."
+      ],
+      "category": "transportation",
+      "difficulty": 2,
+      "examples_en": [
+        "The train is faster than the bus."
+      ]
+    },
+    {
+      "word": "lento",
+      "translations": [
+        "slow"
+      ],
+      "examples": [
+        "Este autobús es muy lento."
+      ],
+      "category": "transportation",
+      "difficulty": 2,
+      "examples_en": [
+        "This bus is very slow."
+      ]
+    },
+    {
+      "word": "lleno",
+      "translations": [
+        "full"
+      ],
+      "examples": [
+        "El metro iba lleno esta mañana."
+      ],
+      "category": "transportation",
+      "difficulty": 2,
+      "examples_en": [
+        "The subway was full this morning."
+      ]
+    },
+    {
+      "word": "último",
+      "translations": [
+        "last"
+      ],
+      "examples": [
+        "Perdimos el último tren a casa."
+      ],
+      "category": "transportation",
+      "difficulty": 2,
+      "examples_en": [
+        "We missed the last train home."
+      ]
+    },
+    {
+      "word": "menú",
+      "translations": [
+        "menu"
+      ],
+      "examples": [
+        "¿Nos trae el menú, por favor?"
+      ],
+      "category": "food",
+      "difficulty": 2,
+      "examples_en": [
+        "Could you bring us the menu, please?"
+      ]
+    },
+    {
+      "word": "propina",
+      "translations": [
+        "tip"
+      ],
+      "examples": [
+        "Le dejamos una buena propina al mesero."
+      ],
+      "category": "food",
+      "difficulty": 3,
+      "examples_en": [
+        "We left the waiter a good tip."
+      ]
+    },
+    {
+      "word": "cuchillo",
+      "translations": [
+        "knife"
+      ],
+      "examples": [
+        "Necesito un cuchillo para cortar la carne."
+      ],
+      "category": "food",
+      "difficulty": 2,
+      "examples_en": [
+        "I need a knife to cut the meat."
+      ]
+    },
+    {
+      "word": "servilleta",
+      "translations": [
+        "napkin"
+      ],
+      "examples": [
+        "¿Me pasas una servilleta, por favor?"
+      ],
+      "category": "food",
+      "difficulty": 3,
+      "examples_en": [
+        "Can you pass me a napkin, please?"
+      ]
+    },
+    {
+      "word": "taza",
+      "translations": [
+        "cup",
+        "mug"
+      ],
+      "examples": [
+        "Tomé una taza de chocolate caliente."
+      ],
+      "category": "food",
+      "difficulty": 2,
+      "examples_en": [
+        "I had a cup of hot chocolate."
+      ]
+    },
+    {
+      "word": "botella",
+      "translations": [
+        "bottle"
+      ],
+      "examples": [
+        "Pedimos una botella de agua para la mesa."
+      ],
+      "category": "food",
+      "difficulty": 2,
+      "examples_en": [
+        "We ordered a bottle of water for the table."
+      ]
+    },
+    {
+      "word": "mismo",
+      "translations": [
+        "same"
+      ],
+      "examples": [
+        "Siempre pido el mismo plato aquí."
+      ],
+      "category": "food",
+      "difficulty": 2,
+      "examples_en": [
+        "I always order the same dish here."
+      ]
+    },
+    {
+      "word": "vegetariano",
+      "translations": [
+        "vegetarian"
+      ],
+      "examples": [
+        "¿Tienen algún plato vegetariano?"
+      ],
+      "category": "food",
+      "difficulty": 3,
+      "examples_en": [
+        "Do you have any vegetarian dishes?"
+      ]
+    },
+    {
+      "word": "delicioso",
+      "translations": [
+        "delicious"
+      ],
+      "examples": [
+        "El pastel de mi abuela estaba delicioso."
+      ],
+      "category": "food",
+      "difficulty": 2,
+      "examples_en": [
+        "My grandmother's cake was delicious."
+      ]
+    },
+    {
+      "word": "rico",
+      "translations": [
+        "tasty",
+        "delicious",
+        "rich"
+      ],
+      "examples": [
+        "Este arroz está muy rico."
+      ],
+      "category": "food",
+      "difficulty": 2,
+      "examples_en": [
+        "This rice is really tasty."
+      ]
+    },
+    {
+      "word": "picante",
+      "translations": [
+        "spicy",
+        "hot"
+      ],
+      "examples": [
+        "Esta salsa es demasiado picante para mí."
+      ],
+      "category": "food",
+      "difficulty": 2,
+      "examples_en": [
+        "This sauce is too spicy for me."
+      ]
+    },
+    {
+      "word": "salado",
+      "translations": [
+        "salty",
+        "savory"
+      ],
+      "examples": [
+        "El jamón es muy salado."
+      ],
+      "category": "food",
+      "difficulty": 3,
+      "examples_en": [
+        "The ham is very salty."
+      ]
+    },
+    {
+      "word": "dulce",
+      "translations": [
+        "sweet"
+      ],
+      "examples": [
+        "No me gusta el café muy dulce."
+      ],
+      "category": "food",
+      "difficulty": 2,
+      "examples_en": [
+        "I don't like my coffee very sweet."
+      ]
+    },
+    {
+      "word": "cortar",
+      "translations": [
+        "to cut"
+      ],
+      "examples": [
+        "¿Me ayudas a cortar las verduras?"
+      ],
+      "category": "food",
+      "difficulty": 2,
+      "examples_en": [
+        "Can you help me cut the vegetables?"
+      ]
+    },
+    {
+      "word": "freír",
+      "translations": [
+        "to fry"
+      ],
+      "examples": [
+        "Mi papá va a freír el pescado."
+      ],
+      "category": "food",
+      "difficulty": 3,
+      "examples_en": [
+        "My dad is going to fry the fish."
+      ]
+    },
+    {
+      "word": "hornear",
+      "translations": [
+        "to bake"
+      ],
+      "examples": [
+        "Vamos a hornear galletas este fin de semana."
+      ],
+      "category": "food",
+      "difficulty": 3,
+      "examples_en": [
+        "We're going to bake cookies this weekend."
+      ]
+    },
+    {
+      "word": "horno",
+      "translations": [
+        "oven"
+      ],
+      "examples": [
+        "El pan todavía está en el horno."
+      ],
+      "category": "food",
+      "difficulty": 3,
+      "examples_en": [
+        "The bread is still in the oven."
+      ]
+    },
+    {
+      "word": "aceite",
+      "translations": [
+        "oil"
+      ],
+      "examples": [
+        "Pon un poco de aceite en la sartén."
+      ],
+      "category": "food",
+      "difficulty": 2,
+      "examples_en": [
+        "Put a little oil in the frying pan."
+      ]
+    },
+    {
+      "word": "mantequilla",
+      "translations": [
+        "butter"
+      ],
+      "examples": [
+        "Me gusta el pan con mantequilla."
+      ],
+      "category": "food",
+      "difficulty": 2,
+      "examples_en": [
+        "I like bread with butter."
+      ]
+    },
+    {
+      "word": "jamón",
+      "translations": [
+        "ham"
+      ],
+      "examples": [
+        "Desayuné un sándwich de jamón y queso."
+      ],
+      "category": "food",
+      "difficulty": 2,
+      "examples_en": [
+        "I had a ham and cheese sandwich for breakfast."
+      ]
+    },
+    {
+      "word": "cebolla",
+      "translations": [
+        "onion"
+      ],
+      "examples": [
+        "No me gusta la cebolla cruda."
+      ],
+      "category": "food",
+      "difficulty": 2,
+      "examples_en": [
+        "I don't like raw onion."
+      ]
+    },
+    {
+      "word": "zanahoria",
+      "translations": [
+        "carrot"
+      ],
+      "examples": [
+        "El conejo se comió una zanahoria."
+      ],
+      "category": "food",
+      "difficulty": 2,
+      "examples_en": [
+        "The rabbit ate a carrot."
+      ]
+    },
+    {
+      "word": "frijoles",
+      "translations": [
+        "beans (in Spain: judías or alubias)"
+      ],
+      "examples": [
+        "Comimos arroz con frijoles."
+      ],
+      "category": "food",
+      "difficulty": 2,
+      "examples_en": [
+        "We had rice and beans."
+      ]
+    },
+    {
+      "word": "limón",
+      "translations": [
+        "lemon",
+        "lime"
+      ],
+      "examples": [
+        "Me gusta el agua con limón."
+      ],
+      "category": "food",
+      "difficulty": 2,
+      "examples_en": [
+        "I like water with lemon."
+      ]
+    },
+    {
+      "word": "fresa",
+      "translations": [
+        "strawberry (in parts of South America: frutilla)"
+      ],
+      "examples": [
+        "Mi helado favorito es de fresa."
+      ],
+      "category": "food",
+      "difficulty": 2,
+      "examples_en": [
+        "My favorite ice cream is strawberry."
+      ]
+    },
+    {
+      "word": "abrigo",
+      "translations": [
+        "coat"
+      ],
+      "examples": [
+        "No olvides el abrigo, hace mucho frío."
       ],
       "category": "clothing",
-      "difficulty": 3
-    },
-    {
-      "word": "probarse",
-      "translations": [
-        "to try on"
-      ],
-      "examples": [
-        "¿Puedo probarme esta chaqueta?"
-      ],
-      "category": "clothing",
-      "difficulty": 3
-    },
-    {
-      "word": "ropa",
-      "translations": [
-        "clothes"
-      ],
-      "examples": [
-        "Tengo que lavar la ropa."
-      ],
-      "category": "clothing",
-      "difficulty": 2
-    },
-    {
-      "word": "camisa",
-      "translations": [
-        "shirt"
-      ],
-      "examples": [
-        "La camisa blanca está planchada."
-      ],
-      "category": "clothing",
-      "difficulty": 2
-    },
-    {
-      "word": "pantalón",
-      "translations": [
-        "trousers",
-        "pants"
-      ],
-      "examples": [
-        "Este pantalón me queda estrecho."
-      ],
-      "category": "clothing",
-      "difficulty": 2
-    },
-    {
-      "word": "zapatos",
-      "translations": [
-        "shoes"
-      ],
-      "examples": [
-        "Los zapatos nuevos me hacen daño."
-      ],
-      "category": "clothing",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "Don't forget your coat, it's very cold."
+      ]
     },
     {
       "word": "chaqueta",
@@ -478,41 +1146,110 @@
         "Ponte la chaqueta, hace frío."
       ],
       "category": "clothing",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "Put your jacket on, it's cold."
+      ]
     },
     {
-      "word": "abrigo",
+      "word": "bufanda",
       "translations": [
-        "coat"
+        "scarf"
       ],
       "examples": [
-        "El abrigo está en la entrada."
+        "Mi abuela me hizo una bufanda de lana."
       ],
       "category": "clothing",
-      "difficulty": 3
+      "difficulty": 2,
+      "examples_en": [
+        "My grandmother made me a wool scarf."
+      ]
     },
     {
-      "word": "jersey",
+      "word": "guantes",
       "translations": [
-        "sweater",
-        "jumper"
+        "gloves"
       ],
       "examples": [
-        "Necesito un jersey grueso."
+        "Perdí los guantes en el autobús."
       ],
       "category": "clothing",
-      "difficulty": 3
+      "difficulty": 2,
+      "examples_en": [
+        "I lost my gloves on the bus."
+      ]
     },
     {
-      "word": "falda",
+      "word": "zapatillas",
       "translations": [
-        "skirt"
+        "sneakers",
+        "trainers (in Mexico: tenis)"
       ],
       "examples": [
-        "Lleva una falda larga."
+        "Necesito zapatillas nuevas para correr."
       ],
       "category": "clothing",
-      "difficulty": 3
+      "difficulty": 2,
+      "examples_en": [
+        "I need new sneakers for running."
+      ]
+    },
+    {
+      "word": "jeans",
+      "translations": [
+        "jeans (in Spain: vaqueros)"
+      ],
+      "examples": [
+        "Me compré unos jeans negros."
+      ],
+      "category": "clothing",
+      "difficulty": 2,
+      "examples_en": [
+        "I bought some black jeans."
+      ]
+    },
+    {
+      "word": "blusa",
+      "translations": [
+        "blouse"
+      ],
+      "examples": [
+        "Mi mamá lleva una blusa blanca."
+      ],
+      "category": "clothing",
+      "difficulty": 2,
+      "examples_en": [
+        "My mom is wearing a white blouse."
+      ]
+    },
+    {
+      "word": "traje",
+      "translations": [
+        "suit"
+      ],
+      "examples": [
+        "Mi hermano se puso un traje para la boda."
+      ],
+      "category": "clothing",
+      "difficulty": 3,
+      "examples_en": [
+        "My brother put on a suit for the wedding."
+      ]
+    },
+    {
+      "word": "traje de baño",
+      "translations": [
+        "swimsuit",
+        "swimming trunks (in Spain also: bañador)"
+      ],
+      "examples": [
+        "No olvides el traje de baño para la piscina."
+      ],
+      "category": "clothing",
+      "difficulty": 3,
+      "examples_en": [
+        "Don't forget your swimsuit for the pool."
+      ]
     },
     {
       "word": "cinturón",
@@ -520,10 +1257,534 @@
         "belt"
       ],
       "examples": [
-        "He perdido el cinturón de cuero."
+        "Este pantalón me queda grande, necesito un cinturón."
       ],
       "category": "clothing",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "These pants are too big for me, I need a belt."
+      ]
+    },
+    {
+      "word": "bolsillo",
+      "translations": [
+        "pocket"
+      ],
+      "examples": [
+        "Tengo las llaves en el bolsillo."
+      ],
+      "category": "clothing",
+      "difficulty": 3,
+      "examples_en": [
+        "I have the keys in my pocket."
+      ]
+    },
+    {
+      "word": "reloj",
+      "translations": [
+        "watch",
+        "clock"
+      ],
+      "examples": [
+        "Mi abuelo me regaló un reloj."
+      ],
+      "category": "clothing",
+      "difficulty": 2,
+      "examples_en": [
+        "My grandfather gave me a watch."
+      ]
+    },
+    {
+      "word": "lentes",
+      "translations": [
+        "glasses (in Spain: gafas)",
+        "lenses"
+      ],
+      "examples": [
+        "Mi abuela no puede leer sin lentes."
+      ],
+      "category": "clothing",
+      "difficulty": 3,
+      "examples_en": [
+        "My grandmother can't read without glasses."
+      ]
+    },
+    {
+      "word": "algodón",
+      "translations": [
+        "cotton"
+      ],
+      "examples": [
+        "Esta camiseta es de algodón."
+      ],
+      "category": "clothing",
+      "difficulty": 3,
+      "examples_en": [
+        "This T-shirt is cotton."
+      ]
+    },
+    {
+      "word": "moda",
+      "translations": [
+        "fashion"
+      ],
+      "examples": [
+        "Esos zapatos están de moda este año."
+      ],
+      "category": "clothing",
+      "difficulty": 3,
+      "examples_en": [
+        "Those shoes are in fashion this year."
+      ]
+    },
+    {
+      "word": "talla",
+      "translations": [
+        "size (clothes)"
+      ],
+      "examples": [
+        "¿Tiene esta camisa en otra talla?"
+      ],
+      "category": "clothing",
+      "difficulty": 3,
+      "examples_en": [
+        "Do you have this shirt in another size?"
+      ]
+    },
+    {
+      "word": "probador",
+      "translations": [
+        "fitting room (in some countries: vestidor)"
+      ],
+      "examples": [
+        "El probador está al fondo de la tienda."
+      ],
+      "category": "clothing",
+      "difficulty": 3,
+      "examples_en": [
+        "The fitting room is at the back of the store."
+      ]
+    },
+    {
+      "word": "probarse",
+      "translations": [
+        "to try on"
+      ],
+      "examples": [
+        "Mi hermana quiere probarse el vestido azul."
+      ],
+      "category": "clothing",
+      "difficulty": 3,
+      "examples_en": [
+        "My sister wants to try on the blue dress."
+      ]
+    },
+    {
+      "word": "quedar",
+      "translations": [
+        "to fit",
+        "to suit",
+        "to look (on someone)"
+      ],
+      "examples": [
+        "Esa camisa te va a quedar muy bien."
+      ],
+      "category": "clothing",
+      "difficulty": 3,
+      "examples_en": [
+        "That shirt is going to look really good on you."
+      ]
+    },
+    {
+      "word": "apretado",
+      "translations": [
+        "tight"
+      ],
+      "examples": [
+        "Este pantalón me queda apretado."
+      ],
+      "category": "clothing",
+      "difficulty": 3,
+      "examples_en": [
+        "These pants are tight on me."
+      ]
+    },
+    {
+      "word": "cómodo",
+      "translations": [
+        "comfortable"
+      ],
+      "examples": [
+        "Este suéter es muy cómodo."
+      ],
+      "category": "clothing",
+      "difficulty": 2,
+      "examples_en": [
+        "This sweater is very comfortable."
+      ]
+    },
+    {
+      "word": "ponerse",
+      "translations": [
+        "to put on (clothes)"
+      ],
+      "examples": [
+        "Mi papá va a ponerse la corbata roja."
+      ],
+      "category": "clothing",
+      "difficulty": 3,
+      "examples_en": [
+        "My dad is going to put on the red tie."
+      ]
+    },
+    {
+      "word": "quitarse",
+      "translations": [
+        "to take off (clothes)"
+      ],
+      "examples": [
+        "Aquí hay que quitarse los zapatos."
+      ],
+      "category": "clothing",
+      "difficulty": 3,
+      "examples_en": [
+        "Here you have to take off your shoes."
+      ]
+    },
+    {
+      "word": "costar",
+      "translations": [
+        "to cost"
+      ],
+      "examples": [
+        "¿Cuánto va a costar el envío?"
+      ],
+      "category": "shopping",
+      "difficulty": 2,
+      "examples_en": [
+        "How much is shipping going to cost?"
+      ]
+    },
+    {
+      "word": "descuento",
+      "translations": [
+        "discount"
+      ],
+      "examples": [
+        "Hay un descuento del veinte por ciento."
+      ],
+      "category": "shopping",
+      "difficulty": 3,
+      "examples_en": [
+        "There's a twenty percent discount."
+      ]
+    },
+    {
+      "word": "rebajas",
+      "translations": [
+        "sales"
+      ],
+      "examples": [
+        "Compré estos zapatos en las rebajas."
+      ],
+      "category": "shopping",
+      "difficulty": 3,
+      "examples_en": [
+        "I bought these shoes in the sales."
+      ]
+    },
+    {
+      "word": "caja",
+      "translations": [
+        "checkout",
+        "cash register",
+        "box"
+      ],
+      "examples": [
+        "Hay que pagar en la caja."
+      ],
+      "category": "shopping",
+      "difficulty": 2,
+      "examples_en": [
+        "You have to pay at the checkout."
+      ]
+    },
+    {
+      "word": "fila",
+      "translations": [
+        "line",
+        "queue (in Spain: cola)"
+      ],
+      "examples": [
+        "Había una fila muy larga en la caja."
+      ],
+      "category": "shopping",
+      "difficulty": 2,
+      "examples_en": [
+        "There was a very long line at the checkout."
+      ]
+    },
+    {
+      "word": "recibo",
+      "translations": [
+        "receipt"
+      ],
+      "examples": [
+        "Guarda el recibo por si quieres devolver la camisa."
+      ],
+      "category": "shopping",
+      "difficulty": 3,
+      "examples_en": [
+        "Keep the receipt in case you want to return the shirt."
+      ]
+    },
+    {
+      "word": "efectivo",
+      "translations": [
+        "cash"
+      ],
+      "examples": [
+        "Prefiero pagar en efectivo."
+      ],
+      "category": "shopping",
+      "difficulty": 3,
+      "examples_en": [
+        "I prefer to pay in cash."
+      ]
+    },
+    {
+      "word": "tarjeta de crédito",
+      "translations": [
+        "credit card"
+      ],
+      "examples": [
+        "¿Puedo pagar con tarjeta de crédito?"
+      ],
+      "category": "shopping",
+      "difficulty": 2,
+      "examples_en": [
+        "Can I pay by credit card?"
+      ]
+    },
+    {
+      "word": "cajero automático",
+      "translations": [
+        "ATM",
+        "cash machine"
+      ],
+      "examples": [
+        "¿Hay un cajero automático por aquí?"
+      ],
+      "category": "shopping",
+      "difficulty": 3,
+      "examples_en": [
+        "Is there an ATM around here?"
+      ]
+    },
+    {
+      "word": "cambio",
+      "translations": [
+        "change (money)",
+        "exchange"
+      ],
+      "examples": [
+        "No tengo cambio para el autobús."
+      ],
+      "category": "shopping",
+      "difficulty": 2,
+      "examples_en": [
+        "I don't have change for the bus."
+      ]
+    },
+    {
+      "word": "moneda",
+      "translations": [
+        "coin",
+        "currency"
+      ],
+      "examples": [
+        "Encontré una moneda en la calle."
+      ],
+      "category": "shopping",
+      "difficulty": 2,
+      "examples_en": [
+        "I found a coin in the street."
+      ]
+    },
+    {
+      "word": "ahorrar",
+      "translations": [
+        "to save (money)"
+      ],
+      "examples": [
+        "Quiero ahorrar para comprar una bicicleta."
+      ],
+      "category": "shopping",
+      "difficulty": 3,
+      "examples_en": [
+        "I want to save up to buy a bike."
+      ]
+    },
+    {
+      "word": "devolver",
+      "translations": [
+        "to return (something)",
+        "to give back"
+      ],
+      "examples": [
+        "Quiero devolver estos zapatos."
+      ],
+      "category": "shopping",
+      "difficulty": 3,
+      "examples_en": [
+        "I want to return these shoes."
+      ]
+    },
+    {
+      "word": "cliente",
+      "translations": [
+        "customer",
+        "client"
+      ],
+      "examples": [
+        "El cliente pidió otra talla."
+      ],
+      "category": "shopping",
+      "difficulty": 2,
+      "examples_en": [
+        "The customer asked for another size."
+      ]
+    },
+    {
+      "word": "marca",
+      "translations": [
+        "brand"
+      ],
+      "examples": [
+        "¿De qué marca es tu celular?"
+      ],
+      "category": "shopping",
+      "difficulty": 2,
+      "examples_en": [
+        "What brand is your phone?"
+      ]
+    },
+    {
+      "word": "gratis",
+      "translations": [
+        "free (no cost)"
+      ],
+      "examples": [
+        "La entrada al museo es gratis los domingos."
+      ],
+      "category": "shopping",
+      "difficulty": 2,
+      "examples_en": [
+        "Entrance to the museum is free on Sundays."
+      ]
+    },
+    {
+      "word": "abierto",
+      "translations": [
+        "open"
+      ],
+      "examples": [
+        "El supermercado está abierto hasta las diez."
+      ],
+      "category": "shopping",
+      "difficulty": 2,
+      "examples_en": [
+        "The supermarket is open until ten."
+      ]
+    },
+    {
+      "word": "cerrado",
+      "translations": [
+        "closed"
+      ],
+      "examples": [
+        "El banco está cerrado los domingos."
+      ],
+      "category": "shopping",
+      "difficulty": 2,
+      "examples_en": [
+        "The bank is closed on Sundays."
+      ]
+    },
+    {
+      "word": "centro comercial",
+      "translations": [
+        "shopping mall",
+        "shopping center"
+      ],
+      "examples": [
+        "Fuimos al centro comercial el sábado."
+      ],
+      "category": "shopping",
+      "difficulty": 2,
+      "examples_en": [
+        "We went to the mall on Saturday."
+      ]
+    },
+    {
+      "word": "panadería",
+      "translations": [
+        "bakery"
+      ],
+      "examples": [
+        "Compro el pan en la panadería de la esquina."
+      ],
+      "category": "shopping",
+      "difficulty": 2,
+      "examples_en": [
+        "I buy bread at the bakery on the corner."
+      ]
+    },
+    {
+      "word": "librería",
+      "translations": [
+        "bookstore",
+        "bookshop"
+      ],
+      "examples": [
+        "Compré este libro en una librería pequeña."
+      ],
+      "category": "shopping",
+      "difficulty": 3,
+      "examples_en": [
+        "I bought this book in a small bookstore."
+      ]
+    },
+    {
+      "word": "kilo",
+      "translations": [
+        "kilo",
+        "kilogram"
+      ],
+      "examples": [
+        "Quiero un kilo de tomates, por favor."
+      ],
+      "category": "shopping",
+      "difficulty": 2,
+      "examples_en": [
+        "I'd like a kilo of tomatoes, please."
+      ]
+    },
+    {
+      "word": "paquete",
+      "translations": [
+        "package",
+        "parcel",
+        "packet"
+      ],
+      "examples": [
+        "Llegó un paquete para ti."
+      ],
+      "category": "shopping",
+      "difficulty": 2,
+      "examples_en": [
+        "A package arrived for you."
+      ]
     },
     {
       "word": "salud",
@@ -531,78 +1792,28 @@
         "health"
       ],
       "examples": [
-        "La salud es lo primero."
+        "La salud es lo más importante."
       ],
       "category": "health",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "Health is the most important thing."
+      ]
     },
     {
-      "word": "médico",
+      "word": "dolor",
       "translations": [
-        "doctor"
+        "pain",
+        "ache"
       ],
       "examples": [
-        "Tengo que ir al médico."
+        "Tengo un dolor muy fuerte en la rodilla."
       ],
       "category": "health",
-      "difficulty": 2
-    },
-    {
-      "word": "hospital",
-      "translations": [
-        "hospital"
-      ],
-      "examples": [
-        "El hospital está cerca de la estación."
-      ],
-      "category": "health",
-      "difficulty": 2
-    },
-    {
-      "word": "farmacia",
-      "translations": [
-        "pharmacy"
-      ],
-      "examples": [
-        "La farmacia abre de noche."
-      ],
-      "category": "health",
-      "difficulty": 2
-    },
-    {
-      "word": "medicamento",
-      "translations": [
-        "medicine",
-        "drug"
-      ],
-      "examples": [
-        "Toma el medicamento después de comer."
-      ],
-      "category": "health",
-      "difficulty": 3
-    },
-    {
-      "word": "enfermo",
-      "translations": [
-        "ill",
-        "sick"
-      ],
-      "examples": [
-        "Llevo tres días enfermo."
-      ],
-      "category": "health",
-      "difficulty": 2
-    },
-    {
-      "word": "fiebre",
-      "translations": [
-        "fever"
-      ],
-      "examples": [
-        "Tengo fiebre alta."
-      ],
-      "category": "health",
-      "difficulty": 3
+      "difficulty": 2,
+      "examples_en": [
+        "I have a really bad pain in my knee."
+      ]
     },
     {
       "word": "dolor de cabeza",
@@ -610,32 +1821,258 @@
         "headache"
       ],
       "examples": [
-        "Tengo un fuerte dolor de cabeza."
+        "Tengo un dolor de cabeza muy fuerte."
       ],
       "category": "health",
-      "difficulty": 3
+      "difficulty": 2,
+      "examples_en": [
+        "I have a really bad headache."
+      ]
     },
     {
-      "word": "cabeza",
+      "word": "doler",
       "translations": [
-        "head"
+        "to hurt",
+        "to ache"
       ],
       "examples": [
-        "Me duele la cabeza."
+        "Después del partido me empezó a doler la pierna."
       ],
-      "category": "body",
-      "difficulty": 2
+      "category": "health",
+      "difficulty": 3,
+      "examples_en": [
+        "After the game my leg started to hurt."
+      ]
     },
     {
-      "word": "mano",
+      "word": "fiebre",
       "translations": [
-        "hand"
+        "fever",
+        "temperature"
       ],
       "examples": [
-        "Me hice daño en la mano."
+        "Anoche tuve fiebre alta."
       ],
-      "category": "body",
-      "difficulty": 2
+      "category": "health",
+      "difficulty": 2,
+      "examples_en": [
+        "Last night I had a high fever."
+      ]
+    },
+    {
+      "word": "tos",
+      "translations": [
+        "cough"
+      ],
+      "examples": [
+        "Tengo tos desde el lunes."
+      ],
+      "category": "health",
+      "difficulty": 2,
+      "examples_en": [
+        "I've had a cough since Monday."
+      ]
+    },
+    {
+      "word": "gripe",
+      "translations": [
+        "flu (in Colombia and Mexico also: gripa)"
+      ],
+      "examples": [
+        "Mi hermano tiene gripe y no fue a la escuela."
+      ],
+      "category": "health",
+      "difficulty": 2,
+      "examples_en": [
+        "My brother has the flu and didn't go to school."
+      ]
+    },
+    {
+      "word": "resfriado",
+      "translations": [
+        "cold (illness)"
+      ],
+      "examples": [
+        "Tengo un resfriado muy fuerte."
+      ],
+      "category": "health",
+      "difficulty": 3,
+      "examples_en": [
+        "I have a bad cold."
+      ]
+    },
+    {
+      "word": "alergia",
+      "translations": [
+        "allergy"
+      ],
+      "examples": [
+        "Tengo alergia a los gatos."
+      ],
+      "category": "health",
+      "difficulty": 3,
+      "examples_en": [
+        "I'm allergic to cats."
+      ]
+    },
+    {
+      "word": "herida",
+      "translations": [
+        "wound",
+        "injury"
+      ],
+      "examples": [
+        "La herida no es profunda."
+      ],
+      "category": "health",
+      "difficulty": 3,
+      "examples_en": [
+        "The wound isn't deep."
+      ]
+    },
+    {
+      "word": "grave",
+      "translations": [
+        "serious"
+      ],
+      "examples": [
+        "El accidente no fue grave."
+      ],
+      "category": "health",
+      "difficulty": 3,
+      "examples_en": [
+        "The accident wasn't serious."
+      ]
+    },
+    {
+      "word": "enfermedad",
+      "translations": [
+        "illness",
+        "disease"
+      ],
+      "examples": [
+        "La gripe es una enfermedad muy común."
+      ],
+      "category": "health",
+      "difficulty": 3,
+      "examples_en": [
+        "The flu is a very common illness."
+      ]
+    },
+    {
+      "word": "enfermarse",
+      "translations": [
+        "to get sick (in Spain: ponerse enfermo)"
+      ],
+      "examples": [
+        "Es fácil enfermarse cuando hace frío."
+      ],
+      "category": "health",
+      "difficulty": 3,
+      "examples_en": [
+        "It's easy to get sick when it's cold."
+      ]
+    },
+    {
+      "word": "sentirse",
+      "translations": [
+        "to feel"
+      ],
+      "examples": [
+        "Es normal sentirse cansado después de un viaje."
+      ],
+      "category": "health",
+      "difficulty": 3,
+      "examples_en": [
+        "It's normal to feel tired after a trip."
+      ]
+    },
+    {
+      "word": "sano",
+      "translations": [
+        "healthy"
+      ],
+      "examples": [
+        "Es importante comer sano."
+      ],
+      "category": "health",
+      "difficulty": 2,
+      "examples_en": [
+        "It's important to eat healthily."
+      ]
+    },
+    {
+      "word": "medicamento",
+      "translations": [
+        "medicine",
+        "medication"
+      ],
+      "examples": [
+        "Toma este medicamento después de comer."
+      ],
+      "category": "health",
+      "difficulty": 3,
+      "examples_en": [
+        "Take this medicine after eating."
+      ]
+    },
+    {
+      "word": "pastilla",
+      "translations": [
+        "pill",
+        "tablet"
+      ],
+      "examples": [
+        "Me tomé una pastilla para el dolor."
+      ],
+      "category": "health",
+      "difficulty": 2,
+      "examples_en": [
+        "I took a pill for the pain."
+      ]
+    },
+    {
+      "word": "dentista",
+      "translations": [
+        "dentist"
+      ],
+      "examples": [
+        "Mañana tengo que ir al dentista."
+      ],
+      "category": "health",
+      "difficulty": 2,
+      "examples_en": [
+        "Tomorrow I have to go to the dentist."
+      ]
+    },
+    {
+      "word": "ambulancia",
+      "translations": [
+        "ambulance"
+      ],
+      "examples": [
+        "La ambulancia llegó en cinco minutos."
+      ],
+      "category": "health",
+      "difficulty": 2,
+      "examples_en": [
+        "The ambulance arrived in five minutes."
+      ]
+    },
+    {
+      "word": "peinarse",
+      "translations": [
+        "to comb your hair",
+        "to do your hair"
+      ],
+      "examples": [
+        "Mi hermana tarda mucho en peinarse."
+      ],
+      "category": "health",
+      "difficulty": 3,
+      "examples_en": [
+        "My sister takes ages to do her hair."
+      ]
     },
     {
       "word": "pie",
@@ -645,30 +2082,11 @@
       "examples": [
         "Me duele el pie derecho."
       ],
-      "category": "body",
-      "difficulty": 2
-    },
-    {
-      "word": "ojo",
-      "translations": [
-        "eye"
-      ],
-      "examples": [
-        "Tiene un ojo irritado."
-      ],
-      "category": "body",
-      "difficulty": 2
-    },
-    {
-      "word": "brazo",
-      "translations": [
-        "arm"
-      ],
-      "examples": [
-        "Se rompió un brazo esquiando."
-      ],
-      "category": "body",
-      "difficulty": 3
+      "category": "health",
+      "difficulty": 2,
+      "examples_en": [
+        "My right foot hurts."
+      ]
     },
     {
       "word": "pierna",
@@ -678,8 +2096,25 @@
       "examples": [
         "Me duele la pierna izquierda."
       ],
-      "category": "body",
-      "difficulty": 2
+      "category": "health",
+      "difficulty": 2,
+      "examples_en": [
+        "My left leg hurts."
+      ]
+    },
+    {
+      "word": "brazo",
+      "translations": [
+        "arm"
+      ],
+      "examples": [
+        "Mi primo se rompió el brazo esquiando."
+      ],
+      "category": "health",
+      "difficulty": 2,
+      "examples_en": [
+        "My cousin broke his arm skiing."
+      ]
     },
     {
       "word": "espalda",
@@ -689,54 +2124,516 @@
       "examples": [
         "Tengo dolor de espalda desde ayer."
       ],
-      "category": "body",
-      "difficulty": 3
+      "category": "health",
+      "difficulty": 2,
+      "examples_en": [
+        "I've had back pain since yesterday."
+      ]
     },
     {
-      "word": "oficina",
+      "word": "estómago",
       "translations": [
-        "office"
+        "stomach"
       ],
       "examples": [
-        "Mi oficina está en la tercera planta."
+        "Me duele el estómago."
       ],
-      "category": "work",
-      "difficulty": 2
+      "category": "health",
+      "difficulty": 2,
+      "examples_en": [
+        "I have a stomachache."
+      ]
     },
     {
-      "word": "reunión",
+      "word": "garganta",
       "translations": [
-        "meeting"
+        "throat"
       ],
       "examples": [
-        "La reunión se ha aplazado."
+        "Me duele la garganta desde ayer."
       ],
-      "category": "work",
-      "difficulty": 3
+      "category": "health",
+      "difficulty": 2,
+      "examples_en": [
+        "I've had a sore throat since yesterday."
+      ]
     },
     {
-      "word": "compañero",
+      "word": "cuello",
       "translations": [
-        "colleague",
-        "classmate"
+        "neck"
       ],
       "examples": [
-        "Un compañero me ayudó mucho."
+        "La jirafa tiene el cuello muy largo."
       ],
-      "category": "work",
-      "difficulty": 3
+      "category": "health",
+      "difficulty": 2,
+      "examples_en": [
+        "The giraffe has a very long neck."
+      ]
     },
     {
-      "word": "sueldo",
+      "word": "rodilla",
       "translations": [
-        "salary",
-        "wage"
+        "knee"
       ],
       "examples": [
-        "El sueldo llega a fin de mes."
+        "Me caí de la bicicleta y me duele la rodilla."
+      ],
+      "category": "health",
+      "difficulty": 2,
+      "examples_en": [
+        "I fell off my bike and my knee hurts."
+      ]
+    },
+    {
+      "word": "dedo",
+      "translations": [
+        "finger",
+        "toe"
+      ],
+      "examples": [
+        "Me corté el dedo con un cuchillo."
+      ],
+      "category": "health",
+      "difficulty": 2,
+      "examples_en": [
+        "I cut my finger with a knife."
+      ]
+    },
+    {
+      "word": "piel",
+      "translations": [
+        "skin"
+      ],
+      "examples": [
+        "Hay que proteger la piel del sol."
+      ],
+      "category": "health",
+      "difficulty": 3,
+      "examples_en": [
+        "You have to protect your skin from the sun."
+      ]
+    },
+    {
+      "word": "piso",
+      "translations": [
+        "floor",
+        "story (of a building) (in Spain also: apartment)"
+      ],
+      "examples": [
+        "Vivimos en el tercer piso."
+      ],
+      "category": "housing",
+      "difficulty": 2,
+      "examples_en": [
+        "We live on the third floor."
+      ]
+    },
+    {
+      "word": "departamento",
+      "translations": [
+        "apartment (in Mexico, Argentina, Chile, Peru",
+        "elsewhere: apartamento)"
+      ],
+      "examples": [
+        "Mis tíos alquilan un departamento en el centro."
+      ],
+      "category": "housing",
+      "difficulty": 2,
+      "examples_en": [
+        "My aunt and uncle rent an apartment downtown."
+      ]
+    },
+    {
+      "word": "alquiler",
+      "translations": [
+        "rent"
+      ],
+      "examples": [
+        "El alquiler se paga el primer día del mes."
+      ],
+      "category": "housing",
+      "difficulty": 3,
+      "examples_en": [
+        "The rent is paid on the first day of the month."
+      ]
+    },
+    {
+      "word": "dueño",
+      "translations": [
+        "owner",
+        "landlord"
+      ],
+      "examples": [
+        "El dueño del departamento vive arriba."
+      ],
+      "category": "housing",
+      "difficulty": 3,
+      "examples_en": [
+        "The owner of the apartment lives upstairs."
+      ]
+    },
+    {
+      "word": "vecino",
+      "translations": [
+        "neighbor",
+        "neighbour"
+      ],
+      "examples": [
+        "Mi vecino pone la música muy alta."
+      ],
+      "category": "housing",
+      "difficulty": 2,
+      "examples_en": [
+        "My neighbor plays his music very loud."
+      ]
+    },
+    {
+      "word": "jardín",
+      "translations": [
+        "garden",
+        "yard"
+      ],
+      "examples": [
+        "Tenemos un jardín pequeño detrás de la casa."
+      ],
+      "category": "housing",
+      "difficulty": 2,
+      "examples_en": [
+        "We have a small yard behind the house."
+      ]
+    },
+    {
+      "word": "pasillo",
+      "translations": [
+        "hallway",
+        "corridor"
+      ],
+      "examples": [
+        "El baño está al final del pasillo."
+      ],
+      "category": "housing",
+      "difficulty": 2,
+      "examples_en": [
+        "The bathroom is at the end of the hallway."
+      ]
+    },
+    {
+      "word": "techo",
+      "translations": [
+        "ceiling",
+        "roof"
+      ],
+      "examples": [
+        "El techo de la cocina es muy alto."
+      ],
+      "category": "housing",
+      "difficulty": 3,
+      "examples_en": [
+        "The kitchen ceiling is very high."
+      ]
+    },
+    {
+      "word": "mueble",
+      "translations": [
+        "piece of furniture"
+      ],
+      "examples": [
+        "Este mueble era de mi abuela."
+      ],
+      "category": "housing",
+      "difficulty": 3,
+      "examples_en": [
+        "This piece of furniture was my grandmother's."
+      ]
+    },
+    {
+      "word": "armario",
+      "translations": [
+        "closet",
+        "wardrobe (in much of Latin America also: clóset)"
+      ],
+      "examples": [
+        "El armario está lleno de ropa."
+      ],
+      "category": "housing",
+      "difficulty": 3,
+      "examples_en": [
+        "The closet is full of clothes."
+      ]
+    },
+    {
+      "word": "cajón",
+      "translations": [
+        "drawer"
+      ],
+      "examples": [
+        "Las tijeras están en el primer cajón."
+      ],
+      "category": "housing",
+      "difficulty": 3,
+      "examples_en": [
+        "The scissors are in the top drawer."
+      ]
+    },
+    {
+      "word": "lavadora",
+      "translations": [
+        "washing machine"
+      ],
+      "examples": [
+        "La lavadora hace mucho ruido."
+      ],
+      "category": "housing",
+      "difficulty": 2,
+      "examples_en": [
+        "The washing machine makes a lot of noise."
+      ]
+    },
+    {
+      "word": "calefacción",
+      "translations": [
+        "heating"
+      ],
+      "examples": [
+        "La calefacción no funcionaba y teníamos frío."
+      ],
+      "category": "housing",
+      "difficulty": 3,
+      "examples_en": [
+        "The heating wasn't working and we were cold."
+      ]
+    },
+    {
+      "word": "luz",
+      "translations": [
+        "light",
+        "electricity",
+        "power"
+      ],
+      "examples": [
+        "Anoche no hubo luz en todo el barrio."
+      ],
+      "category": "housing",
+      "difficulty": 2,
+      "examples_en": [
+        "Last night there was no power in the whole neighborhood."
+      ]
+    },
+    {
+      "word": "encender",
+      "translations": [
+        "to turn on",
+        "to light (in much of Latin America also: prender)"
+      ],
+      "examples": [
+        "¿Puedes encender la calefacción?"
+      ],
+      "category": "housing",
+      "difficulty": 3,
+      "examples_en": [
+        "Can you turn on the heating?"
+      ]
+    },
+    {
+      "word": "apagar",
+      "translations": [
+        "to turn off",
+        "to switch off"
+      ],
+      "examples": [
+        "No olvides apagar la luz."
+      ],
+      "category": "housing",
+      "difficulty": 2,
+      "examples_en": [
+        "Don't forget to turn off the light."
+      ]
+    },
+    {
+      "word": "lavar",
+      "translations": [
+        "to wash"
+      ],
+      "examples": [
+        "Tengo que lavar los platos."
+      ],
+      "category": "housing",
+      "difficulty": 2,
+      "examples_en": [
+        "I have to wash the dishes."
+      ]
+    },
+    {
+      "word": "barrer",
+      "translations": [
+        "to sweep"
+      ],
+      "examples": [
+        "Ayer me tocó barrer la cocina."
+      ],
+      "category": "housing",
+      "difficulty": 3,
+      "examples_en": [
+        "Yesterday it was my turn to sweep the kitchen."
+      ]
+    },
+    {
+      "word": "planchar",
+      "translations": [
+        "to iron"
+      ],
+      "examples": [
+        "Mi papá odia planchar camisas."
+      ],
+      "category": "housing",
+      "difficulty": 3,
+      "examples_en": [
+        "My dad hates ironing shirts."
+      ]
+    },
+    {
+      "word": "ordenar",
+      "translations": [
+        "to tidy (up)",
+        "to put in order"
+      ],
+      "examples": [
+        "Tienes que ordenar tu habitación."
+      ],
+      "category": "housing",
+      "difficulty": 2,
+      "examples_en": [
+        "You have to tidy your room."
+      ]
+    },
+    {
+      "word": "hacer la cama",
+      "translations": [
+        "to make the bed"
+      ],
+      "examples": [
+        "Mi hermano nunca quiere hacer la cama."
+      ],
+      "category": "housing",
+      "difficulty": 2,
+      "examples_en": [
+        "My brother never wants to make his bed."
+      ]
+    },
+    {
+      "word": "sacar la basura",
+      "translations": [
+        "to take out the trash"
+      ],
+      "examples": [
+        "Los lunes me toca sacar la basura."
+      ],
+      "category": "housing",
+      "difficulty": 2,
+      "examples_en": [
+        "On Mondays it's my turn to take out the trash."
+      ]
+    },
+    {
+      "word": "regar",
+      "translations": [
+        "to water (plants)"
+      ],
+      "examples": [
+        "¿Puedes regar las plantas este fin de semana?"
+      ],
+      "category": "housing",
+      "difficulty": 3,
+      "examples_en": [
+        "Can you water the plants this weekend?"
+      ]
+    },
+    {
+      "word": "limpio",
+      "translations": [
+        "clean"
+      ],
+      "examples": [
+        "El baño ya está limpio."
+      ],
+      "category": "housing",
+      "difficulty": 2,
+      "examples_en": [
+        "The bathroom is clean now."
+      ]
+    },
+    {
+      "word": "sucio",
+      "translations": [
+        "dirty"
+      ],
+      "examples": [
+        "Todo está muy sucio después de la fiesta."
+      ],
+      "category": "housing",
+      "difficulty": 2,
+      "examples_en": [
+        "Everything is really dirty after the party."
+      ]
+    },
+    {
+      "word": "vacío",
+      "translations": [
+        "empty"
+      ],
+      "examples": [
+        "El refrigerador está casi vacío."
+      ],
+      "category": "housing",
+      "difficulty": 2,
+      "examples_en": [
+        "The fridge is almost empty."
+      ]
+    },
+    {
+      "word": "ruido",
+      "translations": [
+        "noise"
+      ],
+      "examples": [
+        "Hay mucho ruido en esta calle."
+      ],
+      "category": "housing",
+      "difficulty": 2,
+      "examples_en": [
+        "There's a lot of noise on this street."
+      ]
+    },
+    {
+      "word": "trabajador",
+      "translations": [
+        "worker",
+        "hard-working"
+      ],
+      "examples": [
+        "Mi tío es muy trabajador."
       ],
       "category": "work",
-      "difficulty": 3
+      "difficulty": 2,
+      "examples_en": [
+        "My uncle is very hard-working."
+      ]
+    },
+    {
+      "word": "empleado",
+      "translations": [
+        "employee"
+      ],
+      "examples": [
+        "El nuevo empleado empieza el lunes."
+      ],
+      "category": "work",
+      "difficulty": 2,
+      "examples_en": [
+        "The new employee starts on Monday."
+      ]
     },
     {
       "word": "empleo",
@@ -745,10 +2642,13 @@
         "employment"
       ],
       "examples": [
-        "Ha encontrado un empleo nuevo."
+        "Mi hermana encontró un empleo nuevo."
       ],
       "category": "work",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "My sister found a new job."
+      ]
     },
     {
       "word": "empresa",
@@ -760,97 +2660,552 @@
         "La empresa tiene cincuenta empleados."
       ],
       "category": "work",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "The company has fifty employees."
+      ]
     },
     {
-      "word": "jefe",
+      "word": "negocio",
       "translations": [
-        "boss"
+        "business",
+        "shop"
       ],
       "examples": [
-        "El jefe está de vacaciones."
+        "Mi tía tiene un negocio de ropa."
       ],
       "category": "work",
-      "difficulty": 2
+      "difficulty": 3,
+      "examples_en": [
+        "My aunt has a clothing business."
+      ]
     },
     {
-      "word": "vacaciones",
+      "word": "fábrica",
       "translations": [
-        "holidays",
-        "vacation"
+        "factory"
       ],
       "examples": [
-        "Cojo dos semanas de vacaciones en agosto."
+        "Mi abuelo trabajó en una fábrica de zapatos."
       ],
       "category": "work",
-      "difficulty": 2
+      "difficulty": 3,
+      "examples_en": [
+        "My grandfather worked in a shoe factory."
+      ]
+    },
+    {
+      "word": "compañero",
+      "translations": [
+        "colleague",
+        "classmate",
+        "partner"
+      ],
+      "examples": [
+        "Un compañero me ayudó mucho el primer día."
+      ],
+      "category": "work",
+      "difficulty": 2,
+      "examples_en": [
+        "A colleague helped me a lot on the first day."
+      ]
+    },
+    {
+      "word": "reunión",
+      "translations": [
+        "meeting"
+      ],
+      "examples": [
+        "La reunión empezó tarde."
+      ],
+      "category": "work",
+      "difficulty": 3,
+      "examples_en": [
+        "The meeting started late."
+      ]
+    },
+    {
+      "word": "escritorio",
+      "translations": [
+        "desk"
+      ],
+      "examples": [
+        "Mi escritorio está lleno de papeles."
+      ],
+      "category": "work",
+      "difficulty": 2,
+      "examples_en": [
+        "My desk is covered in papers."
+      ]
+    },
+    {
+      "word": "sueldo",
+      "translations": [
+        "salary",
+        "wages",
+        "pay"
+      ],
+      "examples": [
+        "Me pagan el sueldo a fin de mes."
+      ],
+      "category": "work",
+      "difficulty": 3,
+      "examples_en": [
+        "I get paid my salary at the end of the month."
+      ]
+    },
+    {
+      "word": "turno",
+      "translations": [
+        "shift",
+        "turn"
+      ],
+      "examples": [
+        "Mi mamá trabaja en el turno de noche."
+      ],
+      "category": "work",
+      "difficulty": 3,
+      "examples_en": [
+        "My mom works the night shift."
+      ]
+    },
+    {
+      "word": "profesión",
+      "translations": [
+        "profession",
+        "occupation"
+      ],
+      "examples": [
+        "¿Cuál es tu profesión?"
+      ],
+      "category": "work",
+      "difficulty": 3,
+      "examples_en": [
+        "What is your profession?"
+      ]
+    },
+    {
+      "word": "anuncio",
+      "translations": [
+        "ad",
+        "advertisement",
+        "announcement"
+      ],
+      "examples": [
+        "Vi un anuncio de trabajo en internet."
+      ],
+      "category": "work",
+      "difficulty": 3,
+      "examples_en": [
+        "I saw a job ad online."
+      ]
+    },
+    {
+      "word": "éxito",
+      "translations": [
+        "success"
+      ],
+      "examples": [
+        "La reunión fue un éxito."
+      ],
+      "category": "work",
+      "difficulty": 3,
+      "examples_en": [
+        "The meeting was a success."
+      ]
+    },
+    {
+      "word": "jubilado",
+      "translations": [
+        "retired"
+      ],
+      "examples": [
+        "Mi abuelo está jubilado desde hace cinco años."
+      ],
+      "category": "work",
+      "difficulty": 3,
+      "examples_en": [
+        "My grandfather has been retired for five years."
+      ]
+    },
+    {
+      "word": "mecánico",
+      "translations": [
+        "mechanic"
+      ],
+      "examples": [
+        "El mecánico arregló el carro en una hora."
+      ],
+      "category": "work",
+      "difficulty": 2,
+      "examples_en": [
+        "The mechanic fixed the car in an hour."
+      ]
+    },
+    {
+      "word": "peluquero",
+      "translations": [
+        "hairdresser",
+        "barber"
+      ],
+      "examples": [
+        "El peluquero me cortó el pelo muy corto."
+      ],
+      "category": "work",
+      "difficulty": 3,
+      "examples_en": [
+        "The hairdresser cut my hair very short."
+      ]
+    },
+    {
+      "word": "periodista",
+      "translations": [
+        "journalist"
+      ],
+      "examples": [
+        "Mi prima quiere ser periodista."
+      ],
+      "category": "work",
+      "difficulty": 3,
+      "examples_en": [
+        "My cousin wants to be a journalist."
+      ]
+    },
+    {
+      "word": "veterinario",
+      "translations": [
+        "vet",
+        "veterinarian"
+      ],
+      "examples": [
+        "Llevamos al perro al veterinario."
+      ],
+      "category": "work",
+      "difficulty": 2,
+      "examples_en": [
+        "We took the dog to the vet."
+      ]
+    },
+    {
+      "word": "cartero",
+      "translations": [
+        "mail carrier",
+        "postman"
+      ],
+      "examples": [
+        "El cartero trae las cartas por la mañana."
+      ],
+      "category": "work",
+      "difficulty": 3,
+      "examples_en": [
+        "The mail carrier brings the letters in the morning."
+      ]
+    },
+    {
+      "word": "granjero",
+      "translations": [
+        "farmer"
+      ],
+      "examples": [
+        "El granjero tiene vacas y gallinas."
+      ],
+      "category": "work",
+      "difficulty": 3,
+      "examples_en": [
+        "The farmer has cows and chickens."
+      ]
+    },
+    {
+      "word": "científico",
+      "translations": [
+        "scientist"
+      ],
+      "examples": [
+        "De niño quería ser científico."
+      ],
+      "category": "work",
+      "difficulty": 3,
+      "examples_en": [
+        "As a child I wanted to be a scientist."
+      ]
+    },
+    {
+      "word": "primaria",
+      "translations": [
+        "primary school",
+        "elementary school"
+      ],
+      "examples": [
+        "Mi hermanito todavía está en primaria."
+      ],
+      "category": "education",
+      "difficulty": 2,
+      "examples_en": [
+        "My little brother is still in elementary school."
+      ]
+    },
+    {
+      "word": "secundaria",
+      "translations": [
+        "secondary school",
+        "middle or high school (in Spain: instituto)"
+      ],
+      "examples": [
+        "Empecé la secundaria el año pasado."
+      ],
+      "category": "education",
+      "difficulty": 2,
+      "examples_en": [
+        "I started secondary school last year."
+      ]
     },
     {
       "word": "universidad",
       "translations": [
-        "university"
+        "university",
+        "college"
       ],
       "examples": [
-        "Estudia en la universidad de Salamanca."
+        "Mi hermana estudia en la universidad."
       ],
       "category": "education",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "My sister studies at university."
+      ]
+    },
+    {
+      "word": "carrera",
+      "translations": [
+        "(university) degree",
+        "career",
+        "race"
+      ],
+      "examples": [
+        "Mi prima terminó la carrera de medicina."
+      ],
+      "category": "education",
+      "difficulty": 3,
+      "examples_en": [
+        "My cousin finished her medical degree."
+      ]
+    },
+    {
+      "word": "curso",
+      "translations": [
+        "course",
+        "school year"
+      ],
+      "examples": [
+        "Hice un curso de inglés el verano pasado."
+      ],
+      "category": "education",
+      "difficulty": 2,
+      "examples_en": [
+        "I did an English course last summer."
+      ]
+    },
+    {
+      "word": "aula",
+      "translations": [
+        "classroom"
+      ],
+      "examples": [
+        "Nuestra aula está en el segundo piso."
+      ],
+      "category": "education",
+      "difficulty": 3,
+      "examples_en": [
+        "Our classroom is on the second floor."
+      ]
+    },
+    {
+      "word": "pizarra",
+      "translations": [
+        "board",
+        "blackboard (in much of Latin America: pizarrón)"
+      ],
+      "examples": [
+        "La maestra escribió la fecha en la pizarra."
+      ],
+      "category": "education",
+      "difficulty": 3,
+      "examples_en": [
+        "The teacher wrote the date on the board."
+      ]
+    },
+    {
+      "word": "recreo",
+      "translations": [
+        "break",
+        "recess"
+      ],
+      "examples": [
+        "En el recreo jugamos con la pelota."
+      ],
+      "category": "education",
+      "difficulty": 2,
+      "examples_en": [
+        "At recess we play with the ball."
+      ]
+    },
+    {
+      "word": "materia",
+      "translations": [
+        "(school) subject (in Spain: asignatura)"
+      ],
+      "examples": [
+        "Mi materia favorita es geografía."
+      ],
+      "category": "education",
+      "difficulty": 2,
+      "examples_en": [
+        "My favorite subject is geography."
+      ]
+    },
+    {
+      "word": "historia",
+      "translations": [
+        "history",
+        "story"
+      ],
+      "examples": [
+        "Mi abuelo nos contó una historia muy divertida."
+      ],
+      "category": "education",
+      "difficulty": 2,
+      "examples_en": [
+        "My grandfather told us a really funny story."
+      ]
+    },
+    {
+      "word": "geografía",
+      "translations": [
+        "geography"
+      ],
+      "examples": [
+        "En geografía estudiamos los ríos de América."
+      ],
+      "category": "education",
+      "difficulty": 2,
+      "examples_en": [
+        "In geography we're studying the rivers of the Americas."
+      ]
+    },
+    {
+      "word": "ciencias",
+      "translations": [
+        "science"
+      ],
+      "examples": [
+        "Tenemos clase de ciencias los martes."
+      ],
+      "category": "education",
+      "difficulty": 2,
+      "examples_en": [
+        "We have science class on Tuesdays."
+      ]
+    },
+    {
+      "word": "educación física",
+      "translations": [
+        "PE",
+        "physical education"
+      ],
+      "examples": [
+        "Hoy tenemos educación física en el patio."
+      ],
+      "category": "education",
+      "difficulty": 2,
+      "examples_en": [
+        "Today we have PE in the schoolyard."
+      ]
+    },
+    {
+      "word": "ejercicio",
+      "translations": [
+        "exercise"
+      ],
+      "examples": [
+        "Este ejercicio es muy difícil."
+      ],
+      "category": "education",
+      "difficulty": 2,
+      "examples_en": [
+        "This exercise is very difficult."
+      ]
+    },
+    {
+      "word": "explicar",
+      "translations": [
+        "to explain"
+      ],
+      "examples": [
+        "¿Me puedes explicar este ejercicio?"
+      ],
+      "category": "education",
+      "difficulty": 2,
+      "examples_en": [
+        "Can you explain this exercise to me?"
+      ]
+    },
+    {
+      "word": "repasar",
+      "translations": [
+        "to review",
+        "to go over"
+      ],
+      "examples": [
+        "Esta noche voy a repasar para el examen."
+      ],
+      "category": "education",
+      "difficulty": 3,
+      "examples_en": [
+        "Tonight I'm going to review for the exam."
+      ]
     },
     {
       "word": "examen",
       "translations": [
-        "exam"
+        "exam",
+        "test"
       ],
       "examples": [
-        "He aprobado el examen de historia."
+        "Ayer tuve un examen de historia."
       ],
       "category": "education",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "Yesterday I had a history exam."
+      ]
     },
     {
-      "word": "clase",
+      "word": "aprobar",
       "translations": [
-        "class",
-        "lesson"
+        "to pass (an exam)"
       ],
       "examples": [
-        "La clase empieza a las nueve."
+        "Necesito aprobar el examen de matemáticas."
       ],
       "category": "education",
-      "difficulty": 2
+      "difficulty": 3,
+      "examples_en": [
+        "I need to pass the math exam."
+      ]
     },
     {
-      "word": "deberes",
+      "word": "reprobar",
       "translations": [
-        "homework"
+        "to fail (an exam) (in Spain: suspender)"
       ],
       "examples": [
-        "Tengo que terminar los deberes."
+        "No quiero reprobar ninguna materia."
       ],
       "category": "education",
-      "difficulty": 2
-    },
-    {
-      "word": "profesor",
-      "translations": [
-        "teacher"
-      ],
-      "examples": [
-        "El profesor explica muy bien."
-      ],
-      "category": "education",
-      "difficulty": 2
-    },
-    {
-      "word": "estudiante",
-      "translations": [
-        "student"
-      ],
-      "examples": [
-        "Soy estudiante de ingeniería."
-      ],
-      "category": "education",
-      "difficulty": 2
+      "difficulty": 3,
+      "examples_en": [
+        "I don't want to fail any subject."
+      ]
     },
     {
       "word": "nota",
@@ -860,236 +3215,28 @@
         "note"
       ],
       "examples": [
-        "He sacado buena nota."
+        "Saqué una buena nota en inglés."
       ],
       "category": "education",
-      "difficulty": 3
+      "difficulty": 2,
+      "examples_en": [
+        "I got a good grade in English."
+      ]
     },
     {
-      "word": "viaje",
+      "word": "error",
       "translations": [
-        "trip",
-        "journey"
+        "mistake",
+        "error"
       ],
       "examples": [
-        "El viaje dura tres horas."
+        "Cometí un error en el examen."
       ],
-      "category": "travel",
-      "difficulty": 2
-    },
-    {
-      "word": "maleta",
-      "translations": [
-        "suitcase"
-      ],
-      "examples": [
-        "Hice la maleta anoche."
-      ],
-      "category": "travel",
-      "difficulty": 3
-    },
-    {
-      "word": "salir",
-      "translations": [
-        "to leave",
-        "to go out"
-      ],
-      "examples": [
-        "Salimos mañana al amanecer."
-      ],
-      "category": "travel",
-      "difficulty": 2
-    },
-    {
-      "word": "llegar",
-      "translations": [
-        "to arrive"
-      ],
-      "examples": [
-        "El vuelo llega con retraso."
-      ],
-      "category": "travel",
-      "difficulty": 2
-    },
-    {
-      "word": "reservar",
-      "translations": [
-        "to book",
-        "to reserve"
-      ],
-      "examples": [
-        "He reservado una mesa para dos."
-      ],
-      "category": "travel",
-      "difficulty": 3
-    },
-    {
-      "word": "habitación doble",
-      "translations": [
-        "double room"
-      ],
-      "examples": [
-        "Quiero una habitación doble tres noches."
-      ],
-      "category": "travel",
-      "difficulty": 3
-    },
-    {
-      "word": "pasaporte",
-      "translations": [
-        "passport"
-      ],
-      "examples": [
-        "El pasaporte caduca en marzo."
-      ],
-      "category": "travel",
-      "difficulty": 3
-    },
-    {
-      "word": "playa",
-      "translations": [
-        "beach"
-      ],
-      "examples": [
-        "La playa está llena en verano."
-      ],
-      "category": "travel",
-      "difficulty": 2
-    },
-    {
-      "word": "montaña",
-      "translations": [
-        "mountain"
-      ],
-      "examples": [
-        "En invierno vamos a la montaña."
-      ],
-      "category": "nature",
-      "difficulty": 2
-    },
-    {
-      "word": "lago",
-      "translations": [
-        "lake"
-      ],
-      "examples": [
-        "El lago se hiela en enero."
-      ],
-      "category": "nature",
-      "difficulty": 2
-    },
-    {
-      "word": "mar",
-      "translations": [
-        "sea"
-      ],
-      "examples": [
-        "El mar está tranquilo hoy."
-      ],
-      "category": "nature",
-      "difficulty": 2
-    },
-    {
-      "word": "campo",
-      "translations": [
-        "countryside",
-        "field"
-      ],
-      "examples": [
-        "Pasamos el fin de semana en el campo."
-      ],
-      "category": "nature",
-      "difficulty": 2
-    },
-    {
-      "word": "girar",
-      "translations": [
-        "to turn"
-      ],
-      "examples": [
-        "Gire a la derecha en el semáforo."
-      ],
-      "category": "transportation",
-      "difficulty": 2
-    },
-    {
-      "word": "cruzar",
-      "translations": [
-        "to cross"
-      ],
-      "examples": [
-        "Cruza la calle por el paso de peatones."
-      ],
-      "category": "transportation",
-      "difficulty": 3
-    },
-    {
-      "word": "parada",
-      "translations": [
-        "stop (bus)"
-      ],
-      "examples": [
-        "Me bajo en la próxima parada."
-      ],
-      "category": "transportation",
-      "difficulty": 3
-    },
-    {
-      "word": "semáforo",
-      "translations": [
-        "traffic light"
-      ],
-      "examples": [
-        "El semáforo está en rojo."
-      ],
-      "category": "transportation",
-      "difficulty": 3
-    },
-    {
-      "word": "esquina",
-      "translations": [
-        "corner"
-      ],
-      "examples": [
-        "Gira a la izquierda en la esquina."
-      ],
-      "category": "transportation",
-      "difficulty": 3
-    },
-    {
-      "word": "aparcamiento",
-      "translations": [
-        "car park",
-        "parking"
-      ],
-      "examples": [
-        "El aparcamiento es de pago."
-      ],
-      "category": "transportation",
-      "difficulty": 3
-    },
-    {
-      "word": "gasolina",
-      "translations": [
-        "petrol",
-        "gasoline"
-      ],
-      "examples": [
-        "Tengo que echar gasolina."
-      ],
-      "category": "transportation",
-      "difficulty": 3
-    },
-    {
-      "word": "carné de conducir",
-      "translations": [
-        "driving licence"
-      ],
-      "examples": [
-        "Saqué el carné de conducir a los dieciocho."
-      ],
-      "category": "transportation",
-      "difficulty": 3
+      "category": "education",
+      "difficulty": 2,
+      "examples_en": [
+        "I made a mistake on the exam."
+      ]
     },
     {
       "word": "tiempo libre",
@@ -1100,52 +3247,185 @@
         "En mi tiempo libre toco la guitarra."
       ],
       "category": "leisure",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "In my free time I play the guitar."
+      ]
+    },
+    {
+      "word": "pasatiempo",
+      "translations": [
+        "hobby",
+        "pastime"
+      ],
+      "examples": [
+        "Mi pasatiempo favorito es dibujar."
+      ],
+      "category": "leisure",
+      "difficulty": 3,
+      "examples_en": [
+        "My favorite hobby is drawing."
+      ]
+    },
+    {
+      "word": "descansar",
+      "translations": [
+        "to rest"
+      ],
+      "examples": [
+        "Después de comer me gusta descansar un rato."
+      ],
+      "category": "leisure",
+      "difficulty": 2,
+      "examples_en": [
+        "After lunch I like to rest for a while."
+      ]
+    },
+    {
+      "word": "paseo",
+      "translations": [
+        "walk",
+        "stroll",
+        "ride"
+      ],
+      "examples": [
+        "Dimos un paseo por el parque."
+      ],
+      "category": "leisure",
+      "difficulty": 2,
+      "examples_en": [
+        "We went for a walk in the park."
+      ]
+    },
+    {
+      "word": "disfrutar",
+      "translations": [
+        "to enjoy"
+      ],
+      "examples": [
+        "Vamos a disfrutar del fin de semana."
+      ],
+      "category": "leisure",
+      "difficulty": 3,
+      "examples_en": [
+        "We're going to enjoy the weekend."
+      ]
+    },
+    {
+      "word": "celebrar",
+      "translations": [
+        "to celebrate"
+      ],
+      "examples": [
+        "Vamos a celebrar el cumpleaños de mi abuela."
+      ],
+      "category": "leisure",
+      "difficulty": 2,
+      "examples_en": [
+        "We're going to celebrate my grandmother's birthday."
+      ]
     },
     {
       "word": "deporte",
       "translations": [
-        "sport"
+        "sport",
+        "sports"
       ],
       "examples": [
         "Hago deporte tres veces por semana."
       ],
-      "category": "sports",
-      "difficulty": 2
+      "category": "leisure",
+      "difficulty": 2,
+      "examples_en": [
+        "I play sports three times a week."
+      ]
     },
     {
-      "word": "nadar",
+      "word": "equipo",
       "translations": [
-        "to swim"
+        "team",
+        "equipment"
       ],
       "examples": [
-        "Nado en la piscina los martes."
+        "Mi equipo ganó el partido del domingo."
       ],
-      "category": "sports",
-      "difficulty": 2
+      "category": "leisure",
+      "difficulty": 2,
+      "examples_en": [
+        "My team won Sunday's game."
+      ]
     },
     {
-      "word": "correr",
+      "word": "jugador",
       "translations": [
-        "to run"
+        "player"
       ],
       "examples": [
-        "Corro por el parque muy temprano."
+        "Es el mejor jugador del equipo."
       ],
-      "category": "sports",
-      "difficulty": 2
+      "category": "leisure",
+      "difficulty": 2,
+      "examples_en": [
+        "He's the best player on the team."
+      ]
     },
     {
       "word": "partido",
       "translations": [
-        "match",
-        "game"
+        "game",
+        "match"
       ],
       "examples": [
-        "El partido termina a las diez."
+        "El partido terminó a las diez."
       ],
-      "category": "sports",
-      "difficulty": 2
+      "category": "leisure",
+      "difficulty": 2,
+      "examples_en": [
+        "The game ended at ten."
+      ]
+    },
+    {
+      "word": "gol",
+      "translations": [
+        "goal"
+      ],
+      "examples": [
+        "Marqué un gol en el último minuto."
+      ],
+      "category": "leisure",
+      "difficulty": 2,
+      "examples_en": [
+        "I scored a goal in the last minute."
+      ]
+    },
+    {
+      "word": "entrenar",
+      "translations": [
+        "to train",
+        "to practice"
+      ],
+      "examples": [
+        "Vamos a entrenar el sábado por la mañana."
+      ],
+      "category": "leisure",
+      "difficulty": 3,
+      "examples_en": [
+        "We're going to train on Saturday morning."
+      ]
+    },
+    {
+      "word": "estadio",
+      "translations": [
+        "stadium"
+      ],
+      "examples": [
+        "El estadio estaba lleno."
+      ],
+      "category": "leisure",
+      "difficulty": 2,
+      "examples_en": [
+        "The stadium was full."
+      ]
     },
     {
       "word": "gimnasio",
@@ -1153,44 +3433,70 @@
         "gym"
       ],
       "examples": [
-        "Voy al gimnasio después del trabajo."
+        "Voy al gimnasio después de clase."
       ],
-      "category": "sports",
-      "difficulty": 3
+      "category": "leisure",
+      "difficulty": 2,
+      "examples_en": [
+        "I go to the gym after class."
+      ]
     },
     {
-      "word": "música",
+      "word": "nadar",
       "translations": [
-        "music"
+        "to swim"
       ],
       "examples": [
-        "Escucho música mientras trabajo."
+        "Me gusta nadar en el mar."
       ],
-      "category": "arts",
-      "difficulty": 1
+      "category": "leisure",
+      "difficulty": 2,
+      "examples_en": [
+        "I like swimming in the sea."
+      ]
     },
     {
-      "word": "película",
+      "word": "esquiar",
       "translations": [
-        "film",
-        "movie"
+        "to ski"
       ],
       "examples": [
-        "La película dura dos horas."
+        "Nunca aprendí a esquiar."
       ],
-      "category": "arts",
-      "difficulty": 2
+      "category": "leisure",
+      "difficulty": 3,
+      "examples_en": [
+        "I never learned to ski."
+      ]
     },
     {
-      "word": "concierto",
+      "word": "patinar",
       "translations": [
-        "concert"
+        "to skate"
       ],
       "examples": [
-        "El concierto está agotado."
+        "Me gusta patinar en el parque."
       ],
-      "category": "arts",
-      "difficulty": 2
+      "category": "leisure",
+      "difficulty": 2,
+      "examples_en": [
+        "I like skating in the park."
+      ]
+    },
+    {
+      "word": "pescar",
+      "translations": [
+        "to fish",
+        "to go fishing"
+      ],
+      "examples": [
+        "Mi abuelo me llevaba a pescar al lago."
+      ],
+      "category": "leisure",
+      "difficulty": 3,
+      "examples_en": [
+        "My grandfather used to take me fishing at the lake."
+      ]
     },
     {
       "word": "museo",
@@ -1200,8 +3506,98 @@
       "examples": [
         "El museo cierra los lunes."
       ],
-      "category": "arts",
-      "difficulty": 2
+      "category": "leisure",
+      "difficulty": 2,
+      "examples_en": [
+        "The museum is closed on Mondays."
+      ]
+    },
+    {
+      "word": "teatro",
+      "translations": [
+        "theater"
+      ],
+      "examples": [
+        "Fuimos al teatro con la escuela."
+      ],
+      "category": "leisure",
+      "difficulty": 2,
+      "examples_en": [
+        "We went to the theater with the school."
+      ]
+    },
+    {
+      "word": "concierto",
+      "translations": [
+        "concert"
+      ],
+      "examples": [
+        "Fuimos a un concierto increíble el sábado."
+      ],
+      "category": "leisure",
+      "difficulty": 2,
+      "examples_en": [
+        "We went to an amazing concert on Saturday."
+      ]
+    },
+    {
+      "word": "entrada",
+      "translations": [
+        "ticket (for a show or game)",
+        "entrance"
+      ],
+      "examples": [
+        "Ya compré la entrada para el concierto."
+      ],
+      "category": "leisure",
+      "difficulty": 3,
+      "examples_en": [
+        "I already bought the ticket for the concert."
+      ]
+    },
+    {
+      "word": "zoológico",
+      "translations": [
+        "zoo"
+      ],
+      "examples": [
+        "Fuimos al zoológico con mis primos."
+      ],
+      "category": "leisure",
+      "difficulty": 2,
+      "examples_en": [
+        "We went to the zoo with my cousins."
+      ]
+    },
+    {
+      "word": "serie",
+      "translations": [
+        "series",
+        "TV show"
+      ],
+      "examples": [
+        "Estoy viendo una serie muy buena."
+      ],
+      "category": "leisure",
+      "difficulty": 2,
+      "examples_en": [
+        "I'm watching a really good series."
+      ]
+    },
+    {
+      "word": "programa",
+      "translations": [
+        "program",
+        "show"
+      ],
+      "examples": [
+        "Mi programa favorito empieza a las ocho."
+      ],
+      "category": "leisure",
+      "difficulty": 2,
+      "examples_en": [
+        "My favorite show starts at eight."
+      ]
     },
     {
       "word": "nublado",
@@ -1211,19 +3607,83 @@
       "examples": [
         "Hoy está nublado pero no llueve."
       ],
-      "category": "weather",
-      "difficulty": 3
+      "category": "nature",
+      "difficulty": 2,
+      "examples_en": [
+        "It's cloudy today but it's not raining."
+      ]
     },
     {
-      "word": "nevar",
+      "word": "soleado",
       "translations": [
-        "to snow"
+        "sunny"
       ],
       "examples": [
-        "Anoche nevó en la sierra."
+        "Fue un día soleado y tranquilo."
       ],
-      "category": "weather",
-      "difficulty": 3
+      "category": "nature",
+      "difficulty": 2,
+      "examples_en": [
+        "It was a sunny, quiet day."
+      ]
+    },
+    {
+      "word": "caluroso",
+      "translations": [
+        "hot (day, weather)"
+      ],
+      "examples": [
+        "Fue un verano muy caluroso."
+      ],
+      "category": "nature",
+      "difficulty": 3,
+      "examples_en": [
+        "It was a very hot summer."
+      ]
+    },
+    {
+      "word": "fresco",
+      "translations": [
+        "cool",
+        "fresh"
+      ],
+      "examples": [
+        "Por la mañana hace fresco."
+      ],
+      "category": "nature",
+      "difficulty": 2,
+      "examples_en": [
+        "It's cool in the morning."
+      ]
+    },
+    {
+      "word": "húmedo",
+      "translations": [
+        "humid",
+        "damp"
+      ],
+      "examples": [
+        "El clima aquí es muy húmedo."
+      ],
+      "category": "nature",
+      "difficulty": 3,
+      "examples_en": [
+        "The climate here is very humid."
+      ]
+    },
+    {
+      "word": "seco",
+      "translations": [
+        "dry"
+      ],
+      "examples": [
+        "El verano en mi pueblo es muy seco."
+      ],
+      "category": "nature",
+      "difficulty": 2,
+      "examples_en": [
+        "Summer in my town is very dry."
+      ]
     },
     {
       "word": "viento",
@@ -1233,8 +3693,11 @@
       "examples": [
         "Hace demasiado viento para salir en barco."
       ],
-      "category": "weather",
-      "difficulty": 2
+      "category": "nature",
+      "difficulty": 2,
+      "examples_en": [
+        "It's too windy to go out on a boat."
+      ]
     },
     {
       "word": "tormenta",
@@ -1242,44 +3705,338 @@
         "storm"
       ],
       "examples": [
-        "Una tormenta inundó la calle."
+        "Anoche hubo una tormenta muy fuerte."
       ],
-      "category": "weather",
-      "difficulty": 3
+      "category": "nature",
+      "difficulty": 2,
+      "examples_en": [
+        "Last night there was a very strong storm."
+      ]
     },
     {
-      "word": "contento",
+      "word": "niebla",
       "translations": [
-        "glad",
-        "pleased"
+        "fog"
       ],
       "examples": [
-        "Estoy contento con el resultado."
+        "Había mucha niebla en la carretera."
       ],
-      "category": "emotions",
-      "difficulty": 2
+      "category": "nature",
+      "difficulty": 3,
+      "examples_en": [
+        "There was a lot of fog on the road."
+      ]
     },
     {
-      "word": "triste",
+      "word": "nevar",
       "translations": [
-        "sad"
+        "to snow"
       ],
       "examples": [
-        "Me siento triste hoy."
+        "Mañana va a nevar en las montañas."
       ],
-      "category": "emotions",
-      "difficulty": 2
+      "category": "nature",
+      "difficulty": 2,
+      "examples_en": [
+        "Tomorrow it's going to snow in the mountains."
+      ]
     },
     {
-      "word": "enfadado",
+      "word": "hielo",
       "translations": [
-        "angry"
+        "ice"
       ],
       "examples": [
-        "Está enfadado por el retraso."
+        "Cuidado, hay hielo en la calle."
       ],
-      "category": "emotions",
-      "difficulty": 3
+      "category": "nature",
+      "difficulty": 2,
+      "examples_en": [
+        "Careful, there's ice on the street."
+      ]
+    },
+    {
+      "word": "temperatura",
+      "translations": [
+        "temperature"
+      ],
+      "examples": [
+        "La temperatura bajó mucho anoche."
+      ],
+      "category": "nature",
+      "difficulty": 2,
+      "examples_en": [
+        "The temperature dropped a lot last night."
+      ]
+    },
+    {
+      "word": "pronóstico",
+      "translations": [
+        "forecast"
+      ],
+      "examples": [
+        "Según el pronóstico, mañana va a llover."
+      ],
+      "category": "nature",
+      "difficulty": 3,
+      "examples_en": [
+        "According to the forecast, it's going to rain tomorrow."
+      ]
+    },
+    {
+      "word": "paraguas",
+      "translations": [
+        "umbrella"
+      ],
+      "examples": [
+        "No olvides el paraguas, va a llover."
+      ],
+      "category": "nature",
+      "difficulty": 2,
+      "examples_en": [
+        "Don't forget your umbrella, it's going to rain."
+      ]
+    },
+    {
+      "word": "montaña",
+      "translations": [
+        "mountain"
+      ],
+      "examples": [
+        "En invierno vamos a la montaña."
+      ],
+      "category": "nature",
+      "difficulty": 2,
+      "examples_en": [
+        "In winter we go to the mountains."
+      ]
+    },
+    {
+      "word": "lago",
+      "translations": [
+        "lake"
+      ],
+      "examples": [
+        "Nadamos en el lago todo el verano."
+      ],
+      "category": "nature",
+      "difficulty": 2,
+      "examples_en": [
+        "We swam in the lake all summer."
+      ]
+    },
+    {
+      "word": "mar",
+      "translations": [
+        "sea"
+      ],
+      "examples": [
+        "El mar está muy tranquilo hoy."
+      ],
+      "category": "nature",
+      "difficulty": 2,
+      "examples_en": [
+        "The sea is very calm today."
+      ]
+    },
+    {
+      "word": "costa",
+      "translations": [
+        "coast"
+      ],
+      "examples": [
+        "Mis tíos viven en la costa."
+      ],
+      "category": "nature",
+      "difficulty": 2,
+      "examples_en": [
+        "My aunt and uncle live on the coast."
+      ]
+    },
+    {
+      "word": "isla",
+      "translations": [
+        "island"
+      ],
+      "examples": [
+        "Pasamos una semana en una isla."
+      ],
+      "category": "nature",
+      "difficulty": 2,
+      "examples_en": [
+        "We spent a week on an island."
+      ]
+    },
+    {
+      "word": "ola",
+      "translations": [
+        "wave"
+      ],
+      "examples": [
+        "Una ola enorme mojó nuestras toallas."
+      ],
+      "category": "nature",
+      "difficulty": 2,
+      "examples_en": [
+        "A huge wave soaked our towels."
+      ]
+    },
+    {
+      "word": "campo",
+      "translations": [
+        "countryside",
+        "field"
+      ],
+      "examples": [
+        "Mis abuelos viven en el campo."
+      ],
+      "category": "nature",
+      "difficulty": 2,
+      "examples_en": [
+        "My grandparents live in the countryside."
+      ]
+    },
+    {
+      "word": "selva",
+      "translations": [
+        "jungle",
+        "rainforest"
+      ],
+      "examples": [
+        "Vimos monos en la selva."
+      ],
+      "category": "nature",
+      "difficulty": 3,
+      "examples_en": [
+        "We saw monkeys in the jungle."
+      ]
+    },
+    {
+      "word": "paisaje",
+      "translations": [
+        "landscape",
+        "scenery"
+      ],
+      "examples": [
+        "Desde la montaña, el paisaje era hermoso."
+      ],
+      "category": "nature",
+      "difficulty": 3,
+      "examples_en": [
+        "From the mountain, the scenery was beautiful."
+      ]
+    },
+    {
+      "word": "árbol",
+      "translations": [
+        "tree"
+      ],
+      "examples": [
+        "Hay un árbol enorme en el parque."
+      ],
+      "category": "nature",
+      "difficulty": 2,
+      "examples_en": [
+        "There's a huge tree in the park."
+      ]
+    },
+    {
+      "word": "flor",
+      "translations": [
+        "flower"
+      ],
+      "examples": [
+        "Le regalé una flor a mi mamá."
+      ],
+      "category": "nature",
+      "difficulty": 2,
+      "examples_en": [
+        "I gave my mom a flower."
+      ]
+    },
+    {
+      "word": "planta",
+      "translations": [
+        "plant"
+      ],
+      "examples": [
+        "Esta planta necesita mucha agua."
+      ],
+      "category": "nature",
+      "difficulty": 2,
+      "examples_en": [
+        "This plant needs a lot of water."
+      ]
+    },
+    {
+      "word": "luna",
+      "translations": [
+        "moon"
+      ],
+      "examples": [
+        "Anoche la luna estaba enorme."
+      ],
+      "category": "nature",
+      "difficulty": 2,
+      "examples_en": [
+        "Last night the moon was huge."
+      ]
+    },
+    {
+      "word": "mosquito",
+      "translations": [
+        "mosquito"
+      ],
+      "examples": [
+        "Un mosquito me picó en la pierna."
+      ],
+      "category": "nature",
+      "difficulty": 2,
+      "examples_en": [
+        "A mosquito bit me on the leg."
+      ]
+    },
+    {
+      "word": "araña",
+      "translations": [
+        "spider"
+      ],
+      "examples": [
+        "Hay una araña enorme en el baño."
+      ],
+      "category": "nature",
+      "difficulty": 2,
+      "examples_en": [
+        "There's a huge spider in the bathroom."
+      ]
+    },
+    {
+      "word": "mariposa",
+      "translations": [
+        "butterfly"
+      ],
+      "examples": [
+        "Vimos una mariposa azul en el jardín."
+      ],
+      "category": "nature",
+      "difficulty": 2,
+      "examples_en": [
+        "We saw a blue butterfly in the garden."
+      ]
+    },
+    {
+      "word": "serpiente",
+      "translations": [
+        "snake"
+      ],
+      "examples": [
+        "En la selva vimos una serpiente."
+      ],
+      "category": "nature",
+      "difficulty": 3,
+      "examples_en": [
+        "In the jungle we saw a snake."
+      ]
     },
     {
       "word": "preocupado",
@@ -1290,76 +4047,1828 @@
         "Estoy preocupado por el examen."
       ],
       "category": "emotions",
-      "difficulty": 3
+      "difficulty": 2,
+      "examples_en": [
+        "I'm worried about the exam."
+      ]
+    },
+    {
+      "word": "asustado",
+      "translations": [
+        "scared",
+        "frightened"
+      ],
+      "examples": [
+        "El perro estaba asustado por la tormenta."
+      ],
+      "category": "emotions",
+      "difficulty": 2,
+      "examples_en": [
+        "The dog was scared of the storm."
+      ]
+    },
+    {
+      "word": "emocionado",
+      "translations": [
+        "excited"
+      ],
+      "examples": [
+        "Estoy muy emocionado por el viaje."
+      ],
+      "category": "emotions",
+      "difficulty": 2,
+      "examples_en": [
+        "I'm really excited about the trip."
+      ]
+    },
+    {
+      "word": "enamorado",
+      "translations": [
+        "in love"
+      ],
+      "examples": [
+        "Mi hermano está enamorado de una compañera."
+      ],
+      "category": "emotions",
+      "difficulty": 3,
+      "examples_en": [
+        "My brother is in love with a classmate."
+      ]
+    },
+    {
+      "word": "harto",
+      "translations": [
+        "fed up"
+      ],
+      "examples": [
+        "Estoy harto de la lluvia."
+      ],
+      "category": "emotions",
+      "difficulty": 3,
+      "examples_en": [
+        "I'm fed up with the rain."
+      ]
+    },
+    {
+      "word": "molesto",
+      "translations": [
+        "annoyed",
+        "upset"
+      ],
+      "examples": [
+        "Mi papá está molesto conmigo."
+      ],
+      "category": "emotions",
+      "difficulty": 3,
+      "examples_en": [
+        "My dad is annoyed with me."
+      ]
+    },
+    {
+      "word": "avergonzado",
+      "translations": [
+        "embarrassed",
+        "ashamed (in parts of Latin America also: apenado)"
+      ],
+      "examples": [
+        "Me sentí avergonzado delante de todos."
+      ],
+      "category": "emotions",
+      "difficulty": 4,
+      "examples_en": [
+        "I felt embarrassed in front of everyone."
+      ]
     },
     {
       "word": "divertido",
       "translations": [
         "fun",
-        "amusing"
+        "funny"
       ],
       "examples": [
-        "Fue una noche muy divertida."
+        "El viaje fue muy divertido."
       ],
       "category": "emotions",
-      "difficulty": 3
-    },
-    {
-      "word": "difícil",
-      "translations": [
-        "difficult"
-      ],
-      "examples": [
-        "Este ejercicio es difícil."
-      ],
-      "category": "basics",
-      "difficulty": 2
-    },
-    {
-      "word": "fácil",
-      "translations": [
-        "easy"
-      ],
-      "examples": [
-        "La receta es muy fácil."
-      ],
-      "category": "basics",
-      "difficulty": 2
-    },
-    {
-      "word": "rápido",
-      "translations": [
-        "fast",
-        "quick"
-      ],
-      "examples": [
-        "El tren es más rápido que el autobús."
-      ],
-      "category": "basics",
-      "difficulty": 2
-    },
-    {
-      "word": "lento",
-      "translations": [
-        "slow"
-      ],
-      "examples": [
-        "La conexión va lenta."
-      ],
-      "category": "basics",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "The trip was a lot of fun."
+      ]
     },
     {
       "word": "amable",
       "translations": [
         "kind",
-        "friendly"
+        "nice"
       ],
       "examples": [
-        "La dependienta fue muy amable."
+        "La señora de la tienda fue muy amable."
       ],
       "category": "emotions",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "The lady at the shop was very kind."
+      ]
+    },
+    {
+      "word": "sorpresa",
+      "translations": [
+        "surprise"
+      ],
+      "examples": [
+        "La fiesta fue una sorpresa para mi mamá."
+      ],
+      "category": "emotions",
+      "difficulty": 2,
+      "examples_en": [
+        "The party was a surprise for my mom."
+      ]
+    },
+    {
+      "word": "tristeza",
+      "translations": [
+        "sadness"
+      ],
+      "examples": [
+        "Sentí mucha tristeza al dejar mi escuela."
+      ],
+      "category": "emotions",
+      "difficulty": 3,
+      "examples_en": [
+        "I felt very sad leaving my school."
+      ]
+    },
+    {
+      "word": "preocuparse",
+      "translations": [
+        "to worry"
+      ],
+      "examples": [
+        "No hay que preocuparse por eso."
+      ],
+      "category": "emotions",
+      "difficulty": 3,
+      "examples_en": [
+        "There's no need to worry about that."
+      ]
+    },
+    {
+      "word": "enojarse",
+      "translations": [
+        "to get angry (in Spain: enfadarse)"
+      ],
+      "examples": [
+        "Mi mamá va a enojarse si llego tarde."
+      ],
+      "category": "emotions",
+      "difficulty": 3,
+      "examples_en": [
+        "My mom is going to get angry if I'm late."
+      ]
+    },
+    {
+      "word": "llorar",
+      "translations": [
+        "to cry"
+      ],
+      "examples": [
+        "El bebé empezó a llorar en el avión."
+      ],
+      "category": "emotions",
+      "difficulty": 2,
+      "examples_en": [
+        "The baby started crying on the plane."
+      ]
+    },
+    {
+      "word": "reír",
+      "translations": [
+        "to laugh"
+      ],
+      "examples": [
+        "Mi abuelo siempre nos hace reír."
+      ],
+      "category": "emotions",
+      "difficulty": 2,
+      "examples_en": [
+        "My grandfather always makes us laugh."
+      ]
+    },
+    {
+      "word": "sonreír",
+      "translations": [
+        "to smile"
+      ],
+      "examples": [
+        "Es difícil sonreír cuando estás triste."
+      ],
+      "category": "emotions",
+      "difficulty": 3,
+      "examples_en": [
+        "It's hard to smile when you're sad."
+      ]
+    },
+    {
+      "word": "extrañar",
+      "translations": [
+        "to miss (someone) (in Spain: echar de menos)"
+      ],
+      "examples": [
+        "Voy a extrañar mucho a mis amigos."
+      ],
+      "category": "emotions",
+      "difficulty": 3,
+      "examples_en": [
+        "I'm going to miss my friends a lot."
+      ]
+    },
+    {
+      "word": "creer",
+      "translations": [
+        "to believe",
+        "to think"
+      ],
+      "examples": [
+        "No puedo creer lo que pasó."
+      ],
+      "category": "emotions",
+      "difficulty": 2,
+      "examples_en": [
+        "I can't believe what happened."
+      ]
+    },
+    {
+      "word": "de acuerdo",
+      "translations": [
+        "agreed",
+        "OK",
+        "in agreement"
+      ],
+      "examples": [
+        "Estoy de acuerdo contigo."
+      ],
+      "category": "emotions",
+      "difficulty": 2,
+      "examples_en": [
+        "I agree with you."
+      ]
+    },
+    {
+      "word": "importante",
+      "translations": [
+        "important"
+      ],
+      "examples": [
+        "Es importante beber mucha agua."
+      ],
+      "category": "emotions",
+      "difficulty": 2,
+      "examples_en": [
+        "It's important to drink lots of water."
+      ]
+    },
+    {
+      "word": "necesario",
+      "translations": [
+        "necessary"
+      ],
+      "examples": [
+        "No es necesario llevar abrigo hoy."
+      ],
+      "category": "emotions",
+      "difficulty": 2,
+      "examples_en": [
+        "You don't need to bring a coat today."
+      ]
+    },
+    {
+      "word": "posible",
+      "translations": [
+        "possible"
+      ],
+      "examples": [
+        "¿Es posible cambiar la fecha del viaje?"
+      ],
+      "category": "emotions",
+      "difficulty": 2,
+      "examples_en": [
+        "Is it possible to change the date of the trip?"
+      ]
+    },
+    {
+      "word": "interesante",
+      "translations": [
+        "interesting"
+      ],
+      "examples": [
+        "Fue un libro muy interesante."
+      ],
+      "category": "emotions",
+      "difficulty": 2,
+      "examples_en": [
+        "It was a very interesting book."
+      ]
+    },
+    {
+      "word": "diferente",
+      "translations": [
+        "different"
+      ],
+      "examples": [
+        "Cada persona es diferente."
+      ],
+      "category": "emotions",
+      "difficulty": 2,
+      "examples_en": [
+        "Every person is different."
+      ]
+    },
+    {
+      "word": "maravilloso",
+      "translations": [
+        "wonderful"
+      ],
+      "examples": [
+        "Pasamos un fin de semana maravilloso."
+      ],
+      "category": "emotions",
+      "difficulty": 3,
+      "examples_en": [
+        "We had a wonderful weekend."
+      ]
+    },
+    {
+      "word": "terrible",
+      "translations": [
+        "terrible",
+        "awful"
+      ],
+      "examples": [
+        "Tuve un día terrible en el trabajo."
+      ],
+      "category": "emotions",
+      "difficulty": 2,
+      "examples_en": [
+        "I had a terrible day at work."
+      ]
+    },
+    {
+      "word": "nieto",
+      "translations": [
+        "grandson",
+        "grandchild"
+      ],
+      "examples": [
+        "Mi abuela tiene un nieto nuevo."
+      ],
+      "category": "family",
+      "difficulty": 2,
+      "examples_en": [
+        "My grandmother has a new grandson."
+      ]
+    },
+    {
+      "word": "sobrino",
+      "translations": [
+        "nephew"
+      ],
+      "examples": [
+        "Mi sobrino cumple cinco años mañana."
+      ],
+      "category": "family",
+      "difficulty": 2,
+      "examples_en": [
+        "My nephew turns five tomorrow."
+      ]
+    },
+    {
+      "word": "pareja",
+      "translations": [
+        "partner",
+        "couple"
+      ],
+      "examples": [
+        "Mi tía vive con su pareja en Lima."
+      ],
+      "category": "family",
+      "difficulty": 3,
+      "examples_en": [
+        "My aunt lives with her partner in Lima."
+      ]
+    },
+    {
+      "word": "boda",
+      "translations": [
+        "wedding"
+      ],
+      "examples": [
+        "La boda de mi prima fue en mayo."
+      ],
+      "category": "family",
+      "difficulty": 2,
+      "examples_en": [
+        "My cousin's wedding was in May."
+      ]
+    },
+    {
+      "word": "casarse",
+      "translations": [
+        "to get married"
+      ],
+      "examples": [
+        "Mis tíos van a casarse en junio."
+      ],
+      "category": "family",
+      "difficulty": 3,
+      "examples_en": [
+        "My aunt and uncle are going to get married in June."
+      ]
+    },
+    {
+      "word": "nacer",
+      "translations": [
+        "to be born"
+      ],
+      "examples": [
+        "Mi hermanito va a nacer en abril."
+      ],
+      "category": "family",
+      "difficulty": 3,
+      "examples_en": [
+        "My baby brother is going to be born in April."
+      ]
+    },
+    {
+      "word": "crecer",
+      "translations": [
+        "to grow",
+        "to grow up"
+      ],
+      "examples": [
+        "De niño, quería crecer muy rápido."
+      ],
+      "category": "family",
+      "difficulty": 3,
+      "examples_en": [
+        "As a child, I wanted to grow up very fast."
+      ]
+    },
+    {
+      "word": "vida",
+      "translations": [
+        "life"
+      ],
+      "examples": [
+        "Viví toda mi vida en esta ciudad."
+      ],
+      "category": "family",
+      "difficulty": 2,
+      "examples_en": [
+        "I lived my whole life in this city."
+      ]
+    },
+    {
+      "word": "infancia",
+      "translations": [
+        "childhood"
+      ],
+      "examples": [
+        "Pasé mi infancia en un pueblo pequeño."
+      ],
+      "category": "family",
+      "difficulty": 3,
+      "examples_en": [
+        "I spent my childhood in a small town."
+      ]
+    },
+    {
+      "word": "recuerdo",
+      "translations": [
+        "memory",
+        "souvenir"
+      ],
+      "examples": [
+        "Tengo un recuerdo muy bonito de ese verano."
+      ],
+      "category": "family",
+      "difficulty": 3,
+      "examples_en": [
+        "I have a very nice memory of that summer."
+      ]
+    },
+    {
+      "word": "travieso",
+      "translations": [
+        "naughty",
+        "mischievous"
+      ],
+      "examples": [
+        "De niño era muy travieso."
+      ],
+      "category": "family",
+      "difficulty": 3,
+      "examples_en": [
+        "As a child I was very naughty."
+      ]
+    },
+    {
+      "word": "mascota",
+      "translations": [
+        "pet"
+      ],
+      "examples": [
+        "¿Tienes alguna mascota en casa?"
+      ],
+      "category": "family",
+      "difficulty": 2,
+      "examples_en": [
+        "Do you have any pets at home?"
+      ]
+    },
+    {
+      "word": "adolescente",
+      "translations": [
+        "teenager"
+      ],
+      "examples": [
+        "Cuando era adolescente, vivía en Bogotá."
+      ],
+      "category": "family",
+      "difficulty": 3,
+      "examples_en": [
+        "When I was a teenager, I lived in Bogotá."
+      ]
+    },
+    {
+      "word": "joven",
+      "translations": [
+        "young",
+        "young person"
+      ],
+      "examples": [
+        "Mi tía es muy joven."
+      ],
+      "category": "family",
+      "difficulty": 2,
+      "examples_en": [
+        "My aunt is very young."
+      ]
+    },
+    {
+      "word": "rubio",
+      "translations": [
+        "blond",
+        "fair-haired"
+      ],
+      "examples": [
+        "Mi hermano es rubio y alto."
+      ],
+      "category": "family",
+      "difficulty": 2,
+      "examples_en": [
+        "My brother is blond and tall."
+      ]
+    },
+    {
+      "word": "moreno",
+      "translations": [
+        "dark-haired",
+        "dark-skinned",
+        "tanned"
+      ],
+      "examples": [
+        "Mi padre es moreno y tiene barba."
+      ],
+      "category": "family",
+      "difficulty": 2,
+      "examples_en": [
+        "My father has dark hair and a beard."
+      ]
+    },
+    {
+      "word": "delgado",
+      "translations": [
+        "thin",
+        "slim"
+      ],
+      "examples": [
+        "Mi primo es alto y delgado."
+      ],
+      "category": "family",
+      "difficulty": 2,
+      "examples_en": [
+        "My cousin is tall and thin."
+      ]
+    },
+    {
+      "word": "barba",
+      "translations": [
+        "beard"
+      ],
+      "examples": [
+        "Mi abuelo tiene una barba blanca."
+      ],
+      "category": "family",
+      "difficulty": 2,
+      "examples_en": [
+        "My grandfather has a white beard."
+      ]
+    },
+    {
+      "word": "gracioso",
+      "translations": [
+        "funny"
+      ],
+      "examples": [
+        "Mi primo es muy gracioso."
+      ],
+      "category": "family",
+      "difficulty": 2,
+      "examples_en": [
+        "My cousin is very funny."
+      ]
+    },
+    {
+      "word": "serio",
+      "translations": [
+        "serious"
+      ],
+      "examples": [
+        "El profesor de historia es muy serio."
+      ],
+      "category": "family",
+      "difficulty": 2,
+      "examples_en": [
+        "The history teacher is very serious."
+      ]
+    },
+    {
+      "word": "inteligente",
+      "translations": [
+        "intelligent",
+        "smart",
+        "clever"
+      ],
+      "examples": [
+        "Mi hermana es muy inteligente."
+      ],
+      "category": "family",
+      "difficulty": 2,
+      "examples_en": [
+        "My sister is very smart."
+      ]
+    },
+    {
+      "word": "cariñoso",
+      "translations": [
+        "affectionate",
+        "loving"
+      ],
+      "examples": [
+        "Mi perro es muy cariñoso."
+      ],
+      "category": "family",
+      "difficulty": 3,
+      "examples_en": [
+        "My dog is very affectionate."
+      ]
+    },
+    {
+      "word": "perezoso",
+      "translations": [
+        "lazy"
+      ],
+      "examples": [
+        "Mi gato es muy perezoso."
+      ],
+      "category": "family",
+      "difficulty": 3,
+      "examples_en": [
+        "My cat is very lazy."
+      ]
+    },
+    {
+      "word": "antipático",
+      "translations": [
+        "unpleasant",
+        "unfriendly"
+      ],
+      "examples": [
+        "El vecino de arriba es un poco antipático."
+      ],
+      "category": "family",
+      "difficulty": 3,
+      "examples_en": [
+        "The upstairs neighbor is a bit unfriendly."
+      ]
+    },
+    {
+      "word": "llevarse bien",
+      "translations": [
+        "to get along (well)"
+      ],
+      "examples": [
+        "Es importante llevarse bien con los vecinos."
+      ],
+      "category": "family",
+      "difficulty": 3,
+      "examples_en": [
+        "It's important to get along with the neighbors."
+      ]
+    },
+    {
+      "word": "correo",
+      "translations": [
+        "mail",
+        "email"
+      ],
+      "examples": [
+        "Te mandé un correo ayer."
+      ],
+      "category": "technology",
+      "difficulty": 2,
+      "examples_en": [
+        "I sent you an email yesterday."
+      ]
+    },
+    {
+      "word": "llamada",
+      "translations": [
+        "(phone) call"
+      ],
+      "examples": [
+        "Recibí una llamada de mi abuela."
+      ],
+      "category": "technology",
+      "difficulty": 2,
+      "examples_en": [
+        "I got a call from my grandmother."
+      ]
+    },
+    {
+      "word": "enviar",
+      "translations": [
+        "to send"
+      ],
+      "examples": [
+        "Te voy a enviar las fotos esta noche."
+      ],
+      "category": "technology",
+      "difficulty": 2,
+      "examples_en": [
+        "I'm going to send you the photos tonight."
+      ]
+    },
+    {
+      "word": "contestar",
+      "translations": [
+        "to answer",
+        "to reply"
+      ],
+      "examples": [
+        "Tengo que contestar el correo de mi jefe."
+      ],
+      "category": "technology",
+      "difficulty": 2,
+      "examples_en": [
+        "I have to reply to my boss's email."
+      ]
+    },
+    {
+      "word": "aplicación",
+      "translations": [
+        "app",
+        "application"
+      ],
+      "examples": [
+        "Esta aplicación es muy útil para aprender idiomas."
+      ],
+      "category": "technology",
+      "difficulty": 2,
+      "examples_en": [
+        "This app is very useful for learning languages."
+      ]
+    },
+    {
+      "word": "página web",
+      "translations": [
+        "website",
+        "web page"
+      ],
+      "examples": [
+        "Vi las fotos en la página web del hotel."
+      ],
+      "category": "technology",
+      "difficulty": 2,
+      "examples_en": [
+        "I saw the photos on the hotel's website."
+      ]
+    },
+    {
+      "word": "en línea",
+      "translations": [
+        "online"
+      ],
+      "examples": [
+        "Compré los boletos en línea."
+      ],
+      "category": "technology",
+      "difficulty": 2,
+      "examples_en": [
+        "I bought the tickets online."
+      ]
+    },
+    {
+      "word": "redes sociales",
+      "translations": [
+        "social media",
+        "social networks"
+      ],
+      "examples": [
+        "Mi prima pasa horas en las redes sociales."
+      ],
+      "category": "technology",
+      "difficulty": 2,
+      "examples_en": [
+        "My cousin spends hours on social media."
+      ]
+    },
+    {
+      "word": "chatear",
+      "translations": [
+        "to chat (online)"
+      ],
+      "examples": [
+        "Me gusta chatear con mis amigos."
+      ],
+      "category": "technology",
+      "difficulty": 2,
+      "examples_en": [
+        "I like chatting with my friends."
+      ]
+    },
+    {
+      "word": "tableta",
+      "translations": [
+        "tablet"
+      ],
+      "examples": [
+        "Mi hermanito juega en la tableta."
+      ],
+      "category": "technology",
+      "difficulty": 2,
+      "examples_en": [
+        "My little brother plays on the tablet."
+      ]
+    },
+    {
+      "word": "wifi",
+      "translations": [
+        "wifi",
+        "Wi-Fi"
+      ],
+      "examples": [
+        "El wifi del hotel no funciona."
+      ],
+      "category": "technology",
+      "difficulty": 1,
+      "examples_en": [
+        "The hotel wifi isn't working."
+      ]
+    },
+    {
+      "word": "conexión",
+      "translations": [
+        "connection"
+      ],
+      "examples": [
+        "La conexión es muy lenta aquí."
+      ],
+      "category": "technology",
+      "difficulty": 3,
+      "examples_en": [
+        "The connection is very slow here."
+      ]
+    },
+    {
+      "word": "batería",
+      "translations": [
+        "battery"
+      ],
+      "examples": [
+        "Mi celular no tiene batería."
+      ],
+      "category": "technology",
+      "difficulty": 2,
+      "examples_en": [
+        "My phone's battery is dead."
+      ]
+    },
+    {
+      "word": "cargador",
+      "translations": [
+        "charger"
+      ],
+      "examples": [
+        "Olvidé el cargador en el hotel."
+      ],
+      "category": "technology",
+      "difficulty": 2,
+      "examples_en": [
+        "I left my charger at the hotel."
+      ]
+    },
+    {
+      "word": "audífonos",
+      "translations": [
+        "headphones",
+        "earphones (in Spain: auriculares)"
+      ],
+      "examples": [
+        "No encuentro mis audífonos."
+      ],
+      "category": "technology",
+      "difficulty": 3,
+      "examples_en": [
+        "I can't find my headphones."
+      ]
+    },
+    {
+      "word": "video",
+      "translations": [
+        "video (in Spain: vídeo)"
+      ],
+      "examples": [
+        "Grabé un video del concierto."
+      ],
+      "category": "technology",
+      "difficulty": 2,
+      "examples_en": [
+        "I recorded a video of the concert."
+      ]
+    },
+    {
+      "word": "archivo",
+      "translations": [
+        "file"
+      ],
+      "examples": [
+        "Te mando el archivo por correo."
+      ],
+      "category": "technology",
+      "difficulty": 3,
+      "examples_en": [
+        "I'll send you the file by email."
+      ]
+    },
+    {
+      "word": "guardar",
+      "translations": [
+        "to save",
+        "to keep"
+      ],
+      "examples": [
+        "No olvides guardar el documento."
+      ],
+      "category": "technology",
+      "difficulty": 2,
+      "examples_en": [
+        "Don't forget to save the document."
+      ]
+    },
+    {
+      "word": "borrar",
+      "translations": [
+        "to delete",
+        "to erase"
+      ],
+      "examples": [
+        "¿Puedes borrar esa foto, por favor?"
+      ],
+      "category": "technology",
+      "difficulty": 2,
+      "examples_en": [
+        "Can you delete that photo, please?"
+      ]
+    },
+    {
+      "word": "imprimir",
+      "translations": [
+        "to print"
+      ],
+      "examples": [
+        "Tengo que imprimir los boletos."
+      ],
+      "category": "technology",
+      "difficulty": 3,
+      "examples_en": [
+        "I have to print the tickets."
+      ]
+    },
+    {
+      "word": "impresora",
+      "translations": [
+        "printer"
+      ],
+      "examples": [
+        "La impresora no tiene papel."
+      ],
+      "category": "technology",
+      "difficulty": 3,
+      "examples_en": [
+        "The printer is out of paper."
+      ]
+    },
+    {
+      "word": "funcionar",
+      "translations": [
+        "to work (of machines)"
+      ],
+      "examples": [
+        "Mi computadora dejó de funcionar."
+      ],
+      "category": "technology",
+      "difficulty": 3,
+      "examples_en": [
+        "My computer stopped working."
+      ]
+    },
+    {
+      "word": "roto",
+      "translations": [
+        "broken"
+      ],
+      "examples": [
+        "Mi celular está roto."
+      ],
+      "category": "technology",
+      "difficulty": 2,
+      "examples_en": [
+        "My phone is broken."
+      ]
+    },
+    {
+      "word": "anteayer",
+      "translations": [
+        "the day before yesterday"
+      ],
+      "examples": [
+        "Volvimos de la playa anteayer."
+      ],
+      "category": "time",
+      "difficulty": 3,
+      "examples_en": [
+        "We got back from the beach the day before yesterday."
+      ]
+    },
+    {
+      "word": "pasado",
+      "translations": [
+        "last",
+        "past"
+      ],
+      "examples": [
+        "El sábado pasado fuimos al cine."
+      ],
+      "category": "time",
+      "difficulty": 2,
+      "examples_en": [
+        "Last Saturday we went to the movies."
+      ]
+    },
+    {
+      "word": "vez",
+      "translations": [
+        "time (occasion)"
+      ],
+      "examples": [
+        "Fue la primera vez que vi el mar."
+      ],
+      "category": "time",
+      "difficulty": 2,
+      "examples_en": [
+        "It was the first time I saw the sea."
+      ]
+    },
+    {
+      "word": "otra vez",
+      "translations": [
+        "again"
+      ],
+      "examples": [
+        "Perdí las llaves otra vez."
+      ],
+      "category": "time",
+      "difficulty": 2,
+      "examples_en": [
+        "I lost my keys again."
+      ]
+    },
+    {
+      "word": "ya no",
+      "translations": [
+        "not anymore",
+        "no longer"
+      ],
+      "examples": [
+        "Ya no vivo en esa casa."
+      ],
+      "category": "time",
+      "difficulty": 2,
+      "examples_en": [
+        "I don't live in that house anymore."
+      ]
+    },
+    {
+      "word": "a menudo",
+      "translations": [
+        "often"
+      ],
+      "examples": [
+        "Voy a menudo a casa de mis abuelos."
+      ],
+      "category": "time",
+      "difficulty": 3,
+      "examples_en": [
+        "I often go to my grandparents' house."
+      ]
+    },
+    {
+      "word": "de vez en cuando",
+      "translations": [
+        "from time to time",
+        "every now and then"
+      ],
+      "examples": [
+        "De vez en cuando comemos en un restaurante."
+      ],
+      "category": "time",
+      "difficulty": 3,
+      "examples_en": [
+        "Every now and then we eat at a restaurant."
+      ]
+    },
+    {
+      "word": "casi nunca",
+      "translations": [
+        "hardly ever"
+      ],
+      "examples": [
+        "Casi nunca veo la tele."
+      ],
+      "category": "time",
+      "difficulty": 2,
+      "examples_en": [
+        "I hardly ever watch TV."
+      ]
+    },
+    {
+      "word": "normalmente",
+      "translations": [
+        "usually",
+        "normally"
+      ],
+      "examples": [
+        "Normalmente me levanto a las siete."
+      ],
+      "category": "time",
+      "difficulty": 2,
+      "examples_en": [
+        "I usually get up at seven."
+      ]
+    },
+    {
+      "word": "últimamente",
+      "translations": [
+        "lately",
+        "recently"
+      ],
+      "examples": [
+        "Últimamente duermo muy poco."
+      ],
+      "category": "time",
+      "difficulty": 3,
+      "examples_en": [
+        "Lately I've been sleeping very little."
+      ]
+    },
+    {
+      "word": "pronto",
+      "translations": [
+        "soon"
+      ],
+      "examples": [
+        "Espero verte muy pronto."
+      ],
+      "category": "time",
+      "difficulty": 2,
+      "examples_en": [
+        "I hope to see you very soon."
+      ]
+    },
+    {
+      "word": "enseguida",
+      "translations": [
+        "right away",
+        "immediately"
+      ],
+      "examples": [
+        "Espera aquí, vuelvo enseguida."
+      ],
+      "category": "time",
+      "difficulty": 3,
+      "examples_en": [
+        "Wait here, I'll be right back."
+      ]
+    },
+    {
+      "word": "más tarde",
+      "translations": [
+        "later"
+      ],
+      "examples": [
+        "Te llamo más tarde."
+      ],
+      "category": "time",
+      "difficulty": 2,
+      "examples_en": [
+        "I'll call you later."
+      ]
+    },
+    {
+      "word": "a tiempo",
+      "translations": [
+        "on time",
+        "in time"
+      ],
+      "examples": [
+        "Llegamos a tiempo al aeropuerto."
+      ],
+      "category": "time",
+      "difficulty": 2,
+      "examples_en": [
+        "We got to the airport on time."
+      ]
+    },
+    {
+      "word": "tardar",
+      "translations": [
+        "to take (time)",
+        "to be long"
+      ],
+      "examples": [
+        "¿Cuánto vas a tardar en llegar?"
+      ],
+      "category": "time",
+      "difficulty": 3,
+      "examples_en": [
+        "How long will it take you to get here?"
+      ]
+    },
+    {
+      "word": "durante",
+      "translations": [
+        "during",
+        "for"
+      ],
+      "examples": [
+        "Dormí durante todo el viaje."
+      ],
+      "category": "time",
+      "difficulty": 2,
+      "examples_en": [
+        "I slept during the whole trip."
+      ]
+    },
+    {
+      "word": "al principio",
+      "translations": [
+        "at first",
+        "at the beginning"
+      ],
+      "examples": [
+        "Al principio no me gustaba la comida."
+      ],
+      "category": "time",
+      "difficulty": 3,
+      "examples_en": [
+        "At first I didn't like the food."
+      ]
+    },
+    {
+      "word": "entonces",
+      "translations": [
+        "then",
+        "so"
+      ],
+      "examples": [
+        "Entonces decidimos volver a casa."
+      ],
+      "category": "time",
+      "difficulty": 2,
+      "examples_en": [
+        "Then we decided to go back home."
+      ]
+    },
+    {
+      "word": "por fin",
+      "translations": [
+        "finally",
+        "at last"
+      ],
+      "examples": [
+        "Por fin llegaron las vacaciones."
+      ],
+      "category": "time",
+      "difficulty": 2,
+      "examples_en": [
+        "At last the vacation arrived."
+      ]
+    },
+    {
+      "word": "mediodía",
+      "translations": [
+        "noon",
+        "midday"
+      ],
+      "examples": [
+        "Siempre almorzamos al mediodía."
+      ],
+      "category": "time",
+      "difficulty": 2,
+      "examples_en": [
+        "We always have lunch at noon."
+      ]
+    },
+    {
+      "word": "madrugada",
+      "translations": [
+        "early morning",
+        "the small hours"
+      ],
+      "examples": [
+        "Salimos a las cinco de la madrugada."
+      ],
+      "category": "time",
+      "difficulty": 3,
+      "examples_en": [
+        "We left at five in the morning."
+      ]
+    },
+    {
+      "word": "época",
+      "translations": [
+        "time",
+        "period",
+        "era"
+      ],
+      "examples": [
+        "En esa época vivíamos en el campo."
+      ],
+      "category": "time",
+      "difficulty": 3,
+      "examples_en": [
+        "At that time we lived in the countryside."
+      ]
+    },
+    {
+      "word": "fecha",
+      "translations": [
+        "date"
+      ],
+      "examples": [
+        "¿Cuál es la fecha de tu cumpleaños?"
+      ],
+      "category": "time",
+      "difficulty": 2,
+      "examples_en": [
+        "What's the date of your birthday?"
+      ]
+    },
+    {
+      "word": "horario",
+      "translations": [
+        "schedule",
+        "timetable",
+        "opening hours"
+      ],
+      "examples": [
+        "El horario de la biblioteca cambió."
+      ],
+      "category": "time",
+      "difficulty": 3,
+      "examples_en": [
+        "The library's hours changed."
+      ]
+    },
+    {
+      "word": "costumbre",
+      "translations": [
+        "habit",
+        "custom"
+      ],
+      "examples": [
+        "Leer antes de dormir es una buena costumbre."
+      ],
+      "category": "time",
+      "difficulty": 3,
+      "examples_en": [
+        "Reading before bed is a good habit."
+      ]
+    },
+    {
+      "word": "salir",
+      "translations": [
+        "to leave",
+        "to go out"
+      ],
+      "examples": [
+        "Vamos a salir mañana muy temprano."
+      ],
+      "category": "verbs",
+      "difficulty": 2,
+      "examples_en": [
+        "We're going to leave very early tomorrow."
+      ]
+    },
+    {
+      "word": "regresar",
+      "translations": [
+        "to come back",
+        "to go back"
+      ],
+      "examples": [
+        "Vamos a regresar a casa en tren."
+      ],
+      "category": "verbs",
+      "difficulty": 2,
+      "examples_en": [
+        "We're going to go back home by train."
+      ]
+    },
+    {
+      "word": "entrar",
+      "translations": [
+        "to go in",
+        "to come in",
+        "to enter"
+      ],
+      "examples": [
+        "No se puede entrar con comida."
+      ],
+      "category": "verbs",
+      "difficulty": 2,
+      "examples_en": [
+        "You can't go in with food."
+      ]
+    },
+    {
+      "word": "caerse",
+      "translations": [
+        "to fall (down)",
+        "to fall over"
+      ],
+      "examples": [
+        "El niño tiene miedo de caerse de la bicicleta."
+      ],
+      "category": "verbs",
+      "difficulty": 3,
+      "examples_en": [
+        "The boy is afraid of falling off his bike."
+      ]
+    },
+    {
+      "word": "dormirse",
+      "translations": [
+        "to fall asleep"
+      ],
+      "examples": [
+        "Mi hermanito tardó mucho en dormirse."
+      ],
+      "category": "verbs",
+      "difficulty": 3,
+      "examples_en": [
+        "My little brother took a long time to fall asleep."
+      ]
+    },
+    {
+      "word": "olvidar",
+      "translations": [
+        "to forget"
+      ],
+      "examples": [
+        "No quiero olvidar tu cumpleaños."
+      ],
+      "category": "verbs",
+      "difficulty": 2,
+      "examples_en": [
+        "I don't want to forget your birthday."
+      ]
+    },
+    {
+      "word": "recordar",
+      "translations": [
+        "to remember",
+        "to remind"
+      ],
+      "examples": [
+        "No puedo recordar su nombre."
+      ],
+      "category": "verbs",
+      "difficulty": 2,
+      "examples_en": [
+        "I can't remember his name."
+      ]
+    },
+    {
+      "word": "encontrar",
+      "translations": [
+        "to find"
+      ],
+      "examples": [
+        "Es difícil encontrar un hotel barato en agosto."
+      ],
+      "category": "verbs",
+      "difficulty": 2,
+      "examples_en": [
+        "It's hard to find a cheap hotel in August."
+      ]
+    },
+    {
+      "word": "terminar",
+      "translations": [
+        "to finish",
+        "to end"
+      ],
+      "examples": [
+        "Tengo que terminar la tarea antes de cenar."
+      ],
+      "category": "verbs",
+      "difficulty": 2,
+      "examples_en": [
+        "I have to finish my homework before dinner."
+      ]
+    },
+    {
+      "word": "intentar",
+      "translations": [
+        "to try"
+      ],
+      "examples": [
+        "Voy a intentar llegar temprano."
+      ],
+      "category": "verbs",
+      "difficulty": 2,
+      "examples_en": [
+        "I'm going to try to arrive early."
+      ]
+    },
+    {
+      "word": "pasar",
+      "translations": [
+        "to happen",
+        "to spend (time)",
+        "to pass"
+      ],
+      "examples": [
+        "Me gusta pasar tiempo con mi familia."
+      ],
+      "category": "verbs",
+      "difficulty": 2,
+      "examples_en": [
+        "I like spending time with my family."
+      ]
+    },
+    {
+      "word": "dar",
+      "translations": [
+        "to give"
+      ],
+      "examples": [
+        "Le voy a dar un regalo a mi madre."
+      ],
+      "category": "verbs",
+      "difficulty": 2,
+      "examples_en": [
+        "I'm going to give my mother a present."
+      ]
+    },
+    {
+      "word": "prestar",
+      "translations": [
+        "to lend"
+      ],
+      "examples": [
+        "¿Me puedes prestar tu bicicleta?"
+      ],
+      "category": "verbs",
+      "difficulty": 3,
+      "examples_en": [
+        "Can you lend me your bike?"
+      ]
+    },
+    {
+      "word": "contar",
+      "translations": [
+        "to tell",
+        "to count"
+      ],
+      "examples": [
+        "Te voy a contar un secreto."
+      ],
+      "category": "verbs",
+      "difficulty": 2,
+      "examples_en": [
+        "I'm going to tell you a secret."
+      ]
+    },
+    {
+      "word": "enseñar",
+      "translations": [
+        "to teach",
+        "to show"
+      ],
+      "examples": [
+        "Mi abuela me va a enseñar a cocinar."
+      ],
+      "category": "verbs",
+      "difficulty": 2,
+      "examples_en": [
+        "My grandmother is going to teach me to cook."
+      ]
+    },
+    {
+      "word": "repetir",
+      "translations": [
+        "to repeat"
+      ],
+      "examples": [
+        "¿Puede repetir la pregunta, por favor?"
+      ],
+      "category": "verbs",
+      "difficulty": 2,
+      "examples_en": [
+        "Could you repeat the question, please?"
+      ]
+    },
+    {
+      "word": "oír",
+      "translations": [
+        "to hear"
+      ],
+      "examples": [
+        "No puedo oír nada con este ruido."
+      ],
+      "category": "verbs",
+      "difficulty": 2,
+      "examples_en": [
+        "I can't hear anything with this noise."
+      ]
+    },
+    {
+      "word": "sentir",
+      "translations": [
+        "to feel"
+      ],
+      "examples": [
+        "Empecé a sentir frío en la montaña."
+      ],
+      "category": "verbs",
+      "difficulty": 3,
+      "examples_en": [
+        "I started to feel cold on the mountain."
+      ]
+    },
+    {
+      "word": "acompañar",
+      "translations": [
+        "to go with",
+        "to accompany"
+      ],
+      "examples": [
+        "¿Me puedes acompañar al médico?"
+      ],
+      "category": "verbs",
+      "difficulty": 3,
+      "examples_en": [
+        "Can you go with me to the doctor?"
+      ]
+    },
+    {
+      "word": "avisar",
+      "translations": [
+        "to let (someone) know",
+        "to warn"
+      ],
+      "examples": [
+        "Tienes que avisar a tu mamá."
+      ],
+      "category": "verbs",
+      "difficulty": 3,
+      "examples_en": [
+        "You have to let your mom know."
+      ]
+    },
+    {
+      "word": "sacar",
+      "translations": [
+        "to take out",
+        "to get (a grade)"
+      ],
+      "examples": [
+        "¿Me ayudas a sacar la ropa de la maleta?"
+      ],
+      "category": "verbs",
+      "difficulty": 2,
+      "examples_en": [
+        "Can you help me take the clothes out of the suitcase?"
+      ]
+    },
+    {
+      "word": "tirar",
+      "translations": [
+        "to throw",
+        "to throw away"
+      ],
+      "examples": [
+        "No hay que tirar papeles en la calle."
+      ],
+      "category": "verbs",
+      "difficulty": 3,
+      "examples_en": [
+        "You shouldn't throw paper on the street."
+      ]
+    },
+    {
+      "word": "arreglar",
+      "translations": [
+        "to fix",
+        "to repair"
+      ],
+      "examples": [
+        "Mi papá sabe arreglar bicicletas."
+      ],
+      "category": "verbs",
+      "difficulty": 3,
+      "examples_en": [
+        "My dad knows how to fix bikes."
+      ]
+    },
+    {
+      "word": "construir",
+      "translations": [
+        "to build"
+      ],
+      "examples": [
+        "Vamos a construir un castillo de arena."
+      ],
+      "category": "verbs",
+      "difficulty": 3,
+      "examples_en": [
+        "We're going to build a sandcastle."
+      ]
+    },
+    {
+      "word": "organizar",
+      "translations": [
+        "to organize"
+      ],
+      "examples": [
+        "Voy a organizar una fiesta sorpresa."
+      ],
+      "category": "verbs",
+      "difficulty": 3,
+      "examples_en": [
+        "I'm going to organize a surprise party."
+      ]
+    },
+    {
+      "word": "cumplir",
+      "translations": [
+        "to turn (an age)",
+        "to keep (a promise)"
+      ],
+      "examples": [
+        "Mi hermana va a cumplir doce años."
+      ],
+      "category": "verbs",
+      "difficulty": 3,
+      "examples_en": [
+        "My sister is going to turn twelve."
+      ]
+    },
+    {
+      "word": "mentir",
+      "translations": [
+        "to lie (tell a lie)"
+      ],
+      "examples": [
+        "No está bien mentir a tus padres."
+      ],
+      "category": "verbs",
+      "difficulty": 3,
+      "examples_en": [
+        "It's not right to lie to your parents."
+      ]
     }
   ]
 }

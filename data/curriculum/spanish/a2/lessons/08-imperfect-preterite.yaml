@@ -1,0 +1,171 @@
+title: "Llovía cuando salí"
+subtitle: Imperfect or preterite?
+goal: tell a short story in the past, using the preterite for what happened and the imperfect for the background
+minutes: 15
+
+sections:
+  - heading: What happened, and what it was like
+    body: |
+      Think of a story as a film. The **preterite** is the action: each
+      event that happened and finished, one after another. The
+      **imperfect** is the scenery behind it: the weather, the time, how
+      people felt, what was going on.
+    table:
+      columns: [imperfect — the background, preterite — the event]
+      rows:
+        - [Eran las ocho., Llegué a casa.]
+        - [Hacía mucho frío., Me quedé en casa.]
+        - [Estaba cansada., Me acosté temprano.]
+    examples:
+      - ["Era sábado y hacía sol. Fuimos a la playa.", "It was Saturday and it was sunny. We went to the beach."]
+      - ["Estaba muy cansado, así que me acosté.", "I was really tired, so I went to bed."]
+    tip: "How someone felt and what something looked like are almost always imperfect: *estaba cansado*, *era bonito*, *tenía hambre*."
+
+  - heading: "Was doing … when"
+    body: |
+      When one thing interrupts another, the long action that was going on
+      is in the **imperfect**, and the short one that cut in is in the
+      **preterite**.
+
+      **Mientras** (while) introduces the background action, so it goes
+      with the imperfect.
+    examples:
+      - ["Veía la tele cuando sonó el teléfono.", "I was watching TV when the phone rang."]
+      - ["Mientras cenábamos, llegó mi tío.", "While we were having dinner, my uncle arrived."]
+      - ["Cuando salí de casa, llovía.", "When I left home, it was raining."]
+    tip: "English \"was …ing\" is usually the imperfect in Spanish: \"I was reading\" is *leía*."
+
+  - heading: "Once, or again and again?"
+    body: |
+      Some words are clues. *El lunes* means one Monday; *los lunes* means
+      every Monday.
+
+      A fixed length of time — *dos horas*, *tres años* — takes the
+      preterite, because it's over and done: *Viví en Chile tres años*.
+    table:
+      columns: ["preterite — once, finished", "imperfect — habit, background"]
+      rows:
+        - [ayer, todos los días]
+        - [una vez, siempre]
+        - [el lunes (last Monday), los lunes (every Monday)]
+        - [de repente (suddenly), mientras (while)]
+        - [tres años (a set length), normalmente]
+    examples:
+      - ["El lunes fui al médico.", "On Monday I went to the doctor."]
+      - ["Los lunes iba al gimnasio.", "On Mondays I used to go to the gym."]
+      - ["Una vez vi a un actor famoso.", "Once I saw a famous actor."]
+
+  - heading: Telling a story
+    body: |
+      Here's a short story. The first part sets the scene in the
+      imperfect; then the events move it forward in the preterite.
+
+      *Era domingo y hacía sol. Mis amigos y yo estábamos en el parque. De
+      repente, empezó a llover. Corrimos a un café y pedimos un chocolate
+      caliente. ¡Fue un día genial!*
+    examples:
+      - ["Era domingo y hacía sol.", "It was Sunday and it was sunny."]
+      - ["De repente, empezó a llover.", "Suddenly, it started to rain."]
+      - ["Fue un día genial.", "It was a great day."]
+    tip: "*Fue* sums up a whole event that's over — *fue un día genial*. *Era* describes what things were like at the time — *era domingo*."
+
+words:
+  - [mientras, while]
+  - [de repente, suddenly]
+  - [una vez, once]
+  - [así que, so]
+  - [llover, to rain]
+  - [sonar, to ring]
+  - [teléfono, phone]
+  - [caliente, hot]
+  - [genial, great]
+  - [gimnasio, gym]
+
+practice:
+  - type: choice
+    section: 1
+    prompt: "*___ las ocho cuando llegué a casa.*"
+    options: [Fueron, Eran]
+    answer: Eran
+    why: The time is background, so it takes the imperfect.
+
+  - type: fill
+    section: 1
+    prompt: "Estaba muy cansado, así que me ___ temprano."
+    hint: acostarse, yo
+    translation: I was very tired, so I went to bed early.
+    answers: [acosté]
+    why: Going to bed is the event — one finished action — so it takes the preterite.
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: Era sábado y hacía sol.
+    answers: [It was Saturday and it was sunny, It was a Saturday and it was sunny, It was Saturday and the sun was shining, It was a Saturday and the sun was shining]
+    why: Era and hacía are imperfect — they set the scene.
+
+  - type: fill
+    section: 2
+    prompt: "___ la tele cuando sonó el teléfono."
+    hint: ver, yo
+    translation: I was watching TV when the phone rang.
+    answers: [Veía]
+    why: The action that was going on is in the imperfect.
+
+  - type: fill
+    section: 2
+    prompt: "Mientras cenábamos, ___ mi tío."
+    hint: llegar
+    translation: While we were having dinner, my uncle arrived.
+    answers: [llegó]
+    why: The action that cut in is in the preterite.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: I was reading when the phone rang.
+    answers: [Leía cuando sonó el teléfono, Yo leía cuando sonó el teléfono, Cuando sonó el teléfono leía, Cuando sonó el teléfono yo leía, Estaba leyendo cuando sonó el teléfono, Yo estaba leyendo cuando sonó el teléfono]
+    why: The ongoing action, leía, is imperfect; the interruption, sonó, is preterite.
+
+  - type: choice
+    section: 3
+    prompt: "*El lunes ___ al médico.* (last Monday, once)"
+    options: [fui, iba]
+    answer: fui
+    why: One finished event on one day takes the preterite.
+
+  - type: choice
+    section: 3
+    prompt: "*Los lunes ___ al gimnasio.* (every Monday)"
+    options: [fui, iba]
+    answer: iba
+    why: Los lunes means every Monday — a habit — so it takes the imperfect.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: I lived in Chile for three years.
+    answers: [Viví en Chile tres años, Viví tres años en Chile, Yo viví en Chile tres años, Yo viví tres años en Chile, Viví en Chile durante tres años, Yo viví en Chile durante tres años]
+    why: A fixed length of time that's over takes the preterite.
+
+  - type: fill
+    section: 4
+    prompt: "De repente, ___ a llover."
+    hint: empezar
+    translation: Suddenly, it started to rain.
+    answers: [empezó]
+    why: De repente brings in a sudden event, so it takes the preterite.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: It was raining, so I stayed at home.
+    answers: [Llovía así que me quedé en casa, Llovía y me quedé en casa, Como llovía me quedé en casa, Estaba lloviendo así que me quedé en casa, Estaba lloviendo y me quedé en casa]
+    why: The weather is background (llovía); staying home is the event (me quedé).
+
+  - type: choice
+    section: 4
+    prompt: "Summing up a party that's over: *La fiesta ___ genial.*"
+    options: [fue, era]
+    answer: fue
+    why: Fue sums up a whole event that's finished.

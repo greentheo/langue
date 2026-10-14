@@ -144,11 +144,32 @@ practice:
     why: Hermanas is "sisters"; hermanos would include brothers.
 
   - type: translate
+    section: 1
+    direction: to-english
+    prompt: los abuelos
+    answers: [the grandparents, grandparents, the grandfathers]
+    why: The masculine plural abuelos covers a grandfather and a grandmother together.
+
+  - type: choice
+    section: 1
+    prompt: "*Hermanos* can mean…"
+    options: ["brothers, or brothers and sisters", only sisters, cousins]
+    answer: "brothers, or brothers and sisters"
+    why: The masculine plural covers mixed groups, so hermanos can include sisters.
+
+  - type: translate
     section: 3
     direction: to-english
     prompt: Su hija tiene diez años.
     answers: [His daughter is ten, Her daughter is ten, Their daughter is ten, Your daughter is ten, His daughter is ten years old, Her daughter is ten years old, Their daughter is ten years old, Your daughter is ten years old]
     why: Su can mean his, her, their or polite your.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: her book (make it clear it's hers, using de)
+    answers: [el libro de ella]
+    why: When su could be unclear, say de + the person — "the book of her".
 
   - type: translate
     section: 2

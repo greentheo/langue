@@ -179,3 +179,18 @@ practice:
     options: [cet, cette, "c'"]
     answer: cet
     why: Cet keeps the masculine meaning and links smoothly to the vowel, as in cet ami.
+
+  - type: fill
+    section: 3
+    prompt: "un ___ ami"
+    hint: (nouveau)
+    translation: a new friend
+    answers: [nouvel]
+    why: Before a masculine noun starting with a vowel, nouveau becomes nouvel.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: a new car
+    answers: [une nouvelle voiture]
+    why: Voiture is feminine, so nouveau becomes nouvelle — and it goes before the noun.

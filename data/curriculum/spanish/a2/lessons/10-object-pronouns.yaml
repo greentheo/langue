@@ -1,0 +1,181 @@
+title: "Lo compré ayer"
+subtitle: "Object pronouns: *me, te, lo, la, le*"
+goal: avoid repeating nouns with *lo, la, los, las*, say "to him" or "to her" with *le* and *les*, and put these little words in the right place
+minutes: 16
+
+sections:
+  - heading: "Me, te, nos: me, you, us"
+    body: |
+      An *object* is the person or thing that receives the action. In "Ana
+      calls **me**", *me* is the object.
+
+      For "me", "you" and "us", Spanish uses the little words you know
+      from reflexive verbs: **me, te, nos**. They go **in front of** the
+      verb.
+    examples:
+      - ["Mi madre me llama todos los días.", "My mom calls me every day."]
+      - ["¿Te ayudo?", "Shall I help you?"]
+      - ["Nos invitaron a la fiesta.", "They invited us to the party."]
+    tip: "The order is the opposite of English: *Te quiero* — \"you I love\" — means \"I love you\"."
+
+  - heading: "Lo, la, los, las: it, him, her, them"
+    body: |
+      To avoid repeating a noun, replace it with **lo, la, los** or
+      **las**. Pick the one that matches the noun — masculine or feminine,
+      singular or plural — even for things.
+
+      *Lo* also means "him", and *la* means "her".
+    table:
+      columns: ["", singular, plural]
+      rows:
+        - [masculine, "lo — it, him", "los — them"]
+        - [feminine, "la — it, her", "las — them"]
+    examples:
+      - ["—¿Dónde compraste la camisa? —La compré en el centro.", "—Where did you buy the shirt? —I bought it downtown."]
+      - ["—¿Tienes los boletos? —Sí, los tengo.", "—Do you have the tickets? —Yes, I have them."]
+      - ["Vi a Pablo ayer. → Lo vi ayer.", "I saw Pablo yesterday. → I saw him yesterday."]
+    tip: "*El libro* is masculine, so \"it\" is *lo*: *Lo leo*. *La maleta* is feminine, so \"it\" is *la*: *La tengo*."
+
+  - heading: "Le, les: to him, to her, to them"
+    body: |
+      Some actions have two objects: you write **a message** (the thing)
+      **to your grandmother** (the person). The person who gets it takes
+      **le** (to him, to her, to you — polite) or **les** (to them, to
+      you all).
+
+      Spanish usually keeps *le* even when the person is named: *Le
+      escribí un mensaje a mi abuela.* You've seen this with *gustar*: *A
+      Ana le gusta…*
+    examples:
+      - ["Le compré un regalo a mi hermana.", "I bought my sister a present."]
+      - ["¿Qué le dijiste?", "What did you tell him?"]
+      - ["Les mandé una foto a mis padres.", "I sent my parents a photo."]
+    tip: "Verbs you do *to* or *for* someone — *escribir, mandar, decir, regalar, comprar* — usually take *le* for that person."
+
+  - heading: Where they go
+    body: |
+      - Before a normal verb: *Lo compré.* *No la veo.*
+      - Before *haber*: *Lo he visto.*
+      - With an infinitive, you can choose: before the first verb, or joined to the end of the infinitive. Both mean the same.
+    table:
+      columns: [before the verb, joined to the infinitive]
+      rows:
+        - [La voy a comprar., Voy a comprarla.]
+        - ["¿Me puedes ayudar?", "¿Puedes ayudarme?"]
+        - [Lo quiero ver., Quiero verlo.]
+    examples:
+      - ["Lo voy a llamar mañana.", "I'm going to call him tomorrow."]
+      - ["¿Puedes ayudarme?", "Can you help me?"]
+    tip: "You've met this already: *¿Me lo puedo probar?* and *¿Puedo probármelo?* both mean \"Can I try it on?\"."
+
+words:
+  - [lo, "it, him (object)"]
+  - [la, "it, her (object)"]
+  - [le, "to him, to her"]
+  - [les, to them]
+  - [llamar, to call]
+  - [ayudar, to help]
+  - [invitar, to invite]
+  - [mandar, to send]
+  - [mensaje, message]
+  - [regalo, "present, gift"]
+  - [camisa, shirt]
+  - [boleto, ticket (billete in Spain)]
+  - [foto, photo]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Mi madre ___ llama todos los días."
+    hint: me
+    translation: My mom calls me every day.
+    answers: [me]
+    why: Me is the object "me", and it goes in front of the verb.
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: Nos invitaron a la fiesta.
+    answers: [They invited us to the party, You invited us to the party, You all invited us to the party]
+    why: Nos is "us", and invitaron is the ellos form of invitar in the preterite.
+
+  - type: translate
+    section: 1
+    direction: to-target
+    prompt: I'll call you tomorrow. (to a friend)
+    answers: [Te llamo mañana, Mañana te llamo, Te voy a llamar mañana, Mañana te voy a llamar, Voy a llamarte mañana, Mañana voy a llamarte, Te llamaré mañana, Mañana te llamaré]
+    why: Te means "you", and it goes in front of the verb.
+
+  - type: fill
+    section: 2
+    prompt: "—¿Dónde está la maleta? —No ___ veo."
+    hint: it
+    translation: "—Where's the suitcase? —I can't see it."
+    answers: [la]
+    why: Maleta is feminine, so "it" is la.
+
+  - type: fill
+    section: 2
+    prompt: "—¿Compraste los boletos? —Sí, ___ compré ayer."
+    hint: them
+    translation: "—Did you buy the tickets? —Yes, I bought them yesterday."
+    answers: [los]
+    why: Boletos is masculine plural, so "them" is los.
+
+  - type: choice
+    section: 2
+    prompt: "*El libro* — I'm reading it:"
+    options: [Lo leo., La leo., Le leo.]
+    answer: Lo leo.
+    why: Libro is masculine, so "it" is lo.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: I saw her yesterday.
+    answers: [La vi ayer, Ayer la vi, Yo la vi ayer, Ayer yo la vi]
+    why: "\"Her\" as an object is la, and it goes in front of the verb."
+
+  - type: fill
+    section: 3
+    prompt: "___ escribí un mensaje a mi abuela."
+    hint: to her
+    translation: I wrote a message to my grandmother.
+    answers: [Le]
+    why: The person who gets something takes le.
+
+  - type: choice
+    section: 3
+    prompt: "I sent my parents a photo: *___ mandé una foto.*"
+    options: [Los, Les, Las]
+    answer: Les
+    why: Your parents get the photo, so they take les, "to them".
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: Le compré un regalo a mi hermana.
+    answers: [I bought my sister a present, I bought my sister a gift, I bought a present for my sister, I bought a gift for my sister]
+    why: Le points to the person who gets the present — here, mi hermana.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: I'm going to buy it. (the shirt)
+    answers: [La voy a comprar, Voy a comprarla, Yo la voy a comprar, Yo voy a comprarla]
+    why: Camisa is feminine, so la — in front of voy, or joined to comprar.
+
+  - type: fill
+    section: 4
+    prompt: "¿Puedes ___?"
+    hint: help me — one word
+    translation: Can you help me?
+    answers: [ayudarme]
+    why: An object word can join the end of an infinitive — ayudar + me.
+
+  - type: choice
+    section: 4
+    prompt: "*Lo he visto* means…"
+    options: [I've seen it., I'm going to see it., I want to see it.]
+    answer: I've seen it.
+    why: Lo goes in front of haber, and he visto is "I have seen".

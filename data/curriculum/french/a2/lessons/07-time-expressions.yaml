@@ -1,0 +1,223 @@
+title: "Je viens d'arriver"
+subtitle: "Just, right now, ago, for and since"
+goal: say what you've just done and what you're busy doing (*venir de, être en train de*), and say how long ago, for how long and since when (*il y a, pendant, depuis*)
+minutes: 16
+
+sections:
+  - heading: "Just done: venir de"
+    body: |
+      To say you have **just** done something, use **venir de** + an
+      infinitive. *Venir* stays in the **present**, even though the
+      meaning is past:
+
+      - *Je **viens de** manger.* — I've just eaten.
+      - *Le train **vient de** partir.* — The train has just left.
+
+      Before a vowel, *de* becomes *d'*: *Elle vient **d'**arriver.*
+    examples:
+      - ["Nous venons de rentrer.", "We've just got home."]
+      - ["Tu viens d'arriver ?", "Have you just arrived?"]
+    tip: "English uses a past form (\"I've just eaten\"), but French uses the present of *venir*. *Je suis venu de manger* is wrong."
+
+  - heading: "Right now: être en train de"
+    body: |
+      To say you're **busy doing** something right now, in the middle of
+      it, use **être en train de** + an infinitive:
+
+      - *Je **suis en train de** travailler.* — I'm (busy) working.
+      - *Ils **sont en train de** manger.* — They're in the middle of
+        eating.
+
+      In the past, use the imparfait: *J'**étais en train de** dormir.*
+      — I was (busy) sleeping.
+
+      The ordinary present (*je travaille*) is fine most of the time. *En
+      train de* just adds "right now".
+    examples:
+      - ["Chut ! Je suis en train de lire.", "Shh! I'm busy reading."]
+      - ["Elle était en train de dormir.", "She was (busy) sleeping."]
+    tip: "*En train de* has nothing to do with trains. \"I'm on the train\" is *je suis dans le train*."
+
+  - heading: "Ago: il y a"
+    body: |
+      "Ago" is **il y a** + an amount of time. It usually goes with the
+      passé composé, because the action is finished:
+
+      - *Je suis arrivé **il y a** deux jours.* — I arrived two days ago.
+      - *Elle a appelé **il y a** une heure.* — She called an hour ago.
+
+      It's the same *il y a* as "there is". The amount of time after it
+      tells you it means "ago". And unlike English "ago", it goes
+      **before** the time.
+    examples:
+      - ["Le film a commencé il y a dix minutes.", "The film started ten minutes ago."]
+      - ["Le vol est parti il y a une heure.", "The flight left an hour ago."]
+      - ["J'ai appris le français il y a longtemps.", "I learned French a long time ago."]
+
+  - heading: "For: pendant"
+    body: |
+      **Pendant** means "for" or "during". Use it for a length of time
+      that is **over**, or fixed:
+
+      - *J'ai dormi **pendant** dix heures.* — I slept for ten hours.
+      - *Nous sommes restés à Rome **pendant** une semaine.* — We stayed
+        in Rome for a week.
+      - *Il a parlé **pendant** le film.* — He talked during the film.
+
+      With an amount of time, you can also leave *pendant* out: *J'ai
+      dormi dix heures.*
+    examples:
+      - ["J'ai attendu pendant une heure.", "I waited for an hour."]
+      - ["Ils ont chanté pendant le match.", "They sang during the match."]
+
+  - heading: "Since: depuis"
+    body: |
+      **Depuis** means "since" or "for" when something **started in the
+      past and is still going on**. French uses the **present** tense for
+      this:
+
+      - *J'habite ici **depuis** deux ans.* — I've lived here for two
+        years (and I still do).
+      - *J'apprends le français **depuis** septembre.* — I've been
+        learning French since September.
+      - *Tu attends **depuis** longtemps ?* — Have you been waiting long?
+    table:
+      columns: [word, meaning, tense]
+      rows:
+        - [il y a, ago, passé composé]
+        - [pendant, "for, during (finished)", passé composé]
+        - [depuis, "since, for (still going on)", present]
+    examples:
+      - ["J'attends depuis vingt minutes.", "I've been waiting for twenty minutes."]
+      - ["Elle est malade depuis un mois.", "She's been ill for a month."]
+    tip: "English says \"I *have been* learning\", so it's tempting to use the passé composé. If it's still true now, use the **present** with *depuis*."
+
+words:
+  - [venir de, to have just (done)]
+  - [être en train de, to be busy doing]
+  - [il y a (+ time), ago]
+  - [pendant, "for, during"]
+  - [depuis, "since, for"]
+  - [longtemps, a long time]
+  - [une minute, a minute]
+  - [le mois, the month]
+  - [le vol, the flight]
+  - [le match, "the match, the game"]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Je ___ de manger."
+    hint: (venir)
+    translation: I've just eaten.
+    answers: [viens]
+    why: Venir de + infinitive means "just did", and venir stays in the present.
+
+  - type: translate
+    section: 1
+    direction: to-target
+    prompt: The train has just left.
+    answers: ["Le train vient de partir."]
+    why: Use the present of venir + de + the infinitive.
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: "Elle vient d'arriver."
+    answers: ["She has just arrived.", "She just arrived.", "She has just got here.", "She just got here."]
+    why: Venir de means "to have just", and de becomes d' before a vowel.
+
+  - type: fill
+    section: 2
+    prompt: "Nous sommes en ___ de manger."
+    hint: (in the middle of)
+    translation: We're in the middle of eating.
+    answers: [train]
+    why: Être en train de + infinitive means to be busy doing something.
+
+  - type: choice
+    section: 2
+    prompt: "*Je suis en train de lire* means…"
+    options: ["I'm reading on the train.", "I'm busy reading right now.", "I've just read."]
+    answer: "I'm busy reading right now."
+    why: En train de means "in the middle of", not "on the train".
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: I'm busy working right now.
+    answers: ["Je suis en train de travailler."]
+    why: Être en train de + infinitive stresses that it's happening now.
+
+  - type: fill
+    section: 3
+    prompt: "Je suis arrivé ___ deux jours."
+    hint: (ago)
+    translation: I arrived two days ago.
+    answers: [il y a]
+    why: Il y a + an amount of time means "ago", and it goes before the time.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: She called an hour ago.
+    answers: ["Elle a appelé il y a une heure.", "Il y a une heure, elle a appelé.", "Elle a téléphoné il y a une heure."]
+    why: Il y a goes before the amount of time, and the finished action is in the passé composé.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: Le film a commencé il y a dix minutes.
+    answers: ["The film started ten minutes ago.", "The film began ten minutes ago.", "The movie started ten minutes ago.", "The movie began ten minutes ago."]
+    why: Il y a + a time means "ago".
+
+  - type: fill
+    section: 4
+    prompt: "J'ai dormi ___ dix heures."
+    hint: (for)
+    translation: I slept for ten hours.
+    answers: [pendant]
+    why: The sleep is over, so "for" is pendant.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: We stayed in Rome for a week. (a family, using nous)
+    answers: ["Nous sommes restés à Rome pendant une semaine.", "Nous sommes restés à Rome une semaine.", "Pendant une semaine, nous sommes restés à Rome."]
+    why: The stay is over, so it's pendant + the passé composé.
+
+  - type: fill
+    section: 5
+    prompt: "J'habite ici ___ deux ans."
+    hint: (for — and I still do)
+    translation: I've lived here for two years.
+    answers: [depuis]
+    why: It started in the past and is still true now, so it's depuis + the present.
+
+  - type: choice
+    section: 5
+    prompt: "How do you say \"I've been learning French for a year\"?"
+    options: [J'ai appris le français depuis un an., J'apprends le français depuis un an.]
+    answer: J'apprends le français depuis un an.
+    why: With depuis, something that is still going on takes the present.
+
+  - type: choice
+    section: 5
+    prompt: "*Il pleut ___ ce matin.* (It's been raining since this morning.)"
+    options: [pendant, depuis, il y a]
+    answer: depuis
+    why: The rain started this morning and is still going on, so it's depuis.
+
+  - type: translate
+    section: 5
+    direction: to-english
+    prompt: Tu attends depuis longtemps ?
+    answers: ["Have you been waiting long?", "Have you been waiting for long?", "Have you been waiting a long time?", "Have you been waiting for a long time?"]
+    why: Depuis + the present means "have been doing" something that's still going on.
+
+  - type: translate
+    section: 5
+    direction: to-target
+    prompt: I've lived here since September.
+    answers: ["J'habite ici depuis septembre."]
+    why: You still live here, so it's the present + depuis.

@@ -180,3 +180,17 @@ practice:
     options: ["a formal way to ask a question", "a negative sentence", "an order"]
     answer: "a formal way to ask a question"
     why: Swapping the verb and pronoun (es-tu) is the formal way to ask a yes/no question.
+
+  - type: choice
+    section: 1
+    prompt: Which pronoun do you use for a group of four girls?
+    options: [ils, elles]
+    answer: elles
+    why: Elles is only for a group that is all female.
+
+  - type: choice
+    section: 1
+    prompt: Which word for "we" do French people use most in everyday speech?
+    options: [nous, "on"]
+    answer: "on"
+    why: On is the everyday "we"; nous is more formal and more common in writing.

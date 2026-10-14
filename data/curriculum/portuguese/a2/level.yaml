@@ -12,18 +12,31 @@ can_do:
   - write short notes and simple personal messages
 grammar:
   - topic: Pretérito perfeito — regular verbs (falei, comi, abri)
+    lessons: [01-preterito-perfeito-regular]
   - topic: Pretérito perfeito — irregular verbs (fui, tive, estive, fiz, pude, quis, disse, vi, vim, dei)
-  - topic: Pretérito imperfeito for habits and descriptions, and when to use it instead of the perfeito
+    lessons: [02-preterito-fui-tive-fiz, 03-preterito-disse-vi-vim]
   - topic: Estar + gerund for actions in progress (estou falando)
-  - topic: Direct object pronouns (o, a, os, as, te) and how Brazilians use and drop them in speech
-  - topic: Indirect objects with lhe and with para + pronoun (para ele, pra mim)
-  - topic: Comparatives and superlatives — mais / menos… (do) que, tão… quanto, melhor, pior, maior, menor, -íssimo
-  - topic: Aquele / aquela and contractions such as naquele, daquele
-  - topic: Saber vs conhecer
+    lessons: [04-estar-gerundio]
+  - topic: Pretérito imperfeito for habits and descriptions, and when to use it instead of the perfeito
+    lessons: [05-imperfeito, 06-perfeito-ou-imperfeito]
   - topic: Faz / há + time (faz dois anos), and desde
+    lessons: [07-faz-ha-desde]
+  - topic: Saber vs conhecer
+    lessons: [08-saber-conhecer]
+  - topic: Direct object pronouns (o, a, os, as, te) and how Brazilians use and drop them in speech
+    lessons: [09-pronomes-objeto]
+  - topic: Indirect objects with lhe and with para + pronoun (para ele, pra mim)
+    lessons: [10-lhe-para-ele]
+  - topic: Aquele / aquela and contractions such as naquele, daquele
+    lessons: [11-aquele]
+  - topic: Comparatives and superlatives — mais / menos… (do) que, tão… quanto, melhor, pior, maior, menor, -íssimo
+    lessons: [12-comparativos]
   - topic: The imperative for instructions and directions (fale, coma, vire à direita)
+    lessons: [13-imperativo]
   - topic: Indefinites — algum, nenhum, todo, tudo, cada
+    lessons: [14-indefinidos]
   - topic: Futuro simples for recognition (falarei), alongside ir + infinitive
+    lessons: [15-futuro-simples]
 themes:
   - travel and holidays
   - transport
@@ -33,3 +46,46 @@ themes:
   - the house
   - work and study
   - childhood memories
+
+# The ten sub-levels, A2.1 to A2.10, in teaching order. Lessons stay in
+# number order, because each lesson's practice may use earlier lessons.
+units:
+  - title: What did you do?
+    lessons: [01-preterito-perfeito-regular]
+    situations: [stories]
+    categories: [leisure, time]
+  - title: Trips and holidays
+    lessons: [02-preterito-fui-tive-fiz, 03-preterito-disse-vi-vim]
+    situations: [travel]
+    categories: [travel]
+  - title: Right now
+    lessons: [04-estar-gerundio]
+    situations: [phone]
+    categories: [technology, weather]
+  - title: When I was little
+    lessons: [05-imperfeito, 06-perfeito-ou-imperfeito]
+    categories: [emotions, daily_routines]
+  - title: How long?
+    lessons: [07-faz-ha-desde]
+    situations: [health]
+    categories: [health, verbs]
+  - title: People and places you know
+    lessons: [08-saber-conhecer]
+    situations: [restaurant]
+    categories: [food, education]
+  - title: Me, you, for her
+    lessons: [09-pronomes-objeto, 10-lhe-para-ele]
+    situations: [clothes]
+    categories: [clothing]
+  - title: This one or that one?
+    lessons: [11-aquele, 12-comparativos]
+    situations: [hotel]
+    categories: [shopping]
+  - title: Turn right
+    lessons: [13-imperativo]
+    situations: [home]
+    categories: [housing, transportation]
+  - title: What's next
+    lessons: [14-indefinidos, 15-futuro-simples]
+    situations: [plans]
+    categories: [work]

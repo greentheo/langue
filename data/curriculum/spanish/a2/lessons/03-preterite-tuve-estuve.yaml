@@ -1,0 +1,184 @@
+title: "Estuve en México"
+subtitle: "*Tuve, estuve, pude, vine, dije*: more irregular pasts"
+goal: say where you were, what you had to do, what you could or couldn't do, and what people said
+minutes: 15
+
+sections:
+  - heading: "Tener and estar: tuve, estuve"
+    body: |
+      Some common verbs get a new stem in the preterite, plus a special set
+      of endings with **no accent marks**:
+
+      **-e, -iste, -o, -imos, -isteis, -ieron**
+
+      **Tener** becomes **tuv-**, and **estar** becomes **estuv-**. The
+      same endings come back with *poder*, *venir* and *decir* later in
+      this lesson.
+    table:
+      columns: [who, ending, tener, estar]
+      rows:
+        - [yo, "-e", tuve, estuve]
+        - [tú, "-iste", tuviste, estuviste]
+        - [él / ella / usted, "-o", tuvo, estuvo]
+        - [nosotros / nosotras, "-imos", tuvimos, estuvimos]
+        - [vosotros / vosotras (Spain), "-isteis", tuvisteis, estuvisteis]
+        - [ellos / ellas / ustedes, "-ieron", tuvieron, estuvieron]
+    examples:
+      - ["Ayer tuve un examen.", "Yesterday I had an exam."]
+      - ["¿Dónde estuviste anoche?", "Where were you last night?"]
+      - ["Tuvimos mucha suerte.", "We were very lucky."]
+    tip: "Compare *tuve* with regular *hablé*: here the yo form ends in a plain **-e** and the él form in a plain **-o** — *tuvo*, not *tuvó*."
+
+  - heading: Where you were, what you had to do
+    body: |
+      Use **estuve** for where you were, and for how long: *Estuve en
+      México dos semanas* (I was in Mexico for two weeks). Notice there's
+      no word for "for".
+
+      **Tener que** + infinitive means "to have to". In the past, **tuve
+      que** means "I had to".
+    examples:
+      - ["Estuvimos tres días en Cusco.", "We were in Cusco for three days."]
+      - ["El lunes estuve enfermo.", "On Monday I was sick."]
+      - ["Tuve que trabajar el sábado.", "I had to work on Saturday."]
+      - ["Mi hermana tuvo que estudiar.", "My sister had to study."]
+    tip: "Don't forget the *que*: *tuve que ir* — never *tuve ir*."
+
+  - heading: "Poder and venir: pude, vine"
+    body: |
+      Two more verbs with the same endings:
+
+      - **poder** → **pud-**: *pude, pudiste, pudo, pudimos, pudieron*
+      - **venir** → **vin-**: *vine, viniste, vino, vinimos, vinieron*
+
+      **No pude** is very useful: "I couldn't", "I wasn't able to".
+    examples:
+      - ["No pude ir a la fiesta.", "I couldn't go to the party."]
+      - ["¿Por qué no viniste ayer?", "Why didn't you come yesterday?"]
+      - ["Mis primos vinieron a mi casa.", "My cousins came to my house."]
+    tip: "*Vino* means \"he came\" or \"she came\" — and it's also the word for \"wine\". The sentence tells you which."
+
+  - heading: "Decir: dije, dijo, dijeron"
+    body: |
+      **Decir** (to say, to tell) becomes **dij-**: *dije, dijiste, dijo,
+      dijimos, dijeron*.
+
+      Careful with the *ellos* form: it's **dijeron**, with no *i* before
+      the *e*.
+
+      To report a yes or a no, Spanish adds **que**: *Dijo que sí* (he said
+      yes), *Dijeron que no* (they said no).
+    examples:
+      - ["¿Qué dijo el profesor?", "What did the teacher say?"]
+      - ["Mi madre dijo que sí.", "My mom said yes."]
+      - ["Dijeron que el tren llegó tarde.", "They said the train arrived late."]
+
+words:
+  - [tener que, to have to]
+  - [suerte, luck]
+  - [fiesta, party]
+  - [decir, "to say, to tell"]
+  - [examen, exam]
+  - [semana, week]
+  - [tren, train]
+  - [vuelo, flight]
+  - [aeropuerto, airport]
+  - [todo el día, all day]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Ayer ___ un examen."
+    hint: tener, yo
+    translation: Yesterday I had an exam.
+    answers: [tuve]
+    why: Tener uses the stem tuv- in the preterite, and the yo ending is a plain -e.
+
+  - type: fill
+    section: 1
+    prompt: "¿Dónde ___ anoche?"
+    hint: estar, tú
+    translation: Where were you last night?
+    answers: [estuviste]
+    why: Estar uses the stem estuv- in the preterite, and the tú ending is -iste.
+
+  - type: choice
+    section: 1
+    prompt: "The past of *tener* for *ellos*:"
+    options: [tenieron, tuvieron, tuvaron]
+    answer: tuvieron
+    why: Tener uses the stem tuv-, and the ellos ending is -ieron.
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: Tuvimos mucha suerte.
+    answers: [We were very lucky, We were really lucky, We were so lucky, We had a lot of luck, We had lots of luck, We had very good luck, We got very lucky, We got really lucky]
+    why: Tuvimos is the nosotros form of tener in the preterite, and tener suerte means "to be lucky".
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: I was in Mexico for two weeks.
+    answers: [Estuve en México dos semanas, Estuve dos semanas en México, Yo estuve en México dos semanas, Yo estuve dos semanas en México, Estuve en México durante dos semanas, Yo estuve en México durante dos semanas]
+    why: Estuve says where you were, and Spanish needs no word for "for" before a length of time.
+
+  - type: fill
+    section: 2
+    prompt: "El sábado ___ que trabajar."
+    hint: tener, yo
+    translation: On Saturday I had to work.
+    answers: [tuve]
+    why: Tener que means "to have to", and tuve is its yo form in the preterite.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: We were at the airport all day.
+    answers: [Estuvimos en el aeropuerto todo el día, Estuvimos todo el día en el aeropuerto, Nosotros estuvimos en el aeropuerto todo el día, Nosotras estuvimos en el aeropuerto todo el día, Nosotros estuvimos todo el día en el aeropuerto, Nosotras estuvimos todo el día en el aeropuerto]
+    why: Estuvimos is the nosotros form of estar in the preterite.
+
+  - type: fill
+    section: 3
+    prompt: "No ___ ir a la fiesta."
+    hint: poder, yo
+    translation: I couldn't go to the party.
+    answers: [pude]
+    why: Poder uses the stem pud- in the preterite, so yo pude.
+
+  - type: fill
+    section: 3
+    prompt: "¿Por qué no ___ ayer?"
+    hint: venir, tú
+    translation: Why didn't you come yesterday?
+    answers: [viniste]
+    why: Venir uses the stem vin- in the preterite, and the tú ending is -iste.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: Mis primos vinieron a mi casa.
+    answers: [My cousins came to my house, My cousins came to my home, My cousins came to my place, My cousins came over to my house, My cousins came over]
+    why: Vinieron is the ellos form of venir in the preterite.
+
+  - type: fill
+    section: 4
+    prompt: "¿Qué ___ el profesor?"
+    hint: decir
+    translation: What did the teacher say?
+    answers: [dijo]
+    why: Decir uses the stem dij- in the preterite, so él dijo.
+
+  - type: choice
+    section: 4
+    prompt: "They said no:"
+    options: [Dijieron que no., Dijeron que no., Decieron que no.]
+    answer: Dijeron que no.
+    why: After the j, the ellos ending is just -eron — dijeron.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: My mom said yes.
+    answers: [Mi madre dijo que sí, Mi mamá dijo que sí]
+    why: Dijo is the ella form of decir in the preterite, and Spanish adds que before sí.

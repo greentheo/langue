@@ -1,0 +1,236 @@
+title: "Sto mangiando"
+subtitle: Stare + gerund — what's happening right now
+goal: say what you're doing at this very moment with stare + gerund, and what you were doing when something happened
+minutes: 13
+
+sections:
+  - heading: "Right now: sto + -ando, -endo"
+    body: |
+      To say something is happening **right now**, at this very moment,
+      use **stare** + the **gerund** — the Italian "-ing" form.
+
+      To make the gerund, take off the infinitive ending and add:
+
+      - **-ando** for -are verbs: *mangiare → mangiando*
+      - **-endo** for -ere and -ire verbs: *leggere → leggendo*, *dormire → dormendo*
+
+      The gerund never changes. Only *stare* changes for the person.
+      *Fare*, *bere* and *dire* use their old forms again: *facendo*,
+      *bevendo*, *dicendo*.
+    table:
+      columns: [person, stare + gerund]
+      rows:
+        - [io, sto mangiando]
+        - [tu, stai leggendo]
+        - [lui / lei / Lei, sta dormendo]
+        - [noi, stiamo facendo]
+        - [voi, state finendo]
+        - [loro, stanno arrivando]
+    examples:
+      - ["Sto mangiando.", "I'm eating."]
+      - ["Cosa stai facendo?", "What are you doing?"]
+      - ["Marco sta dormendo.", "Marco is sleeping."]
+      - ["Papà sta lavando i piatti.", "Dad is washing the dishes."]
+    tip: "The *-isc-* verbs don't add *-isc-* here: *finire → finendo*, *capire → capendo*."
+
+  - heading: When to use it
+    body: |
+      Italian uses this form much **less** than English uses "-ing". The
+      plain present already means "I'm eating": *Mangio una pizza* is fine.
+
+      Use *stare* + gerund only when you want to stress that something is
+      in progress **at this moment** — on the phone, or when someone
+      interrupts you.
+
+      Don't use it for **plans**. "I'm going to Rome tomorrow" is *Domani
+      vado a Roma*, never *sto andando*.
+    examples:
+      - ["Non posso parlare, sto guidando.", "I can't talk, I'm driving."]
+      - ["Scusa, sto studiando. Ti chiamo dopo.", "Sorry, I'm studying. I'll call you later."]
+      - ["Cosa fai sabato?", "What are you doing on Saturday?"]
+      - ["In questo momento sta pulendo la cucina.", "Right now he's cleaning the kitchen."]
+    tip: "\"What are you doing on Saturday?\" is about a plan, so it's *Cosa fai sabato?* — not *Cosa stai facendo sabato?*"
+
+  - heading: Pronouns go before stare
+    body: |
+      The little words you know — *mi, ti, si, lo, la, gli, le, ci, ne* —
+      go **before** stare:
+
+      - *Mi sto preparando.* — I'm getting ready.
+      - *Lo sto cercando.* — I'm looking for it.
+      - *Ti sto aspettando!* — I'm waiting for you!
+
+      They can also go on the end of the gerund — *Sto preparandomi* — but
+      before *stare* is more common when people talk.
+    examples:
+      - ["Ci stiamo divertendo molto.", "We're having a great time."]
+      - ["Gli sto scrivendo un messaggio.", "I'm writing him a message."]
+      - ["Scusa, ti sto disturbando?", "Sorry, am I bothering you?"]
+      - ["Si sta facendo la doccia.", "She's having a shower."]
+    tip: "Never between the two words: *Mi sto vestendo*, not *Sto mi vestendo*."
+
+  - heading: "Was doing: stavo + gerund"
+    body: |
+      Put **stare** in the imperfetto to say what you **were doing** at a
+      moment in the past — often when something else happened:
+
+      - *Stavo uscendo quando hai chiamato.* — I was going out when you called.
+
+      It means almost the same as the plain imperfetto (*uscivo*), but it
+      stresses that you were right in the middle of it.
+    table:
+      columns: [person, stare (imperfetto)]
+      rows:
+        - [io, stavo]
+        - [tu, stavi]
+        - [lui / lei / Lei, stava]
+        - [noi, stavamo]
+        - [voi, stavate]
+        - [loro, stavano]
+    examples:
+      - ["Cosa stavi facendo?", "What were you doing?"]
+      - ["Stavamo cenando quando è arrivato il nonno.", "We were having dinner when Grandpa arrived."]
+      - ["Stava piovendo.", "It was raining."]
+    tip: "The action that interrupts is still the passato prossimo: *Stavo dormendo quando è arrivato il tuo messaggio.* — I was sleeping when your message arrived."
+
+words:
+  - [guidare, to drive]
+  - [cucinare, to cook]
+  - [pulire, to clean]
+  - [fare la doccia, to have a shower]
+  - [lavare i piatti, to wash the dishes]
+  - [apparecchiare, to set the table]
+  - [in questo momento, "at the moment, right now"]
+  - [scusa, "sorry (to a friend)"]
+  - [disturbare, "to disturb, to bother"]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Sto ___ un libro."
+    hint: leggere
+    translation: I'm reading a book.
+    answers: [leggendo]
+    why: -ere verbs make the gerund with -endo.
+
+  - type: fill
+    section: 1
+    prompt: "Marco sta ___."
+    hint: dormire
+    translation: Marco is sleeping.
+    answers: [dormendo]
+    why: -ire verbs make the gerund with -endo too.
+
+  - type: fill
+    section: 1
+    prompt: "Cosa stai ___?"
+    hint: fare
+    translation: What are you doing?
+    answers: [facendo]
+    why: Fare uses its old form, so the gerund is facendo.
+
+  - type: fill
+    section: 1
+    prompt: "Giulia sta ___ la tavola."
+    hint: apparecchiare
+    translation: Giulia is setting the table.
+    answers: [apparecchiando]
+    why: -are verbs make the gerund with -ando.
+
+  - type: translate
+    section: 1
+    direction: to-target
+    prompt: We're cooking.
+    answers:
+      - Stiamo cucinando.
+      - Noi stiamo cucinando.
+      - Cuciniamo.
+      - Noi cuciniamo.
+    why: Stiamo + cucinando — -are verbs make the gerund with -ando.
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: Stanno arrivando.
+    answers:
+      - They're arriving.
+      - They're coming.
+      - They're on their way.
+    why: Stanno is the loro form of stare, and arrivando is the gerund of arrivare.
+
+  - type: choice
+    section: 2
+    prompt: How do you say "I'm going to Rome tomorrow"?
+    options: [Domani vado a Roma., Domani sto andando a Roma.]
+    answer: Domani vado a Roma.
+    why: Plans take the plain present, not stare + gerund.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: Sorry, I'm driving. (to a friend)
+    answers:
+      - Scusa, sto guidando.
+      - Scusa, io sto guidando.
+      - Mi dispiace, sto guidando.
+    why: Stare + gerund stresses what is happening right now.
+
+  - type: choice
+    section: 2
+    prompt: A friend phones while you're in the middle of cooking. You say…
+    options: [Sto cucinando., Cucino domani., Ho cucinato.]
+    answer: Sto cucinando.
+    why: Something in progress at this moment takes stare + gerund.
+
+  - type: fill
+    section: 3
+    prompt: "___ sto preparando."
+    hint: myself
+    translation: I'm getting ready.
+    answers: [mi]
+    why: The little word goes before stare.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: I'm waiting for you! (to a friend)
+    answers:
+      - Ti sto aspettando!
+      - Sto aspettandoti!
+      - Io ti sto aspettando!
+      - Ti aspetto!
+    why: Ti goes before stare, and aspettare already means "wait for".
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: Ci stiamo divertendo.
+    answers:
+      - We're having fun.
+      - We're having a good time.
+      - We're having a great time.
+      - We're enjoying ourselves.
+    why: Ci stiamo divertendo is divertirsi, happening right now.
+
+  - type: fill
+    section: 4
+    prompt: "___ uscendo quando hai chiamato."
+    hint: stare, io
+    translation: I was going out when you called.
+    answers: [stavo]
+    why: Stare in the imperfetto + gerund means "was doing".
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Cosa stavi facendo?
+    answers:
+      - What were you doing?
+    why: Stavi facendo is "you were doing".
+
+  - type: choice
+    section: 4
+    prompt: How do you say "We were having dinner when Grandpa arrived"?
+    options: [Stavamo cenando quando è arrivato il nonno., Stiamo cenando quando è arrivato il nonno., Abbiamo cenato quando arrivava il nonno.]
+    answer: Stavamo cenando quando è arrivato il nonno.
+    why: What was going on takes stavamo + gerund; the interruption takes the passato prossimo.

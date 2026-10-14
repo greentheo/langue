@@ -1,0 +1,376 @@
+situations:
+  - id: plans
+    title: Making plans
+    phrases:
+      - target: ["Bora?"]
+        english: ["Shall we?", "Shall we go?", "Let's go?"]
+        note: Very informal, short for *vamos embora* (let's go). Between friends you'll hear it all day — *Bora tomar um açaí?*
+        literally: (let's) go?
+      - target: ["Que tal sábado?", "Que tal no sábado?"]
+        english: ["How about Saturday?", "What about Saturday?"]
+        note: "*Que tal…?* suggests anything: a day, a place, or something to do — *Que tal ir ao cinema?*"
+        literally: what such Saturday?
+      - target: ["Topa?", "Você topa?"]
+        english: ["Are you in?", "Are you up for it?", "Are you game?"]
+        note: Informal. *Topar* means to agree to a plan. To say yes, *Topo!* — I'm in!
+        literally: (you) agree?
+      - target: ["Onde a gente se encontra?", "A gente se encontra onde?"]
+        english: ["Where shall we meet?", "Where should we meet?", "Where do we meet?"]
+        note: "*Se encontrar* is to meet up: *A gente se encontra na praça.* — We'll meet in the square."
+        literally: where the people ourselves meet?
+      - target: ["Eu te busco às oito.", "Te busco às oito."]
+        english: ["I'll pick you up at eight.", "I'll come and get you at eight."]
+        note: "*Buscar* — to pick up, to fetch. The present tense often promises something soon: *te busco* — I'll pick you up."
+        literally: I you fetch at-the eight
+      - target: ["Pode ser!"]
+        english: ["Sure!", "That works!", "Why not?", "Could be!"]
+        note: A relaxed yes to a plan — or a "maybe", depending on how you say it.
+        literally: (it) can be!
+      - target: ["Não vai dar.", "Não vai dar, não."]
+        english: ["I can't make it.", "It's not going to work.", "I won't be able to."]
+        note: "The friendly way to say no to a plan. *Dar* here means \"to be possible\", like *não deu* in lesson 3."
+        literally: not (it) goes give
+      - target: ["Fica pra próxima.", "Fica para a próxima.", "Fica pra próxima vez.", "Fica para a próxima vez."]
+        english: ["Maybe next time.", "Next time, then.", "Let's leave it for next time."]
+        literally: (it) stays for-the next
+      - target: ["Vamos marcar alguma coisa?", "Vamos marcar?"]
+        english: ["Shall we arrange something?", "Shall we get together sometime?", "Shall we set a date?"]
+        note: "*Marcar* is to set a day or a time. Careful: *Vamos marcar!* on its own is sometimes just a polite goodbye."
+        literally: (let's) go mark some thing?
+      - target: ["Desculpa, surgiu um imprevisto.", "Desculpe, surgiu um imprevisto.", "Surgiu um imprevisto."]
+        english: ["Sorry, something came up.", "Something came up."]
+        note: The polite way to cancel at the last minute.
+        literally: sorry, arose an unforeseen (thing)
+
+  - id: travel
+    title: Buses, trains and planes
+    phrases:
+      - target: ["Ida e volta, por favor."]
+        english: ["A round trip, please.", "Round trip, please.", "A return, please.", "A return ticket, please."]
+        note: "Your answer when the ticket seller asks *Só ida ou ida e volta?* — one way or round trip?"
+        literally: going and return, for favour
+      - target: ["De qual plataforma sai?", "De que plataforma sai?", "Sai de qual plataforma?"]
+        english: ["Which platform does it leave from?", "What platform does it leave from?"]
+        note: Long-distance buses leave from numbered *plataformas* at the *rodoviária*, the bus station.
+        literally: from which platform leaves?
+      - target: ["Quanto tempo demora?", "Demora quanto tempo?"]
+        english: ["How long does it take?", "How long is the trip?", "How long is the journey?"]
+        note: "*Demorar* — to take (time). The answer: *Demora umas três horas.* — It takes about three hours."
+        literally: how-much time (it) takes?
+      - target: ["A que horas chega em Curitiba?", "Que horas chega em Curitiba?"]
+        english: ["What time does it get to Curitiba?", "What time does it arrive in Curitiba?"]
+        note: Brazilians say *chegar em* a place. In writing you'll also see *chegar a*.
+        literally: at what hours arrives in Curitiba?
+      - target: ["O ônibus atrasou.", "O ônibus está atrasado.", "O ônibus tá atrasado."]
+        english: ["The bus is late.", "The bus is delayed.", "The bus was late.", "The bus has been delayed."]
+        note: Brazilians often use the past, *atrasou* — "it got delayed" — where English says "it's late".
+        literally: the bus delayed
+      - target: ["Perdi o ônibus.", "Eu perdi o ônibus."]
+        english: ["I missed the bus.", "I've missed the bus."]
+        note: "*Perder* means \"to lose\" and also \"to miss\": a bus, a flight, a class."
+        literally: (I) lost the bus
+      - target: ["O voo foi cancelado."]
+        english: ["The flight was cancelled.", "The flight has been cancelled.", "The flight was canceled.", "The flight has been canceled."]
+        note: You'll see it on the boards at the airport, and hear it in announcements.
+        literally: the flight was cancelled
+      - target: ["Onde eu despacho a mala?", "Onde despacho a mala?", "Onde eu despacho a minha mala?", "Onde eu despacho minha mala?"]
+        english: ["Where do I check my bag?", "Where do I check my suitcase?", "Where do I check in my bag?"]
+        note: "*Despachar* — to check in luggage, at the airport or the *rodoviária*. What you keep with you is *bagagem de mão*."
+        literally: where I dispatch the suitcase?
+      - target: ["Esse lugar está ocupado?", "Esse lugar tá ocupado?", "Este lugar está ocupado?"]
+        english: ["Is this seat taken?", "Is this seat occupied?", "Is anyone sitting here?"]
+        note: "The answer you're hoping for: *Não, está livre.* — No, it's free."
+        literally: this place is occupied?
+
+  - id: hotel
+    title: At the hotel
+    phrases:
+      - target: ["Tenho uma reserva em nome de Silva.", "Eu tenho uma reserva em nome de Silva.", "Tenho uma reserva no nome de Silva."]
+        english: ["I have a reservation under the name Silva.", "I have a reservation in the name of Silva.", "I have a booking in the name of Silva."]
+        note: Give your surname. *Fazer uma reserva* is to make a booking.
+        literally: (I) have a reservation in name of Silva
+      - target: ["Vocês têm quarto para hoje?", "Vocês têm quarto pra hoje?", "Tem quarto para hoje?", "Tem quarto pra hoje?"]
+        english: ["Do you have a room for tonight?", "Do you have any rooms for tonight?", "Have you got a room for tonight?"]
+        literally: you-all have room for today?
+      - target: ["Quanto é a diária?", "Quanto custa a diária?"]
+        english: ["How much is it per night?", "How much is a night?", "What's the rate per night?"]
+        note: "*A diária* is the price for one night — literally \"the daily (rate)\"."
+        literally: how much is the daily?
+      - target: ["O café da manhã está incluído?", "O café da manhã está incluso?", "O café da manhã tá incluído?"]
+        english: ["Is breakfast included?", "Is breakfast included in the price?"]
+        note: Brazilians also say *incluso*. At most pousadas it is — and it's usually a feast of fruit, cake and pão de queijo.
+        literally: the coffee of-the morning is included?
+      - target: ["A que horas é o check-out?", "Que horas é o check-out?"]
+        english: ["What time is check-out?", "What time is checkout?", "When is check-out?"]
+        note: Brazilians use the English words *check-in* and *check-out*.
+      - target: ["Tem um problema no quarto.", "Tem um problema com o quarto."]
+        english: ["There's a problem with the room.", "There's a problem in the room.", "There is a problem with the room."]
+        note: "Then say what's wrong: *O chuveiro não está funcionando.*"
+        literally: (it) has a problem in-the room
+      - target: ["O chuveiro não está funcionando.", "O chuveiro não tá funcionando.", "O chuveiro não funciona."]
+        english: ["The shower isn't working.", "The shower doesn't work.", "The shower is not working."]
+        note: "Swap in whatever is broken: *o ar-condicionado*, *a luz*, *o wi-fi*."
+        literally: the shower not is working
+      - target: ["Pode me dar outra toalha?", "Você pode me dar outra toalha?"]
+        english: ["Could you give me another towel?", "Can I have another towel?", "Can you give me another towel?"]
+        note: "*Me* here means \"to me\" (lesson 10). *Outra* — another — has no *uma* in front of it."
+        literally: (you) can me give other towel?
+      - target: ["Qual é a senha do wi-fi?", "Qual a senha do wi-fi?"]
+        english: ["What's the wi-fi password?", "What is the wi-fi password?", "What's the password for the wi-fi?"]
+        note: Brazilians say it "uai-fai".
+        literally: which is the password of-the wi-fi?
+      - target: ["Tem um quarto mais tranquilo?", "Vocês têm um quarto mais tranquilo?"]
+        english: ["Do you have a quieter room?", "Is there a quieter room?", "Have you got a quieter room?"]
+        note: "*Mais* + an adjective is \"more\" or \"-er\" (lesson 12). *Tranquilo* — calm, quiet."
+        literally: (it) has a room more quiet?
+
+  - id: restaurant
+    title: At the restaurant
+    phrases:
+      - target: ["Queria reservar uma mesa para quatro.", "Eu queria reservar uma mesa para quatro.", "Queria reservar uma mesa pra quatro.", "Eu queria reservar uma mesa pra quatro."]
+        english: ["I'd like to book a table for four.", "I would like to book a table for four.", "I'd like to reserve a table for four."]
+        note: "Then give the time: *para as oito* — for eight o'clock."
+        literally: (I) wanted to reserve a table for four
+      - target: ["Pode me trazer o cardápio?", "Você pode me trazer o cardápio?", "Pode trazer o cardápio?"]
+        english: ["Could you bring me the menu?", "Can you bring me the menu?", "Can you bring the menu?"]
+        note: "*Me* here means \"to me\". In Portugal the menu is *a ementa*."
+        literally: (you) can me bring the menu?
+      - target: ["Qual é a especialidade da casa?", "Qual a especialidade da casa?"]
+        english: ["What's the house specialty?", "What's the specialty of the house?", "What is the house speciality?"]
+        literally: which is the specialty of-the house?
+      - target: ["Pra mim, o frango.", "Para mim, o frango.", "Pra mim, frango."]
+        english: ["I'll have the chicken.", "The chicken for me.", "For me, the chicken.", "Chicken for me."]
+        note: "How to order when the waiter goes round the table. *Pra mim* — for me — never *pra eu*."
+        literally: for me, the chicken
+      - target: ["Sem cebola, por favor."]
+        english: ["No onion, please.", "Without onion, please.", "No onions, please.", "Without onions, please."]
+        note: "Swap in what you don't want: *sem pimenta* (no chilli), *sem açúcar* (no sugar)."
+        literally: without onion, for favour
+      - target: ["Não foi isso que eu pedi.", "Não é isso que eu pedi.", "Isso não é o que eu pedi."]
+        english: ["This isn't what I ordered.", "That's not what I ordered.", "This is not what I ordered."]
+        note: Start with *Desculpe, mas…* to keep it polite.
+        literally: not was this that I ordered
+      - target: ["Nosso pedido ainda não chegou.", "O nosso pedido ainda não chegou."]
+        english: ["Our order hasn't arrived yet.", "Our order hasn't come yet.", "Our food hasn't come yet."]
+        note: "*Ainda não* + the past — \"not yet\" (lesson 1)."
+        literally: our order still not arrived
+      - target: ["Mais uma água, por favor.", "Mais uma água."]
+        english: ["Another water, please.", "One more water, please.", "Another bottle of water, please."]
+        note: "*Mais um* / *mais uma* — one more: *mais um suco*, *mais uma porção de batata frita*."
+        literally: more one water, for favour
+      - target: ["Dá pra dividir a conta?", "Dá para dividir a conta?", "Pode dividir a conta?"]
+        english: ["Can we split the bill?", "Can we split the check?", "Could we split the bill?"]
+        note: "*Dá pra…?* — is it possible to…? — is everywhere in spoken Brazilian Portuguese."
+        literally: (it) gives for divide the bill?
+      - target: ["O serviço está incluído?", "O serviço está incluso?", "Os dez por cento estão incluídos?"]
+        english: ["Is service included?", "Is the service charge included?", "Is the tip included?"]
+        note: Most restaurants add 10% for service, *os dez por cento*. That's the tip, and paying it is up to you.
+        literally: the service is included?
+
+  - id: clothes
+    title: Buying clothes
+    phrases:
+      - target: ["Uso M.", "Eu uso M.", "Uso tamanho M.", "Eu uso tamanho M."]
+        english: ["I'm a medium.", "I wear a medium.", "I take a medium.", "I'm a size M."]
+        note: "Brazilian clothes sizes are P (small), M (medium), G (large) and GG. *Usar* — to wear."
+        literally: (I) use M
+      - target: ["Calço 39.", "Eu calço 39.", "Calço trinta e nove.", "Eu calço trinta e nove."]
+        english: ["I'm a size 39.", "I take a size 39.", "I wear a size 39.", "My shoe size is 39."]
+        note: "For shoes, use *calçar*, and the size is a *número*: *Que número você calça?*"
+        literally: (I) shoe 39
+      - target: ["Tem um tamanho maior?", "Tem num tamanho maior?", "Vocês têm um tamanho maior?"]
+        english: ["Do you have a bigger size?", "Do you have a larger size?", "Is there a bigger size?"]
+        note: "Smaller is *menor*. *Maior* and *menor* never take *mais*."
+        literally: (it) has a size bigger?
+      - target: ["Tem essa em azul?", "Tem essa na cor azul?", "Vocês têm essa em azul?"]
+        english: ["Do you have this in blue?", "Do you have this one in blue?", "Does this come in blue?"]
+        note: "*Essa* for a feminine word (*a blusa*, *a saia*); for *o casaco*, say *esse*."
+        literally: (it) has this in blue?
+      - target: ["Onde fica o provador?"]
+        english: ["Where's the fitting room?", "Where is the fitting room?", "Where are the fitting rooms?", "Where's the changing room?"]
+        literally: where stays the fitting room?
+      - target: ["Ficou apertado.", "Ficou apertada.", "Está apertado.", "Está apertada.", "Tá apertado.", "Tá apertada."]
+        display: Ficou apertado / apertada.
+        english: ["It's too tight.", "It's tight.", "It's a bit tight."]
+        note: "Brazilians use *ficar* in the past — \"it ended up\" — for how clothes fit: *ficou largo* (too loose), *ficou curto* (too short). -o or -a to match the clothes."
+        literally: (it) stayed tight
+      - target: ["Ficou ótimo em você!", "Ficou ótima em você!", "Ficou lindo em você!", "Ficou linda em você!"]
+        display: Ficou ótimo / ótima em você!
+        english: ["It looks great on you!", "That looks great on you!", "It suits you!"]
+        note: -o or -a to match the clothes, not the person.
+        literally: (it) stayed great on you!
+      - target: ["Posso trocar?", "Dá pra trocar?", "Dá para trocar?"]
+        english: ["Can I exchange it?", "Can I swap it?", "Can I change it?"]
+        note: Most shops let you exchange things (*trocar*), usually within 30 days. Keep the receipt — the *nota fiscal*.
+        literally: (I) can exchange?
+      - target: ["Comprei ontem, mas ficou pequeno.", "Comprei ontem, mas ficou pequena.", "Eu comprei ontem, mas ficou pequeno.", "Eu comprei ontem, mas ficou pequena."]
+        display: Comprei ontem, mas ficou pequeno / pequena.
+        english: ["I bought it yesterday, but it's too small.", "I bought this yesterday, but it's too small."]
+        note: "There's no word for \"it\": Portuguese happily leaves it out (lesson 9)."
+        literally: (I) bought yesterday, but (it) stayed small
+
+  - id: health
+    title: Doctor and pharmacy
+    phrases:
+      - target: ["Estou com dor de garganta desde segunda.", "Tô com dor de garganta desde segunda.", "Estou com dor de garganta desde segunda-feira.", "Eu estou com dor de garganta desde segunda."]
+        english: ["I've had a sore throat since Monday.", "I have had a sore throat since Monday."]
+        note: "The present tense with *desde* (lesson 7), because the sore throat is still there. Swap in *dor de cabeça* or *dor de barriga*."
+        literally: (I) am with pain of throat since Monday
+      - target: ["Estou com febre.", "Tô com febre.", "Eu estou com febre."]
+        english: ["I have a fever.", "I've got a fever.", "I have a temperature."]
+        literally: (I) am with fever
+      - target: ["Está doendo aqui.", "Tá doendo aqui.", "Dói aqui."]
+        english: ["It hurts here.", "It's hurting here."]
+        note: "Point to the place. With *doer* (to hurt), the part that hurts is the subject: *Meu joelho dói.* — My knee hurts."
+        literally: (it) is hurting here
+      - target: ["Acho que estou gripado.", "Acho que estou gripada.", "Acho que tô gripado.", "Acho que tô gripada."]
+        display: Acho que estou gripado / gripada.
+        english: ["I think I've got the flu.", "I think I have the flu.", "I think I have a bad cold."]
+        note: -o if you're male, -a if you're female. *Gripado* covers the flu and a bad cold.
+        literally: (I) think that (I) am flu-ed
+      - target: ["Sou alérgico à penicilina.", "Sou alérgica à penicilina.", "Eu sou alérgico à penicilina.", "Eu sou alérgica à penicilina.", "Sou alérgico a penicilina.", "Sou alérgica a penicilina."]
+        display: Sou alérgico / alérgica à penicilina.
+        english: ["I'm allergic to penicillin."]
+        note: -o if you're male, -a if you're female. Say it to every doctor and pharmacist.
+        literally: (I) am allergic to-the penicillin
+      - target: ["Tem algum remédio para tosse?", "Tem algum remédio pra tosse?", "Vocês têm algum remédio para tosse?", "Vocês têm algum remédio pra tosse?"]
+        english: ["Do you have anything for a cough?", "Do you have any medicine for a cough?", "Have you got something for a cough?"]
+        note: "At a Brazilian *farmácia*, the pharmacist will often suggest something. Swap in *para dor de cabeça*, *para febre*."
+        literally: (it) has some medicine for cough?
+      - target: ["Precisa de receita?", "Preciso de receita?"]
+        english: ["Do I need a prescription?", "Does it need a prescription?", "Is a prescription needed?"]
+        note: "*Receita* means a prescription — and also a recipe."
+        literally: (it) needs of prescription?
+      - target: ["Quantas vezes por dia?"]
+        english: ["How many times a day?", "How often a day?"]
+        note: "Ask about any medicine. The answer: *duas vezes por dia* — twice a day."
+        literally: how many times for day?
+      - target: ["Queria marcar uma consulta.", "Eu queria marcar uma consulta.", "Gostaria de marcar uma consulta.", "Eu gostaria de marcar uma consulta."]
+        english: ["I'd like to make an appointment.", "I would like to make an appointment.", "I'd like to book an appointment."]
+        note: A *consulta* is an appointment with a doctor.
+        literally: (I) wanted to mark a consultation
+      - target: ["Melhoras!"]
+        english: ["Get well soon!", "Feel better!"]
+        note: What you say to someone who's ill.
+        literally: improvements!
+
+  - id: home
+    title: At home
+    phrases:
+      - target: ["Fique à vontade.", "Fica à vontade."]
+        english: ["Make yourself at home.", "Make yourself comfortable.", "Feel free."]
+        note: "What a Brazilian host says as you walk in. *Fique* is an instruction (lesson 13); among friends, *Fica à vontade*."
+        literally: stay at will
+      - target: ["Onde eu coloco isso?", "Onde coloco isso?", "Onde eu ponho isso?", "Onde ponho isso?"]
+        english: ["Where do I put this?", "Where should I put this?", "Where shall I put this?"]
+        literally: where I put this?
+      - target: ["Onde ficam os copos?"]
+        english: ["Where are the glasses?", "Where do the glasses go?", "Where do you keep the glasses?"]
+        note: "*Ficar* again, for where things are kept. Swap in *os pratos*, *as toalhas*, *as chaves*."
+        literally: where stay the glasses?
+      - target: ["Posso ajudar com a louça?", "Posso te ajudar com a louça?", "Quer ajuda com a louça?"]
+        english: ["Can I help with the dishes?", "Can I help you with the dishes?", "Can I help with the washing-up?"]
+        note: "*Lavar a louça* is to do the dishes. Offering is good manners when you're a guest."
+        literally: (I) can help with the dishes?
+      - target: ["Pode deixar!", "Pode deixar comigo!", "Deixa comigo!"]
+        english: ["Leave it to me!", "Will do!", "I'll do it!"]
+        note: "Said when you take on a job — or to tell someone not to bother: *Pode deixar, eu lavo.*"
+        literally: (you) can leave (it)!
+      - target: ["Hoje é a sua vez.", "Hoje é sua vez.", "É a sua vez hoje."]
+        english: ["It's your turn today.", "Today it's your turn."]
+        note: "*De lavar a louça*, *de tirar o lixo*… And *É a minha vez* — it's my turn."
+        literally: today is the your turn
+      - target: ["A casa está uma bagunça!", "A casa tá uma bagunça!"]
+        english: ["The house is a mess!", "The house is such a mess!", "The place is a mess!"]
+        note: "*Estar uma bagunça* — to be a mess. *Meu quarto está uma bagunça.*"
+        literally: the house is a mess!
+      - target: ["Quanto é o aluguel?", "Quanto custa o aluguel?", "O aluguel é quanto?"]
+        english: ["How much is the rent?", "What's the rent?"]
+        note: Ask about the *condomínio* too — the monthly fee for the building.
+        literally: how much is the rent?
+      - target: ["Acabou a luz!", "A luz acabou!"]
+        english: ["The power's gone out!", "The power's out!", "The electricity went off!", "The lights went out!"]
+        note: "*Luz* — light — also means electricity. *Acabar* is to end or run out: *Acabou o café.* — We're out of coffee."
+        literally: ended the light!
+
+  - id: stories
+    title: What happened?
+    phrases:
+      - target: ["Como foi o fim de semana?", "Como foi o seu fim de semana?", "Como foi seu fim de semana?"]
+        english: ["How was the weekend?", "How was your weekend?"]
+        note: "On Monday, everyone asks it. *Foi* is the past of *ser* (lesson 2)."
+        literally: how was the end of week?
+      - target: ["Foi ótimo! A gente foi à praia.", "Foi ótimo! A gente foi pra praia.", "Foi ótimo! Nós fomos à praia.", "Foi ótimo! Fomos à praia."]
+        english: ["It was great! We went to the beach.", "It was great, we went to the beach."]
+        note: "*Foi* twice: \"it was\" and \"we went\" are the same word in Portuguese (lesson 2)."
+        literally: (it) was great! the people went to-the beach
+      - target: ["O que você fez de bom?", "Fez o que de bom?", "E aí, o que você fez de bom?"]
+        english: ["What did you get up to?", "Did you do anything nice?", "What did you do that was fun?"]
+        note: A friendly way to ask about someone's weekend or holiday.
+        literally: what you did of good?
+      - target: ["Não fiz nada de especial.", "Eu não fiz nada de especial.", "Nada de especial."]
+        english: ["I didn't do anything special.", "Nothing special.", "I didn't do much."]
+        note: "*Não… nada* — a double negative, and that's correct Portuguese (lesson 14)."
+        literally: not (I) did nothing of special
+      - target: ["Mais ou menos."]
+        english: ["So-so.", "Not bad, not great.", "OK, I guess."]
+        note: "When it wasn't great. *Como foi a prova? — Mais ou menos.*"
+        literally: more or less
+      - target: ["O que aconteceu?", "E aí, o que aconteceu?"]
+        english: ["What happened?", "So what happened?"]
+        note: "*Acontecer* — to happen — is regular: *aconteceu* like *comeu*. *E aí?* — so? — keeps a story going."
+        literally: the what happened?
+      - target: ["Sério?", "É sério?"]
+        english: ["Really?", "Seriously?", "Are you serious?"]
+      - target: ["Não acredito!", "Eu não acredito!"]
+        english: ["I don't believe it!", "No way!", "I can't believe it!"]
+        note: For good news and bad.
+        literally: not (I) believe!
+      - target: ["Nossa!"]
+        english: ["Wow!", "Gosh!", "My goodness!"]
+        note: Short for *Nossa Senhora!* — Our Lady! Brazilians say it for every kind of surprise, good or bad.
+        literally: our (Lady)!
+      - target: ["Que susto!"]
+        english: ["What a fright!", "You scared me!", "That gave me a fright!"]
+        note: When something makes you jump. *Susto* — a fright.
+        literally: what fright!
+
+  - id: phone
+    title: Calls and messages
+    phrases:
+      - target: ["Quem fala?"]
+        english: ["Who's calling?", "Who is this?", "Who's speaking?"]
+        note: On the phone, when you don't know the number. A receptionist says *Quem gostaria?*
+        literally: who speaks?
+      - target: ["O Pedro está?", "O Pedro tá?", "O Pedro está aí?", "O Pedro tá aí?"]
+        english: ["Is Pedro there?", "Is Pedro in?", "Is Pedro around?"]
+        note: "Add *aí* — there, where you are — if you like. For a woman, *A Ana está?*"
+        literally: the Pedro is?
+      - target: ["Posso deixar um recado?"]
+        english: ["Can I leave a message?", "May I leave a message?", "Could I leave a message?"]
+        note: A *recado* is a message someone passes on; a text is a *mensagem*.
+        literally: (I) can leave a message?
+      - target: ["Pode pedir pra ele me ligar?", "Pode pedir para ele me ligar?", "Pode falar pra ele me ligar?", "Pode falar para ele me ligar?"]
+        english: ["Can you ask him to call me?", "Could you ask him to call me?", "Can you tell him to call me?"]
+        note: "*Pra ele* — to him (lesson 10) — and *me ligar*, to call me. For a woman, *pra ela*."
+        literally: (you) can ask for him me call?
+      - target: ["Está cortando.", "Tá cortando.", "A ligação está cortando.", "A ligação tá cortando."]
+        english: ["You're breaking up.", "The line's breaking up.", "It's cutting out."]
+        note: "When the signal is bad. Also: *Não estou te ouvindo.* — I can't hear you."
+        literally: (it) is cutting
+      - target: ["Te ligo mais tarde.", "Eu te ligo mais tarde.", "Te ligo depois.", "Eu te ligo depois."]
+        english: ["I'll call you later.", "I'll call you back later.", "I'll ring you later."]
+        note: "*Te* — you — goes before the verb (lesson 9). The present tense often makes a promise: *te ligo* — I'll call you."
+        literally: (I) you call more late
+      - target: ["Me manda uma mensagem.", "Me manda mensagem.", "Manda uma mensagem pra mim."]
+        english: ["Send me a message.", "Text me.", "Message me."]
+        note: Usually on WhatsApp — *o zap* to Brazilians — where you can also send an *áudio*, a voice message.
+        literally: me send a message
+      - target: ["Tô chegando!", "Estou chegando!"]
+        english: ["I'm almost there!", "I'm nearly there!", "I'm on my way!"]
+        note: The classic message when you're late — even if you've only just left home.
+        literally: (I)'m arriving!
+      - target: ["Desculpe, foi engano.", "Desculpa, foi engano.", "Foi engano."]
+        english: ["Sorry, wrong number.", "Sorry, I dialled the wrong number.", "Sorry, I dialed the wrong number."]
+        note: When you've called the wrong person. *Engano* — a mistake.
+        literally: sorry, (it) was mistake

@@ -1,0 +1,202 @@
+title: "Fui a la playa"
+subtitle: "*Ir, ser, hacer* and *ver* in the past"
+goal: say where you went, what you did, what you saw and how it was, with *fui, hice* and *vi*
+minutes: 14
+
+sections:
+  - heading: "Fui: I went, I was"
+    body: |
+      **Ir** (to go) and **ser** (to be) are completely irregular in the
+      preterite — and they share the same forms. *Fui* can mean "I went"
+      or "I was".
+
+      The rest of the sentence always tells you which: **fui a** + a place
+      means "I went to".
+    table:
+      columns: [who, ir / ser]
+      rows:
+        - [yo, fui]
+        - [tú, fuiste]
+        - [él / ella / usted, fue]
+        - [nosotros / nosotras, fuimos]
+        - [vosotros / vosotras (Spain), fuisteis]
+        - [ellos / ellas / ustedes, fueron]
+    examples:
+      - ["Fui a la playa con mis primos.", "I went to the beach with my cousins."]
+      - ["¿Adónde fuiste el verano pasado?", "Where did you go last summer?"]
+      - ["Fuimos al cine el sábado.", "We went to the movies on Saturday."]
+    tip: "No accent marks here: *fui*, *fue*. And \"where to?\" is *¿adónde?* (also written *¿a dónde?*)."
+
+  - heading: "¿Qué tal fue? Saying how it was"
+    body: |
+      Use **fue** (it was) to sum up something that's over — a trip, a
+      party, a match, an exam. To ask, say **¿Qué tal fue…?** or **¿Cómo
+      fue…?**
+
+      Some words to answer with:
+
+      - **divertido** — fun
+      - **aburrido** — boring
+      - **increíble** — amazing
+      - **un desastre** — a disaster
+    examples:
+      - ["—¿Qué tal fue el concierto? —¡Fue increíble!", "—How was the concert? —It was amazing!"]
+      - ["El examen fue muy fácil.", "The exam was very easy."]
+      - ["Las vacaciones fueron un desastre.", "The vacation was a disaster."]
+    tip: "*Vacaciones* is always plural in Spanish, so it takes *fueron*: *Las vacaciones fueron muy divertidas.*"
+
+  - heading: "Hacer: hice, hiciste…"
+    body: |
+      **Hacer** (to do, to make) gets a new stem in the preterite, **hic-**,
+      and no accent marks. Watch the *él* form: **hizo**, with a z.
+
+      The weather works in the past too: **hizo frío** (it was cold),
+      **hizo calor** (it was hot), **hizo sol** (it was sunny).
+    table:
+      columns: [who, hacer]
+      rows:
+        - [yo, hice]
+        - [tú, hiciste]
+        - [él / ella / usted, hizo]
+        - [nosotros / nosotras, hicimos]
+        - [vosotros / vosotras (Spain), hicisteis]
+        - [ellos / ellas / ustedes, hicieron]
+    examples:
+      - ["¿Qué hiciste el fin de semana?", "What did you do on the weekend?"]
+      - ["Hice la maleta anoche.", "I packed my suitcase last night."]
+      - ["En Sevilla hizo mucho calor.", "It was very hot in Seville."]
+
+  - heading: "Ver: vi, viste…"
+    body: |
+      **Ver** (to see, to watch) takes the normal -er endings, but its
+      forms are so short that they need no accent marks: **vi, viste, vio,
+      vimos, vieron** (and *visteis* in Spain).
+
+      When you see a *person*, put **a** in front of them: *Vi a Pablo* (I
+      saw Pablo). This "personal *a*" has no English translation — it
+      just marks a person who receives the action.
+    examples:
+      - ["Anoche vi una película.", "Last night I saw a movie."]
+      - ["¿Viste el partido?", "Did you watch the game?"]
+      - ["Vimos a Ana en el museo.", "We saw Ana at the museum."]
+    tip: "No *a* for things: *Vi el museo.* Only people (and pets) get it: *Vi a mi tía.*"
+
+words:
+  - [fin de semana, weekend]
+  - [adónde, where (to)]
+  - [divertido, fun]
+  - [aburrido, boring]
+  - [increíble, amazing]
+  - [viaje, trip]
+  - [vacaciones, "vacation, holidays"]
+  - [maleta, suitcase]
+  - [hacer la maleta, to pack your suitcase]
+  - [ver, "to see, to watch"]
+  - [concierto, concert]
+  - [partido, "game, match"]
+  - [museo, museum]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "El sábado ___ al cine."
+    hint: ir, yo
+    translation: On Saturday I went to the movies.
+    answers: [fui]
+    why: Fui is the yo form of ir in the preterite.
+
+  - type: fill
+    section: 1
+    prompt: "¿Adónde ___ tus padres?"
+    hint: ir
+    translation: Where did your parents go?
+    answers: [fueron]
+    why: Fueron is the ellos form of ir in the preterite.
+
+  - type: translate
+    section: 1
+    direction: to-target
+    prompt: We went to the beach.
+    answers: [Fuimos a la playa, Nosotros fuimos a la playa, Nosotras fuimos a la playa]
+    why: Fuimos is the nosotros form of ir in the preterite.
+
+  - type: choice
+    section: 1
+    prompt: "In *Fui a Lima*, *fui* means…"
+    options: [I went, I was, I go]
+    answer: I went
+    why: Fui a + a place means "I went to".
+
+  - type: fill
+    section: 2
+    prompt: "¿Qué tal ___ el concierto?"
+    hint: ser
+    translation: How was the concert?
+    answers: [fue]
+    why: Fue sums up a finished event, like a concert.
+
+  - type: translate
+    section: 2
+    direction: to-english
+    prompt: El viaje fue muy divertido.
+    answers: [The trip was very fun, The trip was a lot of fun, The trip was really fun, The trip was great fun, The trip was lots of fun, The trip was so much fun, The journey was very fun, The journey was a lot of fun]
+    why: Fue means "it was" for a finished event, and divertido means "fun".
+
+  - type: choice
+    section: 2
+    prompt: "The vacation was boring:"
+    options: [Las vacaciones fue aburrida., Las vacaciones fueron aburridas., Las vacaciones fueron aburridos.]
+    answer: Las vacaciones fueron aburridas.
+    why: Vacaciones is feminine and always plural, so it takes fueron and aburridas.
+
+  - type: fill
+    section: 3
+    prompt: "¿Qué ___ ayer?"
+    hint: hacer, tú
+    translation: What did you do yesterday?
+    answers: [hiciste]
+    why: Hacer uses the stem hic- in the preterite, and the tú ending is -iste.
+
+  - type: fill
+    section: 3
+    prompt: "Mi hermano ___ la maleta."
+    hint: hacer
+    translation: My brother packed his suitcase.
+    answers: [hizo]
+    why: The él form of hacer in the preterite is hizo, with a z.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: It was very cold yesterday. (the weather)
+    answers: [Ayer hizo mucho frío, Hizo mucho frío ayer]
+    why: The weather uses hacer, and hizo is its past form.
+
+  - type: fill
+    section: 4
+    prompt: "Anoche ___ una película."
+    hint: ver, yo
+    translation: Last night I saw a movie.
+    answers: [vi]
+    why: The yo form of ver in the preterite is vi, with no accent.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: Did you watch the game? (to a friend)
+    answers: ["¿Viste el partido?", "¿Tú viste el partido?", "¿Viste tú el partido?"]
+    why: Viste is the tú form of ver in the preterite.
+
+  - type: choice
+    section: 4
+    prompt: We saw Ana.
+    options: [Vimos Ana., Vimos a Ana., Vemos a Ana.]
+    answer: Vimos a Ana.
+    why: Vimos is "we saw", and a person who is seen gets the personal a.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: "¿Qué viste en el museo?"
+    answers: [What did you see at the museum?, What did you see in the museum?]
+    why: Viste is the tú form of ver in the preterite.

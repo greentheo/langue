@@ -1,0 +1,760 @@
+# Scripted role-plays for the guided path. See data/curriculum/README.md
+# ("Dialogues file") for the format and rules. A dialogue for unit N uses
+# only A1, plus the words, phrases and grammar of A2 units 1..N.
+
+dialogues:
+  # ── Unit 1: What did you do? ────────────────────────────────────────────
+  - id: weekend-chat
+    unit: 1
+    title: Your weekend
+    setting: It's Monday morning at school in Bogotá. Your friend Valentina asks about your weekend.
+    with: Valentina
+    lines:
+      - them: ¡Hola! ¿Qué tal el fin de semana?
+        english: Hi! How was your weekend?
+      - you: Say you had a great time.
+        answers:
+          - Lo pasé muy bien.
+          - La pasé muy bien.
+          - Lo pasé genial.
+          - La pasé genial.
+      - them: ¡Qué bien! ¿Qué hiciste?
+        english: Great! What did you do?
+      - you: Say you played soccer with your cousins on Saturday.
+        answers:
+          - El sábado jugué al fútbol con mis primos.
+          - Jugué al fútbol con mis primos el sábado.
+          - El sábado jugué fútbol con mis primos.
+          - Jugué fútbol con mis primos el sábado.
+          - El sábado jugué al fútbol con mis primas.
+      - them: ¿Y el domingo?
+        english: And on Sunday?
+      - you: Say you had dinner at your grandparents' house.
+        answers:
+          - Cené en casa de mis abuelos.
+          - Cené en la casa de mis abuelos.
+          - El domingo cené en casa de mis abuelos.
+          - Cené con mis abuelos.
+      - them: Yo no salí. Estuve enferma todo el fin de semana.
+        english: I didn't go out. I was sick all weekend.
+      - you: Say what a shame.
+        answers:
+          - ¡Qué pena!
+          - ¡Qué lástima!
+      - them: Sí… Oye, ¿empezaste la tarea de inglés?
+        english: Yeah… Hey, did you start the English homework?
+      - you: Say yes, you started it last night.
+        answers:
+          - Sí, empecé anoche.
+          - Sí, anoche empecé.
+          - Sí, la empecé anoche.
+          - Sí, empecé la tarea anoche.
+
+  # ── Unit 2: Trips and holidays ──────────────────────────────────────────
+  - id: holiday-story
+    unit: 2
+    title: Back from vacation
+    setting: It's the first day of school after the summer. Your Spanish teacher, Señora Ortiz, asks about your vacation.
+    with: Señora Ortiz
+    lines:
+      - them: ¡Hola! ¿Qué tal las vacaciones? ¿Adónde fuiste?
+        english: Hi! How was your vacation? Where did you go?
+      - you: Say you went to Mexico with your family.
+        answers:
+          - Fui a México con mi familia.
+          - Yo fui a México con mi familia.
+          - Fui con mi familia a México.
+          - Fuimos a México con mi familia.
+      - them: ¡Qué bien! ¿Cuánto tiempo estuviste allí?
+        english: How nice! How long were you there?
+      - you: Say you were there for two weeks.
+        answers:
+          - Estuve allí dos semanas.
+          - Estuve dos semanas.
+          - Estuve dos semanas allí.
+          - Estuvimos dos semanas.
+          - Estuvimos allí dos semanas.
+      - them: ¿Y qué hiciste?
+        english: And what did you do?
+      - you: Say you visited a lot of museums and went to the beach.
+        answers:
+          - Visité muchos museos y fui a la playa.
+          - Fui a la playa y visité muchos museos.
+          - Visitamos muchos museos y fuimos a la playa.
+          - Fuimos a la playa y visitamos muchos museos.
+      - them: ¿Y qué tal el tiempo?
+        english: And what was the weather like?
+      - you: Say it was very hot.
+        answers:
+          - Hizo mucho calor.
+          - Hizo calor.
+      - them: ¿Tuviste algún problema?
+        english: Did you have any problems?
+      - you: Say yes, you had to wait at the airport all day.
+        answers:
+          - Sí, tuve que esperar en el aeropuerto todo el día.
+          - Sí, tuve que esperar todo el día en el aeropuerto.
+          - Sí, tuvimos que esperar en el aeropuerto todo el día.
+          - Sí, tuvimos que esperar todo el día en el aeropuerto.
+      - them: ¡Qué horror! Pero fue un buen viaje, ¿no?
+        english: How awful! But it was a good trip, right?
+      - you: Say yes, it was amazing.
+        answers:
+          - Sí, ¡fue increíble!
+          - Sí, fue un viaje increíble.
+          - Sí, fue genial.
+          - Sí, fue muy divertido.
+
+  - id: late-train
+    unit: 2
+    title: The late train
+    setting: You're at the station in Cusco, Peru, with a ticket for the train to Machu Picchu. It should have left ten minutes ago.
+    with: the woman at the information desk
+    lines:
+      - them: Buenos días. ¿En qué le puedo ayudar?
+        english: Good morning. How can I help you?
+      - you: Ask if the train is delayed.
+        answers:
+          - ¿El tren está retrasado?
+          - ¿Está retrasado el tren?
+          - ¿El tren tiene retraso?
+          - ¿El tren a Machu Picchu está retrasado?
+      - them: Sí, lo siento. Hubo un problema en la vía. Sale en una hora.
+        english: Yes, I'm sorry. There was a problem on the line. It leaves in an hour.
+      - you: Ask how long the trip takes.
+        answers:
+          - ¿Cuánto tarda el viaje?
+          - ¿Cuánto tiempo tarda el viaje?
+          - ¿Cuánto dura el viaje?
+      - them: Unas tres horas.
+        english: About three hours.
+      - you: Ask which platform the train leaves from.
+        answers:
+          - ¿De qué andén sale el tren?
+          - ¿De qué andén sale?
+          - ¿El tren sale de qué andén?
+      - them: Del andén dos. ¿Tiene equipaje?
+        english: From platform two. Do you have any luggage?
+      - you: Say yes, but you can't find your suitcase.
+        answers:
+          - Sí, pero no encuentro mi maleta.
+          - Sí, pero no encuentro la maleta.
+          - Sí, pero no puedo encontrar mi maleta.
+      - them: ¿Es esa maleta azul, allí?
+        english: Is it that blue suitcase, over there?
+      - you: Say yes, it's your suitcase, and thank her very much.
+        answers:
+          - ¡Sí, es mi maleta! Muchas gracias.
+          - Sí, es mi maleta. Gracias.
+          - Sí, es mi maleta. Muchas gracias, señora.
+
+  # ── Unit 3: Getting ready ───────────────────────────────────────────────
+  - id: return-the-jacket
+    unit: 3
+    title: A jacket that's too big
+    setting: Yesterday you bought a jacket in a shop in Buenos Aires, but it's too big. You take it back.
+    with: the shop assistant
+    lines:
+      - them: Buenas tardes. ¿Necesita ayuda?
+        english: Good afternoon. Do you need any help?
+      - you: Ask if you can return this.
+        answers:
+          - ¿Puedo devolver esto?
+          - ¿Puedo devolver esta chaqueta?
+          - ¿Puedo devolverla?
+          - Quisiera devolver esta chaqueta.
+      - them: Claro. ¿Cuándo la compró?
+        english: Of course. When did you buy it?
+      - you: Say you bought it yesterday.
+        answers:
+          - La compré ayer.
+          - Ayer la compré.
+          - Compré la chaqueta ayer.
+          - Ayer compré la chaqueta.
+      - them: ¿Y cuál es el problema?
+        english: And what's the problem?
+      - you: Say it's too big for you.
+        answers:
+          - Me queda grande.
+          - Me queda muy grande.
+          - Me queda un poco grande.
+          - Es muy grande.
+      - them: ¿Tiene el recibo?
+        english: Do you have the receipt?
+      - you: Say yes, here you are.
+        answers:
+          - Sí, aquí tiene.
+          - Sí, aquí está.
+          - Sí, aquí tiene el recibo.
+      - them: Perfecto. ¿Quiere el dinero o prefiere otra talla?
+        english: Perfect. Would you like your money back, or another size?
+      - you: Ask if you can exchange it for another size.
+        answers:
+          - ¿La puedo cambiar por otra talla?
+          - ¿Puedo cambiarla por otra talla?
+          - Prefiero otra talla.
+          - Otra talla, por favor.
+      - them: ¡Claro! Aquí tiene una más pequeña. ¿Se la quiere probar?
+        english: Of course! Here's a smaller one. Would you like to try it on?
+      - you: Say yes, and ask where the fitting rooms are.
+        answers:
+          - Sí. ¿Dónde están los probadores?
+          - Sí, gracias. ¿Dónde están los probadores?
+          - Sí. ¿Dónde está el probador?
+          - Sí. ¿Dónde están los vestidores?
+
+  # ── Unit 4: Feeling better ──────────────────────────────────────────────
+  - id: at-the-doctor
+    unit: 4
+    title: At the doctor's
+    setting: You're on a school trip in Quito, Ecuador, and you don't feel well. Your teacher takes you to see a doctor.
+    with: the doctor
+    lines:
+      - them: Hola. Siéntate, por favor. ¿Qué te pasa?
+        english: Hi. Sit down, please. What's the matter?
+      - you: Say your throat has been hurting since Monday.
+        answers:
+          - Me duele la garganta desde el lunes.
+          - Desde el lunes me duele la garganta.
+          - Me duele mucho la garganta desde el lunes.
+          - Tengo dolor de garganta desde el lunes.
+      - them: ¿Tienes fiebre?
+        english: Do you have a fever?
+      - you: Say yes, since yesterday.
+        answers:
+          - Sí, tengo fiebre desde ayer.
+          - Sí, desde ayer.
+          - Sí, desde ayer tengo fiebre.
+      - them: A ver… Abre la boca. Mmm, está un poco roja. ¿Y cómo te sientes hoy?
+        english: Let's see… Open your mouth. Hmm, it's a little red. And how do you feel today?
+      - you: Say you feel worse than yesterday.
+        answers:
+          - Me siento peor que ayer.
+          - Hoy me siento peor que ayer.
+          - Peor que ayer.
+          - Me siento peor.
+      - them: No es grave. Es un resfriado. Toma estas pastillas.
+        english: It's not serious. It's a cold. Take these pills.
+      - you: Ask how many times a day.
+        answers:
+          - ¿Cuántas veces al día?
+          - ¿Cuántas veces por día?
+      - them: Tres veces al día, después de comer. En unos días vas a estar mejor.
+        english: Three times a day, after meals. In a few days you'll be better.
+      - you: Thank the doctor very much.
+        answers:
+          - Muchas gracias, doctor.
+          - Muchas gracias, doctora.
+          - Gracias, doctor.
+          - Gracias, doctora.
+          - Muchas gracias.
+
+  - id: plane-or-bus
+    unit: 4
+    title: Plane or bus?
+    setting: You and your friend Mateo are planning a weekend trip from Mexico City to Oaxaca. He's looking at prices on his phone.
+    with: Mateo
+    lines:
+      - them: ¿Vamos en avión o en autobús?
+        english: Shall we go by plane or by bus?
+      - you: Say the plane is faster than the bus.
+        answers:
+          - El avión es más rápido que el autobús.
+          - El avión es más rápido.
+          - El autobús es más lento que el avión.
+          - El avión es mucho más rápido que el autobús.
+      - them: Sí, pero el avión es carísimo. Mira, tres mil pesos.
+        english: Yes, but the plane is really expensive. Look, three thousand pesos.
+      - you: Ask how much the bus costs.
+        answers:
+          - ¿Cuánto cuesta el autobús?
+          - ¿Cuánto es el autobús?
+          - ¿Y el autobús, cuánto cuesta?
+          - ¿Cuánto cuesta el boleto de autobús?
+      - them: Ochocientos pesos. Pero tarda siete horas.
+        english: Eight hundred pesos. But it takes seven hours.
+      - you: Say the bus is cheaper, but the plane is better.
+        answers:
+          - El autobús es más barato, pero el avión es mejor.
+          - El autobús es menos caro, pero el avión es mejor.
+          - El autobús es más barato, pero prefiero el avión.
+      - them: Mmm… ¿Y si vamos en el autobús de la noche? Así no perdemos el día.
+        english: Hmm… What if we take the night bus? That way we don't lose the day.
+      - you: Say OK — two round-trip tickets, then.
+        answers:
+          - De acuerdo. Dos boletos de ida y vuelta, entonces.
+          - De acuerdo, dos boletos de ida y vuelta.
+          - Sí, dos boletos de ida y vuelta.
+          - De acuerdo. Dos billetes de ida y vuelta, entonces.
+      - them: ¡Perfecto! Va a ser el mejor fin de semana del año.
+        english: Perfect! It's going to be the best weekend of the year.
+
+  # ── Unit 5: When I was little ───────────────────────────────────────────
+  - id: old-photos
+    unit: 5
+    title: Old photos
+    setting: You're showing your new friend Diego some photos on your phone from when you were little.
+    with: Diego
+    lines:
+      - them: ¡Mira! ¿Este eres tú? ¿Cuántos años tenías?
+        english: Look! Is this you? How old were you?
+      - you: Say you were five.
+        answers:
+          - Tenía cinco años.
+          - Yo tenía cinco años.
+          - Ahí tenía cinco años.
+          - Tenía cinco.
+      - them: ¡Qué foto tan bonita! ¿Dónde vivías?
+        english: What a lovely photo! Where did you live?
+      - you: Say you lived in a small town near the beach.
+        answers:
+          - Vivía en un pueblo cerca de la playa.
+          - Vivía en un pueblo pequeño cerca de la playa.
+          - Yo vivía en un pueblo cerca de la playa.
+          - Vivíamos en un pueblo cerca de la playa.
+      - them: ¡Qué bonito! ¿Y qué hacías allí?
+        english: How lovely! And what did you do there?
+      - you: Say you went to the beach with your dog every day.
+        answers:
+          - Iba a la playa con mi perro todos los días.
+          - Todos los días iba a la playa con mi perro.
+          - Iba con mi perro a la playa todos los días.
+          - Yo iba a la playa con mi perro todos los días.
+      - them: ¿Tenías un perro? ¿Cómo era?
+        english: You had a dog? What was he like?
+      - you: Say he was very big and very funny.
+        answers:
+          - Era muy grande y muy gracioso.
+          - Era muy grande y gracioso.
+          - Era grande y muy gracioso.
+          - Era muy grande y muy divertido.
+      - them: ¡Qué lindo! ¿Y qué querías ser de niño?
+        english: How sweet! And what did you want to be when you were little?
+      - you: Say you wanted to be a vet.
+        answers:
+          - Quería ser veterinario.
+          - Quería ser veterinaria.
+          - Yo quería ser veterinario.
+          - Yo quería ser veterinaria.
+          - De niño quería ser veterinario.
+      - them: ¡Por eso te gustan tanto los animales!
+        english: That's why you like animals so much!
+
+  # ── Unit 6: What happened? ──────────────────────────────────────────────
+  - id: missed-call
+    unit: 6
+    title: Three missed calls
+    setting: Your friend Camila calls you in the evening. You missed her calls earlier.
+    with: Camila
+    lines:
+      - them: ¡Por fin! Te llamé tres veces. ¿Por qué no contestaste?
+        english: Finally! I called you three times. Why didn't you answer?
+      - you: Say sorry, you were in the shower when she called.
+        answers:
+          - Perdón, estaba en la ducha cuando llamaste.
+          - Lo siento, estaba en la ducha cuando llamaste.
+          - Perdón, estaba en la ducha cuando me llamaste.
+          - Perdón, estaba en la ducha.
+      - them: ¡Ah, bueno! ¿Y viste mi mensaje?
+        english: Oh, OK! And did you see my message?
+      - you: Say no, your battery ran out.
+        answers:
+          - No, me quedé sin batería.
+          - No, no tenía batería.
+          - No, no tengo batería.
+      - them: Te cuento. Ayer vi a Sofía en el centro. ¡Y estaba con Martín!
+        english: Here's the news. Yesterday I saw Sofía downtown. And she was with Martín!
+      - you: React with surprise, and ask what happened.
+        answers:
+          - ¡No me digas! ¿Y qué pasó?
+          - ¡No me digas! ¿Qué pasó?
+          - ¿En serio? ¿Y qué pasó?
+          - ¿De verdad? ¿Y qué pasó?
+      - them: Estaban en un café y de repente… ¿Hola? ¿Me oyes?
+        english: They were in a café and suddenly… Hello? Can you hear me?
+      - you: Say you can't hear her well.
+        answers:
+          - No te oigo bien.
+          - No te escucho bien.
+          - Perdón, no te oigo bien.
+          - No te oigo muy bien.
+      - them: ¡Ay, se cortó la llamada! … ¿Y ahora? ¿Me oyes?
+        english: Oh, the call got cut off! … And now? Can you hear me?
+      - you: Say yes, but you'll call her later.
+        answers:
+          - Sí, pero te llamo más tarde.
+          - Sí, pero te llamo luego.
+          - Sí. Te llamo más tarde.
+          - Sí, pero mejor te llamo más tarde.
+      - them: ¡No! ¡Quiero contarte el final! Bueno… hasta luego.
+        english: No! I want to tell you the ending! Oh well… see you later.
+
+  - id: leave-a-message
+    unit: 6
+    title: Leaving a message
+    setting: You call your friend Pablo's house to tell him about Saturday's soccer game. His mother answers. Be polite.
+    with: Pablo's mother
+    lines:
+      - them: ¿Aló?
+        english: Hello?
+      - you: Say good afternoon, and say who's calling.
+        answers:
+          - Buenas tardes, habla Sam.
+          - Buenas tardes, soy Sam.
+          - Buenas tardes, habla *.
+          - Buenas tardes, soy *.
+          - Hola, soy *.
+      - them: ¡Hola! ¿Cómo estás?
+        english: Hi! How are you?
+      - you: Say fine, thanks, and ask if you could speak to Pablo.
+        answers:
+          - Bien, gracias. ¿Podría hablar con Pablo?
+          - Muy bien, gracias. ¿Podría hablar con Pablo?
+          - Bien, gracias. ¿Puedo hablar con Pablo?
+          - Bien, gracias. ¿Está Pablo?
+      - them: Lo siento, Pablo no está. Salió con su papá.
+        english: Sorry, Pablo isn't here. He went out with his dad.
+      - you: Ask if you can leave a message.
+        answers:
+          - ¿Puedo dejar un mensaje?
+          - ¿Le puedo dejar un mensaje?
+          - ¿Puedo dejarle un mensaje?
+          - ¿Podría dejar un mensaje?
+      - them: Claro. Dime.
+        english: Of course. Go ahead.
+      - you: Say the game on Saturday starts at ten.
+        answers:
+          - El partido del sábado empieza a las diez.
+          - El partido del sábado es a las diez.
+          - El partido es el sábado a las diez.
+          - El sábado el partido empieza a las diez.
+      - them: Muy bien, se lo digo.
+        english: OK, I'll tell him.
+      - you: Thank her and say goodbye.
+        answers:
+          - Muchas gracias. Hasta luego.
+          - Muchas gracias, señora. Adiós.
+          - Gracias, hasta luego.
+          - Gracias. Adiós.
+
+  # ── Unit 7: Have you ever…? ─────────────────────────────────────────────
+  - id: wrong-dish
+    unit: 7
+    title: Not what I ordered
+    setting: You're having dinner with your family at a restaurant in Lima. The waiter brings your food — but it isn't what you ordered.
+    with: the waiter
+    lines:
+      - them: Aquí tiene, el pollo con papas.
+        english: Here you are, the chicken with potatoes.
+      - you: Say politely that this isn't what you ordered.
+        answers:
+          - Disculpe, esto no es lo que pedí.
+          - Perdón, esto no es lo que pedí.
+          - Disculpe, yo no pedí esto.
+          - Disculpe, no he pedido esto.
+      - them: ¡Ay, perdón! ¿Qué pidió usted?
+        english: Oh, I'm sorry! What did you order?
+      - you: Say you ordered the fish.
+        answers:
+          - Pedí el pescado.
+          - Yo pedí el pescado.
+          - He pedido el pescado.
+      - them: Enseguida se lo traigo. … ¿Qué tal todo? ¿Les gustó?
+        english: I'll bring it right away. … How was everything? Did you enjoy it?
+      - you: Say everything was delicious, and ask for the bill.
+        answers:
+          - Todo estuvo muy rico. La cuenta, por favor.
+          - Todo estuvo muy rico. ¿Me podría traer la cuenta?
+          - Todo estuvo muy bueno. La cuenta, por favor.
+          - Todo estuvo riquísimo. La cuenta, por favor.
+      - them: Aquí tiene la cuenta.
+        english: Here's the bill.
+      - you: Say politely that you think there's a mistake in the bill.
+        answers:
+          - Disculpe, creo que hay un error en la cuenta.
+          - Creo que hay un error en la cuenta.
+          - Perdón, creo que hay un error en la cuenta.
+      - them: ¿Un error? A ver…
+        english: A mistake? Let's see…
+      - you: Say you didn't order dessert.
+        answers:
+          - No pedimos postre.
+          - Nosotros no pedimos postre.
+          - No hemos pedido postre.
+          - No hemos comido postre.
+      - them: Tiene razón. Lo siento mucho. Aquí tiene la cuenta correcta.
+        english: You're right. I'm very sorry. Here's the correct bill.
+
+  - id: exam-news
+    unit: 7
+    title: Good news
+    setting: You get home from school in Valencia, Spain. Your dad is in the kitchen.
+    with: your dad
+    lines:
+      - them: ¡Hola! ¿Qué tal el día?
+        english: Hi! How was your day?
+      - you: Say you've passed the history exam!
+        answers:
+          - ¡He aprobado el examen de historia!
+          - ¡Aprobé el examen de historia!
+          - ¡Hoy he aprobado el examen de historia!
+      - them: ¡Qué bien! ¿Qué nota has sacado?
+        english: Great! What grade did you get?
+      - you: Say you got a nine.
+        answers:
+          - He sacado un nueve.
+          - Saqué un nueve.
+          - He sacado nueve.
+          - Un nueve.
+      - them: ¡Muy bien! ¿Y ya has hecho la tarea?
+        english: Very good! And have you done your homework yet?
+      - you: Say not yet.
+        answers:
+          - Todavía no.
+          - No, todavía no.
+          - Todavía no he hecho la tarea.
+          - No, todavía no he hecho la tarea.
+      - them: ¿Y por qué no?
+        english: And why not?
+      - you: Say you've played soccer all afternoon.
+        answers:
+          - He jugado al fútbol toda la tarde.
+          - Porque he jugado al fútbol toda la tarde.
+          - Porque he jugado fútbol toda la tarde.
+          - Porque jugué al fútbol toda la tarde.
+      - them: Bueno, primero la tarea y después la tele.
+        english: OK — homework first, and then TV.
+      - you: Say OK, you'll do your homework now.
+        answers:
+          - De acuerdo. Hago la tarea ahora.
+          - De acuerdo, ahora hago la tarea.
+          - Vale, hago la tarea ahora.
+          - Está bien. Voy a hacer la tarea ahora.
+
+  # ── Unit 8: Around the house ────────────────────────────────────────────
+  - id: sunday-chores
+    unit: 8
+    title: Sunday at home
+    setting: It's Sunday at your host family's home in Guadalajara, Mexico. Your host mother comes into the living room.
+    with: your host mother
+    lines:
+      - them: ¿Qué estás haciendo?
+        english: What are you doing?
+      - you: Say you're watching a series.
+        answers:
+          - Estoy viendo una serie.
+          - Estoy viendo una serie en la tele.
+          - Ahora mismo estoy viendo una serie.
+          - Veo una serie.
+      - them: Oye, ¿me ayudas a poner la mesa? Comemos en diez minutos.
+        english: Hey, can you help me set the table? We're eating in ten minutes.
+      - you: Say of course, you'll help her.
+        answers:
+          - Claro, te ayudo.
+          - Sí, claro, te ayudo.
+          - Claro que sí. Te ayudo.
+          - Sí, te ayudo.
+      - them: Gracias. ¿Y el pan? ¿Lo compraste?
+        english: Thanks. And the bread? Did you buy it?
+      - you: Say yes, you bought it this morning.
+        answers:
+          - Sí, lo compré esta mañana.
+          - Sí, esta mañana lo compré.
+          - Sí, lo he comprado esta mañana.
+          - Sí, compré el pan esta mañana.
+      - them: ¡Muy bien! Y después de comer, te toca lavar los platos.
+        english: Great! And after we eat, it's your turn to wash the dishes.
+      - you: Say OK, and you'll take out the trash too.
+        answers:
+          - De acuerdo. Y yo saco la basura también.
+          - De acuerdo, y también saco la basura.
+          - Está bien. Yo saco la basura también.
+          - Claro. Y yo saco la basura.
+      - them: ¡Gracias! Ah, y apaga la tele, por favor.
+        english: Thanks! Oh, and turn off the TV, please.
+      - you: Say yes, you're turning it off now.
+        answers:
+          - Sí, ya la apago.
+          - Sí, la apago ahora.
+          - Ahora la apago.
+          - Sí, ahora mismo la apago.
+
+  # ── Unit 9: Will and would ──────────────────────────────────────────────
+  - id: hotel-problem
+    unit: 9
+    title: A problem with the room
+    setting: You've just checked in at a small hotel in Cartagena, Colombia. Ten minutes later, you're back at reception.
+    with: the receptionist
+    lines:
+      - them: Buenas noches. ¿Hay algún problema?
+        english: Good evening. Is there a problem?
+      - you: Say yes, there's a problem with the room.
+        answers:
+          - Sí, hay un problema con la habitación.
+          - Hay un problema con la habitación.
+          - Sí, hay un problema con mi habitación.
+      - them: ¿Qué pasa?
+        english: What's wrong?
+      - you: Say the air conditioning doesn't work.
+        answers:
+          - El aire acondicionado no funciona.
+          - No funciona el aire acondicionado.
+          - El aire acondicionado no funciona bien.
+      - them: ¡Uy, lo siento! El técnico no está. Vendrá mañana a las nueve.
+        english: Oh, I'm sorry! The repairman isn't here. He'll come tomorrow at nine.
+      - you: Say there's no hot water either.
+        answers:
+          - Y tampoco hay agua caliente.
+          - Tampoco hay agua caliente.
+          - Y no hay agua caliente.
+          - Y no hay agua caliente tampoco.
+      - them: ¡No me diga! Lo siento mucho.
+        english: Oh no! I'm very sorry.
+      - you: Ask politely if you could change rooms.
+        answers:
+          - ¿Podría cambiar de habitación, por favor?
+          - ¿Podría cambiar de habitación?
+          - ¿Me podría cambiar de habitación, por favor?
+          - ¿Podría darme otra habitación, por favor?
+          - ¿Puedo cambiar de habitación, por favor?
+      - them: Claro. Le doy la 310. Es más grande y tiene vista al mar.
+        english: Of course. I'll give you 310. It's bigger, and it has a sea view.
+      - you: Thank him, and ask if he could also give you another towel.
+        answers:
+          - Muchas gracias. ¿Me podría dar otra toalla también?
+          - Gracias. ¿Me podría dar otra toalla?
+          - Muchas gracias. ¿Podría darme otra toalla?
+          - Muchas gracias. ¿Me podría dar otra toalla, por favor?
+      - them: Por supuesto. Enseguida se la llevo.
+        english: Of course. I'll bring it up right away.
+
+  - id: rainy-forecast
+    unit: 9
+    title: A trip to the lake
+    setting: It's Friday evening. Your friend Pedro calls about the trip to the lake you planned for Saturday.
+    with: Pedro
+    lines:
+      - them: ¡Hola! Mañana vamos al lago, ¿no?
+        english: Hi! We're going to the lake tomorrow, right?
+      - you: Say yes, but it will rain tomorrow.
+        answers:
+          - Sí, pero mañana lloverá.
+          - Sí, pero lloverá mañana.
+          - Sí, pero mañana va a llover.
+          - Sí, pero el pronóstico dice que mañana lloverá.
+      - them: ¡Ay, no! ¿Y el domingo?
+        english: Oh, no! And on Sunday?
+      - you: Say on Sunday it will be sunny.
+        answers:
+          - El domingo hará sol.
+          - El domingo va a hacer sol.
+          - El domingo estará soleado.
+          - El domingo hará buen tiempo.
+      - them: ¡Perfecto! ¿Vamos el domingo, entonces?
+        english: Perfect! Shall we go on Sunday, then?
+      - you: Say you'd love to, and you'll bring the food.
+        answers:
+          - ¡Me encantaría! Yo llevaré la comida.
+          - ¡Me encantaría! Llevaré la comida.
+          - ¡Sí, me encantaría! Yo llevo la comida.
+          - ¡Claro! Yo llevaré la comida.
+      - them: ¡Genial! ¿A qué hora salimos?
+        english: Great! What time shall we leave?
+      - you: Say you could leave at eight.
+        answers:
+          - Podríamos salir a las ocho.
+          - Podemos salir a las ocho.
+          - Saldremos a las ocho.
+      - them: ¿A las ocho? ¡Qué temprano! Bueno, de acuerdo.
+        english: At eight? That's so early! Well, OK.
+
+  # ── Unit 10: Come with me! ──────────────────────────────────────────────
+  - id: concert-saturday
+    unit: 10
+    title: A concert on Saturday
+    setting: Your friend Martina calls you on Thursday evening.
+    with: Martina
+    lines:
+      - them: ¡Hola! ¿Tienes planes para el sábado?
+        english: Hi! Do you have plans for Saturday?
+      - you: Say no — why?
+        answers:
+          - No, ¿por qué?
+          - No, no tengo planes. ¿Por qué?
+          - Todavía no. ¿Por qué?
+      - them: Tengo dos entradas para un concierto. ¿Te gustaría venir?
+        english: I have two tickets for a concert. Would you like to come?
+      - you: Say you'd love to, and thank her for the invitation.
+        answers:
+          - ¡Me encantaría! Gracias por la invitación.
+          - ¡Me encantaría! Muchas gracias por la invitación.
+          - ¡Sí, me encantaría! Gracias por la invitación.
+          - ¡Claro que sí! Gracias por la invitación.
+      - them: ¡Genial! Empieza a las ocho. ¿Nos vemos a las siete en mi casa?
+        english: Great! It starts at eight. Shall we meet at seven at my place?
+      - you: Say sorry, you can't at seven. Suggest half past seven.
+        answers:
+          - Lo siento, no puedo a las siete. ¿Mejor a las siete y media?
+          - Lo siento, a las siete no puedo. ¿Mejor a las siete y media?
+          - Lo siento, no puedo a las siete. ¿Nos vemos a las siete y media?
+          - A las siete no puedo. ¿Qué tal a las siete y media?
+      - them: Sí, perfecto. ¿Sabes dónde vivo?
+        english: Yes, perfect. Do you know where I live?
+      - you: Say no, and ask her to send you the address.
+        answers:
+          - No. Mándame la dirección, por favor.
+          - No, no sé. Mándame la dirección, por favor.
+          - No. ¿Me mandas la dirección?
+          - No, no sé dónde vives. ¿Me mandas la dirección?
+      - them: ¡Claro! Te mando un mensaje ahora.
+        english: Sure! I'll text you now.
+      - you: Say perfect, see you on Saturday.
+        answers:
+          - Perfecto. Nos vemos el sábado.
+          - ¡Genial! Nos vemos el sábado.
+          - De acuerdo. Nos vemos el sábado.
+          - Perfecto, hasta el sábado.
+
+  - id: directions-home
+    unit: 10
+    title: How do I get to your house?
+    setting: Your friend Ana is coming to your house in Montevideo for the first time. She calls you from the bus stop.
+    with: Ana
+    lines:
+      - them: ¡Hola! Ya me bajé del autobús. ¿Cómo llego a tu casa?
+        english: Hi! I've just got off the bus. How do I get to your house?
+      - you: Tell her to cross the street first.
+        answers:
+          - Primero, cruza la calle.
+          - Cruza la calle primero.
+          - Cruza la calle.
+      - them: Listo. ¿Y ahora?
+        english: Done. And now?
+      - you: Tell her to go straight on as far as the traffic light.
+        answers:
+          - Sigue todo recto hasta el semáforo.
+          - Sigue todo derecho hasta el semáforo.
+          - Sigue derecho hasta el semáforo.
+      - them: Ya estoy en el semáforo.
+        english: I'm at the traffic light now.
+      - you: Tell her to turn left.
+        answers:
+          - Gira a la izquierda.
+          - Dobla a la izquierda.
+          - Ahora gira a la izquierda.
+          - Ahora dobla a la izquierda.
+      - them: ¡Uy, creo que me perdí! Hay una panadería en la esquina.
+        english: Oops, I think I'm lost! There's a bakery on the corner.
+      - you: Say you know it — your house is next to the bakery.
+        answers:
+          - ¡La conozco! Mi casa está al lado de la panadería.
+          - Mi casa está al lado de la panadería.
+          - ¡Ah, la conozco! Mi casa está al lado.
+      - them: ¡Ah, ya te veo!
+        english: Oh, I can see you now!
+      - you: Say hi, and tell her to come in.
+        answers:
+          - ¡Hola! Pasa, por favor.
+          - ¡Hola, Ana! Pasa.
+          - Hola, pasa.
+          - ¡Hola! Entra, por favor.

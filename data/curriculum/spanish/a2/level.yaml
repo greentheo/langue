@@ -13,18 +13,30 @@ can_do:
   - write short notes, messages and simple emails
 
 grammar:
-  - topic: "Present perfect: he comido, has visto (used a lot in Spain)"
   - topic: "Preterite: regular verbs and the common irregulars (fui, hice, tuve, estuve)"
-  - topic: "Imperfect: era, tenía, vivía — and when to use it instead of the preterite"
+    lessons: [01-preterite-regular, 02-preterite-fui-hice, 03-preterite-tuve-estuve]
   - topic: Reflexive verbs in the past
-  - topic: "Direct and indirect object pronouns: lo, la, le, me, te"
-  - topic: "Simple future: hablaré, iré"
-  - topic: "Estar + gerund: estoy comiendo"
-  - topic: "Comparatives and superlatives: más … que, el mejor, -ísimo"
-  - topic: "Informal commands: ¡habla!, ¡come!, ¡ven!"
-  - topic: "Conditional for politeness: ¿podría…?, me gustaría"
+    lessons: [04-reflexive-past]
   - topic: "Hace + time (hace dos años) and desde hace"
+    lessons: [05-hace-desde-hace]
+  - topic: "Comparatives and superlatives: más … que, el mejor, -ísimo"
+    lessons: [06-comparatives]
+  - topic: "Imperfect: era, tenía, vivía — and when to use it instead of the preterite"
+    lessons: [07-imperfect, 08-imperfect-preterite]
+  - topic: "Present perfect: he comido, has visto (used a lot in Spain)"
+    lessons: [09-present-perfect]
+  - topic: "Direct and indirect object pronouns: lo, la, le, me, te"
+    lessons: [10-object-pronouns]
+  - topic: "Estar + gerund: estoy comiendo"
+    lessons: [11-estar-gerund]
+  - topic: "Simple future: hablaré, iré"
+    lessons: [12-future]
+  - topic: "Conditional for politeness: ¿podría…?, me gustaría"
+    lessons: [13-conditional]
+  - topic: "Informal commands: ¡habla!, ¡come!, ¡ven!"
+    lessons: [14-commands]
   - topic: "Saber vs conocer; a first look at por vs para"
+    lessons: [15-saber-conocer-por-para]
 
 themes:
   - travel and holidays
@@ -35,3 +47,46 @@ themes:
   - the home
   - work and school
   - childhood memories
+
+# The ten sub-levels, A2.1 to A2.10, in teaching order. Lessons stay in
+# number order, because each lesson's practice may use earlier lessons.
+units:
+  - title: What did you do?
+    lessons: [01-preterite-regular]
+    situations: [stories]
+    categories: [verbs, time]
+  - title: Trips and holidays
+    lessons: [02-preterite-fui-hice, 03-preterite-tuve-estuve]
+    situations: [travel]
+    categories: [travel]
+  - title: Getting ready
+    lessons: [04-reflexive-past]
+    situations: [clothes]
+    categories: [clothing, shopping]
+  - title: Feeling better
+    lessons: [05-hace-desde-hace, 06-comparatives]
+    situations: [health]
+    categories: [health]
+  - title: When I was little
+    lessons: [07-imperfect]
+    categories: [family, work]
+  - title: What happened?
+    lessons: [08-imperfect-preterite]
+    situations: [phone]
+    categories: [technology, emotions]
+  - title: Have you ever…?
+    lessons: [09-present-perfect]
+    situations: [restaurant]
+    categories: [food, education]
+  - title: Around the house
+    lessons: [10-object-pronouns, 11-estar-gerund]
+    situations: [home]
+    categories: [housing, leisure]
+  - title: Will and would
+    lessons: [12-future, 13-conditional]
+    situations: [hotel]
+    categories: [nature]
+  - title: Come with me!
+    lessons: [14-commands, 15-saber-conocer-por-para]
+    situations: [plans]
+    categories: [transportation]

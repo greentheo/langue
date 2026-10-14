@@ -1,143 +1,452 @@
 # Portuguese A2 — elementary vocabulary
-# Leans Brazilian Portuguese; see a1.psv for the dialect note.
-# Format: word | translations (semicolon-separated) | example sentence | category | difficulty (1-5)
+# Brazilian Portuguese only (você, a gente, ônibus, me levanto), matching the A2 lessons.
+# Examples use A2 grammar (pretérito perfeito and imperfeito, estar + gerúndio, comparatives)
+# and contain the word exactly as listed. Verbs appear in the infinitive (vou…, preciso…, tentei…).
+# Format: word | translations (semicolon-separated) | example sentence | category | difficulty (1-5) | example in English
 
 # Daily routines
-acordar | to wake up | Acordo às seis e meia. | daily_routines | 2
-levantar-se | to get up | Levanto-me assim que o despertador toca. | daily_routines | 2
-tomar banho | to take a shower; to bathe | Tomo banho antes de sair. | daily_routines | 2
-vestir-se | to get dressed | Ele se veste muito rápido de manhã. | daily_routines | 2
-pentear-se | to comb one's hair | Ela se penteia na frente do espelho. | daily_routines | 3
-deitar-se | to go to bed; to lie down | Deito-me por volta das onze. | daily_routines | 2
-adormecer | to fall asleep | Sempre adormeço vendo televisão. | daily_routines | 3
-descansar | to rest | Depois do almoço eu descanso um pouco. | daily_routines | 2
-costume | habit; custom | Ler antes de dormir é um bom costume. | daily_routines | 3
-horário | schedule; timetable | O horário dos trens mudou. | time | 3
+acordar | to wake up | Amanhã preciso acordar às seis e meia. | daily_routines | 2 | Tomorrow I need to wake up at half past six.
+levantar-se | to get up | Levantar-se cedo é difícil, mas hoje eu me levantei às seis. | daily_routines | 2 | Getting up early is hard, but today I got up at six.
+tomar banho | to take a shower; to bathe | Prefiro tomar banho antes de dormir. | daily_routines | 2 | I prefer to take a shower before bed.
+vestir | to put on (clothes); to dress | Espera, vou vestir o casaco. | daily_routines | 2 | Wait, I'm going to put on my coat.
+pentear | to comb | Ela demorou para pentear o cabelo. | daily_routines | 3 | She took a long time to comb her hair.
+deitar-se | to go to bed; to lie down | Deitar-se cedo faz bem, mas ontem eu me deitei tarde. | daily_routines | 2 | Going to bed early is good for you, but yesterday I went to bed late.
+adormecer | to fall asleep | O bebê demorou muito para adormecer. | daily_routines | 3 | The baby took a long time to fall asleep.
+descansar | to rest | Depois do almoço, eu gosto de descansar um pouco. | daily_routines | 2 | After lunch I like to rest a little.
+costume | habit; custom | Ler antes de dormir é um bom costume. | daily_routines | 3 | Reading before bed is a good habit.
+despertador | alarm clock | O despertador não tocou e eu cheguei atrasado. | daily_routines | 2 | The alarm clock didn't go off and I was late.
+escovar | to brush | Não esqueça de escovar os dentes. | daily_routines | 2 | Don't forget to brush your teeth.
+fazer a barba | to shave | Meu pai foi fazer a barba antes da festa. | daily_routines | 3 | My dad went to shave before the party.
+cochilar | to nap; to doze | Tentei cochilar no ônibus, mas não consegui. | daily_routines | 3 | I tried to nap on the bus, but I couldn't.
+rotina | routine | Minha rotina mudou muito com o novo emprego. | daily_routines | 2 | My routine changed a lot with the new job.
+sonho | dream | Tive um sonho muito estranho ontem à noite. | daily_routines | 2 | I had a very strange dream last night.
+pesadelo | nightmare | A criança teve um pesadelo e acordou chorando. | daily_routines | 3 | The child had a nightmare and woke up crying.
+pressa | hurry; rush | Saí de casa com pressa e esqueci a chave. | daily_routines | 2 | I left home in a hurry and forgot the key.
+acordado | awake | Fiquei acordado até as duas da manhã. | daily_routines | 2 | I stayed awake until two in the morning.
+sabonete | soap | Acabou o sabonete do banheiro. | daily_routines | 2 | The bathroom soap has run out.
+escova de dente | toothbrush | Esqueci minha escova de dente no hotel. | daily_routines | 2 | I forgot my toothbrush at the hotel.
 
-# Home
-apartamento | apartment; flat | Procuro um apartamento para alugar. | housing | 2
-cozinha | kitchen | A cozinha é pequena mas clara. | housing | 2
-quarto | bedroom; room | O quarto dá para o pátio. | housing | 2
-banheiro | bathroom | O banheiro fica no fim do corredor. | housing | 2
-sala | living room | Assistimos ao jogo na sala. | housing | 2
-jardim | garden | Temos um jardim pequeno atrás. | housing | 2
-janela | window | Abre a janela, está quente. | housing | 2
-porta | door | Fecha a porta, por favor. | housing | 2
-cama | bed | A cama é dura demais. | housing | 2
-mesa | table | Põe a mesa para quatro. | housing | 2
-cadeira | chair | Pega uma cadeira e senta. | housing | 2
-armário | wardrobe; cupboard | O armário está cheio de roupa. | housing | 3
-aluguel | rent | O aluguel se paga no dia um. | housing | 3
-vizinho | neighbour | Meu vizinho é muito barulhento. | housing | 2
+# Time expressions
+horário | schedule; timetable; opening hours | O horário dos ônibus mudou no domingo. | time | 3 | The bus timetable changed on Sunday.
+depois de amanhã | the day after tomorrow | A gente volta da praia depois de amanhã. | time | 2 | We're coming back from the beach the day after tomorrow.
+semana passada | last week | Fui ao dentista na semana passada. | time | 2 | I went to the dentist last week.
+ano passado | last year | No ano passado, a gente foi para Salvador. | time | 2 | Last year we went to Salvador.
+próximo | next | No próximo verão, vou viajar com meus primos. | time | 2 | Next summer I'm going to travel with my cousins.
+de vez em quando | now and then; from time to time | De vez em quando, a gente come fora. | time | 3 | Every now and then we eat out.
+madrugada | early morning; small hours | O voo sai de madrugada, às quatro. | time | 3 | The flight leaves in the early hours, at four.
+meia hora | half an hour | O ônibus atrasou meia hora hoje. | time | 2 | The bus was half an hour late today.
+feriado | public holiday | Segunda-feira é feriado, então não tem aula. | time | 2 | Monday is a holiday, so there's no school.
+data | date | Qual é a data da sua viagem? | time | 2 | What's the date of your trip?
+século | century | Essa igreja é do século dezoito. | time | 3 | That church is from the eighteenth century.
+logo | soon; right away | Chego logo, me espera aí. | time | 2 | I'll be there soon, wait for me there.
+mais tarde | later | Te ligo mais tarde, tá bom? | time | 2 | I'll call you later, OK?
+recentemente | recently | Recentemente comecei a fazer aula de violão. | time | 3 | I recently started taking guitar lessons.
+finalmente | finally; at last | Finalmente as férias chegaram! | time | 2 | The holidays have finally arrived!
+durante | during | Eu dormi durante o filme todo. | time | 2 | I slept during the whole film.
+atrás | ago; behind | Eu morei em Recife três anos atrás. | time | 3 | I lived in Recife three years ago.
+por enquanto | for now; for the time being | Por enquanto, estou morando com meus pais. | time | 3 | For now, I'm living with my parents.
+no começo | at first; at the beginning | No começo, o trabalho novo era difícil. | time | 3 | At first, the new job was hard.
+hoje em dia | nowadays; these days | Hoje em dia, quase todo mundo tem celular. | time | 2 | Nowadays almost everyone has a cell phone.
+daqui a | in (a time from now) | O filme começa daqui a dez minutos. | time | 3 | The movie starts in ten minutes.
+relógio | clock; watch | Meu relógio está cinco minutos atrasado. | time | 2 | My watch is five minutes slow.
+Natal | Christmas | No Natal, a família toda se reúne na casa da vovó. | time | 2 | At Christmas the whole family gets together at Grandma's house.
+Carnaval | Carnival | No Carnaval, as ruas ficam cheias de gente. | time | 2 | During Carnival the streets fill up with people.
+
+# The home and chores
+jardim | garden; yard | Temos um jardim pequeno atrás da casa. | housing | 2 | We have a small garden behind the house.
+janela | window | Pode abrir a janela? Está muito quente. | housing | 2 | Can you open the window? It's very hot.
+mesa | table | Você pode pôr a mesa para o jantar? | housing | 2 | Can you set the table for dinner?
+armário | wardrobe; closet; cupboard | O armário está cheio de roupa velha. | housing | 3 | The wardrobe is full of old clothes.
+aluguel | rent | O aluguel vence todo dia cinco. | housing | 3 | The rent is due on the fifth of every month.
+vizinho | neighbor; neighbour | Meu vizinho é muito barulhento. | housing | 2 | My neighbor is very noisy.
+quintal | backyard; yard | Quando eu era pequeno, brincava no quintal. | housing | 3 | When I was little, I used to play in the backyard.
+escada | stairs; ladder | O elevador quebrou, então subimos de escada. | housing | 2 | The elevator broke down, so we took the stairs.
+parede | wall | Pendurei a foto na parede da sala. | housing | 2 | I hung the photo on the living room wall.
+chão | floor; ground | O celular caiu no chão e quebrou. | housing | 2 | The phone fell on the floor and broke.
+toalha | towel | Esqueci a toalha molhada em cima da cama. | housing | 2 | I left the wet towel on the bed.
+fogão | stove; cooker | A panela de arroz está no fogão. | housing | 3 | The pot of rice is on the stove.
+pia | sink | Deixei os pratos sujos na pia. | housing | 3 | I left the dirty plates in the sink.
+louça | dishes | Hoje é a sua vez de lavar a louça. | housing | 3 | Today it's your turn to do the dishes.
+máquina de lavar | washing machine | A máquina de lavar quebrou ontem. | housing | 3 | The washing machine broke down yesterday.
+luz | light; electricity | Apaga a luz quando sair, por favor. | housing | 2 | Turn off the light when you leave, please.
+bairro | neighborhood; district | Moro num bairro tranquilo perto do centro. | housing | 2 | I live in a quiet neighborhood near downtown.
+barulho | noise | Os vizinhos fizeram muito barulho ontem à noite. | housing | 2 | The neighbors made a lot of noise last night.
+limpar | to clean | Hoje eu preciso limpar o banheiro. | housing | 2 | Today I need to clean the bathroom.
+limpo | clean | O quarto está limpo agora. | housing | 2 | The bedroom is clean now.
+sujo | dirty | Seu tênis está sujo de lama. | housing | 2 | Your sneakers are covered in mud.
+passar roupa | to iron (clothes) | Odeio passar roupa no domingo. | housing | 3 | I hate ironing on Sundays.
+arrumar | to tidy; to make (the bed); to pack | Mãe, já vou arrumar o meu quarto! | housing | 2 | Mom, I'm going to tidy my room right now!
+bagunça | mess | Seu quarto está uma bagunça! | housing | 2 | Your room is a mess!
+tirar o lixo | to take out the trash | Esqueci de tirar o lixo ontem à noite. | housing | 2 | I forgot to take out the trash last night.
+quebrado | broken | O chuveiro do quarto está quebrado. | housing | 2 | The shower in the room is broken.
+chuveiro | shower (in the bathroom) | A água do chuveiro está fria. | housing | 2 | The water in the shower is cold.
+consertar | to fix; to repair | O encanador veio consertar a pia. | housing | 3 | The plumber came to fix the sink.
 
 # Shopping and money
-comprar | to buy | Preciso comprar pão. | shopping | 2
-vender | to sell | Eles vendem fruta orgânica. | shopping | 2
-pagar | to pay | Posso pagar com cartão? | shopping | 2
-custar | to cost | Quanto custa o frete? | shopping | 2
-preço | price | O preço me parece alto demais. | shopping | 2
-desconto | discount | Tem um desconto de vinte por cento. | shopping | 3
-caixa | checkout; cashier; box | A fila do caixa está grande. | shopping | 3
-recibo | receipt | Guarde o recibo para a troca. | shopping | 3
-cartão | card | Não aceitam cartão aqui. | shopping | 2
-dinheiro vivo | cash | Prefiro pagar em dinheiro vivo. | shopping | 3
-promoção | sale; special offer | A promoção começa em janeiro. | shopping | 3
-tamanho | size | Que tamanho você usa? | clothing | 3
-experimentar | to try on; to try | Posso experimentar esta jaqueta? | clothing | 3
+comprar | to buy | Preciso comprar pão para o café da manhã. | shopping | 1 | I need to buy bread for breakfast.
+vender | to sell | Meu tio quer vender o carro velho. | shopping | 2 | My uncle wants to sell his old car.
+pagar | to pay | Posso pagar com cartão? | shopping | 1 | Can I pay by card?
+custar | to cost | Quanto vai custar a entrega? | shopping | 2 | How much will the delivery cost?
+desconto | discount | A loja deu um desconto de vinte por cento. | shopping | 3 | The store gave a twenty percent discount.
+caixa | checkout; cashier; box | A fila do caixa está enorme. | shopping | 3 | The line at the checkout is huge.
+recibo | receipt | Guarde o recibo para fazer a troca. | shopping | 3 | Keep the receipt so you can exchange it.
+dinheiro vivo | cash | Prefiro pagar em dinheiro vivo. | shopping | 3 | I prefer to pay in cash.
+promoção | sale; special offer | Comprei essa camiseta em promoção. | shopping | 3 | I bought this T-shirt on sale.
+troca | exchange (of a purchase) | A loja só faz troca com o recibo. | shopping | 3 | The store only exchanges items with the receipt.
+trocar | to exchange; to change; to swap | Quero trocar essa calça por um tamanho maior. | shopping | 2 | I want to exchange these pants for a bigger size.
+devolver | to give back; to return | Preciso devolver o livro na biblioteca. | shopping | 3 | I need to return the book to the library.
+cliente | customer; client | O cliente pediu para falar com o gerente. | shopping | 2 | The customer asked to speak to the manager.
+nota fiscal | receipt; invoice | Pode me dar a nota fiscal, por favor? | shopping | 3 | Can you give me the receipt, please?
+parcela | installment | A primeira parcela vence em maio. | shopping | 4 | The first installment is due in May.
+à vista | in one payment; upfront | Paguei a geladeira à vista. | shopping | 3 | I paid for the fridge in one go.
+cartão de crédito | credit card | Vocês aceitam cartão de crédito? | shopping | 2 | Do you take credit cards?
+Pix | Pix (instant bank transfer) | Posso pagar com Pix? | shopping | 2 | Can I pay with Pix?
+carteira | wallet | Perdi minha carteira no ônibus. | shopping | 2 | I lost my wallet on the bus.
+moeda | coin; currency | Você tem uma moeda de um real? | shopping | 2 | Do you have a one-real coin?
+trocado | small change | Desculpa, não tenho trocado. | shopping | 3 | Sorry, I don't have any change.
+de graça | free (of charge) | A entrada do museu é de graça. | shopping | 2 | Admission to the museum is free.
+entrega | delivery | A entrega demorou duas semanas. | shopping | 3 | The delivery took two weeks.
+quilo | kilo | Quanto custa o quilo do tomate? | shopping | 2 | How much is a kilo of tomatoes?
+economizar | to save (money) | Estou tentando economizar para as férias. | shopping | 3 | I'm trying to save for the holidays.
+caixa eletrônico | ATM; cash machine | Tem um caixa eletrônico perto daqui? | shopping | 3 | Is there an ATM near here?
 
-# Clothing
-roupa | clothes | Preciso lavar a roupa. | clothing | 2
-camisa | shirt | A camisa branca está passada. | clothing | 2
-calça | trousers; pants | Esta calça está apertada. | clothing | 2
-sapato | shoe | Os sapatos novos machucam. | clothing | 2
-jaqueta | jacket | Põe a jaqueta, está frio. | clothing | 2
-casaco | coat | O casaco está na entrada. | clothing | 3
-blusa | blouse; top | Preciso de uma blusa mais grossa. | clothing | 3
-saia | skirt | Ela usa uma saia comprida. | clothing | 3
-cinto | belt | Perdi o cinto de couro. | clothing | 3
+# Clothes
+tamanho | size | Que tamanho você usa? | clothing | 2 | What size do you wear?
+experimentar | to try on; to try | Posso experimentar essa jaqueta? | clothing | 2 | Can I try on this jacket?
+jaqueta | jacket | Leva a jaqueta, vai fazer frio. | clothing | 2 | Take your jacket, it's going to be cold.
+casaco | coat | Deixei o casaco no carro. | clothing | 2 | I left my coat in the car.
+blusa | top; blouse; sweater | Preciso de uma blusa mais quente. | clothing | 2 | I need a warmer top.
+saia | skirt | Ela comprou uma saia comprida para a festa. | clothing | 2 | She bought a long skirt for the party.
+cinto | belt | Perdi meu cinto de couro preto. | clothing | 3 | I lost my black leather belt.
+provador | fitting room | Com licença, onde fica o provador? | clothing | 3 | Excuse me, where is the fitting room?
+servir | to fit; to serve | Acho que essa calça não vai servir. | clothing | 3 | I don't think these pants are going to fit.
+apertado | tight | O sapato novo ficou apertado. | clothing | 3 | The new shoe turned out to be tight.
+largo | loose; baggy; wide | O moletom ficou largo demais em mim. | clothing | 3 | The sweatshirt was too baggy on me.
+curto | short | O vestido ficou curto demais para ela. | clothing | 2 | The dress was too short for her.
+comprido | long | Ele usa um casaco comprido no inverno. | clothing | 2 | He wears a long coat in winter.
+meia | sock | Perdi uma meia de cada par. | clothing | 2 | I lost one sock from each pair.
+pijama | pajamas | As crianças já estão de pijama. | clothing | 2 | The children are already in their pajamas.
+chinelo | flip-flop; slipper | Em casa, eu sempre ando de chinelo. | clothing | 2 | At home I always wear flip-flops.
+bota | boot | Coloquei a bota porque estava chovendo. | clothing | 2 | I put on my boots because it was raining.
+boné | cap | Esqueci meu boné na praia. | clothing | 2 | I left my cap at the beach.
+chapéu | hat | Use um chapéu, o sol está forte. | clothing | 2 | Wear a hat, the sun is strong.
+moletom | sweatshirt; hoodie | Vesti um moletom porque estava frio. | clothing | 3 | I put on a sweatshirt because it was cold.
+uniforme | uniform | Na minha escola, o uniforme é azul e branco. | clothing | 2 | At my school the uniform is blue and white.
+moda | fashion | Essa cor está na moda este ano. | clothing | 2 | That color is in fashion this year.
+confortável | comfortable | Esse tênis é muito confortável. | clothing | 2 | These sneakers are very comfortable.
+bolso | pocket | A chave estava no meu bolso. | clothing | 2 | The key was in my pocket.
 
-# Health and body
-saúde | health | Saúde em primeiro lugar. | health | 2
-médico | doctor | Preciso ir ao médico. | health | 2
-hospital | hospital | O hospital fica perto da estação. | health | 2
-farmácia | pharmacy | A farmácia abre à noite. | health | 2
-remédio | medicine; remedy | Tome o remédio depois das refeições. | health | 2
-doente | ill; sick | Estou doente há três dias. | health | 2
-febre | fever | Estou com febre alta. | health | 3
-dor de cabeça | headache | Estou com uma forte dor de cabeça. | health | 3
-cabeça | head | Minha cabeça está doendo. | body | 2
-mão | hand | Machuquei a mão. | body | 2
-pé | foot | Meu pé direito está doendo. | body | 2
-olho | eye | Ele está com um olho irritado. | body | 2
-braço | arm | Ele quebrou o braço esquiando. | body | 3
-perna | leg | Minha perna esquerda dói. | body | 2
-costas | back | Estou com dor nas costas desde ontem. | body | 3
+# Restaurants and eating out
+reserva | reservation; booking | Temos uma reserva para quatro pessoas. | food | 3 | We have a reservation for four people.
+pedir | to order; to ask for | Vamos pedir uma pizza hoje? | food | 2 | Shall we order a pizza today?
+pedido | order | O garçom anotou o nosso pedido. | food | 3 | The waiter took our order.
+entrada | starter; entrance; admission | De entrada, vamos pedir uma salada. | food | 3 | As a starter, let's order a salad.
+prato principal | main course | Qual é o prato principal de hoje? | food | 3 | What's today's main course?
+sobremesa | dessert | De sobremesa, eu quero um pudim. | food | 2 | For dessert I'd like a flan.
+bebida | drink | A bebida está incluída no preço? | food | 2 | Is the drink included in the price?
+gorjeta | tip | Deixamos uma gorjeta para o garçom. | food | 3 | We left a tip for the waiter.
+xícara | cup | Quer uma xícara de café? | food | 2 | Would you like a cup of coffee?
+guardanapo | napkin | Pode me trazer um guardanapo, por favor? | food | 3 | Could you bring me a napkin, please?
+prato feito | set meal; daily special | No almoço, comi um prato feito barato. | food | 3 | For lunch I had a cheap set meal.
+lanche | snack; light meal | Levei um lanche para a escola. | food | 2 | I took a snack to school.
+marmita | packed lunch; lunch box | Levo marmita para o trabalho todo dia. | food | 3 | I take a packed lunch to work every day.
+churrasco | barbecue | Domingo teve churrasco na casa do meu tio. | food | 2 | On Sunday there was a barbecue at my uncle's house.
+salgado | savory snack; salty | Comprei um salgado na padaria. | food | 3 | I bought a savory snack at the bakery.
+doce | sweet; dessert | Você gosta de doce? | food | 2 | Do you like sweet things?
+gostoso | tasty; delicious | O bolo da sua mãe é muito gostoso. | food | 2 | Your mom's cake is really tasty.
+apimentado | spicy; hot | O frango estava apimentado demais. | food | 3 | The chicken was too spicy.
+frito | fried | Comi arroz com ovo frito. | food | 2 | I had rice with a fried egg.
+vegetariano | vegetarian | Vocês têm algum prato vegetariano? | food | 2 | Do you have any vegetarian dishes?
+satisfeito | full (after eating); satisfied | Não quero mais, obrigado, estou satisfeito. | food | 3 | I don't want any more, thanks, I'm full.
+refeição | meal | O café da manhã é a refeição mais importante. | food | 3 | Breakfast is the most important meal.
+tomate | tomato | Coloquei tomate e cebola na salada. | food | 2 | I put tomato and onion in the salad.
+cebola | onion | Quero o sanduíche sem cebola, por favor. | food | 2 | I'd like the sandwich without onion, please.
+açaí | açaí | Depois da praia, a gente tomou açaí. | food | 2 | After the beach we had açaí.
 
-# Work and study
-escritório | office | Meu escritório fica no terceiro andar. | work | 2
-reunião | meeting | A reunião foi adiada. | work | 3
-colega | colleague | Um colega me ajudou muito. | work | 3
-salário | salary | O salário cai no fim do mês. | work | 3
-emprego | job; employment | Ele encontrou um emprego novo. | work | 3
-empresa | company; firm | A empresa tem cinquenta funcionários. | work | 3
-chefe | boss | O chefe está de férias. | work | 2
-férias | holidays; vacation | Tiro duas semanas de férias em agosto. | work | 2
-faculdade | university; college | Ela estuda na faculdade de Coimbra. | education | 2
-prova | exam; test; proof | Passei na prova de história. | education | 2
-aula | class; lesson | A aula começa às nove. | education | 2
-dever de casa | homework | Preciso terminar o dever de casa. | education | 2
-professor | teacher | O professor explica muito bem. | education | 2
-aluno | student; pupil | Sou aluno de engenharia. | education | 2
-nota | grade; mark; note | Tirei uma nota boa. | education | 3
+# Health and the body
+saúde | health | Dormir bem é importante para a saúde. | health | 2 | Sleeping well is important for your health.
+médico | doctor | Ontem eu fui ao médico. | health | 1 | Yesterday I went to the doctor.
+hospital | hospital | O hospital fica perto da rodoviária. | health | 2 | The hospital is near the bus station.
+farmácia | pharmacy; drugstore | A farmácia da esquina abre aos domingos. | health | 2 | The pharmacy on the corner opens on Sundays.
+remédio | medicine | Tome o remédio depois das refeições. | health | 2 | Take the medicine after meals.
+doente | sick; ill | Faltei à aula porque estava doente. | health | 2 | I missed class because I was sick.
+febre | fever | O menino está com febre desde ontem. | health | 2 | The boy has had a fever since yesterday.
+dor de cabeça | headache | Estou com uma dor de cabeça forte. | health | 2 | I have a bad headache.
+mão | hand | Machuquei a mão jogando vôlei. | health | 2 | I hurt my hand playing volleyball.
+costas | back | Estou com dor nas costas desde ontem. | health | 3 | I've had a backache since yesterday.
+consulta | appointment (with a doctor) | Marquei uma consulta para segunda. | health | 3 | I made an appointment for Monday.
+receita médica | prescription | Você precisa de receita médica para esse remédio. | health | 3 | You need a prescription for that medicine.
+tosse | cough | Estou com tosse há uma semana. | health | 2 | I've had a cough for a week.
+gripe | flu | Peguei uma gripe forte no inverno. | health | 2 | I caught a bad flu in the winter.
+resfriado | cold; having a cold | Acho que estou resfriado. | health | 3 | I think I have a cold.
+dor de garganta | sore throat | Tomei chá porque estava com dor de garganta. | health | 3 | I drank tea because I had a sore throat.
+dor de barriga | stomachache; tummy ache | Comi demais e fiquei com dor de barriga. | health | 3 | I ate too much and got a stomachache.
+enjoo | nausea; travel sickness | Sempre tenho enjoo quando viajo de barco. | health | 3 | I always get seasick when I travel by boat.
+alergia | allergy | Tenho alergia a camarão. | health | 3 | I'm allergic to shrimp.
+machucar | to hurt; to injure | Cuidado para não machucar o pé. | health | 3 | Be careful not to hurt your foot.
+doer | to hurt; to ache | Calma, a injeção não vai doer nada. | health | 3 | Relax, the shot won't hurt at all.
+curativo | bandage; Band-Aid | Coloquei um curativo no dedo. | health | 3 | I put a Band-Aid on my finger.
+vacina | vaccine; shot | Tomei a vacina da gripe ontem. | health | 3 | I got the flu shot yesterday.
+pronto-socorro | emergency room | Levamos o meu avô ao pronto-socorro. | health | 3 | We took my grandfather to the emergency room.
+plano de saúde | health insurance | Meu plano de saúde não cobre dentista. | health | 4 | My health insurance doesn't cover the dentist.
+saudável | healthy | Ela tem uma alimentação muito saudável. | health | 2 | She has a very healthy diet.
+cuidar | to take care of; to look after | Você precisa cuidar melhor da sua saúde. | health | 2 | You need to take better care of your health.
+dedo | finger; toe | Cortei o dedo com a faca. | health | 2 | I cut my finger with the knife.
+joelho | knee | Meu joelho dói quando eu corro. | health | 2 | My knee hurts when I run.
+rosto | face | Ela lavou o rosto com água fria. | health | 2 | She washed her face with cold water.
+corpo | body | Meu corpo todo dói depois da academia. | health | 2 | My whole body aches after the gym.
 
-# Travel
-viagem | trip; journey | A viagem dura três horas. | travel | 2
-mala | suitcase | Fiz a mala ontem à noite. | travel | 3
-partir | to leave; to depart | Partimos amanhã de madrugada. | travel | 2
-chegar | to arrive | O voo chega atrasado. | travel | 2
-reservar | to book; to reserve | Reservei uma mesa para dois. | travel | 3
-quarto de casal | double room | Quero um quarto de casal por três noites. | travel | 3
-passaporte | passport | O passaporte vence em março. | travel | 3
-praia | beach | A praia fica cheia no verão. | travel | 2
-montanha | mountain | No inverno vamos para a montanha. | nature | 2
-lago | lake | O lago congela em janeiro. | nature | 2
-mar | sea | O mar está calmo hoje. | nature | 2
-campo | countryside; field | Passamos o fim de semana no campo. | nature | 2
+# Travel, hotels and the outdoors
+viagem | trip; journey | A viagem de ônibus durou seis horas. | travel | 2 | The bus trip took six hours.
+mala | suitcase | Ontem à noite eu fiz a mala. | travel | 2 | Last night I packed my suitcase.
+partir | to leave; to depart | O ônibus para Curitiba vai partir às nove. | travel | 2 | The bus to Curitiba is going to leave at nine.
+chegar | to arrive | O voo vai chegar atrasado. | travel | 1 | The flight is going to arrive late.
+reservar | to book; to reserve | Quero reservar uma mesa para dois. | travel | 3 | I'd like to book a table for two.
+quarto de casal | double room | Quero um quarto de casal por três noites. | travel | 3 | I'd like a double room for three nights.
+passaporte | passport | Meu passaporte vence em março. | travel | 3 | My passport expires in March.
+praia | beach | No verão, a praia fica lotada. | travel | 1 | In summer the beach gets packed.
+montanha | mountain | No inverno, a gente foi para a montanha. | travel | 2 | In winter we went to the mountains.
+lago | lake | Nadamos no lago perto do hotel. | travel | 2 | We swam in the lake near the hotel.
+campo | countryside; field | Passamos o fim de semana no campo. | travel | 2 | We spent the weekend in the countryside.
+hóspede | guest (at a hotel) | Cada hóspede ganha café da manhã grátis. | travel | 3 | Every guest gets a free breakfast.
+recepção | reception (desk) | Deixe a chave na recepção, por favor. | travel | 2 | Leave the key at reception, please.
+pousada | guesthouse; inn | Ficamos numa pousada perto da praia. | travel | 3 | We stayed at a guesthouse near the beach.
+diária | daily rate (per night) | A diária do hotel inclui café da manhã. | travel | 4 | The hotel's nightly rate includes breakfast.
+ar-condicionado | air conditioning | O ar-condicionado do quarto não funciona. | travel | 3 | The air conditioning in the room doesn't work.
+passeio | outing; tour; walk | Fizemos um passeio de barco. | travel | 2 | We went on a boat trip.
+ponto turístico | tourist attraction; sight | O Cristo Redentor é o ponto turístico mais famoso do Rio. | travel | 3 | Christ the Redeemer is the most famous sight in Rio.
+lembrancinha | souvenir; small gift | Comprei uma lembrancinha para cada amigo. | travel | 3 | I bought a little souvenir for each friend.
+exterior | abroad | Ele nunca viajou para o exterior. | travel | 3 | He has never traveled abroad.
+intercâmbio | exchange program (abroad) | Ela fez intercâmbio no Canadá. | travel | 3 | She went on an exchange program in Canada.
+voo | flight | O nosso voo foi cancelado por causa da chuva. | travel | 2 | Our flight was canceled because of the rain.
+cancelar | to cancel | Tivemos que cancelar a viagem. | travel | 3 | We had to cancel the trip.
+acampar | to camp; to go camping | No verão, adoramos acampar na serra. | travel | 3 | In summer we love camping in the mountains.
+cachoeira | waterfall | Tomamos banho de cachoeira no meio da trilha. | travel | 3 | We swam in a waterfall halfway along the trail.
+trilha | trail; hike | Fizemos uma trilha de três horas. | travel | 3 | We did a three-hour hike.
+paisagem | landscape; scenery | A paisagem da serra é linda. | travel | 3 | The mountain scenery is beautiful.
+interior | countryside; inland; inside | Meus avós moram no interior de Minas. | travel | 3 | My grandparents live in the countryside in Minas Gerais.
+litoral | coast; seaside | No verão, todo mundo vai para o litoral. | travel | 3 | In summer everybody goes to the coast.
+cheio | full | O hotel está cheio por causa do feriado. | travel | 2 | The hotel is full because of the holiday.
+protetor solar | sunscreen | Não esqueça de passar protetor solar. | travel | 3 | Don't forget to put on sunscreen.
 
 # Getting around
-virar | to turn | Vire à direita no semáforo. | transportation | 2
-atravessar | to cross | Atravesse a rua na faixa. | transportation | 3
-ponto de ônibus | bus stop | Desço no próximo ponto de ônibus. | transportation | 3
-semáforo | traffic light | O semáforo está vermelho. | transportation | 3
-esquina | corner | Vire à esquerda na esquina. | transportation | 3
-estacionamento | car park; parking | O estacionamento é pago. | transportation | 3
-gasolina | petrol; gasoline | Preciso pôr gasolina. | transportation | 3
-carteira de motorista | driving licence | Tirei a carteira de motorista aos dezoito. | transportation | 3
+virar | to turn | No semáforo, você tem que virar à direita. | transportation | 2 | At the traffic light, you have to turn right.
+atravessar | to cross | Cuidado ao atravessar a rua. | transportation | 3 | Be careful when you cross the street.
+ponto de ônibus | bus stop | Te espero no ponto de ônibus. | transportation | 2 | I'll wait for you at the bus stop.
+semáforo | traffic light | O semáforo ficou vermelho e o carro parou. | transportation | 3 | The light turned red and the car stopped.
+esquina | corner | A padaria fica bem na esquina. | transportation | 2 | The bakery is right on the corner.
+estacionamento | parking lot; car park | O estacionamento do shopping é pago. | transportation | 3 | You have to pay at the mall parking lot.
+gasolina | gas; petrol | A gasolina está cada vez mais cara. | transportation | 3 | Gas is getting more and more expensive.
+carteira de motorista | driver's license; driving licence | Tirei a carteira de motorista aos dezoito anos. | transportation | 3 | I got my driver's license at eighteen.
+rápido | fast; quick | O metrô é mais rápido que o ônibus. | transportation | 2 | The subway is faster than the bus.
+devagar | slowly | Vai devagar, a rua está molhada. | transportation | 2 | Go slowly, the road is wet.
+dirigir | to drive | Meu pai está me ensinando a dirigir. | transportation | 2 | My dad is teaching me to drive.
+posto de gasolina | gas station; petrol station | Tem um posto de gasolina perto daqui? | transportation | 3 | Is there a gas station near here?
+trânsito | traffic | Tinha muito trânsito na volta da praia. | transportation | 2 | There was a lot of traffic on the way back from the beach.
+engarrafamento | traffic jam | Ficamos duas horas no engarrafamento. | transportation | 3 | We were stuck in a traffic jam for two hours.
+estrada | road; highway | A estrada para a praia estava cheia. | transportation | 2 | The road to the beach was busy.
+calçada | sidewalk; pavement | As crianças andam de skate na calçada. | transportation | 3 | The kids skateboard on the sidewalk.
+estacionar | to park | Aqui não dá para estacionar. | transportation | 3 | You can't park here.
+multa | fine; ticket | Ele levou uma multa por estacionar errado. | transportation | 3 | He got a ticket for parking illegally.
+acidente | accident | Vi um acidente no caminho para casa. | transportation | 2 | I saw an accident on the way home.
+caminho | way; route | Você sabe o caminho para a rodoviária? | transportation | 2 | Do you know the way to the bus station?
+linha | line; route | Qual linha de ônibus vai para o centro? | transportation | 2 | Which bus line goes downtown?
+cinto de segurança | seat belt | Coloque o cinto de segurança, por favor. | transportation | 3 | Put on your seat belt, please.
+ida e volta | round trip; return | Quero uma passagem de ida e volta. | transportation | 3 | I'd like a round-trip ticket.
+lotado | packed; crowded | O metrô estava lotado hoje de manhã. | transportation | 3 | The subway was packed this morning.
 
-# Free time and weather
-tempo livre | free time | No tempo livre eu toco violão. | leisure | 2
-esporte | sport | Faço esporte três vezes por semana. | sports | 2
-nadar | to swim | Nado na piscina às terças. | sports | 2
-correr | to run | Corro no parque bem cedo. | sports | 2
-jogo | game; match | O jogo termina às dez. | sports | 2
-academia | gym | Vou à academia depois do trabalho. | sports | 3
-música | music | Escuto música enquanto trabalho. | arts | 1
-filme | film; movie | O filme dura duas horas. | arts | 1
-show | concert; gig | O show está esgotado. | arts | 2
-museu | museum | O museu fecha às segundas. | arts | 2
-nublado | cloudy | Hoje está nublado mas não chove. | weather | 3
-nevar | to snow | Nevou na serra esta noite. | weather | 3
-vento | wind | Está ventando demais para sair de barco. | weather | 2
-tempestade | storm | Uma tempestade alagou a rua. | weather | 3
+# Work
+escritório | office | Meu escritório fica no terceiro andar. | work | 2 | My office is on the third floor.
+reunião | meeting | A reunião foi adiada para amanhã. | work | 2 | The meeting was postponed until tomorrow.
+colega | colleague; classmate | Um colega me ajudou com o trabalho. | work | 2 | A colleague helped me with the work.
+salário | salary; wages | O salário cai no fim do mês. | work | 3 | The salary comes in at the end of the month.
+emprego | job; employment | Ele encontrou um emprego novo. | work | 2 | He found a new job.
+empresa | company; firm | A empresa tem cinquenta funcionários. | work | 2 | The company has fifty employees.
+chefe | boss | A minha chefe está de férias. | work | 2 | My boss is on vacation.
+funcionário | employee; staff member | O funcionário do banco foi muito educado. | work | 3 | The bank employee was very polite.
+vaga | vacancy; opening; space | Tem uma vaga de garçom no restaurante. | work | 3 | There's an opening for a waiter at the restaurant.
+estágio | internship | Ela está fazendo estágio numa empresa grande. | work | 3 | She's doing an internship at a big company.
+desempregado | unemployed | Meu tio ficou desempregado no ano passado. | work | 3 | My uncle lost his job last year.
+aposentado | retired | Meu avô está aposentado há cinco anos. | work | 3 | My grandfather has been retired for five years.
+hora extra | overtime | Fiz hora extra a semana toda. | work | 3 | I worked overtime all week.
+folga | day off | Amanhã é a minha folga. | work | 3 | Tomorrow is my day off.
+gerente | manager | O gerente da loja resolveu o problema. | work | 2 | The store manager solved the problem.
+equipe | team; staff | A nossa equipe é muito unida. | work | 3 | Our team is very close.
+fábrica | factory | Meu pai trabalha numa fábrica de carros. | work | 2 | My dad works in a car factory.
+agenda | diary; planner; schedule | Vou olhar na minha agenda se estou livre. | work | 3 | I'll check my planner to see if I'm free.
+mecânico | mechanic | O mecânico consertou o carro em um dia. | work | 2 | The mechanic fixed the car in one day.
+encanador | plumber | Chamamos um encanador porque a pia vazou. | work | 3 | We called a plumber because the sink leaked.
+cabeleireiro | hairdresser | Fui ao cabeleireiro e cortei o cabelo. | work | 3 | I went to the hairdresser and got my hair cut.
+carteiro | mail carrier; postman | O carteiro trouxe uma carta para você. | work | 3 | The mail carrier brought a letter for you.
+atendente | attendant; clerk | A atendente foi muito simpática. | work | 3 | The clerk was very friendly.
+home office | working from home | Hoje estou de home office. | work | 2 | Today I'm working from home.
 
-# Feelings and describing
-contente | glad; pleased | Estou contente com o resultado. | emotions | 2
-triste | sad | Estou triste hoje. | emotions | 2
-bravo | angry; brave | Ele está bravo com o atraso. | emotions | 3
-preocupado | worried | Estou preocupado com a prova. | emotions | 3
-divertido | fun; amusing | Foi uma noite muito divertida. | emotions | 3
-difícil | difficult | Este exercício é difícil. | basics | 2
-fácil | easy | A receita é bem fácil. | basics | 2
-rápido | fast; quick | O trem é mais rápido que o ônibus. | basics | 2
-devagar | slow; slowly | A conexão está devagar. | basics | 2
-gentil | kind; polite | A vendedora foi muito gentil. | emotions | 2
+# School and studying
+faculdade | university; college | Meu irmão entrou na faculdade este ano. | education | 2 | My brother started university this year.
+prova | test; exam | Passei na prova de história. | education | 2 | I passed the history test.
+aula | class; lesson | A aula de inglês começa às nove. | education | 1 | The English class starts at nine.
+dever de casa | homework | Preciso terminar o dever de casa antes do jantar. | education | 2 | I need to finish my homework before dinner.
+professor | teacher | O professor explica muito bem. | education | 1 | The teacher explains things really well.
+nota | grade; mark; note | Tirei uma nota boa em matemática. | education | 2 | I got a good grade in math.
+matéria | school subject | Qual é a sua matéria favorita? | education | 2 | What's your favorite subject?
+ciências | science (school subject) | Amanhã temos prova de ciências. | education | 2 | Tomorrow we have a science test.
+educação física | PE; physical education | Hoje tem educação física na quadra. | education | 2 | Today there's PE on the court.
+ensinar | to teach | Minha avó vai me ensinar a fazer bolo. | education | 2 | My grandma is going to teach me to make a cake.
+passar de ano | to pass the school year | Preciso estudar muito para passar de ano. | education | 3 | I need to study hard to move up a grade.
+ensino médio | high school; secondary school | Ela está no último ano do ensino médio. | education | 3 | She's in her last year of high school.
+turma | class (group of students) | A minha turma vai visitar o museu. | education | 2 | My class is going to visit the museum.
+biblioteca | library | Estudei na biblioteca a tarde toda. | education | 2 | I studied in the library all afternoon.
+dicionário | dictionary | Procurei a palavra no dicionário. | education | 2 | I looked the word up in the dictionary.
+borracha | eraser; rubber | Me empresta sua borracha? | education | 2 | Can I borrow your eraser?
+trabalho em grupo | group project | Temos um trabalho em grupo para sexta. | education | 3 | We have a group project due Friday.
+redação | essay; composition | Escrevi uma redação sobre as minhas férias. | education | 3 | I wrote an essay about my vacation.
+curso | course | Fiz um curso de inglês online. | education | 2 | I took an English course online.
+vestibular | university entrance exam | Ela está estudando para o vestibular. | education | 3 | She's studying for the university entrance exam.
+aprovado | passed (an exam); approved | Meu irmão foi aprovado na faculdade. | education | 3 | My brother got into university.
+errar | to get wrong; to make a mistake | É normal errar quando a gente aprende. | education | 2 | It's normal to make mistakes when you're learning.
+erro | mistake; error | Tem um erro nessa frase. | education | 2 | There's a mistake in that sentence.
+decorar | to memorize; to decorate | Preciso decorar os verbos para a prova. | education | 3 | I need to memorize the verbs for the test.
+
+# Free time and sport
+tempo livre | free time | No tempo livre, eu toco violão. | leisure | 2 | In my free time I play the guitar.
+nadar | to swim | Meu irmão aprendeu a nadar no verão. | leisure | 1 | My brother learned to swim in the summer.
+correr | to run | Eu gosto de correr no parque de manhã. | leisure | 2 | I like running in the park in the morning.
+academia | gym | Vou à academia depois do trabalho. | leisure | 2 | I go to the gym after work.
+música | music | Eu escuto música enquanto estudo. | leisure | 1 | I listen to music while I study.
+show | concert; show | Os ingressos do show esgotaram em uma hora. | leisure | 2 | The concert tickets sold out in an hour.
+museu | museum | O museu fecha às segundas. | leisure | 2 | The museum is closed on Mondays.
+passear | to go for a walk; to go out | Domingo a gente foi passear no parque. | leisure | 2 | On Sunday we went for a walk in the park.
+convite | invitation | Recebi um convite para o aniversário da Júlia. | leisure | 2 | I got an invitation to Júlia's birthday party.
+convidar | to invite | Quero convidar você para a minha festa. | leisure | 2 | I want to invite you to my party.
+combinar | to arrange; to agree; to match | Vamos combinar um horário para amanhã? | leisure | 3 | Shall we agree on a time for tomorrow?
+encontro | meeting; get-together; date | Marcamos um encontro no shopping. | leisure | 3 | We arranged to meet at the mall.
+programa | plan; something to do; program | Qual é o programa para sábado? | leisure | 3 | What's the plan for Saturday?
+teatro | theater | Fomos ao teatro no sábado. | leisure | 2 | We went to the theater on Saturday.
+série | series; TV show | Passei o domingo vendo uma série nova. | leisure | 2 | I spent Sunday watching a new series.
+novela | soap opera | Minha avó adora assistir novela. | leisure | 2 | My grandma loves watching soap operas.
+desenho animado | cartoon | Quando eu era criança, via desenho animado todo dia. | leisure | 2 | When I was a kid, I watched cartoons every day.
+parque de diversões | amusement park | As crianças adoraram o parque de diversões. | leisure | 3 | The kids loved the amusement park.
+zoológico | zoo | No domingo, a gente foi ao zoológico. | leisure | 2 | On Sunday we went to the zoo.
+treinar | to train; to practice | Ele vai treinar futebol três vezes por semana. | leisure | 2 | He's going to practice soccer three times a week.
+time | team | Qual é o seu time de futebol? | leisure | 2 | What's your soccer team?
+jogador | player | Ele é o melhor jogador do time. | leisure | 2 | He's the best player on the team.
+torcer | to root for; to support (a team) | Adoro torcer pelo meu time no estádio. | leisure | 3 | I love cheering for my team at the stadium.
+campeonato | championship; league | O meu time ganhou o campeonato. | leisure | 3 | My team won the championship.
+partida | match; game | A partida terminou empatada. | leisure | 3 | The match ended in a draw.
+gol | goal | Ele fez um gol incrível no fim do jogo. | leisure | 2 | He scored an amazing goal at the end of the game.
+vôlei | volleyball | Jogamos vôlei na praia todo domingo. | leisure | 2 | We play volleyball on the beach every Sunday.
+natação | swimming | Faço aula de natação duas vezes por semana. | leisure | 2 | I have swimming lessons twice a week.
+
+# Weather and nature
+nublado | cloudy | Hoje está nublado, mas não vai chover. | weather | 2 | It's cloudy today, but it isn't going to rain.
+nevar | to snow | Às vezes chega a nevar no sul do Brasil. | weather | 3 | It sometimes even snows in the south of Brazil.
+tempestade | storm | Uma tempestade derrubou várias árvores ontem. | weather | 3 | A storm knocked down several trees yesterday.
+temperatura | temperature | A temperatura caiu muito à noite. | weather | 2 | The temperature dropped a lot at night.
+grau | degree | Está fazendo quase zero grau lá fora. | weather | 3 | It's almost zero degrees outside.
+neve | snow | Eu nunca vi neve de verdade. | weather | 2 | I've never seen real snow.
+gelo | ice | Quer gelo no seu suco? | weather | 2 | Do you want ice in your juice?
+trovão | thunder | O meu cachorro tem medo de trovão. | weather | 3 | My dog is afraid of thunder.
+raio | lightning; ray | Um raio caiu perto da nossa casa. | weather | 3 | Lightning struck near our house.
+neblina | fog; mist | Tinha muita neblina na estrada hoje cedo. | weather | 3 | There was a lot of fog on the road early this morning.
+garoa | drizzle | São Paulo é famosa pela garoa. | weather | 3 | São Paulo is famous for its drizzle.
+ensolarado | sunny | Amanhã vai ser um dia ensolarado. | weather | 2 | Tomorrow is going to be a sunny day.
+úmido | humid; damp | O Rio é quente e úmido no verão. | weather | 3 | Rio is hot and humid in the summer.
+seco | dry | O ar fica muito seco em Brasília. | weather | 2 | The air gets very dry in Brasília.
+molhado | wet | Meu tênis ficou molhado na chuva. | weather | 2 | My sneakers got wet in the rain.
+abafado | muggy; stuffy | O dia está abafado, acho que vai chover. | weather | 3 | It's muggy today, I think it's going to rain.
+fresco | cool; fresh | À noite fica mais fresco. | weather | 2 | It gets cooler at night.
+guarda-chuva | umbrella | Esqueci o guarda-chuva e me molhei todo. | weather | 2 | I forgot my umbrella and got soaked.
+esquentar | to warm up; to heat up | Amanhã vai esquentar bastante. | weather | 3 | It's going to warm up a lot tomorrow.
+esfriar | to get cold; to cool down | No fim da tarde, começou a esfriar. | weather | 3 | In the late afternoon it started to get cold.
+arco-íris | rainbow | Depois da chuva, apareceu um arco-íris. | weather | 2 | After the rain, a rainbow appeared.
+pôr do sol | sunset | O pôr do sol na praia foi lindo. | weather | 2 | The sunset on the beach was beautiful.
+
+# Feelings, opinions and describing people
+contente | glad; pleased | Fiquei contente com o resultado da prova. | emotions | 2 | I was pleased with the test result.
+triste | sad | Fiquei triste quando meu amigo mudou de cidade. | emotions | 1 | I was sad when my friend moved to another city.
+bravo | angry; cross | O meu pai ficou bravo com a bagunça. | emotions | 2 | My dad got angry about the mess.
+preocupado | worried | Estou preocupado com a prova de amanhã. | emotions | 2 | I'm worried about tomorrow's test.
+divertido | fun; amusing | O passeio foi muito divertido. | emotions | 2 | The outing was a lot of fun.
+gentil | kind | O vendedor foi muito gentil comigo. | emotions | 2 | The salesman was very kind to me.
+tranquilo | calm; relaxed; quiet | Fica tranquilo, vai dar tudo certo. | emotions | 2 | Don't worry, everything will be fine.
+irritado | annoyed; irritated | Fiquei irritado com o barulho da rua. | emotions | 3 | I got annoyed by the noise from the street.
+emocionado | moved; touched | Meu avô ficou emocionado com a surpresa. | emotions | 3 | My grandfather was moved by the surprise.
+ansioso | anxious; eager | Estou ansioso para as férias. | emotions | 3 | I can't wait for the holidays.
+entediado | bored | Fiquei entediado durante a aula. | emotions | 3 | I got bored during the class.
+chato | boring; annoying | Esse filme é muito chato. | emotions | 2 | This movie is really boring.
+interessante | interesting | O livro é interessante, mas muito longo. | emotions | 2 | The book is interesting, but very long.
+incrível | amazing; incredible | A vista lá de cima é incrível. | emotions | 2 | The view from up there is amazing.
+estranho | strange; weird | Ouvi um barulho estranho na cozinha. | emotions | 2 | I heard a strange noise in the kitchen.
+sozinho | alone; lonely | Não gosto de ficar sozinho em casa. | emotions | 2 | I don't like being home alone.
+alegria | joy; happiness | Que alegria ver você aqui! | emotions | 2 | How lovely to see you here!
+tristeza | sadness | Senti uma tristeza enorme no último dia. | emotions | 3 | I felt really sad on the last day.
+vergonha | embarrassment; shame | Que vergonha! Esqueci o nome dele. | emotions | 3 | How embarrassing! I forgot his name.
+sorte | luck | Que sorte! Achei a minha chave. | emotions | 2 | What luck! I found my key.
+paciência | patience | Tenha paciência, o ônibus já vem. | emotions | 3 | Be patient, the bus is coming.
+concordar | to agree | Acho que você vai concordar comigo. | emotions | 3 | I think you'll agree with me.
+acreditar | to believe | Não consigo acreditar que ganhamos! | emotions | 2 | I can't believe we won!
+educado | polite; well-mannered | O garçom foi muito educado com a gente. | emotions | 3 | The waiter was very polite to us.
+inteligente | intelligent; clever | Sua irmã é muito inteligente. | emotions | 2 | Your sister is very clever.
+importante | important | É importante beber muita água. | emotions | 2 | It's important to drink lots of water.
+verdade | truth; true | É verdade que você vai mudar de escola? | emotions | 2 | Is it true that you're changing schools?
+mentira | lie | Ele contou uma mentira para a professora. | emotions | 2 | He told the teacher a lie.
+
+# Technology, calls and messages
+aplicativo | app | Baixei um aplicativo para aprender português. | technology | 2 | I downloaded an app to learn Portuguese.
+site | website | Comprei os ingressos pelo site. | technology | 2 | I bought the tickets on the website.
+carregador | charger | Você tem um carregador de celular? | technology | 2 | Do you have a phone charger?
+bateria | battery; drums | Meu celular está sem bateria. | technology | 2 | My phone's battery is dead.
+carregar | to charge; to carry | Preciso carregar o celular antes de sair. | technology | 2 | I need to charge my phone before I go out.
+fone de ouvido | headphones; earphones | Esqueci o fone de ouvido em casa. | technology | 2 | I left my headphones at home.
+áudio | voice message; audio | Ela me mandou um áudio de cinco minutos. | technology | 2 | She sent me a five-minute voice message.
+vídeo | video | Assisti a um vídeo muito engraçado ontem. | technology | 2 | I watched a really funny video yesterday.
+ligação | phone call | Recebi uma ligação da escola. | technology | 2 | I got a call from the school.
+chamada de vídeo | video call | Fiz uma chamada de vídeo com meus primos. | technology | 3 | I had a video call with my cousins.
+atender | to answer (the phone); to serve | Pode atender o telefone, por favor? | technology | 3 | Can you answer the phone, please?
+desligar | to hang up; to switch off | Preciso desligar agora, depois te ligo. | technology | 2 | I have to hang up now, I'll call you later.
+recado | message (left for someone) | Ele deixou um recado para você. | technology | 3 | He left a message for you.
+caixa postal | voicemail | Liguei, mas caiu na caixa postal. | technology | 3 | I called, but it went to voicemail.
+sinal | signal; sign | Aqui não tem sinal de celular. | technology | 2 | There's no cell signal here.
+wi-fi | wi-fi | Qual é a senha do wi-fi? | technology | 2 | What's the wi-fi password?
+apagar | to delete; to erase; to switch off | Você pode apagar essa foto, por favor? | technology | 2 | Can you delete that photo, please?
+salvar | to save | Não esqueça de salvar o arquivo. | technology | 2 | Don't forget to save the file.
+arquivo | file | O arquivo é grande demais para mandar por e-mail. | technology | 3 | The file is too big to send by email.
+imprimir | to print | Preciso imprimir as passagens antes da viagem. | technology | 3 | I need to print the tickets before the trip.
+notebook | laptop | Meu notebook novo é muito rápido. | technology | 2 | My new laptop is really fast.
+rede social | social network; social media | Qual rede social você mais usa? | technology | 2 | Which social network do you use the most?
+postar | to post | Vou postar as fotos da viagem. | technology | 2 | I'm going to post the photos from the trip.
+curtir | to like (a post); to enjoy | Não esqueça de curtir o vídeo! | technology | 2 | Don't forget to like the video!
+grupo | group; group chat | Me adiciona no grupo da turma. | technology | 2 | Add me to the class group chat.
+responder | to reply; to answer | Ele demorou para responder a mensagem. | technology | 2 | He took a long time to reply to the message.
+funcionar | to work (of a machine) | O controle remoto parou de funcionar. | technology | 2 | The remote control stopped working.
+
+# Useful verbs
+esquecer | to forget | Não posso esquecer o aniversário da minha mãe. | verbs | 2 | I can't forget my mom's birthday.
+lembrar | to remember; to remind | Você consegue lembrar o nome dele? | verbs | 2 | Can you remember his name?
+perder | to lose; to miss | Corri muito para não perder o ônibus. | verbs | 2 | I ran hard so I wouldn't miss the bus.
+tentar | to try | Vou tentar chegar cedo amanhã. | verbs | 2 | I'll try to arrive early tomorrow.
+acontecer | to happen | Isso pode acontecer com qualquer pessoa. | verbs | 2 | That can happen to anyone.
+terminar | to finish; to end | Preciso terminar esse trabalho hoje. | verbs | 2 | I need to finish this work today.
+mudar | to change; to move (house) | A gente vai mudar de casa em março. | verbs | 2 | We're going to move house in March.
+deixar | to leave; to let | Pode deixar a mala aqui na recepção. | verbs | 2 | You can leave your suitcase here at reception.
+buscar | to pick up; to fetch | Vou buscar você no aeroporto. | verbs | 2 | I'll pick you up at the airport.
+chamar | to call | Vou chamar um táxi para a gente. | verbs | 2 | I'll call a taxi for us.
+quebrar | to break | Como você conseguiu quebrar o celular? | verbs | 2 | How did you manage to break your phone?
+cair | to fall | Cuidado para não cair, o chão está molhado. | verbs | 2 | Be careful not to fall, the floor is wet.
+subir | to go up; to climb | Vamos subir de elevador ou de escada? | verbs | 2 | Shall we go up in the elevator or by the stairs?
+tirar | to take off; to take out; to take (a photo) | Posso tirar uma foto de vocês? | verbs | 2 | Can I take a photo of you?
+pensar | to think | Preciso pensar um pouco antes de responder. | verbs | 2 | I need to think a little before I answer.
+reclamar | to complain | Vou reclamar com o gerente do hotel. | verbs | 3 | I'm going to complain to the hotel manager.
+marcar | to arrange; to book; to score | Vamos marcar um café na semana que vem? | verbs | 3 | Shall we arrange to have coffee next week?
+aceitar | to accept | Ela decidiu aceitar o convite da Ana. | verbs | 2 | She decided to accept Ana's invitation.
+acabar | to end; to finish; to run out | O filme vai acabar às dez. | verbs | 2 | The movie will end at ten.
+parar | to stop | O ônibus vai parar na próxima esquina. | verbs | 2 | The bus will stop at the next corner.
+caminhar | to walk | Gosto de caminhar na praia de manhã. | verbs | 2 | I like walking on the beach in the morning.
+guardar | to put away; to keep | Pode guardar os brinquedos no armário? | verbs | 2 | Can you put the toys away in the cupboard?
+jogar fora | to throw away | Não vou jogar fora essa camiseta velha. | verbs | 2 | I'm not going to throw away this old T-shirt.
+conversar | to talk; to chat | Precisamos conversar sobre a viagem. | verbs | 2 | We need to talk about the trip.
+crescer | to grow; to grow up | As plantas precisam de sol para crescer. | verbs | 2 | Plants need sun to grow.
+preparar | to prepare; to make | Vou preparar o jantar hoje. | verbs | 2 | I'm going to make dinner today.
+rir | to laugh | A gente não conseguia parar de rir. | verbs | 2 | We couldn't stop laughing.
+resolver | to solve; to sort out | Vamos resolver isso amanhã. | verbs | 2 | Let's sort this out tomorrow.
+faltar | to miss (school, work); to be missing | Não posso faltar à aula amanhã. | verbs | 3 | I can't miss class tomorrow.

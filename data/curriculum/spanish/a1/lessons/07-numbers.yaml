@@ -112,6 +112,20 @@ practice:
     why: Fifteen is quince — one of the numbers to learn by heart.
 
   - type: translate
+    section: 1
+    direction: to-english
+    prompt: doce
+    answers: [twelve, "12"]
+    why: Doce is 12 — like quince, a number to learn by heart.
+
+  - type: choice
+    section: 1
+    prompt: Which number is *diecisiete*?
+    options: ["7", "17", "70"]
+    answer: "17"
+    why: Diecisiete is "ten and seven" written as one word; 70 is setenta.
+
+  - type: translate
     section: 2
     direction: to-target
     prompt: forty-five
@@ -139,6 +153,20 @@ practice:
     translation: How much do they cost?
     answers: [cuestan]
     why: Cuestan is for more than one thing; cuesta is for one.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: How much is the book?
+    answers: ["¿Cuánto cuesta el libro?"]
+    why: One thing takes cuesta, and the question starts with cuánto.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: Cuesta veinte pesos.
+    answers: [It costs twenty pesos, It is twenty pesos, It costs 20 pesos, It is 20 pesos]
+    why: Cuesta means "it costs", and veinte is 20.
 
   - type: fill
     section: 4

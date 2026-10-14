@@ -1,0 +1,195 @@
+title: "Me levanté tarde"
+subtitle: Reflexive verbs in the past
+goal: tell the story of your day in the past with reflexive verbs like *me levanté* and *se acostó*, putting events in order with *primero, luego* and *después*
+minutes: 14
+
+sections:
+  - heading: Same little words, past endings
+    body: |
+      Reflexive verbs work the same way in the past. Keep **me, te, se,
+      nos, se** in front, and use the normal preterite endings.
+
+      Boot verbs that end in **-ar** lose their boot in the preterite:
+      *me despierto* (I wake up) but **me desperté** (I woke up); *me
+      acuesto* but **me acosté**.
+    table:
+      columns: [who, levantarse]
+      rows:
+        - [yo, me levanté]
+        - [tú, te levantaste]
+        - [él / ella / usted, se levantó]
+        - [nosotros / nosotras, nos levantamos]
+        - [vosotros / vosotras (Spain), os levantasteis]
+        - [ellos / ellas / ustedes, se levantaron]
+    examples:
+      - ["Ayer me desperté a las seis.", "Yesterday I woke up at six."]
+      - ["¿A qué hora te acostaste?", "What time did you go to bed?"]
+      - ["Mis hermanos se ducharon por la noche.", "My brothers showered at night."]
+    tip: "*Nos levantamos* means \"we get up\" and \"we got up\" — like every -ar verb in the *nosotros* form."
+
+  - heading: "First, then, after"
+    body: |
+      To tell the story of your day, put things in order with these:
+
+      - **primero** — first
+      - **luego** — then, next
+      - **después** — afterwards, then
+      - **al final** — in the end
+
+      **Antes de** and **después de** + infinitive mean "before …ing" and
+      "after …ing": *antes de salir* (before going out), *después de
+      comer* (after eating).
+    examples:
+      - ["Primero me duché, luego desayuné y después salí.", "First I showered, then I had breakfast, and then I went out."]
+      - ["Desayuné antes de salir.", "I had breakfast before going out."]
+      - ["Después de cenar, vimos una película.", "After dinner, we watched a movie."]
+    tip: "English says \"before going\"; Spanish says \"before to go\": *antes de ir*, with the infinitive."
+
+  - heading: "-ir verbs that change: se vistió, se durmió"
+    body: |
+      Boot verbs that end in **-ir** do change in the preterite — but only
+      in the *él / ella / usted* and *ellos / ellas / ustedes* forms:
+
+      - **e → i**: *vestirse* → *se vistió*; *divertirse* (to have fun) → *se divirtió*
+      - **o → u**: *dormirse* (to fall asleep) → *se durmió*
+
+      The *yo, tú* and *nosotros* forms are regular: *me vestí, te
+      dormiste, nos divertimos*.
+    table:
+      columns: [who, vestirse, dormirse, divertirse]
+      rows:
+        - [yo, me vestí, me dormí, me divertí]
+        - [él / ella / usted, se vistió, se durmió, se divirtió]
+        - [ellos / ellas / ustedes, se vistieron, se durmieron, se divirtieron]
+    examples:
+      - ["Mi hermano se durmió en el tren.", "My brother fell asleep on the train."]
+      - ["Nos divertimos mucho en la fiesta.", "We had a great time at the party."]
+    tip: "*Pedir* and *dormir* follow the same pattern without *se*: *pidió* (she ordered), *durmió* (he slept)."
+
+  - heading: "On a trip: quedarse, perderse, irse"
+    body: |
+      Three reflexive verbs you'll need when you travel:
+
+      - **quedarse** — to stay: *Nos quedamos en un hotel.*
+      - **perderse** — to get lost: *Me perdí en el centro.*
+      - **irse** — to leave, to go away: *Me fui a las diez.*
+
+      *Irse* uses the same past forms as *ir*: **me fui, te fuiste, se
+      fue, nos fuimos, se fueron**.
+    examples:
+      - ["Nos quedamos tres noches en Cartagena.", "We stayed three nights in Cartagena."]
+      - ["Mi padre se perdió en el metro.", "My dad got lost on the subway."]
+      - ["¿A qué hora se fueron tus amigos?", "What time did your friends leave?"]
+    tip: "The little word changes the meaning: *fui* is \"I went\", but *me fui* is \"I left\"."
+
+words:
+  - [primero, first]
+  - [luego, "then, next"]
+  - [después, "afterwards, then"]
+  - [antes de, before]
+  - [después de, after]
+  - [al final, in the end]
+  - [dormirse, to fall asleep]
+  - [divertirse, "to have fun, to have a good time"]
+  - [quedarse, to stay]
+  - [perderse, to get lost]
+  - [irse, "to leave, to go away"]
+  - [centro, "downtown, the town center"]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Ayer me ___ a las siete."
+    hint: levantarse, yo
+    translation: Yesterday I got up at seven.
+    answers: [levanté]
+    why: Me stays in front, and the verb takes the normal yo ending -é.
+
+  - type: fill
+    section: 1
+    prompt: "¿A qué hora te ___ anoche?"
+    hint: acostarse, tú
+    translation: What time did you go to bed last night?
+    answers: [acostaste]
+    why: -ar boot verbs don't change in the preterite, so acostarse gives te acostaste.
+
+  - type: choice
+    section: 1
+    prompt: "I woke up at six:"
+    options: [Me desperté a las seis., Me despierté a las seis., Desperté me a las seis.]
+    answer: Me desperté a las seis.
+    why: Despertarse loses its boot in the preterite, and me goes in front of the verb.
+
+  - type: translate
+    section: 1
+    direction: to-target
+    prompt: We got up early.
+    answers: [Nos levantamos temprano, Nosotros nos levantamos temprano, Nosotras nos levantamos temprano]
+    why: With nosotros the reflexive word is nos, and the -ar ending is -amos.
+
+  - type: fill
+    section: 2
+    prompt: "Primero me duché y ___ desayuné."
+    hint: then
+    translation: First I showered and then I had breakfast.
+    answers: [luego, después]
+    why: Luego and después both mean "then" when you put events in order.
+
+  - type: translate
+    section: 2
+    direction: to-english
+    prompt: Después de cenar, vimos una película.
+    answers: [After dinner we watched a movie, After dinner we saw a movie, After dinner we watched a film, After dinner we saw a film, After having dinner we watched a movie, After eating dinner we watched a movie, We watched a movie after dinner, We saw a movie after dinner]
+    why: Después de + infinitive means "after …ing" — here, "after having dinner".
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: I had breakfast before going out.
+    answers: [Desayuné antes de salir, Yo desayuné antes de salir, Antes de salir desayuné, Antes de salir yo desayuné, Desayuné antes de irme]
+    why: Antes de is followed by the infinitive, salir.
+
+  - type: fill
+    section: 3
+    prompt: "Mi hermano se ___ en el tren."
+    hint: dormirse
+    translation: My brother fell asleep on the train.
+    answers: [durmió]
+    why: -ir boot verbs change o → u in the él form of the preterite.
+
+  - type: fill
+    section: 3
+    prompt: "Ella se ___ muy rápido."
+    hint: vestirse
+    translation: She got dressed very quickly.
+    answers: [vistió]
+    why: Vestirse changes e → i in the ella form of the preterite.
+
+  - type: choice
+    section: 3
+    prompt: "*Nos divertimos mucho* means…"
+    options: [We had a great time., We got very bored., We fell asleep.]
+    answer: We had a great time.
+    why: Divertirse means "to have fun", so nos divertimos mucho is "we had a great time".
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: I got lost downtown.
+    answers: [Me perdí en el centro, Yo me perdí en el centro]
+    why: Perderse means "to get lost", and me perdí is its yo form in the preterite.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Nos quedamos en un hotel.
+    answers: [We stayed in a hotel, We stayed at a hotel, We stay in a hotel, We stay at a hotel, We are staying in a hotel, We are staying at a hotel]
+    why: Quedarse means "to stay"; nos quedamos is "we stayed" (or "we stay").
+
+  - type: fill
+    section: 4
+    prompt: "Mis amigos se ___ a las diez."
+    hint: irse
+    translation: My friends left at ten.
+    answers: [fueron]
+    why: Irse uses the past forms of ir, so ellos se fueron.

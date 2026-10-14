@@ -1,0 +1,251 @@
+title: "Vire à direita"
+subtitle: Instructions, directions and requests
+goal: give and follow instructions and directions, and tell someone what to do or not to do
+minutes: 15
+
+sections:
+  - heading: Telling people what to do
+    body: |
+      The **imperative** is the verb form for instructions: *Turn right.
+      Open the window. Wait here.* You'll see it on signs and in recipes,
+      and hear it whenever someone gives you directions.
+
+      To make it for *você*, take the *eu* form of the present and drop
+      the **-o**. Then swap the vowel: **-ar** verbs take **-e**, and
+      **-er** and **-ir** verbs take **-a**. For *vocês*, add **-m**.
+    table:
+      columns: [infinitive, eu form, você, vocês]
+      rows:
+        - [falar, falo, fale, falem]
+        - [esperar, espero, espere, esperem]
+        - [comer, como, coma, comam]
+        - [abrir, abro, abra, abram]
+    examples:
+      - ["Fale mais devagar, por favor.", "Speak more slowly, please."]
+      - ["Abra a janela, por favor.", "Open the window, please."]
+      - ["Esperem aqui.", "Wait here. (to several people)"]
+    tip: "The vowels swap over, which feels backwards at first: *falar* gives *fale*, *comer* gives *coma*."
+
+  - heading: Asking the way
+    body: |
+      Directions are full of imperatives. Learn these as phrases:
+
+      - **vire à direita / à esquerda** — turn right / left
+      - **siga em frente** — go straight on (*seguir*: *sigo* → *siga*)
+      - **atravesse a rua** — cross the street
+      - **pegue a primeira rua à direita** — take the first street on the
+        right
+      - **desça no próximo ponto** — get off at the next stop (*descer*:
+        *desço* → *desça*)
+    examples:
+      - ["Siga em frente e vire à esquerda no semáforo.", "Go straight on and turn left at the traffic lights."]
+      - ["Atravesse a rua na faixa.", "Cross the street at the crossing."]
+      - ["Pegue o ônibus e desça no próximo ponto.", "Take the bus and get off at the next stop."]
+    tip: "*Pegar* becomes *pegue*, with a *u* to keep the hard g — the same change as *paguei* and *cheguei* in lesson 1."
+
+  - heading: Irregular ones
+    body: |
+      The rule from section 1 starts from the *eu* form, so it works for
+      most irregular verbs too. Whatever is irregular with *eu* carries
+      over: *faço* → *faça*, *digo* → *diga*, *tenho* → *tenha*, *venho* →
+      *venha*.
+
+      Only a few verbs break the rule completely: **ir**, **ser**,
+      **estar** and **dar**. Learn them from the table — you'll hear them
+      every day.
+    table:
+      columns: [infinitive, você, vocês]
+      rows:
+        - [ir, vá, vão]
+        - [ser, seja, sejam]
+        - [estar, esteja, estejam]
+        - [dar, dê, deem]
+        - [fazer, faça, façam]
+        - [vir, venha, venham]
+        - [ter, tenha, tenham]
+    examples:
+      - ["Vá até o fim da rua.", "Go to the end of the street."]
+      - ["Venha aqui, por favor.", "Come here, please."]
+      - ["Tenha um bom dia!", "Have a good day!"]
+      - ["Faça a lição de casa.", "Do your homework."]
+
+  - heading: How friends say it
+    body: |
+      The forms above are what you read on signs and hear from shops,
+      teachers and strangers. Between friends and family, most Brazilians
+      use a different form: the **ele / ela** form of the present.
+
+      - *Fala mais devagar!* — Speak more slowly! (instead of *fale*)
+      - *Abre a janela, tá quente.* — Open the window, it's hot.
+      - *Vem cá!* — Come here! (*vem*, from *vir*)
+
+      Both are correct Brazilian Portuguese. Using *fale* and *abra* with
+      friends just sounds a little formal.
+    examples:
+      - ["Fecha a porta, por favor.", "Shut the door, please."]
+      - ["Me ajuda aqui?", "Can you help me here?"]
+    tip: "In speech the pronoun comes first: *Me ajuda!* — Help me! In writing you'll see *Ajude-me*."
+
+  - heading: Don't!
+    body: |
+      To say **don't**, put **não** in front of the *você* form from
+      section 1:
+
+      - *Não fale alto.* — Don't talk loudly.
+      - *Não coma isso!* — Don't eat that!
+
+      With a reflexive verb, the little word goes after *não*: *Não se
+      preocupe.* — Don't worry.
+
+      In relaxed speech you'll also hear *não* + the friendly form: *Não
+      fala isso!* — Don't say that!
+    examples:
+      - ["Não esqueça o passaporte!", "Don't forget your passport!"]
+      - ["Não se preocupe.", "Don't worry."]
+      - ["Não atravesse no vermelho.", "Don't cross on red."]
+
+words:
+  - [virar, to turn]
+  - [à direita, (to / on the) right]
+  - [à esquerda, (to / on the) left]
+  - [seguir em frente, to go straight on]
+  - [atravessar, to cross]
+  - [semáforo, traffic light]
+  - [faixa, pedestrian crossing / crosswalk]
+  - [descer, to get off / to go down]
+  - [ponto de ônibus, bus stop]
+  - [fechar, to close / to shut]
+  - [porta, door]
+  - [esquecer, to forget]
+  - [preocupar-se, to worry]
+  - [devagar, slowly]
+  - [Vem cá!, Come here!]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "___ mais devagar, por favor."
+    hint: falar, você
+    translation: Speak more slowly, please.
+    answers: [Fale, Fala]
+    why: -ar verbs swap to -e for an instruction — fale.
+
+  - type: fill
+    section: 1
+    prompt: "___ a janela, por favor."
+    hint: abrir, você
+    translation: Open the window, please.
+    answers: [Abra, Abre]
+    why: -ir verbs swap to -a for an instruction — abra.
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: "Abram os livros."
+    answers:
+      - "Open your books."
+      - "Open the books."
+    why: "Abram is the vocês imperative of abrir — -a plus -m."
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: Turn right at the traffic lights.
+    answers: [Vire à direita no semáforo., Vira à direita no semáforo., No semáforo vire à direita., No semáforo vira à direita.]
+    why: Virar becomes vire, and "right" is à direita.
+
+  - type: choice
+    section: 2
+    prompt: "\"Take the first street on the left.\""
+    options: [Pegue a primeira rua à esquerda., Pegue a primeira rua à direita., Pega a primeira rua em esquerda.]
+    answer: Pegue a primeira rua à esquerda.
+    why: Left is à esquerda, and pegar becomes pegue.
+
+  - type: fill
+    section: 2
+    prompt: "___ a rua na faixa."
+    hint: atravessar, você
+    translation: Cross the street at the crossing.
+    answers: [Atravesse, Atravessa]
+    why: Atravessar is an -ar verb, so its instruction form ends in -e.
+
+  - type: fill
+    section: 3
+    prompt: "___ aqui, por favor."
+    hint: vir, você
+    translation: Come here, please.
+    answers: [Venha, Vem]
+    why: Vir is irregular — venho gives venha.
+
+  - type: choice
+    section: 3
+    prompt: "\"Have a good day!\""
+    options: [Tenha um bom dia!, Tenho um bom dia!, Tem um bom dia!]
+    answer: Tenha um bom dia!
+    why: Ter is irregular — tenho gives tenha.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: Do your homework.
+    answers:
+      - Faça a lição de casa.
+      - Faça a sua lição de casa.
+      - Faça sua lição de casa.
+      - Faça o dever de casa.
+      - Faça o seu dever de casa.
+      - Faça seu dever de casa.
+      - Faz a lição de casa.
+      - Faz o dever de casa.
+      - Faz a sua lição de casa.
+      - Faz o seu dever de casa.
+    why: Fazer is irregular — faço gives faça.
+
+  - type: choice
+    section: 4
+    prompt: "To a friend: \"Come here!\""
+    options: [Vem cá!, Venho cá!, Vir cá!]
+    answer: Vem cá!
+    why: With friends, Brazilians use the ele form of the present — vem.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: "Fala mais alto, por favor."
+    answers:
+      - "Speak louder, please."
+      - "Speak up, please."
+      - "Please speak louder."
+      - "Please speak up."
+      - "Talk louder, please."
+    why: "Fala is the friendly instruction form of falar, and mais alto is louder."
+
+  - type: fill
+    section: 4
+    prompt: "Me ___!"
+    hint: ajudar, to a friend
+    translation: Help me!
+    answers: [ajuda, ajude]
+    why: With friends, use the ele form — ajuda — with me before it.
+
+  - type: fill
+    section: 5
+    prompt: "Não ___ o passaporte!"
+    hint: esquecer, você
+    translation: Don't forget your passport!
+    answers: [esqueça, esquece]
+    why: Não + the você form — esqueço gives esqueça.
+
+  - type: translate
+    section: 5
+    direction: to-target
+    prompt: Don't worry.
+    answers: [Não se preocupe., Não se preocupa., Não se preocupem.]
+    why: Não comes first, then se, then preocupe.
+
+  - type: translate
+    section: 5
+    direction: to-english
+    prompt: Não coma isso!
+    answers: [Don't eat that!, Don't eat this!, Do not eat that!]
+    why: Não + coma is "don't eat".

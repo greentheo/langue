@@ -1,0 +1,231 @@
+title: "Fui ou ia?"
+subtitle: Choosing between the two past tenses
+goal: choose between the perfeito and the imperfeito, and tell a short story about something that happened
+minutes: 15
+
+sections:
+  - heading: Event or background?
+    body: |
+      Think of a story as a film. The **perfeito** moves the story forward:
+      something happened, and it's done. The **imperfeito** is the
+      scenery: what was going on, what things were like, what used to
+      happen.
+
+      Ask yourself: did it happen **once**, as an event? Perfeito. Was it
+      a **habit** or a **description**? Imperfeito.
+    table:
+      columns: [perfeito — it happened, imperfeito — the background]
+      rows:
+        - ["Fui ao Rio em 2020. — I went to Rio in 2020.", "Eu ia ao Rio todo ano. — I used to go to Rio every year."]
+        - ["Comi peixe ontem. — I ate fish yesterday.", "Eu comia peixe toda sexta. — I used to eat fish every Friday."]
+        - ["A festa foi ótima. — The party was great.", "A festa era na casa da Ana. — The party was at Ana's house."]
+    examples:
+      - ["Ontem choveu.", "It rained yesterday."]
+      - ["Antigamente chovia muito aqui.", "In the old days it used to rain a lot here."]
+
+  - heading: Once, or again and again?
+    body: |
+      Words for **one moment** go with the perfeito: *ontem*, *uma vez*
+      (once), *de repente* (suddenly), *no sábado* (last Saturday).
+
+      Words for **a habit** go with the imperfeito: *sempre*, *todo dia*,
+      *toda semana*, *antigamente*, *às vezes*.
+
+      Careful with Saturdays: *no sábado* is one Saturday, but **aos
+      sábados** means "on Saturdays" — every week.
+    examples:
+      - ["No sábado fui à feira.", "On Saturday I went to the market."]
+      - ["Aos sábados eu ia à feira.", "On Saturdays I used to go to the market."]
+      - ["Uma vez eu vi um macaco na rua.", "Once I saw a monkey in the street."]
+
+  - heading: Was happening… when
+    body: |
+      To say something was **in progress** when something else happened,
+      use **estava** + the *-ndo* form (lesson 4) for the background, and
+      the perfeito for the event that interrupts it.
+
+      **Enquanto** (while) joins two things that were going on at the same
+      time. Both take the imperfeito: *Ela lia enquanto eu cozinhava.* —
+      She was reading while I was cooking.
+    examples:
+      - ["Eu estava dormindo quando o telefone tocou.", "I was sleeping when the phone rang."]
+      - ["A gente estava jantando quando eles chegaram.", "We were having dinner when they arrived."]
+    tip: "English \"was doing\" is almost always *estava* + *-ndo*: I was waiting — *eu estava esperando*."
+
+  - heading: How you felt, what you thought
+    body: |
+      Feelings, wishes and thoughts in the past are usually background, so
+      they take the imperfeito: *estava com fome*, *queria*, *achava*
+      (thought).
+
+      Compare *queria* and *quis*. *Eu queria ir* — I wanted to go (that
+      was how I felt). *Eu não quis ir* — I refused to go (a decision, an
+      event).
+    examples:
+      - ["Eu queria viajar, mas não tinha dinheiro.", "I wanted to travel, but I didn't have any money."]
+      - ["Eu achava que era fácil.", "I thought it was easy."]
+      - ["Ela estava cansada e foi dormir cedo.", "She was tired and went to bed early."]
+
+  - heading: Telling a story
+    body: |
+      Now put them together. The imperfeito sets the scene; the perfeito
+      says what happened.
+
+      *Era sábado e fazia sol. A gente estava na praia, e tinha muita
+      gente. De repente, começou a chover. A gente pegou as coisas e voltou
+      para o hotel.*
+
+      Look at each verb and ask: background, or event? *Era, fazia,
+      estava, tinha* set the scene. *Começou, pegou, voltou* move the story
+      on.
+    examples:
+      - ["Era sábado e fazia sol.", "It was Saturday and it was sunny."]
+      - ["De repente, começou a chover.", "Suddenly it started to rain."]
+      - ["A gente pegou as coisas e voltou para o hotel.", "We grabbed our things and went back to the hotel."]
+    tip: "*Começar a* + infinitive is \"to start doing\": *começou a chover* — it started raining. Don't forget the *a*."
+
+words:
+  - [uma vez, once]
+  - [de repente, suddenly]
+  - [aos sábados, on Saturdays]
+  - [enquanto, while]
+  - [cozinhar, to cook]
+  - [achar, to think (have an opinion)]
+  - [fácil, easy]
+  - [fazer sol, to be sunny]
+  - [coisa, thing]
+  - [pegar, to take / to grab / to catch]
+  - [voltar, to go back / to come back]
+  - [macaco, monkey]
+
+practice:
+  - type: choice
+    section: 1
+    prompt: "\"Last year I went to Rio.\""
+    options: [Ano passado fui ao Rio., Ano passado ia ao Rio.]
+    answer: Ano passado fui ao Rio.
+    why: One finished trip is an event, so it takes the perfeito.
+
+  - type: choice
+    section: 1
+    prompt: "\"I used to go to Rio every year.\""
+    options: [Eu ia ao Rio todo ano., Eu fui ao Rio todo ano.]
+    answer: Eu ia ao Rio todo ano.
+    why: Something you did again and again takes the imperfeito.
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: A festa foi ótima.
+    answers: [The party was great., It was a great party.]
+    why: Foi sums up an event that is over — the perfeito.
+
+  - type: fill
+    section: 2
+    prompt: "Ontem eu ___ peixe."
+    hint: comer, eu
+    translation: Yesterday I ate fish.
+    answers: [comi]
+    why: Ontem points to one moment, so use the perfeito — comi.
+
+  - type: fill
+    section: 2
+    prompt: "Aos sábados eu ___ à feira."
+    hint: ir, eu
+    translation: On Saturdays I used to go to the market.
+    answers: [ia]
+    why: Aos sábados means every Saturday — a habit, so the imperfeito.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: "Once I went to Manaus."
+    answers:
+      - "Uma vez eu fui a Manaus."
+      - "Uma vez fui a Manaus."
+      - "Uma vez eu fui para Manaus."
+      - "Uma vez fui para Manaus."
+      - "Uma vez eu fui pra Manaus."
+      - "Uma vez fui pra Manaus."
+      - "Eu fui a Manaus uma vez."
+      - "Fui a Manaus uma vez."
+      - "Uma vez eu estive em Manaus."
+      - "Uma vez estive em Manaus."
+    why: "Uma vez points to a single moment, so ir takes the perfeito — fui."
+
+  - type: fill
+    section: 3
+    prompt: "Eu estava ___ quando o telefone tocou."
+    hint: dormir
+    translation: I was sleeping when the phone rang.
+    answers: [dormindo]
+    why: Estava + -ndo is the background action that was in progress.
+
+  - type: fill
+    section: 3
+    prompt: "A gente estava jantando quando eles ___."
+    hint: chegar, eles
+    translation: We were having dinner when they arrived.
+    answers: [chegaram]
+    why: Their arrival interrupts the dinner — an event, so the perfeito.
+
+  - type: choice
+    section: 3
+    prompt: "\"She was reading while I was cooking.\""
+    options: [Ela lia enquanto eu cozinhava., Ela leu enquanto eu cozinhei., Ela lia enquanto eu cozinhei.]
+    answer: Ela lia enquanto eu cozinhava.
+    why: Two things going on at the same time are both background — both imperfeito.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: I was waiting for the bus.
+    answers: [Eu estava esperando o ônibus., Estava esperando o ônibus.]
+    why: English "was doing" is estava + -ndo.
+
+  - type: fill
+    section: 4
+    prompt: "Eu ___ viajar, mas não tinha dinheiro."
+    hint: querer, eu
+    translation: I wanted to travel, but I didn't have any money.
+    answers: [queria]
+    why: A wish in the past is background, so it takes the imperfeito — queria.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: "Ela achava que o hotel era caro."
+    answers:
+      - "She thought the hotel was expensive."
+      - "She thought that the hotel was expensive."
+    why: "Achava is a thought in the past — background, so imperfeito."
+
+  - type: choice
+    section: 5
+    prompt: "\"It was Saturday and it was sunny.\""
+    options: [Era sábado e fazia sol., Foi sábado e fez sol.]
+    answer: Era sábado e fazia sol.
+    why: The day and the weather set the scene — imperfeito.
+
+  - type: fill
+    section: 5
+    prompt: "De repente, ___ a chover."
+    hint: começar
+    translation: Suddenly it started to rain.
+    answers: [começou]
+    why: De repente marks an event at one moment — perfeito.
+
+  - type: translate
+    section: 5
+    direction: to-target
+    prompt: We went back to the hotel.
+    answers:
+      - Nós voltamos para o hotel.
+      - Voltamos para o hotel.
+      - A gente voltou para o hotel.
+      - Nós voltamos ao hotel.
+      - Voltamos ao hotel.
+      - A gente voltou ao hotel.
+      - Voltamos pro hotel.
+      - A gente voltou pro hotel.
+    why: Going back is an event that moves the story on — perfeito.

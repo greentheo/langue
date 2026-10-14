@@ -1,0 +1,210 @@
+title: "Fui à praia"
+subtitle: The past of ser, ir, estar, ter and fazer
+goal: say where you went, where you were, what you had and what you did, with fui, estive, tive and fiz
+minutes: 14
+
+sections:
+  - heading: Fui — I went, I was
+    body: |
+      The most common verbs are irregular in the past, just as they are in
+      the present. Here's a surprise: **ser** (to be) and **ir** (to go)
+      share the **same** past forms. *Fui* means both "I went" and "I was".
+
+      The rest of the sentence makes it clear. *Fui à praia* — *fui* + a
+      place — is "I went to the beach". *Foi ótimo* — *foi* + a
+      description — is "It was great".
+    table:
+      columns: [pronoun, ser / ir]
+      rows:
+        - [eu, fui]
+        - [você / ele / ela / a gente, foi]
+        - [nós, fomos]
+        - [vocês / eles / elas, foram]
+    examples:
+      - ["Ontem eu fui ao cinema.", "Yesterday I went to the cinema."]
+      - ["A gente foi pra praia no domingo.", "We went to the beach on Sunday."]
+      - ["A viagem foi ótima.", "The trip was great."]
+      - ["Como foi o fim de semana?", "How was the weekend?"]
+    tip: "*Como foi?* — How was it? How did it go? — is the question Brazilians ask after any trip, party or exam."
+
+  - heading: Estive — I was (there)
+    body: |
+      **Estar** has its own past. Use it the way you use *estar* in the
+      present: for where someone was, or how they were for a while.
+
+      - *Estive em Recife em julho.* — I was in Recife in July.
+      - *Ela esteve doente na semana passada.* — She was ill last week.
+
+      In conversation Brazilians often say *fui* for a visit — *Fui a
+      Recife em julho* — but you'll hear and read *estive* all the time.
+    table:
+      columns: [pronoun, estar]
+      rows:
+        - [eu, estive]
+        - [você / ele / ela / a gente, esteve]
+        - [nós, estivemos]
+        - [vocês / eles / elas, estiveram]
+    examples:
+      - ["Estivemos no Rio nas férias.", "We were in Rio on holiday."]
+      - ["Você já esteve em Manaus?", "Have you ever been to Manaus?"]
+
+  - heading: Tive — I had
+    body: |
+      **Ter** in the past is *tive, teve, tivemos, tiveram*. It keeps all
+      the uses you know: *tive fome* (I was hungry), *tive uma ideia* (I had
+      an idea), *ele teve febre* (he had a fever).
+
+      Remember that *tem* also means "there is". In the past, that becomes
+      **teve** — "there was": *Teve um show na praia.* — There was a concert
+      on the beach. In writing you'll see **houve** instead.
+    table:
+      columns: [pronoun, ter]
+      rows:
+        - [eu, tive]
+        - [você / ele / ela / a gente, teve]
+        - [nós, tivemos]
+        - [vocês / eles / elas, tiveram]
+    examples:
+      - ["Tive uma ideia.", "I had an idea."]
+      - ["Ele teve febre ontem.", "He had a fever yesterday."]
+      - ["Teve uma festa no sábado.", "There was a party on Saturday."]
+    tip: "For \"there was\", *teve* never changes: *teve um show*, *teve dois shows*. Never *tiveram* here."
+
+  - heading: Fiz — I did, I made
+    body: |
+      **Fazer** in the past is *fiz, fez, fizemos, fizeram*. Note the
+      vowels: *fiz* (I did) has an **i**, *fez* (he, she, you did) has an
+      **e**.
+
+      Weather also uses *fazer*: *faz calor* (it's hot), *faz frio* (it's
+      cold). In the past: *Fez muito calor.* — It was very hot.
+    table:
+      columns: [pronoun, fazer]
+      rows:
+        - [eu, fiz]
+        - [você / ele / ela / a gente, fez]
+        - [nós, fizemos]
+        - [vocês / eles / elas, fizeram]
+    examples:
+      - ["O que você fez no fim de semana?", "What did you do at the weekend?"]
+      - ["Fiz a mala ontem à noite.", "I packed my suitcase last night."]
+      - ["Fez frio em Curitiba.", "It was cold in Curitiba."]
+    tip: "*Fazer a mala* — literally \"to make the suitcase\" — is how you say \"to pack\"."
+
+words:
+  - [ótimo, great]
+  - [Como foi?, How was it? / How did it go?]
+  - [divertido, fun]
+  - [museu, museum]
+  - [festa, party]
+  - [show, concert / show]
+  - [ideia, idea]
+  - [febre, fever]
+  - [houve, there was (written)]
+  - [mala, suitcase]
+  - [fazer a mala, to pack (a suitcase)]
+  - [fazer calor, to be hot (weather)]
+  - [fazer frio, to be cold (weather)]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Ontem eu ___ ao museu."
+    hint: ir, eu
+    translation: Yesterday I went to the museum.
+    answers: [fui]
+    why: Fui is the past of ir with eu — and also the past of ser.
+
+  - type: fill
+    section: 1
+    prompt: "A festa ___ muito divertida."
+    hint: ser, ela
+    translation: The party was really fun.
+    answers: [foi]
+    why: Foi is the past of ser with ele and ela.
+
+  - type: choice
+    section: 1
+    prompt: "*Fui à praia.* What does *fui* mean here?"
+    options: [I went, I was, I go]
+    answer: I went
+    why: Fui followed by a place is the past of ir — I went.
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: Como foi a viagem?
+    answers: [How was the trip?, How was your trip?, How did the trip go?, How was the journey?, How was your journey?]
+    why: Como foi? means "how was it?" — foi is the past of ser.
+
+  - type: fill
+    section: 2
+    prompt: "Nós ___ em Salvador nas férias."
+    hint: estar, nós
+    translation: We were in Salvador on holiday.
+    answers: [estivemos]
+    why: Estar in the past with nós is estivemos.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: She was ill last week.
+    answers:
+      - Ela esteve doente semana passada.
+      - Ela esteve doente na semana passada.
+      - Semana passada ela esteve doente.
+      - Na semana passada ela esteve doente.
+      - Ela ficou doente semana passada.
+      - Ela ficou doente na semana passada.
+    why: For how someone was for a while, use the past of estar — esteve.
+
+  - type: translate
+    section: 2
+    direction: to-english
+    prompt: Vocês estiveram no Rio?
+    answers: [Were you in Rio?, Have you been to Rio?, Were you guys in Rio?, Were you all in Rio?, Did you go to Rio?]
+    why: Estiveram is the past of estar with vocês.
+
+  - type: fill
+    section: 3
+    prompt: "Ele ___ febre ontem."
+    hint: ter, ele
+    translation: He had a fever yesterday.
+    answers: [teve]
+    why: Ter in the past with ele is teve.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: I had an idea.
+    answers: [Tive uma ideia., Eu tive uma ideia.]
+    why: Ter in the past with eu is tive.
+
+  - type: choice
+    section: 3
+    prompt: "\"There was a party yesterday.\" (everyday speech)"
+    options: [Teve uma festa ontem., Tiveram uma festa ontem., Esteve uma festa ontem.]
+    answer: Teve uma festa ontem.
+    why: Tem means "there is", so its past, teve, means "there was" — and it never changes.
+
+  - type: fill
+    section: 4
+    prompt: "O que você ___ no sábado?"
+    hint: fazer, você
+    translation: What did you do on Saturday?
+    answers: [fez]
+    why: Fazer in the past with você is fez — with an e.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: I packed my suitcase.
+    answers: [Fiz a mala., Eu fiz a mala., Fiz a minha mala., Eu fiz a minha mala., Fiz minha mala., Eu fiz minha mala.]
+    why: To pack is fazer a mala, and "I did" is fiz.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Fez muito frio ontem.
+    answers: [It was very cold yesterday., It was really cold yesterday., Yesterday it was very cold., Yesterday it was really cold.]
+    why: Weather uses fazer, and fez is its past — fez frio, it was cold.

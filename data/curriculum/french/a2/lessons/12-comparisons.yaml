@@ -1,0 +1,212 @@
+title: "Plus rapide que le bus"
+subtitle: Comparing things, and saying which is best
+goal: compare people and things with *plus, moins, aussi… que*, use *meilleur* and *mieux*, and say which is the biggest, the cheapest or the best
+minutes: 15
+
+sections:
+  - heading: "More, less, as… as"
+    body: |
+      To compare two things, put **plus** (more), **moins** (less) or
+      **aussi** (as) before the adjective, and **que** (than, as) after
+      it. *Que* becomes *qu'* before a vowel.
+
+      - *Le train est **plus** rapide **que** le bus.* — The train is
+        faster than the bus.
+      - *Le bus est **moins** cher **que** le train.* — The bus is cheaper
+        than the train.
+      - *Paul est **aussi** grand **que** son père.* — Paul is as tall as
+        his father.
+
+      The adjective still agrees: *Ma sœur est plus grand**e** que moi.*
+      After *que*, "me" is **moi** and "you" is **toi**.
+    examples:
+      - ["L'espagnol est plus facile que le français ?", "Is Spanish easier than French?"]
+      - ["Le bus est plus lent que le train.", "The bus is slower than the train."]
+      - ["Ma ville est aussi belle que Paris.", "My town is as beautiful as Paris."]
+    tip: "English adds *-er* (faster, cheaper). French never does: it's always *plus rapide*, *moins cher*."
+
+  - heading: Comparing amounts and actions
+    body: |
+      With a **noun**, use **plus de, moins de** or **autant de** (as
+      much, as many):
+
+      - *J'ai **plus de** devoirs **que** toi.* — I have more homework
+        than you.
+      - *Il y a **moins de** monde **qu'**hier.* — There are fewer people
+        than yesterday.
+
+      With a **verb**, put **plus, moins** or **autant** after it:
+
+      - *Elle travaille **plus que** moi.* — She works more than me.
+      - *Je dors **autant que** mon chat.* — I sleep as much as my cat.
+    examples:
+      - ["Nous avons moins de devoirs que vous.", "We have less homework than you."]
+      - ["Il mange autant que moi.", "He eats as much as me."]
+
+  - heading: "Better: meilleur and mieux"
+    body: |
+      English has one word, "better". French has two:
+
+      - **meilleur** describes a **noun**. It's an adjective, so it
+        agrees: *un **meilleur** hôtel, une **meilleure** idée*.
+      - **mieux** goes with a **verb**, and never changes: *Elle chante
+        **mieux** que moi.*
+
+      Never say *plus bon* or *plus bien*.
+    examples:
+      - ["Ce restaurant est meilleur que l'autre.", "This restaurant is better than the other one."]
+      - ["Tu parles mieux français que moi.", "You speak French better than me."]
+      - ["Ça va mieux ?", "Are you feeling better?"]
+    tip: "A quick test: would you say \"good\" in English? Then use *meilleur*. Would you say \"well\"? Then use *mieux*."
+
+  - heading: The best, the most
+    body: |
+      To say "the most" or "the least", put **le, la** or **les** before
+      *plus* or *moins*. "In" after it is **de**.
+
+      If the adjective normally goes **after** the noun, *le, la* or *les*
+      appears twice: *l'hôtel **le moins cher*** — the cheapest hotel.
+
+      "The best" is **le meilleur, la meilleure**.
+    examples:
+      - ["Paris est la plus grande ville de France.", "Paris is the biggest city in France."]
+      - ["C'est l'hôtel le moins cher de la ville.", "It's the cheapest hotel in town."]
+      - ["C'est le meilleur restaurant de la ville.", "It's the best restaurant in town."]
+      - ["C'est la question la plus difficile.", "It's the most difficult question."]
+    tip: "\"In the world\" after a superlative is *du monde*, not *dans le monde*: *le plus grand du monde*."
+
+words:
+  - [plus… que, more… than]
+  - [moins… que, less… than]
+  - [aussi… que, as… as]
+  - [autant, as much]
+  - [meilleur / meilleure, better]
+  - [mieux, better (with a verb)]
+  - [le meilleur / la meilleure, the best]
+  - [rapide, "fast, quick"]
+  - [lent / lente, slow]
+  - [cher / chère, expensive]
+  - [la question, the question]
+  - [la ville, "the town, the city"]
+  - [facile, easy]
+  - [difficile, difficult]
+  - [une idée, an idea]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Le train est ___ rapide que le bus."
+    hint: (more)
+    translation: The train is faster than the bus.
+    answers: [plus]
+    why: Plus + adjective + que is how French says "faster than".
+
+  - type: fill
+    section: 1
+    prompt: "Le bus est moins cher ___ le train."
+    hint: (than)
+    translation: The bus is cheaper than the train.
+    answers: [que]
+    why: "\"Than\" in a comparison is que."
+
+  - type: translate
+    section: 1
+    direction: to-target
+    prompt: Paul is as tall as his father.
+    answers: ["Paul est aussi grand que son père."]
+    why: Aussi + adjective + que means "as… as".
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: Ma sœur est plus grande que moi.
+    answers: ["My sister is taller than me.", "My sister is taller than I am.", "My sister is bigger than me.", "My sister is bigger than I am."]
+    why: Plus grande que means taller (or bigger) than, and grande agrees with ma sœur.
+
+  - type: fill
+    section: 2
+    prompt: "J'ai ___ de devoirs que toi."
+    hint: (more)
+    translation: I have more homework than you.
+    answers: [plus]
+    why: With a noun, "more" is plus de.
+
+  - type: choice
+    section: 2
+    prompt: "How do you say \"I have as many friends as you\"?"
+    options: ["J'ai aussi d'amis que toi.", "J'ai autant d'amis que toi."]
+    answer: "J'ai autant d'amis que toi."
+    why: With a noun, "as many" is autant de, not aussi.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: She works more than me.
+    answers: ["Elle travaille plus que moi."]
+    why: With a verb, plus que goes after it.
+
+  - type: choice
+    section: 3
+    prompt: "How do you say \"She sings better than me\"?"
+    options: [Elle chante meilleur que moi., Elle chante mieux que moi.]
+    answer: Elle chante mieux que moi.
+    why: Better with a verb (singing well) is mieux.
+
+  - type: fill
+    section: 3
+    prompt: "C'est une ___ idée."
+    hint: (better)
+    translation: It's a better idea.
+    answers: [meilleure]
+    why: Meilleur describes a noun, and idée is feminine, so it adds -e.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: You speak French better than me. (to a friend)
+    answers: ["Tu parles mieux français que moi.", "Tu parles français mieux que moi."]
+    why: Speaking well is about a verb, so "better" is mieux.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: Ce restaurant est meilleur.
+    answers: ["This restaurant is better.", "That restaurant is better."]
+    why: Meilleur is "better" describing a noun.
+
+  - type: fill
+    section: 4
+    prompt: "Paris est ___ plus grande ville de France."
+    hint: (the)
+    translation: Paris is the biggest city in France.
+    answers: [la]
+    why: Ville is feminine, so "the biggest" is la plus grande.
+
+  - type: fill
+    section: 4
+    prompt: "C'est le ___ restaurant de la ville."
+    hint: (best)
+    translation: It's the best restaurant in town.
+    answers: [meilleur]
+    why: "\"The best\" with a masculine noun is le meilleur."
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: It's the cheapest hotel.
+    answers: ["C'est l'hôtel le moins cher.", "C'est l'hôtel le meilleur marché."]
+    why: Cher goes after the noun, so le appears twice, in l'hôtel and le moins cher.
+
+  - type: choice
+    section: 4
+    prompt: "How do you say \"the biggest in the world\"?"
+    options: [le plus grand dans le monde, le plus grand du monde]
+    answer: le plus grand du monde
+    why: After a superlative, "in" is de, and de + le becomes du.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Paris est la plus grande ville de France.
+    answers: ["Paris is the biggest city in France.", "Paris is the largest city in France.", "Paris is the biggest town in France.", "Paris is the largest town in France."]
+    why: La plus grande means the biggest, and "in France" after a superlative is de France.

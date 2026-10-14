@@ -1,0 +1,779 @@
+# Role-plays for the A2 guided path (Brazilian Portuguese). Each dialogue
+# uses only what A1 and A2 units 1 to its own unit teach; see the
+# "Dialogues file" section of data/curriculum/README.md.
+
+dialogues:
+  # ── A2.1 What did you do? ───────────────────────────────────────────────
+  - id: monday-at-school
+    unit: 1
+    title: Monday morning
+    setting: It's Monday morning at school in Belo Horizonte. Your friend Rafa wants to hear about your weekend.
+    with: Rafa, a friend from class
+    lines:
+      - them: E aí! Como foi o fim de semana?
+        english: Hey! How was the weekend?
+      - you: Say it was great — you went to the beach.
+        answers:
+          - Foi ótimo! A gente foi à praia.
+          - Foi ótimo! A gente foi pra praia.
+          - Foi ótimo! Nós fomos à praia.
+          - Foi ótimo! Fomos à praia.
+          - Foi ótimo! A gente foi para a praia.
+      - them: Que legal! E o que vocês fizeram lá?
+        english: Cool! And what did you do there?
+      - you: Say you swam and played volleyball.
+        answers:
+          - A gente nadou e jogou vôlei.
+          - Nós nadamos e jogamos vôlei.
+          - Nadamos e jogamos vôlei.
+          - Eu nadei e joguei vôlei.
+          - Nadei e joguei vôlei.
+      - them: E você assistiu o jogo do Atlético no domingo?
+        english: And did you watch the Atlético game on Sunday?
+      - you: Say no — you got home late.
+        answers:
+          - Não, cheguei em casa tarde.
+          - Não, eu cheguei em casa tarde.
+          - Não, cheguei tarde em casa.
+          - Não, cheguei tarde.
+          - Não, eu cheguei tarde.
+      - them: O Atlético ganhou de quatro a zero!
+        english: Atlético won four-nil!
+      - you: Say you don't believe it!
+        answers:
+          - Não acredito!
+          - Eu não acredito!
+          - Nossa, não acredito!
+      - them: É sério! E você, já estudou para a prova de hoje?
+        english: Seriously! And you — have you studied for today's test yet?
+      - you: Say not yet.
+        answers:
+          - Ainda não.
+          - Não, ainda não.
+          - Ainda não estudei.
+
+  # ── A2.2 Trips and holidays ─────────────────────────────────────────────
+  - id: bus-to-paraty
+    unit: 2
+    title: At the bus station
+    setting: You're at the rodoviária, the bus station, in Rio. You want a bus ticket to Paraty for the weekend.
+    with: the ticket seller
+    lines:
+      - them: Bom dia! Pois não?
+        english: Good morning! How can I help?
+      - you: Ask for a ticket to Paraty, please.
+        answers:
+          - Uma passagem para Paraty, por favor.
+          - Uma passagem pra Paraty, por favor.
+          - Queria uma passagem para Paraty, por favor.
+          - Eu queria uma passagem para Paraty.
+          - Uma passagem para Paraty.
+      - them: Só ida ou ida e volta?
+        english: One way or round trip?
+      - you: Say a round trip, please.
+        answers:
+          - Ida e volta, por favor.
+          - Ida e volta.
+          - Quero ida e volta, por favor.
+      - them: São cento e oitenta reais. O ônibus sai às dez e quinze.
+        english: That's a hundred and eighty reais. The bus leaves at a quarter past ten.
+      - you: Ask which platform it leaves from.
+        answers:
+          - De qual plataforma sai?
+          - De que plataforma sai?
+          - Sai de qual plataforma?
+          - De qual plataforma sai o ônibus?
+      - them: Da plataforma quatro.
+        english: From platform four.
+      - you: Ask how long the trip takes.
+        answers:
+          - Quanto tempo demora?
+          - Demora quanto tempo?
+          - E quanto tempo demora?
+          - Quanto tempo demora a viagem?
+      - them: Umas quatro horas. Boa viagem!
+        english: About four hours. Have a good trip!
+
+  - id: back-from-salvador
+    unit: 2
+    title: How was the trip?
+    setting: You're back at work after a holiday in Salvador. Your colleague Marcos stops by your desk.
+    with: Marcos, a colleague
+    lines:
+      - them: Oi! Você voltou! Como foi a viagem?
+        english: Hi! You're back! How was the trip?
+      - you: Say it was great.
+        answers:
+          - Foi ótima!
+          - Foi ótimo!
+          - Foi muito boa!
+          - Foi ótima, obrigado!
+          - Foi ótima, obrigada!
+      - them: Que bom! Vocês foram de avião?
+        english: Great! Did you fly?
+      - you: Say no — you went by bus.
+        answers:
+          - Não, a gente foi de ônibus.
+          - Não, nós fomos de ônibus.
+          - Não, fomos de ônibus.
+          - Não, fui de ônibus.
+          - Não, eu fui de ônibus.
+      - them: De ônibus? Até Salvador? E como foi?
+        english: By bus? All the way to Salvador? And how did it go?
+      - you: Say the bus was late, and you arrived at three in the morning.
+        answers:
+          - O ônibus atrasou e a gente chegou às três da manhã.
+          - O ônibus atrasou e chegamos às três da manhã.
+          - O ônibus atrasou e nós chegamos às três da manhã.
+          - O ônibus atrasou e a gente chegou às três da madrugada.
+          - O ônibus atrasou e eu cheguei às três da manhã.
+      - them: Nossa! E o que vocês fizeram lá?
+        english: Wow! And what did you do there?
+      - you: Say you went to a concert on Saturday.
+        answers:
+          - A gente foi a um show no sábado.
+          - Fomos a um show no sábado.
+          - Nós fomos a um show no sábado.
+          - A gente foi num show no sábado.
+          - Fui a um show no sábado.
+      - them: Que legal! E você comprou alguma coisa pra mim?
+        english: Cool! And did you buy anything for me?
+      - you: Say of course — you bought him a souvenir.
+        answers:
+          - Claro! Comprei uma lembrancinha para você.
+          - Claro! Comprei uma lembrancinha pra você.
+          - Claro! Eu comprei uma lembrancinha para você.
+          - Comprei uma lembrancinha para você.
+          - Comprei uma lembrancinha pra você.
+
+  # ── A2.3 Right now ──────────────────────────────────────────────────────
+  - id: is-pedro-there
+    unit: 3
+    title: Is Pedro there?
+    setting: You're waiting for your friend Pedro outside the cinema, and he's late. You call his house, and his mother answers.
+    with: Dona Regina, Pedro's mother
+    lines:
+      - them: Alô?
+        english: Hello?
+      - you: Say good afternoon, and ask if Pedro is there.
+        answers:
+          - Boa tarde! O Pedro está?
+          - Boa tarde! O Pedro tá?
+          - Boa tarde! O Pedro está aí?
+          - Boa tarde! O Pedro tá aí?
+          - Oi, boa tarde! O Pedro está?
+      - them: Quem fala?
+        english: Who's calling?
+      - you: Say it's Sam, a friend of his.
+        answers:
+          - Aqui é o Sam, um amigo dele.
+          - É o Sam, um amigo dele.
+          - Aqui é o *, um amigo dele.
+          - Aqui é a *, uma amiga dele.
+          - É o *, amigo dele.
+          - É a *, amiga dele.
+      - them: Ah, oi! O Pedro está tomando banho agora. Vocês combinaram alguma coisa?
+        english: Oh, hi! Pedro's in the shower right now. Did you two have plans?
+      - you: Say yes — you're waiting for him at the cinema.
+        answers:
+          - Sim! Estou esperando no cinema.
+          - Combinamos, sim! Estou esperando no cinema.
+          - Sim, estou esperando ele no cinema.
+          - Sim, tô esperando no cinema.
+          - Estou esperando na porta do cinema.
+      - them: Ai, que vergonha! Desculpa!
+        english: Oh, how embarrassing! Sorry!
+      - you: Ask if you can leave a message.
+        answers:
+          - Posso deixar um recado?
+          - Posso deixar um recado, por favor?
+          - Eu posso deixar um recado?
+      - them: Claro! Pode falar.
+        english: Of course! Go ahead.
+      - you: Ask her to ask him to call you.
+        answers:
+          - Pode pedir pra ele me ligar?
+          - Pode pedir para ele me ligar?
+          - Pode falar pra ele me ligar?
+          - Pode falar para ele me ligar?
+          - A senhora pode pedir pra ele me ligar?
+      - them: Pode deixar! Ele te liga daqui a pouco. Tchau!
+        english: Will do! He'll call you in a minute. Bye!
+
+  # ── A2.4 When I was little ──────────────────────────────────────────────
+  - id: when-you-were-little
+    unit: 4
+    title: When you were little
+    setting: You're having Sunday lunch with your Brazilian host family. Grandpa Zé wants to know about your childhood.
+    with: Seu Zé, your host grandfather
+    lines:
+      - them: Me conta, onde você morava quando era criança?
+        english: Tell me, where did you live when you were a child?
+      - you: Say you lived in a small town.
+        answers:
+          - Eu morava numa cidade pequena.
+          - Morava numa cidade pequena.
+          - Eu morava em uma cidade pequena.
+          - Morava em uma cidade pequena.
+      - them: E você tinha cachorro?
+        english: And did you have a dog?
+      - you: Say no — you had a black cat.
+        answers:
+          - Não, eu tinha um gato preto.
+          - Não, tinha um gato preto.
+          - Não, eu tinha uma gata preta.
+          - Não, tinha uma gata preta.
+      - them: Que bom! E o que você fazia depois da escola?
+        english: Nice! And what did you use to do after school?
+      - you: Say you always played soccer with your friends.
+        answers:
+          - Eu sempre jogava futebol com os meus amigos.
+          - Eu sempre jogava futebol com meus amigos.
+          - Sempre jogava futebol com os meus amigos.
+          - Sempre jogava futebol com meus amigos.
+          - Eu jogava futebol com os meus amigos.
+      - them: Eu também! E você gostava da escola?
+        english: Me too! And did you like school?
+      - you: Say yes, but you were very shy.
+        answers:
+          - Gostava, sim, mas eu era muito tímido.
+          - Gostava, sim, mas eu era muito tímida.
+          - Sim, mas eu era muito tímido.
+          - Sim, mas eu era muito tímida.
+          - Gostava, mas era muito tímido.
+          - Gostava, mas era muito tímida.
+      - them: Tímido? Você? Não acredito!
+        english: Shy? You? I don't believe it!
+
+  - id: caught-in-the-rain
+    unit: 4
+    title: Caught in the rain
+    setting: You get home soaking wet. Your flatmate Carla looks up from the sofa.
+    with: Carla, your flatmate
+    lines:
+      - them: Nossa! O que aconteceu?
+        english: Wow! What happened?
+      - you: Say you were waiting for the bus when it started to rain.
+        answers:
+          - Eu estava esperando o ônibus quando começou a chover.
+          - Estava esperando o ônibus quando começou a chover.
+          - Quando eu estava esperando o ônibus, começou a chover.
+          - Eu estava no ponto de ônibus quando começou a chover.
+      - them: E você não tinha guarda-chuva?
+        english: And you didn't have an umbrella?
+      - you: Say no — it was at home.
+        answers:
+          - Não, estava em casa.
+          - Não, ele estava em casa.
+          - Não, o guarda-chuva estava em casa.
+          - Estava em casa.
+      - them: Ai, que azar! E o ônibus?
+        english: Oh, what bad luck! And the bus?
+      - you: Say it was full, so you came home on foot.
+        answers:
+          - Estava cheio, então eu vim a pé.
+          - Estava cheio, então vim a pé.
+          - Estava cheio e eu vim a pé.
+          - Estava muito cheio, então eu vim a pé.
+          - O ônibus estava cheio, então eu vim a pé.
+      - them: A pé? Na chuva? Vai tomar um banho quente, vai!
+        english: On foot? In the rain? Go and have a hot shower, go on!
+      - you: Say OK — you're really cold.
+        answers:
+          - Tá bom! Estou com muito frio.
+          - Tá bom, tô com muito frio.
+          - Está bem! Estou com muito frio.
+          - Estou com muito frio.
+
+  # ── A2.5 How long? ──────────────────────────────────────────────────────
+  - id: at-the-pharmacy
+    unit: 5
+    title: At the pharmacy
+    setting: You've had a sore throat for days. You go into a pharmacy in Porto Alegre.
+    with: the pharmacist
+    lines:
+      - them: Boa tarde! Posso ajudar?
+        english: Good afternoon! Can I help you?
+      - you: Say you've had a sore throat since Monday.
+        answers:
+          - Estou com dor de garganta desde segunda.
+          - Tô com dor de garganta desde segunda.
+          - Estou com dor de garganta desde segunda-feira.
+          - Eu estou com dor de garganta desde segunda.
+      - them: E está com febre também?
+        english: And do you have a fever too?
+      - you: Say no, but you've had a cough for three days.
+        answers:
+          - Não, mas estou com tosse há três dias.
+          - Não, mas faz três dias que estou com tosse.
+          - Não, mas estou com tosse faz três dias.
+          - Não, mas tô com tosse há três dias.
+          - Febre não, mas estou com tosse há três dias.
+      - them: Entendi. Esse xarope é muito bom. Você tem alguma alergia?
+        english: I see. This syrup is very good. Do you have any allergies?
+      - you: Say yes — you're allergic to penicillin.
+        answers:
+          - Sim, sou alérgico à penicilina.
+          - Sim, sou alérgica à penicilina.
+          - Tenho, sim. Sou alérgico à penicilina.
+          - Tenho, sim. Sou alérgica à penicilina.
+          - Sou alérgico à penicilina.
+          - Sou alérgica à penicilina.
+      - them: Sem problema, esse não tem penicilina.
+        english: No problem, this one has no penicillin in it.
+      - you: Ask how many times a day you take it.
+        answers:
+          - Quantas vezes por dia?
+          - Quantas vezes por dia eu tomo?
+          - Tomo quantas vezes por dia?
+      - them: Três vezes por dia, depois das refeições.
+        english: Three times a day, after meals.
+      - you: Ask if you need a prescription.
+        answers:
+          - Precisa de receita?
+          - Preciso de receita?
+          - Eu preciso de receita?
+          - Precisa de receita médica?
+      - them: Não precisa. Melhoras!
+        english: You don't. Get well soon!
+
+  # ── A2.6 People and places you know ─────────────────────────────────────
+  - id: waiting-for-dinner
+    unit: 6
+    title: Still waiting
+    setting: You're having dinner with three friends at a restaurant in Belém. It's busy, and the food is taking a long time.
+    with: the waiter
+    lines:
+      - them: Boa noite! Vocês já conhecem a casa?
+        english: Good evening! Have you been here before?
+      - you: Say no — and ask what the house specialty is.
+        answers:
+          - Não. Qual é a especialidade da casa?
+          - Ainda não. Qual é a especialidade da casa?
+          - Não conheço. Qual é a especialidade da casa?
+          - Não. Qual a especialidade da casa?
+      - them: É a moqueca de camarão. Mas hoje a cozinha está um pouco atrasada...
+        english: It's the shrimp moqueca. But the kitchen is running a bit late tonight...
+      - you: (Forty minutes later) Say excuse me — your order hasn't come yet.
+        answers:
+          - Com licença, nosso pedido ainda não chegou.
+          - Com licença, o nosso pedido ainda não chegou.
+          - Desculpe, nosso pedido ainda não chegou.
+          - Nosso pedido ainda não chegou.
+          - O nosso pedido ainda não chegou.
+      - them: Me desculpe! Faz muito tempo que vocês pediram?
+        english: I'm so sorry! Did you order a long time ago?
+      - you: Say you ordered forty minutes ago.
+        answers:
+          - A gente pediu há quarenta minutos.
+          - A gente pediu faz quarenta minutos.
+          - Pedimos há quarenta minutos.
+          - Nós pedimos há quarenta minutos.
+          - Faz quarenta minutos que a gente pediu.
+      - them: (Mais tarde) Aqui está! Três moquecas de camarão e um frango.
+        english: (Later) Here you are! Three shrimp moquecas and a chicken.
+      - you: Say sorry, but that's not what you ordered.
+        answers:
+          - Desculpe, mas não foi isso que eu pedi.
+          - Desculpa, mas não foi isso que eu pedi.
+          - Não foi isso que eu pedi.
+          - Desculpe, mas não é isso que eu pedi.
+      - them: Ah, me desculpe! Eu troco agora mesmo.
+        english: Oh, I'm so sorry! I'll change it right away.
+      - you: (At the end) Ask if you can split the bill.
+        answers:
+          - Dá pra dividir a conta?
+          - Dá para dividir a conta?
+          - Pode dividir a conta?
+          - A gente pode dividir a conta?
+      - them: Claro! São cento e vinte reais cada um, com os dez por cento.
+        english: Of course! It's a hundred and twenty reais each, with the ten per cent service.
+
+  # ── A2.7 Me, you, for her ───────────────────────────────────────────────
+  - id: swapping-a-jacket
+    unit: 7
+    title: Can I exchange it?
+    setting: Last week you bought a jacket at a shopping mall in Curitiba. It doesn't fit, so you take it back.
+    with: the shop assistant
+    lines:
+      - them: Oi, boa tarde! Posso te ajudar?
+        english: Hi, good afternoon! Can I help you?
+      - you: Say you bought this jacket last week, but it's too small.
+        answers:
+          - Comprei esta jaqueta semana passada, mas ficou pequena.
+          - Comprei essa jaqueta semana passada, mas ficou pequena.
+          - Comprei esta jaqueta na semana passada, mas ficou pequena.
+          - Comprei essa jaqueta na semana passada, mas ficou pequena.
+          - Eu comprei essa jaqueta semana passada, mas ficou pequena.
+      - them: Ah, que pena! Você tem a nota fiscal?
+        english: Oh, what a shame! Do you have the receipt?
+      - you: Say yes — here it is.
+        answers:
+          - Tenho, sim. Está aqui.
+          - Sim, está aqui.
+          - Tenho. Aqui está.
+          - Sim, aqui está.
+      - them: Ótimo. Você quer trocar por outra cor ou outro tamanho?
+        english: Great. Do you want to swap it for another colour or another size?
+      - you: Ask if they have a bigger size.
+        answers:
+          - Tem um tamanho maior?
+          - Vocês têm um tamanho maior?
+          - Tem num tamanho maior?
+          - Quero um tamanho maior.
+      - them: Tem, sim. Experimenta essa aqui, que é G.
+        english: Yes, we do. Try this one on — it's a large.
+      - you: Ask where the fitting room is.
+        answers:
+          - Onde fica o provador?
+          - Onde é o provador?
+          - Cadê o provador?
+      - them: (Depois) E aí? Ficou bom?
+        english: (Afterwards) So? Does it fit?
+      - you: Say it looks great, and you'll take it.
+        answers:
+          - Ficou ótima! Vou levar.
+          - Ficou ótimo! Vou levar.
+          - Ficou ótima! Vou levar essa.
+          - Ficou ótima, vou levar ela.
+          - Ficou perfeita! Vou levar.
+
+  - id: the-missing-hoodie
+    unit: 7
+    title: Where's my hoodie?
+    setting: You're on a school trip, sharing a room with your friend Tiago. It's cold, and you can't find your hoodie anywhere.
+    with: Tiago, your roommate on the trip
+    lines:
+      - them: Que frio! Você não trouxe casaco?
+        english: It's freezing! Didn't you bring a coat?
+      - you: Say you have a hoodie, but you can't find it.
+        answers:
+          - Tenho um moletom, mas não encontro.
+          - Eu tenho um moletom, mas não encontro.
+          - Tenho um moletom, mas não estou encontrando.
+          - Tenho um moletom, mas não estou achando.
+          - Tenho um moletom, mas não acho.
+      - them: Um moletom azul? Eu vi ele ontem na mochila da Júlia.
+        english: A blue hoodie? I saw it yesterday in Júlia's backpack.
+      - you: Say oh, that's right — you lent it to her on Tuesday.
+        answers:
+          - Ah, é! Eu emprestei pra ela na terça.
+          - Ah, é! Emprestei pra ela na terça.
+          - Ah, é! Eu emprestei para ela na terça.
+          - Ah, é! Emprestei para ela na terça.
+          - É mesmo! Eu emprestei pra ela na terça.
+      - them: Olha, eu te empresto o meu casaco.
+        english: Look, I'll lend you my coat.
+      - you: Thank him — but say it's too big for you.
+        answers:
+          - Obrigado! Mas é muito grande pra mim.
+          - Obrigada! Mas é muito grande pra mim.
+          - Obrigado! Mas é muito grande para mim.
+          - Obrigada! Mas é muito grande para mim.
+          - Valeu! Mas é muito grande pra mim.
+      - them: Então manda uma mensagem pra Júlia!
+        english: Then send Júlia a message!
+      - you: Say OK — you'll send her a message now.
+        answers:
+          - Tá bom! Vou mandar uma mensagem pra ela agora.
+          - Tá bom! Vou mandar uma mensagem para ela agora.
+          - Vou mandar uma mensagem pra ela agora.
+          - Tá bom! Vou mandar mensagem pra ela agora.
+          - Boa ideia! Vou mandar uma mensagem pra ela agora.
+      - them: (Dez minutos depois) E aí? Ela respondeu?
+        english: (Ten minutes later) So? Did she reply?
+      - you: Say yes — she's on her way with the hoodie.
+        answers:
+          - Respondeu! Ela está vindo com o moletom.
+          - Respondeu, sim! Ela está vindo com o moletom.
+          - Respondeu! Ela tá vindo com o moletom.
+          - Sim! Ela está vindo com o moletom.
+
+  # ── A2.8 This one or that one? ──────────────────────────────────────────
+  - id: pousada-check-in
+    unit: 8
+    title: A room at the pousada
+    setting: You arrive at a pousada, a small guesthouse, on Ilha Grande. You booked a room online.
+    with: the receptionist
+    lines:
+      - them: Boa tarde! Bem-vindos à Pousada Maré!
+        english: Good afternoon! Welcome to Pousada Maré!
+      - you: Say good afternoon — you have a reservation under the name Silva.
+        answers:
+          - Boa tarde! Tenho uma reserva em nome de Silva.
+          - Boa tarde! Eu tenho uma reserva em nome de Silva.
+          - Boa tarde! Tenho uma reserva no nome de Silva.
+          - Tenho uma reserva em nome de Silva.
+      - them: Ah, sim! Um quarto de casal, por três noites.
+        english: Ah, yes! A double room, for three nights.
+      - you: Ask if breakfast is included.
+        answers:
+          - O café da manhã está incluído?
+          - O café da manhã está incluso?
+          - O café da manhã tá incluído?
+          - E o café da manhã está incluído?
+      - them: Está, sim, das sete às dez. O quarto de vocês é aquele ali, perto da rua.
+        english: Yes, it is, from seven to ten. Your room is that one over there, by the street.
+      - you: (An hour later, back at reception) Tell her the air conditioning isn't working.
+        answers:
+          - O ar-condicionado não está funcionando.
+          - O ar-condicionado não tá funcionando.
+          - O ar-condicionado não funciona.
+          - Tem um problema no quarto. O ar-condicionado não está funcionando.
+      - them: Ah, me desculpe! E também tem muito barulho da rua, não é?
+        english: Oh, I'm sorry! And there's a lot of noise from the street too, isn't there?
+      - you: Ask if she has a quieter room.
+        answers:
+          - Tem um quarto mais tranquilo?
+          - Vocês têm um quarto mais tranquilo?
+          - Você tem um quarto mais tranquilo?
+          - Tem outro quarto mais tranquilo?
+      - them: Tem aquele lá em cima. É maior e mais bonito, mas é mais caro.
+        english: There's that one upstairs. It's bigger and nicer, but it's more expensive.
+      - you: Ask how much it is per night.
+        answers:
+          - Quanto é a diária?
+          - Quanto custa a diária?
+          - E quanto é a diária?
+          - Quanto é a diária daquele quarto?
+      - them: Trezentos reais. Mas para vocês, faço pelo mesmo preço!
+        english: Three hundred reais. But for you, I'll do it for the same price!
+
+  - id: phone-charger
+    unit: 8
+    title: Which one is better?
+    setting: Your phone's battery is almost dead. You stop at a market stall in São Paulo that sells chargers.
+    with: the stallholder
+    lines:
+      - them: Pois não?
+        english: Can I help you?
+      - you: Say you're looking for a charger for your phone.
+        answers:
+          - Estou procurando um carregador pro meu celular.
+          - Estou procurando um carregador para o meu celular.
+          - Estou procurando um carregador para meu celular.
+          - Tô procurando um carregador pro meu celular.
+          - Eu estou procurando um carregador pro meu celular.
+      - them: Tenho esse aqui por trinta reais e aquele ali por cinquenta.
+        english: I've got this one here for thirty reais and that one over there for fifty.
+      - you: Ask which one is better.
+        answers:
+          - Qual é o melhor?
+          - Qual é melhor?
+          - Qual deles é o melhor?
+          - Qual é o melhor, esse ou aquele?
+      - them: Aquele é mais rápido, e é original. Esse é mais barato, mas é pior.
+        english: That one's faster, and it's the real brand. This one's cheaper, but it's worse.
+      - you: Ask if he'll give you a discount on that one.
+        answers:
+          - Você me dá um desconto naquele?
+          - Me dá um desconto naquele?
+          - Você faz um desconto naquele?
+          - Faz um desconto naquele?
+          - Tem desconto naquele?
+      - them: Faço por quarenta e cinco.
+        english: I'll do it for forty-five.
+      - you: Say OK — you'll take that one.
+        answers:
+          - Tá bom! Vou levar aquele.
+          - Tá bom, vou levar aquele ali.
+          - Combinado! Vou levar aquele.
+          - Vou levar aquele.
+          - Tá bom! Eu levo aquele.
+      - them: Ótimo! Vai pagar como?
+        english: Great! How are you paying?
+      - you: Ask if you can pay with Pix.
+        answers:
+          - Posso pagar no Pix?
+          - Posso pagar com Pix?
+          - Aceita Pix?
+          - Você aceita Pix?
+          - Pode ser no Pix?
+      - them: Pode, claro!
+        english: Of course you can!
+
+  # ── A2.9 Turn right ─────────────────────────────────────────────────────
+  - id: host-family-chores
+    unit: 9
+    title: Your new home
+    setting: You've just arrived to stay with a family in Campinas for a month. Your host, Dona Sônia, opens the door.
+    with: Dona Sônia, your host
+    lines:
+      - them: Entra, entra! Fique à vontade!
+        english: Come in, come in! Make yourself at home!
+      - you: Thank her, and ask where to put your suitcase.
+        answers:
+          - Obrigado! Onde eu coloco a mala?
+          - Obrigada! Onde eu coloco a mala?
+          - Obrigado! Onde coloco a mala?
+          - Obrigada! Onde coloco a mala?
+          - Onde eu coloco a minha mala?
+      - them: No seu quarto, aquele ali no fim do corredor.
+        english: In your room — that one at the end of the hallway.
+      - you: (After dinner) Offer to help with the dishes.
+        answers:
+          - Posso ajudar com a louça?
+          - Posso te ajudar com a louça?
+          - A senhora quer ajuda com a louça?
+          - Quer ajuda com a louça?
+      - them: Que gentil! Então lave os copos, e eu lavo os pratos.
+        english: How kind! Then you wash the glasses, and I'll wash the plates.
+      - you: Say OK — and ask where the glasses go.
+        answers:
+          - Tá bom! Onde ficam os copos?
+          - Tá bem! Onde ficam os copos?
+          - Combinado! Onde ficam os copos?
+          - Onde ficam os copos?
+      - them: Naquele armário, em cima da pia. Ah, amanhã é dia de tirar o lixo. Você pode fazer isso?
+        english: In that cupboard, above the sink. Oh, tomorrow's the day to take out the trash. Can you do that?
+      - you: Say leave it to you!
+        answers:
+          - Pode deixar!
+          - Pode deixar comigo!
+          - Deixa comigo!
+          - Claro, pode deixar!
+      - them: Ótimo! Só não esqueça de fechar o portão, tá?
+        english: Great! Just don't forget to close the front gate, OK?
+      - you: Tell her not to worry.
+        answers:
+          - Não se preocupe!
+          - Não se preocupe, Dona Sônia!
+          - Não se preocupa!
+          - Pode ficar tranquila!
+
+  - id: way-to-the-metro
+    unit: 9
+    title: Which way to the metro?
+    setting: You've been living in São Paulo for a few months. A tourist stops you in the street to ask the way.
+    with: a tourist
+    lines:
+      - them: Com licença! Você sabe onde fica a estação de metrô?
+        english: Excuse me! Do you know where the metro station is?
+      - you: Say yes — it's near here.
+        answers:
+          - Sei, sim! É perto daqui.
+          - Sei! Fica perto daqui.
+          - Sei, sim. É aqui perto.
+          - Sim, é perto daqui.
+          - Sei, fica aqui perto.
+      - them: Que bom! Como eu chego lá?
+        english: Great! How do I get there?
+      - you: Tell him to go straight on and turn left at the traffic lights.
+        answers:
+          - Siga em frente e vire à esquerda no semáforo.
+          - Segue em frente e vira à esquerda no semáforo.
+          - Siga em frente e vire à esquerda no sinal.
+          - Vai em frente e vira à esquerda no semáforo.
+          - Siga reto e vire à esquerda no semáforo.
+      - them: No semáforo, à esquerda... E depois?
+        english: At the traffic lights, left... And then?
+      - you: Tell him to cross the street — the station is on the corner.
+        answers:
+          - Atravesse a rua. A estação fica na esquina.
+          - Atravesse a rua. A estação é na esquina.
+          - Atravessa a rua. A estação fica na esquina.
+          - Atravesse a rua, e a estação fica na esquina.
+      - them: É longe? Posso ir a pé?
+        english: Is it far? Can I walk?
+      - you: Say yes, he can — it's five minutes on foot.
+        answers:
+          - Pode, sim! São cinco minutos a pé.
+          - Pode! São cinco minutos a pé.
+          - Sim, são cinco minutos a pé.
+          - Pode ir a pé. São cinco minutos.
+      - them: Muito obrigado!
+        english: Thanks so much!
+      - you: Say you're welcome — have a good trip!
+        answers:
+          - De nada! Boa viagem!
+          - Por nada! Boa viagem!
+          - De nada! Boa viagem pra você!
+
+  # ── A2.10 What's next ───────────────────────────────────────────────────
+  - id: beach-on-the-weekend
+    unit: 10
+    title: Beach this weekend?
+    setting: It's Thursday evening. Your friend Duda sends you a voice message on WhatsApp.
+    with: Duda, your friend
+    lines:
+      - them: E aí! Bora pra praia no sábado? Vai fazer sol!
+        english: Hey! Shall we go to the beach on Saturday? It's going to be sunny!
+      - you: Say Saturday's no good — you're going to work.
+        answers:
+          - Sábado não vai dar. Vou trabalhar.
+          - No sábado não vai dar. Vou trabalhar.
+          - Sábado não vai dar, eu vou trabalhar.
+          - Não vai dar. Vou trabalhar no sábado.
+      - them: Poxa! E no domingo?
+        english: Aw! What about Sunday?
+      - you: Say Sunday works!
+        answers:
+          - Domingo pode ser!
+          - No domingo pode ser!
+          - Domingo eu topo!
+          - Pode ser! Domingo eu topo.
+      - them: Fechado! Vou chamar todo mundo — a Lu, o Rafa, a Bia...
+        english: Done! I'll invite everybody — Lu, Rafa, Bia...
+      - you: Ask where you'll all meet.
+        answers:
+          - Onde a gente se encontra?
+          - A gente se encontra onde?
+          - E onde a gente se encontra?
+          - Onde a gente vai se encontrar?
+      - them: Na estação, às nove. Ah, você tem alguma coisa pra levar? Guarda-sol, cadeira...
+        english: At the station, at nine. Oh — have you got anything to bring? A beach umbrella, a chair...
+      - you: Say you don't have anything, but you'll bring something to eat.
+        answers:
+          - Não tenho nada, mas eu levo alguma coisa pra comer.
+          - Não tenho nada, mas levo alguma coisa pra comer.
+          - Não tenho nada, mas eu levo alguma coisa para comer.
+          - Não tenho nada, mas vou levar alguma coisa pra comer.
+          - Não, não tenho nada. Mas eu levo alguma coisa pra comer.
+      - them: Perfeito! Será que vai chover?
+        english: Perfect! Do you think it'll rain?
+      - you: Say the weather forecast says it's going to be sunny.
+        answers:
+          - A previsão do tempo diz que vai fazer sol.
+          - A previsão diz que vai fazer sol.
+          - A previsão do tempo disse que vai fazer sol.
+          - A previsão do tempo diz que vai ter sol.
+
+  - id: first-day-internship
+    unit: 10
+    title: Your first day
+    setting: It's the first day of your internship at a company in São Paulo. Your manager, Cláudia, shows you around.
+    with: Cláudia, your manager
+    lines:
+      - them: Que bom ter você na equipe! Você tem alguma pergunta?
+        english: Great to have you on the team! Do you have any questions?
+      - you: Say yes — and ask what time the meeting is.
+        answers:
+          - Tenho, sim. A que horas é a reunião?
+          - Tenho. A que horas é a reunião?
+          - Sim. A que horas é a reunião?
+          - A que horas é a reunião?
+          - Que horas é a reunião?
+      - them: Às dez. Todo mundo vai estar lá. O diretor falará sobre os projetos do ano.
+        english: At ten. Everybody will be there. The director will talk about this year's projects.
+      - you: Ask if you need to bring anything.
+        answers:
+          - Preciso levar alguma coisa?
+          - Eu preciso levar alguma coisa?
+          - Tenho que levar alguma coisa?
+          - Preciso trazer alguma coisa?
+      - them: Não, nada. Ah, e você receberá um e-mail com a sua senha hoje.
+        english: No, nothing. Oh, and you'll receive an email with your password today.
+      - you: Ask if each employee has a laptop.
+        answers:
+          - Cada funcionário tem um notebook?
+          - Cada funcionário tem notebook?
+          - Todo funcionário tem um notebook?
+          - Todos os funcionários têm notebook?
+      - them: Tem, sim. E às sextas todo mundo pode fazer home office. Mais alguma pergunta?
+        english: Yes. And on Fridays everybody can work from home. Any more questions?
+      - you: Say no, none — and thank her for everything.
+        answers:
+          - Nenhuma! Obrigado por tudo!
+          - Nenhuma! Obrigada por tudo!
+          - Não, nenhuma. Obrigado por tudo!
+          - Não, nenhuma. Obrigada por tudo!

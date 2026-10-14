@@ -1,0 +1,210 @@
+title: "Je le connais, je lui parle"
+subtitle: Object pronouns — le, la, les, lui, leur
+goal: replace nouns with *le, la, les, lui, leur* (and *me, te, nous, vous*) and put them in the right place
+minutes: 16
+
+sections:
+  - heading: "It, him, her, them: le, la, les"
+    body: |
+      To avoid repeating a noun, replace it with **le** (him, it), **la**
+      (her, it) or **les** (them). Before a vowel, *le* and *la* become
+      **l'**.
+
+      The big difference from English: the pronoun goes **before** the
+      verb.
+
+      - *Tu regardes **le match** ? — Oui, je **le** regarde.*
+      - *Tu connais **Marie** ? — Oui, je **la** connais.*
+      - *Tu aimes **les fraises** ? — Oui, je **les** adore.*
+      - *Tu aimes **ce film** ? — Oui, je **l'**aime.*
+    examples:
+      - ["Le pain ? Je le prends.", "The bread? I'll take it."]
+      - ["Ces photos ? Je les adore.", "These photos? I love them."]
+    tip: "Think of *je le regarde* as \"I it watch\". English puts \"it\" after the verb; French puts it before."
+
+  - heading: "To him, to them: lui, leur"
+    body: |
+      Some verbs are followed by **à** + a person: *parler à, téléphoner
+      à, donner à, dire à, écrire à, demander à*. For these, the pronoun
+      is:
+
+      - **lui** — to him **or** to her
+      - **leur** — to them
+
+      - *Je parle **à Paul**. → Je **lui** parle.*
+      - *J'écris **à mes grands-parents**. → Je **leur** écris.*
+    table:
+      columns: ["", "no à (direct)", "à + person (indirect)"]
+      rows:
+        - [him, "le, l'", lui]
+        - [her, "la, l'", lui]
+        - [them, les, leur]
+    examples:
+      - ["Je lui demande l'heure.", "I ask him (or her) the time."]
+      - ["Je leur envoie un message.", "I'm sending them a message."]
+    tip: "English says \"I phone her\" with no \"to\", but French says *téléphoner **à***. So it's *je **lui** téléphone*, never *je la téléphone*."
+
+  - heading: "Me, you, us"
+    body: |
+      For "me", "you" and "us" there's nothing to choose: **me, te, nous,
+      vous** work with every verb, with or without *à*. *Me* and *te*
+      become *m'* and *t'* before a vowel.
+
+      - *Tu **m'**entends ?* — Can you hear me?
+      - *Je **te** donne mon numéro.* — I'm giving you my number.
+      - *Elle **nous** invite à la fête.* — She's inviting us to the party.
+      - *Je **vous** écoute.* — I'm listening (to you).
+    examples:
+      - ["Tu me montres tes photos ?", "Will you show me your photos?"]
+      - ["Il nous aide.", "He's helping us."]
+
+  - heading: Where the pronoun goes
+    body: |
+      The pronoun goes right before the verb it belongs to:
+
+      - **negative**: *ne* comes before the pronoun — *Je **ne le**
+        connais **pas**.*
+      - **passé composé**: before *avoir* or *être* — *Je **l'**ai vu.*
+        *Je **lui** ai parlé.*
+      - **with an infinitive**: before the infinitive — *Je vais **le**
+        faire.* *Tu peux **m'**aider ?*
+    examples:
+      - ["Je ne le connais pas.", "I don't know him."]
+      - ["Je lui ai téléphoné hier.", "I phoned him (or her) yesterday."]
+      - ["Le billet ? Je vais l'acheter.", "The ticket? I'm going to buy it."]
+    tip: "In the passé composé you'll sometimes see an extra *-e* or *-s* in writing: *Ta veste ? Je l'ai mise.* The past participle agrees with *la* or *les* when they come before *avoir*."
+
+words:
+  - [lui, "(to) him, (to) her"]
+  - [leur, (to) them]
+  - [téléphoner à, to phone]
+  - [donner, to give]
+  - [demander, to ask]
+  - [aider, to help]
+  - [inviter, to invite]
+  - [envoyer, to send]
+  - [montrer, to show]
+  - [un cadeau, a present]
+  - [le numéro, the (phone) number]
+  - [un message, a message]
+  - [une photo, a photo]
+  - [une fraise, a strawberry]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Le match ? Je ___ regarde."
+    hint: (it)
+    translation: The match? I'm watching it.
+    answers: [le]
+    why: Match is masculine, so "it" is le, and it goes before the verb.
+
+  - type: fill
+    section: 1
+    prompt: "Marie ? Je ___ connais."
+    hint: (her)
+    translation: Marie? I know her.
+    answers: [la]
+    why: "\"Her\" as a direct object is la, before the verb."
+
+  - type: fill
+    section: 1
+    prompt: "Les fraises ? Je ___ adore."
+    hint: (them)
+    translation: Strawberries? I love them.
+    answers: [les]
+    why: "\"Them\" as a direct object is les."
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: "Je l'aime."
+    answers: ["I love him.", "I love her.", "I love it.", "I like it.", "I like him.", "I like her."]
+    why: L' can be le or la, so it means him, her or it.
+
+  - type: fill
+    section: 2
+    prompt: "Je ___ parle souvent."
+    hint: (to him)
+    translation: I often talk to him.
+    answers: [lui]
+    why: Parler takes à + a person, so "to him" is lui.
+
+  - type: fill
+    section: 2
+    prompt: "Mes grands-parents ? Je ___ écris."
+    hint: (to them)
+    translation: My grandparents? I write to them.
+    answers: [leur]
+    why: Écrire takes à + a person, so "to them" is leur.
+
+  - type: choice
+    section: 2
+    prompt: "How do you say \"I phone her\"?"
+    options: [Je la téléphone., Je lui téléphone.]
+    answer: Je lui téléphone.
+    why: Téléphoner takes à + a person, so the pronoun is lui.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: I give them a present.
+    answers: ["Je leur donne un cadeau."]
+    why: You give something à quelqu'un, so "to them" is leur, before the verb.
+
+  - type: fill
+    section: 3
+    prompt: "Elle ___ invite à la fête."
+    hint: (us)
+    translation: She's inviting us to the party.
+    answers: [nous]
+    why: Nous means "us", and it goes before the verb.
+
+  - type: choice
+    section: 3
+    prompt: "How do you say \"He's listening to us\"?"
+    options: [Il nous écoute., Il écoute nous., Il leur écoute.]
+    answer: Il nous écoute.
+    why: Nous goes before the verb, like every object pronoun.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: Je te donne mon numéro.
+    answers: ["I'm giving you my number.", "I give you my number.", "I'll give you my number."]
+    why: Te means "you" (to a friend), and it goes before the verb.
+
+  - type: choice
+    section: 4
+    prompt: Which is correct?
+    options: [Je ne le connais pas., Je le ne connais pas., Je ne connais le pas.]
+    answer: Je ne le connais pas.
+    why: Ne goes before the pronoun, and the pronoun stays right before the verb.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Je ne le connais pas.
+    answers: ["I don't know him.", "I do not know him.", "I don't know it."]
+    why: Le is "him" here, and ne… pas wraps around le connais.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: Can you help me? (to a friend)
+    answers: ["Tu peux m'aider ?", "Est-ce que tu peux m'aider ?", "Peux-tu m'aider ?"]
+    why: The pronoun goes before the infinitive it belongs to, aider.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: I phoned him yesterday.
+    answers: ["Je lui ai téléphoné hier.", "Hier, je lui ai téléphoné.", "Je l'ai appelé hier.", "Hier, je l'ai appelé."]
+    why: In the passé composé the pronoun goes before avoir, and téléphoner à takes lui.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: "The ticket? I'm going to buy it."
+    answers: ["Le billet ? Je vais l'acheter."]
+    why: With aller + infinitive, the pronoun goes before the infinitive.

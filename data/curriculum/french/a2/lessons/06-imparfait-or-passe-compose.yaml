@@ -1,0 +1,204 @@
+title: "Il pleuvait quand je suis arrivé"
+subtitle: Choosing between the imparfait and the passé composé
+goal: tell a short story about the past, using the *passé composé* for events and the *imparfait* for the background
+minutes: 15
+
+sections:
+  - heading: Events and background
+    body: |
+      Think of a story as a film:
+
+      - the **passé composé** is the action: what **happened**, one event
+        after another
+      - the **imparfait** is the scenery: what things **were like**, and
+        what **was going on**
+
+      *Il faisait beau. Les enfants jouaient dans le parc. Soudain, un
+      chien est arrivé.*
+
+      The first two sentences set the scene. Then something happens.
+    examples:
+      - ["Il faisait beau, alors nous sommes allés à la plage.", "The weather was nice, so we went to the beach."]
+      - ["J'étais fatigué, donc je me suis couché tôt.", "I was tired, so I went to bed early."]
+
+  - heading: Interrupted actions
+    body: |
+      Sometimes one thing **was happening** when something else
+      **happened** in the middle of it. Use both tenses in one sentence:
+
+      - the longer action that was going on → **imparfait**
+      - the short action that interrupts it → **passé composé**
+
+      *Je **dormais** quand le téléphone **a sonné**.* — I was sleeping
+      when the phone rang.
+    examples:
+      - ["Je prenais ma douche quand tu as appelé.", "I was having a shower when you called."]
+      - ["Nous mangions quand il est arrivé.", "We were eating when he arrived."]
+      - ["Il traversait la rue quand il est tombé.", "He was crossing the street when he fell."]
+    tip: "Ask yourself: was it **going on** (imparfait), or did it **happen** (passé composé)?"
+
+  - heading: Once, or again and again?
+    body: |
+      The same verb can go either way, depending on what you mean:
+
+      - *Samedi, j'**ai joué** au foot.* — On Saturday I played football.
+        (once)
+      - *Le samedi, je **jouais** au foot.* — On Saturdays I used to play
+        football. (a habit)
+
+      A one-off event at a clear time takes the passé composé. A habit
+      takes the imparfait. Words like these are good clues:
+    table:
+      columns: [passé composé, imparfait]
+      rows:
+        - [hier, "d'habitude"]
+        - [un jour, tous les jours]
+        - [soudain, souvent]
+        - [une fois, toujours]
+        - ["samedi (that Saturday)", "le samedi (every Saturday)"]
+    examples:
+      - ["Hier, j'ai pris le train.", "Yesterday I took the train."]
+      - ["D'habitude, je prenais le bus.", "I usually took the bus."]
+
+  - heading: How was it?
+    body: |
+      After a trip, a film or a party, say what it was like with
+      **c'était** + an adjective. The event is in the passé composé, but
+      your reaction to it is in the imparfait:
+
+      - *On est allés au concert. **C'était** génial !* — We went to the
+        concert. It was great!
+      - *C'était comment ?* — What was it like?
+    examples:
+      - ["Comment était le voyage ?", "How was the trip?"]
+      - ["Nous avons visité le musée. C'était très intéressant.", "We visited the museum. It was very interesting."]
+      - ["La fête ? C'était nul !", "The party? It was rubbish!"]
+      - ["Le film était un peu ennuyeux.", "The film was a bit boring."]
+    tip: "For \"it was great, boring, awful…\", reach for *c'était*. It's one of the most useful phrases at this level."
+
+words:
+  - [soudain, suddenly]
+  - [un jour, one day]
+  - [une fois, once]
+  - [alors, so]
+  - [donc, "so, therefore"]
+  - [dormir, to sleep]
+  - [appeler, "to call, to phone"]
+  - [traverser, to cross]
+  - [la douche, the shower]
+  - [le concert, the concert]
+  - [le voyage, "the trip, the journey"]
+  - [nul / nulle, "rubbish, useless"]
+  - [ennuyeux / ennuyeuse, boring]
+
+practice:
+  - type: choice
+    section: 1
+    prompt: "In a story, *Il faisait beau* is…"
+    options: [an event, the background]
+    answer: the background
+    why: The weather sets the scene, so it takes the imparfait.
+
+  - type: fill
+    section: 1
+    prompt: "Il ___ beau, alors nous sommes allés à la plage."
+    hint: (faire — imparfait or passé composé?)
+    translation: The weather was nice, so we went to the beach.
+    answers: [faisait]
+    why: The weather is background, so it takes the imparfait.
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: "J'étais fatiguée, donc je me suis couchée tôt."
+    answers: ["I was tired, so I went to bed early.", "I was tired, therefore I went to bed early.", "I was tired so I went to sleep early."]
+    why: Étais describes how she felt (imparfait); me suis couchée is what she did (passé composé).
+
+  - type: fill
+    section: 2
+    prompt: "Je ___ quand le téléphone a sonné."
+    hint: (dormir)
+    translation: I was sleeping when the phone rang.
+    answers: [dormais]
+    why: Sleeping was going on when the phone interrupted it, so it takes the imparfait.
+
+  - type: fill
+    section: 2
+    prompt: "Nous mangions quand il ___ arrivé."
+    hint: (être)
+    translation: We were eating when he arrived.
+    answers: [est]
+    why: His arrival interrupts the meal, so it's in the passé composé, and arriver takes être.
+
+  - type: choice
+    section: 2
+    prompt: "How do you say \"He was crossing the street when he fell\"?"
+    options: [Il a traversé la rue quand il tombait., Il traversait la rue quand il est tombé.]
+    answer: Il traversait la rue quand il est tombé.
+    why: The crossing was going on (imparfait) when the fall happened (passé composé).
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: I was watching TV when you called. (to a friend)
+    answers: ["Je regardais la télé quand tu as appelé.", "Je regardais la télévision quand tu as appelé.", "Quand tu as appelé, je regardais la télé.", "Quand tu as appelé, je regardais la télévision."]
+    why: Watching was going on (imparfait) when the call interrupted it (passé composé).
+
+  - type: fill
+    section: 3
+    prompt: "Le samedi, je ___ au foot."
+    hint: (jouer — every week)
+    translation: On Saturdays I used to play football.
+    answers: [jouais]
+    why: Le samedi means every Saturday, a habit, so it takes the imparfait.
+
+  - type: fill
+    section: 3
+    prompt: "Samedi dernier, j'___ au foot."
+    hint: (jouer — once)
+    translation: Last Saturday I played football.
+    answers: [ai joué]
+    why: Samedi dernier is one particular day, so it takes the passé composé.
+
+  - type: choice
+    section: 3
+    prompt: Which word is a clue for the imparfait?
+    options: [soudain, "d'habitude", un jour]
+    answer: "d'habitude"
+    why: D'habitude means usually, which describes a habit.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: One day, I lost my bag.
+    answers: ["Un jour, j'ai perdu mon sac.", "J'ai perdu mon sac un jour."]
+    why: Un jour introduces a single event, so it takes the passé composé.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: Tous les jours, il prenait le bus.
+    answers: ["Every day he took the bus.", "Every day he used to take the bus.", "He took the bus every day.", "He used to take the bus every day.", "Every day he would take the bus."]
+    why: Tous les jours shows a habit, so prendre is in the imparfait.
+
+  - type: fill
+    section: 4
+    prompt: "Nous avons visité le musée. ___ très intéressant."
+    hint: (it was)
+    translation: We visited the museum. It was very interesting.
+    answers: ["C'était"]
+    why: Your reaction to an event is a description, so it's c'était.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: It was great!
+    answers: ["C'était génial !", "C'était super !", "C'était très bien !", "C'était top !"]
+    why: To say what something was like, use c'était + an adjective.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Comment était le voyage ?
+    answers: ["How was the trip?", "How was the journey?", "What was the trip like?", "What was the journey like?", "How was your trip?"]
+    why: Comment était… ? asks what something was like.

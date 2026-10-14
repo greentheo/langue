@@ -1,0 +1,207 @@
+title: "Je suis allé"
+subtitle: The passé composé with être
+goal: use *être* in the passé composé with verbs of coming and going, and make the past participle agree
+minutes: 15
+
+sections:
+  - heading: Verbs that use être
+    body: |
+      About fifteen verbs make their passé composé with **être**
+      instead of *avoir*. Most of them are about **moving** from one place
+      to another, or **changing state**, like being born or dying.
+
+      - *Je **suis** allé à Paris.* — I went to Paris.
+      - *Il **est** parti hier.* — He left yesterday.
+
+      *Être* changes with the person, exactly as in the present: *je suis,
+      tu es, il est, nous sommes, vous êtes, ils sont*.
+    examples:
+      - ["Il est allé au cinéma.", "He went to the cinema."]
+      - ["Tu es venu en bus ?", "Did you come by bus?"]
+    tip: "English says \"I *have* gone\", so English speakers often say *j'ai allé*. With *aller*, it's always *je suis allé*."
+
+  - heading: The être verbs
+    body: |
+      They're easiest to learn in pairs of opposites, so learn each verb
+      with its partner. *Venir, naître* and *mourir* have irregular past
+      participles.
+
+      Verbs made from them use *être* too: **rentrer** (to go home),
+      **revenir** (to come back) and **devenir** (to become).
+    table:
+      columns: [verbs, past participles, meaning]
+      rows:
+        - [aller / venir, allé / venu, to go / to come]
+        - [arriver / partir, arrivé / parti, to arrive / to leave]
+        - [entrer / sortir, entré / sorti, to go in / to go out]
+        - [monter / descendre, monté / descendu, "to go up, get on / to go down, get off"]
+        - [naître / mourir, né / mort, to be born / to die]
+        - [rester / tomber, resté / tombé, to stay / to fall]
+    examples:
+      - ["Je suis né à Montréal.", "I was born in Montreal."]
+      - ["Il est tombé dans la rue.", "He fell over in the street."]
+    tip: "*Rester* means \"to stay\", not \"to rest\": *Je suis resté à la maison* is \"I stayed at home\"."
+
+  - heading: Making it agree
+    body: |
+      With **être**, the past participle agrees with the subject, like an
+      adjective:
+
+      - add **-e** for a woman or a girl: *Elle est allé**e**.*
+      - add **-s** for a group: *Ils sont allé**s**.*
+      - add **-es** for a group of only women or girls: *Elles sont
+        allé**es**.*
+
+      So with *je* and *tu*, it depends on who you are: a girl writes *je
+      suis allé**e***. The extra letters are usually silent.
+    table:
+      columns: ["", one person, a group]
+      rows:
+        - [masculine, il est arrivé, ils sont arrivés]
+        - [feminine, elle est arrivée, elles sont arrivées]
+    examples:
+      - ["Ma mère est partie à huit heures.", "My mother left at eight o'clock."]
+      - ["Mes amis sont venus samedi.", "My friends came on Saturday."]
+    tip: "Only *être* verbs agree like this. With *avoir*, nothing changes: *Elle a mangé*, not *Elle a mangée*."
+
+  - heading: A weekend away
+    body: |
+      Most stories need both kinds of verb. Ask yourself: is it about
+      coming, going, arriving, leaving or staying? Then use *être*. For
+      everything else, use *avoir*.
+
+      With **vous** to one person, agree with that person: *Vous êtes
+      arrivée, madame ?* With **on** meaning "we", people usually add
+      **-s**: *On est partis tôt.*
+    examples:
+      - ["Samedi, nous sommes partis à huit heures.", "On Saturday we left at eight."]
+      - ["Nous sommes arrivés à Nice à midi.", "We arrived in Nice at noon."]
+      - ["On a mangé, puis on est allés à la plage.", "We ate, then we went to the beach."]
+      - ["Dimanche, nous sommes rentrés.", "On Sunday we went home."]
+
+words:
+  - [arriver, to arrive]
+  - [partir, to leave]
+  - [entrer, "to go in, to come in"]
+  - [sortir, to go out]
+  - [monter, "to go up, to get on"]
+  - [descendre, "to go down, to get off"]
+  - [rester, to stay]
+  - [tomber, to fall]
+  - [naître, to be born]
+  - [mourir, to die]
+  - [rentrer, "to go home, to get back"]
+  - [revenir, to come back]
+  - [devenir, to become]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Je ___ allé à Paris."
+    hint: (être)
+    translation: I went to Paris.
+    answers: [suis]
+    why: Aller makes its passé composé with être, and with je that's suis.
+
+  - type: fill
+    section: 1
+    prompt: "Nous ___ partis à huit heures."
+    hint: (être)
+    translation: We left at eight o'clock.
+    answers: [sommes]
+    why: Partir uses être, and with nous that's sommes.
+
+  - type: choice
+    section: 1
+    prompt: Which is correct?
+    options: [J'ai allé au cinéma., Je suis allé au cinéma.]
+    answer: Je suis allé au cinéma.
+    why: Aller is a verb of movement, so it takes être, never avoir.
+
+  - type: fill
+    section: 2
+    prompt: "Il est ___ en 2012."
+    hint: (naître)
+    translation: He was born in 2012.
+    answers: [né]
+    why: The past participle of naître is né, and it takes être.
+
+  - type: choice
+    section: 2
+    prompt: "*Rester* means…"
+    options: [to rest, to stay, to return]
+    answer: to stay
+    why: Rester is to stay; it only looks like "rest".
+
+  - type: translate
+    section: 2
+    direction: to-english
+    prompt: Ils sont restés à la maison.
+    answers: ["They stayed at home.", "They stayed home.", "They stayed in.", "They have stayed at home.", "They stayed in the house."]
+    why: Rester means to stay, and it takes être in the passé composé.
+
+  - type: translate
+    section: 2
+    direction: to-english
+    prompt: Je suis venu avec mon frère.
+    answers: ["I came with my brother.", "I have come with my brother.", "I've come with my brother."]
+    why: Venir takes être, and its past participle is venu.
+
+  - type: fill
+    section: 3
+    prompt: "Elles sont ___ hier."
+    hint: (arriver)
+    translation: They (two girls) arrived yesterday.
+    answers: [arrivées]
+    why: With être the past participle agrees, so a group of girls adds -es.
+
+  - type: fill
+    section: 3
+    prompt: "Ma sœur est ___ du bus."
+    hint: (descendre)
+    translation: My sister got off the bus.
+    answers: [descendue]
+    why: Descendu takes -e because the subject, ma sœur, is feminine.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: She left yesterday.
+    answers: ["Elle est partie hier.", "Hier, elle est partie."]
+    why: Partir takes être, and the past participle adds -e for elle.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: I went to the beach. (a girl speaking)
+    answers: ["Je suis allée à la plage."]
+    why: A girl or woman adds -e to the past participle, so it is je suis allée.
+
+  - type: choice
+    section: 4
+    prompt: "*Nous ___ visité le musée, puis nous ___ allés au parc.* Which pair fits?"
+    options: ["avons… sommes", "sommes… avons", "avons… avons"]
+    answer: "avons… sommes"
+    why: Visiter takes avoir, but aller is a verb of movement and takes être.
+
+  - type: fill
+    section: 4
+    prompt: "Vous êtes ___, madame ?"
+    hint: (arriver)
+    translation: Have you arrived, madam?
+    answers: [arrivée]
+    why: Vous here is one woman, so the past participle adds -e.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: We went home on Sunday. (a family, using nous)
+    answers: ["Nous sommes rentrés dimanche.", "Dimanche, nous sommes rentrés."]
+    why: Rentrer takes être, and a mixed group adds -s.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Nous sommes arrivés à Nice à midi.
+    answers: ["We arrived in Nice at noon.", "We arrived in Nice at midday.", "We got to Nice at noon.", "We got to Nice at midday.", "We arrived at Nice at noon."]
+    why: Sommes arrivés is the passé composé of arriver, which takes être.

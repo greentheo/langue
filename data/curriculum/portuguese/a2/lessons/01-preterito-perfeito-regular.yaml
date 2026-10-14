@@ -1,0 +1,251 @@
+title: "Ontem eu falei com ela"
+subtitle: The past tense of regular verbs
+goal: say what you did yesterday, last week or on holiday, with regular -ar, -er and -ir verbs
+minutes: 15
+
+sections:
+  - heading: What you did
+    body: |
+      So far you've talked about today and tomorrow. To say what you
+      **did** — one action, finished — Portuguese uses the **pretérito
+      perfeito**. It's the everyday past tense: *I spoke, I bought, I
+      worked*.
+
+      For **-ar** verbs, take off *-ar* and add these endings:
+    table:
+      columns: [pronoun, falar (to speak), trabalhar (to work)]
+      rows:
+        - [eu, falei, trabalhei]
+        - [você / ele / ela / a gente, falou, trabalhou]
+        - [nós, falamos, trabalhamos]
+        - [vocês / eles / elas, falaram, trabalharam]
+    examples:
+      - ["Ontem eu falei com a minha mãe.", "Yesterday I spoke to my mother."]
+      - ["Ela trabalhou no sábado.", "She worked on Saturday."]
+      - ["A gente comprou pão.", "We bought bread."]
+    tip: "The *nós* form is the same as in the present: *falamos* means \"we speak\" or \"we spoke\". Words like *ontem* (yesterday) tell you which."
+
+  - heading: -er and -ir verbs
+    body: |
+      For **-er** and **-ir** verbs, the *eu* form ends in **-i**. The two
+      groups differ only in the *ele* and *eles* forms: **-eu, -eram** for
+      -er verbs, **-iu, -iram** for -ir verbs.
+
+      There's no word for "did" in questions or negatives. Just use the
+      past form: *Você comeu?* — Did you eat? *Não entendi.* — I didn't
+      understand.
+    table:
+      columns: [pronoun, comer (to eat), abrir (to open)]
+      rows:
+        - [eu, comi, abri]
+        - [você / ele / ela / a gente, comeu, abriu]
+        - [nós, comemos, abrimos]
+        - [vocês / eles / elas, comeram, abriram]
+    examples:
+      - ["Eu comi pão de queijo no café da manhã.", "I ate cheese bread for breakfast."]
+      - ["Você entendeu?", "Did you understand?"]
+      - ["A loja abriu às nove.", "The shop opened at nine."]
+      - ["Eles assistiram um filme.", "They watched a film."]
+
+  - heading: When? Words for the past
+    body: |
+      These words tell you a sentence is about the past. They go at the
+      start or at the end:
+
+      - **ontem** — yesterday · **anteontem** — the day before yesterday
+      - **ontem à noite** — last night
+      - **(na) semana passada** — last week
+      - **(no) mês passado**, **(no) ano passado** — last month, last year
+      - **no sábado** — on Saturday (the one just gone)
+      - **no fim de semana** — at the weekend
+      - **nas férias** — on holiday
+
+      *Passado* agrees with its noun: *a semana passad**a***, *o ano
+      passad**o***.
+    examples:
+      - ["No fim de semana a gente visitou os meus avós.", "At the weekend we visited my grandparents."]
+      - ["Ano passado eu viajei para Salvador.", "Last year I travelled to Salvador."]
+      - ["Ontem à noite eles jantaram fora.", "Last night they ate out."]
+
+  - heading: Spelling changes in the eu form
+    body: |
+      A few -ar verbs change their spelling in the *eu* form only. The
+      sound stays the same — the spelling changes to keep it before **-ei**:
+
+      - **-car → -quei**: *ficar → fiquei*, *tocar → toquei*
+      - **-gar → -guei**: *chegar → cheguei*, *pagar → paguei*, *jogar → joguei*
+      - **-çar → -cei**: *almoçar → almocei*, *começar → comecei*
+
+      The other forms are regular: *ele chegou*, *nós pagamos*, *eles
+      começaram*.
+    examples:
+      - ["Cheguei tarde ontem.", "I arrived late yesterday."]
+      - ["Paguei com cartão.", "I paid by card."]
+      - ["Almocei em casa.", "I had lunch at home."]
+    tip: "You already know this rule from *ç*: before *e* and *i*, Portuguese writes *c*, so *almoço* but *almocei*."
+
+  - heading: Já and ainda não
+    body: |
+      **Já** means "already" or "ever", and **ainda não** means "not yet".
+      With them, Brazilians use the simple past where English says *have
+      done*:
+
+      - *Você já almoçou?* — Have you had lunch yet?
+      - *Já.* — Yes, I have. (literally "already")
+      - *Ainda não.* — Not yet.
+      - *Você já visitou Recife?* — Have you ever been to Recife?
+    examples:
+      - ["Já comi, obrigada.", "I've already eaten, thanks."]
+      - ["Ainda não comprei a passagem.", "I haven't bought the ticket yet."]
+    tip: "Don't translate \"I have eaten\" with *ter*. Portuguese says *já comi* — the simple past."
+
+words:
+  - [ontem, yesterday]
+  - [anteontem, the day before yesterday]
+  - [passado, last / past]
+  - [fim de semana, weekend]
+  - [férias, holidays / vacation]
+  - [viajar, to travel]
+  - [visitar, to visit]
+  - [jantar fora, to eat out]
+  - [ficar, to stay]
+  - [começar, to start / to begin]
+  - [tocar, to play (an instrument) / to touch]
+  - [já, already / ever]
+  - [ainda não, not yet]
+  - [pão de queijo, cheese bread]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Ontem eu ___ com a minha mãe."
+    hint: falar, eu
+    translation: Yesterday I spoke to my mother.
+    answers: [falei]
+    why: In the past, -ar verbs end in -ei with eu.
+
+  - type: fill
+    section: 1
+    prompt: "Eles ___ no sábado."
+    hint: trabalhar, eles
+    translation: They worked on Saturday.
+    answers: [trabalharam]
+    why: In the past, -ar verbs end in -aram with eles.
+
+  - type: translate
+    section: 1
+    direction: to-target
+    prompt: She bought a T-shirt.
+    answers: [Ela comprou uma camiseta.]
+    why: In the past, -ar verbs end in -ou with ela.
+
+  - type: fill
+    section: 2
+    prompt: "Você ___ o filme?"
+    hint: entender, você
+    translation: Did you understand the film?
+    answers: [entendeu]
+    why: In the past, -er verbs end in -eu with você — and there's no word for "did".
+
+  - type: fill
+    section: 2
+    prompt: "A farmácia ___ às oito."
+    hint: abrir, ela
+    translation: The pharmacy opened at eight.
+    answers: [abriu]
+    why: In the past, -ir verbs end in -iu with ele and ela.
+
+  - type: translate
+    section: 2
+    direction: to-english
+    prompt: Eles beberam água.
+    answers: [They drank water., They drank some water.]
+    why: Beberam is the eles form of beber in the past.
+
+  - type: choice
+    section: 3
+    prompt: "\"last week\""
+    options: [semana passada, passada semana, semana passado]
+    answer: semana passada
+    why: Passada comes after the noun and agrees with semana, which is feminine.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: Yesterday I visited my grandparents.
+    answers:
+      - Ontem eu visitei meus avós.
+      - Ontem eu visitei os meus avós.
+      - Ontem visitei meus avós.
+      - Ontem visitei os meus avós.
+      - Eu visitei meus avós ontem.
+      - Eu visitei os meus avós ontem.
+      - Visitei meus avós ontem.
+      - Visitei os meus avós ontem.
+    why: Visitar is a regular -ar verb, so "I visited" is visitei.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: Ontem à noite a gente jantou fora.
+    answers:
+      - Last night we ate out.
+      - Last night we had dinner out.
+      - Last night we went out for dinner.
+      - Last night we went out to eat.
+      - We ate out last night.
+      - We had dinner out last night.
+      - We went out for dinner last night.
+      - We went out to eat last night.
+    why: Ontem à noite is last night, and jantar fora is to eat out.
+
+  - type: fill
+    section: 4
+    prompt: "Eu ___ às dez."
+    hint: chegar, eu
+    translation: I arrived at ten.
+    answers: [cheguei]
+    why: Chegar adds a u in the eu form, so the g stays hard — cheguei.
+
+  - type: fill
+    section: 4
+    prompt: "Eu ___ com cartão."
+    hint: pagar, eu
+    translation: I paid by card.
+    answers: [paguei]
+    why: "-gar verbs become -guei in the eu form: pagar, paguei."
+
+  - type: choice
+    section: 4
+    prompt: "\"I had lunch at home.\""
+    options: [Almocei em casa., Almoçei em casa., Almoçou em casa.]
+    answer: Almocei em casa.
+    why: Before e, ç is written c — almocei.
+
+  - type: choice
+    section: 5
+    prompt: "— Você já almoçou? — (Not yet.)"
+    options: [Ainda não., Já não., Não já.]
+    answer: Ainda não.
+    why: Ainda não means "not yet".
+
+  - type: translate
+    section: 5
+    direction: to-target
+    prompt: Have you ever been to Recife?
+    answers:
+      - Você já visitou Recife?
+      - Já visitou Recife?
+      - O senhor já visitou Recife?
+      - A senhora já visitou Recife?
+      - Vocês já visitaram Recife?
+      - Você já foi a Recife?
+      - Você já esteve em Recife?
+    why: Já + the simple past means "have you ever…".
+
+  - type: translate
+    section: 5
+    direction: to-english
+    prompt: Já comi.
+    answers: [I've already eaten., I already ate., I've eaten already., I ate already.]
+    why: Já + the simple past is the Portuguese for "have already done".

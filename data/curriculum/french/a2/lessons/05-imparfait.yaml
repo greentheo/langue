@@ -1,0 +1,224 @@
+title: "Quand j'étais petit"
+subtitle: The imparfait for descriptions and habits
+goal: describe what things were like and say what you used to do, with the *imparfait*
+minutes: 15
+
+sections:
+  - heading: A second past tense
+    body: |
+      French has another everyday past tense, the **imparfait**. It's for
+      the **background**: what things **were like**, what **was going
+      on**, and what **used to** happen again and again.
+
+      - *Quand j'étais petit, j'habitais à la campagne.* — When I was
+        little, I lived in the countryside.
+
+      The passé composé says what **happened**. The imparfait sets the
+      scene around it.
+    examples:
+      - ["Il faisait beau.", "The weather was nice."]
+      - ["Le samedi, nous jouions au foot.", "On Saturdays we used to play football."]
+
+  - heading: How to make it
+    body: |
+      Take the **nous** form of the present, remove **-ons**, and add the
+      endings below. This works for almost every verb:
+
+      - *nous parlons → parl-*
+      - *nous finissons → finiss-*
+      - *nous prenons → pren-*
+      - *nous faisons → fais-*
+
+      The endings **-ais, -ait** and **-aient** all sound the same.
+    table:
+      columns: [person, ending, parler]
+      rows:
+        - [je, -ais, parlais]
+        - [tu, -ais, parlais]
+        - ["il / elle / on", -ait, parlait]
+        - [nous, -ions, parlions]
+        - [vous, -iez, parliez]
+        - ["ils / elles", -aient, parlaient]
+    examples:
+      - ["Je finissais mes devoirs.", "I was finishing my homework."]
+      - ["Nous prenions le bus.", "We used to take the bus."]
+    tip: "Verbs in *-ger* keep their *e* before *a*: *je mangeais, ils mangeaient*. But *nous mangions* doesn't need it."
+
+  - heading: "Être: j'étais"
+    body: |
+      Only **être** breaks the rule. Its stem is **ét-**, with the same
+      endings: *j'étais, tu étais, il était, nous étions, vous étiez, ils
+      étaient*.
+
+      Three short phrases in the imparfait are worth learning as they are:
+
+      - **c'était** — it was
+      - **il y avait** — there was, there were
+      - **il faisait** — the weather was (*il faisait beau, il faisait
+        froid*)
+
+      And for rain: **il pleuvait** — it was raining.
+    examples:
+      - ["C'était une belle journée.", "It was a beautiful day."]
+      - ["Il y avait un grand jardin.", "There was a big garden."]
+      - ["Il faisait froid et il pleuvait.", "It was cold and it was raining."]
+
+  - heading: Describing the past
+    body: |
+      Use the imparfait to describe **people, places, weather and
+      feelings** in the past:
+
+      - *La maison était petite.* — The house was small.
+      - *Elle avait les cheveux longs.* — She had long hair.
+      - *J'étais fatigué.* — I was tired.
+
+      It also describes something that **was going on**:
+
+      - *Je regardais la télé.* — I was watching TV.
+    examples:
+      - ["La plage était belle.", "The beach was beautiful."]
+      - ["Nous avions froid.", "We were cold."]
+    tip: "\"Was\" or \"were\" + *-ing* (*I was watching, we were playing*) is a strong sign that you need the imparfait."
+
+  - heading: Habits and "used to"
+    body: |
+      The imparfait also says what happened **regularly** in the past:
+      what you **used to** do. These words are a signal:
+
+      - **d'habitude** — usually
+      - **tous les jours** — every day
+      - **le samedi** — on Saturdays
+      - **quand j'étais petit(e)** — when I was little
+      - **toujours, souvent, parfois**
+    examples:
+      - ["Quand j'étais petite, j'allais à l'école à pied.", "When I was little, I used to walk to school."]
+      - ["Tous les étés, nous allions à la mer.", "Every summer we used to go to the seaside."]
+      - ["Mon grand-père racontait toujours des histoires.", "My grandfather was always telling stories."]
+    tip: "English \"would\" sometimes means \"used to\": \"Every summer we *would* go to the sea.\" That's the imparfait too."
+
+words:
+  - ["d'habitude", usually]
+  - [tous les jours, every day]
+  - [la campagne, the countryside]
+  - [la mer, "the sea, the seaside"]
+  - [les cheveux, hair]
+  - [long / longue, long]
+  - [pleuvoir, to rain]
+  - [une histoire, a story]
+  - [raconter, to tell (a story)]
+  - [à pied, on foot]
+  - ["l'été (m)", summer]
+  - [le jardin, the garden]
+  - [le foot, football]
+  - [la journée, the day]
+
+practice:
+  - type: choice
+    section: 1
+    prompt: The imparfait is mainly used for…
+    options: [one finished event, background and habits, the future]
+    answer: background and habits
+    why: The imparfait describes how things were and what used to happen.
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: Quand j'étais petit, j'habitais à la campagne.
+    answers: ["When I was little, I lived in the countryside.", "When I was little, I used to live in the countryside.", "When I was small, I lived in the countryside.", "When I was small, I used to live in the countryside.", "When I was a kid, I lived in the countryside.", "When I was little, I lived in the country."]
+    why: Étais and habitais are both imparfait — background, and how things used to be.
+
+  - type: fill
+    section: 2
+    prompt: "Je ___ à Lyon."
+    hint: (habiter, imparfait)
+    translation: I used to live in Lyon.
+    answers: [habitais]
+    why: Nous habitons gives the stem habit-, and je adds -ais.
+
+  - type: fill
+    section: 2
+    prompt: "Nous ___ au foot."
+    hint: (jouer, imparfait)
+    translation: We used to play football.
+    answers: [jouions]
+    why: The stem is jou- (from nous jouons), and nous adds -ions.
+
+  - type: fill
+    section: 2
+    prompt: "Ils ___ la télé."
+    hint: (regarder, imparfait)
+    translation: They were watching TV.
+    answers: [regardaient]
+    why: With ils, the imparfait ending is -aient.
+
+  - type: choice
+    section: 2
+    prompt: Where does the imparfait stem of *faire* come from?
+    options: ["nous faisons → fais-", "je fais → fai-", "faire → fer-"]
+    answer: "nous faisons → fais-"
+    why: Take the nous form of the present and remove -ons.
+
+  - type: fill
+    section: 3
+    prompt: "Il y ___ un grand jardin."
+    hint: (avoir, imparfait)
+    translation: There was a big garden.
+    answers: [avait]
+    why: Il y a becomes il y avait in the imparfait.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: C'était une belle journée.
+    answers: ["It was a beautiful day.", "It was a nice day.", "It was a lovely day.", "That was a beautiful day.", "That was a lovely day.", "It was a fine day."]
+    why: C'était means "it was", and belle is beautiful.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: It was raining.
+    answers: ["Il pleuvait."]
+    why: Pleuvoir in the imparfait is il pleuvait.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: I was tired. (a girl speaking)
+    answers: ["J'étais fatiguée."]
+    why: Feelings in the past take the imparfait, and être becomes j'étais.
+
+  - type: fill
+    section: 4
+    prompt: "Tu ___ peur ?"
+    hint: (avoir, imparfait)
+    translation: Were you scared?
+    answers: [avais]
+    why: The stem of avoir is av- (from nous avons), and tu adds -ais.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Elle avait les cheveux longs.
+    answers: ["She had long hair.", "She used to have long hair."]
+    why: Descriptions of people in the past use the imparfait.
+
+  - type: choice
+    section: 5
+    prompt: How do you say "I used to play tennis"?
+    options: [J'ai joué au tennis., Je jouais au tennis., Je vais jouer au tennis.]
+    answer: Je jouais au tennis.
+    why: "\"Used to\" describes a habit, so it takes the imparfait."
+
+  - type: translate
+    section: 5
+    direction: to-target
+    prompt: Every summer we used to go to the seaside.
+    answers: ["Tous les étés, nous allions à la mer.", "Tous les étés, on allait à la mer.", "Nous allions à la mer tous les étés.", "On allait à la mer tous les étés."]
+    why: A repeated habit takes the imparfait, and the stem of aller is all-.
+
+  - type: translate
+    section: 5
+    direction: to-english
+    prompt: "D'habitude, je me levais à sept heures."
+    answers: ["Usually I got up at seven.", "I usually got up at seven.", "I used to get up at seven.", "Usually I used to get up at seven.", "I would usually get up at seven.", "Usually I would get up at seven."]
+    why: D'habitude means usually, and the imparfait shows it was a habit.

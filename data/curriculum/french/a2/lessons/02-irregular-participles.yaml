@@ -1,0 +1,206 @@
+title: "J'ai fait, j'ai pris"
+subtitle: Irregular past participles
+goal: use the most common irregular past participles (*fait, pris, vu, eu, été, dit, mis*) and a few more that follow the same patterns
+minutes: 14
+
+sections:
+  - heading: The big seven
+    body: |
+      Some of the most common verbs don't follow the *-é, -i, -u* pattern.
+      Their past participles are **irregular**, so you have to learn them
+      by heart.
+
+      The good news: there aren't many, and you'll hear them every day.
+      They still use **avoir**, exactly like the verbs in the last lesson.
+    table:
+      columns: [infinitive, past participle, example]
+      rows:
+        - [faire, fait, "J'ai fait mes devoirs. — I did my homework."]
+        - [prendre, pris, "J'ai pris le train. — I took the train."]
+        - [voir, vu, "J'ai vu un film. — I saw a film."]
+        - [avoir, eu, "J'ai eu peur. — I was scared."]
+        - [être, été, "J'ai été malade. — I was ill."]
+        - [dire, dit, "Il a dit bonjour. — He said hello."]
+        - [mettre, mis, "J'ai mis un pull. — I put on a jumper."]
+    examples:
+      - ["Tu as vu mon téléphone ?", "Have you seen my phone?"]
+      - ["Qu'est-ce que tu as dit ?", "What did you say?"]
+    tip: "*Eu* is said like the French letter *u* (the sound in *tu*), not like English \"you\"."
+
+  - heading: Verbs that share a pattern
+    body: |
+      Verbs built on the same base share the same past participle:
+
+      - *prendre → pris*, so *apprendre* (to learn) → **appris** and
+        *comprendre* (to understand) → **compris**
+      - *dire → dit*, and *écrire* (to write) → **écrit**
+
+      Lots of irregular past participles end in **-u**:
+
+      - *boire → **bu*** (drunk), *lire → **lu*** (read)
+      - *pouvoir → **pu***, *vouloir → **voulu***, *devoir → **dû***
+    examples:
+      - ["Je n'ai pas compris.", "I didn't understand."]
+      - ["Elle a lu un livre.", "She read a book."]
+      - ["Nous avons bu un chocolat chaud.", "We had a hot chocolate."]
+    tip: "*Je n'ai pas compris* is one of the most useful sentences in French: say it whenever you miss what someone said."
+
+  - heading: "Eu and été"
+    body: |
+      **Eu** (from *avoir*) and **été** (from *être*) look strange, but they
+      work like any other past participle:
+
+      - *Elle a **eu** une bonne note.* — She got a good mark.
+      - *Nous avons **eu** de la chance.* — We were lucky.
+      - *Il a **été** très gentil.* — He was very kind.
+
+      Notice that *été* goes with **avoir**: *j'ai été*, never *je suis été*.
+      (*Été* is also the word for summer. The sentence tells you which
+      one is meant.)
+    examples:
+      - ["J'ai eu faim.", "I was hungry."]
+      - ["J'ai été malade la semaine dernière.", "I was ill last week."]
+    tip: "Expressions with *avoir* keep *avoir* in the past: *j'ai eu faim* (I was hungry), *j'ai eu peur* (I was scared). Never *j'ai été faim*."
+
+  - heading: A busy day
+    body: |
+      With regular and irregular verbs together, you can tell someone
+      about your whole day. Join short sentences with **puis** (then) or
+      **et après** (and after that).
+
+      As well as *hier*, use **ce matin** (this morning), **cet après-midi**
+      (this afternoon) and **ce soir** (this evening).
+    examples:
+      - ["Ce matin, j'ai pris le bus.", "This morning I took the bus."]
+      - ["J'ai vu mes amis et nous avons bu un café.", "I saw my friends and we had a coffee."]
+      - ["Puis j'ai fait mes devoirs.", "Then I did my homework."]
+      - ["Le soir, j'ai lu un livre.", "In the evening I read a book."]
+
+words:
+  - [voir, to see]
+  - [dire, "to say, to tell"]
+  - [mettre, "to put, to put on"]
+  - [boire, to drink]
+  - [lire, to read]
+  - [écrire, to write]
+  - [apprendre, to learn]
+  - [comprendre, to understand]
+  - [les devoirs, homework]
+  - [une note, "a mark, a grade"]
+  - [la chance, luck]
+  - [malade, "ill, sick"]
+  - [puis, then]
+  - [ce matin, this morning]
+  - [un pull, "a jumper, a sweater"]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "J'ai ___ mes devoirs."
+    hint: (faire)
+    translation: I did my homework.
+    answers: [fait]
+    why: The past participle of faire is fait.
+
+  - type: fill
+    section: 1
+    prompt: "Nous avons ___ le train."
+    hint: (prendre)
+    translation: We took the train.
+    answers: [pris]
+    why: The past participle of prendre is pris.
+
+  - type: fill
+    section: 1
+    prompt: "Tu as ___ le film ?"
+    hint: (voir)
+    translation: Did you see the film?
+    answers: [vu]
+    why: The past participle of voir is vu.
+
+  - type: fill
+    section: 1
+    prompt: "Elle a ___ un pull."
+    hint: (mettre)
+    translation: She put on a jumper.
+    answers: [mis]
+    why: The past participle of mettre is mis.
+
+  - type: choice
+    section: 1
+    prompt: What is the past participle of *dire*?
+    options: [disé, dit, du]
+    answer: dit
+    why: Dire is irregular, and its past participle is dit.
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: Il a dit bonjour.
+    answers: ["He said hello.", "He said hi.", "He said good morning.", "He has said hello."]
+    why: A dit is the passé composé of dire, to say.
+
+  - type: fill
+    section: 2
+    prompt: "Je n'ai pas ___."
+    hint: (comprendre)
+    translation: I didn't understand.
+    answers: [compris]
+    why: Comprendre is built on prendre, so its past participle is compris, like pris.
+
+  - type: choice
+    section: 2
+    prompt: What is the past participle of *boire*?
+    options: [boiré, bu, bois]
+    answer: bu
+    why: Boire is irregular, and like many irregular verbs its past participle ends in -u.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: She read a book.
+    answers: ["Elle a lu un livre."]
+    why: The past participle of lire is lu.
+
+  - type: fill
+    section: 3
+    prompt: "J'ai ___ une bonne note."
+    hint: (avoir)
+    translation: I got a good mark.
+    answers: [eu]
+    why: The past participle of avoir is eu, so "I got" or "I had" is j'ai eu.
+
+  - type: choice
+    section: 3
+    prompt: Which is correct?
+    options: [J'ai été malade., Je suis été malade.]
+    answer: J'ai été malade.
+    why: Être makes its passé composé with avoir, so it's j'ai été.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: I was scared.
+    answers: ["J'ai eu peur.", "J'avais peur."]
+    why: Avoir peur means to be scared, so in the past it becomes j'ai eu peur.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: Nous avons eu de la chance.
+    answers: ["We were lucky.", "We got lucky.", "We have been lucky.", "We had luck."]
+    why: Avoir de la chance is "to be lucky", so avons eu de la chance is "we were lucky".
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: This morning I took the bus.
+    answers: ["Ce matin, j'ai pris le bus.", "J'ai pris le bus ce matin."]
+    why: Ce matin means this morning, and prendre becomes j'ai pris.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Puis j'ai fait mes devoirs.
+    answers: ["Then I did my homework.", "After that I did my homework.", "Next I did my homework.", "Then I have done my homework."]
+    why: Puis means then, and j'ai fait is the passé composé of faire.

@@ -1,0 +1,210 @@
+title: "Cuando era niño"
+subtitle: The imperfect — how things used to be
+goal: talk about what you used to do and what things were like, with the imperfect — *jugaba, tenía, vivía, era*
+minutes: 15
+
+sections:
+  - heading: A second past tense
+    body: |
+      The *preterite* tells you what happened. The *imperfect* describes
+      the past as it was going on, with no clear beginning or end. Use it
+      for:
+
+      - **habits**: what you used to do
+      - **descriptions**: what people, places and things were like
+      - **age and time**: *tenía diez años* (I was ten), *eran las tres*
+
+      English often says "used to" or "was …ing" for this.
+    examples:
+      - ["De niño, jugaba al fútbol todos los días.", "As a child, I played soccer every day."]
+      - ["La casa de mis abuelos era muy grande.", "My grandparents' house was very big."]
+    tip: "*De niño* (or *de niña*) means \"as a child\" — a quick way to start talking about your childhood."
+
+  - heading: "-ar verbs: -aba"
+    body: |
+      Drop **-ar** and add **-aba**. The *yo* and *él / ella* forms are the
+      same — *jugaba* — so add *yo* or *él* if it isn't clear who you mean.
+
+      Only *nosotros* has an accent mark: **-ábamos**.
+    table:
+      columns: [who, ending, jugar]
+      rows:
+        - [yo, "-aba", jugaba]
+        - [tú, "-abas", jugabas]
+        - [él / ella / usted, "-aba", jugaba]
+        - [nosotros / nosotras, "-ábamos", jugábamos]
+        - [vosotros / vosotras (Spain), "-abais", jugabais]
+        - [ellos / ellas / ustedes, "-aban", jugaban]
+    examples:
+      - ["Mi madre trabajaba en un hospital.", "My mother used to work at a hospital."]
+      - ["Siempre viajábamos en verano.", "We always traveled in the summer."]
+      - ["¿Te gustaba la escuela?", "Did you like school?"]
+    tip: "Boot verbs have no boot in the imperfect: *jugaba*, *quería*, *podía* — never *juegaba*."
+
+  - heading: "-er and -ir verbs: -ía"
+    body: |
+      **-er** and **-ir** verbs share one set of endings, **-ía**, with an
+      accent mark on every form. The accent shows that the *i* and the *a*
+      are said separately: te-NÍ-a.
+
+      **Había** — the past of *hay* — means "there was" or "there were".
+    table:
+      columns: [who, ending, tener, vivir]
+      rows:
+        - [yo, "-ía", tenía, vivía]
+        - [tú, "-ías", tenías, vivías]
+        - [él / ella / usted, "-ía", tenía, vivía]
+        - [nosotros / nosotras, "-íamos", teníamos, vivíamos]
+        - [vosotros / vosotras (Spain), "-íais", teníais, vivíais]
+        - [ellos / ellas / ustedes, "-ían", tenían, vivían]
+    examples:
+      - ["Cuando tenía diez años, vivía en el campo.", "When I was ten, I lived in the countryside."]
+      - ["Teníamos un perro muy grande.", "We had a really big dog."]
+      - ["En mi pueblo había un parque muy bonito.", "In my town there was a very pretty park."]
+    tip: "Age in the past is always imperfect: *cuando tenía diez años* — not *tuve*."
+
+  - heading: "Only three irregulars: ser, ir, ver"
+    body: |
+      Almost every verb is regular in the imperfect. There are only three
+      exceptions, and they're common ones.
+
+      *Era* is for what someone or something was like — *era alto*, *era
+      bonito* — and for the time: *eran las tres*. *Iba* is for where you
+      used to go.
+    table:
+      columns: [who, ser, ir, ver]
+      rows:
+        - [yo, era, iba, veía]
+        - [tú, eras, ibas, veías]
+        - [él / ella / usted, era, iba, veía]
+        - [nosotros / nosotras, éramos, íbamos, veíamos]
+        - [vosotros / vosotras (Spain), erais, ibais, veíais]
+        - [ellos / ellas / ustedes, eran, iban, veían]
+    examples:
+      - ["Cuando era niña, iba a la playa todos los veranos.", "When I was a girl, I went to the beach every summer."]
+      - ["Mi abuelo era muy alto.", "My grandfather was very tall."]
+      - ["Veíamos la tele por la noche.", "We used to watch TV at night."]
+
+  - heading: Then and now
+    body: |
+      To compare the past with today, use **antes** (before, in the past)
+      with the imperfect, and **ahora** (now) with the present.
+
+      Words for habits go well with the imperfect: **siempre**,
+      **normalmente**, **a veces**, **todos los días**, **todos los
+      veranos**, **los sábados**.
+    examples:
+      - ["Antes vivía en Lima; ahora vivo en Quito.", "I used to live in Lima; now I live in Quito."]
+      - ["Antes no me gustaba el café.", "I didn't use to like coffee."]
+      - ["Los sábados íbamos al cine.", "On Saturdays we used to go to the movies."]
+    tip: "There's no separate word for \"used to\" — the imperfect ending already says it. *Jugaba* = I used to play."
+
+words:
+  - [de niño / de niña, as a child]
+  - [antes, "before, in the past"]
+  - [ahora, now]
+  - [había, "there was, there were"]
+  - [todos los días, every day]
+  - [campo, countryside]
+  - [pueblo, "village, small town"]
+  - [tele, TV]
+  - [ver la tele, to watch TV]
+  - [bicicleta, bicycle]
+  - [juguete, toy]
+
+practice:
+  - type: choice
+    section: 1
+    prompt: "*Jugaba al fútbol* means…"
+    options: [I used to play soccer., I played soccer once., I will play soccer.]
+    answer: I used to play soccer.
+    why: The imperfect describes habits — what you used to do.
+
+  - type: choice
+    section: 1
+    prompt: Which sentence describes a habit in the past?
+    options: ["De niño, comía mucho chocolate.", "Ayer comí chocolate."]
+    answer: "De niño, comía mucho chocolate."
+    why: The imperfect, comía, describes something you did again and again.
+
+  - type: fill
+    section: 2
+    prompt: "De niño, ___ al fútbol todos los días."
+    hint: jugar, yo
+    translation: As a child, I played soccer every day.
+    answers: [jugaba]
+    why: -ar verbs take -aba in the imperfect, and boot verbs don't change.
+
+  - type: fill
+    section: 2
+    prompt: "Siempre ___ en verano."
+    hint: viajar, nosotros
+    translation: We always traveled in the summer.
+    answers: [viajábamos]
+    why: The nosotros ending in the imperfect is -ábamos, with an accent.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: My mother used to work at a hospital.
+    answers: [Mi madre trabajaba en un hospital, Mi mamá trabajaba en un hospital]
+    why: The imperfect ending -aba says what someone used to do.
+
+  - type: fill
+    section: 3
+    prompt: "Cuando ___ diez años, vivía en Chile."
+    hint: tener, yo
+    translation: When I was ten, I lived in Chile.
+    answers: [tenía]
+    why: Age in the past uses the imperfect, and -er verbs take -ía.
+
+  - type: fill
+    section: 3
+    prompt: "En mi pueblo ___ un parque muy bonito."
+    hint: there was
+    translation: In my town there was a very pretty park.
+    answers: [había]
+    why: Había is the imperfect of hay — "there was" or "there were".
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: Vivíamos en el campo.
+    answers: [We lived in the countryside, We used to live in the countryside, We lived in the country, We used to live in the country]
+    why: Vivíamos is the nosotros form of vivir in the imperfect.
+
+  - type: fill
+    section: 4
+    prompt: "Cuando ___ niña, iba a la playa."
+    hint: ser, yo
+    translation: When I was a girl, I used to go to the beach.
+    answers: [era]
+    why: Ser is irregular in the imperfect — yo era.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: We used to go to the beach every summer.
+    answers: [Íbamos a la playa todos los veranos, Todos los veranos íbamos a la playa, Nosotros íbamos a la playa todos los veranos, Nosotras íbamos a la playa todos los veranos, Íbamos a la playa cada verano, Cada verano íbamos a la playa]
+    why: Ir is irregular in the imperfect — nosotros íbamos.
+
+  - type: choice
+    section: 4
+    prompt: "*Veíamos la tele* means…"
+    options: [We used to watch TV., We saw the TV once., We are watching TV.]
+    answer: We used to watch TV.
+    why: Veíamos is the imperfect of ver, for a habit in the past.
+
+  - type: translate
+    section: 5
+    direction: to-target
+    prompt: I used to live in Lima; now I live in Quito.
+    answers: ["Antes vivía en Lima, ahora vivo en Quito", "Antes vivía en Lima y ahora vivo en Quito", "Antes vivía en Lima pero ahora vivo en Quito", "Vivía en Lima, ahora vivo en Quito", "Vivía en Lima y ahora vivo en Quito", "Vivía en Lima pero ahora vivo en Quito", "Antes yo vivía en Lima y ahora vivo en Quito", "Yo vivía en Lima y ahora vivo en Quito"]
+    why: The imperfect, vivía, is for the past; the present, vivo, is for now.
+
+  - type: translate
+    section: 5
+    direction: to-english
+    prompt: Antes no me gustaba el café.
+    answers: [I did not use to like coffee, I did not used to like coffee, I used to not like coffee, I used not to like coffee, I did not like coffee before, Before I did not like coffee, I never used to like coffee]
+    why: Gustaba is the imperfect of gustar, and antes means "before" or "in the past".

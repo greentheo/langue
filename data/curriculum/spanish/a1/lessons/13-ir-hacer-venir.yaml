@@ -170,6 +170,21 @@ practice:
     answers: [Are you coming with me?, Will you come with me?, Do you come with me?]
     why: Conmigo means "with me", and vienes is the tú form of venir.
 
+  - type: fill
+    section: 5
+    prompt: "El libro es ___ mi hermano."
+    hint: for
+    translation: The book is for my brother.
+    answers: [para]
+    why: Para means "for" — who something is meant for.
+
+  - type: translate
+    section: 5
+    direction: to-target
+    prompt: She's coming with me.
+    answers: [Viene conmigo, Ella viene conmigo]
+    why: "\"With me\" is the single word conmigo, never con mí."
+
   - type: translate
     section: 4
     direction: to-english

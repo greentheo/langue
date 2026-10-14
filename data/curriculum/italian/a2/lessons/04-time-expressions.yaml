@@ -1,0 +1,223 @@
+title: "Due giorni fa"
+subtitle: "Time words: fa, da, già, ancora, appena, mai"
+goal: say how long ago something happened and how long it has been going on, and use già, non… ancora, appena and mai with the past
+minutes: 14
+
+sections:
+  - heading: "Fa: ago"
+    body: |
+      To say how long **ago** something happened, put **fa** after the
+      amount of time — the same order as English:
+
+      - *due giorni fa* — two days ago
+      - *una settimana fa* — a week ago
+      - *un'ora fa* — an hour ago
+      - *tanto tempo fa* — a long time ago
+
+      Use it with the passato prossimo. To ask, say **Quanto tempo fa?** —
+      How long ago?
+    examples:
+      - ["Sono arrivato in Italia tre giorni fa.", "I arrived in Italy three days ago."]
+      - ["Ho finito la scuola un anno fa.", "I finished school a year ago."]
+      - ["Marco ha telefonato dieci minuti fa.", "Marco phoned ten minutes ago."]
+    tip: "This *fa* comes from *fare*, as in *fa caldo* (it's hot). But after an amount of time, it simply means \"ago\"."
+
+  - heading: "Da: for and since"
+    body: |
+      To say how long something **has been going on** — and still is —
+      Italian uses the **present** tense + **da**:
+
+      - *Studio italiano da due anni.* — I've been studying Italian for two years.
+      - *Abito qui dal 2020.* — I've lived here since 2020.
+
+      *Da* covers both "for" and "since". To ask, say **Da quanto tempo…?**
+      — How long have you…?
+
+      English says "have been", but Italian uses the present, because it's
+      still true now.
+    examples:
+      - ["Da quanto tempo studi italiano?", "How long have you been studying Italian?"]
+      - ["Sono in vacanza da una settimana.", "I've been on holiday for a week."]
+      - ["Aspetto l'autobus da venti minuti.", "I've been waiting for the bus for twenty minutes."]
+      - ["Lavoro qui da gennaio.", "I've worked here since January."]
+    tip: "Don't use the past here: *Abito a Roma da tre anni* means you still live there. *Ho abitato a Roma per tre anni* means you don't any more."
+
+  - heading: "Già, non… ancora, appena"
+    body: |
+      These three words go **between** the helper and the participle:
+
+      - **già** — already: *Ho già mangiato.* — I've already eaten.
+      - **non… ancora** — not yet: *Non ho ancora mangiato.* — I haven't eaten yet.
+      - **appena** — just: *Sono appena arrivata.* — I've just arrived.
+
+      *Già* and *appena* sit where English puts "already" and "just": "I
+      have already eaten" — *ho già mangiato*.
+    examples:
+      - ["Hai già fatto i compiti?", "Have you already done your homework?"]
+      - ["Il treno non è ancora partito.", "The train hasn't left yet."]
+      - ["Abbiamo appena cenato.", "We've just had dinner."]
+    tip: "*Ancora* on its own means \"still\" or \"again\": *Sei ancora qui?* — Are you still here? With *non* it means \"not yet\"."
+
+  - heading: "Mai: ever and never"
+    body: |
+      In A1 you learned **non… mai** — never. In a question, **mai** on its
+      own means **ever**:
+
+      - *Sei mai stato a Venezia?* — Have you ever been to Venice?
+      - *Non sono mai stato a Venezia.* — I've never been to Venice.
+
+      With the passato prossimo, *mai* goes between the helper and the
+      participle, like *già*.
+
+      To say how many times: **una volta** (once), **due volte** (twice),
+      **tante volte** (lots of times).
+    examples:
+      - ["Hai mai mangiato il tiramisù?", "Have you ever eaten tiramisù?"]
+      - ["Non sono mai stata in Italia.", "I've never been to Italy. (a woman speaking)"]
+      - ["Sono stato a Roma due volte.", "I've been to Rome twice."]
+    tip: "When *mai* means \"never\", it needs *non* too: *Non ho mai visto il mare*, not *Ho mai visto il mare*."
+
+words:
+  - [fa, ago]
+  - [da, "for, since"]
+  - [già, already]
+  - [ancora, "still, again; (with non) yet"]
+  - [appena, just]
+  - [mai, "ever; (with non) never"]
+  - [volta, "time (once, twice…)"]
+  - [aspettare, "to wait, to wait for"]
+  - [quanto tempo, how long]
+  - [tanto tempo, a long time]
+  - [telefonare, to phone]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Sono arrivata tre giorni ___."
+    hint: ago
+    translation: I arrived three days ago.
+    answers: [fa]
+    why: Fa goes after the amount of time, like "ago".
+
+  - type: translate
+    section: 1
+    direction: to-target
+    prompt: a week ago
+    answers: [una settimana fa]
+    why: Fa comes after the time — una settimana fa.
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: Ho finito la scuola un anno fa.
+    answers:
+      - I finished school a year ago.
+      - I finished school one year ago.
+      - A year ago I finished school.
+    why: Un anno fa is "a year ago".
+
+  - type: fill
+    section: 2
+    prompt: "Studio italiano ___ due anni."
+    hint: for
+    translation: I've been studying Italian for two years.
+    answers: [da]
+    why: For something still going on, Italian uses the present + da.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: How long have you been studying Italian? (to a friend)
+    answers:
+      - Da quanto tempo studi italiano?
+      - Da quanto tempo studi l'italiano?
+      - Da quanto studi italiano?
+      - Da quanto studi l'italiano?
+    why: Da quanto tempo + the present asks how long something has been going on.
+
+  - type: translate
+    section: 2
+    direction: to-english
+    prompt: Aspetto l'autobus da venti minuti.
+    answers:
+      - I've been waiting for the bus for twenty minutes.
+      - I've been waiting for the bus for 20 minutes.
+      - I have been waiting for the bus for twenty minutes.
+      - I've waited for the bus for twenty minutes.
+    why: Present + da is the English "have been …-ing for".
+
+  - type: choice
+    section: 2
+    prompt: You still live here. How do you say "I've lived here for three years"?
+    options: [Abito qui da tre anni., Ho abitato qui da tre anni., Abito qui tre anni fa.]
+    answer: Abito qui da tre anni.
+    why: Something still true now takes the present + da.
+
+  - type: fill
+    section: 3
+    prompt: "Ho ___ mangiato, grazie."
+    hint: already
+    translation: I've already eaten, thanks.
+    answers: [già]
+    why: Già (already) goes between the helper and the participle.
+
+  - type: fill
+    section: 3
+    prompt: "Il treno non è ___ partito."
+    hint: yet
+    translation: The train hasn't left yet.
+    answers: [ancora]
+    why: Non… ancora means "not yet".
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: I've just arrived. (a man speaking)
+    answers:
+      - Sono appena arrivato.
+      - Io sono appena arrivato.
+    why: Appena (just) goes between the helper and the participle.
+
+  - type: choice
+    section: 3
+    prompt: "Your mum asks *Hai già fatto i compiti?* You haven't. You say…"
+    options: ["No, non ho ancora fatto i compiti.", "No, ho già fatto i compiti.", "No, ho appena fatto i compiti."]
+    answer: "No, non ho ancora fatto i compiti."
+    why: Non… ancora means "not yet".
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Hai mai mangiato il tiramisù?
+    answers:
+      - Have you ever eaten tiramisù?
+      - Have you ever had tiramisù?
+      - Have you ever tried tiramisù?
+      - Did you ever eat tiramisù?
+    why: In a question, mai means "ever".
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: I've never been to Italy. (a woman speaking)
+    answers:
+      - Non sono mai stata in Italia.
+      - Io non sono mai stata in Italia.
+      - Non sono mai andata in Italia.
+      - Io non sono mai andata in Italia.
+    why: '"Never" is non + mai, with mai between the helper and the participle.'
+
+  - type: choice
+    section: 4
+    prompt: In *Sei mai stato a Venezia?*, what does *mai* mean?
+    options: [never, ever, again]
+    answer: ever
+    why: In a question without non, mai means "ever".
+
+  - type: fill
+    section: 4
+    prompt: "Sono stato a Roma due ___."
+    hint: times
+    translation: I've been to Rome twice.
+    answers: [volte]
+    why: Una volta is "once", and due volte is "twice".

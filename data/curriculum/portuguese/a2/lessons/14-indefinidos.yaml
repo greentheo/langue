@@ -1,0 +1,224 @@
+title: "Algum, nenhum, todo, tudo"
+subtitle: Some, none, every, everything, each
+goal: say some, any, nobody, nothing, every, all, everything and each
+minutes: 14
+
+sections:
+  - heading: Algum — some, any
+    body: |
+      **Algum** means *some* or *any*, and it agrees with its noun. In
+      questions it's often singular where English uses a plural: *Alguma
+      pergunta?* — Any questions?
+
+      Two related words never change:
+
+      - **alguém** — someone, anyone
+      - **alguma coisa** — something, anything
+    table:
+      columns: ["", masculine, feminine]
+      rows:
+        - [singular, algum, alguma]
+        - [plural, alguns, algumas]
+    examples:
+      - ["Você tem alguma pergunta?", "Do you have any questions?"]
+      - ["Alguns amigos vieram.", "Some friends came."]
+      - ["Alguém viu a minha chave?", "Has anyone seen my key?"]
+      - ["Quer alguma coisa?", "Do you want anything?"]
+
+  - heading: Nenhum, ninguém, nada
+    body: |
+      The negative words are **nenhum / nenhuma** (no, not any — usually
+      singular), **ninguém** (nobody) and **nada** (nothing).
+
+      Portuguese uses a **double negative**. When one of these comes after
+      the verb, put **não** before the verb as well: *Não vi ninguém.* —
+      I didn't see anybody.
+
+      When it comes first, there's no *não*: *Ninguém veio.* — Nobody
+      came.
+    examples:
+      - ["Não tenho nenhum problema.", "I don't have any problem."]
+      - ["Não comprei nada.", "I didn't buy anything."]
+      - ["Ninguém sabe.", "Nobody knows."]
+    tip: "*Não… nada* isn't a mistake — it's required. You've used it since lesson 1: *De nada* is literally \"of nothing\"."
+
+  - heading: Todo — every, all, the whole
+    body: |
+      **Todo / toda** changes its meaning with the article:
+
+      - **todo + noun**, no article — **every**: *todo dia* — every day
+      - **todos os / todas as** — **all (the)**: *todos os alunos* — all
+        the students. *Todos os dias* also means every day.
+      - noun + **todo** — **the whole**: *o dia todo* — all day long, *a
+        família toda* — the whole family
+
+      **Todo mundo** — literally "all the world" — means **everybody**.
+      It takes a singular verb: *Todo mundo gosta de pão de queijo.*
+    examples:
+      - ["Trabalhei o dia todo.", "I worked all day long."]
+      - ["Todos os meus amigos moram aqui.", "All my friends live here."]
+      - ["Todo mundo foi à festa.", "Everybody went to the party."]
+
+  - heading: Tudo — everything
+    body: |
+      **Tudo** means **everything**. It never changes, and it stands alone
+      — there's never a noun after it. That's the difference from *todo*.
+
+      You've known it since your first day: *Tudo bem?* — literally
+      "everything well?"
+
+      - *Comi tudo.* — I ate everything.
+      - *Tudo aqui é caro.* — Everything here is expensive.
+    examples:
+      - ["Ela explicou tudo.", "She explained everything."]
+      - ["Deu tudo certo.", "Everything worked out."]
+    tip: "*Todo* goes with a noun, *tudo* goes alone: *a pizza toda* — the whole pizza; *Comi tudo* — I ate everything."
+
+  - heading: Cada — each
+    body: |
+      **Cada** means **each** or **every**, and it never changes:
+
+      - *Cada aluno tem um livro.* — Each student has a book.
+      - *Custa dez reais cada.* — They cost ten reais each.
+
+      Two handy phrases: **cada um / cada uma** — each one, and **cada vez
+      mais** — more and more.
+    examples:
+      - ["A gente pagou cinquenta reais cada um.", "We paid fifty reais each."]
+      - ["Cada vez mais pessoas visitam o Brasil.", "More and more people visit Brazil."]
+
+words:
+  - [algum, some / any]
+  - [alguém, someone / anyone]
+  - [alguma coisa, something / anything]
+  - [nenhum, no / not any]
+  - [ninguém, nobody / no one]
+  - [nada, nothing]
+  - [todo, every / all / the whole]
+  - [todo mundo, everybody]
+  - [tudo, everything]
+  - [cada, each / every]
+  - [cada um, each one]
+  - [cada vez mais, more and more]
+  - [problema, problem]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Você tem ___ pergunta?"
+    hint: any
+    translation: Do you have any questions?
+    answers: [alguma]
+    why: Pergunta is feminine, so "any" is alguma — singular in a question.
+
+  - type: fill
+    section: 1
+    prompt: "___ amigos vieram."
+    hint: some
+    translation: Some friends came.
+    answers: [Alguns]
+    why: Amigos is masculine plural, so "some" is alguns.
+
+  - type: translate
+    section: 1
+    direction: to-target
+    prompt: Has anyone seen my key?
+    answers: [Alguém viu a minha chave?, Alguém viu minha chave?]
+    why: Alguém is someone or anyone, and it never changes.
+
+  - type: fill
+    section: 2
+    prompt: "Não comprei ___."
+    hint: anything
+    translation: I didn't buy anything.
+    answers: [nada]
+    why: After não + verb, "anything" is nada — a double negative.
+
+  - type: choice
+    section: 2
+    prompt: "\"Nobody came.\""
+    options: [Ninguém veio., Não ninguém veio., Ninguém não veio.]
+    answer: Ninguém veio.
+    why: When ninguém comes first, there's no não.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: I didn't see anybody.
+    answers: [Não vi ninguém., Eu não vi ninguém.]
+    why: Ninguém after the verb needs não before it.
+
+  - type: translate
+    section: 2
+    direction: to-english
+    prompt: "Não tenho nenhuma pergunta."
+    answers:
+      - "I don't have any questions."
+      - "I don't have any question."
+      - "I have no questions."
+      - "I have no question."
+    why: "Não… nenhuma is \"not any\" — a double negative."
+
+  - type: fill
+    section: 3
+    prompt: "Todo ___ gosta de pão de queijo."
+    hint: everybody
+    translation: Everybody likes cheese bread.
+    answers: [mundo]
+    why: Todo mundo means everybody, with a singular verb.
+
+  - type: choice
+    section: 3
+    prompt: "\"all day long\""
+    options: [o dia todo, todo dia, cada dia]
+    answer: o dia todo
+    why: Noun + todo means "the whole"; todo dia means every day.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: "Todas as lojas fecham às dez."
+    answers:
+      - "All the shops close at ten."
+      - "All the stores close at ten."
+      - "All shops close at ten."
+      - "All stores close at ten."
+      - "All of the shops close at ten."
+    why: "Todas as means \"all the\" — feminine, to agree with lojas."
+
+  - type: fill
+    section: 4
+    prompt: "Comi ___."
+    hint: everything
+    translation: I ate everything.
+    answers: [tudo]
+    why: On its own, with no noun, "everything" is tudo.
+
+  - type: choice
+    section: 4
+    prompt: "\"Everything here is expensive.\""
+    options: [Tudo aqui é caro., Todo aqui é caro., Toda aqui é cara.]
+    answer: Tudo aqui é caro.
+    why: With no noun after it, use tudo.
+
+  - type: fill
+    section: 5
+    prompt: "Custa dez reais ___."
+    hint: each
+    translation: They cost ten reais each.
+    answers: [cada, cada um, cada uma]
+    why: Cada means each, and it never changes.
+
+  - type: translate
+    section: 5
+    direction: to-english
+    prompt: Cada aluno tem um livro.
+    answers: [Each student has a book., Every student has a book., Each pupil has a book., Every pupil has a book.]
+    why: Cada means each or every.
+
+  - type: translate
+    section: 5
+    direction: to-target
+    prompt: more and more people
+    answers: [cada vez mais pessoas, cada vez mais gente]
+    why: Cada vez mais is the fixed phrase for "more and more".

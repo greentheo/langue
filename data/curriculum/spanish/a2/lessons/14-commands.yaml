@@ -1,0 +1,198 @@
+title: "¡Ven conmigo!"
+subtitle: "Telling a friend what to do: *habla, come, ven*"
+goal: tell a friend what to do with *tú* commands — including *ven, haz, pon* and *ten* — and give simple directions
+minutes: 15
+
+sections:
+  - heading: "Regular commands: just like the él form"
+    body: |
+      A *command* tells someone what to do. To tell one friend (*tú*) to
+      do something, use the **él / ella** form of the present: *Ana habla*
+      (Ana speaks) → **¡Habla!** (Speak!)
+
+      Boot verbs keep their boot: *cerrar → ¡Cierra!*, *dormir →
+      ¡Duerme!*, *pedir → ¡Pide!*
+    table:
+      columns: [verb, él / ella, command]
+      rows:
+        - [hablar, habla, "¡Habla!"]
+        - [comer, come, "¡Come!"]
+        - [escribir, escribe, "¡Escribe!"]
+        - [cerrar, cierra, "¡Cierra!"]
+    examples:
+      - ["Habla más despacio, por favor.", "Speak more slowly, please."]
+      - ["Escribe tu nombre aquí.", "Write your name here."]
+    tip: "These are only for \"do it\". \"Don't do it\" uses a different form (*no hables*), which you'll learn at the next level."
+
+  - heading: Eight short irregular commands
+    body: |
+      Eight common verbs have short, irregular commands — most are just
+      one syllable. They're used all the time, so learn them as a set.
+
+      *Ten cuidado* (be careful) and *pon la mesa* (set the table) are
+      phrases you'll hear every day.
+    table:
+      columns: [verb, command, English]
+      rows:
+        - [venir, ven, come]
+        - [decir, di, "say, tell"]
+        - [salir, sal, "go out, leave"]
+        - [hacer, haz, "do, make"]
+        - [tener, ten, have]
+        - [ir, ve, go]
+        - [poner, pon, put]
+        - [ser, sé, be]
+    examples:
+      - ["¡Ven aquí!", "Come here!"]
+      - ["Haz la tarea.", "Do your homework."]
+      - ["Ten cuidado.", "Be careful."]
+      - ["Pon la mesa, por favor.", "Set the table, please."]
+
+  - heading: Little words go on the end
+    body: |
+      With a command, object and reflexive words (*me, te, lo, la, le…*)
+      join the **end** of the verb: *¡Ayúdame!* (Help me!), *¡Cómelo!*
+      (Eat it!)
+
+      Reflexive verbs use **te**: *levantarse → ¡Levántate!* (Get up!),
+      *sentarse → ¡Siéntate!* (Sit down!), *ponerse → ¡Ponte la
+      chaqueta!* (Put your jacket on!)
+
+      When this makes a longer word, add an accent mark to keep the stress
+      in place: *ayuda → ayúdame*. Short ones like *ponte*, *dime* and
+      *hazlo* need none.
+    examples:
+      - ["¡Llámame mañana!", "Call me tomorrow!"]
+      - ["Siéntate, por favor.", "Sit down, please."]
+      - ["Dime la verdad.", "Tell me the truth."]
+
+  - heading: Giving directions
+    body: |
+      Commands are how you give directions:
+
+      - **sigue todo recto** (or **todo derecho**) — go straight on
+      - **gira a la derecha / a la izquierda** — turn right / left
+      - **dobla a la derecha** — turn right (Latin America)
+      - **cruza la calle** — cross the street
+      - **toma la segunda calle** — take the second street
+
+      A stranger may say these to you politely, with *usted*: **siga,
+      gire, doble, cruce, tome**. They mean the same thing.
+    examples:
+      - ["Cruza la calle y gira a la izquierda.", "Cross the street and turn left."]
+      - ["Sigue todo recto hasta el semáforo.", "Go straight on as far as the traffic light."]
+      - ["El museo está en la esquina.", "The museum is on the corner."]
+
+words:
+  - [seguir, "to follow, to keep going"]
+  - [girar, to turn]
+  - [doblar, to turn (Latin America)]
+  - [cruzar, to cross]
+  - [tomar, to take]
+  - [calle, street]
+  - [esquina, corner]
+  - [semáforo, traffic light]
+  - [hasta, "until, as far as"]
+  - [sentarse, to sit down]
+  - [chaqueta, jacket]
+  - [cuidado, "care (ten cuidado: be careful)"]
+  - [poner la mesa, to set the table]
+  - [verdad, truth]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "___ más despacio, por favor."
+    hint: hablar, command to a friend
+    translation: Speak more slowly, please.
+    answers: [Habla]
+    why: A tú command looks like the él form of the present — habla.
+
+  - type: fill
+    section: 1
+    prompt: "___ la ventana, por favor."
+    hint: cerrar, command to a friend
+    translation: Close the window, please.
+    answers: [Cierra]
+    why: Cerrar is a boot verb (e → ie), and the command keeps the boot.
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: Escribe tu nombre aquí.
+    answers: [Write your name here]
+    why: Escribe is the tú command of escribir.
+
+  - type: fill
+    section: 2
+    prompt: "¡___ aquí!"
+    hint: venir, command to a friend
+    translation: Come here!
+    answers: [Ven]
+    why: Venir has a short irregular command — ven.
+
+  - type: fill
+    section: 2
+    prompt: "___ la tarea."
+    hint: hacer, command to a friend
+    translation: Do your homework.
+    answers: [Haz]
+    why: Hacer has a short irregular command — haz.
+
+  - type: choice
+    section: 2
+    prompt: "*Ten cuidado* means…"
+    options: [Be careful., Take care of it., Have ten.]
+    answer: Be careful.
+    why: Ten is the command of tener, and tener cuidado means "to be careful".
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: Set the table, please. (to a friend)
+    answers: [Pon la mesa por favor, Por favor pon la mesa]
+    why: Poner has a short irregular command — pon.
+
+  - type: fill
+    section: 3
+    prompt: "¡___, ya son las ocho!"
+    hint: levantarse, command to a friend
+    translation: Get up, it's already eight o'clock!
+    answers: [Levántate]
+    why: The reflexive te joins the end, and an accent keeps the stress on -van-.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: Call me tomorrow. (to a friend)
+    answers: [Llámame mañana, Mañana llámame]
+    why: Me joins the end of the command, and llama needs an accent — llámame.
+
+  - type: choice
+    section: 3
+    prompt: Help me! (to a friend)
+    options: ["¡Ayúdame!", "¡Me ayuda!", "¡Ayuda me!"]
+    answer: "¡Ayúdame!"
+    why: With a command, me joins the end of the verb as one word.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Cruza la calle y gira a la derecha.
+    answers: [Cross the street and turn right, Cross the road and turn right, Cross the street and turn to the right, Cross the road and turn to the right]
+    why: Cruza and gira are the tú commands of cruzar and girar.
+
+  - type: fill
+    section: 4
+    prompt: "Sigue todo ___ hasta el semáforo."
+    hint: straight
+    translation: Go straight on as far as the traffic light.
+    answers: [recto, derecho]
+    why: Todo recto (or todo derecho) means "straight on".
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: Turn left at the corner. (to a friend)
+    answers: [Gira a la izquierda en la esquina, En la esquina gira a la izquierda, Dobla a la izquierda en la esquina, En la esquina dobla a la izquierda]
+    why: Gira (or dobla) is the tú command, and "at the corner" is en la esquina.

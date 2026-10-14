@@ -131,6 +131,20 @@ practice:
     why: Perro has a rolled rr; pero, with a single tapped r, means "but".
 
   - type: choice
+    section: 4
+    prompt: In *Roma*, the r at the start is…
+    options: [rolled, a quick tap, silent]
+    answer: rolled
+    why: An r at the start of a word is always rolled, just like rr.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: but
+    answers: [pero]
+    why: Pero, with one quick tapped r, means "but"; perro, with a rolled rr, means "dog".
+
+  - type: choice
     section: 3
     prompt: How do you spell the k sound before e?
     options: [ke, que, ce]

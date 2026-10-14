@@ -1,0 +1,185 @@
+title: "Mañana lloverá"
+subtitle: "The simple future: *hablaré, iré, tendré*"
+goal: make predictions and promises with the simple future — *hablaré, iré* — and its common irregular forms like *tendré* and *haré*
+minutes: 14
+
+sections:
+  - heading: Endings on the whole infinitive
+    body: |
+      The *simple future* means "will": *hablaré* — I will speak.
+
+      It's the easiest tense to build: **don't drop anything**. Add the
+      endings to the whole infinitive. All three groups — -ar, -er and
+      -ir — use the same endings.
+    table:
+      columns: [who, ending, hablar, comer, ir]
+      rows:
+        - [yo, "-é", hablaré, comeré, iré]
+        - [tú, "-ás", hablarás, comerás, irás]
+        - [él / ella / usted, "-á", hablará, comerá, irá]
+        - [nosotros / nosotras, "-emos", hablaremos, comeremos, iremos]
+        - [vosotros / vosotras (Spain), "-éis", hablaréis, comeréis, iréis]
+        - [ellos / ellas / ustedes, "-án", hablarán, comerán, irán]
+    tip: "Every form except *nosotros* has an accent mark, because the stress falls on the ending: *hablaré*, *hablará*."
+
+  - heading: Ir a, or the future?
+    body: |
+      You already know **ir a** + infinitive (*voy a comer*). In everyday
+      conversation, it's the usual way to talk about plans.
+
+      The simple future is common for:
+
+      - **predictions** and weather forecasts: *Mañana lloverá.*
+      - **promises**: *Te llamaré esta noche.*
+      - things far off or not sure: *Algún día viviré en Madrid.*
+    examples:
+      - ["Mañana lloverá en el norte.", "Tomorrow it will rain in the north."]
+      - ["Te llamaré esta noche.", "I'll call you tonight."]
+      - ["Algún día viajaré a Japón.", "Someday I'll travel to Japan."]
+    tip: "For quick offers, Spanish uses the present, not the future: \"I'll help you\" is *Te ayudo*."
+
+  - heading: Irregular stems
+    body: |
+      A few common verbs change their stem in the future. The endings stay
+      exactly the same, so once you know the stem, you know every form:
+      *tendré, tendrás, tendrá…*
+
+      **Hay** (there is, there are) becomes **habrá** (there will be).
+    table:
+      columns: [verb, stem, yo]
+      rows:
+        - [tener, tendr-, tendré]
+        - [poder, podr-, podré]
+        - [salir, saldr-, saldré]
+        - [venir, vendr-, vendré]
+        - [hacer, har-, haré]
+        - [decir, dir-, diré]
+    examples:
+      - ["Mañana tendré mucho trabajo.", "Tomorrow I'll have a lot of work."]
+      - ["¿Qué harás el fin de semana?", "What will you do on the weekend?"]
+      - ["En la fiesta habrá mucha gente.", "There will be a lot of people at the party."]
+
+  - heading: Words for the future
+    body: |
+      - **pasado mañana** — the day after tomorrow
+      - **la semana que viene** or **la próxima semana** — next week
+      - **el año que viene** or **el próximo año** — next year
+      - **dentro de** + time — in (that much time from now): *dentro de dos días*
+      - **algún día** — someday
+    examples:
+      - ["Pasado mañana iremos a la playa.", "The day after tomorrow we'll go to the beach."]
+      - ["Llegaremos dentro de una hora.", "We'll arrive in an hour."]
+      - ["El año que viene estudiaré en Chile.", "Next year I'll study in Chile."]
+    tip: "*Próximo* goes before the noun, *que viene* after it: *la próxima semana* or *la semana que viene*."
+
+words:
+  - [pasado mañana, the day after tomorrow]
+  - [la semana que viene, next week]
+  - [próximo, next]
+  - [dentro de, in (time from now)]
+  - [algún día, someday]
+  - [esta noche, tonight]
+  - [norte, north]
+  - [sur, south]
+  - [nublado, cloudy]
+  - [viento, wind]
+  - [trabajo, "work, job"]
+  - [ganar, to win]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Mañana ___ con el profesor."
+    hint: hablar, yo
+    translation: Tomorrow I'll talk to the teacher.
+    answers: [hablaré]
+    why: The future adds -é to the whole infinitive.
+
+  - type: fill
+    section: 1
+    prompt: "¿___ a la fiesta?"
+    hint: ir, tú
+    translation: Will you go to the party?
+    answers: [Irás]
+    why: Even ir is regular in the future — ir + -ás.
+
+  - type: choice
+    section: 1
+    prompt: "The future of *comer* for *ellos*:"
+    options: [comerán, comieron, comen]
+    answer: comerán
+    why: The future adds -án to the whole infinitive.
+
+  - type: translate
+    section: 1
+    direction: to-target
+    prompt: We will travel to Chile.
+    answers: [Viajaremos a Chile, Nosotros viajaremos a Chile, Nosotras viajaremos a Chile, Vamos a viajar a Chile]
+    why: The future adds -emos to the whole infinitive for nosotros.
+
+  - type: translate
+    section: 2
+    direction: to-english
+    prompt: Mañana lloverá en el norte.
+    answers: [Tomorrow it will rain in the north, It will rain in the north tomorrow, Tomorrow it is going to rain in the north, It is going to rain in the north tomorrow]
+    why: Lloverá is the future of llover — a weather forecast.
+
+  - type: choice
+    section: 2
+    prompt: "A promise: \"I'll call you tonight.\""
+    options: [Te llamaré esta noche., Te llamé esta noche., Te llamaba esta noche.]
+    answer: Te llamaré esta noche.
+    why: Promises often use the simple future — llamaré.
+
+  - type: fill
+    section: 3
+    prompt: "Mañana ___ mucho trabajo."
+    hint: tener, yo
+    translation: Tomorrow I'll have a lot of work.
+    answers: [tendré]
+    why: Tener uses the stem tendr- in the future.
+
+  - type: fill
+    section: 3
+    prompt: "No ___ venir el sábado."
+    hint: poder, yo
+    translation: I won't be able to come on Saturday.
+    answers: [podré]
+    why: Poder uses the stem podr- in the future.
+
+  - type: fill
+    section: 3
+    prompt: "¿Qué ___ el fin de semana?"
+    hint: hacer, tú
+    translation: What will you do on the weekend?
+    answers: [harás]
+    why: Hacer uses the stem har- in the future.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: There will be a lot of people.
+    answers: [Habrá mucha gente]
+    why: Hay becomes habrá in the future.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: next week
+    answers: [la semana que viene, la próxima semana, la semana próxima]
+    why: Próximo goes before the noun, que viene after it.
+
+  - type: fill
+    section: 4
+    prompt: "Llegaremos ___ una hora."
+    hint: in — from now
+    translation: We'll arrive in an hour.
+    answers: [dentro de, en]
+    why: Dentro de + time means "in" — that much time from now.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Algún día viviré en Barcelona.
+    answers: [Someday I will live in Barcelona, Some day I will live in Barcelona, One day I will live in Barcelona, I will live in Barcelona someday, I will live in Barcelona some day, I will live in Barcelona one day]
+    why: Algún día means "someday", and viviré is the future of vivir.

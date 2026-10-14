@@ -1,0 +1,205 @@
+title: "Amanhã choverá"
+subtitle: The simple future — recognising it
+goal: recognise the simple future (falarei, fará) in announcements, forecasts and formal writing, and know that in speech Brazilians say vou + infinitive instead
+minutes: 12
+
+sections:
+  - heading: Two futures
+    body: |
+      You already know the everyday future: **ir + infinitive** — *Vou
+      viajar amanhã.* That's what Brazilians use when they talk.
+
+      There's also a one-word future, the **futuro simples**: *Viajarei
+      amanhã.* — I will travel tomorrow. It sounds formal, so you'll mostly
+      **read** it or hear it in announcements: the news, the weather
+      forecast (*a previsão do tempo*), airports, contracts. Your job is to
+      recognise it.
+    examples:
+      - ["O voo partirá às dez.", "The flight will leave at ten."]
+      - ["A loja abrirá às nove.", "The shop will open at nine."]
+      - ["Amanhã choverá em São Paulo.", "It will rain in São Paulo tomorrow."]
+    tip: "To say what you're going to do, use *vou* + infinitive. *Falarei com ele* is correct, but it sounds like a speech; *vou falar com ele* is what people say."
+
+  - heading: How it's made
+    body: |
+      Good news: you don't take anything off. The endings go straight onto
+      the **whole infinitive** — *falar* + *-ei* = *falarei* — and they're
+      the same for -ar, -er and -ir verbs.
+
+      The stress always falls on the ending: fa-la-REI, fa-la-RÁ. That's
+      why *-á* and *-ão* carry accents.
+    table:
+      columns: [pronoun, ending, falar, comer, abrir]
+      rows:
+        - [eu, -ei, falarei, comerei, abrirei]
+        - [você / ele / ela / a gente, -á, falará, comerá, abrirá]
+        - [nós, -emos, falaremos, comeremos, abriremos]
+        - [vocês / eles / elas, -ão, falarão, comerão, abrirão]
+    examples:
+      - ["Eles chegarão amanhã.", "They will arrive tomorrow."]
+      - ["Você receberá um e-mail.", "You will receive an email."]
+    tip: "*Falarão* (they will speak) and *falaram* (they spoke) look alike. **-ão** at the end is the future; **-am** is the past."
+
+  - heading: Three irregular verbs
+    body: |
+      Only three common verbs are irregular: **fazer**, **dizer** and
+      **trazer** (to bring). They lose the **-ze-** from the middle:
+      *fazer* becomes *far-*, *dizer* becomes *dir-*, *trazer* becomes
+      *trar-*. Then the normal endings go on, just as in the table above.
+
+      *Farei o possível* — I'll do my best — is a polite way to promise
+      you'll try.
+    table:
+      columns: [infinitive, eu, ele / ela, eles / elas]
+      rows:
+        - [fazer, farei, fará, farão]
+        - [dizer, direi, dirá, dirão]
+        - [trazer, trarei, trará, trarão]
+    examples:
+      - ["Farei o possível.", "I'll do my best."]
+      - ["O tempo dirá.", "Time will tell."]
+      - ["O garçom trará a conta.", "The waiter will bring the bill."]
+
+  - heading: Where you'll see it
+    body: |
+      Here is the *futuro simples* next to what people say in
+      conversation.
+
+      One future form is everyday speech, though: **Será que…?** —
+      literally "will it be that…?" It means "I wonder if…" or "Do you
+      think…?": *Será que vai chover?* — Do you think it's going to rain?
+    table:
+      columns: [written or announced, spoken]
+      rows:
+        - [O ônibus partirá às oito., O ônibus vai sair às oito.]
+        - [Amanhã fará calor., Amanhã vai fazer calor.]
+        - [Haverá uma reunião., Vai ter uma reunião.]
+    examples:
+      - ["Será que ele vem?", "Do you think he'll come?"]
+      - ["Haverá uma reunião às três.", "There will be a meeting at three."]
+    tip: "*Haverá* — there will be — is the future of *há*. In speech, Brazilians say *vai ter*."
+
+words:
+  - [futuro, future]
+  - [voo, flight]
+  - [sair, to leave / to go out]
+  - [receber, to receive / to get]
+  - [e-mail, email]
+  - [trazer, to bring]
+  - [garçom, waiter]
+  - [possível, possible]
+  - [reunião, meeting]
+  - [haverá, there will be]
+  - [Será que…?, I wonder if… / Do you think…?]
+  - [previsão do tempo, weather forecast]
+
+practice:
+  - type: choice
+    section: 1
+    prompt: "Which would a Brazilian normally say to a friend: \"I'll travel tomorrow\"?"
+    options: [Vou viajar amanhã., Viajarei amanhã.]
+    answer: Vou viajar amanhã.
+    why: In conversation Brazilians use ir + infinitive; the futuro simples sounds formal.
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: "O museu fechará às seis."
+    answers:
+      - "The museum will close at six."
+      - "The museum closes at six."
+      - "The museum is going to close at six."
+    why: "Fechará is the futuro simples of fechar — it will close."
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: "No sábado choverá em Salvador."
+    answers:
+      - "It will rain in Salvador on Saturday."
+      - "On Saturday it will rain in Salvador."
+      - "It's going to rain in Salvador on Saturday."
+      - "On Saturday it's going to rain in Salvador."
+    why: "Choverá is the futuro simples of chover — it will rain."
+
+  - type: fill
+    section: 2
+    prompt: "Eles ___ amanhã."
+    hint: chegar, futuro simples
+    translation: They will arrive tomorrow.
+    answers: [chegarão]
+    why: The future adds -ão to the whole infinitive for eles.
+
+  - type: choice
+    section: 2
+    prompt: "Which one means \"they will speak\"?"
+    options: [falarão, falaram, falam]
+    answer: falarão
+    why: -ão at the end is the future; falaram is the past.
+
+  - type: fill
+    section: 2
+    prompt: "Nós ___ às dez."
+    hint: partir, futuro simples
+    translation: We will leave at ten.
+    answers: [partiremos]
+    why: The future adds -emos to the whole infinitive for nós.
+
+  - type: translate
+    section: 2
+    direction: to-english
+    prompt: "Vocês receberão a chave amanhã."
+    answers:
+      - "You will receive the key tomorrow."
+      - "You will get the key tomorrow."
+      - "Tomorrow you will get the key."
+      - "Tomorrow you will receive the key."
+      - "You're going to get the key tomorrow."
+    why: "Receberão is the futuro simples of receber with vocês."
+
+  - type: fill
+    section: 3
+    prompt: "O garçom ___ a conta."
+    hint: trazer, futuro simples
+    translation: The waiter will bring the bill.
+    answers: [trará]
+    why: Trazer loses -ze- in the future — trará.
+
+  - type: choice
+    section: 3
+    prompt: "*Farei* is the future of…"
+    options: [fazer, ficar, falar]
+    answer: fazer
+    why: Fazer loses -ze- in the future — farei.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: "Eles farão uma festa."
+    answers:
+      - "They will have a party."
+      - "They will throw a party."
+      - "They're going to have a party."
+      - "They're going to throw a party."
+    why: "Fazer loses -ze- in the future — farão."
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: Do you think it's going to rain?
+    answers: [Será que vai chover?, Será que chove?, Será que choverá?]
+    why: Será que…? is the everyday way to say "I wonder if…" or "Do you think…?"
+
+  - type: choice
+    section: 4
+    prompt: "How would you say *Haverá uma reunião* in conversation?"
+    options: [Vai ter uma reunião., Teve uma reunião., Tinha uma reunião.]
+    answer: Vai ter uma reunião.
+    why: In speech, "there will be" is vai ter.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: O ônibus partirá às oito.
+    answers: [The bus will leave at eight., The bus will depart at eight., The bus leaves at eight., The bus departs at eight., The bus is going to leave at eight.]
+    why: Partirá is the futuro simples of partir — it will leave.

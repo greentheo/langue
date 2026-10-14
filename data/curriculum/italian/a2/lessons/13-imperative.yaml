@@ -1,0 +1,261 @@
+title: "Gira a destra!"
+subtitle: The informal imperative — telling a friend what to do
+goal: give instructions, directions and advice to a friend or a group, tell someone not to do something, and attach pronouns — aiutami!, alzati!
+minutes: 16
+
+sections:
+  - heading: "Do this! — for a friend"
+    body: |
+      The **imperative** is the form for telling someone what to do: "Come
+      here!", "Turn left!" To one friend (*tu*):
+
+      - **-are** verbs end in **-a**: *girare → gira!*, *mangiare → mangia!*
+      - **-ere** and **-ire** verbs end in **-i**: *prendere → prendi!*,
+        *sentire → senti!*, *finire → finisci!*
+
+      So -ere and -ire verbs look just like the normal *tu* form. Only -are
+      verbs change, from *-i* to *-a*.
+    table:
+      columns: [infinitive, tu, example]
+      rows:
+        - [girare, gira, Gira a destra al semaforo!]
+        - [aspettare, aspetta, Aspetta un momento!]
+        - [prendere, prendi, Prendi l'autobus numero 5!]
+        - [sentire, senti, Senti!]
+        - [finire, finisci, Finisci i compiti!]
+    examples:
+      - ["Attraversa la strada qui.", "Cross the road here."]
+      - ["Senti, hai tempo stasera?", "Listen, are you free tonight?"]
+    tip: "*Mangia!* is \"Eat!\" — but *mangia* is also \"he eats\". Your voice and the situation make it clear."
+
+  - heading: For a group, and "let's"
+    body: |
+      To tell **more than one person** what to do, use the normal **voi**
+      form of the present: *parlate!*, *prendete!*, *aprite!* There's
+      nothing new to learn.
+
+      For **"let's…"**, use the normal **noi** form:
+
+      - *Andiamo!* — Let's go!
+      - *Mangiamo!* — Let's eat!
+      - *Prendiamo un taxi.* — Let's take a taxi.
+    examples:
+      - ["Ragazzi, aprite i libri!", "Guys, open your books!"]
+      - ["Venite a cena da noi!", "Come to dinner at our place!"]
+      - ["Andiamo al mare!", "Let's go to the seaside!"]
+    tip: "You'll hear the voi form at school all the time: *Ascoltate! Ripetete! Scrivete!*"
+
+  - heading: Some short irregular ones
+    body: |
+      A few very common verbs have short *tu* forms. You'll hear them
+      constantly.
+
+      The forms with an apostrophe (*va'*, *fa'*, *sta'*) and the normal
+      ones (*vai*, *fai*, *stai*) are both correct. *Venire* is easy: it's
+      just the *tu* form, *vieni*.
+    table:
+      columns: [infinitive, tu, example]
+      rows:
+        - [andare, "va' / vai", Vai sempre dritto!]
+        - [fare, "fa' / fai", Fai presto!]
+        - [stare, "sta' / stai", Stai attento!]
+        - [dare, "da' / dai", "Dai, andiamo!"]
+        - [dire, "di'", "Di' la verità!"]
+        - [essere, sii, Sii gentile!]
+        - [venire, vieni, Vieni qui!]
+    examples:
+      - ["Vieni qui!", "Come here!"]
+      - ["Stai attento!", "Be careful!"]
+      - ["Vai sempre dritto, poi gira a sinistra.", "Go straight on, then turn left."]
+    tip: "*Dai!* literally means \"give!\", but Italians use it all the time to mean \"Come on!\""
+
+  - heading: "Don't! — non + infinitive"
+    body: |
+      To tell **one friend** not to do something, use **non** + the
+      **infinitive**:
+
+      - *Non mangiare!* — Don't eat!
+      - *Non andare!* — Don't go!
+      - *Non toccare!* — Don't touch!
+
+      To tell **a group**, it's just *non* + the voi form: *Non correte!* —
+      Don't run! For "let's not", use *non* + the noi form: *Non
+      aspettiamo!* — Let's not wait!
+    examples:
+      - ["Non dimenticare il passaporto!", "Don't forget your passport!"]
+      - ["Non fare rumore, il bambino dorme.", "Don't make any noise, the baby's asleep."]
+      - ["Ragazzi, non correte!", "Kids, don't run!"]
+    tip: "Don't say *Non mangia!* to a friend — that means \"he doesn't eat\". It's *Non mangiare!*"
+
+  - heading: Pronouns go on the end
+    body: |
+      With a positive imperative, pronouns **join the end** of the verb:
+
+      - *Aiutami!* — Help me!
+      - *Prendilo!* — Take it!
+      - *Scrivile!* — Write to her!
+      - *Alzati!* — Get up! *Siediti!* — Sit down!
+
+      With the short forms *va'*, *fa'*, *di'*, *da'*, the pronoun doubles
+      its first letter: *Dimmi!* — Tell me! *Fammi vedere!* — Let me see!
+    examples:
+      - ["Chiamami stasera!", "Call me tonight!"]
+      - ["Dimmi tutto!", "Tell me everything!"]
+      - ["Alzati, è tardi!", "Get up, it's late!"]
+    tip: "With *non*, the pronoun can go either side: *Non preoccuparti!* or *Non ti preoccupare!* — Don't worry!"
+
+words:
+  - [girare, to turn]
+  - [destra, right]
+  - [sinistra, left]
+  - [dritto, straight on]
+  - [attraversare, to cross]
+  - [semaforo, traffic light]
+  - [dimenticare, to forget]
+  - [toccare, to touch]
+  - [correre, to run]
+  - [attento, careful]
+  - [rumore, noise]
+  - [preoccuparsi, to worry]
+  - [sedersi, to sit down]
+  - [verità, truth]
+  - [dai, come on]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "___ al semaforo!"
+    hint: girare a destra, tu
+    translation: Turn right at the traffic lights!
+    answers: [gira a destra]
+    why: -are verbs end in -a in the tu imperative.
+
+  - type: fill
+    section: 1
+    prompt: "___ l'autobus numero 5!"
+    hint: prendere, tu
+    translation: Take the number 5 bus!
+    answers: [prendi]
+    why: -ere verbs end in -i, just like the normal tu form.
+
+  - type: translate
+    section: 1
+    direction: to-target
+    prompt: Wait a moment! (to a friend)
+    answers:
+      - Aspetta un momento!
+      - Aspetta un attimo!
+      - Aspetta un minuto!
+      - Aspetta un secondo!
+    why: Aspettare is an -are verb, so the tu imperative ends in -a.
+
+  - type: choice
+    section: 1
+    prompt: How do you tell a friend "Eat!"?
+    options: [Mangi!, Mangia!, Mangiare!]
+    answer: Mangia!
+    why: -are verbs end in -a in the tu imperative.
+
+  - type: fill
+    section: 2
+    prompt: "Ragazzi, ___ i libri!"
+    hint: aprire, voi
+    translation: Guys, open your books!
+    answers: [aprite]
+    why: The voi imperative is the same as the normal voi form.
+
+  - type: translate
+    section: 2
+    direction: to-english
+    prompt: Andiamo al mare! (making a suggestion)
+    answers:
+      - Let's go to the seaside!
+      - Let's go to the sea!
+      - Let's go to the beach!
+    why: The noi form means "let's".
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: Come to dinner at our place! (to a group)
+    answers:
+      - Venite a cena da noi!
+      - Venite da noi a cena!
+      - Venite a cenare da noi!
+    why: The voi imperative is the normal voi form — venite.
+
+  - type: fill
+    section: 3
+    prompt: "___ qui!"
+    hint: venire, tu
+    translation: Come here!
+    answers: [vieni]
+    why: The tu imperative of venire is just the tu form, vieni.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: Stai attento!
+    answers:
+      - Be careful!
+      - Watch out!
+      - Pay attention!
+    why: Stai is the imperative of stare — "be" — and attento is "careful".
+
+  - type: choice
+    section: 3
+    prompt: In *Dai, andiamo!*, what does *dai* mean?
+    options: [Give!, Come on!, Go away!]
+    answer: Come on!
+    why: Dai is literally "give!", but it's used to mean "come on!".
+
+  - type: fill
+    section: 4
+    prompt: "Non ___ il passaporto!"
+    hint: dimenticare, tu
+    translation: Don't forget your passport!
+    answers: [dimenticare]
+    why: For one friend, "don't" is non + the infinitive.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: Don't go! (to a friend)
+    answers:
+      - Non andare!
+    why: For one friend, "don't" is non + the infinitive.
+
+  - type: choice
+    section: 4
+    prompt: How do you tell a friend "Don't touch!"?
+    options: [Non tocca!, Non toccare!, Non tocchi!]
+    answer: Non toccare!
+    why: For one friend, "don't" is non + the infinitive.
+
+  - type: fill
+    section: 5
+    prompt: "___, è tardi!"
+    hint: alzarsi, tu
+    translation: Get up, it's late!
+    answers: [alzati]
+    why: The pronoun ti joins the end of the imperative — alza + ti.
+
+  - type: translate
+    section: 5
+    direction: to-target
+    prompt: Call me tonight! (to a friend)
+    answers:
+      - Chiamami stasera!
+      - Stasera chiamami!
+      - Telefonami stasera!
+      - Stasera telefonami!
+    why: The pronoun mi joins the end of the imperative.
+
+  - type: translate
+    section: 5
+    direction: to-english
+    prompt: Dimmi tutto!
+    answers:
+      - Tell me everything!
+      - Tell me all about it!
+    why: Di' + mi doubles the m — dimmi, "tell me".

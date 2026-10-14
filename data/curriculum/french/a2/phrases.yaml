@@ -1,0 +1,365 @@
+situations:
+  - id: stories
+    title: What happened? Telling and reacting
+    phrases:
+      - target: ["Tu as passé un bon week-end ?", "Est-ce que tu as passé un bon week-end ?", "Vous avez passé un bon week-end ?", "Est-ce que vous avez passé un bon week-end ?"]
+        english: ["Did you have a good weekend?", "Did you have a nice weekend?", "Have you had a good weekend?"]
+        note: "*Passer* means to spend (time). To an adult: *Vous avez passé un bon week-end ?*"
+        literally: you have spent a good weekend?
+      - target: ["Qu'est-ce que tu as fait ce week-end ?", "Tu as fait quoi ce week-end ?", "Qu'est-ce que vous avez fait ce week-end ?"]
+        english: ["What did you do this weekend?", "What did you do at the weekend?", "What did you do on the weekend?", "What did you get up to this weekend?"]
+        note: "*Tu as fait quoi ?* is the relaxed, spoken way to ask."
+        literally: what is it that you have done this weekend?
+      - target: ["C'était génial ! On est allés à la plage.", "C'était génial ! Nous sommes allés à la plage.", "C'était super ! On est allés à la plage."]
+        english: ["It was great! We went to the beach.", "It was brilliant! We went to the beach.", "Great! We went to the beach."]
+        note: "*On* means \"we\" here. After *on est*, the past participle usually takes an -s: *on est allés*."
+        literally: it was great! one is gone to the beach
+      - target: ["C'était comment ?", "Comment c'était ?"]
+        english: ["How was it?", "What was it like?"]
+        note: Ask it about anything that's over — a film, a party, a trip.
+        literally: it was how?
+      - target: ["Raconte !", "Racontez !"]
+        display: "Raconte ! / Racontez !"
+        english: ["Tell me all about it!", "Tell me!", "Tell me everything!", "Do tell!"]
+        note: "*Raconte* is for a friend; *Racontez* is polite, or for more than one person."
+        literally: tell!
+      - target: ["Qu'est-ce qui s'est passé ?", "Qu'est-ce qui est arrivé ?"]
+        english: ["What happened?", "What's happened?"]
+        note: "In the present, *Qu'est-ce qui se passe ?* means \"What's going on?\""
+        literally: what is it that itself is passed?
+      - target: ["Ce n'est pas vrai !", "C'est pas vrai !", "Pas vrai !"]
+        english: ["No way!", "You're kidding!", "You're joking!", "It's not true!", "That's not true!"]
+        note: "For surprising news, good or bad. In speech the *ne* usually disappears: *C'est pas vrai !*"
+        literally: it is not true
+      - target: ["Quelle chance !"]
+        english: ["Lucky you!", "How lucky!", "What luck!", "That's lucky!"]
+        literally: what luck
+      - target: ["Félicitations !", "Bravo !"]
+        english: ["Congratulations!", "Well done!"]
+        note: "*Bravo !* is for something someone did well, like a good mark."
+        literally: congratulations
+      - target: ["C'est dommage !", "Oh, c'est dommage !", "Dommage !", "Quel dommage !"]
+        english: ["What a shame!", "That's a shame!", "What a pity!", "That's a pity!", "That's too bad!", "Too bad!"]
+        note: For bad news that isn't too serious.
+        literally: it is damage
+
+  - id: travel
+    title: Trains, delays and luggage
+    phrases:
+      - target: ["Un aller-retour pour Lyon, s'il vous plaît."]
+        english: ["A return ticket to Lyon, please.", "A return to Lyon, please.", "A round-trip ticket to Lyon, please.", "A round trip to Lyon, please."]
+        note: "A one-way ticket is *un aller simple*."
+        literally: a go-return for Lyon, if it you pleases
+      - target: ["Le train part de quel quai ?", "De quel quai part le train ?"]
+        english: ["Which platform does the train leave from?", "What platform does the train leave from?", "Which platform is the train?"]
+        note: "On the departure boards, the platform is often called *la voie* (the track)."
+        literally: the train leaves from which platform?
+      - target: ["Le train a vingt minutes de retard."]
+        english: ["The train is twenty minutes late.", "The train is delayed by twenty minutes.", "The train's twenty minutes late."]
+        note: "French says the train *has* delay. Without a number: *Le train est en retard.*"
+        literally: the train has twenty minutes of delay
+      - target: ["Le train est annulé."]
+        english: ["The train is cancelled.", "The train has been cancelled.", "The train is canceled.", "The train has been canceled."]
+        literally: the train is cancelled
+      - target: ["Je dois changer de train ?", "Est-ce que je dois changer de train ?", "Il faut changer de train ?", "Est-ce qu'il faut changer de train ?"]
+        english: ["Do I have to change trains?", "Do I need to change trains?", "Do I have to change?"]
+        note: "*Changer de* + a noun with no article: *changer de train, changer de place*."
+        literally: I must change of train?
+      - target: ["J'ai raté mon train."]
+        english: ["I missed my train.", "I've missed my train."]
+        note: "*Rater* is the everyday verb for missing a train, a bus or a chance."
+        literally: I have missed my train
+      - target: ["Ma valise n'est pas arrivée."]
+        english: ["My suitcase hasn't arrived.", "My suitcase didn't arrive."]
+        note: "*Arriver* takes *être*, so *arrivée* agrees with *la valise*."
+        literally: my suitcase is not arrived
+      - target: ["Cette place est libre ?", "Est-ce que cette place est libre ?"]
+        english: ["Is this seat free?", "Is this seat available?", "Is anyone sitting here?"]
+        note: "*Une place* is a seat on a train or a bus, or in a cinema."
+        literally: this place is free?
+      - target: ["Je suis monté dans le mauvais train.", "Je suis montée dans le mauvais train."]
+        display: "Je suis monté / montée dans le mauvais train."
+        english: ["I got on the wrong train.", "I've got on the wrong train.", "I took the wrong train."]
+        note: "*Monter* is to get on a train or a bus. Add -e if you're a girl or woman."
+        literally: I am gone-up into the bad train
+      - target: ["Je suis bien arrivé.", "Je suis bien arrivée."]
+        display: "Je suis bien arrivé / arrivée."
+        english: ["I got here safely.", "I've arrived safely.", "I arrived safely.", "I got here OK.", "I got there safely."]
+        note: "The message to send home after a journey. For two or more of you: *Nous sommes bien arrivés.*"
+        literally: I am well arrived
+
+  - id: health
+    title: At the doctor's and the pharmacy
+    phrases:
+      - target: ["J'ai mal à la gorge depuis lundi."]
+        english: ["I've had a sore throat since Monday.", "My throat has been hurting since Monday."]
+        note: "*Depuis* + the present: it started on Monday and it still hurts."
+        literally: I have pain at the throat since Monday
+      - target: ["J'ai de la fièvre."]
+        english: ["I have a temperature.", "I've got a temperature.", "I have a fever.", "I've got a fever."]
+        literally: I have some fever
+      - target: ["Je tousse beaucoup."]
+        english: ["I'm coughing a lot.", "I cough a lot.", "I've been coughing a lot."]
+        literally: I cough a lot
+      - target: ["J'ai un rhume.", "Je suis enrhumé.", "Je suis enrhumée."]
+        english: ["I have a cold.", "I've got a cold."]
+        note: "*Je suis enrhumé(e)* says the same thing."
+        literally: I have a cold
+      - target: ["Je me suis fait mal au genou."]
+        english: ["I've hurt my knee.", "I hurt my knee."]
+        note: "Change the body part: *au dos* (back), *à la cheville* (ankle), *à l'épaule* (shoulder)."
+        literally: I myself am made pain at-the knee
+      - target: ["Je voudrais prendre rendez-vous.", "J'aimerais prendre rendez-vous."]
+        english: ["I'd like to make an appointment.", "I would like to make an appointment.", "I'd like to book an appointment."]
+        note: "With a name: *prendre rendez-vous avec le docteur Martin*."
+        literally: I would want to take appointment
+      - target: ["C'est grave ?", "Est-ce que c'est grave ?", "C'est grave, docteur ?"]
+        english: ["Is it serious?", "Is it bad?"]
+        note: "The answer you hope for: *Ce n'est pas grave.* People also say it to mean \"never mind\"."
+        literally: it is serious?
+      - target: ["Vous avez quelque chose contre la toux ?", "Est-ce que vous avez quelque chose contre la toux ?", "Avez-vous quelque chose contre la toux ?", "Vous avez quelque chose pour la toux ?"]
+        english: ["Do you have something for a cough?", "Do you have anything for a cough?", "Have you got anything for a cough?"]
+        note: "At the pharmacy. For a sore throat: *quelque chose contre le mal de gorge*."
+        literally: you have something against the cough?
+      - target: ["Il faut une ordonnance ?", "Est-ce qu'il faut une ordonnance ?", "J'ai besoin d'une ordonnance ?", "Est-ce que j'ai besoin d'une ordonnance ?"]
+        english: ["Do I need a prescription?", "Do you need a prescription?", "Is a prescription needed?"]
+        literally: it is-needed a prescription?
+      - target: ["Je vais mieux.", "Ça va mieux."]
+        english: ["I'm feeling better.", "I feel better.", "I'm better.", "I'm getting better."]
+        note: "*Mieux* is \"better\" with a verb — here, *aller*."
+        literally: I go better
+
+  - id: plans
+    title: Making and changing plans
+    phrases:
+      - target: ["Ça te dit d'aller au cinéma ?", "Ça vous dit d'aller au cinéma ?"]
+        english: ["Do you fancy going to the cinema?", "Would you like to go to the cinema?", "How about going to the cinema?", "Do you want to go to the movies?"]
+        note: "A friendly way to invite someone. Change the end: *Ça te dit, une pizza ?*"
+        literally: that to-you says to go to-the cinema?
+      - target: ["Avec plaisir !"]
+        english: ["I'd love to!", "With pleasure!", "Gladly!", "I'd be glad to!"]
+        note: A warm way to say yes to an invitation.
+        literally: with pleasure
+      - target: ["Désolé, je ne peux pas.", "Désolée, je ne peux pas.", "Désolé, je peux pas.", "Désolée, je peux pas."]
+        display: "Désolé / Désolée, je ne peux pas."
+        english: ["Sorry, I can't.", "I'm sorry, I can't."]
+        note: "Add -e if you're a girl or woman. Give a reason if you can: *je dois travailler*."
+        literally: sorry, I not can not
+      - target: ["Une autre fois, peut-être.", "Peut-être une autre fois."]
+        english: ["Maybe another time.", "Another time, maybe.", "Some other time, perhaps.", "Perhaps another time."]
+        literally: another time, maybe
+      - target: ["On se retrouve où ?", "Où est-ce qu'on se retrouve ?"]
+        english: ["Where shall we meet?", "Where are we meeting?", "Where should we meet?", "Where do we meet?"]
+        note: "*Se retrouver* is to meet up, by arrangement. The answer: *On se retrouve à la gare.*"
+        literally: one oneself finds-again where?
+      - target: ["Ça marche !"]
+        english: ["Sounds good!", "Deal!", "That works!", "OK!", "Okay!"]
+        note: "Casual. *Marcher* (to walk) also means \"to work\"."
+        literally: that walks
+      - target: ["Je serai là à huit heures.", "Je serai là à 8 heures."]
+        english: ["I'll be there at eight.", "I'll be there at eight o'clock."]
+        note: "*Serai* is the future of *être*."
+        literally: I will-be there at eight hours
+      - target: ["J'ai un empêchement."]
+        english: ["Something's come up.", "Something has come up.", "I can't make it."]
+        note: A polite way to cancel without saying why.
+        literally: I have a hindrance
+      - target: ["On remet ça à samedi ?", "On peut remettre ça à samedi ?"]
+        english: ["Shall we move it to Saturday?", "Can we move it to Saturday?", "Can we put it off till Saturday?", "Shall we put it off until Saturday?"]
+        note: "*Remettre* here means to put off, to postpone."
+        literally: one puts-back that to Saturday?
+      - target: ["Je te tiens au courant.", "Je vous tiens au courant."]
+        english: ["I'll keep you posted.", "I'll let you know.", "I'll keep you updated."]
+        note: "To an adult, or to more than one person: *Je vous tiens au courant.*"
+        literally: I you hold in-the current
+
+  - id: restaurant
+    title: Eating out
+    phrases:
+      - target: ["Je voudrais réserver une table pour quatre personnes.", "J'aimerais réserver une table pour quatre personnes.", "Je voudrais réserver une table pour quatre.", "J'aimerais réserver une table pour quatre."]
+        english: ["I'd like to book a table for four.", "I would like to book a table for four.", "I'd like to book a table for four people.", "I'd like to reserve a table for four."]
+        note: "Add the day and time: *pour samedi soir, à vingt heures*."
+        literally: I would want to reserve a table for four people
+      - target: ["Nous n'avons pas encore choisi.", "On n'a pas encore choisi."]
+        english: ["We haven't decided yet.", "We haven't chosen yet.", "We're not ready yet."]
+        note: "The answer to the waiter's *Vous avez choisi ?*"
+        literally: we not have not yet chosen
+      - target: ["Je vais prendre le plat du jour.", "Je prends le plat du jour.", "Le plat du jour, s'il vous plaît."]
+        english: ["I'll have the dish of the day.", "I'll have today's special.", "I'll have the special.", "I'll take the dish of the day."]
+        note: "*Le plat du jour* is usually the cheapest hot meal on the menu, and often the best."
+        literally: I go take the dish of-the day
+      - target: ["Qu'est-ce que vous avez comme desserts ?"]
+        english: ["What do you have for dessert?", "What desserts do you have?", "What have you got for dessert?"]
+        note: "Works for anything: *Qu'est-ce que vous avez comme glaces ?*"
+        literally: what is it that you have as desserts?
+      - target: ["Une carafe d'eau, s'il vous plaît."]
+        english: ["A jug of water, please.", "A carafe of water, please.", "A jug of tap water, please.", "Some tap water, please."]
+        note: "Tap water in a jug is free in French restaurants. *Une bouteille d'eau* is bottled, and you pay for it."
+        literally: a carafe of water, if it you pleases
+      - target: ["Encore un peu de pain, s'il vous plaît."]
+        english: ["A bit more bread, please.", "Some more bread, please.", "A little more bread, please.", "More bread, please."]
+        literally: again a little of bread, if it you pleases
+      - target: ["Je suis allergique aux noix."]
+        english: ["I'm allergic to nuts.", "I am allergic to nuts."]
+        note: "*À* + *les* becomes *aux*. For one thing: *allergique au lait* (to milk)."
+        literally: I am allergic to-the nuts
+      - target: ["Excusez-moi, ce n'est pas ce que j'ai commandé.", "Pardon, ce n'est pas ce que j'ai commandé."]
+        english: ["Excuse me, this isn't what I ordered.", "Excuse me, that's not what I ordered.", "Excuse me, this is not what I ordered."]
+        note: "Complaining politely: start with *Excusez-moi*, and keep your voice calm."
+        literally: excuse me, it is not that which I have ordered
+      - target: ["Je n'ai plus faim."]
+        english: ["I'm not hungry any more.", "I'm not hungry anymore.", "I'm full."]
+        note: "Don't say *je suis plein* — that's for a full bottle, not a person."
+        literally: I not have more hunger
+      - target: ["On peut payer séparément ?", "Est-ce qu'on peut payer séparément ?", "Nous pouvons payer séparément ?", "Est-ce que nous pouvons payer séparément ?"]
+        english: ["Can we pay separately?", "Could we pay separately?"]
+        literally: one can pay separately?
+
+  - id: phone
+    title: Phone calls and messages
+    phrases:
+      - target: ["Allô ?", "Allô, oui ?"]
+        english: ["Hello?"]
+        note: "Only on the phone. Then say *bonjour* as usual."
+      - target: ["C'est de la part de qui ?"]
+        english: ["Who's calling?", "Who is calling?", "May I ask who's calling?"]
+        literally: it is on the part of whom?
+      - target: ["Je peux laisser un message ?", "Est-ce que je peux laisser un message ?", "Puis-je laisser un message ?"]
+        english: ["Can I leave a message?", "May I leave a message?", "Could I leave a message?"]
+        literally: I can leave a message?
+      - target: ["Ne quittez pas."]
+        english: ["Hold on.", "Hold the line.", "Please hold.", "Hold on, please."]
+        note: What you hear while someone goes to fetch the person you want.
+        literally: don't leave
+      - target: ["Je te rappelle plus tard.", "Je vous rappelle plus tard."]
+        english: ["I'll call you back later.", "I'll ring you back later.", "I'll phone you back later."]
+        note: "To an adult: *Je vous rappelle plus tard.*"
+        literally: I you re-call later
+      - target: ["Je ne t'entends pas bien.", "Je ne vous entends pas bien.", "Je t'entends mal.", "Je vous entends mal."]
+        english: ["I can't hear you very well.", "I can't hear you well.", "I can hardly hear you."]
+        literally: I not you hear not well
+      - target: ["Je n'ai plus de batterie."]
+        english: ["My battery's dead.", "I've got no battery left.", "I have no battery left.", "My phone's dead."]
+        literally: I not have more of battery
+      - target: ["Vous vous êtes trompé de numéro.", "Vous vous êtes trompée de numéro.", "Tu t'es trompé de numéro.", "Tu t'es trompée de numéro."]
+        english: ["You've got the wrong number.", "You have the wrong number.", "Wrong number."]
+        note: "*Se tromper de* is to get the wrong one: *je me suis trompé de bus*."
+        literally: you yourself are mistaken of number
+      - target: ["Je t'envoie un texto.", "Je t'envoie un message.", "Je vous envoie un message."]
+        english: ["I'll text you.", "I'll send you a text.", "I'll send you a message.", "I'm sending you a text."]
+        literally: I you send a text
+
+  - id: clothes
+    title: "Clothes: sizes, trying on, taking back"
+    phrases:
+      - target: ["Vous l'avez en 38 ?", "Vous l'avez en trente-huit ?", "Est-ce que vous l'avez en 38 ?", "Vous l'avez en taille 38 ?", "Vous avez ça en 38 ?"]
+        english: ["Do you have it in a 38?", "Do you have it in size 38?", "Do you have this in a 38?", "Have you got it in a 38?"]
+        note: "French sizes: a women's 38 is about a UK 10 or a US 6."
+        literally: you it have in 38?
+      - target: ["Je fais du 40."]
+        english: ["I'm a size 40.", "I take a size 40.", "I wear a size 40.", "I'm a 40."]
+        note: "For shoes, it's *la pointure*: *Quelle est votre pointure ?*"
+        literally: I make of-the 40
+      - target: ["Où sont les cabines d'essayage ?"]
+        english: ["Where are the fitting rooms?", "Where are the changing rooms?", "Where's the fitting room?"]
+        literally: where are the cabins of trying-on?
+      - target: ["C'est un peu trop serré.", "Il est un peu trop serré.", "Elle est un peu trop serrée."]
+        english: ["It's a bit too tight.", "It's a little too tight."]
+        note: "The opposite is *trop large* — too loose."
+        literally: it is a bit too tight
+      - target: ["Ça vous va très bien.", "Ça te va très bien."]
+        english: ["It really suits you.", "It suits you very well.", "That looks great on you.", "It looks really good on you."]
+        note: "*Aller à quelqu'un* means to suit someone. To a friend: *Ça te va très bien.*"
+        literally: that you goes very well
+      - target: ["Le bleu me va mieux.", "La bleue me va mieux."]
+        display: "Le bleu / La bleue me va mieux."
+        english: ["The blue one suits me better.", "The blue one looks better on me."]
+        note: "*La bleue* if you mean something feminine, like *la veste*. *Mieux* goes with the verb *aller*."
+        literally: the blue me goes better
+      - target: ["Je peux l'échanger ?", "Est-ce que je peux l'échanger ?", "Puis-je l'échanger ?"]
+        english: ["Can I exchange it?", "Could I exchange it?", "May I exchange it?", "Can I change it?"]
+        literally: I can it exchange?
+      - target: ["Je voudrais me faire rembourser.", "J'aimerais me faire rembourser."]
+        english: ["I'd like a refund.", "I would like a refund.", "I'd like my money back."]
+        literally: I would want to make myself repay
+      - target: ["J'ai le ticket de caisse.", "J'ai gardé le ticket de caisse."]
+        english: ["I've got the receipt.", "I have the receipt.", "I kept the receipt."]
+        note: Shops in France usually ask for it when you bring something back.
+        literally: I have the ticket of till
+
+  - id: home
+    title: "At home: chores and renting"
+    phrases:
+      - target: ["Je mets la table ?", "Je peux mettre la table ?"]
+        english: ["Shall I set the table?", "Should I set the table?", "Shall I lay the table?", "Can I set the table?"]
+        note: "A nice thing to offer as a guest. Clearing it is *débarrasser la table*."
+        literally: I put the table?
+      - target: ["C'est à toi de faire la vaisselle.", "C'est ton tour de faire la vaisselle.", "C'est à ton tour de faire la vaisselle."]
+        english: ["It's your turn to do the dishes.", "It's your turn to do the washing-up.", "It's your turn to wash up."]
+        literally: it is to you to do the dishes
+      - target: ["Range ta chambre !"]
+        english: ["Tidy your room!", "Tidy up your room!", "Clean your room!", "Clean up your room!"]
+        note: "What every French parent says. To more than one child: *Rangez vos chambres !*"
+        literally: tidy your room
+      - target: ["Je sors la poubelle.", "Je vais sortir la poubelle."]
+        english: ["I'll take the bin out.", "I'll take the rubbish out.", "I'll take out the trash.", "I'm taking the bin out."]
+        note: "*Sortir* takes *avoir* when it has an object: *J'ai sorti la poubelle.*"
+        literally: I take-out the bin
+      - target: ["Où est-ce que je mets ça ?", "Je mets ça où ?", "Où je mets ça ?"]
+        english: ["Where shall I put this?", "Where do I put this?", "Where should I put this?", "Where does this go?"]
+        literally: where is it that I put that?
+      - target: ["Fais comme chez toi.", "Faites comme chez vous."]
+        display: "Fais comme chez toi. / Faites comme chez vous."
+        english: ["Make yourself at home."]
+        note: "*Fais comme chez toi* to a friend; *Faites comme chez vous* to an adult or a group."
+        literally: do as at your place
+      - target: ["N'oublie pas d'arroser les plantes.", "N'oubliez pas d'arroser les plantes."]
+        english: ["Don't forget to water the plants."]
+        literally: don't forget to water the plants
+      - target: ["Le loyer est de combien ?", "C'est combien, le loyer ?", "Le loyer, c'est combien ?"]
+        english: ["How much is the rent?", "What's the rent?"]
+        literally: the rent is of how much?
+      - target: ["Les charges sont comprises ?", "Est-ce que les charges sont comprises ?"]
+        english: ["Are bills included?", "Are the bills included?", "Are utilities included?"]
+        note: "*Les charges* are bills like water, heating and the upkeep of the building."
+        literally: the charges are included?
+
+  - id: hotel
+    title: At the hotel
+    phrases:
+      - target: ["J'ai réservé une chambre au nom de Martin.", "J'ai une réservation au nom de Martin."]
+        english: ["I've booked a room in the name of Martin.", "I booked a room under the name Martin.", "I have a booking in the name of Martin.", "I have a reservation under Martin."]
+        note: Give your surname, and spell it if you need to.
+        literally: I have reserved a room in-the name of Martin
+      - target: ["Vous avez une chambre pour ce soir ?", "Est-ce que vous avez une chambre pour ce soir ?", "Avez-vous une chambre pour ce soir ?"]
+        english: ["Do you have a room for tonight?", "Have you got a room for tonight?"]
+        note: "If the answer is *C'est complet*, the hotel is full."
+        literally: you have a room for this evening?
+      - target: ["Le petit déjeuner est compris ?", "Est-ce que le petit déjeuner est compris ?"]
+        english: ["Is breakfast included?"]
+        note: "*Le petit déjeuner* is breakfast; *le déjeuner* is lunch."
+        literally: the small lunch is included?
+      - target: ["Il y a un problème avec la chambre."]
+        english: ["There's a problem with the room.", "There is a problem with the room."]
+        literally: there is a problem with the room
+      - target: ["La douche ne marche pas."]
+        english: ["The shower doesn't work.", "The shower isn't working."]
+        note: "*Marcher* (to walk) also means \"to work\" for machines: *le wifi ne marche pas*."
+        literally: the shower not walks not
+      - target: ["Il n'y a pas de serviettes."]
+        english: ["There are no towels.", "There aren't any towels."]
+        note: "After *pas*, *des* becomes *de*."
+        literally: there are not of towels
+      - target: ["Il y a trop de bruit."]
+        english: ["It's too noisy.", "There's too much noise."]
+        literally: there is too much of noise
+      - target: ["Je pourrais changer de chambre ?", "Est-ce que je pourrais changer de chambre ?", "Pourrais-je changer de chambre ?"]
+        english: ["Could I change rooms?", "Could I move to another room?", "Could I switch rooms?", "Could I have a different room?"]
+        literally: I could change of room?
+      - target: ["Pourriez-vous me réveiller à sept heures ?", "Vous pourriez me réveiller à sept heures ?", "Est-ce que vous pourriez me réveiller à sept heures ?"]
+        english: ["Could you wake me up at seven?", "Could you wake me at seven?", "Could you wake me up at seven o'clock?"]
+        literally: could-you me wake at seven hours?
+      - target: ["Quel est le code du wifi ?", "C'est quoi, le code du wifi ?", "Quel est le mot de passe du wifi ?"]
+        english: ["What's the wifi password?", "What's the wifi code?", "What's the Wi-Fi password?"]
+        note: "French says *le wifi*, \"wee-fee\"."
+        literally: what is the code of-the wifi?

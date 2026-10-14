@@ -114,6 +114,20 @@ practice:
     why: 17, 18 and 19 start with dici-.
 
   - type: translate
+    section: 1
+    direction: to-english
+    prompt: tredici
+    answers: ["13", thirteen]
+    why: 11 to 16 end in -dici, so tre + dici is 13.
+
+  - type: choice
+    section: 1
+    prompt: Which one is 18?
+    options: [diciotto, ottodici, dieciotto]
+    answer: diciotto
+    why: 17, 18 and 19 start with dici-, so 18 is dici + otto.
+
+  - type: translate
     section: 2
     direction: to-target
     prompt: "21 (write it as a word)"

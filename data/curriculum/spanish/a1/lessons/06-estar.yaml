@@ -95,6 +95,22 @@ practice:
     why: Estoy is the yo form of estar, used for location.
 
   - type: fill
+    section: 1
+    strict_accents: true
+    prompt: "¿Cómo ___ tú?"
+    hint: estar
+    translation: How are you?
+    answers: [estás]
+    why: Estás is the tú form of estar, and it needs its accent mark.
+
+  - type: choice
+    section: 1
+    prompt: Which one means "she is" (with estar)?
+    options: [esta, está, estás]
+    answer: está
+    why: Está with an accent is "is"; esta without one means "this", and estás is "you are".
+
+  - type: fill
     section: 2
     prompt: "¿Dónde ___ el baño?"
     hint: estar

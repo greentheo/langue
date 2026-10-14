@@ -154,6 +154,21 @@ practice:
     answers: [Soy estudiante, Yo soy estudiante]
     why: Spanish leaves out "a" before jobs, and the pronoun yo is optional.
 
+  - type: choice
+    section: 3
+    prompt: "*Soy de Chile* means…"
+    options: ["I'm from Chile.", "He's from Chile.", "We're from Chile."]
+    answer: "I'm from Chile."
+    why: Soy can only mean "I am", so Spanish doesn't need yo to show who it is.
+
+  - type: fill
+    section: 3
+    prompt: "___ soy de Chile y ella es de Perú."
+    hint: I — for contrast
+    translation: I'm from Chile and she's from Peru.
+    answers: ["Yo"]
+    why: Keep the pronoun when you contrast two people, so it's clear who is who.
+
   - type: translate
     section: 5
     direction: to-target

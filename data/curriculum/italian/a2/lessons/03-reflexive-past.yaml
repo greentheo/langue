@@ -1,0 +1,243 @@
+title: "Mi sono alzato tardi"
+subtitle: Reflexive verbs in the past
+goal: describe your morning, your day or a party in the past with reflexive verbs — mi sono alzato, ci siamo divertiti
+minutes: 13
+
+sections:
+  - heading: Reflexive verbs always take essere
+    body: |
+      In A1 you met **reflexive verbs** — verbs you do to yourself, like
+      *alzarsi* (to get up), *svegliarsi* (to wake up) and *divertirsi* (to
+      have fun).
+
+      In the passato prossimo they **always** use **essere** as the helper.
+      The order is: the little word (*mi, ti, si, ci, vi, si*), then essere,
+      then the participle.
+
+      - *Mi alzo.* — I get up.
+      - *Mi sono alzato.* — I got up.
+    table:
+      columns: [person, alzarsi]
+      rows:
+        - [io, mi sono alzato / alzata]
+        - [tu, ti sei alzato / alzata]
+        - [lui / lei / Lei, si è alzato / alzata]
+        - [noi, ci siamo alzati / alzate]
+        - [voi, vi siete alzati / alzate]
+        - [loro, si sono alzati / alzate]
+    examples:
+      - ["Stamattina mi sono alzato alle sette.", "This morning I got up at seven."]
+      - ["Ti sei divertita alla festa?", "Did you have fun at the party? (to a girl)"]
+    tip: "Never *mi ho alzato*. With *mi, ti, si, ci, vi* in front, the helper is always essere."
+
+  - heading: The ending matches the person
+    body: |
+      Because the helper is essere, the participle ends in **-o, -a, -i** or
+      **-e**, just like *sono andato / sono andata*.
+
+      Look at who did it. A girl says *mi sono svegliata*; a boy says *mi
+      sono svegliato*. For a group, use **-i** (all boys, or a mix) or **-e**
+      (all girls).
+
+      This helps when you listen, too: *si è vestito* is about a man or boy,
+      *si è vestita* about a woman or girl.
+    examples:
+      - ["Giulia si è svegliata tardi.", "Giulia woke up late."]
+      - ["I bambini si sono vestiti in fretta.", "The children got dressed in a hurry."]
+      - ["Le mie amiche si sono divertite molto.", "My friends (all girls) had a lot of fun."]
+    tip: "*Si è* can mean \"he\" or \"she\". Only the last letter of the participle tells you which."
+
+  - heading: More everyday reflexive verbs
+    body: |
+      Here are more reflexive verbs for telling the story of a day or a
+      trip. They all work the same way: essere as the helper, and an ending
+      that matches the person.
+
+      **Perdersi** (to get lost) uses the irregular participle from the
+      last lesson: *mi sono perso*, *mi sono persa*.
+    table:
+      columns: [verb, meaning, past (io)]
+      rows:
+        - [addormentarsi, to fall asleep, mi sono addormentato / a]
+        - [riposarsi, to rest, mi sono riposato / a]
+        - [prepararsi, to get ready, mi sono preparato / a]
+        - [fermarsi, to stop, mi sono fermato / a]
+        - [annoiarsi, to get bored, mi sono annoiato / a]
+        - [perdersi, to get lost, mi sono perso / a]
+    examples:
+      - ["Ci siamo persi in centro.", "We got lost in the city centre."]
+      - ["Mi sono annoiato al museo.", "I got bored at the museum."]
+      - ["Vi siete riposati in vacanza?", "Did you (all) get some rest on holiday?"]
+      - ["Mi sono addormentata subito.", "I fell asleep straight away. (a girl speaking)"]
+
+  - heading: Not, and body parts
+    body: |
+      **Non** goes in front of everything, even the little word: *Non mi
+      sono svegliato in tempo.* — I didn't wake up in time.
+
+      With **body parts**, Italian uses a reflexive verb and **the**, not
+      "my": *Mi sono lavato le mani* — I washed my hands (literally "I
+      washed myself the hands").
+
+      **Farsi male** (to hurt yourself) works the same way: *Mi sono fatta
+      male al piede.* — I hurt my foot.
+    examples:
+      - ["Non ci siamo fermati.", "We didn't stop."]
+      - ["Mi sono lavata i denti.", "I brushed my teeth. (a girl speaking)"]
+      - ["Si è fatto male alla gamba.", "He hurt his leg."]
+    tip: "Say *Mi sono lavato le mani*, not *Ho lavato le mie mani*. Italian doesn't need \"my\" when it's your own body."
+
+words:
+  - [addormentarsi, to fall asleep]
+  - [riposarsi, to rest]
+  - [prepararsi, to get ready]
+  - [fermarsi, to stop]
+  - [annoiarsi, to get bored]
+  - [perdersi, to get lost]
+  - [farsi male, to hurt yourself]
+  - [festa, party]
+  - [stamattina, this morning]
+  - [subito, "straight away, at once"]
+  - [mano, "hand (plural: le mani)"]
+  - [denti, teeth]
+  - [piede, foot]
+  - [gamba, leg]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Stamattina mi ___ alzato alle sei."
+    hint: essere
+    translation: This morning I got up at six.
+    answers: [sono]
+    why: Reflexive verbs take essere in the past — mi sono alzato.
+
+  - type: fill
+    section: 1
+    prompt: "A che ora ___ sei svegliata?"
+    hint: yourself
+    translation: What time did you wake up? (to a girl)
+    answers: [ti]
+    why: With tu, the little word is ti, and the helper is sei.
+
+  - type: choice
+    section: 1
+    prompt: How do you say "I got up" (a boy speaking)?
+    options: [Ho alzato., Mi ho alzato., Mi sono alzato.]
+    answer: Mi sono alzato.
+    why: Reflexive verbs need the little word and the helper essere.
+
+  - type: fill
+    section: 2
+    prompt: "Giulia si è ___ presto."
+    hint: svegliarsi
+    translation: Giulia woke up early.
+    answers: [svegliata]
+    why: The participle ends in -a because Giulia is female.
+
+  - type: fill
+    section: 2
+    prompt: "I ragazzi si sono ___ molto."
+    hint: divertirsi
+    translation: The boys had a lot of fun.
+    answers: [divertiti]
+    why: A group of boys takes -i.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: She had fun.
+    answers:
+      - Si è divertita.
+      - Lei si è divertita.
+    why: Divertirsi takes essere, and the participle ends in -a for "she".
+
+  - type: translate
+    section: 2
+    direction: to-english
+    prompt: Ci siamo svegliati tardi.
+    answers:
+      - We woke up late.
+      - We have woken up late.
+    why: Ci siamo svegliati is the noi form of svegliarsi in the past.
+
+  - type: choice
+    section: 2
+    prompt: "Anna and Sara had fun. Anna e Sara si sono…"
+    options: [divertiti, divertite, divertita]
+    answer: divertite
+    why: A group of only girls takes -e.
+
+  - type: fill
+    section: 3
+    prompt: "Ci siamo ___ in centro."
+    hint: perdersi
+    translation: We got lost in the city centre.
+    answers: [persi]
+    why: Perdersi has the irregular participle perso — persi for a group.
+
+  - type: fill
+    section: 3
+    prompt: "Lei si è ___ per la festa."
+    hint: prepararsi
+    translation: She got ready for the party.
+    answers: [preparata]
+    why: Prepararsi takes essere, so the participle ends in -a for "she".
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: I got bored. (a boy speaking)
+    answers:
+      - Mi sono annoiato.
+      - Io mi sono annoiato.
+    why: Annoiarsi is reflexive, so it's mi sono annoiato.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: Vi siete riposati?
+    answers:
+      - Did you rest?
+      - Did you all rest?
+      - Did you guys rest?
+      - Have you rested?
+      - Did you get some rest?
+      - Did you have a rest?
+    why: Vi siete is the voi form — talking to more than one person.
+
+  - type: fill
+    section: 4
+    prompt: "Mi sono lavato ___ mani."
+    hint: the
+    translation: I washed my hands.
+    answers: [le]
+    why: With body parts Italian says "the hands", not "my hands".
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: I didn't stop. (a girl speaking)
+    answers:
+      - Non mi sono fermata.
+      - Io non mi sono fermata.
+    why: Non goes in front of everything, even the little word mi.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Si è fatto male alla gamba.
+    answers:
+      - He hurt his leg.
+      - He has hurt his leg.
+      - He injured his leg.
+      - He's hurt his leg.
+      - He's injured his leg.
+    why: Farsi male is "to hurt yourself", and fatto with -o tells you it's a man or boy.
+
+  - type: choice
+    section: 4
+    prompt: How do you say "I washed my hands" (a boy speaking)?
+    options: [Mi ho lavato le mie mani., Mi sono lavato le mani., Mi ho lavato le mani.]
+    answer: Mi sono lavato le mani.
+    why: Italian uses the reflexive verb and "the" with your own body parts.

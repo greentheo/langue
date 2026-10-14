@@ -1,142 +1,443 @@
 # Spanish A2 — elementary vocabulary
-# Format: word | translations (semicolon-separated) | example sentence | category | difficulty (1-5)
+# Format: word | translations (semicolon-separated) | example sentence | category | difficulty (1-5) | example in English
+# Examples: short and everyday, and they contain the word exactly as listed. Past tenses,
+# ir a + infinitive, object pronouns and comparatives are fine at A2.
+# Neutral, Latin-American-friendly Spanish; where Spain uses another word, the translation says so.
+# No word here repeats A1 (a1.psv or the A1 lessons' words) or B1-C2.
 
-# Daily routines
-despertarse | to wake up | Me despierto a las seis y media. | daily_routines | 2
-levantarse | to get up | Me levanto en cuanto suena el despertador. | daily_routines | 2
-ducharse | to take a shower | Me ducho antes de salir. | daily_routines | 2
-vestirse | to get dressed | Se viste muy deprisa por la mañana. | daily_routines | 2
-peinarse | to comb one's hair | Se peina delante del espejo. | daily_routines | 3
-acostarse | to go to bed | Me acuesto sobre las once. | daily_routines | 2
-dormirse | to fall asleep | Siempre me duermo viendo la tele. | daily_routines | 3
-descansar | to rest | Después de comer descanso un rato. | daily_routines | 2
-costumbre | habit; custom | Leer antes de dormir es una buena costumbre. | daily_routines | 3
-horario | schedule; timetable | El horario de trenes ha cambiado. | time | 3
+# Travel and holidays
+viaje | trip; journey | El viaje en autobús duró tres horas. | travel | 2 | The bus trip took three hours.
+maleta | suitcase | Anoche hice la maleta para el viaje. | travel | 2 | Last night I packed my suitcase for the trip.
+vacaciones | vacation; holidays | Tomo dos semanas de vacaciones en agosto. | travel | 2 | I take two weeks of vacation in August.
+reservar | to book; to reserve | Tenemos que reservar el hotel esta semana. | travel | 3 | We have to book the hotel this week.
+reserva | reservation; booking (in Mexico also: reservación) | Hice la reserva del hotel por internet. | travel | 3 | I made the hotel reservation online.
+habitación doble | double room | Quisiera una habitación doble para tres noches. | travel | 3 | I'd like a double room for three nights.
+habitación individual | single room (also: habitación sencilla) | ¿Tienen una habitación individual para esta noche? | travel | 3 | Do you have a single room for tonight?
+alojamiento | accommodation; lodging; place to stay | Encontramos un alojamiento barato cerca de la playa. | travel | 3 | We found a cheap place to stay near the beach.
+huésped | guest (at a hotel or in a home) | Cada huésped recibe una toalla y una llave. | travel | 4 | Each guest gets a towel and a key.
+pasaporte | passport | Mi pasaporte vence en marzo. | travel | 2 | My passport expires in March.
+frontera | border | Cruzamos la frontera en autobús. | travel | 3 | We crossed the border by bus.
+extranjero | abroad; foreigner; foreign | Mi tía trabaja en el extranjero. | travel | 3 | My aunt works abroad.
+excursión | trip; outing; excursion | Ayer hicimos una excursión a la montaña. | travel | 2 | Yesterday we went on a trip to the mountains.
+visitar | to visit | Mañana vamos a visitar a mis abuelos. | travel | 2 | Tomorrow we're going to visit my grandparents.
+guía | guide; guidebook | El guía nos contó la historia del castillo. | travel | 2 | The guide told us the history of the castle.
+castillo | castle | El verano pasado visitamos un castillo en España. | travel | 2 | Last summer we visited a castle in Spain.
+monumento | monument | El monumento más famoso está en la plaza. | travel | 3 | The most famous monument is in the square.
+capital | capital (city) | Lima es la capital de Perú. | travel | 2 | Lima is the capital of Peru.
+lugar | place | Este es mi lugar favorito de la ciudad. | travel | 2 | This is my favorite place in the city.
+vista | view | Desde el hotel hay una vista increíble del mar. | travel | 2 | From the hotel there's an amazing view of the sea.
+acampar | to camp; to go camping | El verano pasado fuimos a acampar al lago. | travel | 3 | Last summer we went camping at the lake.
+tomar el sol | to sunbathe | Me encanta tomar el sol en la playa. | travel | 2 | I love sunbathing on the beach.
+postal | postcard | Les mandé una postal a mis abuelos. | travel | 2 | I sent my grandparents a postcard.
+seguro | safe; sure | Este barrio es muy seguro de noche. | travel | 2 | This neighborhood is very safe at night.
+peligroso | dangerous | Es peligroso nadar cuando hay olas grandes. | travel | 3 | It's dangerous to swim when there are big waves.
+antiguo | old; ancient; former | La catedral es el edificio más antiguo de la ciudad. | travel | 3 | The cathedral is the oldest building in the city.
 
-# Home
-piso | flat; apartment; floor | Busco un piso de alquiler. | housing | 2
-cocina | kitchen | La cocina es pequeña pero luminosa. | housing | 2
-habitación | room; bedroom | La habitación da al patio. | housing | 2
-baño | bathroom | El baño está al final del pasillo. | housing | 2
-salón | living room | Vemos el partido en el salón. | housing | 3
-jardín | garden | Tenemos un jardín pequeño detrás. | housing | 2
-ventana | window | Abre la ventana, hace calor. | housing | 2
-puerta | door | Cierra la puerta, por favor. | housing | 2
-cama | bed | La cama es demasiado dura. | housing | 2
-mesa | table | Pon la mesa para cuatro. | housing | 2
-silla | chair | Coge una silla y siéntate. | housing | 2
-armario | wardrobe; closet | El armario está lleno de ropa. | housing | 3
-alquiler | rent | El alquiler se paga el día uno. | housing | 3
-vecino | neighbour | Mi vecino es muy ruidoso. | housing | 2
+# Transport and getting around
+girar | to turn | En el semáforo tienes que girar a la izquierda. | transportation | 2 | At the traffic light you have to turn left.
+cruzar | to cross | Hay que cruzar la calle con cuidado. | transportation | 2 | You have to cross the street carefully.
+esquina | corner | Te espero en la esquina de mi calle. | transportation | 2 | I'll wait for you on the corner of my street.
+semáforo | traffic light | Espera, el semáforo está en rojo. | transportation | 3 | Wait, the traffic light is red.
+parada | stop (bus, tram) | Me bajo en la próxima parada. | transportation | 2 | I get off at the next stop.
+subir | to get on; to go up | Vamos a subir al tren. | transportation | 2 | We're going to get on the train.
+bajar | to get off; to go down | Tenemos que bajar en la próxima estación. | transportation | 2 | We have to get off at the next station.
+pasajero | passenger | Cada pasajero puede llevar una maleta. | transportation | 2 | Each passenger can bring one suitcase.
+asiento | seat | Mi asiento está al lado de la ventana. | transportation | 2 | My seat is next to the window.
+ida y vuelta | round trip; return (ticket) | Compré un boleto de ida y vuelta. | transportation | 3 | I bought a round-trip ticket.
+aterrizar | to land | El avión va a aterrizar en diez minutos. | transportation | 3 | The plane is going to land in ten minutes.
+transporte | transportation; transport | El transporte público aquí es muy bueno. | transportation | 2 | Public transportation here is very good.
+conducir | to drive (in much of Latin America: manejar) | Mi madre me está enseñando a conducir. | transportation | 2 | My mother is teaching me to drive.
+manejar | to drive (Latin America; in Spain: conducir) | Mi abuelo ya no puede manejar. | transportation | 2 | My grandfather can't drive anymore.
+licencia de conducir | driver's license (in Spain: carné de conducir) | Mi hermano sacó la licencia de conducir a los dieciocho. | transportation | 3 | My brother got his driver's license at eighteen.
+carretera | road; highway | La carretera estaba cerrada por la nieve. | transportation | 3 | The road was closed because of the snow.
+autopista | highway; freeway; motorway | Tomamos la autopista para llegar antes. | transportation | 3 | We took the highway to get there sooner.
+puente | bridge | Cruzamos el puente a pie. | transportation | 2 | We crossed the bridge on foot.
+gasolina | gas; gasoline; petrol (in Argentina: nafta) | La gasolina subió mucho este año. | transportation | 3 | Gas went up a lot this year.
+estacionamiento | parking lot; parking; car park (in Spain: aparcamiento) | El estacionamiento del hotel es gratis. | transportation | 3 | The hotel parking is free.
+accidente | accident | Ayer hubo un accidente en la autopista. | transportation | 2 | Yesterday there was an accident on the highway.
+multa | fine; ticket | La policía le puso una multa a mi tío. | transportation | 3 | The police gave my uncle a ticket.
+rápido | fast; quick | El tren es más rápido que el autobús. | transportation | 2 | The train is faster than the bus.
+lento | slow | Este autobús es muy lento. | transportation | 2 | This bus is very slow.
+lleno | full | El metro iba lleno esta mañana. | transportation | 2 | The subway was full this morning.
+último | last | Perdimos el último tren a casa. | transportation | 2 | We missed the last train home.
 
-# Shopping and money
-comprar | to buy | Tengo que comprar pan. | shopping | 2
-vender | to sell | Venden fruta ecológica. | shopping | 2
-pagar | to pay | ¿Puedo pagar con tarjeta? | shopping | 2
-costar | to cost | ¿Cuánto cuesta el envío? | shopping | 2
-precio | price | El precio me parece muy alto. | shopping | 2
-descuento | discount | Hay un descuento del veinte por ciento. | shopping | 3
-caja | checkout; box | La cola de la caja es larga. | shopping | 3
-recibo | receipt | Guarde el recibo para la devolución. | shopping | 3
-tarjeta | card | No aceptan tarjeta aquí. | shopping | 2
-efectivo | cash | Prefiero pagar en efectivo. | shopping | 3
-rebajas | sales | Las rebajas empiezan en enero. | shopping | 3
-talla | size (clothing) | ¿Qué talla usa? | clothing | 3
-probarse | to try on | ¿Puedo probarme esta chaqueta? | clothing | 3
+# Restaurants and cooking
+menú | menu | ¿Nos trae el menú, por favor? | food | 2 | Could you bring us the menu, please?
+propina | tip | Le dejamos una buena propina al mesero. | food | 3 | We left the waiter a good tip.
+cuchillo | knife | Necesito un cuchillo para cortar la carne. | food | 2 | I need a knife to cut the meat.
+servilleta | napkin | ¿Me pasas una servilleta, por favor? | food | 3 | Can you pass me a napkin, please?
+taza | cup; mug | Tomé una taza de chocolate caliente. | food | 2 | I had a cup of hot chocolate.
+botella | bottle | Pedimos una botella de agua para la mesa. | food | 2 | We ordered a bottle of water for the table.
+mismo | same | Siempre pido el mismo plato aquí. | food | 2 | I always order the same dish here.
+vegetariano | vegetarian | ¿Tienen algún plato vegetariano? | food | 3 | Do you have any vegetarian dishes?
+delicioso | delicious | El pastel de mi abuela estaba delicioso. | food | 2 | My grandmother's cake was delicious.
+rico | tasty; delicious; rich | Este arroz está muy rico. | food | 2 | This rice is really tasty.
+picante | spicy; hot | Esta salsa es demasiado picante para mí. | food | 2 | This sauce is too spicy for me.
+salado | salty; savory | El jamón es muy salado. | food | 3 | The ham is very salty.
+dulce | sweet | No me gusta el café muy dulce. | food | 2 | I don't like my coffee very sweet.
+cortar | to cut | ¿Me ayudas a cortar las verduras? | food | 2 | Can you help me cut the vegetables?
+freír | to fry | Mi papá va a freír el pescado. | food | 3 | My dad is going to fry the fish.
+hornear | to bake | Vamos a hornear galletas este fin de semana. | food | 3 | We're going to bake cookies this weekend.
+horno | oven | El pan todavía está en el horno. | food | 3 | The bread is still in the oven.
+aceite | oil | Pon un poco de aceite en la sartén. | food | 2 | Put a little oil in the frying pan.
+mantequilla | butter | Me gusta el pan con mantequilla. | food | 2 | I like bread with butter.
+jamón | ham | Desayuné un sándwich de jamón y queso. | food | 2 | I had a ham and cheese sandwich for breakfast.
+cebolla | onion | No me gusta la cebolla cruda. | food | 2 | I don't like raw onion.
+zanahoria | carrot | El conejo se comió una zanahoria. | food | 2 | The rabbit ate a carrot.
+frijoles | beans (in Spain: judías or alubias) | Comimos arroz con frijoles. | food | 2 | We had rice and beans.
+limón | lemon; lime | Me gusta el agua con limón. | food | 2 | I like water with lemon.
+fresa | strawberry (in parts of South America: frutilla) | Mi helado favorito es de fresa. | food | 2 | My favorite ice cream is strawberry.
 
-# Clothing
-ropa | clothes | Tengo que lavar la ropa. | clothing | 2
-camisa | shirt | La camisa blanca está planchada. | clothing | 2
-pantalón | trousers; pants | Este pantalón me queda estrecho. | clothing | 2
-zapatos | shoes | Los zapatos nuevos me hacen daño. | clothing | 2
-chaqueta | jacket | Ponte la chaqueta, hace frío. | clothing | 2
-abrigo | coat | El abrigo está en la entrada. | clothing | 3
-jersey | sweater; jumper | Necesito un jersey grueso. | clothing | 3
-falda | skirt | Lleva una falda larga. | clothing | 3
-cinturón | belt | He perdido el cinturón de cuero. | clothing | 3
+# Clothes
+abrigo | coat | No olvides el abrigo, hace mucho frío. | clothing | 2 | Don't forget your coat, it's very cold.
+chaqueta | jacket | Ponte la chaqueta, hace frío. | clothing | 2 | Put your jacket on, it's cold.
+bufanda | scarf | Mi abuela me hizo una bufanda de lana. | clothing | 2 | My grandmother made me a wool scarf.
+guantes | gloves | Perdí los guantes en el autobús. | clothing | 2 | I lost my gloves on the bus.
+zapatillas | sneakers; trainers (in Mexico: tenis) | Necesito zapatillas nuevas para correr. | clothing | 2 | I need new sneakers for running.
+jeans | jeans (in Spain: vaqueros) | Me compré unos jeans negros. | clothing | 2 | I bought some black jeans.
+blusa | blouse | Mi mamá lleva una blusa blanca. | clothing | 2 | My mom is wearing a white blouse.
+traje | suit | Mi hermano se puso un traje para la boda. | clothing | 3 | My brother put on a suit for the wedding.
+traje de baño | swimsuit; swimming trunks (in Spain also: bañador) | No olvides el traje de baño para la piscina. | clothing | 3 | Don't forget your swimsuit for the pool.
+cinturón | belt | Este pantalón me queda grande, necesito un cinturón. | clothing | 3 | These pants are too big for me, I need a belt.
+bolsillo | pocket | Tengo las llaves en el bolsillo. | clothing | 3 | I have the keys in my pocket.
+reloj | watch; clock | Mi abuelo me regaló un reloj. | clothing | 2 | My grandfather gave me a watch.
+lentes | glasses (in Spain: gafas); lenses | Mi abuela no puede leer sin lentes. | clothing | 3 | My grandmother can't read without glasses.
+algodón | cotton | Esta camiseta es de algodón. | clothing | 3 | This T-shirt is cotton.
+moda | fashion | Esos zapatos están de moda este año. | clothing | 3 | Those shoes are in fashion this year.
+talla | size (clothes) | ¿Tiene esta camisa en otra talla? | clothing | 3 | Do you have this shirt in another size?
+probador | fitting room (in some countries: vestidor) | El probador está al fondo de la tienda. | clothing | 3 | The fitting room is at the back of the store.
+probarse | to try on | Mi hermana quiere probarse el vestido azul. | clothing | 3 | My sister wants to try on the blue dress.
+quedar | to fit; to suit; to look (on someone) | Esa camisa te va a quedar muy bien. | clothing | 3 | That shirt is going to look really good on you.
+apretado | tight | Este pantalón me queda apretado. | clothing | 3 | These pants are tight on me.
+cómodo | comfortable | Este suéter es muy cómodo. | clothing | 2 | This sweater is very comfortable.
+ponerse | to put on (clothes) | Mi papá va a ponerse la corbata roja. | clothing | 3 | My dad is going to put on the red tie.
+quitarse | to take off (clothes) | Aquí hay que quitarse los zapatos. | clothing | 3 | Here you have to take off your shoes.
 
-# Health and body
-salud | health | La salud es lo primero. | health | 2
-médico | doctor | Tengo que ir al médico. | health | 2
-hospital | hospital | El hospital está cerca de la estación. | health | 2
-farmacia | pharmacy | La farmacia abre de noche. | health | 2
-medicamento | medicine; drug | Toma el medicamento después de comer. | health | 3
-enfermo | ill; sick | Llevo tres días enfermo. | health | 2
-fiebre | fever | Tengo fiebre alta. | health | 3
-dolor de cabeza | headache | Tengo un fuerte dolor de cabeza. | health | 3
-cabeza | head | Me duele la cabeza. | body | 2
-mano | hand | Me hice daño en la mano. | body | 2
-pie | foot | Me duele el pie derecho. | body | 2
-ojo | eye | Tiene un ojo irritado. | body | 2
-brazo | arm | Se rompió un brazo esquiando. | body | 3
-pierna | leg | Me duele la pierna izquierda. | body | 2
-espalda | back | Tengo dolor de espalda desde ayer. | body | 3
+# Shops and money
+costar | to cost | ¿Cuánto va a costar el envío? | shopping | 2 | How much is shipping going to cost?
+descuento | discount | Hay un descuento del veinte por ciento. | shopping | 3 | There's a twenty percent discount.
+rebajas | sales | Compré estos zapatos en las rebajas. | shopping | 3 | I bought these shoes in the sales.
+caja | checkout; cash register; box | Hay que pagar en la caja. | shopping | 2 | You have to pay at the checkout.
+fila | line; queue (in Spain: cola) | Había una fila muy larga en la caja. | shopping | 2 | There was a very long line at the checkout.
+recibo | receipt | Guarda el recibo por si quieres devolver la camisa. | shopping | 3 | Keep the receipt in case you want to return the shirt.
+efectivo | cash | Prefiero pagar en efectivo. | shopping | 3 | I prefer to pay in cash.
+tarjeta de crédito | credit card | ¿Puedo pagar con tarjeta de crédito? | shopping | 2 | Can I pay by credit card?
+cajero automático | ATM; cash machine | ¿Hay un cajero automático por aquí? | shopping | 3 | Is there an ATM around here?
+cambio | change (money); exchange | No tengo cambio para el autobús. | shopping | 2 | I don't have change for the bus.
+moneda | coin; currency | Encontré una moneda en la calle. | shopping | 2 | I found a coin in the street.
+ahorrar | to save (money) | Quiero ahorrar para comprar una bicicleta. | shopping | 3 | I want to save up to buy a bike.
+devolver | to return (something); to give back | Quiero devolver estos zapatos. | shopping | 3 | I want to return these shoes.
+cliente | customer; client | El cliente pidió otra talla. | shopping | 2 | The customer asked for another size.
+marca | brand | ¿De qué marca es tu celular? | shopping | 2 | What brand is your phone?
+gratis | free (no cost) | La entrada al museo es gratis los domingos. | shopping | 2 | Entrance to the museum is free on Sundays.
+abierto | open | El supermercado está abierto hasta las diez. | shopping | 2 | The supermarket is open until ten.
+cerrado | closed | El banco está cerrado los domingos. | shopping | 2 | The bank is closed on Sundays.
+centro comercial | shopping mall; shopping center | Fuimos al centro comercial el sábado. | shopping | 2 | We went to the mall on Saturday.
+panadería | bakery | Compro el pan en la panadería de la esquina. | shopping | 2 | I buy bread at the bakery on the corner.
+librería | bookstore; bookshop | Compré este libro en una librería pequeña. | shopping | 3 | I bought this book in a small bookstore.
+kilo | kilo; kilogram | Quiero un kilo de tomates, por favor. | shopping | 2 | I'd like a kilo of tomatoes, please.
+paquete | package; parcel; packet | Llegó un paquete para ti. | shopping | 2 | A package arrived for you.
 
-# Work and study
-oficina | office | Mi oficina está en la tercera planta. | work | 2
-reunión | meeting | La reunión se ha aplazado. | work | 3
-compañero | colleague; classmate | Un compañero me ayudó mucho. | work | 3
-sueldo | salary; wage | El sueldo llega a fin de mes. | work | 3
-empleo | job; employment | Ha encontrado un empleo nuevo. | work | 3
-empresa | company; firm | La empresa tiene cincuenta empleados. | work | 3
-jefe | boss | El jefe está de vacaciones. | work | 2
-vacaciones | holidays; vacation | Cojo dos semanas de vacaciones en agosto. | work | 2
-universidad | university | Estudia en la universidad de Salamanca. | education | 2
-examen | exam | He aprobado el examen de historia. | education | 2
-clase | class; lesson | La clase empieza a las nueve. | education | 2
-deberes | homework | Tengo que terminar los deberes. | education | 2
-profesor | teacher | El profesor explica muy bien. | education | 2
-estudiante | student | Soy estudiante de ingeniería. | education | 2
-nota | grade; mark; note | He sacado buena nota. | education | 3
+# Health and the body
+salud | health | La salud es lo más importante. | health | 2 | Health is the most important thing.
+dolor | pain; ache | Tengo un dolor muy fuerte en la rodilla. | health | 2 | I have a really bad pain in my knee.
+dolor de cabeza | headache | Tengo un dolor de cabeza muy fuerte. | health | 2 | I have a really bad headache.
+doler | to hurt; to ache | Después del partido me empezó a doler la pierna. | health | 3 | After the game my leg started to hurt.
+fiebre | fever; temperature | Anoche tuve fiebre alta. | health | 2 | Last night I had a high fever.
+tos | cough | Tengo tos desde el lunes. | health | 2 | I've had a cough since Monday.
+gripe | flu (in Colombia and Mexico also: gripa) | Mi hermano tiene gripe y no fue a la escuela. | health | 2 | My brother has the flu and didn't go to school.
+resfriado | cold (illness) | Tengo un resfriado muy fuerte. | health | 3 | I have a bad cold.
+alergia | allergy | Tengo alergia a los gatos. | health | 3 | I'm allergic to cats.
+herida | wound; injury | La herida no es profunda. | health | 3 | The wound isn't deep.
+grave | serious | El accidente no fue grave. | health | 3 | The accident wasn't serious.
+enfermedad | illness; disease | La gripe es una enfermedad muy común. | health | 3 | The flu is a very common illness.
+enfermarse | to get sick (in Spain: ponerse enfermo) | Es fácil enfermarse cuando hace frío. | health | 3 | It's easy to get sick when it's cold.
+sentirse | to feel | Es normal sentirse cansado después de un viaje. | health | 3 | It's normal to feel tired after a trip.
+sano | healthy | Es importante comer sano. | health | 2 | It's important to eat healthily.
+medicamento | medicine; medication | Toma este medicamento después de comer. | health | 3 | Take this medicine after eating.
+pastilla | pill; tablet | Me tomé una pastilla para el dolor. | health | 2 | I took a pill for the pain.
+dentista | dentist | Mañana tengo que ir al dentista. | health | 2 | Tomorrow I have to go to the dentist.
+ambulancia | ambulance | La ambulancia llegó en cinco minutos. | health | 2 | The ambulance arrived in five minutes.
+peinarse | to comb your hair; to do your hair | Mi hermana tarda mucho en peinarse. | health | 3 | My sister takes ages to do her hair.
+pie | foot | Me duele el pie derecho. | health | 2 | My right foot hurts.
+pierna | leg | Me duele la pierna izquierda. | health | 2 | My left leg hurts.
+brazo | arm | Mi primo se rompió el brazo esquiando. | health | 2 | My cousin broke his arm skiing.
+espalda | back | Tengo dolor de espalda desde ayer. | health | 2 | I've had back pain since yesterday.
+estómago | stomach | Me duele el estómago. | health | 2 | I have a stomachache.
+garganta | throat | Me duele la garganta desde ayer. | health | 2 | I've had a sore throat since yesterday.
+cuello | neck | La jirafa tiene el cuello muy largo. | health | 2 | The giraffe has a very long neck.
+rodilla | knee | Me caí de la bicicleta y me duele la rodilla. | health | 2 | I fell off my bike and my knee hurts.
+dedo | finger; toe | Me corté el dedo con un cuchillo. | health | 2 | I cut my finger with a knife.
+piel | skin | Hay que proteger la piel del sol. | health | 3 | You have to protect your skin from the sun.
 
-# Travel
-viaje | trip; journey | El viaje dura tres horas. | travel | 2
-maleta | suitcase | Hice la maleta anoche. | travel | 3
-salir | to leave; to go out | Salimos mañana al amanecer. | travel | 2
-llegar | to arrive | El vuelo llega con retraso. | travel | 2
-reservar | to book; to reserve | He reservado una mesa para dos. | travel | 3
-habitación doble | double room | Quiero una habitación doble tres noches. | travel | 3
-pasaporte | passport | El pasaporte caduca en marzo. | travel | 3
-playa | beach | La playa está llena en verano. | travel | 2
-montaña | mountain | En invierno vamos a la montaña. | nature | 2
-lago | lake | El lago se hiela en enero. | nature | 2
-mar | sea | El mar está tranquilo hoy. | nature | 2
-campo | countryside; field | Pasamos el fin de semana en el campo. | nature | 2
+# The home and chores
+piso | floor; story (of a building) (in Spain also: apartment) | Vivimos en el tercer piso. | housing | 2 | We live on the third floor.
+departamento | apartment (in Mexico, Argentina, Chile, Peru; elsewhere: apartamento) | Mis tíos alquilan un departamento en el centro. | housing | 2 | My aunt and uncle rent an apartment downtown.
+alquiler | rent | El alquiler se paga el primer día del mes. | housing | 3 | The rent is paid on the first day of the month.
+dueño | owner; landlord | El dueño del departamento vive arriba. | housing | 3 | The owner of the apartment lives upstairs.
+vecino | neighbor; neighbour | Mi vecino pone la música muy alta. | housing | 2 | My neighbor plays his music very loud.
+jardín | garden; yard | Tenemos un jardín pequeño detrás de la casa. | housing | 2 | We have a small yard behind the house.
+pasillo | hallway; corridor | El baño está al final del pasillo. | housing | 2 | The bathroom is at the end of the hallway.
+techo | ceiling; roof | El techo de la cocina es muy alto. | housing | 3 | The kitchen ceiling is very high.
+mueble | piece of furniture | Este mueble era de mi abuela. | housing | 3 | This piece of furniture was my grandmother's.
+armario | closet; wardrobe (in much of Latin America also: clóset) | El armario está lleno de ropa. | housing | 3 | The closet is full of clothes.
+cajón | drawer | Las tijeras están en el primer cajón. | housing | 3 | The scissors are in the top drawer.
+lavadora | washing machine | La lavadora hace mucho ruido. | housing | 2 | The washing machine makes a lot of noise.
+calefacción | heating | La calefacción no funcionaba y teníamos frío. | housing | 3 | The heating wasn't working and we were cold.
+luz | light; electricity; power | Anoche no hubo luz en todo el barrio. | housing | 2 | Last night there was no power in the whole neighborhood.
+encender | to turn on; to light (in much of Latin America also: prender) | ¿Puedes encender la calefacción? | housing | 3 | Can you turn on the heating?
+apagar | to turn off; to switch off | No olvides apagar la luz. | housing | 2 | Don't forget to turn off the light.
+lavar | to wash | Tengo que lavar los platos. | housing | 2 | I have to wash the dishes.
+barrer | to sweep | Ayer me tocó barrer la cocina. | housing | 3 | Yesterday it was my turn to sweep the kitchen.
+planchar | to iron | Mi papá odia planchar camisas. | housing | 3 | My dad hates ironing shirts.
+ordenar | to tidy (up); to put in order | Tienes que ordenar tu habitación. | housing | 2 | You have to tidy your room.
+hacer la cama | to make the bed | Mi hermano nunca quiere hacer la cama. | housing | 2 | My brother never wants to make his bed.
+sacar la basura | to take out the trash | Los lunes me toca sacar la basura. | housing | 2 | On Mondays it's my turn to take out the trash.
+regar | to water (plants) | ¿Puedes regar las plantas este fin de semana? | housing | 3 | Can you water the plants this weekend?
+limpio | clean | El baño ya está limpio. | housing | 2 | The bathroom is clean now.
+sucio | dirty | Todo está muy sucio después de la fiesta. | housing | 2 | Everything is really dirty after the party.
+vacío | empty | El refrigerador está casi vacío. | housing | 2 | The fridge is almost empty.
+ruido | noise | Hay mucho ruido en esta calle. | housing | 2 | There's a lot of noise on this street.
 
-# Getting around
-girar | to turn | Gire a la derecha en el semáforo. | transportation | 2
-cruzar | to cross | Cruza la calle por el paso de peatones. | transportation | 3
-parada | stop (bus) | Me bajo en la próxima parada. | transportation | 3
-semáforo | traffic light | El semáforo está en rojo. | transportation | 3
-esquina | corner | Gira a la izquierda en la esquina. | transportation | 3
-aparcamiento | car park; parking | El aparcamiento es de pago. | transportation | 3
-gasolina | petrol; gasoline | Tengo que echar gasolina. | transportation | 3
-carné de conducir | driving licence | Saqué el carné de conducir a los dieciocho. | transportation | 3
+# Work and jobs
+trabajador | worker; hard-working | Mi tío es muy trabajador. | work | 2 | My uncle is very hard-working.
+empleado | employee | El nuevo empleado empieza el lunes. | work | 2 | The new employee starts on Monday.
+empleo | job; employment | Mi hermana encontró un empleo nuevo. | work | 3 | My sister found a new job.
+empresa | company; firm | La empresa tiene cincuenta empleados. | work | 3 | The company has fifty employees.
+negocio | business; shop | Mi tía tiene un negocio de ropa. | work | 3 | My aunt has a clothing business.
+fábrica | factory | Mi abuelo trabajó en una fábrica de zapatos. | work | 3 | My grandfather worked in a shoe factory.
+compañero | colleague; classmate; partner | Un compañero me ayudó mucho el primer día. | work | 2 | A colleague helped me a lot on the first day.
+reunión | meeting | La reunión empezó tarde. | work | 3 | The meeting started late.
+escritorio | desk | Mi escritorio está lleno de papeles. | work | 2 | My desk is covered in papers.
+sueldo | salary; wages; pay | Me pagan el sueldo a fin de mes. | work | 3 | I get paid my salary at the end of the month.
+turno | shift; turn | Mi mamá trabaja en el turno de noche. | work | 3 | My mom works the night shift.
+profesión | profession; occupation | ¿Cuál es tu profesión? | work | 3 | What is your profession?
+anuncio | ad; advertisement; announcement | Vi un anuncio de trabajo en internet. | work | 3 | I saw a job ad online.
+éxito | success | La reunión fue un éxito. | work | 3 | The meeting was a success.
+jubilado | retired | Mi abuelo está jubilado desde hace cinco años. | work | 3 | My grandfather has been retired for five years.
+mecánico | mechanic | El mecánico arregló el carro en una hora. | work | 2 | The mechanic fixed the car in an hour.
+peluquero | hairdresser; barber | El peluquero me cortó el pelo muy corto. | work | 3 | The hairdresser cut my hair very short.
+periodista | journalist | Mi prima quiere ser periodista. | work | 3 | My cousin wants to be a journalist.
+veterinario | vet; veterinarian | Llevamos al perro al veterinario. | work | 2 | We took the dog to the vet.
+cartero | mail carrier; postman | El cartero trae las cartas por la mañana. | work | 3 | The mail carrier brings the letters in the morning.
+granjero | farmer | El granjero tiene vacas y gallinas. | work | 3 | The farmer has cows and chickens.
+científico | scientist | De niño quería ser científico. | work | 3 | As a child I wanted to be a scientist.
 
-# Free time and weather
-tiempo libre | free time | En mi tiempo libre toco la guitarra. | leisure | 2
-deporte | sport | Hago deporte tres veces por semana. | sports | 2
-nadar | to swim | Nado en la piscina los martes. | sports | 2
-correr | to run | Corro por el parque muy temprano. | sports | 2
-partido | match; game | El partido termina a las diez. | sports | 2
-gimnasio | gym | Voy al gimnasio después del trabajo. | sports | 3
-música | music | Escucho música mientras trabajo. | arts | 1
-película | film; movie | La película dura dos horas. | arts | 2
-concierto | concert | El concierto está agotado. | arts | 2
-museo | museum | El museo cierra los lunes. | arts | 2
-nublado | cloudy | Hoy está nublado pero no llueve. | weather | 3
-nevar | to snow | Anoche nevó en la sierra. | weather | 3
-viento | wind | Hace demasiado viento para salir en barco. | weather | 2
-tormenta | storm | Una tormenta inundó la calle. | weather | 3
+# School and studying
+primaria | primary school; elementary school | Mi hermanito todavía está en primaria. | education | 2 | My little brother is still in elementary school.
+secundaria | secondary school; middle or high school (in Spain: instituto) | Empecé la secundaria el año pasado. | education | 2 | I started secondary school last year.
+universidad | university; college | Mi hermana estudia en la universidad. | education | 2 | My sister studies at university.
+carrera | (university) degree; career; race | Mi prima terminó la carrera de medicina. | education | 3 | My cousin finished her medical degree.
+curso | course; school year | Hice un curso de inglés el verano pasado. | education | 2 | I did an English course last summer.
+aula | classroom | Nuestra aula está en el segundo piso. | education | 3 | Our classroom is on the second floor.
+pizarra | board; blackboard (in much of Latin America: pizarrón) | La maestra escribió la fecha en la pizarra. | education | 3 | The teacher wrote the date on the board.
+recreo | break; recess | En el recreo jugamos con la pelota. | education | 2 | At recess we play with the ball.
+materia | (school) subject (in Spain: asignatura) | Mi materia favorita es geografía. | education | 2 | My favorite subject is geography.
+historia | history; story | Mi abuelo nos contó una historia muy divertida. | education | 2 | My grandfather told us a really funny story.
+geografía | geography | En geografía estudiamos los ríos de América. | education | 2 | In geography we're studying the rivers of the Americas.
+ciencias | science | Tenemos clase de ciencias los martes. | education | 2 | We have science class on Tuesdays.
+educación física | PE; physical education | Hoy tenemos educación física en el patio. | education | 2 | Today we have PE in the schoolyard.
+ejercicio | exercise | Este ejercicio es muy difícil. | education | 2 | This exercise is very difficult.
+explicar | to explain | ¿Me puedes explicar este ejercicio? | education | 2 | Can you explain this exercise to me?
+repasar | to review; to go over | Esta noche voy a repasar para el examen. | education | 3 | Tonight I'm going to review for the exam.
+examen | exam; test | Ayer tuve un examen de historia. | education | 2 | Yesterday I had a history exam.
+aprobar | to pass (an exam) | Necesito aprobar el examen de matemáticas. | education | 3 | I need to pass the math exam.
+reprobar | to fail (an exam) (in Spain: suspender) | No quiero reprobar ninguna materia. | education | 3 | I don't want to fail any subject.
+nota | grade; mark; note | Saqué una buena nota en inglés. | education | 2 | I got a good grade in English.
+error | mistake; error | Cometí un error en el examen. | education | 2 | I made a mistake on the exam.
 
-# Feelings and describing
-contento | glad; pleased | Estoy contento con el resultado. | emotions | 2
-triste | sad | Me siento triste hoy. | emotions | 2
-enfadado | angry | Está enfadado por el retraso. | emotions | 3
-preocupado | worried | Estoy preocupado por el examen. | emotions | 3
-divertido | fun; amusing | Fue una noche muy divertida. | emotions | 3
-difícil | difficult | Este ejercicio es difícil. | basics | 2
-fácil | easy | La receta es muy fácil. | basics | 2
-rápido | fast; quick | El tren es más rápido que el autobús. | basics | 2
-lento | slow | La conexión va lenta. | basics | 2
-amable | kind; friendly | La dependienta fue muy amable. | emotions | 2
+# Free time and sport
+tiempo libre | free time | En mi tiempo libre toco la guitarra. | leisure | 2 | In my free time I play the guitar.
+pasatiempo | hobby; pastime | Mi pasatiempo favorito es dibujar. | leisure | 3 | My favorite hobby is drawing.
+descansar | to rest | Después de comer me gusta descansar un rato. | leisure | 2 | After lunch I like to rest for a while.
+paseo | walk; stroll; ride | Dimos un paseo por el parque. | leisure | 2 | We went for a walk in the park.
+disfrutar | to enjoy | Vamos a disfrutar del fin de semana. | leisure | 3 | We're going to enjoy the weekend.
+celebrar | to celebrate | Vamos a celebrar el cumpleaños de mi abuela. | leisure | 2 | We're going to celebrate my grandmother's birthday.
+deporte | sport; sports | Hago deporte tres veces por semana. | leisure | 2 | I play sports three times a week.
+equipo | team; equipment | Mi equipo ganó el partido del domingo. | leisure | 2 | My team won Sunday's game.
+jugador | player | Es el mejor jugador del equipo. | leisure | 2 | He's the best player on the team.
+partido | game; match | El partido terminó a las diez. | leisure | 2 | The game ended at ten.
+gol | goal | Marqué un gol en el último minuto. | leisure | 2 | I scored a goal in the last minute.
+entrenar | to train; to practice | Vamos a entrenar el sábado por la mañana. | leisure | 3 | We're going to train on Saturday morning.
+estadio | stadium | El estadio estaba lleno. | leisure | 2 | The stadium was full.
+gimnasio | gym | Voy al gimnasio después de clase. | leisure | 2 | I go to the gym after class.
+nadar | to swim | Me gusta nadar en el mar. | leisure | 2 | I like swimming in the sea.
+esquiar | to ski | Nunca aprendí a esquiar. | leisure | 3 | I never learned to ski.
+patinar | to skate | Me gusta patinar en el parque. | leisure | 2 | I like skating in the park.
+pescar | to fish; to go fishing | Mi abuelo me llevaba a pescar al lago. | leisure | 3 | My grandfather used to take me fishing at the lake.
+museo | museum | El museo cierra los lunes. | leisure | 2 | The museum is closed on Mondays.
+teatro | theater | Fuimos al teatro con la escuela. | leisure | 2 | We went to the theater with the school.
+concierto | concert | Fuimos a un concierto increíble el sábado. | leisure | 2 | We went to an amazing concert on Saturday.
+entrada | ticket (for a show or game); entrance | Ya compré la entrada para el concierto. | leisure | 3 | I already bought the ticket for the concert.
+zoológico | zoo | Fuimos al zoológico con mis primos. | leisure | 2 | We went to the zoo with my cousins.
+serie | series; TV show | Estoy viendo una serie muy buena. | leisure | 2 | I'm watching a really good series.
+programa | program; show | Mi programa favorito empieza a las ocho. | leisure | 2 | My favorite show starts at eight.
+
+# Weather and nature
+nublado | cloudy | Hoy está nublado pero no llueve. | nature | 2 | It's cloudy today but it's not raining.
+soleado | sunny | Fue un día soleado y tranquilo. | nature | 2 | It was a sunny, quiet day.
+caluroso | hot (day, weather) | Fue un verano muy caluroso. | nature | 3 | It was a very hot summer.
+fresco | cool; fresh | Por la mañana hace fresco. | nature | 2 | It's cool in the morning.
+húmedo | humid; damp | El clima aquí es muy húmedo. | nature | 3 | The climate here is very humid.
+seco | dry | El verano en mi pueblo es muy seco. | nature | 2 | Summer in my town is very dry.
+viento | wind | Hace demasiado viento para salir en barco. | nature | 2 | It's too windy to go out on a boat.
+tormenta | storm | Anoche hubo una tormenta muy fuerte. | nature | 2 | Last night there was a very strong storm.
+niebla | fog | Había mucha niebla en la carretera. | nature | 3 | There was a lot of fog on the road.
+nevar | to snow | Mañana va a nevar en las montañas. | nature | 2 | Tomorrow it's going to snow in the mountains.
+hielo | ice | Cuidado, hay hielo en la calle. | nature | 2 | Careful, there's ice on the street.
+temperatura | temperature | La temperatura bajó mucho anoche. | nature | 2 | The temperature dropped a lot last night.
+pronóstico | forecast | Según el pronóstico, mañana va a llover. | nature | 3 | According to the forecast, it's going to rain tomorrow.
+paraguas | umbrella | No olvides el paraguas, va a llover. | nature | 2 | Don't forget your umbrella, it's going to rain.
+montaña | mountain | En invierno vamos a la montaña. | nature | 2 | In winter we go to the mountains.
+lago | lake | Nadamos en el lago todo el verano. | nature | 2 | We swam in the lake all summer.
+mar | sea | El mar está muy tranquilo hoy. | nature | 2 | The sea is very calm today.
+costa | coast | Mis tíos viven en la costa. | nature | 2 | My aunt and uncle live on the coast.
+isla | island | Pasamos una semana en una isla. | nature | 2 | We spent a week on an island.
+ola | wave | Una ola enorme mojó nuestras toallas. | nature | 2 | A huge wave soaked our towels.
+campo | countryside; field | Mis abuelos viven en el campo. | nature | 2 | My grandparents live in the countryside.
+selva | jungle; rainforest | Vimos monos en la selva. | nature | 3 | We saw monkeys in the jungle.
+paisaje | landscape; scenery | Desde la montaña, el paisaje era hermoso. | nature | 3 | From the mountain, the scenery was beautiful.
+árbol | tree | Hay un árbol enorme en el parque. | nature | 2 | There's a huge tree in the park.
+flor | flower | Le regalé una flor a mi mamá. | nature | 2 | I gave my mom a flower.
+planta | plant | Esta planta necesita mucha agua. | nature | 2 | This plant needs a lot of water.
+luna | moon | Anoche la luna estaba enorme. | nature | 2 | Last night the moon was huge.
+mosquito | mosquito | Un mosquito me picó en la pierna. | nature | 2 | A mosquito bit me on the leg.
+araña | spider | Hay una araña enorme en el baño. | nature | 2 | There's a huge spider in the bathroom.
+mariposa | butterfly | Vimos una mariposa azul en el jardín. | nature | 2 | We saw a blue butterfly in the garden.
+serpiente | snake | En la selva vimos una serpiente. | nature | 3 | In the jungle we saw a snake.
+
+# Feelings and opinions
+preocupado | worried | Estoy preocupado por el examen. | emotions | 2 | I'm worried about the exam.
+asustado | scared; frightened | El perro estaba asustado por la tormenta. | emotions | 2 | The dog was scared of the storm.
+emocionado | excited | Estoy muy emocionado por el viaje. | emotions | 2 | I'm really excited about the trip.
+enamorado | in love | Mi hermano está enamorado de una compañera. | emotions | 3 | My brother is in love with a classmate.
+harto | fed up | Estoy harto de la lluvia. | emotions | 3 | I'm fed up with the rain.
+molesto | annoyed; upset | Mi papá está molesto conmigo. | emotions | 3 | My dad is annoyed with me.
+avergonzado | embarrassed; ashamed (in parts of Latin America also: apenado) | Me sentí avergonzado delante de todos. | emotions | 4 | I felt embarrassed in front of everyone.
+divertido | fun; funny | El viaje fue muy divertido. | emotions | 2 | The trip was a lot of fun.
+amable | kind; nice | La señora de la tienda fue muy amable. | emotions | 2 | The lady at the shop was very kind.
+sorpresa | surprise | La fiesta fue una sorpresa para mi mamá. | emotions | 2 | The party was a surprise for my mom.
+tristeza | sadness | Sentí mucha tristeza al dejar mi escuela. | emotions | 3 | I felt very sad leaving my school.
+preocuparse | to worry | No hay que preocuparse por eso. | emotions | 3 | There's no need to worry about that.
+enojarse | to get angry (in Spain: enfadarse) | Mi mamá va a enojarse si llego tarde. | emotions | 3 | My mom is going to get angry if I'm late.
+llorar | to cry | El bebé empezó a llorar en el avión. | emotions | 2 | The baby started crying on the plane.
+reír | to laugh | Mi abuelo siempre nos hace reír. | emotions | 2 | My grandfather always makes us laugh.
+sonreír | to smile | Es difícil sonreír cuando estás triste. | emotions | 3 | It's hard to smile when you're sad.
+extrañar | to miss (someone) (in Spain: echar de menos) | Voy a extrañar mucho a mis amigos. | emotions | 3 | I'm going to miss my friends a lot.
+creer | to believe; to think | No puedo creer lo que pasó. | emotions | 2 | I can't believe what happened.
+de acuerdo | agreed; OK; in agreement | Estoy de acuerdo contigo. | emotions | 2 | I agree with you.
+importante | important | Es importante beber mucha agua. | emotions | 2 | It's important to drink lots of water.
+necesario | necessary | No es necesario llevar abrigo hoy. | emotions | 2 | You don't need to bring a coat today.
+posible | possible | ¿Es posible cambiar la fecha del viaje? | emotions | 2 | Is it possible to change the date of the trip?
+interesante | interesting | Fue un libro muy interesante. | emotions | 2 | It was a very interesting book.
+diferente | different | Cada persona es diferente. | emotions | 2 | Every person is different.
+maravilloso | wonderful | Pasamos un fin de semana maravilloso. | emotions | 3 | We had a wonderful weekend.
+terrible | terrible; awful | Tuve un día terrible en el trabajo. | emotions | 2 | I had a terrible day at work.
+
+# People, family and childhood
+nieto | grandson; grandchild | Mi abuela tiene un nieto nuevo. | family | 2 | My grandmother has a new grandson.
+sobrino | nephew | Mi sobrino cumple cinco años mañana. | family | 2 | My nephew turns five tomorrow.
+pareja | partner; couple | Mi tía vive con su pareja en Lima. | family | 3 | My aunt lives with her partner in Lima.
+boda | wedding | La boda de mi prima fue en mayo. | family | 2 | My cousin's wedding was in May.
+casarse | to get married | Mis tíos van a casarse en junio. | family | 3 | My aunt and uncle are going to get married in June.
+nacer | to be born | Mi hermanito va a nacer en abril. | family | 3 | My baby brother is going to be born in April.
+crecer | to grow; to grow up | De niño, quería crecer muy rápido. | family | 3 | As a child, I wanted to grow up very fast.
+vida | life | Viví toda mi vida en esta ciudad. | family | 2 | I lived my whole life in this city.
+infancia | childhood | Pasé mi infancia en un pueblo pequeño. | family | 3 | I spent my childhood in a small town.
+recuerdo | memory; souvenir | Tengo un recuerdo muy bonito de ese verano. | family | 3 | I have a very nice memory of that summer.
+travieso | naughty; mischievous | De niño era muy travieso. | family | 3 | As a child I was very naughty.
+mascota | pet | ¿Tienes alguna mascota en casa? | family | 2 | Do you have any pets at home?
+adolescente | teenager | Cuando era adolescente, vivía en Bogotá. | family | 3 | When I was a teenager, I lived in Bogotá.
+joven | young; young person | Mi tía es muy joven. | family | 2 | My aunt is very young.
+rubio | blond; fair-haired | Mi hermano es rubio y alto. | family | 2 | My brother is blond and tall.
+moreno | dark-haired; dark-skinned; tanned | Mi padre es moreno y tiene barba. | family | 2 | My father has dark hair and a beard.
+delgado | thin; slim | Mi primo es alto y delgado. | family | 2 | My cousin is tall and thin.
+barba | beard | Mi abuelo tiene una barba blanca. | family | 2 | My grandfather has a white beard.
+gracioso | funny | Mi primo es muy gracioso. | family | 2 | My cousin is very funny.
+serio | serious | El profesor de historia es muy serio. | family | 2 | The history teacher is very serious.
+inteligente | intelligent; smart; clever | Mi hermana es muy inteligente. | family | 2 | My sister is very smart.
+cariñoso | affectionate; loving | Mi perro es muy cariñoso. | family | 3 | My dog is very affectionate.
+perezoso | lazy | Mi gato es muy perezoso. | family | 3 | My cat is very lazy.
+antipático | unpleasant; unfriendly | El vecino de arriba es un poco antipático. | family | 3 | The upstairs neighbor is a bit unfriendly.
+llevarse bien | to get along (well) | Es importante llevarse bien con los vecinos. | family | 3 | It's important to get along with the neighbors.
+
+# Technology and messages
+correo | mail; email | Te mandé un correo ayer. | technology | 2 | I sent you an email yesterday.
+llamada | (phone) call | Recibí una llamada de mi abuela. | technology | 2 | I got a call from my grandmother.
+enviar | to send | Te voy a enviar las fotos esta noche. | technology | 2 | I'm going to send you the photos tonight.
+contestar | to answer; to reply | Tengo que contestar el correo de mi jefe. | technology | 2 | I have to reply to my boss's email.
+aplicación | app; application | Esta aplicación es muy útil para aprender idiomas. | technology | 2 | This app is very useful for learning languages.
+página web | website; web page | Vi las fotos en la página web del hotel. | technology | 2 | I saw the photos on the hotel's website.
+en línea | online | Compré los boletos en línea. | technology | 2 | I bought the tickets online.
+redes sociales | social media; social networks | Mi prima pasa horas en las redes sociales. | technology | 2 | My cousin spends hours on social media.
+chatear | to chat (online) | Me gusta chatear con mis amigos. | technology | 2 | I like chatting with my friends.
+tableta | tablet | Mi hermanito juega en la tableta. | technology | 2 | My little brother plays on the tablet.
+wifi | wifi; Wi-Fi | El wifi del hotel no funciona. | technology | 1 | The hotel wifi isn't working.
+conexión | connection | La conexión es muy lenta aquí. | technology | 3 | The connection is very slow here.
+batería | battery | Mi celular no tiene batería. | technology | 2 | My phone's battery is dead.
+cargador | charger | Olvidé el cargador en el hotel. | technology | 2 | I left my charger at the hotel.
+audífonos | headphones; earphones (in Spain: auriculares) | No encuentro mis audífonos. | technology | 3 | I can't find my headphones.
+video | video (in Spain: vídeo) | Grabé un video del concierto. | technology | 2 | I recorded a video of the concert.
+archivo | file | Te mando el archivo por correo. | technology | 3 | I'll send you the file by email.
+guardar | to save; to keep | No olvides guardar el documento. | technology | 2 | Don't forget to save the document.
+borrar | to delete; to erase | ¿Puedes borrar esa foto, por favor? | technology | 2 | Can you delete that photo, please?
+imprimir | to print | Tengo que imprimir los boletos. | technology | 3 | I have to print the tickets.
+impresora | printer | La impresora no tiene papel. | technology | 3 | The printer is out of paper.
+funcionar | to work (of machines) | Mi computadora dejó de funcionar. | technology | 3 | My computer stopped working.
+roto | broken | Mi celular está roto. | technology | 2 | My phone is broken.
+
+# Time expressions
+anteayer | the day before yesterday | Volvimos de la playa anteayer. | time | 3 | We got back from the beach the day before yesterday.
+pasado | last; past | El sábado pasado fuimos al cine. | time | 2 | Last Saturday we went to the movies.
+vez | time (occasion) | Fue la primera vez que vi el mar. | time | 2 | It was the first time I saw the sea.
+otra vez | again | Perdí las llaves otra vez. | time | 2 | I lost my keys again.
+ya no | not anymore; no longer | Ya no vivo en esa casa. | time | 2 | I don't live in that house anymore.
+a menudo | often | Voy a menudo a casa de mis abuelos. | time | 3 | I often go to my grandparents' house.
+de vez en cuando | from time to time; every now and then | De vez en cuando comemos en un restaurante. | time | 3 | Every now and then we eat at a restaurant.
+casi nunca | hardly ever | Casi nunca veo la tele. | time | 2 | I hardly ever watch TV.
+normalmente | usually; normally | Normalmente me levanto a las siete. | time | 2 | I usually get up at seven.
+últimamente | lately; recently | Últimamente duermo muy poco. | time | 3 | Lately I've been sleeping very little.
+pronto | soon | Espero verte muy pronto. | time | 2 | I hope to see you very soon.
+enseguida | right away; immediately | Espera aquí, vuelvo enseguida. | time | 3 | Wait here, I'll be right back.
+más tarde | later | Te llamo más tarde. | time | 2 | I'll call you later.
+a tiempo | on time; in time | Llegamos a tiempo al aeropuerto. | time | 2 | We got to the airport on time.
+tardar | to take (time); to be long | ¿Cuánto vas a tardar en llegar? | time | 3 | How long will it take you to get here?
+durante | during; for | Dormí durante todo el viaje. | time | 2 | I slept during the whole trip.
+al principio | at first; at the beginning | Al principio no me gustaba la comida. | time | 3 | At first I didn't like the food.
+entonces | then; so | Entonces decidimos volver a casa. | time | 2 | Then we decided to go back home.
+por fin | finally; at last | Por fin llegaron las vacaciones. | time | 2 | At last the vacation arrived.
+mediodía | noon; midday | Siempre almorzamos al mediodía. | time | 2 | We always have lunch at noon.
+madrugada | early morning; the small hours | Salimos a las cinco de la madrugada. | time | 3 | We left at five in the morning.
+época | time; period; era | En esa época vivíamos en el campo. | time | 3 | At that time we lived in the countryside.
+fecha | date | ¿Cuál es la fecha de tu cumpleaños? | time | 2 | What's the date of your birthday?
+horario | schedule; timetable; opening hours | El horario de la biblioteca cambió. | time | 3 | The library's hours changed.
+costumbre | habit; custom | Leer antes de dormir es una buena costumbre. | time | 3 | Reading before bed is a good habit.
+
+# Useful verbs
+salir | to leave; to go out | Vamos a salir mañana muy temprano. | verbs | 2 | We're going to leave very early tomorrow.
+regresar | to come back; to go back | Vamos a regresar a casa en tren. | verbs | 2 | We're going to go back home by train.
+entrar | to go in; to come in; to enter | No se puede entrar con comida. | verbs | 2 | You can't go in with food.
+caerse | to fall (down); to fall over | El niño tiene miedo de caerse de la bicicleta. | verbs | 3 | The boy is afraid of falling off his bike.
+dormirse | to fall asleep | Mi hermanito tardó mucho en dormirse. | verbs | 3 | My little brother took a long time to fall asleep.
+olvidar | to forget | No quiero olvidar tu cumpleaños. | verbs | 2 | I don't want to forget your birthday.
+recordar | to remember; to remind | No puedo recordar su nombre. | verbs | 2 | I can't remember his name.
+encontrar | to find | Es difícil encontrar un hotel barato en agosto. | verbs | 2 | It's hard to find a cheap hotel in August.
+terminar | to finish; to end | Tengo que terminar la tarea antes de cenar. | verbs | 2 | I have to finish my homework before dinner.
+intentar | to try | Voy a intentar llegar temprano. | verbs | 2 | I'm going to try to arrive early.
+pasar | to happen; to spend (time); to pass | Me gusta pasar tiempo con mi familia. | verbs | 2 | I like spending time with my family.
+dar | to give | Le voy a dar un regalo a mi madre. | verbs | 2 | I'm going to give my mother a present.
+prestar | to lend | ¿Me puedes prestar tu bicicleta? | verbs | 3 | Can you lend me your bike?
+contar | to tell; to count | Te voy a contar un secreto. | verbs | 2 | I'm going to tell you a secret.
+enseñar | to teach; to show | Mi abuela me va a enseñar a cocinar. | verbs | 2 | My grandmother is going to teach me to cook.
+repetir | to repeat | ¿Puede repetir la pregunta, por favor? | verbs | 2 | Could you repeat the question, please?
+oír | to hear | No puedo oír nada con este ruido. | verbs | 2 | I can't hear anything with this noise.
+sentir | to feel | Empecé a sentir frío en la montaña. | verbs | 3 | I started to feel cold on the mountain.
+acompañar | to go with; to accompany | ¿Me puedes acompañar al médico? | verbs | 3 | Can you go with me to the doctor?
+avisar | to let (someone) know; to warn | Tienes que avisar a tu mamá. | verbs | 3 | You have to let your mom know.
+sacar | to take out; to get (a grade) | ¿Me ayudas a sacar la ropa de la maleta? | verbs | 2 | Can you help me take the clothes out of the suitcase?
+tirar | to throw; to throw away | No hay que tirar papeles en la calle. | verbs | 3 | You shouldn't throw paper on the street.
+arreglar | to fix; to repair | Mi papá sabe arreglar bicicletas. | verbs | 3 | My dad knows how to fix bikes.
+construir | to build | Vamos a construir un castillo de arena. | verbs | 3 | We're going to build a sandcastle.
+organizar | to organize | Voy a organizar una fiesta sorpresa. | verbs | 3 | I'm going to organize a surprise party.
+cumplir | to turn (an age); to keep (a promise) | Mi hermana va a cumplir doce años. | verbs | 3 | My sister is going to turn twelve.
+mentir | to lie (tell a lie) | No está bien mentir a tus padres. | verbs | 3 | It's not right to lie to your parents.

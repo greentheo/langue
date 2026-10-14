@@ -1,0 +1,195 @@
+title: "Eu te vi"
+subtitle: Object pronouns — me, you, him, her, it
+goal: say me, you, us, him, her and it after a verb — the written way, and the way Brazilians really talk
+minutes: 15
+
+sections:
+  - heading: Me, te, nos
+    body: |
+      The **object** is the person or thing a verb acts on. In *I saw Ana*,
+      Ana is the object. Object pronouns replace it: *I saw her*.
+
+      The ones for *me*, *you* and *us* are small words that go **before
+      the verb** in Brazil — just like *me* in *eu me levanto*.
+
+      **Te** belongs to an old word for "you", *tu*, but Brazilians use it
+      with *você* all the time.
+    table:
+      columns: [English, Portuguese, example]
+      rows:
+        - [me, me, "Ela me viu. — She saw me."]
+        - [you, te, "Eu te espero aqui. — I'll wait for you here."]
+        - [us, nos, "Ele nos ajudou. — He helped us."]
+    examples:
+      - ["Você me ouve?", "Can you hear me?"]
+      - ["A professora nos conhece.", "The teacher knows us."]
+    tip: "*Te* with *você* is normal Brazilian Portuguese: *Oi, Ana! Eu te vi ontem.* — Hi, Ana! I saw you yesterday."
+
+  - heading: O, a, os, as — him, her, it, them
+    body: |
+      For *him*, *her*, *it* and *them*, written Portuguese uses **o, a,
+      os, as** — the same little words as "the". They also go before the
+      verb:
+
+      - **o** — him, or *it* for a masculine noun
+      - **a** — her, or *it* for a feminine noun
+      - **os, as** — them
+
+      *Conheço o Pedro.* → *Eu o conheço.* — I know him.
+
+      These sound formal in Brazil. You'll read them in books, news and
+      signs, and hear them in careful speech.
+    examples:
+      - ["Eu o vi ontem.", "I saw him yesterday."]
+      - ["Você a conhece?", "Do you know her?"]
+      - ["Os livros? Eu os li.", "The books? I read them."]
+
+  - heading: How Brazilians really say it
+    body: |
+      In everyday conversation most Brazilians don't say *o* or *a*.
+      Instead they:
+
+      - use **ele, ela, eles, elas** after the verb, for people: *Eu vi
+        ele ontem.* — I saw him yesterday.
+      - or **leave the pronoun out**, for things: *— Você comprou o pão?
+        — Comprei.* — Did you buy the bread? — Yes, I bought it.
+
+      *Vi ele* isn't used in careful writing, but you'll hear it from
+      everyone, every day.
+    examples:
+      - ["Encontrei ela no mercado.", "I ran into her at the market."]
+      - ["— Você viu o meu celular? — Não, não vi.", "— Have you seen my phone? — No, I haven't."]
+    tip: "English always needs \"it\": *I bought it*. Portuguese is happy without: *Comprei.* Leaving it out is the most natural choice."
+
+  - heading: With two verbs
+    body: |
+      With two verbs — *vou ver*, *quero conhecer*, *posso ajudar* —
+      Brazilians put the pronoun **between** them, before the infinitive:
+      *Vou te ver amanhã.* — I'm going to see you tomorrow.
+
+      In writing, *o* and *a* join the end of an infinitive. Drop the
+      **-r** and add **-lo** or **-la**, with an accent for -ar and -er
+      verbs: *conhecer + o* → *conhecê-lo*. That's where this polite phrase
+      comes from: *Prazer em conhecê-lo.* — Nice to meet you.
+    examples:
+      - ["Posso te ajudar?", "Can I help you?"]
+      - ["Quero te conhecer.", "I want to meet you."]
+      - ["Prazer em conhecê-la.", "Nice to meet you. (to a woman)"]
+    tip: "*Posso te ajudar?* is how a friendly shop assistant asks \"Can I help you?\" Just *Posso ajudar?* works too."
+
+words:
+  - [me, me]
+  - [te, you (object)]
+  - [nos, us]
+  - [o / a, him / her / it (written)]
+  - [ajudar, to help]
+  - [encontrar, to find / to run into]
+  - [celular, mobile phone / cell phone]
+  - [chave, key]
+  - [Posso te ajudar?, Can I help you?]
+  - [Prazer em conhecê-lo., Nice to meet you. (to a man)]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Ele ___ ajudou."
+    hint: us
+    translation: He helped us.
+    answers: [nos]
+    why: "\"Us\" as an object is nos, before the verb."
+
+  - type: fill
+    section: 1
+    prompt: "Eu ___ espero aqui."
+    hint: you, informal
+    translation: I'll wait for you here.
+    answers: [te]
+    why: Brazilians use te for "you" as an object, before the verb.
+
+  - type: translate
+    section: 1
+    direction: to-target
+    prompt: She saw me.
+    answers: [Ela me viu.]
+    why: Me goes before the verb in Brazilian Portuguese.
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: "O professor me conhece."
+    answers:
+      - "The teacher knows me."
+    why: "Me before the verb means \"me\"."
+
+  - type: fill
+    section: 2
+    prompt: "Conheço o Pedro. Eu ___ conheço."
+    hint: him, written
+    translation: I know Pedro. I know him.
+    answers: [o]
+    why: In writing, "him" is o, before the verb.
+
+  - type: choice
+    section: 2
+    prompt: "*Comprei a camiseta.* → \"I bought it.\" (written)"
+    options: [Eu a comprei., Eu o comprei., Eu comprei a.]
+    answer: Eu a comprei.
+    why: Camiseta is feminine, so "it" is a — and it goes before the verb.
+
+  - type: translate
+    section: 2
+    direction: to-english
+    prompt: "Eu a vi na praia."
+    answers:
+      - "I saw her at the beach."
+      - "I saw her on the beach."
+      - "I saw it at the beach."
+      - "I saw it on the beach."
+    why: "A before the verb means her, or it for a feminine noun."
+
+  - type: choice
+    section: 3
+    prompt: "— Você comprou o pão? — \"Yes, I bought it.\" (everyday speech)"
+    options: [Comprei., Comprei o., Comprei-lo.]
+    answer: Comprei.
+    why: In speech, Brazilians simply leave out "it" for things.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: Eu vi ele ontem.
+    answers: [I saw him yesterday., Yesterday I saw him.]
+    why: In speech, ele after the verb means "him".
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: "I ran into him at the beach."
+    answers:
+      - "Encontrei ele na praia."
+      - "Eu encontrei ele na praia."
+      - "Eu o encontrei na praia."
+      - "O encontrei na praia."
+    why: "In speech, \"him\" after the verb is ele; in writing, o before the verb."
+
+  - type: fill
+    section: 4
+    prompt: "Vou ___ ver amanhã."
+    hint: you, informal
+    translation: I'm going to see you tomorrow.
+    answers: [te]
+    why: With two verbs, the pronoun goes between them, before the infinitive.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: Can I help you? (a shop assistant to a customer)
+    answers: [Posso te ajudar?, Posso ajudar?, Posso ajudar você?, Posso ajudá-lo?, Posso ajudá-la?, Posso lhe ajudar?]
+    why: The pronoun goes between the two verbs — Posso te ajudar?
+
+  - type: choice
+    section: 4
+    prompt: "\"Nice to meet you.\" (to a woman, written)"
+    options: [Prazer em conhecê-la., Prazer em conhecê-lo., Prazer em conhecer-a.]
+    answer: Prazer em conhecê-la.
+    why: Drop the -r of conhecer, add -la for a woman, and put a hat on the e.
