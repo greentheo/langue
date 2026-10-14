@@ -12,6 +12,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { postJson, type ActivityContext } from "@/lib/client-api";
+import { playCue, primeSounds } from "@/lib/sounds";
 import { useReportProgress } from "@/lib/use-report-progress";
 import { useStableContext } from "@/lib/use-stable-context";
 import { ErrorBox, Panel } from "@/components/crt";
@@ -111,6 +112,7 @@ export function WrittenDrill({
     event.preventDefault();
     if (!items || grade || checking) return;
 
+    primeSounds();
     setChecking(true);
     setError(null);
 
@@ -131,6 +133,7 @@ export function WrittenDrill({
       });
 
       setGrade(data);
+      playCue(data.correct ? "right" : "wrong");
       // A hinted answer still counts, but at half credit — otherwise the hint
       // is strictly better than thinking.
       const earned = data.correct ? (revealHint ? 5 : 10) : 0;
@@ -150,6 +153,7 @@ export function WrittenDrill({
 
     if (index + 1 >= items.length) {
       setDone(true);
+      playCue("done");
       void report(context, {
         activityType: kind,
         pointsEarned: tally.points,

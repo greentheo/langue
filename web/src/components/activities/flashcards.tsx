@@ -19,6 +19,7 @@ import { useReportProgress } from "@/lib/use-report-progress";
 import { useStableContext } from "@/lib/use-stable-context";
 import { ErrorBox, Panel } from "@/components/crt";
 import { ChoiceOptions } from "@/components/choice-options";
+import { CUE_MS, playCue, primeSounds } from "@/lib/sounds";
 import { autoSpeak, stopSpeaking } from "@/lib/speech";
 import {
   ActivityHeader,
@@ -141,6 +142,7 @@ export function Flashcards({ context: contextProp }: { context: ActivityContext 
   async function submit(value: string) {
     if (!cards || result || checking || !mode) return;
 
+    primeSounds();
     setChecking(true);
     setError(null);
 
@@ -154,6 +156,7 @@ export function Flashcards({ context: contextProp }: { context: ActivityContext 
 
       setResult(data);
       const wasCorrect = data.verdict !== "incorrect";
+      playCue(wasCorrect ? "right" : "wrong");
       outcomes.current.push({ word: cards[index].word, correct: wasCorrect });
       setTally((prev) => ({
         correct: prev.correct + (wasCorrect ? 1 : 0),
@@ -171,6 +174,7 @@ export function Flashcards({ context: contextProp }: { context: ActivityContext 
 
     if (index + 1 >= cards.length) {
       setDone(true);
+      playCue("done");
       void report(context, {
         activityType: "flashcards",
         pointsEarned: tally.points,

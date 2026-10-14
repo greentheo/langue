@@ -18,6 +18,7 @@ import { Loading, ProgressDots, SessionSummary } from "@/components/activity-she
 import { AnswerInput } from "@/components/answer-input";
 import { RichInline } from "@/components/rich-text";
 import { SpeakButton } from "@/components/speak-button";
+import { CUE_MS, playCue, primeSounds } from "@/lib/sounds";
 import { autoSpeak, stopSpeaking } from "@/lib/speech";
 
 type Direction = "to-english" | "to-target";
@@ -110,7 +111,9 @@ export function PhrasePractice({
   }, [cards, index, done, dealing, direction, context.language]);
 
   useEffect(() => {
-    if (result && direction === "to-target") autoSpeak(result.target[0], context.language);
+    if (!result || direction !== "to-target") return;
+    const timer = window.setTimeout(() => autoSpeak(result.target[0], context.language), CUE_MS);
+    return () => window.clearTimeout(timer);
   }, [result, direction, context.language]);
 
   useEffect(() => stopSpeaking, []);
@@ -119,6 +122,7 @@ export function PhrasePractice({
     event.preventDefault();
     if (!cards || result || checking) return;
 
+    primeSounds();
     setChecking(true);
     setError(null);
     try {
@@ -129,6 +133,7 @@ export function PhrasePractice({
       });
       setResult(data);
       const right = data.verdict !== "incorrect";
+      playCue(right ? "right" : "wrong");
       outcomes.current.push({ word: data.target[0], correct: right });
       setTally((prev) => ({ correct: prev.correct + (right ? 1 : 0), points: prev.points + data.points }));
     } catch (cause) {
@@ -142,6 +147,7 @@ export function PhrasePractice({
     if (!cards) return;
     if (index + 1 >= cards.length) {
       setDone(true);
+      playCue("done");
       void report(context, {
         activityType: "phrases",
         pointsEarned: tally.points,
