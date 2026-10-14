@@ -197,12 +197,13 @@ skips it if it is.
 ## Vocabulary examples
 
 The guided path blanks words out of their vocabulary-library examples
-(`data/vocab_sources/<language>/<level>.psv`, fourth column of five or six)
+(`data/vocab_sources/<language>/<level>.psv`, the third column)
 for fill-in-the-blank, and shows the sixth column, the example in English,
 underneath. So an example sentence should:
 
 - contain the word **exactly as listed** (not a plural or another form), as a
-  separate word;
+  separate word — and not straight after an apostrophe (*l'acqua*, *d'acqua*
+  can't be blanked out);
 - use only grammar the level teaches — present tense at A1 (no past tenses,
   no *-ing* forms); past tenses arrive at A2;
 - be short (4–10 words) and everyday;

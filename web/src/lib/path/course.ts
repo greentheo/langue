@@ -10,7 +10,7 @@ import "server-only";
 
 import { getLesson, getLevelCurriculum } from "@/lib/curriculum";
 import type { Dialogue } from "@/lib/curriculum/types";
-import { normalizeAnswer, normalizeKeepingAccents } from "@/lib/engine/grade";
+import { normalizeAnswer, normalizeKeepingAccents, stripArticle } from "@/lib/engine/grade";
 import { getWords } from "@/lib/vocab";
 import { LEVELS } from "@/lib/vocab/types";
 import { blankOut, buildable, tilesOf } from "./sentences";
@@ -78,6 +78,39 @@ function plainText(text: string): string {
   return text.toLowerCase().replace(/[¡!¿?.,…:;"“”]/g, "").replace(/\s+/g, " ").trim();
 }
 
+/** What the course has taught so far, so nothing is taught twice. */
+class Taught {
+  private seen = new Map<string, { kind: "word" | "phrase"; meanings: Set<string> }[]>();
+
+  /** Each way of writing it, without an article: "le livre" and "livre" are one word. */
+  private keys(forms: string[]): string[] {
+    return [...new Set(forms.flatMap(typedForms).map((form) => stripArticle(plainText(form))))];
+  }
+
+  private meanings(english: string[]): Set<string> {
+    return new Set(meaningsOf(english).map((meaning) => stripArticle(normalizeAnswer(meaning))));
+  }
+
+  add(kind: "word" | "phrase", forms: string[], english: string[]): void {
+    const entry = { kind, meanings: this.meanings(english) };
+    for (const key of this.keys(forms)) this.seen.set(key, [...(this.seen.get(key) ?? []), entry]);
+  }
+
+  /**
+   * Already taught: the same word written the same way, or a phrase that says
+   * the same thing as a word ("Ciao!" after "ciao"). A phrase that only looks
+   * like a word — "Santé !" (cheers) after "santé" (health) — is new.
+   */
+  has(kind: "word" | "phrase", forms: string[], english: string[]): boolean {
+    const meanings = this.meanings(english);
+    return this.keys(forms).some((key) =>
+      (this.seen.get(key) ?? []).some(
+        (entry) => entry.kind === kind || [...meanings].some((meaning) => entry.meanings.has(meaning)),
+      ),
+    );
+  }
+}
+
 function batches<T>(items: T[], size: number): T[][] {
   const out: T[][] = [];
   for (let i = 0; i < items.length; i += size) out.push(items.slice(i, i + size));
@@ -120,8 +153,7 @@ function buildCourse(language: string): Course {
   const units: CourseUnit[] = [];
   const sentences = new Map<string, Sentence>();
   const scripts: { dialogue: Dialogue; unitIndex: number }[] = [];
-  /** Plain text of every word and phrase so far, so nothing is taught twice. */
-  const taught = new Set<string>();
+  const taught = new Taught();
 
   for (const level of LEVELS) {
     const curriculum = getLevelCurriculum(language, level);
@@ -139,7 +171,7 @@ function buildCourse(language: string): Course {
       const add = (item: Item) => {
         items.set(item.key, item);
         itemKeys.push(item.key);
-        if (item.kind !== "grammar") taught.add(plainText(item.target));
+        if (item.kind !== "grammar") taught.add(item.kind, [item.target, ...item.accepted], item.meanings);
       };
 
       // Lessons: each section is an idea, followed by the lesson's words it shows.
@@ -153,7 +185,7 @@ function buildCourse(language: string): Course {
 
         for (const [target, english] of lesson.words) {
           const key = wordKey(language, target);
-          if (items.has(key) || taught.has(plainText(target))) continue;
+          if (items.has(key) || taught.has("word", [target], [english])) continue;
           const shownIn = texts.findIndex((text) => typedForms(target).some((form) => mentions(text, form)));
           const word: WordItem = {
             kind: "word",
@@ -205,7 +237,7 @@ function buildCourse(language: string): Course {
         const situation = curriculum.situations.find((candidate) => candidate.id === situationId);
         if (!situation) continue;
         const phrases: PhraseItem[] = situation.phrases
-          .filter((phrase) => !taught.has(plainText(phrase.display)))
+          .filter((phrase) => !taught.has("phrase", [phrase.display, ...phrase.target], phrase.english))
           .map((phrase) => {
             const id = `s:p:${phrase.id}`;
             sentences.set(id, {
@@ -246,7 +278,7 @@ function buildCourse(language: string): Course {
           sentences.set(id, { id, target, english, group: entry.category, unitIndex });
         });
         const key = wordKey(language, entry.word);
-        if (items.has(key) || taught.has(plainText(entry.word)) || entry.translations.length === 0) {
+        if (items.has(key) || taught.has("word", [entry.word], entry.translations) || entry.translations.length === 0) {
           continue;
         }
         const word: WordItem = {

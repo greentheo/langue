@@ -26,6 +26,7 @@ import {
 import { getCourse } from "./course";
 import { presentStep } from "./present";
 import { gradeReply } from "./sentences";
+import { normalizeKeepingAccents, stripArticle } from "@/lib/engine/grade";
 import type {
   Course,
   CourseDialogue,
@@ -518,6 +519,27 @@ describe("course from the real curriculum", () => {
   }
 
   for (const language of ["italian", "spanish", "french", "portuguese"]) {
+    test(`${language}: no word is taught twice, with or without its article`, () => {
+      const course = getCourse(language);
+      const seen = new Map<string, string>();
+      for (const item of course.items.values()) {
+        if (item.kind !== "word") continue;
+        for (const form of new Set(item.accepted.map((form) => stripArticle(normalizeKeepingAccents(form))))) {
+          if (form.length < 2) continue;
+          const other = seen.get(form);
+          // A form shared with another word ("il / la" and "la") is fine; the same word twice is not.
+          if (other && other !== item.key) {
+            const a = course.items.get(other);
+            assert.ok(
+              a?.kind === "word" && a.accepted.length > 1 && item.accepted.length > 1,
+              `${item.key} repeats ${other}`,
+            );
+          }
+          seen.set(form, item.key);
+        }
+      }
+    });
+
     test(`${language}: every sentence and role-play turn an item points at exists and fits`, () => {
       const course = getCourse(language);
       for (const item of course.items.values()) {
