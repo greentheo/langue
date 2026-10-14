@@ -62,6 +62,8 @@ async function main() {
         word: word.word,
         translations: word.translations ?? [],
         examples: word.examples ?? [],
+        // English for each example, when the source has it (same order).
+        ...(word.examples_en ? { examples_en: word.examples_en } : {}),
         category: word.category ?? "basics",
         difficulty: word.difficulty ?? 1,
       }));

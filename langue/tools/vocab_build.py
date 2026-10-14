@@ -6,9 +6,10 @@ are dominated by punctuation and the metadata block has to be kept in sync by
 hand. Instead the vocabulary lives in ``data/vocab_sources/<language>/<level>.psv``
 as one word per line::
 
-    word | translation; translation | example sentence | category | difficulty
+    word | translation; translation | example sentence | category | difficulty | example in English
 
-and this script expands it into the JSON layout the app reads from
+The last field is optional; when present it becomes ``examples_en``, which the
+web app's guided path shows under fill-in-the-blank sentences. This script expands it into the JSON layout the app reads from
 ``data/flashcard_libraries/<language>/<level>.json``.
 
 The JSON files are generated artifacts. Edit the ``.psv`` source and rebuild::
@@ -69,13 +70,17 @@ def parse_source(path: Path) -> List[Dict[str, Any]]:
             continue
 
         fields = [field.strip() for field in line.split("|")]
-        if len(fields) != 5:
+        if len(fields) not in (5, 6):
             raise SourceError(
-                f"{path}:{lineno}: expected 5 pipe-separated fields "
-                f"(word|translations|example|category|difficulty), got {len(fields)}"
+                f"{path}:{lineno}: expected 5 or 6 pipe-separated fields "
+                f"(word|translations|example|category|difficulty[|example in English]), "
+                f"got {len(fields)}"
             )
 
-        word, translations_raw, example, category, difficulty_raw = fields
+        word, translations_raw, example, category, difficulty_raw = fields[:5]
+        example_en = fields[5] if len(fields) == 6 else ""
+        if len(fields) == 6 and not example_en:
+            raise SourceError(f"{path}:{lineno}: {word!r} has an empty English example")
 
         if not word:
             raise SourceError(f"{path}:{lineno}: empty word")
@@ -109,15 +114,16 @@ def parse_source(path: Path) -> List[Dict[str, Any]]:
                 f"{path}:{lineno}: {word!r} difficulty {difficulty} outside 1-5"
             )
 
-        words.append(
-            {
-                "word": word,
-                "translations": translations,
-                "examples": [example],
-                "category": category,
-                "difficulty": difficulty,
-            }
-        )
+        entry: Dict[str, Any] = {
+            "word": word,
+            "translations": translations,
+            "examples": [example],
+            "category": category,
+            "difficulty": difficulty,
+        }
+        if example_en:
+            entry["examples_en"] = [example_en]
+        words.append(entry)
 
     if not words:
         raise SourceError(f"{path}: no vocabulary entries found")

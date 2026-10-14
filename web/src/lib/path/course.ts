@@ -2,27 +2,37 @@ import "server-only";
 
 /**
  * A language's guided path, built from the compiled curriculum and the
- * vocabulary libraries: every unit's items, and the order to introduce them.
+ * vocabulary libraries: every unit's items, the order to introduce them, the
+ * sentences they appear in, and the role-plays that use them.
  *
  * Built once per language and kept, like the catalogs it reads.
  */
 
 import { getLesson, getLevelCurriculum } from "@/lib/curriculum";
+import type { Dialogue } from "@/lib/curriculum/types";
+import { normalizeAnswer, normalizeKeepingAccents } from "@/lib/engine/grade";
 import { getWords } from "@/lib/vocab";
 import { LEVELS } from "@/lib/vocab/types";
+import { blankOut, buildable, tilesOf } from "./sentences";
 import type {
   Course,
+  CourseDialogue,
   CourseUnit,
   GrammarItem,
   IntroEntry,
   Item,
   PhraseItem,
+  Sentence,
   WordItem,
 } from "./types";
 
 /** New words and phrases are introduced a few at a time. */
 const WORD_BATCH = 3;
 const PHRASE_BATCH = 2;
+/** Sentences kept per word for fill-in-the-blank, best first. */
+const MAX_CLOZES = 6;
+/** Words this short ("a", "di", "un") are in every sentence; a role-play turn does not practise them. */
+const MIN_TAGGED_LENGTH = 3;
 
 const cache = new Map<string, Course>();
 
@@ -108,6 +118,8 @@ function mentions(text: string, word: string): boolean {
 function buildCourse(language: string): Course {
   const items = new Map<string, Item>();
   const units: CourseUnit[] = [];
+  const sentences = new Map<string, Sentence>();
+  const scripts: { dialogue: Dialogue; unitIndex: number }[] = [];
   /** Plain text of every word and phrase so far, so nothing is taught twice. */
   const taught = new Set<string>();
 
@@ -116,6 +128,10 @@ function buildCourse(language: string): Course {
     if (!curriculum || curriculum.units.length === 0) continue;
 
     const library = getWords(language, level);
+    const unitOffset = units.length;
+    for (const dialogue of curriculum.dialogues ?? []) {
+      scripts.push({ dialogue, unitIndex: unitOffset + dialogue.unit - 1 });
+    }
 
     for (const unit of curriculum.units) {
       const unitIndex = units.length;
@@ -148,6 +164,9 @@ function buildCourse(language: string): Course {
             english,
             meanings: meaningsOf([english]),
             group: lesson.id,
+            ladder: [],
+            clozes: [],
+            replies: [],
           };
           add(word);
           wordsBySection[shownIn === -1 ? lesson.sections.length - 1 : shownIn].push(word);
@@ -165,7 +184,13 @@ function buildCourse(language: string): Course {
               .map((question, questionIndex) => ({ index: questionIndex, type: question.type, section: question.section }))
               .filter((question) => question.section === index + 1)
               .map(({ index: questionIndex, type }) => ({ index: questionIndex, type })),
+            builds: [],
           };
+          (section.examples ?? []).forEach(([target, english], exampleIndex) => {
+            const id = `s:${lesson.id}#${index + 1}.${exampleIndex + 1}`;
+            sentences.set(id, { id, target, english, group: lesson.id, unitIndex });
+            if (buildable(target)) grammar.builds.push(id);
+          });
           add(grammar);
           lessonEntries.push({ type: "grammar", key: grammar.key });
           for (const batch of batches(wordsBySection[index], WORD_BATCH)) {
@@ -181,17 +206,30 @@ function buildCourse(language: string): Course {
         if (!situation) continue;
         const phrases: PhraseItem[] = situation.phrases
           .filter((phrase) => !taught.has(plainText(phrase.display)))
-          .map((phrase) => ({
-            kind: "phrase",
-            key: `p:${phrase.id}`,
-            unitIndex,
-            phraseId: phrase.id,
-            target: phrase.display,
-            accepted: phrase.target,
-            english: phrase.english[0],
-            meanings: meaningsOf(phrase.english),
-            group: situationId,
-          }));
+          .map((phrase) => {
+            const id = `s:p:${phrase.id}`;
+            sentences.set(id, {
+              id,
+              target: phrase.target[0],
+              english: phrase.english[0],
+              group: situationId,
+              unitIndex,
+            });
+            return {
+              kind: "phrase",
+              key: `p:${phrase.id}`,
+              unitIndex,
+              phraseId: phrase.id,
+              target: phrase.display,
+              accepted: phrase.target,
+              english: phrase.english[0],
+              meanings: meaningsOf(phrase.english),
+              group: situationId,
+              ladder: [],
+              build: buildable(phrase.target[0]) ? id : null,
+              replies: [],
+            };
+          });
         phrases.forEach(add);
         for (const batch of batches(phrases, PHRASE_BATCH)) {
           phraseEntries.push({ type: "phrases", keys: batch.map((phrase) => phrase.key) });
@@ -202,6 +240,11 @@ function buildCourse(language: string): Course {
       const libraryWords: WordItem[] = [];
       for (const entry of library) {
         if (!unit.categories.includes(entry.category)) continue;
+        entry.examples.forEach((target, exampleIndex) => {
+          const id = `s:w:${language}:${entry.word.toLowerCase()}#${exampleIndex + 1}`;
+          const english = entry.examples_en?.[exampleIndex] ?? null;
+          sentences.set(id, { id, target, english, group: entry.category, unitIndex });
+        });
         const key = wordKey(language, entry.word);
         if (items.has(key) || taught.has(plainText(entry.word)) || entry.translations.length === 0) {
           continue;
@@ -215,6 +258,9 @@ function buildCourse(language: string): Course {
           english: entry.translations[0],
           meanings: meaningsOf(entry.translations),
           group: entry.category,
+          ladder: [],
+          clozes: [],
+          replies: [],
         };
         add(word);
         libraryWords.push(word);
@@ -236,5 +282,109 @@ function buildCourse(language: string): Course {
     }
   }
 
-  return { language, units, items };
+  for (const item of items.values()) {
+    if (item.kind === "word") item.clozes = clozesFor(item, sentences);
+  }
+  const dialogues = new Map<string, CourseDialogue>();
+  for (const { dialogue, unitIndex } of scripts) {
+    if (unitIndex >= units.length) continue;
+    const built = buildDialogue(dialogue, unitIndex, items);
+    dialogues.set(built.key, built);
+  }
+  for (const item of items.values()) {
+    if (item.kind === "word") {
+      item.ladder = [
+        "recognize",
+        "recall",
+        "type",
+        ...(item.clozes.length > 0 ? (["cloze"] as const) : []),
+        ...(item.replies.length > 0 ? (["reply"] as const) : []),
+      ];
+    } else if (item.kind === "phrase") {
+      item.ladder = [
+        "recognize",
+        "recall",
+        ...(item.build ? (["build"] as const) : []),
+        "type",
+        ...(item.replies.length > 0 ? (["reply"] as const) : []),
+      ];
+    }
+  }
+
+  return { language, units, items, sentences, dialogues };
+}
+
+/**
+ * Sentences a word can be blanked out of: ones the learner can read by then
+ * (from its unit or the next), not the word on its own, translated ones first.
+ */
+function clozesFor(word: WordItem, sentences: Map<string, Sentence>): string[] {
+  const own = normalizeAnswer(word.target);
+  return [...sentences.values()]
+    .filter(
+      (sentence) =>
+        sentence.unitIndex <= word.unitIndex + 1 &&
+        tilesOf(sentence.target).length >= 3 &&
+        normalizeAnswer(sentence.target) !== own &&
+        blankOut(sentence.target, word.accepted) !== null,
+    )
+    .sort(
+      (a, b) =>
+        Number(a.english === null) - Number(b.english === null) ||
+        Math.abs(a.unitIndex - word.unitIndex) - Math.abs(b.unitIndex - word.unitIndex),
+    )
+    .slice(0, MAX_CLOZES)
+    .map((sentence) => sentence.id);
+}
+
+/** Does `text` contain `phrase` as whole words? Both already normalized. */
+function containsWords(text: string, phrase: string): boolean {
+  return phrase.length > 0 && ` ${text} `.includes(` ${phrase} `);
+}
+
+/**
+ * A role-play as the path uses it. Each of the learner's turns is tagged with
+ * the words and phrases its model answer says — taught by the dialogue's unit
+ * — and those items learn which turns can practise them.
+ */
+function buildDialogue(dialogue: Dialogue, unitIndex: number, items: Map<string, Item>): CourseDialogue {
+  const key = `d:${dialogue.id}`;
+  const candidates = [...items.values()].filter(
+    (item): item is WordItem | PhraseItem => item.kind !== "grammar" && item.unitIndex <= unitIndex,
+  );
+  const all = new Set<string>();
+
+  const lines = dialogue.lines.map((line, lineIndex) => {
+    if ("them" in line) return { kind: "them" as const, target: line.them, english: line.english };
+
+    const plain = normalizeAnswer(line.answers[0]);
+    const accented = normalizeKeepingAccents(line.answers[0]);
+    const itemKeys = candidates
+      .filter((item) =>
+        item.kind === "phrase"
+          ? item.accepted.some((form) => containsWords(plain, normalizeAnswer(form)))
+          : item.accepted.some(
+              (form) =>
+                form.replace(/[^\p{L}]/gu, "").length >= MIN_TAGGED_LENGTH &&
+                containsWords(accented, normalizeKeepingAccents(form)),
+            ),
+      )
+      .map((item) => {
+        item.replies.push({ dialogue: key, line: lineIndex });
+        all.add(item.key);
+        return item.key;
+      });
+
+    return { kind: "you" as const, instruction: line.you, answers: line.answers, itemKeys };
+  });
+
+  return {
+    key,
+    unitIndex,
+    title: dialogue.title,
+    setting: dialogue.setting,
+    with: dialogue.with,
+    lines,
+    itemKeys: [...all],
+  };
 }

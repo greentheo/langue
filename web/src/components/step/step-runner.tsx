@@ -26,6 +26,8 @@ import { ChoiceOptions } from "@/components/choice-options";
 import { RichInline } from "@/components/rich-text";
 import { SpeakButton } from "@/components/speak-button";
 import { LessonSectionBody } from "@/components/lesson/lesson-section";
+import { DialogueCard } from "./dialogue-card";
+import { TileBuilder } from "./tile-builder";
 
 type Card = PublicExercise & { retry?: boolean };
 
@@ -45,6 +47,12 @@ function instruction(card: Card, language: string): string {
       return `Which is it in ${name}?`;
     case "type":
       return `Type it in ${name}`;
+    case "build":
+      return card.kind === "grammar" ? `Put the words in order` : `Build it in ${name}`;
+    case "cloze":
+      return "Fill in the missing word";
+    case "reply":
+      return `Reply in ${name}`;
     case "question":
       if (card.question.type === "choice") return "Choose";
       if (card.question.type === "fill") return "Fill in the blank";
@@ -54,12 +62,33 @@ function instruction(card: Card, language: string): string {
   }
 }
 
+/** Cards that teach or remind, with nothing to answer. */
+function isReading(card: Card | undefined): boolean {
+  return card?.mode === "learn" || card?.mode === "meet" || card?.mode === "remind";
+}
+
+/** Cards answered by typing. */
+function isTyped(card: Card | undefined): boolean {
+  return (
+    card?.mode === "type" ||
+    card?.mode === "cloze" ||
+    card?.mode === "reply" ||
+    (card?.mode === "question" && card.question.type !== "choice")
+  );
+}
+
+/** The sentence a cloze card makes once its blank is filled. */
+function filled(card: Extract<Card, { mode: "cloze" }>, word: string): string {
+  return `${card.before}${word}${card.after}`;
+}
+
 /** Shuffle a retried multiple-choice card so the answer is not where it was. */
 function reshuffle(card: Card): Card {
   const shuffle = (options: string[]) => [...options].sort(() => Math.random() - 0.5);
   if (card.mode === "recognize" || card.mode === "recall") {
     return { ...card, options: shuffle(card.options) };
   }
+  if (card.mode === "build") return { ...card, tiles: shuffle(card.tiles) };
   if (card.mode === "question" && card.question.options) {
     return { ...card, question: { ...card.question, options: shuffle(card.question.options) } };
   }
@@ -113,10 +142,8 @@ export function StepRunner({ language }: { language: string }) {
 
   // Focus: the Next button after an answer, otherwise the text box.
   useEffect(() => {
-    if (result || card?.mode === "learn" || card?.mode === "meet") nextRef.current?.focus();
-    else if (card?.mode === "type" || (card?.mode === "question" && card.question.type !== "choice")) {
-      inputRef.current?.focus({ preventScroll: true });
-    }
+    if (result || isReading(card)) nextRef.current?.focus();
+    else if (isTyped(card)) inputRef.current?.focus({ preventScroll: true });
   }, [card, result]);
 
   // Speak target-language text as it appears…
@@ -124,6 +151,8 @@ export function StepRunner({ language }: { language: string }) {
     if (!card || finish) return;
     if (card.mode === "recognize") autoSpeak(card.prompt, language);
     else if (card.mode === "meet") autoSpeak(card.entries[0]?.target, language);
+    else if (card.mode === "remind" && card.kind !== "grammar") autoSpeak(card.title, language);
+    else if (card.mode === "reply") autoSpeak(card.context?.target, language);
     else if (card.mode === "question" && card.question.direction === "to-english") {
       autoSpeak(card.question.prompt, language);
     }
@@ -133,7 +162,9 @@ export function StepRunner({ language }: { language: string }) {
   useEffect(() => {
     if (!card || !result) return;
     let text: string | undefined;
-    if (card.mode === "recall" || card.mode === "type") text = result.answers[0];
+    if (card.mode === "recall" || card.mode === "type" || card.mode === "build" || card.mode === "reply") {
+      text = result.answers[0];
+    } else if (card.mode === "cloze") text = filled(card, result.answers[0] ?? "");
     else if (card.mode === "question") {
       if (card.question.type === "fill") text = card.question.prompt.replace("___", result.answers[0] ?? "");
       else if (card.question.direction === "to-target") text = result.answers[0];
@@ -143,9 +174,19 @@ export function StepRunner({ language }: { language: string }) {
     return () => window.clearTimeout(timer);
   }, [card, result, language]);
 
+  /** Accuracy counts first tries; a retry still earns its points. */
+  function count(graded: StepAnswerResult, retry: boolean) {
+    const right = graded.verdict !== "incorrect";
+    setTally((prev) => ({
+      total: prev.total + (retry ? 0 : 1),
+      correct: prev.correct + (right && !retry ? 1 : 0),
+      points: prev.points + graded.points,
+    }));
+  }
+
   async function submit(value: string) {
     if (!card || result || checking) return;
-    if (card.mode === "learn" || card.mode === "meet") return;
+    if (isReading(card) || card.mode === "dialogue") return;
     primeSounds();
     setChecking(true);
     setError(null);
@@ -155,17 +196,15 @@ export function StepRunner({ language }: { language: string }) {
         itemKey: card.itemKey,
         mode: card.mode,
         question: card.mode === "question" ? card.question.index : undefined,
+        sentence: card.mode === "build" || card.mode === "cloze" ? card.sentence : undefined,
+        dialogue: card.mode === "reply" ? card.dialogue : undefined,
+        line: card.mode === "reply" ? card.line : undefined,
         answer: value,
       });
       setResult(graded);
       const right = graded.verdict !== "incorrect";
       playCue(right ? "right" : "wrong");
-      setTally((prev) => ({
-        // Accuracy counts first tries; a retry still earns its points.
-        total: prev.total + (card.retry ? 0 : 1),
-        correct: prev.correct + (right && !card.retry ? 1 : 0),
-        points: prev.points + graded.points,
-      }));
+      count(graded, Boolean(card.retry));
       if (!right && !card.retry) {
         setQueue((prev) => [...prev, reshuffle({ ...card, id: `${card.id}-again`, retry: true })]);
       }
@@ -263,23 +302,35 @@ export function StepRunner({ language }: { language: string }) {
         </span>
       </div>
 
-      <CardBody
-        card={card}
-        language={language}
-        answer={answer}
-        setAnswer={setAnswer}
-        chosen={chosen}
-        result={result}
-        checking={checking}
-        inputRef={inputRef}
-        onPick={(option) => {
-          setChosen(option);
-          void submit(option);
-        }}
-        onSubmit={() => void submit(answer)}
-      />
+      {card.mode === "dialogue" ? (
+        <DialogueCard
+          key={card.id}
+          card={card}
+          language={language}
+          busy={finishing}
+          onTurn={(graded) => count(graded, false)}
+          onFinish={() => void advance()}
+        />
+      ) : (
+        <CardBody
+          key={card.id}
+          card={card}
+          language={language}
+          answer={answer}
+          setAnswer={setAnswer}
+          chosen={chosen}
+          result={result}
+          checking={checking}
+          inputRef={inputRef}
+          onPick={(option) => {
+            setChosen(option);
+            void submit(option);
+          }}
+          onSubmit={() => void submit(answer)}
+        />
+      )}
 
-      {card.mode === "learn" || card.mode === "meet" ? (
+      {isReading(card) ? (
         <button
           ref={nextRef}
           type="button"
@@ -378,6 +429,136 @@ function CardBody({
     );
   }
 
+  if (card.mode === "remind") {
+    return (
+      <div>
+        <p className="text-[0.6875rem] uppercase tracking-[0.18em] text-[var(--crt-accent)]">
+          Remember this one
+        </p>
+        <p className="mt-2 flex items-baseline gap-2 text-2xl text-[var(--crt-fg-bright)] crt-glow">
+          {card.kind === "grammar" ? null : <SpeakButton text={card.title} language={language} />}
+          <span>
+            <RichInline text={card.title} />
+          </span>
+        </p>
+        {card.text ? (
+          <p className="mt-2 text-base">
+            <RichInline text={card.text} />
+          </p>
+        ) : null}
+        {card.example ? (
+          <p className="mt-4 flex items-baseline gap-2 text-sm">
+            <SpeakButton text={card.example.target} language={language} />
+            <span>
+              <span className="text-[var(--crt-fg-bright)]">{card.example.target}</span>
+              {card.example.english ? (
+                <span className="text-[var(--crt-fg-dim)]"> — {card.example.english}</span>
+              ) : null}
+            </span>
+          </p>
+        ) : null}
+        <p className="mt-4 text-xs text-[var(--crt-fg-dim)]">It comes up again in a moment.</p>
+      </div>
+    );
+  }
+
+  if (card.mode === "dialogue") return null;
+
+  const typingForm = (
+    <form
+      className="mt-4"
+      onSubmit={(event) => {
+        event.preventDefault();
+        onSubmit();
+      }}
+    >
+      <AnswerInput
+        id="step-answer"
+        value={answer}
+        onChange={setAnswer}
+        inputRef={inputRef}
+        language={language}
+        typing={card.mode === "question" && card.question.direction === "to-english" ? "english" : "target"}
+        disabled={answered}
+      />
+      {!result ? (
+        <button type="submit" className="crt-button crt-button-primary mt-4" disabled={checking}>
+          {checking ? "Checking…" : "Check"}
+        </button>
+      ) : null}
+    </form>
+  );
+
+  if (card.mode === "build") {
+    return (
+      <div>
+        <p className={LABEL}>
+          {instruction(card, language)}
+          {card.retry ? " · one more try" : ""}
+        </p>
+        <p className="mt-2 text-2xl text-[var(--crt-fg-bright)] break-words">{card.prompt}</p>
+        <TileBuilder tiles={card.tiles} disabled={answered} onChange={setAnswer} />
+        {!result ? (
+          <button
+            type="button"
+            className="crt-button crt-button-primary mt-5"
+            disabled={checking || !answer}
+            onClick={onSubmit}
+          >
+            {checking ? "Checking…" : "Check"}
+          </button>
+        ) : null}
+      </div>
+    );
+  }
+
+  if (card.mode === "cloze") {
+    return (
+      <div>
+        <p className={LABEL}>
+          {instruction(card, language)}
+          {card.retry ? " · one more try" : ""}
+        </p>
+        <p className="mt-2 text-2xl text-[var(--crt-fg-bright)] break-words">
+          {card.before}
+          <span className="mx-1 inline-block min-w-[3em] border-b-2 border-[var(--crt-accent)] text-[var(--crt-accent)]">
+            {result ? result.answers[0] : "\u00a0"}
+          </span>
+          {card.after}
+        </p>
+        {card.translation ? (
+          <p className="mt-1 text-sm text-[var(--crt-fg-dim)]">“{card.translation}”</p>
+        ) : card.hint ? (
+          <p className="mt-1 text-sm text-[var(--crt-fg-dim)]">The missing word means “{card.hint}”.</p>
+        ) : null}
+        {typingForm}
+      </div>
+    );
+  }
+
+  if (card.mode === "reply") {
+    return (
+      <div>
+        {card.context ? (
+          <div className="mb-5">
+            <p className={LABEL}>{card.with}</p>
+            <p className="mt-1 flex items-baseline gap-2 text-xl text-[var(--crt-fg-bright)]">
+              <SpeakButton text={card.context.target} language={language} />
+              <span>{card.context.target}</span>
+            </p>
+            <p className="text-sm text-[var(--crt-fg-dim)]">“{card.context.english}”</p>
+          </div>
+        ) : null}
+        <p className={LABEL}>
+          {instruction(card, language)}
+          {card.retry ? " · one more try" : ""}
+        </p>
+        <p className="mt-2 text-xl text-[var(--crt-fg-bright)]">{card.instruction}</p>
+        {typingForm}
+      </div>
+    );
+  }
+
   const prompt =
     card.mode === "question"
       ? card.question.type === "fill"
@@ -392,20 +573,9 @@ function CardBody({
       : card.mode === "question"
         ? card.question.options
         : null;
-  const typing =
-    card.mode === "question" && card.question.direction === "to-english" ? "english" : "target";
 
   return (
     <div>
-      {card.mode === "question" && card.reminder ? (
-        <p className="mb-4 border-l-2 border-[var(--crt-accent)] pl-3 text-sm">
-          <span className="text-[0.6875rem] uppercase tracking-[0.18em] text-[var(--crt-accent)]">
-            Remember{" "}
-          </span>
-          <RichInline text={card.reminder} />
-        </p>
-      ) : null}
-
       <p className={LABEL}>
         {instruction(card, language)}
         {card.retry ? " · one more try" : ""}
@@ -432,28 +602,7 @@ function CardBody({
           onPick={onPick}
         />
       ) : (
-        <form
-          className="mt-4"
-          onSubmit={(event) => {
-            event.preventDefault();
-            onSubmit();
-          }}
-        >
-          <AnswerInput
-            id="step-answer"
-            value={answer}
-            onChange={setAnswer}
-            inputRef={inputRef}
-            language={language}
-            typing={typing}
-            disabled={answered}
-          />
-          {!result ? (
-            <button type="submit" className="crt-button crt-button-primary mt-4" disabled={checking}>
-              {checking ? "Checking…" : "Check"}
-            </button>
-          ) : null}
-        </form>
+        typingForm
       )}
     </div>
   );

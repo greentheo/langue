@@ -7,7 +7,7 @@ import "server-only";
  */
 
 import { prisma } from "@/lib/db";
-import { applyAnswer, newItemState } from "./schedule";
+import { applyAnswer, completeDialogue, newItemState } from "./schedule";
 import type { Course, Item, ItemState } from "./types";
 
 interface ItemRow {
@@ -63,6 +63,25 @@ export async function recordAnswer(
   });
 
   return { before, after };
+}
+
+/** A role-play was played to the end: schedule the next time it is offered. */
+export async function recordDialoguePlayed(
+  userId: string,
+  language: string,
+  dialogueKey: string,
+  now: Date,
+): Promise<void> {
+  const row = await prisma.itemProgress.findUnique({
+    where: { userId_itemKey: { userId, itemKey: dialogueKey } },
+  });
+  const after = completeDialogue(row ? toState(row) : newItemState(now), now);
+  const data = { ...after, lastSeenAt: now };
+  await prisma.itemProgress.upsert({
+    where: { userId_itemKey: { userId, itemKey: dialogueKey } },
+    create: { userId, language, itemKey: dialogueKey, kind: "dialogue", introducedAt: now, ...data },
+    update: data,
+  });
 }
 
 /**

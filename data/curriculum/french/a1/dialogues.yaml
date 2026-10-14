@@ -1,0 +1,641 @@
+dialogues:
+  # ── A1.1 Bonjour ! ─────────────────────────────────────────────────────
+  - id: new-classmate
+    unit: 1
+    title: "Salut !"
+    setting: It's your first day at a school in France. A boy sits down next to you.
+    with: Hugo, a boy in your class
+    lines:
+      - them: "Salut ! Ça va ?"
+        english: "Hi! How's it going?"
+      - you: Say hi, say you're fine, thanks, and ask him back.
+        answers:
+          - "Salut ! Ça va bien, merci. Et toi ?"
+          - "Salut ! Ça va, et toi ?"
+          - "Salut ! Très bien, merci. Et toi ?"
+          - "Ça va bien, merci. Et toi ?"
+      - them: "Ça va. Moi, c'est Hugo. Tu t'appelles comment ?"
+        english: "Good. I'm Hugo. What's your name?"
+      - you: Tell him your name.
+        answers:
+          - "Je m'appelle Sam."
+          - "Je m'appelle *."
+          - "Moi, c'est *."
+      - them: "Enchanté !"
+        english: "Nice to meet you!"
+      - you: Say "nice to meet you" back.
+        answers:
+          - "Enchanté !"
+          - "Enchantée !"
+          - "Enchanté, Hugo !"
+          - "Enchantée, Hugo !"
+      - them: "Ah, voilà madame Leroy, la prof !"
+        english: "Oh, here's Mrs Leroy, the teacher!"
+      - you: Say good morning to the teacher, politely.
+        answers:
+          - "Bonjour, madame !"
+          - "Bonjour, madame Leroy !"
+          - "Bonjour !"
+
+  - id: neighbour-on-the-stairs
+    unit: 1
+    title: "Bonsoir, monsieur"
+    setting: It's evening. You're staying in a flat in Lyon, and on the stairs you meet Monsieur Bernard, an older neighbour.
+    with: Monsieur Bernard, your neighbour
+    lines:
+      - them: "Ah, bonsoir !"
+        english: "Oh, good evening!"
+      - you: Say good evening to him politely, and ask how he is.
+        answers:
+          - "Bonsoir, monsieur. Comment allez-vous ?"
+          - "Bonsoir, monsieur Bernard. Comment allez-vous ?"
+          - "Bonsoir ! Comment allez-vous ?"
+      - them: "Très bien, merci. Et vous ?"
+        english: "Very well, thank you. And you?"
+      - you: Say you're very well, thank you.
+        answers:
+          - "Très bien, merci."
+          - "Ça va bien, merci."
+          - "Très bien, merci beaucoup."
+          - "Bien, merci."
+      - them: "Bonne soirée !"
+        english: "Have a nice evening!"
+      - you: Thank him and say goodbye.
+        answers:
+          - "Merci. Au revoir, monsieur !"
+          - "Merci, au revoir !"
+          - "Merci beaucoup. Au revoir !"
+          - "Merci, vous aussi. Au revoir !"
+          - "Merci, bonsoir !"
+
+  # ── A1.2 How French sounds ─────────────────────────────────────────────
+  - id: sorry-what
+    unit: 2
+    title: "Pardon ?"
+    setting: You're on holiday in Paris. A man stops you in the street and asks you something, very fast.
+    with: a man in the street
+    lines:
+      - them: "Excusez-moi ! Vous savez où est la rue Victor-Hugo ?"
+        english: "Excuse me! Do you know where Rue Victor-Hugo is?"
+      - you: Say you don't understand.
+        answers:
+          - "Je ne comprends pas."
+          - "Pardon, je ne comprends pas."
+          - "Je comprends pas."
+      - them: "La rue Victor-Hugo. C'est par où ?"
+        english: "Rue Victor-Hugo. Which way is it?"
+      - you: Ask him to speak more slowly, politely.
+        answers:
+          - "Plus lentement, s'il vous plaît."
+          - "Vous pouvez répéter plus lentement, s'il vous plaît ?"
+          - "Pouvez-vous parler plus lentement, s'il vous plaît ?"
+          - "Parlez plus lentement, s'il vous plaît."
+      - them: "La… rue… Victor-Hugo. Vous savez où c'est ?"
+        english: "Rue… Victor… Hugo. Do you know where it is?"
+      - you: Say you don't know, and ask him politely if he speaks English.
+        answers:
+          - "Je ne sais pas. Vous parlez anglais ?"
+          - "Je ne sais pas. Parlez-vous anglais ?"
+          - "Je sais pas. Vous parlez anglais ?"
+          - "Je ne sais pas. Est-ce que vous parlez anglais ?"
+      - them: "Non, désolé. Merci quand même, au revoir !"
+        english: "No, sorry. Thanks anyway, goodbye!"
+      - you: Say goodbye, and wish him a nice day.
+        answers:
+          - "Au revoir ! Bonne journée !"
+          - "Au revoir, monsieur. Bonne journée !"
+          - "Bonne journée ! Au revoir !"
+
+  # ── A1.3 Who are you? ──────────────────────────────────────────────────
+  - id: summer-camp
+    unit: 3
+    title: At summer camp
+    setting: It's your first day at a summer camp in the Alps. A girl at your table says hi.
+    with: Léa
+    lines:
+      - them: "Salut ! Moi, c'est Léa. Tu t'appelles comment ?"
+        english: "Hi! I'm Léa. What's your name?"
+      - you: Tell her your name.
+        answers:
+          - "Je m'appelle Sam."
+          - "Je m'appelle *."
+          - "Moi, c'est *."
+      - them: "Enchantée ! Tu es d'ici ?"
+        english: "Nice to meet you! Are you from around here?"
+      - you: Say no — you're American.
+        answers:
+          - "Non, je suis américain."
+          - "Non, je suis américaine."
+          - "Non, je ne suis pas d'ici. Je suis américain."
+          - "Non, je ne suis pas d'ici. Je suis américaine."
+      - them: "Cool ! Moi, je suis canadienne. Tu as quel âge ?"
+        english: "Oh, cool! I'm Canadian. How old are you?"
+      - you: Tell her how old you are.
+        answers:
+          - "J'ai douze ans."
+          - "J'ai * ans."
+          - "Moi, j'ai * ans."
+      - them: "Moi aussi ! Super, je suis contente !"
+        english: "Me too! Great, I'm happy!"
+      - you: Say you're happy too.
+        answers:
+          - "Je suis content aussi."
+          - "Je suis contente aussi."
+          - "Moi aussi, je suis content."
+          - "Moi aussi, je suis contente."
+          - "Moi aussi !"
+
+  - id: new-colleague
+    unit: 3
+    title: A new colleague
+    setting: It's your first morning at a new job in an office in Toulouse. A colleague comes over to say hello.
+    with: Claire, a colleague
+    lines:
+      - them: "Bonjour ! Je suis Claire. Comment vous appelez-vous ?"
+        english: "Hello! I'm Claire. What's your name?"
+      - you: Tell her your name, and say you're pleased to meet her.
+        answers:
+          - "Je m'appelle Alex. Enchanté."
+          - "Je m'appelle *. Enchanté."
+          - "Je m'appelle *. Enchantée."
+          - "Enchanté. Je m'appelle *."
+          - "Enchantée. Je m'appelle *."
+      - them: "Enchantée. Vous venez d'Angleterre ?"
+        english: "Nice to meet you. Are you from England?"
+      - you: Say no — you're Canadian.
+        answers:
+          - "Non, je suis canadien."
+          - "Non, je suis canadienne."
+          - "Non, je ne suis pas anglais. Je suis canadien."
+          - "Non, je ne suis pas anglaise. Je suis canadienne."
+      - them: "Ah, le Canada ! Ça va, le premier jour ?"
+        english: "Oh, Canada! How's the first day going?"
+      - you: Say it's going well, and you're happy.
+        answers:
+          - "Ça va bien. Je suis content."
+          - "Ça va bien. Je suis contente."
+          - "Très bien. Je suis content."
+          - "Très bien. Je suis contente."
+      - them: "Super ! Le café est là-bas. À plus tard !"
+        english: "Great! The coffee's over there. See you later!"
+      - you: Thank her very much.
+        answers:
+          - "Merci beaucoup !"
+          - "Merci beaucoup, Claire !"
+
+  # ── A1.4 Things you have ───────────────────────────────────────────────
+  - id: pen-pal-call
+    unit: 4
+    title: A call with a pen pal
+    setting: You're on a video call with Chloé, your new French pen pal.
+    with: Chloé, your pen pal
+    lines:
+      - them: "Salut ! Tu as un animal ?"
+        english: "Hi! Do you have a pet?"
+      - you: Say yes — you have a dog and a cat.
+        answers:
+          - "Oui, j'ai un chien et un chat."
+          - "Oui, un chien et un chat."
+          - "Oui, j'ai un chat et un chien."
+          - "J'ai un chien et un chat."
+      - them: "Trop bien ! Il y a un jardin chez toi ?"
+        english: "So cool! Is there a garden at your place?"
+      - you: Say yes, there's a garden.
+        answers:
+          - "Oui, il y a un jardin."
+          - "Oui, on a un jardin."
+          - "Oui, nous avons un jardin."
+          - "Il y a un jardin."
+      - them: "Et ton chien, il a quel âge ?"
+        english: "And your dog — how old is he?"
+      - you: Say he's ten.
+        answers:
+          - "Il a dix ans."
+          - "Il a 10 ans."
+          - "Mon chien a dix ans."
+      - them: "Bon, moi, j'ai faim. Et toi ?"
+        english: "Right, I'm hungry. What about you?"
+      - you: Say no — you're not hungry, you're thirsty.
+        answers:
+          - "Non, je n'ai pas faim. J'ai soif."
+          - "Non, j'ai soif."
+          - "Je n'ai pas faim. J'ai soif."
+          - "Non, j'ai pas faim. J'ai soif."
+      - them: "Ha ha ! Bon, à demain !"
+        english: "Ha ha! OK, see you tomorrow!"
+
+  # ── A1.5 Numbers and time ──────────────────────────────────────────────
+  - id: cinema-on-saturday
+    unit: 5
+    title: Saturday at the cinema
+    setting: Your friend Tom texts you about Saturday. Then, on Saturday afternoon, he texts again.
+    with: Tom, a friend
+    lines:
+      - them: "Salut ! Tu es libre samedi ?"
+        english: "Hi! Are you free on Saturday?"
+      - you: Say yes, and ask at what time.
+        answers:
+          - "Oui ! À quelle heure ?"
+          - "Oui. C'est à quelle heure ?"
+          - "Oui, je suis libre. À quelle heure ?"
+      - them: "À quatre heures et demie, au cinéma."
+        english: "At half past four, at the cinema."
+      - you: Ask how much it is.
+        answers:
+          - "C'est combien ?"
+          - "Ça coûte combien ?"
+          - "Combien ça coûte ?"
+          - "Ça fait combien ?"
+      - them: "Huit euros cinquante."
+        english: "Eight euros fifty."
+      - you: Say OK, see you Saturday.
+        answers:
+          - "D'accord ! À samedi !"
+          - "D'acc ! À samedi !"
+          - "OK, à samedi !"
+      - them: "Il est cinq heures moins le quart ! Tu es où ?"
+        english: "It's a quarter to five! Where are you?"
+      - you: Say sorry — you're late.
+        answers:
+          - "Pardon, je suis en retard !"
+          - "Désolé, je suis en retard !"
+          - "Désolée, je suis en retard !"
+          - "Je suis en retard, pardon !"
+      - them: "Pas grave ! Le film commence à cinq heures."
+        english: "No problem! The film starts at five."
+
+  # ── A1.6 Everyday verbs ────────────────────────────────────────────────
+  - id: at-the-pharmacy
+    unit: 6
+    title: At the pharmacy
+    setting: You're on holiday in Nice and you wake up with a headache. You go into a pharmacy.
+    with: the pharmacist
+    lines:
+      - them: "Bonjour ! Je peux vous aider ?"
+        english: "Hello! Can I help you?"
+      - you: Say hello, and say you don't feel well.
+        answers:
+          - "Bonjour. Je ne me sens pas bien."
+          - "Bonjour, je me sens mal."
+          - "Je ne me sens pas bien."
+          - "Bonjour. Je ne me sens pas très bien."
+      - them: "Qu'est-ce qui ne va pas ?"
+        english: "What's wrong?"
+      - you: Say you have a headache.
+        answers:
+          - "J'ai mal à la tête."
+          - "J'ai très mal à la tête."
+      - them: "Vous avez de la fièvre ?"
+        english: "Do you have a temperature?"
+      - you: Say no, and that you're very tired.
+        answers:
+          - "Non, je suis très fatigué."
+          - "Non, je suis très fatiguée."
+          - "Non, mais je suis très fatigué."
+          - "Non, mais je suis très fatiguée."
+      - them: "Voilà. Deux comprimés, trois fois par jour."
+        english: "Here you are. Two tablets, three times a day."
+      - you: Ask how much it is.
+        answers:
+          - "C'est combien ?"
+          - "Ça coûte combien ?"
+          - "Combien ça coûte ?"
+          - "Ça fait combien ?"
+      - them: "Six euros quatre-vingts, s'il vous plaît."
+        english: "Six euros eighty, please."
+      - you: Say thank you very much, and wish her a nice day.
+        answers:
+          - "Merci beaucoup. Bonne journée !"
+          - "Merci, bonne journée !"
+          - "Merci beaucoup, madame. Bonne journée !"
+
+  - id: at-the-bus-stop
+    unit: 6
+    title: At the bus stop
+    setting: You're waiting at a bus stop in Bordeaux. An older woman is waiting too.
+    with: a woman at the bus stop
+    lines:
+      - them: "Excusez-moi, vous attendez le 5 ?"
+        english: "Excuse me, are you waiting for the number 5?"
+      - you: Say yes, you're waiting for the 5.
+        answers:
+          - "Oui, j'attends le 5."
+          - "Oui, j'attends le cinq."
+          - "Oui, j'attends le bus 5."
+          - "Oui, j'attends le bus cinq."
+          - "Oui, moi aussi."
+      - them: "Il est en retard, comme toujours ! Vous habitez ici ?"
+        english: "It's late, as always! Do you live here?"
+      - you: Say no, you don't live here.
+        answers:
+          - "Non, je n'habite pas ici."
+          - "Non, j'habite pas ici."
+          - "Non, je ne suis pas d'ici."
+      - them: "Ah bon ? Vous parlez très bien français !"
+        english: "Really? You speak French very well!"
+      - you: Thank her, and say you speak a little French.
+        answers:
+          - "Merci ! Je parle un peu français."
+          - "Merci. Je parle un peu le français."
+          - "Merci beaucoup ! Je parle un peu français."
+      - them: "Et vous aimez Bordeaux ?"
+        english: "And do you like Bordeaux?"
+      - you: Say yes, you like it a lot.
+        answers:
+          - "Oui, j'aime beaucoup Bordeaux."
+          - "Oui, j'aime beaucoup !"
+          - "Oui, j'adore Bordeaux !"
+      - them: "Ah, voilà le bus !"
+        english: "Ah, here's the bus!"
+
+  # ── A1.7 Family and friends ────────────────────────────────────────────
+  - id: family-photos
+    unit: 7
+    title: Family photos
+    setting: Your French friend Camille is looking at the photos on your phone.
+    with: Camille, a friend
+    lines:
+      - them: "C'est ta famille sur la photo ?"
+        english: "Is that your family in the photo?"
+      - you: Say yes — it's your mother and your father.
+        answers:
+          - "Oui, c'est ma mère et mon père."
+          - "Oui, ma mère et mon père."
+          - "Oui, c'est mon père et ma mère."
+          - "Oui, ce sont ma mère et mon père."
+      - them: "Et le petit garçon, c'est qui ?"
+        english: "And the little boy — who's that?"
+      - you: Say it's your little brother, Tom.
+        answers:
+          - "C'est mon petit frère, Tom."
+          - "C'est mon petit frère. Il s'appelle Tom."
+          - "Mon petit frère, Tom."
+      - them: "Et ce grand chien noir, c'est ton chien ?"
+        english: "And this big black dog — is it your dog?"
+      - you: Say no — your dog is small and white.
+        answers:
+          - "Non, mon chien est petit et blanc."
+          - "Non, mon chien est blanc et petit."
+          - "Non, mon chien est petit et il est blanc."
+          - "Non, j'ai un petit chien blanc."
+      - them: "Ah ! Alors, c'est le chien de qui ?"
+        english: "Oh! So whose dog is it?"
+      - you: Say it's your grandparents' dog.
+        answers:
+          - "C'est le chien de mes grands-parents."
+          - "Le chien de mes grands-parents."
+      - them: "Il est très beau !"
+        english: "He's very handsome!"
+
+  # ── A1.8 Going places ──────────────────────────────────────────────────
+  - id: train-ticket
+    unit: 8
+    title: A ticket to Lyon
+    setting: You're at the ticket office in a Paris train station. You want to go to Lyon today.
+    with: the ticket clerk
+    lines:
+      - them: "Bonjour ! Je vous écoute."
+        english: "Hello! How can I help you?"
+      - you: Ask for a ticket to Lyon, politely.
+        answers:
+          - "Un billet pour Lyon, s'il vous plaît."
+          - "Je voudrais un billet pour Lyon, s'il vous plaît."
+      - them: "Pour aujourd'hui ?"
+        english: "For today?"
+      - you: Say yes, and ask what time the train leaves.
+        answers:
+          - "Oui. À quelle heure part le train ?"
+          - "Oui, le train part à quelle heure ?"
+          - "Oui. Il part à quelle heure ?"
+          - "Oui. À quelle heure part-il ?"
+      - them: "À dix heures ou à midi."
+        english: "At ten or at noon."
+      - you: Say you'll take the noon train.
+        answers:
+          - "Je prends le train de midi."
+          - "Je prends le train à midi."
+          - "Le train de midi, s'il vous plaît."
+          - "Je vais prendre le train de midi."
+      - them: "Très bien. Ça fait soixante-cinq euros. Bon voyage !"
+        english: "Very good. That's sixty-five euros. Have a good trip!"
+      - you: Thank him very much and say goodbye.
+        answers:
+          - "Merci beaucoup. Au revoir !"
+          - "Merci, au revoir !"
+          - "Merci beaucoup, monsieur. Au revoir !"
+
+  - id: asking-the-way
+    unit: 8
+    title: Which way to the station?
+    setting: You're lost in the old town of Nantes, staring at a map. A woman stops to help.
+    with: a woman in the street
+    lines:
+      - them: "Bonjour ! Vous cherchez quelque chose ?"
+        english: "Hello! Are you looking for something?"
+      - you: Say yes — you're lost.
+        answers:
+          - "Oui, je suis perdu."
+          - "Oui, je suis perdue."
+          - "Je suis perdu."
+          - "Je suis perdue."
+      - them: "Vous allez où ?"
+        english: "Where are you going?"
+      - you: Say you're going to the train station.
+        answers:
+          - "Je vais à la gare."
+          - "À la gare."
+          - "Où est la gare ?"
+      - them: "La gare ? Allez tout droit, puis tournez à gauche."
+        english: "The station? Go straight on, then turn left."
+      - you: "Check you've understood: straight on, then left?"
+        answers:
+          - "Tout droit, et à gauche ?"
+          - "Tout droit, puis à gauche ?"
+          - "Je vais tout droit, et je tourne à gauche ?"
+      - them: "Oui, c'est ça !"
+        english: "Yes, that's right!"
+      - you: Ask if it's far.
+        answers:
+          - "C'est loin ?"
+          - "Est-ce que c'est loin ?"
+          - "C'est loin d'ici ?"
+      - them: "Non, c'est à cinq minutes."
+        english: "No, it's five minutes away."
+      - you: Thank her and wish her a good day.
+        answers:
+          - "Merci beaucoup. Bonne journée !"
+          - "Merci, bonne journée !"
+          - "Merci beaucoup, madame. Bonne journée !"
+
+  # ── A1.9 Wants and likes ───────────────────────────────────────────────
+  - id: dinner-out
+    unit: 9
+    title: Dinner out
+    setting: It's evening in a small restaurant in Lyon. You're there with your family — four of you.
+    with: the waiter
+    lines:
+      - them: "Bonsoir ! Vous êtes combien ?"
+        english: "Good evening! How many of you are there?"
+      - you: Ask for a table for four, politely.
+        answers:
+          - "Une table pour quatre, s'il vous plaît."
+          - "Nous sommes quatre."
+          - "On est quatre."
+          - "Quatre, s'il vous plaît."
+      - them: "Et pour manger ? Le poisson est très bon."
+        english: "And to eat? The fish is very good."
+      - you: Say you're vegetarian, and ask what he recommends.
+        answers:
+          - "Je suis végétarien. Qu'est-ce que vous me conseillez ?"
+          - "Je suis végétarienne. Qu'est-ce que vous me conseillez ?"
+          - "Je suis végétarien. Qu'est-ce que vous conseillez ?"
+          - "Je suis végétarienne. Qu'est-ce que vous conseillez ?"
+      - them: "Alors, je vous conseille la salade au chèvre chaud."
+        english: "Then I recommend the warm goat's cheese salad."
+      - you: Say OK — and ask for some water, please.
+        answers:
+          - "D'accord. Et de l'eau, s'il vous plaît."
+          - "D'accord ! Et une carafe d'eau, s'il vous plaît."
+          - "D'accord. Je voudrais aussi de l'eau, s'il vous plaît."
+      - them: "Alors, c'était bon ?"
+        english: "So, was it good?"
+      - you: Say it was delicious, and ask for the bill.
+        answers:
+          - "C'était délicieux. L'addition, s'il vous plaît."
+          - "Oui, c'était délicieux. L'addition, s'il vous plaît."
+          - "C'était très bon. L'addition, s'il vous plaît."
+      - them: "Voilà. Ça fait cinquante-deux euros."
+        english: "Here you are. That's fifty-two euros."
+      - you: Ask if you can pay by card.
+        answers:
+          - "Je peux payer par carte ?"
+          - "Est-ce que je peux payer par carte ?"
+          - "Puis-je payer par carte ?"
+
+  - id: clothes-shop
+    unit: 9
+    title: Just looking
+    setting: You're in a clothes shop in Marseille, looking around.
+    with: the shop assistant
+    lines:
+      - them: "Bonjour ! Je peux vous aider ?"
+        english: "Hello! Can I help you?"
+      - you: Say you're just looking, thanks.
+        answers:
+          - "Je regarde seulement, merci."
+          - "Je regarde juste, merci."
+          - "Je regarde, merci."
+          - "Non merci, je regarde seulement."
+      - them: "D'accord. … Ah, vous aimez ce t-shirt bleu ?"
+        english: "All right. … Oh, do you like this blue T-shirt?"
+      - you: Say yes, and ask how much it is.
+        answers:
+          - "Oui. C'est combien ?"
+          - "Oui, ça coûte combien ?"
+          - "Oui. Combien ça coûte ?"
+          - "Oui, il coûte combien ?"
+      - them: "Vingt-cinq euros."
+        english: "Twenty-five euros."
+      - you: Ask if you can try it on.
+        answers:
+          - "Je peux l'essayer ?"
+          - "Est-ce que je peux l'essayer ?"
+          - "Puis-je l'essayer ?"
+      - them: "Bien sûr. … Alors ?"
+        english: "Of course. … Well?"
+      - you: Ask if they have a bigger size.
+        answers:
+          - "Vous avez une taille plus grande ?"
+          - "Est-ce que vous avez une taille plus grande ?"
+          - "Avez-vous une taille plus grande ?"
+          - "Vous avez plus grand ?"
+      - them: "Oui, voilà."
+        english: "Yes, here you are."
+      - you: Say you'll take it.
+        answers:
+          - "Je le prends."
+          - "Je vais le prendre."
+
+  # ── A1.10 Your day ─────────────────────────────────────────────────────
+  - id: saturday-morning
+    unit: 10
+    title: Saturday morning
+    setting: It's Saturday morning and your friend Jules phones you.
+    with: Jules, a friend
+    lines:
+      - them: "Salut ! Il est dix heures. Tu es où ?"
+        english: "Hi! It's ten o'clock. Where are you?"
+      - you: Say you're at home — you're getting up.
+        answers:
+          - "Je suis à la maison. Je me lève."
+          - "À la maison. Je me lève."
+          - "Je suis chez moi. Je me lève."
+      - them: "Tu te lèves à dix heures ?"
+        english: "You're getting up at ten?"
+      - you: Say that on Saturdays you never get up early.
+        answers:
+          - "Le samedi, je ne me lève jamais tôt."
+          - "Je ne me lève jamais tôt le samedi."
+          - "Oui, je ne me lève jamais tôt le samedi."
+          - "Le samedi, je me lève toujours tard."
+      - them: "Ha ha ! Il fait beau. On va au parc ?"
+        english: "Ha ha! It's nice out. Shall we go to the park?"
+      - you: Say great — and ask at what time.
+        answers:
+          - "C'est super ! À quelle heure ?"
+          - "C'est génial ! À quelle heure ?"
+          - "Super ! On y va à quelle heure ?"
+          - "Super ! À quelle heure ?"
+      - them: "À onze heures, devant le cinéma ?"
+        english: "At eleven, in front of the cinema?"
+      - you: Say OK, see you later.
+        answers:
+          - "D'accord ! À plus tard !"
+          - "D'accord, à plus !"
+          - "D'acc ! À plus tard !"
+          - "OK, à plus tard !"
+
+  - id: hotel-by-the-sea
+    unit: 10
+    title: A hotel by the sea
+    setting: You arrive one evening at a small hotel by the sea in Brittany.
+    with: the receptionist
+    lines:
+      - them: "Bonsoir ! Vous avez une réservation ?"
+        english: "Good evening! Do you have a reservation?"
+      - you: Say yes, and give your name.
+        answers:
+          - "Oui, je m'appelle Alex Martin."
+          - "Oui, je m'appelle *."
+          - "Oui, au nom de *."
+          - "Oui, c'est au nom de *."
+      - them: "Ah oui. Deux nuits, chambre douze. Vous venez d'où ?"
+        english: "Ah yes. Two nights, room twelve. Where are you from?"
+      - you: Say you're from the United States.
+        answers:
+          - "Je viens des États-Unis."
+          - "Des États-Unis."
+          - "Je suis américain."
+          - "Je suis américaine."
+      - them: "Bienvenue en France ! Voici votre clé."
+        english: "Welcome to France! Here's your key."
+      - you: Ask what time breakfast is.
+        answers:
+          - "Le petit déjeuner est à quelle heure ?"
+          - "À quelle heure est le petit déjeuner ?"
+          - "C'est à quelle heure, le petit déjeuner ?"
+      - them: "De sept heures à dix heures."
+        english: "From seven to ten."
+      - you: Ask if it's going to be nice weather tomorrow.
+        answers:
+          - "Il va faire beau demain ?"
+          - "Est-ce qu'il va faire beau demain ?"
+          - "Demain, il va faire beau ?"
+      - them: "Oui, très beau ! La plage est derrière l'hôtel."
+        english: "Yes, lovely! The beach is behind the hotel."
+      - you: Say great — you love the beach.
+        answers:
+          - "C'est super ! J'adore la plage."
+          - "C'est génial ! J'adore la plage."
+          - "Super ! J'adore la plage !"
+          - "C'est super ! J'aime beaucoup la plage."

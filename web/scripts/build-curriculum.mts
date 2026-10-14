@@ -20,12 +20,15 @@ import { fileURLToPath } from "node:url";
 import { parse as parseYaml } from "yaml";
 import type { z } from "zod";
 import {
+  DialoguesFileSchema,
   LessonFileSchema,
   LevelFileSchema,
   PhrasesFileSchema,
 } from "../src/lib/curriculum/schema.js";
+import { normalizeKeepingAccents } from "../src/lib/engine/grade.js";
 import type {
   CurriculumCatalog,
+  Dialogue,
   Lesson,
   LevelCurriculum,
   LevelOverview,
@@ -219,9 +222,78 @@ async function buildLevel(language: string, level: string, dir: string): Promise
   }
 
   const units = await buildUnits(language, level, levelPath, unitFiles, lessons, situations);
+  const dialogues = await buildDialogues(language, level, join(dir, "dialogues.yaml"), units);
 
   if (!overview && lessons.length === 0 && situations.length === 0) return null;
-  return { overview, lessons, situations, units };
+  return { overview, lessons, situations, units, dialogues };
+}
+
+/**
+ * A level's role-plays. Each belongs to one of the level's units, has at
+ * least two turns for the learner, and shows a concrete model answer (no
+ * `*`) after each turn. Two turns with the same model answer would make the
+ * pick-a-reply version of the dialogue unanswerable.
+ */
+async function buildDialogues(
+  language: string,
+  level: string,
+  path: string,
+  units: Unit[],
+): Promise<Dialogue[]> {
+  if (!existsSync(path)) return [];
+  const file = await load(path, DialoguesFileSchema);
+  if (!file) return [];
+
+  if (units.length === 0) {
+    errors.push(`${where(path)}: dialogues need the level's units (level.yaml) to belong to`);
+    return [];
+  }
+
+  const seen = new Set<string>();
+  return file.dialogues.map((dialogue, index) => {
+    const at = `${where(path)}: dialogues.${index} ("${dialogue.id}")`;
+    if (seen.has(dialogue.id)) errors.push(`${at}: id is used twice`);
+    seen.add(dialogue.id);
+
+    if (dialogue.unit > units.length) {
+      errors.push(`${at}: unit ${dialogue.unit} does not exist (the level has ${units.length})`);
+    }
+
+    const turns = dialogue.lines.filter((line) => "you" in line);
+    if (turns.length < 2) errors.push(`${at}: needs at least two "you" turns`);
+
+    const models = new Set<string>();
+    dialogue.lines.forEach((line, lineIndex) => {
+      if (!("you" in line)) return;
+      const [model, ...others] = line.answers;
+      if (model.includes("*")) {
+        errors.push(`${at}: lines.${lineIndex}: the first answer is shown to learners, so it cannot contain *`);
+      }
+      const normalized = normalizeKeepingAccents(model);
+      if (models.has(normalized)) {
+        errors.push(`${at}: lines.${lineIndex}: two turns have the same first answer "${model}"`);
+      }
+      models.add(normalized);
+
+      const forms = new Set([normalized]);
+      for (const answer of others) {
+        const form = normalizeKeepingAccents(answer);
+        if (forms.has(form)) errors.push(`${at}: lines.${lineIndex}: "${answer}" is listed twice`);
+        forms.add(form);
+      }
+    });
+
+    return {
+      id: `${language}-${level}-${dialogue.id}`,
+      language,
+      level,
+      unit: dialogue.unit,
+      title: dialogue.title,
+      setting: dialogue.setting,
+      with: dialogue.with,
+      lines: dialogue.lines,
+    };
+  });
 }
 
 /** Vocabulary-library categories at a level, from the JSON the vocab build reads. */
@@ -346,7 +418,8 @@ async function main() {
 
       const phraseCount = built.situations.reduce((sum, s) => sum + s.phrases.length, 0);
       if (built.lessons.length > 0 || phraseCount > 0) {
-        summary.push(`${language}/${level}: ${built.lessons.length} lessons, ${phraseCount} phrases`);
+        const dialogues = built.dialogues.length > 0 ? `, ${built.dialogues.length} dialogues` : "";
+        summary.push(`${language}/${level}: ${built.lessons.length} lessons, ${phraseCount} phrases${dialogues}`);
       }
     }
   }
