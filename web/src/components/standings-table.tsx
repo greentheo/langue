@@ -49,6 +49,15 @@ export function StandingsTable({
                 </td>
                 <td className={`${cell} ${strong}`}>
                   {row.displayName}
+                  {row.badges?.map((badge) => (
+                    <span
+                      key={badge}
+                      title={`Finished ${badge}`}
+                      className="ml-2 whitespace-nowrap text-xs text-[var(--crt-accent)]"
+                    >
+                      ★ {badge}
+                    </span>
+                  ))}
                   {you ? <span className="ml-2 text-xs text-[var(--crt-fg-dim)]">you</span> : null}
                 </td>
                 <td className={`${cell} text-right tabular-nums ${period === "week" ? strong : ""}`}>

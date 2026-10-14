@@ -169,7 +169,7 @@ export interface ItemState {
  */
 export type ExerciseMode = "learn" | "meet" | "remind" | LadderMode | "question" | "dialogue";
 
-export type ExerciseRole = "warmup" | "new" | "tricky" | "review" | "extra" | "stretch";
+export type ExerciseRole = "warmup" | "new" | "tricky" | "review" | "extra" | "stretch" | "challenge";
 
 export interface PlannedExercise {
   mode: ExerciseMode;
@@ -275,6 +275,8 @@ export interface StepUnit {
 export interface PublicStep {
   exercises: PublicExercise[];
   unit: StepUnit;
+  /** A level-up challenge for `unit`, rather than an ordinary step. */
+  challenge: boolean;
 }
 
 export interface StepAnswerResult {

@@ -157,3 +157,41 @@ export function completeDialogue(state: ItemState, now: Date): ItemState {
     dueAt: new Date(now.getTime() + days * DAY_MS),
   };
 }
+
+/**
+ * One answer in a level-up challenge. A right answer shows the learner can
+ * produce the item, so it counts as learned at once (stage 3), and a review
+ * in a few days confirms it. A wrong one costs nothing: a challenge is a
+ * chance to skip ahead, never a way to fall back.
+ */
+export function applyChallenge(state: ItemState, correct: boolean, now: Date): ItemState {
+  if (!correct) return { ...state, wrong: state.wrong + 1 };
+  const raised = state.stage < LEARNED_STAGE;
+  return {
+    ...state,
+    stage: Math.max(state.stage, LEARNED_STAGE),
+    bestStage: Math.max(state.bestStage, LEARNED_STAGE),
+    right: state.right + 1,
+    rightStreak: state.rightStreak + 1,
+    missStreak: 0,
+    tricky: false,
+    dueAt: raised ? new Date(now.getTime() + INTERVAL_MS[LEARNED_STAGE]) : state.dueAt,
+  };
+}
+
+/**
+ * A passed challenge vouches for the rest of its unit: anything not learned
+ * yet is taken as probably known (stage 3) and comes up for a quick
+ * confirming review `inDays` from now — spread out, so passing several units
+ * does not bury the learner in reviews on one day.
+ */
+export function assumeKnown(state: ItemState, now: Date, inDays: number): ItemState {
+  if (state.bestStage >= LEARNED_STAGE) return state;
+  return {
+    ...state,
+    stage: Math.max(state.stage, LEARNED_STAGE),
+    bestStage: LEARNED_STAGE,
+    tricky: false,
+    dueAt: new Date(now.getTime() + inDays * DAY_MS),
+  };
+}

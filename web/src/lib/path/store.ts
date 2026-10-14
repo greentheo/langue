@@ -7,7 +7,8 @@ import "server-only";
  */
 
 import { prisma } from "@/lib/db";
-import { applyAnswer, completeDialogue, newItemState } from "./schedule";
+import { completedLevels, levelAchievement } from "./levels";
+import { applyAnswer, applyChallenge, assumeKnown, completeDialogue, newItemState } from "./schedule";
 import type { Course, Item, ItemState } from "./types";
 
 interface ItemRow {
@@ -63,6 +64,92 @@ export async function recordAnswer(
   });
 
   return { before, after };
+}
+
+/** One answer in a level-up challenge (schedule.ts: applyChallenge). */
+export async function recordChallengeAnswer(
+  userId: string,
+  language: string,
+  item: Item,
+  correct: boolean,
+  now: Date,
+): Promise<{ before: ItemState; after: ItemState }> {
+  const row = await prisma.itemProgress.findUnique({
+    where: { userId_itemKey: { userId, itemKey: item.key } },
+  });
+  const before = row ? toState(row) : newItemState(now);
+  const after = applyChallenge(before, correct, now);
+  const data = { ...after, lastSeenAt: now };
+  await prisma.itemProgress.upsert({
+    where: { userId_itemKey: { userId, itemKey: item.key } },
+    create: { userId, language, itemKey: item.key, kind: item.kind, introducedAt: now, ...data },
+    update: data,
+  });
+  return { before, after };
+}
+
+/** Days over which a passed unit's untested items come up for confirmation. */
+const CONFIRM_FROM_DAYS = 3;
+const CONFIRM_SPREAD_DAYS = 12;
+
+/**
+ * A challenge was passed: the rest of the unit is taken as probably known,
+ * with confirming reviews spread over the next couple of weeks.
+ */
+export async function passUnit(
+  userId: string,
+  language: string,
+  course: Course,
+  unitIndex: number,
+  now: Date,
+): Promise<void> {
+  const unit = course.units[unitIndex];
+  if (!unit) return;
+  const states = await loadStates(userId, language);
+  const writes = unit.itemKeys.flatMap((key, index) => {
+    const item = course.items.get(key);
+    if (!item) return [];
+    const before = states.get(key) ?? newItemState(now);
+    const after = assumeKnown(before, now, CONFIRM_FROM_DAYS + (index % CONFIRM_SPREAD_DAYS));
+    if (after === before && states.has(key)) return [];
+    return [
+      prisma.itemProgress.upsert({
+        where: { userId_itemKey: { userId, itemKey: key } },
+        create: { userId, language, itemKey: key, kind: item.kind, introducedAt: now, lastSeenAt: now, ...after },
+        update: after,
+      }),
+    ];
+  });
+  if (writes.length > 0) await prisma.$transaction(writes);
+}
+
+/**
+ * Record any level the learner has just finished, so the leaderboard can show
+ * it and the certificate has a date. Returns the levels newly finished.
+ */
+export async function recordFinishedLevels(
+  userId: string,
+  language: string,
+  course: Course,
+  states: Map<string, ItemState>,
+  now: Date,
+): Promise<string[]> {
+  const done = completedLevels(course, states);
+  if (done.length === 0) return [];
+  const names = done.map((level) => levelAchievement(language, level));
+  const existing = new Set(
+    (await prisma.achievement.findMany({ where: { userId, name: { in: names } }, select: { name: true } })).map(
+      (row) => row.name,
+    ),
+  );
+  const fresh = done.filter((level) => !existing.has(levelAchievement(language, level)));
+  if (fresh.length > 0) {
+    await prisma.achievement.createMany({
+      data: fresh.map((level) => ({ userId, name: levelAchievement(language, level), earnedAt: now })),
+      skipDuplicates: true,
+    });
+  }
+  return fresh;
 }
 
 /** A role-play was played to the end: schedule the next time it is offered. */

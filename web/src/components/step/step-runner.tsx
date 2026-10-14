@@ -34,6 +34,12 @@ type Card = PublicExercise & { retry?: boolean };
 interface Finish {
   unit: UnitProgress;
   streak: number;
+  /** For a level-up challenge: whether it completed the unit. */
+  passed: boolean | null;
+  /** The next unit not yet complete, to try its challenge. */
+  next: { id: string; code: string; title: string } | null;
+  /** Levels this step finished, e.g. ["a1"]. */
+  finishedLevels: string[];
 }
 
 const LABEL = "text-[0.6875rem] uppercase tracking-[0.18em] text-[var(--crt-fg-dim)]";
@@ -95,7 +101,7 @@ function reshuffle(card: Card): Card {
   return card;
 }
 
-export function StepRunner({ language }: { language: string }) {
+export function StepRunner({ language, challenge }: { language: string; challenge?: string }) {
   const [step, setStep] = useState<PublicStep | null>(null);
   const [queue, setQueue] = useState<Card[]>([]);
   const [index, setIndex] = useState(0);
@@ -123,14 +129,14 @@ export function StepRunner({ language }: { language: string }) {
     setResult(null);
     setTally({ total: 0, correct: 0, points: 0 });
     try {
-      const next = await postJson<PublicStep>("/api/steps", {});
+      const next = await postJson<PublicStep>("/api/steps", challenge ? { challenge } : {});
       setStep(next);
       setQueue(next.exercises);
       startedAt.current = Date.now();
     } catch (cause) {
       setError((cause as Error).message);
     }
-  }, []);
+  }, [challenge]);
 
   useEffect(() => {
     void load();
@@ -199,13 +205,15 @@ export function StepRunner({ language }: { language: string }) {
         sentence: card.mode === "build" || card.mode === "cloze" ? card.sentence : undefined,
         dialogue: card.mode === "reply" ? card.dialogue : undefined,
         line: card.mode === "reply" ? card.line : undefined,
+        challenge: step?.challenge || undefined,
         answer: value,
       });
       setResult(graded);
       const right = graded.verdict !== "incorrect";
       playCue(right ? "right" : "wrong");
       count(graded, Boolean(card.retry));
-      if (!right && !card.retry) {
+      // A challenge has no second tries: it shows what the learner knows.
+      if (!right && !card.retry && !step?.challenge) {
         setQueue((prev) => [...prev, reshuffle({ ...card, id: `${card.id}-again`, retry: true })]);
       }
     } catch (cause) {
@@ -235,6 +243,7 @@ export function StepRunner({ language }: { language: string }) {
           itemsCorrect: tally.correct,
           pointsEarned: tally.points,
           durationSec: Math.round((Date.now() - startedAt.current) / 1000),
+          challenge: step.challenge || undefined,
         }),
       );
       playCue("done");
@@ -261,7 +270,15 @@ export function StepRunner({ language }: { language: string }) {
   if (!step) return <Loading label="Getting your next step ready" />;
 
   if (finish) {
-    return <StepDone finish={finish} tally={tally} onNext={() => void load()} />;
+    return (
+      <StepDone
+        finish={finish}
+        tally={tally}
+        challenge={step.challenge}
+        language={language}
+        onNext={() => void load()}
+      />
+    );
   }
 
   if (!card) {
@@ -298,6 +315,7 @@ export function StepRunner({ language }: { language: string }) {
           <div className="h-full bg-[var(--crt-accent)] transition-all" style={{ width: `${progress}%` }} />
         </div>
         <span className={LABEL}>
+          {step.challenge ? "Challenge · " : ""}
           {step.unit.code} · {step.unit.title}
         </span>
       </div>
@@ -677,29 +695,43 @@ function Feedback({
 function StepDone({
   finish,
   tally,
+  challenge,
+  language,
   onNext,
 }: {
   finish: Finish;
   tally: { total: number; correct: number; points: number };
+  challenge: boolean;
+  language: string;
   onNext: () => void;
 }) {
-  const { unit, streak } = finish;
+  const { unit, streak, passed, next, finishedLevels } = finish;
   const percent = unit.percent;
+  const router = useRouter();
 
   return (
     <div className="space-y-6">
       <div>
-        <p className={LABEL}>Step done</p>
+        <p className={LABEL}>{challenge ? `${unit.code} challenge` : "Step done"}</p>
         <p className="mt-2 text-3xl text-[var(--crt-fg-bright)] crt-glow">
           +{tally.points}
           <span className="ml-3 text-base text-[var(--crt-fg-dim)]">
-            {tally.correct}/{tally.total} right first time
+            {tally.correct}/{tally.total} right{challenge ? "" : " first time"}
           </span>
         </p>
         <p className="mt-1 text-sm text-[var(--crt-accent)]">
           {streak} day{streak === 1 ? "" : "s"} in a row
         </p>
       </div>
+
+      {challenge && !passed ? (
+        <div className="border-l-2 border-[var(--crt-accent)] pl-3 text-sm">
+          <p className="text-[var(--crt-fg-bright)]">Not quite yet — {unit.code} needs 8 in 10.</p>
+          <p className="mt-1 text-[var(--crt-fg-dim)]">
+            Everything you got right counts as learned. Try again now, or keep going with steps and come back.
+          </p>
+        </div>
+      ) : null}
 
       <div>
         <p className="flex justify-between text-sm">
@@ -718,10 +750,40 @@ function StepDone({
         ) : null}
       </div>
 
+      {finishedLevels.map((level) => (
+        <div key={level} className="border-2 border-[var(--crt-accent)] p-4">
+          <p className="text-xl text-[var(--crt-fg-bright)] crt-glow">
+            ★ You finished {languageLabel(language)} {level.toUpperCase()}!
+          </p>
+          <p className="mt-2 text-sm">
+            <Link href={`/learn/level/certificate?level=${level}`}>See your certificate &rarr;</Link>
+          </p>
+        </div>
+      ))}
+
       <div className="flex flex-wrap gap-3">
-        <button type="button" onClick={onNext} className="crt-button crt-button-primary">
-          Next step
-        </button>
+        {challenge && !passed ? (
+          <button type="button" onClick={onNext} className="crt-button crt-button-primary">
+            Try again
+          </button>
+        ) : challenge && next ? (
+          <button
+            type="button"
+            onClick={() => router.push(`/learn/step?challenge=${next.id}`)}
+            className="crt-button crt-button-primary"
+          >
+            Try the {next.code} challenge
+          </button>
+        ) : null}
+        {challenge ? (
+          <Link href="/learn/step" className={`crt-button no-underline ${passed && !next ? "crt-button-primary" : ""}`}>
+            Back to steps
+          </Link>
+        ) : (
+          <button type="button" onClick={onNext} className="crt-button crt-button-primary">
+            Next step
+          </button>
+        )}
         <Link href="/learn" className="crt-button no-underline">
           Done for today
         </Link>

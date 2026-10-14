@@ -1,6 +1,6 @@
 import { test, describe } from "node:test";
 import assert from "node:assert/strict";
-import { liveStreak, rankStandings, weekStart, type Standing } from "./standings";
+import { levelBadges, liveStreak, rankStandings, weekStart, type Standing } from "./standings";
 import { activate, MAX_ACCOUNTS, parseTokenList, serializeTokenList } from "./auth/account-list";
 
 describe("weekStart", () => {
@@ -82,5 +82,15 @@ describe("account list", () => {
     assert.equal(waiting.length, MAX_ACCOUNTS - 1);
     assert.equal(waiting[0], t(2));
     assert.deepEqual(evicted, many.slice(MAX_ACCOUNTS - 2));
+  });
+});
+
+describe("levelBadges", () => {
+  test("the highest finished level per language", () => {
+    assert.deepEqual(
+      levelBadges(["level:italian:a1", "level:italian:a2", "level:french:a1", "streak:7", "level:spanish:zz"]),
+      ["FR A1", "IT A2"],
+    );
+    assert.deepEqual(levelBadges([]), []);
   });
 });
