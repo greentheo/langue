@@ -49,6 +49,7 @@ model User {
   reviews      FlashcardReview[]
   lessons      LessonProgress[]
   items        ItemProgress[]
+  groups       GroupMember[]
   invitesMade  InviteCode[]      @relation("InviteCreatedBy")
 
   @@index([email])
@@ -86,8 +87,26 @@ model InviteCode {
   createdById String?
   createdBy   User?     @relation("InviteCreatedBy", fields: [createdById], references: [id], onDelete: SetNull)
   members     User[]    @relation("InviteMembers")
+  /// Everyone on this code's leaderboard: who joined with it, who made it,
+  /// and anyone who joined the group later with the code.
+  groupMembers GroupMember[]
 
   @@index([code])
+}
+
+/// A learner in an invite code's group. Each code is a group with its own
+/// leaderboard, and a learner can be in several: the code they signed up with,
+/// codes they made, and codes they joined later from the leaderboard page.
+model GroupMember {
+  id           String     @id @default(cuid())
+  userId       String
+  user         User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  inviteCodeId String
+  inviteCode   InviteCode @relation(fields: [inviteCodeId], references: [id], onDelete: Cascade)
+  joinedAt     DateTime   @default(now())
+
+  @@unique([userId, inviteCodeId])
+  @@index([inviteCodeId])
 }
 
 /// Per-language progress for one user.

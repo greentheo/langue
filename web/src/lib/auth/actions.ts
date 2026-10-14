@@ -153,6 +153,8 @@ export async function register(
           isAdmin: isFirstUser,
           currentLanguage: defaultLanguage,
           inviteCodeId: invite.id,
+          // Joining with a code puts you in its group (and on its leaderboard).
+          groups: { create: { inviteCodeId: invite.id } },
         },
       });
     });
