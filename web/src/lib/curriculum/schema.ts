@@ -174,11 +174,55 @@ export const PhrasesFileSchema = z.object({
     .min(3),
 });
 
+/**
+ * A scripted conversation for the guided path's role-plays: the other person's
+ * lines are written out; at each of the learner's turns they get an English
+ * instruction and reply by picking or typing. No model is involved — every
+ * acceptable reply is listed.
+ */
+const DialogueLineSchema = z.union([
+  z
+    .object({
+      /** What the other person says, in the target language. */
+      them: Text,
+      english: Text,
+    })
+    .strict(),
+  z
+    .object({
+      /** What the learner should do, in English: "Order a coffee." */
+      you: Text,
+      /**
+       * Acceptable replies. The first is the model answer shown after a turn.
+       * In the others, `*` stands for any word or name: "Mi chiamo *."
+       */
+      answers: TextList,
+    })
+    .strict(),
+]);
+
+export const DialogueSchema = z.object({
+  id: Slug,
+  /** The sub-level (1 = the level's first unit) whose words and phrases it uses. */
+  unit: z.number().int().min(1).max(10),
+  title: Text,
+  /** One or two sentences that set the scene, in English. */
+  setting: Text,
+  /** Who the learner is talking to: "the barista", "Marco". */
+  with: Text,
+  lines: z.array(DialogueLineSchema).min(4).max(12),
+});
+
+export const DialoguesFileSchema = z.object({
+  dialogues: z.array(DialogueSchema).min(1),
+});
+
 export type LessonFile = z.infer<typeof LessonFileSchema>;
 export type LevelFile = z.infer<typeof LevelFileSchema>;
 export type PhrasesFile = z.infer<typeof PhrasesFileSchema>;
 export type PracticeItem = z.infer<typeof PracticeItemSchema>;
 export type LessonSection = z.infer<typeof SectionSchema>;
 export type PhraseEntry = z.infer<typeof PhraseSchema>;
+export type DialogueLine = z.infer<typeof DialogueLineSchema>;
 
 export { BLANK };

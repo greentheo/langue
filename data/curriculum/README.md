@@ -19,6 +19,7 @@ cd web && npx tsx scripts/build-curriculum.mts --check --language italian
 data/curriculum/<language>/<level>/
   level.yaml            what the level means: can-do list, grammar checklist, themes
   phrases.yaml          the phrasebook for the level, grouped by situation
+  dialogues.yaml        scripted role-plays for the guided path, one or two per unit
   lessons/NN-slug.yaml  the lesson path, in order (01-greetings.yaml, 02-sounds.yaml, …)
 ```
 
@@ -181,3 +182,57 @@ Use these situation ids so every language's phrasebook lines up:
   built — this is where learners see the grammar before they study it.
 - `note`: register (formal/informal), when to use it, a common mistake.
 - A phrase appears in only one situation.
+
+## Dialogues file
+
+Short scripted conversations. On the guided path a learner plays one once its
+unit's phrases are familiar: the other person's lines are shown (and spoken),
+and at each of the learner's turns they get an English instruction and reply,
+first by picking from a few replies, later by typing. Single turns also turn
+up as review ("The barista says… — order a coffee"). No AI is involved, so
+**every reply we accept has to be listed**.
+
+```yaml
+dialogues:
+  - id: cafe-order                # unique within the level
+    unit: 9                       # the sub-level (A1.9) whose words and phrases it uses
+    title: At the bar
+    setting: You're in a café in Rome. Order something to drink.
+    with: the barista             # who the learner is talking to
+    lines:
+      - them: Buongiorno! Cosa prende?
+        english: Good morning! What will you have?
+      - you: Order a coffee, politely.
+        answers:
+          - Un caffè, per favore.
+          - Vorrei un caffè, per favore.
+          - Prendo un caffè, per favore.
+          - Un caffè, grazie.
+      - them: Ecco a Lei. Altro?
+        english: Here you are. Anything else?
+      - you: Say no thanks, and ask how much it is.
+        answers:
+          - No, grazie. Quanto costa?
+          - No, grazie. Quant'è?
+```
+
+- **4–12 lines, at least two `you` turns**, usually alternating. A1 lines are
+  short: 2–8 words.
+- **`you` is an instruction in English** that leads to one meaning: "Ask her
+  name" (not "Say something"). Mention formal/informal when it matters
+  ("Ask the waiter how much it is — politely").
+- **`answers`: the first is the model answer** shown after the turn, so it is
+  concrete (no `*`). Then every natural variant a beginner might type: with
+  and without *per favore*, with and without the subject pronoun, *tu*/*Lei*
+  where both fit, common word-order swaps. Aim for 2–5. Spelling and accents
+  are graded leniently, so don't list typos.
+- **`*` stands for a free word**, for names and personal details:
+  `Mi chiamo *.` accepts any name. Only in answers after the first.
+- **Stay inside the course**: use phrases from the level's phrasebook and
+  words from lessons in this unit or earlier, so the learner has met
+  everything. The `them` lines can stretch a little — they come with English.
+- Each turn's first answer must differ from the other turns' first answers in
+  the same dialogue (they become each other's wrong options).
+- Mix scenes: travel (café, station, hotel, shop, asking the way) and
+  everyday life for kids and adults (school, friends, family, pets, sport,
+  food, the weekend).

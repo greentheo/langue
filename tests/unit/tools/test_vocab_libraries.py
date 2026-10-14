@@ -138,6 +138,8 @@ class TestVocabularyBuild(unittest.TestCase):
 
         cases = {
             "too few fields": "ciao | hello | Ciao! | greetings\n",
+            "too many fields": "ciao | hello | Ciao! | greetings | 1 | Hi! | extra\n",
+            "empty English example": "ciao | hello | Ciao! | greetings | 1 | \n",
             "empty translations": "ciao |  | Ciao! | greetings | 1\n",
             "difficulty out of range": "ciao | hello | Ciao! | greetings | 9\n",
             "duplicate word": (
@@ -158,6 +160,25 @@ class TestVocabularyBuild(unittest.TestCase):
                         vocab_build.parse_source(temp_path)
                 finally:
                     temp_path.unlink()
+
+
+    def test_parser_reads_an_optional_english_example(self):
+        """A sixth field is the example's English, kept beside the example."""
+        import tempfile
+
+        with tempfile.NamedTemporaryFile("w", suffix=".psv", encoding="utf-8", delete=False) as handle:
+            handle.write(
+                "ciao | hello | Ciao, come stai? | greetings | 1 | Hi, how are you?\n"
+                "grazie | thank you | Grazie mille! | greetings | 1\n"
+            )
+            temp_path = Path(handle.name)
+        try:
+            with_english, without = vocab_build.parse_source(temp_path)
+        finally:
+            temp_path.unlink()
+
+        self.assertEqual(with_english["examples_en"], ["Hi, how are you?"])
+        self.assertNotIn("examples_en", without)
 
 
 class TestDeduplication(unittest.TestCase):
