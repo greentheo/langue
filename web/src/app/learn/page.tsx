@@ -21,6 +21,8 @@ import {
 } from "@/lib/path/planner";
 import { loadStates, seedFromLessons } from "@/lib/path/store";
 import { StandingsTable } from "@/components/standings-table";
+import { LanguageChooser } from "@/components/language-chooser";
+import { prisma } from "@/lib/db";
 
 interface MenuEntry {
   href: string;
@@ -119,10 +121,32 @@ export default async function LearnPage() {
   ];
 
   const started = states.size > 0;
+  // Before a new learner's first step anywhere, ask what they want to learn
+  // rather than starting them on whichever language sorts first.
+  const brandNew =
+    !started &&
+    (await prisma.itemProgress.count({ where: { userId: user.id } })) === 0 &&
+    (await prisma.activityLog.count({ where: { userId: user.id } })) === 0;
 
   return (
     <div className="space-y-8">
-      <h1 className="text-xl crt-glow">Hello, {user.displayName}</h1>
+      <div>
+        <h1 className="text-xl crt-glow">Hello, {user.displayName}</h1>
+        {brandNew ? null : (
+          <p className="mt-1 text-sm text-[var(--crt-fg-dim)]">
+            Learning {languageName} &middot; <Link href="/learn/language">change language</Link>
+          </p>
+        )}
+      </div>
+
+      {brandNew ? (
+        <Panel title="What do you want to learn?">
+          <LanguageChooser current={language} />
+          <p className="mt-3 text-xs text-[var(--crt-fg-dim)]">
+            Pick one, then press Start. You can switch any time from the top of the page.
+          </p>
+        </Panel>
+      ) : null}
 
       {hasPath && current ? (
         <>
