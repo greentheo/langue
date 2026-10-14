@@ -24,6 +24,7 @@ import { levelProgress } from "@/lib/path/levels";
 import { StandingsTable } from "@/components/standings-table";
 import { LanguageChooser } from "@/components/language-chooser";
 import { prisma } from "@/lib/db";
+import { InstallHint } from "@/components/pwa";
 
 interface MenuEntry {
   href: string;
@@ -157,6 +158,8 @@ export default async function LearnPage() {
           </p>
         )}
       </div>
+
+      {brandNew ? null : <InstallHint />}
 
       {brandNew ? (
         <Panel title="What do you want to learn?">

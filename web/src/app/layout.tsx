@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import { PhosphorScript } from "@/components/phosphor-toggle";
+import { ServiceWorker } from "@/components/pwa";
 
 /**
  * IBM Plex Mono stands in for the IIe's character ROM: a real monospace face
@@ -17,7 +18,11 @@ const plexMono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   title: "LANGUE",
+  applicationName: "Langue",
   description: "Language practice on a green screen. Italian, Portuguese, Spanish, and French.",
+  // Installed on an iPhone or iPad from Safari's Share → Add to Home Screen:
+  // open full-screen, with a dark status bar over the dark screen.
+  appleWebApp: { capable: true, title: "Langue", statusBarStyle: "black" },
 };
 
 export const viewport: Viewport = {
@@ -30,7 +35,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <PhosphorScript />
       </head>
-      <body className="crt-screen">{children}</body>
+      <body className="crt-screen">
+        {children}
+        <ServiceWorker />
+      </body>
     </html>
   );
 }
