@@ -63,13 +63,27 @@ export function unitCode(unit: CourseUnit): string {
   return `${unit.level.toUpperCase()}.${unit.number}`;
 }
 
-export function unitComplete(unit: CourseUnit, states: Map<string, ItemState>): boolean {
-  return unit.itemKeys.every((key) => isLearned(states.get(key)));
+/**
+ * A unit is complete when everything in it is learned — or when the learner
+ * completed it once (passed its challenge, finished its level) and words were
+ * added to it since. A finished unit stays finished; its new words don't pull
+ * the learner back.
+ */
+export function unitComplete(
+  unit: CourseUnit,
+  states: Map<string, ItemState>,
+  marks: Map<string, UnitMark> = new Map(),
+): boolean {
+  return Boolean(marks.get(unit.id)?.complete) || unit.itemKeys.every((key) => isLearned(states.get(key)));
 }
 
 /** The first unit with anything left to learn; units.length when all are done. */
-export function firstOpenUnit(course: Course, states: Map<string, ItemState>): number {
-  const index = course.units.findIndex((unit) => !unitComplete(unit, states));
+export function firstOpenUnit(
+  course: Course,
+  states: Map<string, ItemState>,
+  marks: Map<string, UnitMark> = new Map(),
+): number {
+  const index = course.units.findIndex((unit) => !unitComplete(unit, states, marks));
   return index === -1 ? course.units.length : index;
 }
 
@@ -83,11 +97,14 @@ export function nextIntro(
   course: Course,
   states: Map<string, ItemState>,
   planned: Set<string> = new Set(),
+  marks: Map<string, UnitMark> = new Map(),
 ): { entry: IntroEntry; unitIndex: number } | null {
   const fresh = (key: string) => !states.has(key) && !planned.has(key);
-  const lastUnit = Math.min(course.units.length - 1, firstOpenUnit(course, states) + 1);
+  const firstOpen = firstOpenUnit(course, states, marks);
+  const lastUnit = Math.min(course.units.length - 1, firstOpen + 1);
 
-  for (let unitIndex = 0; unitIndex <= lastUnit; unitIndex++) {
+  // Units before the first open one are complete: nothing new to teach there.
+  for (let unitIndex = firstOpen; unitIndex <= lastUnit; unitIndex++) {
     for (const entry of course.units[unitIndex].intro) {
       if (entry.type === "grammar") {
         if (fresh(entry.key)) return { entry, unitIndex };
@@ -197,8 +214,9 @@ export function dialogueReady(
   dialogue: CourseDialogue,
   course: Course,
   states: Map<string, ItemState>,
+  marks: Map<string, UnitMark> = new Map(),
 ): boolean {
-  if (dialogue.unitIndex > firstOpenUnit(course, states) + 1) return false;
+  if (dialogue.unitIndex > firstOpenUnit(course, states, marks) + 1) return false;
   const keys =
     dialogue.itemKeys.length > 0 ? dialogue.itemKeys : (course.units[dialogue.unitIndex]?.itemKeys ?? []);
   if (keys.length === 0) return false;
@@ -282,6 +300,8 @@ export interface PlanInput {
   /** Share right over the last few steps; null before the first. */
   recentAccuracy: number | null;
   random: () => number;
+  /** Units the learner has completed before (unitProgress), so their new content doesn't pull them back. */
+  marks?: Map<string, UnitMark>;
 }
 
 export interface Plan {
@@ -290,7 +310,7 @@ export interface Plan {
   unitIndex: number;
 }
 
-export function planStep({ course, states, now, recentAccuracy, random }: PlanInput): Plan {
+export function planStep({ course, states, now, recentAccuracy, random, marks = new Map() }: PlanInput): Plan {
   const used = new Set<string>();
   let spent = 0;
   let count = 0;
@@ -331,7 +351,7 @@ export function planStep({ course, states, now, recentAccuracy, random }: PlanIn
   const keepingUp =
     due.length <= MAX_BACKLOG && (recentAccuracy === null || recentAccuracy >= MIN_ACCURACY);
 
-  let unitIndex = firstOpenUnit(course, states);
+  let unitIndex = firstOpenUnit(course, states, marks);
 
   if (keepingUp || waiting < 3) {
     // With nothing waiting, new material may fill the whole step.
@@ -343,7 +363,7 @@ export function planStep({ course, states, now, recentAccuracy, random }: PlanIn
     let vocab = 0;
 
     for (;;) {
-      const next = nextIntro(course, states, planned);
+      const next = nextIntro(course, states, planned, marks);
       if (!next) break;
       if (next.entry.type === "grammar" && ideas >= MAX_NEW_IDEAS) break;
       if (next.entry.type !== "grammar" && vocab + next.entry.keys.length > MAX_NEW_VOCAB) break;
@@ -378,7 +398,7 @@ export function planStep({ course, states, now, recentAccuracy, random }: PlanIn
     ? [...course.dialogues.values()]
         .filter((candidate) => {
           const played = states.get(candidate.key);
-          return (!played || isDue(played, now)) && dialogueReady(candidate, course, states);
+          return (!played || isDue(played, now)) && dialogueReady(candidate, course, states, marks);
         })
         .sort((a, b) => a.unitIndex - b.unitIndex)[0]
     : undefined;

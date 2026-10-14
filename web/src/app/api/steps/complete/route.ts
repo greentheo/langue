@@ -68,7 +68,7 @@ export const POST = handler(async (request) => {
   // Finishing a level moves the learner up: the header and the practice
   // activities follow the path's level, and it never goes back down.
   if (finishedLevels.length > 0) {
-    const open = course.units[Math.min(firstOpenUnit(course, states), course.units.length - 1)];
+    const open = course.units[Math.min(firstOpenUnit(course, states, marks), course.units.length - 1)];
     const rank = (level: string) => LEVELS.indexOf(level as Level);
     if (open && rank(open.level) > rank(user.currentLevel)) {
       await prisma.user.update({ where: { id: user.id }, data: { currentLevel: open.level } });

@@ -66,7 +66,7 @@ export default async function LevelPage({
   const [states, marks] = await Promise.all([loadStates(user.id, language), loadMarks(user.id, course)]);
 
   const requested = (await searchParams).level;
-  const open = course.units[Math.min(firstOpenUnit(course, states), course.units.length - 1)];
+  const open = course.units[Math.min(firstOpenUnit(course, states, marks), course.units.length - 1)];
   const level = typeof requested === "string" && levels.includes(requested) ? requested : open.level;
   const progress = levelProgress(course, states, level, marks);
   await rememberProgress(user.id, progress.units, marks, now);
