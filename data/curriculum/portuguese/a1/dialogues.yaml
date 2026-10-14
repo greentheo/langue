@@ -1,0 +1,734 @@
+# Role-plays for the A1 guided path (Brazilian Portuguese). Each dialogue
+# uses only what its unit and the earlier units teach; see the "Dialogues
+# file" section of data/curriculum/README.md.
+
+dialogues:
+  # ── A1.1 Oi! ────────────────────────────────────────────────────────────
+  - id: new-classmate
+    unit: 1
+    title: A new classmate
+    setting: You've just moved to Brazil. At the pool of your new building, a girl your age comes over to say hi.
+    with: Júlia, a girl who lives in your building
+    lines:
+      - them: Oi! Tudo bem?
+        english: Hi! How are you?
+      - you: Say you're fine, and ask how she is.
+        answers:
+          - Tudo bem! E você?
+          - Tudo bom! E você?
+          - Bem, obrigado. E você?
+          - Bem, obrigada. E você?
+      - them: Tudo bom! Qual é o seu nome?
+        english: All good! What's your name?
+      - you: Tell her your name.
+        answers:
+          - Meu nome é Sam.
+          - Meu nome é *.
+          - Eu me chamo *.
+          - Me chamo *.
+      - them: Eu me chamo Júlia. Muito prazer!
+        english: I'm Júlia. Nice to meet you!
+      - you: Say it's nice to meet her too.
+        answers:
+          - Muito prazer!
+          - Prazer!
+          - Igualmente!
+      - them: Ah, minha mãe está me chamando! Tchau!
+        english: Oh, my mom's calling me! Bye!
+      - you: Say bye, and see you tomorrow.
+        answers:
+          - Tchau! Até amanhã!
+          - Até amanhã!
+          - Tchau, Júlia! Até amanhã!
+
+  - id: good-afternoon-neighbour
+    unit: 1
+    title: The lady upstairs
+    setting: It's four in the afternoon. On the stairs of your building you meet an older lady who lives there.
+    with: Dona Lúcia, an older lady in your building
+    lines:
+      - them: Boa tarde!
+        english: Good afternoon!
+      - you: Say good afternoon, and ask how she is. Be polite — she's older than you.
+        answers:
+          - Boa tarde! Como vai a senhora?
+          - Boa tarde! Tudo bem com a senhora?
+          - Boa tarde! A senhora está bem?
+      - them: Bem, obrigada. E você?
+        english: Fine, thank you. And you?
+      - you: Say you're fine, thank you.
+        answers:
+          - Tudo bem, obrigado.
+          - Tudo bem, obrigada.
+          - Bem, obrigado.
+          - Bem, obrigada.
+          - Tudo bom, obrigado.
+          - Tudo bom, obrigada.
+      - them: Que bom! Eu me chamo Lúcia.
+        english: Good! My name is Lúcia.
+      - you: Say it's nice to meet her, and tell her your name.
+        answers:
+          - Muito prazer! Meu nome é Alex.
+          - Muito prazer! Meu nome é *.
+          - Prazer! Meu nome é *.
+          - Muito prazer! Eu me chamo *.
+          - Prazer! Eu me chamo *.
+      - them: Prazer! Ah, desculpe, você quer passar?
+        english: Nice to meet you! Oh, sorry — do you want to get past?
+      - you: Say "excuse me" as you go past, and thank her.
+        answers:
+          - Com licença. Obrigado!
+          - Com licença. Obrigada!
+          - Obrigado! Com licença.
+          - Obrigada! Com licença.
+      - them: De nada! Até logo!
+        english: You're welcome! See you later!
+      - you: Say goodbye — see you later.
+        answers:
+          - Até logo!
+          - Tchau! Até logo!
+          - Até logo, Dona Lúcia!
+
+  # ── A1.2 How Portuguese sounds ─────────────────────────────────────────
+  - id: bus-stop-too-fast
+    unit: 2
+    title: A bit slower, please
+    setting: You're waiting at a bus stop in São Paulo. A woman asks you something — very fast.
+    with: a woman at the bus stop
+    lines:
+      - them: Oi! Esse ônibus vai para o centro?
+        english: Hi! Does this bus go downtown?
+      - you: Say sorry, you didn't understand.
+        answers:
+          - Desculpe, não entendi.
+          - Desculpa, não entendi.
+          - Não entendi.
+          - Não entendo.
+      - them: Esse ônibus vai para o centro?
+        english: Does this bus go downtown?
+      - you: Ask her to say it more slowly, please.
+        answers:
+          - Mais devagar, por favor.
+          - Pode falar mais devagar?
+          - Pode repetir mais devagar?
+      - them: Esse... ônibus... vai... para o centro?
+        english: Does... this bus... go... downtown?
+      - you: Say sorry, you don't know.
+        answers:
+          - Desculpe, não sei.
+          - Desculpa, não sei.
+          - Não sei, desculpe.
+          - Não sei.
+      - them: Tudo bem! Mas você fala português muito bem!
+        english: That's OK! But you speak Portuguese very well!
+      - you: Say thank you — you speak a little Portuguese.
+        answers:
+          - Obrigada! Falo um pouco de português.
+          - Obrigado! Falo um pouco de português.
+          - Falo um pouco de português.
+          - Obrigado! Só um pouco.
+          - Obrigada! Só um pouco.
+
+  # ── A1.3 Who are you? ───────────────────────────────────────────────────
+  - id: first-day-at-school
+    unit: 3
+    title: Where are you from?
+    setting: It's your first day at a school in Brazil. The boy sitting next to you starts to chat.
+    with: Pedro, a boy in your class
+    lines:
+      - them: Oi! Eu sou o Pedro. Você é de onde?
+        english: Hi! I'm Pedro. Where are you from?
+      - you: Tell him where you're from.
+        answers:
+          - Sou de Toronto.
+          - Sou de *.
+          - Eu sou de *.
+          - Sou do *.
+          - Sou dos Estados Unidos.
+          - Eu sou dos Estados Unidos.
+      - them: Que legal! Eu sou daqui, de São Paulo.
+        english: Cool! I'm from here — São Paulo.
+      - you: Ask him how old he is.
+        answers:
+          - Quantos anos você tem?
+          - Você tem quantos anos?
+          - E você, quantos anos tem?
+      - them: Tenho doze anos. E você?
+        english: I'm twelve. And you?
+      - you: "Say \"me too!\""
+        answers:
+          - Eu também!
+          - Também!
+          - Eu também tenho doze anos.
+      - them: Olha, aquela é a nossa professora.
+        english: Look, that's our teacher.
+      - you: Ask if she's Brazilian.
+        answers:
+          - Ela é brasileira?
+          - A professora é brasileira?
+          - Ela é do Brasil?
+      - them: Não, ela é americana. Ela é professora de inglês!
+        english: No, she's American. She's the English teacher!
+      - you: Ask what her name is.
+        answers:
+          - Como ela se chama?
+          - Qual é o nome dela?
+          - Como se chama a professora?
+      - them: Ela se chama Mary.
+        english: Her name is Mary.
+
+  - id: at-a-churrasco
+    unit: 3
+    title: At a barbecue
+    setting: You're at a friend's churrasco (barbecue) in Belo Horizonte. A woman you don't know comes over to chat.
+    with: Fernanda, a guest at the barbecue
+    lines:
+      - them: Oi! Tudo bem? Eu sou a Fernanda.
+        english: Hi! How are you? I'm Fernanda.
+      - you: Say you're fine, and tell her your name.
+        answers:
+          - Tudo bem! Meu nome é Chris.
+          - Tudo bem! Meu nome é *.
+          - Tudo bom! Meu nome é *.
+          - Tudo bem! Eu me chamo *.
+          - Tudo bom! Eu me chamo *.
+      - them: Prazer! E de onde você é?
+        english: Nice to meet you! And where are you from?
+      - you: Say you're from the United States.
+        answers:
+          - Sou dos Estados Unidos.
+          - Eu sou dos Estados Unidos.
+          - Sou americano.
+          - Sou americana.
+          - Eu sou americano.
+          - Eu sou americana.
+      - them: Que legal! E o que você faz?
+        english: How cool! And what do you do?
+      - you: Say you're a student, and ask her the same.
+        answers:
+          - Sou estudante. E você?
+          - Eu sou estudante. E você?
+          - Sou estudante. O que você faz?
+          - Eu sou estudante. O que você faz?
+      - them: Eu sou professora de música.
+        english: I'm a music teacher.
+      - you: Ask her where she lives.
+        answers:
+          - Onde você mora?
+          - Você mora onde?
+          - E você, onde mora?
+      - them: Moro aqui em Belo Horizonte.
+        english: I live here in Belo Horizonte.
+
+  # ── A1.4 Things you have ────────────────────────────────────────────────
+  - id: dog-in-the-park
+    unit: 4
+    title: A big dog
+    setting: You're at the park. A boy is there with a big dog, and he starts talking to you.
+    with: Léo, a boy at the park
+    lines:
+      - them: Oi! Esse é o Thor, o meu cachorro.
+        english: Hi! This is Thor, my dog.
+      - you: Say you're a little scared of dogs.
+        answers:
+          - Tenho um pouco de medo de cachorro.
+          - Eu tenho um pouco de medo de cachorro.
+          - Tenho um pouco de medo de cachorros.
+          - Tenho medo de cachorro.
+          - Tenho medo de cachorros.
+      - them: Não tem problema, ele é bonzinho! Você tem cachorro?
+        english: No problem, he's really friendly! Do you have a dog?
+      - you: Say no — you have a cat.
+        answers:
+          - Não, tenho um gato.
+          - Não, eu tenho um gato.
+          - Não, tenho uma gata.
+          - Não, eu tenho uma gata.
+      - them: Que legal! E você tem irmãos?
+        english: Cool! And do you have any brothers or sisters?
+      - you: Say yes — you have a brother and a sister.
+        answers:
+          - Tenho um irmão e uma irmã.
+          - Sim, tenho um irmão e uma irmã.
+          - Tenho uma irmã e um irmão.
+          - Sim, tenho uma irmã e um irmão.
+      - them: Eu tenho uma irmã. Ela tem 8 anos. E você, quantos anos você tem?
+        english: I have a sister. She's 8. And you — how old are you?
+      - you: Tell him how old you are.
+        answers:
+          - Tenho 12 anos.
+          - Tenho * anos.
+          - Eu tenho * anos.
+      - them: Legal! Eu tenho 11.
+        english: Cool! I'm 11.
+
+  # ── A1.5 How are you? ───────────────────────────────────────────────────
+  - id: call-from-sao-paulo
+    unit: 5
+    title: A call from a friend
+    setting: You're on holiday in Salvador. Your friend Bruno calls you from São Paulo.
+    with: Bruno, your friend
+    lines:
+      - them: Alô? Oi! Tudo bem? Onde você está?
+        english: Hello? Hi! How are you? Where are you?
+      - you: Say you're in Salvador.
+        answers:
+          - Estou em Salvador.
+          - Eu estou em Salvador.
+          - Tô em Salvador.
+      - them: Que legal! Está calor aí?
+        english: Cool! Is it hot there?
+      - you: Say yes — you're hot.
+        answers:
+          - Sim, estou com calor.
+          - Estou com calor.
+          - Estou com muito calor.
+          - Tô com calor.
+      - them: Aqui em São Paulo está frio! E você, está bem?
+        english: Here in São Paulo it's cold! And are you OK?
+      - you: Say you're fine, but tired.
+        answers:
+          - Estou bem, mas estou cansada.
+          - Estou bem, mas estou cansado.
+          - Bem, mas cansado.
+          - Bem, mas cansada.
+      - them: E o hotel? É bom?
+        english: And the hotel? Is it good?
+      - you: Say yes — it's big and very pretty.
+        answers:
+          - Sim, é grande e muito bonito.
+          - É grande e muito bonito.
+          - É muito bonito e grande.
+      - them: Que bom! Aproveite! Tchau!
+        english: Great! Enjoy it! Bye!
+      - you: Say thanks, and bye.
+        answers:
+          - Obrigada! Tchau!
+          - Obrigado! Tchau!
+          - Obrigada, Bruno! Tchau!
+          - Obrigado, Bruno! Tchau!
+
+  # ── A1.6 Numbers and prices ─────────────────────────────────────────────
+  - id: fruit-at-the-feira
+    unit: 6
+    title: At the street market
+    setting: It's Saturday morning at the feira, the street market. You want to buy some fruit.
+    with: the fruit seller
+    lines:
+      - them: Bom dia! Olha o abacaxi! Olha a manga!
+        english: Good morning! Pineapples! Mangoes!
+      - you: Ask how much the pineapple is.
+        answers:
+          - Quanto custa o abacaxi?
+          - Quanto é o abacaxi?
+          - Quanto custa?
+          - Quanto é?
+      - them: Seis reais. Está bem docinho!
+        english: Six reais. It's lovely and sweet!
+      - you: Ask for two, please.
+        answers:
+          - Dois, por favor.
+          - Dois abacaxis, por favor.
+          - Quero dois, por favor.
+      - them: Mais alguma coisa?
+        english: Anything else?
+      - you: Ask how much the mangoes are.
+        answers:
+          - Quanto custam as mangas?
+          - Quanto custam?
+          - Quanto é a manga?
+          - E as mangas?
+      - them: Três por dez reais.
+        english: Three for ten reais.
+      - you: Ask for three mangoes, please.
+        answers:
+          - Três mangas, por favor.
+          - Três, por favor.
+          - Quero três, por favor.
+      - them: Pronto! São vinte e dois reais.
+        english: There you go! That's twenty-two reais.
+      - you: Say thank you, and see you on Saturday.
+        answers:
+          - Obrigada! Até sábado!
+          - Obrigado! Até sábado!
+          - Até sábado!
+
+  # ── A1.7 Everyday verbs ─────────────────────────────────────────────────
+  - id: lost-passport
+    unit: 7
+    title: At the hotel desk
+    setting: You're staying at a hotel in Recife and you can't find your passport. You go down to reception.
+    with: the receptionist
+    lines:
+      - them: Boa noite!
+        english: Good evening!
+      - you: Say good evening, and ask if she can help you.
+        answers:
+          - Boa noite! Pode me ajudar?
+          - Boa noite! Você pode me ajudar?
+          - Boa noite! A senhora pode me ajudar?
+          - Pode me ajudar, por favor?
+      - them: Claro! O que aconteceu?
+        english: Of course! What happened?
+      - you: Say you lost your passport.
+        answers:
+          - Perdi meu passaporte.
+          - Eu perdi meu passaporte.
+          - Perdi o meu passaporte.
+          - Eu perdi o meu passaporte.
+      - them: Ah, não! Qual é o número do seu quarto?
+        english: Oh no! What's your room number?
+      - you: Say it's room 214.
+        answers:
+          - Duzentos e catorze.
+          - Duzentos e quatorze.
+          - É o duzentos e catorze.
+          - Quarto duzentos e catorze.
+      - them: Um momento... Alguém deixou um passaporte aqui. É seu?
+        english: One moment... Someone left a passport here. Is it yours?
+      - you: Say yes — thank you very much!
+        answers:
+          - É, sim! Muito obrigado!
+          - É, sim! Muito obrigada!
+          - Muito obrigado!
+          - Muito obrigada!
+      - them: De nada! Boa noite!
+        english: You're welcome! Good night!
+
+  - id: birthday-party
+    unit: 7
+    title: Lucas's grandmother
+    setting: It's your friend Lucas's birthday party. His grandmother comes over to talk to you.
+    with: Dona Cida, Lucas's grandmother
+    lines:
+      - them: Oi! Tudo bem? Você estuda com o Lucas?
+        english: Hi! How are you? Do you go to school with Lucas?
+      - you: Say yes, you study with Lucas.
+        answers:
+          - Sim, eu estudo com o Lucas.
+          - Estudo com o Lucas.
+          - Estudo, sim!
+      - them: Que bom! Hoje ele faz doze anos!
+        english: How nice! He's twelve today!
+      - you: Say "how cool!"
+        answers:
+          - Que legal!
+          - Legal!
+          - Que legal! Parabéns!
+      - them: E onde você mora?
+        english: And where do you live?
+      - you: Say you live near here.
+        answers:
+          - Moro aqui perto.
+          - Eu moro aqui perto.
+          - Moro perto daqui.
+      - them: Você fala português muito bem!
+        english: You speak Portuguese very well!
+      - you: Say thank you — you study a lot.
+        answers:
+          - Obrigada! Eu estudo muito.
+          - Obrigado! Eu estudo muito.
+          - Estudo muito.
+      - them: Você quer um pedaço de bolo?
+        english: Would you like a piece of cake?
+      - you: Say yes please — you're hungry.
+        answers:
+          - Sim, por favor! Estou com fome.
+          - Sim, por favor! Tenho fome.
+          - Quero, sim! Estou com fome.
+          - Estou com fome.
+      - them: Atchim!
+        english: Achoo!
+      - you: Say "bless you!"
+        answers:
+          - Saúde!
+          - Saúde, Dona Cida!
+          - Saúde, senhora!
+
+  # ── A1.8 Family and friends ─────────────────────────────────────────────
+  - id: family-photos
+    unit: 8
+    title: Family photos
+    setting: Your friend Bia is showing you photos of her family on her phone.
+    with: Bia, your friend
+    lines:
+      - them: Olha! Essa é a minha família.
+        english: Look! This is my family.
+      - you: Point at a woman in the photo and ask who she is.
+        answers:
+          - Quem é essa mulher?
+          - Quem é essa?
+          - Quem é ela?
+          - Quem é esta mulher?
+          - Quem é esta?
+      - them: É a minha mãe. Ela é médica.
+        english: That's my mother. She's a doctor.
+      - you: Say she's very pretty.
+        answers:
+          - Ela é muito bonita.
+          - Sua mãe é muito bonita.
+          - Muito bonita!
+      - them: Obrigada! E esses são os meus avós, com o cachorro deles.
+        english: Thanks! And these are my grandparents, with their dog.
+      - you: Ask what their dog is called.
+        answers:
+          - Como se chama o cachorro deles?
+          - Qual é o nome do cachorro deles?
+          - Como o cachorro deles se chama?
+      - them: É o Pipoca! Ele já tem catorze anos.
+        english: That's Pipoca ("Popcorn")! He's already fourteen.
+      - you: Say your dog is small and black.
+        answers:
+          - Meu cachorro é pequeno e preto.
+          - Meu cachorro é preto e pequeno.
+          - O meu cachorro é preto e pequeno.
+      - them: Que fofo! E você, tem irmãos?
+        english: How cute! And you — do you have brothers or sisters?
+      - you: Say you have a sister, and her name is Ana.
+        answers:
+          - Tenho uma irmã. O nome dela é Ana.
+          - Tenho uma irmã. Ela se chama Ana.
+          - Sim, uma irmã. O nome dela é Ana.
+          - Tenho uma irmã, a Ana.
+
+  # ── A1.9 Going and liking ───────────────────────────────────────────────
+  - id: dinner-for-two
+    unit: 9
+    title: Dinner for two
+    setting: You're having dinner with a friend at a restaurant in Salvador.
+    with: the waiter
+    lines:
+      - them: Boa noite! Bem-vindos!
+        english: Good evening! Welcome!
+      - you: Ask for a table for two, please.
+        answers:
+          - Uma mesa para dois, por favor.
+          - Mesa para dois, por favor.
+          - Para duas pessoas, por favor.
+          - Dois, por favor.
+      - them: Por aqui, por favor. Hoje tem moqueca de peixe.
+        english: This way, please. Today we have fish moqueca.
+      - you: Say you're vegetarian, and ask the waiter what he recommends.
+        answers:
+          - Sou vegetariano. O que o senhor recomenda?
+          - Sou vegetariana. O que o senhor recomenda?
+          - Sou vegetariano. O que você recomenda?
+          - Sou vegetariana. O que você recomenda?
+      - them: A moqueca de banana-da-terra é uma delícia! E para beber?
+        english: The plantain moqueca is delicious! And to drink?
+      - you: Say you'd like an orange juice, please.
+        answers:
+          - Eu queria um suco de laranja, por favor.
+          - Queria um suco de laranja.
+          - Um suco de laranja, por favor.
+          - Eu gostaria de um suco de laranja.
+          - Quero um suco de laranja.
+      - them: (Mais tarde) Tudo bem? Gostaram da comida?
+        english: (Later) Everything OK? Did you enjoy the food?
+      - you: Say it was delicious.
+        answers:
+          - Estava uma delícia!
+          - Uma delícia!
+          - Estava muito boa!
+          - Gostei muito!
+      - them: Que bom! Mais alguma coisa?
+        english: Great! Anything else?
+      - you: Say no thanks, and ask for the bill.
+        answers:
+          - Não, obrigado. A conta, por favor.
+          - Não, obrigada. A conta, por favor.
+          - A conta, por favor.
+      - them: São oitenta e cinco reais.
+        english: That's eighty-five reais.
+      - you: Ask if you can pay by card.
+        answers:
+          - Posso pagar com cartão?
+          - Aceita cartão?
+          - Vocês aceitam cartão?
+          - Pode ser no cartão?
+
+  - id: t-shirt-shop
+    unit: 9
+    title: Buying a T-shirt
+    setting: You're in a clothes shop in Rio, looking at T-shirts.
+    with: the shop assistant
+    lines:
+      - them: Oi, boa tarde! Posso ajudar?
+        english: Hi, good afternoon! Can I help you?
+      - you: Say you're just looking, thanks.
+        answers:
+          - Só estou olhando, obrigada.
+          - Só estou olhando, obrigado.
+          - Só estou olhando.
+          - Estou só olhando.
+      - them: Tá bom! Qualquer coisa, é só chamar.
+        english: OK! If you need anything, just call me.
+      - you: (A few minutes later) Call her over, and ask how much this T-shirt is.
+        answers:
+          - Com licença! Quanto custa essa camiseta?
+          - Quanto custa essa camiseta?
+          - Quanto custa?
+          - Quanto é?
+      - them: Essa custa noventa reais.
+        english: That one is ninety reais.
+      - you: Say that's very expensive.
+        answers:
+          - É muito cara!
+          - É muito caro!
+          - Muito cara!
+          - Muito caro!
+      - them: Essa azul aqui custa quarenta.
+        english: This blue one here is forty.
+      - you: Ask if you can try it on.
+        answers:
+          - Posso experimentar?
+          - Posso provar?
+          - Eu posso experimentar?
+      - them: Claro! O provador é ali.
+        english: Of course! The fitting room is over there.
+      - you: (After trying it on) Say you really like it, and you'll take it.
+        answers:
+          - Gosto muito! Vou levar.
+          - Gostei muito! Vou levar.
+          - Vou levar.
+      - them: Ótimo! Pode pagar ali no caixa.
+        english: Great! You can pay over there at the register.
+
+  - id: way-to-the-beach
+    unit: 9
+    title: Which way to the beach?
+    setting: You're on holiday in Florianópolis, looking at a map in the street. A man stops to help.
+    with: a man in the street
+    lines:
+      - them: Oi! Precisa de ajuda?
+        english: Hi! Do you need help?
+      - you: Say yes — you're lost.
+        answers:
+          - Sim, estou perdido.
+          - Sim, estou perdida.
+          - Estou perdido.
+          - Estou perdida.
+      - them: Para onde você vai?
+        english: Where are you going?
+      - you: Say you're going to the beach.
+        answers:
+          - Vou para a praia.
+          - Vou pra praia.
+          - Vou à praia.
+          - Para a praia.
+          - Pra praia.
+      - them: A praia? É longe! É melhor ir de ônibus.
+        english: The beach? It's far! You'd better take the bus.
+      - you: Ask what time the bus leaves.
+        answers:
+          - A que horas sai o ônibus?
+          - Que horas sai o ônibus?
+          - A que horas o ônibus sai?
+          - Que horas o ônibus sai?
+      - them: Tem ônibus toda hora. O ponto é ali, à esquerda.
+        english: There's a bus all the time. The stop is over there, on the left.
+      - you: Ask him to repeat that, please.
+        answers:
+          - Pode repetir, por favor?
+          - Pode repetir?
+          - Desculpe, pode repetir?
+      - them: O ponto de ônibus... é ali... à esquerda.
+        english: The bus stop... is over there... on the left.
+      - you: Thank him very much.
+        answers:
+          - Muito obrigado!
+          - Muito obrigada!
+          - Obrigado!
+          - Obrigada!
+      - them: De nada! Boa praia!
+        english: You're welcome! Enjoy the beach!
+
+  # ── A1.10 Your day ──────────────────────────────────────────────────────
+  - id: saturday-plans
+    unit: 10
+    title: Plans for Saturday
+    setting: It's Friday afternoon. Your friend Carol calls to make plans for tomorrow.
+    with: Carol, your friend
+    lines:
+      - them: Oi! Você está livre amanhã?
+        english: Hi! Are you free tomorrow?
+      - you: Say yes, you are.
+        answers:
+          - Estou, sim!
+          - Sim, estou!
+          - Estou livre!
+          - Tô, sim!
+      - them: Vamos jogar futebol no parque?
+        english: Shall we play soccer in the park?
+      - you: Say you don't really like soccer, and suggest going to the beach.
+        answers:
+          - Não gosto muito de futebol. Vamos à praia?
+          - Não gosto muito de futebol. Vamos pra praia?
+          - Não gosto muito de futebol. Vamos para a praia?
+      - them: Boa ideia! Mas e se chover?
+        english: Good idea! But what if it rains?
+      - you: Say you two can go to the cinema instead.
+        answers:
+          - A gente pode ir ao cinema.
+          - Podemos ir ao cinema.
+          - A gente pode ir pro cinema.
+          - Podemos ir pro cinema.
+          - Vamos ao cinema.
+      - them: Tá bom! A que horas?
+        english: OK! What time?
+      - you: Say at ten in the morning.
+        answers:
+          - Às dez da manhã.
+          - Às dez de manhã.
+          - Às dez horas.
+          - Às dez.
+      - them: Combinado! Eu passo na sua casa.
+        english: Deal! I'll come by your place.
+      - you: Say OK, see you tomorrow.
+        answers:
+          - Tá bom! Até amanhã!
+          - Combinado! Até amanhã!
+          - Até amanhã!
+
+  - id: host-family-bedtime
+    unit: 10
+    title: Your host family
+    setting: You're staying with a family in Brazil. After dinner, your host mother asks about your routine.
+    with: Sandra, your host mother
+    lines:
+      - them: Amanhã você tem aula. A que horas você acorda?
+        english: You have class tomorrow. What time do you wake up?
+      - you: Say you wake up at seven.
+        answers:
+          - Eu acordo às sete.
+          - Acordo às sete.
+          - Às sete.
+      - them: E você toma café da manhã?
+        english: And do you have breakfast?
+      - you: Say yes — always.
+        answers:
+          - Tomo, sim! Sempre.
+          - Sim, sempre.
+          - Sempre!
+      - them: Que bom! E à noite, a que horas você se deita?
+        english: Good! And at night — what time do you go to bed?
+      - you: Say you go to bed at ten.
+        answers:
+          - Eu me deito às dez.
+          - Me deito às dez.
+          - Vou dormir às dez.
+          - Às dez.
+      - them: Você quer tomar banho agora?
+        english: Do you want to take a shower now?
+      - you: Say no thanks — you shower in the morning.
+        answers:
+          - Não, obrigada. Eu tomo banho de manhã.
+          - Não, obrigado. Eu tomo banho de manhã.
+          - Tomo banho de manhã.
+      - them: Tá bom. Então boa noite! Durma bem!
+        english: OK. Good night, then! Sleep well!
+      - you: Say good night, and see you tomorrow.
+        answers:
+          - Boa noite! Até amanhã!
+          - Até amanhã!
+          - Boa noite! Até amanhã, Sandra!

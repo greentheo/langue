@@ -6,7 +6,7 @@
  * this file and its tests.
  */
 
-import type { ExerciseMode, ItemKind, ItemState } from "./types";
+import type { ExerciseMode, Item, ItemState, LadderMode, PhraseItem, WordItem } from "./types";
 
 export const MAX_STAGE = 5;
 
@@ -59,34 +59,29 @@ export function isLearned(state: ItemState | undefined): boolean {
 }
 
 /**
- * The highest stage an exercise can prove. Picking the meaning proves
- * recognition and nothing more; typing it proves everything this phase can
- * test. A lesson question can carry a grammar idea all the way up.
+ * The highest stage an exercise can prove for an item. A word or phrase
+ * climbs its ladder (types.ts): the exercise at rung n proves stage n + 1,
+ * and the top rung it has proves everything above, so an item with no
+ * role-play turn can still reach the top by its sentences. A lesson question,
+ * or building one of the lesson's examples, carries a grammar idea all the
+ * way up.
  */
-export function rungOf(mode: ExerciseMode, kind: ItemKind): number {
-  if (kind === "grammar") return mode === "question" ? MAX_STAGE : 0;
-  switch (mode) {
-    case "recognize":
-      return 1;
-    case "recall":
-      return 2;
-    case "type":
-      return MAX_STAGE;
-    default:
-      return 0;
-  }
+export function rungOf(mode: ExerciseMode, item: Item): number {
+  if (item.kind === "grammar") return mode === "question" || mode === "build" ? MAX_STAGE : 0;
+  const index = item.ladder.indexOf(mode as LadderMode);
+  if (index === -1) return 0;
+  return index === item.ladder.length - 1 ? MAX_STAGE : index + 1;
 }
 
-/** How a word or phrase at this stage is normally practised. */
-export function modeForStage(stage: number): "recognize" | "recall" | "type" {
-  if (stage <= 0) return "recognize";
-  if (stage === 1) return "recall";
-  return "type";
+/** How a word or phrase at this stage is normally practised: the rung above it. */
+export function modeForStage(item: WordItem | PhraseItem, stage: number): LadderMode {
+  return item.ladder[Math.min(Math.max(0, stage), item.ladder.length - 1)];
 }
 
 /** One rung easier, for an item the learner keeps missing. */
-export function easierMode(stage: number): "recognize" | "recall" | "type" {
-  return modeForStage(Math.max(0, stage - 1));
+export function easierMode(item: WordItem | PhraseItem, stage: number): LadderMode {
+  const rung = Math.min(Math.max(0, stage), item.ladder.length - 1);
+  return item.ladder[Math.max(0, rung - 1)];
 }
 
 /**
@@ -139,5 +134,26 @@ export function applyAnswer(
     bestStage: Math.max(state.bestStage, target),
     intervalDays: target === MAX_STAGE ? 21 : 0,
     dueAt: new Date(now.getTime() + INTERVAL_MS[target]),
+  };
+}
+
+/** Days until a role-play comes round again, by how many times it has been played. */
+const DIALOGUE_DAYS = [1, 3, 7, 14, 30, 60];
+
+/**
+ * A role-play was played to the end. Its words and phrases have already moved
+ * on their own ladders, turn by turn; this only schedules the next time it is
+ * offered, further away each time.
+ */
+export function completeDialogue(state: ItemState, now: Date): ItemState {
+  const stage = Math.min(MAX_STAGE, state.stage + 1);
+  const days = DIALOGUE_DAYS[Math.min(state.right, DIALOGUE_DAYS.length - 1)];
+  return {
+    ...state,
+    stage,
+    bestStage: Math.max(state.bestStage, stage),
+    right: state.right + 1,
+    intervalDays: days,
+    dueAt: new Date(now.getTime() + days * DAY_MS),
   };
 }

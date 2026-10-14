@@ -2,140 +2,140 @@
 # Format: word | translations (semicolon-separated) | example sentence | category | difficulty (1-5)
 
 # Greetings and courtesy
-ciao | hello; hi; bye | Ciao, come stai? | greetings | 1
-buongiorno | good morning; good day | Buongiorno, signora Rossi. | greetings | 1
-buonasera | good evening | Buonasera, un tavolo per due. | greetings | 1
-buonanotte | good night | Buonanotte, a domani. | greetings | 1
-arrivederci | goodbye | Arrivederci e grazie di tutto. | greetings | 1
-grazie | thank you; thanks | Grazie mille per il tuo aiuto. | greetings | 1
-prego | you're welcome; please go ahead | Prego, si accomodi. | greetings | 1
-per favore | please | Un caffè, per favore. | greetings | 1
-scusi | excuse me; sorry (formal) | Scusi, dov'è la stazione? | greetings | 1
-piacere | nice to meet you; pleasure | Piacere di conoscerti. | greetings | 1
-salve | hello (neutral) | Salve, cerco il dottor Bianchi. | greetings | 2
-benvenuto | welcome | Benvenuto a Roma! | greetings | 2
+ciao | hello; hi; bye | Ciao, come stai? | greetings | 1 | Hi, how are you?
+buongiorno | good morning; good day | Buongiorno, signora Rossi. | greetings | 1 | Good morning, Mrs Rossi.
+buonasera | good evening | Buonasera, un tavolo per due. | greetings | 1 | Good evening, a table for two.
+buonanotte | good night | Buonanotte, a domani. | greetings | 1 | Good night, see you tomorrow.
+arrivederci | goodbye | Arrivederci e grazie di tutto. | greetings | 1 | Goodbye, and thanks for everything.
+grazie | thank you; thanks | Grazie mille per il tuo aiuto. | greetings | 1 | Thanks so much for your help.
+prego | you're welcome; please go ahead | Prego, si accomodi. | greetings | 1 | Please, have a seat.
+per favore | please | Un caffè, per favore. | greetings | 1 | A coffee, please.
+scusi | excuse me; sorry (formal) | Scusi, dov'è la stazione? | greetings | 1 | Excuse me, where's the station?
+piacere | nice to meet you; pleasure | Piacere di conoscerti. | greetings | 1 | Nice to meet you.
+salve | hello (neutral) | Salve, cerco il dottor Bianchi. | greetings | 2 | Hello, I'm looking for Dr Bianchi.
+benvenuto | welcome | Benvenuto a Roma! | greetings | 2 | Welcome to Rome!
 
 # Basics
-sì | yes | Sì, capisco. | basics | 1
-no | no | No, grazie. | basics | 1
-forse | maybe; perhaps | Forse domani andiamo al mare. | basics | 2
-molto | very; a lot | Sono molto stanco oggi. | basics | 1
-poco | little; not much | Parlo poco italiano. | basics | 1
-anche | also; too | Anche io vorrei venire. | basics | 1
-ma | but | Vorrei uscire, ma piove. | basics | 1
-perché | why; because | Perché non vieni con noi? | basics | 1
-come | how; like | Come si dice in italiano? | basics | 1
-dove | where | Dove abiti? | basics | 1
-quando | when | Quando arriva il treno? | basics | 1
-chi | who | Chi è quella ragazza? | basics | 1
-cosa | what; thing | Cosa fai stasera? | basics | 1
-quanto | how much; how many | Quanto costa questo? | basics | 1
-bene | well; good | Sto bene, grazie. | basics | 1
-male | badly; bad | Oggi mi sento male. | basics | 1
-sempre | always | Bevo sempre un caffè la mattina. | basics | 2
-mai | never | Non sono mai stato in Sicilia. | basics | 2
-adesso | now | Adesso devo andare. | basics | 2
-qui | here | Il ristorante è qui vicino. | basics | 1
+sì | yes | Sì, capisco. | basics | 1 | Yes, I understand.
+no | no | No, grazie. | basics | 1 | No, thanks.
+forse | maybe; perhaps | Forse domani andiamo al mare. | basics | 2 | Maybe we'll go to the seaside tomorrow.
+molto | very; a lot | Sono molto stanco oggi. | basics | 1 | I'm very tired today.
+poco | little; not much | Parlo poco italiano. | basics | 1 | I don't speak much Italian.
+anche | also; too | Anche io vorrei venire. | basics | 1 | I'd like to come too.
+ma | but | Vorrei uscire, ma piove. | basics | 1 | I'd like to go out, but it's raining.
+perché | why; because | Perché non vieni con noi? | basics | 1 | Why don't you come with us?
+come | how; like | Come si dice in italiano? | basics | 1 | How do you say it in Italian?
+dove | where | Dove abiti? | basics | 1 | Where do you live?
+quando | when | Quando arriva il treno? | basics | 1 | When does the train arrive?
+chi | who | Chi è quella ragazza? | basics | 1 | Who's that girl?
+cosa | what; thing | Cosa fai stasera? | basics | 1 | What are you doing this evening?
+quanto | how much; how many | Quanto costa questo? | basics | 1 | How much is this?
+bene | well; good | Sto bene, grazie. | basics | 1 | I'm fine, thanks.
+male | badly; bad | Oggi mi sento male. | basics | 1 | I don't feel well today.
+sempre | always | Bevo sempre un caffè la mattina. | basics | 2 | I always have a coffee in the morning.
+mai | never | Non sono mai stato in Sicilia. | basics | 2 | I've never been to Sicily.
+adesso | now | Adesso devo andare. | basics | 2 | I have to go now.
+qui | here | Il ristorante è qui vicino. | basics | 1 | The restaurant is near here.
 
 # Numbers
-uno | one | Ho solo uno zaino. | numbers | 1
-due | two | Vorrei due biglietti. | numbers | 1
-tre | three | Ci sono tre libri sul tavolo. | numbers | 1
-quattro | four | La riunione è alle quattro. | numbers | 1
-cinque | five | Abito al quinto piano, numero cinque. | numbers | 1
-sei | six | Mi alzo alle sei ogni mattina. | numbers | 1
-sette | seven | La settimana ha sette giorni. | numbers | 1
-otto | eight | Il negozio apre alle otto. | numbers | 1
-nove | nine | Ho nove cugini. | numbers | 1
-dieci | ten | Costa dieci euro. | numbers | 1
-venti | twenty | Ho venti minuti di pausa. | numbers | 2
-cento | hundred | Il libro ha cento pagine. | numbers | 2
-mille | thousand | Questa città ha mille anni di storia. | numbers | 2
-primo | first | È il mio primo giorno di lavoro. | numbers | 2
+uno | one | Ho solo uno zaino. | numbers | 1 | I only have one backpack.
+due | two | Vorrei due biglietti. | numbers | 1 | I'd like two tickets.
+tre | three | Ci sono tre libri sul tavolo. | numbers | 1 | There are three books on the table.
+quattro | four | La riunione è alle quattro. | numbers | 1 | The meeting is at four.
+cinque | five | Abito al quinto piano, numero cinque. | numbers | 1 | I live on the fifth floor, number five.
+sei | six | Mi alzo alle sei ogni mattina. | numbers | 1 | I get up at six every morning.
+sette | seven | La settimana ha sette giorni. | numbers | 1 | A week has seven days.
+otto | eight | Il negozio apre alle otto. | numbers | 1 | The shop opens at eight.
+nove | nine | Ho nove cugini. | numbers | 1 | I have nine cousins.
+dieci | ten | Costa dieci euro. | numbers | 1 | It costs ten euros.
+venti | twenty | Ho venti minuti di pausa. | numbers | 2 | I have a twenty-minute break.
+cento | hundred | Il libro ha cento pagine. | numbers | 2 | The book has a hundred pages.
+mille | thousand | Questa città ha mille anni di storia. | numbers | 2 | This city has a thousand years of history.
+primo | first | È il mio primo giorno di lavoro. | numbers | 2 | It's my first day at work.
 
 # Family and people
-famiglia | family | La mia famiglia è numerosa. | family | 1
-madre | mother | Mia madre cucina benissimo. | family | 1
-padre | father | Mio padre lavora in banca. | family | 1
-figlio | son; child | Suo figlio ha cinque anni. | family | 1
-figlia | daughter | La loro figlia studia medicina. | family | 1
-fratello | brother | Ho un fratello più grande. | family | 1
-sorella | sister | Mia sorella vive a Milano. | family | 1
-nonno | grandfather | Mio nonno racconta belle storie. | family | 2
-nonna | grandmother | La nonna prepara la pasta a mano. | family | 2
-marito | husband | Suo marito è insegnante. | family | 2
-moglie | wife | Mia moglie ama viaggiare. | family | 2
-amico | friend | Vado al cinema con un amico. | family | 1
-bambino | child; little boy | Il bambino gioca in giardino. | family | 1
-ragazza | girl; girlfriend | Quella ragazza è la mia vicina. | family | 1
-uomo | man | Quell'uomo lavora qui da trent'anni. | family | 1
-donna | woman | La donna alla cassa è molto gentile. | family | 1
+famiglia | family | La mia famiglia è numerosa. | family | 1 | My family is very big.
+madre | mother | Mia madre cucina benissimo. | family | 1 | My mother cooks really well.
+padre | father | Mio padre lavora in banca. | family | 1 | My father works at a bank.
+figlio | son; child | Suo figlio ha cinque anni. | family | 1 | His son is five years old.
+figlia | daughter | La loro figlia studia medicina. | family | 1 | Their daughter is studying medicine.
+fratello | brother | Ho un fratello più grande. | family | 1 | I have an older brother.
+sorella | sister | Mia sorella vive a Milano. | family | 1 | My sister lives in Milan.
+nonno | grandfather | Mio nonno racconta belle storie. | family | 2 | My grandfather tells lovely stories.
+nonna | grandmother | La nonna prepara la pasta a mano. | family | 2 | Grandma makes pasta by hand.
+marito | husband | Suo marito è insegnante. | family | 2 | Her husband is a teacher.
+moglie | wife | Mia moglie ama viaggiare. | family | 2 | My wife loves travelling.
+amico | friend | Vado al cinema con un amico. | family | 1 | I'm going to the cinema with a friend.
+bambino | child; little boy | Il bambino gioca in giardino. | family | 1 | The little boy is playing in the garden.
+ragazza | girl; girlfriend | Quella ragazza è la mia vicina. | family | 1 | That girl is my neighbour.
+uomo | man | Quell'uomo lavora qui da trent'anni. | family | 1 | That man has worked here for thirty years.
+donna | woman | La donna alla cassa è molto gentile. | family | 1 | The woman at the till is very kind.
 
 # Food and drink
-acqua | water | Vorrei un bicchiere d'acqua. | food | 1
-pane | bread | Compro il pane ogni mattina. | food | 1
-vino | wine | Un bicchiere di vino rosso, grazie. | food | 1
-caffè | coffee | Prendo un caffè al bar. | food | 1
-latte | milk | Bevo il latte a colazione. | food | 1
-pasta | pasta | La pasta è pronta in dieci minuti. | food | 1
-pizza | pizza | Stasera mangiamo la pizza. | food | 1
-formaggio | cheese | Questo formaggio viene dalla Sardegna. | food | 2
-carne | meat | Non mangio carne il venerdì. | food | 2
-pesce | fish | Il pesce è freschissimo oggi. | food | 2
-frutta | fruit | Mangio frutta tutti i giorni. | food | 2
-verdura | vegetables | Compro la verdura al mercato. | food | 2
-zucchero | sugar | Prendi lo zucchero nel caffè? | food | 2
-sale | salt | Manca un po' di sale. | food | 2
-colazione | breakfast | Faccio colazione alle sette. | food | 2
-pranzo | lunch | Il pranzo è all'una. | food | 2
-cena | dinner | La cena è quasi pronta. | food | 2
-ristorante | restaurant | Conosco un buon ristorante in centro. | food | 2
+acqua | water | Vorrei un bicchiere d'acqua. | food | 1 | I'd like a glass of water.
+pane | bread | Compro il pane ogni mattina. | food | 1 | I buy bread every morning.
+vino | wine | Un bicchiere di vino rosso, grazie. | food | 1 | A glass of red wine, thanks.
+caffè | coffee | Prendo un caffè al bar. | food | 1 | I have a coffee at the café.
+latte | milk | Bevo il latte a colazione. | food | 1 | I drink milk at breakfast.
+pasta | pasta | La pasta è pronta in dieci minuti. | food | 1 | The pasta will be ready in ten minutes.
+pizza | pizza | Stasera mangiamo la pizza. | food | 1 | We're having pizza tonight.
+formaggio | cheese | Questo formaggio viene dalla Sardegna. | food | 2 | This cheese comes from Sardinia.
+carne | meat | Non mangio carne il venerdì. | food | 2 | I don't eat meat on Fridays.
+pesce | fish | Il pesce è freschissimo oggi. | food | 2 | The fish is really fresh today.
+frutta | fruit | Mangio frutta tutti i giorni. | food | 2 | I eat fruit every day.
+verdura | vegetables | Compro la verdura al mercato. | food | 2 | I buy vegetables at the market.
+zucchero | sugar | Prendi lo zucchero nel caffè? | food | 2 | Do you take sugar in your coffee?
+sale | salt | Manca un po' di sale. | food | 2 | It needs a bit more salt.
+colazione | breakfast | Faccio colazione alle sette. | food | 2 | I have breakfast at seven.
+pranzo | lunch | Il pranzo è all'una. | food | 2 | Lunch is at one.
+cena | dinner | La cena è quasi pronta. | food | 2 | Dinner is almost ready.
+ristorante | restaurant | Conosco un buon ristorante in centro. | food | 2 | I know a good restaurant in the town centre.
 
 # Time
-giorno | day | Che giorno è oggi? | time | 1
-settimana | week | Ci vediamo la prossima settimana. | time | 2
-mese | month | Parto il mese prossimo. | time | 2
-anno | year | Studio italiano da un anno. | time | 1
-oggi | today | Oggi fa molto caldo. | time | 1
-domani | tomorrow | Domani ho un esame. | time | 1
-ieri | yesterday | Ieri sono andato al museo. | time | 1
-mattina | morning | La mattina corro nel parco. | time | 2
-sera | evening | La sera guardo un film. | time | 2
-notte | night | Ho dormito male questa notte. | time | 2
-ora | hour; now | Che ora è? | time | 1
-minuto | minute | Aspetta un minuto, per favore. | time | 2
-lunedì | Monday | Lunedì torno al lavoro. | time | 2
-sabato | Saturday | Sabato andiamo in montagna. | time | 2
-domenica | Sunday | La domenica dormo fino a tardi. | time | 2
+giorno | day | Che giorno è oggi? | time | 1 | What day is it today?
+settimana | week | Ci vediamo la prossima settimana. | time | 2 | See you next week.
+mese | month | Parto il mese prossimo. | time | 2 | I'm leaving next month.
+anno | year | Studio italiano da un anno. | time | 1 | I've been studying Italian for a year.
+oggi | today | Oggi fa molto caldo. | time | 1 | It's very hot today.
+domani | tomorrow | Domani ho un esame. | time | 1 | I have an exam tomorrow.
+ieri | yesterday | Ieri sono andato al museo. | time | 1 | Yesterday I went to the museum.
+mattina | morning | La mattina corro nel parco. | time | 2 | In the morning I go running in the park.
+sera | evening | La sera guardo un film. | time | 2 | In the evening I watch a film.
+notte | night | Ho dormito male questa notte. | time | 2 | I slept badly last night.
+ora | hour; now | Che ora è? | time | 1 | What time is it?
+minuto | minute | Aspetta un minuto, per favore. | time | 2 | Wait a minute, please.
+lunedì | Monday | Lunedì torno al lavoro. | time | 2 | I'm going back to work on Monday.
+sabato | Saturday | Sabato andiamo in montagna. | time | 2 | On Saturday we're going to the mountains.
+domenica | Sunday | La domenica dormo fino a tardi. | time | 2 | On Sundays I sleep in.
 
 # Places and travel
-casa | house; home | Torno a casa alle sei. | housing | 1
-città | city | Roma è una città bellissima. | travel | 1
-strada | street; road | La strada è chiusa per lavori. | travel | 2
-stazione | station | La stazione è a dieci minuti a piedi. | transportation | 2
-treno | train | Il treno per Firenze parte alle nove. | transportation | 2
-autobus | bus | Prendo l'autobus numero venti. | transportation | 2
-macchina | car | La macchina è parcheggiata qui dietro. | transportation | 2
-aeroporto | airport | Arrivo all'aeroporto alle otto. | transportation | 2
-albergo | hotel | Abbiamo prenotato un albergo in centro. | travel | 2
-negozio | shop; store | Il negozio chiude alle sette. | shopping | 2
-mercato | market | Il mercato è aperto il sabato. | shopping | 2
-biglietto | ticket | Ho comprato il biglietto online. | travel | 2
+casa | house; home | Torno a casa alle sei. | housing | 1 | I get home at six.
+città | city | Roma è una città bellissima. | travel | 1 | Rome is a really beautiful city.
+strada | street; road | La strada è chiusa per lavori. | travel | 2 | The road is closed for roadworks.
+stazione | station | La stazione è a dieci minuti a piedi. | transportation | 2 | The station is a ten-minute walk away.
+treno | train | Il treno per Firenze parte alle nove. | transportation | 2 | The train to Florence leaves at nine.
+autobus | bus | Prendo l'autobus numero venti. | transportation | 2 | I take the number twenty bus.
+macchina | car | La macchina è parcheggiata qui dietro. | transportation | 2 | The car is parked just round the back.
+aeroporto | airport | Arrivo all'aeroporto alle otto. | transportation | 2 | I get to the airport at eight.
+albergo | hotel | Abbiamo prenotato un albergo in centro. | travel | 2 | We've booked a hotel in the town centre.
+negozio | shop; store | Il negozio chiude alle sette. | shopping | 2 | The shop closes at seven.
+mercato | market | Il mercato è aperto il sabato. | shopping | 2 | The market is open on Saturdays.
+biglietto | ticket | Ho comprato il biglietto online. | travel | 2 | I bought the ticket online.
 
 # Everyday things and adjectives
-libro | book | Sto leggendo un libro italiano. | education | 1
-lavoro | work; job | Il mio lavoro mi piace molto. | work | 1
-scuola | school | I bambini vanno a scuola alle otto. | education | 1
-soldi | money | Non ho soldi con me. | shopping | 2
-telefono | telephone | Ti chiamo al telefono stasera. | technology | 1
-grande | big; large | Vivo in una casa grande. | basics | 1
-piccolo | small; little | Ho un appartamento piccolo. | basics | 1
-nuovo | new | Ho comprato un computer nuovo. | basics | 1
-bello | beautiful; nice | Che bella giornata! | basics | 1
-buono | good; tasty | Questo caffè è molto buono. | basics | 1
-caldo | hot; warm | Oggi fa caldo. | weather | 1
-freddo | cold | In inverno fa freddo qui. | weather | 1
-pioggia | rain | La pioggia è cominciata all'alba. | weather | 2
-sole | sun | C'è il sole oggi. | weather | 1
-felice | happy | Sono felice di vederti. | emotions | 2
-stanco | tired | Sono stanco dopo il lavoro. | emotions | 2
+libro | book | Sto leggendo un libro italiano. | education | 1 | I'm reading an Italian book.
+lavoro | work; job | Il mio lavoro mi piace molto. | work | 1 | I really like my job.
+scuola | school | I bambini vanno a scuola alle otto. | education | 1 | The children go to school at eight.
+soldi | money | Non ho soldi con me. | shopping | 2 | I don't have any money on me.
+telefono | telephone | Ti chiamo al telefono stasera. | technology | 1 | I'll phone you this evening.
+grande | big; large | Vivo in una casa grande. | basics | 1 | I live in a big house.
+piccolo | small; little | Ho un appartamento piccolo. | basics | 1 | I have a small apartment.
+nuovo | new | Ho comprato un computer nuovo. | basics | 1 | I bought a new computer.
+bello | beautiful; nice | Che bella giornata! | basics | 1 | What a beautiful day!
+buono | good; tasty | Questo caffè è molto buono. | basics | 1 | This coffee is very good.
+caldo | hot; warm | Oggi fa caldo. | weather | 1 | It's hot today.
+freddo | cold | In inverno fa freddo qui. | weather | 1 | It's cold here in winter.
+pioggia | rain | La pioggia è cominciata all'alba. | weather | 2 | The rain started at dawn.
+sole | sun | C'è il sole oggi. | weather | 1 | It's sunny today.
+felice | happy | Sono felice di vederti. | emotions | 2 | I'm happy to see you.
+stanco | tired | Sono stanco dopo il lavoro. | emotions | 2 | I'm tired after work.
