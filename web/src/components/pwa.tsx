@@ -93,6 +93,7 @@ export function InstallHint() {
           <>
             Put Langue on your home screen: tap <span className="text-[var(--crt-fg-bright)]">Share</span>{" "}
             <span aria-hidden="true">⎋</span> then <span className="text-[var(--crt-fg-bright)]">Add to Home Screen</span>.
+            From there it can remind you when your streak needs you.
           </>
         )}
       </span>
@@ -103,6 +104,148 @@ export function InstallHint() {
       ) : null}
       <button type="button" onClick={dismiss} className="text-xs text-[var(--crt-fg-dim)] hover:text-[var(--crt-fg-bright)]">
         No thanks
+      </button>
+    </div>
+  );
+}
+
+/** The VAPID public key as the bytes PushManager.subscribe wants. */
+function keyBytes(base64: string): Uint8Array<ArrayBuffer> {
+  const padded = (base64 + "=".repeat((4 - (base64.length % 4)) % 4)).replace(/-/g, "+").replace(/_/g, "/");
+  const raw = window.atob(padded);
+  const bytes = new Uint8Array(new ArrayBuffer(raw.length));
+  for (let i = 0; i < raw.length; i += 1) bytes[i] = raw.charCodeAt(i);
+  return bytes;
+}
+
+async function post(path: string, body: unknown): Promise<Response> {
+  return fetch(path, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(body) });
+}
+
+function linkSubscription(subscription: PushSubscription): Promise<Response> {
+  return post("/api/push/subscribe", {
+    subscription: subscription.toJSON(),
+    timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+  });
+}
+
+/**
+ * Streak reminders on this phone: a card offering them while they're off, a
+ * quiet line with "Send a test" and "Turn off" once on. Turning them on
+ * covers every learner signed in on the device. Only where the browser can
+ * do push — on iPhone, that means Langue installed on the home screen.
+ */
+export function ReminderToggle({ publicKey }: { publicKey: string | null }) {
+  const [state, setState] = useState<"unsupported" | "off" | "on" | "blocked" | "busy">("unsupported");
+  const [message, setMessage] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!publicKey || !("serviceWorker" in navigator) || !("PushManager" in window) || !("Notification" in window)) return;
+    if (Notification.permission === "denied") {
+      setState("blocked");
+      return;
+    }
+    let cancelled = false;
+    navigator.serviceWorker.ready
+      .then((registration) => registration.pushManager.getSubscription())
+      .then(async (subscription) => {
+        if (cancelled) return;
+        setState(subscription ? "on" : "off");
+        // Include anyone who has signed in on this device since.
+        if (subscription) await linkSubscription(subscription);
+      })
+      .catch(() => {
+        if (!cancelled) setState("off");
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [publicKey]);
+
+  async function turnOn() {
+    if (!publicKey) return;
+    setState("busy");
+    setMessage(null);
+    try {
+      const permission = await Notification.requestPermission();
+      if (permission !== "granted") {
+        setState(permission === "denied" ? "blocked" : "off");
+        return;
+      }
+      const registration = await navigator.serviceWorker.ready;
+      const subscription = await registration.pushManager.subscribe({
+        userVisibleOnly: true,
+        applicationServerKey: keyBytes(publicKey),
+      });
+      const response = await linkSubscription(subscription);
+      if (!response.ok) throw new Error("save failed");
+      const { learners } = (await response.json()) as { learners: string[] };
+      setState("on");
+      setMessage(learners.length > 1 ? `On for ${learners.join(", ")}.` : "Reminders are on.");
+    } catch {
+      setState("off");
+      setMessage("That didn't work — try again in a moment.");
+    }
+  }
+
+  async function turnOff() {
+    setState("busy");
+    const registration = await navigator.serviceWorker.ready;
+    const subscription = await registration.pushManager.getSubscription();
+    if (subscription) {
+      await post("/api/push/unsubscribe", { endpoint: subscription.endpoint }).catch(() => undefined);
+      await subscription.unsubscribe().catch(() => undefined);
+    }
+    setState("off");
+    setMessage("Reminders are off on this device.");
+  }
+
+  async function test() {
+    const registration = await navigator.serviceWorker.ready;
+    const subscription = await registration.pushManager.getSubscription();
+    if (!subscription) return;
+    const response = await post("/api/push/test", { endpoint: subscription.endpoint });
+    setMessage(response.ok ? "Sent — it should pop up in a moment." : "The test didn't go through.");
+  }
+
+  if (state === "unsupported") return null;
+
+  if (state === "blocked") {
+    return (
+      <p className="text-xs text-[var(--crt-fg-dim)]">
+        Streak reminders are blocked for Langue in this browser&apos;s notification settings.
+      </p>
+    );
+  }
+
+  if (state === "on") {
+    return (
+      <p className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-[var(--crt-fg-dim)]">
+        <span>Streak reminders are on.</span>
+        <button type="button" onClick={() => void test()} className="underline hover:text-[var(--crt-fg-bright)]">
+          Send a test
+        </button>
+        <button type="button" onClick={() => void turnOff()} className="underline hover:text-[var(--crt-fg-bright)]">
+          Turn off
+        </button>
+        {message ? <span className="text-[var(--crt-accent)]">{message}</span> : null}
+      </p>
+    );
+  }
+
+  return (
+    <div className="flex flex-wrap items-center gap-x-4 gap-y-2 border border-[var(--crt-rule)] px-4 py-3 text-sm">
+      <span className="flex-1">
+        Want a nudge if your streak needs you? Only after two days away — never every day.
+        {message ? <span className="ml-2 text-[var(--crt-accent)]">{message}</span> : null}
+      </span>
+      <button
+        type="button"
+        onClick={() => void turnOn()}
+        disabled={state === "busy"}
+        className="crt-button crt-button-primary px-3 py-1 text-xs"
+      >
+        {state === "busy" ? "…" : "Turn on reminders"}
       </button>
     </div>
   );

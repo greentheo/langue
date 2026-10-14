@@ -5,12 +5,14 @@
  *  - keeps the hashed build files (/_next/static), which never change, so the
  *    app opens quickly;
  *  - shows a friendly offline page instead of the browser's error when a page
- *    can't load.
+ *    can't load;
+ *  - shows streak reminders (lib/reminder-sender.ts) and opens Langue when
+ *    one is tapped.
  *
  * Nothing else is cached: no API responses, no pages, nothing personal.
  */
 
-const VERSION = "langue-v2";
+const VERSION = "langue-v3";
 const OFFLINE = "/offline.html";
 
 self.addEventListener("install", (event) => {
@@ -55,4 +57,35 @@ self.addEventListener("fetch", (event) => {
       }),
     );
   }
+});
+
+self.addEventListener("push", (event) => {
+  let data = { title: "Langue", body: "Your streak is waiting.", url: "/learn" };
+  try {
+    data = { ...data, ...event.data.json() };
+  } catch {
+    // A push without a readable payload still gets the default reminder.
+  }
+  event.waitUntil(
+    self.registration.showNotification(data.title, {
+      body: data.body,
+      icon: "/icons/icon-192.png",
+      badge: "/icons/icon-192.png",
+      // A newer reminder replaces an older one rather than stacking up.
+      tag: "langue-streak",
+      data: { url: data.url },
+    }),
+  );
+});
+
+self.addEventListener("notificationclick", (event) => {
+  event.notification.close();
+  const url = new URL(event.notification.data?.url || "/learn", self.location.origin).href;
+  event.waitUntil(
+    self.clients.matchAll({ type: "window", includeUncontrolled: true }).then((windows) => {
+      const open = windows.find((client) => client.url.startsWith(self.location.origin));
+      if (open) return open.focus().then((client) => client.navigate(url));
+      return self.clients.openWindow(url);
+    }),
+  );
 });
