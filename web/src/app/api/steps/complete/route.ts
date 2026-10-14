@@ -5,7 +5,7 @@ import { prisma } from "@/lib/db";
 import { recordSession } from "@/lib/progress";
 import { getCourse } from "@/lib/path/course";
 import { CHALLENGE_PASS, unitCode, unitProgress } from "@/lib/path/planner";
-import { loadStates, passUnit, recordFinishedLevels } from "@/lib/path/store";
+import { loadMarks, loadStates, passUnit, recordFinishedLevels, rememberProgress } from "@/lib/path/store";
 
 /**
  * Record a finished step: points and streak through the one progress writer,
@@ -56,14 +56,15 @@ export const POST = handler(async (request) => {
     : null;
   if (passed) await passUnit(user.id, language, course, unitIndex, now);
 
-  const states = await loadStates(user.id, language);
+  const [states, marks] = await Promise.all([loadStates(user.id, language), loadMarks(user.id)]);
+  const units = unitProgress(course, states, marks);
+  await rememberProgress(user.id, units, marks, now);
   const [finishedLevels, fresh] = await Promise.all([
-    recordFinishedLevels(user.id, language, course, states, now),
+    recordFinishedLevels(user.id, language, course, states, now, marks),
     prisma.user.findUnique({ where: { id: user.id }, select: { streakDays: true } }),
   ]);
 
   // After a challenge, the next unit not yet complete — to try its challenge too.
-  const units = unitProgress(course, states);
   const next = units.find((unit) => unit.index > unitIndex && !unit.complete);
 
   return Response.json({

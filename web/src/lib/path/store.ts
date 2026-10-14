@@ -8,6 +8,7 @@ import "server-only";
 
 import { prisma } from "@/lib/db";
 import { completedLevels, levelAchievement } from "./levels";
+import { raisedMarks, type UnitMark, type UnitProgress } from "./planner";
 import { applyAnswer, applyChallenge, assumeKnown, completeDialogue, newItemState } from "./schedule";
 import type { Course, Item, ItemState } from "./types";
 
@@ -133,8 +134,9 @@ export async function recordFinishedLevels(
   course: Course,
   states: Map<string, ItemState>,
   now: Date,
+  marks: Map<string, UnitMark> = new Map(),
 ): Promise<string[]> {
-  const done = completedLevels(course, states);
+  const done = completedLevels(course, states, marks);
   if (done.length === 0) return [];
   const names = done.map((level) => levelAchievement(language, level));
   const existing = new Set(
@@ -222,4 +224,42 @@ export async function recentAccuracy(userId: string, language: string): Promise<
   const total = steps.reduce((sum, step) => sum + step.itemsTotal, 0);
   if (total === 0) return null;
   return steps.reduce((sum, step) => sum + step.itemsCorrect, 0) / total;
+}
+
+/** The best each unit's bar has shown this learner, by unit id. */
+export async function loadMarks(userId: string): Promise<Map<string, UnitMark>> {
+  const rows = await prisma.unitMark.findMany({ where: { userId } });
+  return new Map(
+    rows.map((row) => [row.unitId, { bestPercent: row.bestPercent, complete: row.completedAt !== null }]),
+  );
+}
+
+/**
+ * Remember any unit whose bar is higher than ever before, so that new content
+ * in a unit never lowers it. Called wherever progress is shown; only writes
+ * when something went up.
+ */
+export async function rememberProgress(
+  userId: string,
+  progress: UnitProgress[],
+  marks: Map<string, UnitMark>,
+  now: Date = new Date(),
+): Promise<void> {
+  const raised = raisedMarks(progress, marks);
+  if (raised.length === 0) return;
+  await prisma.$transaction(
+    raised.map(({ unitId, bestPercent, complete }) =>
+      prisma.unitMark.upsert({
+        where: { userId_unitId: { userId, unitId } },
+        create: { userId, unitId, bestPercent, completedAt: complete ? now : null },
+        update: {
+          bestPercent,
+          ...(complete && !marks.get(unitId)?.complete ? { completedAt: now } : {}),
+        },
+      }),
+    ),
+  );
+  for (const { unitId, bestPercent, complete } of raised) {
+    marks.set(unitId, { bestPercent, complete: complete || Boolean(marks.get(unitId)?.complete) });
+  }
 }

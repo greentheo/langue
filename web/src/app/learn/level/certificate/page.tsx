@@ -7,7 +7,7 @@ import { languageLabel } from "@/lib/languages";
 import { LEVEL_LABELS, type Level } from "@/lib/vocab/types";
 import { getCourse } from "@/lib/path/course";
 import { levelAchievement, levelProgress, levelsOf } from "@/lib/path/levels";
-import { loadStates } from "@/lib/path/store";
+import { loadMarks, loadStates } from "@/lib/path/store";
 import { PrintButton } from "@/components/print-button";
 
 export const metadata = { title: "Certificate — LANGUE" };
@@ -45,8 +45,8 @@ export default async function CertificatePage({
     );
   }
 
-  const states = await loadStates(user.id, language);
-  const progress = levelProgress(course, states, level);
+  const [states, marks] = await Promise.all([loadStates(user.id, language), loadMarks(user.id)]);
+  const progress = levelProgress(course, states, level, marks);
   const practised = await prisma.activityLog.aggregate({
     where: { userId: user.id, language, level },
     _sum: { durationSec: true },

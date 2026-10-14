@@ -15,7 +15,7 @@ import {
   levelsOf,
   type Bar,
 } from "@/lib/path/levels";
-import { loadStates, seedFromLessons } from "@/lib/path/store";
+import { loadMarks, loadStates, rememberProgress, seedFromLessons } from "@/lib/path/store";
 import { Panel } from "@/components/crt";
 
 export const metadata = { title: "Your level — LANGUE" };
@@ -63,12 +63,13 @@ export default async function LevelPage({
 
   const now = new Date();
   await seedFromLessons(user.id, language, course, now);
-  const states = await loadStates(user.id, language);
+  const [states, marks] = await Promise.all([loadStates(user.id, language), loadMarks(user.id)]);
 
   const requested = (await searchParams).level;
   const open = course.units[Math.min(firstOpenUnit(course, states), course.units.length - 1)];
   const level = typeof requested === "string" && levels.includes(requested) ? requested : open.level;
-  const progress = levelProgress(course, states, level);
+  const progress = levelProgress(course, states, level, marks);
+  await rememberProgress(user.id, progress.units, marks, now);
   const overview = getLevelCurriculum(language, level)?.overview;
   const label = `${level.toUpperCase()} ${LEVEL_LABELS[level as Level] ?? ""}`.trim();
 

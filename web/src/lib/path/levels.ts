@@ -6,7 +6,7 @@
  * played), so none of them ever goes down.
  */
 
-import { unitProgress, type UnitProgress } from "./planner";
+import { unitProgress, type UnitMark, type UnitProgress } from "./planner";
 import { LEARNED_STAGE } from "./schedule";
 import type { Course, ItemKind, ItemState } from "./types";
 
@@ -46,8 +46,13 @@ function bar(keys: string[], states: Map<string, ItemState>): Bar {
   };
 }
 
-export function levelProgress(course: Course, states: Map<string, ItemState>, level: string): LevelProgress {
-  const units = unitProgress(course, states).filter((unit) => unit.level === level);
+export function levelProgress(
+  course: Course,
+  states: Map<string, ItemState>,
+  level: string,
+  marks: Map<string, UnitMark> = new Map(),
+): LevelProgress {
+  const units = unitProgress(course, states, marks).filter((unit) => unit.level === level);
   const indices = new Set(units.map((unit) => unit.index));
   const keys = course.units.filter((_, index) => indices.has(index)).flatMap((unit) => unit.itemKeys);
   const ofKind = (kind: ItemKind) => keys.filter((key) => course.items.get(key)?.kind === kind);
@@ -74,8 +79,12 @@ export function levelProgress(course: Course, states: Map<string, ItemState>, le
 }
 
 /** Levels with every unit complete. */
-export function completedLevels(course: Course, states: Map<string, ItemState>): string[] {
-  return levelsOf(course).filter((level) => levelProgress(course, states, level).complete);
+export function completedLevels(
+  course: Course,
+  states: Map<string, ItemState>,
+  marks: Map<string, UnitMark> = new Map(),
+): string[] {
+  return levelsOf(course).filter((level) => levelProgress(course, states, level, marks).complete);
 }
 
 /** The achievement name a finished level is stored under. */

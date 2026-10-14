@@ -19,6 +19,7 @@ import {
   nextIntro,
   planChallenge,
   planStep,
+  raisedMarks,
   typedTurns,
   unitProgress,
 } from "./planner";
@@ -449,6 +450,26 @@ describe("planStep", () => {
     assert.equal(done.complete, true);
     assert.equal(done.speaking.done, 1);
     assert.deepEqual(completedLevels(course, states), ["a1"]);
+  });
+
+  test("new content in a unit never lowers its bar: the best it showed is kept", () => {
+    const states = new Map<string, ItemState>([["w00", state({ stage: 3, bestStage: 3 })]]);
+    const now = unitProgress(course, states)[0];
+    assert.equal(now.percent, Math.floor((3 / 24) * 100));
+
+    // The learner once saw 40% here, before words were added to the unit.
+    const marks = new Map([["u0", { bestPercent: 40, complete: false }]]);
+    assert.equal(unitProgress(course, states, marks)[0].percent, 40);
+    assert.deepEqual(raisedMarks(unitProgress(course, states, marks), marks), [], "nothing to raise");
+
+    // A unit once complete stays complete.
+    const done = unitProgress(course, states, new Map([["u0", { bestPercent: 100, complete: true }]]))[0];
+    assert.equal(done.complete, true);
+    assert.equal(done.percent, 100);
+
+    // Progress above the mark raises it.
+    for (const key of course.units[1].itemKeys) states.set(key, state({ stage: 2, bestStage: 2 }));
+    assert.deepEqual(raisedMarks(unitProgress(course, states, marks), marks).map((m) => m.unitId), ["u1"]);
   });
 
   test("days to finish at the learner's pace, once there is something to go on", () => {

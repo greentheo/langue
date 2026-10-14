@@ -19,7 +19,7 @@ import {
   type IdeaStatus,
   type UnitProgress,
 } from "@/lib/path/planner";
-import { loadStates, seedFromLessons } from "@/lib/path/store";
+import { loadMarks, loadStates, rememberProgress, seedFromLessons } from "@/lib/path/store";
 import { levelProgress } from "@/lib/path/levels";
 import { StandingsTable } from "@/components/standings-table";
 import { LanguageChooser } from "@/components/language-chooser";
@@ -85,7 +85,9 @@ export default async function LearnPage() {
   const now = new Date();
   if (hasPath) await seedFromLessons(user.id, language, course, now);
   const states = hasPath ? await loadStates(user.id, language) : new Map();
-  const units = unitProgress(course, states);
+  const marks = hasPath ? await loadMarks(user.id) : new Map();
+  const units = unitProgress(course, states, marks);
+  if (hasPath) await rememberProgress(user.id, units, marks, now);
   const currentIndex = Math.min(firstOpenUnit(course, states), Math.max(0, units.length - 1));
   const current = units[currentIndex];
   const ideas = unitIdeas(course, currentIndex, states);
@@ -94,7 +96,7 @@ export default async function LearnPage() {
   const upNextIdea =
     upNext?.entry.type === "grammar" ? course.items.get(upNext.entry.key) : undefined;
   const levelUnits = current ? units.filter((unit) => unit.level === current.level) : [];
-  const level = current ? levelProgress(course, states, current.level) : null;
+  const level = current ? levelProgress(course, states, current.level, marks) : null;
 
   // The home screen shows the biggest group's week, top five.
   const groups = await groupsFor(user.id);

@@ -533,7 +533,17 @@ export interface UnitProgress {
   started: boolean;
 }
 
-export function unitProgress(course: Course, states: Map<string, ItemState>): UnitProgress[] {
+/** The best a unit's bar has shown a learner: kept so that adding content never lowers it. */
+export interface UnitMark {
+  bestPercent: number;
+  complete: boolean;
+}
+
+export function unitProgress(
+  course: Course,
+  states: Map<string, ItemState>,
+  marks: Map<string, UnitMark> = new Map(),
+): UnitProgress[] {
   return course.units.map((unit, index) => {
     const learned = unit.itemKeys.filter((key) => isLearned(states.get(key))).length;
     const climbed = unit.itemKeys.reduce(
@@ -541,6 +551,9 @@ export function unitProgress(course: Course, states: Map<string, ItemState>): Un
       0,
     );
     const total = unit.itemKeys.length * LEARNED_STAGE;
+    const mark = marks.get(unit.id);
+    const complete = learned === unit.itemKeys.length || Boolean(mark?.complete);
+    const percent = total > 0 ? Math.floor((climbed / total) * 100) : 0;
     return {
       index,
       id: unit.id,
@@ -549,11 +562,27 @@ export function unitProgress(course: Course, states: Map<string, ItemState>): Un
       level: unit.level,
       learned,
       total: unit.itemKeys.length,
-      percent: total > 0 ? Math.floor((climbed / total) * 100) : 0,
-      complete: learned === unit.itemKeys.length,
+      percent: complete ? 100 : Math.max(percent, mark?.bestPercent ?? 0),
+      complete,
       started: unit.itemKeys.some((key) => states.has(key)),
     };
   });
+}
+
+/**
+ * Marks that need raising after this progress: units whose bar is now higher
+ * than its mark, or newly complete.
+ */
+export function raisedMarks(
+  progress: UnitProgress[],
+  marks: Map<string, UnitMark>,
+): { unitId: string; bestPercent: number; complete: boolean }[] {
+  return progress
+    .filter((unit) => {
+      const mark = marks.get(unit.id);
+      return unit.percent > (mark?.bestPercent ?? 0) || (unit.complete && !mark?.complete);
+    })
+    .map((unit) => ({ unitId: unit.id, bestPercent: unit.percent, complete: unit.complete }));
 }
 
 export type IdeaStatus = "new" | "learning" | "learned";
