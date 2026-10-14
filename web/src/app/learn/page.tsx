@@ -113,7 +113,9 @@ export default async function LearnPage() {
 
   // The home screen shows the biggest group's week, top five.
   const groups = await groupsFor(user.id);
-  const board = groups[0] ? await leaderboard(groups[0].id, user.id, "week") : null;
+  // The biggest group with someone else in it; a board of one is not a race yet.
+  const homeGroup = groups.find((group) => group.memberCount >= 2);
+  const board = homeGroup ? await leaderboard(homeGroup.id, user.id, "week") : null;
 
   const learn: MenuEntry[] = [
     {
@@ -264,8 +266,8 @@ export default async function LearnPage() {
         </Panel>
       )}
 
-      {board && groups[0] ? (
-        <Panel title={`This week · ${groups[0].name}`}>
+      {board && homeGroup ? (
+        <Panel title={`This week · ${homeGroup.name}`}>
           <StandingsTable
             rows={[
               ...board.slice(0, 5),
@@ -277,7 +279,9 @@ export default async function LearnPage() {
             compact
           />
           <p className="mt-3 text-xs">
-            <Link href="/learn/leaderboard">Full leaderboard &rarr;</Link>
+            <Link href={`/learn/leaderboard?group=${homeGroup.id}`}>
+              {groups.length > 1 ? `Full leaderboard · all ${groups.length} groups` : "Full leaderboard"} &rarr;
+            </Link>
           </p>
         </Panel>
       ) : null}

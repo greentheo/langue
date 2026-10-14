@@ -3,12 +3,14 @@ import "server-only";
 /**
  * Leaderboards, one per invite code.
  *
- * Everyone who joined with a code is a group, plus whoever made the code. A
- * learner sees a board for each group they are in; nobody else can see it.
- * No new tables: membership is User.inviteCodeId and InviteCode.createdById.
+ * Each code is a group: everyone who joined with it, whoever made it, and
+ * anyone who joined the group later by entering the code. A learner can be
+ * in several groups, sees a board for each, and nobody outside a group can
+ * see its board. Membership is the GroupMember table.
  */
 
 import { prisma } from "@/lib/db";
+import { inviteStatus } from "@/lib/auth/invite-status";
 import {
   levelBadges,
   liveStreak,
@@ -24,50 +26,40 @@ export interface Group {
   /** The code's note ("Family"), or the code itself when it has none. */
   name: string;
   memberCount: number;
+  /** The code, to invite others into the group. */
+  code: string;
+  /** Whether the code can still create accounts: new people need a use left. */
+  status: "active" | "used-up" | "expired";
 }
 
-/** Members of a code: everyone who joined with it, plus its creator. */
-function memberIds(code: { createdById: string | null; members: { id: string }[] }): Set<string> {
-  const ids = new Set(code.members.map((member) => member.id));
-  if (code.createdById) ids.add(code.createdById);
-  return ids;
-}
-
-/**
- * The groups a user belongs to, largest first. A group of one is left out —
- * a leaderboard with only yourself on it is not a leaderboard yet.
- */
+/** The groups a user belongs to, largest first. */
 export async function groupsFor(userId: string): Promise<Group[]> {
-  const user = await prisma.user.findUnique({
-    where: { id: userId },
-    select: { inviteCodeId: true },
-  });
-
-  const codes = await prisma.inviteCode.findMany({
-    where: {
-      OR: [
-        ...(user?.inviteCodeId ? [{ id: user.inviteCodeId }] : []),
-        { createdById: userId },
-      ],
-    },
+  const memberships = await prisma.groupMember.findMany({
+    where: { userId },
     select: {
-      id: true,
-      code: true,
-      note: true,
-      createdById: true,
-      members: { select: { id: true } },
+      inviteCode: {
+        select: {
+          id: true,
+          code: true,
+          note: true,
+          expiresAt: true,
+          maxUses: true,
+          useCount: true,
+          _count: { select: { groupMembers: true } },
+        },
+      },
     },
-    orderBy: { createdAt: "asc" },
   });
 
-  return codes
-    .map((code) => ({
+  return memberships
+    .map(({ inviteCode: code }) => ({
       id: code.id,
       name: code.note?.trim() || code.code,
-      memberCount: memberIds(code).size,
+      memberCount: code._count.groupMembers,
+      code: code.code,
+      status: inviteStatus(code),
     }))
-    .filter((group) => group.memberCount >= 2)
-    .sort((a, b) => b.memberCount - a.memberCount);
+    .sort((a, b) => b.memberCount - a.memberCount || a.name.localeCompare(b.name));
 }
 
 /**
@@ -81,13 +73,11 @@ export async function leaderboard(
   period: BoardPeriod,
   now: Date = new Date(),
 ): Promise<RankedStanding[] | null> {
-  const code = await prisma.inviteCode.findUnique({
-    where: { id: groupId },
-    select: { createdById: true, members: { select: { id: true } } },
+  const members = await prisma.groupMember.findMany({
+    where: { inviteCodeId: groupId },
+    select: { userId: true },
   });
-  if (!code) return null;
-
-  const ids = [...memberIds(code)];
+  const ids = members.map((member) => member.userId);
   if (!ids.includes(viewerId)) return null;
 
   const [users, week, finished] = await Promise.all([
