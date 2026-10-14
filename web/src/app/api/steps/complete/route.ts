@@ -57,7 +57,7 @@ export const POST = handler(async (request) => {
     : null;
   if (passed) await passUnit(user.id, language, course, unitIndex, now);
 
-  const [states, marks] = await Promise.all([loadStates(user.id, language), loadMarks(user.id)]);
+  const [states, marks] = await Promise.all([loadStates(user.id, language), loadMarks(user.id, course)]);
   const units = unitProgress(course, states, marks);
   await rememberProgress(user.id, units, marks, now);
   const [finishedLevels, fresh] = await Promise.all([

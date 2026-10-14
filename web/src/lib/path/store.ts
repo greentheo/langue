@@ -8,7 +8,7 @@ import "server-only";
 
 import { prisma } from "@/lib/db";
 import { completedLevels, levelAchievement } from "./levels";
-import { raisedMarks, type UnitMark, type UnitProgress } from "./planner";
+import { raisedMarks, unitProgress, type UnitMark, type UnitProgress } from "./planner";
 import { applyAnswer, applyChallenge, assumeKnown, completeDialogue, newItemState } from "./schedule";
 import type { Course, Item, ItemState } from "./types";
 
@@ -226,12 +226,53 @@ export async function recentAccuracy(userId: string, language: string): Promise<
   return steps.reduce((sum, step) => sum + step.itemsCorrect, 0) / total;
 }
 
-/** The best each unit's bar has shown this learner, by unit id. */
-export async function loadMarks(userId: string): Promise<Map<string, UnitMark>> {
-  const rows = await prisma.unitMark.findMany({ where: { userId } });
-  return new Map(
+/**
+ * The best each unit's bar has shown this learner, by unit id. A level the
+ * learner has finished keeps every one of its units complete, even if words
+ * were added to them since.
+ */
+export async function loadMarks(userId: string, course?: Course): Promise<Map<string, UnitMark>> {
+  const [rows, finished] = await Promise.all([
+    prisma.unitMark.findMany({ where: { userId } }),
+    course
+      ? prisma.achievement.findMany({
+          where: { userId, name: { startsWith: `level:${course.language}:` } },
+          select: { name: true },
+        })
+      : [],
+  ]);
+  const marks = new Map(
     rows.map((row) => [row.unitId, { bestPercent: row.bestPercent, complete: row.completedAt !== null }]),
   );
+  for (const { name } of finished) {
+    const level = name.split(":")[2];
+    for (const unit of course?.units ?? []) {
+      if (unit.level === level) marks.set(unit.id, { bestPercent: 100, complete: true });
+    }
+  }
+  return marks;
+}
+
+/**
+ * Remember everyone's bars as they stand. Runs when the server starts, so a
+ * deploy that adds words to units can't lower anyone's bar: the version
+ * before it already recorded where everyone was. Only ever raises marks.
+ */
+export async function rememberEveryonesProgress(
+  courseFor: (language: string) => Course,
+  now: Date = new Date(),
+): Promise<number> {
+  const learners = await prisma.itemProgress.groupBy({ by: ["userId", "language"] });
+  let raised = 0;
+  for (const { userId, language } of learners) {
+    const course = courseFor(language);
+    if (course.units.length === 0) continue;
+    const [states, marks] = await Promise.all([loadStates(userId, language), loadMarks(userId, course)]);
+    const progress = unitProgress(course, states, marks);
+    raised += raisedMarks(progress, marks).length;
+    await rememberProgress(userId, progress, marks, now);
+  }
+  return raised;
 }
 
 /**
