@@ -173,6 +173,21 @@ practice:
     answers: [quinze]
     why: Fifteen is quinze.
 
+  - type: fill
+    section: 1
+    prompt: "Tenho ___ casas."
+    hint: "2"
+    translation: I have two houses.
+    answers: [duas]
+    why: Casa is feminine, so 2 is duas — dois is for masculine nouns like livro.
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: dezessete
+    answers: [seventeen, "17"]
+    why: Dezessete is ten and seven run together — dez, e, sete.
+
   - type: translate
     section: 4
     direction: to-target

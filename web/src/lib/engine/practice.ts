@@ -6,10 +6,11 @@
  */
 
 import {
-  gradeIn,
+  gradeEnglishAnswer,
+  gradeTargetAnswer,
   normalizeKeepingAccents,
   pointsForResult,
-  stripArticle,
+  stripNounArticle,
   type GradeResult,
 } from "./grade";
 import type { PracticeItem } from "@/lib/curriculum/schema";
@@ -45,7 +46,7 @@ function exactMatch(answer: string, accepted: string[]): GradeResult {
   const typed = normalizeKeepingAccents(answer);
   const hit = accepted.some((value) => {
     const candidate = normalizeKeepingAccents(value);
-    return typed === candidate || stripArticle(typed) === stripArticle(candidate);
+    return typed === candidate || stripNounArticle(typed) === stripNounArticle(candidate);
   });
   return hit ? RIGHT : WRONG;
 }
@@ -70,7 +71,10 @@ export interface ItemGrade {
  *
  * Multiple choice is an exact match on the option clicked — "close" makes no
  * sense for a click. Typed answers use the language-aware grader: English is
- * contraction-tolerant, the target language is accent-sensitive.
+ * contraction-tolerant, the target language is accent-sensitive. A
+ * fill-in-the-blank gets no typo allowance: the blank is usually an ending
+ * or a little word ("parlo" or "parla", "lo" or "la"), so one letter off is
+ * the mistake the question is about.
  */
 export function gradePracticeItem(item: PracticeItem, answer: string, level: string): ItemGrade {
   const { answers, language } = acceptedAnswers(item);
@@ -84,7 +88,9 @@ export function gradePracticeItem(item: PracticeItem, answer: string, level: str
         : WRONG
       : item.strict_accents
         ? exactMatch(answer, answers)
-        : gradeIn(language, answer, answers);
+        : language === "english"
+          ? gradeEnglishAnswer(answer, answers)
+          : gradeTargetAnswer(answer, answers, item.type === "fill" ? { typos: false } : {});
 
   return {
     verdict: result.verdict,

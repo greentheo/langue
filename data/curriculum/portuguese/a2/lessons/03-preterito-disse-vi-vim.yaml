@@ -1,0 +1,237 @@
+title: "Ela disse que veio"
+subtitle: More irregular verbs in the past
+goal: use the past of poder, querer, dizer, ver, vir and dar to tell what happened
+minutes: 15
+
+sections:
+  - heading: Pude and quis — could and wanted
+    body: |
+      **Poder** and **querer** are irregular in the past. *Pôde* (he could)
+      has a hat accent so you can tell it from *pode* (he can).
+
+      In the past these two say what really happened. *Não pude ir* means
+      you couldn't go — and didn't. *Ele não quis comer* means he didn't
+      want to eat — he refused.
+    table:
+      columns: [pronoun, poder, querer]
+      rows:
+        - [eu, pude, quis]
+        - [você / ele / ela / a gente, pôde, quis]
+        - [nós, pudemos, quisemos]
+        - [vocês / eles / elas, puderam, quiseram]
+    examples:
+      - ["Não pude ir à festa.", "I couldn't go to the party."]
+      - ["Ela não quis pagar.", "She didn't want to pay."]
+      - ["Vocês puderam descansar?", "Were you able to rest?"]
+    tip: "*Quis* means \"I wanted\" and also \"he wanted\". Keep the pronoun when it isn't clear: *eu quis*, *ele quis*."
+
+  - heading: Disse — said, told
+    body: |
+      **Dizer** (to say, to tell) is irregular in the present — *digo, diz,
+      dizemos, dizem* — and in the past.
+
+      To report what someone said, put **que** (that) after it: *Ela disse
+      que está cansada.* — She said she's tired. English can drop "that";
+      Portuguese **can't** drop *que*.
+    table:
+      columns: [pronoun, dizer]
+      rows:
+        - [eu, disse]
+        - [você / ele / ela / a gente, disse]
+        - [nós, dissemos]
+        - [vocês / eles / elas, disseram]
+    examples:
+      - ["O que ele disse?", "What did he say?"]
+      - ["Eu disse que não.", "I said no."]
+      - ["Eles disseram que o ônibus está atrasado.", "They said the bus is late."]
+    tip: "*Disse* has a double *s*, so it hisses — never a *z* sound. With the Brazilian *d* before *i*, it sounds like JEE-see."
+
+  - heading: Vi — saw
+    body: |
+      **Ver** means "to see". It's short and irregular: *vejo, vê, vemos,
+      veem* in the present. In the past it's *vi, viu, vimos, viram*.
+
+      *Ver* also means "to watch": *Vi um filme ótimo.* — I watched a great
+      film. For TV and sport, *assistir* (lesson 9 of A1) works too.
+    table:
+      columns: [pronoun, ver]
+      rows:
+        - [eu, vi]
+        - [você / ele / ela / a gente, viu]
+        - [nós, vimos]
+        - [vocês / eles / elas, viram]
+    examples:
+      - ["Vi a Ana no mercado.", "I saw Ana at the market."]
+      - ["Você viu o jogo?", "Did you see the game?"]
+      - ["A gente viu o mar.", "We saw the sea."]
+
+  - heading: Vim — came
+    body: |
+      **Vir** means "to come" — towards the place where the speaker is.
+      Its past looks a lot like the past of *ver*, so take care: *vimos*
+      means "we saw", but "we came" is **viemos**.
+
+      To say how you came, use **de** + the transport: *vim de ônibus*,
+      *viemos de carro*, *ela veio de avião*. The one exception is on foot:
+      *vim a pé*.
+    table:
+      columns: [pronoun, vir (to come), ver (to see)]
+      rows:
+        - [eu, vim, vi]
+        - [você / ele / ela / a gente, veio, viu]
+        - [nós, viemos, vimos]
+        - [vocês / eles / elas, vieram, viram]
+    examples:
+      - ["Vim de ônibus.", "I came by bus."]
+      - ["Ela veio ao Brasil ano passado.", "She came to Brazil last year."]
+      - ["Por que vocês não vieram?", "Why didn't you come?"]
+    tip: "Use *vir* only for coming to where you are. If you're going to a friend's party, you *go*: *Vou à sua festa*."
+
+  - heading: Dei — gave
+    body: |
+      **Dar** (to give) is an -ar verb, but in the past it takes -er
+      endings: *dei, deu, demos, deram*.
+
+      *Dar* turns up in lots of everyday phrases:
+
+      - **dar certo** — to work out: *Deu certo!* — It worked!
+      - **não deu** — it wasn't possible: *Não deu pra ir.* — I couldn't
+        make it.
+    table:
+      columns: [pronoun, dar]
+      rows:
+        - [eu, dei]
+        - [você / ele / ela / a gente, deu]
+        - [nós, demos]
+        - [vocês / eles / elas, deram]
+    examples:
+      - ["Dei um presente para o meu irmão.", "I gave my brother a present."]
+      - ["Deu tudo certo.", "Everything worked out."]
+      - ["Não deu pra ir.", "I couldn't make it."]
+
+words:
+  - [dizer, to say / to tell]
+  - [que, that (as in "she said that…")]
+  - [ver, to see / to watch]
+  - [vir, to come]
+  - [dar, to give]
+  - [dar certo, to work out]
+  - [descansar, to rest]
+  - [atrasado, late / delayed]
+  - [jogo, game / match]
+  - [mar, sea]
+  - [avião, plane]
+  - [a pé, on foot]
+  - [presente, present / gift]
+  - [filme, film / movie]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Eu não ___ ir à festa."
+    hint: poder, eu
+    translation: I couldn't go to the party.
+    answers: [pude]
+    why: Poder in the past with eu is pude.
+
+  - type: choice
+    section: 1
+    prompt: "\"He didn't want to eat.\""
+    options: [Ele não quis comer., Ele não quer comer., Ele não quis come.]
+    answer: Ele não quis comer.
+    why: Quis is the past of querer, and the next verb stays in the infinitive.
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: Não pudemos ir.
+    answers: [We couldn't go., We weren't able to go., We could not go.]
+    why: Pudemos is the past of poder with nós.
+
+  - type: fill
+    section: 2
+    prompt: "O que ele ___?"
+    hint: dizer, ele
+    translation: What did he say?
+    answers: [disse]
+    why: Dizer in the past with ele is disse — the same as with eu.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: She said she's tired.
+    answers: [Ela disse que está cansada., Ela disse que estava cansada.]
+    why: After disse, you need que — Portuguese never drops "that" here.
+
+  - type: choice
+    section: 2
+    prompt: "\"They said the hotel is new.\""
+    options: [Eles disseram que o hotel é novo., Eles disseram o hotel é novo., Eles dizeram que o hotel é novo.]
+    answer: Eles disseram que o hotel é novo.
+    why: The past of dizer with eles is disseram, and que can't be left out.
+
+  - type: fill
+    section: 3
+    prompt: "Você ___ o jogo ontem?"
+    hint: ver, você
+    translation: Did you see the game yesterday?
+    answers: [viu]
+    why: Ver in the past with você is viu.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: We saw the sea.
+    answers: [Nós vimos o mar., Vimos o mar., A gente viu o mar.]
+    why: Ver in the past with nós is vimos.
+
+  - type: fill
+    section: 4
+    prompt: "Ela ___ de ônibus."
+    hint: vir, ela
+    translation: She came by bus.
+    answers: [veio]
+    why: Vir in the past with ela is veio.
+
+  - type: choice
+    section: 4
+    prompt: "\"We came by car.\""
+    options: [Viemos de carro., Vimos de carro., Vemos de carro.]
+    answer: Viemos de carro.
+    why: Viemos is "we came"; vimos is "we saw".
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: "Por que ela não veio?"
+    answers:
+      - "Why didn't she come?"
+      - "Why did she not come?"
+    why: "Veio is the past of vir with ela."
+
+  - type: fill
+    section: 5
+    prompt: "Eu ___ um presente para a minha mãe."
+    hint: dar, eu
+    translation: I gave my mother a present.
+    answers: [dei]
+    why: Dar in the past with eu is dei.
+
+  - type: fill
+    section: 5
+    prompt: "Eles ___ um livro para o professor."
+    hint: dar, eles
+    translation: They gave the teacher a book.
+    answers: [deram]
+    why: Dar takes -er endings in the past, so eles deram.
+
+  - type: translate
+    section: 5
+    direction: to-english
+    prompt: "Não deu certo."
+    answers:
+      - "It didn't work out."
+      - "It didn't work."
+      - "It didn't go well."
+      - "It did not work out."
+    why: "Dar certo means to work out, and deu is its past."

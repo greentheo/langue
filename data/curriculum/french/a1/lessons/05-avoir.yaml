@@ -175,3 +175,17 @@ practice:
     prompt: We're not hungry.
     answers: ["Nous n'avons pas faim.", "On n'a pas faim."]
     why: Ne becomes n' before the vowel of avons or a, and pas comes after the verb.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Il y a des pommes.
+    answers: ["There are apples.", "There are some apples."]
+    why: Il y a never changes — it means both "there is" and "there are".
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: Is there a bus?
+    answers: ["Il y a un bus ?", "Est-ce qu'il y a un bus ?", "Y a-t-il un bus ?"]
+    why: Raise your voice or put est-ce que in front; il y a itself stays the same.

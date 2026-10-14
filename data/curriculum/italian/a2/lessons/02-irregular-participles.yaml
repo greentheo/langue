@@ -1,0 +1,267 @@
+title: "Ho fatto, ho visto"
+subtitle: Irregular past participles
+goal: use the most common irregular past participles — fatto, detto, visto, preso, messo, scritto and more — to tell the story of your day or your trip
+minutes: 15
+
+sections:
+  - heading: The everyday irregulars
+    body: |
+      Many of the most common verbs have an **irregular** past participle:
+      it doesn't end in -ato, -uto or -ito. You'll use these every time you
+      talk about the past, so learn them as a set.
+
+      All of the verbs in this table take **avere**.
+
+      Two of them are new verbs: **dire** (to say, to tell) and **mettere**
+      (to put).
+    table:
+      columns: [infinitive, past participle, example]
+      rows:
+        - [fare, fatto, Ho fatto i compiti.]
+        - [dire, detto, Cosa hai detto?]
+        - [vedere, visto, Ho visto un film.]
+        - [prendere, preso, Abbiamo preso il treno.]
+        - [mettere, messo, Dove hai messo le chiavi?]
+        - [scrivere, scritto, Ho scritto una cartolina.]
+        - [leggere, letto, Hai letto il libro?]
+    examples:
+      - ["Cosa hai fatto ieri?", "What did you do yesterday?"]
+      - ["Ho preso un caffè al bar.", "I had a coffee at the café."]
+      - ["Avete visto il Colosseo?", "Did you see the Colosseum?"]
+    tip: "*Prendere* also means \"to have\" with food and drink, so *Ho preso un gelato* is \"I had an ice cream\"."
+
+  - heading: Opening, closing, losing, spending
+    body: |
+      Here are more irregular participles you'll need on a trip. They take
+      **avere** too.
+
+      A pattern helps: many verbs ending in **-dere** have a participle in
+      **-so**. You've already seen *prendere → preso*; the same goes for
+      *chiudere → chiuso*, *perdere → perso* and *spendere → speso*.
+
+      The rest you simply learn: *aprire → aperto*, *bere → bevuto*,
+      *chiedere → chiesto*, *rispondere → risposto*.
+    table:
+      columns: [infinitive, past participle, meaning]
+      rows:
+        - [aprire, aperto, opened]
+        - [chiudere, chiuso, closed]
+        - [perdere, perso, lost]
+        - [spendere, speso, spent]
+        - [bere, bevuto, drunk]
+        - [chiedere, chiesto, asked]
+        - [rispondere, risposto, answered]
+    examples:
+      - ["Ho perso il passaporto!", "I've lost my passport!"]
+      - ["Il museo ha chiuso alle sei.", "The museum closed at six."]
+      - ["Quanto hai speso?", "How much did you spend?"]
+    tip: "Participles also work as adjectives: *La porta è chiusa* — the door is closed. *Il negozio è aperto* — the shop is open."
+
+  - heading: Irregulars that take essere
+    body: |
+      A few irregular participles belong to verbs that take **essere**, so
+      their ending still changes: -o, -a, -i, -e.
+
+      **Essere** and **stare** share one participle, **stato**. *Sono stato
+      a Roma* means "I've been to Rome" or "I was in Rome". *Sono stata
+      male* means "I was ill".
+
+      Two more verbs to know: **rimanere** (to stay, to remain) and
+      **nascere** (to be born).
+    table:
+      columns: [infinitive, past participle, example]
+      rows:
+        - [essere, stato, Sono stato a Roma.]
+        - [stare, stato, Sono stata male.]
+        - [venire, venuto, Sei venuto in treno?]
+        - [rimanere, rimasto, Siamo rimasti a casa.]
+        - [nascere, nato, Sono nata nel 2012.]
+    examples:
+      - ["Siete stati in Italia?", "Have you (all) been to Italy?"]
+      - ["Mia nonna è nata a Napoli.", "My grandmother was born in Naples."]
+      - ["Sono rimasti in albergo.", "They stayed at the hotel."]
+    tip: "\"I was born\" is *sono nato* (a boy or man) or *sono nata* (a girl or woman) — literally \"I am born\". Don't try to translate the \"was\"."
+
+  - heading: Telling the story of your day
+    body: |
+      To tell a story in order, use these words between your sentences:
+
+      - **prima** — first
+      - **poi** — then
+      - **dopo** — after, afterwards; **dopo cena** — after dinner
+      - **alla fine** — in the end
+
+      *Sabato prima ho fatto colazione al bar, poi sono andata al museo.
+      Dopo pranzo ho preso il treno e alla fine sono tornata a casa.*
+    examples:
+      - ["Prima ho fatto la spesa, poi ho cucinato.", "First I did the shopping, then I cooked."]
+      - ["Dopo cena abbiamo visto un film.", "After dinner we watched a film."]
+      - ["Alla fine abbiamo preso un taxi.", "In the end we took a taxi."]
+    tip: "Italians usually say *ho visto un film* — \"I saw a film\" — even for one they watched at home. *Ho guardato un film* is fine too."
+
+words:
+  - [dire, "to say, to tell"]
+  - [mettere, to put]
+  - [bere, to drink]
+  - [perdere, to lose]
+  - [spendere, to spend]
+  - [chiedere, to ask]
+  - [rispondere, to answer]
+  - [rimanere, "to stay, to remain"]
+  - [nascere, to be born]
+  - [prima, first]
+  - [poi, then]
+  - [dopo, "after, afterwards"]
+  - [alla fine, in the end]
+  - [cartolina, postcard]
+  - [passaporto, passport]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Cosa hai ___ ieri?"
+    hint: fare
+    translation: What did you do yesterday?
+    answers: [fatto]
+    why: Fare has the irregular participle fatto.
+
+  - type: fill
+    section: 1
+    prompt: "Abbiamo ___ il treno delle otto."
+    hint: prendere
+    translation: We took the eight o'clock train.
+    answers: [preso]
+    why: Prendere has the irregular participle preso.
+
+  - type: fill
+    section: 1
+    prompt: "Ho ___ una cartolina alla nonna."
+    hint: scrivere
+    translation: I wrote a postcard to Grandma.
+    answers: [scritto]
+    why: Scrivere has the irregular participle scritto.
+
+  - type: translate
+    section: 1
+    direction: to-target
+    prompt: I saw a film.
+    answers:
+      - Ho visto un film.
+      - Io ho visto un film.
+      - Ho guardato un film.
+      - Io ho guardato un film.
+    why: Vedere has the irregular participle visto.
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: Dove hai messo le chiavi?
+    answers:
+      - Where did you put the keys?
+      - Where have you put the keys?
+      - Where did you put your keys?
+      - Where have you put your keys?
+    why: Messo is the participle of mettere, "to put".
+
+  - type: fill
+    section: 2
+    prompt: "Ho ___ il passaporto!"
+    hint: perdere
+    translation: I've lost my passport!
+    answers: [perso]
+    why: Like many verbs in -dere, perdere has a participle in -so.
+
+  - type: fill
+    section: 2
+    prompt: "Il negozio è ___."
+    hint: chiudere
+    translation: The shop is closed.
+    answers: [chiuso]
+    why: Chiuso is the participle of chiudere, and it works as an adjective too.
+
+  - type: translate
+    section: 2
+    direction: to-english
+    prompt: Quanto hai speso?
+    answers:
+      - How much did you spend?
+      - How much have you spent?
+    why: Speso is the participle of spendere, "to spend".
+
+  - type: choice
+    section: 2
+    prompt: What is the past participle of *aprire*?
+    options: [aprito, aperto, aputo]
+    answer: aperto
+    why: Aprire is irregular — its participle is aperto.
+
+  - type: fill
+    section: 3
+    prompt: "Lucia è ___ a Milano."
+    hint: nascere
+    translation: Lucia was born in Milan.
+    answers: [nata]
+    why: Nascere takes essere, so its participle nato ends in -a for Lucia.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: I've been to Rome. (a woman speaking)
+    answers:
+      - Sono stata a Roma.
+      - Io sono stata a Roma.
+    why: Essere takes essere as its helper, and its participle is stato — stata for a woman.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: We stayed at home.
+    answers:
+      - Siamo rimasti a casa.
+      - Noi siamo rimasti a casa.
+      - Siamo rimaste a casa.
+      - Noi siamo rimaste a casa.
+      - Siamo restati a casa.
+      - Noi siamo restati a casa.
+      - Siamo restate a casa.
+      - Noi siamo restate a casa.
+      - Siamo stati a casa.
+      - Noi siamo stati a casa.
+      - Siamo state a casa.
+      - Noi siamo state a casa.
+    why: Rimanere takes essere, and its participle is rimasto — rimasti for a group.
+
+  - type: choice
+    section: 3
+    prompt: "Marco says \"I came by train.\" Which is right?"
+    options: [Ho venuto in treno., Sono venuto in treno., Sono venuta in treno.]
+    answer: Sono venuto in treno.
+    why: Venire takes essere, and its participle venuto ends in -o for Marco.
+
+  - type: fill
+    section: 4
+    prompt: "___ cena abbiamo visto un film."
+    hint: after
+    translation: After dinner we watched a film.
+    answers: [dopo]
+    why: Dopo means "after", and dopo cena is "after dinner".
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Prima ho fatto colazione, poi sono uscito.
+    answers:
+      - First I had breakfast, then I went out.
+      - First I ate breakfast, then I went out.
+      - First I had breakfast and then I went out.
+      - I had breakfast first, then I went out.
+      - First I had breakfast, then I left.
+      - First I had breakfast and then went out.
+    why: Prima means "first" and poi means "then".
+
+  - type: choice
+    section: 4
+    prompt: Which word means "then"?
+    options: [prima, poi, alla fine]
+    answer: poi
+    why: Poi is "then"; prima is "first" and alla fine is "in the end".

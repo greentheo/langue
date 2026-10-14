@@ -1,0 +1,355 @@
+# The A2 phrasebook, grouped by situation (README: "Phrases file"). Phrases
+# are learned as whole chunks, so some preview grammar that a later unit
+# teaches — `literally` shows how they're built. Nothing here repeats A1.
+
+situations:
+  - id: stories
+    title: Stories and news
+    phrases:
+      - target: ["¿Qué tal el fin de semana?"]
+        english: ["How was your weekend?", "How was the weekend?"]
+        note: "*¿Qué tal…?* asks how something went. Try any event: *¿Qué tal la fiesta?*"
+        literally: what such the weekend?
+      - target: ["¿Qué hiciste ayer?"]
+        english: ["What did you do yesterday?"]
+        note: "*Hiciste* is the past of *hacer*. Politely: *¿Qué hizo usted ayer?*"
+        literally: what you-did yesterday?
+      - target: ["Lo pasé muy bien.", "La pasé muy bien."]
+        english: ["I had a great time.", "I had a really good time.", "I had a very good time."]
+        note: "*La pasé* in much of Latin America, *lo pasé* in Spain — both are right."
+        literally: it I-spent very well
+      - target: ["Nada especial."]
+        english: ["Nothing special.", "Nothing much."]
+        note: "A handy answer to *¿Qué hiciste?*"
+      - target: ["¡Fue increíble!"]
+        english: ["It was amazing!", "It was incredible!", "It was awesome!"]
+        note: "*Fue* sums up something that's over — a trip, a party, a game."
+        literally: it-was incredible!
+      - target: ["¿Y qué pasó?", "¿Qué pasó?"]
+        english: ["And what happened?", "What happened?", "So what happened?"]
+        literally: and what happened?
+      - target: ["¡No me digas!"]
+        english: ["You don't say!", "No way!", "Really?"]
+        note: Shows surprise at news, good or bad.
+        literally: don't tell me!
+      - target: ["¡Qué suerte!"]
+        english: ["How lucky!", "Lucky you!", "What luck!"]
+        literally: what luck!
+      - target: ["¡Qué pena!", "¡Qué lástima!"]
+        english: ["What a shame!", "What a pity!", "That's too bad!"]
+        note: "For bad news. In Mexico and Colombia, *me da pena* can also mean \"I'm embarrassed\"."
+        literally: what pity!
+      - target: ["Me alegro mucho."]
+        english: ["I'm really glad.", "I'm very glad.", "I'm so glad."]
+        note: "For good news. *Me alegro por ti* — I'm happy for you."
+        literally: myself I-gladden a-lot
+
+  - id: travel
+    title: Trains, buses and delays
+    phrases:
+      - target: ["Un boleto de ida y vuelta, por favor.", "Un billete de ida y vuelta, por favor."]
+        english: ["A round-trip ticket, please.", "A return ticket, please.", "One round-trip ticket, please."]
+        note: "One way is *solo ida*. *Boleto* in Latin America, *billete* in Spain."
+        literally: a ticket of going and return, please
+      - target: ["¿De qué andén sale el tren?"]
+        english: ["Which platform does the train leave from?", "What platform does the train leave from?", "Which platform does the train go from?"]
+        note: "*El andén* is the platform. Spanish puts *de* (from) at the front of the question."
+        literally: from what platform leaves the train?
+      - target: ["¿A qué hora sale el próximo tren?"]
+        english: ["What time does the next train leave?", "When does the next train leave?"]
+        literally: at what hour leaves the next train?
+      - target: ["El tren está retrasado.", "El tren tiene retraso.", "El tren viene con retraso."]
+        english: ["The train is delayed.", "The train is late.", "The train is running late."]
+        note: "For a flight: *el vuelo está retrasado*. In Argentina you'll also hear *demorado*."
+        literally: the train is delayed
+      - target: ["Perdí el tren."]
+        english: ["I missed the train.", "I've missed the train."]
+        note: "*Perder* is to lose — and to miss a train, a bus or a flight."
+        literally: I-lost the train
+      - target: ["¿Este autobús va al centro?"]
+        english: ["Does this bus go downtown?", "Does this bus go to the center?", "Does this bus go to the city center?", "Does this bus go to the town center?"]
+        literally: this bus goes to-the center?
+      - target: ["¿Dónde me bajo?"]
+        english: ["Where do I get off?", "Where should I get off?"]
+        note: "*Bajarse* is to get off; *subirse* is to get on."
+        literally: where myself I-get-down?
+      - target: ["No encuentro mi maleta."]
+        english: ["I can't find my suitcase.", "I can't find my luggage."]
+        note: Spanish says "I don't find" where English says "I can't find".
+        literally: not I-find my suitcase
+      - target: ["¿Cuánto tarda el viaje?"]
+        english: ["How long does the trip take?", "How long is the trip?", "How long does the journey take?"]
+        note: "*Tardar* is to take (time): *tarda dos horas* — it takes two hours."
+        literally: how-much takes the trip?
+
+  - id: clothes
+    title: Buying clothes
+    phrases:
+      - target: ["¿Tiene una talla más grande?"]
+        english: ["Do you have a bigger size?", "Do you have a larger size?", "Do you have it in a bigger size?"]
+        note: "For a smaller one: *una talla más pequeña*."
+        literally: have-you(polite) a size more big?
+      - target: ["¿Lo tiene en azul?", "¿La tiene en azul?"]
+        display: ¿Lo / La tiene en azul?
+        english: ["Do you have it in blue?", "Have you got it in blue?"]
+        note: "*Lo* for a masculine thing (*el suéter*), *la* for a feminine one (*la camisa*). Swap in any color."
+        literally: it have-you(polite) in blue?
+      - target: ["Me queda grande."]
+        english: ["It's too big for me.", "It's too big.", "It's big on me."]
+        note: "*Quedar* is how clothes fit: *me queda pequeño* (too small), *me queda bien* (it fits, it suits me)."
+        literally: to-me it-stays big
+      - target: ["¿Cómo me queda?"]
+        english: ["How does it look on me?", "How does it look?", "Does it suit me?"]
+        literally: how to-me it-stays?
+      - target: ["¿Dónde están los probadores?"]
+        english: ["Where are the fitting rooms?", "Where are the changing rooms?", "Where is the fitting room?"]
+        note: "In some countries: *los vestidores*."
+        literally: where are the try-on-rooms?
+      - target: ["¿Puedo devolver esto?", "¿Puedo devolverlo?"]
+        english: ["Can I return this?", "Can I return it?", "Could I return this?", "Can I bring this back?"]
+        literally: can-I give-back this?
+      - target: ["Lo compré ayer.", "La compré ayer."]
+        display: Lo / La compré ayer.
+        english: ["I bought it yesterday."]
+        note: "*Lo* for a masculine thing, *la* for a feminine one. It goes in front of the verb."
+        literally: it I-bought yesterday
+      - target: ["¿Lo puedo cambiar por otra talla?", "¿Puedo cambiarlo por otra talla?", "¿La puedo cambiar por otra talla?", "¿Puedo cambiarla por otra talla?"]
+        display: ¿Lo / La puedo cambiar por otra talla?
+        english: ["Can I exchange it for another size?", "Can I change it for another size?", "Can I swap it for another size?", "Could I exchange it for a different size?"]
+        literally: it can-I change for other size?
+      - target: ["¿Está en oferta?"]
+        english: ["Is it on sale?", "Is this on sale?", "Is it on offer?"]
+        note: "The big sales season is *las rebajas*."
+        literally: is-it in offer?
+
+  - id: health
+    title: The doctor and the pharmacy
+    phrases:
+      - target: ["Me duele la garganta desde el lunes."]
+        english: ["I've had a sore throat since Monday.", "My throat has hurt since Monday.", "My throat has been hurting since Monday."]
+        note: "Spanish uses the present with *desde*, because it still hurts."
+        literally: to-me hurts the throat since the Monday
+      - target: ["Tengo fiebre."]
+        english: ["I have a fever.", "I have a temperature.", "I've got a fever."]
+        literally: I-have fever
+      - target: ["Creo que tengo gripe.", "Creo que tengo gripa."]
+        english: ["I think I have the flu.", "I think I've got the flu.", "I think I have flu."]
+        note: "*Gripa* in Mexico and Colombia. A cold is *un resfriado*."
+        literally: I-believe that I-have flu
+      - target: ["Me lastimé el brazo.", "Me hice daño en el brazo."]
+        english: ["I hurt my arm.", "I've hurt my arm."]
+        note: "*Lastimarse* in Latin America; in Spain, *hacerse daño*. For your own body, Spanish says *el brazo*, not *mi brazo*."
+        literally: myself I-hurt the arm
+      - target: ["¿Tiene algo para la tos?"]
+        english: ["Do you have anything for a cough?", "Do you have something for a cough?", "Have you got anything for a cough?"]
+        literally: have-you(polite) something for the cough?
+      - target: ["¿Cuántas veces al día?", "¿Cuántas veces por día?"]
+        english: ["How many times a day?", "How many times per day?"]
+        note: "Ask this about medicine. The answer: *tres veces al día* — three times a day."
+        literally: how-many times to-the day?
+      - target: ["Quisiera pedir una cita con el médico.", "Quisiera hacer una cita con el médico.", "Quisiera una cita con el médico."]
+        english: ["I'd like to make an appointment with the doctor.", "I'd like an appointment with the doctor.", "I'd like to book an appointment with the doctor."]
+        literally: I-would-like ask-for an appointment with the doctor
+      - target: ["Me siento mejor."]
+        english: ["I feel better.", "I'm feeling better."]
+        note: "*Mejor* is better; *peor* is worse: *me siento peor*."
+        literally: myself I-feel better
+      - target: ["¿Es grave?"]
+        english: ["Is it serious?"]
+        literally: is-it serious?
+
+  - id: phone
+    title: On the phone
+    phrases:
+      - target: ["¿Aló?", "¿Bueno?", "¿Diga?"]
+        english: ["Hello? (answering the phone)", "Hello?"]
+        note: "How you answer the phone: *¿Aló?* in much of South America, *¿Bueno?* in Mexico, *¿Diga?* or *¿Sí?* in Spain."
+      - target: ["¿De parte de quién?"]
+        english: ["Who's calling?", "May I ask who's calling?", "Who is calling, please?"]
+        note: What a receptionist or a friend's parent asks when they answer.
+        literally: from part of whom?
+      - target: ["Habla Ana.", "Soy Ana."]
+        english: ["It's Ana.", "This is Ana.", "Ana speaking."]
+        note: "Swap in your own name. On the phone, say who you are with *habla* or *soy* — not *me llamo*."
+        literally: speaks Ana
+      - target: ["¿Podría hablar con la señora López?"]
+        english: ["Could I speak to Mrs. López?", "Could I speak with Mrs. López?", "Can I speak to Mrs. López?", "May I speak to Mrs. López?"]
+        note: "*Podría* is a polite \"could I\". To a friend's parent you can also ask *¿Está Pablo?* — is Pablo there?"
+        literally: could-I speak with the Mrs. López?
+      - target: ["¿Puedo dejar un mensaje?", "¿Le puedo dejar un mensaje?", "¿Puedo dejarle un mensaje?"]
+        english: ["Can I leave a message?", "Could I leave a message?", "May I leave a message?"]
+        literally: can-I leave a message?
+      - target: ["Te llamo más tarde."]
+        english: ["I'll call you later.", "I'll call you back later.", "I'll phone you later."]
+        note: "The present works for a quick promise. Politely: *lo llamo* or *la llamo más tarde*."
+        literally: you I-call more late
+      - target: ["Te mandé un mensaje."]
+        english: ["I sent you a message.", "I sent you a text.", "I texted you."]
+        note: "*Te escribí* (I wrote to you) works too."
+        literally: to-you I-sent a message
+      - target: ["Se cortó la llamada."]
+        english: ["The call got cut off.", "We got cut off.", "The call dropped."]
+        literally: itself cut the call
+      - target: ["No te oigo bien.", "No te escucho bien."]
+        english: ["I can't hear you well.", "I can't hear you very well.", "I can't hear you properly."]
+        note: "In Latin America people often use *escuchar* (to listen) for hearing on the phone."
+        literally: not you I-hear well
+      - target: ["Me quedé sin batería."]
+        english: ["My battery died.", "My battery ran out.", "My phone died.", "I ran out of battery."]
+        note: "*Quedarse sin* is to run out of: *me quedé sin dinero*."
+        literally: myself I-stayed without battery
+
+  - id: restaurant
+    title: At a restaurant
+    phrases:
+      - target: ["Quisiera reservar una mesa para cuatro."]
+        english: ["I'd like to book a table for four.", "I'd like to reserve a table for four.", "I would like to book a table for four."]
+        note: "Add the time: *para esta noche a las ocho*."
+        literally: I-would-like reserve a table for four
+      - target: ["¿Me podría traer la carta?", "¿Me podría traer el menú?", "¿Podría traerme la carta?", "¿Podría traerme el menú?"]
+        english: ["Could you bring me the menu?", "Could I have the menu?", "Could you bring the menu?"]
+        note: "*La carta* and *el menú* both mean the menu. In Spain, *el menú* is often the set meal of the day."
+        literally: to-me could-you(polite) bring the menu?
+      - target: ["¿Qué lleva este plato?"]
+        english: ["What's in this dish?", "What does this dish have in it?"]
+        note: "*Llevar* (to carry) also means to have in it, for food."
+        literally: what carries this dish?
+      - target: ["Para mí, el pescado.", "El pescado para mí."]
+        english: ["The fish for me.", "I'll have the fish.", "For me, the fish."]
+        note: "The easy way to order — swap in any dish. After *para*, \"me\" is *mí*, with an accent."
+        literally: for me, the fish
+      - target: ["Soy alérgico a los mariscos.", "Soy alérgica a los mariscos.", "Tengo alergia a los mariscos."]
+        display: Soy alérgico / alérgica a los mariscos.
+        english: ["I'm allergic to seafood.", "I'm allergic to shellfish."]
+        note: "-o if you're male, -a if you're female. Or, for anyone: *tengo alergia a…*"
+        literally: I-am allergic to the seafoods
+      - target: ["Disculpe, esto no es lo que pedí.", "Esto no es lo que pedí."]
+        english: ["Excuse me, this isn't what I ordered.", "This isn't what I ordered.", "Sorry, this isn't what I ordered."]
+        note: "*Disculpe* keeps a complaint polite. *Pedí* is the past of *pedir*, to order."
+        literally: excuse(polite), this not is what I-ordered
+      - target: ["Creo que hay un error en la cuenta."]
+        english: ["I think there's a mistake in the bill.", "I think there's a mistake on the bill.", "I think there's a mistake in the check.", "I think there's a mistake on the check."]
+        literally: I-believe that there-is an error in the bill
+      - target: ["¿Podemos pagar por separado?"]
+        english: ["Can we pay separately?", "Could we pay separately?"]
+        literally: can-we pay by separate?
+      - target: ["Todo estuvo muy rico.", "Todo estuvo muy bueno."]
+        english: ["Everything was delicious.", "Everything was really good.", "Everything was very good."]
+        note: "Say it when the waiter asks how it was. In Spain you'll also hear *estaba todo muy bueno*."
+        literally: all was very rich
+
+  - id: home
+    title: At home
+    phrases:
+      - target: ["¿Dónde pongo esto?"]
+        english: ["Where do I put this?", "Where should I put this?", "Where shall I put this?"]
+        literally: where I-put this?
+      - target: ["¿Has visto mis llaves?", "¿Viste mis llaves?"]
+        english: ["Have you seen my keys?", "Did you see my keys?"]
+        note: "In Latin America you'll often hear the preterite: *¿Viste mis llaves?*"
+        literally: have-you seen my keys?
+      - target: ["Te toca lavar los platos."]
+        english: ["It's your turn to wash the dishes.", "It's your turn to do the dishes."]
+        note: "*Me toca* — it's my turn. In Mexico, the dishes are often *los trastes*."
+        literally: to-you it-touches wash the dishes
+      - target: ["¿Me ayudas a poner la mesa?"]
+        english: ["Can you help me set the table?", "Will you help me set the table?", "Could you help me set the table?", "Can you help me lay the table?"]
+        literally: me you-help to put the table?
+      - target: ["Yo saco la basura."]
+        english: ["I'll take out the trash.", "I'll take the trash out.", "I'll take out the garbage.", "I'll take the rubbish out."]
+        note: "Spanish uses the present for a quick offer: *yo lavo los platos* — I'll do the dishes."
+        literally: I take-out the trash
+      - target: ["Tienes que ordenar tu cuarto.", "Tienes que ordenar tu habitación.", "Tienes que ordenar tu recámara."]
+        english: ["You have to tidy your room.", "You have to tidy up your room.", "You need to tidy your room.", "You have to clean up your room."]
+        note: "Bedroom: *cuarto* in most of Latin America, *recámara* in Mexico, *habitación* in Spain."
+        literally: you-have that tidy your room
+      - target: ["Se fue la luz."]
+        english: ["The power went out.", "The power's gone out.", "The power has gone out.", "The electricity went out."]
+        note: "*La luz* is the light — and the electricity."
+        literally: itself went the light
+      - target: ["¿Cuánto es el alquiler?", "¿Cuánto es la renta?"]
+        english: ["How much is the rent?", "What's the rent?"]
+        note: "*La renta* in Mexico; *el alquiler* in most other places."
+        literally: how-much is the rent?
+      - target: ["Apaga la luz, por favor."]
+        english: ["Turn off the light, please.", "Switch off the light, please.", "Turn the light off, please."]
+        note: "To a friend or family member. *Prende la luz* (*enciende la luz* in Spain) — turn on the light."
+        literally: turn-off the light, please
+
+  - id: hotel
+    title: At the hotel
+    phrases:
+      - target: ["Tengo una reserva a nombre de García.", "Tengo una reservación a nombre de García."]
+        english: ["I have a reservation under the name García.", "I have a booking under the name García.", "I have a reservation in the name of García.", "I have a booking in the name of García."]
+        note: "Swap in your own name. *Reservación* is common in Mexico."
+        literally: I-have a reservation to name of García
+      - target: ["Quisiera una habitación doble para dos noches."]
+        english: ["I'd like a double room for two nights."]
+        note: "For one person: *una habitación individual* (or *sencilla*)."
+        literally: I-would-like a room double for two nights
+      - target: ["¿El desayuno está incluido?", "¿Está incluido el desayuno?"]
+        english: ["Is breakfast included?", "Is the breakfast included?"]
+        literally: the breakfast is included?
+      - target: ["¿A qué hora hay que dejar la habitación?"]
+        english: ["What time is checkout?", "What time do we have to leave the room?", "What time do I have to leave the room?", "When is checkout?"]
+        note: "*Hay que* + infinitive means \"you have to\", for everyone."
+        literally: at what hour one-must leave the room?
+      - target: ["Hay un problema con la habitación."]
+        english: ["There's a problem with the room."]
+        literally: there-is a problem with the room
+      - target: ["El aire acondicionado no funciona."]
+        english: ["The air conditioning doesn't work.", "The air conditioning isn't working.", "The AC doesn't work.", "The AC isn't working."]
+        note: "*Funcionar* is to work, for machines: *la ducha no funciona*."
+        literally: the air conditioned not works
+      - target: ["No hay agua caliente."]
+        english: ["There's no hot water.", "There isn't any hot water."]
+        literally: not there-is water hot
+      - target: ["¿Me podría dar otra toalla?"]
+        english: ["Could you give me another towel?", "Could I have another towel?", "Could you give me one more towel?"]
+        note: "*Podría* (could) is softer than *puede* (can) — just right in a hotel."
+        literally: to-me could-you(polite) give another towel?
+      - target: ["¿Podría cambiar de habitación?"]
+        english: ["Could I change rooms?", "Could I switch rooms?", "Could I change room?"]
+        note: "Here *podría* means \"I could\". *¿Me podría cambiar de habitación?* asks the receptionist to move you."
+        literally: could-I change of room?
+
+  - id: plans
+    title: Making plans
+    phrases:
+      - target: ["¿Tienes planes para el fin de semana?"]
+        english: ["Do you have plans for the weekend?", "Do you have any plans for the weekend?", "Have you got plans for the weekend?"]
+        note: "Politely: *¿Tiene planes…?*"
+        literally: you-have plans for the weekend?
+      - target: ["¿Te gustaría ir al cine?"]
+        english: ["Would you like to go to the movies?", "Would you like to go to the cinema?"]
+        note: "*Me gustaría* — I'd like. Politely: *¿Le gustaría…?*"
+        literally: to-you would-please go to-the cinema?
+      - target: ["¡Me encantaría!"]
+        english: ["I'd love to!", "I'd love that!"]
+        literally: to-me it-would-delight!
+      - target: ["Lo siento, no puedo."]
+        english: ["Sorry, I can't.", "I'm sorry, I can't."]
+        note: "Add a reason: *tengo que estudiar* — I have to study."
+        literally: it I-feel, not I-can
+      - target: ["Tengo otros planes."]
+        english: ["I have other plans.", "I've got other plans."]
+        literally: I-have other plans
+      - target: ["¿Nos vemos a las seis?", "¿Quedamos a las seis?"]
+        english: ["Shall we meet at six?", "Should we meet at six?", "See you at six?"]
+        note: "*Quedar* (to arrange to meet) is common in Spain; *nos vemos* works everywhere."
+        literally: ourselves we-see at the six?
+      - target: ["¿Dónde nos vemos?", "¿Dónde quedamos?"]
+        english: ["Where shall we meet?", "Where should we meet?", "Where do we meet?"]
+        literally: where ourselves we-see?
+      - target: ["¿Lo dejamos para otro día?"]
+        english: ["Shall we leave it for another day?", "Shall we do it another day?", "Can we do it another day?"]
+        note: A kind way to change a plan.
+        literally: it we-leave for another day?
+      - target: ["Te aviso."]
+        english: ["I'll let you know."]
+        note: "*Avisar* is to let someone know. *Avísame* — let me know."
+        literally: you I-let-know
+      - target: ["Gracias por la invitación."]
+        english: ["Thanks for the invitation.", "Thank you for the invitation.", "Thanks for inviting me."]
+        note: "*Gracias* always takes *por*: *gracias por todo*."
+        literally: thanks for the invitation

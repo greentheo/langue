@@ -1,0 +1,219 @@
+title: "Beaucoup de, ne… plus"
+subtitle: Quantities, and "no more", "nothing", "nobody"
+goal: say how much of something with *beaucoup de, un peu de, assez de, trop de*, and say "no more", "nothing" and "nobody" with *ne… plus, ne… rien, ne… personne*
+minutes: 16
+
+sections:
+  - heading: A lot, a little, too much
+    body: |
+      To say how much, put **de** after the quantity word. Just **de**,
+      never *du, de la* or *des*:
+
+      - **beaucoup de** — a lot of, lots of
+      - **un peu de** — a little, a bit of
+      - **assez de** — enough
+      - **trop de** — too much, too many
+      - **combien de** — how much, how many
+
+      Before a vowel, *de* becomes *d'*: *beaucoup **d'**amis*.
+    examples:
+      - ["J'ai beaucoup de devoirs ce soir.", "I've got lots of homework tonight."]
+      - ["Tu veux un peu de sucre ?", "Do you want a bit of sugar?"]
+      - ["Il y a trop de monde ici.", "There are too many people here."]
+    tip: "*Beaucoup des amis* is a very common mistake: it's *beaucoup d'amis*. And \"very much\" is just *beaucoup*. *Très beaucoup* doesn't exist."
+
+  - heading: Exact amounts
+    body: |
+      Containers and measures work the same way, with plain **de**:
+
+      - *un kilo **de** pommes* — a kilo of apples
+      - *une bouteille **d'**eau* — a bottle of water
+      - *un morceau **de** gâteau* — a piece of cake
+      - *une tasse **de** thé* — a cup of tea
+      - *un verre **de** lait* — a glass of milk
+    examples:
+      - ["Je voudrais un kilo de tomates, s'il vous plaît.", "I'd like a kilo of tomatoes, please."]
+      - ["Une bouteille d'eau, s'il vous plaît.", "A bottle of water, please."]
+
+  - heading: "No more: ne… plus"
+    body: |
+      **Ne… plus** means "not any more" or "no longer". It wraps around the
+      verb, like *ne… pas*:
+
+      - *Je **n'**habite **plus** à Lyon.* — I don't live in Lyon any more.
+      - *Il **ne** pleut **plus**.* — It's stopped raining.
+
+      Like *pas de*, it's followed by plain **de** before a noun:
+
+      - *Il **n'**y a **plus de** lait.* — There's no milk left.
+    examples:
+      - ["Je ne joue plus au foot.", "I don't play football any more."]
+      - ["Il n'y a plus de pain.", "There's no bread left."]
+    tip: "With *ne*, *plus* means \"no more\". Without *ne*, it means \"more\": *plus tard* (later), *plus lentement* (more slowly)."
+
+  - heading: Nothing and nobody
+    body: |
+      Two more negatives work the same way:
+
+      - **ne… rien** — nothing, not anything
+      - **ne… personne** — nobody, not anybody
+
+      - *Je **n'**entends **rien**.* — I can't hear anything.
+      - *Il **n'**y a **personne**.* — There's nobody there.
+
+      They can also start a sentence. *Ne* is still there, before the verb:
+
+      - ***Rien n'**est facile.* — Nothing is easy.
+      - ***Personne ne** parle anglais.* — Nobody speaks English.
+    examples:
+      - ["Je ne mange rien le matin.", "I don't eat anything in the morning."]
+      - ["Je ne connais personne ici.", "I don't know anybody here."]
+
+  - heading: Nothing and nobody in the past
+    body: |
+      In the passé composé, **rien** goes **before** the past participle,
+      like *pas*. But **personne** goes **after** it:
+
+      - *Je **n'**ai **rien** mangé.* — I didn't eat anything.
+      - *Nous **n'**avons **rien** acheté.* — We didn't buy anything.
+      - *Je **n'**ai vu **personne**.* — I didn't see anybody.
+    examples:
+      - ["Tu n'as rien dit ?", "You didn't say anything?"]
+      - ["Nous n'avons rencontré personne.", "We didn't meet anyone."]
+    tip: "English says \"I *didn't* see *anybody*\". French has only one negative: *Je n'ai vu personne*. Adding *pas* (*je n'ai pas vu personne*) is wrong."
+
+words:
+  - [beaucoup de, "a lot of, lots of"]
+  - [un peu de, "a little, a bit of"]
+  - [assez de, enough]
+  - [trop de, "too much, too many"]
+  - [un kilo, a kilo]
+  - [une bouteille, a bottle]
+  - [un morceau, a piece]
+  - [une tasse, a cup]
+  - [un verre, a glass]
+  - [le sucre, sugar]
+  - [ne… plus, "no more, not any more"]
+  - [ne… rien, "nothing, not anything"]
+  - [ne… personne, "nobody, not anybody"]
+  - [le monde, "people (a crowd); the world"]
+  - [connaître, "to know (a person or place)"]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "J'ai beaucoup ___ devoirs."
+    hint: (of)
+    translation: I have lots of homework.
+    answers: [de]
+    why: After a quantity word like beaucoup, use plain de.
+
+  - type: fill
+    section: 1
+    prompt: "Il y a trop ___ monde ici."
+    hint: (of)
+    translation: There are too many people here.
+    answers: [de]
+    why: Trop is a quantity word, so it's followed by plain de.
+
+  - type: choice
+    section: 1
+    prompt: Which is correct?
+    options: [J'ai beaucoup des amis., "J'ai beaucoup d'amis.", J'ai beaucoup les amis.]
+    answer: "J'ai beaucoup d'amis."
+    why: After beaucoup it's plain de, which becomes d' before a vowel.
+
+  - type: translate
+    section: 1
+    direction: to-target
+    prompt: Do you want a bit of sugar? (to a friend)
+    answers: ["Tu veux un peu de sucre ?", "Est-ce que tu veux un peu de sucre ?", "Veux-tu un peu de sucre ?"]
+    why: Un peu de means a bit of, followed by the noun with no article.
+
+  - type: fill
+    section: 2
+    prompt: "un kilo ___ pommes"
+    hint: (of)
+    translation: a kilo of apples
+    answers: [de]
+    why: Measures are followed by plain de, never des.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: a bottle of water
+    answers: ["une bouteille d'eau"]
+    why: Containers take plain de, which becomes d' before eau.
+
+  - type: translate
+    section: 2
+    direction: to-english
+    prompt: Je voudrais un morceau de gâteau.
+    answers: ["I'd like a piece of cake.", "I would like a piece of cake.", "I'd like a slice of cake.", "I would like a slice of cake."]
+    why: Un morceau de means a piece of.
+
+  - type: fill
+    section: 3
+    prompt: "Il n'y a ___ de lait."
+    hint: (no more)
+    translation: There's no milk left.
+    answers: [plus]
+    why: Ne… plus means no more, and it's followed by plain de.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: I don't live in Lyon any more.
+    answers: ["Je n'habite plus à Lyon."]
+    why: Ne… plus wraps around the verb, like ne… pas.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: Il ne pleut plus.
+    answers: ["It's not raining any more.", "It's not raining anymore.", "It isn't raining any more.", "It isn't raining anymore.", "It's stopped raining.", "It has stopped raining.", "It is no longer raining."]
+    why: Ne… plus means not any more.
+
+  - type: fill
+    section: 4
+    prompt: "Il n'y a ___ ici."
+    hint: (nobody)
+    translation: There's nobody here.
+    answers: [personne]
+    why: Ne… personne means nobody.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: Nobody speaks English.
+    answers: ["Personne ne parle anglais."]
+    why: When personne starts the sentence, ne still goes before the verb.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Je ne mange rien le matin.
+    answers: ["I don't eat anything in the morning.", "I eat nothing in the morning.", "I don't eat anything in the mornings."]
+    why: Ne… rien means nothing, or not anything.
+
+  - type: fill
+    section: 5
+    prompt: "Nous n'avons ___ acheté."
+    hint: (nothing)
+    translation: We didn't buy anything.
+    answers: [rien]
+    why: In the passé composé, rien goes before the past participle, like pas.
+
+  - type: choice
+    section: 5
+    prompt: "How do you say \"I didn't see anybody\"?"
+    options: [Je n'ai pas vu personne., "Je n'ai vu personne.", "Je n'ai personne vu."]
+    answer: "Je n'ai vu personne."
+    why: Personne goes after the past participle, and you never add pas.
+
+  - type: translate
+    section: 5
+    direction: to-target
+    prompt: I didn't eat anything.
+    answers: ["Je n'ai rien mangé."]
+    why: Rien goes between avoir and the past participle.

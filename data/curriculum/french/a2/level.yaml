@@ -17,22 +17,39 @@ can_do:
 
 grammar:
   - topic: "Passé composé with avoir"
-  - topic: "Passé composé with être, and agreement of the past participle"
+    lessons: [01-passe-compose-avoir]
   - topic: "Irregular past participles: fait, pris, vu, eu, été, dit, mis"
-  - topic: "Imparfait for descriptions and habits, and choosing it over the passé composé"
+    lessons: [02-irregular-participles]
+  - topic: "Passé composé with être, and agreement of the past participle"
+    lessons: [03-passe-compose-etre]
   - topic: "Reflexive verbs in the passé composé"
-  - topic: "Futur simple"
+    lessons: [04-reflexive-past]
+  - topic: "Imparfait for descriptions and habits, and choosing it over the passé composé"
+    lessons: [05-imparfait, 06-imparfait-or-passe-compose]
   - topic: "Venir de + infinitive (just did) and être en train de (in the middle of)"
-  - topic: "Direct and indirect object pronouns: le, la, les, lui, leur"
-  - topic: "The pronouns y and en"
-  - topic: "Comparatives and superlatives: plus… que, le plus, meilleur, mieux"
-  - topic: "The imperative, including negatives"
-  - topic: "Quantities: beaucoup de, un peu de, assez de, trop de"
-  - topic: "Other negatives: ne… plus, ne… rien, ne… personne"
-  - topic: "Relative pronouns qui and que"
-  - topic: "Il faut + infinitive"
+    lessons: [07-time-expressions]
   - topic: "Time expressions: depuis, il y a, pendant"
+    lessons: [07-time-expressions]
+  - topic: "Futur simple"
+    lessons: [08-futur-simple]
+  - topic: "Quantities: beaucoup de, un peu de, assez de, trop de"
+    lessons: [09-quantities-negatives]
+  - topic: "Other negatives: ne… plus, ne… rien, ne… personne"
+    lessons: [09-quantities-negatives]
+  - topic: "Direct and indirect object pronouns: le, la, les, lui, leur"
+    lessons: [10-object-pronouns]
+  - topic: "The pronouns y and en"
+    lessons: [11-y-and-en]
+  - topic: "Comparatives and superlatives: plus… que, le plus, meilleur, mieux"
+    lessons: [12-comparisons]
+  - topic: "Relative pronouns qui and que (and où)"
+    lessons: [13-qui-que]
+  - topic: "The imperative, including negatives"
+    lessons: [14-imperative]
+  - topic: "Il faut + infinitive"
+    lessons: [14-imperative]
   - topic: "The polite conditional: j'aimerais, pourriez-vous"
+    lessons: [15-conditional]
 
 themes:
   - holidays and travel
@@ -44,3 +61,48 @@ themes:
   - school and work
   - childhood memories
   - food and recipes
+
+# The ten sub-levels, A2.1 to A2.10, in teaching order. Lessons stay in
+# number order, because each lesson's practice may use earlier lessons.
+# The heavier lessons (07, 09, 14) and the conditional each get a unit of
+# their own, with two vocabulary categories; the paired-lesson units get one.
+units:
+  - title: What did you do?
+    lessons: [01-passe-compose-avoir, 02-irregular-participles]
+    situations: [stories]
+    categories: [emotions]
+  - title: Comings and goings
+    lessons: [03-passe-compose-etre, 04-reflexive-past]
+    situations: [travel]
+    categories: [transportation]
+  - title: When I was little
+    lessons: [05-imparfait, 06-imparfait-or-passe-compose]
+    categories: [nature, weather]
+  - title: Since when?
+    lessons: [07-time-expressions]
+    situations: [health]
+    categories: [health, time]
+  - title: Making plans
+    lessons: [08-futur-simple]
+    situations: [plans]
+    categories: [leisure, verbs]
+  - title: A little, a lot
+    lessons: [09-quantities-negatives]
+    situations: [restaurant]
+    categories: [food, shopping]
+  - title: On the phone
+    lessons: [10-object-pronouns, 11-y-and-en]
+    situations: [phone]
+    categories: [technology]
+  - title: Bigger, better, cheaper
+    lessons: [12-comparisons, 13-qui-que]
+    situations: [clothes]
+    categories: [clothing]
+  - title: Home and school
+    lessons: [14-imperative]
+    situations: [home]
+    categories: [housing, education]
+  - title: Could you…?
+    lessons: [15-conditional]
+    situations: [hotel]
+    categories: [travel, work]

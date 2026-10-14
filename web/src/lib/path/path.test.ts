@@ -26,6 +26,7 @@ import {
 import { getCourse } from "./course";
 import { presentStep } from "./present";
 import { gradeReply } from "./sentences";
+import { normalizeKeepingAccents, stripArticle } from "@/lib/engine/grade";
 import type {
   Course,
   CourseDialogue,
@@ -472,6 +473,19 @@ describe("planStep", () => {
     assert.deepEqual(raisedMarks(unitProgress(course, states, marks), marks).map((m) => m.unitId), ["u1"]);
   });
 
+  test("a unit completed before stays done: words added to it later don't pull the learner back", () => {
+    // Unit 0 was completed (say, by its challenge) before two words were added to it.
+    const states = new Map<string, ItemState>();
+    for (const key of course.units[0].itemKeys.slice(0, -2)) states.set(key, state({ stage: 3, bestStage: 3, dueAt: at(DAY) }));
+    const marks = new Map([["u0", { bestPercent: 100, complete: true }]]);
+
+    assert.equal(firstOpenUnit(course, states), 0, "by items alone, unit 0 is open");
+    assert.equal(firstOpenUnit(course, states, marks), 1);
+    assert.equal(nextIntro(course, states, new Set(), marks)?.unitIndex, 1, "new material comes from unit 1");
+    const plan = planStep({ course, states, now: NOW, recentAccuracy: 1, random: steady, marks });
+    assert.ok(plan.exercises.filter((e) => e.role === "new").every((e) => course.items.get(e.keys[0])?.unitIndex !== 0));
+  });
+
   test("days to finish at the learner's pace, once there is something to go on", () => {
     // 10 hours covered 25%: 30 more hours at 30 minutes a day is 60 days.
     assert.equal(daysToFinish(25, 10, 30), 60);
@@ -518,6 +532,27 @@ describe("course from the real curriculum", () => {
   }
 
   for (const language of ["italian", "spanish", "french", "portuguese"]) {
+    test(`${language}: no word is taught twice, with or without its article`, () => {
+      const course = getCourse(language);
+      const seen = new Map<string, string>();
+      for (const item of course.items.values()) {
+        if (item.kind !== "word") continue;
+        for (const form of new Set(item.accepted.map((form) => stripArticle(normalizeKeepingAccents(form))))) {
+          if (form.length < 2) continue;
+          const other = seen.get(form);
+          // A form shared with another word ("il / la" and "la") is fine; the same word twice is not.
+          if (other && other !== item.key) {
+            const a = course.items.get(other);
+            assert.ok(
+              a?.kind === "word" && a.accepted.length > 1 && item.accepted.length > 1,
+              `${item.key} repeats ${other}`,
+            );
+          }
+          seen.set(form, item.key);
+        }
+      }
+    });
+
     test(`${language}: every sentence and role-play turn an item points at exists and fits`, () => {
       const course = getCourse(language);
       for (const item of course.items.values()) {

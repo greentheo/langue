@@ -1,0 +1,272 @@
+title: "Ho mangiato, sono andato"
+subtitle: The passato prossimo — saying what you did
+goal: say what you did yesterday, last weekend or on holiday with the passato prossimo, choosing avere or essere as the helper
+minutes: 15
+
+sections:
+  - heading: Two words for the past
+    body: |
+      To say what you **did** — yesterday, last weekend, on holiday —
+      Italian mostly uses the **passato prossimo**. Like English *I have
+      eaten*, it is made of two words:
+
+      - a **helper verb**, *avere* or *essere*, in the present
+      - a **past participle**, the past form of the verb: *mangiato*, *andato*
+
+      One Italian form covers both English pasts: *ho mangiato* means "I ate"
+      and "I have eaten".
+
+      Useful time words: **ieri** (yesterday), **ieri sera** (last night),
+      **sabato scorso** (last Saturday), **la settimana scorsa** (last week),
+      **l'anno scorso** (last year).
+    examples:
+      - ["Ieri ho mangiato una pizza.", "Yesterday I ate a pizza."]
+      - ["Hai mangiato?", "Have you eaten?"]
+      - ["Lo scorso fine settimana ho visitato Firenze.", "Last weekend I visited Florence."]
+    tip: "*Ieri ho mangiato* looks like \"yesterday I have eaten\", which sounds wrong in English. In Italian it's normal: it simply means \"yesterday I ate\"."
+
+  - heading: Making the past participle
+    body: |
+      For regular verbs, take the **-are**, **-ere** or **-ire** off the
+      infinitive and add **-ato**, **-uto** or **-ito**.
+
+      The *-isc-* verbs from A1 are regular here: *capire → capito*,
+      *finire → finito*. So are *avere → avuto*, *volere → voluto* and
+      *dovere → dovuto*.
+
+      Some very common verbs — *fare*, *vedere*, *prendere* — have
+      irregular participles. They have the next lesson to themselves.
+    table:
+      columns: [infinitive, ending, past participle]
+      rows:
+        - [parlare, "-ato", parlato]
+        - [mangiare, "-ato", mangiato]
+        - [vendere, "-uto", venduto]
+        - [avere, "-uto", avuto]
+        - [dormire, "-ito", dormito]
+        - [capire, "-ito", capito]
+    examples:
+      - ["Ho dormito dieci ore.", "I slept for ten hours."]
+      - ["Non ho capito.", "I didn't understand."]
+      - ["Hanno venduto la casa.", "They've sold the house."]
+    tip: "*Non ho capito* is one of the most useful things to say on a trip. Italians use it where English speakers say \"Sorry?\" or \"Pardon?\"."
+
+  - heading: With avere
+    body: |
+      Most verbs use **avere** as their helper. Avere changes for each
+      person; the participle stays exactly the same.
+
+      **Non** goes before the helper: *Non ho lavorato.* — I didn't work.
+      A question is the same words with a question mark: *Hai lavorato?* —
+      Did you work?
+
+      Time words can go at the start or the end: *Ieri ho lavorato* or *Ho
+      lavorato ieri*.
+    table:
+      columns: [person, avere, participle]
+      rows:
+        - [io, ho, mangiato]
+        - [tu, hai, mangiato]
+        - [lui / lei / Lei, ha, mangiato]
+        - [noi, abbiamo, mangiato]
+        - [voi, avete, mangiato]
+        - [loro, hanno, mangiato]
+    examples:
+      - ["Abbiamo giocato a calcio.", "We played football."]
+      - ["Hanno comprato una macchina nuova.", "They bought a new car."]
+      - ["Non ho lavorato ieri.", "I didn't work yesterday."]
+    tip: "English needs \"did\" for questions and negatives; Italian doesn't. *Hai dormito?* — Did you sleep? *Non ho dormito.* — I didn't sleep."
+
+  - heading: With essere — going, coming, staying
+    body: |
+      A smaller group of verbs uses **essere** as the helper. Most of them
+      are about **going, coming and staying**: *andare, arrivare, partire,
+      tornare, uscire, entrare, restare*.
+
+      With essere, the participle changes its last letter to match **who**
+      did it, just like an adjective:
+
+      - **-o** for a man or boy, **-a** for a woman or girl
+      - **-i** for a group, **-e** for a group of only women or girls
+    table:
+      columns: [person, male, female]
+      rows:
+        - [io, sono andato, sono andata]
+        - [tu, sei andato, sei andata]
+        - [lui / lei / Lei, è andato, è andata]
+        - [noi, siamo andati, siamo andate]
+        - [voi, siete andati, siete andate]
+        - [loro, sono andati, sono andate]
+    examples:
+      - ["Giulia è arrivata ieri.", "Giulia arrived yesterday."]
+      - ["Siamo tornati a casa tardi.", "We came home late."]
+      - ["Sabato sono uscita con Marco.", "On Saturday I went out with Marco. (a girl speaking)"]
+      - ["Sono andati in vacanza in Puglia.", "They went on holiday to Puglia."]
+    tip: "A mixed group takes -i: *Marco e Anna sono partiti.* Only an all-female group takes -e: *Anna e Sara sono partite.*"
+
+words:
+  - [tornare, "to come back, to go back"]
+  - [arrivare, to arrive]
+  - [uscire, to go out]
+  - [restare, to stay]
+  - [comprare, to buy]
+  - [vendere, to sell]
+  - [visitare, to visit]
+  - [nuotare, to swim]
+  - [ballare, to dance]
+  - [scorso, "last (week, year…)"]
+  - [ieri sera, "last night, yesterday evening"]
+  - [fine settimana, weekend]
+  - [vacanza, holiday]
+
+practice:
+  - type: fill
+    section: 3
+    prompt: "Ieri ___ mangiato una pizza."
+    hint: avere, io
+    translation: Yesterday I ate a pizza.
+    answers: [ho]
+    why: With io, the helper avere is ho.
+
+  - type: fill
+    section: 2
+    prompt: "Non ho ___."
+    hint: capire
+    translation: I didn't understand.
+    answers: [capito]
+    why: -ire verbs make their participle with -ito, and capire is regular here.
+
+  - type: fill
+    section: 3
+    prompt: "Sabato ___ giocato a tennis."
+    hint: avere, noi
+    translation: On Saturday we played tennis.
+    answers: [abbiamo]
+    why: With noi, the helper avere is abbiamo.
+
+  - type: fill
+    section: 2
+    prompt: "Hai ___ bene?"
+    hint: dormire
+    translation: Did you sleep well?
+    answers: [dormito]
+    why: Dormire is an -ire verb, so its participle ends in -ito.
+
+  - type: fill
+    section: 4
+    prompt: "Giulia è ___ ieri sera."
+    hint: arrivare
+    translation: Giulia arrived last night.
+    answers: [arrivata]
+    why: Arrivare takes essere, so the participle ends in -a for Giulia.
+
+  - type: fill
+    section: 4
+    prompt: "Marco e Luca ___ partiti ieri."
+    hint: essere
+    translation: Marco and Luca left yesterday.
+    answers: [sono]
+    why: Partire takes essere, and with loro the helper is sono.
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: Ieri ho mangiato un gelato.
+    answers:
+      - Yesterday I ate an ice cream.
+      - Yesterday I ate ice cream.
+      - Yesterday I had an ice cream.
+      - Yesterday I had ice cream.
+      - Yesterday I ate a gelato.
+      - Yesterday I had a gelato.
+      - I ate an ice cream yesterday.
+      - I ate ice cream yesterday.
+      - I had an ice cream yesterday.
+      - I had ice cream yesterday.
+    why: With a time word like ieri, the passato prossimo is the simple English past — "I ate".
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: We bought a new car.
+    answers:
+      - Abbiamo comprato una macchina nuova.
+      - Noi abbiamo comprato una macchina nuova.
+      - Abbiamo comprato una nuova macchina.
+      - Noi abbiamo comprato una nuova macchina.
+    why: Comprare takes avere — abbiamo comprato.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: I didn't work yesterday.
+    answers:
+      - Non ho lavorato ieri.
+      - Ieri non ho lavorato.
+      - Io non ho lavorato ieri.
+      - Ieri io non ho lavorato.
+    why: Non goes before the helper, and there is no word for "did".
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: Al mare abbiamo nuotato e ballato.
+    answers:
+      - At the seaside we swam and danced.
+      - We swam and danced at the seaside.
+      - At the beach we swam and danced.
+      - We swam and danced at the beach.
+      - At the sea we swam and danced.
+      - We swam and danced at the sea.
+    why: Nuotare and ballare are regular -are verbs, so their participles end in -ato.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: She went to the seaside.
+    answers:
+      - È andata al mare.
+      - Lei è andata al mare.
+    why: Andare takes essere, and the participle ends in -a because she is female.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Siamo tornati a casa tardi.
+    answers:
+      - We came home late.
+      - We came back home late.
+      - We got home late.
+      - We got back home late.
+      - We went home late.
+      - We went back home late.
+      - We returned home late.
+    why: Tornare takes essere, and -i shows that "we" are a group.
+
+  - type: choice
+    section: 1
+    prompt: What does *Ieri ho lavorato* mean?
+    options: [Yesterday I worked., Yesterday I'm working., Tomorrow I'll work.]
+    answer: Yesterday I worked.
+    why: Ho lavorato is the passato prossimo, and with ieri it means "I worked".
+
+  - type: choice
+    section: 2
+    prompt: What is the past participle of *vendere*?
+    options: [vendato, venduto, vendito]
+    answer: venduto
+    why: -ere verbs make their participle with -uto.
+
+  - type: choice
+    section: 4
+    prompt: Which helper does *andare* use in the passato prossimo?
+    options: [avere, essere]
+    answer: essere
+    why: Verbs of going and coming, like andare, use essere.
+
+  - type: choice
+    section: 4
+    prompt: "Anna says \"I left yesterday.\" Which is right?"
+    options: [Sono partito ieri., Sono partita ieri., Ho partito ieri.]
+    answer: Sono partita ieri.
+    why: Partire takes essere, and Anna is female, so the participle ends in -a.

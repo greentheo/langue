@@ -45,27 +45,21 @@ situations:
   - id: meeting
     title: Meeting people
     phrases:
-      - target: ["Tudo bem?", "Tudo bom?", "Como vai?"]
-        english: ["How are you?", "How's it going?", "Is everything OK?"]
-        note: The most common Brazilian greeting — often just means "hi".
+      - target: ["Tudo bem?", "Tudo bom?", "Como vai?", "Como vai você?"]
+        english: ["How are you?", "How's it going?", "How are you doing?", "Is everything OK?"]
+        note: The most common Brazilian greeting — often just means "hi". *Como vai?* (literally "how go?") is a little more formal.
         literally: everything well?
       - target: ["Tudo bem!", "Tudo bom!"]
         display: Tudo bem! / Tudo bom!
         english: ["I'm fine!", "All good!", "Everything's fine!"]
         note: The standard answer to *Tudo bem?*
         literally: everything well!
-      - target: ["Como vai?", "Tudo bem?", "Como vai você?"]
-        english: ["How are you?", "How are you doing?"]
-        literally: how go?
       - target: ["E você?"]
         english: ["And you?", "What about you?"]
       - target: ["Como você se chama?", "Qual é o seu nome?"]
-        english: ["What's your name?"]
-        note: To an older person, *Como o senhor se chama?* (a man) or *Como a senhora se chama?* (a woman).
-        literally: how you yourself call?
-      - target: ["Qual é o seu nome?", "Como você se chama?"]
         english: ["What's your name?", "What is your name?"]
-        literally: which is the your name?
+        note: "*Qual é o seu nome?* (which is your name?) means the same. To an older person, *Como o senhor se chama?* (a man) or *Como a senhora se chama?* (a woman)."
+        literally: how you yourself call?
       - target: ["Meu nome é...", "O meu nome é...", "Eu me chamo...", "Me chamo..."]
         english: ["My name is...", "I'm called..."]
         note: You can also say *Eu me chamo...* — "I call myself...".
@@ -149,30 +143,47 @@ situations:
       - target: ["Estava uma delícia!"]
         english: ["It was delicious!"]
         literally: (it) was a delight!
+
+  - id: shopping
+    title: Shopping
+    phrases:
       - target: ["Quanto custa?", "Quanto é?"]
         english: ["How much is it?", "How much does it cost?"]
         literally: how much costs?
       - target: ["Quanto custam?"]
         english: ["How much are they?", "How much do they cost?"]
         literally: how much cost (they)?
-      - target: ["Vou levar.", "Vou levar este."]
-        english: ["I'll take it.", "I'll take this one."]
-        note: In shops, *levar* (to take away) means to buy.
-        literally: (I) go take
-      - target: ["Só estou olhando, obrigado.", "Só estou olhando, obrigada.", "Só estou olhando."]
-        display: Só estou olhando, obrigado / obrigada.
-        english: ["I'm just looking, thanks.", "Just looking, thanks."]
-        literally: only (I) am looking, obliged
       - target: ["Vocês têm...?"]
         english: ["Do you have...?"]
         note: "Said to shop staff: *vocês* means \"you\" (the shop, all of you)."
         literally: you-all have...?
-      - target: ["É muito caro."]
-        english: ["It's too expensive.", "It's very expensive."]
-        literally: (it) is very expensive
+      - target: ["Só estou olhando, obrigado.", "Só estou olhando, obrigada.", "Só estou olhando."]
+        display: Só estou olhando, obrigado / obrigada.
+        english: ["I'm just looking, thanks.", "Just looking, thanks."]
+        literally: only (I) am looking, obliged
       - target: ["Posso experimentar?"]
         english: ["Can I try it on?", "May I try it on?"]
         literally: (I) can try?
+      - target: ["Tem outro tamanho?", "Vocês têm outro tamanho?"]
+        english: ["Do you have another size?", "Do you have a different size?", "Is there another size?"]
+        note: "*Tem?* (has?) is the everyday Brazilian way to ask \"is there…?\" or \"do you have…?\""
+        literally: (it) has other size?
+      - target: ["É muito caro."]
+        english: ["It's too expensive.", "It's very expensive."]
+        literally: (it) is very expensive
+      - target: ["Vou levar.", "Vou levar este."]
+        english: ["I'll take it.", "I'll take this one."]
+        note: In shops, *levar* (to take away) means to buy.
+        literally: (I) go take
+      - target: ["Só isso, obrigado.", "Só isso, obrigada.", "Só isso."]
+        display: Só isso, obrigado / obrigada.
+        english: ["That's all, thanks.", "That's it, thanks.", "Just that, thanks."]
+        note: "Your answer when the cashier asks *Mais alguma coisa?* — anything else?"
+        literally: only that, obliged
+
+  - id: getting-around
+    title: Getting around
+    phrases:
       - target: ["Onde fica a estação?"]
         english: ["Where is the station?", "Where's the station?"]
         note: "For places that don't move, Brazilians use *ficar*: *Onde fica...?*"
@@ -193,10 +204,18 @@ situations:
       - target: ["Sempre em frente."]
         english: ["Straight ahead.", "Straight on."]
         literally: always in front
+      - target: ["Onde é o ponto de ônibus?", "Onde fica o ponto de ônibus?"]
+        english: ["Where is the bus stop?", "Where's the bus stop?"]
+        note: "A *ponto de ônibus* is a bus stop. Long-distance buses leave from the *rodoviária*, the bus station."
+        literally: where is the point of bus?
       - target: ["A que horas sai o ônibus?"]
         english: ["What time does the bus leave?"]
         note: In Portugal the bus is *o autocarro*.
         literally: at what hours leaves the bus?
+      - target: ["Uma passagem para São Paulo, por favor."]
+        english: ["A ticket to São Paulo, please.", "One ticket to São Paulo, please."]
+        note: "A *passagem* is a ticket for a bus, train or plane. For a show, a game or a film it's an *ingresso*."
+        literally: a passage for São Paulo, for favour
       - target: ["Estou perdido.", "Estou perdida."]
         display: Estou perdido / perdida.
         english: ["I'm lost."]
@@ -248,10 +267,26 @@ situations:
       - target: ["Pode me ajudar?"]
         english: ["Can you help me?", "Could you help me?"]
         literally: (you) can me help?
+
+  - id: small-talk
+    title: Small talk
+    phrases:
       - target: ["Que legal!"]
         english: ["How cool!", "That's cool!", "Cool!"]
         note: In Brazil *legal* means cool or nice (and also "legal").
         literally: what cool!
+      - target: ["Que bom!"]
+        english: ["Great!", "How nice!", "That's good!", "Good!"]
+        note: When someone tells you good news.
+        literally: what good!
+      - target: ["Que pena!"]
+        english: ["What a shame!", "What a pity!", "That's a shame!", "Too bad!"]
+        note: When someone tells you bad news.
+        literally: what pity!
+      - target: ["Que calor!"]
+        english: ["It's so hot!", "It's really hot!"]
+        note: You'll hear it all summer in Brazil. On a cold day, *Que frio!*
+        literally: what heat!
       - target: ["Está frio.", "Tá frio."]
         english: ["It's cold."]
         note: About the weather. *Tá* is the spoken short form of *está*.

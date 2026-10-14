@@ -1,0 +1,234 @@
+title: "¿Has estado en México?"
+subtitle: "The present perfect: *he comido, has visto*"
+goal: say what you've done today or this week, ask about experiences with *¿Has…?*, and use *ya* and *todavía no*
+minutes: 15
+
+sections:
+  - heading: "He + -ado / -ido"
+    body: |
+      The *present perfect* is "have done": "I have eaten". Spanish builds
+      it the same way, with **haber** (to have) and a *participle* — the
+      "-ed" form:
+
+      - -ar → **-ado**: *hablar → hablado*
+      - -er, -ir → **-ido**: *comer → comido*, *vivir → vivido*
+
+      The participle never changes: *ella ha comido*, *ellos han comido*.
+    table:
+      columns: [who, haber, example]
+      rows:
+        - [yo, he, he comido]
+        - [tú, has, has comido]
+        - [él / ella / usted, ha, ha comido]
+        - [nosotros / nosotras, hemos, hemos comido]
+        - [vosotros / vosotras (Spain), habéis, habéis comido]
+        - [ellos / ellas / ustedes, han, han comido]
+    examples:
+      - ["Hoy he trabajado mucho.", "I've worked a lot today."]
+      - ["¿Has hablado con tu madre?", "Have you talked to your mom?"]
+    tip: "*Haber* is only for this tense. For owning things, \"have\" is still *tener*: *tengo un perro*."
+
+  - heading: Irregular participles
+    body: |
+      Just like English *seen* and *written*, a few common verbs have
+      their own participle. You'll use them a lot, so learn them as words.
+
+      The one you'll hear most is **hecho**, from *hacer*: *¿Qué has
+      hecho?* — What have you done?
+    table:
+      columns: [verb, participle, English]
+      rows:
+        - [hacer, hecho, "done, made"]
+        - [ver, visto, seen]
+        - [decir, dicho, "said, told"]
+        - [escribir, escrito, written]
+        - [abrir, abierto, opened]
+        - [poner, puesto, put]
+        - [volver, vuelto, "come back, gone back"]
+        - [romper, roto, broken]
+    examples:
+      - ["¿Qué has hecho hoy?", "What have you done today?"]
+      - ["No he visto la película.", "I haven't seen the movie."]
+      - ["Mi hermano ha roto la ventana.", "My brother has broken the window."]
+
+  - heading: "Have you ever…?"
+    body: |
+      The present perfect is the way to talk about experiences — things
+      you've done at some point in your life so far. This use works
+      everywhere Spanish is spoken.
+
+      - **alguna vez** — ever
+      - **nunca** — never
+      - **una vez, dos veces** — once, twice
+
+      To ask if someone has been to a place, use **estar**: *¿Has estado
+      en México?*
+    examples:
+      - ["—¿Has estado alguna vez en México? —Sí, he estado dos veces.", "—Have you ever been to Mexico? —Yes, I've been twice."]
+      - ["Nunca he comido sushi.", "I've never eaten sushi."]
+      - ["¿Has probado el mole?", "Have you tried mole?"]
+    tip: "*Vez* (time, occasion) becomes *veces* in the plural: the z changes to c before *-es*."
+
+  - heading: "Ya and todavía no"
+    body: |
+      - **ya** — already (or "yet" in a question)
+      - **todavía no** — not yet
+
+      Both usually go before *haber*: *Ya he comido* (I've already eaten),
+      *Todavía no he comido* (I haven't eaten yet). *Haber* and the
+      participle always stay together — nothing goes between them.
+    examples:
+      - ["—¿Ya has comido? —Sí, ya he comido.", "—Have you eaten yet? —Yes, I've already eaten."]
+      - ["—¿Has hecho la tarea? —Todavía no.", "—Have you done your homework? —Not yet."]
+      - ["Todavía no he visto el museo.", "I haven't seen the museum yet."]
+    tip: "Never split them: *ya he comido*, not *he ya comido*. Reflexive words go before *haber* too: *me he duchado*."
+
+  - heading: Spain and Latin America
+    body: |
+      In **Spain**, people use the present perfect for anything that
+      happened today, this week or this year: *Hoy me he levantado
+      temprano.*
+
+      In most of **Latin America**, people use the preterite for these:
+      *Hoy me levanté temprano.* They keep the present perfect mostly for
+      experiences.
+
+      Both are understood everywhere, so use the one you hear around you.
+    examples:
+      - ["Esta mañana he desayunado en el hotel.", "This morning I had breakfast at the hotel. (Spain)"]
+      - ["Esta mañana desayuné en el hotel.", "This morning I had breakfast at the hotel. (Latin America)"]
+      - ["¿Ya comiste?", "Have you eaten yet? (Latin America)"]
+
+words:
+  - [haber, "to have (he comido: I have eaten)"]
+  - [alguna vez, ever]
+  - [dos veces, twice]
+  - [ya, already]
+  - [todavía no, not yet]
+  - [esta mañana, this morning]
+  - [esta semana, this week]
+  - [probar, "to try, to taste"]
+  - [volver, "to come back, to go back"]
+  - [romper, to break]
+  - [poner, to put]
+  - [perder, to lose]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Hoy ___ comido en un restaurante."
+    hint: haber, yo
+    translation: Today I've eaten at a restaurant.
+    answers: [he]
+    why: The yo form of haber is he.
+
+  - type: fill
+    section: 1
+    prompt: "¿___ hablado con tu madre?"
+    hint: haber, tú
+    translation: Have you talked to your mother?
+    answers: [Has]
+    why: The tú form of haber is has.
+
+  - type: fill
+    section: 1
+    prompt: "Ana ha ___ mucho esta semana."
+    hint: trabajar
+    translation: Ana has worked a lot this week.
+    answers: [trabajado]
+    why: -ar verbs make their participle with -ado.
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: Hemos viajado mucho este año.
+    answers: [We have traveled a lot this year, We have travelled a lot this year, We have done a lot of traveling this year, We have done a lot of travelling this year]
+    why: Hemos viajado is the present perfect — "we have traveled".
+
+  - type: fill
+    section: 2
+    prompt: "¿Qué has ___ hoy?"
+    hint: hacer
+    translation: What have you done today?
+    answers: [hecho]
+    why: Hacer has an irregular participle, hecho.
+
+  - type: choice
+    section: 2
+    prompt: "The participle of *ver* is…"
+    options: [veído, visto, vido]
+    answer: visto
+    why: Ver has an irregular participle, visto.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: I haven't seen the movie.
+    answers: [No he visto la película, Yo no he visto la película, Todavía no he visto la película]
+    why: Visto is the irregular participle of ver, and no goes before haber.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: Have you ever been to Mexico? (to a friend)
+    answers: ["¿Has estado alguna vez en México?", "¿Alguna vez has estado en México?", "¿Has estado en México alguna vez?", "¿Has estado en México?", "¿Has ido alguna vez a México?", "¿Alguna vez has ido a México?", "¿Has ido a México alguna vez?", "¿Has ido a México?", "¿Alguna vez estuviste en México?", "¿Alguna vez fuiste a México?"]
+    why: Experiences use the present perfect, and alguna vez means "ever".
+
+  - type: fill
+    section: 3
+    prompt: "Nunca ___ comido sushi."
+    hint: haber, yo
+    translation: I've never eaten sushi.
+    answers: [he]
+    why: Nunca goes before haber, and the yo form is he.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: He estado en Perú dos veces.
+    answers: [I have been to Peru twice, I have been to Peru two times, I have been in Peru twice, I have been in Peru two times]
+    why: He estado is "I have been", and dos veces is "twice".
+
+  - type: fill
+    section: 4
+    prompt: "—¿Has hecho la tarea? —No, ___ no."
+    hint: yet
+    translation: "—Have you done your homework? —No, not yet."
+    answers: [todavía]
+    why: Todavía no means "not yet".
+
+  - type: choice
+    section: 4
+    prompt: "I've already eaten:"
+    options: [Ya he comido., He ya comido., He comido todavía.]
+    answer: Ya he comido.
+    why: Ya goes before haber — nothing goes between haber and the participle.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Todavía no he visto el museo.
+    answers: [I have not seen the museum yet, I have not yet seen the museum, I still have not seen the museum]
+    why: Todavía no means "not yet".
+
+  - type: choice
+    section: 5
+    prompt: In most of Latin America, how do people usually say "I got up early today"?
+    options: [Hoy me levanté temprano., Hoy me he levantado temprano.]
+    answer: Hoy me levanté temprano.
+    why: Most Latin Americans use the preterite for things that happened today.
+
+  - type: fill
+    section: 5
+    prompt: "Esta mañana ___ he duchado."
+    hint: myself
+    translation: I showered this morning.
+    answers: [me]
+    why: The reflexive word goes in front of haber.
+
+  - type: translate
+    section: 5
+    direction: to-target
+    prompt: Have you had breakfast yet? (to a friend)
+    answers: ["¿Ya has desayunado?", "¿Has desayunado ya?", "¿Has desayunado?", "¿Tú ya has desayunado?", "¿Ya desayunaste?", "¿Desayunaste ya?", "¿Desayunaste?", "¿Tú ya desayunaste?"]
+    why: Spain says ¿Ya has desayunado?; most of Latin America says ¿Ya desayunaste? Both are right.

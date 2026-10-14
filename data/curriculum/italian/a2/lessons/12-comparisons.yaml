@@ -1,0 +1,224 @@
+title: "Più veloce del treno"
+subtitle: Comparing things — more, less, as, the most
+goal: compare people, places and things with più, meno and come, say "the biggest" and "the best", and use -issimo for "very"
+minutes: 15
+
+sections:
+  - heading: More than, less than
+    body: |
+      To compare two things, use **più** (more) or **meno** (less), then
+      the adjective, then **di** (than). *Di* joins the article as usual:
+      *del, dello, della, dei…*
+
+      - *Roma è più grande di Firenze.* — Rome is bigger than Florence.
+      - *Il treno è più veloce dell'autobus.* — The train is faster than the bus.
+
+      English has two ways — "bigger" and "more expensive". Italian has just
+      one: *più grande*, *più caro*. The adjective still matches its noun:
+      *La giacca è più cara.*
+    examples:
+      - ["Marco è più alto di me.", "Marco is taller than me."]
+      - ["Questa giacca è più cara di quella.", "This jacket is more expensive than that one."]
+      - ["La mia valigia è meno pesante della tua.", "My suitcase is lighter than yours."]
+      - ["Sono più basso di mio fratello.", "I'm shorter than my brother."]
+    tip: "\"Than\" before a name, a noun or *me*, *te* is *di*: *più alto di Marco*, *più alto di me*."
+
+  - heading: "As … as: come"
+    body: |
+      To say two things are the **same**, use **come** (as, like) after the
+      adjective:
+
+      - *Luca è alto come suo padre.* — Luca is as tall as his father.
+      - *Questo albergo è caro come l'altro.* — This hotel is as expensive as the other one.
+
+      To say "not as … as", put *non* before the verb: *Il mio paese non è
+      grande come Roma.* — My town isn't as big as Rome.
+    examples:
+      - ["Mia sorella è alta come me.", "My sister is as tall as me."]
+      - ["L'autobus non è veloce come il treno.", "The bus isn't as fast as the train."]
+      - ["Il mio computer è lento come il tuo.", "My computer is as slow as yours."]
+    tip: "English needs two words — \"as tall as\". Italian needs just one: *alto come*."
+
+  - heading: The most, the least
+    body: |
+      To say "the biggest" or "the most expensive", put **the** before
+      *più* or *meno*. "In" or "of" after it is **di**:
+
+      - *È il ristorante più caro della città.* — It's the most expensive restaurant in the city.
+      - *Giulia è la più giovane della classe.* — Giulia is the youngest in the class.
+
+      Notice the order with a noun: the noun comes first, then *più* + the
+      adjective: *la città più bella* — the most beautiful city.
+    examples:
+      - ["Il Po è il fiume più lungo d'Italia.", "The Po is the longest river in Italy."]
+      - ["Questo è il volo meno caro.", "This is the cheapest flight."]
+      - ["Chi è il più alto della famiglia?", "Who's the tallest in the family?"]
+      - ["Questa è la camera più economica.", "This is the cheapest room."]
+    tip: "\"In\" after \"the most\" is usually *di*: *il più alto della classe*, *la città più bella d'Italia*."
+
+  - heading: "Better, best — and -issimo"
+    body: |
+      **Buono** (good) and **cattivo** (bad) have their own forms, like
+      English "better" and "worse".
+
+      To say **very**, add **-issimo** to the adjective after dropping its
+      last vowel: *bello → bellissimo* (really beautiful), *caro →
+      carissimo* (very expensive). It changes like any adjective:
+      *bellissima, bellissimi, bellissime*.
+    table:
+      columns: [adjective, better / worse, the best / the worst]
+      rows:
+        - [buono — good, migliore, il migliore]
+        - [cattivo — bad, peggiore, il peggiore]
+    examples:
+      - ["Questa pizza è migliore di quella.", "This pizza is better than that one."]
+      - ["È il gelato migliore di Roma!", "It's the best ice cream in Rome!"]
+      - ["La spiaggia era bellissima.", "The beach was really beautiful."]
+    tip: "*Migliore* is \"better\" with a noun: *una pizza migliore*. With a verb, \"better\" is *meglio*: *Oggi sto meglio.* — I feel better today."
+
+words:
+  - [più, more]
+  - [meno, less]
+  - [alto, tall]
+  - [basso, short]
+  - [caro, expensive]
+  - [economico, cheap]
+  - [veloce, fast]
+  - [lento, slow]
+  - [pesante, heavy]
+  - [giovane, young]
+  - [migliore, "better; (il migliore) the best"]
+  - [peggiore, "worse; (il peggiore) the worst"]
+  - [meglio, better (with verbs)]
+  - [quello, that (one)]
+  - [fiume, river]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Roma è più grande ___ Firenze."
+    hint: than
+    translation: Rome is bigger than Florence.
+    answers: [di]
+    why: '"Than" is di.'
+
+  - type: fill
+    section: 1
+    prompt: "Il treno è più veloce ___."
+    hint: than the bus
+    translation: The train is faster than the bus.
+    answers: ["dell'autobus"]
+    why: "\"Than\" is di, and di joins l' to make dell'autobus."
+
+  - type: translate
+    section: 1
+    direction: to-target
+    prompt: Marco is taller than me.
+    answers: [Marco è più alto di me.]
+    why: '"Taller" is più alto, and "than" is di.'
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: La mia valigia è meno pesante della tua.
+    answers:
+      - My suitcase is lighter than yours.
+      - My suitcase is less heavy than yours.
+      - My suitcase isn't as heavy as yours.
+    why: Meno pesante is "less heavy" — in natural English, "lighter".
+
+  - type: fill
+    section: 2
+    prompt: "Luca è alto ___ suo padre."
+    hint: as
+    translation: Luca is as tall as his father.
+    answers: [come, quanto]
+    why: '"As … as" is just come after the adjective.'
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: The bus isn't as fast as the train.
+    answers:
+      - L'autobus non è veloce come il treno.
+      - L'autobus non è così veloce come il treno.
+      - L'autobus non è veloce quanto il treno.
+      - L'autobus non è tanto veloce quanto il treno.
+    why: Non goes before the verb, and "as … as" is come.
+
+  - type: choice
+    section: 2
+    prompt: How do you say "My sister is as tall as me"?
+    options: [Mia sorella è alta come me., Mia sorella è più alta di me., Mia sorella è alta di me.]
+    answer: Mia sorella è alta come me.
+    why: Come after the adjective means "as … as".
+
+  - type: fill
+    section: 3
+    prompt: "È il ristorante più caro ___ città."
+    hint: in the
+    translation: It's the most expensive restaurant in the city.
+    answers: [della]
+    why: After "the most", "in" is di — and di + la makes della.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: the cheapest room
+    answers:
+      - la camera meno cara
+      - la camera più economica
+      - la stanza meno cara
+      - la stanza più economica
+    why: The noun comes first, then meno cara or più economica.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: Chi è il più alto della famiglia?
+    answers:
+      - Who's the tallest in the family?
+      - Who's the tallest of the family?
+      - Who's the tallest person in the family?
+    why: Il più alto is "the tallest", and della famiglia is "in the family".
+
+  - type: choice
+    section: 3
+    prompt: How do you say "the most expensive restaurant"?
+    options: [il ristorante più caro, il più ristorante caro, il ristorante caro più]
+    answer: il ristorante più caro
+    why: The noun comes first, then più and the adjective.
+
+  - type: fill
+    section: 4
+    prompt: "Questa pizza è ___ di quella."
+    hint: better
+    translation: This pizza is better than that one.
+    answers: [migliore]
+    why: '"Better" with a noun is migliore.'
+
+  - type: fill
+    section: 4
+    prompt: "La spiaggia era ___."
+    hint: bello + -issimo
+    translation: The beach was really beautiful.
+    answers: [bellissima]
+    why: Drop the -o of bello, add -issimo, and make it feminine for la spiaggia.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: È il gelato migliore di Roma!
+    answers:
+      - It's the best ice cream in Rome!
+      - It's the best gelato in Rome!
+      - This is the best ice cream in Rome!
+      - It's the best ice-cream in Rome!
+    why: Il migliore is "the best", and di Roma is "in Rome".
+
+  - type: choice
+    section: 4
+    prompt: How do you say "I feel better today"?
+    options: [Oggi sto migliore., Oggi sto meglio., Oggi sto più bene.]
+    answer: Oggi sto meglio.
+    why: With a verb, "better" is meglio.

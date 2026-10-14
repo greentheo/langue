@@ -177,3 +177,17 @@ practice:
     prompt: See you tomorrow!
     answers: ["À demain !"]
     why: À demain literally means "until tomorrow".
+
+  - type: choice
+    section: 2
+    prompt: You're talking to two friends at the same time. Which word for "you" do you use?
+    options: [tu, vous]
+    answer: vous
+    why: Vous is also the word for "you" when you talk to more than one person, even friends.
+
+  - type: choice
+    section: 2
+    prompt: You're talking to your little brother. Which word for "you" do you use?
+    options: [tu, vous]
+    answer: tu
+    why: Tu is for family, friends and children.

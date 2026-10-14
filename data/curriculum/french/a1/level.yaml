@@ -71,6 +71,7 @@ units:
   - title: How French sounds
     lessons: [02-sounds]
     situations: [understanding]
+    categories: [language]
   - title: Who are you?
     lessons: [03-etre]
     situations: [meeting]
@@ -85,10 +86,10 @@ units:
   - title: Everyday verbs
     lessons: [07-er-verbs, 08-ir-re-verbs]
     situations: [help]
-    categories: [education]
+    categories: [education, verbs]
   - title: Family and friends
     lessons: [09-adjectives, 10-family]
-    categories: [family]
+    categories: [family, colors, body, animals]
   - title: Going places
     lessons: [11-aller-faire]
     situations: [getting-around]
@@ -100,4 +101,4 @@ units:
   - title: Your day
     lessons: [14-routine, 15-places]
     situations: [small-talk]
-    categories: [daily_routines, weather, nature]
+    categories: [daily_routines, weather, nature, clothing]

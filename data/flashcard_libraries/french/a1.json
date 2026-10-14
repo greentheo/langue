@@ -3,7 +3,7 @@
     "language": "french",
     "level": "a1",
     "version": "1.0",
-    "word_count": 94,
+    "word_count": 379,
     "created_at": "2025-09-10T23:55:58.950923",
     "description": "Beginner (A1) French vocabulary: everyday expressions and basic phrases",
     "source": "data/vocab_sources/french/a1.psv",
@@ -18,7 +18,7 @@
         "good day"
       ],
       "examples": [
-        "Bonjour, comment allez-vous?"
+        "Bonjour, comment allez-vous ?"
       ],
       "category": "greetings",
       "difficulty": 1,
@@ -32,7 +32,7 @@
         "goodbye"
       ],
       "examples": [
-        "Au revoir, à demain!"
+        "Au revoir, à demain !"
       ],
       "category": "greetings",
       "difficulty": 1,
@@ -56,6 +56,132 @@
       ]
     },
     {
+      "word": "s'il vous plaît",
+      "translations": [
+        "please"
+      ],
+      "examples": [
+        "Une baguette, s'il vous plaît."
+      ],
+      "category": "greetings",
+      "difficulty": 1,
+      "examples_en": [
+        "A baguette, please."
+      ]
+    },
+    {
+      "word": "bonne nuit",
+      "translations": [
+        "good night"
+      ],
+      "examples": [
+        "Bonne nuit, à demain matin !"
+      ],
+      "category": "greetings",
+      "difficulty": 1,
+      "examples_en": [
+        "Good night, see you tomorrow morning!"
+      ]
+    },
+    {
+      "word": "à bientôt",
+      "translations": [
+        "see you soon"
+      ],
+      "examples": [
+        "Merci pour tout et à bientôt !"
+      ],
+      "category": "greetings",
+      "difficulty": 1,
+      "examples_en": [
+        "Thanks for everything, and see you soon!"
+      ]
+    },
+    {
+      "word": "bienvenue",
+      "translations": [
+        "welcome"
+      ],
+      "examples": [
+        "Bienvenue à Paris, madame !"
+      ],
+      "category": "greetings",
+      "difficulty": 1,
+      "examples_en": [
+        "Welcome to Paris, madam!"
+      ]
+    },
+    {
+      "word": "désolé",
+      "translations": [
+        "sorry"
+      ],
+      "examples": [
+        "Désolé, je suis en retard !"
+      ],
+      "category": "greetings",
+      "difficulty": 1,
+      "examples_en": [
+        "Sorry, I'm late!"
+      ]
+    },
+    {
+      "word": "coucou",
+      "translations": [
+        "hi (very informal)"
+      ],
+      "examples": [
+        "Coucou Léa, tu vas bien ?"
+      ],
+      "category": "greetings",
+      "difficulty": 1,
+      "examples_en": [
+        "Hi Léa, are you OK?"
+      ]
+    },
+    {
+      "word": "à tout à l'heure",
+      "translations": [
+        "see you later (today)"
+      ],
+      "examples": [
+        "À tout à l'heure, au café !"
+      ],
+      "category": "greetings",
+      "difficulty": 2,
+      "examples_en": [
+        "See you later, at the café!"
+      ]
+    },
+    {
+      "word": "bonne chance",
+      "translations": [
+        "good luck"
+      ],
+      "examples": [
+        "Bonne chance pour ton match !"
+      ],
+      "category": "greetings",
+      "difficulty": 1,
+      "examples_en": [
+        "Good luck with your match!"
+      ]
+    },
+    {
+      "word": "je vous en prie",
+      "translations": [
+        "you're welcome (polite)"
+      ],
+      "examples": [
+        "Merci, madame. – Je vous en prie."
+      ],
+      "category": "greetings",
+      "difficulty": 2,
+      "examples_en": [
+        "Thank you, madam. – You're welcome."
+      ]
+    },
+    {
       "word": "oui",
       "translations": [
         "yes"
@@ -75,26 +201,1581 @@
         "no"
       ],
       "examples": [
-        "Non, merci."
+        "Non, merci, je n'ai pas faim."
       ],
       "category": "basics",
       "difficulty": 1,
       "examples_en": [
-        "No, thank you."
+        "No thanks, I'm not hungry."
       ]
     },
     {
-      "word": "s'il vous plaît",
+      "word": "mais",
       "translations": [
-        "please"
+        "but"
       ],
       "examples": [
-        "Pouvez-vous me passer le sel, s'il vous plaît ?"
+        "J'aime le thé, mais je préfère le café."
       ],
-      "category": "greetings",
+      "category": "basics",
       "difficulty": 1,
       "examples_en": [
-        "Could you pass me the salt, please?"
+        "I like tea, but I prefer coffee."
+      ]
+    },
+    {
+      "word": "ou",
+      "translations": [
+        "or"
+      ],
+      "examples": [
+        "Tu veux du thé ou du café ?"
+      ],
+      "category": "basics",
+      "difficulty": 1,
+      "examples_en": [
+        "Do you want tea or coffee?"
+      ]
+    },
+    {
+      "word": "voilà",
+      "translations": [
+        "here you are",
+        "there you go",
+        "there it is"
+      ],
+      "examples": [
+        "Voilà ton café, Paul."
+      ],
+      "category": "basics",
+      "difficulty": 1,
+      "examples_en": [
+        "Here's your coffee, Paul."
+      ]
+    },
+    {
+      "word": "bien sûr",
+      "translations": [
+        "of course"
+      ],
+      "examples": [
+        "Bien sûr, tu peux venir avec nous."
+      ],
+      "category": "basics",
+      "difficulty": 1,
+      "examples_en": [
+        "Of course you can come with us."
+      ]
+    },
+    {
+      "word": "moi",
+      "translations": [
+        "me"
+      ],
+      "examples": [
+        "Et moi, je m'appelle Hugo."
+      ],
+      "category": "basics",
+      "difficulty": 1,
+      "examples_en": [
+        "And me, my name's Hugo."
+      ]
+    },
+    {
+      "word": "toi",
+      "translations": [
+        "you (after et, avec, chez…)"
+      ],
+      "examples": [
+        "Je vais au cinéma avec toi."
+      ],
+      "category": "basics",
+      "difficulty": 1,
+      "examples_en": [
+        "I'm going to the cinema with you."
+      ]
+    },
+    {
+      "word": "bien",
+      "translations": [
+        "well",
+        "good"
+      ],
+      "examples": [
+        "Je vais bien, merci."
+      ],
+      "category": "basics",
+      "difficulty": 1,
+      "examples_en": [
+        "I'm well, thanks."
+      ]
+    },
+    {
+      "word": "beaucoup",
+      "translations": [
+        "a lot",
+        "very much"
+      ],
+      "examples": [
+        "J'aime beaucoup ce livre."
+      ],
+      "category": "basics",
+      "difficulty": 1,
+      "examples_en": [
+        "I like this book a lot."
+      ]
+    },
+    {
+      "word": "un peu",
+      "translations": [
+        "a little",
+        "a bit"
+      ],
+      "examples": [
+        "Je suis un peu fatigué."
+      ],
+      "category": "basics",
+      "difficulty": 1,
+      "examples_en": [
+        "I'm a bit tired."
+      ]
+    },
+    {
+      "word": "peut-être",
+      "translations": [
+        "maybe",
+        "perhaps"
+      ],
+      "examples": [
+        "Peut-être demain, je ne sais pas."
+      ],
+      "category": "basics",
+      "difficulty": 2,
+      "examples_en": [
+        "Maybe tomorrow, I don't know."
+      ]
+    },
+    {
+      "word": "vraiment",
+      "translations": [
+        "really"
+      ],
+      "examples": [
+        "Il fait vraiment froid aujourd'hui."
+      ],
+      "category": "basics",
+      "difficulty": 2,
+      "examples_en": [
+        "It's really cold today."
+      ]
+    },
+    {
+      "word": "quelque chose",
+      "translations": [
+        "something"
+      ],
+      "examples": [
+        "Tu veux quelque chose à boire ?"
+      ],
+      "category": "basics",
+      "difficulty": 2,
+      "examples_en": [
+        "Do you want something to drink?"
+      ]
+    },
+    {
+      "word": "quelqu'un",
+      "translations": [
+        "someone",
+        "somebody",
+        "anybody"
+      ],
+      "examples": [
+        "Il y a quelqu'un ?"
+      ],
+      "category": "basics",
+      "difficulty": 2,
+      "examples_en": [
+        "Is anybody there?"
+      ]
+    },
+    {
+      "word": "personne",
+      "translations": [
+        "person"
+      ],
+      "examples": [
+        "Ta mère est une personne très gentille."
+      ],
+      "category": "basics",
+      "difficulty": 2,
+      "examples_en": [
+        "Your mother is a very kind person."
+      ]
+    },
+    {
+      "word": "nom",
+      "translations": [
+        "name",
+        "surname"
+      ],
+      "examples": [
+        "Quel est votre nom, s'il vous plaît ?"
+      ],
+      "category": "basics",
+      "difficulty": 1,
+      "examples_en": [
+        "What's your surname, please?"
+      ]
+    },
+    {
+      "word": "prénom",
+      "translations": [
+        "first name"
+      ],
+      "examples": [
+        "Mon prénom est Léa."
+      ],
+      "category": "basics",
+      "difficulty": 1,
+      "examples_en": [
+        "My first name is Léa."
+      ]
+    },
+    {
+      "word": "adresse",
+      "translations": [
+        "address"
+      ],
+      "examples": [
+        "Quelle est ton adresse ?"
+      ],
+      "category": "basics",
+      "difficulty": 2,
+      "examples_en": [
+        "What's your address?"
+      ]
+    },
+    {
+      "word": "numéro",
+      "translations": [
+        "number (phone, house, room)"
+      ],
+      "examples": [
+        "Quel est ton numéro de téléphone ?"
+      ],
+      "category": "basics",
+      "difficulty": 2,
+      "examples_en": [
+        "What's your phone number?"
+      ]
+    },
+    {
+      "word": "quoi",
+      "translations": [
+        "what"
+      ],
+      "examples": [
+        "Tu fais quoi ce soir ?"
+      ],
+      "category": "basics",
+      "difficulty": 1,
+      "examples_en": [
+        "What are you doing tonight?"
+      ]
+    },
+    {
+      "word": "pour",
+      "translations": [
+        "for"
+      ],
+      "examples": [
+        "Ce cadeau est pour toi."
+      ],
+      "category": "basics",
+      "difficulty": 1,
+      "examples_en": [
+        "This present is for you."
+      ]
+    },
+    {
+      "word": "chez",
+      "translations": [
+        "at (someone's home)",
+        "to (someone's home)"
+      ],
+      "examples": [
+        "Je suis chez ma grand-mère."
+      ],
+      "category": "basics",
+      "difficulty": 1,
+      "examples_en": [
+        "I'm at my grandmother's."
+      ]
+    },
+    {
+      "word": "langue",
+      "translations": [
+        "language",
+        "tongue"
+      ],
+      "examples": [
+        "Le français est une belle langue."
+      ],
+      "category": "language",
+      "difficulty": 2,
+      "examples_en": [
+        "French is a beautiful language."
+      ]
+    },
+    {
+      "word": "mot",
+      "translations": [
+        "word"
+      ],
+      "examples": [
+        "Je ne comprends pas ce mot."
+      ],
+      "category": "language",
+      "difficulty": 1,
+      "examples_en": [
+        "I don't understand this word."
+      ]
+    },
+    {
+      "word": "lettre",
+      "translations": [
+        "letter"
+      ],
+      "examples": [
+        "J'écris une lettre à mon ami."
+      ],
+      "category": "language",
+      "difficulty": 2,
+      "examples_en": [
+        "I'm writing a letter to my friend."
+      ]
+    },
+    {
+      "word": "phrase",
+      "translations": [
+        "sentence"
+      ],
+      "examples": [
+        "Cette phrase est trop longue."
+      ],
+      "category": "language",
+      "difficulty": 2,
+      "examples_en": [
+        "This sentence is too long."
+      ]
+    },
+    {
+      "word": "question",
+      "translations": [
+        "question"
+      ],
+      "examples": [
+        "J'ai une question, s'il vous plaît."
+      ],
+      "category": "language",
+      "difficulty": 1,
+      "examples_en": [
+        "I have a question, please."
+      ]
+    },
+    {
+      "word": "exemple",
+      "translations": [
+        "example"
+      ],
+      "examples": [
+        "Vous avez un exemple, s'il vous plaît ?"
+      ],
+      "category": "language",
+      "difficulty": 2,
+      "examples_en": [
+        "Do you have an example, please?"
+      ]
+    },
+    {
+      "word": "comment",
+      "translations": [
+        "how"
+      ],
+      "examples": [
+        "Comment ça s'écrit ?"
+      ],
+      "category": "language",
+      "difficulty": 1,
+      "examples_en": [
+        "How do you spell that?"
+      ]
+    },
+    {
+      "word": "lentement",
+      "translations": [
+        "slowly"
+      ],
+      "examples": [
+        "Vous pouvez parler lentement, s'il vous plaît ?"
+      ],
+      "category": "language",
+      "difficulty": 2,
+      "examples_en": [
+        "Can you speak slowly, please?"
+      ]
+    },
+    {
+      "word": "vite",
+      "translations": [
+        "fast",
+        "quickly"
+      ],
+      "examples": [
+        "Tu parles trop vite !"
+      ],
+      "category": "language",
+      "difficulty": 2,
+      "examples_en": [
+        "You're talking too fast!"
+      ]
+    },
+    {
+      "word": "encore",
+      "translations": [
+        "again",
+        "more",
+        "still"
+      ],
+      "examples": [
+        "Tu peux répéter encore une fois ?"
+      ],
+      "category": "language",
+      "difficulty": 2,
+      "examples_en": [
+        "Can you say it once more?"
+      ]
+    },
+    {
+      "word": "expliquer",
+      "translations": [
+        "to explain"
+      ],
+      "examples": [
+        "Tu peux expliquer ce mot ?"
+      ],
+      "category": "language",
+      "difficulty": 2,
+      "examples_en": [
+        "Can you explain this word?"
+      ]
+    },
+    {
+      "word": "épeler",
+      "translations": [
+        "to spell"
+      ],
+      "examples": [
+        "Vous pouvez épeler votre nom ?"
+      ],
+      "category": "language",
+      "difficulty": 2,
+      "examples_en": [
+        "Can you spell your name?"
+      ]
+    },
+    {
+      "word": "traduire",
+      "translations": [
+        "to translate"
+      ],
+      "examples": [
+        "Je dois traduire cette phrase en anglais."
+      ],
+      "category": "language",
+      "difficulty": 3,
+      "examples_en": [
+        "I have to translate this sentence into English."
+      ]
+    },
+    {
+      "word": "accent",
+      "translations": [
+        "accent"
+      ],
+      "examples": [
+        "Tu as un joli accent !"
+      ],
+      "category": "language",
+      "difficulty": 2,
+      "examples_en": [
+        "You have a nice accent!"
+      ]
+    },
+    {
+      "word": "nationalité",
+      "translations": [
+        "nationality"
+      ],
+      "examples": [
+        "Quelle est votre nationalité ?"
+      ],
+      "category": "language",
+      "difficulty": 2,
+      "examples_en": [
+        "What's your nationality?"
+      ]
+    },
+    {
+      "word": "allemand",
+      "translations": [
+        "German"
+      ],
+      "examples": [
+        "Mon ami parle allemand et anglais."
+      ],
+      "category": "language",
+      "difficulty": 2,
+      "examples_en": [
+        "My friend speaks German and English."
+      ]
+    },
+    {
+      "word": "italien",
+      "translations": [
+        "Italian"
+      ],
+      "examples": [
+        "Marco est italien, il habite à Rome."
+      ],
+      "category": "language",
+      "difficulty": 2,
+      "examples_en": [
+        "Marco is Italian; he lives in Rome."
+      ]
+    },
+    {
+      "word": "espagnol",
+      "translations": [
+        "Spanish"
+      ],
+      "examples": [
+        "Je parle un peu espagnol."
+      ],
+      "category": "language",
+      "difficulty": 2,
+      "examples_en": [
+        "I speak a little Spanish."
+      ]
+    },
+    {
+      "word": "chinois",
+      "translations": [
+        "Chinese"
+      ],
+      "examples": [
+        "Ma voisine apprend le chinois."
+      ],
+      "category": "language",
+      "difficulty": 2,
+      "examples_en": [
+        "My neighbour is learning Chinese."
+      ]
+    },
+    {
+      "word": "belge",
+      "translations": [
+        "Belgian"
+      ],
+      "examples": [
+        "Le chocolat belge est délicieux."
+      ],
+      "category": "language",
+      "difficulty": 2,
+      "examples_en": [
+        "Belgian chocolate is delicious."
+      ]
+    },
+    {
+      "word": "suisse",
+      "translations": [
+        "Swiss"
+      ],
+      "examples": [
+        "Mon oncle est suisse, il vient de Genève."
+      ],
+      "category": "language",
+      "difficulty": 2,
+      "examples_en": [
+        "My uncle is Swiss; he comes from Geneva."
+      ]
+    },
+    {
+      "word": "japonais",
+      "translations": [
+        "Japanese"
+      ],
+      "examples": [
+        "Ce restaurant japonais est très bon."
+      ],
+      "category": "language",
+      "difficulty": 2,
+      "examples_en": [
+        "This Japanese restaurant is very good."
+      ]
+    },
+    {
+      "word": "arabe",
+      "translations": [
+        "Arabic",
+        "Arab"
+      ],
+      "examples": [
+        "Mon professeur parle arabe."
+      ],
+      "category": "language",
+      "difficulty": 2,
+      "examples_en": [
+        "My teacher speaks Arabic."
+      ]
+    },
+    {
+      "word": "étranger",
+      "translations": [
+        "foreign",
+        "foreigner"
+      ],
+      "examples": [
+        "C'est un film étranger."
+      ],
+      "category": "language",
+      "difficulty": 2,
+      "examples_en": [
+        "It's a foreign film."
+      ]
+    },
+    {
+      "word": "alphabet",
+      "translations": [
+        "alphabet"
+      ],
+      "examples": [
+        "Notre alphabet a vingt-six lettres."
+      ],
+      "category": "language",
+      "difficulty": 2,
+      "examples_en": [
+        "Our alphabet has twenty-six letters."
+      ]
+    },
+    {
+      "word": "travailler",
+      "translations": [
+        "to work"
+      ],
+      "examples": [
+        "Je n'aime pas travailler le samedi."
+      ],
+      "category": "work",
+      "difficulty": 2,
+      "examples_en": [
+        "I don't like working on Saturdays."
+      ]
+    },
+    {
+      "word": "travail",
+      "translations": [
+        "work",
+        "job"
+      ],
+      "examples": [
+        "Je vais au travail en bus."
+      ],
+      "category": "work",
+      "difficulty": 1,
+      "examples_en": [
+        "I go to work by bus."
+      ]
+    },
+    {
+      "word": "métier",
+      "translations": [
+        "job",
+        "trade"
+      ],
+      "examples": [
+        "Quel est votre métier ?"
+      ],
+      "category": "work",
+      "difficulty": 2,
+      "examples_en": [
+        "What's your job?"
+      ]
+    },
+    {
+      "word": "bureau",
+      "translations": [
+        "office",
+        "desk"
+      ],
+      "examples": [
+        "Mon bureau est au troisième étage."
+      ],
+      "category": "work",
+      "difficulty": 2,
+      "examples_en": [
+        "My office is on the third floor."
+      ]
+    },
+    {
+      "word": "patron",
+      "translations": [
+        "boss"
+      ],
+      "examples": [
+        "Mon patron est très sympa."
+      ],
+      "category": "work",
+      "difficulty": 3,
+      "examples_en": [
+        "My boss is really nice."
+      ]
+    },
+    {
+      "word": "collègue",
+      "translations": [
+        "colleague"
+      ],
+      "examples": [
+        "Ma collègue s'appelle Julie."
+      ],
+      "category": "work",
+      "difficulty": 3,
+      "examples_en": [
+        "My colleague's name is Julie."
+      ]
+    },
+    {
+      "word": "salaire",
+      "translations": [
+        "salary",
+        "pay"
+      ],
+      "examples": [
+        "Il a un bon salaire."
+      ],
+      "category": "work",
+      "difficulty": 3,
+      "examples_en": [
+        "He has a good salary."
+      ]
+    },
+    {
+      "word": "client",
+      "translations": [
+        "customer",
+        "client"
+      ],
+      "examples": [
+        "Le client attend son café."
+      ],
+      "category": "work",
+      "difficulty": 2,
+      "examples_en": [
+        "The customer is waiting for his coffee."
+      ]
+    },
+    {
+      "word": "serveur",
+      "translations": [
+        "waiter"
+      ],
+      "examples": [
+        "Le serveur apporte deux cafés."
+      ],
+      "category": "work",
+      "difficulty": 2,
+      "examples_en": [
+        "The waiter brings two coffees."
+      ]
+    },
+    {
+      "word": "vendeur",
+      "translations": [
+        "shop assistant",
+        "salesman"
+      ],
+      "examples": [
+        "Le vendeur est très gentil."
+      ],
+      "category": "work",
+      "difficulty": 2,
+      "examples_en": [
+        "The shop assistant is very kind."
+      ]
+    },
+    {
+      "word": "infirmier",
+      "translations": [
+        "nurse"
+      ],
+      "examples": [
+        "Mon oncle est infirmier à l'hôpital."
+      ],
+      "category": "work",
+      "difficulty": 2,
+      "examples_en": [
+        "My uncle is a nurse at the hospital."
+      ]
+    },
+    {
+      "word": "ingénieur",
+      "translations": [
+        "engineer"
+      ],
+      "examples": [
+        "Mon père est ingénieur."
+      ],
+      "category": "work",
+      "difficulty": 2,
+      "examples_en": [
+        "My father is an engineer."
+      ]
+    },
+    {
+      "word": "policier",
+      "translations": [
+        "police officer"
+      ],
+      "examples": [
+        "Le policier aide les touristes."
+      ],
+      "category": "work",
+      "difficulty": 2,
+      "examples_en": [
+        "The police officer helps the tourists."
+      ]
+    },
+    {
+      "word": "pompier",
+      "translations": [
+        "firefighter"
+      ],
+      "examples": [
+        "Mon petit frère veut être pompier."
+      ],
+      "category": "work",
+      "difficulty": 2,
+      "examples_en": [
+        "My little brother wants to be a firefighter."
+      ]
+    },
+    {
+      "word": "acteur",
+      "translations": [
+        "actor"
+      ],
+      "examples": [
+        "Cet acteur est très célèbre."
+      ],
+      "category": "work",
+      "difficulty": 2,
+      "examples_en": [
+        "This actor is very famous."
+      ]
+    },
+    {
+      "word": "chanteur",
+      "translations": [
+        "singer"
+      ],
+      "examples": [
+        "Mon chanteur préféré est français."
+      ],
+      "category": "work",
+      "difficulty": 2,
+      "examples_en": [
+        "My favourite singer is French."
+      ]
+    },
+    {
+      "word": "journaliste",
+      "translations": [
+        "journalist"
+      ],
+      "examples": [
+        "Elle est journaliste à la télé."
+      ],
+      "category": "work",
+      "difficulty": 2,
+      "examples_en": [
+        "She's a TV journalist."
+      ]
+    },
+    {
+      "word": "dentiste",
+      "translations": [
+        "dentist"
+      ],
+      "examples": [
+        "Je vais chez le dentiste demain."
+      ],
+      "category": "work",
+      "difficulty": 2,
+      "examples_en": [
+        "I'm going to the dentist's tomorrow."
+      ]
+    },
+    {
+      "word": "chauffeur",
+      "translations": [
+        "driver"
+      ],
+      "examples": [
+        "Le chauffeur attend devant l'hôtel."
+      ],
+      "category": "work",
+      "difficulty": 2,
+      "examples_en": [
+        "The driver is waiting in front of the hotel."
+      ]
+    },
+    {
+      "word": "coiffeur",
+      "translations": [
+        "hairdresser"
+      ],
+      "examples": [
+        "Je vais chez le coiffeur samedi."
+      ],
+      "category": "work",
+      "difficulty": 2,
+      "examples_en": [
+        "I'm going to the hairdresser's on Saturday."
+      ]
+    },
+    {
+      "word": "directeur",
+      "translations": [
+        "manager",
+        "director",
+        "head teacher"
+      ],
+      "examples": [
+        "Le directeur de l'hôtel parle anglais."
+      ],
+      "category": "work",
+      "difficulty": 3,
+      "examples_en": [
+        "The hotel manager speaks English."
+      ]
+    },
+    {
+      "word": "vétérinaire",
+      "translations": [
+        "vet",
+        "veterinarian"
+      ],
+      "examples": [
+        "Je vais chez le vétérinaire avec mon chat."
+      ],
+      "category": "work",
+      "difficulty": 2,
+      "examples_en": [
+        "I'm going to the vet's with my cat."
+      ]
+    },
+    {
+      "word": "secrétaire",
+      "translations": [
+        "secretary"
+      ],
+      "examples": [
+        "La secrétaire répond au téléphone."
+      ],
+      "category": "work",
+      "difficulty": 2,
+      "examples_en": [
+        "The secretary answers the phone."
+      ]
+    },
+    {
+      "word": "facteur",
+      "translations": [
+        "postman",
+        "mail carrier"
+      ],
+      "examples": [
+        "Le facteur passe à dix heures."
+      ],
+      "category": "work",
+      "difficulty": 2,
+      "examples_en": [
+        "The postman comes at ten."
+      ]
+    },
+    {
+      "word": "agriculteur",
+      "translations": [
+        "farmer"
+      ],
+      "examples": [
+        "Mon grand-père est agriculteur."
+      ],
+      "category": "work",
+      "difficulty": 2,
+      "examples_en": [
+        "My grandfather is a farmer."
+      ]
+    },
+    {
+      "word": "maison",
+      "translations": [
+        "house",
+        "home"
+      ],
+      "examples": [
+        "Ma maison a un grand jardin."
+      ],
+      "category": "housing",
+      "difficulty": 1,
+      "examples_en": [
+        "My house has a big garden."
+      ]
+    },
+    {
+      "word": "appartement",
+      "translations": [
+        "flat",
+        "apartment"
+      ],
+      "examples": [
+        "J'habite dans un appartement au centre-ville."
+      ],
+      "category": "housing",
+      "difficulty": 2,
+      "examples_en": [
+        "I live in a flat in the town centre."
+      ]
+    },
+    {
+      "word": "chambre",
+      "translations": [
+        "bedroom",
+        "(hotel) room"
+      ],
+      "examples": [
+        "Ma chambre est petite mais jolie."
+      ],
+      "category": "housing",
+      "difficulty": 1,
+      "examples_en": [
+        "My bedroom is small but pretty."
+      ]
+    },
+    {
+      "word": "cuisine",
+      "translations": [
+        "kitchen",
+        "cooking"
+      ],
+      "examples": [
+        "La cuisine est à côté du salon."
+      ],
+      "category": "housing",
+      "difficulty": 1,
+      "examples_en": [
+        "The kitchen is next to the living room."
+      ]
+    },
+    {
+      "word": "salon",
+      "translations": [
+        "living room"
+      ],
+      "examples": [
+        "Nous regardons la télé dans le salon."
+      ],
+      "category": "housing",
+      "difficulty": 1,
+      "examples_en": [
+        "We watch TV in the living room."
+      ]
+    },
+    {
+      "word": "salle de bain",
+      "translations": [
+        "bathroom"
+      ],
+      "examples": [
+        "La salle de bain est à côté de ma chambre."
+      ],
+      "category": "housing",
+      "difficulty": 2,
+      "examples_en": [
+        "The bathroom is next to my bedroom."
+      ]
+    },
+    {
+      "word": "jardin",
+      "translations": [
+        "garden",
+        "yard"
+      ],
+      "examples": [
+        "Nous avons un beau jardin avec des fleurs."
+      ],
+      "category": "housing",
+      "difficulty": 2,
+      "examples_en": [
+        "We have a lovely garden with flowers."
+      ]
+    },
+    {
+      "word": "chaise",
+      "translations": [
+        "chair"
+      ],
+      "examples": [
+        "Mon sac est sur la chaise."
+      ],
+      "category": "housing",
+      "difficulty": 1,
+      "examples_en": [
+        "My bag is on the chair."
+      ]
+    },
+    {
+      "word": "fenêtre",
+      "translations": [
+        "window"
+      ],
+      "examples": [
+        "Ma chambre a une grande fenêtre."
+      ],
+      "category": "housing",
+      "difficulty": 1,
+      "examples_en": [
+        "My bedroom has a big window."
+      ]
+    },
+    {
+      "word": "porte",
+      "translations": [
+        "door"
+      ],
+      "examples": [
+        "Quelqu'un frappe à la porte."
+      ],
+      "category": "housing",
+      "difficulty": 1,
+      "examples_en": [
+        "Someone is knocking at the door."
+      ]
+    },
+    {
+      "word": "clé",
+      "translations": [
+        "key"
+      ],
+      "examples": [
+        "Je cherche ma clé."
+      ],
+      "category": "housing",
+      "difficulty": 1,
+      "examples_en": [
+        "I'm looking for my key."
+      ]
+    },
+    {
+      "word": "étage",
+      "translations": [
+        "floor",
+        "storey"
+      ],
+      "examples": [
+        "J'habite au premier étage."
+      ],
+      "category": "housing",
+      "difficulty": 2,
+      "examples_en": [
+        "I live on the first floor."
+      ]
+    },
+    {
+      "word": "mur",
+      "translations": [
+        "wall"
+      ],
+      "examples": [
+        "Il y a une photo sur le mur."
+      ],
+      "category": "housing",
+      "difficulty": 2,
+      "examples_en": [
+        "There's a photo on the wall."
+      ]
+    },
+    {
+      "word": "canapé",
+      "translations": [
+        "sofa",
+        "couch"
+      ],
+      "examples": [
+        "Le chat dort sur le canapé."
+      ],
+      "category": "housing",
+      "difficulty": 2,
+      "examples_en": [
+        "The cat is sleeping on the sofa."
+      ]
+    },
+    {
+      "word": "frigo",
+      "translations": [
+        "fridge"
+      ],
+      "examples": [
+        "Le lait est dans le frigo."
+      ],
+      "category": "housing",
+      "difficulty": 2,
+      "examples_en": [
+        "The milk is in the fridge."
+      ]
+    },
+    {
+      "word": "aimer",
+      "translations": [
+        "to like",
+        "to love"
+      ],
+      "examples": [
+        "Les enfants vont aimer ce gâteau."
+      ],
+      "category": "emotions",
+      "difficulty": 1,
+      "examples_en": [
+        "The children are going to love this cake."
+      ]
+    },
+    {
+      "word": "rire",
+      "translations": [
+        "to laugh"
+      ],
+      "examples": [
+        "J'aime rire avec mes amis."
+      ],
+      "category": "emotions",
+      "difficulty": 2,
+      "examples_en": [
+        "I like laughing with my friends."
+      ]
+    },
+    {
+      "word": "sourire",
+      "translations": [
+        "smile",
+        "to smile"
+      ],
+      "examples": [
+        "Elle a un très joli sourire."
+      ],
+      "category": "emotions",
+      "difficulty": 2,
+      "examples_en": [
+        "She has a lovely smile."
+      ]
+    },
+    {
+      "word": "pleurer",
+      "translations": [
+        "to cry"
+      ],
+      "examples": [
+        "Le bébé commence à pleurer."
+      ],
+      "category": "emotions",
+      "difficulty": 2,
+      "examples_en": [
+        "The baby is starting to cry."
+      ]
+    },
+    {
+      "word": "heureux",
+      "translations": [
+        "happy"
+      ],
+      "examples": [
+        "Je suis très heureux aujourd'hui."
+      ],
+      "category": "emotions",
+      "difficulty": 1,
+      "examples_en": [
+        "I'm very happy today."
+      ]
+    },
+    {
+      "word": "triste",
+      "translations": [
+        "sad"
+      ],
+      "examples": [
+        "Pourquoi tu es triste ?"
+      ],
+      "category": "emotions",
+      "difficulty": 1,
+      "examples_en": [
+        "Why are you sad?"
+      ]
+    },
+    {
+      "word": "en colère",
+      "translations": [
+        "angry"
+      ],
+      "examples": [
+        "Mon père est en colère."
+      ],
+      "category": "emotions",
+      "difficulty": 2,
+      "examples_en": [
+        "My father is angry."
+      ]
+    },
+    {
+      "word": "gentil",
+      "translations": [
+        "kind",
+        "nice"
+      ],
+      "examples": [
+        "Ton chien est très gentil."
+      ],
+      "category": "emotions",
+      "difficulty": 1,
+      "examples_en": [
+        "Your dog is very friendly."
+      ]
+    },
+    {
+      "word": "sympa",
+      "translations": [
+        "nice",
+        "friendly"
+      ],
+      "examples": [
+        "Ta sœur est très sympa."
+      ],
+      "category": "emotions",
+      "difficulty": 1,
+      "examples_en": [
+        "Your sister is really nice."
+      ]
+    },
+    {
+      "word": "drôle",
+      "translations": [
+        "funny"
+      ],
+      "examples": [
+        "Ce film est très drôle."
+      ],
+      "category": "emotions",
+      "difficulty": 1,
+      "examples_en": [
+        "This film is very funny."
+      ]
+    },
+    {
+      "word": "timide",
+      "translations": [
+        "shy"
+      ],
+      "examples": [
+        "Mon petit frère est timide."
+      ],
+      "category": "emotions",
+      "difficulty": 2,
+      "examples_en": [
+        "My little brother is shy."
+      ]
+    },
+    {
+      "word": "génial",
+      "translations": [
+        "great",
+        "brilliant"
+      ],
+      "examples": [
+        "Ce jeu est génial !"
+      ],
+      "category": "emotions",
+      "difficulty": 1,
+      "examples_en": [
+        "This game is great!"
+      ]
+    },
+    {
+      "word": "santé",
+      "translations": [
+        "health"
+      ],
+      "examples": [
+        "Les légumes sont bons pour la santé."
+      ],
+      "category": "health",
+      "difficulty": 2,
+      "examples_en": [
+        "Vegetables are good for your health."
+      ]
+    },
+    {
+      "word": "malade",
+      "translations": [
+        "ill",
+        "sick"
+      ],
+      "examples": [
+        "Je suis malade et je reste au lit."
+      ],
+      "category": "health",
+      "difficulty": 1,
+      "examples_en": [
+        "I'm ill and I'm staying in bed."
+      ]
+    },
+    {
+      "word": "fatigué",
+      "translations": [
+        "tired"
+      ],
+      "examples": [
+        "Je suis fatigué après une longue journée de travail."
+      ],
+      "category": "health",
+      "difficulty": 1,
+      "examples_en": [
+        "I'm tired after a long day at work."
+      ]
+    },
+    {
+      "word": "sommeil",
+      "translations": [
+        "sleepiness",
+        "sleep"
+      ],
+      "examples": [
+        "J'ai sommeil, je vais au lit."
+      ],
+      "category": "health",
+      "difficulty": 2,
+      "examples_en": [
+        "I'm sleepy; I'm going to bed."
+      ]
+    },
+    {
+      "word": "mal",
+      "translations": [
+        "pain",
+        "ache"
+      ],
+      "examples": [
+        "J'ai mal au ventre."
+      ],
+      "category": "health",
+      "difficulty": 2,
+      "examples_en": [
+        "I have a stomach ache."
+      ]
+    },
+    {
+      "word": "grippe",
+      "translations": [
+        "flu"
+      ],
+      "examples": [
+        "Mon frère a la grippe."
+      ],
+      "category": "health",
+      "difficulty": 2,
+      "examples_en": [
+        "My brother has the flu."
+      ]
+    },
+    {
+      "word": "blessé",
+      "translations": [
+        "injured",
+        "hurt"
+      ],
+      "examples": [
+        "Le joueur est blessé au genou."
+      ],
+      "category": "health",
+      "difficulty": 3,
+      "examples_en": [
+        "The player has a knee injury."
+      ]
+    },
+    {
+      "word": "médecin",
+      "translations": [
+        "doctor"
+      ],
+      "examples": [
+        "Ma tante est médecin."
+      ],
+      "category": "health",
+      "difficulty": 1,
+      "examples_en": [
+        "My aunt is a doctor."
+      ]
+    },
+    {
+      "word": "médicament",
+      "translations": [
+        "medicine",
+        "medication"
+      ],
+      "examples": [
+        "Tu dois prendre ce médicament."
+      ],
+      "category": "health",
+      "difficulty": 2,
+      "examples_en": [
+        "You have to take this medicine."
+      ]
+    },
+    {
+      "word": "hôpital",
+      "translations": [
+        "hospital"
+      ],
+      "examples": [
+        "Ma mère travaille dans un hôpital."
+      ],
+      "category": "health",
+      "difficulty": 2,
+      "examples_en": [
+        "My mother works in a hospital."
+      ]
+    },
+    {
+      "word": "zéro",
+      "translations": [
+        "zero"
+      ],
+      "examples": [
+        "Mon numéro commence par zéro six."
+      ],
+      "category": "numbers",
+      "difficulty": 1,
+      "examples_en": [
+        "My number starts with zero six."
       ]
     },
     {
@@ -103,12 +1784,12 @@
         "one"
       ],
       "examples": [
-        "J'ai acheté un livre."
+        "Un café et deux croissants, s'il vous plaît."
       ],
       "category": "numbers",
       "difficulty": 1,
       "examples_en": [
-        "I bought a book."
+        "One coffee and two croissants, please."
       ]
     },
     {
@@ -168,6 +1849,1126 @@
       ]
     },
     {
+      "word": "six",
+      "translations": [
+        "six"
+      ],
+      "examples": [
+        "Il y a six œufs dans le frigo."
+      ],
+      "category": "numbers",
+      "difficulty": 1,
+      "examples_en": [
+        "There are six eggs in the fridge."
+      ]
+    },
+    {
+      "word": "sept",
+      "translations": [
+        "seven"
+      ],
+      "examples": [
+        "Il y a sept jours dans une semaine."
+      ],
+      "category": "numbers",
+      "difficulty": 1,
+      "examples_en": [
+        "There are seven days in a week."
+      ]
+    },
+    {
+      "word": "huit",
+      "translations": [
+        "eight"
+      ],
+      "examples": [
+        "Je me lève à huit heures."
+      ],
+      "category": "numbers",
+      "difficulty": 1,
+      "examples_en": [
+        "I get up at eight o'clock."
+      ]
+    },
+    {
+      "word": "neuf",
+      "translations": [
+        "nine"
+      ],
+      "examples": [
+        "Mon petit frère a neuf ans."
+      ],
+      "category": "numbers",
+      "difficulty": 1,
+      "examples_en": [
+        "My little brother is nine."
+      ]
+    },
+    {
+      "word": "onze",
+      "translations": [
+        "eleven"
+      ],
+      "examples": [
+        "Le train part à onze heures."
+      ],
+      "category": "numbers",
+      "difficulty": 1,
+      "examples_en": [
+        "The train leaves at eleven o'clock."
+      ]
+    },
+    {
+      "word": "treize",
+      "translations": [
+        "thirteen"
+      ],
+      "examples": [
+        "Ma sœur a treize ans."
+      ],
+      "category": "numbers",
+      "difficulty": 1,
+      "examples_en": [
+        "My sister is thirteen."
+      ]
+    },
+    {
+      "word": "quinze",
+      "translations": [
+        "fifteen"
+      ],
+      "examples": [
+        "Le film commence dans quinze minutes."
+      ],
+      "category": "numbers",
+      "difficulty": 1,
+      "examples_en": [
+        "The film starts in fifteen minutes."
+      ]
+    },
+    {
+      "word": "seize",
+      "translations": [
+        "sixteen"
+      ],
+      "examples": [
+        "Mon cousin a seize ans."
+      ],
+      "category": "numbers",
+      "difficulty": 1,
+      "examples_en": [
+        "My cousin is sixteen."
+      ]
+    },
+    {
+      "word": "quarante",
+      "translations": [
+        "forty"
+      ],
+      "examples": [
+        "Mon père a quarante ans."
+      ],
+      "category": "numbers",
+      "difficulty": 1,
+      "examples_en": [
+        "My father is forty."
+      ]
+    },
+    {
+      "word": "mille",
+      "translations": [
+        "a thousand"
+      ],
+      "examples": [
+        "Il y a mille personnes au concert."
+      ],
+      "category": "numbers",
+      "difficulty": 2,
+      "examples_en": [
+        "There are a thousand people at the concert."
+      ]
+    },
+    {
+      "word": "premier",
+      "translations": [
+        "first"
+      ],
+      "examples": [
+        "C'est mon premier jour au collège."
+      ],
+      "category": "numbers",
+      "difficulty": 1,
+      "examples_en": [
+        "It's my first day at secondary school."
+      ]
+    },
+    {
+      "word": "dernier",
+      "translations": [
+        "last"
+      ],
+      "examples": [
+        "C'est le dernier bus ce soir."
+      ],
+      "category": "numbers",
+      "difficulty": 2,
+      "examples_en": [
+        "It's the last bus tonight."
+      ]
+    },
+    {
+      "word": "heure",
+      "translations": [
+        "hour",
+        "o'clock",
+        "time"
+      ],
+      "examples": [
+        "On part dans une heure."
+      ],
+      "category": "time",
+      "difficulty": 1,
+      "examples_en": [
+        "We're leaving in an hour."
+      ]
+    },
+    {
+      "word": "minute",
+      "translations": [
+        "minute"
+      ],
+      "examples": [
+        "J'arrive dans une minute !"
+      ],
+      "category": "time",
+      "difficulty": 1,
+      "examples_en": [
+        "I'll be there in a minute!"
+      ]
+    },
+    {
+      "word": "jour",
+      "translations": [
+        "day"
+      ],
+      "examples": [
+        "C'est quel jour, aujourd'hui ?"
+      ],
+      "category": "time",
+      "difficulty": 1,
+      "examples_en": [
+        "What day is it today?"
+      ]
+    },
+    {
+      "word": "nuit",
+      "translations": [
+        "night"
+      ],
+      "examples": [
+        "Je dors bien la nuit."
+      ],
+      "category": "time",
+      "difficulty": 1,
+      "examples_en": [
+        "I sleep well at night."
+      ]
+    },
+    {
+      "word": "après-midi",
+      "translations": [
+        "afternoon"
+      ],
+      "examples": [
+        "Je joue au tennis cet après-midi."
+      ],
+      "category": "time",
+      "difficulty": 1,
+      "examples_en": [
+        "I'm playing tennis this afternoon."
+      ]
+    },
+    {
+      "word": "semaine",
+      "translations": [
+        "week"
+      ],
+      "examples": [
+        "La semaine prochaine, je suis en vacances."
+      ],
+      "category": "time",
+      "difficulty": 1,
+      "examples_en": [
+        "Next week I'm on holiday."
+      ]
+    },
+    {
+      "word": "mois",
+      "translations": [
+        "month"
+      ],
+      "examples": [
+        "Il y a douze mois dans une année."
+      ],
+      "category": "time",
+      "difficulty": 1,
+      "examples_en": [
+        "There are twelve months in a year."
+      ]
+    },
+    {
+      "word": "année",
+      "translations": [
+        "year"
+      ],
+      "examples": [
+        "Cette année, j'apprends le français."
+      ],
+      "category": "time",
+      "difficulty": 1,
+      "examples_en": [
+        "This year I'm learning French."
+      ]
+    },
+    {
+      "word": "maintenant",
+      "translations": [
+        "now"
+      ],
+      "examples": [
+        "Je dois partir maintenant."
+      ],
+      "category": "time",
+      "difficulty": 1,
+      "examples_en": [
+        "I have to go now."
+      ]
+    },
+    {
+      "word": "avant",
+      "translations": [
+        "before"
+      ],
+      "examples": [
+        "Je me douche avant le petit déjeuner."
+      ],
+      "category": "time",
+      "difficulty": 2,
+      "examples_en": [
+        "I have a shower before breakfast."
+      ]
+    },
+    {
+      "word": "après",
+      "translations": [
+        "after"
+      ],
+      "examples": [
+        "On joue au foot après le déjeuner."
+      ],
+      "category": "time",
+      "difficulty": 2,
+      "examples_en": [
+        "We play football after lunch."
+      ]
+    },
+    {
+      "word": "anniversaire",
+      "translations": [
+        "birthday"
+      ],
+      "examples": [
+        "C'est mon anniversaire aujourd'hui !"
+      ],
+      "category": "time",
+      "difficulty": 1,
+      "examples_en": [
+        "It's my birthday today!"
+      ]
+    },
+    {
+      "word": "mardi",
+      "translations": [
+        "Tuesday"
+      ],
+      "examples": [
+        "Le mardi, j'ai un cours de danse."
+      ],
+      "category": "time",
+      "difficulty": 1,
+      "examples_en": [
+        "On Tuesdays I have a dance class."
+      ]
+    },
+    {
+      "word": "mercredi",
+      "translations": [
+        "Wednesday"
+      ],
+      "examples": [
+        "Le mercredi, je n'ai pas école."
+      ],
+      "category": "time",
+      "difficulty": 1,
+      "examples_en": [
+        "On Wednesdays I don't have school."
+      ]
+    },
+    {
+      "word": "jeudi",
+      "translations": [
+        "Thursday"
+      ],
+      "examples": [
+        "On va au cinéma jeudi soir."
+      ],
+      "category": "time",
+      "difficulty": 1,
+      "examples_en": [
+        "We're going to the cinema on Thursday evening."
+      ]
+    },
+    {
+      "word": "vendredi",
+      "translations": [
+        "Friday"
+      ],
+      "examples": [
+        "Vendredi soir, nous sortons avec des amis."
+      ],
+      "category": "time",
+      "difficulty": 1,
+      "examples_en": [
+        "On Friday evening we're going out with friends."
+      ]
+    },
+    {
+      "word": "samedi",
+      "translations": [
+        "Saturday"
+      ],
+      "examples": [
+        "Je me repose le samedi."
+      ],
+      "category": "time",
+      "difficulty": 1,
+      "examples_en": [
+        "I rest on Saturdays."
+      ]
+    },
+    {
+      "word": "dimanche",
+      "translations": [
+        "Sunday"
+      ],
+      "examples": [
+        "Le dimanche, on mange chez ma grand-mère."
+      ],
+      "category": "time",
+      "difficulty": 1,
+      "examples_en": [
+        "On Sundays we eat at my grandmother's."
+      ]
+    },
+    {
+      "word": "janvier",
+      "translations": [
+        "January"
+      ],
+      "examples": [
+        "Il fait très froid en janvier."
+      ],
+      "category": "time",
+      "difficulty": 1,
+      "examples_en": [
+        "It's very cold in January."
+      ]
+    },
+    {
+      "word": "février",
+      "translations": [
+        "February"
+      ],
+      "examples": [
+        "Il neige souvent en février."
+      ],
+      "category": "time",
+      "difficulty": 1,
+      "examples_en": [
+        "It often snows in February."
+      ]
+    },
+    {
+      "word": "mars",
+      "translations": [
+        "March"
+      ],
+      "examples": [
+        "Le printemps commence en mars."
+      ],
+      "category": "time",
+      "difficulty": 1,
+      "examples_en": [
+        "Spring begins in March."
+      ]
+    },
+    {
+      "word": "avril",
+      "translations": [
+        "April"
+      ],
+      "examples": [
+        "Mon anniversaire est le dix avril."
+      ],
+      "category": "time",
+      "difficulty": 1,
+      "examples_en": [
+        "My birthday is on the tenth of April."
+      ]
+    },
+    {
+      "word": "juin",
+      "translations": [
+        "June"
+      ],
+      "examples": [
+        "L'école finit en juin."
+      ],
+      "category": "time",
+      "difficulty": 1,
+      "examples_en": [
+        "School finishes in June."
+      ]
+    },
+    {
+      "word": "juillet",
+      "translations": [
+        "July"
+      ],
+      "examples": [
+        "Le 14 juillet, c'est la fête nationale."
+      ],
+      "category": "time",
+      "difficulty": 1,
+      "examples_en": [
+        "The 14th of July is the national holiday."
+      ]
+    },
+    {
+      "word": "août",
+      "translations": [
+        "August"
+      ],
+      "examples": [
+        "Nous partons en vacances en août."
+      ],
+      "category": "time",
+      "difficulty": 1,
+      "examples_en": [
+        "We go on holiday in August."
+      ]
+    },
+    {
+      "word": "septembre",
+      "translations": [
+        "September"
+      ],
+      "examples": [
+        "Les cours commencent en septembre."
+      ],
+      "category": "time",
+      "difficulty": 1,
+      "examples_en": [
+        "Classes start in September."
+      ]
+    },
+    {
+      "word": "octobre",
+      "translations": [
+        "October"
+      ],
+      "examples": [
+        "Halloween, c'est en octobre."
+      ],
+      "category": "time",
+      "difficulty": 1,
+      "examples_en": [
+        "Halloween is in October."
+      ]
+    },
+    {
+      "word": "novembre",
+      "translations": [
+        "November"
+      ],
+      "examples": [
+        "Il pleut beaucoup en novembre."
+      ],
+      "category": "time",
+      "difficulty": 1,
+      "examples_en": [
+        "It rains a lot in November."
+      ]
+    },
+    {
+      "word": "décembre",
+      "translations": [
+        "December"
+      ],
+      "examples": [
+        "Noël est en décembre."
+      ],
+      "category": "time",
+      "difficulty": 1,
+      "examples_en": [
+        "Christmas is in December."
+      ]
+    },
+    {
+      "word": "école",
+      "translations": [
+        "school"
+      ],
+      "examples": [
+        "Mon école est très grande."
+      ],
+      "category": "education",
+      "difficulty": 1,
+      "examples_en": [
+        "My school is very big."
+      ]
+    },
+    {
+      "word": "collège",
+      "translations": [
+        "secondary school (ages 11–15)"
+      ],
+      "examples": [
+        "Mon frère va au collège."
+      ],
+      "category": "education",
+      "difficulty": 2,
+      "examples_en": [
+        "My brother goes to secondary school."
+      ]
+    },
+    {
+      "word": "lycée",
+      "translations": [
+        "high school (ages 15–18)"
+      ],
+      "examples": [
+        "Ma sœur est au lycée."
+      ],
+      "category": "education",
+      "difficulty": 2,
+      "examples_en": [
+        "My sister is at high school."
+      ]
+    },
+    {
+      "word": "classe",
+      "translations": [
+        "class",
+        "classroom"
+      ],
+      "examples": [
+        "Il y a vingt élèves dans ma classe."
+      ],
+      "category": "education",
+      "difficulty": 1,
+      "examples_en": [
+        "There are twenty pupils in my class."
+      ]
+    },
+    {
+      "word": "élève",
+      "translations": [
+        "pupil",
+        "student (at school)"
+      ],
+      "examples": [
+        "Léa est une très bonne élève."
+      ],
+      "category": "education",
+      "difficulty": 1,
+      "examples_en": [
+        "Léa is a very good pupil."
+      ]
+    },
+    {
+      "word": "étudiant",
+      "translations": [
+        "student"
+      ],
+      "examples": [
+        "Je suis étudiant en première année."
+      ],
+      "category": "education",
+      "difficulty": 2,
+      "examples_en": [
+        "I'm a first-year student."
+      ]
+    },
+    {
+      "word": "professeur",
+      "translations": [
+        "teacher"
+      ],
+      "examples": [
+        "Mon professeur de français est très sympathique."
+      ],
+      "category": "education",
+      "difficulty": 1,
+      "examples_en": [
+        "My French teacher is very nice."
+      ]
+    },
+    {
+      "word": "étudier",
+      "translations": [
+        "to study"
+      ],
+      "examples": [
+        "Je dois étudier ce soir."
+      ],
+      "category": "education",
+      "difficulty": 2,
+      "examples_en": [
+        "I have to study this evening."
+      ]
+    },
+    {
+      "word": "écrire",
+      "translations": [
+        "to write"
+      ],
+      "examples": [
+        "J'aime écrire des histoires."
+      ],
+      "category": "education",
+      "difficulty": 2,
+      "examples_en": [
+        "I like writing stories."
+      ]
+    },
+    {
+      "word": "histoire",
+      "translations": [
+        "story",
+        "history"
+      ],
+      "examples": [
+        "Mon grand-père raconte une histoire."
+      ],
+      "category": "education",
+      "difficulty": 2,
+      "examples_en": [
+        "My grandfather is telling a story."
+      ]
+    },
+    {
+      "word": "matière",
+      "translations": [
+        "(school) subject"
+      ],
+      "examples": [
+        "Quelle est ta matière préférée ?"
+      ],
+      "category": "education",
+      "difficulty": 2,
+      "examples_en": [
+        "What's your favourite subject?"
+      ]
+    },
+    {
+      "word": "maths",
+      "translations": [
+        "maths",
+        "math"
+      ],
+      "examples": [
+        "J'adore les maths !"
+      ],
+      "category": "education",
+      "difficulty": 1,
+      "examples_en": [
+        "I love maths!"
+      ]
+    },
+    {
+      "word": "livre",
+      "translations": [
+        "book"
+      ],
+      "examples": [
+        "Je lis un livre très intéressant."
+      ],
+      "category": "education",
+      "difficulty": 1,
+      "examples_en": [
+        "I'm reading a very interesting book."
+      ]
+    },
+    {
+      "word": "cahier",
+      "translations": [
+        "exercise book",
+        "notebook"
+      ],
+      "examples": [
+        "Mon cahier est dans mon sac."
+      ],
+      "category": "education",
+      "difficulty": 1,
+      "examples_en": [
+        "My exercise book is in my bag."
+      ]
+    },
+    {
+      "word": "stylo",
+      "translations": [
+        "pen"
+      ],
+      "examples": [
+        "Tu as un stylo bleu, s'il te plaît ?"
+      ],
+      "category": "education",
+      "difficulty": 1,
+      "examples_en": [
+        "Do you have a blue pen, please?"
+      ]
+    },
+    {
+      "word": "crayon",
+      "translations": [
+        "pencil"
+      ],
+      "examples": [
+        "Tu as un crayon ?"
+      ],
+      "category": "education",
+      "difficulty": 1,
+      "examples_en": [
+        "Do you have a pencil?"
+      ]
+    },
+    {
+      "word": "trousse",
+      "translations": [
+        "pencil case"
+      ],
+      "examples": [
+        "Il y a trois stylos dans ma trousse."
+      ],
+      "category": "education",
+      "difficulty": 2,
+      "examples_en": [
+        "There are three pens in my pencil case."
+      ]
+    },
+    {
+      "word": "cartable",
+      "translations": [
+        "school bag"
+      ],
+      "examples": [
+        "Mon cartable est très lourd."
+      ],
+      "category": "education",
+      "difficulty": 2,
+      "examples_en": [
+        "My school bag is very heavy."
+      ]
+    },
+    {
+      "word": "tableau",
+      "translations": [
+        "board",
+        "picture",
+        "painting"
+      ],
+      "examples": [
+        "Le professeur écrit au tableau."
+      ],
+      "category": "education",
+      "difficulty": 2,
+      "examples_en": [
+        "The teacher writes on the board."
+      ]
+    },
+    {
+      "word": "bibliothèque",
+      "translations": [
+        "library"
+      ],
+      "examples": [
+        "Je vais à la bibliothèque après l'école."
+      ],
+      "category": "education",
+      "difficulty": 2,
+      "examples_en": [
+        "I go to the library after school."
+      ]
+    },
+    {
+      "word": "donner",
+      "translations": [
+        "to give"
+      ],
+      "examples": [
+        "Tu peux donner ce livre à Paul ?"
+      ],
+      "category": "verbs",
+      "difficulty": 1,
+      "examples_en": [
+        "Can you give this book to Paul?"
+      ]
+    },
+    {
+      "word": "chercher",
+      "translations": [
+        "to look for"
+      ],
+      "examples": [
+        "Je dois chercher un appartement."
+      ],
+      "category": "verbs",
+      "difficulty": 1,
+      "examples_en": [
+        "I have to look for a flat."
+      ]
+    },
+    {
+      "word": "trouver",
+      "translations": [
+        "to find"
+      ],
+      "examples": [
+        "Je ne peux pas trouver mes clés."
+      ],
+      "category": "verbs",
+      "difficulty": 1,
+      "examples_en": [
+        "I can't find my keys."
+      ]
+    },
+    {
+      "word": "aider",
+      "translations": [
+        "to help"
+      ],
+      "examples": [
+        "Je peux vous aider ?"
+      ],
+      "category": "verbs",
+      "difficulty": 1,
+      "examples_en": [
+        "Can I help you?"
+      ]
+    },
+    {
+      "word": "entrer",
+      "translations": [
+        "to come in",
+        "to go in"
+      ],
+      "examples": [
+        "Vous pouvez entrer, la porte est ouverte."
+      ],
+      "category": "verbs",
+      "difficulty": 2,
+      "examples_en": [
+        "You can come in, the door's open."
+      ]
+    },
+    {
+      "word": "rester",
+      "translations": [
+        "to stay"
+      ],
+      "examples": [
+        "Je vais rester à la maison ce soir."
+      ],
+      "category": "verbs",
+      "difficulty": 1,
+      "examples_en": [
+        "I'm going to stay at home tonight."
+      ]
+    },
+    {
+      "word": "sortir",
+      "translations": [
+        "to go out"
+      ],
+      "examples": [
+        "On va sortir ce soir ?"
+      ],
+      "category": "verbs",
+      "difficulty": 1,
+      "examples_en": [
+        "Are we going out tonight?"
+      ]
+    },
+    {
+      "word": "partir",
+      "translations": [
+        "to leave",
+        "to go away"
+      ],
+      "examples": [
+        "Le train va partir dans cinq minutes."
+      ],
+      "category": "verbs",
+      "difficulty": 1,
+      "examples_en": [
+        "The train is going to leave in five minutes."
+      ]
+    },
+    {
+      "word": "oublier",
+      "translations": [
+        "to forget"
+      ],
+      "examples": [
+        "Je ne veux pas oublier mon passeport."
+      ],
+      "category": "verbs",
+      "difficulty": 2,
+      "examples_en": [
+        "I don't want to forget my passport."
+      ]
+    },
+    {
+      "word": "ouvrir",
+      "translations": [
+        "to open"
+      ],
+      "examples": [
+        "Tu peux ouvrir la fenêtre, s'il te plaît ?"
+      ],
+      "category": "verbs",
+      "difficulty": 1,
+      "examples_en": [
+        "Can you open the window, please?"
+      ]
+    },
+    {
+      "word": "appeler",
+      "translations": [
+        "to call",
+        "to phone"
+      ],
+      "examples": [
+        "Je vais appeler ma grand-mère ce soir."
+      ],
+      "category": "verbs",
+      "difficulty": 2,
+      "examples_en": [
+        "I'm going to call my grandmother tonight."
+      ]
+    },
+    {
+      "word": "envoyer",
+      "translations": [
+        "to send"
+      ],
+      "examples": [
+        "Je vais envoyer un message à Léa."
+      ],
+      "category": "verbs",
+      "difficulty": 2,
+      "examples_en": [
+        "I'm going to send Léa a message."
+      ]
+    },
+    {
+      "word": "voir",
+      "translations": [
+        "to see"
+      ],
+      "examples": [
+        "Je veux voir ce film !"
+      ],
+      "category": "verbs",
+      "difficulty": 1,
+      "examples_en": [
+        "I want to see this film!"
+      ]
+    },
+    {
+      "word": "savoir",
+      "translations": [
+        "to know (a fact)"
+      ],
+      "examples": [
+        "Tu veux savoir mon secret ?"
+      ],
+      "category": "verbs",
+      "difficulty": 2,
+      "examples_en": [
+        "Do you want to know my secret?"
+      ]
+    },
+    {
+      "word": "mettre",
+      "translations": [
+        "to put",
+        "to put on"
+      ],
+      "examples": [
+        "Tu peux mettre la table, s'il te plaît ?"
+      ],
+      "category": "verbs",
+      "difficulty": 2,
+      "examples_en": [
+        "Can you set the table, please?"
+      ]
+    },
+    {
+      "word": "marcher",
+      "translations": [
+        "to walk"
+      ],
+      "examples": [
+        "J'aime marcher à la montagne."
+      ],
+      "category": "verbs",
+      "difficulty": 2,
+      "examples_en": [
+        "I like walking in the mountains."
+      ]
+    },
+    {
+      "word": "préparer",
+      "translations": [
+        "to prepare",
+        "to make"
+      ],
+      "examples": [
+        "Je vais préparer le dîner."
+      ],
+      "category": "verbs",
+      "difficulty": 2,
+      "examples_en": [
+        "I'm going to make dinner."
+      ]
+    },
+    {
+      "word": "famille",
+      "translations": [
+        "family"
+      ],
+      "examples": [
+        "J'aime passer du temps avec ma famille."
+      ],
+      "category": "family",
+      "difficulty": 1,
+      "examples_en": [
+        "I like spending time with my family."
+      ]
+    },
+    {
       "word": "mère",
       "translations": [
         "mother"
@@ -176,7 +2977,7 @@
         "Ma mère est très gentille."
       ],
       "category": "family",
-      "difficulty": 2,
+      "difficulty": 1,
       "examples_en": [
         "My mother is very kind."
       ]
@@ -190,7 +2991,7 @@
         "Mon père travaille beaucoup."
       ],
       "category": "family",
-      "difficulty": 2,
+      "difficulty": 1,
       "examples_en": [
         "My father works a lot."
       ]
@@ -201,12 +3002,12 @@
         "brother"
       ],
       "examples": [
-        "J'ai un frère plus jeune."
+        "J'ai un petit frère."
       ],
       "category": "family",
-      "difficulty": 2,
+      "difficulty": 1,
       "examples_en": [
-        "I have a younger brother."
+        "I have a little brother."
       ]
     },
     {
@@ -218,23 +3019,1308 @@
         "Ma sœur est très intelligente."
       ],
       "category": "family",
-      "difficulty": 2,
+      "difficulty": 1,
       "examples_en": [
         "My sister is very clever."
       ]
     },
     {
-      "word": "famille",
+      "word": "maman",
       "translations": [
-        "family"
+        "mum",
+        "mom"
       ],
       "examples": [
-        "J'aime passer du temps avec ma famille."
+        "Maman, j'ai faim !"
+      ],
+      "category": "family",
+      "difficulty": 1,
+      "examples_en": [
+        "Mum, I'm hungry!"
+      ]
+    },
+    {
+      "word": "papa",
+      "translations": [
+        "dad"
+      ],
+      "examples": [
+        "Papa travaille à la banque."
+      ],
+      "category": "family",
+      "difficulty": 1,
+      "examples_en": [
+        "Dad works at the bank."
+      ]
+    },
+    {
+      "word": "bébé",
+      "translations": [
+        "baby"
+      ],
+      "examples": [
+        "Le bébé dort dans sa chambre."
+      ],
+      "category": "family",
+      "difficulty": 1,
+      "examples_en": [
+        "The baby is sleeping in his room."
+      ]
+    },
+    {
+      "word": "marié",
+      "translations": [
+        "married"
+      ],
+      "examples": [
+        "Mon frère est marié."
       ],
       "category": "family",
       "difficulty": 2,
       "examples_en": [
-        "I like spending time with my family."
+        "My brother is married."
+      ]
+    },
+    {
+      "word": "copain",
+      "translations": [
+        "friend",
+        "boyfriend"
+      ],
+      "examples": [
+        "Je joue au foot avec mon copain Lucas."
+      ],
+      "category": "family",
+      "difficulty": 1,
+      "examples_en": [
+        "I play football with my friend Lucas."
+      ]
+    },
+    {
+      "word": "copine",
+      "translations": [
+        "friend (a girl)",
+        "girlfriend"
+      ],
+      "examples": [
+        "Ma copine Inès habite à côté."
+      ],
+      "category": "family",
+      "difficulty": 1,
+      "examples_en": [
+        "My friend Inès lives next door."
+      ]
+    },
+    {
+      "word": "gens",
+      "translations": [
+        "people"
+      ],
+      "examples": [
+        "Les gens sont très sympas ici."
+      ],
+      "category": "family",
+      "difficulty": 2,
+      "examples_en": [
+        "The people are really nice here."
+      ]
+    },
+    {
+      "word": "couleur",
+      "translations": [
+        "colour",
+        "color"
+      ],
+      "examples": [
+        "Quelle est ta couleur préférée ?"
+      ],
+      "category": "colors",
+      "difficulty": 1,
+      "examples_en": [
+        "What's your favourite colour?"
+      ]
+    },
+    {
+      "word": "jaune",
+      "translations": [
+        "yellow"
+      ],
+      "examples": [
+        "J'ai un vélo jaune."
+      ],
+      "category": "colors",
+      "difficulty": 1,
+      "examples_en": [
+        "I have a yellow bike."
+      ]
+    },
+    {
+      "word": "orange",
+      "translations": [
+        "orange"
+      ],
+      "examples": [
+        "Je porte un t-shirt orange."
+      ],
+      "category": "colors",
+      "difficulty": 1,
+      "examples_en": [
+        "I'm wearing an orange T-shirt."
+      ]
+    },
+    {
+      "word": "rose",
+      "translations": [
+        "pink",
+        "rose"
+      ],
+      "examples": [
+        "Ma chambre est rose."
+      ],
+      "category": "colors",
+      "difficulty": 1,
+      "examples_en": [
+        "My bedroom is pink."
+      ]
+    },
+    {
+      "word": "violet",
+      "translations": [
+        "purple"
+      ],
+      "examples": [
+        "Elle a un sac violet."
+      ],
+      "category": "colors",
+      "difficulty": 1,
+      "examples_en": [
+        "She has a purple bag."
+      ]
+    },
+    {
+      "word": "gris",
+      "translations": [
+        "grey",
+        "gray"
+      ],
+      "examples": [
+        "Mon chat est gris et blanc."
+      ],
+      "category": "colors",
+      "difficulty": 1,
+      "examples_en": [
+        "My cat is grey and white."
+      ]
+    },
+    {
+      "word": "marron",
+      "translations": [
+        "brown"
+      ],
+      "examples": [
+        "J'ai les yeux marron."
+      ],
+      "category": "colors",
+      "difficulty": 1,
+      "examples_en": [
+        "I have brown eyes."
+      ]
+    },
+    {
+      "word": "blond",
+      "translations": [
+        "blond",
+        "fair-haired"
+      ],
+      "examples": [
+        "Mon petit frère est blond."
+      ],
+      "category": "colors",
+      "difficulty": 2,
+      "examples_en": [
+        "My little brother has fair hair."
+      ]
+    },
+    {
+      "word": "tête",
+      "translations": [
+        "head"
+      ],
+      "examples": [
+        "Il porte un chapeau sur la tête."
+      ],
+      "category": "body",
+      "difficulty": 1,
+      "examples_en": [
+        "He's wearing a hat on his head."
+      ]
+    },
+    {
+      "word": "visage",
+      "translations": [
+        "face"
+      ],
+      "examples": [
+        "Elle a un joli visage."
+      ],
+      "category": "body",
+      "difficulty": 2,
+      "examples_en": [
+        "She has a pretty face."
+      ]
+    },
+    {
+      "word": "yeux",
+      "translations": [
+        "eyes"
+      ],
+      "examples": [
+        "Ma sœur a les yeux bleus."
+      ],
+      "category": "body",
+      "difficulty": 1,
+      "examples_en": [
+        "My sister has blue eyes."
+      ]
+    },
+    {
+      "word": "cheveux",
+      "translations": [
+        "hair"
+      ],
+      "examples": [
+        "Il a les cheveux noirs."
+      ],
+      "category": "body",
+      "difficulty": 1,
+      "examples_en": [
+        "He has black hair."
+      ]
+    },
+    {
+      "word": "nez",
+      "translations": [
+        "nose"
+      ],
+      "examples": [
+        "Le clown a un gros nez rouge."
+      ],
+      "category": "body",
+      "difficulty": 1,
+      "examples_en": [
+        "The clown has a big red nose."
+      ]
+    },
+    {
+      "word": "bouche",
+      "translations": [
+        "mouth"
+      ],
+      "examples": [
+        "Le bébé ouvre la bouche."
+      ],
+      "category": "body",
+      "difficulty": 2,
+      "examples_en": [
+        "The baby opens his mouth."
+      ]
+    },
+    {
+      "word": "oreille",
+      "translations": [
+        "ear"
+      ],
+      "examples": [
+        "Mon chien a une oreille blanche."
+      ],
+      "category": "body",
+      "difficulty": 2,
+      "examples_en": [
+        "My dog has one white ear."
+      ]
+    },
+    {
+      "word": "bras",
+      "translations": [
+        "arm"
+      ],
+      "examples": [
+        "J'ai mal au bras."
+      ],
+      "category": "body",
+      "difficulty": 1,
+      "examples_en": [
+        "My arm hurts."
+      ]
+    },
+    {
+      "word": "main",
+      "translations": [
+        "hand"
+      ],
+      "examples": [
+        "J'ai un stylo dans la main."
+      ],
+      "category": "body",
+      "difficulty": 1,
+      "examples_en": [
+        "I have a pen in my hand."
+      ]
+    },
+    {
+      "word": "jambe",
+      "translations": [
+        "leg"
+      ],
+      "examples": [
+        "Ma jambe gauche me fait mal."
+      ],
+      "category": "body",
+      "difficulty": 1,
+      "examples_en": [
+        "My left leg hurts."
+      ]
+    },
+    {
+      "word": "pied",
+      "translations": [
+        "foot"
+      ],
+      "examples": [
+        "J'ai mal au pied droit."
+      ],
+      "category": "body",
+      "difficulty": 1,
+      "examples_en": [
+        "My right foot hurts."
+      ]
+    },
+    {
+      "word": "animal",
+      "translations": [
+        "animal",
+        "pet"
+      ],
+      "examples": [
+        "J'ai un chat comme animal de compagnie."
+      ],
+      "category": "animals",
+      "difficulty": 1,
+      "examples_en": [
+        "I have a cat as a pet."
+      ]
+    },
+    {
+      "word": "oiseau",
+      "translations": [
+        "bird"
+      ],
+      "examples": [
+        "Un oiseau chante dans le jardin."
+      ],
+      "category": "animals",
+      "difficulty": 1,
+      "examples_en": [
+        "A bird is singing in the garden."
+      ]
+    },
+    {
+      "word": "poisson rouge",
+      "translations": [
+        "goldfish"
+      ],
+      "examples": [
+        "J'ai un poisson rouge et un chat."
+      ],
+      "category": "animals",
+      "difficulty": 2,
+      "examples_en": [
+        "I have a goldfish and a cat."
+      ]
+    },
+    {
+      "word": "lapin",
+      "translations": [
+        "rabbit"
+      ],
+      "examples": [
+        "Mon lapin s'appelle Caramel."
+      ],
+      "category": "animals",
+      "difficulty": 1,
+      "examples_en": [
+        "My rabbit is called Caramel."
+      ]
+    },
+    {
+      "word": "souris",
+      "translations": [
+        "mouse"
+      ],
+      "examples": [
+        "Le chat regarde la souris."
+      ],
+      "category": "animals",
+      "difficulty": 1,
+      "examples_en": [
+        "The cat is watching the mouse."
+      ]
+    },
+    {
+      "word": "cheval",
+      "translations": [
+        "horse"
+      ],
+      "examples": [
+        "Ma cousine fait du cheval."
+      ],
+      "category": "animals",
+      "difficulty": 2,
+      "examples_en": [
+        "My cousin goes horse riding."
+      ]
+    },
+    {
+      "word": "vache",
+      "translations": [
+        "cow"
+      ],
+      "examples": [
+        "La vache mange de l'herbe."
+      ],
+      "category": "animals",
+      "difficulty": 1,
+      "examples_en": [
+        "The cow is eating grass."
+      ]
+    },
+    {
+      "word": "lion",
+      "translations": [
+        "lion"
+      ],
+      "examples": [
+        "Le lion dort sous un arbre."
+      ],
+      "category": "animals",
+      "difficulty": 1,
+      "examples_en": [
+        "The lion is sleeping under a tree."
+      ]
+    },
+    {
+      "word": "éléphant",
+      "translations": [
+        "elephant"
+      ],
+      "examples": [
+        "Un éléphant est très lourd."
+      ],
+      "category": "animals",
+      "difficulty": 1,
+      "examples_en": [
+        "An elephant is very heavy."
+      ]
+    },
+    {
+      "word": "araignée",
+      "translations": [
+        "spider"
+      ],
+      "examples": [
+        "Il y a une araignée dans ma chambre !"
+      ],
+      "category": "animals",
+      "difficulty": 2,
+      "examples_en": [
+        "There's a spider in my bedroom!"
+      ]
+    },
+    {
+      "word": "voyager",
+      "translations": [
+        "to travel"
+      ],
+      "examples": [
+        "J'aime voyager en train."
+      ],
+      "category": "travel",
+      "difficulty": 2,
+      "examples_en": [
+        "I like travelling by train."
+      ]
+    },
+    {
+      "word": "visiter",
+      "translations": [
+        "to visit (a place)"
+      ],
+      "examples": [
+        "Nous allons visiter Paris cet été."
+      ],
+      "category": "travel",
+      "difficulty": 2,
+      "examples_en": [
+        "We're going to visit Paris this summer."
+      ]
+    },
+    {
+      "word": "pays",
+      "translations": [
+        "country"
+      ],
+      "examples": [
+        "Le Canada est un très grand pays."
+      ],
+      "category": "travel",
+      "difficulty": 1,
+      "examples_en": [
+        "Canada is a very big country."
+      ]
+    },
+    {
+      "word": "ville",
+      "translations": [
+        "town",
+        "city"
+      ],
+      "examples": [
+        "Lyon est une grande ville."
+      ],
+      "category": "travel",
+      "difficulty": 1,
+      "examples_en": [
+        "Lyon is a big city."
+      ]
+    },
+    {
+      "word": "village",
+      "translations": [
+        "village"
+      ],
+      "examples": [
+        "C'est un petit village très calme."
+      ],
+      "category": "travel",
+      "difficulty": 1,
+      "examples_en": [
+        "It's a very quiet little village."
+      ]
+    },
+    {
+      "word": "église",
+      "translations": [
+        "church"
+      ],
+      "examples": [
+        "Il y a une vieille église dans mon village."
+      ],
+      "category": "travel",
+      "difficulty": 2,
+      "examples_en": [
+        "There's an old church in my village."
+      ]
+    },
+    {
+      "word": "banque",
+      "translations": [
+        "bank"
+      ],
+      "examples": [
+        "La banque ferme à cinq heures."
+      ],
+      "category": "travel",
+      "difficulty": 2,
+      "examples_en": [
+        "The bank closes at five."
+      ]
+    },
+    {
+      "word": "poste",
+      "translations": [
+        "post office"
+      ],
+      "examples": [
+        "Je vais à la poste."
+      ],
+      "category": "travel",
+      "difficulty": 2,
+      "examples_en": [
+        "I'm going to the post office."
+      ]
+    },
+    {
+      "word": "hôtel",
+      "translations": [
+        "hotel"
+      ],
+      "examples": [
+        "Cet hôtel est très confortable."
+      ],
+      "category": "travel",
+      "difficulty": 2,
+      "examples_en": [
+        "This hotel is very comfortable."
+      ]
+    },
+    {
+      "word": "carte postale",
+      "translations": [
+        "postcard"
+      ],
+      "examples": [
+        "J'écris une carte postale à mes grands-parents."
+      ],
+      "category": "travel",
+      "difficulty": 2,
+      "examples_en": [
+        "I'm writing a postcard to my grandparents."
+      ]
+    },
+    {
+      "word": "avion",
+      "translations": [
+        "plane",
+        "airplane"
+      ],
+      "examples": [
+        "Il y a un avion dans le ciel."
+      ],
+      "category": "travel",
+      "difficulty": 1,
+      "examples_en": [
+        "There's a plane in the sky."
+      ]
+    },
+    {
+      "word": "train",
+      "translations": [
+        "train"
+      ],
+      "examples": [
+        "Je prends le train pour aller au travail."
+      ],
+      "category": "travel",
+      "difficulty": 1,
+      "examples_en": [
+        "I take the train to work."
+      ]
+    },
+    {
+      "word": "voiture",
+      "translations": [
+        "car"
+      ],
+      "examples": [
+        "Mon père a une voiture bleue."
+      ],
+      "category": "travel",
+      "difficulty": 1,
+      "examples_en": [
+        "My father has a blue car."
+      ]
+    },
+    {
+      "word": "bateau",
+      "translations": [
+        "boat"
+      ],
+      "examples": [
+        "Nous faisons une promenade en bateau."
+      ],
+      "category": "travel",
+      "difficulty": 2,
+      "examples_en": [
+        "We're going on a boat trip."
+      ]
+    },
+    {
+      "word": "métro",
+      "translations": [
+        "underground",
+        "subway",
+        "metro"
+      ],
+      "examples": [
+        "Je prends le métro pour aller en ville."
+      ],
+      "category": "travel",
+      "difficulty": 2,
+      "examples_en": [
+        "I take the metro into town."
+      ]
+    },
+    {
+      "word": "prendre",
+      "translations": [
+        "to take",
+        "to have (food, drink)"
+      ],
+      "examples": [
+        "Nous allons prendre le train pour Paris."
+      ],
+      "category": "transportation",
+      "difficulty": 1,
+      "examples_en": [
+        "We're going to take the train to Paris."
+      ]
+    },
+    {
+      "word": "vélo",
+      "translations": [
+        "bike",
+        "bicycle"
+      ],
+      "examples": [
+        "Je vais à l'école à vélo."
+      ],
+      "category": "transportation",
+      "difficulty": 1,
+      "examples_en": [
+        "I go to school by bike."
+      ]
+    },
+    {
+      "word": "à pied",
+      "translations": [
+        "on foot"
+      ],
+      "examples": [
+        "Je vais au collège à pied."
+      ],
+      "category": "transportation",
+      "difficulty": 1,
+      "examples_en": [
+        "I walk to school."
+      ]
+    },
+    {
+      "word": "taxi",
+      "translations": [
+        "taxi"
+      ],
+      "examples": [
+        "On prend un taxi pour aller à la gare ?"
+      ],
+      "category": "transportation",
+      "difficulty": 1,
+      "examples_en": [
+        "Shall we take a taxi to the station?"
+      ]
+    },
+    {
+      "word": "descendre",
+      "translations": [
+        "to get off",
+        "to go down"
+      ],
+      "examples": [
+        "Je vais descendre au prochain arrêt."
+      ],
+      "category": "transportation",
+      "difficulty": 2,
+      "examples_en": [
+        "I'm going to get off at the next stop."
+      ]
+    },
+    {
+      "word": "gauche",
+      "translations": [
+        "left"
+      ],
+      "examples": [
+        "La gare est à gauche."
+      ],
+      "category": "transportation",
+      "difficulty": 1,
+      "examples_en": [
+        "The station is on the left."
+      ]
+    },
+    {
+      "word": "droite",
+      "translations": [
+        "right"
+      ],
+      "examples": [
+        "La banque est à droite."
+      ],
+      "category": "transportation",
+      "difficulty": 1,
+      "examples_en": [
+        "The bank is on the right."
+      ]
+    },
+    {
+      "word": "loin",
+      "translations": [
+        "far"
+      ],
+      "examples": [
+        "La plage est loin d'ici ?"
+      ],
+      "category": "transportation",
+      "difficulty": 1,
+      "examples_en": [
+        "Is the beach far from here?"
+      ]
+    },
+    {
+      "word": "près",
+      "translations": [
+        "near",
+        "close"
+      ],
+      "examples": [
+        "Il y a une pharmacie près d'ici ?"
+      ],
+      "category": "transportation",
+      "difficulty": 1,
+      "examples_en": [
+        "Is there a pharmacy near here?"
+      ]
+    },
+    {
+      "word": "courir",
+      "translations": [
+        "to run"
+      ],
+      "examples": [
+        "Je vais courir dans le parc."
+      ],
+      "category": "sports",
+      "difficulty": 2,
+      "examples_en": [
+        "I'm going for a run in the park."
+      ]
+    },
+    {
+      "word": "nager",
+      "translations": [
+        "to swim"
+      ],
+      "examples": [
+        "J'aime nager à la piscine."
+      ],
+      "category": "sports",
+      "difficulty": 1,
+      "examples_en": [
+        "I like swimming at the pool."
+      ]
+    },
+    {
+      "word": "football",
+      "translations": [
+        "football",
+        "soccer"
+      ],
+      "examples": [
+        "Je joue au football avec mes amis."
+      ],
+      "category": "sports",
+      "difficulty": 1,
+      "examples_en": [
+        "I play football with my friends."
+      ]
+    },
+    {
+      "word": "tennis",
+      "translations": [
+        "tennis"
+      ],
+      "examples": [
+        "Ma mère joue au tennis le samedi."
+      ],
+      "category": "sports",
+      "difficulty": 1,
+      "examples_en": [
+        "My mother plays tennis on Saturdays."
+      ]
+    },
+    {
+      "word": "basket",
+      "translations": [
+        "basketball"
+      ],
+      "examples": [
+        "Mon frère joue au basket."
+      ],
+      "category": "sports",
+      "difficulty": 1,
+      "examples_en": [
+        "My brother plays basketball."
+      ]
+    },
+    {
+      "word": "ballon",
+      "translations": [
+        "ball"
+      ],
+      "examples": [
+        "Le ballon est dans le jardin."
+      ],
+      "category": "sports",
+      "difficulty": 1,
+      "examples_en": [
+        "The ball is in the garden."
+      ]
+    },
+    {
+      "word": "équipe",
+      "translations": [
+        "team"
+      ],
+      "examples": [
+        "Notre équipe est très forte."
+      ],
+      "category": "sports",
+      "difficulty": 2,
+      "examples_en": [
+        "Our team is very strong."
+      ]
+    },
+    {
+      "word": "gagner",
+      "translations": [
+        "to win",
+        "to earn"
+      ],
+      "examples": [
+        "On va gagner le match !"
+      ],
+      "category": "sports",
+      "difficulty": 2,
+      "examples_en": [
+        "We're going to win the match!"
+      ]
+    },
+    {
+      "word": "sport",
+      "translations": [
+        "sport"
+      ],
+      "examples": [
+        "Tu fais du sport ?"
+      ],
+      "category": "leisure",
+      "difficulty": 1,
+      "examples_en": [
+        "Do you do any sport?"
+      ]
+    },
+    {
+      "word": "jouer",
+      "translations": [
+        "to play"
+      ],
+      "examples": [
+        "Tu veux jouer au foot avec nous ?"
+      ],
+      "category": "leisure",
+      "difficulty": 1,
+      "examples_en": [
+        "Do you want to play football with us?"
+      ]
+    },
+    {
+      "word": "jeu vidéo",
+      "translations": [
+        "video game"
+      ],
+      "examples": [
+        "Mon frère adore ce jeu vidéo."
+      ],
+      "category": "leisure",
+      "difficulty": 1,
+      "examples_en": [
+        "My brother loves this video game."
+      ]
+    },
+    {
+      "word": "lire",
+      "translations": [
+        "to read"
+      ],
+      "examples": [
+        "J'aime lire des livres pendant mon temps libre."
+      ],
+      "category": "leisure",
+      "difficulty": 1,
+      "examples_en": [
+        "I like reading books in my free time."
+      ]
+    },
+    {
+      "word": "regarder",
+      "translations": [
+        "to watch",
+        "to look at"
+      ],
+      "examples": [
+        "J'aime regarder la télé le soir."
+      ],
+      "category": "leisure",
+      "difficulty": 1,
+      "examples_en": [
+        "I like watching TV in the evening."
+      ]
+    },
+    {
+      "word": "film",
+      "translations": [
+        "film",
+        "movie"
+      ],
+      "examples": [
+        "Nous allons voir un film au cinéma ce soir."
+      ],
+      "category": "leisure",
+      "difficulty": 1,
+      "examples_en": [
+        "We're going to see a film at the cinema tonight."
+      ]
+    },
+    {
+      "word": "musique",
+      "translations": [
+        "music"
+      ],
+      "examples": [
+        "J'écoute de la musique le soir."
+      ],
+      "category": "leisure",
+      "difficulty": 1,
+      "examples_en": [
+        "I listen to music in the evening."
+      ]
+    },
+    {
+      "word": "danser",
+      "translations": [
+        "to dance"
+      ],
+      "examples": [
+        "Tu veux danser avec moi ?"
+      ],
+      "category": "leisure",
+      "difficulty": 1,
+      "examples_en": [
+        "Do you want to dance with me?"
+      ]
+    },
+    {
+      "word": "guitare",
+      "translations": [
+        "guitar"
+      ],
+      "examples": [
+        "Je joue de la guitare."
+      ],
+      "category": "leisure",
+      "difficulty": 1,
+      "examples_en": [
+        "I play the guitar."
+      ]
+    },
+    {
+      "word": "piano",
+      "translations": [
+        "piano"
+      ],
+      "examples": [
+        "Ma sœur joue du piano."
+      ],
+      "category": "leisure",
+      "difficulty": 1,
+      "examples_en": [
+        "My sister plays the piano."
+      ]
+    },
+    {
+      "word": "photo",
+      "translations": [
+        "photo",
+        "picture"
+      ],
+      "examples": [
+        "Je prends une photo de la tour Eiffel."
+      ],
+      "category": "leisure",
+      "difficulty": 1,
+      "examples_en": [
+        "I'm taking a photo of the Eiffel Tower."
+      ]
+    },
+    {
+      "word": "pêcher",
+      "translations": [
+        "to fish",
+        "to go fishing"
+      ],
+      "examples": [
+        "Mon père aime pêcher le week-end."
+      ],
+      "category": "leisure",
+      "difficulty": 2,
+      "examples_en": [
+        "My father likes fishing at the weekend."
+      ]
+    },
+    {
+      "word": "manger",
+      "translations": [
+        "to eat"
+      ],
+      "examples": [
+        "Tu veux manger une pizza ce soir ?"
+      ],
+      "category": "food",
+      "difficulty": 1,
+      "examples_en": [
+        "Do you want to eat a pizza tonight?"
+      ]
+    },
+    {
+      "word": "boire",
+      "translations": [
+        "to drink"
+      ],
+      "examples": [
+        "Je veux boire un verre d'eau."
+      ],
+      "category": "food",
+      "difficulty": 1,
+      "examples_en": [
+        "I want to drink a glass of water."
+      ]
+    },
+    {
+      "word": "cuisiner",
+      "translations": [
+        "to cook"
+      ],
+      "examples": [
+        "Mon père aime cuisiner le dimanche."
+      ],
+      "category": "food",
+      "difficulty": 2,
+      "examples_en": [
+        "My father likes cooking on Sundays."
+      ]
+    },
+    {
+      "word": "repas",
+      "translations": [
+        "meal"
+      ],
+      "examples": [
+        "Le repas est délicieux."
+      ],
+      "category": "food",
+      "difficulty": 1,
+      "examples_en": [
+        "The meal is delicious."
+      ]
+    },
+    {
+      "word": "délicieux",
+      "translations": [
+        "delicious"
+      ],
+      "examples": [
+        "Ce gâteau est délicieux !"
+      ],
+      "category": "food",
+      "difficulty": 1,
+      "examples_en": [
+        "This cake is delicious!"
+      ]
+    },
+    {
+      "word": "déjeuner",
+      "translations": [
+        "lunch",
+        "to have lunch"
+      ],
+      "examples": [
+        "Le déjeuner est à midi."
+      ],
+      "category": "food",
+      "difficulty": 1,
+      "examples_en": [
+        "Lunch is at noon."
+      ]
+    },
+    {
+      "word": "dîner",
+      "translations": [
+        "dinner",
+        "to have dinner"
+      ],
+      "examples": [
+        "Le dîner est prêt !"
+      ],
+      "category": "food",
+      "difficulty": 1,
+      "examples_en": [
+        "Dinner's ready!"
+      ]
+    },
+    {
+      "word": "restaurant",
+      "translations": [
+        "restaurant"
+      ],
+      "examples": [
+        "Je connais un bon restaurant en centre-ville."
+      ],
+      "category": "food",
+      "difficulty": 1,
+      "examples_en": [
+        "I know a good restaurant in the town centre."
+      ]
+    },
+    {
+      "word": "boulangerie",
+      "translations": [
+        "bakery"
+      ],
+      "examples": [
+        "J'achète du pain à la boulangerie."
+      ],
+      "category": "food",
+      "difficulty": 1,
+      "examples_en": [
+        "I buy bread at the bakery."
+      ]
+    },
+    {
+      "word": "baguette",
+      "translations": [
+        "baguette",
+        "French stick"
+      ],
+      "examples": [
+        "Je vais acheter une baguette."
+      ],
+      "category": "food",
+      "difficulty": 1,
+      "examples_en": [
+        "I'm going to buy a baguette."
+      ]
+    },
+    {
+      "word": "boucher",
+      "translations": [
+        "butcher"
+      ],
+      "examples": [
+        "Le boucher vend de la viande fraîche."
+      ],
+      "category": "food",
+      "difficulty": 2,
+      "examples_en": [
+        "The butcher sells fresh meat."
       ]
     },
     {
@@ -243,12 +4329,12 @@
         "bread"
       ],
       "examples": [
-        "Je voudrais une baguette de pain, s'il vous plaît."
+        "Je mange du pain avec du fromage."
       ],
       "category": "food",
-      "difficulty": 2,
+      "difficulty": 1,
       "examples_en": [
-        "I'd like a loaf of French bread, please."
+        "I eat bread with cheese."
       ]
     },
     {
@@ -257,26 +4343,68 @@
         "water"
       ],
       "examples": [
-        "Puis-je avoir un verre d'eau ?"
+        "Cette eau est très froide."
       ],
       "category": "food",
-      "difficulty": 2,
+      "difficulty": 1,
       "examples_en": [
-        "May I have a glass of water?"
+        "This water is very cold."
       ]
     },
     {
-      "word": "pomme",
+      "word": "verre",
       "translations": [
-        "apple"
+        "glass"
       ],
       "examples": [
-        "J'ai acheté des pommes au marché."
+        "Un verre de jus d'orange, s'il vous plaît."
       ],
       "category": "food",
-      "difficulty": 2,
+      "difficulty": 1,
       "examples_en": [
-        "I bought some apples at the market."
+        "A glass of orange juice, please."
+      ]
+    },
+    {
+      "word": "bouteille",
+      "translations": [
+        "bottle"
+      ],
+      "examples": [
+        "Une bouteille d'eau, s'il vous plaît."
+      ],
+      "category": "food",
+      "difficulty": 1,
+      "examples_en": [
+        "A bottle of water, please."
+      ]
+    },
+    {
+      "word": "sucre",
+      "translations": [
+        "sugar"
+      ],
+      "examples": [
+        "Tu prends du sucre dans ton café ?"
+      ],
+      "category": "food",
+      "difficulty": 1,
+      "examples_en": [
+        "Do you take sugar in your coffee?"
+      ]
+    },
+    {
+      "word": "œuf",
+      "translations": [
+        "egg"
+      ],
+      "examples": [
+        "Je mange un œuf le matin."
+      ],
+      "category": "food",
+      "difficulty": 1,
+      "examples_en": [
+        "I eat an egg in the morning."
       ]
     },
     {
@@ -299,98 +4427,197 @@
         "meat"
       ],
       "examples": [
-        "Nous avons mangé de la viande de bœuf pour le dîner."
+        "Nous mangeons de la viande le dimanche."
       ],
       "category": "food",
       "difficulty": 2,
       "examples_en": [
-        "We ate beef for dinner."
+        "We eat meat on Sundays."
       ]
     },
     {
-      "word": "avion",
+      "word": "poulet",
       "translations": [
-        "airplane"
+        "chicken"
       ],
       "examples": [
-        "Nous prenons l'avion pour aller en vacances."
+        "Je prends le poulet avec des frites."
       ],
-      "category": "travel",
-      "difficulty": 2,
+      "category": "food",
+      "difficulty": 1,
       "examples_en": [
-        "We're taking the plane to go on holiday."
+        "I'll have the chicken with chips."
       ]
     },
     {
-      "word": "train",
+      "word": "frites",
       "translations": [
-        "train"
+        "chips",
+        "fries"
       ],
       "examples": [
-        "Je prends le train pour aller au travail."
+        "Les frites sont très bonnes ici."
       ],
-      "category": "travel",
-      "difficulty": 2,
+      "category": "food",
+      "difficulty": 1,
       "examples_en": [
-        "I take the train to work."
+        "The chips are very good here."
       ]
     },
     {
-      "word": "voiture",
+      "word": "pâtes",
       "translations": [
-        "car"
+        "pasta"
       ],
       "examples": [
-        "Ma voiture est garée dans le parking."
+        "Les enfants adorent les pâtes."
       ],
-      "category": "travel",
-      "difficulty": 2,
+      "category": "food",
+      "difficulty": 1,
       "examples_en": [
-        "My car is parked in the car park."
+        "Children love pasta."
       ]
     },
     {
-      "word": "bateau",
+      "word": "pomme de terre",
       "translations": [
-        "boat"
+        "potato"
       ],
       "examples": [
-        "Nous avons fait une croisière en bateau."
+        "Une pomme de terre, c'est un légume."
       ],
-      "category": "travel",
-      "difficulty": 2,
+      "category": "food",
+      "difficulty": 1,
       "examples_en": [
-        "We went on a boat cruise."
+        "A potato is a vegetable."
       ]
     },
     {
-      "word": "métro",
+      "word": "pomme",
       "translations": [
-        "subway",
-        "metro"
+        "apple"
       ],
       "examples": [
-        "Je prends le métro pour aller en ville."
+        "Je mange une pomme tous les jours."
       ],
-      "category": "travel",
-      "difficulty": 2,
+      "category": "food",
+      "difficulty": 1,
       "examples_en": [
-        "I take the metro into town."
+        "I eat an apple every day."
+      ]
+    },
+    {
+      "word": "banane",
+      "translations": [
+        "banana"
+      ],
+      "examples": [
+        "Je mange une banane après le sport."
+      ],
+      "category": "food",
+      "difficulty": 1,
+      "examples_en": [
+        "I eat a banana after sport."
+      ]
+    },
+    {
+      "word": "fraise",
+      "translations": [
+        "strawberry"
+      ],
+      "examples": [
+        "La fraise est mon fruit préféré."
+      ],
+      "category": "food",
+      "difficulty": 1,
+      "examples_en": [
+        "Strawberries are my favourite fruit."
+      ]
+    },
+    {
+      "word": "glace",
+      "translations": [
+        "ice cream",
+        "ice"
+      ],
+      "examples": [
+        "Je voudrais une glace au chocolat."
+      ],
+      "category": "food",
+      "difficulty": 1,
+      "examples_en": [
+        "I'd like a chocolate ice cream."
       ]
     },
     {
       "word": "magasin",
       "translations": [
-        "store",
-        "shop"
+        "shop",
+        "store"
       ],
       "examples": [
-        "Je vais faire des achats dans ce magasin."
+        "Ce magasin ferme à sept heures."
       ],
       "category": "shopping",
-      "difficulty": 2,
+      "difficulty": 1,
       "examples_en": [
-        "I'm going to do some shopping in this shop."
+        "This shop closes at seven."
+      ]
+    },
+    {
+      "word": "supermarché",
+      "translations": [
+        "supermarket"
+      ],
+      "examples": [
+        "Je fais les courses au supermarché."
+      ],
+      "category": "shopping",
+      "difficulty": 1,
+      "examples_en": [
+        "I do the shopping at the supermarket."
+      ]
+    },
+    {
+      "word": "marché",
+      "translations": [
+        "market"
+      ],
+      "examples": [
+        "Je vais au marché pour acheter des fruits."
+      ],
+      "category": "shopping",
+      "difficulty": 1,
+      "examples_en": [
+        "I'm going to the market to buy some fruit."
+      ]
+    },
+    {
+      "word": "ouvert",
+      "translations": [
+        "open"
+      ],
+      "examples": [
+        "Le magasin est ouvert jusqu'à huit heures."
+      ],
+      "category": "shopping",
+      "difficulty": 1,
+      "examples_en": [
+        "The shop is open until eight."
+      ]
+    },
+    {
+      "word": "fermé",
+      "translations": [
+        "closed"
+      ],
+      "examples": [
+        "Le musée est fermé le mardi."
+      ],
+      "category": "shopping",
+      "difficulty": 1,
+      "examples_en": [
+        "The museum is closed on Tuesdays."
       ]
     },
     {
@@ -399,12 +4626,12 @@
         "to buy"
       ],
       "examples": [
-        "J'ai acheté un nouveau manteau."
+        "Je vais acheter un nouveau manteau."
       ],
       "category": "shopping",
-      "difficulty": 2,
+      "difficulty": 1,
       "examples_en": [
-        "I bought a new coat."
+        "I'm going to buy a new coat."
       ]
     },
     {
@@ -413,12 +4640,12 @@
         "to sell"
       ],
       "examples": [
-        "Cette boutique vend de beaux bijoux."
+        "Mon voisin veut vendre sa voiture."
       ],
       "category": "shopping",
       "difficulty": 2,
       "examples_en": [
-        "This shop sells beautiful jewellery."
+        "My neighbour wants to sell his car."
       ]
     },
     {
@@ -441,589 +4668,27 @@
         "money"
       ],
       "examples": [
-        "J'ai assez d'argent pour acheter ce manteau."
+        "Mon argent est dans mon sac."
       ],
       "category": "shopping",
       "difficulty": 2,
       "examples_en": [
-        "I have enough money to buy this coat."
+        "My money is in my bag."
       ]
     },
     {
-      "word": "heure",
+      "word": "cadeau",
       "translations": [
-        "hour"
+        "present",
+        "gift"
       ],
       "examples": [
-        "Il est 15 heures."
+        "J'ai un cadeau pour ma mère."
       ],
-      "category": "time",
-      "difficulty": 2,
+      "category": "shopping",
+      "difficulty": 1,
       "examples_en": [
-        "It's 3 p.m."
-      ]
-    },
-    {
-      "word": "jour",
-      "translations": [
-        "day"
-      ],
-      "examples": [
-        "Aujourd'hui, nous allons au parc."
-      ],
-      "category": "time",
-      "difficulty": 2,
-      "examples_en": [
-        "Today we're going to the park."
-      ]
-    },
-    {
-      "word": "semaine",
-      "translations": [
-        "week"
-      ],
-      "examples": [
-        "Je travaille du lundi au vendredi chaque semaine."
-      ],
-      "category": "time",
-      "difficulty": 2,
-      "examples_en": [
-        "I work Monday to Friday every week."
-      ]
-    },
-    {
-      "word": "mois",
-      "translations": [
-        "month"
-      ],
-      "examples": [
-        "Je pars le mois prochain."
-      ],
-      "category": "time",
-      "difficulty": 2,
-      "examples_en": [
-        "I'm leaving next month."
-      ]
-    },
-    {
-      "word": "année",
-      "translations": [
-        "year"
-      ],
-      "examples": [
-        "Cette année, j'apprends le français."
-      ],
-      "category": "time",
-      "difficulty": 2,
-      "examples_en": [
-        "This year, I'm learning French."
-      ]
-    },
-    {
-      "word": "soleil",
-      "translations": [
-        "sun"
-      ],
-      "examples": [
-        "Il fait beau et il y a beaucoup de soleil aujourd'hui."
-      ],
-      "category": "weather",
-      "difficulty": 2,
-      "examples_en": [
-        "The weather's nice and there's lots of sunshine today."
-      ]
-    },
-    {
-      "word": "pluie",
-      "translations": [
-        "rain"
-      ],
-      "examples": [
-        "La pluie a commencé à l'aube."
-      ],
-      "category": "weather",
-      "difficulty": 2,
-      "examples_en": [
-        "The rain started at dawn."
-      ]
-    },
-    {
-      "word": "neige",
-      "translations": [
-        "snow"
-      ],
-      "examples": [
-        "Il y a beaucoup de neige sur les montagnes."
-      ],
-      "category": "weather",
-      "difficulty": 2,
-      "examples_en": [
-        "There's a lot of snow on the mountains."
-      ]
-    },
-    {
-      "word": "vent",
-      "translations": [
-        "wind"
-      ],
-      "examples": [
-        "Il fait très venteux aujourd'hui."
-      ],
-      "category": "weather",
-      "difficulty": 2,
-      "examples_en": [
-        "It's very windy today."
-      ]
-    },
-    {
-      "word": "nuage",
-      "translations": [
-        "cloud"
-      ],
-      "examples": [
-        "Le ciel est couvert de nuages gris."
-      ],
-      "category": "weather",
-      "difficulty": 2,
-      "examples_en": [
-        "The sky is covered in grey clouds."
-      ]
-    },
-    {
-      "word": "travailler",
-      "translations": [
-        "to work"
-      ],
-      "examples": [
-        "Je travaille dans un bureau."
-      ],
-      "category": "work",
-      "difficulty": 3,
-      "examples_en": [
-        "I work in an office."
-      ]
-    },
-    {
-      "word": "bureau",
-      "translations": [
-        "office"
-      ],
-      "examples": [
-        "Mon bureau est au troisième étage."
-      ],
-      "category": "work",
-      "difficulty": 3,
-      "examples_en": [
-        "My office is on the third floor."
-      ]
-    },
-    {
-      "word": "patron",
-      "translations": [
-        "boss"
-      ],
-      "examples": [
-        "Mon patron est très exigeant."
-      ],
-      "category": "work",
-      "difficulty": 3,
-      "examples_en": [
-        "My boss is very demanding."
-      ]
-    },
-    {
-      "word": "collègue",
-      "translations": [
-        "colleague"
-      ],
-      "examples": [
-        "Je m'entends bien avec mes collègues."
-      ],
-      "category": "work",
-      "difficulty": 3,
-      "examples_en": [
-        "I get on well with my colleagues."
-      ]
-    },
-    {
-      "word": "salaire",
-      "translations": [
-        "salary"
-      ],
-      "examples": [
-        "Mon salaire me permet de vivre confortablement."
-      ],
-      "category": "work",
-      "difficulty": 3,
-      "examples_en": [
-        "My salary lets me live comfortably."
-      ]
-    },
-    {
-      "word": "école",
-      "translations": [
-        "school"
-      ],
-      "examples": [
-        "Je vais à l'école tous les jours."
-      ],
-      "category": "education",
-      "difficulty": 3,
-      "examples_en": [
-        "I go to school every day."
-      ]
-    },
-    {
-      "word": "professeur",
-      "translations": [
-        "teacher"
-      ],
-      "examples": [
-        "Mon professeur de français est très sympathique."
-      ],
-      "category": "education",
-      "difficulty": 3,
-      "examples_en": [
-        "My French teacher is very nice."
-      ]
-    },
-    {
-      "word": "étudiant",
-      "translations": [
-        "student"
-      ],
-      "examples": [
-        "Je suis un étudiant en première année."
-      ],
-      "category": "education",
-      "difficulty": 3,
-      "examples_en": [
-        "I'm a first-year student."
-      ]
-    },
-    {
-      "word": "livre",
-      "translations": [
-        "book"
-      ],
-      "examples": [
-        "J'ai emprunté ce livre à la bibliothèque."
-      ],
-      "category": "education",
-      "difficulty": 3,
-      "examples_en": [
-        "I borrowed this book from the library."
-      ]
-    },
-    {
-      "word": "stylo",
-      "translations": [
-        "pen"
-      ],
-      "examples": [
-        "Peux-tu me prêter un stylo, s'il te plaît ?"
-      ],
-      "category": "education",
-      "difficulty": 3,
-      "examples_en": [
-        "Can you lend me a pen, please?"
-      ]
-    },
-    {
-      "word": "maison",
-      "translations": [
-        "house"
-      ],
-      "examples": [
-        "Ma maison a un grand jardin."
-      ],
-      "category": "housing",
-      "difficulty": 3,
-      "examples_en": [
-        "My house has a big garden."
-      ]
-    },
-    {
-      "word": "appartement",
-      "translations": [
-        "apartment"
-      ],
-      "examples": [
-        "J'habite dans un appartement au centre-ville."
-      ],
-      "category": "housing",
-      "difficulty": 3,
-      "examples_en": [
-        "I live in an apartment in the city centre."
-      ]
-    },
-    {
-      "word": "chambre",
-      "translations": [
-        "room"
-      ],
-      "examples": [
-        "Ma chambre est au deuxième étage."
-      ],
-      "category": "housing",
-      "difficulty": 3,
-      "examples_en": [
-        "My bedroom is on the second floor."
-      ]
-    },
-    {
-      "word": "cuisine",
-      "translations": [
-        "kitchen"
-      ],
-      "examples": [
-        "Je fais la cuisine tous les soirs."
-      ],
-      "category": "housing",
-      "difficulty": 3,
-      "examples_en": [
-        "I cook every evening."
-      ]
-    },
-    {
-      "word": "jardin",
-      "translations": [
-        "garden"
-      ],
-      "examples": [
-        "Nous avons un beau jardin avec des fleurs."
-      ],
-      "category": "housing",
-      "difficulty": 3,
-      "examples_en": [
-        "We have a beautiful garden with flowers."
-      ]
-    },
-    {
-      "word": "lire",
-      "translations": [
-        "to read"
-      ],
-      "examples": [
-        "J'aime lire des livres pendant mon temps libre."
-      ],
-      "category": "leisure",
-      "difficulty": 3,
-      "examples_en": [
-        "I like reading books in my free time."
-      ]
-    },
-    {
-      "word": "jouer",
-      "translations": [
-        "to play"
-      ],
-      "examples": [
-        "Nous jouons au football le week-end."
-      ],
-      "category": "leisure",
-      "difficulty": 3,
-      "examples_en": [
-        "We play football at the weekend."
-      ]
-    },
-    {
-      "word": "sport",
-      "translations": [
-        "sport"
-      ],
-      "examples": [
-        "Le football est mon sport préféré."
-      ],
-      "category": "leisure",
-      "difficulty": 3,
-      "examples_en": [
-        "Football is my favourite sport."
-      ]
-    },
-    {
-      "word": "musique",
-      "translations": [
-        "music"
-      ],
-      "examples": [
-        "J'écoute de la musique classique le soir."
-      ],
-      "category": "leisure",
-      "difficulty": 3,
-      "examples_en": [
-        "I listen to classical music in the evening."
-      ]
-    },
-    {
-      "word": "film",
-      "translations": [
-        "movie"
-      ],
-      "examples": [
-        "Nous allons voir un film au cinéma ce soir."
-      ],
-      "category": "leisure",
-      "difficulty": 3,
-      "examples_en": [
-        "We're going to see a movie at the cinema tonight."
-      ]
-    },
-    {
-      "word": "mal",
-      "translations": [
-        "pain",
-        "ache"
-      ],
-      "examples": [
-        "J'ai mal à la tête."
-      ],
-      "category": "health",
-      "difficulty": 3,
-      "examples_en": [
-        "I have a headache."
-      ]
-    },
-    {
-      "word": "médecin",
-      "translations": [
-        "doctor"
-      ],
-      "examples": [
-        "Je vais voir un médecin pour mon problème de dos."
-      ],
-      "category": "health",
-      "difficulty": 3,
-      "examples_en": [
-        "I'm going to see a doctor about my back problem."
-      ]
-    },
-    {
-      "word": "hôpital",
-      "translations": [
-        "hospital"
-      ],
-      "examples": [
-        "Mon grand-père est à l'hôpital."
-      ],
-      "category": "health",
-      "difficulty": 3,
-      "examples_en": [
-        "My grandfather is in hospital."
-      ]
-    },
-    {
-      "word": "médicament",
-      "translations": [
-        "medication"
-      ],
-      "examples": [
-        "Le médecin m'a prescrit des médicaments."
-      ],
-      "category": "health",
-      "difficulty": 3,
-      "examples_en": [
-        "The doctor prescribed me some medicine."
-      ]
-    },
-    {
-      "word": "santé",
-      "translations": [
-        "health"
-      ],
-      "examples": [
-        "Ma santé est bonne."
-      ],
-      "category": "health",
-      "difficulty": 3,
-      "examples_en": [
-        "My health is good."
-      ]
-    },
-    {
-      "word": "boucher",
-      "translations": [
-        "butcher",
-        "to chop"
-      ],
-      "examples": [
-        "Le boucher vend de la viande fraîche."
-      ],
-      "category": "food",
-      "difficulty": 2,
-      "examples_en": [
-        "The butcher sells fresh meat."
-      ]
-    },
-    {
-      "word": "parapluie",
-      "translations": [
-        "umbrella"
-      ],
-      "examples": [
-        "Je prends mon parapluie quand il pleut."
-      ],
-      "category": "weather",
-      "difficulty": 2,
-      "examples_en": [
-        "I take my umbrella when it rains."
-      ]
-    },
-    {
-      "word": "pêcher",
-      "translations": [
-        "to fish",
-        "to pick"
-      ],
-      "examples": [
-        "Mon père aime pêcher le weekend."
-      ],
-      "category": "leisure",
-      "difficulty": 3,
-      "examples_en": [
-        "My father likes fishing at the weekend."
-      ]
-    },
-    {
-      "word": "boulangerie",
-      "translations": [
-        "bakery"
-      ],
-      "examples": [
-        "J'achète du pain à la boulangerie."
-      ],
-      "category": "food",
-      "difficulty": 2,
-      "examples_en": [
-        "I buy bread at the bakery."
-      ]
-    },
-    {
-      "word": "rire",
-      "translations": [
-        "to laugh"
-      ],
-      "examples": [
-        "Elle rit quand elle est heureuse."
-      ],
-      "category": "emotions",
-      "difficulty": 2,
-      "examples_en": [
-        "She laughs when she's happy."
-      ]
-    },
-    {
-      "word": "oreille",
-      "translations": [
-        "ear"
-      ],
-      "examples": [
-        "J'entends avec mes oreilles."
-      ],
-      "category": "health",
-      "difficulty": 2,
-      "examples_en": [
-        "I hear with my ears."
+        "I have a present for my mother."
       ]
     },
     {
@@ -1032,147 +4697,77 @@
         "to sing"
       ],
       "examples": [
-        "Elle chante très bien."
+        "J'aime chanter sous la douche."
       ],
       "category": "arts",
-      "difficulty": 3,
+      "difficulty": 1,
       "examples_en": [
-        "She sings very well."
+        "I like singing in the shower."
       ]
     },
     {
-      "word": "fleuve",
+      "word": "chanson",
       "translations": [
-        "river"
+        "song"
       ],
       "examples": [
-        "Le fleuve traverse la ville."
-      ],
-      "category": "nature",
-      "difficulty": 3,
-      "examples_en": [
-        "The river runs through the city."
-      ]
-    },
-    {
-      "word": "chaussure",
-      "translations": [
-        "shoe"
-      ],
-      "examples": [
-        "Je porte des chaussures confortables."
-      ],
-      "category": "shopping",
-      "difficulty": 2,
-      "examples_en": [
-        "I wear comfortable shoes."
-      ]
-    },
-    {
-      "word": "dormir",
-      "translations": [
-        "to sleep"
-      ],
-      "examples": [
-        "Je dors huit heures par nuit."
-      ],
-      "category": "daily_routines",
-      "difficulty": 2,
-      "examples_en": [
-        "I sleep eight hours a night."
-      ]
-    },
-    {
-      "word": "courir",
-      "translations": [
-        "to run"
-      ],
-      "examples": [
-        "Je cours tous les jours pour faire de l'exercice."
-      ],
-      "category": "sports",
-      "difficulty": 3,
-      "examples_en": [
-        "I run every day to get some exercise."
-      ]
-    },
-    {
-      "word": "montagne",
-      "translations": [
-        "mountain"
-      ],
-      "examples": [
-        "Les montagnes sont très hautes."
-      ],
-      "category": "nature",
-      "difficulty": 3,
-      "examples_en": [
-        "The mountains are very high."
-      ]
-    },
-    {
-      "word": "église",
-      "translations": [
-        "church"
-      ],
-      "examples": [
-        "L'église est un bâtiment religieux."
+        "C'est ma chanson préférée !"
       ],
       "category": "arts",
-      "difficulty": 3,
+      "difficulty": 1,
       "examples_en": [
-        "A church is a religious building."
+        "It's my favourite song!"
       ]
     },
     {
-      "word": "malade",
+      "word": "dessiner",
       "translations": [
-        "sick",
-        "ill"
+        "to draw"
       ],
       "examples": [
-        "Je suis malade et je reste au lit."
+        "J'aime dessiner des animaux."
       ],
-      "category": "health",
+      "category": "arts",
+      "difficulty": 1,
+      "examples_en": [
+        "I like drawing animals."
+      ]
+    },
+    {
+      "word": "théâtre",
+      "translations": [
+        "theatre",
+        "drama"
+      ],
+      "examples": [
+        "Je fais du théâtre le mercredi."
+      ],
+      "category": "arts",
       "difficulty": 2,
       "examples_en": [
-        "I'm ill and I'm staying in bed."
+        "I do drama on Wednesdays."
       ]
     },
     {
-      "word": "manger",
+      "word": "artiste",
       "translations": [
-        "to eat"
+        "artist"
       ],
       "examples": [
-        "Je mange du pain et du fromage pour le petit-déjeuner."
+        "Mon oncle est artiste."
       ],
-      "category": "food",
+      "category": "arts",
       "difficulty": 2,
       "examples_en": [
-        "I eat bread and cheese for breakfast."
-      ]
-    },
-    {
-      "word": "parler",
-      "translations": [
-        "to speak",
-        "to talk"
-      ],
-      "examples": [
-        "Nous parlons français à la maison."
-      ],
-      "category": "daily_routines",
-      "difficulty": 3,
-      "examples_en": [
-        "We speak French at home."
+        "My uncle is an artist."
       ]
     },
     {
       "word": "beau",
       "translations": [
         "beautiful",
-        "handsome"
+        "handsome",
+        "lovely"
       ],
       "examples": [
         "Ce paysage est vraiment beau."
@@ -1184,76 +4779,120 @@
       ]
     },
     {
-      "word": "fatigue",
+      "word": "dormir",
       "translations": [
-        "tired",
-        "exhausted"
+        "to sleep"
       ],
       "examples": [
-        "Je suis fatigué après une longue journée de travail."
-      ],
-      "category": "health",
-      "difficulty": 3,
-      "examples_en": [
-        "I'm tired after a long day at work."
-      ]
-    },
-    {
-      "word": "hôtel",
-      "translations": [
-        "hotel"
-      ],
-      "examples": [
-        "Nous restons à l'hôtel pendant nos vacances."
-      ],
-      "category": "travel",
-      "difficulty": 3,
-      "examples_en": [
-        "We're staying at the hotel during our holiday."
-      ]
-    },
-    {
-      "word": "écrire",
-      "translations": [
-        "to write"
-      ],
-      "examples": [
-        "J'écris une lettre à ma grand-mère."
-      ],
-      "category": "education",
-      "difficulty": 3,
-      "examples_en": [
-        "I'm writing a letter to my grandmother."
-      ]
-    },
-    {
-      "word": "prendre",
-      "translations": [
-        "to take",
-        "to have"
-      ],
-      "examples": [
-        "Je prends le bus pour aller au travail."
-      ],
-      "category": "transportation",
-      "difficulty": 3,
-      "examples_en": [
-        "I take the bus to work."
-      ]
-    },
-    {
-      "word": "prêter",
-      "translations": [
-        "to lend",
-        "to borrow"
-      ],
-      "examples": [
-        "Je peux te prêter mon stylo si tu en as besoin."
+        "J'aime dormir tard le dimanche."
       ],
       "category": "daily_routines",
-      "difficulty": 3,
+      "difficulty": 1,
       "examples_en": [
-        "I can lend you my pen if you need it."
+        "I like sleeping late on Sundays."
+      ]
+    },
+    {
+      "word": "d'abord",
+      "translations": [
+        "first",
+        "first of all"
+      ],
+      "examples": [
+        "D'abord, je me lave les mains."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2,
+      "examples_en": [
+        "First, I wash my hands."
+      ]
+    },
+    {
+      "word": "ensuite",
+      "translations": [
+        "then",
+        "next"
+      ],
+      "examples": [
+        "Ensuite, je prends le petit déjeuner."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2,
+      "examples_en": [
+        "Then I have breakfast."
+      ]
+    },
+    {
+      "word": "douche",
+      "translations": [
+        "shower"
+      ],
+      "examples": [
+        "Je prends une douche le matin."
+      ],
+      "category": "daily_routines",
+      "difficulty": 1,
+      "examples_en": [
+        "I have a shower in the morning."
+      ]
+    },
+    {
+      "word": "brosse à dents",
+      "translations": [
+        "toothbrush"
+      ],
+      "examples": [
+        "Où est ma brosse à dents ?"
+      ],
+      "category": "daily_routines",
+      "difficulty": 2,
+      "examples_en": [
+        "Where's my toothbrush?"
+      ]
+    },
+    {
+      "word": "rentrer",
+      "translations": [
+        "to go home",
+        "to come back"
+      ],
+      "examples": [
+        "Je dois rentrer à la maison à six heures."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2,
+      "examples_en": [
+        "I have to go home at six."
+      ]
+    },
+    {
+      "word": "ranger",
+      "translations": [
+        "to tidy",
+        "to put away"
+      ],
+      "examples": [
+        "Je dois ranger ma chambre."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2,
+      "examples_en": [
+        "I have to tidy my room."
+      ]
+    },
+    {
+      "word": "parler",
+      "translations": [
+        "to speak",
+        "to talk"
+      ],
+      "examples": [
+        "J'aime parler français avec ma grand-mère."
+      ],
+      "category": "daily_routines",
+      "difficulty": 1,
+      "examples_en": [
+        "I like speaking French with my grandmother."
       ]
     },
     {
@@ -1262,84 +4901,524 @@
         "to bring"
       ],
       "examples": [
-        "Peux-tu m'apporter un verre d'eau ?"
+        "Tu peux apporter un gâteau samedi ?"
       ],
       "category": "daily_routines",
-      "difficulty": 3,
+      "difficulty": 2,
       "examples_en": [
-        "Can you bring me a glass of water?"
+        "Can you bring a cake on Saturday?"
       ]
     },
     {
-      "word": "regarder",
+      "word": "prêter",
       "translations": [
-        "to watch",
-        "to look at"
+        "to lend"
       ],
       "examples": [
-        "Je regarde la télévision le soir."
+        "Tu peux prêter ton vélo à Hugo ?"
       ],
-      "category": "leisure",
-      "difficulty": 3,
+      "category": "daily_routines",
+      "difficulty": 2,
       "examples_en": [
-        "I watch television in the evening."
+        "Can you lend your bike to Hugo?"
       ]
     },
     {
       "word": "fermer",
       "translations": [
-        "to close"
+        "to close",
+        "to shut"
       ],
       "examples": [
-        "Je ferme la porte à clé avant de sortir."
+        "Tu peux fermer la porte, s'il te plaît ?"
       ],
       "category": "daily_routines",
-      "difficulty": 3,
+      "difficulty": 1,
       "examples_en": [
-        "I lock the door before I go out."
+        "Can you close the door, please?"
       ]
     },
     {
-      "word": "aimer",
+      "word": "temps",
       "translations": [
-        "to like",
-        "to love"
+        "weather",
+        "time"
       ],
       "examples": [
-        "J'aime beaucoup le chocolat."
+        "Il fait quel temps à Paris ?"
       ],
-      "category": "emotions",
-      "difficulty": 3,
+      "category": "weather",
+      "difficulty": 1,
       "examples_en": [
-        "I really like chocolate."
+        "What's the weather like in Paris?"
       ]
     },
     {
-      "word": "animal",
+      "word": "soleil",
       "translations": [
-        "animal"
+        "sun"
       ],
       "examples": [
-        "J'ai un chat comme animal de compagnie."
+        "Il fait beau, il y a du soleil."
+      ],
+      "category": "weather",
+      "difficulty": 1,
+      "examples_en": [
+        "The weather's nice; it's sunny."
+      ]
+    },
+    {
+      "word": "ciel",
+      "translations": [
+        "sky"
+      ],
+      "examples": [
+        "Le ciel est bleu aujourd'hui."
+      ],
+      "category": "weather",
+      "difficulty": 1,
+      "examples_en": [
+        "The sky is blue today."
+      ]
+    },
+    {
+      "word": "nuage",
+      "translations": [
+        "cloud"
+      ],
+      "examples": [
+        "Il y a un gros nuage noir."
+      ],
+      "category": "weather",
+      "difficulty": 1,
+      "examples_en": [
+        "There's a big black cloud."
+      ]
+    },
+    {
+      "word": "pluie",
+      "translations": [
+        "rain"
+      ],
+      "examples": [
+        "Je n'aime pas la pluie."
+      ],
+      "category": "weather",
+      "difficulty": 1,
+      "examples_en": [
+        "I don't like the rain."
+      ]
+    },
+    {
+      "word": "pleuvoir",
+      "translations": [
+        "to rain"
+      ],
+      "examples": [
+        "Il va pleuvoir demain."
+      ],
+      "category": "weather",
+      "difficulty": 1,
+      "examples_en": [
+        "It's going to rain tomorrow."
+      ]
+    },
+    {
+      "word": "parapluie",
+      "translations": [
+        "umbrella"
+      ],
+      "examples": [
+        "Je prends mon parapluie quand il pleut."
+      ],
+      "category": "weather",
+      "difficulty": 1,
+      "examples_en": [
+        "I take my umbrella when it rains."
+      ]
+    },
+    {
+      "word": "neige",
+      "translations": [
+        "snow"
+      ],
+      "examples": [
+        "Les enfants jouent dans la neige."
+      ],
+      "category": "weather",
+      "difficulty": 1,
+      "examples_en": [
+        "The children are playing in the snow."
+      ]
+    },
+    {
+      "word": "vent",
+      "translations": [
+        "wind"
+      ],
+      "examples": [
+        "Il y a du vent à la plage."
+      ],
+      "category": "weather",
+      "difficulty": 1,
+      "examples_en": [
+        "It's windy at the beach."
+      ]
+    },
+    {
+      "word": "printemps",
+      "translations": [
+        "spring"
+      ],
+      "examples": [
+        "Au printemps, les jardins sont magnifiques."
+      ],
+      "category": "weather",
+      "difficulty": 1,
+      "examples_en": [
+        "In spring the gardens are beautiful."
+      ]
+    },
+    {
+      "word": "été",
+      "translations": [
+        "summer"
+      ],
+      "examples": [
+        "En été, il fait très chaud ici."
+      ],
+      "category": "weather",
+      "difficulty": 1,
+      "examples_en": [
+        "In summer it's very hot here."
+      ]
+    },
+    {
+      "word": "automne",
+      "translations": [
+        "autumn",
+        "fall"
+      ],
+      "examples": [
+        "En automne, les feuilles tombent."
+      ],
+      "category": "weather",
+      "difficulty": 1,
+      "examples_en": [
+        "In autumn the leaves fall."
+      ]
+    },
+    {
+      "word": "hiver",
+      "translations": [
+        "winter"
+      ],
+      "examples": [
+        "En hiver, nous allons à la montagne."
+      ],
+      "category": "weather",
+      "difficulty": 1,
+      "examples_en": [
+        "In winter we go to the mountains."
+      ]
+    },
+    {
+      "word": "mer",
+      "translations": [
+        "sea"
+      ],
+      "examples": [
+        "Nous allons à la mer en été."
+      ],
+      "category": "nature",
+      "difficulty": 1,
+      "examples_en": [
+        "We go to the seaside in summer."
+      ]
+    },
+    {
+      "word": "montagne",
+      "translations": [
+        "mountain"
+      ],
+      "examples": [
+        "Cette montagne est très haute."
+      ],
+      "category": "nature",
+      "difficulty": 1,
+      "examples_en": [
+        "This mountain is very high."
+      ]
+    },
+    {
+      "word": "campagne",
+      "translations": [
+        "countryside"
+      ],
+      "examples": [
+        "Mes grands-parents habitent à la campagne."
+      ],
+      "category": "nature",
+      "difficulty": 1,
+      "examples_en": [
+        "My grandparents live in the countryside."
+      ]
+    },
+    {
+      "word": "forêt",
+      "translations": [
+        "forest",
+        "woods"
+      ],
+      "examples": [
+        "La forêt est très belle en automne."
+      ],
+      "category": "nature",
+      "difficulty": 1,
+      "examples_en": [
+        "The forest is very beautiful in autumn."
+      ]
+    },
+    {
+      "word": "lac",
+      "translations": [
+        "lake"
+      ],
+      "examples": [
+        "Il y a un lac près de mon village."
+      ],
+      "category": "nature",
+      "difficulty": 1,
+      "examples_en": [
+        "There's a lake near my village."
+      ]
+    },
+    {
+      "word": "rivière",
+      "translations": [
+        "river"
+      ],
+      "examples": [
+        "Les enfants nagent dans la rivière."
+      ],
+      "category": "nature",
+      "difficulty": 1,
+      "examples_en": [
+        "The children are swimming in the river."
+      ]
+    },
+    {
+      "word": "fleuve",
+      "translations": [
+        "(large) river"
+      ],
+      "examples": [
+        "Le fleuve traverse la ville."
       ],
       "category": "nature",
       "difficulty": 3,
       "examples_en": [
-        "I have a cat as a pet."
+        "The river runs through the city."
       ]
     },
     {
-      "word": "marché",
+      "word": "île",
       "translations": [
-        "market"
+        "island"
       ],
       "examples": [
-        "Je vais au marché pour acheter des fruits et légumes."
+        "La Corse est une belle île."
       ],
-      "category": "shopping",
-      "difficulty": 3,
+      "category": "nature",
+      "difficulty": 2,
       "examples_en": [
-        "I'm going to the market to buy fruit and vegetables."
+        "Corsica is a beautiful island."
+      ]
+    },
+    {
+      "word": "arbre",
+      "translations": [
+        "tree"
+      ],
+      "examples": [
+        "Il y a un grand arbre devant la maison."
+      ],
+      "category": "nature",
+      "difficulty": 1,
+      "examples_en": [
+        "There's a big tree in front of the house."
+      ]
+    },
+    {
+      "word": "fleur",
+      "translations": [
+        "flower"
+      ],
+      "examples": [
+        "Je donne une fleur à ma mère."
+      ],
+      "category": "nature",
+      "difficulty": 1,
+      "examples_en": [
+        "I'm giving my mother a flower."
+      ]
+    },
+    {
+      "word": "porter",
+      "translations": [
+        "to wear",
+        "to carry"
+      ],
+      "examples": [
+        "Je n'aime pas porter de chapeau."
+      ],
+      "category": "clothing",
+      "difficulty": 1,
+      "examples_en": [
+        "I don't like wearing a hat."
+      ]
+    },
+    {
+      "word": "t-shirt",
+      "translations": [
+        "T-shirt"
+      ],
+      "examples": [
+        "En été, je porte un t-shirt."
+      ],
+      "category": "clothing",
+      "difficulty": 1,
+      "examples_en": [
+        "In summer I wear a T-shirt."
+      ]
+    },
+    {
+      "word": "pull",
+      "translations": [
+        "jumper",
+        "sweater"
+      ],
+      "examples": [
+        "Il fait froid, je mets un pull."
+      ],
+      "category": "clothing",
+      "difficulty": 1,
+      "examples_en": [
+        "It's cold, so I'm putting on a jumper."
+      ]
+    },
+    {
+      "word": "pantalon",
+      "translations": [
+        "trousers",
+        "pants"
+      ],
+      "examples": [
+        "Ce pantalon est trop petit."
+      ],
+      "category": "clothing",
+      "difficulty": 1,
+      "examples_en": [
+        "These trousers are too small."
+      ]
+    },
+    {
+      "word": "jean",
+      "translations": [
+        "jeans"
+      ],
+      "examples": [
+        "Mon jean est trop grand."
+      ],
+      "category": "clothing",
+      "difficulty": 1,
+      "examples_en": [
+        "My jeans are too big."
+      ]
+    },
+    {
+      "word": "robe",
+      "translations": [
+        "dress"
+      ],
+      "examples": [
+        "Elle porte une robe rouge."
+      ],
+      "category": "clothing",
+      "difficulty": 1,
+      "examples_en": [
+        "She's wearing a red dress."
+      ]
+    },
+    {
+      "word": "jupe",
+      "translations": [
+        "skirt"
+      ],
+      "examples": [
+        "Elle porte une jupe longue."
+      ],
+      "category": "clothing",
+      "difficulty": 1,
+      "examples_en": [
+        "She's wearing a long skirt."
+      ]
+    },
+    {
+      "word": "chemise",
+      "translations": [
+        "shirt"
+      ],
+      "examples": [
+        "Mon père porte une chemise blanche."
+      ],
+      "category": "clothing",
+      "difficulty": 1,
+      "examples_en": [
+        "My father is wearing a white shirt."
+      ]
+    },
+    {
+      "word": "chaussure",
+      "translations": [
+        "shoe"
+      ],
+      "examples": [
+        "Ma chaussure est sous le lit."
+      ],
+      "category": "clothing",
+      "difficulty": 1,
+      "examples_en": [
+        "My shoe is under the bed."
+      ]
+    },
+    {
+      "word": "chaussette",
+      "translations": [
+        "sock"
+      ],
+      "examples": [
+        "J'ai un trou dans ma chaussette."
+      ],
+      "category": "clothing",
+      "difficulty": 1,
+      "examples_en": [
+        "I have a hole in my sock."
+      ]
+    },
+    {
+      "word": "maillot de bain",
+      "translations": [
+        "swimsuit",
+        "swimming trunks"
+      ],
+      "examples": [
+        "Je prends mon maillot de bain pour la plage."
+      ],
+      "category": "clothing",
+      "difficulty": 2,
+      "examples_en": [
+        "I'm taking my swimsuit to the beach."
       ]
     }
   ]

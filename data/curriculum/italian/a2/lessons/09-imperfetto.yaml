@@ -1,0 +1,243 @@
+title: "Da bambino giocavo"
+subtitle: The imperfetto — how things were and what you used to do
+goal: describe how things were and what you used to do with the imperfetto, and choose between it and the passato prossimo
+minutes: 16
+
+sections:
+  - heading: A second past tense
+    body: |
+      Italian has a second past tense, the **imperfetto**. It's used for
+      what you **used to** do, for **descriptions** in the past, and for
+      what **was going on** when something happened.
+
+      It's the easiest tense to form. Take the infinitive, drop the **-re**,
+      and add **-vo, -vi, -va, -vamo, -vate, -vano**. The same endings work
+      for -are, -ere and -ire verbs.
+    table:
+      columns: [person, parlare, prendere, dormire]
+      rows:
+        - [io, parlavo, prendevo, dormivo]
+        - [tu, parlavi, prendevi, dormivi]
+        - [lui / lei / Lei, parlava, prendeva, dormiva]
+        - [noi, parlavamo, prendevamo, dormivamo]
+        - [voi, parlavate, prendevate, dormivate]
+        - [loro, parlavano, prendevano, dormivano]
+    examples:
+      - ["Abitavo a Londra.", "I used to live in London."]
+      - ["Dormivi?", "Were you sleeping?"]
+    tip: "Stress: *parlavano* is par-LA-va-no, and *dormivano* is dor-MEE-va-no — never on the -va- of *-vano*."
+
+  - heading: "Essere, and a few old forms"
+    body: |
+      **Essere** is irregular in the imperfetto — and you'll use it all the
+      time, to say how things **were**.
+
+      **Fare**, **bere** and **dire** use an older, longer form of the verb,
+      but the endings are regular: *facevo*, *bevevo*, *dicevo*.
+
+      *Avere* is completely regular: *avevo, avevi, aveva…*
+    table:
+      columns: [person, essere, fare]
+      rows:
+        - [io, ero, facevo]
+        - [tu, eri, facevi]
+        - [lui / lei / Lei, era, faceva]
+        - [noi, eravamo, facevamo]
+        - [voi, eravate, facevate]
+        - [loro, erano, facevano]
+    examples:
+      - ["Ero stanco.", "I was tired."]
+      - ["La camera era piccola ma pulita.", "The room was small but clean."]
+      - ["Faceva freddo.", "It was cold."]
+    tip: "To ask how something went, say *Com'era?* — What was it like? *Com'era il film? — Era molto bello!*"
+
+  - heading: "Used to, and how things were"
+    body: |
+      Use the imperfetto for:
+
+      - **habits** in the past — things you did again and again: *Da
+        piccola andavo al mare ogni estate.* — When I was little I went to
+        the seaside every summer.
+      - **descriptions** — weather, age, feelings, how things looked:
+        *Avevo dieci anni. C'era il sole.* — I was ten. It was sunny.
+
+      Words that often go with it: **da bambino / da bambina** (as a
+      child), **da piccolo / da piccola** (when I was little), **ogni
+      estate** (every summer), **di solito** (usually).
+    examples:
+      - ["Da bambino giocavo sempre in giardino.", "As a child I always played in the garden."]
+      - ["Di solito la domenica mangiavamo dai nonni.", "On Sundays we usually ate at our grandparents'."]
+      - ["Mia nonna aveva un cane enorme.", "My grandmother had a huge dog."]
+      - ["D'inverno andavamo in montagna.", "In winter we used to go to the mountains."]
+    tip: "English says \"used to\" or \"would\": *Ogni estate andavamo al mare* — every summer we used to (we would) go to the seaside. Italian needs only the imperfetto."
+
+  - heading: Imperfetto or passato prossimo?
+    body: |
+      Think of a film. The **imperfetto** is the background: what was going
+      on, what things were like. The **passato prossimo** is the action:
+      what happened, one finished event.
+
+      - *Guardavo la TV quando è arrivato Marco.* — I was watching TV when Marco arrived.
+      - *Faceva bel tempo, così siamo andati al mare.* — The weather was nice, so we went to the seaside.
+
+      One event → passato prossimo: *Sabato ho giocato a calcio.* A habit →
+      imperfetto: *Giocavo a calcio ogni sabato.*
+    examples:
+      - ["Dormivo quando hai telefonato.", "I was sleeping when you phoned."]
+      - ["Pioveva, quindi siamo rimasti a casa.", "It was raining, so we stayed at home."]
+      - ["Ieri sono andato in piscina. Da piccolo ci andavo ogni giorno.", "Yesterday I went to the pool. When I was little I went every day."]
+    tip: "\"I was watching\" is imperfetto (*guardavo*), but \"I watched a film last night\" is one finished event: *ho visto un film*."
+
+words:
+  - [da bambino, "as a child"]
+  - [da piccolo, when I was little]
+  - [di solito, usually]
+  - [ogni, every]
+  - [estate, summer]
+  - [inverno, winter]
+  - [piovere, to rain]
+  - [quindi, "so, therefore"]
+  - [così, "so, like this"]
+  - [giardino, garden]
+  - [piscina, swimming pool]
+  - [pulito, clean]
+  - [enorme, huge]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Da bambino ___ a Londra."
+    hint: abitare, io
+    translation: As a child I lived in London.
+    answers: [abitavo]
+    why: Drop the -re of abitare and add -vo for io.
+
+  - type: fill
+    section: 1
+    prompt: "Noi ___ sempre in centro."
+    hint: mangiare
+    translation: We always used to eat in town.
+    answers: [mangiavamo]
+    why: With noi, the imperfetto ending is -vamo.
+
+  - type: choice
+    section: 1
+    prompt: Which is the loro form of *dormire* in the imperfetto?
+    options: [dormivano, dormevano, dormiavano]
+    answer: dormivano
+    why: Drop the -re of dormire and add -vano.
+
+  - type: fill
+    section: 2
+    prompt: "Ieri ___ molto stanca."
+    hint: essere, io
+    translation: Yesterday I was very tired.
+    answers: [ero]
+    why: Essere is irregular — io ero.
+
+  - type: fill
+    section: 2
+    prompt: "___ freddo."
+    hint: fare
+    translation: It was cold.
+    answers: [faceva]
+    why: Fare uses the old form face- in the imperfetto — faceva.
+
+  - type: translate
+    section: 2
+    direction: to-english
+    prompt: La camera era piccola ma pulita.
+    answers:
+      - The room was small but clean.
+      - The bedroom was small but clean.
+    why: Era is "was" — a description in the past.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: We were tired.
+    answers:
+      - Eravamo stanchi.
+      - Noi eravamo stanchi.
+      - Eravamo stanche.
+      - Noi eravamo stanche.
+    why: Essere with noi is eravamo in the imperfetto.
+
+  - type: fill
+    section: 3
+    prompt: "Da piccola ___ al mare ogni estate."
+    hint: andare, io
+    translation: When I was little I went to the seaside every summer.
+    answers: [andavo]
+    why: A habit in the past takes the imperfetto.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: As a child I used to play football. (a boy speaking)
+    answers:
+      - Da bambino giocavo a calcio.
+      - Da bambino io giocavo a calcio.
+      - Da piccolo giocavo a calcio.
+      - Da piccolo io giocavo a calcio.
+      - Quando ero bambino giocavo a calcio.
+      - Quando ero piccolo giocavo a calcio.
+    why: '"Used to" is just the imperfetto — giocavo.'
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: Di solito mangiavamo dai nonni.
+    answers:
+      - We usually ate at our grandparents'.
+      - We usually ate at our grandparents' house.
+      - We usually ate at Grandma and Grandpa's.
+      - We usually used to eat at our grandparents'.
+      - Usually we ate at our grandparents'.
+      - We would usually eat at our grandparents'.
+    why: A habit in the past — di solito + imperfetto.
+
+  - type: choice
+    section: 3
+    prompt: Which sentence describes a habit?
+    options: [Ogni sabato giocavo a tennis., Sabato ho giocato a tennis.]
+    answer: Ogni sabato giocavo a tennis.
+    why: Something you did again and again takes the imperfetto.
+
+  - type: fill
+    section: 4
+    prompt: "Guardavo la TV quando Marco ___ arrivato."
+    hint: essere
+    translation: I was watching TV when Marco arrived.
+    answers: [è]
+    why: Marco's arrival is one event, so it takes the passato prossimo with essere.
+
+  - type: choice
+    section: 4
+    prompt: How do you say "I was sleeping when you phoned"?
+    options: [Ho dormito quando telefonavi., Dormivo quando hai telefonato., Dormivo quando telefonavi.]
+    answer: Dormivo quando hai telefonato.
+    why: The background (sleeping) is imperfetto; the event (the phone call) is passato prossimo.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Pioveva, quindi siamo rimasti a casa.
+    answers:
+      - It was raining, so we stayed at home.
+      - It was raining, so we stayed home.
+      - It was raining, so we stayed in.
+    why: Pioveva is the background; siamo rimasti is what happened.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: Yesterday I watched a film.
+    answers:
+      - Ieri ho visto un film.
+      - Ieri ho guardato un film.
+      - Ho visto un film ieri.
+      - Ho guardato un film ieri.
+      - Ieri io ho visto un film.
+      - Ieri io ho guardato un film.
+    why: One finished event takes the passato prossimo.

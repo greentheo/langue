@@ -1,0 +1,221 @@
+title: "Mi piacerebbe"
+subtitle: The conditional — would, could, should
+goal: ask for things politely, invite people, say what you'd like to do and give gentle advice with the conditional — vorrei, potrebbe, mi piacerebbe, dovresti
+minutes: 15
+
+sections:
+  - heading: "Would: the conditional"
+    body: |
+      You already know **vorrei** — "I would like". It's the
+      **conditional**, the "would" form of the verb.
+
+      It's built like the future (lesson 11), on the same stem, but with
+      different endings: **-ei, -esti, -ebbe, -emmo, -este, -ebbero**.
+
+      Verbs with an irregular future use the same stem here: *sarò →
+      sarei*, *andrò → andrei*, *farò → farei*, *vorrò → vorrei*.
+    table:
+      columns: [person, parlare, potere]
+      rows:
+        - [io, parlerei, potrei]
+        - [tu, parleresti, potresti]
+        - [lui / lei / Lei, parlerebbe, potrebbe]
+        - [noi, parleremmo, potremmo]
+        - [voi, parlereste, potreste]
+        - [loro, parlerebbero, potrebbero]
+    examples:
+      - ["Sarebbe bello!", "That would be nice!"]
+      - ["Andrei, ma non ho tempo.", "I'd go, but I haven't got time."]
+    tip: "Watch the double m: *potremo* (future) is \"we will be able to\", *potremmo* (conditional) is \"we could\"."
+
+  - heading: Asking politely
+    body: |
+      In shops, hotels and restaurants, the conditional makes a request
+      softer — like "could you…?" in English:
+
+      - **Vorrei** una camera doppia. — I'd like a double room.
+      - **Potrebbe** ripetere? — Could you repeat that? (to someone you call *Lei*)
+      - **Potresti** aiutarmi? — Could you help me? (to a friend)
+      - **Mi darebbe** il conto? — Would you give me the bill?
+    examples:
+      - ["Vorrei prenotare un tavolo per quattro.", "I'd like to book a table for four."]
+      - ["Potrebbe chiamare un taxi, per favore?", "Could you call a taxi, please?"]
+      - ["Mi potrebbe dare la chiave?", "Could you give me the key?"]
+    tip: "Use *potrebbe* (for *Lei*) with staff and strangers, and *potresti* (for *tu*) with friends."
+
+  - heading: "Wishes and invitations: mi piacerebbe"
+    body: |
+      **Mi piacerebbe** means "I would like" or "I'd love" — for wishes and
+      dreams. It works just like *mi piace*: *ti piacerebbe*, *gli
+      piacerebbe*, *le piacerebbe*…
+
+      - *Mi piacerebbe visitare Venezia.* — I'd love to visit Venice.
+      - *Ti piacerebbe venire al cinema?* — Would you like to come to the cinema?
+
+      To accept an invitation, say **Sì, volentieri!** (Yes, I'd love to!).
+      To turn one down: *Mi piacerebbe, ma non posso.* — I'd love to, but I
+      can't.
+    examples:
+      - ["Mi piacerebbe imparare a suonare la chitarra.", "I'd like to learn to play the guitar."]
+      - ["Ti piacerebbe venire con noi?", "Would you like to come with us?"]
+      - ["Sì, mi piacerebbe molto!", "Yes, I'd love to!"]
+    tip: "*Ti piacerebbe…?* sounds warmer than *Vuoi…?* when you invite someone."
+
+  - heading: Advice and suggestions
+    body: |
+      **Dovresti** — "you should" — gives advice gently:
+
+      - *Dovresti riposarti.* — You should rest.
+      - *Dovresti andare dal medico.* — You should go to the doctor's.
+
+      **Potremmo** — "we could" — makes a suggestion:
+
+      - *Potremmo andare al mare domani.* — We could go to the seaside tomorrow.
+
+      And **al posto tuo** means "if I were you" (literally "in your
+      place"): *Al posto tuo, prenderei il treno.*
+    examples:
+      - ["Hai la febbre. Dovresti stare a letto.", "You've got a temperature. You should stay in bed."]
+      - ["Potremmo mangiare una pizza stasera.", "We could have a pizza tonight."]
+      - ["Al posto tuo, prenderei il treno.", "If I were you, I'd take the train."]
+    tip: "*Devi* is \"you must\"; *dovresti* is the gentler \"you should\". Doctors and friends usually say *dovresti*."
+
+words:
+  - [potrei, I could]
+  - [mi piacerebbe, "I'd like, I'd love"]
+  - [dovresti, you should]
+  - [prenotare, "to book, to reserve"]
+  - [camera doppia, double room]
+  - [volentieri, "gladly, I'd love to"]
+  - [al posto tuo, if I were you]
+  - [febbre, "fever, temperature"]
+  - [taxi, taxi]
+  - [imparare, to learn]
+  - [suonare, to play (an instrument)]
+  - [chitarra, guitar]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "___ bello!"
+    hint: essere
+    translation: That would be nice!
+    answers: [sarebbe]
+    why: Essere uses its future stem sar- with the conditional ending -ebbe.
+
+  - type: choice
+    section: 1
+    prompt: Which one means "we could"?
+    options: [potremo, potremmo, possiamo]
+    answer: potremmo
+    why: The conditional noi ending is -emmo, with a double m.
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: Andrei, ma non ho tempo.
+    answers:
+      - I'd go, but I don't have time.
+      - I'd go, but I haven't got time.
+      - I'd go, but I have no time.
+      - I would go, but I don't have time.
+    why: Andrei is the conditional of andare — "I would go".
+
+  - type: fill
+    section: 2
+    prompt: "___ una camera doppia, per favore."
+    hint: volere, io
+    translation: I'd like a double room, please.
+    answers: [vorrei]
+    why: Vorrei is the polite conditional of volere — "I would like".
+
+  - type: fill
+    section: 2
+    prompt: "___ ripetere, per favore?"
+    hint: potere, Lei
+    translation: Could you repeat that, please?
+    answers: [potrebbe]
+    why: Potrebbe is "could you" to someone you call Lei.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: Could you help me? (to a friend)
+    answers:
+      - Potresti aiutarmi?
+      - Mi potresti aiutare?
+      - Tu potresti aiutarmi?
+    why: Potresti is "could you" to a friend.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: I'd like to book a table for two.
+    answers:
+      - Vorrei prenotare un tavolo per due.
+      - Vorrei prenotare un tavolo per 2.
+    why: Vorrei + an infinitive is "I'd like to…".
+
+  - type: fill
+    section: 3
+    prompt: "Ti ___ venire al cinema?"
+    hint: piacere
+    translation: Would you like to come to the cinema?
+    answers: [piacerebbe]
+    why: Ti piacerebbe works just like ti piace — "would it please you".
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: Mi piacerebbe visitare Venezia.
+    answers:
+      - I'd like to visit Venice.
+      - I'd love to visit Venice.
+      - I would like to visit Venice.
+      - I would love to visit Venice.
+    why: Mi piacerebbe is "I would like" — for a wish.
+
+  - type: choice
+    section: 3
+    prompt: A friend invites you to the beach and you'd love to go. You say…
+    options: ["Sì, volentieri!", "Non mi piace.", "Dovresti andare."]
+    answer: "Sì, volentieri!"
+    why: Volentieri means "gladly" — the friendly way to say yes.
+
+  - type: fill
+    section: 4
+    prompt: "Hai la febbre. ___ stare a letto."
+    hint: dovere, tu
+    translation: You've got a temperature. You should stay in bed.
+    answers: [dovresti]
+    why: Dovresti is the gentle "you should".
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: We could go to the seaside tomorrow.
+    answers:
+      - Potremmo andare al mare domani.
+      - Domani potremmo andare al mare.
+      - Noi potremmo andare al mare domani.
+      - Domani noi potremmo andare al mare.
+    why: Potremmo — "we could" — makes a suggestion.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Al posto tuo, prenderei il treno.
+    answers:
+      - If I were you, I'd take the train.
+      - If I were you, I would take the train.
+      - If I was you, I'd take the train.
+      - In your place, I'd take the train.
+      - If I were you, I'd catch the train.
+    why: Al posto tuo is "if I were you", and prenderei is "I would take".
+
+  - type: choice
+    section: 4
+    prompt: Which is the gentlest way to give a friend advice?
+    options: [Devi riposarti., Dovresti riposarti., Riposati!]
+    answer: Dovresti riposarti.
+    why: Dovresti is "you should" — softer than devi or an order.

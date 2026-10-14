@@ -151,11 +151,11 @@ practice:
 
   - type: fill
     section: 1
-    prompt: "Comment vous ___ appelez ?"
+    prompt: "Vous ___ appelez comment ?"
     hint: (yourself — vous)
     translation: What's your name?
     answers: [vous]
-    why: With vous, the reflexive pronoun is also vous — so vous appears twice.
+    why: "With vous, the reflexive pronoun is also vous, so you say it twice: Vous vous appelez comment ?"
 
   - type: choice
     section: 3

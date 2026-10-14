@@ -1,0 +1,236 @@
+title: "Quando eu era criança"
+subtitle: The imperfeito for habits and descriptions
+goal: say what you used to do and describe how things were, with the imperfeito
+minutes: 15
+
+sections:
+  - heading: A second past tense
+    body: |
+      Portuguese has two everyday past tenses. The **perfeito** (lessons
+      1–3) is for single, finished events: *Ontem fui à praia.* The
+      **imperfeito** is for the background: what you **used to** do, and
+      what things **were like**.
+
+      For **-ar** verbs, the imperfeito endings all have **-ava**:
+    table:
+      columns: [pronoun, falar, morar]
+      rows:
+        - [eu, falava, morava]
+        - [você / ele / ela / a gente, falava, morava]
+        - [nós, falávamos, morávamos]
+        - [vocês / eles / elas, falavam, moravam]
+    examples:
+      - ["Eu morava em Belo Horizonte.", "I used to live in Belo Horizonte."]
+      - ["Ela trabalhava numa loja.", "She used to work in a shop."]
+      - ["A gente falava inglês em casa.", "We used to speak English at home."]
+    tip: "*Eu* and *ele* share one form — *eu falava*, *ele falava* — so Brazilians usually keep the pronoun to make it clear who."
+
+  - heading: -er and -ir verbs
+    body: |
+      For **-er** and **-ir** verbs, the endings have **-ia** — and they're
+      the same for both groups. There are no spelling changes and no
+      surprises: take off *-er* or *-ir* and add the ending. *Beber* →
+      *bebia*, *abrir* → *abria*, *assistir* → *assistia*.
+
+      Look at the accent in the *nós* forms: *falávamos*, *comíamos*,
+      *dormíamos*. It shows that the stress falls further back than usual.
+    table:
+      columns: [pronoun, comer, dormir]
+      rows:
+        - [eu, comia, dormia]
+        - [você / ele / ela / a gente, comia, dormia]
+        - [nós, comíamos, dormíamos]
+        - [vocês / eles / elas, comiam, dormiam]
+    examples:
+      - ["A gente comia muito arroz e feijão.", "We used to eat a lot of rice and beans."]
+      - ["Meu avô dormia depois do almoço.", "My grandfather used to sleep after lunch."]
+      - ["Eles bebiam café todo dia.", "They used to drink coffee every day."]
+
+  - heading: Only four irregular verbs
+    body: |
+      Good news: only four common verbs are irregular in the imperfeito —
+      **ser, ter, ir** and **vir**. You'll use *era* and *tinha* all the
+      time.
+
+      Even *estar*, *fazer* and *poder*, which are irregular almost
+      everywhere else, are regular here: *estava*, *fazia*, *podia*. So is
+      *querer*: the polite *queria* you learned in A1 is really the
+      imperfeito.
+    table:
+      columns: [pronoun, ser, ter, ir, vir]
+      rows:
+        - [eu, era, tinha, ia, vinha]
+        - [você / ele / ela / a gente, era, tinha, ia, vinha]
+        - [nós, éramos, tínhamos, íamos, vínhamos]
+        - [vocês / eles / elas, eram, tinham, iam, vinham]
+    examples:
+      - ["Eu era muito tímido.", "I was very shy."]
+      - ["A gente tinha um cachorro.", "We had a dog."]
+      - ["Eles iam à escola a pé.", "They used to walk to school."]
+    tip: "Just as *tem* means \"there is\", *tinha* means \"there was\" or \"there were\" in speech: *Tinha muita gente na praia.* — There were lots of people on the beach."
+
+  - heading: Habits — "used to"
+    body: |
+      Use the imperfeito for things that happened **again and again** in
+      the past. English says "used to" or "would"; Portuguese just uses the
+      imperfeito.
+
+      These words often go with it:
+
+      - **sempre** — always · **às vezes** — sometimes · **nunca** — never
+      - **todo dia** — every day · **toda semana** — every week
+      - **quando eu era criança** — when I was a child
+      - **antigamente** — in the old days
+    examples:
+      - ["Quando eu era criança, eu sempre brincava na rua.", "When I was a child, I always played in the street."]
+      - ["Toda semana a gente ia ao cinema.", "Every week we went to the cinema."]
+      - ["Antigamente as pessoas escreviam cartas.", "In the old days people wrote letters."]
+    tip: "When children play with toys or make-believe, that's **brincar**. For a sport or a game with rules, use *jogar*; for an instrument, *tocar*."
+
+  - heading: Describing the past
+    body: |
+      The imperfeito also paints the picture: what places and people were
+      like, the time, the weather, and how people felt.
+
+      Use **era** for what something was like, and **estava** for how it
+      was at that moment — the same choice as *ser* and *estar* in the
+      present.
+    examples:
+      - ["A casa era pequena e tinha um jardim.", "The house was small and had a garden."]
+      - ["Eram dez horas e fazia muito calor.", "It was ten o'clock and it was very hot."]
+      - ["Eu estava cansado.", "I was tired."]
+
+words:
+  - [criança, child]
+  - [brincar, "to play (games, toys)"]
+  - [antigamente, in the old days]
+  - [toda semana, every week]
+  - [pessoas, people]
+  - [muita gente, lots of people]
+  - [tímido, shy]
+  - [depois de, after]
+  - [jardim, garden]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Eu ___ em Curitiba."
+    hint: morar, eu — imperfeito
+    translation: I used to live in Curitiba.
+    answers: [morava]
+    why: In the imperfeito, -ar verbs end in -ava with eu.
+
+  - type: fill
+    section: 1
+    prompt: "Nós ___ inglês em casa."
+    hint: falar, nós — imperfeito
+    translation: We used to speak English at home.
+    answers: [falávamos]
+    why: In the imperfeito, -ar verbs end in -ávamos with nós.
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: Ele morava num apartamento.
+    answers: [He used to live in an apartment., He used to live in a flat., He lived in an apartment., He lived in a flat.]
+    why: Morava is the imperfeito — how things were for a long time.
+
+  - type: fill
+    section: 2
+    prompt: "A gente ___ muito arroz e feijão."
+    hint: comer — imperfeito
+    translation: We used to eat a lot of rice and beans.
+    answers: [comia]
+    why: In the imperfeito, -er verbs end in -ia with a gente.
+
+  - type: fill
+    section: 2
+    prompt: "Meus avós ___ depois do almoço."
+    hint: dormir, eles — imperfeito
+    translation: My grandparents used to sleep after lunch.
+    answers: [dormiam]
+    why: In the imperfeito, -ir verbs end in -iam with eles.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: I used to drink a lot of milk.
+    answers: [Eu bebia muito leite., Bebia muito leite., Eu tomava muito leite., Tomava muito leite.]
+    why: For a habit in the past, use the imperfeito — bebia.
+
+  - type: fill
+    section: 3
+    prompt: "Quando eu ___ criança, morava no Rio."
+    hint: ser, eu — imperfeito
+    translation: When I was a child, I lived in Rio.
+    answers: [era]
+    why: Ser is irregular in the imperfeito — eu era.
+
+  - type: fill
+    section: 3
+    prompt: "Nós ___ um gato."
+    hint: ter, nós — imperfeito
+    translation: We had a cat.
+    answers: [tínhamos]
+    why: Ter is irregular in the imperfeito — nós tínhamos.
+
+  - type: choice
+    section: 3
+    prompt: "\"There were lots of people on the beach.\" (everyday speech)"
+    options: [Tinha muita gente na praia., Tinham muita gente na praia., Era muita gente na praia.]
+    answer: Tinha muita gente na praia.
+    why: Tinha means "there was / there were", and like tem it never changes.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: When I was a child, I always played in the street.
+    answers:
+      - "Quando eu era criança, eu sempre brincava na rua."
+      - "Quando eu era criança, sempre brincava na rua."
+      - "Quando era criança, eu sempre brincava na rua."
+      - "Quando era criança, sempre brincava na rua."
+    why: A childhood habit takes the imperfeito, and children's play is brincar.
+
+  - type: choice
+    section: 4
+    prompt: Which verb is for children playing with toys?
+    options: [brincar, jogar, tocar]
+    answer: brincar
+    why: Brincar is to play like a child; jogar is for sport and games, tocar for instruments.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: "Todo domingo a gente ia à praia."
+    answers:
+      - "Every Sunday we went to the beach."
+      - "Every Sunday we used to go to the beach."
+      - "Every Sunday we would go to the beach."
+      - "We went to the beach every Sunday."
+      - "We used to go to the beach every Sunday."
+      - "We would go to the beach every Sunday."
+    why: "Ia is the imperfeito of ir — something that happened again and again."
+
+  - type: fill
+    section: 5
+    prompt: "A casa ___ pequena e tinha um jardim."
+    hint: ser — imperfeito
+    translation: The house was small and had a garden.
+    answers: [era]
+    why: To describe what something was like, use era.
+
+  - type: fill
+    section: 5
+    prompt: "___ muito calor."
+    hint: fazer — imperfeito
+    translation: It was very hot.
+    answers: [Fazia]
+    why: Weather in a description takes the imperfeito, and fazer is regular — fazia.
+
+  - type: translate
+    section: 5
+    direction: to-english
+    prompt: Eu estava cansada.
+    answers: [I was tired.]
+    why: Estava describes how someone was at that moment.

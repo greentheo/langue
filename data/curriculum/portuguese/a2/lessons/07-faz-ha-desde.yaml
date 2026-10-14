@@ -1,0 +1,201 @@
+title: "Moro aqui há dois anos"
+subtitle: Faz, há and desde — ago, for and since
+goal: say how long ago something happened, how long you've been doing something, and since when
+minutes: 13
+
+sections:
+  - heading: Ago
+    body: |
+      To say how long **ago** something happened, put **há** or **faz**
+      before the length of time, and use the perfeito:
+
+      - *Cheguei há dois dias.* — I arrived two days ago.
+      - *Ela viajou faz uma semana.* — She left a week ago.
+
+      *Há* comes from *haver*, the written "there is" from A1. *Faz* comes
+      from *fazer*. Here they mean the same, and *faz* is more common in
+      speech. Neither one changes: *há três anos*, *faz três anos*.
+    examples:
+      - ["Comprei o carro há um mês.", "I bought the car a month ago."]
+      - ["Eles chegaram faz uma hora.", "They arrived an hour ago."]
+    tip: "*Há* (ago) has an h and an accent; *a* (to) has neither. *Há dois dias* — two days ago."
+
+  - heading: Two ways to say it
+    body: |
+      There are two word orders, and you'll hear both all the time:
+
+      - verb + **há / faz** + time: *Ela chegou há uma hora.*
+      - **Faz / Há** + time + **que** + verb: *Faz uma hora que ela chegou.*
+
+      The second order needs **que**. To ask how long, use **quanto
+      tempo**: *Há quanto tempo você chegou?* — How long ago did you
+      arrive?
+
+      When you meet a friend after ages, say **Quanto tempo!** — Long time
+      no see!
+    examples:
+      - ["Faz dois anos que eu visitei Salvador.", "I visited Salvador two years ago."]
+      - ["Faz quanto tempo que você chegou?", "How long ago did you arrive?"]
+      - ["Oi, Pedro! Quanto tempo!", "Hi, Pedro! Long time no see!"]
+
+  - heading: For — with the present
+    body: |
+      Here is the big difference from English. For something that started
+      in the past and is **still going on**, Portuguese uses the
+      **present** tense with *há* or *faz*:
+
+      - *Moro aqui há dois anos.* — I've lived here for two years.
+      - *Faz seis meses que estudo português.* — I've been studying
+        Portuguese for six months.
+
+      English says "have lived" and "have been studying". Portuguese says,
+      literally, "I live here for two years" — because you still do.
+    examples:
+      - ["Ela trabalha no hospital há cinco anos.", "She's worked at the hospital for five years."]
+      - ["Faz uma hora que estou esperando.", "I've been waiting for an hour."]
+    tip: "Don't use *por* for something still going on: *moro aqui há dois anos*. For something finished, use the perfeito: *Morei lá dois anos.* — I lived there for two years (but don't now)."
+
+  - heading: Desde — since
+    body: |
+      **Desde** means "since". It gives the **starting point**, not the
+      length of time. Like *há*, it takes the present when the thing is
+      still true:
+
+      - *Moro aqui desde 2020.* — I've lived here since 2020.
+      - *Estou com dor de cabeça desde ontem.* — I've had a headache since
+        yesterday.
+
+      Two handy phrases: **desde criança** — since I was a child, and
+      **Desde quando?** — Since when?
+    examples:
+      - ["Toco violão desde criança.", "I've played the guitar since I was a child."]
+      - ["Desde quando você mora aqui?", "How long have you lived here?"]
+    tip: "*Há* + a length of time: *há dois anos*. *Desde* + a starting point: *desde 2020*, *desde ontem*, *desde segunda*."
+
+words:
+  - [há dois dias, two days ago]
+  - [faz uma semana, a week ago / for a week]
+  - [desde, since]
+  - [quanto tempo, how long]
+  - [Quanto tempo!, Long time no see!]
+  - [desde criança, since I was a child]
+  - [tempo, time]
+  - [dor de cabeça, headache]
+  - [violão, guitar]
+  - [hospital, hospital]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Cheguei ___ dois dias."
+    hint: ago
+    translation: I arrived two days ago.
+    answers: [há, faz]
+    why: Há or faz before a length of time means "ago".
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: "Ela chegou há uma semana."
+    answers:
+      - "She arrived a week ago."
+      - "She arrived one week ago."
+      - "She got here a week ago."
+    why: "Há + a length of time, with the perfeito, means \"ago\"."
+
+  - type: choice
+    section: 1
+    prompt: "\"two days ago\""
+    options: [há dois dias, a dois dias, à dois dias]
+    answer: há dois dias
+    why: "\"Ago\" is há — with an h and an accent."
+
+  - type: fill
+    section: 2
+    prompt: "Faz uma semana ___ ela viajou."
+    hint: that
+    translation: She left a week ago.
+    answers: [que]
+    why: When faz + time comes first, you need que before the verb.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: How long ago did you arrive? (to a friend)
+    answers:
+      - Há quanto tempo você chegou?
+      - Faz quanto tempo que você chegou?
+      - Há quanto tempo que você chegou?
+      - Quanto tempo faz que você chegou?
+      - Você chegou há quanto tempo?
+      - Você chegou faz quanto tempo?
+    why: Quanto tempo asks how long, with há or faz in front.
+
+  - type: translate
+    section: 2
+    direction: to-english
+    prompt: "Faz três dias que eles viajaram."
+    answers:
+      - "They left three days ago."
+      - "They travelled three days ago."
+      - "They traveled three days ago."
+      - "They went away three days ago."
+      - "It's been three days since they left."
+      - "Three days ago they left."
+    why: "Faz + time + que, with the perfeito, means \"ago\"."
+
+  - type: fill
+    section: 3
+    prompt: "Moro aqui ___ dois anos."
+    hint: for
+    translation: I've lived here for two years.
+    answers: [há, faz]
+    why: For something still going on, use há or faz with the present tense.
+
+  - type: choice
+    section: 3
+    prompt: "\"I've been studying Portuguese for six months.\""
+    options: [Estudo português há seis meses., Estudei português há seis meses., Estudo português por seis meses.]
+    answer: Estudo português há seis meses.
+    why: You're still studying, so Portuguese uses the present with há.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: We've been waiting for an hour.
+    answers:
+      - Estamos esperando há uma hora.
+      - Nós estamos esperando há uma hora.
+      - A gente está esperando há uma hora.
+      - Estamos esperando faz uma hora.
+      - A gente está esperando faz uma hora.
+      - Faz uma hora que estamos esperando.
+      - Faz uma hora que nós estamos esperando.
+      - Faz uma hora que a gente está esperando.
+      - Há uma hora que estamos esperando.
+      - Esperamos há uma hora.
+    why: Still waiting, so use the present (estamos esperando) with há or faz.
+
+  - type: fill
+    section: 4
+    prompt: "Moro aqui ___ 2020."
+    hint: since
+    translation: I've lived here since 2020.
+    answers: [desde]
+    why: Desde gives the starting point — since 2020.
+
+  - type: choice
+    section: 4
+    prompt: "\"I've had a headache since yesterday.\""
+    options: [Estou com dor de cabeça desde ontem., Estou com dor de cabeça há ontem., Estive com dor de cabeça desde ontem.]
+    answer: Estou com dor de cabeça desde ontem.
+    why: Ontem is a starting point, so use desde — and the headache is still there, so the present.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: "Moro em Curitiba desde 2019."
+    answers:
+      - "I've lived in Curitiba since 2019."
+      - "I've been living in Curitiba since 2019."
+    why: "Desde gives the starting point, and the present moro means you still live there."

@@ -1,0 +1,685 @@
+dialogues:
+  # ── A2.1 Last weekend ────────────────────────────────────────────────────
+  - id: weekend-chat
+    unit: 1
+    title: How was your weekend?
+    setting: It's Monday morning at school in Rome. Your friend Giulia wants to hear about your weekend. You're friends, so use tu.
+    with: Giulia
+    lines:
+      - them: "Ciao! Com'è andato il fine settimana?"
+        english: "Hi! How was your weekend?"
+      - you: "Say great — you and your family went to the seaside."
+        answers:
+          - "Benissimo, siamo andati al mare."
+          - "Siamo andati al mare."
+          - "Siamo andate al mare."
+          - "Sono andato al mare con la mia famiglia."
+          - "Sono andata al mare con la mia famiglia."
+      - them: "Che bello! E cosa avete fatto?"
+        english: "How lovely! And what did you do?"
+      - you: "Say you swam, and in the evening you danced."
+        answers:
+          - "Abbiamo nuotato e la sera abbiamo ballato."
+          - "Abbiamo nuotato e abbiamo ballato."
+          - "Abbiamo nuotato e poi abbiamo ballato."
+          - "Ho nuotato e la sera ho ballato."
+          - "Ho nuotato e ho ballato."
+      - them: "Che fortuna!"
+        english: "Lucky you!"
+      - you: "Ask her if she did anything nice."
+        answers:
+          - "E tu? Cosa hai fatto di bello?"
+          - "Cosa hai fatto di bello?"
+          - "Che cosa hai fatto di bello?"
+          - "Che hai fatto di bello?"
+      - them: "Niente di speciale. Ho studiato tutto il weekend: domani c'è la verifica di storia!"
+        english: "Nothing special. I studied all weekend: there's a history test tomorrow!"
+      - you: "Say really? You haven't studied!"
+        answers:
+          - "Davvero? Io non ho studiato!"
+          - "Davvero? Non ho studiato!"
+          - "Non ho studiato!"
+      - them: "Allora studiamo insieme a ricreazione!"
+        english: "Then let's study together at break!"
+
+  - id: big-news
+    unit: 1
+    title: Big news
+    setting: Your Italian friend Luca comes running over to you in the playground. He has news. Use tu.
+    with: Luca
+    lines:
+      - them: "Ciao! Hai sentito? Ho una notizia incredibile!"
+        english: "Hi! Have you heard? I've got amazing news!"
+      - you: "Ask him what happened."
+        answers:
+          - "Cos'è successo?"
+          - "Cosa è successo?"
+          - "Che cosa è successo?"
+          - "Che è successo?"
+      - them: "Sabato la mia squadra ha vinto il torneo! E io ho segnato tre gol!"
+        english: "On Saturday my team won the tournament! And I scored three goals!"
+      - you: "Say you can't believe it!"
+        answers:
+          - "Non ci posso credere!"
+          - "Non posso crederci!"
+          - "Davvero? Non ci posso credere!"
+      - them: "Sì! È stato bellissimo. E tu, cosa hai fatto?"
+        english: "Yes! It was wonderful. And you, what did you do?"
+      - you: "Say nothing special — you stayed at home and watched a film."
+        answers:
+          - "Niente di speciale. Sono restato a casa e ho guardato un film."
+          - "Niente di speciale. Sono restata a casa e ho guardato un film."
+          - "Sono restato a casa e ho guardato un film."
+          - "Sono restata a casa e ho guardato un film."
+          - "Sono rimasto a casa e ho visto un film."
+          - "Sono rimasta a casa e ho visto un film."
+      - them: "Che noia! La prossima volta vieni a vedere la partita!"
+        english: "How boring! Next time, come and watch the match!"
+
+  # ── A2.2 What a day! ─────────────────────────────────────────────────────
+  - id: at-the-doctor
+    unit: 2
+    title: At the doctor's
+    setting: You're staying in Bologna, and yesterday you hurt yourself playing football. Now you're at the doctor's. Be polite — use Lei.
+    with: the doctor
+    lines:
+      - them: "Buongiorno. Allora, cos'è successo?"
+        english: "Good morning. So, what happened?"
+      - you: "Say you fell yesterday and hurt your knee."
+        answers:
+          - "Ieri sono caduto e mi sono fatto male al ginocchio."
+          - "Ieri sono caduta e mi sono fatta male al ginocchio."
+          - "Sono caduto e mi sono fatto male al ginocchio."
+          - "Sono caduta e mi sono fatta male al ginocchio."
+      - them: "Vediamo… Le fa male qui?"
+        english: "Let's see… Does it hurt here?"
+      - you: "Say yes, it hurts a lot."
+        answers:
+          - "Sì, mi fa molto male."
+          - "Sì, fa molto male."
+          - "Sì, mi fa tanto male."
+      - them: "Non è niente di grave. Le do un antidolorifico."
+        english: "It's nothing serious. I'll give you a painkiller."
+      - you: "Ask how many times a day you should take it."
+        answers:
+          - "Quante volte al giorno devo prenderlo?"
+          - "Quante volte al giorno lo devo prendere?"
+          - "Quante volte devo prenderlo?"
+      - them: "Due volte al giorno, dopo i pasti. E niente calcio per una settimana!"
+        english: "Twice a day, after meals. And no football for a week!"
+      - you: "Say what a shame — and thank her."
+        answers:
+          - "Che peccato! Grazie, dottoressa."
+          - "Che peccato! Grazie."
+          - "Peccato! Grazie mille."
+
+  - id: a-long-day
+    unit: 2
+    title: A long day
+    setting: You're staying with an Italian family in Turin. In the evening, Laura, your host mum, asks about your day. She uses tu with you, so use tu with her.
+    with: Laura
+    lines:
+      - them: "Ciao! Com'è andata oggi?"
+        english: "Hi! How did today go?"
+      - you: "Say you got up late and missed the bus."
+        answers:
+          - "Mi sono alzato tardi e ho perso l'autobus."
+          - "Mi sono alzata tardi e ho perso l'autobus."
+          - "Mi sono svegliato tardi e ho perso l'autobus."
+          - "Mi sono svegliata tardi e ho perso l'autobus."
+      - them: "Oh no! E poi cosa hai fatto?"
+        english: "Oh no! And then what did you do?"
+      - you: "Say you had a maths test at school."
+        answers:
+          - "A scuola ho fatto una verifica di matematica."
+          - "Ho fatto una verifica di matematica."
+          - "Abbiamo fatto una verifica di matematica."
+      - them: "Una verifica! E com'è andata?"
+        english: "A test! And how did it go?"
+      - you: "Say it went well — you got an eight!"
+        answers:
+          - "È andata bene: ho preso otto!"
+          - "Ho preso otto!"
+          - "Ho preso un otto!"
+      - them: "Che bello! E dopo la scuola?"
+        english: "Great! And after school?"
+      - you: "Say you went to the park with friends and had a great time."
+        answers:
+          - "Sono andato al parco con gli amici e mi sono divertito un sacco."
+          - "Sono andata al parco con gli amici e mi sono divertita un sacco."
+          - "Sono andato al parco con gli amici e mi sono divertito molto."
+          - "Sono andata al parco con gli amici e mi sono divertita molto."
+      - them: "Che bella giornata, allora! Ma adesso a letto presto."
+        english: "What a good day, then! But now, early to bed."
+
+  # ── A2.3 Running late ────────────────────────────────────────────────────
+  - id: late-train
+    unit: 3
+    title: A late train at Roma Termini
+    setting: You're at Roma Termini with a paper ticket for the 10:15 regional train to Florence (Firenze). It's 10:20, and you've just run into the station. Ask at the information desk — politely.
+    with: the man at the information desk
+    lines:
+      - them: "Buongiorno, mi dica."
+        english: "Good morning, how can I help?"
+      - you: "Ask if the train to Florence has already left."
+        answers:
+          - "Il treno per Firenze è già partito?"
+          - "È già partito il treno per Firenze?"
+          - "Il treno per Firenze è partito già?"
+      - them: "No, non è ancora partito: è in ritardo."
+        english: "No, it hasn't left yet: it's late."
+      - you: "Ask how late it is."
+        answers:
+          - "Quanto ritardo ha?"
+          - "Di quanto è in ritardo?"
+          - "Quanto è in ritardo?"
+      - them: "Venti minuti. Ora parte alle dieci e trentacinque."
+        english: "Twenty minutes. It now leaves at 10:35."
+      - you: "Ask which platform it leaves from."
+        answers:
+          - "Da quale binario parte?"
+          - "Da che binario parte?"
+          - "Quale binario?"
+      - them: "Dal binario nove. Ha già timbrato il biglietto?"
+        english: "From platform nine. Have you already validated your ticket?"
+      - you: "Say no, not yet — and ask where you validate the ticket."
+        answers:
+          - "No, non ancora. Dove si timbra il biglietto?"
+          - "Dove si timbra il biglietto?"
+          - "No, non ancora. Dove si timbra?"
+          - "No. Dove si timbra?"
+      - them: "Lì, alla macchinetta vicino al binario."
+        english: "Over there, at the little machine by the platform."
+
+  # ── A2.4 Eating out ──────────────────────────────────────────────────────
+  - id: trattoria-evening
+    unit: 4
+    title: Dinner for four
+    setting: You walk into a busy trattoria in Florence with three friends. Be polite to the waiter.
+    with: the waiter
+    lines:
+      - them: "Buonasera! Quanti siete?"
+        english: "Good evening! How many of you are there?"
+      - you: "Say there are four of you."
+        answers:
+          - "Siamo in quattro."
+          - "Siamo quattro."
+          - "Un tavolo per quattro, per favore."
+      - them: "Prego, accomodatevi. Cosa vi porto da bere?"
+        english: "This way, please, take a seat. What can I bring you to drink?"
+      - you: "Ask him to bring you some still water, please."
+        answers:
+          - "Ci porta dell'acqua naturale, per favore?"
+          - "Ci porta dell'acqua naturale?"
+          - "Dell'acqua naturale, per favore."
+          - "Vorrei dell'acqua naturale, per favore."
+      - them: "Certo. E da mangiare?"
+        english: "Of course. And to eat?"
+      - you: "Order a margherita for yourself."
+        answers:
+          - "Per me una margherita, per favore."
+          - "Per me una margherita."
+          - "Una margherita, per favore."
+          - "Vorrei una margherita, per favore."
+      - them: "Perfetto, arriva subito."
+        english: "Perfect, it'll be right there."
+      - you: "Half an hour later, nothing has come. Say excuse me — you've been waiting for half an hour."
+        answers:
+          - "Scusi, aspettiamo da mezz'ora."
+          - "Aspettiamo da mezz'ora."
+          - "Aspettiamo da trenta minuti."
+      - them: "Mi scusi! Ecco a Lei: una pizza ai funghi."
+        english: "I'm so sorry! Here you are: a mushroom pizza."
+      - you: "Say excuse me — this isn't what you ordered."
+        answers:
+          - "Scusi, questo non è quello che ho ordinato."
+          - "Scusi, non è quello che ho ordinato."
+          - "Scusi, ho ordinato una margherita."
+      - them: "Oh, mi scusi! Gliela cambio subito."
+        english: "Oh, I'm sorry! I'll change it right away."
+
+  - id: at-the-deli
+    unit: 4
+    title: Shopping for a picnic
+    setting: You're buying food for a picnic at a small grocer's in Siena. Be polite to the shopkeeper.
+    with: the shopkeeper
+    lines:
+      - them: "Buongiorno! Cosa Le do?"
+        english: "Good morning! What can I get you?"
+      - you: "Ask for 200 grams of ham, please."
+        answers:
+          - "Vorrei due etti di prosciutto, per favore."
+          - "Due etti di prosciutto, per favore."
+          - "Due etti di prosciutto, grazie."
+          - "Vorrei duecento grammi di prosciutto."
+      - them: "Ecco. Altro?"
+        english: "Here you are. Anything else?"
+      - you: "Say yes — some cheese, too."
+        answers:
+          - "Sì, anche del formaggio."
+          - "Anche del formaggio, per favore."
+          - "Sì, vorrei anche del formaggio."
+          - "Sì, del formaggio, per favore."
+      - them: "Quanto ne vuole?"
+        english: "How much would you like?"
+      - you: "Say a small piece, please."
+        answers:
+          - "Un pezzo piccolo, per favore."
+          - "Un piccolo pezzo, per favore."
+          - "Un pezzo piccolo, grazie."
+      - them: "Ecco qua. Nient'altro?"
+        english: "Here you go. Nothing else?"
+      - you: "Ask if they have any fresh tomatoes."
+        answers:
+          - "Avete pomodori freschi?"
+          - "Avete dei pomodori freschi?"
+          - "Ci sono pomodori freschi?"
+      - them: "Sì, sono buonissimi oggi. Quanti ne vuole?"
+        english: "Yes, they're lovely today. How many would you like?"
+      - you: "Ask for a kilo, and ask how much it is."
+        answers:
+          - "Un chilo, per favore. Quant'è?"
+          - "Un chilo, grazie. Quant'è?"
+          - "Un chilo, per favore. Quanto costa?"
+          - "Un chilo. Quanto costa?"
+      - them: "Sono dodici euro e quaranta."
+        english: "That's twelve euros forty."
+
+  # ── A2.5 Can I try it on? ────────────────────────────────────────────────
+  - id: exchanging-a-sweater
+    unit: 5
+    title: Too small
+    setting: Yesterday you bought a sweater in a shop in Milan, but it's too small. You go back with the receipt. Be polite.
+    with: the shop assistant
+    lines:
+      - them: "Buongiorno! Posso aiutarLa?"
+        english: "Good morning! Can I help you?"
+      - you: "Say you bought this sweater yesterday, and ask if you can exchange it."
+        answers:
+          - "Ieri ho comprato questo maglione. Posso cambiarlo?"
+          - "Ho comprato questo maglione ieri. Posso cambiarlo?"
+          - "Ieri ho comprato questo maglione. Lo posso cambiare?"
+          - "Ho comprato questo maglione ieri. Lo posso cambiare?"
+      - them: "Certo. C'è qualche problema?"
+        english: "Of course. Is something wrong with it?"
+      - you: "Say it's tight on you."
+        answers:
+          - "Mi sta stretto."
+          - "Mi sta troppo stretto."
+          - "Mi sta un po' stretto."
+          - "È troppo stretto."
+      - them: "Capisco. Che taglia porta?"
+        english: "I see. What size are you?"
+      - you: "Say you're a size 42."
+        answers:
+          - "Porto la 42."
+          - "Porto la quarantadue."
+          - "Porto la *."
+      - them: "Allora provi questo: è una 44."
+        english: "Then try this one: it's a 44."
+      - you: "Say thanks, and ask where the fitting rooms are."
+        answers:
+          - "Grazie. Dove sono i camerini?"
+          - "Dove sono i camerini?"
+          - "Grazie. Dov'è il camerino?"
+      - them: "In fondo a destra. … Allora, come Le sta?"
+        english: "At the back on the right. … So, how does it fit?"
+      - you: "Say it's perfect — you'll take this one."
+        answers:
+          - "È perfetto. Prendo questo!"
+          - "Perfetto, prendo questo!"
+          - "È perfetto, lo prendo!"
+          - "Va benissimo, prendo questo!"
+      - them: "Ottimo! Le sta benissimo."
+        english: "Great! It really suits you."
+
+  - id: birthday-present
+    unit: 5
+    title: A present for Mum
+    setting: You're in the centre of Verona with your Italian friend Sara, looking for a birthday present for your mum. Use tu.
+    with: Sara
+    lines:
+      - them: "Allora, cosa cerchi?"
+        english: "So, what are you looking for?"
+      - you: "Say a present for your mum — it's her birthday on Sunday."
+        answers:
+          - "Un regalo per mia madre: domenica è il suo compleanno."
+          - "Un regalo per mia mamma: domenica è il suo compleanno."
+          - "Cerco un regalo per mia madre. Il suo compleanno è domenica."
+      - them: "Che cosa le piace?"
+        english: "What does she like?"
+      - you: "Say she likes reading — maybe you'll give her a book."
+        answers:
+          - "Le piace leggere. Forse le regalo un libro."
+          - "Le piace leggere. Le regalo un libro."
+          - "Le piacciono i libri. Forse le regalo un libro."
+      - them: "Guarda, lì c'è una libreria! Entriamo?"
+        english: "Look, there's a bookshop over there! Shall we go in?"
+      - you: "Say yes — and ask her if she can help you."
+        answers:
+          - "Sì! Mi puoi aiutare?"
+          - "Mi aiuti?"
+          - "Puoi aiutarmi?"
+      - them: "Certo! … Ecco, questo libro di cucina è perfetto. Lo prendi?"
+        english: "Of course! … Look, this cookbook is perfect. Are you getting it?"
+      - you: "Say yes, you'll take it!"
+        answers:
+          - "Sì, lo prendo!"
+          - "Lo prendo!"
+          - "Sì, lo compro!"
+          - "Lo compro!"
+      - them: "E le scriviamo anche un biglietto!"
+        english: "And let's write her a card, too!"
+
+  # ── A2.6 A room for the night ────────────────────────────────────────────
+  - id: hotel-problem
+    unit: 6
+    title: A hot night in Naples
+    setting: It's a hot summer evening, and you've just arrived at your hotel in Naples. Be polite with the receptionist.
+    with: the receptionist
+    lines:
+      - them: "Buonasera! Ha una prenotazione?"
+        english: "Good evening! Do you have a booking?"
+      - you: "Say yes — you have a booking in the name of Smith."
+        answers:
+          - "Sì, ho una prenotazione a nome Smith."
+          - "Ho una prenotazione a nome Smith."
+          - "Ho una prenotazione a nome *."
+          - "Ho una prenotazione a nome di *."
+      - them: "Sì, ecco: una camera doppia per tre notti. Questa è la chiave."
+        english: "Yes, here it is: a double room for three nights. This is the key."
+      - you: "Ask if breakfast is included."
+        answers:
+          - "La colazione è compresa?"
+          - "La colazione è inclusa?"
+          - "È compresa la colazione?"
+      - them: "Sì, dalle sette alle dieci."
+        english: "Yes, from seven to ten."
+      - you: "Ten minutes later, you're back at reception. Say there's a problem with the room: the air conditioning isn't working."
+        answers:
+          - "C'è un problema con la camera: l'aria condizionata non funziona."
+          - "L'aria condizionata non funziona."
+          - "Scusi, in camera l'aria condizionata non va."
+      - them: "Mi dispiace! Ne ho un'altra al quinto piano, con vista sul mare. La vuole?"
+        english: "I'm sorry! I have another one on the fifth floor, with a sea view. Would you like it?"
+      - you: "Say yes, thanks — you'll take it."
+        answers:
+          - "Sì, grazie, la prendo!"
+          - "Sì, la prendo!"
+          - "Va bene, la prendo!"
+          - "Sì, grazie, la voglio!"
+      - them: "Ecco la chiave. Altro?"
+        english: "Here's the key. Anything else?"
+      - you: "Ask how long it takes to get to the centre."
+        answers:
+          - "Quanto ci vuole per arrivare in centro?"
+          - "Quanto ci vuole per andare in centro?"
+          - "Quanto tempo ci vuole per arrivare in centro?"
+      - them: "A piedi, venti minuti. In autobus, dieci."
+        english: "On foot, twenty minutes. By bus, ten."
+
+  # ── A2.7 At home, then and now ───────────────────────────────────────────
+  - id: first-evening
+    unit: 7
+    title: Your first evening
+    setting: You've just arrived to stay with the Ferrari family in Bologna for a month. Elena, the mum, opens the door. She uses tu with you, so use tu with her.
+    with: Elena
+    lines:
+      - them: "Ciao, entra! Fai come a casa tua!"
+        english: "Hi, come in! Make yourself at home!"
+      - you: "Thank her, and ask where to put your things."
+        answers:
+          - "Grazie! Dove metto le mie cose?"
+          - "Dove metto le mie cose?"
+          - "Grazie! Dove metto la valigia?"
+      - them: "La tua camera è in fondo al corridoio, a destra."
+        english: "Your room is at the end of the corridor, on the right."
+      - you: "Later, Elena is in the kitchen. Ask if you can give her a hand."
+        answers:
+          - "Ti do una mano?"
+          - "Posso aiutarti?"
+          - "Ti posso aiutare?"
+      - them: "Grazie! Sto preparando la cena. Puoi apparecchiare la tavola?"
+        english: "Thanks! I'm making dinner. Can you set the table?"
+      - you: "Say of course — you'll set the table."
+        answers:
+          - "Certo, apparecchio io la tavola."
+          - "Apparecchio io la tavola."
+          - "Certo, apparecchio io."
+      - them: "Grazie! E Luca? Cosa sta facendo?"
+        english: "Thanks! And Luca? What's he doing?"
+      - you: "Say he's playing video games in his room."
+        answers:
+          - "Sta giocando ai videogiochi in camera sua."
+          - "Sta giocando ai videogiochi."
+          - "Gioca ai videogiochi in camera sua."
+      - them: "Come sempre! Luca, dopo cena tocca a te lavare i piatti!"
+        english: "As always! Luca, after dinner it's your turn to do the dishes!"
+
+  - id: when-you-were-little
+    unit: 7
+    title: When you were little
+    setting: You're having Sunday lunch at your Italian friend's house. Her grandfather, Pietro, wants to know about your childhood. He uses tu with you, but be polite with him — use Lei.
+    with: Nonno Pietro
+    lines:
+      - them: "Dimmi, dove abitavi quando avevi sei anni?"
+        english: "Tell me, where did you live when you were six?"
+      - you: "Say you lived in a small town near Boston."
+        answers:
+          - "Abitavo in una piccola città vicino a Boston."
+          - "Abitavo in una piccola città vicino a *."
+          - "Vivevo in una piccola città vicino a *."
+          - "Abitavo in un paese vicino a *."
+      - them: "E cosa facevi d'estate?"
+        english: "And what did you do in the summer?"
+      - you: "Say you went to the pool every day with your brother."
+        answers:
+          - "Andavo in piscina ogni giorno con mio fratello."
+          - "Ogni giorno andavo in piscina con mio fratello."
+          - "Andavo in piscina tutti i giorni con mio fratello."
+          - "Andavo sempre in piscina con mio fratello."
+      - them: "Che bello! Io da bambino andavo al fiume con mio padre."
+        english: "Lovely! When I was a boy, I used to go to the river with my father."
+      - you: "Ask him — politely — if he was a good student."
+        answers:
+          - "Lei era un bravo studente?"
+          - "Era un bravo studente?"
+          - "Lei era bravo a scuola?"
+          - "Era bravo a scuola?"
+      - them: "Io? No! Ero pigro e parlavo sempre in classe!"
+        english: "Me? No! I was lazy and I was always talking in class!"
+      - you: "Say you were the same!"
+        answers:
+          - "Anch'io ero così!"
+          - "Anche io ero così!"
+          - "Io ero uguale!"
+      - them: "Ah, i bambini non cambiano mai!"
+        english: "Ah, children never change!"
+
+  # ── A2.8 Making plans ────────────────────────────────────────────────────
+  - id: weekend-plans
+    unit: 8
+    title: Plans for the weekend
+    setting: It's Thursday, and your friend Chiara calls you about the weekend. Use tu.
+    with: Chiara
+    lines:
+      - them: "Ciao! Che programmi hai per il fine settimana?"
+        english: "Hi! What are your plans for the weekend?"
+      - you: "Say nothing special — and ask if she fancies coming to the cinema on Saturday."
+        answers:
+          - "Niente di speciale. Ti va di venire al cinema sabato?"
+          - "Ti va di venire al cinema sabato?"
+          - "Ti va di andare al cinema sabato?"
+          - "Sabato ti va di venire al cinema?"
+      - them: "Sabato? Purtroppo non posso, ho già un impegno. Domenica?"
+        english: "Saturday? Unfortunately I can't, I already have plans. Sunday?"
+      - you: "Say you're in — and ask what time you'll meet."
+        answers:
+          - "Ci sto! A che ora ci vediamo?"
+          - "Va bene! A che ora ci vediamo?"
+          - "A che ora ci vediamo?"
+      - them: "Il film comincia alle otto. Ci vediamo davanti al cinema alle sette e mezza?"
+        english: "The film starts at eight. Shall we meet outside the cinema at half past seven?"
+      - you: "Say OK — you'll be there at half past seven."
+        answers:
+          - "Va bene, sarò lì alle sette e mezza."
+          - "Sarò lì alle sette e mezza."
+          - "Ci sarò alle sette e mezza."
+          - "D'accordo, ci sarò!"
+      - them: "Perfetto! A domenica, allora."
+        english: "Perfect! See you Sunday, then."
+      - you: "It's Sunday afternoon, and you have a temperature. Call Chiara: say sorry, you can't make it tonight."
+        answers:
+          - "Scusa, stasera non ce la faccio. Ho la febbre."
+          - "Scusa, stasera non ce la faccio."
+          - "Mi dispiace, stasera non ce la faccio."
+          - "Scusa, stasera non posso. Ho la febbre."
+      - them: "Oh no, mi dispiace! Riposati."
+        english: "Oh no, I'm sorry! Get some rest."
+      - you: "Ask if you can make it another time."
+        answers:
+          - "Facciamo un'altra volta?"
+          - "Possiamo fare un'altra volta?"
+          - "Andiamo un'altra volta?"
+      - them: "Certo! Andremo sabato prossimo. Guarisci presto!"
+        english: "Of course! We'll go next Saturday. Get well soon!"
+
+  # ── A2.9 Bigger and better ───────────────────────────────────────────────
+  - id: coming-over
+    unit: 9
+    title: How do I get to yours?
+    setting: You live in Bologna. Your friend Tommaso is coming to your place for the first time, with a cake he promised to bring. He calls you from the station. Use tu.
+    with: Tommaso
+    lines:
+      - them: "Ciao! Sono alla stazione. Come arrivo a casa tua?"
+        english: "Hi! I'm at the station. How do I get to your place?"
+      - you: "Tell him to take the number 11 bus — it's quicker."
+        answers:
+          - "Prendi l'autobus numero 11: è più veloce."
+          - "Prendi l'autobus numero undici: è più veloce."
+          - "Prendi l'autobus 11, è più veloce."
+          - "Prendi il numero 11, è più veloce."
+      - them: "Va bene. E dove scendo?"
+        english: "OK. And where do I get off?"
+      - you: "Tell him to get off at Piazza Maggiore, then turn right."
+        answers:
+          - "Scendi in Piazza Maggiore, poi gira a destra."
+          - "Scendi a Piazza Maggiore, poi gira a destra."
+          - "Scendi in Piazza Maggiore e poi gira a destra."
+          - "Scendi a Piazza Maggiore e gira a destra."
+      - them: "A destra… e poi?"
+        english: "Right… and then?"
+      - you: "Tell him to go straight on and cross at the traffic lights."
+        answers:
+          - "Vai sempre dritto e attraversa al semaforo."
+          - "Va' sempre dritto e attraversa al semaforo."
+          - "Vai dritto e attraversa al semaforo."
+          - "Sempre dritto, poi attraversa al semaforo."
+      - them: "Ok. E come la riconosco, la casa?"
+        english: "OK. And how will I recognise the house?"
+      - you: "Say it's the tallest house in the street — the yellow one."
+        answers:
+          - "È la casa più alta della strada, quella gialla."
+          - "È la casa più alta della via, quella gialla."
+          - "La casa più alta della strada, quella gialla."
+      - them: "Perfetto. Arrivo tra venti minuti!"
+        english: "Perfect. I'll be there in twenty minutes!"
+      - you: "Tell him not to forget the cake!"
+        answers:
+          - "Non dimenticare la torta!"
+          - "Ricordati la torta!"
+          - "Non ti dimenticare la torta!"
+      - them: "Non ti preoccupare, ce l'ho già!"
+        english: "Don't worry, I've already got it!"
+
+  # ── A2.10 On the phone ───────────────────────────────────────────────────
+  - id: leaving-a-message
+    unit: 10
+    title: Leaving a message
+    setting: You're calling a language school in Florence about a summer course. Be polite.
+    with: the school secretary
+    lines:
+      - them: "Pronto, Scuola di italiano, buongiorno!"
+        english: "Hello, Italian school, good morning!"
+      - you: "Say good morning — you'd like to speak to Mrs Rossi."
+        answers:
+          - "Buongiorno. Vorrei parlare con la signora Rossi."
+          - "Vorrei parlare con la signora Rossi."
+          - "Potrei parlare con la signora Rossi?"
+      - them: "Un attimo, per favore… Mi dispiace, in questo momento è in riunione."
+        english: "One moment, please… I'm sorry, she's in a meeting at the moment."
+      - you: "Ask if she knows when Mrs Rossi will be back."
+        answers:
+          - "Sa quando tornerà?"
+          - "Sa quando torna?"
+          - "Sa a che ora tornerà?"
+          - "Sa a che ora torna?"
+      - them: "Non lo so, purtroppo. Le riunioni del lunedì sono lunghissime!"
+        english: "I don't know, unfortunately. Monday meetings are really long!"
+      - you: "Ask if you can leave a message."
+        answers:
+          - "Posso lasciare un messaggio?"
+          - "Potrei lasciare un messaggio?"
+          - "Le posso lasciare un messaggio?"
+      - them: "Certo, mi dica."
+        english: "Of course, go ahead."
+      - you: "Say you'd like some information about the summer course."
+        answers:
+          - "Vorrei delle informazioni sul corso d'estate."
+          - "Vorrei informazioni sul corso d'estate."
+          - "Vorrei sapere qualcosa sul corso d'estate."
+          - "Mi piacerebbe avere delle informazioni sul corso d'estate."
+      - them: "Va bene, glielo dico."
+        english: "All right, I'll tell her."
+      - you: "Ask if she could call you back this afternoon."
+        answers:
+          - "Potrebbe richiamarmi oggi pomeriggio?"
+          - "Mi potrebbe richiamare oggi pomeriggio?"
+          - "Potrebbe richiamarmi questo pomeriggio?"
+          - "Mi potrebbe richiamare questo pomeriggio?"
+      - them: "Certo. Arrivederci!"
+        english: "Of course. Goodbye!"
+
+  - id: job-news
+    unit: 10
+    title: Good news from Marco
+    setting: Your friend Marco calls you. He has news about a job. Use tu.
+    with: Marco
+    lines:
+      - them: "Ciao, sono Marco! Ti disturbo?"
+        english: "Hi, it's Marco! Am I bothering you?"
+      - you: "Say no — and tell him to tell you everything."
+        answers:
+          - "No, no! Dimmi tutto!"
+          - "Dimmi tutto!"
+          - "No, dimmi!"
+      - them: "Ho trovato lavoro! Comincio lunedì in un'azienda di Milano."
+        english: "I've found a job! I start on Monday at a company in Milan."
+      - you: "Say really? What great news!"
+        answers:
+          - "Davvero? Che bella notizia!"
+          - "Che bella notizia!"
+          - "Davvero? Che bello!"
+      - them: "Grazie! Però a Milano non conosco nessuno…"
+        english: "Thanks! But I don't know anyone in Milan…"
+      - you: "Ask if he knows Giulia — she lives in Milan!"
+        answers:
+          - "Conosci Giulia? Abita a Milano!"
+          - "Conosci Giulia? Lei abita a Milano!"
+          - "Conosci Giulia? Vive a Milano!"
+      - them: "No, non la conosco. Sai il suo numero?"
+        english: "No, I don't know her. Do you know her number?"
+      - you: "Say yes — you'll send him her number."
+        answers:
+          - "Sì, ti mando il suo numero."
+          - "Sì, ti mando il numero."
+          - "Sì, ti scrivo il suo numero."
+      - them: "Grazie! Sabato festeggiamo. Ti piacerebbe venire?"
+        english: "Thanks! We're celebrating on Saturday. Would you like to come?"
+      - you: "Say yes, you'd love to!"
+        answers:
+          - "Sì, mi piacerebbe molto!"
+          - "Mi piacerebbe molto!"
+          - "Volentieri!"
+      - them: "Perfetto! Ci vediamo sabato."
+        english: "Perfect! See you on Saturday."

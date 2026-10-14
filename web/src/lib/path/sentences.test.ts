@@ -53,6 +53,7 @@ describe("role-play replies", () => {
     assert.equal(gradeReply("Mi chiamo Theo!", accepted).verdict, "correct");
     assert.equal(gradeReply("Sono Giulia", accepted).verdict, "correct");
     assert.equal(gradeReply("Ciao, mi chiamo Sam", accepted).verdict, "correct", "a greeting first is fine");
+    assert.equal(gradeReply("Sì, bene, grazie", ["Bene, grazie."]).verdict, "correct", "a little more than listed");
     assert.equal(gradeReply("Mi chiamo", accepted).verdict, "incorrect", "the name is needed");
     assert.equal(gradeReply("Buongiorno", accepted).verdict, "incorrect");
   });

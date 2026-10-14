@@ -1,0 +1,214 @@
+title: "Ayer hablé con Ana"
+subtitle: The past tense of regular verbs
+goal: say what you did yesterday, last week or last year, using regular verbs in the past
+minutes: 15
+
+sections:
+  - heading: Talking about the past
+    body: |
+      The first Spanish past tense to learn is the *preterite* (say
+      "PRET-er-it"). It's for finished actions — things that happened at a
+      definite time: yesterday, last summer, in 2020. It answers the
+      question "what happened?"
+
+      These time words often go with it:
+
+      - **ayer** — yesterday
+      - **anoche** — last night
+      - **la semana pasada** — last week
+      - **el año pasado** — last year
+      - **el verano pasado** — last summer
+    examples:
+      - ["Ayer trabajé mucho.", "Yesterday I worked a lot."]
+      - ["Anoche cenamos en casa.", "Last night we had dinner at home."]
+    tip: "*Pasado* (last) goes after the noun and matches it: *el año pasado*, but *la semana pasada*."
+
+  - heading: "-ar verbs: hablé, hablaste…"
+    body: |
+      Drop **-ar** and add these endings. Two of them have an accent mark:
+      **-é** for *yo* and **-ó** for *él, ella, usted*.
+
+      The accent matters. *Hablo* is "I speak", but *habló* (ha-BLÓ) is
+      "he spoke" or "she spoke".
+    table:
+      columns: [who, ending, hablar]
+      rows:
+        - [yo, "-é", hablé]
+        - [tú, "-aste", hablaste]
+        - [él / ella / usted, "-ó", habló]
+        - [nosotros / nosotras, "-amos", hablamos]
+        - [vosotros / vosotras (Spain), "-asteis", hablasteis]
+        - [ellos / ellas / ustedes, "-aron", hablaron]
+    examples:
+      - ["Hablé con mi abuela.", "I talked to my grandmother."]
+      - ["¿Compraste el pan?", "Did you buy the bread?"]
+      - ["Mis padres viajaron a México.", "My parents traveled to Mexico."]
+    tip: "*Hablamos* means both \"we speak\" and \"we spoke\". Words like *ayer* make it clear which one you mean."
+
+  - heading: "-er and -ir verbs: comí, viví"
+    body: |
+      **-er** and **-ir** verbs share one set of endings in the preterite.
+      Again *yo* and *él / ella / usted* have accent marks: **-í** and
+      **-ió**.
+
+      *Salir* (to go out, to leave) is regular in the preterite: *salí,
+      saliste, salió…*
+    table:
+      columns: [who, ending, comer, vivir]
+      rows:
+        - [yo, "-í", comí, viví]
+        - [tú, "-iste", comiste, viviste]
+        - [él / ella / usted, "-ió", comió, vivió]
+        - [nosotros / nosotras, "-imos", comimos, vivimos]
+        - [vosotros / vosotras (Spain), "-isteis", comisteis, vivisteis]
+        - [ellos / ellas / ustedes, "-ieron", comieron, vivieron]
+    examples:
+      - ["Comí tacos en México.", "I ate tacos in Mexico."]
+      - ["¿Saliste anoche?", "Did you go out last night?"]
+      - ["Ellos vivieron en Chile.", "They lived in Chile."]
+    tip: "*Comemos* (we eat) and *comimos* (we ate) are different. But -ir verbs look the same in both: *vivimos* is \"we live\" and \"we lived\"."
+
+  - heading: Spelling changes in the yo form
+    body: |
+      A few -ar verbs change their spelling in the **yo** form, so they
+      keep the same sound:
+
+      - **-gar → -gué**: *llegar → llegué*, *pagar → pagué*, *jugar → jugué*
+      - **-car → -qué**: *buscar → busqué*, *sacar → saqué*, *tocar → toqué*
+      - **-zar → -cé**: *empezar → empecé*, *cruzar → crucé*
+
+      Only *yo* changes. The rest are normal: *llegaste, llegó, llegamos…*
+    examples:
+      - ["Llegué tarde a la escuela.", "I got to school late."]
+      - ["Pagué con tarjeta.", "I paid by card."]
+      - ["Ayer jugué al fútbol con mis amigos.", "Yesterday I played soccer with my friends."]
+      - ["La clase empezó a las nueve.", "The class started at nine."]
+    tip: "Boot verbs that end in -ar lose their boot in the preterite: *jugó*, *empezó* — not *juegó* or *empiezó*."
+
+words:
+  - [ayer, yesterday]
+  - [anoche, last night]
+  - [la semana pasada, last week]
+  - [el año pasado, last year]
+  - [verano, summer]
+  - [cenar, to have dinner]
+  - [comprar, to buy]
+  - [viajar, to travel]
+  - [salir, "to go out, to leave"]
+  - [pagar, to pay]
+  - [buscar, to look for]
+  - [empezar, "to start, to begin"]
+
+practice:
+  - type: choice
+    section: 1
+    prompt: Which sentence is about the past?
+    options: [Hablo con Ana., Hablé con Ana., Voy a hablar con Ana.]
+    answer: Hablé con Ana.
+    why: Hablé is the preterite, the past tense for something that happened and is finished.
+
+  - type: translate
+    section: 1
+    direction: to-target
+    prompt: last week
+    answers: [la semana pasada]
+    why: Semana is feminine, so pasado becomes pasada, and it goes after the noun.
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: Anoche cenamos en casa.
+    answers: [Last night we had dinner at home, We had dinner at home last night, Last night we ate dinner at home, We ate dinner at home last night, Last night we had supper at home, We had supper at home last night]
+    why: Anoche means "last night", and cenar means "to have dinner".
+
+  - type: fill
+    section: 2
+    strict_accents: true
+    prompt: "Ayer ___ con mi abuela."
+    hint: hablar, yo
+    translation: Yesterday I talked to my grandmother.
+    answers: [hablé]
+    why: The yo ending for -ar verbs in the preterite is -é, with an accent — hablo without it means "I speak".
+
+  - type: fill
+    section: 2
+    prompt: "¿___ el pan?"
+    hint: comprar, tú
+    translation: Did you buy the bread?
+    answers: [Compraste]
+    why: The tú ending for -ar verbs in the preterite is -aste.
+
+  - type: fill
+    section: 2
+    prompt: "Mis padres ___ a México el año pasado."
+    hint: viajar
+    translation: My parents traveled to Mexico last year.
+    answers: [viajaron]
+    why: The ellos ending for -ar verbs in the preterite is -aron.
+
+  - type: choice
+    section: 2
+    prompt: "*Trabajó* means…"
+    options: [I work, I worked, she worked]
+    answer: she worked
+    why: The -ó ending, with an accent, is the él / ella form of the preterite.
+
+  - type: fill
+    section: 3
+    prompt: "Anoche ___ pizza."
+    hint: comer, nosotros
+    translation: Last night we ate pizza.
+    answers: [comimos]
+    why: The nosotros ending for -er and -ir verbs in the preterite is -imos.
+
+  - type: fill
+    section: 3
+    prompt: "Ellos ___ en Chile dos años."
+    hint: vivir
+    translation: They lived in Chile for two years.
+    answers: [vivieron]
+    why: The ellos ending for -er and -ir verbs in the preterite is -ieron.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: Did you go out last night? (to a friend)
+    answers: ["¿Saliste anoche?", "¿Anoche saliste?", "¿Tú saliste anoche?", "¿Saliste tú anoche?", "¿Anoche tú saliste?"]
+    why: Salir is regular in the preterite, and -iste is the tú ending.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: Mi hermana escribió una carta.
+    answers: [My sister wrote a letter]
+    why: Escribió is the ella form of escribir in the preterite.
+
+  - type: fill
+    section: 4
+    prompt: "Yo ___ a las ocho."
+    hint: llegar
+    translation: I arrived at eight.
+    answers: [llegué]
+    why: -gar verbs add a u in the yo form, llegué, to keep the hard g sound.
+
+  - type: fill
+    section: 4
+    prompt: "Ayer ___ con tarjeta."
+    hint: pagar, yo
+    translation: Yesterday I paid by card.
+    answers: [pagué]
+    why: Pagar is a -gar verb, so the yo form is pagué.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: I played soccer yesterday.
+    answers: [Jugué al fútbol ayer, Ayer jugué al fútbol, Jugué fútbol ayer, Ayer jugué fútbol, Yo jugué al fútbol ayer, Ayer yo jugué al fútbol, Yo jugué fútbol ayer, Ayer yo jugué fútbol]
+    why: Jugar is a -gar verb, so the yo form is jugué.
+
+  - type: choice
+    section: 4
+    prompt: "*Buscar* in the past, for *yo*:"
+    options: [buscé, busqué, buscó]
+    answer: busqué
+    why: -car verbs change c to qu in the yo form to keep the k sound.

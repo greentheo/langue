@@ -1,7 +1,7 @@
 # Portuguese A1 — beginner vocabulary
-# Leans Brazilian Portuguese; entries chosen to stay comprehensible in European
-# Portuguese too. Where the two diverge sharply, the Brazilian form is used.
-# Format: word | translations (semicolon-separated) | example sentence | category | difficulty (1-5)
+# Brazilian Portuguese only (você, ônibus, café da manhã), matching the A1 lessons.
+# Examples use A1 grammar (present tense) and contain the word exactly as listed.
+# Format: word | translations (semicolon-separated) | example sentence | category | difficulty (1-5) | example in English
 
 # Greetings and courtesy
 olá | hello; hi | Olá, tudo bem? | greetings | 1 | Hello, how are you?
@@ -11,23 +11,36 @@ boa tarde | good afternoon | Boa tarde, posso ajudar? | greetings | 1 | Good aft
 boa noite | good evening; good night | Boa noite, até amanhã. | greetings | 1 | Good night, see you tomorrow.
 tchau | bye | Tchau, a gente se vê. | greetings | 1 | Bye, see you around.
 até logo | see you later | Até logo, estou com pressa. | greetings | 1 | See you later, I'm in a hurry.
+até mais | see you later; bye for now | Tchau, Ana, até mais! | greetings | 1 | Bye, Ana, see you later!
 obrigado | thank you | Muito obrigado pela sua ajuda. | greetings | 1 | Thank you very much for your help.
-de nada | you're welcome | De nada, foi um prazer. | greetings | 1 | You're welcome, it was a pleasure.
+de nada | you're welcome | De nada, é um prazer. | greetings | 1 | You're welcome, it's a pleasure.
 por favor | please | Um café, por favor. | greetings | 1 | A coffee, please.
-desculpa | sorry | Desculpa, não te vi. | greetings | 1 | Sorry, I didn't see you.
+desculpa | sorry | Desculpa, estou atrasado. | greetings | 1 | Sorry, I'm late.
 com licença | excuse me | Com licença, onde fica o banheiro? | greetings | 2 | Excuse me, where is the bathroom?
 prazer | nice to meet you; pleasure | Prazer em conhecer você. | greetings | 2 | Nice to meet you.
+igualmente | likewise; same to you | Muito prazer! — Igualmente! | greetings | 2 | Nice to meet you! — Likewise!
 bem-vindo | welcome | Bem-vindo ao Rio! | greetings | 2 | Welcome to Rio!
+boa sorte | good luck | Você tem prova amanhã? Boa sorte! | greetings | 1 | You have a test tomorrow? Good luck!
+bom fim de semana | have a good weekend | Tchau, bom fim de semana! | greetings | 2 | Bye, have a good weekend!
+boa viagem | have a good trip | Boa viagem e até logo! | greetings | 2 | Have a good trip, and see you soon!
+beijo | kiss; love (to end a chat or message) | Tchau, mãe, um beijo! | greetings | 2 | Bye, Mom, big kiss!
+abraço | hug; best wishes (to end a chat or message) | Um abraço para a sua família! | greetings | 2 | A big hug to your family!
+valeu | thanks (informal) | Valeu pela ajuda, Lucas! | greetings | 2 | Thanks for the help, Lucas!
+alô | hello (on the phone) | Alô? Quem fala? | greetings | 1 | Hello? Who's speaking?
+dona | Mrs. (before a first name); owner | A dona Lúcia é a minha vizinha. | greetings | 2 | Mrs. Lúcia is my neighbor.
 
 # Basics
 sim | yes | Sim, eu entendo. | basics | 1 | Yes, I understand.
 não | no; not | Não, obrigado. | basics | 1 | No, thank you.
-talvez | maybe; perhaps | Talvez a gente vá à praia. | basics | 2 | Maybe we'll go to the beach.
+talvez | maybe; perhaps | Vamos à praia? Talvez amanhã. | basics | 2 | Shall we go to the beach? Maybe tomorrow.
 muito | very; a lot | Estou muito cansado hoje. | basics | 1 | I'm very tired today.
 pouco | little; not much | Falo pouco português ainda. | basics | 1 | I don't speak much Portuguese yet.
 também | also; too | Eu também quero ir. | basics | 1 | I want to go too.
-mas | but | Quero sair, mas está chovendo. | basics | 1 | I want to go out, but it's raining.
-porque | because | Não fui porque estava doente. | basics | 1 | I didn't go because I was sick.
+mas | but | Quero sair, mas está frio. | basics | 1 | I want to go out, but it's cold.
+porque | because | Não vou à escola porque estou doente. | basics | 1 | I'm not going to school because I'm sick.
+ou | or | Você quer café ou chá? | basics | 1 | Do you want coffee or tea?
+com | with | Moro com os meus pais. | basics | 1 | I live with my parents.
+sem | without | Um café sem açúcar, por favor. | basics | 1 | A coffee without sugar, please.
 como | how; like | Como se diz isso em português? | basics | 1 | How do you say this in Portuguese?
 onde | where | Onde você mora? | basics | 1 | Where do you live?
 quando | when | Quando chega o trem? | basics | 1 | When does the train arrive?
@@ -37,110 +50,382 @@ quanto | how much; how many | Quanto custa isto? | basics | 1 | How much does th
 bem | well; fine | Estou bem, obrigado. | basics | 1 | I'm fine, thank you.
 mal | badly; bad | Hoje me sinto mal. | basics | 1 | I don't feel well today.
 sempre | always | Sempre tomo café de manhã. | basics | 2 | I always have coffee in the morning.
-nunca | never | Nunca estive em Salvador. | basics | 2 | I've never been to Salvador.
+nunca | never | Ele nunca chega atrasado. | basics | 2 | He's never late.
 agora | now | Agora preciso ir. | basics | 2 | I need to go now.
+já | already | Já são dez horas! | basics | 2 | It's already ten o'clock!
+ainda | still; yet | Ainda estou com fome. | basics | 2 | I'm still hungry.
+depois | after; afterwards; later | Depois do almoço, eu estudo. | basics | 2 | After lunch, I study.
+antes | before | Antes do jantar, eu tomo banho. | basics | 2 | Before dinner, I take a shower.
 aqui | here | O restaurante fica aqui perto. | basics | 1 | The restaurant is near here.
+lá | there; over there | Meu irmão mora lá. | basics | 1 | My brother lives there.
+mais | more | Quero mais água, por favor. | basics | 1 | I want more water, please.
+tudo | everything; all | Tudo aqui é muito caro. | basics | 1 | Everything here is very expensive.
+nada | nothing; anything | Não quero nada, obrigada. | basics | 1 | I don't want anything, thanks.
+só | only; just | Tenho só dez reais. | basics | 1 | I only have ten reais.
+outro | other; another | Quero outro café, por favor. | basics | 1 | I want another coffee, please.
+alguém | someone; anyone | Alguém aqui fala inglês? | basics | 2 | Does anyone here speak English?
+claro | of course; sure; light (colour) | Claro, eu posso ajudar. | basics | 1 | Of course, I can help.
+certo | right; correct | Você está certo. | basics | 1 | You're right.
+legal | cool; nice; great | O seu cachorro é muito legal! | basics | 1 | Your dog is really cool!
+grande | big; large | Moro numa casa grande. | basics | 1 | I live in a big house.
+pequeno | small; little | Tenho um apartamento pequeno. | basics | 1 | I have a small apartment.
+novo | new; young | Tenho um computador novo. | basics | 1 | I have a new computer.
+bonito | pretty; beautiful | Que dia bonito! | basics | 1 | What a beautiful day!
+bom | good | Este café está muito bom. | basics | 1 | This coffee is very good.
+fácil | easy | Essa lição é fácil. | basics | 1 | This lesson is easy.
+difícil | difficult; hard | O exercício de hoje é difícil. | basics | 2 | Today's exercise is difficult.
+
+# Languages
+português | Portuguese | Eu falo um pouco de português. | language | 1 | I speak a little Portuguese.
+inglês | English | Você fala inglês? | language | 1 | Do you speak English?
+espanhol | Spanish | Meu amigo fala espanhol. | language | 1 | My friend speaks Spanish.
+francês | French | Ela estuda francês na escola. | language | 2 | She studies French at school.
+língua | language; tongue | O português é uma língua bonita. | language | 2 | Portuguese is a beautiful language.
+palavra | word | Não entendo essa palavra. | language | 1 | I don't understand that word.
+frase | sentence; phrase | Essa frase é muito longa. | language | 2 | This sentence is very long.
+pergunta | question | Posso fazer uma pergunta? | language | 1 | Can I ask a question?
+resposta | answer | Qual é a resposta? | language | 1 | What's the answer?
+
+# Work and jobs
+trabalho | work; job | Gosto muito do meu trabalho. | work | 1 | I really like my job.
+profissão | job; profession | Qual é a sua profissão? | work | 2 | What's your job?
+cantor | singer | O cantor da banda é o meu primo. | work | 2 | The band's singer is my cousin.
+artista | artist | A minha mãe é artista. | work | 2 | My mom is an artist.
+enfermeiro | nurse | O enfermeiro trabalha no hospital. | work | 2 | The nurse works at the hospital.
+engenheiro | engineer | Meu pai é engenheiro. | work | 2 | My father is an engineer.
+advogado | lawyer | O advogado trabalha muito. | work | 2 | The lawyer works a lot.
+cozinheiro | cook; chef | O cozinheiro do restaurante é italiano. | work | 2 | The restaurant's cook is Italian.
+garçom | waiter | O garçom traz o cardápio. | work | 2 | The waiter brings the menu.
+motorista | driver | O motorista do ônibus é simpático. | work | 2 | The bus driver is friendly.
+vendedor | salesperson; shop assistant | O vendedor fala inglês. | work | 2 | The shop assistant speaks English.
+policial | police officer | O policial ajuda os turistas. | work | 2 | The police officer helps the tourists.
+bombeiro | firefighter | Meu tio é bombeiro. | work | 2 | My uncle is a firefighter.
+dentista | dentist | A dentista é muito simpática. | work | 2 | The dentist is very nice.
+jornalista | journalist | Minha tia é jornalista. | work | 2 | My aunt is a journalist.
+programador | programmer | Meu irmão é programador. | work | 2 | My brother is a programmer.
+
+# Home
+casa | house; home | Volto para casa às seis. | housing | 1 | I go back home at six.
+apartamento | apartment; flat | O apartamento tem dois quartos. | housing | 1 | The apartment has two bedrooms.
+prédio | building; apartment block | Moro num prédio de dez andares. | housing | 2 | I live in a ten-story building.
+andar | floor (of a building); to walk | Meu apartamento fica no terceiro andar. | housing | 2 | My apartment is on the third floor.
+quarto | bedroom; room | Meu quarto é pequeno. | housing | 1 | My bedroom is small.
+sala | living room; room | A gente vê televisão na sala. | housing | 1 | We watch TV in the living room.
+cozinha | kitchen | A cozinha é grande e clara. | housing | 1 | The kitchen is big and bright.
+banheiro | bathroom; toilet | O banheiro fica no corredor. | housing | 1 | The bathroom is in the hallway.
+porta | door | Você pode abrir a porta? | housing | 1 | Can you open the door?
+cama | bed | Minha cama é muito confortável. | housing | 1 | My bed is very comfortable.
+cadeira | chair | A cadeira está perto da mesa. | housing | 1 | The chair is near the table.
+sofá | sofa; couch | O gato dorme no sofá. | housing | 1 | The cat sleeps on the sofa.
+geladeira | fridge; refrigerator | O leite está na geladeira. | housing | 2 | The milk is in the fridge.
+chave | key | Não encontro a chave de casa. | housing | 2 | I can't find the house key.
+endereço | address | Qual é o seu endereço? | housing | 2 | What's your address?
+
+# Technology
+telefone | telephone | Te ligo no telefone hoje à noite. | technology | 1 | I'll call you tonight.
+celular | cell phone; mobile phone | Meu celular está sem bateria. | technology | 1 | My phone's battery is dead.
+computador | computer | Uso o computador para estudar. | technology | 1 | I use the computer to study.
+internet | internet | A internet do hotel é rápida. | technology | 1 | The hotel's internet is fast.
+televisão | television; TV | Meu avô assiste televisão à tarde. | technology | 1 | My grandfather watches TV in the afternoon.
+mensagem | message; text message | Te mando uma mensagem à noite. | technology | 2 | I'll send you a message tonight.
+
+# School
+livro | book | Este livro é em português. | education | 1 | This book is in Portuguese.
+escola | school | As crianças vão à escola às sete. | education | 1 | The children go to school at seven.
+aluno | student; pupil | Ele é um aluno muito bom. | education | 1 | He's a very good student.
+sala de aula | classroom | A sala de aula é grande. | education | 2 | The classroom is big.
+recreio | break; recess | No recreio a gente joga bola. | education | 2 | At break we play ball.
+caneta | pen | A caneta azul é minha. | education | 1 | The blue pen is mine.
+lápis | pencil | Preciso de um lápis. | education | 1 | I need a pencil.
+caderno | notebook; exercise book | Escrevo as palavras novas no caderno. | education | 1 | I write the new words in my notebook.
+mochila | backpack; school bag | Minha mochila é muito pesada. | education | 1 | My backpack is very heavy.
+exercício | exercise | Faço o exercício no caderno. | education | 2 | I do the exercise in my notebook.
+matemática | math; maths | Gosto muito de matemática. | education | 2 | I really like math.
+história | history; story | A aula de história é às dez. | education | 2 | The history class is at ten.
+
+# Clothes
+roupa | clothes; clothing | Essa roupa é muito bonita. | clothing | 1 | These clothes are very nice.
+camisa | shirt | Meu pai usa camisa branca. | clothing | 1 | My father wears a white shirt.
+camiseta | T-shirt | Quero uma camiseta azul. | clothing | 1 | I want a blue T-shirt.
+calça | trousers; pants | Essa calça é muito grande. | clothing | 1 | These pants are too big.
+vestido | dress | Ela usa um vestido vermelho. | clothing | 1 | She's wearing a red dress.
+bermuda | shorts | Ele usa bermuda e chinelo. | clothing | 2 | He's wearing shorts and flip-flops.
+sapato | shoe | Esse sapato é muito caro. | clothing | 1 | This shoe is very expensive.
+tênis | sneakers; trainers; tennis | Meu tênis é branco. | clothing | 1 | My sneakers are white.
+óculos | glasses | Meu avô usa óculos. | clothing | 2 | My grandfather wears glasses.
+bolsa | bag; handbag; purse | Minha bolsa é preta. | clothing | 1 | My bag is black.
+
+# Feelings
+feliz | happy | Estou feliz em te ver. | emotions | 2 | I'm happy to see you.
+cansado | tired | Estou cansado depois do trabalho. | emotions | 2 | I'm tired after work.
+nervoso | nervous | Estou nervoso com a prova. | emotions | 2 | I'm nervous about the test.
+animado | excited; lively | Estou animado com a viagem. | emotions | 2 | I'm excited about the trip.
+chateado | upset; annoyed | Ele está chateado comigo. | emotions | 2 | He's upset with me.
+assustado | scared; frightened | O gato está assustado. | emotions | 2 | The cat is scared.
+alegre | cheerful; happy | Minha avó é uma pessoa alegre. | emotions | 2 | My grandmother is a cheerful person.
+calmo | calm | Meu pai é muito calmo. | emotions | 2 | My father is very calm.
+
+# The body
+cabeça | head | Estou com dor de cabeça. | body | 1 | I have a headache.
+cabelo | hair | Minha irmã tem cabelo comprido. | body | 1 | My sister has long hair.
+olho | eye | Meu olho está vermelho. | body | 1 | My eye is red.
+nariz | nose | O palhaço tem um nariz vermelho. | body | 1 | The clown has a red nose.
+boca | mouth | O bebê abre a boca. | body | 1 | The baby opens its mouth.
+dente | tooth | O bebê tem um dente. | body | 2 | The baby has one tooth.
+orelha | ear | O cachorro tem uma orelha preta. | body | 2 | The dog has one black ear.
+braço | arm | Levanto o braço na aula. | body | 2 | I raise my arm in class.
+perna | leg | Minha perna dói depois do futebol. | body | 1 | My leg hurts after soccer.
+pé | foot | Meu pé dói muito. | body | 1 | My foot hurts a lot.
+dor | pain; ache | Sinto uma dor no pé. | body | 2 | I feel a pain in my foot.
+
+# Places and travel
+cidade | city | O Rio é uma cidade linda. | travel | 1 | Rio is a beautiful city.
+centro | downtown; city centre | O museu fica no centro. | travel | 1 | The museum is downtown.
+rua | street | A rua está fechada por obras. | travel | 2 | The street is closed for roadwork.
+praça | square | A praça fica perto da igreja. | travel | 2 | The square is near the church.
+igreja | church | A igreja é muito antiga. | travel | 2 | The church is very old.
+banco | bank; bench | O banco abre às dez. | travel | 1 | The bank opens at ten.
+hotel | hotel | O hotel é perto da praia. | travel | 2 | The hotel is near the beach.
+mar | sea | O mar está muito bonito hoje. | travel | 1 | The sea is very beautiful today.
+mapa | map | Você tem um mapa da cidade? | travel | 1 | Do you have a map of the city?
+turista | tourist | Sou turista, não moro aqui. | travel | 1 | I'm a tourist; I don't live here.
+passagem | ticket (bus, train, plane) | Compro a passagem pela internet. | travel | 2 | I buy the ticket online.
+
+# Getting around
+estação | station | A estação fica a dez minutos. | transportation | 2 | The station is ten minutes away.
+rodoviária | bus station | A rodoviária fica longe do centro. | transportation | 2 | The bus station is far from downtown.
+aeroporto | airport | Chego ao aeroporto às oito. | transportation | 2 | I get to the airport at eight.
+ônibus | bus | Pego o ônibus número vinte. | transportation | 2 | I take the number twenty bus.
+metrô | subway; metro | Pego o metrô para o trabalho. | transportation | 1 | I take the subway to work.
+trem | train | O trem para Campinas sai às nove. | transportation | 2 | The train to Campinas leaves at nine.
+carro | car | O carro está lá atrás. | transportation | 2 | The car is back there.
+táxi | taxi | Vamos de táxi? | transportation | 1 | Shall we take a taxi?
+avião | plane | Viajo de avião para Recife. | transportation | 1 | I fly to Recife.
+bicicleta | bike; bicycle | Vou para a escola de bicicleta. | transportation | 1 | I go to school by bike.
+barco | boat | A gente vai de barco para a ilha. | transportation | 2 | We go to the island by boat.
 
 # Numbers
+zero | zero | O jogo está zero a zero. | numbers | 1 | The score is zero to zero.
 um | one | Tenho só um. | numbers | 1 | I only have one.
-dois | two | Quero dois bilhetes. | numbers | 1 | I want two tickets.
+dois | two | Quero dois ingressos, por favor. | numbers | 1 | I want two tickets, please.
 três | three | Há três livros na mesa. | numbers | 1 | There are three books on the table.
 quatro | four | A reunião é às quatro. | numbers | 1 | The meeting is at four.
-cinco | five | Moro no quinto andar, número cinco. | numbers | 1 | I live on the fifth floor, number five.
+cinco | five | Moro na casa número cinco. | numbers | 1 | I live at number five.
 seis | six | Acordo às seis todos os dias. | numbers | 1 | I wake up at six every day.
 sete | seven | A semana tem sete dias. | numbers | 1 | A week has seven days.
 oito | eight | A loja abre às oito. | numbers | 1 | The shop opens at eight.
 nove | nine | Tenho nove primos. | numbers | 1 | I have nine cousins.
 dez | ten | Custa dez reais. | numbers | 1 | It costs ten reais.
-vinte | twenty | Tenho vinte minutos de pausa. | numbers | 2 | I have a twenty-minute break.
+onze | eleven | Meu irmão tem onze anos. | numbers | 1 | My brother is eleven.
+doze | twelve | Eu tenho doze anos. | numbers | 1 | I'm twelve years old.
+treze | thirteen | A aula é na sala treze. | numbers | 1 | The class is in room thirteen.
+catorze | fourteen (also spelled quatorze) | Hoje é dia catorze. | numbers | 1 | Today is the fourteenth.
+quinze | fifteen | O ônibus passa a cada quinze minutos. | numbers | 1 | The bus comes every fifteen minutes.
+dezesseis | sixteen | O livro custa dezesseis reais. | numbers | 2 | The book costs sixteen reais.
+dezessete | seventeen | O ônibus dezessete vai para a praia. | numbers | 2 | The number seventeen bus goes to the beach.
+dezoito | eighteen | A loja fecha às dezoito horas. | numbers | 2 | The shop closes at 6 p.m.
+dezenove | nineteen | A turma tem dezenove alunos. | numbers | 2 | The class has nineteen students.
+vinte | twenty | Tenho vinte minutos de intervalo. | numbers | 2 | I have a twenty-minute break.
+trinta | thirty | Meu tio tem trinta anos. | numbers | 1 | My uncle is thirty.
+quarenta | forty | Hoje faz quarenta graus! | numbers | 1 | It's forty degrees today!
+cinquenta | fifty | A camiseta custa cinquenta reais. | numbers | 1 | The T-shirt costs fifty reais.
 cem | hundred | O livro tem cem páginas. | numbers | 2 | The book has a hundred pages.
-mil | thousand | A cidade tem mil anos de história. | numbers | 2 | The city has a thousand years of history.
+mil | thousand | A bicicleta custa mil reais. | numbers | 2 | The bike costs a thousand reais.
 primeiro | first | É meu primeiro dia de trabalho. | numbers | 2 | It's my first day at work.
+segundo | second | Moro no segundo andar. | numbers | 2 | I live on the second floor.
+terceiro | third | É o terceiro dia da viagem. | numbers | 2 | It's the third day of the trip.
+número | number | Qual é o seu número de telefone? | numbers | 1 | What's your phone number?
+
+# Shopping
+loja | shop; store | A loja fecha às sete. | shopping | 2 | The shop closes at seven.
+shopping | shopping mall | Vamos ao shopping no sábado? | shopping | 1 | Shall we go to the mall on Saturday?
+supermercado | supermarket | Compro fruta no supermercado. | shopping | 1 | I buy fruit at the supermarket.
+padaria | bakery | A padaria abre às seis. | shopping | 1 | The bakery opens at six.
+feira | street market | A feira acontece aos sábados. | shopping | 2 | The street market is on Saturdays.
+fila | line; queue | A fila do banco é grande. | shopping | 2 | The line at the bank is long.
+preço | price | O preço está na etiqueta. | shopping | 1 | The price is on the label.
+dinheiro | money | Não estou com dinheiro. | shopping | 2 | I don't have any money on me.
+cartão | card | Vocês aceitam cartão? | shopping | 1 | Do you take cards?
+troco | change (money back) | Aqui está o seu troco. | shopping | 2 | Here's your change.
+sacola | bag (for shopping) | Você quer uma sacola? | shopping | 2 | Do you want a bag?
+presente | present; gift | Compro um presente para minha mãe. | shopping | 1 | I'm buying a present for my mom.
+
+# Everyday verbs
+ver | to see; to watch | Quero ver esse filme. | verbs | 1 | I want to see that movie.
+olhar | to look (at) | Gosto de olhar o mar. | verbs | 1 | I like to look at the sea.
+ouvir | to hear; to listen | Gosto de ouvir música. | verbs | 1 | I like listening to music.
+ler | to read | Gosto de ler à noite. | verbs | 1 | I like to read at night.
+saber | to know (a fact); to know how to | Você quer saber a resposta? | verbs | 1 | Do you want to know the answer?
+conhecer | to know (a person or place); to meet | Quero conhecer o Rio de Janeiro. | verbs | 2 | I want to visit Rio de Janeiro.
+perguntar | to ask | Posso perguntar uma coisa? | verbs | 1 | Can I ask something?
+ajudar | to help | Gosto de ajudar a minha mãe. | verbs | 1 | I like to help my mom.
+precisar | to need | Precisar de ajuda é normal. | verbs | 2 | Needing help is normal.
+esperar | to wait; to hope | Você pode esperar um minuto? | verbs | 1 | Can you wait a minute?
+começar | to start; to begin | Quero começar agora. | verbs | 1 | I want to start now.
+entrar | to come in; to go in | Posso entrar? | verbs | 1 | May I come in?
+sair | to go out; to leave | Quero sair com meus amigos hoje. | verbs | 1 | I want to go out with my friends today.
+voltar | to come back; to go back | Quero voltar para o Brasil. | verbs | 1 | I want to go back to Brazil.
+ficar | to stay; to be (somewhere) | Quero ficar em casa hoje. | verbs | 1 | I want to stay home today.
+sentar | to sit (down) | Posso sentar aqui? | verbs | 1 | Can I sit here?
+fechar | to close; to shut | Pode fechar a janela, por favor? | verbs | 1 | Can you close the window, please?
+encontrar | to find; to meet | Quero encontrar meus amigos no parque. | verbs | 2 | I want to meet my friends in the park.
+dar | to give | Quero dar um presente para ela. | verbs | 1 | I want to give her a present.
+levar | to take; to carry | Posso levar o livro para casa? | verbs | 1 | Can I take the book home?
+usar | to use; to wear | Posso usar o seu telefone? | verbs | 1 | Can I use your phone?
+ligar | to call (on the phone); to turn on | Posso ligar para você amanhã? | verbs | 1 | Can I call you tomorrow?
+cozinhar | to cook | Meu pai gosta de cozinhar. | verbs | 1 | My dad likes to cook.
+brincar | to play (games, with toys) | As crianças querem brincar no parque. | verbs | 1 | The children want to play in the park.
+viajar | to travel | Adoro viajar com a minha família. | verbs | 1 | I love traveling with my family.
+visitar | to visit | Quero visitar meus avós. | verbs | 1 | I want to visit my grandparents.
 
 # Family and people
 família | family | Minha família é muito grande. | family | 1 | My family is very big.
 mãe | mother | Minha mãe cozinha muito bem. | family | 1 | My mother cooks very well.
 pai | father | Meu pai trabalha num banco. | family | 1 | My father works at a bank.
 filho | son; child | O filho dele tem cinco anos. | family | 1 | His son is five years old.
-filha | daughter | A filha deles estuda medicina. | family | 1 | Their daughter is studying medicine.
+filha | daughter | A filha deles estuda medicina. | family | 1 | Their daughter studies medicine.
 irmão | brother | Tenho um irmão mais velho. | family | 1 | I have an older brother.
-irmã | sister | Minha irmã mora em Lisboa. | family | 1 | My sister lives in Lisbon.
+irmã | sister | Minha irmã mora em Salvador. | family | 1 | My sister lives in Salvador.
 avô | grandfather | Meu avô conta boas histórias. | family | 2 | My grandfather tells good stories.
-avó | grandmother | A avó faz um bolo ótimo. | family | 2 | Grandma makes a great cake.
+avó | grandmother | Minha avó faz um bolo ótimo. | family | 2 | My grandma makes a great cake.
 marido | husband | O marido dela é professor. | family | 2 | Her husband is a teacher.
 esposa | wife | Minha esposa adora viajar. | family | 2 | My wife loves to travel.
+bebê | baby | O bebê dorme muito. | family | 1 | The baby sleeps a lot.
+namorado | boyfriend | O namorado dela se chama Rafael. | family | 2 | Her boyfriend's name is Rafael.
 amigo | friend | Vou ao cinema com um amigo. | family | 1 | I'm going to the movies with a friend.
-criança | child | A criança brinca no parque. | family | 1 | The child is playing in the park.
-moça | young woman; girl | Aquela moça é minha vizinha. | family | 2 | That young woman is my neighbor.
-homem | man | Aquele homem trabalha aqui há anos. | family | 1 | That man has worked here for years.
-mulher | woman; wife | A mulher do caixa é muito gentil. | family | 1 | The woman at the checkout is very kind.
+criança | child | A criança brinca no parque. | family | 1 | The child plays in the park.
+garoto | boy; kid | O garoto joga bola na rua. | family | 1 | The boy plays ball in the street.
+garota | girl | A garota da foto é minha irmã. | family | 1 | The girl in the photo is my sister.
+moça | young woman; girl | A moça do caixa é muito simpática. | family | 2 | The young woman at the checkout is very nice.
+homem | man | Aquele homem trabalha aqui. | family | 1 | That man works here.
+mulher | woman; wife | Aquela mulher é a minha professora. | family | 1 | That woman is my teacher.
+pessoa | person | Ela é uma pessoa muito legal. | family | 1 | She's a really nice person.
+simpático | nice; friendly | O meu professor é muito simpático. | family | 1 | My teacher is very nice.
+engraçado | funny | Meu primo é muito engraçado. | family | 1 | My cousin is very funny.
+alto | tall; high; loud | Meu pai é alto. | family | 1 | My father is tall.
+baixo | short; low; quiet | Meu avô é baixo. | family | 1 | My grandfather is short.
+jovem | young; young person | A professora é jovem. | family | 1 | The teacher is young.
+
+# Animals
+animal | animal | Qual é o seu animal favorito? | animals | 1 | What's your favorite animal?
+pássaro | bird | O pássaro canta de manhã. | animals | 1 | The bird sings in the morning.
+coelho | rabbit | Meu primo tem um coelho branco. | animals | 1 | My cousin has a white rabbit.
+cavalo | horse | O cavalo corre no campo. | animals | 1 | The horse runs in the field.
+vaca | cow | A vaca dá leite. | animals | 1 | The cow gives milk.
+porco | pig | O porco come muito. | animals | 2 | The pig eats a lot.
+galinha | hen; chicken | A galinha vive na fazenda. | animals | 2 | The hen lives on the farm.
+macaco | monkey | O macaco come banana. | animals | 1 | The monkey eats bananas.
+cobra | snake | Tenho medo de cobra. | animals | 2 | I'm scared of snakes.
+
+# Colours
+cor | colour; color | Qual é a sua cor favorita? | colors | 1 | What's your favorite color?
+amarelo | yellow | O sol é amarelo. | colors | 1 | The sun is yellow.
+rosa | pink; rose | A flor é rosa. | colors | 1 | The flower is pink.
+roxo | purple | O meu caderno é roxo. | colors | 2 | My notebook is purple.
+cinza | grey; gray | Meu gato é cinza. | colors | 1 | My cat is gray.
+marrom | brown | O cachorro dele é marrom. | colors | 1 | His dog is brown.
+escuro | dark | O quarto está escuro. | colors | 2 | The room is dark.
 
 # Food and drink
+comida | food | A comida brasileira é muito boa. | food | 1 | Brazilian food is very good.
 água | water | Quero um copo de água. | food | 1 | I want a glass of water.
-pão | bread | Compro pão toda manhã. | food | 1 | I buy bread every morning.
-vinho | wine | Uma taça de vinho tinto, por favor. | food | 1 | A glass of red wine, please.
 café | coffee | Tomo um café na padaria. | food | 1 | I have a coffee at the bakery.
+chá | tea | À noite eu bebo chá. | food | 1 | At night I drink tea.
 leite | milk | Bebo leite no café da manhã. | food | 1 | I drink milk at breakfast.
-arroz | rice | O arroz já está pronto. | food | 2 | The rice is ready.
-feijão | beans | Arroz com feijão todo dia. | food | 2 | Rice and beans every day.
-carne | meat | Não como carne às sextas. | food | 2 | I don't eat meat on Fridays.
-peixe | fish | O peixe está fresquíssimo hoje. | food | 2 | The fish is really fresh today.
+suco | juice | O suco de manga é delicioso. | food | 1 | The mango juice is delicious.
+refrigerante | soft drink; soda | Não bebo refrigerante. | food | 1 | I don't drink soda.
+vinho | wine | Uma taça de vinho tinto, por favor. | food | 1 | A glass of red wine, please.
+pão | bread | Compro pão toda manhã. | food | 1 | I buy bread every morning.
 queijo | cheese | Este queijo é de Minas. | food | 2 | This cheese is from Minas Gerais.
+ovo | egg | Quero um ovo frito. | food | 2 | I want a fried egg.
+açúcar | sugar | Você quer açúcar no café? | food | 2 | Do you want sugar in your coffee?
+sal | salt | Falta um pouco de sal. | food | 2 | It needs a little salt.
+arroz | rice | O arroz já está pronto. | food | 2 | The rice is ready.
+feijão | beans | Como arroz com feijão todo dia. | food | 2 | I eat rice and beans every day.
+carne | meat | Não como carne às sextas. | food | 2 | I don't eat meat on Fridays.
+frango | chicken (meat) | Hoje tem frango com arroz. | food | 1 | Today there's chicken and rice.
+peixe | fish | O peixe está muito fresco hoje. | food | 2 | The fish is very fresh today.
+batata | potato | Quero batata frita, por favor. | food | 1 | I want French fries, please.
+macarrão | pasta | Hoje o almoço é macarrão. | food | 1 | Today lunch is pasta.
+sopa | soup | A sopa está muito quente. | food | 1 | The soup is very hot.
+salada | salad | No almoço eu como salada. | food | 1 | At lunch I eat salad.
+sanduíche | sandwich | Quero um sanduíche de queijo. | food | 1 | I want a cheese sandwich.
 fruta | fruit | Como fruta todos os dias. | food | 2 | I eat fruit every day.
+maçã | apple | Como uma maçã por dia. | food | 1 | I eat an apple a day.
+banana | banana | A banana é uma fruta barata. | food | 1 | Bananas are a cheap fruit.
+laranja | orange | Quero um suco de laranja. | food | 1 | I want an orange juice.
 verdura | vegetables; greens | Compro verdura na feira. | food | 2 | I buy vegetables at the street market.
-ovo | egg | Quero dois ovos fritos. | food | 2 | I want two fried eggs.
-açúcar | sugar | Você toma açúcar no café? | food | 2 | Do you take sugar in your coffee?
-sal | salt | Está faltando um pouco de sal. | food | 2 | It needs a little salt.
+bolo | cake | O bolo de cenoura é muito bom. | food | 1 | The carrot cake is very good.
+sorvete | ice cream | No verão eu tomo sorvete. | food | 1 | In summer I have ice cream.
 café da manhã | breakfast | O café da manhã é às sete. | food | 2 | Breakfast is at seven.
 almoço | lunch | O almoço é ao meio-dia. | food | 2 | Lunch is at noon.
 jantar | dinner; to have dinner | O jantar já está pronto. | food | 2 | Dinner is ready.
 restaurante | restaurant | Conheço um bom restaurante aqui. | food | 2 | I know a good restaurant around here.
+cardápio | menu | Posso ver o cardápio? | food | 1 | Can I see the menu?
+prato | plate; dish | Qual é o prato do dia? | food | 1 | What's the dish of the day?
+copo | glass (for drinking) | O copo está vazio. | food | 1 | The glass is empty.
+garfo | fork | Preciso de um garfo, por favor. | food | 2 | I need a fork, please.
+faca | knife | A faca está na mesa. | food | 2 | The knife is on the table.
+colher | spoon | Você tem uma colher? | food | 2 | Do you have a spoon?
+
+# Free time
+filme | film; movie | Hoje tem um filme bom na TV. | leisure | 1 | There's a good movie on TV today.
+esporte | sport | Meu irmão faz esporte todo dia. | leisure | 1 | My brother does sport every day.
+jogo | game; match | O jogo começa às quatro. | leisure | 1 | The game starts at four.
+bola | ball | As crianças jogam bola na praia. | leisure | 1 | The children play ball on the beach.
+videogame | video games; games console | Eu jogo videogame com meu primo. | leisure | 1 | I play video games with my cousin.
+piscina | swimming pool | O hotel tem piscina. | leisure | 1 | The hotel has a pool.
+violão | guitar (acoustic) | Meu pai toca violão. | leisure | 2 | My dad plays the guitar.
+foto | photo | Posso tirar uma foto? | leisure | 1 | Can I take a photo?
+ingresso | ticket (for a show, game or film) | Quanto custa o ingresso? | leisure | 2 | How much is the ticket?
+férias | holidays; vacation | Estou de férias na praia. | leisure | 1 | I'm on vacation at the beach.
 
 # Time
 dia | day | Que dia é hoje? | time | 1 | What day is it today?
-semana | week | A gente se vê semana que vem. | time | 2 | See you next week.
-mês | month | Vou viajar mês que vem. | time | 2 | I'm going to travel next month.
-ano | year | Estudo português há um ano. | time | 1 | I've been studying Portuguese for a year.
 hoje | today | Hoje está muito quente. | time | 1 | It's very hot today.
 amanhã | tomorrow | Amanhã tenho uma prova. | time | 1 | I have a test tomorrow.
-ontem | yesterday | Ontem fui ao museu. | time | 1 | Yesterday I went to the museum.
+ontem | yesterday | O pão de ontem está duro. | time | 1 | Yesterday's bread is stale.
 manhã | morning | De manhã eu corro no parque. | time | 2 | In the morning I go running in the park.
 tarde | afternoon; late | À tarde eu estudo. | time | 2 | In the afternoon I study.
-noite | night; evening | Dormi mal esta noite. | time | 2 | I slept badly last night.
-hora | hour; time | Que horas são? | time | 1 | What time is it?
-minuto | minute | Espera um minuto, por favor. | time | 2 | Wait a minute, please.
+noite | night; evening | À noite eu leio um livro. | time | 2 | At night I read a book.
+hora | hour; time | A aula dura uma hora. | time | 1 | The class lasts an hour.
+minuto | minute | Só um minuto, por favor. | time | 2 | Just a minute, please.
+semana | week | A gente se vê semana que vem. | time | 2 | See you next week.
+fim de semana | weekend | No fim de semana eu durmo muito. | time | 1 | On the weekend I sleep a lot.
+mês | month | Este mês tem trinta e um dias. | time | 2 | This month has thirty-one days.
+ano | year | Um ano tem doze meses. | time | 1 | A year has twelve months.
+aniversário | birthday | Hoje é o meu aniversário! | time | 1 | Today is my birthday!
 segunda-feira | Monday | Segunda-feira volto ao trabalho. | time | 2 | On Monday I go back to work.
+terça-feira | Tuesday | Terça-feira tenho aula de inglês. | time | 1 | On Tuesday I have English class.
+quarta-feira | Wednesday | A feira é na quarta-feira. | time | 1 | The street market is on Wednesday.
+quinta-feira | Thursday | Na quinta-feira eu jogo futebol. | time | 1 | On Thursday I play soccer.
 sábado | Saturday | Sábado vamos à serra. | time | 2 | On Saturday we're going to the mountains.
-domingo | Sunday | Aos domingos durmo até tarde. | time | 2 | On Sundays I sleep in.
+domingo | Sunday | No domingo eu durmo até tarde. | time | 2 | On Sunday I sleep in.
+janeiro | January | Em janeiro faz calor no Brasil. | time | 1 | In January it's hot in Brazil.
+fevereiro | February | O Carnaval é em fevereiro. | time | 1 | Carnival is in February.
+março | March | Meu aniversário é em março. | time | 1 | My birthday is in March.
+abril | April | Abril tem trinta dias. | time | 1 | April has thirty days.
+maio | May | O Dia das Mães é em maio. | time | 1 | Mother's Day is in May.
+junho | June | Em junho tem festa junina. | time | 1 | In June there are June festivals.
+julho | July | As férias da escola são em julho. | time | 1 | The school holidays are in July.
+agosto | August | Em agosto faz frio no sul. | time | 1 | In August it's cold in the south.
+setembro | September | A primavera começa em setembro. | time | 1 | Spring starts in September.
+outubro | October | Hoje é dia doze de outubro. | time | 1 | Today is October 12th.
+novembro | November | Meu primo faz aniversário em novembro. | time | 1 | My cousin's birthday is in November.
+dezembro | December | O Natal é em dezembro. | time | 1 | Christmas is in December.
 
-# Places and travel
-casa | house; home | Volto para casa às seis. | housing | 1 | I go back home at six.
-cidade | city | O Rio é uma cidade linda. | travel | 1 | Rio is a beautiful city.
-rua | street | A rua está fechada por obras. | travel | 2 | The street is closed for roadwork.
-estação | station | A estação fica a dez minutos. | transportation | 2 | The station is ten minutes away.
-trem | train | O trem para Campinas sai às nove. | transportation | 2 | The train to Campinas leaves at nine.
-ônibus | bus | Pego o ônibus número vinte. | transportation | 2 | I take the number twenty bus.
-carro | car | O carro está estacionado atrás. | transportation | 2 | The car is parked around the back.
-aeroporto | airport | Chego ao aeroporto às oito. | transportation | 2 | I get to the airport at eight.
-hotel | hotel | Reservamos um hotel no centro. | travel | 2 | We booked a hotel downtown.
-loja | shop; store | A loja fecha às sete. | shopping | 2 | The shop closes at seven.
-feira | street market | A feira acontece aos sábados. | shopping | 2 | The street market is on Saturdays.
-passagem | ticket (travel) | Comprei a passagem pela internet. | travel | 2 | I bought the ticket online.
-
-# Everyday things and adjectives
-livro | book | Estou lendo um livro em português. | education | 1 | I'm reading a book in Portuguese.
-trabalho | work; job | Gosto muito do meu trabalho. | work | 1 | I really like my job.
-escola | school | As crianças vão à escola às sete. | education | 1 | The children go to school at seven.
-dinheiro | money | Não estou com dinheiro. | shopping | 2 | I don't have any money on me.
-telefone | telephone | Te ligo no telefone hoje à noite. | technology | 1 | I'll call you tonight.
-grande | big; large | Moro numa casa grande. | basics | 1 | I live in a big house.
-pequeno | small; little | Tenho um apartamento pequeno. | basics | 1 | I have a small apartment.
-novo | new; young | Comprei um computador novo. | basics | 1 | I bought a new computer.
-bonito | pretty; beautiful | Que dia bonito! | basics | 1 | What a beautiful day!
-bom | good | Este café está muito bom. | basics | 1 | This coffee is very good.
-calor | heat; hot | Hoje está fazendo calor. | weather | 1 | It's hot today.
-frio | cold | No inverno faz frio aqui. | weather | 1 | It's cold here in winter.
-chuva | rain | A chuva começou de madrugada. | weather | 2 | The rain started in the early hours of the morning.
+# Weather and seasons
+tempo | weather; time | Como está o tempo hoje? | weather | 1 | What's the weather like today?
 sol | sun | Hoje tem sol. | weather | 1 | It's sunny today.
-feliz | happy | Estou feliz em te ver. | emotions | 2 | I'm happy to see you.
-cansado | tired | Estou cansado depois do trabalho. | emotions | 2 | I'm tired after work.
+calor | heat; hot | Hoje faz muito calor. | weather | 1 | It's very hot today.
+quente | hot; warm | A água do mar está quente. | weather | 1 | The sea water is warm.
+frio | cold | No inverno faz frio aqui. | weather | 1 | It's cold here in winter.
+chuva | rain | Não gosto de chuva. | weather | 2 | I don't like rain.
+chover | to rain | Lá fora começa a chover. | weather | 2 | It's starting to rain outside.
+vento | wind | Hoje tem muito vento. | weather | 1 | It's very windy today.
+céu | sky | O céu está azul hoje. | weather | 1 | The sky is blue today.
+nuvem | cloud | Tem uma nuvem preta no céu. | weather | 2 | There's a dark cloud in the sky.
+verão | summer | No verão a gente vai à praia. | weather | 1 | In summer we go to the beach.
+outono | autumn; fall | O outono começa em março no Brasil. | weather | 2 | Autumn starts in March in Brazil.
+inverno | winter | O inverno no sul é frio. | weather | 1 | Winter in the south is cold.
+primavera | spring | A primavera tem muitas flores. | weather | 2 | Spring has lots of flowers.

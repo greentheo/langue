@@ -1,0 +1,236 @@
+title: "Mais rápido que o ônibus"
+subtitle: Comparing — more, less, as, the most
+goal: compare people, places and prices, and say something is the best, the biggest, or really expensive
+minutes: 15
+
+sections:
+  - heading: More than, less than
+    body: |
+      To compare two things, put **mais** (more) or **menos** (less) before
+      the adjective, and **que** or **do que** (than) after it.
+
+      English adds *-er* — fast**er**, cheap**er** — or says *more*.
+      Portuguese always uses *mais*: *mais rápido* (faster), *mais barato*
+      (cheaper), *mais caro* (more expensive).
+
+      *Que* and *do que* mean the same; *do que* is a little more common in
+      speech.
+    examples:
+      - ["O trem é mais rápido do que o ônibus.", "The train is faster than the bus."]
+      - ["Este hotel é menos caro que aquele.", "This hotel is less expensive than that one."]
+      - ["Minha irmã é mais alta que eu.", "My sister is taller than me."]
+    tip: "After *que*, use *eu*, not *mim*: *mais alta que eu* — taller than me."
+
+  - heading: As… as
+    body: |
+      To say two things are **the same**, use **tão… quanto** (as… as)
+      with an adjective:
+
+      - *O Pedro é tão alto quanto o pai.* — Pedro is as tall as his
+        father.
+
+      With a noun, use **tanto… quanto** (as much / as many… as). *Tanto*
+      agrees with the noun: *tanto dinheiro*, *tanta gente*, *tantos
+      livros*, *tantas coisas*.
+    examples:
+      - ["A praia não é tão bonita quanto a foto.", "The beach isn't as pretty as the photo."]
+      - ["Não tenho tanto dinheiro quanto você.", "I don't have as much money as you."]
+    tip: "You'll also hear *tão… como*: *tão alto como o pai*. Both are correct."
+
+  - heading: Better, worse, bigger, smaller
+    body: |
+      Four comparatives are single words, like *better* in English. Don't
+      put *mais* in front of them.
+
+      *Mais grande* and *mais bom* are wrong. (*Mais pequeno* is used in
+      Portugal, but in Brazil say **menor**.)
+
+      *Melhor* and *pior* also mean "better" and "worse" about how you
+      feel: *Hoje estou melhor.* — I'm better today.
+    table:
+      columns: [adjective, comparative, English]
+      rows:
+        - [bom, melhor, better]
+        - [ruim, pior, worse]
+        - [grande, maior, bigger]
+        - [pequeno, menor, smaller]
+    examples:
+      - ["Este restaurante é melhor que aquele.", "This restaurant is better than that one."]
+      - ["Meu quarto é menor do que o seu.", "My room is smaller than yours."]
+      - ["O tempo hoje está pior.", "The weather is worse today."]
+
+  - heading: The most, the best
+    body: |
+      For **the most** or **the least**, put the article in front: **o
+      mais**, **a mais**, **o menos**. "In" after it is **de**, joined to
+      the article:
+
+      - *o hotel mais barato da cidade* — the cheapest hotel in town
+      - *a praia mais bonita do Brasil* — the most beautiful beach in
+        Brazil
+
+      With *melhor, pior, maior, menor*, just add the article: **o
+      melhor**, **a maior**.
+    examples:
+      - ["Ele é o mais alto da família.", "He's the tallest in the family."]
+      - ["São Paulo é a maior cidade do Brasil.", "São Paulo is the biggest city in Brazil."]
+      - ["Qual é o melhor restaurante da cidade?", "What's the best restaurant in town?"]
+    tip: "\"In\" after \"the most\" is *de*, not *em*: *o mais alto da família* — the tallest in the family."
+
+  - heading: -íssimo — really, really
+    body: |
+      To say something is **extremely** so, without comparing it to
+      anything, add **-íssimo** to the adjective. Drop a final vowel first:
+
+      - *caro* → *caríssimo* — really expensive
+      - *lindo* → *lindíssimo* — absolutely beautiful
+      - *cansado* → *cansadíssimo* — exhausted
+
+      It agrees like any adjective: *uma praia lindíssima*. Words ending in
+      *-co* change spelling to keep the k sound: *pouco* → *pouquíssimo*.
+    examples:
+      - ["O hotel era caríssimo.", "The hotel was really expensive."]
+      - ["A praia é lindíssima.", "The beach is absolutely beautiful."]
+      - ["Estou cansadíssima.", "I'm exhausted."]
+
+words:
+  - [mais, more]
+  - [menos, less]
+  - [do que, than]
+  - [tão… quanto, as… as]
+  - [tanto, as much / so much]
+  - [melhor, better / best]
+  - [pior, worse / worst]
+  - [maior, bigger / biggest]
+  - [menor, smaller / smallest]
+  - [ruim, bad]
+  - [alto, tall / high]
+  - [rápido, fast]
+  - [lindo, beautiful]
+  - [quarto, bedroom / room]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "O trem é ___ rápido do que o ônibus."
+    hint: more
+    translation: The train is faster than the bus.
+    answers: [mais]
+    why: Portuguese makes "faster" with mais + rápido.
+
+  - type: translate
+    section: 1
+    direction: to-target
+    prompt: "The train is more expensive than the bus."
+    answers:
+      - "O trem é mais caro que o ônibus."
+      - "O trem é mais caro do que o ônibus."
+    why: "More expensive is mais caro, and \"than\" is que or do que."
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: "Esta mala é menos cara que aquela."
+    answers:
+      - "This suitcase is less expensive than that one."
+      - "This suitcase is cheaper than that one."
+      - "This bag is less expensive than that one."
+      - "This bag is cheaper than that one."
+    why: "Menos cara que means \"less expensive than\"."
+
+  - type: fill
+    section: 2
+    prompt: "O Pedro é tão alto ___ o pai."
+    hint: as
+    translation: Pedro is as tall as his father.
+    answers: [quanto, como]
+    why: As… as is tão… quanto (or tão… como).
+
+  - type: choice
+    section: 2
+    prompt: "\"I don't have as much money as you.\""
+    options: [Não tenho tanto dinheiro quanto você., Não tenho tão dinheiro quanto você., Não tenho tanta dinheiro quanto você.]
+    answer: Não tenho tanto dinheiro quanto você.
+    why: With a noun use tanto, which agrees — dinheiro is masculine, so tanto.
+
+  - type: translate
+    section: 2
+    direction: to-english
+    prompt: "O Rio não é tão frio quanto Curitiba."
+    answers:
+      - "Rio isn't as cold as Curitiba."
+      - "Rio is not as cold as Curitiba."
+    why: "Não é tão… quanto means \"isn't as… as\"."
+
+  - type: choice
+    section: 3
+    prompt: "\"This restaurant is better than that one.\""
+    options: [Este restaurante é melhor que aquele., Este restaurante é mais bom que aquele., Este restaurante é mais melhor que aquele.]
+    answer: Este restaurante é melhor que aquele.
+    why: Better is melhor — never mais bom.
+
+  - type: fill
+    section: 3
+    prompt: "Meu quarto é ___ do que o seu."
+    hint: smaller
+    translation: My room is smaller than yours.
+    answers: [menor]
+    why: In Brazil, "smaller" is menor.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: "I'm better today."
+    answers:
+      - "Hoje estou melhor."
+      - "Hoje eu estou melhor."
+      - "Estou melhor hoje."
+      - "Eu estou melhor hoje."
+    why: "Better is melhor, with no mais — and how you feel takes estar."
+
+  - type: fill
+    section: 4
+    prompt: "Ele é o mais alto ___ família."
+    hint: in the
+    translation: He's the tallest in the family.
+    answers: [da]
+    why: After "the most", "in" is de — and de + a is da.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: "It's the best beach in Brazil."
+    answers:
+      - "É a melhor praia do Brasil."
+      - "Essa é a melhor praia do Brasil."
+      - "Esta é a melhor praia do Brasil."
+    why: "The best is a melhor, and \"in Brazil\" after it is do Brasil."
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: o hotel mais barato da cidade
+    answers: [the cheapest hotel in the city, the cheapest hotel in town, the least expensive hotel in the city]
+    why: O + noun + mais barato is "the cheapest", and da cidade is "in the city".
+
+  - type: fill
+    section: 5
+    prompt: "O hotel era ___."
+    hint: caro + -íssimo
+    translation: The hotel was really expensive.
+    answers: [caríssimo]
+    why: Drop the final -o of caro and add -íssimo.
+
+  - type: choice
+    section: 5
+    prompt: "\"The beach is absolutely beautiful.\""
+    options: [A praia é lindíssima., A praia é lindíssimo., A praia é mais linda.]
+    answer: A praia é lindíssima.
+    why: -íssimo agrees like any adjective, and praia is feminine.
+
+  - type: translate
+    section: 5
+    direction: to-english
+    prompt: Estou cansadíssimo.
+    answers: [I'm exhausted., I'm really tired., I'm very tired., I'm extremely tired., I'm so tired., I'm super tired.]
+    why: Cansadíssimo is cansado + -íssimo — extremely tired.

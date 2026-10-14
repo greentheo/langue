@@ -1,0 +1,205 @@
+title: "J'aimerais réserver"
+subtitle: The polite conditional
+goal: ask, offer and suggest politely with the conditional (*j'aimerais, je voudrais, pourriez-vous, on pourrait, tu devrais*)
+minutes: 15
+
+sections:
+  - heading: "Would: the conditional"
+    body: |
+      The **conditional** means "would". You already know one form: *je
+      voudrais* — I would like.
+
+      It's easy to make: take the **future stem** and add the
+      **imparfait endings** (*-ais, -ais, -ait, -ions, -iez, -aient*):
+
+      - *aimer → j'aimer**ais*** — I would like
+      - *pouvoir → je pourr**ais*** — I could
+      - *être → ce ser**ait*** — it would be
+    table:
+      columns: [person, aimer, pouvoir]
+      rows:
+        - [je, "aimerais (j'aimerais)", pourrais]
+        - [tu, aimerais, pourrais]
+        - ["il / elle / on", aimerait, pourrait]
+        - [nous, aimerions, pourrions]
+        - [vous, aimeriez, pourriez]
+        - ["ils / elles", aimeraient, pourraient]
+    examples:
+      - ["Elle aimerait venir.", "She'd like to come."]
+      - ["Ce serait plus facile.", "It would be easier."]
+    tip: "*Je pourrais* (I could) and *je pourrai* (I will be able to) sound almost the same. The *-s* in writing makes it \"would\"."
+
+  - heading: "I'd like: j'aimerais, je voudrais"
+    body: |
+      **J'aimerais** and **je voudrais** both mean "I'd like". Use them
+      with a noun or an infinitive in shops, hotels and restaurants:
+
+      - *Je voudrais une chambre pour deux nuits.* — I'd like a room for
+        two nights.
+      - *J'aimerais réserver une table pour ce soir.* — I'd like to book a
+        table for tonight.
+      - *Nous aimerions voir la carte.* — We'd like to see the menu.
+
+      *J'aimerais* is also for wishes and dreams: *J'aimerais visiter le
+      Japon.*
+    examples:
+      - ["Nous aimerions une table pour quatre.", "We'd like a table for four."]
+      - ["J'aimerais ouvrir la fenêtre.", "I'd like to open the window."]
+    tip: "In a restaurant, *la carte* is the menu. *Le menu* is a set meal at a fixed price."
+
+  - heading: "Could you…? Pourriez-vous…"
+    body: |
+      To ask a favour politely, use the conditional of **pouvoir**:
+
+      - ***Pourriez-vous** m'aider ?* — Could you help me?
+      - ***Vous pourriez** répéter, s'il vous plaît ?* — Could you repeat
+        that, please?
+      - ***Tu pourrais** fermer la fenêtre ?* — Could you close the window?
+        (to a friend)
+
+      *Pourriez-vous… ?* and *Vous pourriez… ?* mean the same. The first
+      is a little more formal.
+    examples:
+      - ["Pourriez-vous parler plus lentement ?", "Could you speak more slowly?"]
+      - ["Vous pourriez m'aider, s'il vous plaît ?", "Could you help me, please?"]
+    tip: "*Vous pouvez… ?* is correct, but *Vous pourriez… ?* sounds warmer, like \"could you\" instead of \"can you\"."
+
+  - heading: Suggestions and advice
+    body: |
+      The conditional is also the gentle way to suggest something or give
+      advice. It sounds softer than the present, so French speakers use it
+      all the time, with friends as well as strangers:
+
+      - **on pourrait** + infinitive — we could…
+      - **tu devrais / vous devriez** + infinitive — you should…
+      - **ce serait** + adjective — it would be…
+    examples:
+      - ["On pourrait aller au cinéma ce soir.", "We could go to the cinema tonight."]
+      - ["Tu devrais aller chez le médecin.", "You should go to the doctor's."]
+      - ["Vous devriez réserver, il y a beaucoup de monde.", "You should book — it's very busy."]
+      - ["Ce serait génial !", "That would be great!"]
+
+words:
+  - ["j'aimerais", "I would like"]
+  - [pourriez-vous… ?, could you…? (polite)]
+  - [on pourrait, we could]
+  - [tu devrais, you should]
+  - [ce serait, it would be]
+  - [une chambre, "a room, a bedroom"]
+  - [une nuit, a night]
+  - [la carte, the menu]
+  - [fermer, to close]
+  - [ouvrir, to open]
+  - [la fenêtre, the window]
+  - [le médecin, the doctor]
+  - [le Japon, Japan]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "J'___ visiter le Japon."
+    hint: (aimer, conditional)
+    translation: I'd like to visit Japan.
+    answers: [aimerais]
+    why: The conditional is the future stem aimer- + the imparfait ending -ais.
+
+  - type: fill
+    section: 1
+    prompt: "Nous ___ venir demain."
+    hint: (pouvoir, conditional)
+    translation: We could come tomorrow.
+    answers: [pourrions]
+    why: The future stem pourr- + the nous imparfait ending -ions.
+
+  - type: choice
+    section: 1
+    prompt: "Which one means \"I could\"?"
+    options: [je pourrai, je pourrais]
+    answer: je pourrais
+    why: The conditional takes the imparfait ending -ais; je pourrai is the future.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: I'd like a room for two nights.
+    answers: ["Je voudrais une chambre pour deux nuits.", "J'aimerais une chambre pour deux nuits."]
+    why: Je voudrais or j'aimerais + a noun is the polite way to ask for something.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: We'd like to see the menu.
+    answers: ["Nous aimerions voir la carte.", "Nous voudrions voir la carte.", "On aimerait voir la carte.", "On voudrait voir la carte."]
+    why: Aimerions is the nous conditional of aimer, and the menu is la carte.
+
+  - type: translate
+    section: 2
+    direction: to-english
+    prompt: "J'aimerais réserver une table pour ce soir."
+    answers: ["I'd like to book a table for tonight.", "I would like to book a table for tonight.", "I'd like to reserve a table for tonight.", "I would like to reserve a table for tonight.", "I'd like to book a table for this evening.", "I would like to book a table for this evening."]
+    why: J'aimerais + infinitive means "I'd like to".
+
+  - type: choice
+    section: 2
+    prompt: "In a restaurant, *la carte* is…"
+    options: [the bill, the menu, the map]
+    answer: the menu
+    why: La carte is the menu; the bill is l'addition.
+
+  - type: fill
+    section: 3
+    prompt: "___-vous m'aider ?"
+    hint: (pouvoir, conditional)
+    translation: Could you help me?
+    answers: [Pourriez]
+    why: Pourriez is the vous conditional of pouvoir, meaning "could you".
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: Could you close the window? (to a friend)
+    answers: ["Tu pourrais fermer la fenêtre ?", "Est-ce que tu pourrais fermer la fenêtre ?", "Pourrais-tu fermer la fenêtre ?"]
+    why: Tu pourrais + infinitive is a friendly, polite request.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: "Vous pourriez répéter, s'il vous plaît ?"
+    answers: ["Could you repeat that, please?", "Could you repeat, please?", "Could you say that again, please?", "Could you please repeat that?", "Could you please repeat?"]
+    why: Vous pourriez is "could you", a polite request.
+
+  - type: fill
+    section: 4
+    prompt: "Tu ___ te reposer."
+    hint: (devoir, conditional)
+    translation: You should rest.
+    answers: [devrais]
+    why: Tu devrais (you should) is the conditional of devoir, for advice.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: We could go to the cinema.
+    answers: ["On pourrait aller au cinéma.", "Nous pourrions aller au cinéma."]
+    why: On pourrait + infinitive makes a suggestion.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: You should go to the doctor's. (to a friend)
+    answers: ["Tu devrais aller chez le médecin.", "Tu devrais aller voir un médecin.", "Tu devrais aller voir le médecin.", "Tu devrais aller chez un médecin.", "Tu devrais voir un médecin."]
+    why: Tu devrais + infinitive gives advice, and "at the doctor's" is chez le médecin.
+
+  - type: choice
+    section: 4
+    prompt: To suggest going to the beach, you say…
+    options: [On pourrait aller à la plage., On pourra aller à la plage., On pouvait aller à la plage.]
+    answer: On pourrait aller à la plage.
+    why: The conditional on pourrait means "we could" and makes a suggestion.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Ce serait génial !
+    answers: ["That would be great!", "It would be great!", "That would be brilliant!", "It would be brilliant!", "That would be amazing!", "That would be fantastic!"]
+    why: Ce serait is the conditional of c'est, meaning "it would be".

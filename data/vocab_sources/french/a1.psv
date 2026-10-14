@@ -1,98 +1,440 @@
 # French A1 — beginner vocabulary
-# Converted from the legacy JSON library, which predates this source pipeline.
-# Format: word | translations (semicolon-separated) | example sentence | category | difficulty (1-5)
+#
+# Grouped by the unit of a1/level.yaml whose `categories` include the word's
+# category. Words added since the legacy import avoid the A1 lessons' `words:`
+# lists and the other levels. Examples use only A1 grammar (present tense, aller /
+# vouloir / pouvoir / devoir + infinitive) and contain the word exactly as
+# listed, so the guided path can blank it out.
+#
+# Format: word | translations (semicolon-separated) | example sentence | category | difficulty (1-5) | example in English
 
-bonjour | hello; good morning; good day | Bonjour, comment allez-vous? | greetings | 1 | Hello, how are you?
-au revoir | goodbye | Au revoir, à demain! | greetings | 1 | Goodbye, see you tomorrow!
+# A1.1 Bonjour ! — greetings
+bonjour | hello; good morning; good day | Bonjour, comment allez-vous ? | greetings | 1 | Hello, how are you?
+au revoir | goodbye | Au revoir, à demain ! | greetings | 1 | Goodbye, see you tomorrow!
 merci | thank you; thanks | Merci beaucoup pour votre aide. | greetings | 1 | Thank you very much for your help.
+s'il vous plaît | please | Une baguette, s'il vous plaît. | greetings | 1 | A baguette, please.
+bonne nuit | good night | Bonne nuit, à demain matin ! | greetings | 1 | Good night, see you tomorrow morning!
+à bientôt | see you soon | Merci pour tout et à bientôt ! | greetings | 1 | Thanks for everything, and see you soon!
+bienvenue | welcome | Bienvenue à Paris, madame ! | greetings | 1 | Welcome to Paris, madam!
+désolé | sorry | Désolé, je suis en retard ! | greetings | 1 | Sorry, I'm late!
+coucou | hi (very informal) | Coucou Léa, tu vas bien ? | greetings | 1 | Hi Léa, are you OK?
+à tout à l'heure | see you later (today) | À tout à l'heure, au café ! | greetings | 2 | See you later, at the café!
+bonne chance | good luck | Bonne chance pour ton match ! | greetings | 1 | Good luck with your match!
+je vous en prie | you're welcome (polite) | Merci, madame. – Je vous en prie. | greetings | 2 | Thank you, madam. – You're welcome.
+
+# A1.1 Bonjour ! — basics
 oui | yes | Oui, je comprends. | basics | 1 | Yes, I understand.
-non | no | Non, merci. | basics | 1 | No, thank you.
-s'il vous plaît | please | Pouvez-vous me passer le sel, s'il vous plaît ? | greetings | 1 | Could you pass me the salt, please?
-un | one | J'ai acheté un livre. | numbers | 1 | I bought a book.
+non | no | Non, merci, je n'ai pas faim. | basics | 1 | No thanks, I'm not hungry.
+mais | but | J'aime le thé, mais je préfère le café. | basics | 1 | I like tea, but I prefer coffee.
+ou | or | Tu veux du thé ou du café ? | basics | 1 | Do you want tea or coffee?
+voilà | here you are; there you go; there it is | Voilà ton café, Paul. | basics | 1 | Here's your coffee, Paul.
+bien sûr | of course | Bien sûr, tu peux venir avec nous. | basics | 1 | Of course you can come with us.
+moi | me | Et moi, je m'appelle Hugo. | basics | 1 | And me, my name's Hugo.
+toi | you (after et, avec, chez…) | Je vais au cinéma avec toi. | basics | 1 | I'm going to the cinema with you.
+bien | well; good | Je vais bien, merci. | basics | 1 | I'm well, thanks.
+beaucoup | a lot; very much | J'aime beaucoup ce livre. | basics | 1 | I like this book a lot.
+un peu | a little; a bit | Je suis un peu fatigué. | basics | 1 | I'm a bit tired.
+peut-être | maybe; perhaps | Peut-être demain, je ne sais pas. | basics | 2 | Maybe tomorrow, I don't know.
+vraiment | really | Il fait vraiment froid aujourd'hui. | basics | 2 | It's really cold today.
+quelque chose | something | Tu veux quelque chose à boire ? | basics | 2 | Do you want something to drink?
+quelqu'un | someone; somebody; anybody | Il y a quelqu'un ? | basics | 2 | Is anybody there?
+personne | person | Ta mère est une personne très gentille. | basics | 2 | Your mother is a very kind person.
+nom | name; surname | Quel est votre nom, s'il vous plaît ? | basics | 1 | What's your surname, please?
+prénom | first name | Mon prénom est Léa. | basics | 1 | My first name is Léa.
+adresse | address | Quelle est ton adresse ? | basics | 2 | What's your address?
+numéro | number (phone, house, room) | Quel est ton numéro de téléphone ? | basics | 2 | What's your phone number?
+quoi | what | Tu fais quoi ce soir ? | basics | 1 | What are you doing tonight?
+pour | for | Ce cadeau est pour toi. | basics | 1 | This present is for you.
+chez | at (someone's home); to (someone's home) | Je suis chez ma grand-mère. | basics | 1 | I'm at my grandmother's.
+
+# A1.2 How French sounds — language
+langue | language; tongue | Le français est une belle langue. | language | 2 | French is a beautiful language.
+mot | word | Je ne comprends pas ce mot. | language | 1 | I don't understand this word.
+lettre | letter | J'écris une lettre à mon ami. | language | 2 | I'm writing a letter to my friend.
+phrase | sentence | Cette phrase est trop longue. | language | 2 | This sentence is too long.
+question | question | J'ai une question, s'il vous plaît. | language | 1 | I have a question, please.
+exemple | example | Vous avez un exemple, s'il vous plaît ? | language | 2 | Do you have an example, please?
+comment | how | Comment ça s'écrit ? | language | 1 | How do you spell that?
+lentement | slowly | Vous pouvez parler lentement, s'il vous plaît ? | language | 2 | Can you speak slowly, please?
+vite | fast; quickly | Tu parles trop vite ! | language | 2 | You're talking too fast!
+encore | again; more; still | Tu peux répéter encore une fois ? | language | 2 | Can you say it once more?
+expliquer | to explain | Tu peux expliquer ce mot ? | language | 2 | Can you explain this word?
+épeler | to spell | Vous pouvez épeler votre nom ? | language | 2 | Can you spell your name?
+traduire | to translate | Je dois traduire cette phrase en anglais. | language | 3 | I have to translate this sentence into English.
+accent | accent | Tu as un joli accent ! | language | 2 | You have a nice accent!
+nationalité | nationality | Quelle est votre nationalité ? | language | 2 | What's your nationality?
+allemand | German | Mon ami parle allemand et anglais. | language | 2 | My friend speaks German and English.
+italien | Italian | Marco est italien, il habite à Rome. | language | 2 | Marco is Italian; he lives in Rome.
+espagnol | Spanish | Je parle un peu espagnol. | language | 2 | I speak a little Spanish.
+chinois | Chinese | Ma voisine apprend le chinois. | language | 2 | My neighbour is learning Chinese.
+belge | Belgian | Le chocolat belge est délicieux. | language | 2 | Belgian chocolate is delicious.
+suisse | Swiss | Mon oncle est suisse, il vient de Genève. | language | 2 | My uncle is Swiss; he comes from Geneva.
+japonais | Japanese | Ce restaurant japonais est très bon. | language | 2 | This Japanese restaurant is very good.
+arabe | Arabic; Arab | Mon professeur parle arabe. | language | 2 | My teacher speaks Arabic.
+étranger | foreign; foreigner | C'est un film étranger. | language | 2 | It's a foreign film.
+alphabet | alphabet | Notre alphabet a vingt-six lettres. | language | 2 | Our alphabet has twenty-six letters.
+
+# A1.3 Who are you? — work
+travailler | to work | Je n'aime pas travailler le samedi. | work | 2 | I don't like working on Saturdays.
+travail | work; job | Je vais au travail en bus. | work | 1 | I go to work by bus.
+métier | job; trade | Quel est votre métier ? | work | 2 | What's your job?
+bureau | office; desk | Mon bureau est au troisième étage. | work | 2 | My office is on the third floor.
+patron | boss | Mon patron est très sympa. | work | 3 | My boss is really nice.
+collègue | colleague | Ma collègue s'appelle Julie. | work | 3 | My colleague's name is Julie.
+salaire | salary; pay | Il a un bon salaire. | work | 3 | He has a good salary.
+client | customer; client | Le client attend son café. | work | 2 | The customer is waiting for his coffee.
+serveur | waiter | Le serveur apporte deux cafés. | work | 2 | The waiter brings two coffees.
+vendeur | shop assistant; salesman | Le vendeur est très gentil. | work | 2 | The shop assistant is very kind.
+infirmier | nurse | Mon oncle est infirmier à l'hôpital. | work | 2 | My uncle is a nurse at the hospital.
+ingénieur | engineer | Mon père est ingénieur. | work | 2 | My father is an engineer.
+policier | police officer | Le policier aide les touristes. | work | 2 | The police officer helps the tourists.
+pompier | firefighter | Mon petit frère veut être pompier. | work | 2 | My little brother wants to be a firefighter.
+acteur | actor | Cet acteur est très célèbre. | work | 2 | This actor is very famous.
+chanteur | singer | Mon chanteur préféré est français. | work | 2 | My favourite singer is French.
+journaliste | journalist | Elle est journaliste à la télé. | work | 2 | She's a TV journalist.
+dentiste | dentist | Je vais chez le dentiste demain. | work | 2 | I'm going to the dentist's tomorrow.
+chauffeur | driver | Le chauffeur attend devant l'hôtel. | work | 2 | The driver is waiting in front of the hotel.
+coiffeur | hairdresser | Je vais chez le coiffeur samedi. | work | 2 | I'm going to the hairdresser's on Saturday.
+directeur | manager; director; head teacher | Le directeur de l'hôtel parle anglais. | work | 3 | The hotel manager speaks English.
+vétérinaire | vet; veterinarian | Je vais chez le vétérinaire avec mon chat. | work | 2 | I'm going to the vet's with my cat.
+secrétaire | secretary | La secrétaire répond au téléphone. | work | 2 | The secretary answers the phone.
+facteur | postman; mail carrier | Le facteur passe à dix heures. | work | 2 | The postman comes at ten.
+agriculteur | farmer | Mon grand-père est agriculteur. | work | 2 | My grandfather is a farmer.
+
+# A1.4 Things you have — housing
+maison | house; home | Ma maison a un grand jardin. | housing | 1 | My house has a big garden.
+appartement | flat; apartment | J'habite dans un appartement au centre-ville. | housing | 2 | I live in a flat in the town centre.
+chambre | bedroom; (hotel) room | Ma chambre est petite mais jolie. | housing | 1 | My bedroom is small but pretty.
+cuisine | kitchen; cooking | La cuisine est à côté du salon. | housing | 1 | The kitchen is next to the living room.
+salon | living room | Nous regardons la télé dans le salon. | housing | 1 | We watch TV in the living room.
+salle de bain | bathroom | La salle de bain est à côté de ma chambre. | housing | 2 | The bathroom is next to my bedroom.
+jardin | garden; yard | Nous avons un beau jardin avec des fleurs. | housing | 2 | We have a lovely garden with flowers.
+chaise | chair | Mon sac est sur la chaise. | housing | 1 | My bag is on the chair.
+fenêtre | window | Ma chambre a une grande fenêtre. | housing | 1 | My bedroom has a big window.
+porte | door | Quelqu'un frappe à la porte. | housing | 1 | Someone is knocking at the door.
+clé | key | Je cherche ma clé. | housing | 1 | I'm looking for my key.
+étage | floor; storey | J'habite au premier étage. | housing | 2 | I live on the first floor.
+mur | wall | Il y a une photo sur le mur. | housing | 2 | There's a photo on the wall.
+canapé | sofa; couch | Le chat dort sur le canapé. | housing | 2 | The cat is sleeping on the sofa.
+frigo | fridge | Le lait est dans le frigo. | housing | 2 | The milk is in the fridge.
+
+# A1.4 Things you have — emotions
+aimer | to like; to love | Les enfants vont aimer ce gâteau. | emotions | 1 | The children are going to love this cake.
+rire | to laugh | J'aime rire avec mes amis. | emotions | 2 | I like laughing with my friends.
+sourire | smile; to smile | Elle a un très joli sourire. | emotions | 2 | She has a lovely smile.
+pleurer | to cry | Le bébé commence à pleurer. | emotions | 2 | The baby is starting to cry.
+heureux | happy | Je suis très heureux aujourd'hui. | emotions | 1 | I'm very happy today.
+triste | sad | Pourquoi tu es triste ? | emotions | 1 | Why are you sad?
+en colère | angry | Mon père est en colère. | emotions | 2 | My father is angry.
+gentil | kind; nice | Ton chien est très gentil. | emotions | 1 | Your dog is very friendly.
+sympa | nice; friendly | Ta sœur est très sympa. | emotions | 1 | Your sister is really nice.
+drôle | funny | Ce film est très drôle. | emotions | 1 | This film is very funny.
+timide | shy | Mon petit frère est timide. | emotions | 2 | My little brother is shy.
+génial | great; brilliant | Ce jeu est génial ! | emotions | 1 | This game is great!
+
+# A1.4 Things you have — health
+santé | health | Les légumes sont bons pour la santé. | health | 2 | Vegetables are good for your health.
+malade | ill; sick | Je suis malade et je reste au lit. | health | 1 | I'm ill and I'm staying in bed.
+fatigué | tired | Je suis fatigué après une longue journée de travail. | health | 1 | I'm tired after a long day at work.
+sommeil | sleepiness; sleep | J'ai sommeil, je vais au lit. | health | 2 | I'm sleepy; I'm going to bed.
+mal | pain; ache | J'ai mal au ventre. | health | 2 | I have a stomach ache.
+grippe | flu | Mon frère a la grippe. | health | 2 | My brother has the flu.
+blessé | injured; hurt | Le joueur est blessé au genou. | health | 3 | The player has a knee injury.
+médecin | doctor | Ma tante est médecin. | health | 1 | My aunt is a doctor.
+médicament | medicine; medication | Tu dois prendre ce médicament. | health | 2 | You have to take this medicine.
+hôpital | hospital | Ma mère travaille dans un hôpital. | health | 2 | My mother works in a hospital.
+
+# A1.5 Numbers and time — numbers
+zéro | zero | Mon numéro commence par zéro six. | numbers | 1 | My number starts with zero six.
+un | one | Un café et deux croissants, s'il vous plaît. | numbers | 1 | One coffee and two croissants, please.
 deux | two | Il y a deux chiens dans le parc. | numbers | 1 | There are two dogs in the park.
 trois | three | Je vais à la plage trois fois par semaine. | numbers | 1 | I go to the beach three times a week.
 quatre | four | J'ai quatre frères et sœurs. | numbers | 1 | I have four brothers and sisters.
 cinq | five | Il y a cinq pommes sur la table. | numbers | 1 | There are five apples on the table.
-mère | mother | Ma mère est très gentille. | family | 2 | My mother is very kind.
-père | father | Mon père travaille beaucoup. | family | 2 | My father works a lot.
-frère | brother | J'ai un frère plus jeune. | family | 2 | I have a younger brother.
-sœur | sister | Ma sœur est très intelligente. | family | 2 | My sister is very clever.
-famille | family | J'aime passer du temps avec ma famille. | family | 2 | I like spending time with my family.
-pain | bread | Je voudrais une baguette de pain, s'il vous plaît. | food | 2 | I'd like a loaf of French bread, please.
-eau | water | Puis-je avoir un verre d'eau ? | food | 2 | May I have a glass of water?
-pomme | apple | J'ai acheté des pommes au marché. | food | 2 | I bought some apples at the market.
+six | six | Il y a six œufs dans le frigo. | numbers | 1 | There are six eggs in the fridge.
+sept | seven | Il y a sept jours dans une semaine. | numbers | 1 | There are seven days in a week.
+huit | eight | Je me lève à huit heures. | numbers | 1 | I get up at eight o'clock.
+neuf | nine | Mon petit frère a neuf ans. | numbers | 1 | My little brother is nine.
+onze | eleven | Le train part à onze heures. | numbers | 1 | The train leaves at eleven o'clock.
+treize | thirteen | Ma sœur a treize ans. | numbers | 1 | My sister is thirteen.
+quinze | fifteen | Le film commence dans quinze minutes. | numbers | 1 | The film starts in fifteen minutes.
+seize | sixteen | Mon cousin a seize ans. | numbers | 1 | My cousin is sixteen.
+quarante | forty | Mon père a quarante ans. | numbers | 1 | My father is forty.
+mille | a thousand | Il y a mille personnes au concert. | numbers | 2 | There are a thousand people at the concert.
+premier | first | C'est mon premier jour au collège. | numbers | 1 | It's my first day at secondary school.
+dernier | last | C'est le dernier bus ce soir. | numbers | 2 | It's the last bus tonight.
+
+# A1.5 Numbers and time — time
+heure | hour; o'clock; time | On part dans une heure. | time | 1 | We're leaving in an hour.
+minute | minute | J'arrive dans une minute ! | time | 1 | I'll be there in a minute!
+jour | day | C'est quel jour, aujourd'hui ? | time | 1 | What day is it today?
+nuit | night | Je dors bien la nuit. | time | 1 | I sleep well at night.
+après-midi | afternoon | Je joue au tennis cet après-midi. | time | 1 | I'm playing tennis this afternoon.
+semaine | week | La semaine prochaine, je suis en vacances. | time | 1 | Next week I'm on holiday.
+mois | month | Il y a douze mois dans une année. | time | 1 | There are twelve months in a year.
+année | year | Cette année, j'apprends le français. | time | 1 | This year I'm learning French.
+maintenant | now | Je dois partir maintenant. | time | 1 | I have to go now.
+avant | before | Je me douche avant le petit déjeuner. | time | 2 | I have a shower before breakfast.
+après | after | On joue au foot après le déjeuner. | time | 2 | We play football after lunch.
+anniversaire | birthday | C'est mon anniversaire aujourd'hui ! | time | 1 | It's my birthday today!
+mardi | Tuesday | Le mardi, j'ai un cours de danse. | time | 1 | On Tuesdays I have a dance class.
+mercredi | Wednesday | Le mercredi, je n'ai pas école. | time | 1 | On Wednesdays I don't have school.
+jeudi | Thursday | On va au cinéma jeudi soir. | time | 1 | We're going to the cinema on Thursday evening.
+vendredi | Friday | Vendredi soir, nous sortons avec des amis. | time | 1 | On Friday evening we're going out with friends.
+samedi | Saturday | Je me repose le samedi. | time | 1 | I rest on Saturdays.
+dimanche | Sunday | Le dimanche, on mange chez ma grand-mère. | time | 1 | On Sundays we eat at my grandmother's.
+janvier | January | Il fait très froid en janvier. | time | 1 | It's very cold in January.
+février | February | Il neige souvent en février. | time | 1 | It often snows in February.
+mars | March | Le printemps commence en mars. | time | 1 | Spring begins in March.
+avril | April | Mon anniversaire est le dix avril. | time | 1 | My birthday is on the tenth of April.
+juin | June | L'école finit en juin. | time | 1 | School finishes in June.
+juillet | July | Le 14 juillet, c'est la fête nationale. | time | 1 | The 14th of July is the national holiday.
+août | August | Nous partons en vacances en août. | time | 1 | We go on holiday in August.
+septembre | September | Les cours commencent en septembre. | time | 1 | Classes start in September.
+octobre | October | Halloween, c'est en octobre. | time | 1 | Halloween is in October.
+novembre | November | Il pleut beaucoup en novembre. | time | 1 | It rains a lot in November.
+décembre | December | Noël est en décembre. | time | 1 | Christmas is in December.
+
+# A1.6 Everyday verbs — education
+école | school | Mon école est très grande. | education | 1 | My school is very big.
+collège | secondary school (ages 11–15) | Mon frère va au collège. | education | 2 | My brother goes to secondary school.
+lycée | high school (ages 15–18) | Ma sœur est au lycée. | education | 2 | My sister is at high school.
+classe | class; classroom | Il y a vingt élèves dans ma classe. | education | 1 | There are twenty pupils in my class.
+élève | pupil; student (at school) | Léa est une très bonne élève. | education | 1 | Léa is a very good pupil.
+étudiant | student | Je suis étudiant en première année. | education | 2 | I'm a first-year student.
+professeur | teacher | Mon professeur de français est très sympathique. | education | 1 | My French teacher is very nice.
+étudier | to study | Je dois étudier ce soir. | education | 2 | I have to study this evening.
+écrire | to write | J'aime écrire des histoires. | education | 2 | I like writing stories.
+histoire | story; history | Mon grand-père raconte une histoire. | education | 2 | My grandfather is telling a story.
+matière | (school) subject | Quelle est ta matière préférée ? | education | 2 | What's your favourite subject?
+maths | maths; math | J'adore les maths ! | education | 1 | I love maths!
+livre | book | Je lis un livre très intéressant. | education | 1 | I'm reading a very interesting book.
+cahier | exercise book; notebook | Mon cahier est dans mon sac. | education | 1 | My exercise book is in my bag.
+stylo | pen | Tu as un stylo bleu, s'il te plaît ? | education | 1 | Do you have a blue pen, please?
+crayon | pencil | Tu as un crayon ? | education | 1 | Do you have a pencil?
+trousse | pencil case | Il y a trois stylos dans ma trousse. | education | 2 | There are three pens in my pencil case.
+cartable | school bag | Mon cartable est très lourd. | education | 2 | My school bag is very heavy.
+tableau | board; picture; painting | Le professeur écrit au tableau. | education | 2 | The teacher writes on the board.
+bibliothèque | library | Je vais à la bibliothèque après l'école. | education | 2 | I go to the library after school.
+
+# A1.6 Everyday verbs — verbs
+donner | to give | Tu peux donner ce livre à Paul ? | verbs | 1 | Can you give this book to Paul?
+chercher | to look for | Je dois chercher un appartement. | verbs | 1 | I have to look for a flat.
+trouver | to find | Je ne peux pas trouver mes clés. | verbs | 1 | I can't find my keys.
+aider | to help | Je peux vous aider ? | verbs | 1 | Can I help you?
+entrer | to come in; to go in | Vous pouvez entrer, la porte est ouverte. | verbs | 2 | You can come in, the door's open.
+rester | to stay | Je vais rester à la maison ce soir. | verbs | 1 | I'm going to stay at home tonight.
+sortir | to go out | On va sortir ce soir ? | verbs | 1 | Are we going out tonight?
+partir | to leave; to go away | Le train va partir dans cinq minutes. | verbs | 1 | The train is going to leave in five minutes.
+oublier | to forget | Je ne veux pas oublier mon passeport. | verbs | 2 | I don't want to forget my passport.
+ouvrir | to open | Tu peux ouvrir la fenêtre, s'il te plaît ? | verbs | 1 | Can you open the window, please?
+appeler | to call; to phone | Je vais appeler ma grand-mère ce soir. | verbs | 2 | I'm going to call my grandmother tonight.
+envoyer | to send | Je vais envoyer un message à Léa. | verbs | 2 | I'm going to send Léa a message.
+voir | to see | Je veux voir ce film ! | verbs | 1 | I want to see this film!
+savoir | to know (a fact) | Tu veux savoir mon secret ? | verbs | 2 | Do you want to know my secret?
+mettre | to put; to put on | Tu peux mettre la table, s'il te plaît ? | verbs | 2 | Can you set the table, please?
+marcher | to walk | J'aime marcher à la montagne. | verbs | 2 | I like walking in the mountains.
+préparer | to prepare; to make | Je vais préparer le dîner. | verbs | 2 | I'm going to make dinner.
+
+# A1.7 Family and friends — family
+famille | family | J'aime passer du temps avec ma famille. | family | 1 | I like spending time with my family.
+mère | mother | Ma mère est très gentille. | family | 1 | My mother is very kind.
+père | father | Mon père travaille beaucoup. | family | 1 | My father works a lot.
+frère | brother | J'ai un petit frère. | family | 1 | I have a little brother.
+sœur | sister | Ma sœur est très intelligente. | family | 1 | My sister is very clever.
+maman | mum; mom | Maman, j'ai faim ! | family | 1 | Mum, I'm hungry!
+papa | dad | Papa travaille à la banque. | family | 1 | Dad works at the bank.
+bébé | baby | Le bébé dort dans sa chambre. | family | 1 | The baby is sleeping in his room.
+marié | married | Mon frère est marié. | family | 2 | My brother is married.
+copain | friend; boyfriend | Je joue au foot avec mon copain Lucas. | family | 1 | I play football with my friend Lucas.
+copine | friend (a girl); girlfriend | Ma copine Inès habite à côté. | family | 1 | My friend Inès lives next door.
+gens | people | Les gens sont très sympas ici. | family | 2 | The people are really nice here.
+
+# A1.7 Family and friends — colors
+couleur | colour; color | Quelle est ta couleur préférée ? | colors | 1 | What's your favourite colour?
+jaune | yellow | J'ai un vélo jaune. | colors | 1 | I have a yellow bike.
+orange | orange | Je porte un t-shirt orange. | colors | 1 | I'm wearing an orange T-shirt.
+rose | pink; rose | Ma chambre est rose. | colors | 1 | My bedroom is pink.
+violet | purple | Elle a un sac violet. | colors | 1 | She has a purple bag.
+gris | grey; gray | Mon chat est gris et blanc. | colors | 1 | My cat is grey and white.
+marron | brown | J'ai les yeux marron. | colors | 1 | I have brown eyes.
+blond | blond; fair-haired | Mon petit frère est blond. | colors | 2 | My little brother has fair hair.
+
+# A1.7 Family and friends — body
+tête | head | Il porte un chapeau sur la tête. | body | 1 | He's wearing a hat on his head.
+visage | face | Elle a un joli visage. | body | 2 | She has a pretty face.
+yeux | eyes | Ma sœur a les yeux bleus. | body | 1 | My sister has blue eyes.
+cheveux | hair | Il a les cheveux noirs. | body | 1 | He has black hair.
+nez | nose | Le clown a un gros nez rouge. | body | 1 | The clown has a big red nose.
+bouche | mouth | Le bébé ouvre la bouche. | body | 2 | The baby opens his mouth.
+oreille | ear | Mon chien a une oreille blanche. | body | 2 | My dog has one white ear.
+bras | arm | J'ai mal au bras. | body | 1 | My arm hurts.
+main | hand | J'ai un stylo dans la main. | body | 1 | I have a pen in my hand.
+jambe | leg | Ma jambe gauche me fait mal. | body | 1 | My left leg hurts.
+pied | foot | J'ai mal au pied droit. | body | 1 | My right foot hurts.
+
+# A1.7 Family and friends — animals
+animal | animal; pet | J'ai un chat comme animal de compagnie. | animals | 1 | I have a cat as a pet.
+oiseau | bird | Un oiseau chante dans le jardin. | animals | 1 | A bird is singing in the garden.
+poisson rouge | goldfish | J'ai un poisson rouge et un chat. | animals | 2 | I have a goldfish and a cat.
+lapin | rabbit | Mon lapin s'appelle Caramel. | animals | 1 | My rabbit is called Caramel.
+souris | mouse | Le chat regarde la souris. | animals | 1 | The cat is watching the mouse.
+cheval | horse | Ma cousine fait du cheval. | animals | 2 | My cousin goes horse riding.
+vache | cow | La vache mange de l'herbe. | animals | 1 | The cow is eating grass.
+lion | lion | Le lion dort sous un arbre. | animals | 1 | The lion is sleeping under a tree.
+éléphant | elephant | Un éléphant est très lourd. | animals | 1 | An elephant is very heavy.
+araignée | spider | Il y a une araignée dans ma chambre ! | animals | 2 | There's a spider in my bedroom!
+
+# A1.8 Going places — travel (and places in town)
+voyager | to travel | J'aime voyager en train. | travel | 2 | I like travelling by train.
+visiter | to visit (a place) | Nous allons visiter Paris cet été. | travel | 2 | We're going to visit Paris this summer.
+pays | country | Le Canada est un très grand pays. | travel | 1 | Canada is a very big country.
+ville | town; city | Lyon est une grande ville. | travel | 1 | Lyon is a big city.
+village | village | C'est un petit village très calme. | travel | 1 | It's a very quiet little village.
+église | church | Il y a une vieille église dans mon village. | travel | 2 | There's an old church in my village.
+banque | bank | La banque ferme à cinq heures. | travel | 2 | The bank closes at five.
+poste | post office | Je vais à la poste. | travel | 2 | I'm going to the post office.
+hôtel | hotel | Cet hôtel est très confortable. | travel | 2 | This hotel is very comfortable.
+carte postale | postcard | J'écris une carte postale à mes grands-parents. | travel | 2 | I'm writing a postcard to my grandparents.
+avion | plane; airplane | Il y a un avion dans le ciel. | travel | 1 | There's a plane in the sky.
+train | train | Je prends le train pour aller au travail. | travel | 1 | I take the train to work.
+voiture | car | Mon père a une voiture bleue. | travel | 1 | My father has a blue car.
+bateau | boat | Nous faisons une promenade en bateau. | travel | 2 | We're going on a boat trip.
+métro | underground; subway; metro | Je prends le métro pour aller en ville. | travel | 2 | I take the metro into town.
+
+# A1.8 Going places — transportation
+prendre | to take; to have (food, drink) | Nous allons prendre le train pour Paris. | transportation | 1 | We're going to take the train to Paris.
+vélo | bike; bicycle | Je vais à l'école à vélo. | transportation | 1 | I go to school by bike.
+à pied | on foot | Je vais au collège à pied. | transportation | 1 | I walk to school.
+taxi | taxi | On prend un taxi pour aller à la gare ? | transportation | 1 | Shall we take a taxi to the station?
+descendre | to get off; to go down | Je vais descendre au prochain arrêt. | transportation | 2 | I'm going to get off at the next stop.
+gauche | left | La gare est à gauche. | transportation | 1 | The station is on the left.
+droite | right | La banque est à droite. | transportation | 1 | The bank is on the right.
+loin | far | La plage est loin d'ici ? | transportation | 1 | Is the beach far from here?
+près | near; close | Il y a une pharmacie près d'ici ? | transportation | 1 | Is there a pharmacy near here?
+
+# A1.8 Going places — sports
+courir | to run | Je vais courir dans le parc. | sports | 2 | I'm going for a run in the park.
+nager | to swim | J'aime nager à la piscine. | sports | 1 | I like swimming at the pool.
+football | football; soccer | Je joue au football avec mes amis. | sports | 1 | I play football with my friends.
+tennis | tennis | Ma mère joue au tennis le samedi. | sports | 1 | My mother plays tennis on Saturdays.
+basket | basketball | Mon frère joue au basket. | sports | 1 | My brother plays basketball.
+ballon | ball | Le ballon est dans le jardin. | sports | 1 | The ball is in the garden.
+équipe | team | Notre équipe est très forte. | sports | 2 | Our team is very strong.
+gagner | to win; to earn | On va gagner le match ! | sports | 2 | We're going to win the match!
+
+# A1.8 Going places — leisure
+sport | sport | Tu fais du sport ? | leisure | 1 | Do you do any sport?
+jouer | to play | Tu veux jouer au foot avec nous ? | leisure | 1 | Do you want to play football with us?
+jeu vidéo | video game | Mon frère adore ce jeu vidéo. | leisure | 1 | My brother loves this video game.
+lire | to read | J'aime lire des livres pendant mon temps libre. | leisure | 1 | I like reading books in my free time.
+regarder | to watch; to look at | J'aime regarder la télé le soir. | leisure | 1 | I like watching TV in the evening.
+film | film; movie | Nous allons voir un film au cinéma ce soir. | leisure | 1 | We're going to see a film at the cinema tonight.
+musique | music | J'écoute de la musique le soir. | leisure | 1 | I listen to music in the evening.
+danser | to dance | Tu veux danser avec moi ? | leisure | 1 | Do you want to dance with me?
+guitare | guitar | Je joue de la guitare. | leisure | 1 | I play the guitar.
+piano | piano | Ma sœur joue du piano. | leisure | 1 | My sister plays the piano.
+photo | photo; picture | Je prends une photo de la tour Eiffel. | leisure | 1 | I'm taking a photo of the Eiffel Tower.
+pêcher | to fish; to go fishing | Mon père aime pêcher le week-end. | leisure | 2 | My father likes fishing at the weekend.
+
+# A1.9 Wants and likes — food
+manger | to eat | Tu veux manger une pizza ce soir ? | food | 1 | Do you want to eat a pizza tonight?
+boire | to drink | Je veux boire un verre d'eau. | food | 1 | I want to drink a glass of water.
+cuisiner | to cook | Mon père aime cuisiner le dimanche. | food | 2 | My father likes cooking on Sundays.
+repas | meal | Le repas est délicieux. | food | 1 | The meal is delicious.
+délicieux | delicious | Ce gâteau est délicieux ! | food | 1 | This cake is delicious!
+déjeuner | lunch; to have lunch | Le déjeuner est à midi. | food | 1 | Lunch is at noon.
+dîner | dinner; to have dinner | Le dîner est prêt ! | food | 1 | Dinner's ready!
+restaurant | restaurant | Je connais un bon restaurant en centre-ville. | food | 1 | I know a good restaurant in the town centre.
+boulangerie | bakery | J'achète du pain à la boulangerie. | food | 1 | I buy bread at the bakery.
+baguette | baguette; French stick | Je vais acheter une baguette. | food | 1 | I'm going to buy a baguette.
+boucher | butcher | Le boucher vend de la viande fraîche. | food | 2 | The butcher sells fresh meat.
+pain | bread | Je mange du pain avec du fromage. | food | 1 | I eat bread with cheese.
+eau | water | Cette eau est très froide. | food | 1 | This water is very cold.
+verre | glass | Un verre de jus d'orange, s'il vous plaît. | food | 1 | A glass of orange juice, please.
+bouteille | bottle | Une bouteille d'eau, s'il vous plaît. | food | 1 | A bottle of water, please.
+sucre | sugar | Tu prends du sucre dans ton café ? | food | 1 | Do you take sugar in your coffee?
+œuf | egg | Je mange un œuf le matin. | food | 1 | I eat an egg in the morning.
 fromage | cheese | Je préfère le fromage de chèvre. | food | 2 | I prefer goat's cheese.
-viande | meat | Nous avons mangé de la viande de bœuf pour le dîner. | food | 2 | We ate beef for dinner.
-avion | airplane | Nous prenons l'avion pour aller en vacances. | travel | 2 | We're taking the plane to go on holiday.
-train | train | Je prends le train pour aller au travail. | travel | 2 | I take the train to work.
-voiture | car | Ma voiture est garée dans le parking. | travel | 2 | My car is parked in the car park.
-bateau | boat | Nous avons fait une croisière en bateau. | travel | 2 | We went on a boat cruise.
-métro | subway; metro | Je prends le métro pour aller en ville. | travel | 2 | I take the metro into town.
-magasin | store; shop | Je vais faire des achats dans ce magasin. | shopping | 2 | I'm going to do some shopping in this shop.
-acheter | to buy | J'ai acheté un nouveau manteau. | shopping | 2 | I bought a new coat.
-vendre | to sell | Cette boutique vend de beaux bijoux. | shopping | 2 | This shop sells beautiful jewellery.
+viande | meat | Nous mangeons de la viande le dimanche. | food | 2 | We eat meat on Sundays.
+poulet | chicken | Je prends le poulet avec des frites. | food | 1 | I'll have the chicken with chips.
+frites | chips; fries | Les frites sont très bonnes ici. | food | 1 | The chips are very good here.
+pâtes | pasta | Les enfants adorent les pâtes. | food | 1 | Children love pasta.
+pomme de terre | potato | Une pomme de terre, c'est un légume. | food | 1 | A potato is a vegetable.
+pomme | apple | Je mange une pomme tous les jours. | food | 1 | I eat an apple every day.
+banane | banana | Je mange une banane après le sport. | food | 1 | I eat a banana after sport.
+fraise | strawberry | La fraise est mon fruit préféré. | food | 1 | Strawberries are my favourite fruit.
+glace | ice cream; ice | Je voudrais une glace au chocolat. | food | 1 | I'd like a chocolate ice cream.
+
+# A1.9 Wants and likes — shopping
+magasin | shop; store | Ce magasin ferme à sept heures. | shopping | 1 | This shop closes at seven.
+supermarché | supermarket | Je fais les courses au supermarché. | shopping | 1 | I do the shopping at the supermarket.
+marché | market | Je vais au marché pour acheter des fruits. | shopping | 1 | I'm going to the market to buy some fruit.
+ouvert | open | Le magasin est ouvert jusqu'à huit heures. | shopping | 1 | The shop is open until eight.
+fermé | closed | Le musée est fermé le mardi. | shopping | 1 | The museum is closed on Tuesdays.
+acheter | to buy | Je vais acheter un nouveau manteau. | shopping | 1 | I'm going to buy a new coat.
+vendre | to sell | Mon voisin veut vendre sa voiture. | shopping | 2 | My neighbour wants to sell his car.
 payer | to pay | Je vais payer avec ma carte bancaire. | shopping | 2 | I'm going to pay with my bank card.
-argent | money | J'ai assez d'argent pour acheter ce manteau. | shopping | 2 | I have enough money to buy this coat.
-heure | hour | Il est 15 heures. | time | 2 | It's 3 p.m.
-jour | day | Aujourd'hui, nous allons au parc. | time | 2 | Today we're going to the park.
-semaine | week | Je travaille du lundi au vendredi chaque semaine. | time | 2 | I work Monday to Friday every week.
-mois | month | Je pars le mois prochain. | time | 2 | I'm leaving next month.
-année | year | Cette année, j'apprends le français. | time | 2 | This year, I'm learning French.
-soleil | sun | Il fait beau et il y a beaucoup de soleil aujourd'hui. | weather | 2 | The weather's nice and there's lots of sunshine today.
-pluie | rain | La pluie a commencé à l'aube. | weather | 2 | The rain started at dawn.
-neige | snow | Il y a beaucoup de neige sur les montagnes. | weather | 2 | There's a lot of snow on the mountains.
-vent | wind | Il fait très venteux aujourd'hui. | weather | 2 | It's very windy today.
-nuage | cloud | Le ciel est couvert de nuages gris. | weather | 2 | The sky is covered in grey clouds.
-travailler | to work | Je travaille dans un bureau. | work | 3 | I work in an office.
-bureau | office | Mon bureau est au troisième étage. | work | 3 | My office is on the third floor.
-patron | boss | Mon patron est très exigeant. | work | 3 | My boss is very demanding.
-collègue | colleague | Je m'entends bien avec mes collègues. | work | 3 | I get on well with my colleagues.
-salaire | salary | Mon salaire me permet de vivre confortablement. | work | 3 | My salary lets me live comfortably.
-école | school | Je vais à l'école tous les jours. | education | 3 | I go to school every day.
-professeur | teacher | Mon professeur de français est très sympathique. | education | 3 | My French teacher is very nice.
-étudiant | student | Je suis un étudiant en première année. | education | 3 | I'm a first-year student.
-livre | book | J'ai emprunté ce livre à la bibliothèque. | education | 3 | I borrowed this book from the library.
-stylo | pen | Peux-tu me prêter un stylo, s'il te plaît ? | education | 3 | Can you lend me a pen, please?
-maison | house | Ma maison a un grand jardin. | housing | 3 | My house has a big garden.
-appartement | apartment | J'habite dans un appartement au centre-ville. | housing | 3 | I live in an apartment in the city centre.
-chambre | room | Ma chambre est au deuxième étage. | housing | 3 | My bedroom is on the second floor.
-cuisine | kitchen | Je fais la cuisine tous les soirs. | housing | 3 | I cook every evening.
-jardin | garden | Nous avons un beau jardin avec des fleurs. | housing | 3 | We have a beautiful garden with flowers.
-lire | to read | J'aime lire des livres pendant mon temps libre. | leisure | 3 | I like reading books in my free time.
-jouer | to play | Nous jouons au football le week-end. | leisure | 3 | We play football at the weekend.
-sport | sport | Le football est mon sport préféré. | leisure | 3 | Football is my favourite sport.
-musique | music | J'écoute de la musique classique le soir. | leisure | 3 | I listen to classical music in the evening.
-film | movie | Nous allons voir un film au cinéma ce soir. | leisure | 3 | We're going to see a movie at the cinema tonight.
-mal | pain; ache | J'ai mal à la tête. | health | 3 | I have a headache.
-médecin | doctor | Je vais voir un médecin pour mon problème de dos. | health | 3 | I'm going to see a doctor about my back problem.
-hôpital | hospital | Mon grand-père est à l'hôpital. | health | 3 | My grandfather is in hospital.
-médicament | medication | Le médecin m'a prescrit des médicaments. | health | 3 | The doctor prescribed me some medicine.
-santé | health | Ma santé est bonne. | health | 3 | My health is good.
-boucher | butcher; to chop | Le boucher vend de la viande fraîche. | food | 2 | The butcher sells fresh meat.
-parapluie | umbrella | Je prends mon parapluie quand il pleut. | weather | 2 | I take my umbrella when it rains.
-pêcher | to fish; to pick | Mon père aime pêcher le weekend. | leisure | 3 | My father likes fishing at the weekend.
-boulangerie | bakery | J'achète du pain à la boulangerie. | food | 2 | I buy bread at the bakery.
-rire | to laugh | Elle rit quand elle est heureuse. | emotions | 2 | She laughs when she's happy.
-oreille | ear | J'entends avec mes oreilles. | health | 2 | I hear with my ears.
-chanter | to sing | Elle chante très bien. | arts | 3 | She sings very well.
-fleuve | river | Le fleuve traverse la ville. | nature | 3 | The river runs through the city.
-chaussure | shoe | Je porte des chaussures confortables. | shopping | 2 | I wear comfortable shoes.
-dormir | to sleep | Je dors huit heures par nuit. | daily_routines | 2 | I sleep eight hours a night.
-courir | to run | Je cours tous les jours pour faire de l'exercice. | sports | 3 | I run every day to get some exercise.
-montagne | mountain | Les montagnes sont très hautes. | nature | 3 | The mountains are very high.
-église | church | L'église est un bâtiment religieux. | arts | 3 | A church is a religious building.
-malade | sick; ill | Je suis malade et je reste au lit. | health | 2 | I'm ill and I'm staying in bed.
-manger | to eat | Je mange du pain et du fromage pour le petit-déjeuner. | food | 2 | I eat bread and cheese for breakfast.
-parler | to speak; to talk | Nous parlons français à la maison. | daily_routines | 3 | We speak French at home.
-beau | beautiful; handsome | Ce paysage est vraiment beau. | arts | 2 | This scenery is really beautiful.
-fatigue | tired; exhausted | Je suis fatigué après une longue journée de travail. | health | 3 | I'm tired after a long day at work.
-hôtel | hotel | Nous restons à l'hôtel pendant nos vacances. | travel | 3 | We're staying at the hotel during our holiday.
-écrire | to write | J'écris une lettre à ma grand-mère. | education | 3 | I'm writing a letter to my grandmother.
-prendre | to take; to have | Je prends le bus pour aller au travail. | transportation | 3 | I take the bus to work.
-prêter | to lend; to borrow | Je peux te prêter mon stylo si tu en as besoin. | daily_routines | 3 | I can lend you my pen if you need it.
-apporter | to bring | Peux-tu m'apporter un verre d'eau ? | daily_routines | 3 | Can you bring me a glass of water?
-regarder | to watch; to look at | Je regarde la télévision le soir. | leisure | 3 | I watch television in the evening.
-fermer | to close | Je ferme la porte à clé avant de sortir. | daily_routines | 3 | I lock the door before I go out.
-aimer | to like; to love | J'aime beaucoup le chocolat. | emotions | 3 | I really like chocolate.
-animal | animal | J'ai un chat comme animal de compagnie. | nature | 3 | I have a cat as a pet.
-marché | market | Je vais au marché pour acheter des fruits et légumes. | shopping | 3 | I'm going to the market to buy fruit and vegetables.
+argent | money | Mon argent est dans mon sac. | shopping | 2 | My money is in my bag.
+cadeau | present; gift | J'ai un cadeau pour ma mère. | shopping | 1 | I have a present for my mother.
+
+# A1.9 Wants and likes — arts
+chanter | to sing | J'aime chanter sous la douche. | arts | 1 | I like singing in the shower.
+chanson | song | C'est ma chanson préférée ! | arts | 1 | It's my favourite song!
+dessiner | to draw | J'aime dessiner des animaux. | arts | 1 | I like drawing animals.
+théâtre | theatre; drama | Je fais du théâtre le mercredi. | arts | 2 | I do drama on Wednesdays.
+artiste | artist | Mon oncle est artiste. | arts | 2 | My uncle is an artist.
+beau | beautiful; handsome; lovely | Ce paysage est vraiment beau. | arts | 2 | This scenery is really beautiful.
+
+# A1.10 Your day — daily routines
+dormir | to sleep | J'aime dormir tard le dimanche. | daily_routines | 1 | I like sleeping late on Sundays.
+d'abord | first; first of all | D'abord, je me lave les mains. | daily_routines | 2 | First, I wash my hands.
+ensuite | then; next | Ensuite, je prends le petit déjeuner. | daily_routines | 2 | Then I have breakfast.
+douche | shower | Je prends une douche le matin. | daily_routines | 1 | I have a shower in the morning.
+brosse à dents | toothbrush | Où est ma brosse à dents ? | daily_routines | 2 | Where's my toothbrush?
+rentrer | to go home; to come back | Je dois rentrer à la maison à six heures. | daily_routines | 2 | I have to go home at six.
+ranger | to tidy; to put away | Je dois ranger ma chambre. | daily_routines | 2 | I have to tidy my room.
+parler | to speak; to talk | J'aime parler français avec ma grand-mère. | daily_routines | 1 | I like speaking French with my grandmother.
+apporter | to bring | Tu peux apporter un gâteau samedi ? | daily_routines | 2 | Can you bring a cake on Saturday?
+prêter | to lend | Tu peux prêter ton vélo à Hugo ? | daily_routines | 2 | Can you lend your bike to Hugo?
+fermer | to close; to shut | Tu peux fermer la porte, s'il te plaît ? | daily_routines | 1 | Can you close the door, please?
+
+# A1.10 Your day — weather
+temps | weather; time | Il fait quel temps à Paris ? | weather | 1 | What's the weather like in Paris?
+soleil | sun | Il fait beau, il y a du soleil. | weather | 1 | The weather's nice; it's sunny.
+ciel | sky | Le ciel est bleu aujourd'hui. | weather | 1 | The sky is blue today.
+nuage | cloud | Il y a un gros nuage noir. | weather | 1 | There's a big black cloud.
+pluie | rain | Je n'aime pas la pluie. | weather | 1 | I don't like the rain.
+pleuvoir | to rain | Il va pleuvoir demain. | weather | 1 | It's going to rain tomorrow.
+parapluie | umbrella | Je prends mon parapluie quand il pleut. | weather | 1 | I take my umbrella when it rains.
+neige | snow | Les enfants jouent dans la neige. | weather | 1 | The children are playing in the snow.
+vent | wind | Il y a du vent à la plage. | weather | 1 | It's windy at the beach.
+printemps | spring | Au printemps, les jardins sont magnifiques. | weather | 1 | In spring the gardens are beautiful.
+été | summer | En été, il fait très chaud ici. | weather | 1 | In summer it's very hot here.
+automne | autumn; fall | En automne, les feuilles tombent. | weather | 1 | In autumn the leaves fall.
+hiver | winter | En hiver, nous allons à la montagne. | weather | 1 | In winter we go to the mountains.
+
+# A1.10 Your day — nature
+mer | sea | Nous allons à la mer en été. | nature | 1 | We go to the seaside in summer.
+montagne | mountain | Cette montagne est très haute. | nature | 1 | This mountain is very high.
+campagne | countryside | Mes grands-parents habitent à la campagne. | nature | 1 | My grandparents live in the countryside.
+forêt | forest; woods | La forêt est très belle en automne. | nature | 1 | The forest is very beautiful in autumn.
+lac | lake | Il y a un lac près de mon village. | nature | 1 | There's a lake near my village.
+rivière | river | Les enfants nagent dans la rivière. | nature | 1 | The children are swimming in the river.
+fleuve | (large) river | Le fleuve traverse la ville. | nature | 3 | The river runs through the city.
+île | island | La Corse est une belle île. | nature | 2 | Corsica is a beautiful island.
+arbre | tree | Il y a un grand arbre devant la maison. | nature | 1 | There's a big tree in front of the house.
+fleur | flower | Je donne une fleur à ma mère. | nature | 1 | I'm giving my mother a flower.
+
+# A1.10 Your day — clothing
+porter | to wear; to carry | Je n'aime pas porter de chapeau. | clothing | 1 | I don't like wearing a hat.
+t-shirt | T-shirt | En été, je porte un t-shirt. | clothing | 1 | In summer I wear a T-shirt.
+pull | jumper; sweater | Il fait froid, je mets un pull. | clothing | 1 | It's cold, so I'm putting on a jumper.
+pantalon | trousers; pants | Ce pantalon est trop petit. | clothing | 1 | These trousers are too small.
+jean | jeans | Mon jean est trop grand. | clothing | 1 | My jeans are too big.
+robe | dress | Elle porte une robe rouge. | clothing | 1 | She's wearing a red dress.
+jupe | skirt | Elle porte une jupe longue. | clothing | 1 | She's wearing a long skirt.
+chemise | shirt | Mon père porte une chemise blanche. | clothing | 1 | My father is wearing a white shirt.
+chaussure | shoe | Ma chaussure est sous le lit. | clothing | 1 | My shoe is under the bed.
+chaussette | sock | J'ai un trou dans ma chaussette. | clothing | 1 | I have a hole in my sock.
+maillot de bain | swimsuit; swimming trunks | Je prends mon maillot de bain pour la plage. | clothing | 2 | I'm taking my swimsuit to the beach.

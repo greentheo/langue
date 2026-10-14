@@ -1,0 +1,712 @@
+dialogues:
+  # ── A2.1 What did you do? ──────────────────────────────────────────────
+  - id: weekend-news
+    unit: 1
+    title: "Tu as passé un bon week-end ?"
+    setting: It's Monday morning at school in Lyon. Your friend Inès sits down next to you.
+    with: Inès, a friend
+    lines:
+      - them: "Salut ! Tu as passé un bon week-end ?"
+        english: "Hi! Did you have a good weekend?"
+      - you: Say yes, it was great.
+        answers:
+          - "Oui, c'était génial !"
+          - "Oui, c'était super !"
+          - "Oui, super !"
+          - "Oui, génial !"
+      - them: "Qu'est-ce que tu as fait ?"
+        english: "What did you do?"
+      - you: Say that on Saturday you saw a film at the cinema.
+        answers:
+          - "Samedi, j'ai vu un film au cinéma."
+          - "J'ai vu un film au cinéma samedi."
+          - "Samedi, j'ai regardé un film au cinéma."
+          - "J'ai regardé un film au cinéma samedi."
+      - them: "Cool ! Et dimanche ?"
+        english: "Cool! And on Sunday?"
+      - you: Say you did your homework, then you read a book.
+        answers:
+          - "J'ai fait mes devoirs, puis j'ai lu un livre."
+          - "J'ai fait mes devoirs et puis j'ai lu un livre."
+          - "J'ai fait mes devoirs, et après j'ai lu un livre."
+          - "Dimanche, j'ai fait mes devoirs, puis j'ai lu un livre."
+      - them: "Moi, je suis allée à la mer avec ma famille. Il a fait très beau !"
+        english: "I went to the seaside with my family. The weather was lovely!"
+      - you: Say "lucky you!"
+        answers:
+          - "Quelle chance !"
+          - "Oh, quelle chance !"
+          - "Quelle chance, Inès !"
+
+  - id: big-news
+    unit: 1
+    title: Guess what!
+    setting: It's break time at school. Your friend Manon runs across the playground to you, waving a sheet of paper.
+    with: Manon, a friend
+    lines:
+      - them: "Tu ne devineras jamais !"
+        english: "You'll never guess!"
+      - you: Ask her what happened.
+        answers:
+          - "Qu'est-ce qui s'est passé ?"
+          - "Qu'est-ce qui est arrivé ?"
+          - "Quoi ? Qu'est-ce qui s'est passé ?"
+      - them: "J'ai eu dix-neuf sur vingt au contrôle de maths !"
+        english: "I got nineteen out of twenty in the maths test!"
+      - you: Say "no way!" — and congratulate her.
+        answers:
+          - "Ce n'est pas vrai ! Félicitations !"
+          - "C'est pas vrai ! Félicitations !"
+          - "Pas vrai ! Félicitations !"
+          - "Ce n'est pas vrai ! Bravo !"
+          - "C'est pas vrai ! Bravo !"
+      - them: "Merci ! J'ai beaucoup révisé. Et toi, tu as eu ta note ?"
+        english: "Thanks! I revised a lot. What about you — have you got your mark?"
+      - you: Say no, not yet.
+        answers:
+          - "Non, pas encore."
+          - "Pas encore."
+          - "Non, je n'ai pas encore eu ma note."
+          - "Non, je n'ai pas encore ma note."
+      - them: "Et samedi, pourquoi tu n'as pas joué au foot avec nous ?"
+        english: "And on Saturday, why didn't you play football with us?"
+      - you: Say you were ill.
+        answers:
+          - "J'ai été malade."
+          - "Parce que j'ai été malade."
+          - "J'étais malade."
+          - "Parce que j'étais malade."
+      - them: "Oh, c'est dommage ! Bon, la récré est finie. À tout à l'heure !"
+        english: "Oh, that's a shame! Right, break's over. See you later!"
+
+  # ── A2.2 Comings and goings ────────────────────────────────────────────
+  - id: lost-suitcase
+    unit: 2
+    title: Where's my suitcase?
+    setting: You've just flown into Nice. Everyone else has picked up their bags, but yours never came. You go to the baggage desk.
+    with: the man at the baggage desk
+    lines:
+      - them: "Bonjour ! Je peux vous aider ?"
+        english: "Hello! Can I help you?"
+      - you: Say hello — your suitcase hasn't arrived.
+        answers:
+          - "Bonjour. Ma valise n'est pas arrivée."
+          - "Ma valise n'est pas arrivée."
+          - "Bonjour, monsieur. Ma valise n'est pas arrivée."
+      - them: "Ah, je suis désolé. Vous venez d'où ?"
+        english: "Oh, I'm sorry. Where have you come from?"
+      - you: Say you left Montreal yesterday evening.
+        answers:
+          - "Je suis parti de Montréal hier soir."
+          - "Je suis partie de Montréal hier soir."
+          - "Hier soir, je suis parti de Montréal."
+          - "Hier soir, je suis partie de Montréal."
+      - them: "D'accord. Elle est comment, votre valise ?"
+        english: "OK. What does your suitcase look like?"
+      - you: Say it's big and red.
+        answers:
+          - "Elle est grande et rouge."
+          - "Elle est rouge et grande."
+          - "C'est une grande valise rouge."
+          - "Une grande valise rouge."
+      - them: "Et vous restez où, à Nice ?"
+        english: "And where are you staying in Nice?"
+      - you: Say you're staying a week at the Hôtel de la Plage.
+        answers:
+          - "Je reste une semaine à l'hôtel de la Plage."
+          - "À l'hôtel de la Plage, une semaine."
+          - "Une semaine, à l'hôtel de la Plage."
+          - "Je reste à l'hôtel de la Plage une semaine."
+      - them: "Très bien. Votre valise arrive demain matin. On vous l'apporte à l'hôtel."
+        english: "Very good. Your suitcase gets here tomorrow morning. We'll bring it to your hotel."
+
+  - id: after-the-party
+    unit: 2
+    title: The morning after the party
+    setting: You're on a school exchange in Lyon, staying with the Moreau family. Last night you went to a party with their son, Hugo. Now it's Sunday morning, and Madame Moreau is in the kitchen.
+    with: Madame Moreau
+    lines:
+      - them: "Bonjour ! Alors, c'était bien, la fête ?"
+        english: "Morning! So, was the party good?"
+      - you: Say yes — you had a great time.
+        answers:
+          - "Oui, je me suis bien amusé."
+          - "Oui, je me suis bien amusée."
+          - "Oui, je me suis très bien amusé."
+          - "Oui, je me suis très bien amusée."
+          - "Oui, c'était génial ! Je me suis bien amusé."
+          - "Oui, c'était génial ! Je me suis bien amusée."
+      - them: "Super ! Vous êtes rentrés à quelle heure, Hugo et toi ?"
+        english: "Great! What time did you and Hugo get home?"
+      - you: Say you got home at eleven.
+        answers:
+          - "Nous sommes rentrés à onze heures."
+          - "On est rentrés à onze heures."
+          - "Nous sommes rentrés à 11 heures."
+          - "À onze heures."
+      - them: "Et tu as bien dormi ?"
+        english: "And did you sleep well?"
+      - you: Say yes, but you got up very late.
+        answers:
+          - "Oui, mais je me suis levé très tard."
+          - "Oui, mais je me suis levée très tard."
+          - "Oui, mais je me suis levé tard."
+          - "Oui, mais je me suis levée tard."
+      - them: "Ce n'est pas grave, c'est dimanche ! Tu veux un chocolat chaud ?"
+        english: "That's fine, it's Sunday! Would you like a hot chocolate?"
+      - you: Say yes please, politely — you haven't eaten yet.
+        answers:
+          - "Oui, s'il vous plaît. Je n'ai pas encore mangé."
+          - "Oui, merci. Je n'ai pas encore mangé."
+          - "Oui, merci beaucoup. Je n'ai pas encore mangé."
+          - "Oui, avec plaisir. Je n'ai pas encore mangé."
+
+  # ── A2.3 When I was little ─────────────────────────────────────────────
+  - id: holiday-story
+    unit: 3
+    title: Back from holiday
+    setting: It's the first day back at school after the summer. Your friend Jules wants to hear all about your holiday in Brittany.
+    with: Jules, a friend
+    lines:
+      - them: "Salut ! C'était comment, tes vacances en Bretagne ?"
+        english: "Hi! How was your holiday in Brittany?"
+      - you: Say it was great — you were at the seaside with your family.
+        answers:
+          - "C'était génial ! J'étais à la mer avec ma famille."
+          - "C'était super ! J'étais à la mer avec ma famille."
+          - "C'était génial ! On était à la mer avec ma famille."
+          - "C'était génial ! Nous étions à la mer avec ma famille."
+      - them: "Trop bien ! Il faisait beau ?"
+        english: "So cool! Was the weather nice?"
+      - you: Say yes — the weather was nice every day.
+        answers:
+          - "Oui, il faisait beau tous les jours."
+          - "Oui, tous les jours, il faisait beau."
+          - "Oui, il faisait très beau tous les jours."
+          - "Oui, il y avait du soleil tous les jours."
+      - them: "Et qu'est-ce que tu faisais toute la journée ?"
+        english: "And what did you do all day?"
+      - you: Say you used to go to the beach every morning.
+        answers:
+          - "J'allais à la plage tous les matins."
+          - "Tous les matins, j'allais à la plage."
+          - "Le matin, j'allais à la plage."
+          - "J'allais à la plage le matin."
+      - them: "Et il s'est passé quelque chose de drôle ?"
+        english: "And did anything funny happen?"
+      - you: Say yes — one day, you fell into the sea!
+        answers:
+          - "Oui ! Un jour, je suis tombé dans la mer !"
+          - "Oui ! Un jour, je suis tombée dans la mer !"
+          - "Un jour, je suis tombé dans la mer !"
+          - "Un jour, je suis tombée dans la mer !"
+      - them: "Ha ha ! C'est pas vrai ! Elle était froide ?"
+        english: "Ha ha! No way! Was it cold?"
+      - you: Say yes, it was very cold!
+        answers:
+          - "Oui, elle était très froide !"
+          - "Oui, elle était froide !"
+          - "Oui, très froide !"
+          - "Oui, c'était très froid !"
+
+  - id: missed-calls
+    unit: 3
+    title: Why didn't you answer?
+    setting: It's Saturday morning. Your friend Léa phones you, and she sounds a bit cross.
+    with: Léa, a friend
+    lines:
+      - them: "Enfin ! Je t'ai appelé trois fois hier soir !"
+        english: "At last! I called you three times last night!"
+      - you: Say sorry — you were having a shower when she called.
+        answers:
+          - "Désolé, je prenais ma douche quand tu as appelé."
+          - "Désolée, je prenais ma douche quand tu as appelé."
+          - "Pardon, je prenais ma douche quand tu as appelé."
+          - "Je prenais ma douche quand tu as appelé."
+          - "Désolé, j'étais sous la douche quand tu as appelé."
+          - "Désolée, j'étais sous la douche quand tu as appelé."
+      - them: "Et après ? J'ai rappelé à dix heures !"
+        english: "And after that? I called again at ten!"
+      - you: Say you were tired, so you went to bed early.
+        answers:
+          - "J'étais fatigué, donc je me suis couché tôt."
+          - "J'étais fatiguée, donc je me suis couchée tôt."
+          - "J'étais fatigué, alors je me suis couché tôt."
+          - "J'étais fatiguée, alors je me suis couchée tôt."
+      - them: "Dommage ! J'étais au concert dans le parc avec Hugo. C'était génial !"
+        english: "Shame! I was at the concert in the park with Hugo. It was great!"
+      - you: Ask her if it was raining.
+        answers:
+          - "Il pleuvait ?"
+          - "Est-ce qu'il pleuvait ?"
+          - "Et il pleuvait ?"
+      - them: "Non, il faisait très doux. Et il y avait beaucoup de monde !"
+        english: "No, it was really mild. And there were loads of people!"
+      - you: Say what a shame — you missed that!
+        answers:
+          - "Oh, c'est dommage ! J'ai raté ça."
+          - "C'est dommage ! J'ai raté ça."
+          - "Dommage ! J'ai raté ça."
+          - "Quel dommage ! J'ai raté ça."
+
+  # ── A2.4 Since when? ───────────────────────────────────────────────────
+  - id: at-the-doctors
+    unit: 4
+    title: At the doctor's
+    setting: You're on holiday in Toulouse and you've felt ill for days, so you go to see a doctor.
+    with: Docteur Garnier
+    lines:
+      - them: "Bonjour. Asseyez-vous. Qu'est-ce qui ne va pas ?"
+        english: "Hello. Have a seat. What's the matter?"
+      - you: Say you've had a sore throat since Monday.
+        answers:
+          - "J'ai mal à la gorge depuis lundi."
+          - "Depuis lundi, j'ai mal à la gorge."
+          - "J'ai mal à la gorge depuis lundi, docteur."
+      - them: "Vous avez de la fièvre ?"
+        english: "Do you have a temperature?"
+      - you: Say yes — since yesterday evening.
+        answers:
+          - "Oui, depuis hier soir."
+          - "Oui, j'ai de la fièvre depuis hier soir."
+          - "Oui, depuis hier soir, j'ai de la fièvre."
+      - them: "Ouvrez la bouche… Hmm. Et vous toussez ?"
+        english: "Open your mouth… Hmm. And are you coughing?"
+      - you: Say yes, you're coughing a lot — and ask if it's serious.
+        answers:
+          - "Oui, je tousse beaucoup. C'est grave ?"
+          - "Oui, je tousse beaucoup. Est-ce que c'est grave ?"
+          - "Oui, je tousse beaucoup. C'est grave, docteur ?"
+          - "Oui, beaucoup. C'est grave ?"
+      - them: "Non, c'est un gros rhume. Restez au lit pendant trois jours."
+        english: "No, it's a bad cold. Stay in bed for three days."
+      - you: Ask if you need a prescription.
+        answers:
+          - "Il faut une ordonnance ?"
+          - "Est-ce qu'il faut une ordonnance ?"
+          - "J'ai besoin d'une ordonnance ?"
+          - "Est-ce que j'ai besoin d'une ordonnance ?"
+      - them: "Oui, voilà. Prenez un comprimé trois fois par jour."
+        english: "Yes, here you are. Take one tablet three times a day."
+
+  - id: late-train
+    unit: 4
+    title: Waiting on the platform
+    setting: It's eleven o'clock at Marseille station. You're on the platform, waiting for the 10.40 train to Lyon. A woman with a big suitcase hurries up to you.
+    with: a woman on the platform
+    lines:
+      - them: "Excusez-moi, c'est bien le quai pour le train de Lyon ?"
+        english: "Excuse me, is this the right platform for the Lyon train?"
+      - you: Say yes, but the train is twenty minutes late.
+        answers:
+          - "Oui, mais le train a vingt minutes de retard."
+          - "Oui, mais il a vingt minutes de retard."
+          - "Oui, mais le train a 20 minutes de retard."
+          - "Oui, mais le train est en retard de vingt minutes."
+      - them: "Encore ! Vous attendez depuis longtemps ?"
+        english: "Not again! Have you been waiting long?"
+      - you: Say you've been waiting for half an hour.
+        answers:
+          - "J'attends depuis une demi-heure."
+          - "Oui, j'attends depuis une demi-heure."
+          - "Depuis une demi-heure."
+          - "Oui, depuis une demi-heure."
+          - "J'attends depuis trente minutes."
+      - them: "Oh là là. Et le train de dix heures, il est déjà parti ?"
+        english: "Oh dear. And the ten o'clock train — has it already gone?"
+      - you: Say yes — it left an hour ago.
+        answers:
+          - "Oui, il est parti il y a une heure."
+          - "Il est parti il y a une heure."
+          - "Oui, il y a une heure."
+      - them: "Quelle journée ! … Ah, regardez ! C'est notre train ?"
+        english: "What a day! … Oh, look! Is that our train?"
+      - you: Say yes — it's just arrived!
+        answers:
+          - "Oui, il vient d'arriver !"
+          - "Il vient d'arriver !"
+          - "Oui ! Le train vient d'arriver !"
+      - them: "Enfin ! Bon voyage !"
+        english: "At last! Have a good trip!"
+      - you: Say thank you — you too.
+        answers:
+          - "Merci, vous aussi !"
+          - "Merci, à vous aussi !"
+          - "Merci, bon voyage à vous aussi !"
+
+  # ── A2.5 Making plans ──────────────────────────────────────────────────
+  - id: concert-plans
+    unit: 5
+    title: A concert on Saturday
+    setting: It's Wednesday evening. Your friend Nathan phones you with an idea for the weekend.
+    with: Nathan, a friend
+    lines:
+      - them: "Salut ! Ça te dit d'aller au concert samedi ?"
+        english: "Hi! Do you fancy going to the concert on Saturday?"
+      - you: Say you'd love to — and ask what time it starts.
+        answers:
+          - "Avec plaisir ! Ça commence à quelle heure ?"
+          - "Avec plaisir ! À quelle heure ?"
+          - "Oui, avec plaisir ! Ça commence à quelle heure ?"
+          - "Avec plaisir ! Le concert commence à quelle heure ?"
+      - them: "À huit heures. On se retrouve où ?"
+        english: "At eight. Where shall we meet?"
+      - you: Suggest meeting at the station at half past seven.
+        answers:
+          - "À la gare, à sept heures et demie ?"
+          - "On se retrouve à la gare à sept heures et demie ?"
+          - "À sept heures et demie, à la gare ?"
+      - them: "Parfait ! Et après, on ira manger une pizza ?"
+        english: "Perfect! And afterwards, shall we go and have a pizza?"
+      - you: Say yes — but you'll have to go home at eleven.
+        answers:
+          - "Oui, mais je devrai rentrer à onze heures."
+          - "D'accord, mais je devrai rentrer à onze heures."
+          - "Oui, mais je dois rentrer à onze heures."
+          - "Oui, mais je vais devoir rentrer à onze heures."
+      - them: "Pas de problème. Mon père viendra nous chercher."
+        english: "No problem. My dad will come and pick us up."
+      - you: Say sounds good — see you on Saturday!
+        answers:
+          - "Ça marche ! À samedi !"
+          - "Super ! À samedi !"
+          - "D'accord ! À samedi !"
+      - them: "(Vendredi soir, un texto.) Oh non ! Je viens de voir sur internet : le concert est annulé !"
+        english: "(Friday evening, a text.) Oh no! I've just seen online: the concert's cancelled!"
+      - you: Say what a shame — another time, maybe.
+        answers:
+          - "C'est dommage ! Une autre fois, peut-être."
+          - "Dommage ! Une autre fois, peut-être."
+          - "Oh, c'est dommage ! Peut-être une autre fois."
+
+  # ── A2.6 A little, a lot ───────────────────────────────────────────────
+  - id: dinner-with-a-problem
+    unit: 6
+    title: Not what I ordered
+    setting: You're having dinner with a friend in a small restaurant in Bordeaux.
+    with: the waiter
+    lines:
+      - them: "Bonsoir ! Vous avez choisi ?"
+        english: "Good evening! Have you decided?"
+      - you: Say you'll have the dish of the day.
+        answers:
+          - "Je vais prendre le plat du jour."
+          - "Je prends le plat du jour."
+          - "Le plat du jour, s'il vous plaît."
+          - "Pour moi, le plat du jour, s'il vous plaît."
+      - them: "Très bien. Et comme boisson ?"
+        english: "Very good. And to drink?"
+      - you: Ask for a jug of water, please.
+        answers:
+          - "Une carafe d'eau, s'il vous plaît."
+          - "Je voudrais une carafe d'eau, s'il vous plaît."
+          - "Une carafe d'eau, merci."
+      - them: "Et voilà : un steak frites. Bon appétit !"
+        english: "There you are: steak and chips. Enjoy your meal!"
+      - you: Say, politely, that this isn't what you ordered.
+        answers:
+          - "Excusez-moi, ce n'est pas ce que j'ai commandé."
+          - "Pardon, ce n'est pas ce que j'ai commandé."
+          - "Excusez-moi, mais ce n'est pas ce que j'ai commandé."
+      - them: "Oh, pardon ! Je vous apporte le plat du jour tout de suite."
+        english: "Oh, I'm sorry! I'll bring you the dish of the day right away."
+      - you: Ask for a bit more bread, too.
+        answers:
+          - "Et encore un peu de pain, s'il vous plaît."
+          - "Encore un peu de pain, s'il vous plaît."
+          - "Et un peu plus de pain, s'il vous plaît."
+      - them: "Bien sûr. … Alors, un dessert ?"
+        english: "Of course. … So, any dessert?"
+      - you: Say no thanks — you're not hungry any more.
+        answers:
+          - "Non merci, je n'ai plus faim."
+          - "Je n'ai plus faim, merci."
+          - "Non merci, je n'ai plus faim. C'était délicieux."
+      - them: "Très bien. Je vous apporte l'addition."
+        english: "Very good. I'll bring you the bill."
+      - you: Ask if you and your friend can pay separately.
+        answers:
+          - "On peut payer séparément ?"
+          - "Est-ce qu'on peut payer séparément ?"
+          - "Nous pouvons payer séparément ?"
+          - "Est-ce que nous pouvons payer séparément ?"
+
+  # ── A2.7 On the phone ──────────────────────────────────────────────────
+  - id: leaving-a-message
+    unit: 7
+    title: Can I leave a message?
+    setting: Your friend Lucas left his phone at your house. You call his home, and his mother answers.
+    with: Lucas's mother
+    lines:
+      - them: "Allô ?"
+        english: "Hello?"
+      - you: Say hello, and ask politely if you can speak to Lucas.
+        answers:
+          - "Bonjour, madame. Je peux parler à Lucas, s'il vous plaît ?"
+          - "Bonjour ! Je peux parler à Lucas, s'il vous plaît ?"
+          - "Bonjour, madame. Est-ce que je peux parler à Lucas, s'il vous plaît ?"
+          - "Bonjour. Je voudrais parler à Lucas, s'il vous plaît."
+      - them: "C'est de la part de qui ?"
+        english: "Who's calling?"
+      - you: Say it's Sam, a friend from school.
+        answers:
+          - "C'est Sam, un ami de l'école."
+          - "C'est *, un ami de l'école."
+          - "C'est *, une amie de l'école."
+          - "De la part de *."
+      - them: "Ah, bonjour ! Désolée, il n'est pas là. Il est à la piscine."
+        english: "Oh, hello! Sorry, he isn't here. He's at the pool."
+      - you: Ask if you can leave a message.
+        answers:
+          - "Je peux laisser un message ?"
+          - "Est-ce que je peux laisser un message ?"
+          - "Puis-je laisser un message ?"
+      - them: "Bien sûr, je vous écoute."
+        english: "Of course, go ahead."
+      - you: Ask her if she can tell him that you have his phone.
+        answers:
+          - "Vous pouvez lui dire que j'ai son téléphone ?"
+          - "Pouvez-vous lui dire que j'ai son téléphone ?"
+          - "Est-ce que vous pouvez lui dire que j'ai son téléphone ?"
+          - "Vous pouvez lui dire que j'ai son portable ?"
+      - them: "Ah, il le cherche partout ! Je lui dis dès qu'il rentre."
+        english: "Oh, he's looking for it everywhere! I'll tell him as soon as he gets home."
+      - you: Thank her, and say you'll call back later.
+        answers:
+          - "Merci ! Je vous rappelle plus tard."
+          - "Merci. Je rappelle plus tard."
+          - "Merci, je rappellerai plus tard."
+          - "Merci ! Je vous rappellerai plus tard."
+      - them: "Très bien. Au revoir !"
+        english: "Very good. Goodbye!"
+
+  - id: at-the-bakery
+    unit: 7
+    title: At the bakery
+    setting: It's Sunday morning, and you've gone to the bakery to buy bread for breakfast.
+    with: the baker
+    lines:
+      - them: "Bonjour ! Qu'est-ce que je vous sers ?"
+        english: "Hello! What can I get you?"
+      - you: Ask for two baguettes, please.
+        answers:
+          - "Deux baguettes, s'il vous plaît."
+          - "Je voudrais deux baguettes, s'il vous plaît."
+          - "Bonjour ! Deux baguettes, s'il vous plaît."
+      - them: "Voilà. Et avec ceci ? Les croissants sont encore chauds !"
+        english: "Here you are. Anything else? The croissants are still warm!"
+      - you: Say yes — you'll take four.
+        answers:
+          - "Oui, j'en prends quatre."
+          - "J'en prends quatre."
+          - "Oui, j'en voudrais quatre."
+          - "Oui, j'en veux quatre."
+      - them: "Très bien. Vous voulez un sac ?"
+        english: "Very good. Do you want a bag?"
+      - you: Say no thanks — you've got one.
+        answers:
+          - "Non merci, j'en ai un."
+          - "J'en ai un, merci."
+          - "Non merci, j'en ai déjà un."
+      - them: "Ça fait six euros vingt. Vous avez de la monnaie ?"
+        english: "That's six euros twenty. Do you have any change?"
+      - you: Say no, sorry — you don't have any.
+        answers:
+          - "Non, désolé, je n'en ai pas."
+          - "Non, désolée, je n'en ai pas."
+          - "Désolé, je n'en ai pas."
+          - "Désolée, je n'en ai pas."
+          - "Non, je n'en ai pas."
+      - them: "Pas de problème. Bonne journée !"
+        english: "No problem. Have a nice day!"
+
+  # ── A2.8 Bigger, better, cheaper ───────────────────────────────────────
+  - id: exchanging-clothes
+    unit: 8
+    title: Too small
+    setting: Last week you bought a jumper in a shop in Lille. It's too small, so you take it back.
+    with: the shop assistant
+    lines:
+      - them: "Bonjour ! Je peux vous aider ?"
+        english: "Hello! Can I help you?"
+      - you: Say yes — you bought this jumper last week. Ask if you can exchange it.
+        answers:
+          - "Oui, j'ai acheté ce pull la semaine dernière. Je peux l'échanger ?"
+          - "J'ai acheté ce pull la semaine dernière. Je peux l'échanger ?"
+          - "Oui, j'ai acheté ce pull la semaine dernière. Est-ce que je peux l'échanger ?"
+          - "Oui, j'ai acheté ce pull la semaine dernière. Puis-je l'échanger ?"
+      - them: "Bien sûr. Vous avez le ticket de caisse ?"
+        english: "Of course. Do you have the receipt?"
+      - you: Say yes, here it is.
+        answers:
+          - "Oui, le voilà."
+          - "Oui, voilà."
+          - "Oui, voilà le ticket de caisse."
+          - "Oui, voici le ticket."
+      - them: "Merci. Qu'est-ce qui ne va pas avec le pull ?"
+        english: "Thank you. What's wrong with the jumper?"
+      - you: Say it's too small, and ask if they have it in a bigger size.
+        answers:
+          - "Il est trop petit. Vous l'avez en plus grand ?"
+          - "Il est trop petit. Vous avez plus grand ?"
+          - "Il est trop petit. Est-ce que vous l'avez en plus grand ?"
+          - "Il est trop petit. Vous l'avez dans une taille plus grande ?"
+          - "Il est trop serré. Vous l'avez en plus grand ?"
+      - them: "Oui, voilà le même en L. Il y a aussi ce modèle, qui est moins cher."
+        english: "Yes, here's the same one in a large. There's also this style, which is cheaper."
+      - you: Say you prefer the jumper you bought — it's nicer.
+        answers:
+          - "Je préfère le pull que j'ai acheté. Il est plus beau."
+          - "Je préfère le pull que j'ai acheté. Il est plus joli."
+          - "Je préfère le premier. Il est plus beau."
+      - them: "D'accord. Essayez-le ! … Alors ?"
+        english: "All right. Try it on! … Well?"
+      - you: Say it suits you much better!
+        answers:
+          - "Il me va beaucoup mieux !"
+          - "Oui, il me va beaucoup mieux !"
+          - "Il me va mieux !"
+          - "Oui, c'est beaucoup mieux !"
+      - them: "Parfait ! Bonne journée !"
+        english: "Perfect! Have a nice day!"
+
+  # ── A2.9 Home and school ───────────────────────────────────────────────
+  - id: chores-at-home
+    unit: 9
+    title: Looking after the flat
+    setting: You're going away for the weekend. Your friend Chloé is staying at your place to look after it — and your cat, Minou.
+    with: Chloé, a friend
+    lines:
+      - them: "Alors, qu'est-ce que je dois faire ce week-end ?"
+        english: "So, what do I need to do this weekend?"
+      - you: Tell her not to forget to water the plants.
+        answers:
+          - "N'oublie pas d'arroser les plantes !"
+          - "N'oublie pas d'arroser les plantes, s'il te plaît."
+          - "Il faut arroser les plantes."
+          - "Arrose les plantes, s'il te plaît."
+      - them: "D'accord. Et la poubelle ?"
+        english: "OK. And the bin?"
+      - you: Tell her she has to take it out on Sunday evening.
+        answers:
+          - "Il faut la sortir dimanche soir."
+          - "Il faut sortir la poubelle dimanche soir."
+          - "Tu dois la sortir dimanche soir."
+          - "Sors-la dimanche soir, s'il te plaît."
+      - them: "Pas de problème. Et je peux utiliser la machine à laver ?"
+        english: "No problem. And can I use the washing machine?"
+      - you: Say yes, of course — make yourself at home.
+        answers:
+          - "Oui, bien sûr. Fais comme chez toi !"
+          - "Bien sûr ! Fais comme chez toi."
+          - "Oui, fais comme chez toi !"
+      - them: "Merci ! Et Minou, il mange quand ?"
+        english: "Thanks! And Minou — when does he eat?"
+      - you: Tell her to feed him in the morning and in the evening.
+        answers:
+          - "Donne-lui à manger le matin et le soir."
+          - "Donne-lui à manger le matin et le soir, s'il te plaît."
+          - "Il faut lui donner à manger le matin et le soir."
+      - them: "Et je peux lui donner du lait ?"
+        english: "And can I give him some milk?"
+      - you: Say no — don't give him any milk!
+        answers:
+          - "Non, ne lui donne pas de lait !"
+          - "Ne lui donne pas de lait !"
+          - "Non, il ne faut pas lui donner de lait."
+      - them: "D'accord ! Bon week-end !"
+        english: "OK! Have a good weekend!"
+
+  # ── A2.10 Could you…? ──────────────────────────────────────────────────
+  - id: hotel-problem
+    unit: 10
+    title: A problem with the room
+    setting: You've just checked into a hotel in Annecy and gone up to your room. Something's wrong, so you go back down to reception.
+    with: the receptionist
+    lines:
+      - them: "Bonsoir ! Il y a un problème ?"
+        english: "Good evening! Is there a problem?"
+      - you: Say yes — there's a problem with the room.
+        answers:
+          - "Oui, il y a un problème avec la chambre."
+          - "Oui, il y a un problème avec ma chambre."
+          - "Il y a un problème avec la chambre."
+      - them: "Ah bon ? Qu'est-ce qui se passe ?"
+        english: "Oh? What's wrong?"
+      - you: Say the shower doesn't work, and there are no towels.
+        answers:
+          - "La douche ne marche pas, et il n'y a pas de serviettes."
+          - "Il n'y a pas de serviettes, et la douche ne marche pas."
+          - "La douche ne fonctionne pas, et il n'y a pas de serviettes."
+      - them: "Je suis vraiment désolée. J'envoie quelqu'un tout de suite."
+        english: "I'm really sorry. I'll send someone right away."
+      - you: Ask, politely, if you could change rooms.
+        answers:
+          - "Je pourrais changer de chambre ?"
+          - "Est-ce que je pourrais changer de chambre ?"
+          - "Pourrais-je changer de chambre ?"
+          - "Je pourrais changer de chambre, s'il vous plaît ?"
+      - them: "Bien sûr. La chambre trente et un est libre, avec une jolie vue sur le lac."
+        english: "Of course. Room thirty-one is free, with a lovely view of the lake."
+      - you: Say that would be great — thank you!
+        answers:
+          - "Ce serait génial, merci !"
+          - "Ce serait super, merci !"
+          - "Ce serait parfait, merci !"
+          - "Merci, ce serait génial !"
+      - them: "Voici la clé. Autre chose ?"
+        english: "Here's the key. Anything else?"
+      - you: Ask if she could wake you at seven.
+        answers:
+          - "Pourriez-vous me réveiller à sept heures ?"
+          - "Vous pourriez me réveiller à sept heures ?"
+          - "Est-ce que vous pourriez me réveiller à sept heures ?"
+          - "Pourriez-vous me réveiller à sept heures, s'il vous plaît ?"
+      - them: "Avec plaisir. Bonne soirée !"
+        english: "With pleasure. Have a good evening!"
+
+  - id: booking-a-table
+    unit: 10
+    title: A table for Saturday
+    setting: It's your mum's birthday on Saturday. You phone a restaurant in Lyon to book a table for the family — four of you.
+    with: the restaurant owner
+    lines:
+      - them: "Restaurant Le Petit Lyon, bonjour !"
+        english: "Le Petit Lyon restaurant, hello!"
+      - you: Say hello — you'd like to book a table for four people on Saturday evening.
+        answers:
+          - "Bonjour ! J'aimerais réserver une table pour quatre personnes samedi soir."
+          - "Bonjour, je voudrais réserver une table pour quatre personnes samedi soir."
+          - "J'aimerais réserver une table pour quatre personnes samedi soir."
+          - "Je voudrais réserver une table pour quatre samedi soir."
+          - "Bonjour ! J'aimerais réserver une table pour quatre personnes pour samedi soir."
+      - them: "Samedi soir… Désolé, c'est complet à huit heures. Il me reste une table à neuf heures et demie."
+        english: "Saturday evening… Sorry, we're full at eight. I've got one table left at half past nine."
+      - you: Ask if he could call you back if a table is free at eight.
+        answers:
+          - "Pourriez-vous me rappeler si une table est libre à huit heures ?"
+          - "Vous pourriez me rappeler si une table est libre à huit heures ?"
+          - "Est-ce que vous pourriez me rappeler si une table est libre à huit heures ?"
+          - "C'est un peu tard. Pourriez-vous me rappeler si une table est libre à huit heures ?"
+      - them: "Bien sûr. C'est à quel nom ?"
+        english: "Of course. What name is it?"
+      - you: Say it's in the name of Dupont.
+        answers:
+          - "Au nom de Dupont."
+          - "Au nom de *."
+          - "C'est au nom de *."
+      - them: "Très bien. Il y a des végétariens dans le groupe ?"
+        english: "Very good. Are there any vegetarians in the group?"
+      - you: Say yes, there are two.
+        answers:
+          - "Oui, il y en a deux."
+          - "Il y en a deux."
+          - "Oui, il y a deux végétariens."
+      - them: "Pas de problème, nous avons un très bon menu végétarien. Autre chose ?"
+        english: "No problem, we have a very good vegetarian menu. Anything else?"
+      - you: Say it's your mum's birthday, and ask if they could make a cake.
+        answers:
+          - "C'est l'anniversaire de ma mère. Vous pourriez faire un gâteau ?"
+          - "C'est l'anniversaire de ma mère. Pourriez-vous faire un gâteau ?"
+          - "C'est l'anniversaire de ma maman. Vous pourriez faire un gâteau ?"
+          - "C'est l'anniversaire de ma mère. Est-ce que vous pourriez faire un gâteau ?"

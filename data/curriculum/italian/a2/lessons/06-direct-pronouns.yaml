@@ -1,0 +1,239 @@
+title: "Lo prendo"
+subtitle: Direct object pronouns — it, him, her, them
+goal: replace a noun with lo, la, li or le (it, him, her, them), use mi, ti, ci, vi for people, and put them in the right place — even in the past
+minutes: 15
+
+sections:
+  - heading: "It, him, her, them"
+    body: |
+      The **direct object** is the person or thing a verb acts on. In *I'm
+      buying the jacket*, it's *the jacket*. To avoid repeating it, use a
+      **pronoun** — and in Italian it goes **before** the verb:
+
+      - *Compro la giacca. → La compro.* — I'm buying it.
+      - *Vedi Marco? — Sì, lo vedo.* — Yes, I can see him.
+
+      Choose the pronoun by the noun it replaces: masculine or feminine,
+      one or more than one.
+    table:
+      columns: [replaces, pronoun, example]
+      rows:
+        - [masculine singular (it / him), lo, "il maglione → Lo prendo."]
+        - [feminine singular (it / her), la, "la giacca → La provo."]
+        - [masculine plural (them), li, "i biglietti → Li ho io."]
+        - [feminine plural (them), le, "le chiavi → Non le trovo."]
+    examples:
+      - ["Il maglione? Lo prendo.", "The sweater? I'll take it."]
+      - ["Dove sono le chiavi? Non le trovo.", "Where are the keys? I can't find them."]
+      - ["I biglietti? Li ho io.", "The tickets? I've got them."]
+    tip: "\"It\" can be *lo* or *la*: *il libro → lo*, *la borsa → la*. Think about the Italian noun, not the English \"it\"."
+
+  - heading: "Me, you, us"
+    body: |
+      For people, there are also **mi** (me), **ti** (you), **ci** (us) and
+      **vi** (you, a group). For someone you call *Lei*, polite "you" is
+      **La**, usually written with a capital.
+
+      They go before the verb, just like *lo* and *la*:
+
+      - *Mi chiami stasera?* — Will you call me tonight?
+      - *Ti aspetto al bar.* — I'll wait for you at the café.
+      - *La ringrazio.* — Thank you. (polite — literally "I thank you")
+    examples:
+      - ["Mi senti?", "Can you hear me?"]
+      - ["Vi aspettiamo alle otto.", "We'll wait for you at eight."]
+      - ["Ci aiuti con le valigie?", "Will you help us with the suitcases?"]
+    tip: "*Aspettare* means \"to wait for\", *cercare* \"to look for\" and *ascoltare* \"to listen to\" — so no extra word: *Ti aspetto*, *Lo cerco*, *Ti ascolto*."
+
+  - heading: "With non, and with infinitives"
+    body: |
+      **Non** goes before the pronoun: *Non la vedo.* — I can't see her.
+
+      With *volere, potere* and *dovere*, the pronoun can go **before** the
+      first verb, or **on the end** of the infinitive, which drops its last
+      **-e**:
+
+      - *Lo voglio comprare.* = *Voglio comprarlo.* — I want to buy it.
+      - *La devo chiamare.* = *Devo chiamarla.* — I have to call her.
+
+      Both are correct and equally common.
+    examples:
+      - ["Non li trovo.", "I can't find them."]
+      - ["Posso provarla?", "Can I try it on?"]
+      - ["Le vuoi vedere?", "Do you want to see them?"]
+    tip: "Pick one place, not both: *Lo voglio comprare* or *Voglio comprarlo* — never *Lo voglio comprarlo*."
+
+  - heading: In the past
+    body: |
+      In the passato prossimo, the pronoun goes before the helper. **Lo**
+      and **la** shorten to **l'** before *ho, hai, ha, abbiamo, avete,
+      hanno*.
+
+      After **lo, la, li** and **le**, the participle changes its ending to
+      match the pronoun, like with essere: **-o, -a, -i, -e**.
+
+      - *Ho visto Marco. → L'ho visto.*
+      - *Ho visto Giulia. → L'ho vista.*
+      - *Ho preso i biglietti. → Li ho presi.*
+      - *Ho comprato le scarpe. → Le ho comprate.*
+    examples:
+      - ["La pizza? L'abbiamo già mangiata.", "The pizza? We've already eaten it."]
+      - ["Le chiavi? Le ho perse!", "The keys? I've lost them!"]
+      - ["Hai visto i miei occhiali? No, non li ho visti.", "Have you seen my glasses? No, I haven't seen them."]
+    tip: "*Li* and *le* never shorten: *li ho presi*, *le ho comprate*."
+
+words:
+  - [giacca, jacket]
+  - [maglione, sweater]
+  - [scarpe, shoes]
+  - [provare, "to try, to try on"]
+  - [trovare, to find]
+  - [chiamare, "to call, to phone"]
+  - [aiutare, to help]
+  - [ringraziare, to thank]
+  - [valigia, suitcase]
+  - [occhiali, glasses]
+  - [stasera, "this evening, tonight"]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Il maglione? ___ prendo."
+    hint: it
+    translation: The sweater? I'll take it.
+    answers: [lo]
+    why: Il maglione is masculine singular, so "it" is lo.
+
+  - type: fill
+    section: 1
+    prompt: "La giacca? ___ provo."
+    hint: it
+    translation: The jacket? I'll try it on.
+    answers: [la]
+    why: La giacca is feminine singular, so "it" is la.
+
+  - type: fill
+    section: 1
+    prompt: "Le chiavi? Non ___ trovo."
+    hint: them
+    translation: The keys? I can't find them.
+    answers: [le]
+    why: Le chiavi is feminine plural, so "them" is le.
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: I biglietti? Li ho io.
+    answers:
+      - The tickets? I've got them.
+      - The tickets? I have them.
+      - I've got them.
+      - I have them.
+    why: Li replaces i biglietti, a masculine plural.
+
+  - type: choice
+    section: 1
+    prompt: Which pronoun replaces *i libri*?
+    options: [lo, li, le]
+    answer: li
+    why: I libri is masculine plural, so it's li.
+
+  - type: fill
+    section: 2
+    prompt: "___ aspetto al bar."
+    hint: you, to a friend
+    translation: I'll wait for you at the café.
+    answers: [ti]
+    why: Ti is "you" for a friend, and it goes before the verb.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: Can you hear me? (to a friend)
+    answers:
+      - Mi senti?
+      - Tu mi senti?
+      - Mi puoi sentire?
+      - Puoi sentirmi?
+    why: Mi (me) goes before the verb — Mi senti?
+
+  - type: translate
+    section: 2
+    direction: to-english
+    prompt: Vi aspettiamo alle otto.
+    answers:
+      - We'll wait for you at eight.
+      - We'll wait for you at 8.
+      - We'll wait for you at eight o'clock.
+      - We're waiting for you at eight.
+      - We'll be waiting for you at eight.
+    why: Vi is "you" for a group, and aspettare already means "wait for".
+
+  - type: choice
+    section: 2
+    prompt: How do you say "I'll wait for you" to a friend?
+    options: [Ti aspetto., Aspetto per te., Aspetto ti.]
+    answer: Ti aspetto.
+    why: Aspettare means "to wait for", so no extra word is needed, and ti goes before the verb.
+
+  - type: fill
+    section: 3
+    prompt: "Non ___ vedo."
+    hint: her
+    translation: I can't see her.
+    answers: [la]
+    why: '"Her" is la, and non goes before it.'
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: I want to buy it. (the sweater)
+    answers:
+      - Lo voglio comprare.
+      - Voglio comprarlo.
+      - Io lo voglio comprare.
+      - Io voglio comprarlo.
+    why: The pronoun goes before voglio or on the end of comprare — both are right.
+
+  - type: choice
+    section: 3
+    prompt: Which is right?
+    options: [Lo voglio comprarlo., Voglio comprarlo., Voglio lo comprare.]
+    answer: Voglio comprarlo.
+    why: The pronoun goes in one place only, and on an infinitive it joins the end.
+
+  - type: fill
+    section: 4
+    prompt: "Giulia? L'ho ___ ieri."
+    hint: vedere
+    translation: Giulia? I saw her yesterday.
+    answers: [vista]
+    why: L' stands for la (Giulia), so the participle ends in -a.
+
+  - type: fill
+    section: 4
+    prompt: "Le scarpe? ___ ho comprate ieri."
+    hint: them
+    translation: The shoes? I bought them yesterday.
+    answers: [le]
+    why: Le scarpe is feminine plural, so it's le — and le never shortens.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: The pizza? We've already eaten it.
+    answers:
+      - La pizza? L'abbiamo già mangiata.
+      - La pizza? Noi l'abbiamo già mangiata.
+      - L'abbiamo già mangiata.
+      - Noi l'abbiamo già mangiata.
+    why: La shortens to l' before abbiamo, and mangiata ends in -a to match la pizza.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Non li ho visti.
+    answers:
+      - I didn't see them.
+      - I haven't seen them.
+    why: Li is "them" (masculine), so the participle ends in -i.

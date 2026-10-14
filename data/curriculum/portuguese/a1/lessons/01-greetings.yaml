@@ -105,6 +105,24 @@ practice:
     answer: a senhora
     why: A senhora is the respectful "you" for an older woman.
 
+  - type: choice
+    section: 4
+    prompt: You're chatting with a classmate your age. Which "you" do you use?
+    options: [você, o senhor, a senhora]
+    answer: você
+    why: Você is the normal Brazilian "you" for friends, classmates and most people you meet.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: What is your name? (to an older man, politely)
+    answers:
+      - Como o senhor se chama?
+      - O senhor se chama como?
+      - Qual é o nome do senhor?
+      - Qual é o seu nome?
+    why: O senhor is the respectful "you" for a man, and it works just like você — Como o senhor se chama?
+
   - type: fill
     section: 3
     prompt: "Meu ___ é Rafael."

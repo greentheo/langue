@@ -1,0 +1,221 @@
+title: "Ci vado, ne prendo due"
+subtitle: Ci (there) and ne (of it, of them)
+goal: use ci for "there", ne for "of it" and "of them" with numbers and amounts, and say how long a journey takes with ci vuole
+minutes: 15
+
+sections:
+  - heading: "Ci: there"
+    body: |
+      **Ci** replaces a place you've just mentioned — it means "there". Like
+      the other pronouns, it goes **before** the verb:
+
+      - *Vai a Roma? — Sì, ci vado domani.* — Yes, I'm going there tomorrow.
+      - *Quando torni in Italia? — Ci torno a luglio.* — I'm going back in July.
+
+      English often leaves "there" out, but Italian usually keeps *ci*:
+      *Vieni al cinema? — Sì, ci vengo!* — Yes, I'm coming!
+    examples:
+      - ["Abiti a Milano? Sì, ci abito da due anni.", "Do you live in Milan? Yes, I've lived there for two years."]
+      - ["Sei mai stato a Venezia? Sì, ci sono stato.", "Have you ever been to Venice? Yes, I've been there."]
+      - ["Andiamo al mare? No, non ci voglio andare.", "Shall we go to the seaside? No, I don't want to go."]
+    tip: "You've used this *ci* since A1: *c'è* and *ci sono* are \"there is\" and \"there are\"."
+
+  - heading: "Ne: of it, of them"
+    body: |
+      **Ne** replaces a thing when you say **how much** or **how many** of
+      it. It goes before the verb, and the number or amount goes after:
+
+      - *Quante mele vuoi? — Ne voglio tre.* — I want three (of them).
+      - *Hai fratelli? — Sì, ne ho due.* — Yes, I have two.
+      - *Vuoi del caffè? — Sì, ne prendo un po'.* — Yes, I'll have a bit.
+
+      English can drop "of them", but Italian can't drop *ne*.
+    examples:
+      - ["Quanti anni hai? Ne ho quindici.", "How old are you? I'm fifteen."]
+      - ["Quanti biglietti compri? Ne compro quattro.", "How many tickets are you buying? I'm buying four."]
+      - ["Del pane? Ne vorrei mezzo chilo.", "Bread? I'd like half a kilo."]
+    tip: "*Ho tre* on its own is wrong — say *Ne ho tre*, like \"I have three of them\"."
+
+  - heading: "Ci vuole: it takes"
+    body: |
+      To say how long something **takes**, or what you **need**, use **ci
+      vuole** with one thing and **ci vogliono** with more than one:
+
+      - *Ci vuole un'ora.* — It takes an hour.
+      - *Ci vogliono tre ore in treno.* — It takes three hours by train.
+      - *Quanto tempo ci vuole?* — How long does it take?
+
+      It works like *mi piace / mi piacciono*: the verb matches what comes
+      after it. You can also use **durare** (to last): *Il viaggio dura tre
+      ore.* — The journey takes three hours.
+    examples:
+      - ["Quanto ci vuole da Roma a Napoli?", "How long does it take from Rome to Naples?"]
+      - ["Ci vogliono due ore e mezza.", "It takes two and a half hours."]
+      - ["Per la torta ci vogliono tre uova.", "You need three eggs for the cake."]
+    tip: "Don't use *prendere* for time: \"It takes an hour\" is *Ci vuole un'ora*, not *Prende un'ora*."
+
+  - heading: "Not any — and what do you think?"
+    body: |
+      **Non ne** means "not any", "none":
+
+      - *Hai soldi? — No, non ne ho.* — No, I haven't got any.
+      - *Quanti fratelli hai? — Non ne ho.* — I haven't got any.
+
+      *Ne* also means "about it" in two very common questions:
+
+      - **Cosa ne pensi?** — What do you think (about it)?
+      - **Che ne dici?** — What do you say? How about it?
+    examples:
+      - ["Vuoi del pane? No, grazie, non ne voglio.", "Do you want some bread? No thanks, I don't want any."]
+      - ["Stasera andiamo al cinema? Che ne dici?", "Shall we go to the cinema tonight? What do you say?"]
+      - ["Ho comprato questa giacca. Cosa ne pensi?", "I bought this jacket. What do you think?"]
+    tip: "*Che ne dici?* is the easiest way to suggest a plan to a friend: say the plan, then add *Che ne dici?*"
+
+words:
+  - [ci, there]
+  - [ne, "of it, of them; about it"]
+  - [quanti, how many]
+  - [ci vuole, "it takes, you need (one thing)"]
+  - [ci vogliono, "it takes, you need (more than one)"]
+  - [pensare, to think]
+  - [uovo, "egg (plural: le uova)"]
+  - [viaggio, "trip, journey"]
+  - [durare, to last]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Vai a Roma? Sì, ___ vado domani."
+    hint: there
+    translation: Are you going to Rome? Yes, I'm going there tomorrow.
+    answers: [ci]
+    why: Ci means "there" and goes before the verb.
+
+  - type: translate
+    section: 1
+    direction: to-target
+    prompt: We live there.
+    answers:
+      - Ci abitiamo.
+      - Noi ci abitiamo.
+      - Ci viviamo.
+      - Noi ci viviamo.
+    why: Ci (there) goes before the verb.
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: Sei mai stato a Venezia? Sì, ci sono stato.
+    answers:
+      - Have you ever been to Venice? Yes, I've been there.
+      - Have you ever been to Venice? Yes, I have been there.
+      - Have you ever been to Venice? Yes, I have.
+    why: Ci replaces "to Venice" — "I've been there".
+
+  - type: choice
+    section: 1
+    prompt: "*Abiti a Roma?* Yes, you live there. You say…"
+    options: ["Sì, ci abito.", "Sì, ne abito.", "Sì, lo abito."]
+    answer: "Sì, ci abito."
+    why: Ci replaces a place — "there".
+
+  - type: fill
+    section: 2
+    prompt: "Quante mele vuoi? ___ voglio tre."
+    hint: of them
+    translation: How many apples do you want? I want three.
+    answers: [ne]
+    why: With a number, ne stands for "of them".
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: "Yes, I have two. (answering *Hai fratelli?*)"
+    answers:
+      - Sì, ne ho due.
+      - Sì, io ne ho due.
+      - Ne ho due.
+    why: With a number, Italian needs ne — "I have two of them".
+
+  - type: translate
+    section: 2
+    direction: to-english
+    prompt: Ne compro quattro.
+    answers:
+      - I'm buying four.
+      - I'll buy four.
+      - I buy four.
+      - I'm buying four of them.
+      - I'll buy four of them.
+      - I'll take four.
+    why: Ne stands for "of them", which English often leaves out.
+
+  - type: choice
+    section: 2
+    prompt: "*Quanti anni hai?* You're 14. Without repeating *anni*, you say…"
+    options: [Ho quattordici., Ne ho quattordici., Ci ho quattordici.]
+    answer: Ne ho quattordici.
+    why: If you don't repeat anni, the number needs ne — or say the whole thing, Ho quattordici anni.
+
+  - type: fill
+    section: 3
+    prompt: "Ci ___ tre ore in treno."
+    hint: volere
+    translation: It takes three hours by train.
+    answers: [vogliono]
+    why: Tre ore is plural, so it's ci vogliono.
+
+  - type: fill
+    section: 3
+    prompt: "Quanto tempo ci ___?"
+    hint: volere
+    translation: How long does it take?
+    answers: [vuole]
+    why: Quanto tempo is singular, so it's ci vuole.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: It takes an hour.
+    answers:
+      - Ci vuole un'ora.
+      - Ci vuole un ora.
+      - Dura un'ora.
+    why: One hour is singular, so it's ci vuole.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: Ci vogliono due ore e mezza.
+    answers:
+      - It takes two and a half hours.
+      - It takes two hours and a half.
+      - It takes 2 and a half hours.
+      - You need two and a half hours.
+      - It takes 2.5 hours.
+    why: Ci vogliono is "it takes" with more than one thing — due ore.
+
+  - type: fill
+    section: 4
+    prompt: "Hai soldi? No, non ___ ho."
+    hint: any
+    translation: Have you got any money? No, I haven't got any.
+    answers: [ne]
+    why: Non ne means "not any".
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Cosa ne pensi?
+    answers:
+      - What do you think?
+      - What do you think about it?
+      - What do you think of it?
+    why: Here ne means "about it".
+
+  - type: choice
+    section: 4
+    prompt: "Your friend suggests pizza tonight, then adds *Che ne dici?* What is she asking?"
+    options: [What do you say?, What did you say?, How much is it?]
+    answer: What do you say?
+    why: Che ne dici? asks what you think of a plan — "What do you say?"

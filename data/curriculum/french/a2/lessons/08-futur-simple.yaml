@@ -1,0 +1,214 @@
+title: "Demain, il fera beau"
+subtitle: The futur simple
+goal: talk about the future with the *futur simple*, including the common irregular verbs, and make plans with *quand* and *si*
+minutes: 15
+
+sections:
+  - heading: The future in one word
+    body: |
+      You already know the near future: *je vais partir* — I'm going to
+      leave. The **futur simple** is the one-word future, like English
+      "will": *je **partirai*** — I'll leave.
+
+      For most verbs, take the **infinitive** and add the endings below.
+      They look a lot like *avoir*. Verbs ending in **-re** drop their
+      final *e* first: *prendre → je prendrai*.
+    table:
+      columns: [person, ending, parler, prendre]
+      rows:
+        - [je, -ai, parlerai, prendrai]
+        - [tu, -as, parleras, prendras]
+        - ["il / elle / on", -a, parlera, prendra]
+        - [nous, -ons, parlerons, prendrons]
+        - [vous, -ez, parlerez, prendrez]
+        - ["ils / elles", -ont, parleront, prendront]
+    examples:
+      - ["Je finirai plus tard.", "I'll finish later."]
+      - ["Vous partirez quand ?", "When will you leave?"]
+    tip: "Every future form has an **r** just before the ending. No *r*, no future: *je parlerai* (I will speak), but *je parlais* (I was speaking)."
+
+  - heading: Irregular stems
+    body: |
+      Some very common verbs don't use their infinitive. They have a
+      special stem instead, which you need to learn, but the endings are
+      exactly the same and there's still an **r** before them.
+
+      Weather verbs too: *il pleut* (it's raining) becomes ***il
+      pleuvra*** (it will rain). And *il y a* (there is) becomes ***il y
+      aura*** (there will be).
+    table:
+      columns: [verb, stem, example]
+      rows:
+        - [être, ser-, je serai]
+        - [avoir, aur-, "j'aurai"]
+        - [aller, ir-, "j'irai"]
+        - [faire, fer-, je ferai]
+        - [venir, viendr-, je viendrai]
+        - [pouvoir, pourr-, je pourrai]
+        - [vouloir, voudr-, je voudrai]
+        - [voir, verr-, je verrai]
+        - [devoir, devr-, je devrai]
+    examples:
+      - ["On verra.", "We'll see."]
+      - ["Demain, il y aura du soleil dans le nord.", "Tomorrow it will be sunny in the north."]
+    tip: "*Je voudrai* (I will want) sounds like *je voudrais* (I would like). In a shop or café, you always mean *je voudrais*."
+
+  - heading: Near future or futur simple?
+    body: |
+      In conversation, both are fine for most plans. The **near future**
+      (*aller* + infinitive) is more common for things that are planned or
+      about to happen. The **futur simple** is more common for predictions,
+      promises and plans further away, and it's what you'll read in
+      weather forecasts.
+    examples:
+      - ["Je vais manger.", "I'm going to eat (now)."]
+      - ["Un jour, j'habiterai à Paris.", "One day I'll live in Paris."]
+      - ["L'année prochaine, nous irons au Canada.", "Next year we'll go to Canada."]
+      - ["La météo dit qu'il fera beau dans le sud.", "The forecast says it will be nice in the south."]
+
+  - heading: "Quand and si"
+    body: |
+      After **quand** (when) about the future, French uses the **future**,
+      although English doesn't:
+
+      - *Quand **j'aurai** dix-huit ans, **j'apprendrai** à conduire.* —
+        When I'm eighteen, I'll learn to drive.
+
+      After **si** (if), use the **present**, with the future in the other
+      half of the sentence:
+
+      - *S'il **pleut**, nous **resterons** à la maison.* — If it rains,
+        we'll stay at home.
+
+      *Si* becomes *s'* before *il* and *ils*, but not before *elle*.
+    examples:
+      - ["Quand je serai grande, j'habiterai à Paris.", "When I grow up, I'll live in Paris."]
+      - ["S'il neige, nous ferons du ski.", "If it snows, we'll go skiing."]
+    tip: "Never put the future straight after *si*: *si il fera beau* is wrong. Say *s'il fait beau*."
+
+words:
+  - [prochain / prochaine, next]
+  - [si, if]
+  - [conduire, to drive]
+  - [le temps, "time; the weather"]
+  - [plus tard, later]
+  - [il y aura, there will be]
+  - [la météo, the weather forecast]
+  - [le sud, the south]
+  - [le nord, the north]
+  - [le soleil, the sun]
+  - [neiger, to snow]
+  - [le ski, skiing]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Je ___ demain."
+    hint: (partir, futur)
+    translation: I'll leave tomorrow.
+    answers: [partirai]
+    why: Take the infinitive partir and add -ai for je.
+
+  - type: fill
+    section: 1
+    prompt: "Nous ___ le train."
+    hint: (prendre, futur)
+    translation: We'll take the train.
+    answers: [prendrons]
+    why: Verbs in -re drop the final e before the ending, so it is prendr- + -ons.
+
+  - type: fill
+    section: 1
+    prompt: "Ils ___ français."
+    hint: (parler, futur)
+    translation: They will speak French.
+    answers: [parleront]
+    why: With ils, the future ending is -ont, added to the infinitive parler.
+
+  - type: choice
+    section: 1
+    prompt: Which one is the future?
+    options: [je parlais, je parlerai]
+    answer: je parlerai
+    why: The future always has an r just before the ending.
+
+  - type: fill
+    section: 2
+    prompt: "Demain, il ___ beau."
+    hint: (faire, futur)
+    translation: Tomorrow the weather will be nice.
+    answers: [fera]
+    why: The future stem of faire is fer-, and il adds -a.
+
+  - type: fill
+    section: 2
+    prompt: "Tu ___ là samedi ?"
+    hint: (être, futur)
+    translation: Will you be there on Saturday?
+    answers: [seras]
+    why: The future stem of être is ser-, and tu adds -as.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: I'll go to Paris.
+    answers: ["J'irai à Paris.", "Je vais aller à Paris."]
+    why: The future stem of aller is ir-, so "I'll go" is j'irai.
+
+  - type: translate
+    section: 2
+    direction: to-english
+    prompt: Nous aurons le temps.
+    answers: ["We'll have time.", "We will have time.", "We'll have the time.", "We will have the time."]
+    why: The future stem of avoir is aur-, so nous aurons is "we will have".
+
+  - type: choice
+    section: 3
+    prompt: "*Je vais manger* and *je mangerai* both talk about…"
+    options: [the past, the future, habits]
+    answer: the future
+    why: Aller + infinitive and the futur simple are both ways to talk about the future.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: Next year, we'll go to Canada.
+    answers: ["L'année prochaine, nous irons au Canada.", "Nous irons au Canada l'année prochaine.", "L'année prochaine, on ira au Canada.", "On ira au Canada l'année prochaine.", "L'année prochaine, nous allons aller au Canada.", "L'année prochaine, on va aller au Canada."]
+    why: Irons is the future of aller, and next year is l'année prochaine.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: Un jour, j'habiterai à Paris.
+    answers: ["One day I'll live in Paris.", "One day I will live in Paris.", "Someday I'll live in Paris.", "Someday I will live in Paris.", "One day I'm going to live in Paris."]
+    why: Habiterai is the future of habiter, "will live".
+
+  - type: fill
+    section: 4
+    prompt: "S'il ___, nous resterons à la maison."
+    hint: (pleuvoir, present)
+    translation: If it rains, we'll stay at home.
+    answers: [pleut]
+    why: After si, use the present tense, never the future.
+
+  - type: fill
+    section: 4
+    prompt: "Quand j'___ dix-huit ans, j'apprendrai à conduire."
+    hint: (avoir, futur)
+    translation: When I'm eighteen, I'll learn to drive.
+    answers: [aurai]
+    why: After quand about the future, French uses the future, even where English uses the present.
+
+  - type: choice
+    section: 4
+    prompt: Which is correct?
+    options: ["Si il fera beau, on ira à la plage.", "S'il fait beau, on ira à la plage."]
+    answer: "S'il fait beau, on ira à la plage."
+    why: After si, use the present, and si becomes s' before il.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: If the weather's nice, we'll go to the beach.
+    answers: ["S'il fait beau, nous irons à la plage.", "S'il fait beau, on ira à la plage.", "Nous irons à la plage s'il fait beau.", "On ira à la plage s'il fait beau.", "S'il fait beau, nous allons aller à la plage.", "S'il fait beau, on va aller à la plage."]
+    why: Si + the present for the condition, and the future for what will happen.

@@ -1,0 +1,198 @@
+title: "Comprei um presente pra ela"
+subtitle: To me, for her — indirect objects
+goal: say who you give, send, show or tell something to, with para + a pronoun, with me, te and nos, and with lhe
+minutes: 14
+
+sections:
+  - heading: Giving to someone
+    body: |
+      Some verbs have two objects: the **thing**, and the **person who
+      gets it**. In *I gave Ana a book*, the book is the thing, and Ana —
+      the person it goes *to* — is the **indirect object**.
+
+      In Portuguese the thing comes first, and the person comes after
+      **para** (to, for): *Dei um livro para a Ana.*
+
+      Verbs like this: **dar** (give), **mandar** (send), **mostrar**
+      (show), **emprestar** (lend), **contar** (tell), **explicar**
+      (explain).
+    examples:
+      - ["Mandei uma mensagem para o meu pai.", "I sent my dad a message."]
+      - ["Ela mostrou as fotos para a gente.", "She showed us the photos."]
+      - ["O professor explicou a lição para os alunos.", "The teacher explained the lesson to the students."]
+    tip: "English can say *I gave Ana a book*, with no \"to\". Portuguese always needs *para*: *dei um livro para a Ana*."
+
+  - heading: Para + a pronoun
+    body: |
+      For *to him*, *for her*, *to me*, use **para** + a pronoun. Most
+      pronouns stay as they are — *para você*, *para ela*, *para a gente*
+      — but after *para*, **eu** becomes **mim**.
+
+      *Para* means "for" as well as "to": *Isso é para você.* — This is
+      for you.
+
+      In speech, *para* shrinks to **pra**, and *pra* + *o* becomes **pro**:
+      *Mandei pro meu pai.*
+    table:
+      columns: ["", written, spoken]
+      rows:
+        - [to / for me, para mim, pra mim]
+        - [to / for you, para você, pra você]
+        - [to / for him / her, para ele / para ela, pra ele / pra ela]
+        - [to / for us, para nós / para a gente, pra gente]
+        - [to / for them, para eles / para elas, pra eles / pra elas]
+    examples:
+      - ["Isso é pra você.", "This is for you."]
+      - ["Comprei um presente pra ela.", "I bought her a present."]
+      - ["Pode mostrar pra mim?", "Can you show me?"]
+    tip: "\"For me\" is *para mim*, never *para eu*: *É para mim?* — Is it for me?"
+
+  - heading: Me, te, nos — to me, to you, to us
+    body: |
+      The little pronouns from lesson 9 — **me**, **te**, **nos** — also
+      mean *to me*, *to you*, *to us*. They go before the verb, as usual.
+
+      So *me* can be "me" or "to me". The verb makes it clear: *Ele me viu*
+      — he saw me; *Ele me deu um livro* — he gave (to) me a book.
+    examples:
+      - ["Ele me deu um livro.", "He gave me a book."]
+      - ["Eu te mando uma mensagem amanhã.", "I'll send you a message tomorrow."]
+      - ["Ela nos contou tudo.", "She told us everything."]
+
+  - heading: Lhe — formal "to him, to her, to you"
+    body: |
+      Written and formal Portuguese has **lhe** (plural **lhes**). It means
+      *to him*, *to her*, or *to you* when you're being polite. Like the
+      other small pronouns, it goes before the verb.
+
+      You'll meet it in hotels, banks, shops and emails: *Posso lhe fazer
+      uma pergunta?* — May I ask you a question?
+
+      Among friends, Brazilians prefer **para** + a pronoun: *Dei um
+      presente pra ela.*
+    examples:
+      - ["Ele lhe deu um presente.", "He gave her a present."]
+      - ["Vou lhe mandar o recibo.", "I'll send you the receipt."]
+    tip: "*Lhe* can mean him, her or you, and the conversation tells you which. If it isn't clear, say *para ele*, *para ela* or *para você*."
+
+words:
+  - [mandar, to send]
+  - [mostrar, to show]
+  - [emprestar, to lend]
+  - [contar, "to tell (a story, news)"]
+  - [explicar, to explain]
+  - [mensagem, message]
+  - [foto, photo]
+  - [aluno, student / pupil]
+  - [mim, me (after para)]
+  - [pro, to the (spoken pra + o)]
+  - [lhe, to him / to her / to you (formal)]
+  - [pergunta, question]
+  - [recibo, receipt]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Dei um livro ___ a Ana."
+    hint: to
+    translation: I gave Ana a book.
+    answers: [para, pra]
+    why: The person who receives something comes after para.
+
+  - type: translate
+    section: 1
+    direction: to-target
+    prompt: "I lent my brother a book."
+    answers:
+      - "Emprestei um livro para o meu irmão."
+      - "Emprestei um livro para meu irmão."
+      - "Eu emprestei um livro para o meu irmão."
+      - "Eu emprestei um livro para meu irmão."
+      - "Emprestei um livro pro meu irmão."
+      - "Eu emprestei um livro pro meu irmão."
+    why: "The thing comes first, then para + the person."
+
+  - type: choice
+    section: 1
+    prompt: "\"She showed us the photos.\""
+    options: [Ela mostrou as fotos para a gente., Ela mostrou a gente as fotos.]
+    answer: Ela mostrou as fotos para a gente.
+    why: Portuguese puts the thing first and the person after para.
+
+  - type: fill
+    section: 2
+    prompt: "Isso é para ___?"
+    hint: me
+    translation: Is this for me?
+    answers: [mim]
+    why: After para, eu becomes mim.
+
+  - type: choice
+    section: 2
+    prompt: "\"Is it for me?\""
+    options: [É para mim?, É para eu?, É para me?]
+    answer: É para mim?
+    why: "\"For me\" is always para mim."
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: "I bought him a coffee."
+    answers:
+      - "Comprei um café para ele."
+      - "Eu comprei um café para ele."
+      - "Comprei um café pra ele."
+      - "Eu comprei um café pra ele."
+      - "Eu lhe comprei um café."
+    why: "\"For him\" is para ele — pra ele in speech."
+
+  - type: fill
+    section: 3
+    prompt: "Ele ___ deu um livro."
+    hint: to me
+    translation: He gave me a book.
+    answers: [me]
+    why: Me also means "to me", before the verb.
+
+  - type: fill
+    section: 3
+    prompt: "Eu ___ mando uma mensagem amanhã."
+    hint: to you, informal
+    translation: I'll send you a message tomorrow.
+    answers: [te]
+    why: Te also means "to you", before the verb.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: "Ele me mostrou a cidade."
+    answers:
+      - "He showed me the city."
+      - "He showed me the town."
+      - "He showed me around the city."
+      - "He showed me around town."
+    why: "Me before the verb can mean \"(to) me\", and mostrar is to show."
+
+  - type: choice
+    section: 4
+    prompt: Which sounds formal, as in a hotel or a bank?
+    options: [Posso lhe fazer uma pergunta?, Posso fazer uma pergunta pra você?]
+    answer: Posso lhe fazer uma pergunta?
+    why: Lhe is the formal "to you"; pra você is everyday speech.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: "Eu lhe mandei uma mensagem."
+    answers:
+      - "I sent him a message."
+      - "I sent her a message."
+      - "I sent you a message."
+    why: "Lhe can mean to him, to her or to you."
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: I'll send you the receipt. (formal)
+    answers: [Vou lhe mandar o recibo., Eu vou lhe mandar o recibo., Vou mandar o recibo para o senhor., Vou mandar o recibo para a senhora., Lhe mando o recibo.]
+    why: Lhe is the formal "to you", and it goes before the infinitive.

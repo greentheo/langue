@@ -1,0 +1,248 @@
+title: "Del pane, delle mele"
+subtitle: Some bread, some apples — the partitive and quantities
+goal: say "some" with del, della, dei and delle, use un po' di and qualche, and ask for exact amounts at the market
+minutes: 13
+
+sections:
+  - heading: "Some: di + the"
+    body: |
+      To say **some** — an amount you don't say exactly — Italian uses **di
+      + the article**. These are the same joined words you learned in A1:
+      *del, dello, dell', della, dei, degli, delle*.
+
+      - *Compro del pane.* — I'm buying some bread.
+      - *Vorrei delle mele.* — I'd like some apples.
+
+      With plural nouns, it works as the plural of *un, uno, una*: *un
+      amico* (a friend) → *degli amici* (some friends).
+    table:
+      columns: [the, some]
+      rows:
+        - [il pane, del pane]
+        - [lo zucchero, dello zucchero]
+        - ["l'acqua", "dell'acqua"]
+        - [la frutta, della frutta]
+        - [i pomodori, dei pomodori]
+        - [gli spaghetti, degli spaghetti]
+        - [le mele, delle mele]
+    examples:
+      - ["Ho comprato del formaggio.", "I bought some cheese."]
+      - ["Vuoi dell'acqua?", "Do you want some water?"]
+    tip: "Pick the form by the article the noun normally takes: *il pane → del pane*, *gli amici → degli amici*."
+
+  - heading: "Un po' di and qualche"
+    body: |
+      Two more ways to say "some":
+
+      - **un po' di** — a bit of, a little: *un po' di latte*, *un po' di
+        pane*. It's mostly used for things you can't count.
+      - **qualche** — a few, some: *qualche giorno* (a few days), *qualche
+        amico* (some friends). Use it for things you can count.
+
+      *Qualche* is always followed by a **singular** noun, even though it
+      means more than one.
+    examples:
+      - ["Vorrei un po' di formaggio.", "I'd like a bit of cheese."]
+      - ["Resto a Roma qualche giorno.", "I'm staying in Rome for a few days."]
+      - ["Ho visto qualche amico al parco.", "I saw some friends at the park."]
+    tip: "*Po'* is short for *poco*, so it has an apostrophe, not an accent. And it's *qualche giorno*, never *qualche giorni*."
+
+  - heading: Exact amounts at the market
+    body: |
+      When you say an **exact amount**, use **di** on its own, with no
+      article:
+
+      - *un chilo di mele* — a kilo of apples
+      - *mezzo chilo di pomodori* — half a kilo of tomatoes
+      - *una bottiglia d'acqua* — a bottle of water
+      - *un pacco di pasta* — a packet of pasta
+      - *una fetta di torta* — a slice of cake
+
+      At the deli counter, ham and cheese are sold by the **etto** — 100
+      grams. *Due etti* is 200 grams.
+    examples:
+      - ["Vorrei due etti di prosciutto, per favore.", "I'd like 200 grams of ham, please."]
+      - ["Un chilo di pomodori, grazie.", "A kilo of tomatoes, thanks."]
+      - ["Ho comprato una bottiglia d'acqua.", "I bought a bottle of water."]
+    tip: "No article after an amount: *un chilo di mele*, not *un chilo delle mele*."
+
+  - heading: Questions and "not any"
+    body: |
+      In questions, and with **non**, Italians usually leave out "some" or
+      "any" altogether:
+
+      - *Avete pane fresco?* — Do you have any fresh bread?
+      - *C'è latte in frigo?* — Is there any milk in the fridge?
+      - *Non ho soldi.* — I don't have any money.
+
+      English needs the word "any" in these sentences; Italian simply
+      doesn't say it.
+    examples:
+      - ["Avete pomodori freschi?", "Do you have any fresh tomatoes?"]
+      - ["Non abbiamo comprato frutta.", "We didn't buy any fruit."]
+      - ["Non ho fratelli.", "I don't have any brothers."]
+    tip: "Don't look for a word for \"any\": *Non ho soldi* is all you need."
+
+words:
+  - [mela, apple]
+  - [pomodoro, tomato]
+  - [prosciutto, ham]
+  - [chilo, kilo]
+  - [etto, 100 grams]
+  - [bottiglia, bottle]
+  - [pacco, packet]
+  - [fetta, slice]
+  - [torta, cake]
+  - [un po' di, "a bit of, some"]
+  - [qualche, "some, a few"]
+  - [fresco, fresh]
+  - [frigo, fridge]
+  - [parco, park]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Compro ___ pane."
+    hint: some
+    translation: I'm buying some bread.
+    answers: [del]
+    why: Pane takes il, and di + il makes del.
+
+  - type: fill
+    section: 1
+    prompt: "Vorrei ___ mele."
+    hint: some
+    translation: I'd like some apples.
+    answers: [delle]
+    why: Mele takes le, and di + le makes delle.
+
+  - type: fill
+    section: 1
+    prompt: "Vuoi ___?"
+    hint: some water
+    translation: Do you want some water?
+    answers: ["dell'acqua"]
+    why: Acqua takes l', and di + l' makes dell'acqua.
+
+  - type: translate
+    section: 1
+    direction: to-target
+    prompt: I bought some cheese.
+    answers:
+      - Ho comprato del formaggio.
+      - Io ho comprato del formaggio.
+      - Ho comprato un po' di formaggio.
+      - Io ho comprato un po' di formaggio.
+    why: Formaggio takes il, so "some cheese" is del formaggio.
+
+  - type: choice
+    section: 1
+    prompt: Which means "some friends"?
+    options: [dei amici, degli amici, delle amici]
+    answer: degli amici
+    why: Amici takes gli, so "some friends" is degli amici.
+
+  - type: fill
+    section: 2
+    prompt: "Resto qui ___ giorno."
+    hint: a few
+    translation: I'm staying here for a few days.
+    answers: [qualche]
+    why: Qualche means "a few" and is followed by a singular noun.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: a bit of sugar
+    answers: [un po' di zucchero]
+    why: Un po' di is "a bit of", for things you can't count.
+
+  - type: translate
+    section: 2
+    direction: to-english
+    prompt: Ho visto qualche amico al parco.
+    answers:
+      - I saw some friends at the park.
+      - I saw a few friends at the park.
+      - I saw some friends in the park.
+      - I saw a few friends in the park.
+    why: Qualche amico means "some friends" or "a few friends", even though amico is singular.
+
+  - type: choice
+    section: 2
+    prompt: Which is right?
+    options: [qualche giorni, qualche giorno, qualche dei giorni]
+    answer: qualche giorno
+    why: Qualche is always followed by a singular noun.
+
+  - type: fill
+    section: 3
+    prompt: "Un chilo ___ pomodori, per favore."
+    hint: of
+    translation: A kilo of tomatoes, please.
+    answers: [di]
+    why: After an exact amount, use di with no article.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: I'd like a bottle of water, please.
+    answers:
+      - Vorrei una bottiglia d'acqua, per favore.
+      - Vorrei una bottiglia di acqua, per favore.
+      - Per favore, vorrei una bottiglia d'acqua.
+    why: After an amount like una bottiglia, use di with no article.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: due etti di prosciutto
+    answers:
+      - 200 grams of ham
+      - two hundred grams of ham
+      - 200 g of ham
+      - 200g of ham
+      - 200 grams of prosciutto
+      - two hundred grams of prosciutto
+    why: An etto is 100 grams, so due etti is 200 grams.
+
+  - type: choice
+    section: 3
+    prompt: Which is right?
+    options: [un chilo di mele, un chilo delle mele, un chilo mele]
+    answer: un chilo di mele
+    why: After an exact amount, di stands on its own, with no article.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Non ho soldi.
+    answers:
+      - I don't have any money.
+      - I have no money.
+      - I don't have money.
+      - I haven't got any money.
+    why: With non, Italian needs no word for "any".
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: We didn't buy any fruit.
+    answers:
+      - Non abbiamo comprato frutta.
+      - Noi non abbiamo comprato frutta.
+      - Non abbiamo comprato la frutta.
+      - Noi non abbiamo comprato la frutta.
+    why: With non, Italian usually leaves out "any".
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: Is there any milk in the fridge?
+    answers:
+      - C'è latte in frigo?
+      - C'è latte nel frigo?
+      - C'è del latte in frigo?
+      - C'è del latte nel frigo?
+      - C'è un po' di latte in frigo?
+    why: In a question Italian usually needs no word for "any" — C'è latte? is enough.

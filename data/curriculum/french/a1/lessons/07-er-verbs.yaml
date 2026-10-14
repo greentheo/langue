@@ -173,3 +173,19 @@ practice:
     translation: When do you work?
     answers: [Quand]
     why: Quand means when, and it goes in front of est-ce que.
+
+  - type: fill
+    section: 3
+    strict_accents: true
+    prompt: "Nous ___ à huit heures."
+    hint: (commencer)
+    translation: We start at eight o'clock.
+    answers: [commençons]
+    why: Verbs in -cer take ç before -ons, so the c keeps its soft s sound.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: We're eating a cake.
+    answers: ["Nous mangeons un gâteau.", "On mange un gâteau."]
+    why: With nous, manger keeps its e before -ons — mangeons — so the g stays soft.

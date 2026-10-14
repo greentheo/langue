@@ -1,0 +1,203 @@
+title: "Je me suis levé tôt"
+subtitle: Reflexive verbs in the passé composé
+goal: say what you did with reflexive verbs in the past (*je me suis levé, elle s'est habillée*), including negatives and questions
+minutes: 14
+
+sections:
+  - heading: Reflexive verbs take être
+    body: |
+      Remember reflexive verbs like *se lever, se coucher* and
+      *s'habiller*? In the passé composé they **all** use **être**, never
+      *avoir*.
+
+      The order is: subject + little pronoun + *être* + past participle.
+
+      - *Je **me suis** levé à sept heures.* — I got up at seven.
+      - *Tu **t'es** couché tard.* — You went to bed late.
+
+      *Es* and *est* start with a vowel, so *te* and *se* shorten:
+      *tu t'es, il s'est*.
+    table:
+      columns: [person, se lever]
+      rows:
+        - [je, me suis levé(e)]
+        - [tu, "t'es levé(e)"]
+        - [il, "s'est levé"]
+        - [elle, "s'est levée"]
+        - [nous, nous sommes levé(e)s]
+        - [vous, vous êtes levé(e)(s)]
+        - [ils, se sont levés]
+        - [elles, se sont levées]
+    examples:
+      - ["Je me suis couché à dix heures.", "I went to bed at ten o'clock."]
+      - ["Je me suis endormi devant la télé.", "I fell asleep in front of the TV."]
+
+  - heading: Making it agree
+    body: |
+      Because they use *être*, reflexive verbs agree with the subject, just
+      like *aller*: add **-e** for a woman or a girl, and **-s** for a group.
+
+      - *Elle s'est réveillé**e** tôt.* — She woke up early.
+      - *Nous nous sommes dépêché**s**.* — We hurried.
+      - *Mes sœurs se sont couché**es** tard.* — My sisters went to bed late.
+
+      You usually can't hear the difference. It matters when you write.
+    examples:
+      - ["Ma sœur s'est habillée.", "My sister got dressed."]
+      - ["Nous nous sommes promenés au parc.", "We went for a walk in the park."]
+    tip: "English doesn't say \"I got myself up\", so it's easy to forget the little pronoun. *Je suis levé* means \"I'm up\"; \"I got up\" is *je **me** suis levé*."
+
+  - heading: Saying no
+    body: |
+      In the negative, **ne** goes before the little pronoun, and **pas**
+      goes after *être*. The pronoun and *être* stay together in the
+      middle:
+
+      - *Je **ne** me suis **pas** réveillé.* — I didn't wake up.
+      - *Elle **ne** s'est **pas** dépêchée.* — She didn't hurry.
+      - *Nous **ne** nous sommes **jamais** perdus.* — We never got lost.
+    examples:
+      - ["Le réveil n'a pas sonné.", "The alarm clock didn't go off."]
+      - ["Il ne s'est pas rasé.", "He didn't shave."]
+    tip: "Think of *me suis* as one block that *ne… pas* wraps around: *je ne me suis pas levé*."
+
+  - heading: Asking about someone's day
+    body: |
+      To ask a question, raise your voice at the end, or use *est-ce que*
+      or a question word:
+
+      - *Tu t'es bien amusé ?* — Did you have a good time?
+      - *À quelle heure est-ce que vous vous êtes levés ?* — What time did
+        you get up?
+
+      **S'amuser** (to have fun) and **s'ennuyer** (to be bored) are
+      perfect for saying how something went.
+    examples:
+      - ["Je me suis bien amusée à la fête.", "I had a great time at the party."]
+      - ["Il s'est ennuyé au musée.", "He was bored at the museum."]
+      - ["Pourquoi tu t'es couché tard ?", "Why did you go to bed late?"]
+
+words:
+  - [se dépêcher, to hurry]
+  - [se reposer, to rest]
+  - ["s'amuser", "to have fun, to have a good time"]
+  - ["s'ennuyer", to be bored]
+  - [se promener, to go for a walk]
+  - ["s'endormir", to fall asleep]
+  - [se perdre, to get lost]
+  - [se raser, to shave]
+  - [la fête, the party]
+  - [le musée, the museum]
+  - [le réveil, the alarm clock]
+  - [sonner, to ring]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Je ___ suis levé à sept heures."
+    hint: (myself)
+    translation: I got up at seven o'clock.
+    answers: [me]
+    why: The little pronoun matches the subject, and with je it's me.
+
+  - type: fill
+    section: 1
+    prompt: "Ils se ___ couchés tard."
+    hint: (être)
+    translation: They went to bed late.
+    answers: [sont]
+    why: Reflexive verbs use être, and with ils that's sont.
+
+  - type: choice
+    section: 1
+    prompt: Which is correct?
+    options: [Je me suis lavé., "Je m'ai lavé."]
+    answer: Je me suis lavé.
+    why: Reflexive verbs always take être in the passé composé, never avoir.
+
+  - type: translate
+    section: 1
+    direction: to-target
+    prompt: He woke up at six o'clock.
+    answers: ["Il s'est réveillé à six heures."]
+    why: Se réveiller takes être, and se becomes s' before est.
+
+  - type: fill
+    section: 2
+    prompt: "Elle s'est ___ tôt."
+    hint: (se lever)
+    translation: She got up early.
+    answers: [levée]
+    why: With être, the past participle adds -e for elle.
+
+  - type: fill
+    section: 2
+    prompt: "Nous nous sommes ___."
+    hint: (se dépêcher — a group of boys)
+    translation: We hurried.
+    answers: [dépêchés]
+    why: A group adds -s to the past participle.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: She got dressed.
+    answers: ["Elle s'est habillée."]
+    why: S'habiller takes être, so the past participle adds -e for elle.
+
+  - type: translate
+    section: 2
+    direction: to-english
+    prompt: Mes sœurs se sont couchées tard.
+    answers: ["My sisters went to bed late.", "My sisters have gone to bed late."]
+    why: Se coucher is to go to bed, and -es shows the subject is a group of girls.
+
+  - type: choice
+    section: 3
+    prompt: Which is correct?
+    options: [Je ne me suis pas réveillé., Je me ne suis pas réveillé., Je ne me pas suis réveillé.]
+    answer: Je ne me suis pas réveillé.
+    why: Ne goes before the little pronoun, and pas goes after être.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: I didn't hurry. (a boy speaking)
+    answers: ["Je ne me suis pas dépêché."]
+    why: Ne… pas wraps around the block me suis.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: Il ne s'est pas reposé.
+    answers: ["He didn't rest.", "He did not rest.", "He hasn't rested.", "He has not rested."]
+    why: Se reposer is to rest, and ne… pas wraps around s'est.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: Did you have a good time? (to a friend, a girl)
+    answers: ["Tu t'es bien amusée ?", "Est-ce que tu t'es bien amusée ?", "Tu t'es amusée ?", "Est-ce que tu t'es amusée ?"]
+    why: S'amuser takes être, and the past participle adds -e for a girl.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Il s'est ennuyé au musée.
+    answers: ["He was bored at the museum.", "He got bored at the museum.", "He was bored in the museum.", "He got bored in the museum."]
+    why: S'ennuyer means to be bored.
+
+  - type: choice
+    section: 4
+    prompt: "*Je me suis bien amusé* means…"
+    options: [I was bored., I had a good time., I got lost.]
+    answer: I had a good time.
+    why: S'amuser is to have fun, and bien makes it "a good time".
+
+  - type: fill
+    section: 4
+    prompt: "À quelle heure est-ce que vous vous êtes ___ ?"
+    hint: (se lever — a group of friends)
+    translation: What time did you get up?
+    answers: [levés]
+    why: Vous is a group here, so the past participle adds -s.

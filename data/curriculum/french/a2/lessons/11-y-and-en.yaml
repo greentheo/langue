@@ -1,0 +1,190 @@
+title: "J'y vais, j'en veux"
+subtitle: The pronouns y and en
+goal: replace places with *y* and amounts with *en*, so you can answer questions quickly and naturally
+minutes: 15
+
+sections:
+  - heading: "Y: there"
+    body: |
+      **Y** replaces a place that starts with *à, au, en, dans* or **chez**
+      (at someone's home). It means "there", and it goes **before** the
+      verb, like *le* and *lui*.
+
+      - *Tu vas **à Paris** ? — Oui, j'**y** vais demain.*
+      - *Elle habite **en France** ? — Oui, elle **y** habite.*
+      - *Tu vas **chez Paul** ? — Oui, j'**y** vais.*
+
+      Before *y*, *je* becomes *j'*.
+    examples:
+      - ["Tu vas au marché ? — Oui, j'y vais.", "Are you going to the market? — Yes, I'm going."]
+      - ["La boulangerie ? J'y vais tous les matins.", "The bakery? I go there every morning."]
+      - ["La piscine ? On y va samedi.", "The pool? We're going on Saturday."]
+    tip: "English often just says \"I'm going\", but French needs *y*: *J'y vais*, not *Je vais*. You already know *On y va !* — Let's go!"
+
+  - heading: "Y in the past and with infinitives"
+    body: |
+      *Y* follows the same rules as the other pronouns:
+
+      - **negative**: *Je **n'y** vais **pas**.* — I'm not going (there).
+      - **passé composé**: before *avoir* or *être* — *J'**y** suis allé
+        l'année dernière.*
+      - **with an infinitive**: before the infinitive — *Je vais **y**
+        aller demain.*
+    examples:
+      - ["Tu es déjà allé à Londres ?", "Have you ever been to London?"]
+      - ["Non, je n'y suis jamais allé.", "No, I've never been there."]
+      - ["La montagne ? Nous y sommes restés une semaine.", "The mountains? We stayed there for a week."]
+
+  - heading: "En: some, any, of it"
+    body: |
+      **En** replaces **de** + a noun, including *du, de la* and *des*. It
+      often means "some", "any", or "of it / of them":
+
+      - *Tu veux **du café** ? — Oui, j'**en** veux bien.* — Yes, I'd like
+        some.
+      - *Il y a **des croissants** ? — Non, il n'y **en** a pas.* — No,
+        there aren't any.
+      - *Tu as **de l'argent** ? — Oui, j'**en** ai.* — Yes, I have some.
+
+      English can leave "some" or "any" out. French can't leave out *en*.
+    examples:
+      - ["Il y a du lait ? — Oui, il y en a.", "Is there any milk? — Yes, there is."]
+      - ["Je n'en veux pas, merci.", "I don't want any, thanks."]
+    tip: "*Tu veux du gâteau ? — Oui, je veux.* sounds unfinished in French. Say *Oui, j'en veux bien*."
+
+  - heading: En with numbers and amounts
+    body: |
+      With a number or a quantity word, **en** replaces the noun, and the
+      number or quantity goes at the end:
+
+      - *Tu as **des frères** ? — Oui, j'**en** ai **deux**.* — Yes, I have
+        two.
+      - *Il a **beaucoup d'amis** ? — Oui, il **en** a **beaucoup**.*
+      - *Combien de pommes ? — J'**en** voudrais **un kilo**.*
+    examples:
+      - ["Des baguettes ? J'en prends deux.", "Baguettes? I'll take two."]
+      - ["Des cartes postales ? J'en ai écrit trois.", "Postcards? I've written three."]
+    tip: "English says \"I have two\", but French must say \"I have two **of them**\": *J'en ai deux*. Never just *J'ai deux*."
+
+words:
+  - [y, there]
+  - [en, "some, any, of it, of them"]
+  - [chez, "at (someone's) home, at the …'s"]
+  - ["l'argent (m)", money]
+  - [le marché, the market]
+  - [la boulangerie, the bakery]
+  - [la piscine, the swimming pool]
+  - [la montagne, the mountains]
+  - [Londres, London]
+  - [une baguette, a baguette]
+  - [une carte postale, a postcard]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Tu vas à Paris ? — Oui, j'___ vais."
+    hint: (there)
+    translation: Are you going to Paris? — Yes, I'm going (there).
+    answers: [y]
+    why: Y replaces à + a place, and it goes before the verb.
+
+  - type: translate
+    section: 1
+    direction: to-target
+    prompt: We're going there tomorrow.
+    answers: ["Nous y allons demain.", "On y va demain.", "Demain, nous y allons.", "Demain, on y va."]
+    why: Y means there, and it goes before the verb.
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: Elle y habite depuis deux ans.
+    answers: ["She has lived there for two years.", "She has been living there for two years.", "She's lived there for two years.", "She's been living there for two years."]
+    why: Y means there, and depuis + the present means "has been… for".
+
+  - type: choice
+    section: 2
+    prompt: "How do you say \"I'm not going there\"?"
+    options: ["Je n'y vais pas.", Je ne vais pas y., Je y ne vais pas.]
+    answer: "Je n'y vais pas."
+    why: Ne goes before y, and ne becomes n' before the vowel.
+
+  - type: fill
+    section: 2
+    prompt: "Je vais ___ aller demain."
+    hint: (there)
+    translation: I'm going to go there tomorrow.
+    answers: [y]
+    why: With an infinitive, y goes right before the infinitive.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: I've never been there. (a boy speaking)
+    answers: ["Je n'y suis jamais allé."]
+    why: Y goes before être, and ne… jamais wraps around y suis.
+
+  - type: fill
+    section: 3
+    prompt: "Tu veux du café ? — Oui, j'___ veux bien."
+    hint: (some)
+    translation: Do you want some coffee? — Yes, I'd like some.
+    answers: [en]
+    why: En replaces du + a noun, so it means "some".
+
+  - type: choice
+    section: 3
+    prompt: "*Tu as de l'argent ?* — Oui, …"
+    options: ["j'en ai.", "j'ai.", "j'y ai."]
+    answer: "j'en ai."
+    why: En replaces de l'argent, and French can't leave it out.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: Il n'y en a pas.
+    answers: ["There isn't any.", "There aren't any.", "There is none.", "There are none.", "There isn't any left."]
+    why: Il y a + en, made negative, means there isn't any.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: Do you want some? (to a friend)
+    answers: ["Tu en veux ?", "Est-ce que tu en veux ?", "En veux-tu ?"]
+    why: En means "some", and it goes before the verb.
+
+  - type: fill
+    section: 4
+    prompt: "Vous avez des enfants ? — Oui, j'___ ai trois."
+    hint: (of them)
+    translation: Do you have children? — Yes, I have three.
+    answers: [en]
+    why: With a number, en replaces the noun, and the number goes at the end.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: I have two (of them).
+    answers: ["J'en ai deux."]
+    why: French must say "two of them", so en goes before the verb.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Il en a beaucoup.
+    answers: ["He has a lot.", "He has lots.", "He has a lot of them.", "He has lots of them.", "He has many.", "He has a lot of it.", "He's got lots."]
+    why: En replaces the noun after beaucoup, which moves to the end.
+
+  - type: choice
+    section: 4
+    prompt: "*Combien de pommes voulez-vous ?* — The best answer is…"
+    options: ["J'en voudrais un kilo.", "J'y voudrais un kilo.", Je voudrais un kilo en.]
+    answer: "J'en voudrais un kilo."
+    why: En replaces de pommes, goes before the verb, and the amount goes at the end.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: There are three (of them).
+    answers: ["Il y en a trois."]
+    why: En goes between il y and a, and the number goes at the end.

@@ -1,0 +1,182 @@
+title: "Sei, conheço"
+subtitle: Saber and conhecer — two ways to know
+goal: choose between saber and conhecer, say what you know how to do, and talk about meeting people
+minutes: 13
+
+sections:
+  - heading: Two verbs for "know"
+    body: |
+      English has one verb "to know". Portuguese has two:
+
+      - **saber** — to know a **fact**, a piece of information
+      - **conhecer** — to know a **person or a place**, to be familiar
+        with it
+
+      Both are irregular only in the *eu* form of the present: *sei* and
+      *conheço*.
+    table:
+      columns: [pronoun, saber, conhecer]
+      rows:
+        - [eu, sei, conheço]
+        - [você / ele / ela / a gente, sabe, conhece]
+        - [nós, sabemos, conhecemos]
+        - [vocês / eles / elas, sabem, conhecem]
+    examples:
+      - ["Você sabe onde fica a estação?", "Do you know where the station is?"]
+      - ["Conheço o Pedro.", "I know Pedro."]
+      - ["Não sei.", "I don't know."]
+    tip: "*Não sei* — I don't know — is one of the most useful sentences you can learn. Never *não conheço* for that."
+
+  - heading: Saber — facts and skills
+    body: |
+      Use **saber** when what you know is a fact. It often comes before
+      *que* (that), *onde*, *quando* and **se** (if, whether):
+
+      - *Sei que é tarde.* — I know (that) it's late.
+      - *Você sabe se o museu abre hoje?* — Do you know if the museum
+        opens today?
+
+      **Saber + infinitive** means **to know how to** — a skill:
+
+      - *Você sabe nadar?* — Can you swim?
+    examples:
+      - ["Ela sabe falar inglês.", "She can speak English."]
+      - ["Você sabe o endereço?", "Do you know the address?"]
+    tip: "For a skill, use *saber*, not *poder*. *Sei dirigir* — I can drive (I know how). *Posso dirigir* — I can drive (I'm allowed, or I'm free to)."
+
+  - heading: Conhecer — people and places
+    body: |
+      Use **conhecer** with a person, a place, or anything you're familiar
+      with:
+
+      - *Conheço a mãe dela.* — I know her mother.
+      - *Conheço um restaurante ótimo.* — I know a great restaurant.
+
+      To ask if someone has been to a place, Brazilians say **Você
+      conhece…?** — literally "Do you know…?": *Você conhece o Rio?* — Have
+      you been to Rio?
+    examples:
+      - ["Você conhece Salvador?", "Have you been to Salvador?"]
+      - ["A gente ainda não conhece a cidade.", "We don't know the city yet."]
+    tip: "\"Do you know Rio?\" sounds odd in English, but *Você conhece o Rio?* is the normal way to ask if someone has been there."
+
+  - heading: Met, found out
+    body: |
+      In the past, these verbs change meaning a little.
+
+      - **conheci** (perfeito) — I **met** someone for the first time
+      - **conhecia** (imperfeito) — I already knew them
+      - **soube** (perfeito, irregular) — I **found out**. In speech,
+        Brazilians often say *fiquei sabendo*.
+      - **sabia** (imperfeito) — I knew
+
+      *Eu não sabia!* — I didn't know! — is a great reaction to news.
+    examples:
+      - ["Conheci a Ana na faculdade.", "I met Ana at university."]
+      - ["Onde vocês se conheceram?", "Where did you meet?"]
+      - ["Eu não sabia que você falava português.", "I didn't know you spoke Portuguese."]
+
+words:
+  - [saber, to know (a fact) / to know how to]
+  - [conhecer, to know (a person or place) / to meet]
+  - [Não sei., I don't know.]
+  - [se, if / whether]
+  - [endereço, address]
+  - [dirigir, to drive]
+  - [faculdade, university / college]
+  - [soube, found out]
+  - [fiquei sabendo, I found out (spoken)]
+  - [Eu não sabia!, I didn't know!]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Eu não ___ onde ele mora."
+    hint: saber, eu
+    translation: I don't know where he lives.
+    answers: [sei]
+    why: "Where he lives is a fact, so use saber — irregular with eu: sei."
+
+  - type: fill
+    section: 1
+    prompt: "Eu ___ o Pedro."
+    hint: conhecer, eu
+    translation: I know Pedro.
+    answers: [conheço]
+    why: Knowing a person is conhecer — with eu it is conheço.
+
+  - type: choice
+    section: 1
+    prompt: "\"Do you know where the station is?\""
+    options: [Você sabe onde fica a estação?, Você conhece onde fica a estação?]
+    answer: Você sabe onde fica a estação?
+    why: Where something is, is a fact — so saber.
+
+  - type: fill
+    section: 2
+    prompt: "Você sabe ___ o museu abre hoje?"
+    hint: if
+    translation: Do you know if the museum opens today?
+    answers: [se]
+    why: Se means if or whether.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: Can you swim? (Do you know how?)
+    answers: [Você sabe nadar?, Sabe nadar?, O senhor sabe nadar?, A senhora sabe nadar?, Vocês sabem nadar?]
+    why: Saber + infinitive is a skill — knowing how to do something.
+
+  - type: translate
+    section: 2
+    direction: to-english
+    prompt: "Meu irmão não sabe cozinhar."
+    answers:
+      - "My brother can't cook."
+      - "My brother doesn't know how to cook."
+      - "My brother cannot cook."
+    why: "Saber + infinitive is a skill — knowing how to do something."
+
+  - type: choice
+    section: 3
+    prompt: "\"Have you been to Rio?\" (the usual Brazilian way)"
+    options: [Você conhece o Rio?, Você sabe o Rio?]
+    answer: Você conhece o Rio?
+    why: Being familiar with a place is conhecer.
+
+  - type: fill
+    section: 3
+    prompt: "Você ___ um restaurante bom aqui perto?"
+    hint: conhecer, você
+    translation: Do you know a good restaurant nearby?
+    answers: [conhece]
+    why: Knowing a place is conhecer — with você it is conhece.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: I know her mother.
+    answers: [Conheço a mãe dela., Eu conheço a mãe dela.]
+    why: Knowing a person is conhecer, and "her mother" is a mãe dela.
+
+  - type: fill
+    section: 4
+    prompt: "Eu ___ a Ana na faculdade."
+    hint: conhecer, eu — I met
+    translation: I met Ana at university.
+    answers: [conheci]
+    why: Conhecer in the perfeito means to meet someone for the first time.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Eu não sabia!
+    answers: [I didn't know!, I did not know!]
+    why: Sabia is the imperfeito of saber — I knew.
+
+  - type: choice
+    section: 4
+    prompt: "\"I found out yesterday.\""
+    options: [Soube ontem., Sabia ontem., Sabi ontem.]
+    answer: Soube ontem.
+    why: Saber in the perfeito, soube, means found out.

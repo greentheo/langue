@@ -14,22 +14,37 @@ can_do:
   - understand the main point of short, clear announcements and messages
   - write short notes, messages and simple personal emails
 
-grammar:
+grammar:                    # in teaching order: lesson NN teaches topic NN
   - topic: Passato prossimo with avere and essere (I ate, I went)
+    lessons: [01-passato-prossimo]
   - topic: Irregular past participles — fatto, detto, visto, preso, messo, scritto
-  - topic: Imperfetto, and when to use it instead of the passato prossimo
+    lessons: [02-irregular-participles]
   - topic: Reflexive verbs in the past — mi sono alzato
-  - topic: Direct object pronouns — lo, la, li, le
-  - topic: Indirect object pronouns — mi, ti, gli, le
-  - topic: Ci (there) and ne (of it, of them)
-  - topic: Futuro semplice (I will go)
-  - topic: Stare + gerund for actions in progress — sto mangiando
-  - topic: "Comparatives and superlatives: più … di, il più, -issimo, migliore"
-  - topic: The partitive — del pane, delle mele
-  - topic: The informal imperative — mangia!, non mangiare!
-  - topic: The conditional for politeness — potrei, mi piacerebbe
+    lessons: [03-reflexive-past]
   - topic: "Time expressions: fa, da, già, ancora, appena"
+    lessons: [04-time-expressions]
+  - topic: The partitive — del pane, delle mele
+    lessons: [05-partitive]
+  - topic: Direct object pronouns — lo, la, li, le
+    lessons: [06-direct-pronouns]
+  - topic: Indirect object pronouns — mi, ti, gli, le
+    lessons: [07-indirect-pronouns]
+  - topic: Ci (there) and ne (of it, of them)
+    lessons: [08-ci-and-ne]
+  - topic: Imperfetto, and when to use it instead of the passato prossimo
+    lessons: [09-imperfetto]
+  - topic: Stare + gerund for actions in progress — sto mangiando
+    lessons: [10-stare-gerund]
+  - topic: Futuro semplice (I will go)
+    lessons: [11-future]
+  - topic: "Comparatives and superlatives: più … di, il più, -issimo, migliore"
+    lessons: [12-comparisons]
+  - topic: The informal imperative — mangia!, non mangiare!
+    lessons: [13-imperative]
+  - topic: The conditional for politeness — potrei, mi piacerebbe
+    lessons: [14-conditional]
   - topic: Sapere and conoscere — two ways to know
+    lessons: [15-sapere-conoscere]
 
 themes:
   - travel and holidays
@@ -40,3 +55,46 @@ themes:
   - house and rooms
   - work and school
   - childhood memories
+
+# The ten sub-levels, A2.1 to A2.10, in teaching order. Lessons stay in
+# number order, because each lesson's practice may use earlier lessons.
+units:
+  - title: Last weekend
+    lessons: [01-passato-prossimo]
+    situations: [stories]
+    categories: [verbs, education]
+  - title: What a day!
+    lessons: [02-irregular-participles, 03-reflexive-past]
+    situations: [health]
+    categories: [health]
+  - title: Running late
+    lessons: [04-time-expressions]
+    situations: [travel]
+    categories: [transportation, time]
+  - title: Eating out
+    lessons: [05-partitive]
+    situations: [restaurant]
+    categories: [food, shopping]
+  - title: Can I try it on?
+    lessons: [06-direct-pronouns, 07-indirect-pronouns]
+    situations: [clothes]
+    categories: [clothing]
+  - title: A room for the night
+    lessons: [08-ci-and-ne]
+    situations: [hotel]
+    categories: [travel, emotions]
+  - title: At home, then and now
+    lessons: [09-imperfetto, 10-stare-gerund]
+    situations: [home]
+    categories: [housing]
+  - title: Making plans
+    lessons: [11-future]
+    situations: [plans]
+    categories: [leisure, nature]
+  - title: Bigger and better
+    lessons: [12-comparisons, 13-imperative]
+    categories: [basics]
+  - title: On the phone
+    lessons: [14-conditional, 15-sapere-conoscere]
+    situations: [phone]
+    categories: [technology, work]

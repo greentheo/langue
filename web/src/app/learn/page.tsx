@@ -2,7 +2,7 @@ import Link from "next/link";
 import { verifySession } from "@/lib/auth/session";
 import { redirect } from "next/navigation";
 import { availableLanguages, availableLevels, languageLabel } from "@/lib/vocab";
-import { LEVEL_LABELS, type Level } from "@/lib/vocab/types";
+import { LEVEL_LABELS, LEVELS, type Level } from "@/lib/vocab/types";
 import { getSummary } from "@/lib/progress";
 import { updatePreferences } from "@/lib/settings-actions";
 import { Panel } from "@/components/crt";
@@ -88,15 +88,28 @@ export default async function LearnPage() {
   const marks = hasPath ? await loadMarks(user.id, course) : new Map();
   const units = unitProgress(course, states, marks);
   if (hasPath) await rememberProgress(user.id, units, marks, now);
-  const currentIndex = Math.min(firstOpenUnit(course, states), Math.max(0, units.length - 1));
+  const currentIndex = Math.min(firstOpenUnit(course, states, marks), Math.max(0, units.length - 1));
   const current = units[currentIndex];
   const ideas = unitIdeas(course, currentIndex, states);
   const waiting = dueCount(course, states, now);
-  const upNext = nextIntro(course, states);
+  const upNext = nextIntro(course, states, new Set(), marks);
   const upNextIdea =
     upNext?.entry.type === "grammar" ? course.items.get(upNext.entry.key) : undefined;
   const levelUnits = current ? units.filter((unit) => unit.level === current.level) : [];
   const level = current ? levelProgress(course, states, current.level, marks) : null;
+  // The path has moved on to a higher level than the learner's setting (the
+  // header and practice activities): move the setting up with it.
+  if (current && LEVELS.indexOf(current.level as Level) > LEVELS.indexOf(user.currentLevel as Level)) {
+    // The header was rendered alongside this page; it shows the new level from the next page on.
+    await prisma.user.update({ where: { id: user.id }, data: { currentLevel: current.level } });
+  }
+
+  // Levels already finished before this one: a line to their certificates.
+  const finishedBefore = current
+    ? [...new Set(course.units.slice(0, current.index).map((unit) => unit.level))].filter(
+        (earlier) => earlier !== current.level && levelProgress(course, states, earlier, marks).complete,
+      )
+    : [];
 
   // The home screen shows the biggest group's week, top five.
   const groups = await groupsFor(user.id);
@@ -196,6 +209,15 @@ export default async function LearnPage() {
           </Link>
 
           <Panel title={`Your path · ${languageName} ${current.level.toUpperCase()}`}>
+            {finishedBefore.length > 0 ? (
+              <p className="mb-2 text-xs">
+                {finishedBefore.map((earlier) => (
+                  <Link key={earlier} href={`/learn/level/certificate?level=${earlier}`} className="mr-3">
+                    ★ {earlier.toUpperCase()} complete · certificate
+                  </Link>
+                ))}
+              </p>
+            ) : null}
             {level ? (
               <p className="mb-4 flex flex-wrap items-baseline justify-between gap-2 text-sm">
                 <span>

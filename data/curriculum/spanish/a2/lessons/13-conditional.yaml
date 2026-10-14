@@ -1,0 +1,192 @@
+title: "¿Podría ayudarme?"
+subtitle: "The conditional: *podría, me gustaría, deberías*"
+goal: make polite requests with *¿podría…?* and *¿le importaría…?*, say what you'd like with *me gustaría*, and give advice with *deberías*
+minutes: 14
+
+sections:
+  - heading: "Would: -ía on the infinitive"
+    body: |
+      The *conditional* means "would": *hablaría* — I would speak.
+
+      Build it like the future: take the **whole infinitive** and add the
+      endings. The endings are the **-ía** endings you know from the
+      imperfect of -er verbs.
+
+      You already know one: **me gustaría** (I'd like) is the conditional
+      of *gustar*.
+    table:
+      columns: [who, ending, hablar, vivir]
+      rows:
+        - [yo, "-ía", hablaría, viviría]
+        - [tú, "-ías", hablarías, vivirías]
+        - [él / ella / usted, "-ía", hablaría, viviría]
+        - [nosotros / nosotras, "-íamos", hablaríamos, viviríamos]
+        - [vosotros / vosotras (Spain), "-íais", hablaríais, viviríais]
+        - [ellos / ellas / ustedes, "-ían", hablarían, vivirían]
+    tip: "Don't mix it up with the imperfect: *comía* is \"I used to eat\", *comería* is \"I would eat\". The conditional keeps the whole infinitive."
+
+  - heading: Same stems as the future
+    body: |
+      The verbs with irregular stems in the future use the same stems in
+      the conditional, with the -ía endings. Learn the stems once and you
+      get two tenses.
+
+      The one you'll use most is **podría**, from *poder* — "could".
+    table:
+      columns: [verb, future, conditional]
+      rows:
+        - [poder, podré, podría]
+        - [tener, tendré, tendría]
+        - [hacer, haré, haría]
+        - [salir, saldré, saldría]
+        - [venir, vendré, vendría]
+        - [decir, diré, diría]
+    examples:
+      - ["¿Qué harías tú?", "What would you do?"]
+      - ["Yo no diría eso.", "I wouldn't say that."]
+      - ["¿Tendrías tiempo mañana?", "Would you have time tomorrow?"]
+
+  - heading: Polite requests
+    body: |
+      *¿Puede…?* (can you…?) is fine, but **¿podría…?** (could you…?) is
+      softer — perfect with strangers, in hotels and in shops. To a
+      friend: **¿podrías…?**
+
+      **¿Le importaría…?** means "would you mind…?". *Importar* works like
+      *gustar*, so to a friend it's *¿Te importaría…?*
+
+      Object words often join the infinitive: *¿Podría ayudarme?*
+    examples:
+      - ["¿Podría traerme la cuenta, por favor?", "Could you bring me the bill, please?"]
+      - ["¿Me podría decir dónde está la estación?", "Could you tell me where the station is?"]
+      - ["¿Le importaría hablar más despacio?", "Would you mind speaking more slowly?"]
+      - ["¿Podrías cerrar la ventana?", "Could you close the window?"]
+    tip: "In a hotel or a shop, *¿Podría…?* with *por favor* is always safe. *Quiero…* can sound bossy."
+
+  - heading: Wishes and advice
+    body: |
+      - **me gustaría** + infinitive — I'd like to
+      - **me encantaría** — I'd love to
+      - **preferiría** — I'd rather, I'd prefer
+      - **deberías** + infinitive — you should
+      - **yo que tú** — if I were you
+
+      *Deber* means "must" or "should". The conditional, *deberías*, is
+      the friendly way to give advice.
+    examples:
+      - ["Me gustaría ir a la playa.", "I'd like to go to the beach."]
+      - ["Estás cansado. Deberías descansar.", "You're tired. You should rest."]
+      - ["Yo que tú, iría al médico.", "If I were you, I'd go to the doctor."]
+      - ["—¿Vamos al cine? —Preferiría quedarme en casa.", "—Shall we go to the movies? —I'd rather stay home."]
+
+words:
+  - [podría, "could (polite)"]
+  - [importar, "to matter, to mind"]
+  - [deber, "must, should"]
+  - [yo que tú, if I were you]
+  - [traer, to bring]
+  - [cerrar, to close]
+  - [habitación, room]
+  - [toalla, towel]
+  - [llave, key]
+  - [recepción, reception]
+  - [aire acondicionado, air conditioning]
+  - [cambiar, to change]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Me ___ viajar a Japón."
+    hint: gustar — would
+    translation: I'd like to travel to Japan.
+    answers: [gustaría]
+    why: Me gustaría is the conditional of gustar — "I would like".
+
+  - type: fill
+    section: 1
+    prompt: "Yo ___ con ella."
+    hint: hablar — would
+    translation: I would talk to her.
+    answers: [hablaría]
+    why: The conditional adds -ía to the whole infinitive.
+
+  - type: choice
+    section: 1
+    prompt: Which one means "I would eat"?
+    options: [comería, comía, comeré]
+    answer: comería
+    why: The conditional keeps the whole infinitive, comer-, and adds -ía.
+
+  - type: fill
+    section: 2
+    prompt: "¿___ tiempo mañana?"
+    hint: tener, tú — would
+    translation: Would you have time tomorrow?
+    answers: [Tendrías]
+    why: Tener uses the stem tendr- in the conditional, just like in the future.
+
+  - type: translate
+    section: 2
+    direction: to-english
+    prompt: "¿Qué harías tú?"
+    answers: [What would you do?]
+    why: Harías is the conditional of hacer, with the stem har-.
+
+  - type: fill
+    section: 2
+    prompt: "Yo no ___ eso."
+    hint: decir — would
+    translation: I wouldn't say that.
+    answers: [diría]
+    why: Decir uses the stem dir- in the conditional.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: Could you bring me the bill? (politely, to a waiter)
+    answers: ["¿Podría traerme la cuenta?", "¿Me podría traer la cuenta?", "¿Podría usted traerme la cuenta?", "¿Me podría usted traer la cuenta?"]
+    why: ¿Podría…? is the polite "could you…?", and me goes in front of podría or joins traer.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: Could you close the window? (to a friend)
+    answers: ["¿Podrías cerrar la ventana?", "¿Me podrías cerrar la ventana?", "¿Podrías cerrarme la ventana?", "¿Puedes cerrar la ventana?"]
+    why: To a friend, use the tú form, podrías.
+
+  - type: choice
+    section: 3
+    prompt: "*¿Le importaría hablar más despacio?* means…"
+    options: [Would you mind speaking more slowly?, Does it matter if you speak slowly?, Would you like to speak slowly?]
+    answer: Would you mind speaking more slowly?
+    why: ¿Le importaría…? means "would you mind…?".
+
+  - type: fill
+    section: 3
+    prompt: "¿Me ___ decir dónde está la recepción?"
+    hint: poder, usted — would
+    translation: Could you tell me where reception is?
+    answers: [podría]
+    why: Podría is the polite "could you" for usted.
+
+  - type: fill
+    section: 4
+    prompt: "Estás cansado. ___ descansar."
+    hint: deber, tú — would
+    translation: You're tired. You should rest.
+    answers: [Deberías]
+    why: Deberías is the friendly way to say "you should".
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: I'd like to go to the beach.
+    answers: [Me gustaría ir a la playa, A mí me gustaría ir a la playa, Quisiera ir a la playa, Me encantaría ir a la playa]
+    why: Me gustaría + infinitive means "I'd like to".
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Yo que tú, iría al médico.
+    answers: [If I were you I would go to the doctor, If I was you I would go to the doctor, If I were you I would see a doctor, If I were you I would go to the doctors, I would go to the doctor if I were you]
+    why: Yo que tú means "if I were you", and iría is the conditional of ir.

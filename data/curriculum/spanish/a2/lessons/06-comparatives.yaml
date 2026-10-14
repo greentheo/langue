@@ -1,0 +1,200 @@
+title: "Más rápido que el autobús"
+subtitle: Comparing things
+goal: compare people, places and things with *más… que*, *tan… como*, *mejor* and *peor*, and say which one is the best, the biggest or really, really good
+minutes: 15
+
+sections:
+  - heading: "More and less: más… que"
+    body: |
+      To compare two things, put **más** (more) or **menos** (less) in
+      front of the adjective, and **que** (than) after it. The adjective
+      still matches the noun it describes.
+
+      Spanish has no "-er" ending: "taller" is **más alto**, "cheaper" is
+      **más barato** or **menos caro**.
+    examples:
+      - ["El tren es más rápido que el autobús.", "The train is faster than the bus."]
+      - ["Mi hermana es más alta que yo.", "My sister is taller than me."]
+      - ["Este hotel es menos caro que el otro.", "This hotel is less expensive than the other one."]
+      - ["Tengo más tiempo que tú.", "I have more time than you."]
+    tip: "\"Than\" is *que* — but before a number it's *de*: *más de cien personas* (more than a hundred people)."
+
+  - heading: "As … as: tan… como"
+    body: |
+      To say two things are the same, use **tan** + adjective + **como**:
+      *tan alto como* means "as tall as".
+
+      With **no** in front, it means "not as … as": *no es tan caro
+      como…* — it isn't as expensive as…
+    examples:
+      - ["Mi hermano es tan alto como mi padre.", "My brother is as tall as my father."]
+      - ["El autobús no es tan rápido como el tren.", "The bus isn't as fast as the train."]
+      - ["Mi ciudad no es tan grande como Madrid.", "My city isn't as big as Madrid."]
+    tip: "Don't mix the pairs up: it's *más… que* but *tan… como*. Never *tan… que* for \"as … as\"."
+
+  - heading: "Better, worse, older, younger"
+    body: |
+      Four common comparisons have their own words:
+
+      - **mejor** — better (not *más bueno*)
+      - **peor** — worse (not *más malo*)
+      - **mayor** — older (for people)
+      - **menor** — younger
+
+      They don't change for male or female, only for plural: *mejores,
+      peores, mayores, menores*.
+    examples:
+      - ["Este restaurante es mejor que el otro.", "This restaurant is better than the other one."]
+      - ["Mi español es peor que tu inglés.", "My Spanish is worse than your English."]
+      - ["Mi hermana es mayor que yo.", "My sister is older than me."]
+      - ["Tengo dos hermanos menores.", "I have two younger brothers."]
+
+  - heading: "The best, the most: el más… de"
+    body: |
+      To say "the most …" or "the …-est", use **el, la, los** or **las** +
+      **más** + adjective. "The best" is just **el mejor** or **la mejor**.
+
+      After a superlative, "in" is **de**: *el más alto de la clase* — the
+      tallest in the class.
+    examples:
+      - ["Es el museo más famoso de la ciudad.", "It's the most famous museum in the city."]
+      - ["Ana es la más alta de la clase.", "Ana is the tallest in the class."]
+      - ["Es el mejor restaurante de Lima.", "It's the best restaurant in Lima."]
+    tip: "With a noun, *más* + adjective goes after it: *el museo más famoso*. But *mejor* and *peor* go before it: *el mejor restaurante*."
+
+  - heading: "Really, really: -ísimo"
+    body: |
+      To say "really" or "extremely", drop the last vowel and add
+      **-ísimo** (or *-ísima, -ísimos, -ísimas* to match the noun). If the
+      word ends in a consonant, just add it.
+
+      - *caro* → **carísimo** — really expensive
+      - *bueno* → **buenísimo** — really good
+      - *fácil* → **facilísimo** — super easy
+      - *mucho* → **muchísimo** — very, very much
+
+      Watch the spelling: *rico* → **riquísimo**, to keep the k sound.
+    examples:
+      - ["La comida está buenísima.", "The food is really good."]
+      - ["Este hotel es carísimo.", "This hotel is really expensive."]
+      - ["¡Muchísimas gracias!", "Thank you so much!"]
+
+words:
+  - [más, more]
+  - [menos, less]
+  - [que, than]
+  - [tan… como, as… as]
+  - [mejor, better]
+  - [peor, worse]
+  - [mayor, older]
+  - [menor, younger]
+  - [caro, expensive]
+  - [barato, cheap]
+  - [rápido, "fast, quick"]
+  - [lento, slow]
+  - [famoso, famous]
+  - [autobús, bus]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "El tren es ___ rápido que el autobús."
+    hint: more
+    translation: The train is faster than the bus.
+    answers: [más]
+    why: Más + adjective + que means "more … than", or "-er than".
+
+  - type: translate
+    section: 1
+    direction: to-target
+    prompt: My sister is taller than me.
+    answers: [Mi hermana es más alta que yo]
+    why: Más alta que means "taller than", and alta matches hermana.
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: El autobús es más barato que el tren.
+    answers: [The bus is cheaper than the train, The bus is less expensive than the train]
+    why: Más barato que means "cheaper than".
+
+  - type: fill
+    section: 2
+    prompt: "Mi hermano es tan alto ___ mi padre."
+    hint: as
+    translation: My brother is as tall as my father.
+    answers: [como]
+    why: "\"As … as\" is tan … como."
+
+  - type: choice
+    section: 2
+    prompt: "The bus isn't as fast as the train:"
+    options: [El autobús no es tan rápido como el tren., El autobús no es tan rápido que el tren., El autobús no es más rápido como el tren.]
+    answer: El autobús no es tan rápido como el tren.
+    why: "\"Not as … as\" is no es tan … como."
+
+  - type: fill
+    section: 3
+    prompt: "Este restaurante es ___ que el otro."
+    hint: better
+    translation: This restaurant is better than the other one.
+    answers: [mejor]
+    why: "\"Better\" is mejor — Spanish doesn't say más bueno for quality."
+
+  - type: choice
+    section: 3
+    prompt: "My brother is older than me:"
+    options: [Mi hermano es mayor que yo., Mi hermano es menor que yo., Mi hermano es mejor que yo.]
+    answer: Mi hermano es mayor que yo.
+    why: Mayor means "older" when you talk about people.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: Tengo dos hermanas menores.
+    answers: [I have two younger sisters, I have two little sisters]
+    why: Menor means "younger", and it adds -es in the plural.
+
+  - type: fill
+    section: 4
+    prompt: "Es el museo ___ famoso de la ciudad."
+    hint: most
+    translation: It's the most famous museum in the city.
+    answers: [más]
+    why: Noun + más + adjective means "the most …".
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: It's the best restaurant in the city.
+    answers: [Es el mejor restaurante de la ciudad]
+    why: "\"The best\" is el mejor, before the noun, and \"in\" is de after a superlative."
+
+  - type: choice
+    section: 4
+    prompt: the tallest girl in the class
+    options: [la chica más alta de la clase, la chica alta más de la clase, la más chica alta de la clase]
+    answer: la chica más alta de la clase
+    why: Más + adjective comes after the noun, and "in" is de after a superlative.
+
+  - type: fill
+    section: 5
+    prompt: "La comida está ___."
+    hint: really good
+    translation: The food is really good.
+    answers: [buenísima, riquísima]
+    why: -ísimo means "really", and it ends in -a to match comida.
+
+  - type: choice
+    section: 5
+    prompt: "*Carísimo* means…"
+    options: [really expensive, a bit expensive, not expensive]
+    answer: really expensive
+    why: The -ísimo ending makes an adjective much stronger.
+
+  - type: translate
+    section: 5
+    direction: to-target
+    prompt: Thank you very, very much!
+    answers: [Muchísimas gracias]
+    why: Muchísimas is mucho made stronger with -ísimo, and it matches gracias.

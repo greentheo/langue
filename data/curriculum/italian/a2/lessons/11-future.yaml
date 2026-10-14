@@ -1,0 +1,256 @@
+title: "Domani andrò"
+subtitle: The future tense — I will go, it will rain
+goal: talk about plans, predictions and promises with the future tense, and use it to make a guess about now
+minutes: 15
+
+sections:
+  - heading: "Will: the future tense"
+    body: |
+      For plans and predictions — "I'll go", "it will rain" — Italian has
+      the **futuro semplice**, one word instead of English "will + verb".
+
+      Take the infinitive, drop the final **-e**, and add **-ò, -ai, -à,
+      -emo, -ete, -anno**. For -are verbs, the **a** of the infinitive also
+      changes to **e**: *parlare → parlerò*.
+    table:
+      columns: [person, parlare, prendere, partire]
+      rows:
+        - [io, parlerò, prenderò, partirò]
+        - [tu, parlerai, prenderai, partirai]
+        - [lui / lei / Lei, parlerà, prenderà, partirà]
+        - [noi, parleremo, prenderemo, partiremo]
+        - [voi, parlerete, prenderete, partirete]
+        - [loro, parleranno, prenderanno, partiranno]
+    examples:
+      - ["Domani partirò presto.", "I'll leave early tomorrow."]
+      - ["Quest'estate visiteremo Firenze.", "This summer we'll visit Florence."]
+      - ["Prenderete il treno?", "Will you (all) take the train?"]
+    tip: "The accents matter: *parlerò* (I will speak) and *parlerà* (she will speak) are stressed on the last syllable. Without the accent the word is wrong."
+
+  - heading: Irregular futures
+    body: |
+      Some common verbs shorten the infinitive before the endings, and
+      *venire* and *volere* get a double **r**. The endings themselves never
+      change.
+
+      Two spelling rules keep the sound the same:
+
+      - **-care / -gare** add an **h**: *giocare → giocherò*, *pagare → pagherò*
+      - **-ciare / -giare** drop the **i**: *cominciare → comincerò*, *mangiare → mangerò*
+
+      *Fare*, *stare* and *dare* keep their **a**: *farò*, *starò*, *darò*.
+    table:
+      columns: [infinitive, io, lui / lei]
+      rows:
+        - [essere, sarò, sarà]
+        - [avere, avrò, avrà]
+        - [andare, andrò, andrà]
+        - [potere, potrò, potrà]
+        - [dovere, dovrò, dovrà]
+        - [vedere, vedrò, vedrà]
+        - [venire, verrò, verrà]
+        - [volere, vorrò, vorrà]
+    examples:
+      - ["Domani sarà una bella giornata.", "Tomorrow will be a nice day."]
+      - ["Verrai alla festa?", "Will you come to the party?"]
+      - ["Farò i compiti dopo cena.", "I'll do my homework after dinner."]
+    tip: "*Vorrò* (I will want) is not *vorrei* (I would like). In a shop or café, you want *vorrei*."
+
+  - heading: Plans, predictions and promises
+    body: |
+      Use the future for:
+
+      - **plans**, especially further away: *L'anno prossimo andrò in Italia.*
+      - **predictions**, like *le previsioni del tempo* (the weather forecast): *Domani pioverà.*
+      - **promises**: *Ti scriverò ogni giorno.*
+
+      For near, certain plans, Italians often just use the **present**, as
+      you have since A1: *Domani vado al mare.* Both are correct.
+
+      Time words: **prossimo** (next) — *la settimana prossima*; **tra**
+      (in) — *tra due giorni*, in two days.
+    examples:
+      - ["Tra una settimana saremo in vacanza.", "In a week we'll be on holiday."]
+      - ["Domani nevicherà in montagna.", "Tomorrow it will snow in the mountains."]
+      - ["Se pioverà, resteremo a casa.", "If it rains, we'll stay at home."]
+      - ["Ti chiamerò quando arriverò.", "I'll call you when I arrive."]
+    tip: "After *quando* (when) and *se* (if) about the future, Italian often uses the future where English uses the present: *quando arriverò* is literally \"when I will arrive\". The present is common too."
+
+  - heading: "Guessing: it'll probably be…"
+    body: |
+      The future also makes a **guess** about now — something that's
+      probably true:
+
+      - *Dov'è Marco? — Sarà a casa.* — He's probably at home.
+      - *Che ore sono? — Saranno le tre.* — It must be about three.
+      - *Quanti anni ha? — Avrà quindici anni.* — She must be about fifteen.
+
+      It means the same as **probabilmente** (probably) + the present:
+      *Sarà a casa* = *Probabilmente è a casa*.
+    examples:
+      - ["Giulia non risponde. Sarà stanca.", "Giulia isn't answering. She's probably tired."]
+      - ["Il fratello di Giulia avrà sedici anni.", "Giulia's brother must be about sixteen."]
+    tip: "*Sarà* can mean \"it will be\" or \"it's probably\". The situation tells you which: is it about later, or about now?"
+
+words:
+  - [prossimo, next]
+  - [tra, "in (time from now)"]
+  - [se, if]
+  - [giornata, "day (the whole day)"]
+  - [previsioni del tempo, weather forecast]
+  - [nevicare, to snow]
+  - [montagna, "mountain (in montagna — in the mountains)"]
+  - [pagare, to pay]
+  - [cominciare, "to start, to begin"]
+  - [probabilmente, probably]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Domani ___ presto."
+    hint: partire, io
+    translation: I'll leave early tomorrow.
+    answers: [partirò]
+    why: Drop the -e of partire and add -ò.
+    strict_accents: true
+
+  - type: fill
+    section: 1
+    prompt: "Quest'estate noi ___ Firenze."
+    hint: visitare
+    translation: This summer we'll visit Florence.
+    answers: [visiteremo]
+    why: For -are verbs the a becomes e, then add -emo — visiteremo.
+
+  - type: translate
+    section: 1
+    direction: to-target
+    prompt: They'll take the train.
+    answers:
+      - Prenderanno il treno.
+      - Loro prenderanno il treno.
+    why: Prendere drops its -e and adds -anno for loro.
+
+  - type: choice
+    section: 1
+    prompt: Which is the tu form of *parlare* in the future?
+    options: [parlarai, parlerai, parlerei]
+    answer: parlerai
+    why: The a of -are becomes e, and tu takes -ai.
+
+  - type: fill
+    section: 2
+    prompt: "Domani ___ una bella giornata."
+    hint: essere
+    translation: Tomorrow will be a nice day.
+    answers: [sarà]
+    why: Essere has the irregular future sarò, sarai, sarà…
+
+  - type: fill
+    section: 2
+    prompt: "___ i compiti dopo cena."
+    hint: fare, io
+    translation: I'll do my homework after dinner.
+    answers: [farò]
+    why: Fare keeps its a in the future — farò.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: Will you come to the party? (to a friend)
+    answers:
+      - Verrai alla festa?
+      - Tu verrai alla festa?
+      - Vieni alla festa?
+      - Tu vieni alla festa?
+    why: Venire has the irregular future verrò, verrai, verrà…
+
+  - type: translate
+    section: 2
+    direction: to-english
+    prompt: Non potrò venire.
+    answers:
+      - I won't be able to come.
+      - I will not be able to come.
+      - I'm not going to be able to come.
+      - I can't come.
+    why: Potrò is the irregular future of potere — "I will be able".
+
+  - type: choice
+    section: 2
+    prompt: Which means "I will go"?
+    options: [anderò, andrò, andarò]
+    answer: andrò
+    why: Andare shortens to andr- in the future.
+
+  - type: fill
+    section: 3
+    prompt: "Domani ___ in montagna."
+    hint: nevicare
+    translation: Tomorrow it will snow in the mountains.
+    answers: [nevicherà]
+    why: Verbs in -care add an h to keep the hard sound — nevicherà.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: I'll call you when I arrive. (to a friend)
+    answers:
+      - Ti chiamerò quando arriverò.
+      - Quando arriverò ti chiamerò.
+      - Ti telefonerò quando arriverò.
+      - Ti chiamerò quando arrivo.
+      - Ti chiamo quando arrivo.
+      - Quando arrivo ti chiamo.
+      - Quando arrivo ti chiamerò.
+      - Ti telefono quando arrivo.
+      - Ti telefonerò quando arrivo.
+      - Quando arriverò ti telefonerò.
+      - Quando arrivo ti telefono.
+    why: After quando, Italian often uses the future where English uses the present — though the present is fine too.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: Tra una settimana saremo in vacanza.
+    answers:
+      - In a week we'll be on holiday.
+      - In a week we'll be on vacation.
+      - In one week we'll be on holiday.
+      - We'll be on holiday in a week.
+      - We'll be on vacation in a week.
+    why: Tra + a time means "in" — how long from now.
+
+  - type: fill
+    section: 4
+    prompt: "Dov'è Marco? ___ a casa."
+    hint: essere
+    translation: Where's Marco? He's probably at home.
+    answers: [sarà]
+    why: The future can make a guess about now — sarà means "he's probably".
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Avrà quindici anni. (guessing someone's age)
+    answers:
+      - She must be about fifteen.
+      - He must be about fifteen.
+      - She must be fifteen.
+      - He must be fifteen.
+      - She's probably fifteen.
+      - He's probably fifteen.
+      - She must be about 15.
+      - He must be about 15.
+      - She's probably about fifteen.
+      - He's probably about fifteen.
+      - She's about fifteen.
+      - He's about fifteen.
+    why: Here the future is a guess about now, not about later.
+
+  - type: choice
+    section: 4
+    prompt: "*Che ore sono? — Saranno le tre.* What does the answer mean?"
+    options: [It will be three o'clock., It's probably about three., It was three o'clock.]
+    answer: It's probably about three.
+    why: The future can make a guess about the present.

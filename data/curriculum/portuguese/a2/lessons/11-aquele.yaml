@@ -1,0 +1,190 @@
+title: "Naquele dia"
+subtitle: Aquele, aquela and their contractions
+goal: point to things far away with aquele, join it with em, de and a, and talk about "back then"
+minutes: 12
+
+sections:
+  - heading: That one, over there
+    body: |
+      In A1 you met *este* (this) and *esse* (that). For something **far
+      from both of you** — over there — use **aquele**. Like the others,
+      it agrees with its noun.
+
+      When there's no noun after it, use **aquilo**, like *isto* and
+      *isso*: *O que é aquilo?* — What's that (over there)?
+    table:
+      columns: ["", masculine, feminine]
+      rows:
+        - [singular, aquele, aquela]
+        - [plural, aqueles, aquelas]
+    examples:
+      - ["Aquele prédio é o hotel.", "That building is the hotel."]
+      - ["Quem é aquela mulher?", "Who's that woman?"]
+      - ["O que é aquilo?", "What's that?"]
+    tip: "Three distances: *este* (near me), *esse* (near you), *aquele* (far from both). In speech *esse* often covers the first two — but *aquele* stays for far away."
+
+  - heading: Naquele, daquele, àquele
+    body: |
+      Like *o* and *a* in A1 lesson 15, *aquele* joins with **em**, **de**
+      and **a**.
+
+      The same happens with *este* and *esse*: *neste, nesse, deste,
+      desse* — *Moro nessa rua.* — I live on that street.
+
+      *Àquele* (to that) is mostly written. In speech Brazilians say *pra
+      aquele*.
+    table:
+      columns: ["", aquele, aquela, aquilo]
+      rows:
+        - [em +, naquele, naquela, naquilo]
+        - [de +, daquele, daquela, daquilo]
+        - [a +, àquele, àquela, àquilo]
+    examples:
+      - ["Eu morava naquela casa.", "I used to live in that house."]
+      - ["Gosto daquele restaurante.", "I like that restaurant."]
+      - ["Você já foi àquele museu?", "Have you been to that museum?"]
+    tip: "*Gostar de* + *aquele* always joins: *Gosto daquela música*, never *gosto de aquela música*."
+
+  - heading: Back then
+    body: |
+      **Aquele** also points to time that is far away — the past. These
+      phrases go perfectly with the past tenses:
+
+      - **naquele dia** — that day
+      - **naquela época** — back then, at that time
+      - **naquele tempo** — in those days
+      - **naquela noite** — that night
+    examples:
+      - ["Naquele dia choveu muito.", "It rained a lot that day."]
+      - ["Naquela época a gente não tinha celular.", "Back then we didn't have mobile phones."]
+      - ["Naquela noite a gente não dormiu.", "That night we didn't sleep."]
+
+  - heading: Aqui, aí, ali, lá
+    body: |
+      The words for places follow the same three distances:
+
+      - **aqui** — here, near me (like *este*)
+      - **aí** — there, near you (like *esse*): *Como está o tempo aí?*
+        — How's the weather where you are?
+      - **ali** — over there, where we can both see it
+      - **lá** — there, further away, often out of sight
+
+      *Ali* and *lá* go with *aquele*.
+    examples:
+      - ["Aquela padaria ali é muito boa.", "That bakery over there is really good."]
+      - ["— Você conhece Manaus? — Conheço, morei lá.", "— Have you been to Manaus? — Yes, I lived there."]
+      - ["Como está o tempo aí?", "How's the weather there?"]
+
+words:
+  - [aquele, that (over there)]
+  - [aquilo, that thing (over there)]
+  - [prédio, building]
+  - [naquele dia, that day]
+  - [naquela época, back then]
+  - [época, time / period]
+  - [aí, there (near you)]
+  - [ali, over there]
+  - [lá, there (far away)]
+  - [padaria, bakery]
+  - [o tempo, the weather]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Quem é ___ mulher?"
+    hint: that, over there
+    translation: Who's that woman?
+    answers: [aquela]
+    why: Mulher is feminine, so "that (over there)" is aquela.
+
+  - type: choice
+    section: 1
+    prompt: "\"What's that (over there)?\""
+    options: [O que é aquilo?, O que é aquele?, O que é aquela?]
+    answer: O que é aquilo?
+    why: With no noun after it, use aquilo.
+
+  - type: translate
+    section: 1
+    direction: to-target
+    prompt: That building (over there) is the hotel.
+    answers: [Aquele prédio é o hotel., Aquele prédio ali é o hotel., Aquele prédio lá é o hotel.]
+    why: Prédio is masculine, so "that, over there" is aquele.
+
+  - type: fill
+    section: 2
+    prompt: "Eu morava ___ casa."
+    hint: em + aquela
+    translation: I used to live in that house.
+    answers: [naquela]
+    why: Em + aquela joins into naquela.
+
+  - type: fill
+    section: 2
+    prompt: "Gosto ___ restaurante."
+    hint: de + aquele
+    translation: I like that restaurant.
+    answers: [daquele]
+    why: Gostar takes de, and de + aquele joins into daquele.
+
+  - type: translate
+    section: 2
+    direction: to-english
+    prompt: Ela trabalha naquele prédio.
+    answers: [She works in that building., She works at that building.]
+    why: Naquele is em + aquele — in that.
+
+  - type: fill
+    section: 3
+    prompt: "___ dia choveu muito."
+    hint: em + aquele
+    translation: It rained a lot that day.
+    answers: [Naquele]
+    why: Naquele dia means "that day", a day in the past.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: Back then, we didn't have mobile phones.
+    answers:
+      - Naquela época a gente não tinha celular.
+      - Naquela época nós não tínhamos celular.
+      - Naquela época não tínhamos celular.
+      - Naquela época a gente não tinha celulares.
+      - Naquela época nós não tínhamos celulares.
+      - Naquela época não tínhamos celulares.
+      - Naquele tempo a gente não tinha celular.
+      - Naquele tempo nós não tínhamos celular.
+      - Naquele tempo não tínhamos celular.
+    why: Naquela época is "back then", and a past description takes the imperfeito.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: Naquele dia eu conheci a Ana.
+    answers: [That day I met Ana., On that day I met Ana., I met Ana that day., I met Ana on that day.]
+    why: Naquele dia is "that day", and conheci is "I met".
+
+  - type: choice
+    section: 4
+    prompt: "On the phone to a friend in another city: \"How's the weather there?\""
+    options: [Como está o tempo aí?, Como está o tempo aqui?, Como está o tempo ali?]
+    answer: Como está o tempo aí?
+    why: Aí is "there, where you are".
+
+  - type: fill
+    section: 4
+    prompt: "Conheço Manaus. Morei ___ dois anos."
+    hint: there, far away
+    translation: I've been to Manaus. I lived there for two years.
+    answers: [lá]
+    why: Lá is "there" for a place far away.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: "Aquele restaurante lá é caro."
+    answers:
+      - "That restaurant over there is expensive."
+      - "That restaurant there is expensive."
+    why: "Lá is \"there\", and it goes with aquele / aquela."

@@ -172,9 +172,20 @@ situations:
         note: "-o if you're male, -a if you're female."
 ```
 
-Use these situation ids so every language's phrasebook lines up:
-`greetings`, `meeting`, `understanding`, `cafe`, `shopping`,
-`getting-around`, `time`, `help`, `small-talk`.
+Use these situation ids so every language's phrasebook lines up.
+
+- **A1:** `greetings`, `meeting`, `understanding`, `cafe`, `shopping`,
+  `getting-around`, `time`, `help`, `small-talk`.
+- **A2:** `plans` (making arrangements, inviting, accepting, declining),
+  `travel` (tickets, platforms, delays, luggage), `hotel` (booking, checking
+  in, problems with the room), `restaurant` (booking, ordering, complaining
+  politely, paying), `clothes` (sizes, colours, trying on, returning),
+  `health` (pharmacy, doctor, describing symptoms), `home` (rooms, chores,
+  where things are, renting), `stories` (what you did, how it went, reacting
+  to news), `phone` (calls, messages, leaving a message).
+
+A phrase a level teaches is not repeated at a later level; the guided path
+skips it if it is.
 
 - `target`: every interchangeable form a learner might type (gender variants,
   with/without pronoun). The first is shown unless `display` overrides it.
@@ -182,6 +193,22 @@ Use these situation ids so every language's phrasebook lines up:
   built — this is where learners see the grammar before they study it.
 - `note`: register (formal/informal), when to use it, a common mistake.
 - A phrase appears in only one situation.
+
+## Vocabulary examples
+
+The guided path blanks words out of their vocabulary-library examples
+(`data/vocab_sources/<language>/<level>.psv`, the third column)
+for fill-in-the-blank, and shows the sixth column, the example in English,
+underneath. So an example sentence should:
+
+- contain the word **exactly as listed** (not a plural or another form), as a
+  separate word — and not straight after an apostrophe (*l'acqua*, *d'acqua*
+  can't be blanked out);
+- use only grammar the level teaches — present tense at A1 (no past tenses,
+  no *-ing* forms); past tenses arrive at A2;
+- be short (4–10 words) and everyday;
+- use the variety the course teaches: Brazilian Portuguese, neutral
+  Latin-American-friendly Spanish (*tomar el autobús*, never *coger*).
 
 ## Dialogues file
 

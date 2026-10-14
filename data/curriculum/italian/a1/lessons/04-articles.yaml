@@ -105,6 +105,28 @@ practice:
     answer: casa
     why: Nouns ending in -a are almost always feminine.
 
+  - type: choice
+    section: 1
+    prompt: "*La notte* — is *notte* masculine or feminine?"
+    options: [masculine, feminine]
+    answer: feminine
+    why: Nouns ending in -e can be either, so the article tells you — la is feminine.
+
+  - type: fill
+    section: 2
+    prompt: "chiave → ___"
+    hint: plural
+    translation: key → keys
+    answers: [chiavi]
+    why: Nouns ending in -e change the -e to -i in the plural.
+
+  - type: choice
+    section: 2
+    prompt: What is the plural of *amica*?
+    options: [amice, amiche, amici]
+    answer: amiche
+    why: Feminine -a becomes -e, and words in -ca add an h to keep the hard k sound.
+
   - type: fill
     section: 3
     prompt: "___ studente"

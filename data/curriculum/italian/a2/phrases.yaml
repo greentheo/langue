@@ -1,0 +1,408 @@
+situations:
+  - id: plans
+    title: Making plans
+    phrases:
+      - target: ["Che programmi hai per il fine settimana?", "Che programmi hai per il weekend?"]
+        english: ["What are your plans for the weekend?", "What are you doing this weekend?", "Any plans for the weekend?"]
+        note: Friendly. Politely, *Che programmi ha…?* Italians say *il weekend* too.
+        literally: what plans (do) you have for the weekend?
+
+      - target: ["Ti va di venire al cinema?"]
+        english: ["Do you want to come to the cinema?", "Do you fancy coming to the cinema?", "Would you like to come to the cinema?", "Do you want to come to the movies?"]
+        note: The easy way to invite a friend — put in any plan, *Ti va di fare un giro?* Politely, *Le va di…?*
+        literally: to you (does it) go of coming to the cinema?
+
+      - target: ["Che ne dici di andare al mare?", "Cosa ne dici di andare al mare?"]
+        english: ["How about going to the seaside?", "How about going to the beach?", "What about going to the seaside?", "Shall we go to the seaside?"]
+        note: Suggesting a plan to a friend. Politely, *Che ne dice di…?*
+        literally: what of it (do) you say, of going to the sea?
+
+      - target: ["Ci sto!"]
+        english: ["I'm in!", "Count me in!", "I'm up for it!"]
+        note: Friendly, and very common — a quick yes to a plan.
+        literally: there (I) stay
+
+      - target: ["Purtroppo non posso, ho già un impegno."]
+        english: ["Unfortunately I can't, I already have plans.", "Unfortunately I can't, I've already got plans.", "Sorry, I can't, I already have plans."]
+        note: A polite no that works with anyone.
+        literally: unfortunately not (I) can, (I) have already a commitment
+
+      - target: ["A che ora ci vediamo?"]
+        english: ["What time shall we meet?", "What time are we meeting?", "What time do we meet?"]
+        literally: at what hour (do) we see each other?
+
+      - target: ["Scusa, stasera non ce la faccio."]
+        english: ["Sorry, I can't make it tonight.", "Sorry, I can't make it this evening."]
+        note: For changing plans. *Farcela* means to manage, to make it. Politely, *Scusi*.
+        literally: sorry, this evening not (I) manage it
+
+      - target: ["Facciamo un'altra volta?"]
+        english: ["Shall we make it another time?", "Can we do it another time?", "Shall we do it another time?"]
+        literally: (shall we) do another time?
+
+      - target: ["Ti faccio sapere.", "Ti farò sapere."]
+        english: ["I'll let you know.", "I will let you know."]
+        note: Politely, *Le faccio sapere*. With the future, *Ti farò sapere*, it means the same.
+        literally: you (I) make know
+
+  - id: travel
+    title: Trains and travel
+    phrases:
+      - target: ["Il treno è in ritardo."]
+        english: ["The train is late.", "The train is delayed.", "The train is running late."]
+        note: "*In ritardo* is late for anything: *Sono in ritardo!* — I'm late! On time is *in orario*."
+        literally: the train is in delay
+
+      - target: ["Quanto ritardo ha?"]
+        english: ["How late is it?", "How long is the delay?", "How much is it delayed?", "How late is the train?"]
+        literally: how much delay (does it) have?
+
+      - target: ["Da quale binario parte il treno per Napoli?", "Da che binario parte il treno per Napoli?"]
+        english: ["Which platform does the train to Naples leave from?", "What platform does the train to Naples leave from?", "Which platform does the Naples train leave from?"]
+        literally: from which platform leaves the train for Naples?
+
+      - target: ["È questo il treno per Roma?", "Questo è il treno per Roma?"]
+        english: ["Is this the train to Rome?", "Is this the train for Rome?", "Is this the Rome train?"]
+        literally: is this the train for Rome?
+
+      - target: ["Il treno per Firenze è già partito?"]
+        english: ["Has the train to Florence already left?", "Has the Florence train left already?", "Has the train for Florence left yet?", "Has the train to Florence left yet?"]
+        note: Leaving and arriving take *essere* in the past — *è partito*, *è arrivato*.
+        literally: the train for Florence is already left?
+
+      - target: ["Ho perso la coincidenza."]
+        english: ["I've missed my connection.", "I missed my connection.", "I've missed the connection.", "I missed the connecting train."]
+        note: "*Perdere* is to lose — and also to miss a train, a bus or a flight."
+        literally: (I) have lost the connection
+
+      - target: ["Dove si timbra il biglietto?"]
+        english: ["Where do I validate the ticket?", "Where do you stamp the ticket?", "Where do I stamp my ticket?", "Where do you validate the ticket?"]
+        note: On buses and many regional trains you stamp a paper ticket in a little machine before you travel — or you can get a fine.
+        literally: where does one stamp the ticket?
+
+      - target: ["Questo posto è libero?", "È libero questo posto?"]
+        english: ["Is this seat free?", "Is this seat taken?", "Is anyone sitting here?"]
+        note: The answer is *Sì, prego* — or *No, è occupato*.
+        literally: this place is free?
+
+      - target: ["La mia valigia non è arrivata."]
+        english: ["My suitcase hasn't arrived.", "My suitcase didn't arrive.", "My luggage hasn't arrived."]
+        literally: the my suitcase not is arrived
+
+  - id: hotel
+    title: At the hotel
+    phrases:
+      - target: ["Ho una prenotazione a nome Smith.", "Ho una prenotazione a nome di Smith."]
+        english: ["I have a booking in the name of Smith.", "I have a reservation in the name of Smith.", "I've got a booking under Smith."]
+        note: Put your own surname in.
+        literally: (I) have a booking in name Smith
+
+      - target: ["Avete una camera libera per stanotte?"]
+        english: ["Do you have a room for tonight?", "Do you have a free room for tonight?", "Have you got a room for tonight?", "Do you have a room available tonight?"]
+        note: "*Stanotte* is tonight — the night itself. *Stasera* is this evening."
+        literally: (do you all) have a free room for tonight?
+
+      - target: ["La colazione è compresa?", "La colazione è inclusa?"]
+        english: ["Is breakfast included?", "Is breakfast included in the price?"]
+        literally: the breakfast is included?
+
+      - target: ["C'è un problema con la camera."]
+        english: ["There's a problem with the room.", "There's a problem with my room.", "There is a problem with the room."]
+        note: Then say what it is. *Camera* is a bedroom or a hotel room; *stanza* is any room.
+        literally: there is a problem with the room
+
+      - target: ["L'aria condizionata non funziona."]
+        english: ["The air conditioning isn't working.", "The air conditioning doesn't work.", "The AC isn't working."]
+        note: Change the start for anything broken — *La doccia non funziona*, *Il wifi non funziona*.
+        literally: the air conditioned not works
+
+      - target: ["Non c'è l'acqua calda.", "Non c'è acqua calda."]
+        english: ["There's no hot water.", "There isn't any hot water.", "There is no hot water."]
+        literally: not there is the water hot
+
+      - target: ["Potrei avere un altro asciugamano?"]
+        english: ["Could I have another towel?", "Can I have another towel?", "Could I get another towel?"]
+        note: "*Potrei* — I could — is the polite way to ask for things. You'll meet it properly with the conditional."
+        literally: (I) could have another towel?
+
+      - target: ["Posso cambiare camera?"]
+        english: ["Can I change rooms?", "Could I change rooms?", "Can I change room?", "Can I move to another room?"]
+        literally: (I) can change room?
+
+      - target: ["Quanto ci vuole per arrivare in centro?"]
+        english: ["How long does it take to get to the centre?", "How long does it take to get to the city centre?", "How long does it take to get to the center?", "How long does it take to get downtown?"]
+        note: "*Ci vuole* — it takes. Ask about anywhere: *Quanto ci vuole per arrivare alla stazione?*"
+        literally: how much (time) there wants, to arrive in centre?
+
+  - id: restaurant
+    title: Eating out
+    phrases:
+      - target: ["Vorrei prenotare un tavolo per stasera."]
+        english: ["I'd like to book a table for tonight.", "I'd like to book a table for this evening.", "I'd like to reserve a table for tonight.", "I would like to reserve a table for this evening."]
+        literally: (I) would like to book a table for this evening
+
+      - target: ["Siamo in quattro."]
+        english: ["There are four of us.", "We're a party of four.", "We are four."]
+        note: Put in your number — *Siamo in due*, there are two of us.
+        literally: (we) are in four
+
+      - target: ["Per me una margherita, per favore."]
+        english: ["A margherita for me, please.", "I'll have a margherita, please.", "For me a margherita, please."]
+        note: How you order your own dish when the waiter goes round the table. A *margherita* is the classic tomato and mozzarella pizza.
+        literally: for me a margherita, for favour
+
+      - target: ["Ci porta dell'acqua naturale, per favore?", "Ci porta dell'acqua naturale?"]
+        english: ["Could you bring us some still water, please?", "Can you bring us some still water, please?", "Could you bring us some still water?"]
+        note: "*Naturale* is still water, *frizzante* is sparkling."
+        literally: to us (you) bring some water natural, for favour?
+
+      - target: ["Ancora un po' di pane, per favore."]
+        english: ["A bit more bread, please.", "Some more bread, please.", "A little more bread, please."]
+        literally: still a bit of bread, for favour
+
+      - target: ["Sono allergico al latte.", "Sono allergica al latte."]
+        display: Sono allergico / allergica al latte.
+        english: ["I'm allergic to milk.", "I'm allergic to dairy."]
+        note: "*Allergico* if you're male, *allergica* if you're female. Put in your allergy — *alle uova* (eggs), *al pesce* (fish)."
+        literally: (I) am allergic to-the milk
+
+      - target: ["Scusi, aspettiamo da mezz'ora."]
+        english: ["Excuse me, we've been waiting for half an hour.", "Excuse me, we've been waiting half an hour.", "Sorry, we've been waiting for half an hour."]
+        note: A polite complaint. Italian uses the present with *da* — "we wait since half an hour".
+        literally: excuse (me), (we) wait since half-hour
+
+      - target: ["Scusi, questo non è quello che ho ordinato.", "Scusi, non è quello che ho ordinato."]
+        english: ["Excuse me, this isn't what I ordered.", "Excuse me, this is not what I ordered.", "Sorry, this isn't what I ordered."]
+        literally: excuse (me), this not is that which (I) have ordered
+
+      - target: ["Possiamo pagare separatamente?"]
+        english: ["Can we pay separately?", "Could we pay separately?"]
+        note: Splitting the bill equally is *fare alla romana*.
+        literally: (we) can pay separately?
+
+  - id: clothes
+    title: Buying clothes
+    phrases:
+      - target: ["Che taglia porta?"]
+        english: ["What size are you?", "What size do you wear?", "What size do you take?"]
+        note: What the shop assistant asks you. To a friend, *Che taglia porti?*
+        literally: what size (do you) carry?
+
+      - target: ["Porto la 42.", "Porto la quarantadue."]
+        display: Porto la 42.
+        english: ["I'm a size 42.", "I wear a 42.", "I take a 42.", "I wear a size 42."]
+        note: Put in your own size. Italian sizes are not the same as American or British ones, so check the label.
+        literally: (I) carry the 42
+
+      - target: ["Avete una taglia più grande?"]
+        english: ["Do you have a bigger size?", "Do you have a larger size?", "Have you got a bigger size?", "Do you have it in a bigger size?"]
+        note: Smaller is *più piccola* — *taglia* is feminine.
+        literally: (do you all) have a size more big?
+
+      - target: ["Ce l'avete in nero?"]
+        english: ["Do you have it in black?", "Have you got it in black?", "Do you have this in black?"]
+        note: "*Ce l'avete?* — do you have it? — is what Italians really say in shops. Put in any colour."
+        literally: there it (do you all) have in black?
+
+      - target: ["Dove sono i camerini?"]
+        english: ["Where are the fitting rooms?", "Where are the changing rooms?", "Where's the fitting room?"]
+        literally: where are the fitting rooms?
+
+      - target: ["Mi sta stretto.", "Mi sta stretta."]
+        display: Mi sta stretto / stretta.
+        english: ["It's tight on me.", "It's too tight.", "It's tight."]
+        note: "*Stretto* for something masculine, like *il maglione*; *stretta* for something feminine, like *la gonna*. Too big: *Mi sta largo*."
+        literally: to me (it) stays tight
+
+      - target: ["Ti sta benissimo!"]
+        english: ["It looks great on you!", "It really suits you!", "It suits you really well!", "That looks great on you!"]
+        note: Friendly. A shop assistant says *Le sta benissimo!*
+        literally: to you (it) stays very well
+
+      - target: ["Posso cambiarlo?", "Lo posso cambiare?"]
+        english: ["Can I exchange it?", "Could I exchange it?", "Can I change it?"]
+        note: For something feminine, *Posso cambiarla?* Keep the receipt — *lo scontrino*.
+        literally: (I) can change-it?
+
+      - target: ["Vorrei restituire queste scarpe."]
+        english: ["I'd like to return these shoes.", "I would like to return these shoes.", "I want to return these shoes."]
+        note: To get your money back. Put in anything — *questa giacca*, *questi pantaloni*.
+        literally: (I) would like to give back these shoes
+
+  - id: health
+    title: Feeling ill
+    phrases:
+      - target: ["Ho mal di gola da lunedì."]
+        english: ["I've had a sore throat since Monday.", "I have had a sore throat since Monday."]
+        note: Italian uses the present with *da* — "I have a sore throat since Monday". Put in any day, or *da tre giorni*, for three days.
+        literally: (I) have pain of throat since Monday
+
+      - target: ["Ho la febbre."]
+        english: ["I have a temperature.", "I've got a temperature.", "I have a fever.", "I've got a fever."]
+        literally: (I) have the fever
+
+      - target: ["Ho la tosse e il raffreddore."]
+        english: ["I have a cough and a cold.", "I've got a cough and a cold."]
+        literally: (I) have the cough and the cold
+
+      - target: ["Mi sono fatto male al ginocchio.", "Mi sono fatta male al ginocchio."]
+        display: Mi sono fatto / fatta male al ginocchio.
+        english: ["I've hurt my knee.", "I hurt my knee."]
+        note: "*Fatto* if you're male, *fatta* if you're female. Italian says \"the knee\", not \"my knee\"."
+        literally: myself (I) am done harm at-the knee
+
+      - target: ["Mi fa male qui."]
+        english: ["It hurts here.", "It hurts me here."]
+        note: Point to the place. For more than one thing, *Mi fanno male i piedi* — my feet hurt.
+        literally: to me (it) does bad here
+
+      - target: ["Ha qualcosa per il mal di testa?"]
+        english: ["Do you have something for a headache?", "Do you have anything for a headache?", "Have you got anything for a headache?"]
+        note: What to ask at the pharmacy. Put in any problem — *per la tosse*, *per il mal di gola*.
+        literally: (do you) have something for the pain of head?
+
+      - target: ["Quante volte al giorno devo prenderlo?", "Quante volte al giorno lo devo prendere?"]
+        english: ["How many times a day do I take it?", "How many times a day should I take it?", "How many times a day must I take it?", "How often do I take it?"]
+        literally: how many times at-the day (I) must take-it?
+
+      - target: ["Vorrei prendere un appuntamento."]
+        english: ["I'd like to make an appointment.", "I would like to book an appointment.", "I'd like an appointment."]
+        note: For the doctor, the dentist or the hairdresser.
+        literally: (I) would like to take an appointment
+
+      - target: ["Non è niente di grave."]
+        english: ["It's nothing serious.", "It is nothing serious.", "It's not serious."]
+        note: What you hope the doctor will say.
+        literally: not is nothing of serious
+
+  - id: home
+    title: At home
+    phrases:
+      - target: ["Fai come a casa tua!"]
+        english: ["Make yourself at home!"]
+        note: What a host says to a friend. Politely, *Faccia come a casa Sua!*
+        literally: do as at house yours
+
+      - target: ["Dove metto le mie cose?"]
+        english: ["Where shall I put my things?", "Where do I put my things?", "Where should I put my things?", "Where can I put my stuff?"]
+        literally: where (do I) put the my things?
+
+      - target: ["La tua camera è in fondo al corridoio."]
+        english: ["Your room is at the end of the corridor.", "Your room's at the end of the hallway.", "Your bedroom is at the end of the hall."]
+        literally: the your room is at bottom of-the corridor
+
+      - target: ["Ti do una mano?"]
+        english: ["Shall I give you a hand?", "Can I give you a hand?", "Do you want a hand?"]
+        note: Friendly. Politely, *Le do una mano?*
+        literally: to you (I) give a hand?
+
+      - target: ["Tocca a te!"]
+        english: ["It's your turn!", "Your turn!"]
+        note: For chores and for games. *Tocca a me* — it's my turn.
+        literally: (it) touches to you
+
+      - target: ["Apparecchio io la tavola."]
+        english: ["I'll set the table.", "I'll lay the table.", "I will set the table."]
+        note: "*Io* after the verb means \"I'll do it\": *Lavo io i piatti* — I'll do the washing-up."
+        literally: set I the table
+
+      - target: ["Che disordine!"]
+        english: ["What a mess!"]
+        literally: what disorder!
+
+      - target: ["Sto cercando un appartamento in affitto."]
+        english: ["I'm looking for a flat to rent.", "I'm looking for an apartment to rent.", "I am looking for a flat to rent."]
+        note: "*Sto cercando* — I'm looking for — is *stare* + -ando, for something going on right now."
+        literally: (I) am looking-for a flat in rent
+
+      - target: ["Quant'è l'affitto al mese?", "Quanto è l'affitto al mese?"]
+        english: ["How much is the rent a month?", "How much is the rent per month?", "What's the rent per month?"]
+        literally: how much is the rent at-the month?
+
+  - id: stories
+    title: What happened?
+    phrases:
+      - target: ["Com'è andato il fine settimana?", "Com'è andato il weekend?", "Come è andato il fine settimana?"]
+        english: ["How was your weekend?", "How was the weekend?", "How did the weekend go?"]
+        note: Friendly or polite — it works with anyone.
+        literally: how is (it) gone the weekend?
+
+      - target: ["Benissimo, siamo andati al mare.", "Benissimo, siamo andate al mare."]
+        english: ["Great, we went to the seaside.", "Great, we went to the beach.", "Really well, we went to the seaside.", "Very well, we went to the beach."]
+        note: "*Andate* if everyone who went is female. Put in any place — *in montagna*, *a Roma*."
+        literally: very well, (we) are gone to-the sea
+
+      - target: ["Cosa hai fatto di bello?", "Che cosa hai fatto di bello?", "Che hai fatto di bello?"]
+        english: ["Did you do anything nice?", "Did you do anything fun?", "What did you get up to?", "What nice things did you do?"]
+        note: "*Fatto* is the past of *fare*, to do — you'll meet it properly soon. Politely, *Cosa ha fatto di bello?*"
+        literally: what (have) you done of nice?
+
+      - target: ["Niente di speciale."]
+        english: ["Nothing special.", "Nothing much."]
+        literally: nothing of special
+
+      - target: ["Mi sono divertito un sacco!", "Mi sono divertita un sacco!"]
+        display: Mi sono divertito / divertita un sacco!
+        english: ["I had a great time!", "I had a lot of fun!", "I had loads of fun!", "I really enjoyed myself!"]
+        note: "*Divertito* if you're male, *divertita* if you're female. *Un sacco* — a sack — means a lot."
+        literally: myself (I) am amused a sack
+
+      - target: ["Cos'è successo?", "Cosa è successo?", "Che cosa è successo?", "Che è successo?"]
+        english: ["What happened?", "What's happened?", "What has happened?"]
+        literally: what is happened?
+
+      - target: ["Davvero? Racconta!"]
+        english: ["Really? Tell me!", "Really? Tell me about it!", "Really? Tell me all about it!"]
+        note: Friendly. Politely, *Davvero? Mi racconti!*
+        literally: truly? tell!
+
+      - target: ["Che bella notizia!"]
+        english: ["What great news!", "That's great news!", "What good news!", "What lovely news!"]
+        literally: what beautiful news!
+
+      - target: ["Non ci posso credere!"]
+        english: ["I can't believe it!"]
+        literally: not there (I) can believe
+
+  - id: phone
+    title: On the phone
+    phrases:
+      - target: ["Pronto?"]
+        english: ["Hello? (on the phone)", "Hello?"]
+        note: Only for answering the phone. *Pronto* also means ready.
+        literally: ready?
+
+      - target: ["Chi parla?"]
+        english: ["Who's speaking?", "Who's calling?", "Who is this?", "Who's this?"]
+        literally: who speaks?
+
+      - target: ["Vorrei parlare con la signora Rossi."]
+        english: ["I'd like to speak to Mrs Rossi.", "I would like to speak with Mrs Rossi.", "I'd like to speak to Mrs. Rossi."]
+        note: Put in any name — *con Marco*, *con il signor Bianchi*.
+        literally: (I) would like to speak with the lady Rossi
+
+      - target: ["Un attimo, per favore."]
+        english: ["Just a moment, please.", "One moment, please.", "Just a second, please.", "Hold on a moment, please."]
+        literally: a moment, for favour
+
+      - target: ["Posso lasciare un messaggio?"]
+        english: ["Can I leave a message?", "Could I leave a message?", "May I leave a message?"]
+        literally: (I) can leave a message?
+
+      - target: ["Ti richiamo più tardi."]
+        english: ["I'll call you back later.", "I'll ring you back later.", "I will call you back later."]
+        note: Politely, *La richiamo più tardi*. *Ri-* means again, or back.
+        literally: you (I) re-call more late
+
+      - target: ["Non ti sento bene."]
+        english: ["I can't hear you well.", "I can't hear you properly.", "I can't hear you very well."]
+        literally: not you (I) hear well
+
+      - target: ["È caduta la linea."]
+        english: ["We got cut off.", "We've been cut off.", "The line went dead.", "The call dropped."]
+        literally: (it) is fallen the line
+
+      - target: ["Mandami un messaggio!"]
+        english: ["Send me a message!", "Send me a text!", "Text me!"]
+        note: Telling a friend what to do, with *mi* stuck on the end. Politely, *Mi mandi un messaggio*.
+        literally: send-me a message!

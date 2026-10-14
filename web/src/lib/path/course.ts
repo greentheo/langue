@@ -10,7 +10,7 @@ import "server-only";
 
 import { getLesson, getLevelCurriculum } from "@/lib/curriculum";
 import type { Dialogue } from "@/lib/curriculum/types";
-import { normalizeAnswer, normalizeKeepingAccents } from "@/lib/engine/grade";
+import { normalizeAnswer, normalizeKeepingAccents, stripArticle } from "@/lib/engine/grade";
 import { getWords } from "@/lib/vocab";
 import { LEVELS } from "@/lib/vocab/types";
 import { blankOut, buildable, tilesOf } from "./sentences";
@@ -78,6 +78,39 @@ function plainText(text: string): string {
   return text.toLowerCase().replace(/[¡!¿?.,…:;"“”]/g, "").replace(/\s+/g, " ").trim();
 }
 
+/** What the course has taught so far, so nothing is taught twice. */
+class Taught {
+  private seen = new Map<string, { kind: "word" | "phrase"; meanings: Set<string> }[]>();
+
+  /** Each way of writing it, without an article: "le livre" and "livre" are one word. */
+  private keys(forms: string[]): string[] {
+    return [...new Set(forms.flatMap(typedForms).map((form) => stripArticle(plainText(form))))];
+  }
+
+  private meanings(english: string[]): Set<string> {
+    return new Set(meaningsOf(english).map((meaning) => stripArticle(normalizeAnswer(meaning))));
+  }
+
+  add(kind: "word" | "phrase", forms: string[], english: string[]): void {
+    const entry = { kind, meanings: this.meanings(english) };
+    for (const key of this.keys(forms)) this.seen.set(key, [...(this.seen.get(key) ?? []), entry]);
+  }
+
+  /**
+   * Already taught: the same word written the same way, or a phrase that says
+   * the same thing as a word ("Ciao!" after "ciao"). A phrase that only looks
+   * like a word — "Santé !" (cheers) after "santé" (health) — is new.
+   */
+  has(kind: "word" | "phrase", forms: string[], english: string[]): boolean {
+    const meanings = this.meanings(english);
+    return this.keys(forms).some((key) =>
+      (this.seen.get(key) ?? []).some(
+        (entry) => entry.kind === kind || [...meanings].some((meaning) => entry.meanings.has(meaning)),
+      ),
+    );
+  }
+}
+
 function batches<T>(items: T[], size: number): T[][] {
   const out: T[][] = [];
   for (let i = 0; i < items.length; i += size) out.push(items.slice(i, i + size));
@@ -120,8 +153,7 @@ function buildCourse(language: string): Course {
   const units: CourseUnit[] = [];
   const sentences = new Map<string, Sentence>();
   const scripts: { dialogue: Dialogue; unitIndex: number }[] = [];
-  /** Plain text of every word and phrase so far, so nothing is taught twice. */
-  const taught = new Set<string>();
+  const taught = new Taught();
 
   for (const level of LEVELS) {
     const curriculum = getLevelCurriculum(language, level);
@@ -139,7 +171,7 @@ function buildCourse(language: string): Course {
       const add = (item: Item) => {
         items.set(item.key, item);
         itemKeys.push(item.key);
-        if (item.kind !== "grammar") taught.add(plainText(item.target));
+        if (item.kind !== "grammar") taught.add(item.kind, [item.target, ...item.accepted], item.meanings);
       };
 
       // Lessons: each section is an idea, followed by the lesson's words it shows.
@@ -153,7 +185,7 @@ function buildCourse(language: string): Course {
 
         for (const [target, english] of lesson.words) {
           const key = wordKey(language, target);
-          if (items.has(key) || taught.has(plainText(target))) continue;
+          if (items.has(key) || taught.has("word", [target], [english])) continue;
           const shownIn = texts.findIndex((text) => typedForms(target).some((form) => mentions(text, form)));
           const word: WordItem = {
             kind: "word",
@@ -205,7 +237,7 @@ function buildCourse(language: string): Course {
         const situation = curriculum.situations.find((candidate) => candidate.id === situationId);
         if (!situation) continue;
         const phrases: PhraseItem[] = situation.phrases
-          .filter((phrase) => !taught.has(plainText(phrase.display)))
+          .filter((phrase) => !taught.has("phrase", [phrase.display, ...phrase.target], phrase.english))
           .map((phrase) => {
             const id = `s:p:${phrase.id}`;
             sentences.set(id, {
@@ -246,7 +278,7 @@ function buildCourse(language: string): Course {
           sentences.set(id, { id, target, english, group: entry.category, unitIndex });
         });
         const key = wordKey(language, entry.word);
-        if (items.has(key) || taught.has(plainText(entry.word)) || entry.translations.length === 0) {
+        if (items.has(key) || taught.has("word", [entry.word], entry.translations) || entry.translations.length === 0) {
           continue;
         }
         const word: WordItem = {
@@ -282,8 +314,9 @@ function buildCourse(language: string): Course {
     }
   }
 
+  const index = indexSentences(sentences);
   for (const item of items.values()) {
-    if (item.kind === "word") item.clozes = clozesFor(item, sentences);
+    if (item.kind === "word") item.clozes = clozesFor(item, index);
   }
   const dialogues = new Map<string, CourseDialogue>();
   for (const { dialogue, unitIndex } of scripts) {
@@ -314,20 +347,49 @@ function buildCourse(language: string): Course {
   return { language, units, items, sentences, dialogues };
 }
 
+interface IndexedSentence {
+  sentence: Sentence;
+  /** Its words, lower-case, for a quick look before the exact match. */
+  words: Set<string>;
+  lower: string;
+  plain: string;
+}
+
+/** Sentences long enough to blank a word out of, with their words looked up once. */
+function indexSentences(sentences: Map<string, Sentence>): IndexedSentence[] {
+  return [...sentences.values()].flatMap((sentence) => {
+    const tiles = tilesOf(sentence.target);
+    if (tiles.length < 3) return [];
+    return [
+      {
+        sentence,
+        words: new Set(tiles.map((tile) => tile.toLowerCase())),
+        lower: sentence.target.toLowerCase(),
+        plain: normalizeAnswer(sentence.target),
+      },
+    ];
+  });
+}
+
 /**
  * Sentences a word can be blanked out of: ones the learner can read by then
  * (from its unit or the next), not the word on its own, translated ones first.
  */
-function clozesFor(word: WordItem, sentences: Map<string, Sentence>): string[] {
+function clozesFor(word: WordItem, sentences: IndexedSentence[]): string[] {
   const own = normalizeAnswer(word.target);
-  return [...sentences.values()]
+  const forms = word.accepted.map((form) => form.trim().toLowerCase()).filter(Boolean);
+  // Cheap checks first; blankOut has the final say on word boundaries.
+  const mayContain = (entry: IndexedSentence) =>
+    forms.some((form) => (form.includes(" ") || form.includes("'") ? entry.lower.includes(form) : entry.words.has(form)));
+  return sentences
     .filter(
-      (sentence) =>
-        sentence.unitIndex <= word.unitIndex + 1 &&
-        tilesOf(sentence.target).length >= 3 &&
-        normalizeAnswer(sentence.target) !== own &&
-        blankOut(sentence.target, word.accepted) !== null,
+      (entry) =>
+        entry.sentence.unitIndex <= word.unitIndex + 1 &&
+        entry.plain !== own &&
+        mayContain(entry) &&
+        blankOut(entry.sentence.target, word.accepted) !== null,
     )
+    .map((entry) => entry.sentence)
     .sort(
       (a, b) =>
         Number(a.english === null) - Number(b.english === null) ||
@@ -342,6 +404,32 @@ function containsWords(text: string, phrase: string): boolean {
   return phrase.length > 0 && ` ${text} `.includes(` ${phrase} `);
 }
 
+const taggableCache = new WeakMap<Map<string, Item>, { item: WordItem | PhraseItem; forms: string[] }[]>();
+
+/**
+ * Words and phrases a role-play turn can be tagged with, with their forms
+ * normalized once: phrases compared without accents (they are whole
+ * sentences), words with them (è is not e), and words too short to mean
+ * anything on their own left out.
+ */
+function taggable(items: Map<string, Item>): { item: WordItem | PhraseItem; forms: string[] }[] {
+  let cached = taggableCache.get(items);
+  if (!cached) {
+    cached = [...items.values()].flatMap((item) => {
+      if (item.kind === "grammar") return [];
+      const forms =
+        item.kind === "phrase"
+          ? item.accepted.map(normalizeAnswer)
+          : item.accepted
+              .filter((form) => form.replace(/[^\p{L}]/gu, "").length >= MIN_TAGGED_LENGTH)
+              .map(normalizeKeepingAccents);
+      return forms.length > 0 ? [{ item, forms }] : [];
+    });
+    taggableCache.set(items, cached);
+  }
+  return cached;
+}
+
 /**
  * A role-play as the path uses it. Each of the learner's turns is tagged with
  * the words and phrases its model answer says — taught by the dialogue's unit
@@ -349,9 +437,7 @@ function containsWords(text: string, phrase: string): boolean {
  */
 function buildDialogue(dialogue: Dialogue, unitIndex: number, items: Map<string, Item>): CourseDialogue {
   const key = `d:${dialogue.id}`;
-  const candidates = [...items.values()].filter(
-    (item): item is WordItem | PhraseItem => item.kind !== "grammar" && item.unitIndex <= unitIndex,
-  );
+  const candidates = taggable(items).filter((candidate) => candidate.item.unitIndex <= unitIndex);
   const all = new Set<string>();
 
   const lines = dialogue.lines.map((line, lineIndex) => {
@@ -360,16 +446,8 @@ function buildDialogue(dialogue: Dialogue, unitIndex: number, items: Map<string,
     const plain = normalizeAnswer(line.answers[0]);
     const accented = normalizeKeepingAccents(line.answers[0]);
     const itemKeys = candidates
-      .filter((item) =>
-        item.kind === "phrase"
-          ? item.accepted.some((form) => containsWords(plain, normalizeAnswer(form)))
-          : item.accepted.some(
-              (form) =>
-                form.replace(/[^\p{L}]/gu, "").length >= MIN_TAGGED_LENGTH &&
-                containsWords(accented, normalizeKeepingAccents(form)),
-            ),
-      )
-      .map((item) => {
+      .filter(({ item, forms }) => forms.some((form) => containsWords(item.kind === "phrase" ? plain : accented, form)))
+      .map(({ item }) => {
         item.replies.push({ dialogue: key, line: lineIndex });
         all.add(item.key);
         return item.key;

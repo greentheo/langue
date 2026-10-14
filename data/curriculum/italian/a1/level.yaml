@@ -78,13 +78,14 @@ units:
   - title: How Italian sounds
     lessons: [02-sounds]
     situations: [understanding]
-    categories: [basics]
+    categories: [basics, language]
   - title: Who are you?
     lessons: [03-essere]
     situations: [meeting]
+    categories: [emotions, work]
   - title: Things you have
     lessons: [04-articles, 05-avere]
-    categories: [housing, technology, education, emotions]
+    categories: [housing, technology, education, animals]
   - title: Numbers and time
     lessons: [06-numbers-time]
     situations: [time]
@@ -92,10 +93,10 @@ units:
   - title: Everyday verbs
     lessons: [07-are-verbs, 08-ere-ire-verbs]
     situations: [help]
-    categories: [work]
+    categories: [verbs, body, health]
   - title: Family and friends
     lessons: [09-adjectives, 10-family]
-    categories: [family]
+    categories: [family, colors, clothing]
   - title: Going places
     lessons: [11-irregular-verbs, 12-modals]
     situations: [getting-around]
@@ -107,4 +108,4 @@ units:
   - title: Your day
     lessons: [14-routine, 15-prepositions]
     situations: [small-talk]
-    categories: [weather]
+    categories: [weather, nature, leisure, sports]

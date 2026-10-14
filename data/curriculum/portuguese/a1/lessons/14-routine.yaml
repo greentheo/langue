@@ -164,8 +164,8 @@ practice:
     section: 3
     direction: to-english
     prompt: Ele sempre dorme tarde.
-    answers: [He always sleeps late., He always goes to sleep late., He always goes to bed late.]
-    why: Sempre is always, and tarde here means late.
+    answers: [He always goes to bed late., He always goes to sleep late.]
+    why: Sempre is always, and dormir tarde means going to sleep late — not sleeping in.
 
   - type: translate
     section: 3

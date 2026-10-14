@@ -5,7 +5,7 @@ import { languageLabel } from "@/lib/languages";
 import { getCourse } from "@/lib/path/course";
 import { planChallenge, planStep } from "@/lib/path/planner";
 import { presentStep } from "@/lib/path/present";
-import { loadStates, recentAccuracy, seedFromLessons } from "@/lib/path/store";
+import { loadMarks, loadStates, recentAccuracy, seedFromLessons } from "@/lib/path/store";
 
 /**
  * Plan the learner's next ~3-minute step on the guided path — or, given a
@@ -29,9 +29,10 @@ export const POST = handler(async (request) => {
 
   const now = new Date();
   await seedFromLessons(user.id, language, course, now);
-  const [states, accuracy] = await Promise.all([
+  const [states, accuracy, marks] = await Promise.all([
     loadStates(user.id, language),
     recentAccuracy(user.id, language),
+    loadMarks(user.id, course),
   ]);
 
   if (challenge) {
@@ -41,6 +42,6 @@ export const POST = handler(async (request) => {
     return Response.json(presentStep(course, plan, Math.random));
   }
 
-  const plan = planStep({ course, states, now, recentAccuracy: accuracy, random: Math.random });
+  const plan = planStep({ course, states, now, recentAccuracy: accuracy, random: Math.random, marks });
   return Response.json(presentStep(course, plan, Math.random));
 });

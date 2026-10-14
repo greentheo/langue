@@ -1,0 +1,195 @@
+title: "Estoy comiendo"
+subtitle: "*Estar* + *-ando / -iendo*: what's happening now"
+goal: say what's happening right now with *estoy comiendo*, and what was going on at a moment in the past with *estaba comiendo*
+minutes: 14
+
+sections:
+  - heading: "The -ing form: -ando, -iendo"
+    body: |
+      The *gerund* is the Spanish "-ing" form. Drop the ending and add:
+
+      - -ar → **-ando**: *hablar → hablando*
+      - -er, -ir → **-iendo**: *comer → comiendo*, *vivir → viviendo*
+
+      It never changes for male, female or plural.
+    table:
+      columns: [verb, gerund, English]
+      rows:
+        - [trabajar, trabajando, working]
+        - [estudiar, estudiando, studying]
+        - [beber, bebiendo, drinking]
+        - [hacer, haciendo, "doing, making"]
+        - [escribir, escribiendo, writing]
+        - [salir, saliendo, "going out, leaving"]
+    tip: "When \"-ing\" is used like a noun, Spanish uses the infinitive: \"Swimming is fun\" is *Nadar es divertido*."
+
+  - heading: "Estar + gerund: right now"
+    body: |
+      **Estar** + gerund says what is happening at this very moment:
+      *Estoy comiendo* — I'm eating (right now).
+
+      Spanish uses it much less than English. For plans, use *ir a*: "I'm
+      leaving tomorrow" is *Voy a salir mañana* — not *estoy saliendo*.
+    examples:
+      - ["—¿Qué estás haciendo? —Estoy estudiando.", "—What are you doing? —I'm studying."]
+      - ["Mis padres están trabajando.", "My parents are working."]
+      - ["Está lloviendo mucho.", "It's raining a lot."]
+      - ["Ahora mismo estamos en la playa.", "Right now we're at the beach."]
+
+  - heading: A few irregular gerunds
+    body: |
+      - **i → y** between two vowels: *leer → leyendo*
+      - -ir boot verbs change **e → i** or **o → u**: *pedir → pidiendo*, *decir → diciendo*, *vestir → vistiendo*, *dormir → durmiendo*
+
+      It's the same change you saw in the preterite: *pidió*, *durmió*.
+    examples:
+      - ["El bebé está durmiendo.", "The baby is sleeping."]
+      - ["Estoy leyendo un libro buenísimo.", "I'm reading a really good book."]
+      - ["Ella está pidiendo la cuenta.", "She's asking for the bill."]
+
+  - heading: "Estaba + gerund: was doing"
+    body: |
+      Put *estar* in the imperfect — **estaba, estabas, estaba,
+      estábamos, estaban** — to say what was going on at a moment in the
+      past.
+
+      It means almost the same as the plain imperfect (*dormía*), but it
+      stresses that you were right in the middle of it.
+    examples:
+      - ["Estaba durmiendo cuando llamaste.", "I was sleeping when you called."]
+      - ["¿Qué estabas haciendo a las ocho?", "What were you doing at eight?"]
+      - ["Estábamos cenando cuando llegó mi tío.", "We were having dinner when my uncle arrived."]
+
+  - heading: Where the little words go
+    body: |
+      Reflexive and object words (*me, te, se, lo, la…*) can go in front
+      of *estar*, or join the end of the gerund — just like with an
+      infinitive.
+
+      When you join them on, add an accent mark to keep the stress in the
+      same place: *duchando* → **duchándome**.
+    table:
+      columns: [in front, joined on]
+      rows:
+        - [Me estoy duchando., Estoy duchándome.]
+        - [Lo estoy leyendo., Estoy leyéndolo.]
+        - ["¿Te estás vistiendo?", "¿Estás vistiéndote?"]
+    tip: "The little word never goes between *estar* and the gerund: *me estoy duchando*, not *estoy me duchando*."
+
+words:
+  - [ahora mismo, right now]
+  - [en este momento, at the moment]
+  - [nadar, to swim]
+  - [descansar, to rest]
+  - [limpiar, to clean]
+  - [preparar, "to prepare, to make (food)"]
+  - [bebé, baby]
+  - [nevar, to snow]
+  - [sala, living room (salón in Spain)]
+  - [cocina, kitchen]
+  - [tocar, to play (an instrument)]
+  - [guitarra, guitar]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Estoy ___ con mi hermana."
+    hint: hablar, -ing
+    translation: I'm talking to my sister.
+    answers: [hablando]
+    why: -ar verbs make the gerund with -ando.
+
+  - type: choice
+    section: 1
+    prompt: "The gerund of *vivir* is…"
+    options: [viviendo, vivando, vivido]
+    answer: viviendo
+    why: -er and -ir verbs make the gerund with -iendo.
+
+  - type: translate
+    section: 1
+    direction: to-target
+    prompt: Swimming is fun.
+    answers: [Nadar es divertido]
+    why: When "-ing" is used like a noun, Spanish uses the infinitive, not the gerund.
+
+  - type: fill
+    section: 2
+    prompt: "¿Qué ___ haciendo?"
+    hint: estar, tú
+    translation: What are you doing?
+    answers: [estás]
+    why: Estar + gerund says what's happening right now; the tú form is estás.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: We're eating right now.
+    answers: [Estamos comiendo ahora mismo, Ahora mismo estamos comiendo, Nosotros estamos comiendo ahora mismo, Nosotras estamos comiendo ahora mismo, Estamos comiendo en este momento, En este momento estamos comiendo, Estamos comiendo ahora, Ahora estamos comiendo]
+    why: Estamos + comiendo says what's happening at this moment.
+
+  - type: translate
+    section: 2
+    direction: to-english
+    prompt: Está lloviendo mucho.
+    answers: [It is raining a lot, It is raining hard, It is raining heavily]
+    why: Está lloviendo is estar + gerund — "it's raining".
+
+  - type: choice
+    section: 2
+    prompt: "I'm leaving tomorrow:"
+    options: [Estoy saliendo mañana., Voy a salir mañana.]
+    answer: Voy a salir mañana.
+    why: Spanish uses estar + gerund only for right now; for plans it uses ir a.
+
+  - type: fill
+    section: 3
+    prompt: "El bebé está ___."
+    hint: dormir
+    translation: The baby is sleeping.
+    answers: [durmiendo]
+    why: Dormir changes o → u in the gerund.
+
+  - type: fill
+    section: 3
+    prompt: "Estoy ___ un libro."
+    hint: leer
+    translation: I'm reading a book.
+    answers: [leyendo]
+    why: Leer writes y between the two vowels — leyendo.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: Ella está pidiendo la cuenta.
+    answers: [She is asking for the bill, She is asking for the check]
+    why: Pidiendo is the gerund of pedir, with e → i.
+
+  - type: fill
+    section: 4
+    prompt: "___ durmiendo cuando llamaste."
+    hint: estar, yo — past
+    translation: I was sleeping when you called.
+    answers: [Estaba]
+    why: Estaba + gerund says what was going on at a moment in the past.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: What were you doing at eight? (to a friend)
+    answers: ["¿Qué estabas haciendo a las ocho?", "¿Qué estabas haciendo tú a las ocho?", "¿A las ocho qué estabas haciendo?", "¿Qué hacías a las ocho?", "¿Qué hacías tú a las ocho?"]
+    why: Estabas + haciendo asks what was going on at that moment.
+
+  - type: choice
+    section: 5
+    prompt: "I'm taking a shower:"
+    options: [Me estoy duchando., Estoy me duchando., Estoy duchando me.]
+    answer: Me estoy duchando.
+    why: Me goes in front of estar, or joins the end of the gerund — never in between.
+
+  - type: translate
+    section: 5
+    direction: to-target
+    prompt: I'm reading it. (the book)
+    answers: [Lo estoy leyendo, Estoy leyéndolo, Yo lo estoy leyendo, Yo estoy leyéndolo, Lo leo]
+    why: Libro is masculine, so "it" is lo — in front of estoy, or joined to leyendo.

@@ -1,0 +1,216 @@
+title: "Tournez à gauche"
+subtitle: "Instructions: the imperative and il faut"
+goal: give instructions, directions and advice with the imperative, including "don't", and say what has to be done with *il faut*
+minutes: 15
+
+sections:
+  - heading: Telling someone what to do
+    body: |
+      The **imperative** is the form for instructions and directions:
+      "Turn left!", "Come here!" It's the present tense **without** *tu,
+      nous* or *vous*:
+
+      - *Tu prends le bus. → **Prends** le bus !* — Take the bus!
+      - *Vous tournez à gauche. → **Tournez** à gauche.* — Turn left.
+      - *Nous partons. → **Partons** !* — Let's go!
+
+      The **nous** form means "let's".
+    table:
+      columns: [present, imperative, meaning]
+      rows:
+        - [tu écoutes, "Écoute !", "Listen! (to a friend)"]
+        - [vous écoutez, "Écoutez !", "Listen! (polite, or to a group)"]
+        - [nous écoutons, "Écoutons !", "Let's listen!"]
+        - [tu viens, "Viens !", "Come!"]
+        - [tu vas, "Va !", "Go!"]
+    examples:
+      - ["Tournez à droite au feu.", "Turn right at the traffic lights."]
+      - ["Mets ta ceinture !", "Put your seatbelt on!"]
+      - ["Venez avec nous !", "Come with us!"]
+    tip: "For *-er* verbs and *aller*, the *tu* form drops its **-s**: *tu regardes → Regarde !*, *tu vas → Va !* Other verbs keep it: *Prends ! Finis !*"
+
+  - heading: Saying "don't"
+    body: |
+      For "don't", wrap **ne… pas** around the verb, just as in a normal
+      sentence:
+
+      - ***Ne** touche **pas** !* — Don't touch!
+      - ***Ne** traversez **pas** ici.* — Don't cross here.
+      - ***N'**oublie **pas** ton passeport !* — Don't forget your passport!
+
+      The other negatives work too: ***Ne** dis **rien** !* — Don't say
+      anything!
+    examples:
+      - ["Ne mange pas trop de chocolat !", "Don't eat too much chocolate!"]
+      - ["Ne partez pas sans moi !", "Don't leave without me!"]
+
+  - heading: Two irregulars, and reflexive verbs
+    body: |
+      **Être** and **avoir** have their own forms:
+
+      - *être* → **sois, soyons, soyez** — *Sois sage !* (Be good!)
+      - *avoir* → **aie, ayons, ayez** — *N'aie pas peur !* (Don't be scared!)
+
+      With **reflexive verbs**, the little pronoun goes **after** the verb,
+      with a hyphen, and *te* becomes **toi**:
+
+      - *Lève-**toi** !* — Get up!
+      - *Dépêchez-**vous** !* — Hurry up!
+      - *Assieds-**toi**.* — Sit down.
+
+      In a negative, it goes back in front: *Ne **te** lève pas !*
+    examples:
+      - ["Soyez à l'heure, s'il vous plaît.", "Please be on time."]
+      - ["Asseyez-vous, s'il vous plaît.", "Please sit down."]
+    tip: "Object pronouns do the same: *Prends-le !* (Take it!), *Aide-moi !* (Help me!), but *Ne le prends pas !*"
+
+  - heading: "Il faut: you have to"
+    body: |
+      **Il faut** + an infinitive means "you have to", "we need to" or
+      "it's necessary to". It's the same for everyone: *il* doesn't mean
+      "he" here, and *faut* never changes.
+
+      - ***Il faut** réserver.* — You have to book.
+      - ***Il faut** prendre le métro.* — We need to take the metro.
+
+      **Il ne faut pas** means "you **mustn't**", not "you don't have to":
+      *Il ne faut pas fumer ici.* — You mustn't smoke here.
+
+      In the past it's **il fallait**, and in the future **il faudra**.
+    examples:
+      - ["Il faut arriver à l'heure.", "You have to arrive on time."]
+      - ["Il faudra prendre un taxi.", "We'll have to take a taxi."]
+    tip: "For \"you don't have to\", don't use *il ne faut pas*. Say *tu n'as pas besoin de* + infinitive: *Tu n'as pas besoin de venir.*"
+
+words:
+  - [tourner, to turn]
+  - [toucher, to touch]
+  - [le passeport, the passport]
+  - [sans, without]
+  - [sage, "good, well-behaved"]
+  - ["s'asseoir", to sit down]
+  - [il faut, "you have to, it's necessary"]
+  - [fumer, to smoke]
+  - [le métro, the underground]
+  - [maintenant, now]
+  - [le feu, "the traffic lights"]
+  - [le carrefour, the crossroads]
+  - [la ceinture, "the belt, the seatbelt"]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "___ à gauche au carrefour."
+    hint: (tourner, vous)
+    translation: Turn left at the crossroads.
+    answers: [Tournez]
+    why: The imperative is the vous form of the present without vous.
+
+  - type: fill
+    section: 1
+    prompt: "___ la musique !"
+    hint: (écouter, tu)
+    translation: Listen to the music!
+    answers: [Écoute]
+    why: For -er verbs, the tu imperative drops the -s, so tu écoutes becomes écoute.
+
+  - type: choice
+    section: 1
+    prompt: "How do you say \"Look!\" to a friend?"
+    options: ["Regardes !", "Regarde !"]
+    answer: "Regarde !"
+    why: With -er verbs, the tu imperative has no -s.
+
+  - type: translate
+    section: 1
+    direction: to-target
+    prompt: Take the bus! (to a friend)
+    answers: ["Prends le bus !"]
+    why: The imperative is tu prends without tu; prendre keeps its -s.
+
+  - type: translate
+    section: 1
+    direction: to-target
+    prompt: "Let's eat!"
+    answers: ["Mangeons !", "On mange !"]
+    why: The nous form of the imperative means "let's".
+
+  - type: fill
+    section: 2
+    prompt: "___ touche pas !"
+    hint: (don't)
+    translation: Don't touch!
+    answers: [Ne]
+    why: Ne… pas wraps around the imperative, as around any verb.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: Don't forget your passport! (to a friend)
+    answers: ["N'oublie pas ton passeport !"]
+    why: Ne becomes n' before the vowel, and oublier drops its -s in the tu form.
+
+  - type: translate
+    section: 2
+    direction: to-english
+    prompt: Ne traversez pas ici.
+    answers: ["Don't cross here.", "Do not cross here."]
+    why: Ne… pas around the imperative means "don't".
+
+  - type: fill
+    section: 3
+    prompt: "Dépêchez-___ !"
+    hint: (yourselves)
+    translation: Hurry up!
+    answers: [vous]
+    why: With a reflexive verb, the pronoun goes after the imperative with a hyphen.
+
+  - type: choice
+    section: 3
+    prompt: "How do you say \"Get up!\" to a friend?"
+    options: ["Te lève !", "Lève-toi !", "Lève-te !"]
+    answer: "Lève-toi !"
+    why: The pronoun goes after the verb, and te becomes toi.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: "Don't be scared! (to a friend)"
+    answers: ["N'aie pas peur !"]
+    why: The tu imperative of avoir is aie, and ne… pas wraps around it.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: Sois sage !
+    answers: ["Be good!", "Behave!", "Behave yourself!"]
+    why: Sois is the tu imperative of être.
+
+  - type: fill
+    section: 4
+    prompt: "Il ___ réserver."
+    hint: (it's necessary)
+    translation: You have to book.
+    answers: [faut]
+    why: Il faut + infinitive means "you have to", and faut never changes.
+
+  - type: choice
+    section: 4
+    prompt: "*Il ne faut pas fumer ici* means…"
+    options: ["You don't have to smoke here.", "You mustn't smoke here."]
+    answer: "You mustn't smoke here."
+    why: Il ne faut pas forbids something; it means "must not".
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: You have to take the metro.
+    answers: ["Il faut prendre le métro.", "Tu dois prendre le métro.", "Vous devez prendre le métro.", "On doit prendre le métro."]
+    why: Il faut + infinitive says what has to be done.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Il faut partir maintenant.
+    answers: ["We have to leave now.", "We need to leave now.", "We must leave now.", "We have to go now.", "We need to go now.", "We must go now.", "You have to leave now.", "You need to leave now.", "You have to go now.", "I have to go now.", "I have to leave now.", "We've got to go now."]
+    why: Il faut is the same for everyone, so it can mean we, you or I have to.

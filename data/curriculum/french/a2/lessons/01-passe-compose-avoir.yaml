@@ -1,0 +1,216 @@
+title: "J'ai mangé"
+subtitle: The passé composé with avoir
+goal: say what you did with the *passé composé* (*avoir* + a past participle), make it negative, and ask questions about the past
+minutes: 15
+
+sections:
+  - heading: Talking about the past
+    body: |
+      The **passé composé** is the everyday past tense in French. It has
+      two parts, just like English "I have eaten":
+
+      - the present tense of **avoir** — *j'ai, tu as, il a…*
+      - a **past participle** — the past form of the verb, like *mangé*
+        (eaten)
+
+      *Avoir* changes with the person. The past participle stays the same.
+    table:
+      columns: [French, English]
+      rows:
+        - ["j'ai mangé", "I ate"]
+        - [tu as mangé, you ate]
+        - ["il / elle / on a mangé", "he / she / we ate"]
+        - [nous avons mangé, we ate]
+        - [vous avez mangé, you ate]
+        - ["ils / elles ont mangé", they ate]
+    examples:
+      - ["Tu as travaillé aujourd'hui ?", "Did you work today?"]
+      - ["J'ai oublié mon téléphone.", "I forgot my phone."]
+    tip: "*J'ai mangé* means \"I ate\", \"I have eaten\" and \"I did eat\". French uses the same form for all three."
+
+  - heading: Making the past participle
+    body: |
+      Regular verbs make their past participle like this:
+
+      - **-er** verbs → **-é**: *parler → parlé*
+      - **-ir** verbs → **-i**: *finir → fini*
+      - **-re** verbs → **-u**: *attendre → attendu*
+
+      Most French verbs end in **-er**, so most past participles end in
+      **-é**. It sounds exactly like the infinitive: *parler* and *parlé*
+      are said the same way.
+    table:
+      columns: [infinitive, past participle, example]
+      rows:
+        - [regarder, regardé, "J'ai regardé un film."]
+        - [choisir, choisi, "Tu as choisi ?"]
+        - [perdre, perdu, "Il a perdu son sac."]
+    examples:
+      - ["Nous avons réservé un hôtel.", "We booked a hotel."]
+      - ["Elles ont attendu le bus.", "They waited for the bus."]
+    tip: "*Mangé* and *manger* sound the same, so look at the word before it. After *j'ai, tu as, il a…* write **-é**."
+
+  - heading: Saying no and asking questions
+    body: |
+      In a negative, **ne… pas** goes around **avoir**, not around the past
+      participle:
+
+      - *Je **n'ai pas** mangé.* — I didn't eat.
+      - *Il **n'a pas** fini.* — He hasn't finished.
+
+      To ask a question, raise your voice at the end, or put *est-ce que*
+      in front, just as in the present:
+
+      - *Tu as fini ?* — Have you finished?
+      - *Est-ce que vous avez réservé ?* — Did you book?
+      - *Qu'est-ce que tu as acheté ?* — What did you buy?
+    examples:
+      - ["Nous n'avons pas trouvé l'hôtel.", "We didn't find the hotel."]
+      - ["Vous avez choisi ?", "Have you chosen?"]
+    tip: "*Je n'ai mangé pas* is a very common mistake. *Pas* comes straight after *avoir*: *je n'ai pas mangé*."
+
+  - heading: When did it happen?
+    body: |
+      These words tell you that you're talking about the past:
+
+      - **hier** — yesterday (*hier soir* — last night)
+      - **la semaine dernière** — last week
+      - **l'année dernière** — last year
+      - **déjà** — already, ever
+      - **ne… pas encore** — not yet
+
+      Short words like *déjà* and *bien* go between *avoir* and the past
+      participle: *J'ai déjà mangé.* Longer time words like *hier* go at
+      the start or the end.
+    examples:
+      - ["Hier soir, j'ai regardé un film.", "Last night I watched a film."]
+      - ["Tu as déjà visité Paris ?", "Have you ever visited Paris?"]
+      - ["Je n'ai pas encore fini.", "I haven't finished yet."]
+      - ["L'année dernière, nous avons visité Rome.", "Last year we visited Rome."]
+
+words:
+  - [hier, yesterday]
+  - [hier soir, "last night, yesterday evening"]
+  - [dernier / dernière, last]
+  - [la semaine, week]
+  - ["l'année (f)", year]
+  - [déjà, "already, ever"]
+  - [ne… pas encore, not yet]
+  - [réserver, "to book, to reserve"]
+  - [visiter, to visit (a place)]
+  - [acheter, to buy]
+  - [oublier, to forget]
+  - [trouver, to find]
+  - [le billet, the ticket]
+  - ["l'hôtel (m)", the hotel]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "J'___ mangé une pizza."
+    hint: (avoir, je)
+    translation: I ate a pizza.
+    answers: [ai]
+    why: The passé composé starts with the present of avoir, and with je that's ai.
+
+  - type: fill
+    section: 1
+    prompt: "Nous ___ regardé un film."
+    hint: (avoir, nous)
+    translation: We watched a film.
+    answers: [avons]
+    why: With nous, avoir is avons — then comes the past participle.
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: Nous avons parlé français.
+    answers: ["We spoke French.", "We have spoken French.", "We talked in French.", "We spoke in French."]
+    why: Avons parlé is the passé composé of parler — "we spoke" or "we have spoken".
+
+  - type: fill
+    section: 2
+    prompt: "Tu as ___ ?"
+    hint: (finir)
+    translation: Have you finished?
+    answers: [fini]
+    why: For -ir verbs, the past participle ends in -i.
+
+  - type: fill
+    section: 2
+    prompt: "Elle a ___ le bus."
+    hint: (attendre)
+    translation: She waited for the bus.
+    answers: [attendu]
+    why: For -re verbs, the past participle ends in -u.
+
+  - type: choice
+    section: 2
+    prompt: What is the past participle of *vendre* (to sell)?
+    options: [vendé, vendi, vendu]
+    answer: vendu
+    why: Vendre is an -re verb, so its past participle ends in -u.
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: I booked a hotel.
+    answers: ["J'ai réservé un hôtel."]
+    why: Réserver is an -er verb, so its past participle is réservé.
+
+  - type: choice
+    section: 3
+    prompt: Which is correct?
+    options: [Je n'ai pas mangé., Je n'ai mangé pas., Je ne pas ai mangé.]
+    answer: Je n'ai pas mangé.
+    why: Ne… pas goes around avoir, and the past participle comes after pas.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: I didn't finish.
+    answers: ["Je n'ai pas fini."]
+    why: Ne… pas wraps around ai, then comes the past participle fini.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: Did you eat? (to a friend)
+    answers: ["Tu as mangé ?", "Est-ce que tu as mangé ?", "As-tu mangé ?"]
+    why: Make a question by raising your voice, or with est-ce que, just as in the present.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: "Qu'est-ce que tu as acheté ?"
+    answers: ["What did you buy?", "What have you bought?"]
+    why: Qu'est-ce que means "what", and as acheté is the passé composé of acheter.
+
+  - type: fill
+    section: 4
+    prompt: "Tu as ___ visité Paris ?"
+    hint: (ever)
+    translation: Have you ever visited Paris?
+    answers: [déjà]
+    why: Déjà means "ever" or "already", and it goes between avoir and the past participle.
+
+  - type: translate
+    section: 4
+    direction: to-target
+    prompt: Yesterday I bought a ticket.
+    answers: ["Hier, j'ai acheté un billet.", "J'ai acheté un billet hier."]
+    why: Hier goes at the start or the end, and acheter becomes j'ai acheté.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Je n'ai pas encore fini.
+    answers: ["I haven't finished yet.", "I have not finished yet.", "I didn't finish yet.", "I'm not finished yet.", "I'm not done yet."]
+    why: Ne… pas encore means "not yet".
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: La semaine dernière, nous avons visité Rome.
+    answers: ["Last week we visited Rome.", "We visited Rome last week."]
+    why: La semaine dernière means last week, and avons visité is "we visited".

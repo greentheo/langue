@@ -1,0 +1,217 @@
+title: "So, conosco"
+subtitle: Sapere and conoscere — two ways to know
+goal: choose between sapere (to know a fact, to know how to) and conoscere (to know a person or a place), and say "I met" and "I found out"
+minutes: 13
+
+sections:
+  - heading: "Sapere: facts"
+    body: |
+      Italian has two verbs for "to know". **Sapere** is for **facts and
+      information** — things you could explain in a sentence: *So dov'è la
+      stazione.* — I know where the station is.
+
+      It's irregular in the present.
+
+      Two phrases you'll use every day: **Lo so.** — I know. **Non lo so.**
+      — I don't know.
+    table:
+      columns: [person, sapere]
+      rows:
+        - [io, so]
+        - [tu, sai]
+        - [lui / lei / Lei, sa]
+        - [noi, sappiamo]
+        - [voi, sapete]
+        - [loro, sanno]
+    examples:
+      - ["Sai a che ora parte il treno?", "Do you know what time the train leaves?"]
+      - ["Non so dove abita.", "I don't know where she lives."]
+      - ["Lo so!", "I know!"]
+    tip: "Italians say *Lo so* — literally \"I know it\". A bare *So* sounds unfinished."
+
+  - heading: "Sapere + infinitive: know how to"
+    body: |
+      **Sapere** + an infinitive means you **know how to** do something —
+      a skill you've learned:
+
+      - *So nuotare.* — I can swim. (I know how to.)
+      - *Sai cucinare?* — Can you cook?
+
+      Compare **potere**, which is about being **able** or **allowed** right
+      now:
+
+      - *So nuotare, ma oggi non posso: ho il raffreddore.* — I can swim,
+        but I can't today: I've got a cold.
+    examples:
+      - ["Mia sorella sa suonare il pianoforte.", "My sister can play the piano."]
+      - ["Non so guidare.", "I can't drive."]
+      - ["Sapete sciare?", "Can you (all) ski?"]
+    tip: "English uses \"can\" for both. Ask yourself: is it a skill I've learned (*so*), or am I able or allowed right now (*posso*)?"
+
+  - heading: "Conoscere: people and places"
+    body: |
+      **Conoscere** is for knowing — being familiar with — **people,
+      places and things**: *Conosco Marco.* — I know Marco. *Conosci Roma?*
+      — Do you know Rome?
+
+      It's a regular -ere verb. Remember the sounds from A1: *conosco* has a
+      hard *sk*, *conosci* a soft *sh*.
+
+      In the passato prossimo, **ho conosciuto** means "I met" — someone
+      for the first time: *Ho conosciuto Giulia in vacanza.* — I met Giulia
+      on holiday.
+    examples:
+      - ["Conosci un buon ristorante qui vicino?", "Do you know a good restaurant near here?"]
+      - ["Non conosco nessuno qui.", "I don't know anyone here."]
+      - ["Dove vi siete conosciuti?", "Where did you two meet?"]
+    tip: "\"Nice to meet you\" can also be *Piacere di conoscerti* (to a friend) or *Piacere di conoscerLa* (polite)."
+
+  - heading: Which one?
+    body: |
+      Look at what comes after "know":
+
+      - a **fact** — often a whole sentence after *che* (that), *dove*,
+        *quando*, *come* or *se* (if) → **sapere**: *So che sei stanco.* —
+        I know (that) you're tired.
+      - a **skill** → **sapere** + infinitive: *So sciare.*
+      - a **person, place or thing** you're familiar with → **conoscere**:
+        *Conosco questa canzone.*
+
+      In the past, **ho saputo** means "I heard" or "I found out".
+    examples:
+      - ["Conosco Marco, ma non so dove abita.", "I know Marco, but I don't know where he lives."]
+      - ["Sai se il museo è aperto oggi?", "Do you know if the museum is open today?"]
+      - ["Ho saputo che hai trovato lavoro!", "I heard you found a job!"]
+    tip: "Never *sapere* with a person: *Conosco Giulia*, not *So Giulia*."
+
+words:
+  - [sapere, "to know (facts); to know how to"]
+  - [conoscere, "to know (people, places); (in the past) to meet"]
+  - [che, that]
+  - [nuotare, to swim]
+  - [sciare, to ski]
+  - [pianoforte, piano]
+  - [raffreddore, cold (illness)]
+  - [nessuno, "nobody; (with non) anyone"]
+  - [vicino, "near, nearby"]
+  - [canzone, song]
+
+practice:
+  - type: fill
+    section: 1
+    prompt: "Non ___ dove abita."
+    hint: sapere, io
+    translation: I don't know where she lives.
+    answers: [so]
+    why: Sapere is irregular — io so.
+
+  - type: fill
+    section: 1
+    prompt: "___ a che ora parte il treno?"
+    hint: sapere, tu
+    translation: Do you know what time the train leaves?
+    answers: [sai]
+    why: With tu, sapere is sai.
+
+  - type: translate
+    section: 1
+    direction: to-target
+    prompt: I don't know.
+    answers:
+      - Non lo so.
+      - Io non lo so.
+      - Non so.
+    why: Italians usually say Non lo so — "I don't know it".
+
+  - type: translate
+    section: 1
+    direction: to-english
+    prompt: Sapete dov'è la stazione?
+    answers:
+      - Do you know where the station is?
+      - Do you all know where the station is?
+      - Do you guys know where the station is?
+    why: Sapere is for facts, like where something is.
+
+  - type: fill
+    section: 2
+    prompt: "Mia sorella ___ suonare il pianoforte."
+    hint: sapere
+    translation: My sister can play the piano.
+    answers: [sa]
+    why: Sapere + infinitive is a skill — "knows how to".
+
+  - type: translate
+    section: 2
+    direction: to-target
+    prompt: I can swim. (I know how to.)
+    answers:
+      - So nuotare.
+      - Io so nuotare.
+    why: A skill you've learned takes sapere + infinitive.
+
+  - type: choice
+    section: 2
+    prompt: You can swim, but you've got a cold today. Which is right?
+    options: ["Posso nuotare, ma oggi non so.", "So nuotare, ma oggi non posso."]
+    answer: "So nuotare, ma oggi non posso."
+    why: Sapere is the skill; potere is being able right now.
+
+  - type: fill
+    section: 3
+    prompt: "___ un buon ristorante qui vicino?"
+    hint: conoscere, tu
+    translation: Do you know a good restaurant near here?
+    answers: [conosci]
+    why: Conoscere is for places and things you're familiar with.
+
+  - type: translate
+    section: 3
+    direction: to-english
+    prompt: Ho conosciuto Giulia in vacanza.
+    answers:
+      - I met Giulia on holiday.
+      - I met Giulia on vacation.
+      - I met Giulia while on holiday.
+      - I met Giulia on my holiday.
+      - I got to know Giulia on holiday.
+    why: In the passato prossimo, conoscere means "to meet" for the first time.
+
+  - type: translate
+    section: 3
+    direction: to-target
+    prompt: Do you know Rome? (to a friend)
+    answers:
+      - Conosci Roma?
+      - Tu conosci Roma?
+    why: A place you're familiar with takes conoscere.
+
+  - type: choice
+    section: 4
+    prompt: How do you say "I know Giulia"?
+    options: [So Giulia., Conosco Giulia., Sono Giulia.]
+    answer: Conosco Giulia.
+    why: People take conoscere, never sapere.
+
+  - type: fill
+    section: 4
+    prompt: "Non ___ se il museo è aperto."
+    hint: sapere, io
+    translation: I don't know if the museum is open.
+    answers: [so]
+    why: A fact introduced by se (if) takes sapere.
+
+  - type: choice
+    section: 4
+    prompt: "How do you say \"I know you're tired\" (to a boy)?"
+    options: [So che sei stanco., Conosco che sei stanco.]
+    answer: So che sei stanco.
+    why: A fact after che (that) takes sapere.
+
+  - type: translate
+    section: 4
+    direction: to-english
+    prompt: Conosco Marco, ma non so dove abita.
+    answers:
+      - I know Marco, but I don't know where he lives.
+    why: Conoscere is for the person; sapere is for the fact of where he lives.

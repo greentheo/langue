@@ -104,6 +104,11 @@ describe("gradeAnswer", () => {
     assert.equal(result.verdict, "correct");
     assert.equal(result.score, 90);
   });
+
+  test("extra words must be whole words around the answer", () => {
+    assert.equal(gradeAnswer("houses", ["house"]).verdict, "close", "a typo, not containment");
+    assert.equal(gradeAnswer("firehouse", ["fire"]).verdict, "incorrect");
+  });
 });
 
 describe("pointsForResult", () => {
@@ -189,6 +194,33 @@ describe("gradeTargetAnswer", () => {
     const result = gradeTargetAnswer("e", ["è", "sei"]);
     assert.equal(result.verdict, "close");
     assert.match(result.note ?? "", /"è"/);
+  });
+
+  test("a leading le / lo / la in a sentence is a pronoun, not an article", () => {
+    assert.equal(gradeTargetAnswer("Gli regalo un libro", ["Le regalo un libro"]).verdict, "incorrect");
+    assert.equal(gradeTargetAnswer("le regalo un libro", ["Le regalo un libro"]).verdict, "correct");
+    // A lone noun still drops its article.
+    assert.equal(gradeTargetAnswer("il cane", ["cane"]).verdict, "correct");
+  });
+
+  test("only a subject pronoun may be added; other extra words are a different answer", () => {
+    assert.equal(gradeTargetAnswer("Lo voglio comprarlo", ["Voglio comprarlo", "Lo voglio comprare"]).verdict, "incorrect");
+    assert.equal(gradeTargetAnswer("yo hablo español", ["hablo español"]).verdict, "correct");
+  });
+
+  test("a longer word containing the answer is not the answer", () => {
+    assert.equal(gradeTargetAnswer("conosciamo", ["conosci"]).verdict, "incorrect");
+    assert.equal(gradeTargetAnswer("piacerebbero", ["piacerebbe"]).verdict, "incorrect");
+  });
+
+  test("short words get no typo allowance: lo is not la", () => {
+    assert.equal(gradeTargetAnswer("la", ["lo"]).verdict, "incorrect");
+    assert.equal(gradeTargetAnswer("noi", ["voi"]).verdict, "incorrect");
+  });
+
+  test("with typos off, one letter off is wrong but a missing accent is still close", () => {
+    assert.equal(gradeTargetAnswer("parla", ["parlo"], { typos: false }).verdict, "incorrect");
+    assert.equal(gradeTargetAnswer("sara", ["sarà"], { typos: false }).verdict, "close");
   });
 
   test("leaves wrong and typo verdicts alone", () => {

@@ -164,6 +164,21 @@ practice:
     answer: lápices
     why: Nouns ending in -z change it to -ces.
 
+  - type: fill
+    section: 2
+    prompt: "hotel → ___"
+    hint: plural
+    translation: hotel → hotels
+    answers: [hoteles]
+    why: Hotel ends in a consonant, so the plural adds -es.
+
+  - type: choice
+    section: 2
+    prompt: What is the plural of *noche*?
+    options: [noches, nochees, noch]
+    answer: noches
+    why: Noche ends in a vowel, so the plural just adds -s.
+
   - type: choice
     section: 4
     prompt: Which is correct?

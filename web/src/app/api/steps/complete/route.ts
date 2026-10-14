@@ -4,7 +4,8 @@ import { requireUser } from "@/lib/auth/session";
 import { prisma } from "@/lib/db";
 import { recordSession } from "@/lib/progress";
 import { getCourse } from "@/lib/path/course";
-import { CHALLENGE_PASS, unitCode, unitProgress } from "@/lib/path/planner";
+import { CHALLENGE_PASS, firstOpenUnit, unitCode, unitProgress } from "@/lib/path/planner";
+import { LEVELS, type Level } from "@/lib/vocab/types";
 import { loadMarks, loadStates, passUnit, recordFinishedLevels, rememberProgress } from "@/lib/path/store";
 
 /**
@@ -63,6 +64,16 @@ export const POST = handler(async (request) => {
     recordFinishedLevels(user.id, language, course, states, now, marks),
     prisma.user.findUnique({ where: { id: user.id }, select: { streakDays: true } }),
   ]);
+
+  // Finishing a level moves the learner up: the header and the practice
+  // activities follow the path's level, and it never goes back down.
+  if (finishedLevels.length > 0) {
+    const open = course.units[Math.min(firstOpenUnit(course, states, marks), course.units.length - 1)];
+    const rank = (level: string) => LEVELS.indexOf(level as Level);
+    if (open && rank(open.level) > rank(user.currentLevel)) {
+      await prisma.user.update({ where: { id: user.id }, data: { currentLevel: open.level } });
+    }
+  }
 
   // After a challenge, the next unit not yet complete — to try its challenge too.
   const next = units.find((unit) => unit.index > unitIndex && !unit.complete);
