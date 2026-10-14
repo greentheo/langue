@@ -21,7 +21,10 @@
         "Bonjour, comment allez-vous?"
       ],
       "category": "greetings",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "Hello, how are you?"
+      ]
     },
     {
       "word": "au revoir",
@@ -32,7 +35,10 @@
         "Au revoir, à demain!"
       ],
       "category": "greetings",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "Goodbye, see you tomorrow!"
+      ]
     },
     {
       "word": "merci",
@@ -44,7 +50,10 @@
         "Merci beaucoup pour votre aide."
       ],
       "category": "greetings",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "Thank you very much for your help."
+      ]
     },
     {
       "word": "oui",
@@ -55,7 +64,10 @@
         "Oui, je comprends."
       ],
       "category": "basics",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "Yes, I understand."
+      ]
     },
     {
       "word": "non",
@@ -66,7 +78,10 @@
         "Non, merci."
       ],
       "category": "basics",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "No, thank you."
+      ]
     },
     {
       "word": "s'il vous plaît",
@@ -77,7 +92,10 @@
         "Pouvez-vous me passer le sel, s'il vous plaît ?"
       ],
       "category": "greetings",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "Could you pass me the salt, please?"
+      ]
     },
     {
       "word": "un",
@@ -88,7 +106,10 @@
         "J'ai acheté un livre."
       ],
       "category": "numbers",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "I bought a book."
+      ]
     },
     {
       "word": "deux",
@@ -99,7 +120,10 @@
         "Il y a deux chiens dans le parc."
       ],
       "category": "numbers",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "There are two dogs in the park."
+      ]
     },
     {
       "word": "trois",
@@ -110,7 +134,10 @@
         "Je vais à la plage trois fois par semaine."
       ],
       "category": "numbers",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "I go to the beach three times a week."
+      ]
     },
     {
       "word": "quatre",
@@ -121,7 +148,10 @@
         "J'ai quatre frères et sœurs."
       ],
       "category": "numbers",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "I have four brothers and sisters."
+      ]
     },
     {
       "word": "cinq",
@@ -132,7 +162,10 @@
         "Il y a cinq pommes sur la table."
       ],
       "category": "numbers",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "There are five apples on the table."
+      ]
     },
     {
       "word": "mère",
@@ -143,7 +176,10 @@
         "Ma mère est très gentille."
       ],
       "category": "family",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "My mother is very kind."
+      ]
     },
     {
       "word": "père",
@@ -154,7 +190,10 @@
         "Mon père travaille beaucoup."
       ],
       "category": "family",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "My father works a lot."
+      ]
     },
     {
       "word": "frère",
@@ -165,7 +204,10 @@
         "J'ai un frère plus jeune."
       ],
       "category": "family",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I have a younger brother."
+      ]
     },
     {
       "word": "sœur",
@@ -176,7 +218,10 @@
         "Ma sœur est très intelligente."
       ],
       "category": "family",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "My sister is very clever."
+      ]
     },
     {
       "word": "famille",
@@ -187,7 +232,10 @@
         "J'aime passer du temps avec ma famille."
       ],
       "category": "family",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I like spending time with my family."
+      ]
     },
     {
       "word": "pain",
@@ -198,7 +246,10 @@
         "Je voudrais une baguette de pain, s'il vous plaît."
       ],
       "category": "food",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I'd like a loaf of French bread, please."
+      ]
     },
     {
       "word": "eau",
@@ -209,7 +260,10 @@
         "Puis-je avoir un verre d'eau ?"
       ],
       "category": "food",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "May I have a glass of water?"
+      ]
     },
     {
       "word": "pomme",
@@ -220,7 +274,10 @@
         "J'ai acheté des pommes au marché."
       ],
       "category": "food",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I bought some apples at the market."
+      ]
     },
     {
       "word": "fromage",
@@ -231,7 +288,10 @@
         "Je préfère le fromage de chèvre."
       ],
       "category": "food",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I prefer goat's cheese."
+      ]
     },
     {
       "word": "viande",
@@ -242,7 +302,10 @@
         "Nous avons mangé de la viande de bœuf pour le dîner."
       ],
       "category": "food",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "We ate beef for dinner."
+      ]
     },
     {
       "word": "avion",
@@ -253,7 +316,10 @@
         "Nous prenons l'avion pour aller en vacances."
       ],
       "category": "travel",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "We're taking the plane to go on holiday."
+      ]
     },
     {
       "word": "train",
@@ -264,7 +330,10 @@
         "Je prends le train pour aller au travail."
       ],
       "category": "travel",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I take the train to work."
+      ]
     },
     {
       "word": "voiture",
@@ -275,7 +344,10 @@
         "Ma voiture est garée dans le parking."
       ],
       "category": "travel",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "My car is parked in the car park."
+      ]
     },
     {
       "word": "bateau",
@@ -286,7 +358,10 @@
         "Nous avons fait une croisière en bateau."
       ],
       "category": "travel",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "We went on a boat cruise."
+      ]
     },
     {
       "word": "métro",
@@ -298,7 +373,10 @@
         "Je prends le métro pour aller en ville."
       ],
       "category": "travel",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I take the metro into town."
+      ]
     },
     {
       "word": "magasin",
@@ -310,7 +388,10 @@
         "Je vais faire des achats dans ce magasin."
       ],
       "category": "shopping",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I'm going to do some shopping in this shop."
+      ]
     },
     {
       "word": "acheter",
@@ -321,7 +402,10 @@
         "J'ai acheté un nouveau manteau."
       ],
       "category": "shopping",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I bought a new coat."
+      ]
     },
     {
       "word": "vendre",
@@ -332,7 +416,10 @@
         "Cette boutique vend de beaux bijoux."
       ],
       "category": "shopping",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "This shop sells beautiful jewellery."
+      ]
     },
     {
       "word": "payer",
@@ -343,7 +430,10 @@
         "Je vais payer avec ma carte bancaire."
       ],
       "category": "shopping",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I'm going to pay with my bank card."
+      ]
     },
     {
       "word": "argent",
@@ -354,7 +444,10 @@
         "J'ai assez d'argent pour acheter ce manteau."
       ],
       "category": "shopping",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I have enough money to buy this coat."
+      ]
     },
     {
       "word": "heure",
@@ -365,7 +458,10 @@
         "Il est 15 heures."
       ],
       "category": "time",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "It's 3 p.m."
+      ]
     },
     {
       "word": "jour",
@@ -376,7 +472,10 @@
         "Aujourd'hui, nous allons au parc."
       ],
       "category": "time",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "Today we're going to the park."
+      ]
     },
     {
       "word": "semaine",
@@ -387,7 +486,10 @@
         "Je travaille du lundi au vendredi chaque semaine."
       ],
       "category": "time",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I work Monday to Friday every week."
+      ]
     },
     {
       "word": "mois",
@@ -398,7 +500,10 @@
         "Je pars le mois prochain."
       ],
       "category": "time",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I'm leaving next month."
+      ]
     },
     {
       "word": "année",
@@ -409,7 +514,10 @@
         "Cette année, j'apprends le français."
       ],
       "category": "time",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "This year, I'm learning French."
+      ]
     },
     {
       "word": "soleil",
@@ -420,7 +528,10 @@
         "Il fait beau et il y a beaucoup de soleil aujourd'hui."
       ],
       "category": "weather",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "The weather's nice and there's lots of sunshine today."
+      ]
     },
     {
       "word": "pluie",
@@ -431,7 +542,10 @@
         "La pluie a commencé à l'aube."
       ],
       "category": "weather",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "The rain started at dawn."
+      ]
     },
     {
       "word": "neige",
@@ -442,7 +556,10 @@
         "Il y a beaucoup de neige sur les montagnes."
       ],
       "category": "weather",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "There's a lot of snow on the mountains."
+      ]
     },
     {
       "word": "vent",
@@ -453,7 +570,10 @@
         "Il fait très venteux aujourd'hui."
       ],
       "category": "weather",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "It's very windy today."
+      ]
     },
     {
       "word": "nuage",
@@ -464,7 +584,10 @@
         "Le ciel est couvert de nuages gris."
       ],
       "category": "weather",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "The sky is covered in grey clouds."
+      ]
     },
     {
       "word": "travailler",
@@ -475,7 +598,10 @@
         "Je travaille dans un bureau."
       ],
       "category": "work",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "I work in an office."
+      ]
     },
     {
       "word": "bureau",
@@ -486,7 +612,10 @@
         "Mon bureau est au troisième étage."
       ],
       "category": "work",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "My office is on the third floor."
+      ]
     },
     {
       "word": "patron",
@@ -497,7 +626,10 @@
         "Mon patron est très exigeant."
       ],
       "category": "work",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "My boss is very demanding."
+      ]
     },
     {
       "word": "collègue",
@@ -508,7 +640,10 @@
         "Je m'entends bien avec mes collègues."
       ],
       "category": "work",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "I get on well with my colleagues."
+      ]
     },
     {
       "word": "salaire",
@@ -519,7 +654,10 @@
         "Mon salaire me permet de vivre confortablement."
       ],
       "category": "work",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "My salary lets me live comfortably."
+      ]
     },
     {
       "word": "école",
@@ -530,7 +668,10 @@
         "Je vais à l'école tous les jours."
       ],
       "category": "education",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "I go to school every day."
+      ]
     },
     {
       "word": "professeur",
@@ -541,7 +682,10 @@
         "Mon professeur de français est très sympathique."
       ],
       "category": "education",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "My French teacher is very nice."
+      ]
     },
     {
       "word": "étudiant",
@@ -552,7 +696,10 @@
         "Je suis un étudiant en première année."
       ],
       "category": "education",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "I'm a first-year student."
+      ]
     },
     {
       "word": "livre",
@@ -563,7 +710,10 @@
         "J'ai emprunté ce livre à la bibliothèque."
       ],
       "category": "education",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "I borrowed this book from the library."
+      ]
     },
     {
       "word": "stylo",
@@ -574,7 +724,10 @@
         "Peux-tu me prêter un stylo, s'il te plaît ?"
       ],
       "category": "education",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "Can you lend me a pen, please?"
+      ]
     },
     {
       "word": "maison",
@@ -585,7 +738,10 @@
         "Ma maison a un grand jardin."
       ],
       "category": "housing",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "My house has a big garden."
+      ]
     },
     {
       "word": "appartement",
@@ -596,7 +752,10 @@
         "J'habite dans un appartement au centre-ville."
       ],
       "category": "housing",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "I live in an apartment in the city centre."
+      ]
     },
     {
       "word": "chambre",
@@ -607,7 +766,10 @@
         "Ma chambre est au deuxième étage."
       ],
       "category": "housing",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "My bedroom is on the second floor."
+      ]
     },
     {
       "word": "cuisine",
@@ -618,7 +780,10 @@
         "Je fais la cuisine tous les soirs."
       ],
       "category": "housing",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "I cook every evening."
+      ]
     },
     {
       "word": "jardin",
@@ -629,7 +794,10 @@
         "Nous avons un beau jardin avec des fleurs."
       ],
       "category": "housing",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "We have a beautiful garden with flowers."
+      ]
     },
     {
       "word": "lire",
@@ -640,7 +808,10 @@
         "J'aime lire des livres pendant mon temps libre."
       ],
       "category": "leisure",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "I like reading books in my free time."
+      ]
     },
     {
       "word": "jouer",
@@ -651,7 +822,10 @@
         "Nous jouons au football le week-end."
       ],
       "category": "leisure",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "We play football at the weekend."
+      ]
     },
     {
       "word": "sport",
@@ -662,7 +836,10 @@
         "Le football est mon sport préféré."
       ],
       "category": "leisure",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "Football is my favourite sport."
+      ]
     },
     {
       "word": "musique",
@@ -673,7 +850,10 @@
         "J'écoute de la musique classique le soir."
       ],
       "category": "leisure",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "I listen to classical music in the evening."
+      ]
     },
     {
       "word": "film",
@@ -684,7 +864,10 @@
         "Nous allons voir un film au cinéma ce soir."
       ],
       "category": "leisure",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "We're going to see a movie at the cinema tonight."
+      ]
     },
     {
       "word": "mal",
@@ -696,7 +879,10 @@
         "J'ai mal à la tête."
       ],
       "category": "health",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "I have a headache."
+      ]
     },
     {
       "word": "médecin",
@@ -707,7 +893,10 @@
         "Je vais voir un médecin pour mon problème de dos."
       ],
       "category": "health",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "I'm going to see a doctor about my back problem."
+      ]
     },
     {
       "word": "hôpital",
@@ -718,7 +907,10 @@
         "Mon grand-père est à l'hôpital."
       ],
       "category": "health",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "My grandfather is in hospital."
+      ]
     },
     {
       "word": "médicament",
@@ -729,7 +921,10 @@
         "Le médecin m'a prescrit des médicaments."
       ],
       "category": "health",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "The doctor prescribed me some medicine."
+      ]
     },
     {
       "word": "santé",
@@ -740,7 +935,10 @@
         "Ma santé est bonne."
       ],
       "category": "health",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "My health is good."
+      ]
     },
     {
       "word": "boucher",
@@ -752,7 +950,10 @@
         "Le boucher vend de la viande fraîche."
       ],
       "category": "food",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "The butcher sells fresh meat."
+      ]
     },
     {
       "word": "parapluie",
@@ -763,7 +964,10 @@
         "Je prends mon parapluie quand il pleut."
       ],
       "category": "weather",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I take my umbrella when it rains."
+      ]
     },
     {
       "word": "pêcher",
@@ -775,7 +979,10 @@
         "Mon père aime pêcher le weekend."
       ],
       "category": "leisure",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "My father likes fishing at the weekend."
+      ]
     },
     {
       "word": "boulangerie",
@@ -786,7 +993,10 @@
         "J'achète du pain à la boulangerie."
       ],
       "category": "food",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I buy bread at the bakery."
+      ]
     },
     {
       "word": "rire",
@@ -797,7 +1007,10 @@
         "Elle rit quand elle est heureuse."
       ],
       "category": "emotions",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "She laughs when she's happy."
+      ]
     },
     {
       "word": "oreille",
@@ -808,7 +1021,10 @@
         "J'entends avec mes oreilles."
       ],
       "category": "health",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I hear with my ears."
+      ]
     },
     {
       "word": "chanter",
@@ -819,7 +1035,10 @@
         "Elle chante très bien."
       ],
       "category": "arts",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "She sings very well."
+      ]
     },
     {
       "word": "fleuve",
@@ -830,7 +1049,10 @@
         "Le fleuve traverse la ville."
       ],
       "category": "nature",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "The river runs through the city."
+      ]
     },
     {
       "word": "chaussure",
@@ -841,7 +1063,10 @@
         "Je porte des chaussures confortables."
       ],
       "category": "shopping",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I wear comfortable shoes."
+      ]
     },
     {
       "word": "dormir",
@@ -852,7 +1077,10 @@
         "Je dors huit heures par nuit."
       ],
       "category": "daily_routines",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I sleep eight hours a night."
+      ]
     },
     {
       "word": "courir",
@@ -863,7 +1091,10 @@
         "Je cours tous les jours pour faire de l'exercice."
       ],
       "category": "sports",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "I run every day to get some exercise."
+      ]
     },
     {
       "word": "montagne",
@@ -874,7 +1105,10 @@
         "Les montagnes sont très hautes."
       ],
       "category": "nature",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "The mountains are very high."
+      ]
     },
     {
       "word": "église",
@@ -885,7 +1119,10 @@
         "L'église est un bâtiment religieux."
       ],
       "category": "arts",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "A church is a religious building."
+      ]
     },
     {
       "word": "malade",
@@ -897,7 +1134,10 @@
         "Je suis malade et je reste au lit."
       ],
       "category": "health",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I'm ill and I'm staying in bed."
+      ]
     },
     {
       "word": "manger",
@@ -908,7 +1148,10 @@
         "Je mange du pain et du fromage pour le petit-déjeuner."
       ],
       "category": "food",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I eat bread and cheese for breakfast."
+      ]
     },
     {
       "word": "parler",
@@ -920,7 +1163,10 @@
         "Nous parlons français à la maison."
       ],
       "category": "daily_routines",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "We speak French at home."
+      ]
     },
     {
       "word": "beau",
@@ -932,7 +1178,10 @@
         "Ce paysage est vraiment beau."
       ],
       "category": "arts",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "This scenery is really beautiful."
+      ]
     },
     {
       "word": "fatigue",
@@ -944,7 +1193,10 @@
         "Je suis fatigué après une longue journée de travail."
       ],
       "category": "health",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "I'm tired after a long day at work."
+      ]
     },
     {
       "word": "hôtel",
@@ -955,7 +1207,10 @@
         "Nous restons à l'hôtel pendant nos vacances."
       ],
       "category": "travel",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "We're staying at the hotel during our holiday."
+      ]
     },
     {
       "word": "écrire",
@@ -966,7 +1221,10 @@
         "J'écris une lettre à ma grand-mère."
       ],
       "category": "education",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "I'm writing a letter to my grandmother."
+      ]
     },
     {
       "word": "prendre",
@@ -978,7 +1236,10 @@
         "Je prends le bus pour aller au travail."
       ],
       "category": "transportation",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "I take the bus to work."
+      ]
     },
     {
       "word": "prêter",
@@ -990,7 +1251,10 @@
         "Je peux te prêter mon stylo si tu en as besoin."
       ],
       "category": "daily_routines",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "I can lend you my pen if you need it."
+      ]
     },
     {
       "word": "apporter",
@@ -1001,7 +1265,10 @@
         "Peux-tu m'apporter un verre d'eau ?"
       ],
       "category": "daily_routines",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "Can you bring me a glass of water?"
+      ]
     },
     {
       "word": "regarder",
@@ -1013,7 +1280,10 @@
         "Je regarde la télévision le soir."
       ],
       "category": "leisure",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "I watch television in the evening."
+      ]
     },
     {
       "word": "fermer",
@@ -1024,7 +1294,10 @@
         "Je ferme la porte à clé avant de sortir."
       ],
       "category": "daily_routines",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "I lock the door before I go out."
+      ]
     },
     {
       "word": "aimer",
@@ -1036,7 +1309,10 @@
         "J'aime beaucoup le chocolat."
       ],
       "category": "emotions",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "I really like chocolate."
+      ]
     },
     {
       "word": "animal",
@@ -1047,7 +1323,10 @@
         "J'ai un chat comme animal de compagnie."
       ],
       "category": "nature",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "I have a cat as a pet."
+      ]
     },
     {
       "word": "marché",
@@ -1058,7 +1337,10 @@
         "Je vais au marché pour acheter des fruits et légumes."
       ],
       "category": "shopping",
-      "difficulty": 3
+      "difficulty": 3,
+      "examples_en": [
+        "I'm going to the market to buy fruit and vegetables."
+      ]
     }
   ]
 }

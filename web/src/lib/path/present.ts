@@ -7,20 +7,26 @@ import "server-only";
  */
 
 import { getLesson, getPhrase, publicPracticeItem } from "@/lib/curriculum";
-import { normalizeAnswer } from "@/lib/engine/grade";
+import { normalizeAnswer, normalizeKeepingAccents } from "@/lib/engine/grade";
 import { unitCode, type Plan } from "./planner";
+import { blankOut, gradeReply, tilesOf } from "./sentences";
 import type {
   Course,
+  CourseDialogue,
   GrammarItem,
   MeetEntry,
   PhraseItem,
   PlannedExercise,
+  PublicDialogueLine,
   PublicExercise,
   PublicStep,
+  Sentence,
   WordItem,
 } from "./types";
 
 const OPTION_COUNT = 4;
+/** Replies to choose from in a role-play turn that is picked, not typed. */
+const REPLY_OPTIONS = 3;
 
 type Vocab = WordItem | PhraseItem;
 
@@ -70,6 +76,74 @@ function distractors(course: Course, item: Vocab, side: "english" | "target", ra
   return picked;
 }
 
+/**
+ * Wrong tiles for building a sentence: words from other sentences of the same
+ * lesson or situation (the same grammar, so plausible), then the same unit.
+ * Two for a short sentence, three for a longer one.
+ */
+function extraTiles(course: Course, sentence: Sentence, random: () => number): string[] {
+  const own = new Set(tilesOf(sentence.target).map((tile) => normalizeKeepingAccents(tile)));
+  const wanted = own.size <= 3 ? 2 : 3;
+  const others = [...course.sentences.values()].filter((other) => other.id !== sentence.id);
+  const tiers = [
+    others.filter((other) => other.group === sentence.group),
+    others.filter((other) => other.group !== sentence.group && other.unitIndex === sentence.unitIndex),
+    others.filter((other) => other.unitIndex < sentence.unitIndex),
+  ];
+
+  const picked: string[] = [];
+  for (const tier of tiers) {
+    const words = shuffle(tier.flatMap((other) => tilesOf(other.target)), random);
+    for (const word of words) {
+      if (picked.length >= wanted) return picked;
+      const key = normalizeKeepingAccents(word);
+      if (own.has(key)) continue;
+      own.add(key);
+      picked.push(word);
+    }
+  }
+  return picked;
+}
+
+/** The example to show on a reminder: a sentence that uses the item, translated if possible. */
+function exampleFor(course: Course, ids: string[]): { target: string; english: string | null } | null {
+  const sentences = ids.map((id) => course.sentences.get(id)).filter((sentence): sentence is Sentence => Boolean(sentence));
+  const best = sentences.find((sentence) => sentence.english) ?? sentences[0];
+  return best ? { target: best.target, english: best.english } : null;
+}
+
+/**
+ * Replies to choose from in a role-play turn: the model answer and model
+ * answers of turns from other role-plays — never one this turn would accept,
+ * like another name where any name will do.
+ */
+function replyOptions(
+  course: Course,
+  dialogue: CourseDialogue,
+  answers: string[],
+  random: () => number,
+): string[] {
+  const accepted = new Set(answers.map(normalizeAnswer));
+  const seen = new Set(accepted);
+  const pool = shuffle(
+    [...course.dialogues.values()]
+      .filter((other) => other.key !== dialogue.key && Math.abs(other.unitIndex - dialogue.unitIndex) <= 2)
+      .flatMap((other) => other.lines.flatMap((line) => (line.kind === "you" ? [line.answers[0]] : []))),
+    random,
+  );
+
+  const options = [answers[0]];
+  for (const reply of pool) {
+    if (options.length >= REPLY_OPTIONS) break;
+    const key = normalizeAnswer(reply);
+    if (seen.has(key)) continue;
+    seen.add(key);
+    if (gradeReply(reply, answers).verdict !== "incorrect") continue;
+    options.push(reply);
+  }
+  return shuffle(options, random);
+}
+
 /** A short reminder for an idea the learner keeps missing: its tip, or its first paragraph. */
 function reminderFor(item: GrammarItem): string | null {
   const section = getLesson(item.lessonId)?.sections[item.section - 1];
@@ -89,6 +163,32 @@ function present(
   id: string,
   random: () => number,
 ): PublicExercise | null {
+  if (exercise.mode === "dialogue") {
+    const dialogue = course.dialogues.get(exercise.keys[0]);
+    if (!dialogue) return null;
+    let turn = 0;
+    const lines = dialogue.lines.map((line, index): PublicDialogueLine => {
+      if (line.kind === "them") return line;
+      const typed = exercise.typed?.[turn++] ?? false;
+      return {
+        kind: "you",
+        line: index,
+        instruction: line.instruction,
+        options: typed ? null : replyOptions(course, dialogue, line.answers, random),
+      };
+    });
+    return {
+      id,
+      mode: "dialogue",
+      itemKey: dialogue.key,
+      kind: "dialogue",
+      title: dialogue.title,
+      setting: dialogue.setting,
+      with: dialogue.with,
+      lines,
+    };
+  }
+
   const item = course.items.get(exercise.keys[0]);
   if (!item) return null;
 
@@ -109,6 +209,46 @@ function present(
       });
     if (entries.length === 0) return null;
     return { id, mode: "meet", itemKey: entries[0].key, kind: entries[0].kind, entries };
+  }
+
+  if (exercise.mode === "remind") {
+    if (item.kind === "grammar") {
+      const lesson = getLesson(item.lessonId);
+      const example = lesson?.sections[item.section - 1]?.examples?.[0];
+      return {
+        id,
+        mode: "remind",
+        itemKey: item.key,
+        kind: "grammar",
+        title: item.heading,
+        text: reminderFor(item) ?? "",
+        example: example ? { target: example[0], english: example[1] } : null,
+      };
+    }
+    const phrase = item.kind === "phrase" ? getPhrase(item.phraseId) : null;
+    return {
+      id,
+      mode: "remind",
+      itemKey: item.key,
+      kind: item.kind,
+      title: item.target,
+      text: [item.english, phrase?.literally ? `literally “${phrase.literally}”` : null].filter(Boolean).join(" — "),
+      example: exampleFor(course, item.kind === "word" ? item.clozes : []),
+    };
+  }
+
+  if (exercise.mode === "build") {
+    const sentence = exercise.sentence ? course.sentences.get(exercise.sentence) : undefined;
+    if (!sentence?.english) return null;
+    return {
+      id,
+      mode: "build",
+      itemKey: item.key,
+      kind: item.kind,
+      sentence: sentence.id,
+      prompt: sentence.english,
+      tiles: shuffle([...tilesOf(sentence.target), ...extraTiles(course, sentence, random)], random),
+    };
   }
 
   if (item.kind === "grammar") {
@@ -139,7 +279,6 @@ function present(
       kind: "grammar",
       lessonId: lesson.id,
       question: publicPracticeItem(practice, question),
-      reminder: exercise.reminder ? reminderFor(item) : null,
     };
   }
 
@@ -165,6 +304,39 @@ function present(
       };
     case "type":
       return { id, mode: "type", itemKey: item.key, kind: item.kind, prompt: item.english };
+    case "cloze": {
+      const sentence = exercise.sentence ? course.sentences.get(exercise.sentence) : undefined;
+      const blank = sentence ? blankOut(sentence.target, item.accepted) : null;
+      if (!sentence || !blank) return null;
+      return {
+        id,
+        mode: "cloze",
+        itemKey: item.key,
+        kind: item.kind,
+        sentence: sentence.id,
+        before: blank.before,
+        after: blank.after,
+        translation: sentence.english,
+        hint: sentence.english ? null : item.english,
+      };
+    }
+    case "reply": {
+      const dialogue = exercise.reply ? course.dialogues.get(exercise.reply.dialogue) : undefined;
+      const line = dialogue?.lines[exercise.reply!.line];
+      if (!dialogue || line?.kind !== "you") return null;
+      const before = dialogue.lines.slice(0, exercise.reply!.line).reverse().find((other) => other.kind === "them");
+      return {
+        id,
+        mode: "reply",
+        itemKey: item.key,
+        kind: item.kind,
+        dialogue: dialogue.key,
+        line: exercise.reply!.line,
+        with: dialogue.with,
+        context: before?.kind === "them" ? { target: before.target, english: before.english } : null,
+        instruction: line.instruction,
+      };
+    }
     default:
       return null;
   }
@@ -177,5 +349,6 @@ export function presentStep(course: Course, plan: Plan, random: () => number): P
       .map((exercise, index) => present(course, exercise, String(index), random))
       .filter((exercise): exercise is PublicExercise => exercise !== null),
     unit: { id: unit.id, code: unitCode(unit), title: unit.title, level: unit.level },
+    challenge: plan.exercises.some((exercise) => exercise.role === "challenge"),
   };
 }

@@ -8,6 +8,7 @@
  */
 
 import { revalidatePath } from "next/cache";
+import { redirect } from "next/navigation";
 import { z } from "zod";
 import { prisma } from "@/lib/db";
 import { requireUser } from "@/lib/auth/session";
@@ -41,4 +42,22 @@ export async function updatePreferences(formData: FormData): Promise<void> {
   });
 
   revalidatePath("/learn");
+}
+
+/**
+ * Switch the language being learned, from the language chooser. Each
+ * language keeps its own place on the guided path, so switching back and
+ * forth loses nothing.
+ */
+export async function chooseLanguage(formData: FormData): Promise<void> {
+  const user = await requireUser();
+  const language = String(formData.get("language") ?? "").toLowerCase();
+  if (!hasLanguage(language)) return;
+
+  if (language !== user.currentLanguage) {
+    await prisma.user.update({ where: { id: user.id }, data: { currentLanguage: language } });
+  }
+  // The header shows the language on every page.
+  revalidatePath("/learn", "layout");
+  redirect("/learn");
 }

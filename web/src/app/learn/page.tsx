@@ -19,8 +19,11 @@ import {
   type IdeaStatus,
   type UnitProgress,
 } from "@/lib/path/planner";
-import { loadStates, seedFromLessons } from "@/lib/path/store";
+import { loadMarks, loadStates, rememberProgress, seedFromLessons } from "@/lib/path/store";
+import { levelProgress } from "@/lib/path/levels";
 import { StandingsTable } from "@/components/standings-table";
+import { LanguageChooser } from "@/components/language-chooser";
+import { prisma } from "@/lib/db";
 
 interface MenuEntry {
   href: string;
@@ -82,7 +85,9 @@ export default async function LearnPage() {
   const now = new Date();
   if (hasPath) await seedFromLessons(user.id, language, course, now);
   const states = hasPath ? await loadStates(user.id, language) : new Map();
-  const units = unitProgress(course, states);
+  const marks = hasPath ? await loadMarks(user.id, course) : new Map();
+  const units = unitProgress(course, states, marks);
+  if (hasPath) await rememberProgress(user.id, units, marks, now);
   const currentIndex = Math.min(firstOpenUnit(course, states), Math.max(0, units.length - 1));
   const current = units[currentIndex];
   const ideas = unitIdeas(course, currentIndex, states);
@@ -91,6 +96,7 @@ export default async function LearnPage() {
   const upNextIdea =
     upNext?.entry.type === "grammar" ? course.items.get(upNext.entry.key) : undefined;
   const levelUnits = current ? units.filter((unit) => unit.level === current.level) : [];
+  const level = current ? levelProgress(course, states, current.level, marks) : null;
 
   // The home screen shows the biggest group's week, top five.
   const groups = await groupsFor(user.id);
@@ -121,13 +127,50 @@ export default async function LearnPage() {
   ];
 
   const started = states.size > 0;
+  // Before a new learner's first step anywhere, ask what they want to learn
+  // rather than starting them on whichever language sorts first.
+  const brandNew =
+    !started &&
+    (await prisma.itemProgress.count({ where: { userId: user.id } })) === 0 &&
+    (await prisma.activityLog.count({ where: { userId: user.id } })) === 0;
 
   return (
     <div className="space-y-8">
-      <h1 className="text-xl crt-glow">Hello, {user.displayName}</h1>
+      <div>
+        <h1 className="text-xl crt-glow">Hello, {user.displayName}</h1>
+        {brandNew ? null : (
+          <p className="mt-1 text-sm text-[var(--crt-fg-dim)]">
+            Learning {languageName} &middot; <Link href="/learn/language">change language</Link>
+          </p>
+        )}
+      </div>
+
+      {brandNew ? (
+        <Panel title="What do you want to learn?">
+          <LanguageChooser current={language} />
+          <p className="mt-3 text-xs text-[var(--crt-fg-dim)]">
+            Pick one, then press Start. You can switch any time from the top of the page.
+          </p>
+        </Panel>
+      ) : null}
 
       {hasPath && current ? (
         <>
+          {level?.complete ? (
+            <div className="border-2 border-double border-[var(--crt-accent)] px-5 py-4">
+              <p className="text-lg text-[var(--crt-fg-bright)] crt-glow">
+                ★ You finished {languageName} {current.level.toUpperCase()}
+              </p>
+              <p className="mt-1 text-sm">
+                <Link href={`/learn/level/certificate?level=${current.level}`}>See your certificate &rarr;</Link>
+              </p>
+              {current.index === units.length - 1 ? (
+                <p className="mt-2 text-xs text-[var(--crt-fg-dim)]">
+                  The next level is on its way. Until then, steps keep everything you&apos;ve learned fresh.
+                </p>
+              ) : null}
+            </div>
+          ) : null}
           <Link
             href="/learn/step"
             className="block border-2 border-[var(--crt-accent)] px-5 py-4 no-underline hover:bg-[var(--crt-selection)]"
@@ -153,20 +196,43 @@ export default async function LearnPage() {
           </Link>
 
           <Panel title={`Your path · ${languageName} ${current.level.toUpperCase()}`}>
+            {level ? (
+              <p className="mb-4 flex flex-wrap items-baseline justify-between gap-2 text-sm">
+                <span>
+                  <span className="text-[var(--crt-fg-bright)]">
+                    {level.complete ? "★ complete" : `${level.percent}% of ${current.level.toUpperCase()}`}
+                  </span>
+                  <span className="text-[var(--crt-fg-dim)]">
+                    {" "}· {level.words.done} words · {level.phrases.done} phrases · {level.speaking.done}{" "}
+                    conversations
+                  </span>
+                </span>
+                <Link href="/learn/level" className="text-xs">
+                  Your level &rarr;
+                </Link>
+              </p>
+            ) : null}
             <ol className="space-y-3">
               {levelUnits.map((unit) => (
                 <li key={unit.id}>
                   <UnitRow unit={unit} current={unit.index === currentIndex} />
                   {unit.index === currentIndex ? (
-                    <IdeaList ideas={ideas} />
+                    <>
+                      <IdeaList ideas={ideas} />
+                      {!unit.complete ? (
+                        <p className="mt-2 ml-1 text-xs text-[var(--crt-fg-dim)]">
+                          Know this already?{" "}
+                          <Link href={`/learn/step?challenge=${unit.id}`}>Take the {unit.code} challenge &rarr;</Link>
+                        </p>
+                      ) : null}
+                    </>
                   ) : null}
                 </li>
               ))}
             </ol>
             <p className="mt-4 text-xs text-[var(--crt-fg-dim)]">
-              A unit is learned when you can produce everything in it: type the words and phrases,
-              and answer each idea&apos;s questions on three different days. Progress never goes
-              backwards.
+              A unit is complete when you can produce everything in it on more than one day — or
+              when you pass its challenge. Progress never goes backwards.
             </p>
           </Panel>
         </>

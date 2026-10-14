@@ -3,6 +3,8 @@ export interface VocabWord {
   word: string;
   translations: string[];
   examples: string[];
+  /** English for each example, in the same order, where the source gives it. */
+  examples_en?: string[];
   category: string;
   difficulty: number;
 }

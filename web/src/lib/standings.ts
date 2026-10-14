@@ -37,6 +37,28 @@ export interface Standing {
   weekPoints: number;
   totalPoints: number;
   streak: number;
+  /** Highest finished level per language: ["IT A1", "FR A2"]. */
+  badges?: string[];
+}
+
+const LANGUAGE_CODES: Record<string, string> = { italian: "IT", spanish: "ES", french: "FR", portuguese: "PT" };
+const LEVEL_ORDER = ["a1", "a2", "b1", "b2", "c1", "c2"];
+
+/**
+ * Badges from a learner's finished-level achievements ("level:italian:a1"):
+ * the highest level finished in each language, languages in a fixed order.
+ */
+export function levelBadges(achievements: string[]): string[] {
+  const best = new Map<string, number>();
+  for (const name of achievements) {
+    const [kind, language, level] = name.split(":");
+    const rank = LEVEL_ORDER.indexOf(level);
+    if (kind !== "level" || !language || rank === -1) continue;
+    best.set(language, Math.max(best.get(language) ?? -1, rank));
+  }
+  return [...best.entries()]
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([language, rank]) => `${LANGUAGE_CODES[language] ?? language.slice(0, 2).toUpperCase()} ${LEVEL_ORDER[rank].toUpperCase()}`);
 }
 
 export type BoardPeriod = "week" | "all";

@@ -20,7 +20,10 @@
         "Olá, tudo bem?"
       ],
       "category": "greetings",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "Hello, how are you?"
+      ]
     },
     {
       "word": "oi",
@@ -31,7 +34,10 @@
         "Oi, como vai você?"
       ],
       "category": "greetings",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "Hi, how are you doing?"
+      ]
     },
     {
       "word": "bom dia",
@@ -42,7 +48,10 @@
         "Bom dia, dona Marta."
       ],
       "category": "greetings",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "Good morning, Mrs. Marta."
+      ]
     },
     {
       "word": "boa tarde",
@@ -53,7 +62,10 @@
         "Boa tarde, posso ajudar?"
       ],
       "category": "greetings",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "Good afternoon, can I help you?"
+      ]
     },
     {
       "word": "boa noite",
@@ -65,7 +77,10 @@
         "Boa noite, até amanhã."
       ],
       "category": "greetings",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "Good night, see you tomorrow."
+      ]
     },
     {
       "word": "tchau",
@@ -76,7 +91,10 @@
         "Tchau, a gente se vê."
       ],
       "category": "greetings",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "Bye, see you around."
+      ]
     },
     {
       "word": "até logo",
@@ -87,7 +105,10 @@
         "Até logo, estou com pressa."
       ],
       "category": "greetings",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "See you later, I'm in a hurry."
+      ]
     },
     {
       "word": "obrigado",
@@ -98,7 +119,10 @@
         "Muito obrigado pela sua ajuda."
       ],
       "category": "greetings",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "Thank you very much for your help."
+      ]
     },
     {
       "word": "de nada",
@@ -109,7 +133,10 @@
         "De nada, foi um prazer."
       ],
       "category": "greetings",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "You're welcome, it was a pleasure."
+      ]
     },
     {
       "word": "por favor",
@@ -120,7 +147,10 @@
         "Um café, por favor."
       ],
       "category": "greetings",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "A coffee, please."
+      ]
     },
     {
       "word": "desculpa",
@@ -131,7 +161,10 @@
         "Desculpa, não te vi."
       ],
       "category": "greetings",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "Sorry, I didn't see you."
+      ]
     },
     {
       "word": "com licença",
@@ -142,7 +175,10 @@
         "Com licença, onde fica o banheiro?"
       ],
       "category": "greetings",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "Excuse me, where is the bathroom?"
+      ]
     },
     {
       "word": "prazer",
@@ -154,7 +190,10 @@
         "Prazer em conhecer você."
       ],
       "category": "greetings",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "Nice to meet you."
+      ]
     },
     {
       "word": "bem-vindo",
@@ -165,7 +204,10 @@
         "Bem-vindo ao Rio!"
       ],
       "category": "greetings",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "Welcome to Rio!"
+      ]
     },
     {
       "word": "sim",
@@ -176,7 +218,10 @@
         "Sim, eu entendo."
       ],
       "category": "basics",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "Yes, I understand."
+      ]
     },
     {
       "word": "não",
@@ -188,7 +233,10 @@
         "Não, obrigado."
       ],
       "category": "basics",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "No, thank you."
+      ]
     },
     {
       "word": "talvez",
@@ -200,7 +248,10 @@
         "Talvez a gente vá à praia."
       ],
       "category": "basics",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "Maybe we'll go to the beach."
+      ]
     },
     {
       "word": "muito",
@@ -212,7 +263,10 @@
         "Estou muito cansado hoje."
       ],
       "category": "basics",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "I'm very tired today."
+      ]
     },
     {
       "word": "pouco",
@@ -224,7 +278,10 @@
         "Falo pouco português ainda."
       ],
       "category": "basics",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "I don't speak much Portuguese yet."
+      ]
     },
     {
       "word": "também",
@@ -236,7 +293,10 @@
         "Eu também quero ir."
       ],
       "category": "basics",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "I want to go too."
+      ]
     },
     {
       "word": "mas",
@@ -247,7 +307,10 @@
         "Quero sair, mas está chovendo."
       ],
       "category": "basics",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "I want to go out, but it's raining."
+      ]
     },
     {
       "word": "porque",
@@ -258,7 +321,10 @@
         "Não fui porque estava doente."
       ],
       "category": "basics",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "I didn't go because I was sick."
+      ]
     },
     {
       "word": "como",
@@ -270,7 +336,10 @@
         "Como se diz isso em português?"
       ],
       "category": "basics",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "How do you say this in Portuguese?"
+      ]
     },
     {
       "word": "onde",
@@ -281,7 +350,10 @@
         "Onde você mora?"
       ],
       "category": "basics",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "Where do you live?"
+      ]
     },
     {
       "word": "quando",
@@ -292,7 +364,10 @@
         "Quando chega o trem?"
       ],
       "category": "basics",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "When does the train arrive?"
+      ]
     },
     {
       "word": "quem",
@@ -303,7 +378,10 @@
         "Quem é aquela moça?"
       ],
       "category": "basics",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "Who is that young woman?"
+      ]
     },
     {
       "word": "que",
@@ -315,7 +393,10 @@
         "O que você faz hoje à noite?"
       ],
       "category": "basics",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "What are you doing tonight?"
+      ]
     },
     {
       "word": "quanto",
@@ -327,7 +408,10 @@
         "Quanto custa isto?"
       ],
       "category": "basics",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "How much does this cost?"
+      ]
     },
     {
       "word": "bem",
@@ -339,7 +423,10 @@
         "Estou bem, obrigado."
       ],
       "category": "basics",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "I'm fine, thank you."
+      ]
     },
     {
       "word": "mal",
@@ -351,7 +438,10 @@
         "Hoje me sinto mal."
       ],
       "category": "basics",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "I don't feel well today."
+      ]
     },
     {
       "word": "sempre",
@@ -362,7 +452,10 @@
         "Sempre tomo café de manhã."
       ],
       "category": "basics",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I always have coffee in the morning."
+      ]
     },
     {
       "word": "nunca",
@@ -373,7 +466,10 @@
         "Nunca estive em Salvador."
       ],
       "category": "basics",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I've never been to Salvador."
+      ]
     },
     {
       "word": "agora",
@@ -384,7 +480,10 @@
         "Agora preciso ir."
       ],
       "category": "basics",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I need to go now."
+      ]
     },
     {
       "word": "aqui",
@@ -395,7 +494,10 @@
         "O restaurante fica aqui perto."
       ],
       "category": "basics",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "The restaurant is near here."
+      ]
     },
     {
       "word": "um",
@@ -406,7 +508,10 @@
         "Tenho só um."
       ],
       "category": "numbers",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "I only have one."
+      ]
     },
     {
       "word": "dois",
@@ -417,7 +522,10 @@
         "Quero dois bilhetes."
       ],
       "category": "numbers",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "I want two tickets."
+      ]
     },
     {
       "word": "três",
@@ -428,7 +536,10 @@
         "Há três livros na mesa."
       ],
       "category": "numbers",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "There are three books on the table."
+      ]
     },
     {
       "word": "quatro",
@@ -439,7 +550,10 @@
         "A reunião é às quatro."
       ],
       "category": "numbers",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "The meeting is at four."
+      ]
     },
     {
       "word": "cinco",
@@ -450,7 +564,10 @@
         "Moro no quinto andar, número cinco."
       ],
       "category": "numbers",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "I live on the fifth floor, number five."
+      ]
     },
     {
       "word": "seis",
@@ -461,7 +578,10 @@
         "Acordo às seis todos os dias."
       ],
       "category": "numbers",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "I wake up at six every day."
+      ]
     },
     {
       "word": "sete",
@@ -472,7 +592,10 @@
         "A semana tem sete dias."
       ],
       "category": "numbers",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "A week has seven days."
+      ]
     },
     {
       "word": "oito",
@@ -483,7 +606,10 @@
         "A loja abre às oito."
       ],
       "category": "numbers",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "The shop opens at eight."
+      ]
     },
     {
       "word": "nove",
@@ -494,7 +620,10 @@
         "Tenho nove primos."
       ],
       "category": "numbers",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "I have nine cousins."
+      ]
     },
     {
       "word": "dez",
@@ -505,7 +634,10 @@
         "Custa dez reais."
       ],
       "category": "numbers",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "It costs ten reais."
+      ]
     },
     {
       "word": "vinte",
@@ -516,7 +648,10 @@
         "Tenho vinte minutos de pausa."
       ],
       "category": "numbers",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I have a twenty-minute break."
+      ]
     },
     {
       "word": "cem",
@@ -527,7 +662,10 @@
         "O livro tem cem páginas."
       ],
       "category": "numbers",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "The book has a hundred pages."
+      ]
     },
     {
       "word": "mil",
@@ -538,7 +676,10 @@
         "A cidade tem mil anos de história."
       ],
       "category": "numbers",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "The city has a thousand years of history."
+      ]
     },
     {
       "word": "primeiro",
@@ -549,7 +690,10 @@
         "É meu primeiro dia de trabalho."
       ],
       "category": "numbers",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "It's my first day at work."
+      ]
     },
     {
       "word": "família",
@@ -560,7 +704,10 @@
         "Minha família é muito grande."
       ],
       "category": "family",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "My family is very big."
+      ]
     },
     {
       "word": "mãe",
@@ -571,7 +718,10 @@
         "Minha mãe cozinha muito bem."
       ],
       "category": "family",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "My mother cooks very well."
+      ]
     },
     {
       "word": "pai",
@@ -582,7 +732,10 @@
         "Meu pai trabalha num banco."
       ],
       "category": "family",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "My father works at a bank."
+      ]
     },
     {
       "word": "filho",
@@ -594,7 +747,10 @@
         "O filho dele tem cinco anos."
       ],
       "category": "family",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "His son is five years old."
+      ]
     },
     {
       "word": "filha",
@@ -605,7 +761,10 @@
         "A filha deles estuda medicina."
       ],
       "category": "family",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "Their daughter is studying medicine."
+      ]
     },
     {
       "word": "irmão",
@@ -616,7 +775,10 @@
         "Tenho um irmão mais velho."
       ],
       "category": "family",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "I have an older brother."
+      ]
     },
     {
       "word": "irmã",
@@ -627,7 +789,10 @@
         "Minha irmã mora em Lisboa."
       ],
       "category": "family",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "My sister lives in Lisbon."
+      ]
     },
     {
       "word": "avô",
@@ -638,7 +803,10 @@
         "Meu avô conta boas histórias."
       ],
       "category": "family",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "My grandfather tells good stories."
+      ]
     },
     {
       "word": "avó",
@@ -649,7 +817,10 @@
         "A avó faz um bolo ótimo."
       ],
       "category": "family",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "Grandma makes a great cake."
+      ]
     },
     {
       "word": "marido",
@@ -660,7 +831,10 @@
         "O marido dela é professor."
       ],
       "category": "family",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "Her husband is a teacher."
+      ]
     },
     {
       "word": "esposa",
@@ -671,7 +845,10 @@
         "Minha esposa adora viajar."
       ],
       "category": "family",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "My wife loves to travel."
+      ]
     },
     {
       "word": "amigo",
@@ -682,7 +859,10 @@
         "Vou ao cinema com um amigo."
       ],
       "category": "family",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "I'm going to the movies with a friend."
+      ]
     },
     {
       "word": "criança",
@@ -693,7 +873,10 @@
         "A criança brinca no parque."
       ],
       "category": "family",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "The child is playing in the park."
+      ]
     },
     {
       "word": "moça",
@@ -705,7 +888,10 @@
         "Aquela moça é minha vizinha."
       ],
       "category": "family",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "That young woman is my neighbor."
+      ]
     },
     {
       "word": "homem",
@@ -716,7 +902,10 @@
         "Aquele homem trabalha aqui há anos."
       ],
       "category": "family",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "That man has worked here for years."
+      ]
     },
     {
       "word": "mulher",
@@ -728,7 +917,10 @@
         "A mulher do caixa é muito gentil."
       ],
       "category": "family",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "The woman at the checkout is very kind."
+      ]
     },
     {
       "word": "água",
@@ -739,7 +931,10 @@
         "Quero um copo de água."
       ],
       "category": "food",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "I want a glass of water."
+      ]
     },
     {
       "word": "pão",
@@ -750,7 +945,10 @@
         "Compro pão toda manhã."
       ],
       "category": "food",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "I buy bread every morning."
+      ]
     },
     {
       "word": "vinho",
@@ -761,7 +959,10 @@
         "Uma taça de vinho tinto, por favor."
       ],
       "category": "food",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "A glass of red wine, please."
+      ]
     },
     {
       "word": "café",
@@ -772,7 +973,10 @@
         "Tomo um café na padaria."
       ],
       "category": "food",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "I have a coffee at the bakery."
+      ]
     },
     {
       "word": "leite",
@@ -783,7 +987,10 @@
         "Bebo leite no café da manhã."
       ],
       "category": "food",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "I drink milk at breakfast."
+      ]
     },
     {
       "word": "arroz",
@@ -794,7 +1001,10 @@
         "O arroz já está pronto."
       ],
       "category": "food",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "The rice is ready."
+      ]
     },
     {
       "word": "feijão",
@@ -805,7 +1015,10 @@
         "Arroz com feijão todo dia."
       ],
       "category": "food",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "Rice and beans every day."
+      ]
     },
     {
       "word": "carne",
@@ -816,7 +1029,10 @@
         "Não como carne às sextas."
       ],
       "category": "food",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I don't eat meat on Fridays."
+      ]
     },
     {
       "word": "peixe",
@@ -827,7 +1043,10 @@
         "O peixe está fresquíssimo hoje."
       ],
       "category": "food",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "The fish is really fresh today."
+      ]
     },
     {
       "word": "queijo",
@@ -838,7 +1057,10 @@
         "Este queijo é de Minas."
       ],
       "category": "food",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "This cheese is from Minas Gerais."
+      ]
     },
     {
       "word": "fruta",
@@ -849,7 +1071,10 @@
         "Como fruta todos os dias."
       ],
       "category": "food",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I eat fruit every day."
+      ]
     },
     {
       "word": "verdura",
@@ -861,7 +1086,10 @@
         "Compro verdura na feira."
       ],
       "category": "food",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I buy vegetables at the street market."
+      ]
     },
     {
       "word": "ovo",
@@ -872,7 +1100,10 @@
         "Quero dois ovos fritos."
       ],
       "category": "food",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I want two fried eggs."
+      ]
     },
     {
       "word": "açúcar",
@@ -883,7 +1114,10 @@
         "Você toma açúcar no café?"
       ],
       "category": "food",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "Do you take sugar in your coffee?"
+      ]
     },
     {
       "word": "sal",
@@ -894,7 +1128,10 @@
         "Está faltando um pouco de sal."
       ],
       "category": "food",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "It needs a little salt."
+      ]
     },
     {
       "word": "café da manhã",
@@ -905,7 +1142,10 @@
         "O café da manhã é às sete."
       ],
       "category": "food",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "Breakfast is at seven."
+      ]
     },
     {
       "word": "almoço",
@@ -916,7 +1156,10 @@
         "O almoço é ao meio-dia."
       ],
       "category": "food",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "Lunch is at noon."
+      ]
     },
     {
       "word": "jantar",
@@ -928,7 +1171,10 @@
         "O jantar já está pronto."
       ],
       "category": "food",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "Dinner is ready."
+      ]
     },
     {
       "word": "restaurante",
@@ -939,7 +1185,10 @@
         "Conheço um bom restaurante aqui."
       ],
       "category": "food",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I know a good restaurant around here."
+      ]
     },
     {
       "word": "dia",
@@ -950,7 +1199,10 @@
         "Que dia é hoje?"
       ],
       "category": "time",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "What day is it today?"
+      ]
     },
     {
       "word": "semana",
@@ -961,7 +1213,10 @@
         "A gente se vê semana que vem."
       ],
       "category": "time",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "See you next week."
+      ]
     },
     {
       "word": "mês",
@@ -972,7 +1227,10 @@
         "Vou viajar mês que vem."
       ],
       "category": "time",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I'm going to travel next month."
+      ]
     },
     {
       "word": "ano",
@@ -983,7 +1241,10 @@
         "Estudo português há um ano."
       ],
       "category": "time",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "I've been studying Portuguese for a year."
+      ]
     },
     {
       "word": "hoje",
@@ -994,7 +1255,10 @@
         "Hoje está muito quente."
       ],
       "category": "time",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "It's very hot today."
+      ]
     },
     {
       "word": "amanhã",
@@ -1005,7 +1269,10 @@
         "Amanhã tenho uma prova."
       ],
       "category": "time",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "I have a test tomorrow."
+      ]
     },
     {
       "word": "ontem",
@@ -1016,7 +1283,10 @@
         "Ontem fui ao museu."
       ],
       "category": "time",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "Yesterday I went to the museum."
+      ]
     },
     {
       "word": "manhã",
@@ -1027,7 +1297,10 @@
         "De manhã eu corro no parque."
       ],
       "category": "time",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "In the morning I go running in the park."
+      ]
     },
     {
       "word": "tarde",
@@ -1039,7 +1312,10 @@
         "À tarde eu estudo."
       ],
       "category": "time",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "In the afternoon I study."
+      ]
     },
     {
       "word": "noite",
@@ -1051,7 +1327,10 @@
         "Dormi mal esta noite."
       ],
       "category": "time",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I slept badly last night."
+      ]
     },
     {
       "word": "hora",
@@ -1063,7 +1342,10 @@
         "Que horas são?"
       ],
       "category": "time",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "What time is it?"
+      ]
     },
     {
       "word": "minuto",
@@ -1074,7 +1356,10 @@
         "Espera um minuto, por favor."
       ],
       "category": "time",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "Wait a minute, please."
+      ]
     },
     {
       "word": "segunda-feira",
@@ -1085,7 +1370,10 @@
         "Segunda-feira volto ao trabalho."
       ],
       "category": "time",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "On Monday I go back to work."
+      ]
     },
     {
       "word": "sábado",
@@ -1096,7 +1384,10 @@
         "Sábado vamos à serra."
       ],
       "category": "time",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "On Saturday we're going to the mountains."
+      ]
     },
     {
       "word": "domingo",
@@ -1107,7 +1398,10 @@
         "Aos domingos durmo até tarde."
       ],
       "category": "time",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "On Sundays I sleep in."
+      ]
     },
     {
       "word": "casa",
@@ -1119,7 +1413,10 @@
         "Volto para casa às seis."
       ],
       "category": "housing",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "I go back home at six."
+      ]
     },
     {
       "word": "cidade",
@@ -1130,7 +1427,10 @@
         "O Rio é uma cidade linda."
       ],
       "category": "travel",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "Rio is a beautiful city."
+      ]
     },
     {
       "word": "rua",
@@ -1141,7 +1441,10 @@
         "A rua está fechada por obras."
       ],
       "category": "travel",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "The street is closed for roadwork."
+      ]
     },
     {
       "word": "estação",
@@ -1152,7 +1455,10 @@
         "A estação fica a dez minutos."
       ],
       "category": "transportation",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "The station is ten minutes away."
+      ]
     },
     {
       "word": "trem",
@@ -1163,7 +1469,10 @@
         "O trem para Campinas sai às nove."
       ],
       "category": "transportation",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "The train to Campinas leaves at nine."
+      ]
     },
     {
       "word": "ônibus",
@@ -1174,7 +1483,10 @@
         "Pego o ônibus número vinte."
       ],
       "category": "transportation",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I take the number twenty bus."
+      ]
     },
     {
       "word": "carro",
@@ -1185,7 +1497,10 @@
         "O carro está estacionado atrás."
       ],
       "category": "transportation",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "The car is parked around the back."
+      ]
     },
     {
       "word": "aeroporto",
@@ -1196,7 +1511,10 @@
         "Chego ao aeroporto às oito."
       ],
       "category": "transportation",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I get to the airport at eight."
+      ]
     },
     {
       "word": "hotel",
@@ -1207,7 +1525,10 @@
         "Reservamos um hotel no centro."
       ],
       "category": "travel",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "We booked a hotel downtown."
+      ]
     },
     {
       "word": "loja",
@@ -1219,7 +1540,10 @@
         "A loja fecha às sete."
       ],
       "category": "shopping",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "The shop closes at seven."
+      ]
     },
     {
       "word": "feira",
@@ -1230,7 +1554,10 @@
         "A feira acontece aos sábados."
       ],
       "category": "shopping",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "The street market is on Saturdays."
+      ]
     },
     {
       "word": "passagem",
@@ -1241,7 +1568,10 @@
         "Comprei a passagem pela internet."
       ],
       "category": "travel",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I bought the ticket online."
+      ]
     },
     {
       "word": "livro",
@@ -1252,7 +1582,10 @@
         "Estou lendo um livro em português."
       ],
       "category": "education",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "I'm reading a book in Portuguese."
+      ]
     },
     {
       "word": "trabalho",
@@ -1264,7 +1597,10 @@
         "Gosto muito do meu trabalho."
       ],
       "category": "work",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "I really like my job."
+      ]
     },
     {
       "word": "escola",
@@ -1275,7 +1611,10 @@
         "As crianças vão à escola às sete."
       ],
       "category": "education",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "The children go to school at seven."
+      ]
     },
     {
       "word": "dinheiro",
@@ -1286,7 +1625,10 @@
         "Não estou com dinheiro."
       ],
       "category": "shopping",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I don't have any money on me."
+      ]
     },
     {
       "word": "telefone",
@@ -1297,7 +1639,10 @@
         "Te ligo no telefone hoje à noite."
       ],
       "category": "technology",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "I'll call you tonight."
+      ]
     },
     {
       "word": "grande",
@@ -1309,7 +1654,10 @@
         "Moro numa casa grande."
       ],
       "category": "basics",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "I live in a big house."
+      ]
     },
     {
       "word": "pequeno",
@@ -1321,7 +1669,10 @@
         "Tenho um apartamento pequeno."
       ],
       "category": "basics",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "I have a small apartment."
+      ]
     },
     {
       "word": "novo",
@@ -1333,7 +1684,10 @@
         "Comprei um computador novo."
       ],
       "category": "basics",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "I bought a new computer."
+      ]
     },
     {
       "word": "bonito",
@@ -1345,7 +1699,10 @@
         "Que dia bonito!"
       ],
       "category": "basics",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "What a beautiful day!"
+      ]
     },
     {
       "word": "bom",
@@ -1356,7 +1713,10 @@
         "Este café está muito bom."
       ],
       "category": "basics",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "This coffee is very good."
+      ]
     },
     {
       "word": "calor",
@@ -1368,7 +1728,10 @@
         "Hoje está fazendo calor."
       ],
       "category": "weather",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "It's hot today."
+      ]
     },
     {
       "word": "frio",
@@ -1379,7 +1742,10 @@
         "No inverno faz frio aqui."
       ],
       "category": "weather",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "It's cold here in winter."
+      ]
     },
     {
       "word": "chuva",
@@ -1390,7 +1756,10 @@
         "A chuva começou de madrugada."
       ],
       "category": "weather",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "The rain started in the early hours of the morning."
+      ]
     },
     {
       "word": "sol",
@@ -1401,7 +1770,10 @@
         "Hoje tem sol."
       ],
       "category": "weather",
-      "difficulty": 1
+      "difficulty": 1,
+      "examples_en": [
+        "It's sunny today."
+      ]
     },
     {
       "word": "feliz",
@@ -1412,7 +1784,10 @@
         "Estou feliz em te ver."
       ],
       "category": "emotions",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I'm happy to see you."
+      ]
     },
     {
       "word": "cansado",
@@ -1423,7 +1798,10 @@
         "Estou cansado depois do trabalho."
       ],
       "category": "emotions",
-      "difficulty": 2
+      "difficulty": 2,
+      "examples_en": [
+        "I'm tired after work."
+      ]
     }
   ]
 }

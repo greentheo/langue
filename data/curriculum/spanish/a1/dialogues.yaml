@@ -1,0 +1,646 @@
+# Scripted role-plays for the guided path. See data/curriculum/README.md
+# ("Dialogues file") for the format and rules. A dialogue for unit N uses
+# only words and phrases from units 1..N.
+
+dialogues:
+  # ── Unit 1: ¡Hola! ──────────────────────────────────────────────────────
+  - id: new-school
+    unit: 1
+    title: First day at school
+    setting: It's your first day at a new school in Mexico. A girl in your class says hello.
+    with: Lucía
+    lines:
+      - them: ¡Hola! Me llamo Lucía. ¿Cómo te llamas?
+        english: Hi! My name's Lucía. What's your name?
+      - you: Say hi and tell her your name.
+        answers:
+          - ¡Hola! Me llamo Sam.
+          - Hola, me llamo *.
+          - Me llamo *.
+          - Hola, soy *.
+      - them: Mucho gusto. ¿Cómo estás?
+        english: Nice to meet you. How are you?
+      - you: Say you're fine, thanks, and ask how she is.
+        answers:
+          - Bien, gracias. ¿Y tú?
+          - Muy bien, gracias. ¿Y tú?
+          - Bien, gracias. ¿Cómo estás?
+          - Muy bien, gracias. ¿Cómo estás tú?
+      - them: Muy bien. ¡Uy, viene la profesora! Hasta luego.
+        english: Very well. Oops, the teacher's coming! See you later.
+      - you: Say see you later.
+        answers:
+          - Hasta luego.
+          - Adiós, hasta luego.
+          - Adiós.
+
+  - id: the-neighbour
+    unit: 1
+    title: The lady next door
+    setting: You're staying in an apartment in Madrid. One afternoon you meet your neighbour, an older lady, at the door. Be polite.
+    with: your neighbour
+    lines:
+      - them: Buenas tardes.
+        english: Good afternoon.
+      - you: Say good afternoon and ask how she is, politely.
+        answers:
+          - Buenas tardes. ¿Cómo está usted?
+          - Buenas tardes. ¿Cómo está?
+          - Buenas tardes, señora. ¿Cómo está usted?
+          - Hola, buenas tardes. ¿Cómo está usted?
+      - them: Muy bien, gracias. ¿Y usted?
+        english: Very well, thank you. And you?
+      - you: Say you're fine, thank you.
+        answers:
+          - Bien, gracias.
+          - Muy bien, gracias.
+          - Bien, muchas gracias.
+          - Muy bien, muchas gracias.
+      - them: Me llamo Carmen. ¿Cómo se llama usted?
+        english: My name is Carmen. What's your name?
+      - you: Tell her your name, and say nice to meet you.
+        answers:
+          - Me llamo Alex. Mucho gusto.
+          - Me llamo *. Mucho gusto.
+          - Me llamo *. Encantado.
+          - Me llamo *. Encantada.
+          - Mucho gusto. Me llamo *.
+      - them: Mucho gusto. Bueno, ¡hasta luego!
+        english: Nice to meet you. Well, see you later!
+      - you: Say goodbye.
+        answers:
+          - Adiós.
+          - Adiós, señora.
+          - Hasta luego.
+          - Adiós, hasta luego.
+
+  # ── Unit 2: How Spanish sounds ──────────────────────────────────────────
+  - id: dog-in-the-park
+    unit: 2
+    title: A dog in the park
+    setting: In a park in Bogotá, a girl with a dog says something to you, very fast.
+    with: a girl in the park
+    lines:
+      - them: ¡Hola! ¿Te gustan los perros?
+        english: Hi! Do you like dogs?
+      - you: Say sorry, you don't understand.
+        answers:
+          - Lo siento, no entiendo.
+          - Perdón, no entiendo.
+          - No entiendo.
+      - them: ¿Te gustan los perros?
+        english: Do you like dogs?
+      - you: Ask her to say it more slowly, please.
+        answers:
+          - Más despacio, por favor.
+          - ¿Puedes hablar más despacio, por favor?
+          - ¿Puede hablar más despacio, por favor?
+          - Más despacio.
+      - them: ¿Te… gustan… los… perros?
+        english: Do… you… like… dogs?
+      - you: 'Ask what "perros" means.'
+        answers:
+          - ¿Qué significa «perros»?
+          - ¿Qué quiere decir «perros»?
+      - them: '«Perros» es "dogs" en inglés. ¡Mira, mi perro!'
+        english: '"Perros" is "dogs" in English. Look, my dog!'
+      - you: Say yes, and thank her.
+        answers:
+          - ¡Sí! Gracias.
+          - Sí, muchas gracias.
+          - Sí, me gustan. Gracias.
+      - them: ¡De nada! ¡Adiós!
+        english: You're welcome! Bye!
+      - you: Say see you later.
+        answers:
+          - Hasta luego.
+          - Adiós, hasta luego.
+          - Adiós.
+
+  # ── Unit 3: Who are you? ────────────────────────────────────────────────
+  - id: summer-camp
+    unit: 3
+    title: At summer camp
+    setting: You're at a summer camp in Spain. A boy sits down next to you at lunch.
+    with: Diego
+    lines:
+      - them: ¡Hola! Soy Diego. ¿Cómo te llamas?
+        english: Hi! I'm Diego. What's your name?
+      - you: Tell him your name.
+        answers:
+          - Me llamo Emma.
+          - Me llamo *.
+          - Soy *.
+          - Yo me llamo *.
+          - Hola, me llamo *.
+      - them: Mucho gusto. ¿De dónde eres?
+        english: Nice to meet you. Where are you from?
+      - you: Say you're from the United States, and ask where he's from.
+        answers:
+          - Soy de Estados Unidos. ¿Y tú?
+          - Soy de los Estados Unidos. ¿Y tú?
+          - Soy de Estados Unidos. ¿De dónde eres?
+          - Soy de Estados Unidos. ¿De dónde eres tú?
+          - Soy de *. ¿Y tú?
+      - them: Soy de aquí, de Madrid. ¿Cuántos años tienes?
+        english: I'm from here, from Madrid. How old are you?
+      - you: Say you're twelve.
+        answers:
+          - Tengo doce años.
+          - Tengo 12 años.
+          - Yo tengo doce años.
+          - Tengo * años.
+      - them: ¡Yo también! Mira, esta es mi amiga Sara.
+        english: Me too! Look, this is my friend Sara.
+      - you: Say hi to Sara, and say nice to meet you.
+        answers:
+          - Hola, Sara. Mucho gusto.
+          - Hola, Sara. Encantado.
+          - Hola, Sara. Encantada.
+          - Mucho gusto, Sara.
+          - Hola. Mucho gusto.
+
+  - id: dinner-in-buenos-aires
+    unit: 3
+    title: A dinner in Buenos Aires
+    setting: At a dinner in Buenos Aires, your host introduces you to an older man. Be polite.
+    with: Señor Ruiz
+    lines:
+      - them: Buenas noches. Me llamo Jorge Ruiz.
+        english: Good evening. My name is Jorge Ruiz.
+      - you: Say good evening, and that you're pleased to meet him.
+        answers:
+          - Buenas noches. Mucho gusto.
+          - Buenas noches. Encantado.
+          - Buenas noches. Encantada.
+          - Buenas noches, señor. Mucho gusto.
+          - Mucho gusto.
+      - them: Mucho gusto. ¿De dónde es usted?
+        english: Nice to meet you. Where are you from?
+      - you: Say you're from Canada, and ask where he's from, politely.
+        answers:
+          - Soy de Canadá. ¿Y usted?
+          - Soy de Canadá. ¿De dónde es usted?
+          - Soy canadiense. ¿Y usted?
+          - Yo soy de Canadá. ¿Y usted?
+          - Soy de *. ¿Y usted?
+      - them: Soy de aquí, de Buenos Aires. ¿Es usted estudiante?
+        english: I'm from here, from Buenos Aires. Are you a student?
+      - you: Say no, you're not a student. You're a teacher.
+        answers:
+          - No, no soy estudiante. Soy profesor.
+          - No, no soy estudiante. Soy profesora.
+          - No, soy profesor.
+          - No, soy profesora.
+          - No, no soy estudiante.
+      - them: ¡Ah, yo también soy profesor!
+        english: Oh, I'm a teacher too!
+
+  # ── Unit 4: Things you have ─────────────────────────────────────────────
+  - id: in-class
+    unit: 4
+    title: In class
+    setting: You're in class at a school in Santiago, Chile. The girl next to you whispers to you.
+    with: Clara
+    lines:
+      - them: Oye, ¿tienes un lápiz?
+        english: Hey, do you have a pencil?
+      - you: Say yes, you have two pencils.
+        answers:
+          - Sí, tengo dos lápices.
+          - Sí, tengo dos.
+          - Sí, yo tengo dos lápices.
+          - Tengo dos lápices.
+      - them: ¡Gracias! Tengo mucha sed. ¿Hay agua aquí?
+        english: Thanks! I'm really thirsty. Is there any water here?
+      - you: Say yes, there's water on the table.
+        answers:
+          - Sí, hay agua en la mesa.
+          - Hay agua en la mesa.
+          - Sí, en la mesa.
+      - them: ¿Y tú? ¿Tienes sed?
+        english: And you? Are you thirsty?
+      - you: Say no, but you're very hungry.
+        answers:
+          - No, pero tengo mucha hambre.
+          - No, tengo mucha hambre.
+          - No, pero yo tengo mucha hambre.
+          - No, pero tengo hambre.
+      - them: ¡Yo también! Y tengo mucho sueño…
+        english: Me too! And I'm really sleepy…
+
+  # ── Unit 5: Where is it? ────────────────────────────────────────────────
+  - id: lost-in-seville
+    unit: 5
+    title: Lost in Seville
+    setting: You're lost in Seville and need the train station. A woman sees you looking at your map.
+    with: a woman in the street
+    lines:
+      - them: Perdone, ¿necesita ayuda?
+        english: Excuse me, do you need help?
+      - you: Say yes, you're lost.
+        answers:
+          - Sí, estoy perdido.
+          - Sí, estoy perdida.
+          - Sí, gracias. Estoy perdido.
+          - Sí, gracias. Estoy perdida.
+      - them: ¿Adónde va?
+        english: Where are you going?
+      - you: Ask where the station is.
+        answers:
+          - ¿Dónde está la estación?
+          - ¿Dónde está la estación de tren?
+          - Perdón, ¿dónde está la estación?
+      - them: Todo recto y luego a la derecha.
+        english: Straight ahead and then to the right.
+      - you: Ask if it's far.
+        answers:
+          - ¿Está lejos?
+          - ¿Está muy lejos?
+          - ¿La estación está lejos?
+      - them: No, está cerca. A cinco minutos.
+        english: No, it's close. Five minutes away.
+      - you: Thank her very much.
+        answers:
+          - Muchas gracias.
+          - Muchas gracias, señora.
+          - Gracias.
+      - them: De nada. ¡Adiós!
+        english: You're welcome. Bye!
+
+  - id: bus-to-puebla
+    unit: 5
+    title: The bus to Puebla
+    setting: You're at the bus station in Mexico City. You want to go to Puebla.
+    with: the ticket seller
+    lines:
+      - them: Buenas tardes. ¿Adónde va?
+        english: Good afternoon. Where are you going?
+      - you: Ask for a ticket to Puebla, please.
+        answers:
+          - Un boleto para Puebla, por favor.
+          - Un boleto a Puebla, por favor.
+          - Un billete para Puebla, por favor.
+          - Un boleto para Puebla.
+          - A Puebla, por favor.
+      - them: Son ciento veinte pesos.
+        english: That's a hundred and twenty pesos.
+      - you: Ask him to repeat that, please. Be polite.
+        answers:
+          - ¿Puede repetir, por favor?
+          - ¿Puede repetir?
+          - Perdón, ¿puede repetir?
+          - ¿Puede repetir, por favor? No entiendo.
+      - them: Ciento… veinte… pesos. Aquí tiene su boleto.
+        english: A hundred… and twenty… pesos. Here's your ticket.
+      - you: Say thanks, and ask where the bathroom is.
+        answers:
+          - Gracias. ¿Dónde está el baño?
+          - Gracias. Perdón, ¿dónde está el baño?
+          - Gracias. ¿Dónde está el baño, por favor?
+          - Muchas gracias. ¿Dónde está el baño?
+      - them: Allí, a la derecha.
+        english: Over there, on the right.
+      - you: Ask where the bus to Puebla is.
+        answers:
+          - ¿Dónde está el autobús para Puebla?
+          - ¿Dónde está el autobús a Puebla?
+          - ¿Y el autobús para Puebla?
+      - them: En la puerta cinco. ¡Buen viaje!
+        english: At gate five. Have a good trip!
+
+  # ── Unit 6: Numbers and prices ──────────────────────────────────────────
+  - id: market-hat
+    unit: 6
+    title: A hat at the market
+    setting: You're at a street market in Madrid, looking at the hats on a stall.
+    with: the stallholder
+    lines:
+      - them: Buenos días. ¿Busca algo?
+        english: Good morning. Are you looking for something?
+      - you: Say you're just looking, thanks.
+        answers:
+          - Solo estoy mirando, gracias.
+          - Solo estoy mirando.
+          - Gracias, solo estoy mirando.
+          - No, gracias. Solo estoy mirando.
+      - them: Mire, este sombrero es muy bonito.
+        english: Look, this hat is really nice.
+      - you: Ask if you can try it on.
+        answers:
+          - ¿Me lo puedo probar?
+          - ¿Puedo probármelo?
+          - ¿Me lo puedo probar, por favor?
+      - them: ¡Claro! Le queda muy bien.
+        english: Of course! It looks great on you.
+      - you: Ask how much it costs.
+        answers:
+          - ¿Cuánto cuesta?
+          - ¿Cuánto es?
+          - ¿Cuánto cuesta el sombrero?
+      - them: Veinticinco euros.
+        english: Twenty-five euros.
+      - you: Say it's very expensive.
+        answers:
+          - Es muy caro.
+          - ¡Qué caro!
+          - Es caro.
+      - them: Bueno… para usted, quince.
+        english: Well… for you, fifteen.
+      - you: Say OK, you'll take it.
+        answers:
+          - Bueno, me lo llevo.
+          - Me lo llevo.
+          - Muy bien, me lo llevo.
+          - De acuerdo, me lo llevo.
+          - Vale, me lo llevo.
+
+  # ── Unit 7: Everyday verbs ──────────────────────────────────────────────
+  - id: on-the-train
+    unit: 7
+    title: On the train
+    setting: On a train to Barcelona, the woman next to you hears you speaking English and starts to chat.
+    with: a woman on the train
+    lines:
+      - them: Perdone, ¿habla usted español?
+        english: Excuse me, do you speak Spanish?
+      - you: Say yes, you speak a little Spanish.
+        answers:
+          - Sí, hablo un poco de español.
+          - Sí, un poco.
+          - Sí, hablo un poco.
+          - Hablo un poco de español.
+      - them: ¡Muy bien! ¿Y dónde vive usted?
+        english: Very good! And where do you live?
+      - you: Say you live in Chicago.
+        answers:
+          - Vivo en Chicago.
+          - Yo vivo en Chicago.
+          - Vivo en *.
+      - them: ¿Trabaja o estudia?
+        english: Do you work or study?
+      - you: Say you're a student. You study Spanish.
+        answers:
+          - Soy estudiante. Estudio español.
+          - Estudio español.
+          - Soy estudiante.
+          - Yo estudio español.
+      - them: ¡Qué bien! Yo trabajo en un hospital. Soy médica.
+        english: How nice! I work in a hospital. I'm a doctor.
+      - you: Ask her if she works a lot. Be polite.
+        answers:
+          - ¿Trabaja mucho?
+          - ¿Usted trabaja mucho?
+          - ¿Trabaja usted mucho?
+      - them: Sí, mucho. ¡Pero me encanta!
+        english: Yes, a lot. But I love it!
+
+  - id: hotel-headache
+    unit: 7
+    title: Not feeling well
+    setting: You're staying at a hotel in Lima and you don't feel well. You go down to reception.
+    with: the receptionist
+    lines:
+      - them: Buenos días. ¿Cómo está?
+        english: Good morning. How are you?
+      - you: Say you feel ill.
+        answers:
+          - Me siento mal.
+          - No me siento bien.
+          - Estoy enfermo.
+          - Estoy enferma.
+      - them: ¡Ay, lo siento! ¿Qué le pasa?
+        english: Oh, I'm sorry! What's wrong?
+      - you: Say you have a headache.
+        answers:
+          - Me duele la cabeza.
+          - Me duele mucho la cabeza.
+          - Tengo dolor de cabeza.
+      - them: ¿Necesita un médico?
+        english: Do you need a doctor?
+      - you: Say no, thanks, and ask where the pharmacy is.
+        answers:
+          - No, gracias. ¿Dónde está la farmacia?
+          - No, gracias. ¿Dónde hay una farmacia?
+          - No, gracias. ¿Hay una farmacia cerca?
+          - No, gracias. ¿Dónde está la farmacia, por favor?
+      - them: Hay una farmacia aquí cerca, a la izquierda.
+        english: There's a pharmacy near here, on the left.
+      - you: Thank her very much.
+        answers:
+          - Muchas gracias.
+          - Muchas gracias, señora.
+          - Gracias.
+      - them: De nada. ¡Que se mejore!
+        english: You're welcome. Get well soon!
+
+  # ── Unit 8: Family and friends ──────────────────────────────────────────
+  - id: family-photo
+    unit: 8
+    title: A family photo
+    setting: Your friend Sofía is looking at a photo on your phone.
+    with: Sofía
+    lines:
+      - them: ¿Quién es esta chica?
+        english: Who's this girl?
+      - you: Say she's your sister.
+        answers:
+          - Es mi hermana.
+          - Ella es mi hermana.
+          - Es mi hermana *.
+      - them: ¡Qué alta! ¿Cuántos años tiene?
+        english: She's so tall! How old is she?
+      - you: Say she's fifteen.
+        answers:
+          - Tiene quince años.
+          - Tiene 15 años.
+          - Ella tiene quince años.
+          - Mi hermana tiene quince años.
+          - Tiene quince.
+      - them: ¿Y este chico?
+        english: And this boy?
+      - you: Say he's your cousin, and he's a good friend.
+        answers:
+          - Es mi primo. Es un buen amigo.
+          - Es mi primo y es un buen amigo.
+          - Él es mi primo. Es un buen amigo.
+          - Es mi primo. Es muy buen amigo.
+      - them: ¿Y el perro? ¡Qué pequeño!
+        english: And the dog? It's so small!
+      - you: Say it's your grandmother's dog.
+        answers:
+          - Es el perro de mi abuela.
+          - El perro es de mi abuela.
+          - Es de mi abuela.
+      - them: ¡Qué bonito!
+        english: How cute!
+
+  # ── Unit 9: Wants and plans ─────────────────────────────────────────────
+  - id: dinner-for-two
+    unit: 9
+    title: Dinner for two
+    setting: You and a friend walk into a restaurant in Madrid for dinner.
+    with: the waiter
+    lines:
+      - them: Buenas noches. ¿Cuántos son?
+        english: Good evening. How many of you are there?
+      - you: Ask for a table for two, please.
+        answers:
+          - Una mesa para dos, por favor.
+          - Quisiera una mesa para dos, por favor.
+          - Me gustaría una mesa para dos, por favor.
+          - Una mesa para dos.
+          - Somos dos.
+      - them: Por aquí, por favor. Aquí tienen la carta.
+        english: This way, please. Here's the menu.
+      - you: Ask the waiter what he recommends. Be polite.
+        answers:
+          - ¿Qué me recomienda?
+          - ¿Qué nos recomienda?
+          - ¿Qué recomienda usted?
+      - them: La carne está muy rica.
+        english: The meat is delicious.
+      - you: Say you're vegetarian.
+        answers:
+          - Soy vegetariano.
+          - Soy vegetariana.
+          - Yo soy vegetariano.
+          - Yo soy vegetariana.
+      - them: Entonces, el arroz con verduras. Está muy bueno.
+        english: Then the rice with vegetables. It's very good.
+      - you: Say you'd like the rice with vegetables, please. Be polite.
+        answers:
+          - Quisiera el arroz con verduras, por favor.
+          - Me gustaría el arroz con verduras, por favor.
+          - El arroz con verduras, por favor.
+          - Quisiera el arroz, por favor.
+          - Quiero el arroz con verduras, por favor.
+      - them: ¿Algo más?
+        english: Anything else?
+      - you: Say no thanks, and ask for the bill.
+        answers:
+          - No, gracias. La cuenta, por favor.
+          - No, gracias. Quisiera la cuenta, por favor.
+          - No, gracias. ¿Me trae la cuenta, por favor?
+          - La cuenta, por favor.
+      - them: Son treinta euros.
+        english: That's thirty euros.
+      - you: Ask if you can pay by card.
+        answers:
+          - ¿Puedo pagar con tarjeta?
+          - ¿Se puede pagar con tarjeta?
+          - ¿Puedo pagar con tarjeta, por favor?
+
+  - id: saturday-plans
+    unit: 9
+    title: Plans for Saturday
+    setting: It's Friday. Your friend Tomás calls you.
+    with: Tomás
+    lines:
+      - them: ¡Hola! ¿Qué haces el sábado?
+        english: Hi! What are you doing on Saturday?
+      - you: Say you're going to the park with your brother.
+        answers:
+          - Voy al parque con mi hermano.
+          - Yo voy al parque con mi hermano.
+          - Voy a ir al parque con mi hermano.
+      - them: ¿Y por la tarde? ¿Quieres ir al cine conmigo?
+        english: And in the afternoon? Do you want to go to the movies with me?
+      - you: Say yes, you want to go with him.
+        answers:
+          - Sí, quiero ir contigo.
+          - Sí, quiero ir al cine contigo.
+          - ¡Sí! Voy contigo.
+          - Sí, quiero ir.
+      - them: ¡Genial! Vamos a ver una película de miedo.
+        english: Great! We're going to see a horror movie.
+      - you: Ask what time.
+        answers:
+          - ¿A qué hora?
+          - ¿A qué hora vamos?
+          - ¿A qué hora es?
+      - them: A las cinco. ¿Puedes venir a mi casa a las cuatro?
+        english: At five. Can you come to my house at four?
+      - you: Say yes, you can. See you on Saturday!
+        answers:
+          - Sí, puedo. ¡Hasta el sábado!
+          - Sí, puedo. Nos vemos el sábado.
+          - Sí, puedo. Adiós.
+          - Sí, puedo.
+
+  # ── Unit 10: Likes and your day ─────────────────────────────────────────
+  - id: birthday-beach
+    unit: 10
+    title: A birthday at the beach
+    setting: It's a hot Saturday morning in Valencia. Your friend Marta calls you.
+    with: Marta
+    lines:
+      - them: ¡Hola! Hoy es mi cumpleaños.
+        english: Hi! It's my birthday today.
+      - you: Wish her a happy birthday.
+        answers:
+          - ¡Feliz cumpleaños!
+          - ¡Feliz cumpleaños, Marta!
+      - them: ¡Gracias! Hace mucho calor. ¿Vamos a la playa?
+        english: Thanks! It's really hot. Shall we go to the beach?
+      - you: Say great, and ask what time.
+        answers:
+          - ¡Genial! ¿A qué hora?
+          - ¡Genial! ¿A qué hora vamos?
+          - ¡Sí! ¿A qué hora?
+          - De acuerdo. ¿A qué hora?
+      - them: A las once. ¿Te gusta el fútbol?
+        english: At eleven. Do you like soccer?
+      - you: Say yes, you like it a lot.
+        answers:
+          - ¡Sí, me gusta mucho!
+          - Sí, me gusta mucho el fútbol.
+          - ¡Me gusta mucho!
+          - ¡Sí, me encanta!
+          - Sí, me encanta el fútbol.
+      - them: ¡Perfecto! Llevo el balón.
+        english: Perfect! I'll bring the ball.
+      - you: Say OK, see you at eleven.
+        answers:
+          - De acuerdo. Nos vemos a las once.
+          - Vale. Nos vemos a las once.
+          - Nos vemos a las once.
+          - De acuerdo. Hasta las once.
+
+  - id: host-family
+    unit: 10
+    title: Your host family
+    setting: You're staying with a host family in Guadalajara, Mexico. On your first evening, your host mother asks about your mornings.
+    with: your host mother
+    lines:
+      - them: Mañana desayunamos a las ocho. ¿A qué hora te levantas?
+        english: Tomorrow we have breakfast at eight. What time do you get up?
+      - you: Say you get up at seven.
+        answers:
+          - Me levanto a las siete.
+          - Yo me levanto a las siete.
+          - Normalmente me levanto a las siete.
+          - Me levanto a las *.
+      - them: ¡Qué temprano! ¿Te duchas por la mañana?
+        english: So early! Do you shower in the morning?
+      - you: Say yes, you always shower in the morning.
+        answers:
+          - Sí, siempre me ducho por la mañana.
+          - Sí, me ducho siempre por la mañana.
+          - Sí, me ducho por la mañana.
+          - Siempre me ducho por la mañana.
+      - them: Muy bien. ¿Y te gusta el café?
+        english: Good. And do you like coffee?
+      - you: Say no, you don't like coffee. You prefer tea.
+        answers:
+          - No, no me gusta el café. Prefiero el té.
+          - No me gusta el café. Prefiero el té.
+          - No, prefiero el té.
+          - No, no me gusta. Prefiero el té.
+      - them: No hay problema. Hay té en la cocina. ¡Buenas noches!
+        english: No problem. There's tea in the kitchen. Good night!
+      - you: Say good night, see you tomorrow.
+        answers:
+          - Buenas noches. Hasta mañana.
+          - Hasta mañana.
+          - Buenas noches.

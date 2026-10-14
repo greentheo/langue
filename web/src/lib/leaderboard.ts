@@ -12,6 +12,7 @@ import "server-only";
 import { prisma } from "@/lib/db";
 import { inviteStatus } from "@/lib/auth/invite-status";
 import {
+  levelBadges,
   liveStreak,
   rankStandings,
   weekStart,
@@ -79,7 +80,7 @@ export async function leaderboard(
   const ids = members.map((member) => member.userId);
   if (!ids.includes(viewerId)) return null;
 
-  const [users, week] = await Promise.all([
+  const [users, week, finished] = await Promise.all([
     prisma.user.findMany({
       where: { id: { in: ids } },
       select: { id: true, displayName: true, points: true, streakDays: true, lastActiveAt: true },
@@ -88,6 +89,10 @@ export async function leaderboard(
       by: ["userId"],
       where: { userId: { in: ids }, completedAt: { gte: weekStart(now) } },
       _sum: { pointsEarned: true },
+    }),
+    prisma.achievement.findMany({
+      where: { userId: { in: ids }, name: { startsWith: "level:" } },
+      select: { userId: true, name: true },
     }),
   ]);
 
@@ -99,6 +104,7 @@ export async function leaderboard(
     weekPoints: weekPoints.get(user.id) ?? 0,
     totalPoints: user.points,
     streak: liveStreak(user.streakDays, user.lastActiveAt, now),
+    badges: levelBadges(finished.filter((row) => row.userId === user.id).map((row) => row.name)),
   }));
 
   return rankStandings(standings, period);

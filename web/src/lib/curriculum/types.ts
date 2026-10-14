@@ -5,9 +5,9 @@
  * resolved, lessons numbered, grammar topics linked to lesson ids.
  */
 
-import type { LessonSection, PracticeItem } from "./schema";
+import type { DialogueLine, LessonSection, PracticeItem } from "./schema";
 
-export type { LessonSection, PracticeItem };
+export type { DialogueLine, LessonSection, PracticeItem };
 
 export interface Lesson {
   /** Globally unique and URL-safe: "italian-a1-04-articles". */
@@ -77,12 +77,27 @@ export interface Unit {
   categories: string[];
 }
 
+/** A scripted role-play (data/curriculum/<language>/<level>/dialogues.yaml). */
+export interface Dialogue {
+  /** "italian-a1-cafe-order". */
+  id: string;
+  language: string;
+  level: string;
+  /** The unit's number within the level: 9 is A1.9. */
+  unit: number;
+  title: string;
+  setting: string;
+  with: string;
+  lines: DialogueLine[];
+}
+
 export interface LevelCurriculum {
   overview: LevelOverview | null;
   lessons: Lesson[];
   situations: Situation[];
   /** Empty while a level has no guided path yet. */
   units: Unit[];
+  dialogues: Dialogue[];
 }
 
 export type CurriculumCatalog = Record<string, Partial<Record<string, LevelCurriculum>>>;
