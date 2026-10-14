@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0e0a">
+  <title>Offline — LANGUE</title>
+  <!--
+    Shown by the service worker (sw.js) when a page can't load. Plain HTML
+    with its styles inline, so it works with nothing else cached.
+  -->
+  <style>
+    html, body { margin: 0; height: 100%; background: #0a0e0a; color: #33ff66; }
+    body { font: 15px/1.6 ui-monospace, "IBM Plex Mono", Menlo, Consolas, monospace; }
+    main { max-width: 34rem; margin: 0 auto; padding: 4rem 1.25rem; }
+    .brand { font-weight: 700; letter-spacing: 0.2em; color: #b6ffcc; text-shadow: 0 0 8px rgba(51, 255, 102, 0.35); }
+    h1 { margin: 2rem 0 0.75rem; font-size: 1.25rem; color: #b6ffcc; text-shadow: 0 0 8px rgba(51, 255, 102, 0.35); }
+    a { display: inline-block; margin-top: 1.5rem; padding: 0.5rem 1rem; border: 1px solid #ffb000; color: #ffb000;
+        text-decoration: none; text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.75rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="brand">LANGUE</p>
+    <h1>No connection</h1>
+    <p>Langue needs the internet to plan your next step and save your progress. Check your connection, then try again.</p>
+    <a href="/learn">Try again</a>
+  </main>
+</body>
+</html>

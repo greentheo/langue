@@ -46,8 +46,10 @@ export const config = {
    *                health check and a deploy that never goes live.
    *  - `_next/`    Build output; matching it wastes work on every chunk.
    *  - assets      Same reasoning for images and icons.
+   *  - the app     The manifest, service worker and offline page: a phone
+   *                fetches them to install Langue, signed in or not.
    */
   matcher: [
-    "/((?!api/|_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)",
+    "/((?!api/|_next/static|_next/image|favicon.ico|manifest.webmanifest|sw.js|offline.html|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)",
   ],
 };
