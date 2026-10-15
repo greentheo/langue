@@ -3,7 +3,7 @@
     "language": "french",
     "level": "a1",
     "version": "1.0",
-    "word_count": 379,
+    "word_count": 382,
     "created_at": "2025-09-10T23:55:58.950923",
     "description": "Beginner (A1) French vocabulary: everyday expressions and basic phrases",
     "source": "data/vocab_sources/french/a1.psv",
@@ -2952,6 +2952,51 @@
       "difficulty": 2,
       "examples_en": [
         "I'm going to make dinner."
+      ]
+    },
+    {
+      "word": "commencer",
+      "translations": [
+        "to begin",
+        "to start"
+      ],
+      "examples": [
+        "Le cours va commencer dans cinq minutes."
+      ],
+      "category": "verbs",
+      "difficulty": 1,
+      "examples_en": [
+        "The lesson is going to start in five minutes."
+      ]
+    },
+    {
+      "word": "choisir",
+      "translations": [
+        "to choose",
+        "to pick"
+      ],
+      "examples": [
+        "Je dois choisir un cadeau pour ma mère."
+      ],
+      "category": "verbs",
+      "difficulty": 1,
+      "examples_en": [
+        "I have to choose a present for my mum."
+      ]
+    },
+    {
+      "word": "attendre",
+      "translations": [
+        "to wait",
+        "to wait for"
+      ],
+      "examples": [
+        "Tu peux attendre ici, s'il te plaît ?"
+      ],
+      "category": "verbs",
+      "difficulty": 1,
+      "examples_en": [
+        "Can you wait here, please?"
       ]
     },
     {

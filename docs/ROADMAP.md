@@ -34,6 +34,8 @@ plan to do it. The why behind all of it is [vision.md](vision.md).
 - Installable as an app (PWA); streak reminders after 2, 5 and 12 quiet days;
   streaks are never lost.
 - Optional AI tools (conversation, generated drills) on the cheapest model.
+- CI on every pull request: typecheck, tests (content tests included),
+  curriculum and vocabulary checks, and the production build (#48).
 
 **Known gaps and issues**
 - The path stops at A2 — no B1 yet (#57).
@@ -41,7 +43,6 @@ plan to do it. The why behind all of it is [vision.md](vision.md).
   no way for a learner to flag them yet (#49).
 - Content writers' notes still open: wasted duplicate vocabulary entries,
   level mismatches, a few confusable pairs, uneven unit sizes (#50).
-- No CI: tests and content checks only run when remembered (#48).
 - No analytics, so no way to see what helps (#52).
 - Writing, dictation, speaking aloud and reading — four of the vision's
   promises — aren't built yet (#51, #54, #56, #58).
