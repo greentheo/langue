@@ -6,7 +6,7 @@ import { getLevelCurriculum } from "@/lib/curriculum";
 import { languageLabel } from "@/lib/languages";
 import { LEVEL_LABELS, type Level } from "@/lib/vocab/types";
 import { getCourse } from "@/lib/path/course";
-import { levelAchievement, levelProgress, levelsOf } from "@/lib/path/levels";
+import { certificateCounts, levelAchievement, levelProgress, levelsOf, plural } from "@/lib/path/levels";
 import { loadMarks, loadStates } from "@/lib/path/store";
 import { PrintButton } from "@/components/print-button";
 
@@ -14,7 +14,8 @@ export const metadata = { title: "Certificate — LANGUE" };
 
 /**
  * A certificate for a finished level: who, which level, when, and what it
- * took. Only shown once the level is recorded as finished.
+ * took. Only shown once the level is recorded as finished. Its numbers are the
+ * ones stored when it was awarded, so content added later never changes it.
  */
 export default async function CertificatePage({
   searchParams,
@@ -46,7 +47,7 @@ export default async function CertificatePage({
   }
 
   const [states, marks] = await Promise.all([loadStates(user.id, language), loadMarks(user.id, course)]);
-  const progress = levelProgress(course, states, level, marks);
+  const counts = certificateCounts(earned.detail, levelProgress(course, states, level, marks));
   const practised = await prisma.activityLog.aggregate({
     where: { userId: user.id, language, level },
     _sum: { durationSec: true },
@@ -70,10 +71,10 @@ export default async function CertificatePage({
 
         <p className="mx-auto mt-8 max-w-md text-sm">
           {[
-            `${progress.words.done} words`,
-            `${progress.phrases.done} phrases`,
-            `${progress.grammar.done} grammar ideas`,
-            progress.speaking.done > 0 ? `${progress.speaking.done} conversations` : null,
+            plural(counts.words, "word", "words"),
+            plural(counts.phrases, "phrase", "phrases"),
+            plural(counts.grammar, "grammar idea", "grammar ideas"),
+            counts.conversations > 0 ? plural(counts.conversations, "conversation", "conversations") : null,
             hours > 0 ? `${hours} hours of practice` : null,
           ]
             .filter(Boolean)

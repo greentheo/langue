@@ -20,7 +20,7 @@ import {
   type UnitProgress,
 } from "@/lib/path/planner";
 import { loadMarks, loadStates, rememberProgress, seedFromLessons } from "@/lib/path/store";
-import { levelProgress } from "@/lib/path/levels";
+import { levelProgress, plural } from "@/lib/path/levels";
 import { StandingsTable } from "@/components/standings-table";
 import { LanguageChooser } from "@/components/language-chooser";
 import { prisma } from "@/lib/db";
@@ -236,8 +236,9 @@ export default async function LearnPage() {
                     {level.complete ? "★ complete" : `${level.percent}% of ${current.level.toUpperCase()}`}
                   </span>
                   <span className="text-[var(--crt-fg-dim)]">
-                    {" "}· {level.words.done} words · {level.phrases.done} phrases · {level.speaking.done}{" "}
-                    conversations
+                    {" "}· {plural(level.words.done, "word", "words")} ·{" "}
+                    {plural(level.phrases.done, "phrase", "phrases")} ·{" "}
+                    {plural(level.speaking.done, "conversation", "conversations")}
                   </span>
                 </span>
                 <Link href="/learn/level" className="text-xs">
