@@ -82,7 +82,7 @@ set the order where it matters.
 13. #53 Your mistakes, made visible — L (after #70, #63)
 14. #72 Front page and invite copy — S (after the readiness kit, #69)
 15. #54 Speak your reply — M · #55 Listening cards — S · #56 Writing task — M
-16. #57 B1 guided path, all four languages — L
+16. #57 B1 guided path, all four languages — L (timing: #98; checking: #97, #99) · #100 Certificates tick only what's practised — S
 17. #61 Weekly recap — S
 
 **Later — proof of level, engagement, new languages**
@@ -96,7 +96,8 @@ set the order where it matters.
 
 **Waiting on the owner:** #71 (CI required to merge), #73 (reminder wording),
 #74 (kids and the AI tools), #75 (marketing's numbers), #77 (turn on Railway's
-7-day backups — decided, the setting is the owner's).
+7-day backups — decided, the setting is the owner's), #97 (who checks content
+for native accuracy), #98 (B1 now or the differentiators first).
 
 Done and closed: #35–#38 (guided path phases 1–4), #40–#47 (sounds, language
 chooser, group leaderboards, PWA, streak reminders), #48 (CI), #87 (typo notes
