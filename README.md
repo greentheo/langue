@@ -1,5 +1,9 @@
 # Langue - AI Language Learning
 
+> **Read, write and speak a language correctly — at real levels, a few minutes
+> a day, without tricks.** Why and how: [docs/vision.md](docs/vision.md) ·
+> what's next: [docs/ROADMAP.md](docs/ROADMAP.md).
+
 Langue is an AI language-learning app in two forms that share one vocabulary set:
 
 - **CLI** (`langue/`) — Python, runs in your terminal with a rad 80's-inspired

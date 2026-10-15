@@ -1,164 +1,82 @@
-# Langue Development Roadmap
+# Roadmap
 
-This document outlines the future development plans for Langue, organized by priority and timeline.
+What's live, what's known to be missing, and what's next — in the order we
+plan to do it. The why behind all of it is [vision.md](vision.md).
 
-## Phase 1: Core Stabilization and Library Integration (1-2 weeks)
+## How we work
 
-### Completed
-- Fixed circular import issues
-- Added interactive model selection on startup
-- Enhanced model configuration via environment variables and .env file
-- Improved test suite to work with or without Ollama server
-- Implemented flashcard library system with level-based vocabulary (A1-C2)
-- Added language level selection in user interface
-- Enhance flashcard system to handle multiple translations ✓
-- Implement weighted word selection algorithm ✓
-- Enhance fill-in-the-blank activity with flashcard library integration ✓
-- Implement continuous mode for fill-in-the-blank activity ✓
-- Add level-appropriate sentence generation for fill-in-the-blank ✓
-- Improve progress tracking visualization for weekly activity ✓
+- **20–30 minutes a day learning, 10–20 minutes improving the app.** Pick the
+  next issue below (or say "next"); Claude builds it in the background on a
+  branch and opens a PR with a short summary and how it was checked; the
+  owner reviews and says "ship it". 1% better every day.
+- Issues labelled **`background`** can be built without the owner; **size**
+  labels say roughly how long (S ≈ one sitting, M ≈ a day or two of
+  background work, L ≈ several PRs).
+- `main` deploys to Railway automatically. Nothing merges without the owner's
+  go-ahead.
 
-### High Priority
-- Add comprehensive error handling throughout the application
-- Implement proper logging system
-- Complete test coverage for critical components
+## Where we are (October 2026)
 
-### Medium Priority
-- Optimize database queries and connection management
-- Improve model response parsing reliability
-- Add better input validation in all user-facing functions
-- Enhance verification script with more detailed diagnostics
-- Expand vocabulary libraries to cover more languages
-- Improve library generator tool with enhanced prompts
+**Live**
+- Web app on Railway, invite-only, several learners per device, a
+  leaderboard per invite group (join more groups with a code).
+- Guided path ([guided-path.md](guided-path.md)): ~3-minute steps; items climb
+  from recognising to recalling, building, typing, fill-in-the-blank and
+  role-play replies; reminders for tricky items; spaced review.
+- A1 (~520 words) and A2 (~450–540 words) in Italian, Spanish, French and
+  Brazilian Portuguese: 15 lessons, phrasebook, 10 units and 16 role-plays
+  per level. B1–C2 have overview pages only.
+- Level page with bars, level-up challenges, testing out, certificates and
+  badges; progress bars that never go down.
+- Strict, explained grading (accents, endings, pronouns); answer sounds;
+  pronunciation by the device voice.
+- Installable as an app (PWA); streak reminders after 2, 5 and 12 quiet days;
+  streaks are never lost.
+- Optional AI tools (conversation, generated drills) on the cheapest model.
 
-### Low Priority
-- Code cleanup and documentation improvements
-- Standardize coding style throughout the codebase
-- Add type annotations to all functions
-- Enhance model configuration documentation
+**Known gaps and issues**
+- The path stops at A2 — no B1 yet (#57).
+- Stricter grading will reject some fine answers that aren't listed; there's
+  no way for a learner to flag them yet (#49).
+- Content writers' notes still open: wasted duplicate vocabulary entries,
+  level mismatches, a few confusable pairs, uneven unit sizes (#50).
+- No CI: tests and content checks only run when remembered (#48).
+- No analytics, so no way to see what helps (#52).
+- Writing, dictation, speaking aloud and reading — four of the vision's
+  promises — aren't built yet (#51, #54, #56, #58).
+- No account deletion or privacy page (#63). Still on the Railway URL while a
+  domain is chosen (#62).
+- On iPhone, the installed app keeps its own login (platform behaviour).
+- The legacy Python CLI's issues (#7–#27) are mostly stale (#64).
 
-## Phase 2: Feature Enhancements (2-4 weeks)
+## Next up
 
-### High Priority
-- Implement response caching for AI models to reduce API costs
-- Enhance spaced repetition algorithm for flashcards using vocabulary libraries
-- Create structured learning paths/courses based on CEFR levels
-- Expand vocabulary libraries with additional languages and domains
-- Add multimedia support to vocabulary libraries (audio pronunciations)
+Roughly in order; each line is one or a few PRs.
 
-### Medium Priority
-- Add statistics dashboard for learning progress with level-based metrics
-- Implement difficulty adaptation based on user performance and level progression
-- Add export/import functionality for user data and custom vocabulary libraries
-- Create specialized activities for grammar practice using level-appropriate content
-- Enhance fill-in-the-blank activity with multiple blanks and more advanced pattern recognition
-- Enhance model selection UI with performance metrics and capabilities
-- Add thematic vocabulary libraries (travel, business, medical, etc.)
+**Now — accuracy, and the basics that keep it safe**
+1. #48 CI for the web app — S
+2. #49 "My answer should be accepted" reports — S
+3. #50 Content cleanup from the writers' notes — S
+4. #51 Dictation: listen, then type — M
+5. #52 Learning events and a small dashboard — M
 
-### Low Priority
-- Add customization options for activity presentation
-- Implement achievement notification system
-- Create theme support for CLI interface
+**Next — the differentiators**
+6. #53 Your mistakes, made visible (mistake categories, top-3, drills) — L
+7. #54 Speak your reply (speech recognition in role-plays) — M
+8. #55 Listening cards — S
+9. #56 Writing task per unit, corrected (optional AI) — M
+10. #57 B1 guided path, all four languages — L
+11. #61 Weekly recap — S
 
-## Phase 3: Advanced Features (4-8 weeks)
+**Later — proof of level, engagement, new languages**
+12. #59 Practice exam sections at A2 and B1 — L
+13. #58 Graded readers — L
+14. #60 Engagement experiments (contextual bandits) — M
+15. #63 Delete my account + privacy page — S
+16. #62 Move to the custom domain — S (after the owner sets up DNS)
+17. #65 Foundations for new writing systems and grammars — M
+18. #66 German A1 pilot — L
+19. #64 Triage legacy CLI issues — S (owner decides what to close)
 
-### High Priority
-- Implement audio pronunciation support for vocabulary libraries (text-to-speech)
-- Add voice recognition for pronunciation practice (if feasible in CLI)
-- Create a simple web dashboard companion with library management interface
-- Add collaborative learning features (vocabulary sharing and custom library exchange)
-- Implement adaptive learning paths based on user performance across CEFR levels
-
-### Medium Priority
-- Implement advanced analytics for learning optimization
-- Add language-specific grammar rules and exercises
-- Expand fill-in-the-blank activity with grammar focus and contextual difficulty
-- Create a content suggestion system based on user progress
-- Implement multi-profile support
-- Add automatic model benchmarking and selection based on task
-
-### Low Priority
-- Add gamification elements (challenges, missions)
-- Create leaderboards and social features
-- Implement integration with other learning resources
-
-## Phase 4: Ecosystem Expansion (8+ weeks)
-
-### High Priority
-- Create a web/mobile companion application with vocabulary library support
-- Implement cloud synchronization for multi-device usage and library sharing
-- Build an enhanced content creation tool for educators to create custom libraries
-- Expand vocabulary libraries to cover specialized domains (medical, technical, etc.)
-- Implement a comprehensive library management system for user-created content
-
-### Medium Priority
-- Create an API for third-party integrations with vocabulary library access
-- Implement plugin system for custom activities and library extensions
-- Add support for more language model backends with vocabulary generation capabilities
-- Create a shared content marketplace for vocabulary libraries and learning materials
-- Develop analytics tools for tracking progress through proficiency levels
-
-### Low Priority
-- Build community features (forums, groups)
-- Implement mentor/student relationships
-- Add academic research integration for learning effectiveness
-
-## Technical Debt & Infrastructure
-
-### Ongoing Tasks
-- Refactor and improve code organization
-- Update dependencies regularly
-- Monitor and optimize performance
-- Enhance test coverage and quality
-- Improve documentation
-- Fix bugs and issues
-- Track new model releases and integration opportunities
-
-## Metrics & Success Criteria
-
-### User Engagement
-- Daily active users
-- Session length
-- Retention rate
-- Feature usage distribution
-
-### Learning Effectiveness
-- Words learned per session
-- Retention rate of vocabulary
-- Improvement in assessment scores
-- Completion rate of activities
-
-### Technical Performance
-- Response time for model interactions
-- Error rate in production
-- Database query performance
-- Resource usage
-
-## Decision Framework for Features
-
-New features should be evaluated against these criteria:
-1. **Learning Value**: How much does it improve language acquisition?
-2. **User Impact**: How many users will benefit?
-3. **Technical Feasibility**: How complex is the implementation?
-4. **Maintenance Burden**: How much ongoing work will it require?
-5. **Alignment**: How well does it fit with our core vision?
-
-## Experiment Plans
-
-- A/B testing different prompt strategies for better language generation
-- Testing different spaced repetition algorithms for optimal retention
-- Comparing effectiveness of different activity types for various learning styles
-- Benchmarking different language models for specific language learning tasks
-- Testing fill-in-the-blank effectiveness with different numbers of choices, blank patterns, and difficulty adaptation
-- Evaluating hybrid approaches using multiple models for different activities
-- Testing effectiveness of level-based vocabulary progression (A1-C2)
-- Comparing user learning rates with and without structured vocabulary libraries
-- Evaluating different weighted selection algorithms for vocabulary prioritization
-
-## Community Engagement Plan
-
-- Open source contributors guide
-- Feature suggestion process
-- Bug reporting templates
-- Regular community updates
-- Recognition program for contributors
+Done and closed: #35–#38 (guided path phases 1–4), #40–#47 (sounds, language
+chooser, group leaderboards, PWA, streak reminders).
