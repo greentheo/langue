@@ -3,7 +3,7 @@
     "language": "italian",
     "level": "a1",
     "version": "1.0",
-    "word_count": 405,
+    "word_count": 409,
     "created_at": "2026-08-12T22:23:06.944963+00:00",
     "description": "Beginner (A1) Italian vocabulary: everyday expressions and basic phrases",
     "source": "data/vocab_sources/italian/a1.psv",
@@ -5839,6 +5839,62 @@
       "difficulty": 1,
       "examples_en": [
         "I do sport three times a week."
+      ]
+    },
+    {
+      "word": "svegliarsi",
+      "translations": [
+        "to wake up"
+      ],
+      "examples": [
+        "È difficile svegliarsi presto d'inverno."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2,
+      "examples_en": [
+        "It's hard to wake up early in winter."
+      ]
+    },
+    {
+      "word": "alzarsi",
+      "translations": [
+        "to get up"
+      ],
+      "examples": [
+        "La domenica non c'è bisogno di alzarsi presto."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2,
+      "examples_en": [
+        "On Sundays there's no need to get up early."
+      ]
+    },
+    {
+      "word": "lavarsi",
+      "translations": [
+        "to wash (yourself)"
+      ],
+      "examples": [
+        "Prima di mangiare bisogna lavarsi le mani."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2,
+      "examples_en": [
+        "Before eating you have to wash your hands."
+      ]
+    },
+    {
+      "word": "vestirsi",
+      "translations": [
+        "to get dressed"
+      ],
+      "examples": [
+        "Fa freddo, è meglio vestirsi pesante."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2,
+      "examples_en": [
+        "It's cold, it's best to dress warmly."
       ]
     }
   ]

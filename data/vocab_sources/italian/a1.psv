@@ -456,3 +456,9 @@ tennis | tennis | Gioco a tennis con mio padre. | sports | 1 | I play tennis wit
 nuoto | swimming | Faccio nuoto due volte alla settimana. | sports | 2 | I go swimming twice a week.
 piscina | swimming pool | L'albergo ha una piscina? | sports | 1 | Does the hotel have a pool?
 sport | sport | Faccio sport tre volte a settimana. | sports | 1 | I do sport three times a week.
+
+# Daily routine (unit 10)
+svegliarsi | to wake up | È difficile svegliarsi presto d'inverno. | daily_routines | 2 | It's hard to wake up early in winter.
+alzarsi | to get up | La domenica non c'è bisogno di alzarsi presto. | daily_routines | 2 | On Sundays there's no need to get up early.
+lavarsi | to wash (yourself) | Prima di mangiare bisogna lavarsi le mani. | daily_routines | 2 | Before eating you have to wash your hands.
+vestirsi | to get dressed | Fa freddo, è meglio vestirsi pesante. | daily_routines | 2 | It's cold, it's best to dress warmly.
