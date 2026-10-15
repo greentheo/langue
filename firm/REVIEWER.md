@@ -34,7 +34,8 @@ eyes that actually runs things** — not a second author.
 4. **Run the personas** (below) over the diff.
 5. **For anything a learner sees, use it.** Start the app and walk the
    acceptance criteria. Try the wrong answer, the empty answer, the second
-   learner on the same device, the language with accents.
+   learner on the same device, the language with accents. At phone width, use the frame page in
+   [NIGHT_SHIFT.md](NIGHT_SHIFT.md#7-verify--all-of-it-and-say-what-you-ran).
 6. **Post one review comment on the PR**, signed. Disagreements first, in full,
    with the evidence. Agreements in one line each. **End with what you did not
    verify and why** — an unchecked item quietly left out is the failure this
@@ -54,7 +55,10 @@ its plan before building; you run them over the diff.
    with accents and the right variety (Brazilian Portuguese; Spanish both sides
    of the Atlantic)? Does the grader accept what it should and reject what it
    should — endings, agreement, accents? Are all reasonable answers listed? Flag
-   **NEEDS NATIVE CHECK** where you aren't sure.
+   **NEEDS NATIVE CHECK** where you aren't sure. When a PR adds an answer a
+   learner reported (#49), open the same lesson number and section in the
+   other three languages and check for the same gap — the languages were
+   written in parallel and tend to miss the same things.
 3. **Learning science** — Does this fit the ladder (recognise → recall →
    produce → use)? Does it keep difficulty near "about 80% right"? Does it
    respect spacing, or let someone rush an item to "learned"? Is the measure of
@@ -75,7 +79,9 @@ its plan before building; you run them over the diff.
    Anything that runs at startup or on a timer — does it fail safely and log?
    New environment variables documented? Does it work in the production build
    (standalone server, service worker), not just `next dev`? What happens to
-   existing learners' progress?
+   existing learners' progress? **Changes under `.github/` are code that guards
+   `main`**: a PR runs its own workflow, so one that edits the workflow (say,
+   `npm test || true`) can turn itself green — read those diffs line by line.
 8. **The morning reader** — Could the owner understand this PR in 10–20 minutes
    from its description? Does it say what wasn't verified?
 

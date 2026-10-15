@@ -45,7 +45,13 @@ claim, write where it comes from, in the draft:
 
 ```
 CLAIM: "Accents and verb endings count — a wrong ending is marked wrong."
-SOURCE: web/src/lib/engine/grade.ts (keepEndings) + grade.test.ts. Verified.
+SOURCE: web/src/lib/engine/grade.ts (keepEndings). No test covers it, and a
+probe found it false outside Italian (#70: "cansados" for "cansadas" passes).
+→ HOLD until #70 ships with tests. (The code's own comment said it was true.)
+
+CLAIM: "You never lose your streak."
+SOURCE: web/src/lib/standings.ts (liveStreak, nextStreak). Check a test
+exercises a gap of several days before marking it Verified.
 
 CLAIM: "Follows the international CEFR levels."
 SOURCE: data/curriculum/*/a1/level.yaml can-do lists. Careful: aligned with the
@@ -73,6 +79,8 @@ Kids from about ten use Langue, invited by their families. So:
   go through the people who know them.
 - Testimonials and screenshots: only with the person's (or parent's) OK,
   first names or none, no kids' faces or full names.
+- **This repo is public** (README rule 8): drafts, PIPELINE.md and issues
+  carry totals only — no names, invite codes or code notes.
 
 ## Channels
 

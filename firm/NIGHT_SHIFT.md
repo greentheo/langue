@@ -15,7 +15,8 @@ from what you know — read `web/node_modules/next/dist/docs/` before using an A
 
 1. Work in **your own worktree**: `~/githubrepo/langue-nightshift`, database
    `langue_nightshift`, port 3006 (setup in [README.md](README.md#workspaces--one-checkout-per-seat)).
-2. `git fetch && git checkout main && git pull --ff-only`, `git status` clean.
+2. `git fetch && git checkout --detach origin/main`, `git status` clean (your
+   worktree can't hold `main` — the foreman's checkout does).
 3. `npm run codegen && npx prisma migrate deploy`, then `npm test` and
    `npm run typecheck`. Fix nothing on `main` — if it's red, tell the foreman.
 4. Read the foreman's notes from your last session's report, if any.
@@ -66,6 +67,14 @@ build when the service worker or startup matters) and click through the
 acceptance criteria. For migrations: apply them to your database and check the
 app still loads. Read the exit status directly, not through a pipe.
 
+**Phone width:** Chrome won't size a window below about 614 px, so a
+resize can "succeed" and stay wide. Instead, create
+`web/public/zz-phone.html` containing
+`<iframe src="/learn" style="width:375px;height:740px;border:0"></iframe>`,
+open it on your dev server (same origin, so your session cookie works),
+and delete it afterwards. `zz-*.html` is gitignored. It checks width and
+media queries, not touch, Safari or the on-screen keyboard; say so.
+
 ### 8. Pull request
 - Commit `[#N] what changed and why`; push; `gh pr create` with title
   `[#N] <issue title>`.
@@ -98,6 +107,9 @@ differently, what you filed. Then stop.
   production database, no setting variables.
 - Never print or commit secrets; never commit `web/.env`.
 - Never force-push or rewrite `main`.
+- Never chain a history-changing git command (`commit --amend`, `rebase`,
+  `reset`) after one whose exit status you haven't checked: a failed first
+  step can make the second rewrite the wrong commit.
 - Never delete learner data or content without the issue saying so; never
   change an item's key (`w:…`, `p:…`, `g:…`) or a phrase's position without
   saying in the PR what happens to learners' existing progress.

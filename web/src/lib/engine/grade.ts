@@ -169,6 +169,11 @@ export interface GradeOptions {
    * there is the mistake, not a typo.
    */
   keepEndings?: boolean;
+  /**
+   * Rewrites both sides before comparing — English expands contractions. Notes
+   * still quote the accepted answer as written.
+   */
+  rewrite?: (value: string) => string;
 }
 
 /**
@@ -208,27 +213,31 @@ function hasWords(text: string, phrase: string): boolean {
  * letters or fewer get none — "lo" and "la" are different words, not a typo.
  */
 export function gradeAnswer(userAnswer: string, accepted: string[], options: GradeOptions = {}): GradeResult {
-  const { extraWords = "any", nounArticlesOnly = false, typos = true, keepEndings = false } = options;
+  const { extraWords = "any", nounArticlesOnly = false, typos = true, keepEndings = false, rewrite } = options;
   const strip = nounArticlesOnly ? stripNounArticle : stripArticle;
-  const answer = normalizeAnswer(userAnswer);
+  const prepare = (value: string) => normalizeAnswer(rewrite ? rewrite(value) : value);
+  const answer = prepare(userAnswer);
 
   if (!answer) {
     return { verdict: "incorrect", score: 0, matched: null, note: null };
   }
 
-  const candidates = accepted.flatMap((value) => {
-    const normalized = normalizeAnswer(value);
+  // Each form to compare against, with the accepted answer it came from as
+  // written: a note quotes "téléphone", never the comparison form "telephone".
+  const candidates = accepted.flatMap((written) => {
+    const normalized = prepare(written);
     const withoutArticle = strip(normalized);
-    return normalized === withoutArticle ? [normalized] : [normalized, withoutArticle];
+    const forms = normalized === withoutArticle ? [normalized] : [normalized, withoutArticle];
+    return forms.map((form) => ({ form, written }));
   });
 
   const answerWithoutArticle = strip(answer);
   const [first, ...rest] = answer.split(" ");
   const answerWithoutPronoun = extraWords !== "none" && SUBJECT_PRONOUNS.has(first) ? rest.join(" ") : null;
 
-  for (const candidate of candidates) {
-    if (answer === candidate || answerWithoutArticle === candidate || answerWithoutPronoun === candidate) {
-      return { verdict: "correct", score: 100, matched: candidate, note: null };
+  for (const { form } of candidates) {
+    if (answer === form || answerWithoutArticle === form || answerWithoutPronoun === form) {
+      return { verdict: "correct", score: 100, matched: form, note: null };
     }
   }
 
@@ -236,12 +245,12 @@ export function gradeAnswer(userAnswer: string, accepted: string[], options: Gra
   // extra words, e.g. "to fire someone" for "to fire" — whole words only, so
   // "conosciamo" is not "conosci".
   if (extraWords === "any") {
-    for (const candidate of candidates) {
-      if (candidate.length >= 4 && hasWords(answer, candidate)) {
+    for (const { form } of candidates) {
+      if (form.length >= 4 && hasWords(answer, form)) {
         return {
           verdict: "correct",
           score: 90,
-          matched: candidate,
+          matched: form,
           note: "Accepted — you included the expected answer.",
         };
       }
@@ -250,17 +259,17 @@ export function gradeAnswer(userAnswer: string, accepted: string[], options: Gra
 
   const typo = typos
     ? candidates.find(
-        (candidate) =>
-          typoOf(answer, candidate, keepEndings) ||
-          (answerWithoutPronoun !== null && typoOf(answerWithoutPronoun, candidate, keepEndings)),
+        ({ form }) =>
+          typoOf(answer, form, keepEndings) ||
+          (answerWithoutPronoun !== null && typoOf(answerWithoutPronoun, form, keepEndings)),
       )
     : undefined;
   if (typo) {
     return {
       verdict: "close",
       score: 70,
-      matched: typo,
-      note: `Close — the expected spelling is "${typo}".`,
+      matched: typo.form,
+      note: `Close — the expected spelling is "${typo.written}".`,
     };
   }
 
@@ -275,7 +284,7 @@ export type AnswerLanguage = "english" | "target";
  * "I'm tired" and "I am tired" are the same answer.
  */
 export function gradeEnglishAnswer(userAnswer: string, accepted: string[]): GradeResult {
-  return gradeAnswer(expandContractions(userAnswer), accepted.map(expandContractions));
+  return gradeAnswer(userAnswer, accepted, { rewrite: expandContractions });
 }
 
 /** The target language: no extra words but a subject pronoun, articles only off a lone noun. */

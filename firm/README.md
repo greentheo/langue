@@ -90,6 +90,10 @@ GitHub Issues on `greentheo/langue`, via `gh`.
 7. **Secrets stay secret.** Never print, paste or commit a key or password.
    `web/.env` is local. Production variables are the owner's (or set with
    `railway variables --set-from-stdin` on the owner's instruction).
+8. **The repo is public.** Issues, PRs, comments and commits can be read by
+   anyone. Never write learners' names, family details, invite codes, code
+   notes, or numbers that point at one person or one small group — say "a
+   learner", "the family group", and give totals.
 
 ## Workspaces — one checkout per seat
 
@@ -108,7 +112,8 @@ local database, and its own port:
 Setting one up (from the main checkout):
 
 ```bash
-git worktree add ../langue-nightshift main
+git fetch origin
+git worktree add --detach ../langue-nightshift origin/main   # detached: main is checked out in the foreman's checkout
 cd ../langue-nightshift/web
 cp -cR ../../langue/web/node_modules ./node_modules     # APFS clone: fast, no disk
 cp ../../langue/web/.env .env                            # then edit DATABASE_URL's db name
@@ -116,6 +121,10 @@ docker start langue-pg && docker exec langue-pg createdb -U <user> langue_nights
 export PATH="$HOME/.nvm/versions/node/v22.17.1/bin:$PATH"
 npm run codegen && npx prisma migrate deploy
 ```
+
+A worktree can't hold `main` while the foreman's checkout does, so seats work
+detached and branch from there: `git fetch && git checkout --detach origin/main`
+to sync, `git checkout -b feature/{N}-name` to start an issue.
 
 The Postgres container (`langue-pg`, port 5433) is shared; databases are not.
 A dev server renames its process to `next-server`, so stop one by port

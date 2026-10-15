@@ -86,6 +86,13 @@ fixed or answered on the PR, and then asks the owner. **Merging needs the
 owner's own "ship it", in the foreman's session.** `main` deploys to
 production automatically, so after a merge, watch the deploy finish and check
 the live site (health, the feature, the logs) before saying it shipped.
+After every deploy, read the app's own start-up lines —
+`railway logs -d --lines 400 | grep -F "[langue]"` — and act on them: progress
+marks raised, reminders scheduled, and (once #93 ships) renames copied and
+**orphaned item keys**, which mean some learners' progress points at nothing.
+File an issue for each orphan you can't explain. The lines repeat on every
+start, so log retention doesn't matter as long as this check happens.
+**What no seat can read is the database**; logs are readable.
 
 ## Reporting to the owner
 
