@@ -37,7 +37,8 @@ actually use.
 >   with a level-up challenge, and each level with a certificate.
 >
 > **Kind by design**
-> - Your streak is never taken away, and progress bars only go up.
+> - Your streak is never taken away, and your progress through each unit
+>   only goes up.
 > - No lives, no ads, nothing to pay.
 > - Reminders only if you turn them on: after two quiet days, then five, then
 >   twelve, and then they stop.
@@ -97,8 +98,8 @@ rungs in schedule.ts. Verified.
 CLAIM: "Slips are pointed out. A missing accent or a small typo is shown with the
 right spelling, and still counts."
 SOURCE: grade.ts gradeTargetAnswer / typoOf; grade.test.ts; schedule.ts applyAnswer
-("A close answer … counts as right"). Verified. CAVEAT #87: on a typo in an accented
-word, the note drops the accents; the "Answer:" line under it is right.
+("A close answer … counts as right"). Verified. Since #92 (deployed 0b9b8b2) the note
+keeps accents: "téléphonne" → "téléphone".
 NOT SAID: anything about endings. HOLD until #70.
 
 CLAIM: "Reviews come back at growing intervals"
@@ -113,9 +114,11 @@ line covers.
 CLAIM: "Test out … level-up challenge … certificate"
 SOURCE: learn/level/page.tsx; learn/level/certificate/page.tsx. Verified.
 
-CLAIM: "Your streak is never taken away, and progress bars only go up"
+CLAIM: "Your streak is never taken away, and your progress through each unit only goes
+up"
 SOURCE: standings.ts liveStreak/nextStreak; planner.ts unitProgress (best stages,
-UnitMark). Verified. Reminder wording contradicts it until #73.
+UnitMark). Verified. Reminder wording contradicts the streak half until #73. Not "every
+progress bar": the level page's words/phrases/grammar bars can shrink until #91.
 
 CLAIM: "No lives, no ads, nothing to pay"
 SOURCE: no lives/hearts mechanic, no ad/analytics/payment code (grep of web/src,

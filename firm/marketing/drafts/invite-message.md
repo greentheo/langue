@@ -91,8 +91,8 @@ SOURCE: gradeTargetAnswer and typoOf in web/src/lib/engine/grade.ts; grade.test.
 "a missing accent is close, with the accented form shown", "treats a small typo as
 close, not wrong" (37/37 pass). Verified. "Pointed out", not "checked": a missing
 accent is graded close and counts as right, and "checked" can be heard as "marked
-wrong". CAVEAT #87: on a typo in an accented word, the note shows the spelling
-without its accents; the "Answer:" line under it is right.
+wrong". Since #92 (deployed 0b9b8b2) the note keeps accents: "téléphonne" →
+"téléphone".
 NOT SAID: "a wrong ending is marked wrong". On HOLD until #70.
 
 CLAIM: "Little role-plays from the first unit, like greeting a new friend or a

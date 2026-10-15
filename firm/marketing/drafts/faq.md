@@ -101,8 +101,8 @@ parental switch for them yet. What's typed into them is sent to Anthropic.
 *(Decision pending: #74.)*
 
 **Will it pressure my child to keep going?**
-We've tried hard not to. Streaks are never taken away, progress bars only go
-up, there are no lives or hearts, and reminders come only if you turn them
+We've tried hard not to. Streaks are never taken away, progress through each
+unit only goes up, there are no lives or hearts, and reminders come only if you turn them
 on, at most three times, and then stop.
 
 **Ads, purchases, data?**
