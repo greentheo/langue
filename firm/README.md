@@ -90,6 +90,10 @@ GitHub Issues on `greentheo/langue`, via `gh`.
 7. **Secrets stay secret.** Never print, paste or commit a key or password.
    `web/.env` is local. Production variables are the owner's (or set with
    `railway variables --set-from-stdin` on the owner's instruction).
+8. **The repo is public.** Issues, PRs, comments and commits can be read by
+   anyone. Never write learners' names, family details, invite codes, code
+   notes, or numbers that point at one person or one small group — say "a
+   learner", "the family group", and give totals.
 
 ## Workspaces — one checkout per seat
 
