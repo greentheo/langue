@@ -127,6 +127,10 @@ detached and branch from there: `git fetch && git checkout --detach origin/main`
 to sync, `git checkout -b feature/{N}-name` to start an issue.
 
 The Postgres container (`langue-pg`, port 5433) is shared; databases are not.
+**Browser sessions are per host, not per port:** signing in on `localhost:3006`
+signs you out of `localhost:3007` in the same Chrome. Open your seat's app at
+`<seat>.localhost:<port>` (e.g. `nightshift.localhost:3006`,
+`reviewer.localhost:3007`), which gives each seat its own cookies.
 A dev server renames its process to `next-server`, so stop one by port
 (`kill $(lsof -t -iTCP:<port> -sTCP:LISTEN)`), not by name.
 
