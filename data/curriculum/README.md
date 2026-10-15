@@ -152,6 +152,13 @@ a week each. Every lesson, phrasebook situation and vocabulary category of the
 level belongs to exactly one unit — the build checks this. Lessons must stay in
 number order, because a lesson's practice may use earlier lessons.
 
+**Never move content into an earlier unit, or into a unit that already exists
+when learners may have finished it.** New material starts at a learner's first
+unfinished unit, so anything added to a finished unit is never taught to them as
+new (#90). Move categories and words **later**, and give a word to a unit at or
+after the lesson that teaches it. When content must land in an earlier unit, say
+so in the PR and what existing learners will miss.
+
 `can_do` items complete the sentence "At this level you can…", so start them
 with a lowercase verb.
 
