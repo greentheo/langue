@@ -72,13 +72,13 @@ set the order where it matters.
 5. #85 Articles per language in the course dedupe — S
 6. #90 "What's new since you finished" — L (after #93)
 7. #51 Dictation: listen, then type — M
-8. #80, #81 CI: pinned Python deps, Docker build — S
+8. #80, #81 CI: pinned Python deps, Docker build — S · #95 Weekly encrypted local backup — S (owner sets it up)
 
 **Next — trust, then the differentiators**
 9. #63 Privacy page, account deletion, housekeeping — M
 10. #49 "My answer should be accepted" reports — M (after #63)
 11. #76 Password reset without email — M (after #63)
-12. #52 Learning events and a small dashboard — M (after #49, #63; scope: #84)
+12. #52 Learning events and the dashboard (full build) — M (after #49, #63)
 13. #53 Your mistakes, made visible — L (after #70, #63)
 14. #72 Front page and invite copy — S (after the readiness kit, #69)
 15. #54 Speak your reply — M · #55 Listening cards — S · #56 Writing task — M
@@ -95,8 +95,8 @@ set the order where it matters.
 24. #64 Triage legacy CLI issues — S (owner decides what to close)
 
 **Waiting on the owner:** #71 (CI required to merge), #73 (reminder wording),
-#74 (kids and the AI tools), #75 (marketing's numbers), #77 (backups),
-#84 (dashboard scope).
+#74 (kids and the AI tools), #75 (marketing's numbers), #77 (turn on Railway's
+7-day backups — decided, the setting is the owner's).
 
 Done and closed: #35–#38 (guided path phases 1–4), #40–#47 (sounds, language
 chooser, group leaderboards, PWA, streak reminders), #48 (CI), #87 (typo notes
