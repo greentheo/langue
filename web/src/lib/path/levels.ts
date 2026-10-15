@@ -14,6 +14,8 @@ import type { Course, ItemKind, ItemState } from "./types";
 export interface Count {
   /** Items learned (best stage 3+), or role-plays played. Never goes down while item keys stay put. */
   done: number;
+  /** Items met but not yet learned. Absent for role-plays, which are played or not. */
+  onTheWay?: number;
   /** Items in the level the learner hasn't met yet, or role-plays not yet played. New content adds only here. */
   notMet: number;
 }
@@ -40,6 +42,7 @@ export function levelsOf(course: Course): string[] {
 function count(keys: string[], states: Map<string, ItemState>): Count {
   return {
     done: keys.filter((key) => (states.get(key)?.bestStage ?? 0) >= LEARNED_STAGE).length,
+    onTheWay: keys.filter((key) => states.has(key) && states.get(key)!.bestStage < LEARNED_STAGE).length,
     notMet: keys.filter((key) => !states.has(key)).length,
   };
 }
@@ -78,24 +81,6 @@ export function levelProgress(
     grammar: count(ofKind("grammar"), states),
     speaking: { done: played, notMet: dialogues.length - played },
   };
-}
-
-/** "1 word", "438 words". */
-export function plural(n: number, one: string, many: string): string {
-  return `${n} ${n === 1 ? one : many}`;
-}
-
-/** "438 words learned · 20 not met yet", "1 word learned · nothing new", "no words learned yet · 3 not met yet". */
-export function countLine(
-  { done, notMet }: Count,
-  one: string,
-  many: string,
-  verb: string,
-  left: string,
-  noneLeft: string,
-): string {
-  const doneText = done === 0 ? `no ${many} ${verb} yet` : `${plural(done, one, many)} ${verb}`;
-  return `${doneText} · ${notMet === 0 ? noneLeft : `${notMet} ${left}`}`;
 }
 
 /** What a certificate prints. Stored on the level's achievement when it is awarded, so it never changes. */

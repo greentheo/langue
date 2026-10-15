@@ -180,16 +180,17 @@ page); passing marks those items "probably known" (stage 3), and quick reviews
 confirm them.
 
 **The level page** (`/learn/level`) shows the level's overall bar, a count
-each for words, phrases, grammar and speaking ("438 words learned · 20 not met
-yet", "12 conversations played · 4 to go" — counts, not bars, so added content
-only raises what's not met yet), every unit with its challenge, the can-do
-list, and time practised against the guide hours with an estimated finish at
-the learner's own pace (the share of the level each hour has covered so far,
-and minutes a day over the last two weeks). **Finishing a level** is stored as
-an `Achievement` named `level:<language>:<level>`, with the level's counts in
-its `detail`: it unlocks a printable certificate (`/learn/level/certificate`)
-that prints those stored counts, so it never changes after it is awarded, and
-a ★ badge next to the learner's name on the leaderboard ("★ IT A1").
+each for words, phrases, grammar and speaking ("438 words learned · 20 on the
+way · 12 not met yet", "12 conversations played · 4 to go" — counts, not bars,
+so added content only raises what's not met yet), every unit with its
+challenge, the can-do list, and time practised against the guide hours with an
+estimated finish at the learner's own pace (the share of the level each hour
+has covered so far, and minutes a day over the last two weeks). **Finishing a
+level** is stored as an `Achievement` named `level:<language>:<level>`, with
+the level's counts in its `detail`: it unlocks a printable certificate
+(`/learn/level/certificate`) that prints those stored counts, so it never
+changes after it is awarded, and a ★ badge next to the learner's name on the
+leaderboard ("★ IT A1").
 
 ## Content scope
 

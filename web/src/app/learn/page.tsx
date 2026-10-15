@@ -20,7 +20,8 @@ import {
   type UnitProgress,
 } from "@/lib/path/planner";
 import { loadMarks, loadStates, rememberProgress, seedFromLessons } from "@/lib/path/store";
-import { levelProgress, plural } from "@/lib/path/levels";
+import { levelProgress } from "@/lib/path/levels";
+import { plural } from "@/lib/path/count-line";
 import { StandingsTable } from "@/components/standings-table";
 import { LanguageChooser } from "@/components/language-chooser";
 import { prisma } from "@/lib/db";

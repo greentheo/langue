@@ -13,8 +13,8 @@ import {
   levelAchievement,
   levelProgress,
   levelsOf,
-  countLine,
 } from "@/lib/path/levels";
+import { countLine } from "@/lib/path/count-line";
 import { loadMarks, loadStates, rememberProgress, seedFromLessons } from "@/lib/path/store";
 import { Panel } from "@/components/crt";
 
@@ -144,7 +144,8 @@ export default async function LevelPage({
         <p className="mt-4 text-xs text-[var(--crt-fg-dim)]">
           Learned means you can produce it — type the word, build the phrase, answer the idea&apos;s
           questions — on more than one day. What you&apos;ve learned only goes up: new words and
-          phrases join what you haven&apos;t met yet, and bars never go backwards.
+          phrases join what you haven&apos;t met yet, and bars never go backwards. On the way
+          means you&apos;ve met it and are still practising it.
         </p>
       </Panel>
 

@@ -6,7 +6,8 @@ import { getLevelCurriculum } from "@/lib/curriculum";
 import { languageLabel } from "@/lib/languages";
 import { LEVEL_LABELS, type Level } from "@/lib/vocab/types";
 import { getCourse } from "@/lib/path/course";
-import { certificateCounts, levelAchievement, levelProgress, levelsOf, plural } from "@/lib/path/levels";
+import { certificateCounts, levelAchievement, levelProgress, levelsOf } from "@/lib/path/levels";
+import { plural } from "@/lib/path/count-line";
 import { loadMarks, loadStates } from "@/lib/path/store";
 import { PrintButton } from "@/components/print-button";
 
