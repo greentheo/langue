@@ -3,6 +3,12 @@
 Langue is a language-learning web app (Next.js in `web/`, deployed to Railway)
 for a family-and-friends group, plus an older Python CLI (`langue/`).
 
+## Launched as a firm role?
+
+If the owner named a role — foreman, night shift, reviewer, Socrates, marketing —
+read **[firm/README.md](firm/README.md)** and then your role's doc in `firm/`
+before anything else. Each seat works in its own worktree (see the README).
+
 ## Read first
 
 - **[docs/vision.md](docs/vision.md)** — what Langue is for and how it differs:
@@ -20,9 +26,9 @@ for a family-and-friends group, plus an older Python CLI (`langue/`).
 
 ## Working agreements
 
-- **The owner spends ~10–20 minutes a day on the app.** Take the next issue
-  from the roadmap, build it on a branch, open a PR with a short summary and
-  how it was checked. Keep PRs reviewable in that time.
+- **The owner spends ~10–20 minutes a day on the app.** Work moves through
+  the firm's stages (design → questions → ready → review → ship; see
+  firm/README.md). Keep PRs reviewable in that time.
 - **Never merge to `main` without the owner's go-ahead** ("ship it"): `main`
   auto-deploys to production, where the family is learning.
 - **No AI in the learning loop** unless an issue says so; when AI is used,

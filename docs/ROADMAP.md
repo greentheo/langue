@@ -5,10 +5,11 @@ plan to do it. The why behind all of it is [vision.md](vision.md).
 
 ## How we work
 
-- **20–30 minutes a day learning, 10–20 minutes improving the app.** Pick the
-  next issue below (or say "next"); Claude builds it in the background on a
-  branch and opens a PR with a short summary and how it was checked; the
-  owner reviews and says "ship it". 1% better every day.
+- **20–30 minutes a day learning, 10–20 minutes improving the app.** A small
+  team of agents — the firm ([firm/README.md](../firm/README.md)) — moves
+  issues through design → Socrates' questions → night shift builds → reviewer
+  checks → the owner says "ship it". The foreman keeps the queue full and
+  brings the owner only the decisions that need them. 1% better every day.
 - Issues labelled **`background`** can be built without the owner; **size**
   labels say roughly how long (S ≈ one sitting, M ≈ a day or two of
   background work, L ≈ several PRs).
