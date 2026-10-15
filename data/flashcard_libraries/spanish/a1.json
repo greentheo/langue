@@ -3,7 +3,7 @@
     "language": "spanish",
     "level": "a1",
     "version": "1.0",
-    "word_count": 388,
+    "word_count": 389,
     "created_at": "2023-10-15T14:30:00Z",
     "description": "Beginner (A1) Spanish vocabulary: everyday expressions and basic phrases",
     "source": "data/vocab_sources/spanish/a1.psv",
@@ -2454,6 +2454,20 @@
       "difficulty": 2,
       "examples_en": [
         "Are you ready? Let's go to the movies."
+      ]
+    },
+    {
+      "word": "miedo",
+      "translations": [
+        "fear"
+      ],
+      "examples": [
+        "Tiene miedo a volar."
+      ],
+      "category": "emotions",
+      "difficulty": 2,
+      "examples_en": [
+        "He's afraid of flying."
       ]
     },
     {

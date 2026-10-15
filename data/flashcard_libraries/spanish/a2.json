@@ -3,7 +3,7 @@
     "language": "spanish",
     "level": "a2",
     "version": "1.0",
-    "word_count": 405,
+    "word_count": 410,
     "created_at": "2026-08-12T22:26:56.541747+00:00",
     "description": "Elementary (A2) Spanish vocabulary: personal information, shopping, local geography",
     "source": "data/vocab_sources/spanish/a2.psv",
@@ -390,6 +390,20 @@
       ]
     },
     {
+      "word": "crucero",
+      "translations": [
+        "cruise"
+      ],
+      "examples": [
+        "El verano pasado hicimos un crucero por el Caribe."
+      ],
+      "category": "travel",
+      "difficulty": 3,
+      "examples_en": [
+        "Last summer we went on a cruise around the Caribbean."
+      ]
+    },
+    {
       "word": "girar",
       "translations": [
         "to turn"
@@ -768,6 +782,35 @@
       ]
     },
     {
+      "word": "gasolinera",
+      "translations": [
+        "gas station",
+        "petrol station"
+      ],
+      "examples": [
+        "Paramos en una gasolinera para comprar agua."
+      ],
+      "category": "transportation",
+      "difficulty": 2,
+      "examples_en": [
+        "We stopped at a gas station to buy water."
+      ]
+    },
+    {
+      "word": "peatón",
+      "translations": [
+        "pedestrian"
+      ],
+      "examples": [
+        "El peatón cruzó la calle con cuidado."
+      ],
+      "category": "transportation",
+      "difficulty": 3,
+      "examples_en": [
+        "The pedestrian crossed the street carefully."
+      ]
+    },
+    {
       "word": "menú",
       "translations": [
         "menu"
@@ -1121,6 +1164,21 @@
       "difficulty": 2,
       "examples_en": [
         "My favorite ice cream is strawberry."
+      ]
+    },
+    {
+      "word": "probar",
+      "translations": [
+        "to taste",
+        "to try"
+      ],
+      "examples": [
+        "¿Quieres probar el postre?"
+      ],
+      "category": "food",
+      "difficulty": 2,
+      "examples_en": [
+        "Do you want to try the dessert?"
       ]
     },
     {
@@ -3597,6 +3655,21 @@
       "difficulty": 2,
       "examples_en": [
         "My favorite show starts at eight."
+      ]
+    },
+    {
+      "word": "fiesta",
+      "translations": [
+        "festival",
+        "party"
+      ],
+      "examples": [
+        "La fiesta del pueblo es en agosto."
+      ],
+      "category": "leisure",
+      "difficulty": 2,
+      "examples_en": [
+        "The village festival is in August."
       ]
     },
     {
