@@ -43,7 +43,7 @@ than the vision:
 | You type real answers; words climb from recognising, to recalling, to typing, to using them in sentences and role-plays. | LIVE | `web/src/app/api/steps/answer/route.ts` (modes recognize, recall, build, type, cloze, reply, turn); `web/src/lib/path/schedule.ts` (rungs). |
 | A missing accent is pointed out, with the right spelling. | LIVE | `gradeTargetAnswer` in `web/src/lib/engine/grade.ts`; tests "a missing accent is close, with the accented form shown" (`grade.test.ts`, 37/37 pass). **Careful:** a missing accent is graded *close* and **counts as right** (`schedule.ts` `applyAnswer`). Never say "a missing accent is marked wrong", and prefer "pointed out" to "checked", which can be heard that way. |
 | A small slip in a long word is shown with the right spelling, accents included. | LIVE | `typoOf` in `grade.ts`; test "treats a small typo as close, not wrong". The note keeps accents since #92 (closes #87; deployed 2026-10-15, 0b9b8b2): probe `téléphonne` → *Close — the expected spelling is "téléphone"*. |
-| A wrong ending is marked wrong. | **HOLD — #70** | True for Italian singular gender (stanca/stanco) and person (parlava/parlavo). **False** for Spanish/Portuguese plural gender (cansados/cansadas), French -é/-ée(s), and tenses that end in the same letter (comemos/comimos, parliamo/parlavamo): those are graded close and count as right. No test covers the rule. Say nothing about endings until #70 ships. |
+| A wrong ending is marked wrong. | **HOLD — #70 → #102** (see "Waiting on a ship") | True for Italian singular gender (stanca/stanco) and person (parlava/parlavo). **False** for Spanish/Portuguese plural gender (cansados/cansadas), French -é/-ée(s), and tenses that end in the same letter (comemos/comimos, parliamo/parlavamo): those are graded close and count as right. No test covers the rule. Say nothing about endings until #70 ships. |
 | A miss is explained. | **HOLD** | You're shown the right answer and, for phrases, a literal translation or note (`why` in `steps/answer/route.ts`). "Explained" overstates it until #53. Say "you see the right answer". |
 | Reviews come back at growing intervals. | LIVE | `web/src/lib/path/schedule.ts` (interval doubles, up to `MAX_INTERVAL_DAYS`). Don't add "so you never forget"; that's unmeasured. |
 | "Learned" means you can produce it on more than one day. | LIVE | `web/src/app/learn/level/page.tsx` text; `isLearned` = `bestStage >= LEARNED_STAGE (3)` in `schedule.ts`. |
@@ -78,6 +78,41 @@ than the vision:
 | AI-written exercises aren't checked the way the course is. | LIVE (say it) | The content checks cover `data/curriculum` and vocabulary only. |
 | The AI tools are labelled as AI in the app. | **CUT for now** | They aren't: "Talk with a tutor", "graded on meaning" (`web/src/app/learn/page.tsx`). Noted on #74. |
 | A parent can turn the AI tools off for a child. | **CUT for now** | No such switch. Decision on #74. |
+
+## Waiting on a ship
+
+Claims and lines that change the day a PR is **deployed**, not merged.
+Check the deploy, re-run the probe, then make every listed edit in one
+commit.
+
+### #102 (fixes #70): endings in grading
+
+**Claim that goes LIVE:** *"Through A2, a slip that changes a word's ending is
+marked wrong, not forgiven as a typo."* Source: `endings.test.ts`, the #70
+probe rows in `grade.test.ts`, and a probe re-run on the deployed commit.
+
+**Limits, kept in POSITIONING and never contradicted by the copy:**
+- Grammar carried only by an accent (es *hablo* / *habló*) is graded like any
+  missing accent: pointed out, with the right spelling, and it counts. Don't
+  imply it's marked wrong.
+- A slip that lands on a different real word (*attivo* for *cattivo*) is
+  still forgiven as a typo until #106.
+- "Through A2": the ending tables cover the endings the course teaches
+  through A2 (#102 `lib/engine/endings.ts`). Say nothing about B1 and up.
+
+**Side effect to reflect:** #102 treats any slip in a word's last three
+letters as a miss with a note, even when it isn't grammar (*téléphonne* →
+"Check the spelling of the ending: «téléphone»"). Its own measurement:
+forgiven single-letter slips go from about 88% to about 62%. The same day:
+- the "A small slip … shown with the right spelling" row above becomes
+  "A small slip in the middle of a word is shown with the right spelling and
+  counts; a slip in a word's ending is marked wrong, with the right spelling";
+- `drafts/what-is-langue.md`: "and still counts" becomes "in the middle of a
+  word"; check the whole bullet;
+- `drafts/faq.md`: "Why was my answer marked close?" narrows to slips in the
+  middle of a word. Add "Why was it marked wrong with 'check the ending'?";
+- the what's-new note: the *téléphone* example becomes a mid-word slip, quoting
+  the live note text (its quote marks change to «»).
 
 ## Never say
 
