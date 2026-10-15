@@ -4,11 +4,19 @@ This directory contains comprehensive documentation for the Langue language lear
 
 ## Contents
 
+Start here:
+
+- **[vision.md](vision.md)**: What Langue is for and how it's different — read before any product decision
+- **[ROADMAP.md](ROADMAP.md)**: What's live, known gaps, and what's next (web app)
+- **[guided-path.md](guided-path.md)**: How the web app's learning loop works
+
+From the CLI era:
+
 - **[PROJECT_SUMMARY.md](PROJECT_SUMMARY.md)**: Overview of the project, its features, and technical architecture
 - **[CONVERSATION_SUMMARY.md](CONVERSATION_SUMMARY.md)**: Summary of the development conversation and decisions
 - **[TECHNICAL_ARCHITECTURE.md](TECHNICAL_ARCHITECTURE.md)**: Detailed technical design and implementation details
 - **[MODEL_CONFIGURATION.md](MODEL_CONFIGURATION.md)**: Guide to model selection, configuration, and troubleshooting
-- **[ROADMAP.md](ROADMAP.md)**: Future development plans and priorities
+- **[archive/ROADMAP-cli-2026-07.md](archive/ROADMAP-cli-2026-07.md)**: The CLI's earlier roadmap
 
 ## Project Overview
 
