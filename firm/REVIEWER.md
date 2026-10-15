@@ -34,7 +34,8 @@ eyes that actually runs things** — not a second author.
 4. **Run the personas** (below) over the diff.
 5. **For anything a learner sees, use it.** Start the app and walk the
    acceptance criteria. Try the wrong answer, the empty answer, the second
-   learner on the same device, the language with accents.
+   learner on the same device, the language with accents. At phone width, use the frame page in
+   [NIGHT_SHIFT.md](NIGHT_SHIFT.md#7-verify--all-of-it-and-say-what-you-ran).
 6. **Post one review comment on the PR**, signed. Disagreements first, in full,
    with the evidence. Agreements in one line each. **End with what you did not
    verify and why** — an unchecked item quietly left out is the failure this

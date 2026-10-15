@@ -67,6 +67,14 @@ build when the service worker or startup matters) and click through the
 acceptance criteria. For migrations: apply them to your database and check the
 app still loads. Read the exit status directly, not through a pipe.
 
+**Phone width:** Chrome won't size a window below about 614 px, so a
+resize can "succeed" and stay wide. Instead, create
+`web/public/zz-phone.html` containing
+`<iframe src="/learn" style="width:375px;height:740px;border:0"></iframe>`,
+open it on your dev server (same origin, so your session cookie works),
+and delete it afterwards. `zz-*.html` is gitignored. It checks width and
+media queries, not touch, Safari or the on-screen keyboard; say so.
+
 ### 8. Pull request
 - Commit `[#N] what changed and why`; push; `gh pr create` with title
   `[#N] <issue title>`.
