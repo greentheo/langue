@@ -29,7 +29,8 @@ than the vision:
 | Beginner (A1) and Elementary (A2) are complete in all four languages. | LIVE | `npm run curriculum:check`: every language × A1/A2 has 15 lessons, 80–87 phrases, 16 role-plays. Each level has 10 units (`level.yaml` `units:`). |
 | About 500 words at A1 and 450–550 more at A2, depending on the language. | LIVE | Guided-path word items counted from `getCourse()`: A1 508–541, A2 438–536. Use "about"; don't quote one number for all four. |
 | Levels above A2 aren't built yet. | LIVE (say it) | B1–C2 have overview pages only (docs/ROADMAP.md). B1 is #57. |
-| Built on the CEFR levels (A1, A2…), each with a can-do list. | LIVE | `data/curriculum/*/a1/level.yaml` `can_do:`. **Not** "certified", "official", or "gets you to A2"; that needs exam evidence (#59). |
+| Built on the CEFR levels (A1, A2…). | LIVE | `data/curriculum/*/a1/level.yaml` `can_do:`. **Not** "certified", "official", or "gets you to A2"; that needs exam evidence (#59). |
+| What a learner can do at a level: the can-do list, or the certificate as proof. | **HOLD — #100** | Today the certificate (`web/src/app/learn/level/certificate/page.tsx` l.63–90) says *"has completed"* and puts a ✓ beside **every** can-do in `level.yaml`, including ones the course doesn't practise yet: listening to recordings, speaking aloud, connected writing (fr A1: "understand slow, clear speech…", "write a short message or postcard"). Don't quote the list or the certificate as evidence of ability; "built on the CEFR" stays the wording. #100 ticks only practised can-dos and says "Langue's A1 course". |
 | Short steps, planned for about three minutes each. | LIVE | `web/src/lib/path/planner.ts` `STEP_SECONDS = 180`. It's a plan, not a measurement: say "planned for", not "takes". |
 | One button picks your next step: something new, reviews that are due, things you keep missing. | LIVE | `docs/guided-path.md` (planner); `web/src/lib/path/planner.ts`. |
 | Role-plays from the first unit, like greeting a new friend or a neighbour: you pick, then type, your reply. | LIVE | Unit-1 role-plays in `data/curriculum/*/a1/dialogues.yaml` (it "A new friend"; es "The lady next door"; fr "Salut !"; pt "The lady upstairs"…). Hotels etc. vary by language, so name situations only per language; `web/src/app/api/steps/answer/route.ts` `roleplayTurn` (picked or typed). **Not** "speak your reply"; that's #54. |
@@ -46,7 +47,7 @@ than the vision:
 | A miss is explained. | **HOLD** | You're shown the right answer and, for phrases, a literal translation or note (`why` in `steps/answer/route.ts`). "Explained" overstates it until #53. Say "you see the right answer". |
 | Reviews come back at growing intervals. | LIVE | `web/src/lib/path/schedule.ts` (interval doubles, up to `MAX_INTERVAL_DAYS`). Don't add "so you never forget"; that's unmeasured. |
 | "Learned" means you can produce it on more than one day. | LIVE | `web/src/app/learn/level/page.tsx` text; `isLearned` = `bestStage >= LEARNED_STAGE (3)` in `schedule.ts`. |
-| Already know some? Test out of the units you know. Each unit ends with a level-up challenge; each level has a certificate. | LIVE | `web/src/app/learn/level/page.tsx` ("Test out", "Level-up challenge"), `web/src/app/learn/level/certificate/page.tsx`. The certificate is Langue's own, not an exam result. |
+| Already know some? Test out of the units you know. Each unit ends with a level-up challenge; each level has a certificate. | LIVE | `web/src/app/learn/level/page.tsx` ("Test out", "Level-up challenge"), `web/src/app/learn/level/certificate/page.tsx`. The certificate is Langue's own, not an exam result. Name it as a feature only; see the #100 HOLD above. |
 
 ### How it treats you
 

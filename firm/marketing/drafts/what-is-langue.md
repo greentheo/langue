@@ -19,9 +19,8 @@ actually use.
 > **What it teaches**
 > Italian, Spanish, French and Brazilian Portuguese. Beginner (A1) and
 > Elementary (A2) are complete in all four, about a thousand words in all.
-> The levels are built on the CEFR, the European scale from A1 to C2, and
-> each one comes with a list of what you'll be able to do. Higher levels
-> aren't built yet.
+> The levels are built on the CEFR, the European scale from A1 to C2.
+> Higher levels aren't built yet.
 >
 > **How it works**
 > - **Short steps.** Each step is planned for about three minutes. One
@@ -76,9 +75,12 @@ CLAIM: "about a thousand words in all"
 SOURCE: guided-path word items over A1+A2 from getCourse(): it 955, es 1006, fr 1077,
 pt 1009. Verified. ("about" covers Italian's 955.)
 
-CLAIM: "built on the CEFR, the European scale from A1 to C2 … a list of what you'll
-be able to do"
+CLAIM: "built on the CEFR, the European scale from A1 to C2"
 SOURCE: level.yaml can_do lists. NOT certified. Wording per firm/MARKETING.md. Verified.
+CUT: "each one comes with a list of what you'll be able to do". The lists include
+things the course doesn't practise yet: listening to recordings, speaking aloud,
+connected writing (e.g. fr A1 "understand slow, clear speech…", "write a short message
+or postcard"). HOLD until #100.
 
 CLAIM: "Higher levels aren't built yet"
 SOURCE: docs/ROADMAP.md (B1–C2 overview pages only). Verified.
@@ -112,7 +114,9 @@ test-out or level-up challenge count as learned at once (store.ts), which the ne
 line covers.
 
 CLAIM: "Test out … level-up challenge … certificate"
-SOURCE: learn/level/page.tsx; learn/level/certificate/page.tsx. Verified.
+SOURCE: learn/level/page.tsx; learn/level/certificate/page.tsx. Verified. The certificate
+is mentioned as a feature only, never as evidence of ability: until #100 it says "has
+completed" and ticks every can-do, practised or not (POSITIONING: HOLD).
 
 CLAIM: "Your streak is never taken away, and your progress through each unit only goes
 up"
