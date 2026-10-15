@@ -46,7 +46,8 @@ The number of days you've practised. Taking a break never resets it.
 Only if you turn reminders on. Then you get one after two quiet days, then
 after five, then after twelve, always in the early evening, and then no
 more until you practise again. *(The reminder wording still talks about a
-streak "slipping". It can't slip. #73 fixes the wording.)*
+streak "slipping". It can't slip. Whether to change that wording is the
+owner's call: #73.)*
 
 **Can several people use one phone or tablet?**
 Yes. Sign in, then add another learner; tap the name at the top to switch.
