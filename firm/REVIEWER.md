@@ -54,7 +54,10 @@ its plan before building; you run them over the diff.
    with accents and the right variety (Brazilian Portuguese; Spanish both sides
    of the Atlantic)? Does the grader accept what it should and reject what it
    should — endings, agreement, accents? Are all reasonable answers listed? Flag
-   **NEEDS NATIVE CHECK** where you aren't sure.
+   **NEEDS NATIVE CHECK** where you aren't sure. When a PR adds an answer a
+   learner reported (#49), open the same lesson number and section in the
+   other three languages and check for the same gap — the languages were
+   written in parallel and tend to miss the same things.
 3. **Learning science** — Does this fit the ladder (recognise → recall →
    produce → use)? Does it keep difficulty near "about 80% right"? Does it
    respect spacing, or let someone rush an item to "learned"? Is the measure of
