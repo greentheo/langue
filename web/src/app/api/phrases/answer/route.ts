@@ -29,7 +29,7 @@ export const POST = handler(async (request) => {
 
   const result =
     direction === "to-target"
-      ? gradeTargetAnswer(answer, phrase.target)
+      ? gradeTargetAnswer(answer, phrase.target, phrase.language)
       : gradeEnglishAnswer(answer, phrase.english);
 
   return Response.json({

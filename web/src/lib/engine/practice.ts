@@ -61,6 +61,8 @@ export interface ItemGrade {
   score: number;
   points: number;
   note: string | null;
+  /** Set when a near miss was rejected for its ending (grade.ts). */
+  endingMiss?: GradeResult["endingMiss"];
   /** Every accepted answer, revealed only after grading. */
   answers: string[];
   why: string;
@@ -74,10 +76,11 @@ export interface ItemGrade {
  * contraction-tolerant, the target language is accent-sensitive. A
  * fill-in-the-blank gets no typo allowance: the blank is usually an ending
  * or a little word ("parlo" or "parla", "lo" or "la"), so one letter off is
- * the mistake the question is about.
+ * the mistake the question is about. `language` is the lesson's language,
+ * whose endings the grader protects.
  */
-export function gradePracticeItem(item: PracticeItem, answer: string, level: string): ItemGrade {
-  const { answers, language } = acceptedAnswers(item);
+export function gradePracticeItem(item: PracticeItem, answer: string, level: string, language: string): ItemGrade {
+  const { answers, language: typedIn } = acceptedAnswers(item);
 
   const result: GradeResult =
     item.type === "choice"
@@ -88,15 +91,16 @@ export function gradePracticeItem(item: PracticeItem, answer: string, level: str
         : WRONG
       : item.strict_accents
         ? exactMatch(answer, answers)
-        : language === "english"
+        : typedIn === "english"
           ? gradeEnglishAnswer(answer, answers)
-          : gradeTargetAnswer(answer, answers, item.type === "fill" ? { typos: false } : {});
+          : gradeTargetAnswer(answer, answers, language, item.type === "fill" ? { typos: false } : {});
 
   return {
     verdict: result.verdict,
     score: result.score,
     points: pointsForResult(result, difficultyForLevel(level)),
     note: result.note,
+    endingMiss: result.endingMiss,
     answers,
     why: item.why,
   };

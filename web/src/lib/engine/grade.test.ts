@@ -143,7 +143,7 @@ describe("phone keyboards", () => {
   });
 
   test("œ can be typed as oe, without counting as an accent slip", () => {
-    assert.equal(gradeTargetAnswer("J'ai une soeur", ["J'ai une sœur."]).verdict, "correct");
+    assert.equal(gradeTargetAnswer("J'ai une soeur", ["J'ai une sœur."], "french").verdict, "correct");
   });
 
   test("hyphens separate words", () => {
@@ -172,87 +172,157 @@ describe("gradeEnglishAnswer", () => {
 
 describe("gradeTargetAnswer", () => {
   test("an exact answer with accents is correct", () => {
-    assert.equal(gradeTargetAnswer("Lui è stanco", ["Lui è stanco"]).verdict, "correct");
+    assert.equal(gradeTargetAnswer("Lui è stanco", ["Lui è stanco"], "italian").verdict, "correct");
   });
 
   test("a missing accent is close, with the accented form shown", () => {
-    const result = gradeTargetAnswer("lui e stanco", ["Lui è stanco"]);
+    const result = gradeTargetAnswer("lui e stanco", ["Lui è stanco"], "italian");
     assert.equal(result.verdict, "close");
     assert.match(result.note ?? "", /è/);
   });
 
   test("a wrong accent is close too", () => {
-    assert.equal(gradeTargetAnswer("perchè", ["perché"]).verdict, "close");
+    assert.equal(gradeTargetAnswer("perchè", ["perché"], "italian").verdict, "close");
   });
 
   test("an accented answer still gets article and containment leniency", () => {
-    assert.equal(gradeTargetAnswer("la città", ["città"]).verdict, "correct");
-    assert.equal(gradeTargetAnswer("io sono stanco", ["sono stanco"]).verdict, "correct");
+    assert.equal(gradeTargetAnswer("la città", ["città"], "italian").verdict, "correct");
+    assert.equal(gradeTargetAnswer("io sono stanco", ["sono stanco"], "italian").verdict, "correct");
   });
 
   test("picks the accepted form the learner was aiming at", () => {
-    const result = gradeTargetAnswer("e", ["è", "sei"]);
+    const result = gradeTargetAnswer("e", ["è", "sei"], "italian");
     assert.equal(result.verdict, "close");
     assert.match(result.note ?? "", /"è"/);
   });
 
   test("a leading le / lo / la in a sentence is a pronoun, not an article", () => {
-    assert.equal(gradeTargetAnswer("Gli regalo un libro", ["Le regalo un libro"]).verdict, "incorrect");
-    assert.equal(gradeTargetAnswer("le regalo un libro", ["Le regalo un libro"]).verdict, "correct");
+    assert.equal(gradeTargetAnswer("Gli regalo un libro", ["Le regalo un libro"], "italian").verdict, "incorrect");
+    assert.equal(gradeTargetAnswer("le regalo un libro", ["Le regalo un libro"], "italian").verdict, "correct");
     // A lone noun still drops its article.
-    assert.equal(gradeTargetAnswer("il cane", ["cane"]).verdict, "correct");
+    assert.equal(gradeTargetAnswer("il cane", ["cane"], "italian").verdict, "correct");
   });
 
   test("only a subject pronoun may be added; other extra words are a different answer", () => {
-    assert.equal(gradeTargetAnswer("Lo voglio comprarlo", ["Voglio comprarlo", "Lo voglio comprare"]).verdict, "incorrect");
-    assert.equal(gradeTargetAnswer("yo hablo español", ["hablo español"]).verdict, "correct");
+    assert.equal(gradeTargetAnswer("Lo voglio comprarlo", ["Voglio comprarlo", "Lo voglio comprare"], "italian").verdict, "incorrect");
+    assert.equal(gradeTargetAnswer("yo hablo español", ["hablo español"], "spanish").verdict, "correct");
   });
 
   test("a longer word containing the answer is not the answer", () => {
-    assert.equal(gradeTargetAnswer("conosciamo", ["conosci"]).verdict, "incorrect");
-    assert.equal(gradeTargetAnswer("piacerebbero", ["piacerebbe"]).verdict, "incorrect");
+    assert.equal(gradeTargetAnswer("conosciamo", ["conosci"], "italian").verdict, "incorrect");
+    assert.equal(gradeTargetAnswer("piacerebbero", ["piacerebbe"], "italian").verdict, "incorrect");
   });
 
   test("short words get no typo allowance: lo is not la", () => {
-    assert.equal(gradeTargetAnswer("la", ["lo"]).verdict, "incorrect");
-    assert.equal(gradeTargetAnswer("noi", ["voi"]).verdict, "incorrect");
+    assert.equal(gradeTargetAnswer("la", ["lo"], "italian").verdict, "incorrect");
+    assert.equal(gradeTargetAnswer("noi", ["voi"], "italian").verdict, "incorrect");
   });
 
   test("with typos off, one letter off is wrong but a missing accent is still close", () => {
-    assert.equal(gradeTargetAnswer("parla", ["parlo"], { typos: false }).verdict, "incorrect");
-    assert.equal(gradeTargetAnswer("sara", ["sarà"], { typos: false }).verdict, "close");
+    assert.equal(gradeTargetAnswer("parla", ["parlo"], "italian", { typos: false }).verdict, "incorrect");
+    assert.equal(gradeTargetAnswer("sara", ["sarà"], "italian", { typos: false }).verdict, "close");
   });
 
   test("leaves wrong and typo verdicts alone", () => {
-    assert.equal(gradeTargetAnswer("ciao", ["grazie"]).verdict, "incorrect");
-    assert.equal(gradeTargetAnswer("arrivederchi", ["arrivederci"]).verdict, "close");
+    assert.equal(gradeTargetAnswer("ciao", ["grazie"], "italian").verdict, "incorrect");
+    assert.equal(gradeTargetAnswer("arivederci", ["arrivederci"], "italian").verdict, "close");
   });
 });
 
 describe("a close note quotes the accepted answer as written", () => {
   test("a typo in an accented word shows the word with its accents", () => {
-    for (const [typed, accepted] of [
-      ["téléphonne", "téléphone"],
-      ["universittà", "università"],
-      ["açúcarr", "açúcar"],
+    for (const [typed, accepted, language] of [
+      // Slips in the stem; since #70 a slip in a word's last letters is an ending miss.
+      ["tééléphone", "téléphone", "french"],
+      ["unniversità", "università", "italian"],
+      ["açúúcar", "açúcar", "portuguese"],
     ]) {
-      const result = gradeTargetAnswer(typed, [accepted]);
+      const result = gradeTargetAnswer(typed, [accepted], language);
       assert.equal(result.verdict, "close", typed);
       assert.equal(result.score, 70, typed);
       assert.equal(result.note, `Close — the expected spelling is "${accepted}".`);
     }
   });
 
+  test("a slip in the ending is a miss whose note spells the word as written", () => {
+    const result = gradeTargetAnswer("téléphonne", ["téléphone"], "french");
+    assert.equal(result.verdict, "incorrect");
+    assert.equal(result.note, "Check the spelling of the ending: «téléphone».");
+  });
+
   test("a typo of a noun without its article shows the answer with it", () => {
-    assert.equal(gradeTargetAnswer("libbro", ["il libro"]).note, 'Close — the expected spelling is "il libro".');
+    assert.equal(gradeTargetAnswer("libbro", ["il libro"], "italian").note, 'Close — the expected spelling is "il libro".');
   });
 
   test("a typo after an added subject pronoun shows the listed answer", () => {
-    assert.equal(gradeTargetAnswer("lui è stancco", ["È stanco."]).note, 'Close — the expected spelling is "È stanco.".');
+    assert.equal(gradeTargetAnswer("lui è sttanco", ["È stanco."], "italian").note, 'Close — the expected spelling is "È stanco.".');
   });
 
   test("an English typo keeps the answer's capitals and apostrophes", () => {
     assert.equal(gradeEnglishAnswer("I'm tird", ["I'm tired"]).note, `Close — the expected spelling is "I'm tired".`);
     assert.equal(gradeEnglishAnswer("new yorrk", ["New York"]).note, 'Close — the expected spelling is "New York".');
+  });
+});
+
+describe("keepEndings: a slip that changes a word's ending is a mistake, not a typo", () => {
+  // The probe table from #70: each pair is wrong both ways round.
+  const PROBES: [string, string, string][] = [
+    ["portuguese", "Estamos cansados", "Estamos cansadas"],
+    ["portuguese", "Elas estão cansados", "Elas estão cansadas"],
+    ["spanish", "Las chicas son altos", "Las chicas son altas"],
+    ["french", "Elle est arrivé", "Elle est arrivée"],
+    ["french", "Elles sont arrivés", "Elles sont arrivées"],
+    ["spanish", "Comemos", "Comimos"],
+    ["spanish", "Hablamos", "Hablábamos"],
+    ["italian", "Parliamo", "Parlavamo"],
+    ["french", "Nous parlons", "Nous parlions"],
+    ["italian", "Lui è stanca", "Lui è stanco"],
+    ["italian", "Sono stanchi", "Sono stanche"],
+    ["italian", "Ho mangiato", "Ho mangiata"],
+    ["italian", "Ieri parlava", "Ieri parlavo"],
+  ];
+  for (const [language, typed, expected] of PROBES) {
+    test(`${language}: "${typed}" for "${expected}", and the other way round, is wrong`, () => {
+      assert.equal(gradeTargetAnswer(typed, [expected], language).verdict, "incorrect");
+      assert.equal(gradeTargetAnswer(expected, [typed], language).verdict, "incorrect");
+    });
+  }
+
+  test("a slip in the stem is still a typo, in every language", () => {
+    for (const [language, typed, expected] of [
+      ["italian", "ristorrante", "ristorante"],
+      ["italian", "bichiere", "bicchiere"],
+      ["spanish", "restuarante", "restaurante"],
+      ["spanish", "bibilioteca", "biblioteca"],
+      ["french", "bibliotèque", "bibliothèque"],
+      ["french", "restaurrant", "restaurant"],
+      ["portuguese", "obirgado", "obrigado"],
+      ["portuguese", "resturante", "restaurante"],
+    ]) {
+      assert.equal(gradeTargetAnswer(typed, [expected], language).verdict, "close", `${language}: ${typed}`);
+    }
+  });
+
+  test("the rule applies through gradeAnswer's keepEndings option", () => {
+    assert.equal(gradeAnswer("cansados", ["cansadas"], { keepEndings: true, language: "spanish" }).verdict, "incorrect");
+    assert.equal(gradeAnswer("cansados", ["cansadas"], { keepEndings: false }).verdict, "close", "without it, a typo");
+  });
+
+  test("a language without an endings table keeps the last three letters", () => {
+    // The same last letter, a different ending: today's last-letter rule calls it a typo.
+    assert.equal(gradeTargetAnswer("Lehrar", ["Lehrer"], "german").verdict, "incorrect");
+    assert.equal(gradeTargetAnswer("Kaatze", ["Katze"], "german").verdict, "close");
+  });
+
+  test("a rejected ending says why: another form, or a misspelt ending", () => {
+    // "comemos" is a form the Spanish course uses; "parliamno" is no word at all.
+    const otherForm = gradeTargetAnswer("Comemos", ["Comimos"], "spanish");
+    assert.equal(otherForm.verdict, "incorrect");
+    assert.equal(otherForm.note, "That's another form — check the ending: «Comimos».");
+    assert.equal(otherForm.endingMiss, "otherForm");
+    const misspelt = gradeTargetAnswer("parliamno", ["parliamo"], "italian");
+    assert.equal(misspelt.verdict, "incorrect");
+    assert.equal(misspelt.note, "Check the spelling of the ending: «parliamo».");
+    assert.equal(misspelt.endingMiss, "misspelt");
   });
 });

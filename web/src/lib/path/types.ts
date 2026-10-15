@@ -283,6 +283,8 @@ export interface StepAnswerResult {
   verdict: "correct" | "close" | "incorrect";
   points: number;
   note: string | null;
+  /** A near miss rejected for its ending: counted per step (ActivityLog.metadata.endingMisses). */
+  endingMiss?: "otherForm" | "misspelt";
   /** The right answer(s), revealed after grading. */
   answers: string[];
   why: string | null;

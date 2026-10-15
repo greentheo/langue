@@ -76,10 +76,10 @@ const RIGHT: GradeResult = { verdict: "correct", score: 100, matched: null, note
  * any word or name in that place: "Mi chiamo *." accepts "Mi chiamo Theo",
  * and "Ciao, mi chiamo Theo".
  */
-export function gradeReply(answer: string, accepted: string[]): GradeResult {
+export function gradeReply(answer: string, accepted: string[], language: string): GradeResult {
   const exact = accepted.filter((reply) => !reply.includes("*"));
   // A reply may carry a little more than listed: "Sì, bene, grazie" for "Bene, grazie".
-  const result = gradeTargetAnswer(answer, exact, { extraWords: "any" });
+  const result = gradeTargetAnswer(answer, exact, language, { extraWords: "any" });
   if (result.verdict !== "incorrect") return result;
 
   const typed = normalizeAnswer(answer);

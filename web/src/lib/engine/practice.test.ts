@@ -51,23 +51,23 @@ const cedilla: PracticeItem = {
 
 describe("gradePracticeItem", () => {
   test("strict_accents items mark a missing accent wrong, not close", () => {
-    assert.equal(gradePracticeItem(cedilla, "c", "a1").verdict, "incorrect");
-    assert.equal(gradePracticeItem(cedilla, "ç", "a1").verdict, "correct");
+    assert.equal(gradePracticeItem(cedilla, "c", "a1", "french").verdict, "incorrect");
+    assert.equal(gradePracticeItem(cedilla, "ç", "a1", "french").verdict, "correct");
   });
 
   test("a fill answer missing its accent is close and shows the accented form", () => {
-    const grade = gradePracticeItem(fill, "e", "a1");
+    const grade = gradePracticeItem(fill, "e", "a1", "italian");
     assert.equal(grade.verdict, "close");
     assert.match(grade.note ?? "", /è/);
     assert.equal(grade.why, "Lui takes è.");
   });
 
   test("English answers accept full forms for contractions", () => {
-    assert.equal(gradePracticeItem(toEnglish, "what is your name", "a1").verdict, "correct");
+    assert.equal(gradePracticeItem(toEnglish, "what is your name", "a1", "italian").verdict, "correct");
   });
 
   test("target answers accept any listed variant and reveal them all", () => {
-    const grade = gradePracticeItem(toTarget, "io sono stanca", "a1");
+    const grade = gradePracticeItem(toTarget, "io sono stanca", "a1", "italian");
     assert.equal(grade.verdict, "correct");
     assert.deepEqual(grade.answers, ["Sono stanca.", "Io sono stanca."]);
   });
@@ -81,20 +81,20 @@ describe("gradePracticeItem", () => {
       answer: "lunedì",
       why: "Days of the week are lowercase in Italian.",
     };
-    assert.equal(gradePracticeItem(spelling, "Lunedì", "a1").verdict, "incorrect");
-    assert.equal(gradePracticeItem(spelling, "lunedi", "a1").verdict, "incorrect");
-    assert.equal(gradePracticeItem(spelling, "lunedì", "a1").verdict, "correct");
+    assert.equal(gradePracticeItem(spelling, "Lunedì", "a1", "italian").verdict, "incorrect");
+    assert.equal(gradePracticeItem(spelling, "lunedi", "a1", "italian").verdict, "incorrect");
+    assert.equal(gradePracticeItem(spelling, "lunedì", "a1", "italian").verdict, "correct");
   });
 
   test("a choice is right only on the exact option", () => {
-    assert.equal(gradePracticeItem(choice, "lo", "a1").verdict, "correct");
-    assert.equal(gradePracticeItem(choice, "il", "a1").verdict, "incorrect");
-    assert.equal(gradePracticeItem(choice, "il", "a1").points, 0);
+    assert.equal(gradePracticeItem(choice, "lo", "a1", "italian").verdict, "correct");
+    assert.equal(gradePracticeItem(choice, "il", "a1", "italian").verdict, "incorrect");
+    assert.equal(gradePracticeItem(choice, "il", "a1", "italian").points, 0);
   });
 
   test("points grow with level", () => {
-    const a1 = gradePracticeItem(choice, "lo", "a1").points;
-    const b2 = gradePracticeItem(choice, "lo", "b2").points;
+    const a1 = gradePracticeItem(choice, "lo", "a1", "italian").points;
+    const b2 = gradePracticeItem(choice, "lo", "b2", "italian").points;
     assert.ok(b2 > a1);
     assert.equal(difficultyForLevel("nonsense"), 1);
   });

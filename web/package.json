@@ -8,7 +8,7 @@
     "prebuild": "npm run codegen",
     "build": "next build",
     "start": "next start",
-    "codegen": "node scripts/build-vocab.mjs && tsx scripts/build-curriculum.mts && prisma generate",
+    "codegen": "node scripts/build-vocab.mjs && tsx scripts/build-curriculum.mts && tsx scripts/build-known-forms.mts && prisma generate",
     "typecheck": "tsc --noEmit",
     "test": "node --conditions=react-server --import tsx --test \"src/**/*.test.ts\"",
     "invite": "tsx scripts/mint-invite.mts",

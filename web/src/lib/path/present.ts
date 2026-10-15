@@ -138,7 +138,7 @@ function replyOptions(
     const key = normalizeAnswer(reply);
     if (seen.has(key)) continue;
     seen.add(key);
-    if (gradeReply(reply, answers).verdict !== "incorrect") continue;
+    if (gradeReply(reply, answers, course.language).verdict !== "incorrect") continue;
     options.push(reply);
   }
   return shuffle(options, random);

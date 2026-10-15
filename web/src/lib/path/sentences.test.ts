@@ -45,16 +45,18 @@ describe("role-play replies", () => {
   const accepted = ["Mi chiamo Anna.", "Mi chiamo *.", "Sono *."];
 
   test("a listed reply, with the usual leniency", () => {
-    assert.equal(gradeReply("mi chiamo anna", accepted).verdict, "correct");
-    assert.equal(gradeReply("Mi chimo Anna", accepted).verdict, "close");
+    assert.equal(gradeReply("mi chiamo anna", accepted, "italian").verdict, "correct");
+    assert.equal(gradeReply("Mi chhiamo Anna", accepted, "italian").verdict, "close");
+    // A slip in the last three letters is an ending miss (#70), with a note saying so.
+    assert.equal(gradeReply("Mi chimo Anna", accepted, "italian").note, "Check the spelling of the ending: «chiamo».");
   });
 
   test("* stands for any name", () => {
-    assert.equal(gradeReply("Mi chiamo Theo!", accepted).verdict, "correct");
-    assert.equal(gradeReply("Sono Giulia", accepted).verdict, "correct");
-    assert.equal(gradeReply("Ciao, mi chiamo Sam", accepted).verdict, "correct", "a greeting first is fine");
-    assert.equal(gradeReply("Sì, bene, grazie", ["Bene, grazie."]).verdict, "correct", "a little more than listed");
-    assert.equal(gradeReply("Mi chiamo", accepted).verdict, "incorrect", "the name is needed");
-    assert.equal(gradeReply("Buongiorno", accepted).verdict, "incorrect");
+    assert.equal(gradeReply("Mi chiamo Theo!", accepted, "italian").verdict, "correct");
+    assert.equal(gradeReply("Sono Giulia", accepted, "italian").verdict, "correct");
+    assert.equal(gradeReply("Ciao, mi chiamo Sam", accepted, "italian").verdict, "correct", "a greeting first is fine");
+    assert.equal(gradeReply("Sì, bene, grazie", ["Bene, grazie."], "italian").verdict, "correct", "a little more than listed");
+    assert.equal(gradeReply("Mi chiamo", accepted, "italian").verdict, "incorrect", "the name is needed");
+    assert.equal(gradeReply("Buongiorno", accepted, "italian").verdict, "incorrect");
   });
 });
