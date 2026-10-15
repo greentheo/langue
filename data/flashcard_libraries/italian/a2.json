@@ -3,7 +3,7 @@
     "language": "italian",
     "level": "a2",
     "version": "1.0",
-    "word_count": 420,
+    "word_count": 419,
     "created_at": "2026-08-12T22:23:06.944963+00:00",
     "description": "Elementary (A2) Italian vocabulary: personal information, shopping, local geography",
     "source": "data/vocab_sources/italian/a2.psv",
@@ -6020,22 +6020,6 @@
       "difficulty": 2,
       "examples_en": [
         "Luckily I had my umbrella."
-      ]
-    },
-    {
-      "word": "ciao",
-      "translations": [
-        "hello",
-        "hi",
-        "bye"
-      ],
-      "examples": [
-        "Ciao, come stai?"
-      ],
-      "category": "greetings",
-      "difficulty": 1,
-      "examples_en": [
-        "Hi, how are you?"
       ]
     }
   ]
