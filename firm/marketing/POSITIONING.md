@@ -40,8 +40,8 @@ than the vision:
 | Claim | Status | Source |
 |---|---|---|
 | You type real answers; words climb from recognising, to recalling, to typing, to using them in sentences and role-plays. | LIVE | `web/src/app/api/steps/answer/route.ts` (modes recognize, recall, build, type, cloze, reply, turn); `web/src/lib/path/schedule.ts` (rungs). |
-| Accents are checked: a missing accent is flagged and the right spelling shown. | LIVE | `gradeTargetAnswer` in `web/src/lib/engine/grade.ts`; tests "a missing accent is close, with the accented form shown" (`grade.test.ts`, 37/37 pass). **Careful:** a missing accent is graded *close* and **counts as right** (`schedule.ts` `applyAnswer`). Never say "a missing accent is marked wrong". |
-| A small slip in a long word is shown with the right spelling. | LIVE | `typoOf` in `grade.ts`; test "treats a small typo as close, not wrong". |
+| A missing accent is pointed out, with the right spelling. | LIVE | `gradeTargetAnswer` in `web/src/lib/engine/grade.ts`; tests "a missing accent is close, with the accented form shown" (`grade.test.ts`, 37/37 pass). **Careful:** a missing accent is graded *close* and **counts as right** (`schedule.ts` `applyAnswer`). Never say "a missing accent is marked wrong", and prefer "pointed out" to "checked", which can be heard that way. |
+| A small slip in a long word is shown with the right spelling. | LIVE, with #87 | `typoOf` in `grade.ts`; test "treats a small typo as close, not wrong". **Caveat #87:** on a typo in an accented word the note drops the accents ("telephone" for téléphone); the "Answer:" line under it is right. True as stated; don't quote the note. |
 | A wrong ending is marked wrong. | **HOLD — #70** | True for Italian singular gender (stanca/stanco) and person (parlava/parlavo). **False** for Spanish/Portuguese plural gender (cansados/cansadas), French -é/-ée(s), and tenses that end in the same letter (comemos/comimos, parliamo/parlavamo): those are graded close and count as right. No test covers the rule. Say nothing about endings until #70 ships. |
 | A miss is explained. | **HOLD** | You're shown the right answer and, for phrases, a literal translation or note (`why` in `steps/answer/route.ts`). "Explained" overstates it until #53. Say "you see the right answer". |
 | Reviews come back at growing intervals. | LIVE | `web/src/lib/path/schedule.ts` (interval doubles, up to `MAX_INTERVAL_DAYS`). Don't add "so you never forget"; that's unmeasured. |
@@ -64,12 +64,13 @@ than the vision:
 | No ads, and nothing to pay. | LIVE | No ad, analytics or payment code in `web/src` or `web/package.json` (grep); vision "What we won't do". **Not "free forever"**: the owner pays for hosting and AI. |
 | We don't sell data. | LIVE (vision words only) | docs/vision.md "What we won't do". Further privacy wording waits for the privacy page (#63). |
 | Sign-up asks for a name, an email address and a password. Langue sends no email. | LIVE | `RegisterSchema` in `web/src/lib/auth/actions.ts`; no mail library in `web/package.json` or `web/src`. |
+| Your email is only used to sign in. | **HOLD — #63** | True in code today (the address appears only in `auth-forms.tsx` and the `User` row), but it's a promise about how data is used. That's the privacy page's job, so wait for #63. |
 
 ### AI
 
 | Claim | Status | Source |
 |---|---|---|
-| The course doesn't use AI: lessons, steps, role-plays, grading, reviews and reminders are fixed content and plain code. | LIVE | Only `app/api/chat`, `app/api/lessons/ask` and `lib/engine/activities.ts` (used by `app/api/exercises`, `exercises/grade`, `flashcards/answer`) import the model; `app/api/steps/*` does not. |
+| The course doesn't use AI: lessons, steps, role-plays, grading, reviews and reminders are fixed content and plain code. | LIVE | Only `app/api/chat`, `app/api/lessons/ask` and `lib/engine/activities.ts` (used by `app/api/exercises`, `exercises/grade`, `flashcards/answer`) **call** the model (`complete` / `streamCompletion`); `app/api/steps/*` makes no call. Say "call", not "import": `lib/api.ts` imports the model module's error type, so everything imports it transitively. |
 | Some optional extra tools do use AI: the Conversation partner, the Reading, Translation and Fill-in-the-blank exercises, "ask about this lesson", and explanations of a missed flashcard. | LIVE (say it) | As above. Model: `claude-haiku-4-5`, Anthropic's small model (`web/src/lib/engine/model.ts`, default tier `fast`). |
 | What you type into those tools is sent to Anthropic. | LIVE (say it) | `app/api/chat/route.ts` posts the transcript to the model. #63's privacy page will say it too. |
 | AI-written exercises aren't checked the way the course is. | LIVE (say it) | The content checks cover `data/curriculum` and vocabulary only. |

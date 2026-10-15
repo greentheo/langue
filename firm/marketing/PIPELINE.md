@@ -1,7 +1,8 @@
 # Pipeline — what we shipped, what we said it would do, and whether it did
 
 Each session starts here: re-read the last entry's bets and check them.
-Totals only (this repo is public; see CHANNELS.md).
+Totals only, and a count of 1 or 2 is written "<3" (this repo is public; see
+CHANNELS.md).
 
 ## Readiness (exists / doesn't)
 
@@ -18,13 +19,18 @@ Totals only (this repo is public; see CHANNELS.md).
 
 **2026-10-15: unmeasured.** Marketing can't read production (correctly), and
 the dashboard (#52) isn't built. Asked the owner how numbers should arrive:
-#75. `funnel.sql` is ready and checked against the local database (it runs,
-and a probe learner with no practice shows up as `never_practised`).
+#75. `funnel.sql` is ready and checked against the local database: it runs;
+a probe learner with no practice shows up as `never_practised`; counts of 1
+or 2 print as "<3"; and an INSERT added to it is refused ("cannot execute
+INSERT in a read-only transaction").
 
-When the first run comes in, record here: learners; joined in the last 7 and
-30 days; practising in the last 7 days; of those who joined 14+ days ago, how
-many practised in the last 7 days; codes made vs. used; learners with
-reminders on; the mix of guided path vs. AI tools.
+When the first run comes in, record here **only the PASTEABLE sections
+(§1–§7)**, as printed: learners; joined in the last 7 and 30 days; practising
+in the last 7 days; of those who joined 14+ days ago, how many practised in
+the last 7 days; codes made, used and with someone practising; languages;
+guided path vs. AI tools; learners with reminders on. A count of 1 or 2 is
+written "<3" (funnel.sql does it). §8–§9 are owner's eyes only and never go
+in the repo or an issue.
 
 ## Feedback turned into issues
 

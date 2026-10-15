@@ -84,7 +84,7 @@ set your child up yourself.
 **What does my child need to sign up?**
 A name, an email address and a password. The name is shown to their group,
 so a first name or nickname is fine. Each account needs its own email
-address. Langue never sends email, so it's only used to sign in. Many email
+address; you sign in with it. Langue doesn't send email. Many email
 providers (Gmail, for example) let you add `+name` to your own address for
 this.
 
@@ -168,7 +168,7 @@ keeps its own login". Verified.
 
 CLAIM: AI answer (course doesn't; which tools do; Anthropic; typed text sent; AI
 exercises not checked like the course)
-SOURCE: model importers (app/api/chat, app/api/lessons/ask, lib/engine/activities.ts
+SOURCE: model calls (app/api/chat, app/api/lessons/ask, lib/engine/activities.ts
 via exercises, exercises/grade, flashcards/answer); model.ts claude-haiku-4-5; content
 checks cover data/curriculum only. Verified.
 
@@ -183,9 +183,11 @@ CLAIM: "built for adults and for kids from about ten"
 SOURCE: docs/vision.md "Who it's for". Verified (it's a design intent).
 
 CLAIM: "A name, an email address and a password … Each account needs its own email
-address. Langue never sends email."
+address; you sign in with it. Langue doesn't send email."
 SOURCE: RegisterSchema (lib/auth/actions.ts); User.email @unique (schema.prisma); no
-mail library. Verified.
+mail library. Verified. CUT after review: "so it's only used to sign in". That's a
+promise about how data is used, so it waits for #63's privacy page (POSITIONING
+HOLD).
 
 CLAIM: "+name" addressing
 SOURCE: general knowledge of Gmail. Only "for example, Gmail" is claimed; the reviewer

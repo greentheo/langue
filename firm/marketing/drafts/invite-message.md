@@ -11,6 +11,10 @@ Parts in `{braces}` are filled in by the app from the same inputs it uses
 today. `{languages}` is the app's list, e.g. "Italian, Spanish, French and
 Portuguese".
 
+⚠ **Depends on #73:** "your streak is never taken away" is true, but the
+reminder notifications still say the streak can "slip". Send as is, drop the
+phrase, or decide #73 first. It's your call (#73 is with you).
+
 ---
 
 ## 1. The email (what the button copies)
@@ -25,8 +29,8 @@ Portuguese".
 > What it's like:
 > - Short steps, planned for about three minutes each. One button picks what's
 >   next: new words, reviews that are due, and the things you keep missing.
-> - You type the answers yourself, and accents are checked. When you slip,
->   you see the right spelling.
+> - You type the answers yourself. A missing accent or a small slip is
+>   pointed out, with the right spelling.
 > - Little role-plays from the first unit, like greeting a new friend or a
 >   neighbour.
 > - Beginner (A1) and Elementary (A2) are complete. If you already know some,
@@ -58,8 +62,8 @@ uses only when they apply).
 The owner pastes this by hand. The app doesn't build it.
 
 > I'm learning {language} on Langue, a small invite-only app for family and
-> friends. Short daily steps, you type real answers (accents are checked), no
-> ads. Here's an invite: {link}
+> friends. Short daily steps, you type real answers (missing accents are
+> pointed out), no ads. Here's an invite: {link}
 
 ---
 
@@ -81,11 +85,14 @@ CLAIM: "One button picks what's next: new words, reviews that are due, and the t
 you keep missing"
 SOURCE: docs/guided-path.md (planner), web/src/lib/path/planner.ts. Verified.
 
-CLAIM: "You type the answers yourself, and accents are checked. When you slip, you see
-the right spelling."
+CLAIM: "You type the answers yourself. A missing accent or a small slip is pointed
+out, with the right spelling."
 SOURCE: gradeTargetAnswer and typoOf in web/src/lib/engine/grade.ts; grade.test.ts
 "a missing accent is close, with the accented form shown", "treats a small typo as
-close, not wrong" (37/37 pass). Verified.
+close, not wrong" (37/37 pass). Verified. "Pointed out", not "checked": a missing
+accent is graded close and counts as right, and "checked" can be heard as "marked
+wrong". CAVEAT #87: on a typo in an accented word, the note shows the spelling
+without its accents; the "Answer:" line under it is right.
 NOT SAID: "a wrong ending is marked wrong". On HOLD until #70.
 
 CLAIM: "Little role-plays from the first unit, like greeting a new friend or a
@@ -110,8 +117,8 @@ vision "What we won't do". Not "free forever". Verified.
 
 CLAIM: "your streak is never taken away"
 SOURCE: web/src/lib/standings.ts liveStreak / nextStreak. Verified.
-CAVEAT: the reminder notifications still say it can "slip" (#73). Fix #73 before
-or with this.
+CAVEAT: the reminder notifications still say it can "slip". #73 is the owner's
+decision, so the line is marked at the top of this draft.
 
 CLAIM: "a password (at least 10 characters)"
 SOURCE: RegisterSchema in web/src/lib/auth/actions.ts (.min(10)). Verified.
@@ -125,7 +132,7 @@ SOURCE: "What do you want to learn?" panel, web/src/app/learn/page.tsx (#41). Ve
 CLAIM: "add Langue to your home screen and it works like an app"
 SOURCE: web/src/app/manifest.ts; install hint in web/src/components/pwa.tsx. Verified.
 
-CLAIM (short version): "accents are checked", "no ads"
+CLAIM (short version): "missing accents are pointed out", "no ads"
 SOURCE: as above.
 ```
 

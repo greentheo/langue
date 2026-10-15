@@ -29,8 +29,8 @@ actually use.
 >   things you keep missing.
 > - **You produce the language.** A new word climbs from recognising it, to
 >   recalling it, to typing it, to using it in a sentence and in a role-play.
-> - **Spelling is checked.** Accents are checked, and when you slip you see
->   the right spelling.
+> - **Slips are pointed out.** A missing accent or a small typo is shown
+>   with the right spelling, and still counts.
 > - **Reviews come back** at growing intervals. A word counts as learned
 >   when you've produced it on more than one day.
 > - **Already know some?** Test out of the units you know. Each unit ends
@@ -94,8 +94,11 @@ using it in a sentence and in a role-play"
 SOURCE: modes recognize/recall/type/cloze/reply/turn in steps/answer/route.ts;
 rungs in schedule.ts. Verified.
 
-CLAIM: "Accents are checked, and when you slip you see the right spelling"
-SOURCE: grade.ts gradeTargetAnswer / typoOf; grade.test.ts. Verified.
+CLAIM: "Slips are pointed out. A missing accent or a small typo is shown with the
+right spelling, and still counts."
+SOURCE: grade.ts gradeTargetAnswer / typoOf; grade.test.ts; schedule.ts applyAnswer
+("A close answer … counts as right"). Verified. CAVEAT #87: on a typo in an accented
+word, the note drops the accents; the "Answer:" line under it is right.
 NOT SAID: anything about endings. HOLD until #70.
 
 CLAIM: "Reviews come back at growing intervals"
@@ -128,9 +131,10 @@ messaging between learners"
 SOURCE: schema.prisma InviteCode/GroupMember; no messaging model or route. Verified.
 
 CLAIM: "No AI in the course … A few optional extra tools … do use AI"
-SOURCE: model importers are only app/api/chat, app/api/lessons/ask and
-lib/engine/activities.ts (exercises, translation grading, flashcard explanations);
-app/api/steps/* imports none. Verified.
+SOURCE: the model is called (complete / streamCompletion) only from app/api/chat,
+app/api/lessons/ask and lib/engine/activities.ts (exercises, translation grading,
+flashcard explanations); app/api/steps/* makes no call. (lib/api.ts imports only the
+error type from engine/model.) Verified.
 
 CLAIM: "Not built yet: speaking your answers aloud, dictation, writing tasks, and
 levels above A2"
