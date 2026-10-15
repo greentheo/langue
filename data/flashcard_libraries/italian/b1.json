@@ -3,7 +3,7 @@
     "language": "italian",
     "level": "b1",
     "version": "1.0",
-    "word_count": 111,
+    "word_count": 109,
     "created_at": "2026-08-12T22:23:06.944963+00:00",
     "description": "Intermediate (B1) Italian vocabulary: work, travel, and personal interests",
     "source": "data/vocab_sources/italian/b1.psv",
@@ -262,17 +262,6 @@
       ],
       "category": "business",
       "difficulty": 3
-    },
-    {
-      "word": "spendere",
-      "translations": [
-        "to spend"
-      ],
-      "examples": [
-        "Spendo troppo in libri."
-      ],
-      "category": "business",
-      "difficulty": 2
     },
     {
       "word": "costoso",
@@ -1082,18 +1071,6 @@
       ],
       "category": "society",
       "difficulty": 4
-    },
-    {
-      "word": "festa",
-      "translations": [
-        "festival",
-        "party"
-      ],
-      "examples": [
-        "La festa del paese è ad agosto."
-      ],
-      "category": "society",
-      "difficulty": 2
     },
     {
       "word": "sagra",

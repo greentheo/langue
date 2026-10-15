@@ -6,7 +6,6 @@
 # Travel, holidays and hotels
 viaggio | trip; journey | Il viaggio dura tre ore. | travel | 2 | The journey takes three hours.
 valigia | suitcase | Ho fatto la valigia ieri sera. | travel | 3 | I packed my suitcase last night.
-partire | to leave; to depart | Domani dobbiamo partire molto presto. | travel | 2 | Tomorrow we have to leave very early.
 prenotare | to book; to reserve | Vorrei prenotare un tavolo per due. | travel | 3 | I'd like to book a table for two.
 prenotazione | booking; reservation | Ho una prenotazione a nome Rossi. | travel | 3 | I have a booking under the name Rossi.
 hotel | hotel | Abbiamo dormito in un hotel vicino al mare. | travel | 1 | We slept in a hotel near the sea.
@@ -89,11 +88,9 @@ vegetariano | vegetarian | Avete un piatto vegetariano? | food | 2 | Do you have
 
 # Shopping and money
 vendere | to sell | Voglio vendere la mia vecchia bici. | shopping | 2 | I want to sell my old bike.
-costare | to cost | Quanto può costare un taxi per l'aeroporto? | shopping | 2 | How much might a taxi to the airport cost?
 sconto | discount | C'è uno sconto del venti per cento. | shopping | 3 | There's a twenty per cent discount.
 saldi | sales | I saldi cominciano a gennaio. | shopping | 3 | The sales start in January.
 gratis | free (of charge) | Il secondo caffè è gratis. | shopping | 2 | The second coffee is free.
-cassa | checkout; till | La fila alla cassa è lunga. | shopping | 3 | The queue at the checkout is long.
 fila | queue; line | C'era una fila lunghissima davanti al museo. | shopping | 3 | There was a very long queue outside the museum.
 scontrino | receipt | Ricordati di conservare lo scontrino. | shopping | 3 | Remember to keep the receipt.
 carta di credito | credit card | Non accettano la carta di credito. | shopping | 3 | They don't take credit cards.
@@ -113,6 +110,7 @@ pacco | parcel; packet | È arrivato un pacco per te. | shopping | 2 | A parcel 
 spedire | to send; to post | Devo spedire un pacco in Inghilterra. | shopping | 3 | I need to send a parcel to England.
 francobollo | stamp | Mi serve un francobollo per questa cartolina. | shopping | 3 | I need a stamp for this postcard.
 restituire | to return; to give back | Voglio restituire queste scarpe, sono strette. | shopping | 3 | I want to return these shoes, they're tight.
+spendere | to spend | Spendo troppo in libri. | shopping | 2 | I spend too much on books.
 
 # Clothes
 taglia | size (clothes) | Avete questa giacca in una taglia più grande? | clothing | 3 | Do you have this jacket in a bigger size?
@@ -141,6 +139,12 @@ largo | loose; wide | Questo maglione è un po' largo. | clothing | 3 | This swe
 corto | short | Questo vestito è troppo corto per me. | clothing | 2 | This dress is too short for me.
 chiaro | light (colour); clear | Cerco una camicia azzurro chiaro. | clothing | 3 | I'm looking for a light blue shirt.
 scuro | dark (colour) | Preferisco i pantaloni blu scuro. | clothing | 3 | I prefer the dark blue trousers.
+tasca | pocket | Ho messo le chiavi in tasca. | clothing | 2 | I put the keys in my pocket.
+cotone | cotton | Questa maglietta è di cotone. | clothing | 2 | This T-shirt is made of cotton.
+lana | wool | D'inverno porto un maglione di lana. | clothing | 2 | In winter I wear a wool jumper.
+orecchini | earrings | Mia sorella ha comprato degli orecchini nuovi. | clothing | 2 | My sister bought some new earrings.
+cravatta | tie | Per il colloquio ho messo la cravatta. | clothing | 2 | I wore a tie for the interview.
+ciabatte | slippers | A casa mi metto sempre le ciabatte. | clothing | 2 | At home I always put my slippers on.
 
 # Health and the body
 salute | health | La salute viene prima di tutto. | health | 2 | Health comes first.
@@ -171,10 +175,11 @@ schiena | back | Ho mal di schiena da ieri. | health | 3 | I've had backache sin
 ginocchio | knee | Sono caduto e mi sono fatto male al ginocchio. | health | 3 | I fell and hurt my knee.
 dito | finger; toe | Mi sono tagliato il dito con il coltello. | health | 2 | I cut my finger with the knife.
 orecchio | ear | Mi fa male un orecchio. | health | 2 | One of my ears hurts.
+allergia | allergy | Soffro di allergia ai gatti. | health | 3 | I'm allergic to cats.
+sciroppo | syrup; cough mixture | Il medico mi ha dato uno sciroppo per la tosse. | health | 2 | The doctor gave me a cough syrup.
 
 # The home and chores
 stanza | room | Questa stanza è troppo piccola per due. | housing | 2 | This room is too small for two.
-bagno | bathroom | Il bagno è in fondo al corridoio. | housing | 2 | The bathroom is at the end of the corridor.
 soggiorno | living room | Guardiamo la partita in soggiorno. | housing | 3 | We're watching the match in the living room.
 corridoio | corridor; hallway | Le scarpe si lasciano nel corridoio. | housing | 3 | Shoes are left in the hallway.
 scale | stairs | Faccio sempre le scale a piedi. | housing | 2 | I always take the stairs.
@@ -204,6 +209,12 @@ passare l'aspirapolvere | to vacuum; to hoover | Puoi passare l'aspirapolvere in
 spazzatura | rubbish; trash | Porti fuori la spazzatura, per favore? | housing | 3 | Can you take the rubbish out, please?
 sporco | dirty | Il bagno è sporco, lo pulisco io. | housing | 2 | The bathroom is dirty, I'll clean it.
 pulito | clean | L'albergo era piccolo ma pulito. | housing | 2 | The hotel was small but clean.
+scaffale | shelf | I libri sono sullo scaffale in alto. | housing | 2 | The books are on the top shelf.
+lampada | lamp | Ho acceso la lampada per leggere. | housing | 2 | I switched on the lamp to read.
+cuscino | pillow; cushion | Questo cuscino è troppo morbido. | housing | 2 | This pillow is too soft.
+coperta | blanket | Di notte ho freddo, mi serve un'altra coperta. | housing | 2 | I'm cold at night, I need another blanket.
+lavandino | sink; washbasin | Ho lasciato i piatti nel lavandino. | housing | 2 | I left the dishes in the sink.
+trasloco | move (to a new home) | Il trasloco è durato tutto il giorno. | housing | 3 | The move took all day.
 
 # Work
 part-time | part-time | Ho trovato un lavoro part-time in un negozio. | work | 2 | I've found a part-time job in a shop.
@@ -231,7 +242,6 @@ farmacista | pharmacist | La farmacista mi ha dato uno sciroppo per la tosse. | 
 
 # School and studying
 università | university | La mia università è in centro. | education | 2 | My university is in the centre.
-studente | student | Sono uno studente di ingegneria. | education | 2 | I'm an engineering student.
 liceo | (academic) high school | Mia sorella fa il liceo scientifico. | education | 3 | My sister goes to a science high school.
 corso | course; class | Faccio un corso di italiano online. | education | 2 | I'm doing an Italian course online.
 materia | (school) subject | Qual è la tua materia preferita? | education | 2 | What's your favourite subject?
@@ -264,11 +274,8 @@ giro | ride; trip; walk round | Facciamo un giro in centro? | leisure | 2 | Shal
 teatro | theatre | Stasera andiamo a teatro con la scuola. | leisure | 2 | Tonight we're going to the theatre with the school.
 spettacolo | show | Lo spettacolo comincia alle nove. | leisure | 2 | The show starts at nine.
 concerto | concert | Il concerto è finito a mezzanotte. | leisure | 2 | The concert finished at midnight.
-musica | music | Ascolto musica mentre lavoro. | leisure | 1 | I listen to music while I work.
-film | film; movie | Il film dura due ore. | leisure | 1 | The film lasts two hours.
 pianoforte | piano | Prendo lezioni di pianoforte da due anni. | leisure | 2 | I've been taking piano lessons for two years.
 disegnare | to draw | Mia sorella adora disegnare animali. | leisure | 2 | My sister loves drawing animals.
-sport | sport | Faccio sport tre volte a settimana. | leisure | 1 | I do sport three times a week.
 palestra | gym | Vado in palestra dopo il lavoro. | leisure | 3 | I go to the gym after work.
 allenarsi | to train | Per vincere bisogna allenarsi ogni giorno. | leisure | 3 | To win you have to train every day.
 nuotare | to swim | Da bambino ho imparato a nuotare al mare. | leisure | 2 | As a child I learned to swim in the sea.
@@ -281,6 +288,7 @@ vincere | to win | La nostra squadra deve vincere domenica. | leisure | 2 | Our 
 giocatore | player | Il giocatore ha segnato due gol. | leisure | 2 | The player scored two goals.
 allenatore | coach; trainer | Il nostro allenatore è molto severo. | leisure | 3 | Our coach is very strict.
 tifoso | fan; supporter | Sono tifoso della Juventus. | leisure | 3 | I'm a Juventus fan.
+festa | festival; party | La festa del paese è ad agosto. | leisure | 2 | The village festival is in August.
 
 # Weather and nature
 previsioni del tempo | weather forecast | Secondo le previsioni del tempo domani piove. | nature | 3 | According to the weather forecast it's going to rain tomorrow.
@@ -300,7 +308,6 @@ bagnato | wet | Sono tornato a casa tutto bagnato. | nature | 2 | I came home so
 natura | nature | Mi piace stare a contatto con la natura. | nature | 2 | I like being close to nature.
 paesaggio | landscape; scenery | Il paesaggio della Toscana è bellissimo. | nature | 3 | The Tuscan countryside is beautiful.
 lago | lake | D'estate facciamo il bagno nel lago. | nature | 2 | In summer we swim in the lake.
-mare | sea | Il mare oggi è calmo. | nature | 2 | The sea is calm today.
 onda | wave | Una grande onda ha bagnato i nostri asciugamani. | nature | 2 | A big wave soaked our towels.
 sabbia | sand | La sabbia è troppo calda per camminare. | nature | 2 | The sand is too hot to walk on.
 bosco | wood; woods | Abbiamo fatto una passeggiata nel bosco. | nature | 2 | We went for a walk in the woods.
@@ -453,3 +460,9 @@ troppo | too; too much | Questa pizza è troppo salata. | basics | 2 | This pizz
 comunque | anyway; however | Piove, ma usciamo comunque. | basics | 2 | It's raining, but we're going out anyway.
 purtroppo | unfortunately | Purtroppo il museo è chiuso il lunedì. | basics | 2 | Unfortunately the museum is closed on Mondays.
 per fortuna | luckily; fortunately | Per fortuna avevo l'ombrello. | basics | 2 | Luckily I had my umbrella.
+invece | instead | Volevo un tè, invece ho preso un caffè. | basics | 2 | I wanted a tea, but I had a coffee instead.
+quasi | almost | Il film è quasi finito. | basics | 2 | The film is almost over.
+entrambi | both | Ho due fratelli: entrambi vivono a Roma. | basics | 3 | I have two brothers: both live in Rome.
+tranne | except | Lavoro tutti i giorni tranne la domenica. | basics | 2 | I work every day except Sunday.
+infatti | in fact; indeed | Avevo fame, infatti ho mangiato tutto. | basics | 3 | I was hungry; in fact, I ate everything.
+magari | maybe; I wish | Domani magari andiamo al mare. | basics | 2 | Maybe we'll go to the seaside tomorrow.
