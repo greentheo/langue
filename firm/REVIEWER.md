@@ -78,7 +78,9 @@ its plan before building; you run them over the diff.
    Anything that runs at startup or on a timer — does it fail safely and log?
    New environment variables documented? Does it work in the production build
    (standalone server, service worker), not just `next dev`? What happens to
-   existing learners' progress?
+   existing learners' progress? **Changes under `.github/` are code that guards
+   `main`**: a PR runs its own workflow, so one that edits the workflow (say,
+   `npm test || true`) can turn itself green — read those diffs line by line.
 8. **The morning reader** — Could the owner understand this PR in 10–20 minutes
    from its description? Does it say what wasn't verified?
 
