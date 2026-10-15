@@ -115,7 +115,7 @@ practice:
     prompt: "Come ___ chiami?"
     hint: (you, friendly)
     translation: What's your name?
-    answers: [ti]
+    answers: [ti, "..."]
     why: With tu, the question is Come ti chiami? — "how do you call yourself?"
 
   - type: fill
