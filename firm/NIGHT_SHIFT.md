@@ -15,7 +15,8 @@ from what you know — read `web/node_modules/next/dist/docs/` before using an A
 
 1. Work in **your own worktree**: `~/githubrepo/langue-nightshift`, database
    `langue_nightshift`, port 3006 (setup in [README.md](README.md#workspaces--one-checkout-per-seat)).
-2. `git fetch && git checkout main && git pull --ff-only`, `git status` clean.
+2. `git fetch && git checkout --detach origin/main`, `git status` clean (your
+   worktree can't hold `main` — the foreman's checkout does).
 3. `npm run codegen && npx prisma migrate deploy`, then `npm test` and
    `npm run typecheck`. Fix nothing on `main` — if it's red, tell the foreman.
 4. Read the foreman's notes from your last session's report, if any.
