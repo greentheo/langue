@@ -34,7 +34,9 @@ invent one: comment what's missing, signed, and tell the foreman.
 
 ### 2. Load context
 Read every file the issue touches, fully, before changing it. Read the tests
-next to them. Understand the current behaviour first.
+next to them. Understand the current behaviour first. **When a field or
+function changes meaning, grep for every consumer** (e.g. `unit.total`), not
+just the screens the issue names: the one you miss is the one a learner sees.
 
 ### 3. Tests first
 Write tests that express the acceptance criteria and **watch them fail** before
@@ -107,6 +109,8 @@ differently, what you filed. Then stop.
   production database, no setting variables.
 - Never print or commit secrets; never commit `web/.env`.
 - Never force-push or rewrite `main`.
+- A script that edits several files asserts **every** anchor before writing
+  **any** file, so a failed match can't leave half an edit behind.
 - Never chain a history-changing git command (`commit --amend`, `rebase`,
   `reset`) after one whose exit status you haven't checked: a failed first
   step can make the second rewrite the wrong commit.
