@@ -3,7 +3,7 @@
     "language": "portuguese",
     "level": "b1",
     "version": "1.0",
-    "word_count": 111,
+    "word_count": 107,
     "created_at": "2026-08-12T22:30:37.727535+00:00",
     "description": "Intermediate (B1) Portuguese vocabulary: work, travel, and personal interests",
     "source": "data/vocab_sources/portuguese/b1.psv",
@@ -273,17 +273,6 @@
       "difficulty": 2
     },
     {
-      "word": "caro",
-      "translations": [
-        "expensive"
-      ],
-      "examples": [
-        "Um hotel tão caro não é necessário."
-      ],
-      "category": "shopping",
-      "difficulty": 2
-    },
-    {
       "word": "barato",
       "translations": [
         "cheap",
@@ -534,17 +523,6 @@
       "difficulty": 3
     },
     {
-      "word": "decidir",
-      "translations": [
-        "to decide"
-      ],
-      "examples": [
-        "Precisamos decidir até amanhã."
-      ],
-      "category": "abstract",
-      "difficulty": 2
-    },
-    {
       "word": "discutir",
       "translations": [
         "to discuss",
@@ -646,17 +624,6 @@
       "difficulty": 3
     },
     {
-      "word": "tímido",
-      "translations": [
-        "shy"
-      ],
-      "examples": [
-        "Quando criança era muito tímido."
-      ],
-      "category": "emotions",
-      "difficulty": 3
-    },
-    {
       "word": "generoso",
       "translations": [
         "generous"
@@ -735,17 +702,6 @@
       ],
       "category": "emotions",
       "difficulty": 3
-    },
-    {
-      "word": "medo",
-      "translations": [
-        "fear"
-      ],
-      "examples": [
-        "Ela tem medo de voar."
-      ],
-      "category": "emotions",
-      "difficulty": 2
     },
     {
       "word": "raiva",
