@@ -1,0 +1,64 @@
+# Checks on every pull request to main, and on main itself.
+#
+# Content is data and must stay tested: these are the same commands the
+# working agreements in CLAUDE.md ask for after any change, run so nobody has
+# to remember them. Nothing here deploys — Railway builds main on its own —
+# and nothing needs a secret.
+
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  web:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: web
+    env:
+      # Prisma generate and next build read DATABASE_URL but never connect;
+      # the same placeholder the Dockerfile uses.
+      DATABASE_URL: postgresql://ci:ci@localhost:5432/ci
+      NEXT_TELEMETRY_DISABLED: 1
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm ci
+      # Vocabulary + curriculum modules and the Prisma client, from data/.
+      - run: npm run codegen
+      - run: npm run typecheck
+      # Includes the content tests: every listed answer grades correct,
+      # nothing is taught twice, every card renders.
+      - run: npm test
+      - run: npm run curriculum:check
+      # Catches what only breaks in the production build.
+      - run: npm run build
+
+  python:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
+      # The generated JSON libraries match their .psv sources.
+      - run: python -m langue.tools.vocab_build --check
+      # Library invariants: no duplicates within or across levels, no
+      # mislabelled language, the parser rejects malformed lines.
+      - run: python -m unittest tests.unit.tools.test_vocab_libraries

@@ -44,3 +44,6 @@ next-env.d.ts
 /src/generated/
 /src/lib/vocab/generated.ts
 /src/lib/curriculum/generated.ts
+
+# Throwaway pages for checking screens at phone width (firm/NIGHT_SHIFT.md)
+public/zz-*.html

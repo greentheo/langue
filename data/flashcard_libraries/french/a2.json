@@ -3,7 +3,7 @@
     "language": "french",
     "level": "a2",
     "version": "1.0",
-    "word_count": 423,
+    "word_count": 429,
     "created_at": "2025-09-11T21:15:26.408096",
     "description": "Elementary (A2) French vocabulary: personal information, shopping, local geography",
     "source": "data/vocab_sources/french/a2.psv",
@@ -6098,6 +6098,92 @@
       "difficulty": 3,
       "examples_en": [
         "My cousin is getting married in June."
+      ]
+    },
+    {
+      "word": "dire",
+      "translations": [
+        "to say",
+        "to tell"
+      ],
+      "examples": [
+        "Il faut dire merci à la dame."
+      ],
+      "category": "verbs",
+      "difficulty": 1,
+      "examples_en": [
+        "You have to say thank you to the lady."
+      ]
+    },
+    {
+      "word": "apprendre",
+      "translations": [
+        "to learn"
+      ],
+      "examples": [
+        "L'année dernière, j'ai commencé à apprendre le piano."
+      ],
+      "category": "verbs",
+      "difficulty": 2,
+      "examples_en": [
+        "Last year I started learning the piano."
+      ]
+    },
+    {
+      "word": "comprendre",
+      "translations": [
+        "to understand"
+      ],
+      "examples": [
+        "Il parle trop vite, je n'arrive pas à comprendre."
+      ],
+      "category": "verbs",
+      "difficulty": 2,
+      "examples_en": [
+        "He talks too fast, I can't understand."
+      ]
+    },
+    {
+      "word": "arriver",
+      "translations": [
+        "to arrive",
+        "to happen"
+      ],
+      "examples": [
+        "Le train va arriver avec dix minutes de retard."
+      ],
+      "category": "verbs",
+      "difficulty": 2,
+      "examples_en": [
+        "The train is going to arrive ten minutes late."
+      ]
+    },
+    {
+      "word": "devenir",
+      "translations": [
+        "to become"
+      ],
+      "examples": [
+        "Plus tard, je voudrais devenir médecin."
+      ],
+      "category": "verbs",
+      "difficulty": 2,
+      "examples_en": [
+        "When I grow up, I'd like to become a doctor."
+      ]
+    },
+    {
+      "word": "conduire",
+      "translations": [
+        "to drive"
+      ],
+      "examples": [
+        "Mon père m'a appris à conduire l'été dernier."
+      ],
+      "category": "verbs",
+      "difficulty": 3,
+      "examples_en": [
+        "My dad taught me to drive last summer."
       ]
     }
   ]

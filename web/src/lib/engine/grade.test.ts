@@ -228,3 +228,31 @@ describe("gradeTargetAnswer", () => {
     assert.equal(gradeTargetAnswer("arrivederchi", ["arrivederci"]).verdict, "close");
   });
 });
+
+describe("a close note quotes the accepted answer as written", () => {
+  test("a typo in an accented word shows the word with its accents", () => {
+    for (const [typed, accepted] of [
+      ["téléphonne", "téléphone"],
+      ["universittà", "università"],
+      ["açúcarr", "açúcar"],
+    ]) {
+      const result = gradeTargetAnswer(typed, [accepted]);
+      assert.equal(result.verdict, "close", typed);
+      assert.equal(result.score, 70, typed);
+      assert.equal(result.note, `Close — the expected spelling is "${accepted}".`);
+    }
+  });
+
+  test("a typo of a noun without its article shows the answer with it", () => {
+    assert.equal(gradeTargetAnswer("libbro", ["il libro"]).note, 'Close — the expected spelling is "il libro".');
+  });
+
+  test("a typo after an added subject pronoun shows the listed answer", () => {
+    assert.equal(gradeTargetAnswer("lui è stancco", ["È stanco."]).note, 'Close — the expected spelling is "È stanco.".');
+  });
+
+  test("an English typo keeps the answer's capitals and apostrophes", () => {
+    assert.equal(gradeEnglishAnswer("I'm tird", ["I'm tired"]).note, `Close — the expected spelling is "I'm tired".`);
+    assert.equal(gradeEnglishAnswer("new yorrk", ["New York"]).note, 'Close — the expected spelling is "New York".');
+  });
+});
