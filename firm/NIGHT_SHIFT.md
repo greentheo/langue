@@ -99,6 +99,9 @@ differently, what you filed. Then stop.
   production database, no setting variables.
 - Never print or commit secrets; never commit `web/.env`.
 - Never force-push or rewrite `main`.
+- Never chain a history-changing git command (`commit --amend`, `rebase`,
+  `reset`) after one whose exit status you haven't checked: a failed first
+  step can make the second rewrite the wrong commit.
 - Never delete learner data or content without the issue saying so; never
   change an item's key (`w:…`, `p:…`, `g:…`) or a phrase's position without
   saying in the PR what happens to learners' existing progress.
