@@ -3,7 +3,7 @@
     "language": "spanish",
     "level": "b1",
     "version": "1.0",
-    "word_count": 111,
+    "word_count": 108,
     "created_at": "2026-08-12T22:26:56.541747+00:00",
     "description": "Intermediate (B1) Spanish vocabulary: work, travel, and personal interests",
     "source": "data/vocab_sources/spanish/b1.psv",
@@ -735,17 +735,6 @@
       "difficulty": 3
     },
     {
-      "word": "miedo",
-      "translations": [
-        "fear"
-      ],
-      "examples": [
-        "Tiene miedo a volar."
-      ],
-      "category": "emotions",
-      "difficulty": 2
-    },
-    {
       "word": "enfado",
       "translations": [
         "anger",
@@ -1083,18 +1072,6 @@
       "difficulty": 4
     },
     {
-      "word": "fiesta",
-      "translations": [
-        "festival",
-        "party"
-      ],
-      "examples": [
-        "La fiesta del pueblo es en agosto."
-      ],
-      "category": "society",
-      "difficulty": 2
-    },
-    {
       "word": "feria",
       "translations": [
         "fair"
@@ -1126,18 +1103,6 @@
       ],
       "category": "food",
       "difficulty": 3
-    },
-    {
-      "word": "probar",
-      "translations": [
-        "to taste",
-        "to try"
-      ],
-      "examples": [
-        "¿Quieres probar el postre?"
-      ],
-      "category": "food",
-      "difficulty": 2
     },
     {
       "word": "hervir",
