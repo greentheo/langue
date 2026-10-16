@@ -108,4 +108,4 @@ units:
   - title: Your day
     lessons: [14-routine, 15-prepositions]
     situations: [small-talk]
-    categories: [weather, nature, leisure, sports]
+    categories: [weather, nature, leisure, sports, daily_routines]
