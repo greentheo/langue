@@ -4,8 +4,8 @@
 "Copy invite email" button builds (`web/src/lib/invite-email.ts`). Once
 approved, #72 puts it in the app word for word. **Status:** draft, not sent.
 
-Why it changes: today's email says *"learn a language with an AI tutor"*. The
-course uses no AI, so it promises the wrong app.
+Why it changes: today's email says *"learn a language with an AI tutor"*. No AI
+runs while you learn on the course, so it promises the wrong app.
 
 Parts in `{braces}` are filled in by the app from the same inputs it uses
 today. `{languages}` is the app's list, e.g. "Italian, Spanish, French and

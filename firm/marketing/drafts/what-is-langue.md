@@ -46,9 +46,9 @@ actually use.
 > - Private groups. Each invite code is a group with its own leaderboard,
 >   and there's no messaging between learners.
 >
-> **No AI in the course.** Lessons, steps, grading and reviews are fixed
-> content and plain code. A few optional extra tools (a conversation
-> partner, and some practice exercises) do use AI.
+> **No AI while you learn.** Lessons, steps, grading and reviews are fixed
+> content and plain code, the same for everyone. A few optional extra tools
+> (a conversation partner, and some practice exercises) do use AI.
 >
 > **Not built yet:** speaking your answers aloud, dictation, writing tasks,
 > and levels above A2.
@@ -145,11 +145,16 @@ CLAIM: "Each invite code is a group with its own leaderboard, and there's no
 messaging between learners"
 SOURCE: schema.prisma InviteCode/GroupMember; no messaging model or route. Verified.
 
-CLAIM: "No AI in the course … A few optional extra tools … do use AI"
+CLAIM: "No AI while you learn … fixed content and plain code, the same for everyone …
+A few optional extra tools … do use AI"
 SOURCE: the model is called (complete / streamCompletion) only from app/api/chat,
 app/api/lessons/ask and lib/engine/activities.ts (exercises, translation grading,
 flashcard explanations); app/api/steps/* makes no call. (lib/api.ts imports only the
 error type from engine/model.) Verified.
+NOT IMPLIED: who wrote the course. Per #97, every A1/A2 line was written by AI writer
+agents and reviewed by AI, with no native check yet. The owner decided (2026-10-16,
+#97) on no FAQ line about it, so the copy says what *runs* ("while you learn"), never
+"no AI in the course", which reads as "people wrote it".
 
 CLAIM: "Not built yet: speaking your answers aloud, dictation, writing tasks, and
 levels above A2"

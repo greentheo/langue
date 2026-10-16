@@ -65,8 +65,9 @@ Chrome offers an Install button. On iPhone the home-screen app keeps its
 own login, so you sign in once more inside it.
 
 **Does Langue use AI?**
-The course doesn't. Lessons, steps, role-plays, grading, reviews and
-reminders are fixed content and plain code. Some optional extra tools do use
+Not while you learn on the course: lessons, steps, role-plays, grading,
+reviews and reminders are fixed content and plain code, the same for
+everyone. Some optional extra tools do use
 AI (Anthropic's small Claude model): the Conversation partner, the Reading,
 Translation and Fill-in-the-blank exercises, "ask about this lesson", and
 the explanation you get when you miss a flashcard. What you type into those
@@ -179,11 +180,18 @@ Chrome offers an Install button … keeps its own login"
 SOURCE: components/pwa.tsx InstallHint; docs/ROADMAP.md "On iPhone, the installed app
 keeps its own login". Verified.
 
-CLAIM: AI answer (course doesn't; which tools do; Anthropic; typed text sent; AI
-exercises not checked like the course)
+CLAIM: AI answer (no AI runs while you learn on the course; which tools do;
+Anthropic; typed text sent; AI exercises not checked like the course)
 SOURCE: model calls (app/api/chat, app/api/lessons/ask, lib/engine/activities.ts
 via exercises, exercises/grade, flashcards/answer); model.ts claude-haiku-4-5; content
 checks cover data/curriculum only. Verified.
+NOT IMPLIED: who wrote the course. Per #97, every A1/A2 line was written by AI writer
+agents and reviewed by AI, with no native check yet. The owner decided (2026-10-16,
+#97) on no FAQ line about it, so the copy says what *runs* ("while you learn"), never
+"no AI in the course", which reads as "people wrote it".
+OWNER: the line "AI-written exercises aren't checked the way the course is" is about
+the optional tools, not the course's authorship, so I kept it. Cut it if you read
+#97's decision as covering it.
 
 CLAIM: "There's no 'forgot password' button yet"
 SOURCE: no reset flow, no mail library; passwordHash written only at registration

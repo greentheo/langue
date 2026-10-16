@@ -10,7 +10,7 @@ Langue.
 
 | Channel | Can marketing read it? | Can marketing write it? | How a number comes out | Status (2026-10-15) |
 |---|---|---|---|---|
-| **Invite codes** (`/learn/invites`, admins only) | No. The owner can, and so can `funnel.sql` run by the owner. | No. The owner mints codes. | Codes made, used, with someone practising (funnel.sql §4, pasteable). Per code: §8, owner's eyes only. | Today's best signal. Unmeasured until #75 is decided. |
+| **Invite codes** (`/learn/invites`, admins only) | No. The owner can, and so can `funnel.sql` run by the owner. | No. The owner mints codes. | Codes made, used, with someone practising (funnel.sql §4, pasteable). Per code: §8, owner's eyes only. | Unmeasured until #52's dashboard exists (owner, #75). |
 | **The invite message** (the "Copy invite email" button, `web/src/lib/invite-email.ts`) | Yes (code). | Draft only. The app copy changes via #72, built by night shift. | Codes sent (owner keeps count) → joined → practising after 2 weeks (funnel.sql §3, §4). | Off-message ("AI tutor"); new draft in `drafts/invite-message.md`. |
 | **Short invite for chats** (WhatsApp, iMessage) | No. | Draft only; the owner pastes it. | The same as above, if the owner uses a separate code for chat invites. | Draft in `drafts/invite-message.md` §2. |
 | **Front page `/`, `/register`, `/login`** | Yes (code). | Draft only, via #72. | None. There are no analytics, by design, until #52. | Off-message ("AI language practice"); new draft in `drafts/what-is-langue.md`. |

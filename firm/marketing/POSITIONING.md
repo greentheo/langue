@@ -72,7 +72,7 @@ than the vision:
 
 | Claim | Status | Source |
 |---|---|---|
-| The course doesn't use AI: lessons, steps, role-plays, grading, reviews and reminders are fixed content and plain code. | LIVE | Only `app/api/chat`, `app/api/lessons/ask` and `lib/engine/activities.ts` (used by `app/api/exercises`, `exercises/grade`, `flashcards/answer`) **call** the model (`complete` / `streamCompletion`); `app/api/steps/*` makes no call. Say "call", not "import": `lib/api.ts` imports the model module's error type, so everything imports it transitively. |
+| No AI runs while you learn on the course: lessons, steps, role-plays, grading, reviews and reminders are fixed content and plain code. Say "no AI while you learn", **not** "no AI in the course". | LIVE | Only `app/api/chat`, `app/api/lessons/ask` and `lib/engine/activities.ts` (used by `app/api/exercises`, `exercises/grade`, `flashcards/answer`) **call** the model (`complete` / `streamCompletion`); `app/api/steps/*` makes no call. Say "call", not "import": `lib/api.ts` imports the model module's error type, so everything imports it transitively. |
 | Some optional extra tools do use AI: the Conversation partner, the Reading, Translation and Fill-in-the-blank exercises, "ask about this lesson", and explanations of a missed flashcard. | LIVE (say it) | As above. Model: `claude-haiku-4-5`, Anthropic's small model (`web/src/lib/engine/model.ts`, default tier `fast`). |
 | What you type into those tools is sent to Anthropic. | LIVE (say it) | `app/api/chat/route.ts` posts the transcript to the model. #63's privacy page will say it too. |
 | AI-written exercises aren't checked the way the course is. | LIVE (say it) | The content checks cover `data/curriculum` and vocabulary only. |
@@ -111,5 +111,10 @@ commit.
 - Numbers of learners, ratings, testimonials: none yet. See PIPELINE.md.
 - Anything about speaking aloud, dictation, writing tasks, readers, exam
   practice or B1 as if it exists. Say "not built yet" if it comes up.
+- Anything that says or implies people wrote the course. Every A1/A2 line
+  was written by AI writer agents and reviewed by AI, with no native check
+  yet (#97). The owner decided (2026-10-16) on no FAQ line about it, so we
+  don't volunteer it, and we don't imply the opposite either: no "written
+  by teachers", "native speakers", "hand-written", or "no AI in the course".
 - Names of other apps. The vision's contrast ("built to make you *feel*
   fluent") is ours to make about the design, not about a named competitor.
