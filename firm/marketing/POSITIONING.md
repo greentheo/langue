@@ -27,7 +27,7 @@ than the vision:
 |---|---|---|
 | Italian, Spanish, French and Brazilian Portuguese. | LIVE | `data/curriculum/{italian,spanish,french,portuguese}`; Brazilian: `data/curriculum/README.md` l.27, `web/src/lib/languages.ts` (pt-BR). The app labels it just "Portuguese", so say "Brazilian" in our own copy. |
 | Beginner (A1) and Elementary (A2) are complete in all four languages. | LIVE | `npm run curriculum:check`: every language × A1/A2 has 15 lessons, 80–87 phrases, 16 role-plays. Each level has 10 units (`level.yaml` `units:`). |
-| About 500 words at A1 and 450–550 more at A2, depending on the language. | LIVE | Guided-path word items counted from `getCourse()`: A1 508–541, A2 438–536. Use "about"; don't quote one number for all four. |
+| About 500 words at A1 and 450–550 more at A2, depending on the language; about a thousand in all. | LIVE | Guided-path word items from `getCourse()` on a81c9cb (2026-10-16): A1 508–541, A2 458–536; A1+A2 it 975, es 1009, fr 1077, pt 1031. Use "about"; don't quote one number for all four. Re-count after any content ship. |
 | Levels above A2 aren't built yet. | LIVE (say it) | B1–C2 have overview pages only (docs/ROADMAP.md). B1 is #57. |
 | Built on the CEFR levels (A1, A2…). | LIVE | `data/curriculum/*/a1/level.yaml` `can_do:`. **Not** "certified", "official", or "gets you to A2"; that needs exam evidence (#59). |
 | What a learner can do at a level: the can-do list, or the certificate as proof. | **HOLD — #100** | Today the certificate (`web/src/app/learn/level/certificate/page.tsx` l.63–90) says *"has completed"* and puts a ✓ beside **every** can-do in `level.yaml`, including ones the course doesn't practise yet: listening to recordings, speaking aloud, connected writing (fr A1: "understand slow, clear speech…", "write a short message or postcard"). Don't quote the list or the certificate as evidence of ability; "built on the CEFR" stays the wording. #100 (v2) drops the ticks: the certificate will read "finished Langue's A1 course · not an exam result", list "The course practised:", and say how the units were finished. After it ships, those exact words are quotable; the list still isn't proof of ability. |
@@ -41,9 +41,9 @@ than the vision:
 | Claim | Status | Source |
 |---|---|---|
 | You type real answers; words climb from recognising, to recalling, to typing, to using them in sentences and role-plays. | LIVE | `web/src/app/api/steps/answer/route.ts` (modes recognize, recall, build, type, cloze, reply, turn); `web/src/lib/path/schedule.ts` (rungs). |
-| A missing accent is pointed out, with the right spelling. | LIVE | `gradeTargetAnswer` in `web/src/lib/engine/grade.ts`; tests "a missing accent is close, with the accented form shown" (`grade.test.ts`, 37/37 pass). **Careful:** a missing accent is graded *close* and **counts as right** (`schedule.ts` `applyAnswer`). Never say "a missing accent is marked wrong", and prefer "pointed out" to "checked", which can be heard that way. |
-| A small slip in a long word is shown with the right spelling, accents included. | LIVE | `typoOf` in `grade.ts`; test "treats a small typo as close, not wrong". The note keeps accents since #92 (closes #87; deployed 2026-10-15, 0b9b8b2): probe `téléphonne` → *Close — the expected spelling is "téléphone"*. |
-| A wrong ending is marked wrong. | **HOLD — #70 → #102** (see "Waiting on a ship") | True for Italian singular gender (stanca/stanco) and person (parlava/parlavo). **False** for Spanish/Portuguese plural gender (cansados/cansadas), French -é/-ée(s), and tenses that end in the same letter (comemos/comimos, parliamo/parlavamo): those are graded close and count as right. No test covers the rule. Say nothing about endings until #70 ships. |
+| A missing accent is pointed out, with the right spelling. | LIVE | `gradeTargetAnswer` in `web/src/lib/engine/grade.ts`; tests "a missing accent is close, with the accented form shown" (`grade.test.ts`). **Careful:** a missing accent is graded *close* and **counts as right** (`schedule.ts` `applyAnswer`). That holds even when the accent *is* the grammar: es *Ayer hablo* for *habló* → close, "Watch the accents" (probe on a81c9cb). Never say "a missing accent is marked wrong", and prefer "pointed out" to "checked". |
+| A small typo in the middle of a word is shown with the right spelling, accents included, and counts. | LIVE | `typoOf` in `grade.ts` (stem typos stay close since #102); the note quotes the answer as written since #92. Probe on a81c9cb: fr *telefone* → *Close — the expected spelling is "téléphone"*; it *ristorrante*, pt *obirgado*, es *restuarante* → close. **Not** "any small typo": since #102 a slip in a word's last three letters is marked wrong (*téléphonne* → "Check the spelling of the ending: «téléphone»"). #102 measured forgiven one-letter slips falling from ~88% to ~62%. |
+| Through A2, a slip that changes a word's ending is marked wrong, not forgiven as a typo. Short form: "a wrong ending is marked wrong". | LIVE | #102 (closes #70), deployed a81c9cb (2026-10-16; GitHub deployment success, CI green); `web/src/lib/engine/endings.ts`, `endings.test.ts`, the #70 rows in `grade.test.ts`. My probe on a81c9cb: all 13 #70 rows are incorrect in both directions, with "That's another form — check the ending: «…»" or "Check the spelling of the ending: «…»". **Limits, never contradicted:** (1) grammar carried only by an accent (es *hablo* / *habló*) is pointed out and counts, not marked wrong; (2) a slip that makes a different real word (*attivo* for *cattivo*) is still forgiven until #106; (3) "through A2": `endings.ts` covers the endings taught through A2. Copy may drop "through A2" while the course stops at A2. When B1 ships (#57), check `endings.ts` covers it before the short form stays. |
 | A miss is explained. | **HOLD** | You're shown the right answer and, for phrases, a literal translation or note (`why` in `steps/answer/route.ts`). "Explained" overstates it until #53. Say "you see the right answer". |
 | Reviews come back at growing intervals. | LIVE | `web/src/lib/path/schedule.ts` (interval doubles, up to `MAX_INTERVAL_DAYS`). Don't add "so you never forget"; that's unmeasured. |
 | "Learned" means you can produce it on more than one day. | LIVE | `web/src/app/learn/level/page.tsx` text; `isLearned` = `bestStage >= LEARNED_STAGE (3)` in `schedule.ts`. |
@@ -54,8 +54,8 @@ than the vision:
 | Claim | Status | Source |
 |---|---|---|
 | Your streak is never taken away. It counts the days you've practised; a break doesn't reset it. | LIVE | `web/src/lib/standings.ts` `liveStreak` (unchanged), `nextStreak` (+1 after any gap). But the reminder notifications still say it can "slip" (#73). |
-| Your progress through each unit, and the level as a whole, only goes up. | LIVE | `web/src/lib/path/planner.ts` `unitProgress` counts best stages and keeps `UnitMark.bestPercent`; the level percent is the mean of the unit percents (`web/src/lib/path/levels.ts` l.68). |
-| Every progress bar only goes up. | **HOLD — #91** | The level page's Words, Phrases, Grammar and Speaking bars divide by the level's *current* item count (`levels.ts` l.40–47), so adding content shrinks them, under the page's own "Bars never go backwards". #91 (in progress) replaces them with counts. The 2026-10-15 ship (#89, #92) added no items (per-level counts identical to 4f00646), and the it/es/pt content (#83, #86, #88) ships with #91. Say "each unit", not "every bar", until #91 is live. |
+| Progress bars only go up: each unit's bar and the level's. | LIVE | `web/src/lib/path/planner.ts` `unitProgress` counts best stages and keeps `UnitMark.bestPercent`; the level percent is the mean of the unit percents (`web/src/lib/path/levels.ts`). Since #96 (closes #91, deployed a81c9cb) the level page's Words, Phrases, Grammar and Speaking rows are counts ("learned · not met yet", "on the way"), not bars, so no drawn bar can shrink when content is added. The page says "What you've learned only goes up … bars never go backwards." |
+| The *counts* of what you've learned never drop. | **HOLD — #93** | A count drops if an item's key changes (a respelt or removed word). #93 (open) makes renames carry progress and removals need acknowledging. Say "bars", not "everything you've learned", until #93 ships. |
 | Reminders only if you turn them on: after two quiet days, then five and twelve, then they stop. Early evening only. | LIVE | `web/src/lib/reminders.ts` `REMINDER_DAYS = [2, 5, 12]`, 5–8pm local; opt-in "Turn on reminders" in `web/src/components/pwa.tsx`. iPhone: only when Langue is on the home screen. |
 | No lives or hearts; nothing stops you learning. | LIVE | No such mechanic in `web/src` (grep for lives/hearts finds only comments). |
 | Private groups: you join with an invite code, and each code is a group with its own leaderboard. | LIVE | `web/prisma/schema.prisma` `InviteCode`, `GroupMember`; `web/src/lib/leaderboard.ts`. |
@@ -85,34 +85,13 @@ Claims and lines that change the day a PR is **deployed**, not merged.
 Check the deploy, re-run the probe, then make every listed edit in one
 commit.
 
-### #102 (fixes #70): endings in grading
-
-**Claim that goes LIVE:** *"Through A2, a slip that changes a word's ending is
-marked wrong, not forgiven as a typo."* Source: `endings.test.ts`, the #70
-probe rows in `grade.test.ts`, and a probe re-run on the deployed commit.
-
-**Limits, kept in POSITIONING and never contradicted by the copy:**
-- Grammar carried only by an accent (es *hablo* / *habló*) is graded like any
-  missing accent: pointed out, with the right spelling, and it counts. Don't
-  imply it's marked wrong.
-- A slip that lands on a different real word (*attivo* for *cattivo*) is
-  still forgiven as a typo until #106.
-- "Through A2": the ending tables cover the endings the course teaches
-  through A2 (#102 `lib/engine/endings.ts`). Say nothing about B1 and up.
-
-**Side effect to reflect:** #102 treats any slip in a word's last three
-letters as a miss with a note, even when it isn't grammar (*téléphonne* →
-"Check the spelling of the ending: «téléphone»"). Its own measurement:
-forgiven single-letter slips go from about 88% to about 62%. The same day:
-- the "A small slip … shown with the right spelling" row above becomes
-  "A small slip in the middle of a word is shown with the right spelling and
-  counts; a slip in a word's ending is marked wrong, with the right spelling";
-- `drafts/what-is-langue.md`: "and still counts" becomes "in the middle of a
-  word"; check the whole bullet;
-- `drafts/faq.md`: "Why was my answer marked close?" narrows to slips in the
-  middle of a word. Add "Why was it marked wrong with 'check the ending'?";
-- the what's-new note: the *téléphone* example becomes a mid-word slip, quoting
-  the live note text (its quote marks change to «»).
+- **#100 (certificate):** see the HOLD row. Once deployed, its exact words
+  ("finished Langue's A1 course · not an exam result") can be quoted.
+- **#93 (keys stay put):** lifts the "counts never drop" HOLD.
+- **#106 (real-word typos):** removes limit (2) from the endings claim.
+- **Done 2026-10-16:** #96 (bars) and #102 (endings), deployed a81c9cb. The
+  switch-over was made in one commit: endings LIVE; typo rule narrowed to the
+  middle of a word; bars HOLD lifted; what-is, FAQ and what's-new updated.
 
 ## Never say
 

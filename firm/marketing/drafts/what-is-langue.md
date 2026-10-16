@@ -28,16 +28,18 @@ actually use.
 >   things you keep missing.
 > - **You produce the language.** A new word climbs from recognising it, to
 >   recalling it, to typing it, to using it in a sentence and in a role-play.
-> - **Slips are pointed out.** A missing accent or a small typo is shown
->   with the right spelling, and still counts.
+> - **Endings count.** A slip that changes a word's ending (*cansados* for
+>   *cansadas*, *comemos* for *comimos*) is marked wrong, not forgiven as a
+>   typo, because the ending is the grammar. A missing accent, or a small typo
+>   in the middle of a word, is pointed out with the right spelling and still
+>   counts.
 > - **Reviews come back** at growing intervals. A word counts as learned
 >   when you've produced it on more than one day.
 > - **Already know some?** Test out of the units you know. Each unit ends
 >   with a level-up challenge, and each level with a certificate.
 >
 > **Kind by design**
-> - Your streak is never taken away, and your progress through each unit
->   only goes up.
+> - Your streak is never taken away, and progress bars only go up.
 > - No lives, no ads, nothing to pay.
 > - Reminders only if you turn them on: after two quiet days, then five, then
 >   twelve, and then they stop.
@@ -97,12 +99,18 @@ using it in a sentence and in a role-play"
 SOURCE: modes recognize/recall/type/cloze/reply/turn in steps/answer/route.ts;
 rungs in schedule.ts. Verified.
 
-CLAIM: "Slips are pointed out. A missing accent or a small typo is shown with the
-right spelling, and still counts."
-SOURCE: grade.ts gradeTargetAnswer / typoOf; grade.test.ts; schedule.ts applyAnswer
-("A close answer … counts as right"). Verified. Since #92 (deployed 0b9b8b2) the note
-keeps accents: "téléphonne" → "téléphone".
-NOT SAID: anything about endings. HOLD until #70.
+CLAIM: "A slip that changes a word's ending (cansados for cansadas, comemos for
+comimos) is marked wrong, not forgiven as a typo … A missing accent, or a small typo
+in the middle of a word, is pointed out with the right spelling and still counts."
+SOURCE: #102 (closes #70), deployed a81c9cb (2026-10-16). Probe on a81c9cb: pt "Estamos
+cansados" for "cansadas" → incorrect, "Check the spelling of the ending: «cansadas»";
+es "Comemos" for "Comimos" → incorrect, "That's another form — check the ending:
+«Comimos»". All 13 #70 rows are incorrect both ways. Mid-word typos stay close
+(fr "telefone" → "téléphone", it "ristorrante", pt "obirgado"). Verified.
+LIMITS (POSITIONING), not contradicted: accent-only grammar (es hablo/habló) is
+close; a typo that makes another real word (attivo/cattivo) is forgiven until #106;
+endings.ts covers what's taught through A2, which is the whole course today.
+"Still counts": schedule.ts applyAnswer ("A close answer … counts as right").
 
 CLAIM: "Reviews come back at growing intervals"
 SOURCE: schedule.ts (interval doubles up to MAX_INTERVAL_DAYS). Verified.
@@ -118,11 +126,11 @@ SOURCE: learn/level/page.tsx; learn/level/certificate/page.tsx. Verified. The ce
 is mentioned as a feature only, never as evidence of ability: until #100 it says "has
 completed" and ticks every can-do, practised or not (POSITIONING: HOLD).
 
-CLAIM: "Your streak is never taken away, and your progress through each unit only goes
-up"
+CLAIM: "Your streak is never taken away, and progress bars only go up"
 SOURCE: standings.ts liveStreak/nextStreak; planner.ts unitProgress (best stages,
-UnitMark). Verified. Reminder wording contradicts the streak half until #73. Not "every
-progress bar": the level page's words/phrases/grammar bars can shrink until #91.
+UnitMark); since #96 (deployed a81c9cb) the level page's word/phrase/grammar rows are
+counts, so every drawn bar is protected. Verified. Reminder wording contradicts the
+streak half until #73. NOT SAID: "what you've learned never drops" (HOLD #93).
 
 CLAIM: "No lives, no ads, nothing to pay"
 SOURCE: no lives/hearts mechanic, no ad/analytics/payment code (grep of web/src,

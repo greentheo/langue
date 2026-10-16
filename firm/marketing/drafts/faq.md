@@ -30,8 +30,15 @@ nothing is timed, so go at yours.
 No. On the level page you can test out of the units you know.
 
 **Why was my answer marked "close"?**
-You had a small slip in a longer word, or a missing or wrong accent. You'll
-see the right spelling, and it still counts as right.
+You had a small typo in the middle of a longer word, or a missing or wrong
+accent. You'll see the right spelling, and it still counts as right.
+
+**It said "check the ending" and marked me wrong. Why not "close"?**
+The end of a word carries its grammar (*cansado* or *cansada*, *comemos* or
+*comimos*), so a slip there is marked wrong, even when it was only a typo.
+"That's another form" means you wrote a real form of the word, just not the
+one asked for; "Check the spelling of the ending" means the ending is
+misspelt. Either way you see the right answer.
 
 **My answer was right, but it was marked wrong.**
 That happens: the course lists the answers it accepts, and it can miss a
@@ -101,8 +108,8 @@ parental switch for them yet. What's typed into them is sent to Anthropic.
 *(Decision pending: #74.)*
 
 **Will it pressure my child to keep going?**
-We've tried hard not to. Streaks are never taken away, progress through each
-unit only goes up, there are no lives or hearts, and reminders come only if you turn them
+We've tried hard not to. Streaks are never taken away, progress bars only go
+up, there are no lives or hearts, and reminders come only if you turn them
 on, at most three times, and then stop.
 
 **Ads, purchases, data?**
@@ -137,13 +144,19 @@ each". Design intent, said as such. Verified.
 CLAIM: "test out of the units you know"
 SOURCE: learn/level/page.tsx. Verified.
 
-CLAIM: "small slip in a longer word, or a missing or wrong accent … it still counts as
-right"
-SOURCE: grade.ts typoOf (no typos on words of 3 letters or fewer) and
-gradeTargetAnswer; schedule.ts applyAnswer "A close answer … counts as right";
-grade.test.ts. Verified.
-NOTE: today "close" also covers wrong agreement/tense endings that share a last
-letter (#70). The FAQ doesn't promise endings are caught.
+CLAIM: "small typo in the middle of a longer word, or a missing or wrong accent … it
+still counts as right"
+SOURCE: grade.ts typoOf (no typos on words of 3 letters or fewer; since #102 none in
+a word's ending) and gradeTargetAnswer; schedule.ts applyAnswer "A close answer …
+counts as right". Probe on a81c9cb: fr "telefone", it "ristorrante" → close; es
+"Ayer hablo" for "habló" → close (accent). Verified.
+
+CLAIM: "a slip there is marked wrong, even when it was only a typo … 'That's another
+form' … 'Check the spelling of the ending' … Either way you see the right answer"
+SOURCE: #102 notes (otherForm / misspelt), deployed a81c9cb. Probe: es "Comemos" →
+"That's another form — check the ending: «Comimos»"; fr "téléphonne" → "Check the
+spelling of the ending: «téléphone»". "Even when it was only a typo" is the trade-off
+#102 measured (forgiven one-letter slips ~88% → ~62%). Verified.
 
 CLAIM: "There's no report button yet"
 SOURCE: #49 is in stage: questions; no report route in web/src/app/api. Verified.
