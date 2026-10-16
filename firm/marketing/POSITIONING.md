@@ -76,8 +76,8 @@ than the vision:
 | Some optional extra tools do use AI: the Conversation partner, the Reading, Translation and Fill-in-the-blank exercises, "ask about this lesson", and explanations of a missed flashcard. | LIVE (say it) | As above. Model: `claude-haiku-4-5`, Anthropic's small model (`web/src/lib/engine/model.ts`, default tier `fast`). |
 | What you type into those tools is sent to Anthropic. | LIVE (say it) | `app/api/chat/route.ts` posts the transcript to the model. #63's privacy page will say it too. |
 | AI-written exercises aren't checked the way the course is. | LIVE (say it) | The content checks cover `data/curriculum` and vocabulary only. |
-| The AI tools are labelled as AI in the app. | **CUT for now** | They aren't: "Talk with a tutor", "graded on meaning" (`web/src/app/learn/page.tsx`). Noted on #74. |
-| A parent can turn the AI tools off for a child. | **CUT for now** | No such switch. Decision on #74. |
+| The AI tools are labelled as AI in the app. | **CUT** | They aren't ("Talk with a tutor", "graded on meaning", `web/src/app/learn/page.tsx`), and the owner decided on no AI labels in menus (#74). So the FAQ's "Does Langue use AI?" answer is where we say which tools use AI: keep it. |
+| A parent can turn the AI tools off for a child. | **HOLD — #74** | The owner decided on a per-learner switch plus child-safety instructions (#74, in questions). There's no switch until it ships; the FAQ says "no parental switch yet". |
 
 ## Waiting on a ship
 
@@ -92,6 +92,9 @@ commit.
 - **#107 (ending note wording):** the misspelt-ending note becomes "Check the
   ending: «…»". Update the FAQ's "check the ending" answer, which quotes
   "Check the spelling of the ending", and the what-is/invite/FAQ sources.
+- **#74 (per-learner AI switch, child-safety instructions):** rewrite the FAQ's
+  "Will my child talk to an AI?" answer to say where the switch is and who
+  can set it. Lift the HOLD row.
 - **#105 (typos in the last three letters forgiven again):** widen the typo
   row back from "the middle of a word", and the FAQ's "close" answer with it.
 - **Done 2026-10-16:** #96 (bars) and #102 (endings), deployed a81c9cb. The
