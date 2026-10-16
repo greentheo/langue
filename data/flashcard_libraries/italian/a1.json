@@ -3,7 +3,7 @@
     "language": "italian",
     "level": "a1",
     "version": "1.0",
-    "word_count": 396,
+    "word_count": 409,
     "created_at": "2026-08-12T22:23:06.944963+00:00",
     "description": "Beginner (A1) Italian vocabulary: everyday expressions and basic phrases",
     "source": "data/vocab_sources/italian/a1.psv",
@@ -1602,6 +1602,20 @@
       ]
     },
     {
+      "word": "bagno",
+      "translations": [
+        "bathroom"
+      ],
+      "examples": [
+        "Il bagno è in fondo al corridoio."
+      ],
+      "category": "housing",
+      "difficulty": 2,
+      "examples_en": [
+        "The bathroom is at the end of the corridor."
+      ]
+    },
+    {
       "word": "telefono",
       "translations": [
         "telephone",
@@ -1834,6 +1848,20 @@
       "difficulty": 2,
       "examples_en": [
         "I study history and geography."
+      ]
+    },
+    {
+      "word": "studente",
+      "translations": [
+        "student"
+      ],
+      "examples": [
+        "Sono uno studente di ingegneria."
+      ],
+      "category": "education",
+      "difficulty": 2,
+      "examples_en": [
+        "I'm an engineering student."
       ]
     },
     {
@@ -4463,6 +4491,21 @@
       ]
     },
     {
+      "word": "partire",
+      "translations": [
+        "to leave",
+        "to depart"
+      ],
+      "examples": [
+        "Domani dobbiamo partire molto presto."
+      ],
+      "category": "travel",
+      "difficulty": 2,
+      "examples_en": [
+        "Tomorrow we have to leave very early."
+      ]
+    },
+    {
       "word": "acqua",
       "translations": [
         "water"
@@ -5231,6 +5274,35 @@
       ]
     },
     {
+      "word": "costare",
+      "translations": [
+        "to cost"
+      ],
+      "examples": [
+        "Quanto può costare un taxi per l'aeroporto?"
+      ],
+      "category": "shopping",
+      "difficulty": 2,
+      "examples_en": [
+        "How much might a taxi to the airport cost?"
+      ]
+    },
+    {
+      "word": "cassa",
+      "translations": [
+        "checkout",
+        "till"
+      ],
+      "examples": [
+        "La fila alla cassa è lunga."
+      ],
+      "category": "shopping",
+      "difficulty": 3,
+      "examples_en": [
+        "The queue at the checkout is long."
+      ]
+    },
+    {
       "word": "caldo",
       "translations": [
         "hot",
@@ -5528,6 +5600,20 @@
       ]
     },
     {
+      "word": "mare",
+      "translations": [
+        "sea"
+      ],
+      "examples": [
+        "Il mare oggi è calmo."
+      ],
+      "category": "nature",
+      "difficulty": 2,
+      "examples_en": [
+        "The sea is calm today."
+      ]
+    },
+    {
       "word": "parco",
       "translations": [
         "park"
@@ -5643,6 +5729,35 @@
       ]
     },
     {
+      "word": "musica",
+      "translations": [
+        "music"
+      ],
+      "examples": [
+        "Ascolto musica mentre lavoro."
+      ],
+      "category": "leisure",
+      "difficulty": 1,
+      "examples_en": [
+        "I listen to music while I work."
+      ]
+    },
+    {
+      "word": "film",
+      "translations": [
+        "film",
+        "movie"
+      ],
+      "examples": [
+        "Il film dura due ore."
+      ],
+      "category": "leisure",
+      "difficulty": 1,
+      "examples_en": [
+        "The film lasts two hours."
+      ]
+    },
+    {
       "word": "squadra",
       "translations": [
         "team"
@@ -5710,6 +5825,76 @@
       "difficulty": 1,
       "examples_en": [
         "Does the hotel have a pool?"
+      ]
+    },
+    {
+      "word": "sport",
+      "translations": [
+        "sport"
+      ],
+      "examples": [
+        "Faccio sport tre volte a settimana."
+      ],
+      "category": "sports",
+      "difficulty": 1,
+      "examples_en": [
+        "I do sport three times a week."
+      ]
+    },
+    {
+      "word": "svegliarsi",
+      "translations": [
+        "to wake up"
+      ],
+      "examples": [
+        "È difficile svegliarsi presto d'inverno."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2,
+      "examples_en": [
+        "It's hard to wake up early in winter."
+      ]
+    },
+    {
+      "word": "alzarsi",
+      "translations": [
+        "to get up"
+      ],
+      "examples": [
+        "La domenica non c'è bisogno di alzarsi presto."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2,
+      "examples_en": [
+        "On Sundays there's no need to get up early."
+      ]
+    },
+    {
+      "word": "lavarsi",
+      "translations": [
+        "to wash (yourself)"
+      ],
+      "examples": [
+        "Prima di mangiare bisogna lavarsi le mani."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2,
+      "examples_en": [
+        "Before eating you have to wash your hands."
+      ]
+    },
+    {
+      "word": "vestirsi",
+      "translations": [
+        "to get dressed"
+      ],
+      "examples": [
+        "Fa freddo, è meglio vestirsi pesante."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2,
+      "examples_en": [
+        "It's cold, it's best to dress warmly."
       ]
     }
   ]

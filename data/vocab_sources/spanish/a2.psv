@@ -32,6 +32,7 @@ postal | postcard | Les mandé una postal a mis abuelos. | travel | 2 | I sent m
 seguro | safe; sure | Este barrio es muy seguro de noche. | travel | 2 | This neighborhood is very safe at night.
 peligroso | dangerous | Es peligroso nadar cuando hay olas grandes. | travel | 3 | It's dangerous to swim when there are big waves.
 antiguo | old; ancient; former | La catedral es el edificio más antiguo de la ciudad. | travel | 3 | The cathedral is the oldest building in the city.
+crucero | cruise | El verano pasado hicimos un crucero por el Caribe. | travel | 3 | Last summer we went on a cruise around the Caribbean.
 
 # Transport and getting around
 girar | to turn | En el semáforo tienes que girar a la izquierda. | transportation | 2 | At the traffic light you have to turn left.
@@ -60,6 +61,8 @@ rápido | fast; quick | El tren es más rápido que el autobús. | transportatio
 lento | slow | Este autobús es muy lento. | transportation | 2 | This bus is very slow.
 lleno | full | El metro iba lleno esta mañana. | transportation | 2 | The subway was full this morning.
 último | last | Perdimos el último tren a casa. | transportation | 2 | We missed the last train home.
+gasolinera | gas station; petrol station | Paramos en una gasolinera para comprar agua. | transportation | 2 | We stopped at a gas station to buy water.
+peatón | pedestrian | El peatón cruzó la calle con cuidado. | transportation | 3 | The pedestrian crossed the street carefully.
 
 # Restaurants and cooking
 menú | menu | ¿Nos trae el menú, por favor? | food | 2 | Could you bring us the menu, please?
@@ -87,6 +90,7 @@ zanahoria | carrot | El conejo se comió una zanahoria. | food | 2 | The rabbit 
 frijoles | beans (in Spain: judías or alubias) | Comimos arroz con frijoles. | food | 2 | We had rice and beans.
 limón | lemon; lime | Me gusta el agua con limón. | food | 2 | I like water with lemon.
 fresa | strawberry (in parts of South America: frutilla) | Mi helado favorito es de fresa. | food | 2 | My favorite ice cream is strawberry.
+probar | to taste; to try | ¿Quieres probar el postre? | food | 2 | Do you want to try the dessert?
 
 # Clothes
 abrigo | coat | No olvides el abrigo, hace mucho frío. | clothing | 2 | Don't forget your coat, it's very cold.
@@ -272,6 +276,7 @@ entrada | ticket (for a show or game); entrance | Ya compré la entrada para el 
 zoológico | zoo | Fuimos al zoológico con mis primos. | leisure | 2 | We went to the zoo with my cousins.
 serie | series; TV show | Estoy viendo una serie muy buena. | leisure | 2 | I'm watching a really good series.
 programa | program; show | Mi programa favorito empieza a las ocho. | leisure | 2 | My favorite show starts at eight.
+fiesta | festival; party | La fiesta del pueblo es en agosto. | leisure | 2 | The village festival is in August.
 
 # Weather and nature
 nublado | cloudy | Hoy está nublado pero no llueve. | nature | 2 | It's cloudy today but it's not raining.

@@ -24,6 +24,10 @@ const BodySchema = z.object({
   pointsEarned: z.number().int().min(0).max(1_500),
   durationSec: z.number().int().min(0).max(24 * 60 * 60),
   challenge: z.boolean().optional(),
+  /** Near misses rejected for a wrong ending: another real form, or a misspelt ending (#70). Counts only. */
+  endingMisses: z
+    .object({ otherForm: z.number().int().min(0).max(60), misspelt: z.number().int().min(0).max(60) })
+    .optional(),
 });
 
 export const POST = handler(async (request) => {
@@ -34,7 +38,7 @@ export const POST = handler(async (request) => {
     throw new BadRequestError("Step result was malformed.");
   }
 
-  const { unitId, challenge, ...result } = parsed.data;
+  const { unitId, challenge, endingMisses, ...result } = parsed.data;
   const language = user.currentLanguage;
   const course = getCourse(language);
   const unitIndex = course.units.findIndex((unit) => unit.id === unitId);
@@ -49,7 +53,7 @@ export const POST = handler(async (request) => {
     language,
     level: course.units[unitIndex].level,
     ...result,
-    metadata: { unitId },
+    metadata: endingMisses ? { unitId, endingMisses } : { unitId },
   });
 
   const passed = challenge

@@ -30,5 +30,5 @@ export const POST = handler(async (request) => {
     throw new BadRequestError("That practice item does not exist.");
   }
 
-  return Response.json(gradePracticeItem(item, answer, lesson.level));
+  return Response.json(gradePracticeItem(item, answer, lesson.level, lesson.language));
 });

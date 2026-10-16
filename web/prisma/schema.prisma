@@ -179,6 +179,9 @@ model Achievement {
   user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   name     String
   earnedAt DateTime @default(now())
+  /// For a finished level: what its certificate prints (words, phrases, grammar,
+  /// conversations), stored when it is awarded so it never changes (#91).
+  detail   Json?
 
   @@unique([userId, name])
   @@index([userId])

@@ -3,7 +3,7 @@
     "language": "portuguese",
     "level": "a1",
     "version": "1.0",
-    "word_count": 383,
+    "word_count": 404,
     "created_at": "2026-08-12T22:30:37.727535+00:00",
     "description": "Beginner (A1) Portuguese vocabulary: everyday expressions and basic phrases",
     "source": "data/vocab_sources/portuguese/a1.psv",
@@ -1836,6 +1836,20 @@
       ]
     },
     {
+      "word": "professor",
+      "translations": [
+        "teacher"
+      ],
+      "examples": [
+        "O professor explica muito bem."
+      ],
+      "category": "education",
+      "difficulty": 1,
+      "examples_en": [
+        "The teacher explains things really well."
+      ]
+    },
+    {
       "word": "roupa",
       "translations": [
         "clothes",
@@ -2098,6 +2112,34 @@
       ]
     },
     {
+      "word": "triste",
+      "translations": [
+        "sad"
+      ],
+      "examples": [
+        "O menino está triste hoje."
+      ],
+      "category": "emotions",
+      "difficulty": 1,
+      "examples_en": [
+        "The boy is sad today."
+      ]
+    },
+    {
+      "word": "medo",
+      "translations": [
+        "fear"
+      ],
+      "examples": [
+        "Ela tem medo de voar."
+      ],
+      "category": "emotions",
+      "difficulty": 2,
+      "examples_en": [
+        "She's afraid of flying."
+      ]
+    },
+    {
       "word": "cabeça",
       "translations": [
         "head"
@@ -2250,6 +2292,64 @@
       "difficulty": 2,
       "examples_en": [
         "I feel a pain in my foot."
+      ]
+    },
+    {
+      "word": "mão",
+      "translations": [
+        "hand"
+      ],
+      "examples": [
+        "Ele levanta a mão para falar."
+      ],
+      "category": "body",
+      "difficulty": 2,
+      "examples_en": [
+        "He raises his hand to speak."
+      ]
+    },
+    {
+      "word": "médico",
+      "translations": [
+        "doctor"
+      ],
+      "examples": [
+        "O médico está no hospital."
+      ],
+      "category": "health",
+      "difficulty": 1,
+      "examples_en": [
+        "The doctor is at the hospital."
+      ]
+    },
+    {
+      "word": "farmácia",
+      "translations": [
+        "pharmacy",
+        "drugstore"
+      ],
+      "examples": [
+        "A farmácia da esquina abre aos domingos."
+      ],
+      "category": "health",
+      "difficulty": 2,
+      "examples_en": [
+        "The pharmacy on the corner opens on Sundays."
+      ]
+    },
+    {
+      "word": "doente",
+      "translations": [
+        "sick",
+        "ill"
+      ],
+      "examples": [
+        "Hoje eu estou doente e fico em casa."
+      ],
+      "category": "health",
+      "difficulty": 2,
+      "examples_en": [
+        "Today I'm sick, so I'm staying home."
       ]
     },
     {
@@ -2406,6 +2506,21 @@
       "difficulty": 2,
       "examples_en": [
         "I buy the ticket online."
+      ]
+    },
+    {
+      "word": "viagem",
+      "translations": [
+        "trip",
+        "journey"
+      ],
+      "examples": [
+        "A viagem de ônibus dura seis horas."
+      ],
+      "category": "travel",
+      "difficulty": 2,
+      "examples_en": [
+        "The bus trip takes six hours."
       ]
     },
     {
@@ -3156,6 +3271,20 @@
       ]
     },
     {
+      "word": "caro",
+      "translations": [
+        "expensive"
+      ],
+      "examples": [
+        "Esse celular é muito caro."
+      ],
+      "category": "shopping",
+      "difficulty": 2,
+      "examples_en": [
+        "That phone is very expensive."
+      ]
+    },
+    {
       "word": "ver",
       "translations": [
         "to see",
@@ -3532,6 +3661,77 @@
       "difficulty": 1,
       "examples_en": [
         "I want to visit my grandparents."
+      ]
+    },
+    {
+      "word": "comprar",
+      "translations": [
+        "to buy"
+      ],
+      "examples": [
+        "Preciso comprar pão para o café da manhã."
+      ],
+      "category": "verbs",
+      "difficulty": 1,
+      "examples_en": [
+        "I need to buy bread for breakfast."
+      ]
+    },
+    {
+      "word": "vender",
+      "translations": [
+        "to sell"
+      ],
+      "examples": [
+        "Meu tio quer vender o carro velho."
+      ],
+      "category": "verbs",
+      "difficulty": 2,
+      "examples_en": [
+        "My uncle wants to sell his old car."
+      ]
+    },
+    {
+      "word": "partir",
+      "translations": [
+        "to leave",
+        "to depart"
+      ],
+      "examples": [
+        "Preciso partir cedo amanhã."
+      ],
+      "category": "verbs",
+      "difficulty": 2,
+      "examples_en": [
+        "I need to leave early tomorrow."
+      ]
+    },
+    {
+      "word": "chegar",
+      "translations": [
+        "to arrive"
+      ],
+      "examples": [
+        "Preciso chegar ao trabalho às oito."
+      ],
+      "category": "verbs",
+      "difficulty": 1,
+      "examples_en": [
+        "I need to get to work at eight."
+      ]
+    },
+    {
+      "word": "decidir",
+      "translations": [
+        "to decide"
+      ],
+      "examples": [
+        "Precisamos decidir até amanhã."
+      ],
+      "category": "verbs",
+      "difficulty": 2,
+      "examples_en": [
+        "We need to decide by tomorrow."
       ]
     },
     {
@@ -4845,6 +5045,48 @@
       ]
     },
     {
+      "word": "praia",
+      "translations": [
+        "beach"
+      ],
+      "examples": [
+        "No verão, a praia fica lotada."
+      ],
+      "category": "leisure",
+      "difficulty": 1,
+      "examples_en": [
+        "In summer the beach gets packed."
+      ]
+    },
+    {
+      "word": "nadar",
+      "translations": [
+        "to swim"
+      ],
+      "examples": [
+        "Meu irmão gosta de nadar no mar."
+      ],
+      "category": "leisure",
+      "difficulty": 1,
+      "examples_en": [
+        "My brother likes swimming in the sea."
+      ]
+    },
+    {
+      "word": "música",
+      "translations": [
+        "music"
+      ],
+      "examples": [
+        "Eu escuto música enquanto estudo."
+      ],
+      "category": "leisure",
+      "difficulty": 1,
+      "examples_en": [
+        "I listen to music while I study."
+      ]
+    },
+    {
       "word": "dia",
       "translations": [
         "day"
@@ -5493,6 +5735,64 @@
       "difficulty": 2,
       "examples_en": [
         "Spring has lots of flowers."
+      ]
+    },
+    {
+      "word": "acordar",
+      "translations": [
+        "to wake up"
+      ],
+      "examples": [
+        "Amanhã preciso acordar às seis e meia."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2,
+      "examples_en": [
+        "Tomorrow I need to wake up at half past six."
+      ]
+    },
+    {
+      "word": "levantar-se",
+      "translations": [
+        "to get up"
+      ],
+      "examples": [
+        "É difícil levantar-se cedo no inverno."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2,
+      "examples_en": [
+        "It's hard to get up early in winter."
+      ]
+    },
+    {
+      "word": "tomar banho",
+      "translations": [
+        "to take a shower",
+        "to bathe"
+      ],
+      "examples": [
+        "Prefiro tomar banho antes de dormir."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2,
+      "examples_en": [
+        "I prefer to take a shower before bed."
+      ]
+    },
+    {
+      "word": "deitar-se",
+      "translations": [
+        "to go to bed",
+        "to lie down"
+      ],
+      "examples": [
+        "Para a saúde, é bom deitar-se cedo."
+      ],
+      "category": "daily_routines",
+      "difficulty": 2,
+      "examples_en": [
+        "For your health, it's good to go to bed early."
       ]
     }
   ]

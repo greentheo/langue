@@ -1,21 +1,23 @@
 /**
- * A CEFR level's progress, for the level page: its units, one bar each for
+ * A CEFR level's progress, for the level page: its units, a count each for
  * words, phrases, grammar and speaking, and whether the level is done.
  *
- * Pure, like the planner. Every bar counts best stages (or role-plays ever
- * played), so none of them ever goes down.
+ * Pure, like the planner. The bars (level and units) are protected by unit
+ * marks. Words, phrases, grammar and speaking are counts, not bars: a bar over
+ * the level's current items would shrink whenever content is added (#91).
  */
 
 import { unitProgress, type UnitMark, type UnitProgress } from "./planner";
 import { LEARNED_STAGE } from "./schedule";
 import type { Course, ItemKind, ItemState } from "./types";
 
-export interface Bar {
-  /** Items learned (best stage 3+), or role-plays played. */
+export interface Count {
+  /** Items learned (best stage 3+), or role-plays played. Never goes down while item keys stay put. */
   done: number;
-  total: number;
-  /** 0–100, with partial credit for items on their way up. */
-  percent: number;
+  /** Items met but not yet learned. Absent for role-plays, which are played or not. */
+  onTheWay?: number;
+  /** Items in the level the learner hasn't met yet, or role-plays not yet played. New content adds only here. */
+  notMet: number;
 }
 
 export interface LevelProgress {
@@ -23,11 +25,11 @@ export interface LevelProgress {
   units: UnitProgress[];
   percent: number;
   complete: boolean;
-  words: Bar;
-  phrases: Bar;
-  grammar: Bar;
+  words: Count;
+  phrases: Count;
+  grammar: Count;
   /** Role-plays played at least once. */
-  speaking: Bar;
+  speaking: Count;
 }
 
 /** Hours of practice a level takes, roughly — shown as a guide, never a gate. */
@@ -37,13 +39,18 @@ export function levelsOf(course: Course): string[] {
   return [...new Set(course.units.map((unit) => unit.level))];
 }
 
-function bar(keys: string[], states: Map<string, ItemState>): Bar {
-  const climbed = keys.reduce((sum, key) => sum + Math.min(LEARNED_STAGE, states.get(key)?.bestStage ?? 0), 0);
+function count(keys: string[], states: Map<string, ItemState>): Count {
   return {
     done: keys.filter((key) => (states.get(key)?.bestStage ?? 0) >= LEARNED_STAGE).length,
-    total: keys.length,
-    percent: keys.length > 0 ? Math.floor((climbed / (keys.length * LEARNED_STAGE)) * 100) : 0,
+    onTheWay: keys.filter((key) => states.has(key) && states.get(key)!.bestStage < LEARNED_STAGE).length,
+    notMet: keys.filter((key) => !states.has(key)).length,
   };
+}
+
+/** Partial credit for items on their way up, for a level without units. */
+function climbedPercent(keys: string[], states: Map<string, ItemState>): number {
+  const climbed = keys.reduce((sum, key) => sum + Math.min(LEARNED_STAGE, states.get(key)?.bestStage ?? 0), 0);
+  return keys.length > 0 ? Math.floor((climbed / (keys.length * LEARNED_STAGE)) * 100) : 0;
 }
 
 export function levelProgress(
@@ -60,22 +67,47 @@ export function levelProgress(
   const dialogues = [...course.dialogues.values()].filter((dialogue) => indices.has(dialogue.unitIndex));
   const played = dialogues.filter((dialogue) => (states.get(dialogue.key)?.right ?? 0) > 0).length;
 
-  const all = bar(keys, states);
   return {
     level,
     units,
     // Each unit weighs the same, as each is a week's work.
-    percent: units.length > 0 ? Math.floor(units.reduce((sum, unit) => sum + unit.percent, 0) / units.length) : all.percent,
+    percent:
+      units.length > 0
+        ? Math.floor(units.reduce((sum, unit) => sum + unit.percent, 0) / units.length)
+        : climbedPercent(keys, states),
     complete: units.length > 0 && units.every((unit) => unit.complete),
-    words: bar(ofKind("word"), states),
-    phrases: bar(ofKind("phrase"), states),
-    grammar: bar(ofKind("grammar"), states),
-    speaking: {
-      done: played,
-      total: dialogues.length,
-      percent: dialogues.length > 0 ? Math.floor((played / dialogues.length) * 100) : 0,
-    },
+    words: count(ofKind("word"), states),
+    phrases: count(ofKind("phrase"), states),
+    grammar: count(ofKind("grammar"), states),
+    speaking: { done: played, notMet: dialogues.length - played },
   };
+}
+
+/** What a certificate prints. Stored on the level's achievement when it is awarded, so it never changes. */
+export interface CertificateCounts {
+  words: number;
+  phrases: number;
+  grammar: number;
+  conversations: number;
+}
+
+export function levelCounts(progress: LevelProgress): CertificateCounts {
+  return {
+    words: progress.words.done,
+    phrases: progress.phrases.done,
+    grammar: progress.grammar.done,
+    conversations: progress.speaking.done,
+  };
+}
+
+/** The counts stored with the certificate; the live ones only for a certificate stored before there were any. */
+export function certificateCounts(stored: unknown, live: LevelProgress): CertificateCounts {
+  const fields = ["words", "phrases", "grammar", "conversations"] as const;
+  if (stored && typeof stored === "object" && fields.every((field) => typeof (stored as Record<string, unknown>)[field] === "number")) {
+    const counts = stored as Record<(typeof fields)[number], number>;
+    return { words: counts.words, phrases: counts.phrases, grammar: counts.grammar, conversations: counts.conversations };
+  }
+  return levelCounts(live);
 }
 
 /** Levels with every unit complete. */

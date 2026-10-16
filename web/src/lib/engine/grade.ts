@@ -8,42 +8,10 @@
  * and explaining mistakes.
  */
 
-/**
- * Punctuation that never changes meaning for grading. Includes the curly
- * quotes and apostrophes phone keyboards insert by default: without them,
- * "l’acqua" typed on an iPhone would not match "l'acqua".
- */
-const PUNCTUATION = /[.,!?¡¿;:"'`’‘“”«»…()[\]]/g;
+import { isKnownForm, keepsEnding } from "./endings";
+import { normalizeAnswer, normalizeKeepingAccents } from "./normalize";
 
-/** Hyphens and dashes separate words: "twenty-one" matches "twenty one". */
-const DASHES = /[-‐–—]/g;
-
-/** Ligatures people type as two letters: "soeur" is a fine way to write "sœur". */
-function unligature(value: string): string {
-  return value.replace(/œ/g, "oe").replace(/æ/g, "ae");
-}
-
-/** Normalize for comparison: casefold, strip accents, punctuation, articles. */
-export function normalizeAnswer(value: string): string {
-  return unligature(value.toLowerCase())
-    .normalize("NFD")
-    // Strip combining diacritics so "cafe" matches "café".
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(PUNCTUATION, "")
-    .replace(DASHES, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
-/** As normalizeAnswer, but keeps accents, for target-language accent checks. */
-export function normalizeKeepingAccents(value: string): string {
-  return unligature(value.toLowerCase())
-    .normalize("NFC")
-    .replace(PUNCTUATION, "")
-    .replace(DASHES, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-}
+export { normalizeAnswer, normalizeKeepingAccents };
 
 /**
  * Expand English contractions so "what's your name" and "what is your name"
@@ -144,8 +112,13 @@ export interface GradeResult {
   score: number;
   /** The accepted answer the learner came closest to. */
   matched: string | null;
-  /** Set when the answer was close enough to accept but not exact. */
+  /** Set when the answer was close enough to accept but not exact, or missed only an ending. */
   note: string | null;
+  /**
+   * A near miss rejected because a word's ending was wrong: another real form
+   * of the word ("comemos" for "comimos"), or a slip that makes no word.
+   */
+  endingMiss?: "otherForm" | "misspelt";
 }
 
 /** How lenient a grade is. The defaults suit English answers. */
@@ -169,6 +142,8 @@ export interface GradeOptions {
    * there is the mistake, not a typo.
    */
   keepEndings?: boolean;
+  /** The target language, whose endings keepEndings protects (endings.ts). */
+  language?: string;
   /**
    * Rewrites both sides before comparing — English expands contractions. Notes
    * still quote the accepted answer as written.
@@ -176,27 +151,47 @@ export interface GradeOptions {
   rewrite?: (value: string) => string;
 }
 
+/** How a near miss relates to an accepted answer: a typo, or a slip in a word's ending (which word, as typed). */
+type Slip = { kind: "typo" } | { kind: "ending"; typed: string; index: number } | null;
+
 /**
  * Is `answer` a typo of `candidate`? Word by word: the same number of words,
  * short words (three letters or fewer) exactly right, at most two longer
- * words a letter or two off — the allowance growing with the word.
+ * words a letter or two off — the allowance growing with the word. With an
+ * endings language, a slip that changes a word's ending (endings.ts) is not a
+ * typo but an ending slip: the ending is the grammar.
  */
-function typoOf(answer: string, candidate: string, keepEndings: boolean): boolean {
+function slipOf(answer: string, candidate: string, endings: string | null): Slip {
   const typed = answer.split(" ");
   const expected = candidate.split(" ");
-  if (typed.length !== expected.length) return false;
+  if (typed.length !== expected.length) return null;
 
   let slips = 0;
+  let ending: { typed: string; index: number } | null = null;
   for (let i = 0; i < expected.length; i += 1) {
     const [a, b] = [typed[i], expected[i]];
     if (a === b) continue;
-    if (a.length <= 3 || b.length <= 3) return false;
-    if (keepEndings && a.at(-1) !== b.at(-1)) return false;
+    if (a.length <= 3 || b.length <= 3) return null;
     const tolerance = b.length <= 5 ? 1 : b.length <= 9 ? 2 : 3;
-    if (editDistance(a, b) > tolerance) return false;
+    if (editDistance(a, b) > tolerance) return null;
+    if (endings !== null && !keepsEnding(a, b, endings)) ending ??= { typed: a, index: i };
     slips += 1;
   }
-  return slips > 0 && slips <= 2;
+  if (slips === 0 || slips > 2) return null;
+  return ending ? { kind: "ending", ...ending } : { kind: "typo" };
+}
+
+/** Word `index` of a normalized form, as the accepted answer writes it ("Comimos", "arrivée"). */
+function writtenWord(written: string, form: string, index: number): string {
+  const words = written
+    .replace(/[-‐–—]/g, " ")
+    .split(/\s+/)
+    .map((word) => word.replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N}]+$/gu, ""))
+    .filter(Boolean);
+  const formWords = form.split(" ");
+  // A form without its article has one word fewer than the answer as written.
+  const offset = words.length - formWords.length;
+  return (offset >= 0 ? words[index + offset] : undefined) ?? formWords[index];
 }
 
 /** Does `text` contain `phrase` as whole words? Both normalized. */
@@ -213,7 +208,7 @@ function hasWords(text: string, phrase: string): boolean {
  * letters or fewer get none — "lo" and "la" are different words, not a typo.
  */
 export function gradeAnswer(userAnswer: string, accepted: string[], options: GradeOptions = {}): GradeResult {
-  const { extraWords = "any", nounArticlesOnly = false, typos = true, keepEndings = false, rewrite } = options;
+  const { extraWords = "any", nounArticlesOnly = false, typos = true, keepEndings = false, language, rewrite } = options;
   const strip = nounArticlesOnly ? stripNounArticle : stripArticle;
   const prepare = (value: string) => normalizeAnswer(rewrite ? rewrite(value) : value);
   const answer = prepare(userAnswer);
@@ -257,19 +252,39 @@ export function gradeAnswer(userAnswer: string, accepted: string[], options: Gra
     }
   }
 
-  const typo = typos
-    ? candidates.find(
-        ({ form }) =>
-          typoOf(answer, form, keepEndings) ||
-          (answerWithoutPronoun !== null && typoOf(answerWithoutPronoun, form, keepEndings)),
-      )
-    : undefined;
+  // A near miss of an accepted answer: with or without an added subject pronoun.
+  const endings = keepEndings ? (language ?? "") : null;
+  const near = typos
+    ? candidates.map((candidate) => {
+        const slips = [slipOf(answer, candidate.form, endings)];
+        if (answerWithoutPronoun !== null) slips.push(slipOf(answerWithoutPronoun, candidate.form, endings));
+        return { ...candidate, slip: slips.find((slip) => slip?.kind === "typo") ?? slips.find(Boolean) ?? null };
+      })
+    : [];
+
+  const typo = near.find(({ slip }) => slip?.kind === "typo");
   if (typo) {
     return {
       verdict: "close",
       score: 70,
       matched: typo.form,
       note: `Close — the expected spelling is "${typo.written}".`,
+    };
+  }
+
+  // Close enough for a typo, but a word's ending changed: the grammar is wrong, and the learner reads why.
+  const miss = near.find(({ slip }) => slip?.kind === "ending");
+  if (miss?.slip?.kind === "ending") {
+    const word = writtenWord(miss.written, miss.form, miss.slip.index);
+    const otherForm = isKnownForm(miss.slip.typed, language ?? "");
+    return {
+      verdict: "incorrect",
+      score: 0,
+      matched: miss.form,
+      note: otherForm
+        ? `That's another form — check the ending: «${word}».`
+        : `Check the spelling of the ending: «${word}».`,
+      endingMiss: otherForm ? "otherForm" : "misspelt",
     };
   }
 
@@ -315,13 +330,17 @@ function matchesKeepingAccents(userAnswer: string, accepted: string[], options: 
  * correct once accents are stripped is graded *close*, with the accented form
  * shown, rather than silently right or harshly wrong — typing accents on an
  * English keyboard is hard, and the learner should see what they missed.
+ *
+ * `language` is the course language: its endings decide which slips are
+ * typos and which are grammar (endings.ts).
  */
 export function gradeTargetAnswer(
   userAnswer: string,
   accepted: string[],
+  language: string,
   overrides: GradeOptions = {},
 ): GradeResult {
-  const options = { ...TARGET, ...overrides };
+  const options = { ...TARGET, language, ...overrides };
   const result = gradeAnswer(userAnswer, accepted, options);
   if (result.verdict !== "correct") return result;
 
@@ -345,10 +364,11 @@ export function gradeIn(
   language: AnswerLanguage,
   userAnswer: string,
   accepted: string[],
+  target: string,
 ): GradeResult {
   return language === "english"
     ? gradeEnglishAnswer(userAnswer, accepted)
-    : gradeTargetAnswer(userAnswer, accepted);
+    : gradeTargetAnswer(userAnswer, accepted, target);
 }
 
 /**

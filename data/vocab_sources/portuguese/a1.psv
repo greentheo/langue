@@ -142,6 +142,7 @@ mochila | backpack; school bag | Minha mochila é muito pesada. | education | 1 
 exercício | exercise | Faço o exercício no caderno. | education | 2 | I do the exercise in my notebook.
 matemática | math; maths | Gosto muito de matemática. | education | 2 | I really like math.
 história | history; story | A aula de história é às dez. | education | 2 | The history class is at ten.
+professor | teacher | O professor explica muito bem. | education | 1 | The teacher explains things really well.
 
 # Clothes
 roupa | clothes; clothing | Essa roupa é muito bonita. | clothing | 1 | These clothes are very nice.
@@ -164,6 +165,8 @@ chateado | upset; annoyed | Ele está chateado comigo. | emotions | 2 | He's ups
 assustado | scared; frightened | O gato está assustado. | emotions | 2 | The cat is scared.
 alegre | cheerful; happy | Minha avó é uma pessoa alegre. | emotions | 2 | My grandmother is a cheerful person.
 calmo | calm | Meu pai é muito calmo. | emotions | 2 | My father is very calm.
+triste | sad | O menino está triste hoje. | emotions | 1 | The boy is sad today.
+medo | fear | Ela tem medo de voar. | emotions | 2 | She's afraid of flying.
 
 # The body
 cabeça | head | Estou com dor de cabeça. | body | 1 | I have a headache.
@@ -177,6 +180,12 @@ braço | arm | Levanto o braço na aula. | body | 2 | I raise my arm in class.
 perna | leg | Minha perna dói depois do futebol. | body | 1 | My leg hurts after soccer.
 pé | foot | Meu pé dói muito. | body | 1 | My foot hurts a lot.
 dor | pain; ache | Sinto uma dor no pé. | body | 2 | I feel a pain in my foot.
+mão | hand | Ele levanta a mão para falar. | body | 2 | He raises his hand to speak.
+
+# Health
+médico | doctor | O médico está no hospital. | health | 1 | The doctor is at the hospital.
+farmácia | pharmacy; drugstore | A farmácia da esquina abre aos domingos. | health | 2 | The pharmacy on the corner opens on Sundays.
+doente | sick; ill | Hoje eu estou doente e fico em casa. | health | 2 | Today I'm sick, so I'm staying home.
 
 # Places and travel
 cidade | city | O Rio é uma cidade linda. | travel | 1 | Rio is a beautiful city.
@@ -190,6 +199,7 @@ mar | sea | O mar está muito bonito hoje. | travel | 1 | The sea is very beauti
 mapa | map | Você tem um mapa da cidade? | travel | 1 | Do you have a map of the city?
 turista | tourist | Sou turista, não moro aqui. | travel | 1 | I'm a tourist; I don't live here.
 passagem | ticket (bus, train, plane) | Compro a passagem pela internet. | travel | 2 | I buy the ticket online.
+viagem | trip; journey | A viagem de ônibus dura seis horas. | travel | 2 | The bus trip takes six hours.
 
 # Getting around
 estação | station | A estação fica a dez minutos. | transportation | 2 | The station is ten minutes away.
@@ -249,6 +259,7 @@ cartão | card | Vocês aceitam cartão? | shopping | 1 | Do you take cards?
 troco | change (money back) | Aqui está o seu troco. | shopping | 2 | Here's your change.
 sacola | bag (for shopping) | Você quer uma sacola? | shopping | 2 | Do you want a bag?
 presente | present; gift | Compro um presente para minha mãe. | shopping | 1 | I'm buying a present for my mom.
+caro | expensive | Esse celular é muito caro. | shopping | 2 | That phone is very expensive.
 
 # Everyday verbs
 ver | to see; to watch | Quero ver esse filme. | verbs | 1 | I want to see that movie.
@@ -277,6 +288,11 @@ cozinhar | to cook | Meu pai gosta de cozinhar. | verbs | 1 | My dad likes to co
 brincar | to play (games, with toys) | As crianças querem brincar no parque. | verbs | 1 | The children want to play in the park.
 viajar | to travel | Adoro viajar com a minha família. | verbs | 1 | I love traveling with my family.
 visitar | to visit | Quero visitar meus avós. | verbs | 1 | I want to visit my grandparents.
+comprar | to buy | Preciso comprar pão para o café da manhã. | verbs | 1 | I need to buy bread for breakfast.
+vender | to sell | Meu tio quer vender o carro velho. | verbs | 2 | My uncle wants to sell his old car.
+partir | to leave; to depart | Preciso partir cedo amanhã. | verbs | 2 | I need to leave early tomorrow.
+chegar | to arrive | Preciso chegar ao trabalho às oito. | verbs | 1 | I need to get to work at eight.
+decidir | to decide | Precisamos decidir até amanhã. | verbs | 2 | We need to decide by tomorrow.
 
 # Family and people
 família | family | Minha família é muito grande. | family | 1 | My family is very big.
@@ -379,6 +395,9 @@ violão | guitar (acoustic) | Meu pai toca violão. | leisure | 2 | My dad plays
 foto | photo | Posso tirar uma foto? | leisure | 1 | Can I take a photo?
 ingresso | ticket (for a show, game or film) | Quanto custa o ingresso? | leisure | 2 | How much is the ticket?
 férias | holidays; vacation | Estou de férias na praia. | leisure | 1 | I'm on vacation at the beach.
+praia | beach | No verão, a praia fica lotada. | leisure | 1 | In summer the beach gets packed.
+nadar | to swim | Meu irmão gosta de nadar no mar. | leisure | 1 | My brother likes swimming in the sea.
+música | music | Eu escuto música enquanto estudo. | leisure | 1 | I listen to music while I study.
 
 # Time
 dia | day | Que dia é hoje? | time | 1 | What day is it today?
@@ -429,3 +448,9 @@ verão | summer | No verão a gente vai à praia. | weather | 1 | In summer we g
 outono | autumn; fall | O outono começa em março no Brasil. | weather | 2 | Autumn starts in March in Brazil.
 inverno | winter | O inverno no sul é frio. | weather | 1 | Winter in the south is cold.
 primavera | spring | A primavera tem muitas flores. | weather | 2 | Spring has lots of flowers.
+
+# Daily routine
+acordar | to wake up | Amanhã preciso acordar às seis e meia. | daily_routines | 2 | Tomorrow I need to wake up at half past six.
+levantar-se | to get up | É difícil levantar-se cedo no inverno. | daily_routines | 2 | It's hard to get up early in winter.
+tomar banho | to take a shower; to bathe | Prefiro tomar banho antes de dormir. | daily_routines | 2 | I prefer to take a shower before bed.
+deitar-se | to go to bed; to lie down | Para a saúde, é bom deitar-se cedo. | daily_routines | 2 | For your health, it's good to go to bed early.

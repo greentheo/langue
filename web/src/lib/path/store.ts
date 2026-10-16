@@ -7,7 +7,8 @@ import "server-only";
  */
 
 import { prisma } from "@/lib/db";
-import { completedLevels, levelAchievement } from "./levels";
+import { Prisma } from "@/generated/prisma/client";
+import { completedLevels, levelAchievement, levelCounts, levelProgress } from "./levels";
 import { raisedMarks, unitProgress, type UnitMark, type UnitProgress } from "./planner";
 import { applyAnswer, applyChallenge, assumeKnown, completeDialogue, newItemState } from "./schedule";
 import type { Course, Item, ItemState } from "./types";
@@ -126,7 +127,8 @@ export async function passUnit(
 
 /**
  * Record any level the learner has just finished, so the leaderboard can show
- * it and the certificate has a date. Returns the levels newly finished.
+ * it and the certificate has a date and its numbers. Returns the levels newly
+ * finished.
  */
 export async function recordFinishedLevels(
   userId: string,
@@ -147,11 +149,43 @@ export async function recordFinishedLevels(
   const fresh = done.filter((level) => !existing.has(levelAchievement(language, level)));
   if (fresh.length > 0) {
     await prisma.achievement.createMany({
-      data: fresh.map((level) => ({ userId, name: levelAchievement(language, level), earnedAt: now })),
+      data: fresh.map((level) => ({
+        userId,
+        name: levelAchievement(language, level),
+        earnedAt: now,
+        // What the certificate prints, kept so later content changes can't alter it.
+        detail: { ...levelCounts(levelProgress(course, states, level, marks)) },
+      })),
       skipDuplicates: true,
     });
   }
   return fresh;
+}
+
+/**
+ * Certificates awarded before their numbers were stored get them once, from
+ * the learner's progress as it stands. Runs when the server starts; only ever
+ * fills an empty one, so running it again changes nothing.
+ */
+export async function freezeCertificates(courseFor: (language: string) => Course): Promise<number> {
+  const empty = await prisma.achievement.findMany({
+    where: { name: { startsWith: "level:" }, detail: { equals: Prisma.DbNull } },
+    select: { id: true, userId: true, name: true },
+  });
+  let filled = 0;
+  for (const { id, userId, name } of empty) {
+    const [, language, level] = name.split(":");
+    const course = courseFor(language);
+    if (!course.units.some((unit) => unit.level === level)) continue;
+    const [states, marks] = await Promise.all([loadStates(userId, language), loadMarks(userId, course)]);
+    const detail = { ...levelCounts(levelProgress(course, states, level, marks)) };
+    const { count } = await prisma.achievement.updateMany({
+      where: { id, detail: { equals: Prisma.DbNull } },
+      data: { detail },
+    });
+    filled += count;
+  }
+  return filled;
 }
 
 /** A role-play was played to the end: schedule the next time it is offered. */

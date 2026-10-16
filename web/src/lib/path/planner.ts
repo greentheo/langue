@@ -542,6 +542,10 @@ export interface UnitProgress {
   title: string;
   level: string;
   learned: number;
+  /** Items met but not yet learned. */
+  onTheWay: number;
+  /** Items not met yet: content added to the unit joins these. */
+  notMet: number;
   total: number;
   /**
    * 0–100, filling as items climb toward learned, so the first steps show
@@ -581,6 +585,8 @@ export function unitProgress(
       title: unit.title,
       level: unit.level,
       learned,
+      onTheWay: unit.itemKeys.filter((key) => states.has(key) && !isLearned(states.get(key))).length,
+      notMet: unit.itemKeys.filter((key) => !states.has(key)).length,
       total: unit.itemKeys.length,
       percent: complete ? 100 : Math.max(percent, mark?.bestPercent ?? 0),
       complete,

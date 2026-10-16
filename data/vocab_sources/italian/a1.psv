@@ -121,6 +121,7 @@ divano | sofa; couch | La sera guardo la televisione sul divano. | housing | 2 |
 doccia | shower | Faccio la doccia la mattina. | housing | 2 | I have a shower in the morning.
 ascensore | lift; elevator | C'è un ascensore nell'albergo? | housing | 2 | Is there a lift in the hotel?
 indirizzo | address | Qual è il tuo indirizzo? | housing | 2 | What's your address?
+bagno | bathroom | Il bagno è in fondo al corridoio. | housing | 2 | The bathroom is at the end of the corridor.
 
 # Technology (unit 4)
 telefono | telephone; phone | Il mio telefono non funziona. | technology | 1 | My phone isn't working.
@@ -141,6 +142,7 @@ matita | pencil | Disegno con la matita. | education | 2 | I draw with a pencil.
 compagno di classe | classmate | Il mio compagno di classe si chiama Luca. | education | 2 | My classmate is called Luca.
 matematica | maths; math; mathematics | Oggi abbiamo matematica alle dieci. | education | 1 | Today we have maths at ten.
 storia | history; story | Studio storia e geografia. | education | 2 | I study history and geography.
+studente | student | Sono uno studente di ingegneria. | education | 2 | I'm an engineering student.
 
 # Animals (unit 4)
 animale | animal; pet | Il mio animale preferito è il cane. | animals | 1 | My favourite animal is the dog.
@@ -347,6 +349,7 @@ posto | seat; place | Questo posto è libero? | travel | 1 | Is this seat free?
 turista | tourist | Sono un turista americano. | travel | 1 | I'm an American tourist.
 vacanza | holiday; vacation | Siamo in vacanza a Roma. | travel | 1 | We're on holiday in Rome.
 spiaggia | beach | La spiaggia è a cinque minuti. | travel | 1 | The beach is five minutes away.
+partire | to leave; to depart | Domani dobbiamo partire molto presto. | travel | 2 | Tomorrow we have to leave very early.
 
 # Food and drink (unit 9)
 acqua | water | Bevo molta acqua d'estate. | food | 1 | I drink a lot of water in summer.
@@ -405,6 +408,8 @@ resto | change (money); the rest | Ecco il resto, signora. | shopping | 2 | Here
 chilo | kilo | Un chilo di mele, per favore. | shopping | 2 | A kilo of apples, please.
 regalo | present; gift | Questo è un regalo per te. | shopping | 1 | This is a present for you.
 cartolina | postcard | Scrivo una cartolina alla nonna. | shopping | 2 | I'm writing a postcard to Grandma.
+costare | to cost | Quanto può costare un taxi per l'aeroporto? | shopping | 2 | How much might a taxi to the airport cost?
+cassa | checkout; till | La fila alla cassa è lunga. | shopping | 3 | The queue at the checkout is long.
 
 # Weather and seasons (unit 10)
 caldo | hot; warm | Oggi fa caldo, andiamo al mare. | weather | 1 | It's hot today, let's go to the seaside.
@@ -430,6 +435,7 @@ montagna | mountain; the mountains | Mi piace camminare in montagna. | nature | 
 isola | island | Capri è una bella isola. | nature | 2 | Capri is a beautiful island.
 luna | moon | Stasera la luna è grande. | nature | 2 | The moon is big tonight.
 stella | star | Quella stella è molto luminosa. | nature | 2 | That star is very bright.
+mare | sea | Il mare oggi è calmo. | nature | 2 | The sea is calm today.
 
 # Free time (unit 10)
 parco | park | La domenica andiamo al parco. | leisure | 1 | On Sundays we go to the park.
@@ -440,6 +446,8 @@ fumetto | comic; comic book | Leggo un fumetto prima di dormire. | leisure | 2 |
 canzone | song | Questa canzone mi piace molto. | leisure | 1 | I really like this song.
 chitarra | guitar | Mia sorella suona la chitarra. | leisure | 1 | My sister plays the guitar.
 compleanno | birthday | Oggi è il mio compleanno. | leisure | 1 | It's my birthday today.
+musica | music | Ascolto musica mentre lavoro. | leisure | 1 | I listen to music while I work.
+film | film; movie | Il film dura due ore. | leisure | 1 | The film lasts two hours.
 
 # Sport (unit 10)
 squadra | team | La mia squadra vince sempre. | sports | 1 | My team always wins.
@@ -447,3 +455,10 @@ palla | ball | Il cane gioca con la palla. | sports | 1 | The dog is playing wit
 tennis | tennis | Gioco a tennis con mio padre. | sports | 1 | I play tennis with my dad.
 nuoto | swimming | Faccio nuoto due volte alla settimana. | sports | 2 | I go swimming twice a week.
 piscina | swimming pool | L'albergo ha una piscina? | sports | 1 | Does the hotel have a pool?
+sport | sport | Faccio sport tre volte a settimana. | sports | 1 | I do sport three times a week.
+
+# Daily routine (unit 10)
+svegliarsi | to wake up | È difficile svegliarsi presto d'inverno. | daily_routines | 2 | It's hard to wake up early in winter.
+alzarsi | to get up | La domenica non c'è bisogno di alzarsi presto. | daily_routines | 2 | On Sundays there's no need to get up early.
+lavarsi | to wash (yourself) | Prima di mangiare bisogna lavarsi le mani. | daily_routines | 2 | Before eating you have to wash your hands.
+vestirsi | to get dressed | Fa freddo, è meglio vestirsi pesante. | daily_routines | 2 | It's cold, it's best to dress warmly.

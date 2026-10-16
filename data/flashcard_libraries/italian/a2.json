@@ -3,7 +3,7 @@
     "language": "italian",
     "level": "a2",
     "version": "1.0",
-    "word_count": 419,
+    "word_count": 428,
     "created_at": "2026-08-12T22:23:06.944963+00:00",
     "description": "Elementary (A2) Italian vocabulary: personal information, shopping, local geography",
     "source": "data/vocab_sources/italian/a2.psv",
@@ -37,21 +37,6 @@
       "difficulty": 3,
       "examples_en": [
         "I packed my suitcase last night."
-      ]
-    },
-    {
-      "word": "partire",
-      "translations": [
-        "to leave",
-        "to depart"
-      ],
-      "examples": [
-        "Domani dobbiamo partire molto presto."
-      ],
-      "category": "travel",
-      "difficulty": 2,
-      "examples_en": [
-        "Tomorrow we have to leave very early."
       ]
     },
     {
@@ -1151,20 +1136,6 @@
       ]
     },
     {
-      "word": "costare",
-      "translations": [
-        "to cost"
-      ],
-      "examples": [
-        "Quanto può costare un taxi per l'aeroporto?"
-      ],
-      "category": "shopping",
-      "difficulty": 2,
-      "examples_en": [
-        "How much might a taxi to the airport cost?"
-      ]
-    },
-    {
       "word": "sconto",
       "translations": [
         "discount"
@@ -1204,21 +1175,6 @@
       "difficulty": 2,
       "examples_en": [
         "The second coffee is free."
-      ]
-    },
-    {
-      "word": "cassa",
-      "translations": [
-        "checkout",
-        "till"
-      ],
-      "examples": [
-        "La fila alla cassa è lunga."
-      ],
-      "category": "shopping",
-      "difficulty": 3,
-      "examples_en": [
-        "The queue at the checkout is long."
       ]
     },
     {
@@ -1493,6 +1449,20 @@
       "difficulty": 3,
       "examples_en": [
         "I want to return these shoes, they're tight."
+      ]
+    },
+    {
+      "word": "spendere",
+      "translations": [
+        "to spend"
+      ],
+      "examples": [
+        "Spendo troppo in libri."
+      ],
+      "category": "shopping",
+      "difficulty": 2,
+      "examples_en": [
+        "I spend too much on books."
       ]
     },
     {
@@ -1866,6 +1836,90 @@
       "difficulty": 3,
       "examples_en": [
         "I prefer the dark blue trousers."
+      ]
+    },
+    {
+      "word": "tasca",
+      "translations": [
+        "pocket"
+      ],
+      "examples": [
+        "Ho messo le chiavi in tasca."
+      ],
+      "category": "clothing",
+      "difficulty": 2,
+      "examples_en": [
+        "I put the keys in my pocket."
+      ]
+    },
+    {
+      "word": "cotone",
+      "translations": [
+        "cotton"
+      ],
+      "examples": [
+        "Questa maglietta è di cotone."
+      ],
+      "category": "clothing",
+      "difficulty": 2,
+      "examples_en": [
+        "This T-shirt is made of cotton."
+      ]
+    },
+    {
+      "word": "lana",
+      "translations": [
+        "wool"
+      ],
+      "examples": [
+        "D'inverno porto un maglione di lana."
+      ],
+      "category": "clothing",
+      "difficulty": 2,
+      "examples_en": [
+        "In winter I wear a wool jumper."
+      ]
+    },
+    {
+      "word": "orecchini",
+      "translations": [
+        "earrings"
+      ],
+      "examples": [
+        "Mia sorella ha comprato degli orecchini nuovi."
+      ],
+      "category": "clothing",
+      "difficulty": 2,
+      "examples_en": [
+        "My sister bought some new earrings."
+      ]
+    },
+    {
+      "word": "cravatta",
+      "translations": [
+        "tie"
+      ],
+      "examples": [
+        "Per il colloquio ho messo la cravatta."
+      ],
+      "category": "clothing",
+      "difficulty": 2,
+      "examples_en": [
+        "I wore a tie for the interview."
+      ]
+    },
+    {
+      "word": "ciabatte",
+      "translations": [
+        "slippers"
+      ],
+      "examples": [
+        "A casa mi metto sempre le ciabatte."
+      ],
+      "category": "clothing",
+      "difficulty": 2,
+      "examples_en": [
+        "At home I always put my slippers on."
       ]
     },
     {
@@ -2267,6 +2321,35 @@
       ]
     },
     {
+      "word": "allergia",
+      "translations": [
+        "allergy"
+      ],
+      "examples": [
+        "Soffro di allergia ai gatti."
+      ],
+      "category": "health",
+      "difficulty": 3,
+      "examples_en": [
+        "I'm allergic to cats."
+      ]
+    },
+    {
+      "word": "sciroppo",
+      "translations": [
+        "syrup",
+        "cough mixture"
+      ],
+      "examples": [
+        "Il medico mi ha dato uno sciroppo per la tosse."
+      ],
+      "category": "health",
+      "difficulty": 2,
+      "examples_en": [
+        "The doctor gave me a cough syrup."
+      ]
+    },
+    {
       "word": "stanza",
       "translations": [
         "room"
@@ -2278,20 +2361,6 @@
       "difficulty": 2,
       "examples_en": [
         "This room is too small for two."
-      ]
-    },
-    {
-      "word": "bagno",
-      "translations": [
-        "bathroom"
-      ],
-      "examples": [
-        "Il bagno è in fondo al corridoio."
-      ],
-      "category": "housing",
-      "difficulty": 2,
-      "examples_en": [
-        "The bathroom is at the end of the corridor."
       ]
     },
     {
@@ -2711,6 +2780,92 @@
       ]
     },
     {
+      "word": "scaffale",
+      "translations": [
+        "shelf"
+      ],
+      "examples": [
+        "I libri sono sullo scaffale in alto."
+      ],
+      "category": "housing",
+      "difficulty": 2,
+      "examples_en": [
+        "The books are on the top shelf."
+      ]
+    },
+    {
+      "word": "lampada",
+      "translations": [
+        "lamp"
+      ],
+      "examples": [
+        "Ho acceso la lampada per leggere."
+      ],
+      "category": "housing",
+      "difficulty": 2,
+      "examples_en": [
+        "I switched on the lamp to read."
+      ]
+    },
+    {
+      "word": "cuscino",
+      "translations": [
+        "pillow",
+        "cushion"
+      ],
+      "examples": [
+        "Questo cuscino è troppo morbido."
+      ],
+      "category": "housing",
+      "difficulty": 2,
+      "examples_en": [
+        "This pillow is too soft."
+      ]
+    },
+    {
+      "word": "coperta",
+      "translations": [
+        "blanket"
+      ],
+      "examples": [
+        "Di notte ho freddo, mi serve un'altra coperta."
+      ],
+      "category": "housing",
+      "difficulty": 2,
+      "examples_en": [
+        "I'm cold at night, I need another blanket."
+      ]
+    },
+    {
+      "word": "lavandino",
+      "translations": [
+        "sink",
+        "washbasin"
+      ],
+      "examples": [
+        "Ho lasciato i piatti nel lavandino."
+      ],
+      "category": "housing",
+      "difficulty": 2,
+      "examples_en": [
+        "I left the dishes in the sink."
+      ]
+    },
+    {
+      "word": "trasloco",
+      "translations": [
+        "move (to a new home)"
+      ],
+      "examples": [
+        "Il trasloco è durato tutto il giorno."
+      ],
+      "category": "housing",
+      "difficulty": 3,
+      "examples_en": [
+        "The move took all day."
+      ]
+    },
+    {
       "word": "part-time",
       "translations": [
         "part-time"
@@ -3038,20 +3193,6 @@
       "difficulty": 2,
       "examples_en": [
         "My university is in the centre."
-      ]
-    },
-    {
-      "word": "studente",
-      "translations": [
-        "student"
-      ],
-      "examples": [
-        "Sono uno studente di ingegneria."
-      ],
-      "category": "education",
-      "difficulty": 2,
-      "examples_en": [
-        "I'm an engineering student."
       ]
     },
     {
@@ -3487,35 +3628,6 @@
       ]
     },
     {
-      "word": "musica",
-      "translations": [
-        "music"
-      ],
-      "examples": [
-        "Ascolto musica mentre lavoro."
-      ],
-      "category": "leisure",
-      "difficulty": 1,
-      "examples_en": [
-        "I listen to music while I work."
-      ]
-    },
-    {
-      "word": "film",
-      "translations": [
-        "film",
-        "movie"
-      ],
-      "examples": [
-        "Il film dura due ore."
-      ],
-      "category": "leisure",
-      "difficulty": 1,
-      "examples_en": [
-        "The film lasts two hours."
-      ]
-    },
-    {
       "word": "pianoforte",
       "translations": [
         "piano"
@@ -3541,20 +3653,6 @@
       "difficulty": 2,
       "examples_en": [
         "My sister loves drawing animals."
-      ]
-    },
-    {
-      "word": "sport",
-      "translations": [
-        "sport"
-      ],
-      "examples": [
-        "Faccio sport tre volte a settimana."
-      ],
-      "category": "leisure",
-      "difficulty": 1,
-      "examples_en": [
-        "I do sport three times a week."
       ]
     },
     {
@@ -3726,6 +3824,21 @@
       "difficulty": 3,
       "examples_en": [
         "I'm a Juventus fan."
+      ]
+    },
+    {
+      "word": "festa",
+      "translations": [
+        "festival",
+        "party"
+      ],
+      "examples": [
+        "La festa del paese è ad agosto."
+      ],
+      "category": "leisure",
+      "difficulty": 2,
+      "examples_en": [
+        "The village festival is in August."
       ]
     },
     {
@@ -3968,20 +4081,6 @@
       "difficulty": 2,
       "examples_en": [
         "In summer we swim in the lake."
-      ]
-    },
-    {
-      "word": "mare",
-      "translations": [
-        "sea"
-      ],
-      "examples": [
-        "Il mare oggi è calmo."
-      ],
-      "category": "nature",
-      "difficulty": 2,
-      "examples_en": [
-        "The sea is calm today."
       ]
     },
     {
@@ -4786,62 +4885,6 @@
       "difficulty": 3,
       "examples_en": [
         "I need to print my boarding pass."
-      ]
-    },
-    {
-      "word": "svegliarsi",
-      "translations": [
-        "to wake up"
-      ],
-      "examples": [
-        "È difficile svegliarsi presto d'inverno."
-      ],
-      "category": "verbs",
-      "difficulty": 2,
-      "examples_en": [
-        "It's hard to wake up early in winter."
-      ]
-    },
-    {
-      "word": "alzarsi",
-      "translations": [
-        "to get up"
-      ],
-      "examples": [
-        "La domenica non c'è bisogno di alzarsi presto."
-      ],
-      "category": "verbs",
-      "difficulty": 2,
-      "examples_en": [
-        "On Sundays there's no need to get up early."
-      ]
-    },
-    {
-      "word": "lavarsi",
-      "translations": [
-        "to wash (yourself)"
-      ],
-      "examples": [
-        "Prima di mangiare bisogna lavarsi le mani."
-      ],
-      "category": "verbs",
-      "difficulty": 2,
-      "examples_en": [
-        "Before eating you have to wash your hands."
-      ]
-    },
-    {
-      "word": "vestirsi",
-      "translations": [
-        "to get dressed"
-      ],
-      "examples": [
-        "Fa freddo, è meglio vestirsi pesante."
-      ],
-      "category": "verbs",
-      "difficulty": 2,
-      "examples_en": [
-        "It's cold, it's best to dress warmly."
       ]
     },
     {
@@ -6020,6 +6063,92 @@
       "difficulty": 2,
       "examples_en": [
         "Luckily I had my umbrella."
+      ]
+    },
+    {
+      "word": "invece",
+      "translations": [
+        "instead"
+      ],
+      "examples": [
+        "Volevo un tè, invece ho preso un caffè."
+      ],
+      "category": "basics",
+      "difficulty": 2,
+      "examples_en": [
+        "I wanted a tea, but I had a coffee instead."
+      ]
+    },
+    {
+      "word": "quasi",
+      "translations": [
+        "almost"
+      ],
+      "examples": [
+        "Il film è quasi finito."
+      ],
+      "category": "basics",
+      "difficulty": 2,
+      "examples_en": [
+        "The film is almost over."
+      ]
+    },
+    {
+      "word": "entrambi",
+      "translations": [
+        "both"
+      ],
+      "examples": [
+        "Ho due fratelli: entrambi vivono a Roma."
+      ],
+      "category": "basics",
+      "difficulty": 3,
+      "examples_en": [
+        "I have two brothers: both live in Rome."
+      ]
+    },
+    {
+      "word": "tranne",
+      "translations": [
+        "except"
+      ],
+      "examples": [
+        "Lavoro tutti i giorni tranne la domenica."
+      ],
+      "category": "basics",
+      "difficulty": 2,
+      "examples_en": [
+        "I work every day except Sunday."
+      ]
+    },
+    {
+      "word": "infatti",
+      "translations": [
+        "in fact",
+        "indeed"
+      ],
+      "examples": [
+        "Avevo fame, infatti ho mangiato tutto."
+      ],
+      "category": "basics",
+      "difficulty": 3,
+      "examples_en": [
+        "I was hungry; in fact, I ate everything."
+      ]
+    },
+    {
+      "word": "magari",
+      "translations": [
+        "maybe",
+        "I wish"
+      ],
+      "examples": [
+        "Domani magari andiamo al mare."
+      ],
+      "category": "basics",
+      "difficulty": 2,
+      "examples_en": [
+        "Maybe we'll go to the seaside tomorrow."
       ]
     }
   ]

@@ -19,6 +19,7 @@ import { CUE_MS, playCue, primeSounds } from "@/lib/sounds";
 import { autoSpeak, stopSpeaking } from "@/lib/speech";
 import type { PublicExercise, PublicStep, StepAnswerResult } from "@/lib/path/types";
 import type { UnitProgress } from "@/lib/path/planner";
+import { countLine } from "@/lib/path/count-line";
 import { ErrorBox } from "@/components/crt";
 import { Loading } from "@/components/activity-shell";
 import { AnswerInput } from "@/components/answer-input";
@@ -110,7 +111,7 @@ export function StepRunner({ language, challenge }: { language: string; challeng
   const [result, setResult] = useState<StepAnswerResult | null>(null);
   const [checking, setChecking] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [tally, setTally] = useState({ total: 0, correct: 0, points: 0 });
+  const [tally, setTally] = useState({ total: 0, correct: 0, points: 0, otherForm: 0, misspelt: 0 });
   const [finish, setFinish] = useState<Finish | null>(null);
   const [finishing, setFinishing] = useState(false);
 
@@ -127,7 +128,7 @@ export function StepRunner({ language, challenge }: { language: string; challeng
     setAnswer("");
     setChosen(null);
     setResult(null);
-    setTally({ total: 0, correct: 0, points: 0 });
+    setTally({ total: 0, correct: 0, points: 0, otherForm: 0, misspelt: 0 });
     try {
       const next = await postJson<PublicStep>("/api/steps", challenge ? { challenge } : {});
       setStep(next);
@@ -187,6 +188,9 @@ export function StepRunner({ language, challenge }: { language: string; challeng
       total: prev.total + (retry ? 0 : 1),
       correct: prev.correct + (right && !retry ? 1 : 0),
       points: prev.points + graded.points,
+      // Near misses rejected for a wrong ending (#70), for the owner's weekly look at their effect.
+      otherForm: prev.otherForm + (graded.endingMiss === "otherForm" ? 1 : 0),
+      misspelt: prev.misspelt + (graded.endingMiss === "misspelt" ? 1 : 0),
     }));
   }
 
@@ -244,6 +248,7 @@ export function StepRunner({ language, challenge }: { language: string; challeng
           pointsEarned: tally.points,
           durationSec: Math.round((Date.now() - startedAt.current) / 1000),
           challenge: step.challenge || undefined,
+          endingMisses: { otherForm: tally.otherForm, misspelt: tally.misspelt },
         }),
       );
       playCue("done");
@@ -734,13 +739,21 @@ function StepDone({
       ) : null}
 
       <div>
-        <p className="flex justify-between text-sm">
+        <p className="flex flex-wrap justify-between gap-x-3 text-sm">
           <span>
             <span className="text-[var(--crt-fg-bright)]">{unit.code}</span> · {unit.title}
           </span>
-          <span className="text-[var(--crt-fg-dim)]">
-            {percent}% · {unit.learned} of {unit.total} learned
-          </span>
+          <span className="text-[var(--crt-fg-dim)]">{percent}%</span>
+        </p>
+        <p className="mt-1 text-xs text-[var(--crt-fg-dim)]">
+          {countLine(
+            { done: unit.learned, onTheWay: unit.onTheWay, notMet: unit.notMet },
+            "",
+            "",
+            "learned",
+            "not met yet",
+            "nothing new",
+          )}
         </p>
         <div className="mt-2 h-3 border border-[var(--crt-rule)]">
           <div className="h-full bg-[var(--crt-accent)]" style={{ width: `${percent}%` }} />
