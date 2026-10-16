@@ -89,6 +89,11 @@ commit.
   ("finished Langue's A1 course · not an exam result") can be quoted.
 - **#93 (keys stay put):** lifts the "counts never drop" HOLD.
 - **#106 (real-word typos):** removes limit (2) from the endings claim.
+- **#107 (ending note wording):** the misspelt-ending note becomes "Check the
+  ending: «…»". Update the FAQ's "check the ending" answer, which quotes
+  "Check the spelling of the ending", and the what-is/invite/FAQ sources.
+- **#105 (typos in the last three letters forgiven again):** widen the typo
+  row back from "the middle of a word", and the FAQ's "close" answer with it.
 - **Done 2026-10-16:** #96 (bars) and #102 (endings), deployed a81c9cb. The
   switch-over was made in one commit: endings LIVE; typo rule narrowed to the
   middle of a word; bars HOLD lifted; what-is, FAQ and what's-new updated.
