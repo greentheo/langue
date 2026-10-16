@@ -39,7 +39,7 @@ in the repo or an issue.
 None relayed yet. Found while checking claims instead:
 - #70: grading passes wrong agreement and tense endings as typos. **Fixed by #102, deployed 2026-10-16 (a81c9cb)**; the endings claim is now LIVE.
 - #72: front page and invite email call Langue an "AI tutor".
-- #73: reminders warn of a streak loss that can't happen.
+- #73: reminders warn of a streak loss that can't happen. **Owner decided 2026-10-16: gain framing, no threats** (also binds #60); not shipped yet.
 - #74 (needs-owner): should child learners see the AI tools?
 - #75 (needs-owner): how marketing gets its numbers.
 - #76: no way back in after a forgotten password.

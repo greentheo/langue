@@ -53,7 +53,7 @@ than the vision:
 
 | Claim | Status | Source |
 |---|---|---|
-| Your streak is never taken away. It counts the days you've practised; a break doesn't reset it. | LIVE | `web/src/lib/standings.ts` `liveStreak` (unchanged), `nextStreak` (+1 after any gap). But the reminder notifications still say it can "slip" (#73). |
+| Your streak is never taken away. It counts the days you've practised; a break doesn't reset it. | LIVE | `web/src/lib/standings.ts` `liveStreak` (unchanged), `nextStreak` (+1 after any gap). Until #73 ships, the reminder notifications still say it can "slip". The owner decided on gain framing, no threats (#73). |
 | Progress bars only go up: each unit's bar and the level's. | LIVE | `web/src/lib/path/planner.ts` `unitProgress` counts best stages and keeps `UnitMark.bestPercent`; the level percent is the mean of the unit percents (`web/src/lib/path/levels.ts`). Since #96 (closes #91, deployed a81c9cb) the level page's Words, Phrases, Grammar and Speaking rows are counts ("learned · not met yet", "on the way"), not bars, so no drawn bar can shrink when content is added. The page says "What you've learned only goes up … bars never go backwards." |
 | The *counts* of what you've learned never drop. | **HOLD — #93** | A count drops if an item's key changes (a respelt or removed word). #93 (open) makes renames carry progress and removals need acknowledging. Say "bars", not "everything you've learned", until #93 ships. |
 | Reminders only if you turn them on: after two quiet days, then five and twelve, then they stop. Early evening only. | LIVE | `web/src/lib/reminders.ts` `REMINDER_DAYS = [2, 5, 12]`, 5–8pm local; opt-in "Turn on reminders" in `web/src/components/pwa.tsx`. iPhone: only when Langue is on the home screen. |
@@ -92,6 +92,10 @@ commit.
 - **#107 (ending note wording):** the misspelt-ending note becomes "Check the
   ending: «…»". Update the FAQ's "check the ending" answer, which quotes
   "Check the spelling of the ending", and the what-is/invite/FAQ sources.
+- **#73 (gain-framed reminders):** remove the ⚠ #73 notes from the invite and
+  what's-new drafts, drop the FAQ's "(Today's reminder wording…)" aside, and
+  check the new reminder texts promise only what the learner's next unit
+  teaches (as #73's design says).
 - **#74 (per-learner AI switch, child-safety instructions):** rewrite the FAQ's
   "Will my child talk to an AI?" answer to say where the switch is and who
   can set it. Lift the HOLD row.

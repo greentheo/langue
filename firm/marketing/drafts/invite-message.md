@@ -11,9 +11,9 @@ Parts in `{braces}` are filled in by the app from the same inputs it uses
 today. `{languages}` is the app's list, e.g. "Italian, Spanish, French and
 Portuguese".
 
-⚠ **Depends on #73:** "your streak is never taken away" is true, but the
-reminder notifications still say the streak can "slip". Send as is, drop the
-phrase, or decide #73 first. It's your call (#73 is with you).
+⚠ **#73, decided (gain framing); ships with #73:** "your streak is never taken
+away" is true, but until #73 ships, today's reminders still say the streak can
+"slip". Send now and accept the mismatch for a while, or wait for #73.
 
 ---
 
@@ -124,8 +124,9 @@ vision "What we won't do". Not "free forever". Verified.
 
 CLAIM: "your streak is never taken away"
 SOURCE: web/src/lib/standings.ts liveStreak / nextStreak. Verified.
-CAVEAT: the reminder notifications still say it can "slip". #73 is the owner's
-decision, so the line is marked at the top of this draft.
+CAVEAT: until #73 ships, the reminder notifications still say it can "slip". The
+owner decided on gain framing with no threats (#73, comment 6219169112), so the
+reminders and this line will agree once it ships.
 
 CLAIM: "a password (at least 10 characters)"
 SOURCE: RegisterSchema in web/src/lib/auth/actions.ts (.min(10)). Verified.

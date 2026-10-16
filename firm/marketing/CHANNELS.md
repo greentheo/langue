@@ -18,7 +18,7 @@ Langue.
 | **FAQ** (learners and parents) | Yes. | Draft only. | Questions people still ask after reading it, relayed by the owner. | Draft in `drafts/faq.md`. |
 | **Weekly "what's new"** (group chat) | No. | Draft only; the owner posts it. | Replies and feedback the owner relays; each becomes an issue. | First draft: `drafts/whats-new-2026-10-15.md`. |
 | **Leaderboards** (per group) | No (in-app, per learner). | No. | Group size per code (funnel.sql §8, owner's eyes only). | Live. |
-| **Streak reminders** (web push) | No. | Wording via issue only (#73). | Learners with reminders on (funnel.sql §7). Opens and returns: unmeasured until #52. | Live; wording contradicts "never lost" (#73). |
+| **Streak reminders** (web push) | No. | Wording via issue only: #73, decided (gain framing), not shipped yet. | Learners with reminders on (funnel.sql §7). Opens and returns: unmeasured until #52. | Live; wording contradicts "never lost" (#73). |
 | **Learning events and dashboard** (#52) | Not built. | Not built. | Who comes back, which features get used. | Until it ships, say "unmeasured"; never estimate. |
 
 ## Not channels (on purpose)
