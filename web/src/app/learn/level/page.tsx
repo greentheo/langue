@@ -13,8 +13,8 @@ import {
   levelAchievement,
   levelProgress,
   levelsOf,
-  type Bar,
 } from "@/lib/path/levels";
+import { countLine } from "@/lib/path/count-line";
 import { loadMarks, loadStates, rememberProgress, seedFromLessons } from "@/lib/path/store";
 import { Panel } from "@/components/crt";
 
@@ -36,10 +36,11 @@ function timeLeft(days: number): string {
 }
 
 /**
- * How far along a CEFR level the learner is: one bar each for words,
- * phrases, grammar and speaking, every unit with its level-up challenge, time
- * practised against the rough hours the level takes, and what the level
- * means. Every bar counts best stages, so nothing here ever goes down.
+ * How far along a CEFR level the learner is: what they've learned of its
+ * words, phrases, grammar and speaking, every unit with its level-up
+ * challenge, time practised against the rough hours the level takes, and what
+ * the level means. The bars are protected by unit marks and the counts only
+ * grow, so nothing here ever goes down.
  */
 export default async function LevelPage({
   searchParams,
@@ -135,14 +136,16 @@ export default async function LevelPage({
 
       <Panel title="What you know">
         <div className="space-y-4">
-          <BarRow name="Words" bar={progress.words} unit="learned" />
-          <BarRow name="Phrases" bar={progress.phrases} unit="learned" />
-          <BarRow name="Grammar" bar={progress.grammar} unit="ideas learned" />
-          <BarRow name="Speaking" bar={progress.speaking} unit="conversations" />
+          <CountRow name="Words" line={countLine(progress.words, "word", "words", "learned", "not met yet", "nothing new")} />
+          <CountRow name="Phrases" line={countLine(progress.phrases, "phrase", "phrases", "learned", "not met yet", "nothing new")} />
+          <CountRow name="Grammar" line={countLine(progress.grammar, "idea", "ideas", "learned", "not met yet", "nothing new")} />
+          <CountRow name="Speaking" line={countLine(progress.speaking, "conversation", "conversations", "played", "to go", "all played")} />
         </div>
         <p className="mt-4 text-xs text-[var(--crt-fg-dim)]">
           Learned means you can produce it — type the word, build the phrase, answer the idea&apos;s
-          questions — on more than one day. Bars never go backwards.
+          questions — on more than one day. What you&apos;ve learned only goes up: new words and
+          phrases join what you haven&apos;t met yet, and bars never go backwards. On the way
+          means you&apos;ve met it and are still practising it.
         </p>
       </Panel>
 
@@ -201,18 +204,11 @@ export default async function LevelPage({
   );
 }
 
-function BarRow({ name, bar, unit }: { name: string; bar: Bar; unit: string }) {
+function CountRow({ name, line }: { name: string; line: string }) {
   return (
-    <div>
-      <p className="flex items-baseline justify-between text-sm">
-        <span className="text-[var(--crt-fg-bright)]">{name}</span>
-        <span className="text-xs text-[var(--crt-fg-dim)]">
-          {bar.done} of {bar.total} {unit}
-        </span>
-      </p>
-      <div className="mt-1 h-2 border border-[var(--crt-rule)]">
-        <div className="h-full bg-[var(--crt-accent)]" style={{ width: `${bar.percent}%` }} />
-      </div>
-    </div>
+    <p className="flex flex-wrap items-baseline justify-between gap-x-3 text-sm">
+      <span className="text-[var(--crt-fg-bright)]">{name}</span>
+      <span className="text-xs text-[var(--crt-fg-dim)]">{line}</span>
+    </p>
   );
 }

@@ -11,7 +11,8 @@ import {
   newItemState,
   rungOf,
 } from "./schedule";
-import { completedLevels, daysToFinish, levelProgress } from "./levels";
+import { certificateCounts, completedLevels, daysToFinish, levelCounts, levelProgress } from "./levels";
+import { countLine as countLineAsShown } from "./count-line";
 import {
   dialogueReady,
   firstOpenUnit,
@@ -438,11 +439,11 @@ describe("planStep", () => {
     const progress = levelProgress(course, states, "a1");
     assert.equal(progress.units.length, 4);
     assert.equal(progress.words.done, 6);
-    assert.equal(progress.words.total, 24);
+    assert.equal(progress.words.notMet, 18);
     assert.equal(progress.grammar.done, 2);
     assert.equal(progress.percent, 25);
     assert.equal(progress.complete, false);
-    assert.equal(progress.speaking.total, 1);
+    assert.equal(progress.speaking.notMet, 1);
     assert.equal(progress.speaking.done, 0);
 
     for (const unit of course.units) for (const key of unit.itemKeys) states.set(key, state({ stage: 3, bestStage: 3 }));
@@ -484,6 +485,80 @@ describe("planStep", () => {
     assert.equal(nextIntro(course, states, new Set(), marks)?.unitIndex, 1, "new material comes from unit 1");
     const plan = planStep({ course, states, now: NOW, recentAccuracy: 1, random: steady, marks });
     assert.ok(plan.exercises.filter((e) => e.role === "new").every((e) => course.items.get(e.keys[0])?.unitIndex !== 0));
+  });
+
+  test("adding a word and a role-play to a level never lowers a number on the level page", () => {
+    // The real Italian course; a learner who has learned A1's first two units and played one role-play.
+    const real = getCourse("italian");
+    const states = new Map<string, ItemState>();
+    for (const unit of real.units.slice(0, 2)) for (const key of unit.itemKeys) states.set(key, state({ stage: 3, bestStage: 3 }));
+    // A few of A1.3's on the way: met, not yet learned (one answered wrong the first time).
+    for (const key of real.units[2].itemKeys.slice(0, 6)) states.set(key, state({ stage: 1, bestStage: 1 }));
+    states.set(real.units[2].itemKeys[6], state());
+    const played = [...real.dialogues.values()].find((dialogue) => dialogue.unitIndex === 0)!;
+    states.set(played.key, state({ right: 1 }));
+    const before = levelProgress(real, states, "a1");
+    const metNotLearned = before.words.onTheWay! + before.phrases.onTheWay! + before.grammar.onTheWay!;
+    assert.equal(metNotLearned, 7, "on the way: met but not learned, a first wrong answer included");
+    const marks = new Map(before.units.map((unit) => [unit.id, { bestPercent: unit.percent, complete: unit.complete }]));
+
+    // The same course after a content change: one more word in A1.1 and one more role-play in A1.2.
+    const someWord = [...real.items.values()].find((item) => item.kind === "word")!;
+    const added: Item = { ...someWord, key: "w:italian:nuovissimo", unitIndex: 0, target: "nuovissimo" } as Item;
+    const grown: Course = {
+      ...real,
+      units: real.units.map((unit, index) => (index === 0 ? { ...unit, itemKeys: [...unit.itemKeys, added.key] } : unit)),
+      items: new Map([...real.items, [added.key, added]]),
+      dialogues: new Map([...real.dialogues, ["d:italian-a1-new", { ...played, key: "d:italian-a1-new", unitIndex: 1 }]]),
+    };
+    const after = levelProgress(grown, states, "a1", marks);
+
+    for (const kind of ["words", "phrases", "grammar", "speaking"] as const) {
+      assert.equal(after[kind].done, before[kind].done, `${kind} learned`);
+      assert.equal(after[kind].onTheWay, before[kind].onTheWay, `${kind} on the way`);
+    }
+    for (const [index, unit] of after.units.entries()) {
+      assert.equal(unit.learned, before.units[index].learned, `${unit.code} learned`);
+      assert.equal(unit.onTheWay, before.units[index].onTheWay, `${unit.code} on the way`);
+    }
+    assert.equal(after.units[0].notMet, before.units[0].notMet + 1, "the new word joins its unit's not met yet");
+    assert.equal(after.words.notMet, before.words.notMet + 1, "the new word is not met yet");
+    assert.equal(after.speaking.notMet, before.speaking.notMet + 1, "the new role-play is to go");
+    assert.ok(after.percent >= before.percent, "the level bar is protected by unit marks");
+    for (const [index, unit] of after.units.entries()) assert.ok(unit.percent >= before.units[index].percent, unit.code);
+  });
+
+  test("a certificate prints the numbers it was awarded with, whatever the course becomes", () => {
+    const states = new Map<string, ItemState>();
+    for (const unit of course.units) for (const key of unit.itemKeys) states.set(key, state({ stage: 3, bestStage: 3 }));
+    states.set("d:chat", state({ right: 1 }));
+    const awarded = levelCounts(levelProgress(course, states, "a1"));
+    assert.deepEqual(awarded, { words: 24, phrases: 0, grammar: 8, conversations: 1 });
+
+    // Later the live numbers differ (content changed, keys moved): the stored ones are printed.
+    const later = levelProgress(course, new Map(), "a1");
+    assert.deepEqual(certificateCounts(awarded, later), awarded);
+    // A certificate from before counts were stored falls back to the live numbers.
+    assert.deepEqual(certificateCounts(null, later), levelCounts(later));
+    assert.deepEqual(certificateCounts({ words: "lots" }, later), levelCounts(later));
+  });
+
+  test("count labels read naturally for none, one and many", () => {
+    // The separator's leading space doesn't break (see countLine); compare as plain text.
+    const countLine = (...args: Parameters<typeof countLineAsShown>) => countLineAsShown(...args).replaceAll("\u00a0", " ");
+    const words = (done: number, onTheWay: number, notMet: number) =>
+      countLine({ done, onTheWay, notMet }, "word", "words", "learned", "not met yet", "nothing new");
+    assert.equal(words(1, 41, 458), "1 word learned · 41 on the way · 458 not met yet");
+    assert.equal(words(438, 20, 0), "438 words learned · 20 on the way · nothing new");
+    assert.equal(words(438, 0, 0), "438 words learned · nothing new");
+    assert.equal(words(0, 0, 1), "no words learned yet · 1 not met yet");
+    // A unit mixes words, phrases and ideas: no noun.
+    assert.equal(countLine({ done: 12, onTheWay: 5, notMet: 20 }, "", "", "learned", "not met yet", "nothing new"), "12 learned · 5 on the way · 20 not met yet");
+    assert.equal(countLine({ done: 0, onTheWay: 3, notMet: 0 }, "", "", "learned", "not met yet", "nothing new"), "nothing learned yet · 3 on the way · nothing new");
+    assert.equal(
+      countLine({ done: 12, notMet: 4 }, "conversation", "conversations", "played", "to go", "all played"),
+      "12 conversations played · 4 to go",
+    );
   });
 
   test("days to finish at the learner's pace, once there is something to go on", () => {

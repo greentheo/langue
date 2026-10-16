@@ -19,6 +19,7 @@ import { CUE_MS, playCue, primeSounds } from "@/lib/sounds";
 import { autoSpeak, stopSpeaking } from "@/lib/speech";
 import type { PublicExercise, PublicStep, StepAnswerResult } from "@/lib/path/types";
 import type { UnitProgress } from "@/lib/path/planner";
+import { countLine } from "@/lib/path/count-line";
 import { ErrorBox } from "@/components/crt";
 import { Loading } from "@/components/activity-shell";
 import { AnswerInput } from "@/components/answer-input";
@@ -734,13 +735,21 @@ function StepDone({
       ) : null}
 
       <div>
-        <p className="flex justify-between text-sm">
+        <p className="flex flex-wrap justify-between gap-x-3 text-sm">
           <span>
             <span className="text-[var(--crt-fg-bright)]">{unit.code}</span> · {unit.title}
           </span>
-          <span className="text-[var(--crt-fg-dim)]">
-            {percent}% · {unit.learned} of {unit.total} learned
-          </span>
+          <span className="text-[var(--crt-fg-dim)]">{percent}%</span>
+        </p>
+        <p className="mt-1 text-xs text-[var(--crt-fg-dim)]">
+          {countLine(
+            { done: unit.learned, onTheWay: unit.onTheWay, notMet: unit.notMet },
+            "",
+            "",
+            "learned",
+            "not met yet",
+            "nothing new",
+          )}
         </p>
         <div className="mt-2 h-3 border border-[var(--crt-rule)]">
           <div className="h-full bg-[var(--crt-accent)]" style={{ width: `${percent}%` }} />
