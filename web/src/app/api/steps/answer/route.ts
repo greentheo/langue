@@ -52,6 +52,7 @@ function graded(result: GradeResult, level: string, answers: string[], why: stri
     verdict: result.verdict,
     points: pointsForResult(result, difficultyForLevel(level)),
     note: result.note,
+    endingMiss: result.endingMiss,
     answers,
     why,
   };
@@ -85,7 +86,7 @@ async function roleplayTurn(
 
   // A picked reply is right or wrong; a typed one gets typo and accent leniency.
   const result = body.typed
-    ? gradeReply(body.answer, turn.answers)
+    ? gradeReply(body.answer, turn.answers, language)
     : body.answer.trim() === turn.answers[0]
       ? RIGHT
       : WRONG;
@@ -124,8 +125,15 @@ function gradeItem(course: Course, item: Item, body: Body, level: string): Grade
     if (mode !== "question" || !practice || !item.questions.some((q) => q.index === question)) {
       throw new BadRequestError("That question does not belong to this idea.");
     }
-    const grade = gradePracticeItem(practice, answer, level);
-    return { verdict: grade.verdict, points: grade.points, note: grade.note, answers: grade.answers, why: grade.why };
+    const grade = gradePracticeItem(practice, answer, level, course.language);
+    return {
+      verdict: grade.verdict,
+      points: grade.points,
+      note: grade.note,
+      endingMiss: grade.endingMiss,
+      answers: grade.answers,
+      why: grade.why,
+    };
   }
 
   const phrase = item.kind === "phrase" ? getPhrase(item.phraseId) : null;
@@ -139,7 +147,7 @@ function gradeItem(course: Course, item: Item, body: Body, level: string): Grade
       return graded(answer.trim() === expected ? RIGHT : WRONG, level, [expected], why);
     }
     case "type":
-      return graded(gradeTargetAnswer(answer, item.accepted), level, [item.target], why);
+      return graded(gradeTargetAnswer(answer, item.accepted, course.language), level, [item.target], why);
     case "build":
       if (item.kind !== "phrase" || !item.build) throw new BadRequestError("This item is not built from tiles.");
       return gradeBuild(course, body, [item.build], level);
@@ -147,7 +155,7 @@ function gradeItem(course: Course, item: Item, body: Body, level: string): Grade
       const sentence = body.sentence ? course.sentences.get(body.sentence) : undefined;
       const blank = sentence && item.kind === "word" && item.clozes.includes(sentence.id) ? blankOut(sentence.target, item.accepted) : null;
       if (!sentence || !blank) throw new BadRequestError("That sentence does not belong to this word.");
-      return graded(gradeTargetAnswer(answer, [blank.answer]), level, [blank.answer]);
+      return graded(gradeTargetAnswer(answer, [blank.answer], course.language), level, [blank.answer]);
     }
     case "reply": {
       const dialogue = body.dialogue ? course.dialogues.get(body.dialogue) : undefined;
@@ -155,7 +163,7 @@ function gradeItem(course: Course, item: Item, body: Body, level: string): Grade
         throw new BadRequestError("That role-play turn does not use this item.");
       }
       const turn = turnOf(dialogue, body.line);
-      return graded(gradeReply(answer, turn.answers), level, [turn.answers[0]]);
+      return graded(gradeReply(answer, turn.answers, course.language), level, [turn.answers[0]]);
     }
     default:
       throw new BadRequestError("Words and phrases have no lesson questions.");

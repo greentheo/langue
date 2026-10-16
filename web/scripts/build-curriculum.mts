@@ -25,7 +25,7 @@ import {
   LevelFileSchema,
   PhrasesFileSchema,
 } from "../src/lib/curriculum/schema.js";
-import { normalizeKeepingAccents } from "../src/lib/engine/grade.js";
+import { normalizeKeepingAccents } from "../src/lib/engine/normalize.js";
 import type {
   CurriculumCatalog,
   Dialogue,

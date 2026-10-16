@@ -686,7 +686,7 @@ describe("course from the real curriculum", () => {
           const turn = dialogue.lines[line.line];
           if (turn.kind !== "you") continue;
           assert.ok(line.options?.includes(turn.answers[0]), `${dialogue.key}: model answer offered`);
-          const acceptable = line.options!.filter((option) => gradeReply(option, turn.answers).verdict !== "incorrect");
+          const acceptable = line.options!.filter((option) => gradeReply(option, turn.answers, language).verdict !== "incorrect");
           assert.deepEqual(acceptable, [turn.answers[0]], `${dialogue.key} line ${line.line}`);
           assert.ok(line.options!.length >= 2, `${dialogue.key} line ${line.line} has a wrong option`);
         }

@@ -17,7 +17,7 @@ for (const language of ["italian", "spanish", "french", "portuguese"]) {
       for (const lesson of getLevelCurriculum(language, level)?.lessons ?? []) {
         lesson.practice.forEach((item, index) => {
           for (const answer of acceptedAnswers(item).answers) {
-            const grade = gradePracticeItem(item, answer, level);
+            const grade = gradePracticeItem(item, answer, level, language);
             if (grade.verdict !== "correct") problems.push(`${lesson.id} #${index}: "${answer}" → ${grade.verdict}`);
           }
         });
@@ -35,7 +35,7 @@ for (const language of ["italian", "spanish", "french", "portuguese"]) {
         dialogue.lines.forEach((line, index) => {
           if (!("you" in line)) return;
           for (const answer of line.answers.filter((reply) => !reply.includes("*"))) {
-            const verdict = gradeReply(answer, line.answers).verdict;
+            const verdict = gradeReply(answer, line.answers, language).verdict;
             if (verdict !== "correct") problems.push(`${dialogue.id} line ${index}: "${answer}" → ${verdict}`);
           }
         });
