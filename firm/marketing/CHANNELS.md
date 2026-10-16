@@ -1,5 +1,8 @@
 # Channels — where we reach people, and how a number comes out
 
+**No user data until #52's dashboard (owner, #75).** Until then, every
+"how a number comes out" below is a plan, not a practice.
+
 **This repo is public.** Nothing that names or points to a person goes in
 `firm/marketing/`, an issue or a PR: no names, emails, invite codes, code
 notes, or a row that is one identifiable learner. Totals only, and any

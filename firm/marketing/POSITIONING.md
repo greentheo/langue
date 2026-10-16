@@ -76,8 +76,8 @@ than the vision:
 | Some optional extra tools do use AI: the Conversation partner, the Reading, Translation and Fill-in-the-blank exercises, "ask about this lesson", and explanations of a missed flashcard. | LIVE (say it) | As above. Model: `claude-haiku-4-5`, Anthropic's small model (`web/src/lib/engine/model.ts`, default tier `fast`). |
 | What you type into those tools is sent to Anthropic. | LIVE (say it) | `app/api/chat/route.ts` posts the transcript to the model. #63's privacy page will say it too. |
 | AI-written exercises aren't checked the way the course is. | LIVE (say it) | The content checks cover `data/curriculum` and vocabulary only. |
-| The AI tools are labelled as AI in the app. | **CUT** | They aren't ("Talk with a tutor", "graded on meaning", `web/src/app/learn/page.tsx`), and the owner decided on no AI labels in menus (#74). So the FAQ's "Does Langue use AI?" answer is where we say which tools use AI: keep it. |
-| A parent can turn the AI tools off for a child. | **HOLD — #74** | The owner decided on a per-learner switch plus child-safety instructions (#74, in questions). There's no switch until it ships; the FAQ says "no parental switch yet". |
+| The AI tools are labelled as AI in the app. | **CUT** | They aren't ("Talk with a tutor", "graded on meaning", `web/src/app/learn/page.tsx`), and the owner decided on no AI labels in menus (#74). Once #74 ships, the two conversational screens (the conversation partner and "ask the tutor") open with one line, *"Your practice partner is an AI."* AI-written drills, readings, translation grading and flashcard explanations carry none. So the FAQ's "Does Langue use AI?" answer is where we list every AI tool: keep it. |
+| A parent can turn the AI tools off for a child. | **HOLD — #74** | Owner's decision (#74, 2026-10-16): AI stays **on by default for every account, children's included**. A per-learner switch in Settings ("AI features") turns all AI off; with it off, the AI features are simply gone, not replaced. An admin can turn it off and **lock** it. The AI prompts get child-safety instructions. None of that exists until #74 ships; the FAQ says "no parental switch yet". |
 
 ## Waiting on a ship
 
@@ -96,9 +96,16 @@ commit.
   what's-new drafts, drop the FAQ's "(Today's reminder wording…)" aside, and
   check the new reminder texts promise only what the learner's next unit
   teaches (as #73's design says).
-- **#74 (per-learner AI switch, child-safety instructions):** rewrite the FAQ's
-  "Will my child talk to an AI?" answer to say where the switch is and who
-  can set it. Lift the HOLD row.
+- **#74 (per-learner AI switch, child-safety instructions):** lift the HOLD
+  row, check the deployed Settings page wording, then replace the FAQ's
+  "Will my child talk to an AI?" answer with (draft):
+  > Not on the course. Some optional tools (the conversation partner, "ask the
+  > tutor", and some practice exercises) use AI, and they're on by default for
+  > every account. You can turn all AI off for your child in Settings → AI
+  > features, or ask the person who runs Langue to turn it off and lock it.
+  > The conversation screens tell your child their practice partner is an AI.
+  > What's typed into them is sent to Anthropic.
+  Also add the Settings switch to the general "Does Langue use AI?" answer.
 - **#105 (typos in the last three letters forgiven again):** widen the typo
   row back from "the middle of a word", and the FAQ's "close" answer with it.
 - **Done 2026-10-16:** #96 (bars) and #102 (endings), deployed a81c9cb. The

@@ -17,11 +17,12 @@ CHANNELS.md).
 
 ## Numbers
 
-**Unmeasured, by the owner's decision.** On #75 (2026-10-16) the owner said
-"let's not worry about marketing until the dashboard exists… marketing has to be
-generalized for now." So no weekly numbers and no `funnel.sql` runs until #52's
-dashboard exists, and materials stay general. (2026-10-15: marketing can't read
-production, correctly.) `funnel.sql` is ready and checked against the local database: it runs;
+**No user data until #52's dashboard (owner, #75).** The owner, 2026-10-16:
+"Marketing can keep working without a dashboard, it just doesn't need to have
+user data until the dashboard is ready is all." So marketing continues
+(drafts, positioning, materials), but with no numbers and no `funnel.sql`
+runs until #52, and materials stay general. (2026-10-15: marketing can't
+read production, correctly.) `funnel.sql` is ready and checked against the local database: it runs;
 a probe learner with no practice shows up as `never_practised`; counts of 1
 or 2 print as "<3"; and an INSERT added to it is refused ("cannot execute
 INSERT in a read-only transaction").
@@ -44,9 +45,10 @@ None relayed yet. Found while checking claims instead:
 - #75 (needs-owner): how marketing gets its numbers.
 - #76: no way back in after a forgotten password.
 
-## Bets (paused until #52's dashboard; owner, #75)
+## Bets (waiting on #52's dashboard; owner, #75)
 
-These need numbers, so they wait. Keep them as the plan for when the dashboard exists.
+These need user data, so they wait. The rest of marketing doesn't. Keep them as
+the plan for when the dashboard exists.
 
 1. **The new invite message gets people in and keeps them.** Measure, two
    weeks after the owner starts sending it (by #72 or by pasting): codes sent →
