@@ -87,7 +87,7 @@ units:
   - title: How are you?
     lessons: [06-estar]
     situations: [small-talk]
-    categories: [emotions, body, transportation, travel]
+    categories: [emotions, body, health, transportation, travel]
   - title: Numbers and prices
     lessons: [07-numbers]
     situations: [shopping]
@@ -106,4 +106,4 @@ units:
   - title: Your day
     lessons: [14-routine, 15-prepositions]
     situations: [time]
-    categories: [time, weather]
+    categories: [time, weather, daily_routines]
