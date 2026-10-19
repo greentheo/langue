@@ -53,6 +53,7 @@ function graded(result: GradeResult, level: string, answers: string[], why: stri
     points: pointsForResult(result, difficultyForLevel(level)),
     note: result.note,
     endingMiss: result.endingMiss,
+    accentMiss: result.accentMiss,
     answers,
     why,
   };
@@ -131,6 +132,7 @@ function gradeItem(course: Course, item: Item, body: Body, level: string): Grade
       points: grade.points,
       note: grade.note,
       endingMiss: grade.endingMiss,
+      accentMiss: grade.accentMiss,
       answers: grade.answers,
       why: grade.why,
     };

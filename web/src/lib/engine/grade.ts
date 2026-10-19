@@ -8,7 +8,8 @@
  * and explaining mistakes.
  */
 
-import { isKnownForm, keepsEnding } from "./endings";
+import { endingOf, isKnownForm, keepsEnding } from "./endings";
+import { glossOf, isKnownWrittenForm } from "./forms";
 import { normalizeAnswer, normalizeKeepingAccents } from "./normalize";
 
 export { normalizeAnswer, normalizeKeepingAccents };
@@ -119,6 +120,12 @@ export interface GradeResult {
    * of the word ("comemos" for "comimos"), or a slip that makes no word.
    */
   endingMiss?: "otherForm" | "misspelt";
+  /**
+   * An answer right only once accents are ignored: the missing accent made
+   * another form of the word ("parle" for "parlé"), a different word ("e" for
+   * "è"), or no word at all (still close: "perche" for "perché").
+   */
+  accentMiss?: "otherForm" | "otherWord" | "plain";
 }
 
 /** How lenient a grade is. The defaults suit English answers. */
@@ -351,12 +358,65 @@ export function gradeTargetAnswer(
     accepted.find((value) => gradeAnswer(userAnswer, [value], options).verdict === "correct") ??
     accepted[0];
 
+  // Where accents carry meaning they are never stripped (#114): a missing accent that leaves another real word is a mistake.
+  const changed = accentChangesWord(userAnswer, intended, language);
+  if (changed) return { verdict: "incorrect", score: 0, matched: result.matched, note: changed.note, accentMiss: changed.kind };
+
   return {
     verdict: "close",
     score: 80,
     matched: result.matched,
     note: `Watch the accents: "${intended}".`,
+    accentMiss: "plain",
   };
+}
+
+/** A word this short is a word of its own, not a stem and an ending: è/e, tú/tu, está/esta, pôde/pode. */
+const SHORT_WORD = 4;
+
+/** An answer's words as written, without the punctuation around them: "J'ai parlé." → ["J'ai", "parlé"]. */
+function writtenWords(value: string): string[] {
+  return value
+    .replace(/[-‐–—]/g, " ")
+    .split(/\s+/)
+    .map((word) => word.replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N}]+$/gu, ""))
+    .filter(Boolean);
+}
+
+/**
+ * Does a typed word differ from the intended one only in its accents, and is
+ * it, as typed, a word the course uses? Then the accent changed the word. In
+ * the word's ending it's another form of it (parle for parlé, hablo for
+ * habló); elsewhere, or in a short word, a different word (e for è, tu for tú).
+ */
+function accentChangesWord(
+  typed: string,
+  intended: string,
+  language: string,
+): { kind: "otherForm" | "otherWord"; note: string } | null {
+  const intendedWords = writtenWords(intended);
+  for (const typedWord of writtenWords(typed)) {
+    const asTyped = normalizeKeepingAccents(typedWord);
+    const match = intendedWords.find(
+      (word) => normalizeAnswer(word) === normalizeAnswer(typedWord) && normalizeKeepingAccents(word) !== asTyped,
+    );
+    if (!match || !isKnownWrittenForm(asTyped, language)) continue;
+
+    const expected = normalizeKeepingAccents(match);
+    const ending = endingOf(normalizeAnswer(match), language).length;
+    const differ = [...expected].flatMap((letter, i) => (letter !== [...asTyped][i] ? [i] : []));
+    const inEnding = [...expected].length === [...asTyped].length && differ.every((i) => i >= [...expected].length - ending);
+    if (inEnding && [...expected].length > SHORT_WORD) {
+      return { kind: "otherForm", note: `That's another form — the accent is the grammar here: «${intended}».` };
+    }
+    const [meant, said] = [glossOf(expected, language), glossOf(asTyped, language)];
+    const both = meant && said;
+    return {
+      kind: "otherWord",
+      note: `That's a different word — «${match}»${both ? ` (${meant})` : ""}, not «${asTyped}»${both ? ` (${said})` : ""}.`,
+    };
+  }
+  return null;
 }
 
 /** Grade in whichever language the learner is typing. */
