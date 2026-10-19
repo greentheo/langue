@@ -111,6 +111,11 @@ differently, what you filed. Then stop.
 - Never force-push or rewrite `main`.
 - A script that edits several files asserts **every** anchor before writing
   **any** file, so a failed match can't leave half an edit behind.
+- **Squash against your branch's own base** (`git merge-base HEAD origin/main`),
+  never against `origin/main` after it has moved: `git reset --soft origin/main`
+  on a stale branch stages reverts of everything merged since. **Before every
+  push, run `git diff --stat origin/main`** and check that it lists only your
+  files.
 - Never chain a history-changing git command (`commit --amend`, `rebase`,
   `reset`) after one whose exit status you haven't checked: a failed first
   step can make the second rewrite the wrong commit.
