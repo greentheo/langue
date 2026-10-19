@@ -121,10 +121,15 @@ on day 7.
 signed up → activated (finished a first step within 7 days) → week-2 active
 (practised on any of days 7–13).
 
-**The bars are counts of 5, because the dashboard can't show less** (#109:
-a code's row appears at ≥ 5 signups, and smaller breakdowns read "<5"). They
-aren't industry benchmarks. Campaign 001 sets our first baseline, and 002's
-bars come from it.
+**Why the bars are counts of 5:**
+- **Signups:** the code only gets its own row at 5 or more (#109), so 5 is
+  the least we can measure the campaign by.
+- **Week-2 active:** within the row every count is shown (#109, clarified
+  2026-10-19). Here 5 is a choice, not a limit: a third of the 15 invited,
+  still practising in their second week.
+
+Neither is an industry benchmark. Campaign 001 sets our first baseline, and
+002's bars come from it, finer if the numbers support it.
 
 **Read top to bottom; the first row that matches decides:**
 
@@ -132,7 +137,7 @@ bars come from it.
 |---|---|---|
 | **Day 14** | **Fewer than 5 signed up.** The code has no row of its own; the owner reads the code's uses on `/learn/invites`. | **Change the message.** Fewer than a third of people with a reason said yes. Rewrite the personal line and the body (and ask yourself whether the people were right), then run 002 with the new message to a new group. |
 | **Day 21** | **5 or more week-2 active** (at least a third of the 15 still practising in their second week) | **Do more of this.** Campaign 002: the same message to the next group of similar people. |
-| **Day 21** | **5 or more signed up, but week-2 active reads "<5"** | **Stop, and fix the app first.** People came and didn't stay, so more invites would spend goodwill on a leak. #109's tripwires name the stage: *activated under 60% of signups* → first-run experience; *week-2 active under 40% of activated* → onboarding and reminders. Marketing files what the row shows as an issue. Campaigns restart when the fix ships. |
+| **Day 21** | **5 or more signed up, but fewer than 5 week-2 active** | **Stop, and fix the app first.** People came and didn't stay, so more invites would spend goodwill on a leak. #109's tripwires name the stage: *activated under 60% of signups* → first-run experience; *week-2 active under 40% of activated* → onboarding and reminders. Marketing files what the row shows as an issue. Campaigns restart when the fix ships. |
 
 **Also look at, but don't decide on:**
 - **Opened vs. signed up.** If under half of those who opened the link
@@ -207,9 +212,10 @@ expires in days, 1–365). Verified.
 
 CLAIM (measure): funnel stages, "activated (finished a first step within 7 days)",
 "week-2 active (practised on any of days 7–13)", "a code's row appears at ≥ 5
-signups", "<5", the tripwires (activated under 60% of signups; week-2 under 40% of
-activated)
-SOURCE: #109 v2 body (2026-10-19), scope 6, 7, 11. Verified against the issue, not the
+signups", "within the row every count is shown", the tripwires (activated under 60%
+of signups; week-2 under 40% of activated)
+SOURCE: #109 v2 body (2026-10-19), scope 6, 7 (clarified the same day: stage counts
+and rates are shown within a code's own row), 11. Verified against the issue, not the
 code: #109 isn't built. Re-check against the shipped dashboard before day 14.
 
 CLAIM (measure): "the owner reads the code's uses on /learn/invites"
