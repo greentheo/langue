@@ -57,15 +57,15 @@ different language from the owner's, and with the group explained.
 > I've been learning {the owner's language} on Langue, a small invite-only
 > app for family and friends. It teaches Italian, Spanish, French and
 > Brazilian Portuguese, from beginner to elementary (A1 and A2): short daily
-> steps where you type real answers, and a wrong ending is marked wrong. No
-> ads, nothing to pay.
+> steps where you type real answers, and a wrong ending is marked wrong (a
+> missing accent is pointed out). No ads, nothing to pay.
 >
 > Here's your invite. The link fills in the code, and it's open for a week:
 > {link}
 >
 > You'll be in a small group with a few others I've invited. The group sees
-> each other's names, points and streaks on a leaderboard, so a first name
-> or nickname is perfect. If someone in your family wants to join too, tell
+> each other's names, points, streaks and level badges on a leaderboard, so a
+> first name or nickname is perfect. If someone in your family wants to join too, tell
 > me and I'll send them their own invite.
 
 **Depends on:**
@@ -140,9 +140,12 @@ Neither is an industry benchmark. Campaign 001 sets our first baseline, and
 | **Day 21** | **5 or more signed up, but fewer than 5 week-2 active** | **Stop, and fix the app first.** People came and didn't stay, so more invites would spend goodwill on a leak. #109's tripwires name the stage: *activated under 60% of signups* → first-run experience; *week-2 active under 40% of activated* → onboarding and reminders. Marketing files what the row shows as an issue. Campaigns restart when the fix ships. |
 
 **Also look at, but don't decide on:**
-- **Opened vs. signed up.** If under half of those who opened the link
-  signed up, the sign-up page is losing people. File it against the first
-  contact (#72's area), not the message.
+- **Opened vs. signed up, as a rough sign only.** `invite.opened` counts a
+  person once per *day* (#109), so someone who opens the link on three days
+  counts three times, and the gap can come from repeat opens alone. Only if
+  opens far outnumber signups *and* the owner hears that people got stuck
+  on the sign-up page is it worth filing against first contact (#72's
+  area), not the message.
 - **What people say.** If the owner hears why someone didn't join or
   stopped, that's feedback. Marketing turns it into an issue with no name
   attached.
@@ -180,11 +183,15 @@ CLAIM (message): "short daily steps where you type real answers"
 SOURCE: POSITIONING "Short steps, planned for about three minutes" and "You type real
 answers…". Verified.
 
-CLAIM (message): "a wrong ending is marked wrong"
+CLAIM (message): "a wrong ending is marked wrong (a missing accent is pointed out)"
 SOURCE: POSITIONING endings row, LIVE since #102 (deployed a81c9cb; 13 #70 rows incorrect
-both ways). The short form is allowed while the course stops at A2. Limits
-(accent-only grammar; real-word typos until #106) aren't contradicted, since the
-message says nothing about accents or typos. Verified.
+both ways). The short form is allowed while the course stops at A2. Verified.
+#114 CAVEAT: the parenthesis is required until #114 ships. French's commonest ending is
+an accent, and "J'ai parle" for "parlé" is graded close (as are es hablo/habló and pt
+pode/pôde; probe on ef01562). My first draft said the bare claim didn't contradict
+limit (1) "since the message says nothing about accents". The reviewer showed it does,
+for French. Real-word typos (#106) aren't touched: the message says nothing about
+typos.
 
 CLAIM (message): "No ads, nothing to pay"
 SOURCE: POSITIONING "No ads, and nothing to pay" (grep of web/src, web/package.json).
@@ -195,11 +202,11 @@ SOURCE: register/page.tsx codeFromQuery (?code= prefills the field); the invite'
 "Expires (days)" setting = 7 (learn/invites/page.tsx mintInvite). Verified.
 
 CLAIM (message): "You'll be in a small group with a few others I've invited. The group
-sees each other's names, points and streaks on a leaderboard"
-SOURCE: lib/auth/actions.ts l.157 (registration creates a GroupMember for the code);
+sees each other's names, points, streaks and level badges on a leaderboard"
+SOURCE: lib/auth/actions.ts, registration's `groups: { create: { inviteCodeId } }`;
 lib/auth/invites.ts l.67 (the code's creator, the owner, is in the group too);
-lib/standings.ts Standing (displayName, weekPoints, totalPoints, streak, badges).
-Verified. "a few others": 18 uses at most, plus the owner.
+lib/standings.ts Standing (displayName, weekPoints, totalPoints, streak, badges, e.g.
+"IT A1", which tell the group which language someone learns). Verified. "a few others": 18 uses at most, plus the owner.
 
 CLAIM (code): "The note is the group's name … members see it on their home page and
 leaderboard"
