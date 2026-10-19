@@ -29,8 +29,11 @@ plan to do it. The why behind all of it is [vision.md](vision.md).
   per level. B1–C2 have overview pages only.
 - Level page with bars, level-up challenges, testing out, certificates and
   badges; progress bars that never go down.
-- Strict, explained grading (accents, pronouns, whole words; endings only
-  partly — #70); answer sounds; pronunciation by the device voice.
+- Strict, explained grading (accents, pronouns, whole words, and endings
+  through A2: a slip that changes an ending is a mistake, #70); answer sounds;
+  pronunciation by the device voice.
+- Level page counts ("N learned · N on the way · N not met yet") and
+  certificates that keep their numbers (#91).
 - Installable as an app (PWA); streak reminders after 2, 5 and 12 quiet days;
   streaks are never lost.
 - Optional AI tools (conversation, generated drills) on the cheapest model.
@@ -38,18 +41,19 @@ plan to do it. The why behind all of it is [vision.md](vision.md).
   curriculum and vocabulary checks, and the production build (#48).
 
 **Known gaps and issues**
-- Grading: a wrong ending that shares its last letter with the right one is
-  forgiven as a typo (*cansados* for *cansadas*) (#70).
-- Progress safety: the level page's Words/Phrases/Grammar bars shrink when
-  content is added (#91); fixing a word's spelling orphans learners' progress
-  on it (#93); words added to a finished unit never reach those learners (#90).
+- Grading: a slip in a word's last three letters now counts as a miss even
+  when it's a plain typo (the price of #70's safety; #105 is the way back); a
+  slip that makes a different real word is still forgiven (#106); multi-word
+  nouns typed with their article are marked wrong (#101).
+- Progress safety: fixing a word's spelling orphans learners' progress on it
+  (#93); words added to a finished unit never reach those learners (#90).
 - The path stops at A2 — no B1 yet (#57).
 - Stricter grading will reject some fine answers that aren't listed; there's
   no way for a learner to flag them yet (#49).
-- Content writers' notes: French done; Italian, Spanish and Portuguese are in
-  review and ship with #91 (#50). Two related bugs: fill-in-the-blank borrows
-  sentences where a word means something else (#82); Spanish *a* is treated
-  as an article in the course dedupe (#85).
+- Content: no line has had a native speaker's check yet; French will be
+  checked by a native speaker in the family (#97). Fill-in-the-blank borrows
+  sentences where a word means something else (#82); Spanish *a* is treated as
+  an article in the course dedupe (#85).
 - No analytics, so no way to see what helps (#52).
 - Writing, dictation, speaking aloud and reading — four of the vision's
   promises — aren't built yet (#51, #54, #56, #58).
@@ -62,43 +66,49 @@ plan to do it. The why behind all of it is [vision.md](vision.md).
 
 Roughly in order; each line is one or a few PRs. The board is the record:
 `stage: ready` issues are designed and through Socrates; `Blocked by:` lines
-set the order where it matters.
+set the order where it matters. **Owner's order (#98): the differentiators
+first, then B1 and B2; C1–C2 wait.**
+
+**First — the owner's priority (2026-10-19): in-house tracking**
+0. #109 Eventing and the first dashboard: signup funnel, retention, engagement (no cookies, no third parties) — L · then #52 (learning measures) and #110 (campaign link tags)
 
 **Now — accuracy and progress safety (bugs first)**
-1. #91 Level page shows counts, so bars never shrink — S (then #50's last three PRs)
-2. #70 A wrong ending is a mistake, not a typo — M
-3. #93 Item keys survive content edits (lock + renames) — M
-4. #82 Fill-in-the-blank: no borrowed homographs — S
-5. #85 Articles per language in the course dedupe — S
-6. #90 "What's new since you finished" — L (after #93)
-7. #51 Dictation: listen, then type — M
-8. #80, #81 CI: pinned Python deps, Docker build — S · #95 Weekly encrypted local backup — S (owner sets it up)
+1. #93 Item keys survive content edits (lock + renames) — M
+2. #107 Neutral ending note · #82 Cloze homographs · #85 Articles per language — S
+3. #101 Multi-word nouns with their article · #104 Noun genders (after #99) — S/M
+4. #105 Endings gap-finder, then forgive end-of-word typos again — M · #106 Different-word typos — S
+5. #90 "What's new since you finished" — L (after #93)
+6. #80, #81 CI hardening · #103 Dev server on 127.0.0.1 · #95 Weekly encrypted local backup — S
 
 **Next — trust, then the differentiators**
-9. #63 Privacy page, account deletion, housekeeping — M
+7. #63 Privacy page, account deletion, housekeeping — M
+8. #74 AI switch per learner, child-safety prompts — M
+9. #73 Streak reminders that sell the dream, not threats — S
 10. #49 "My answer should be accepted" reports — M (after #63)
 11. #76 Password reset without email — M (after #63)
-12. #52 Learning events and the dashboard (full build) — M (after #49, #63)
-13. #53 Your mistakes, made visible — L (after #70, #63)
-14. #72 Front page and invite copy — S (after the readiness kit, #69)
-15. #54 Speak your reply — M · #55 Listening cards — S · #56 Writing task — M
-16. #57 B1 guided path, all four languages — L (timing: #98; checking: #97, #99) · #100 Certificates tick only what's practised — S
-17. #61 Weekly recap — S
+12. #53 Your mistakes, made visible — L (after #63)
+13. #51 Dictation — M · #55 Listening cards — S · #54 Speak your reply — M · #56 Writing task — M
+14. #52 Dashboard phase 2: learning measures — M (after #109)
+15. #100 Certificates say what the course practised — S · #99 Gloss check — M
+16. #72 Front page and invite copy — S (after the readiness kit, #69)
 
-**Later — proof of level, engagement, new languages**
-18. #59 Practice exam sections at A2 and B1 — L
-19. #58 Graded readers — L
-20. #60 Engagement experiments (contextual bandits) — M
-21. #62 Move to the custom domain — S (after the owner sets up DNS)
-22. #65 Foundations for new writing systems and grammars — M
-23. #66 German A1 pilot — L
-24. #64 Triage legacy CLI issues — S (owner decides what to close)
+**Then — levels**
+17. #57 B1 guided path, all four languages — L (after the differentiators; French checked by a native speaker)
+18. B2 (to be filed when B1 is under way)
+19. #61 Weekly recap — S
 
-**Waiting on the owner:** #71 (CI required to merge), #73 (reminder wording),
-#74 (kids and the AI tools), #75 (marketing's numbers), #77 (turn on Railway's
-7-day backups — decided, the setting is the owner's), #97 (who checks content
-for native accuracy), #98 (B1 now or the differentiators first).
+**Later**
+20. #59 Practice exam sections at A2 and B1 — L
+21. #58 Graded readers — L
+22. #60 Engagement experiments (no loss framing — owner's rule, #73) — M
+23. #62 Move to the custom domain — S (after the owner sets up DNS)
+24. #65 Foundations for new writing systems and grammars — M
+25. #66 German A1 pilot — L
+26. #64 Triage legacy CLI issues — S (owner decides what to close)
+
+**Waiting on the owner:** Railway's "Wait for CI" toggle (#71); the one-line
+AI disclosure inside AI screens (#74).
 
 Done and closed: #35–#38 (guided path phases 1–4), #40–#47 (sounds, language
 chooser, group leaderboards, PWA, streak reminders), #48 (CI), #87 (typo notes
-keep accents).
+keep accents), #50 (content cleanup), #70 (endings), #91 (level-page counts).
