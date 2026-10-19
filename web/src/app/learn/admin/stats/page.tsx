@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { verifySession } from "@/lib/auth/session";
 import { Panel } from "@/components/crt";
-import { computeStats, TRIPWIRES, type FunnelStage, type Shown } from "@/lib/stats";
+import { computeStats, TRIPWIRES, type CodeRow, type FunnelStage, type Shown } from "@/lib/stats";
 import { loadStats } from "@/lib/stats-data";
 
 export const metadata = { title: "Usage — LANGUE" };
@@ -21,8 +21,8 @@ export default async function StatsPage() {
 
   const stats = computeStats(await loadStats());
   const { engagement: e } = stats;
-  const activated = stats.funnel30[3];
-  const weekTwo = stats.funnel30[4];
+  const activated = stats.windows[0].funnel[3];
+  const weekTwo = stats.windows[0].funnel[4];
 
   return (
     <div className="space-y-8">
@@ -31,14 +31,18 @@ export default async function StatsPage() {
         <h1 className="mt-1 text-2xl crt-glow">Usage</h1>
         <p className="mt-2 text-sm text-[var(--crt-fg-dim)]">
           From Langue&apos;s own records: no third parties. Days are UTC. Breakdowns under five learners read
-          &ldquo;&lt;5&rdquo;.
+          &ldquo;&lt;5&rdquo;.{" "}
+          {stats.trackingSince
+            ? `Tracking began on ${stats.trackingSince}: visits, invite pages and steps started are counted from then; learners and practice go back further.`
+            : "Tracking hasn't recorded anything yet."}
         </p>
       </div>
 
       <Panel title="Funnel">
         <div className="grid gap-6 sm:grid-cols-2">
-          <Funnel title="Last 30 days" stages={stats.funnel30} />
-          <Funnel title="All time" stages={stats.funnelAll} />
+          {stats.windows.map((window) => (
+            <Funnel key={window.title} title={window.title} stages={window.funnel} />
+          ))}
         </div>
         <div className="mt-4 space-y-1">
           <Tripwire value={activated.conversion} {...TRIPWIRES.activated} label="Activated" />
@@ -48,34 +52,16 @@ export default async function StatsPage() {
 
       <Panel title="By invite code">
         <p className="mb-3 text-xs text-[var(--crt-fg-dim)]">
-          A code gets its own row once five people have signed up with it. Personal and smaller invites are pooled.
+          A code gets its own row once five people have signed up with it, and only while everyone else in the same
+          window is none or at least five, so no row can be worked out from the totals. Everyone else is pooled.
+          Pages opened are counted since tracking began.
         </p>
-        <Scroll>
-          <table className="w-full min-w-[32rem] text-sm">
-            <thead>
-              <tr className="text-left text-xs text-[var(--crt-fg-dim)]">
-                <th className="pr-3 font-normal">Code</th>
-                <th className="pr-3 font-normal">Made</th>
-                <th className="pr-3 text-right font-normal">Opened</th>
-                <th className="pr-3 text-right font-normal">Signed up</th>
-                <th className="pr-3 text-right font-normal">Activated</th>
-                <th className="text-right font-normal">Week 2</th>
-              </tr>
-            </thead>
-            <tbody>
-              {stats.codes.map((row) => (
-                <tr key={row.label}>
-                  <td className="pr-3">{row.label}</td>
-                  <td className="pr-3 text-[var(--crt-fg-dim)]">{row.made ?? "—"}</td>
-                  <Cell value={row.opened} />
-                  <Cell value={row.signedUp} />
-                  <Cell value={row.activated} />
-                  <Cell value={row.weekTwo} last />
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </Scroll>
+        {stats.windows.map((window) => (
+          <div key={window.title} className="mt-4 first:mt-0">
+            <p className="text-xs text-[var(--crt-fg-dim)]">{window.title}</p>
+            <CodeTable rows={window.codes} />
+          </div>
+        ))}
       </Panel>
 
       <Panel title="Retention">
@@ -84,7 +70,7 @@ export default async function StatsPage() {
             <li key={row.day} className="flex justify-between gap-3">
               <span>Back on day {row.day}</span>
               <span>
-                {row.share === null ? "—" : `${row.share}%`}{" "}
+                {row.share === null ? "—" : row.share === "<5" ? "<5" : `${row.share}%`}{" "}
                 <span className="text-xs text-[var(--crt-fg-dim)]">of {row.n} who signed up {row.day}+ days ago</span>
               </span>
             </li>
@@ -127,8 +113,14 @@ export default async function StatsPage() {
           <Line label="Practised in the last 7 days" value={e.weekly} />
           <Line label="Practised in the last 30 days" value={e.monthly} />
           <Line label="Stickiness (daily ÷ monthly)" value={e.stickiness === null ? "—" : `${e.stickiness}%`} />
-          <Line label="Opened the app but didn't practise" value={e.openedNotPractised === null ? "—" : `${e.openedNotPractised}% of ${e.appOpens} opens`} />
-          <Line label="Steps finished of started" value={e.finishedShare === null ? "—" : `${e.finishedShare}% (${e.stepsFinished} of ${e.stepsStarted})`} />
+          <Line
+            label="Opened the app, and no step finished within 3 hours"
+            value={e.openedNotPractised === null ? "—" : `${e.openedNotPractised}% of ${e.appOpens} opens`}
+          />
+          <Line
+            label={`Steps finished of started${stats.trackingSince ? ` (since tracking began on ${stats.trackingSince})` : ""}`}
+            value={e.finishedShare === null ? "—" : `${e.finishedShare}% (${e.stepsFinished} of ${e.stepsStarted})`}
+          />
           <Line label="Steps per day practised" value={e.stepsPerActiveDay ?? "—"} />
           <Line label="Streak reminders on" value={e.remindersOn} />
         </ul>
@@ -166,7 +158,9 @@ export default async function StatsPage() {
                   <td className="pr-3 text-right">{day.events}</td>
                   <td className="pr-3 text-right">{day.steps}</td>
                   <td className="pr-3 text-right">{day.heartbeats}</td>
-                  <td className="text-xs text-[var(--crt-accent)]">{day.broken ? "tracking may be broken" : ""}</td>
+                  <td className="text-xs text-[var(--crt-accent)]">
+                    {day.broken ? "tracking may be broken" : day.beforeTracking ? <span className="text-[var(--crt-fg-dim)]">before tracking</span> : ""}
+                  </td>
                 </tr>
               ))}
             </tbody>
@@ -194,6 +188,7 @@ function Funnel({ title, stages }: { title: string; stages: FunnelStage[] }) {
               {stage.conversion !== null ? <span className="text-[var(--crt-fg-dim)]"> · {stage.conversion}%</span> : null}
               {stage.pending ? <span className="text-xs text-[var(--crt-fg-dim)]"> (+{stage.pending} too soon)</span> : null}
             </span>
+            {stage.note ? <span className="w-full text-right text-xs text-[var(--crt-fg-dim)]">{stage.note}</span> : null}
           </li>
         ))}
       </ol>
@@ -223,6 +218,37 @@ function Line({ label, value }: { label: string; value: number | string }) {
 
 function Cell({ value, unit = "", last = false }: { value: Shown | null; unit?: string; last?: boolean }) {
   return <td className={`${last ? "" : "pr-3"} text-right`}>{value === null ? "" : value === "<5" ? "<5" : `${value}${unit}`}</td>;
+}
+
+function CodeTable({ rows }: { rows: CodeRow[] }) {
+  return (
+    <Scroll>
+      <table className="mt-1 w-full min-w-[32rem] text-sm">
+        <thead>
+          <tr className="text-left text-xs text-[var(--crt-fg-dim)]">
+            <th className="pr-3 font-normal">Code</th>
+            <th className="pr-3 font-normal">Made</th>
+            <th className="pr-3 text-right font-normal">Opened</th>
+            <th className="pr-3 text-right font-normal">Signed up</th>
+            <th className="pr-3 text-right font-normal">Activated</th>
+            <th className="text-right font-normal">Week 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((row) => (
+            <tr key={row.label}>
+              <td className="pr-3">{row.label}</td>
+              <td className="pr-3 text-[var(--crt-fg-dim)]">{row.made ?? "—"}</td>
+              <Cell value={row.opened} />
+              <Cell value={row.signedUp} />
+              <Cell value={row.activated} />
+              <Cell value={row.weekTwo} last />
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </Scroll>
+  );
 }
 
 /** A wide table scrolls inside its panel; the page never scrolls sideways. */

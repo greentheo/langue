@@ -1,29 +1,47 @@
 /**
  * The usage dashboard's numbers (#109): the funnel, retention, engagement and
  * tracking health, from rows the loader (stats-data.ts) reads. Pure, so every
- * definition here is tested against a hand-computed fixture.
+ * definition here is tested against hand-computed fixtures.
  *
  * Days are UTC, as everywhere else in Langue. "Practised" means finishing a
- * step, a challenge or any activity that day (ActivityLog). Breakdowns with
- * fewer than SMALL learners are never shown as numbers: they read "<5" or are
- * pooled, so no row describes one person.
+ * step, a challenge or any activity that day (ActivityLog).
+ *
+ * Small numbers never describe a person:
+ * - a code gets its own row in a window only when everyone else who signed up
+ *   in that window (smaller codes and learners with no code) is 0 or at least
+ *   SMALL people, so the app-wide totals minus the shown rows can't isolate
+ *   anyone; otherwise it is pooled too;
+ * - a breakdown, or a retention rate, over fewer than SMALL people reads "<5".
+ *
+ * Learners and practice go back to launch; events start when tracking did. A
+ * ratio that mixes the two (invite pages opened → signups, steps started →
+ * finished) counts only from the first event, and says so.
  */
 
 export const SMALL = 5;
 const DAY_MS = 24 * 60 * 60 * 1000;
+const HOUR_MS = 60 * 60 * 1000;
+/** "Opened but didn't practise": no step finished within this long of opening the app. */
+export const PRACTISE_WITHIN_MS = 3 * HOUR_MS;
+
+type User = { id: string; createdAt: Date; inviteCodeId: string | null; streakDays: number };
 
 export interface StatsInput {
   now: Date;
-  users: { id: string; createdAt: Date; inviteCodeId: string | null; streakDays: number }[];
+  /** The first event ever recorded: when tracking began. Null before it has. */
+  trackingSince: Date | null;
+  users: User[];
   codes: { id: string; note: string | null; createdAt: Date }[];
-  /** One row per learner per day with any practice: finished steps (and challenges) and all activities. */
+  /** One row per learner per day with any practice: finished steps (and challenges) that day. */
   practice: { userId: string; day: string; steps: number }[];
-  /** Front-page visitors per day: distinct daily visitor hashes on page.viewed "/". */
+  /** Finished steps and challenges over the last 30 days, with their times. */
+  stepFinishes: { userId: string; at: Date }[];
+  /** Front-page visitors per day: page views of "/" that were a device's first that day. */
   frontVisitors: { day: string; visitors: number }[];
   /** invite.opened per code: all time and in the last 30 days. */
   inviteOpens: { inviteCodeId: string; total: number; recent: number }[];
-  /** Learners who opened the app, per day, in the last 30 days (app.opened). */
-  appOpened: { userId: string; day: string }[];
+  /** app.opened over the last 30 days: who, and when. */
+  appOpened: { userId: string; at: Date }[];
   /** step.started in the last 30 days. */
   stepsStarted: number;
   /** Events, and heartbeats among them, per day over the last 14 days. */
@@ -37,7 +55,7 @@ const dayNumber = (day: string) => Date.parse(`${day}T00:00:00Z`) / DAY_MS;
 /** Whole days from `from` to `to`. */
 const daysBetween = (from: string, to: string) => dayNumber(to) - dayNumber(from);
 
-/** A count for a breakdown: the number, or "<5" when it would describe fewer than five people. */
+/** A number for a breakdown: the number, or "<5" when it would describe fewer than five people. */
 export type Shown = number | "<5";
 export function shown(value: number, people: number): Shown {
   return people < SMALL ? "<5" : value;
@@ -59,7 +77,7 @@ interface Journey {
   weekTwoPending: number;
 }
 
-function journey(users: StatsInput["users"], practiceDays: Map<string, Map<string, number>>, today: string): Journey {
+function journey(users: User[], practiceDays: Map<string, Map<string, number>>, today: string): Journey {
   const result: Journey = { signedUp: users.length, activated: 0, activationPending: 0, weekTwo: 0, weekTwoPending: 0 };
   for (const user of users) {
     const signup = utcDay(user.createdAt);
@@ -79,46 +97,35 @@ function journey(users: StatsInput["users"], practiceDays: Map<string, Map<strin
 export interface FunnelStage {
   name: string;
   count: number;
-  /** Share of the stage before that got here, of those who've had time to; null for the first stage. */
+  /** Share of the stage before that got here, of those who've had time to; null for the first stage or before tracking. */
   conversion: number | null;
   /** People who might still get here (too recent to tell). */
   pending?: number;
-}
-
-function funnel(visitors: number, opened: number, j: Journey): FunnelStage[] {
-  return [
-    { name: "Front-page visitors (one per visitor per day)", count: visitors, conversion: null },
-    { name: "Invite pages opened", count: opened, conversion: percent(opened, visitors) },
-    { name: "Signed up", count: j.signedUp, conversion: percent(j.signedUp, opened) },
-    {
-      name: "Activated (a first step within 7 days)",
-      count: j.activated,
-      conversion: percent(j.activated, j.signedUp - j.activationPending),
-      pending: j.activationPending,
-    },
-    {
-      name: "Week-2 active (practised on days 7–13)",
-      count: j.weekTwo,
-      conversion: percent(j.weekTwo, j.activated - j.weekTwoPending),
-      pending: j.weekTwoPending,
-    },
-  ];
+  /** When the conversion only counts part of the stage: "since tracking began on 2026-10-19". */
+  note?: string;
 }
 
 export interface CodeRow {
   label: string;
   made: string | null;
+  /** Invite pages opened, since tracking began. */
   opened: Shown;
   signedUp: Shown;
   activated: Shown;
   weekTwo: Shown;
 }
 
-export interface Stats {
-  funnel30: FunnelStage[];
-  funnelAll: FunnelStage[];
+export interface Window {
+  title: string;
+  funnel: FunnelStage[];
   codes: CodeRow[];
-  retention: { day: 1 | 7 | 30; share: number | null; n: number }[];
+}
+
+export interface Stats {
+  /** The day tracking began, or null before any event. */
+  trackingSince: string | null;
+  windows: Window[];
+  retention: { day: 1 | 7 | 30; share: Shown | null; n: number }[];
   cohorts: { week: string; size: Shown; weeks: (Shown | null)[] }[];
   engagement: {
     activeToday: number;
@@ -129,13 +136,14 @@ export interface Stats {
     openedNotPractised: number | null;
     appOpens: number;
     stepsStarted: number;
+    /** Steps finished since tracking began (within the 30 days), to compare with started. */
     stepsFinished: number;
     finishedShare: number | null;
     stepsPerActiveDay: number | null;
     streaks: { bucket: string; learners: Shown }[];
     remindersOn: number;
   };
-  health: { day: string; events: number; steps: number; heartbeats: number; broken: boolean }[];
+  health: { day: string; events: number; steps: number; heartbeats: number; broken: boolean; beforeTracking: boolean }[];
 }
 
 const STREAKS: [string, number, number][] = [
@@ -153,10 +161,63 @@ function weekOf(day: string): string {
   return utcDay(new Date(date.getTime() - ((date.getUTCDay() + 6) % 7) * DAY_MS));
 }
 
+/**
+ * The per-code rows for the learners who signed up in a window. A code with
+ * five or more of them may have a row, but only while everyone left over
+ * (smaller codes and learners with no code) is 0 or at least five: the
+ * smallest shown code is pooled until that holds.
+ */
+function codeRows(
+  users: User[],
+  codes: StatsInput["codes"],
+  opens: Map<string, number>,
+  practiceDays: Map<string, Map<string, number>>,
+  today: string,
+): CodeRow[] {
+  const members = (codeId: string) => users.filter((user) => user.inviteCodeId === codeId);
+  const shownCodes = codes
+    .filter((code) => members(code.id).length >= SMALL)
+    .sort((a, b) => members(b.id).length - members(a.id).length || a.createdAt.getTime() - b.createdAt.getTime());
+  const left = () => users.length - shownCodes.reduce((sum, code) => sum + members(code.id).length, 0);
+  while (shownCodes.length > 0 && left() > 0 && left() < SMALL) shownCodes.pop();
+
+  const rows: CodeRow[] = shownCodes
+    .sort((a, b) => a.createdAt.getTime() - b.createdAt.getTime())
+    .map((code) => {
+      const j = journey(members(code.id), practiceDays, today);
+      return { label: code.note || "(no note)", made: utcDay(code.createdAt), opened: opens.get(code.id) ?? 0, signedUp: j.signedUp, activated: j.activated, weekTwo: j.weekTwo };
+    });
+
+  const shownIds = new Set(shownCodes.map((code) => code.id));
+  const pool = users.filter((user) => !user.inviteCodeId || !shownIds.has(user.inviteCodeId));
+  const pooledCodes = codes.filter((code) => !shownIds.has(code.id) && (members(code.id).length > 0 || (opens.get(code.id) ?? 0) > 0));
+  const withoutCode = pool.some((user) => !user.inviteCodeId);
+  if (pool.length > 0 || pooledCodes.length > 0) {
+    const j = journey(pool, practiceDays, today);
+    const opened = pooledCodes.reduce((sum, code) => sum + (opens.get(code.id) ?? 0), 0);
+    const label =
+      `Everyone else: ${pooledCodes.length} smaller code${pooledCodes.length === 1 ? "" : "s"}` +
+      (withoutCode ? ", and learners who joined without one" : "");
+    rows.push({
+      label,
+      made: null,
+      opened: shown(opened, pool.length),
+      signedUp: shown(pool.length, pool.length),
+      activated: shown(j.activated, pool.length),
+      weekTwo: shown(j.weekTwo, pool.length),
+    });
+  }
+  return rows;
+}
+
 export function computeStats(input: StatsInput): Stats {
   const today = utcDay(input.now);
   const since30 = utcDay(new Date(input.now.getTime() - 29 * DAY_MS));
   const in30 = (day: string) => day >= since30 && day <= today;
+  const tracking = input.trackingSince;
+  const trackingDay = tracking ? utcDay(tracking) : null;
+  const sinceTracking = (date: Date) => tracking !== null && date.getTime() >= tracking.getTime();
+  const trackingNote = trackingDay ? `since tracking began on ${trackingDay}` : undefined;
 
   const practiceDays = new Map<string, Map<string, number>>();
   for (const row of input.practice) {
@@ -165,53 +226,62 @@ export function computeStats(input: StatsInput): Stats {
     practiceDays.set(row.userId, days);
   }
 
-  // Funnel: the last 30 days and all time.
-  const recentUsers = input.users.filter((user) => in30(utcDay(user.createdAt)));
-  const visitors30 = input.frontVisitors.filter((row) => in30(row.day)).reduce((sum, row) => sum + row.visitors, 0);
-  const visitorsAll = input.frontVisitors.reduce((sum, row) => sum + row.visitors, 0);
-  const opened30 = input.inviteOpens.reduce((sum, row) => sum + row.recent, 0);
-  const openedAll = input.inviteOpens.reduce((sum, row) => sum + row.total, 0);
-  const funnel30 = funnel(visitors30, opened30, journey(recentUsers, practiceDays, today));
-  const funnelAll = funnel(visitorsAll, openedAll, journey(input.users, practiceDays, today));
+  // The funnel and the per-code rows, over the same two windows so their numbers can be set side by side safely.
+  const window = (title: string, users: User[], visitors: number, opened: number, opensByCode: Map<string, number>): Window => {
+    const j = journey(users, practiceDays, today);
+    // Invite pages opened → signed up mixes events with signups that may predate them: count signups since tracking began.
+    const trackedSignups = users.filter((user) => sinceTracking(user.createdAt)).length;
+    const funnel: FunnelStage[] = [
+      { name: "Front-page visitors (one per device per day)", count: visitors, conversion: null },
+      { name: "Invite pages opened", count: opened, conversion: percent(opened, visitors) },
+      {
+        name: "Signed up",
+        count: j.signedUp,
+        conversion: tracking ? percent(trackedSignups, opened) : null,
+        note: tracking && trackedSignups < j.signedUp ? `${trackedSignups} of them ${trackingNote}` : undefined,
+      },
+      {
+        name: "Activated (a first step within 7 days)",
+        count: j.activated,
+        conversion: percent(j.activated, j.signedUp - j.activationPending),
+        pending: j.activationPending,
+      },
+      {
+        name: "Week-2 active (practised on days 7–13)",
+        count: j.weekTwo,
+        conversion: percent(j.weekTwo, j.activated - j.weekTwoPending),
+        pending: j.weekTwoPending,
+      },
+    ];
+    return { title, funnel, codes: codeRows(users, input.codes, opensByCode, practiceDays, today) };
+  };
+  const windows = [
+    window(
+      "Last 30 days",
+      input.users.filter((user) => in30(utcDay(user.createdAt))),
+      input.frontVisitors.filter((row) => in30(row.day)).reduce((sum, row) => sum + row.visitors, 0),
+      input.inviteOpens.reduce((sum, row) => sum + row.recent, 0),
+      new Map(input.inviteOpens.map((row) => [row.inviteCodeId, row.recent])),
+    ),
+    window(
+      "All time",
+      input.users,
+      input.frontVisitors.reduce((sum, row) => sum + row.visitors, 0),
+      input.inviteOpens.reduce((sum, row) => sum + row.total, 0),
+      new Map(input.inviteOpens.map((row) => [row.inviteCodeId, row.total])),
+    ),
+  ];
 
-  // Per code: its own row at five or more signups; every smaller code pooled.
-  const opensByCode = new Map(input.inviteOpens.map((row) => [row.inviteCodeId, row.total]));
-  const codes: CodeRow[] = [];
-  const pooled = { codes: 0, opened: 0, users: [] as StatsInput["users"] };
-  for (const code of [...input.codes].sort((a, b) => a.createdAt.getTime() - b.createdAt.getTime())) {
-    const members = input.users.filter((user) => user.inviteCodeId === code.id);
-    const opened = opensByCode.get(code.id) ?? 0;
-    if (members.length >= SMALL) {
-      const j = journey(members, practiceDays, today);
-      codes.push({ label: code.note || "(no note)", made: utcDay(code.createdAt), opened, signedUp: j.signedUp, activated: j.activated, weekTwo: j.weekTwo });
-    } else {
-      pooled.codes++;
-      pooled.opened += opened;
-      pooled.users.push(...members);
-    }
-  }
-  if (pooled.codes > 0) {
-    const j = journey(pooled.users, practiceDays, today);
-    const people = pooled.users.length;
-    codes.push({
-      label: `Personal and small invites (${pooled.codes} code${pooled.codes === 1 ? "" : "s"})`,
-      made: null,
-      opened: shown(pooled.opened, people),
-      signedUp: shown(people, people),
-      activated: shown(j.activated, people),
-      weekTwo: shown(j.weekTwo, people),
-    });
-  }
-
-  // Retention: of everyone who signed up at least k days ago, who practised on day k.
+  // Retention: of everyone who signed up at least k days ago, who practised on day k. Under five people: "<5".
   const retention = ([1, 7, 30] as const).map((k) => {
     const old = input.users.filter((user) => daysBetween(utcDay(user.createdAt), today) >= k);
     const back = old.filter((user) => practiceDays.get(user.id)?.has(utcDay(new Date(Date.parse(`${utcDay(user.createdAt)}T00:00:00Z`) + k * DAY_MS))));
-    return { day: k, share: percent(back.length, old.length), n: old.length };
+    const share = percent(back.length, old.length);
+    return { day: k, share: share === null ? null : shown(share, old.length), n: old.length };
   });
 
   // Weekly signup cohorts × weeks since signup: who practised in that week.
-  const cohortsByWeek = new Map<string, StatsInput["users"]>();
+  const cohortsByWeek = new Map<string, User[]>();
   for (const user of input.users) {
     const week = weekOf(utcDay(user.createdAt));
     cohortsByWeek.set(week, [...(cohortsByWeek.get(week) ?? []), user]);
@@ -234,16 +304,23 @@ export function computeStats(input: StatsInput): Stats {
       return { week, size: shown(members.length, members.length), weeks };
     });
 
-  // Engagement, over the last 30 days.
+  // Engagement, over the last 30 days. Active learners come from practice alone, so keep their full history.
   const recentPractice = input.practice.filter((row) => in30(row.day));
   const activeOn = (day: string) => new Set(recentPractice.filter((row) => row.day === day).map((row) => row.userId)).size;
   const learnersSince = (since: string) => new Set(recentPractice.filter((row) => row.day >= since).map((row) => row.userId)).size;
   const days30 = Array.from({ length: 30 }, (_, i) => utcDay(new Date(input.now.getTime() - i * DAY_MS)));
   const dailyAverage = Math.round((days30.reduce((sum, day) => sum + activeOn(day), 0) / 30) * 10) / 10;
   const monthly = learnersSince(since30);
-  const practisedOn = new Set(recentPractice.map((row) => `${row.userId} ${row.day}`));
-  const opens = input.appOpened.filter((row) => in30(row.day));
-  const notPractised = opens.filter((row) => !practisedOn.has(`${row.userId} ${row.day}`)).length;
+  // Opened the app, and no step finished within three hours: no day boundary to split a session.
+  const opens = input.appOpened.filter((open) => in30(utcDay(open.at)));
+  const notPractised = opens.filter(
+    (open) =>
+      !input.stepFinishes.some(
+        (step) => step.userId === open.userId && step.at.getTime() >= open.at.getTime() && step.at.getTime() < open.at.getTime() + PRACTISE_WITHIN_MS,
+      ),
+  ).length;
+  // Steps started are events: compare them with steps finished since tracking began.
+  const finishedTracked = input.stepFinishes.filter((step) => in30(utcDay(step.at)) && sinceTracking(step.at)).length;
   const stepsFinished = recentPractice.reduce((sum, row) => sum + row.steps, 0);
   const activeDays = new Set(recentPractice.filter((row) => row.steps > 0).map((row) => `${row.userId} ${row.day}`)).size;
   const streaks = STREAKS.map(([bucket, low, high]) => {
@@ -251,7 +328,7 @@ export function computeStats(input: StatsInput): Stats {
     return { bucket, learners: shown(learners, learners) };
   });
 
-  // Health: events next to the steps they should accompany, and the hourly heartbeat.
+  // Health: events next to the steps they should accompany, and the hourly heartbeat — from the day tracking began.
   const stepsByDay = new Map<string, number>();
   for (const row of input.practice) stepsByDay.set(row.day, (stepsByDay.get(row.day) ?? 0) + row.steps);
   const eventsByDay = new Map(input.eventDays.map((row) => [row.day, row]));
@@ -259,14 +336,15 @@ export function computeStats(input: StatsInput): Stats {
     const events = eventsByDay.get(day)?.events ?? 0;
     const heartbeats = eventsByDay.get(day)?.heartbeats ?? 0;
     const steps = stepsByDay.get(day) ?? 0;
+    const beforeTracking = trackingDay === null || day < trackingDay;
     // Steps finished but no events, or a whole past day without a heartbeat: tracking may be broken.
-    return { day, events, steps, heartbeats, broken: (steps > 0 && events === 0) || (day < today && heartbeats === 0) };
+    const broken = !beforeTracking && ((steps > 0 && events === 0) || (day < today && day > trackingDay! && heartbeats === 0));
+    return { day, events, steps, heartbeats, broken, beforeTracking };
   });
 
   return {
-    funnel30,
-    funnelAll,
-    codes,
+    trackingSince: trackingDay,
+    windows,
     retention,
     cohorts,
     engagement: {
@@ -278,8 +356,8 @@ export function computeStats(input: StatsInput): Stats {
       openedNotPractised: percent(notPractised, opens.length),
       appOpens: opens.length,
       stepsStarted: input.stepsStarted,
-      stepsFinished,
-      finishedShare: percent(stepsFinished, input.stepsStarted),
+      stepsFinished: finishedTracked,
+      finishedShare: tracking ? percent(finishedTracked, input.stepsStarted) : null,
       stepsPerActiveDay: activeDays > 0 ? Math.round((stepsFinished / activeDays) * 10) / 10 : null,
       streaks,
       remindersOn: input.remindersOn,
