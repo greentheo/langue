@@ -73,6 +73,9 @@ different language from the owner's, and with the group explained.
 - **#72 shipped before launch (a gate, below).** An invitee who taps "←
   Langue" on the sign-up page lands on the front page, which still says *"AI
   language practice"*.
+- **Not on #114.** "(a missing accent is pointed out)" keeps the endings
+  line true until #114 makes accent-only endings (French *parlé*) count as
+  wrong. Drop the parenthesis once #114 is live.
 - **Not on #73.** This version has no streak line. The email version (#78
   §1) does, so don't use it for this campaign until #73 ships.
 
