@@ -40,7 +40,10 @@ just the screens the issue names: the one you miss is the one a learner sees.
 
 ### 3. Tests first
 Write tests that express the acceptance criteria and **watch them fail** before
-you implement. Use real record shapes — copy a real lesson, phrase, item state
+you implement. Include a **production-shaped** fixture: data from before your
+feature existed, an owner with no invite code, single-use codes, and every
+window or filter the page shows. Fixtures built alongside the feature hide the
+cases real data has. Use real record shapes — copy a real lesson, phrase, item state
 or API body — not fixtures invented from memory. For content: the content tests
 (`answers.test.ts`, `path.test.ts`) must pass and must be able to fail.
 
