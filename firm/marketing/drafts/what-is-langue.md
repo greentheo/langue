@@ -111,6 +111,9 @@ LIMITS (POSITIONING), not contradicted: accent-only grammar (es hablo/habló) is
 close; a typo that makes another real word (attivo/cattivo) is forgiven until #106;
 endings.ts covers what's taught through A2, which is the whole course today.
 "Still counts": schedule.ts applyAnswer ("A close answer … counts as right").
+#114 CAVEAT: accent-only endings (fr "J'ai parle" for "parlé", es "hablo" for "habló",
+pt "pode" for "pôde") are graded close (probe on ef01562). The sentence about missing
+accents is the carve-out that keeps this line true until #114 ships.
 
 CLAIM: "Reviews come back at growing intervals"
 SOURCE: schedule.ts (interval doubles up to MAX_INTERVAL_DAYS). Verified.

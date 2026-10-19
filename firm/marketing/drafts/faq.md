@@ -36,6 +36,8 @@ accent. You'll see the right spelling, and it still counts as right.
 **It said "check the ending" and marked me wrong. Why not "close"?**
 The end of a word carries its grammar (*cansado* or *cansada*, *comemos* or
 *comimos*), so a slip there is marked wrong, even when it was only a typo.
+A missing accent is different: it's pointed out with the right spelling and
+counts, even where the accent is the ending (*parle* for *parlé*).
 "That's another form" means you wrote a real form of the word, just not the
 one asked for; "Check the spelling of the ending" means the ending is
 misspelt. Either way you see the right answer.
