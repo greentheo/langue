@@ -4,6 +4,7 @@ import { verifySession } from "@/lib/auth/session";
 import { availableLanguages, availableLevels, languageLabel, wordCount } from "@/lib/vocab";
 import { Panel, Rule } from "@/components/crt";
 import { PhosphorToggle } from "@/components/phosphor-toggle";
+import { TrackView } from "@/components/track-view";
 
 const BANNER = String.raw`
  ██╗      █████╗ ███╗   ██╗ ██████╗ ██╗   ██╗███████╗
@@ -79,8 +80,10 @@ export default async function HomePage() {
       </Panel>
 
       <footer className="mt-10 text-xs text-[var(--crt-fg-dim)]">
-        Vocabulary shared with the Langue CLI. Press TAB to move, ENTER to submit.
+        Vocabulary shared with the Langue CLI. Press TAB to move, ENTER to submit.{" "}
+        <Link href="/privacy">What Langue keeps</Link>
       </footer>
+      <TrackView path="/" />
     </main>
   );
 }

@@ -39,6 +39,10 @@ plan to do it. The why behind all of it is [vision.md](vision.md).
 - Optional AI tools (conversation, generated drills) on the cheapest model.
 - CI on every pull request: typecheck, tests (content tests included),
   curriculum and vocabulary checks, and the production build (#48).
+- In-house usage events, with no third parties and nothing stored on the
+  device (visitors counted by a daily hash whose salt is never kept), hourly
+  housekeeping, and a public "What Langue keeps" page (#109; the dashboard is
+  its second PR).
 
 **Known gaps and issues**
 - Grading: a slip in a word's last three letters now counts as a miss even
@@ -54,7 +58,7 @@ plan to do it. The why behind all of it is [vision.md](vision.md).
   checked by a native speaker in the family (#97). Fill-in-the-blank borrows
   sentences where a word means something else (#82); Spanish *a* is treated as
   an article in the course dedupe (#85).
-- No analytics, so no way to see what helps (#52).
+- No usage dashboard yet (#109, second PR), and no learning measures (#52).
 - Writing, dictation, speaking aloud and reading — four of the vision's
   promises — aren't built yet (#51, #54, #56, #58).
 - No account deletion or privacy page (#63). Still on the Railway URL while a

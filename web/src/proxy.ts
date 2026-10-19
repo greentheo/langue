@@ -14,7 +14,7 @@ import { SESSION_COOKIE } from "@/lib/auth/session";
  * for a page render first.
  */
 
-const PUBLIC_PATHS = ["/", "/login", "/register"];
+const PUBLIC_PATHS = ["/", "/login", "/register", "/privacy"];
 
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;

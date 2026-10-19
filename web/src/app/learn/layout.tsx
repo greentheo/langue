@@ -8,11 +8,13 @@ import { PhosphorToggle } from "@/components/phosphor-toggle";
 import { SoundToggle } from "@/components/sound-toggle";
 import type { Level } from "@/lib/vocab/types";
 import { liveStreak } from "@/lib/standings";
+import { trackAppOpened } from "@/lib/events/app-opened";
 
 export default async function LearnLayout({ children }: { children: React.ReactNode }) {
   // proxy.ts only checks that a cookie exists. This is the real check.
   const user = await verifySession();
   if (!user) redirect("/login");
+  await trackAppOpened(user.id);
 
   return (
     <div className="mx-auto max-w-4xl px-5 py-6">
