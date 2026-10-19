@@ -43,7 +43,7 @@ describe("events in the database", { skip }, () => {
   });
 
   after(async () => {
-    await prisma.event.deleteMany({ where: { OR: [{ userId: { in: users } }, { props: { path: ["inviteCodeId"], equals: codeId } }, { visitor: { startsWith: tag } }] } });
+    await prisma.event.deleteMany({ where: { OR: [{ userId: { in: users } }, { props: { path: ["inviteCodeId"], equals: codeId } }, { props: { path: ["path"], equals: tag } }] } });
     await prisma.user.deleteMany({ where: { id: { in: users } } });
     await prisma.inviteCode.deleteMany({ where: { id: codeId } });
     await prisma.$disconnect();
@@ -65,9 +65,10 @@ describe("events in the database", { skip }, () => {
     for (const visit of visits) {
       assert.equal(opens.filter((open) => (open.props as { visit: string }).visit === visit).length, 1, "each signup joins one open");
     }
-    // Nothing ties the three accounts together: the converted opens no longer carry the device's hash.
-    assert.deepEqual(opens.map((open) => open.visitor), [null, null, null]);
-    assert.deepEqual(signups.map((signup) => signup.visitor), [null, null, null]);
+    // Nothing written ties the three accounts together: no row holds a visitor id, only whether an open was the device's first today.
+    for (const row of [...opens, ...signups]) assert.ok(!("visitor" in row), "no visitor column");
+    assert.deepEqual(opens.map((open) => (open.props as { firstToday: boolean }).firstToday), [true, false, false]);
+    assert.ok(signups.every((signup) => !("firstToday" in (signup.props as object))));
   });
 
   test("a token joins one signup only", async () => {
@@ -99,8 +100,8 @@ describe("events in the database", { skip }, () => {
     delete process.env.VAPID_PRIVATE_KEY;
     const now = new Date();
     const day = 24 * 60 * 60 * 1000;
-    const old = await prisma.event.create({ data: { type: "app.opened", visitor: `${tag}-old`, at: new Date(now.getTime() - 181 * day) } });
-    const recent = await prisma.event.create({ data: { type: "app.opened", visitor: `${tag}-recent`, at: new Date(now.getTime() - 179 * day) } });
+    const old = await prisma.event.create({ data: { type: "app.opened", props: { path: tag }, at: new Date(now.getTime() - 181 * day) } });
+    const recent = await prisma.event.create({ data: { type: "app.opened", props: { path: tag }, at: new Date(now.getTime() - 179 * day) } });
     const heartbeats = await prisma.event.count({ where: { type: "system.heartbeat" } });
     for (const rule of RULES) await rule.run(now);
     assert.equal(await prisma.event.count({ where: { id: old.id } }), 0);

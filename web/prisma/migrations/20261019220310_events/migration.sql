@@ -2,7 +2,6 @@
 CREATE TABLE "Event" (
     "id" TEXT NOT NULL,
     "userId" TEXT,
-    "visitor" TEXT,
     "type" TEXT NOT NULL,
     "props" JSONB,
     "at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,

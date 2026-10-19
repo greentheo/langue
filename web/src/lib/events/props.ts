@@ -1,8 +1,9 @@
 /**
  * What an event may say about itself (#109). Pure, so it is tested directly.
  *
- * Events hold ids, the public paths we count, counts and milliseconds, and
- * nothing else: no typed text, no names, no emails, no answers. A prop that is
+ * Events hold ids, the public paths we count, counts, milliseconds and flags,
+ * and nothing else: no typed text, no names, no emails, no answers, no
+ * visitor id. A prop that is
  * not on this list, or whose value doesn't look like what the list says, is
  * dropped before anything is written.
  */
@@ -39,18 +40,27 @@ const ALLOWED: Record<string, (value: unknown) => boolean> = {
   exercises: isCount,
   challenge: (value) => value === 0 || value === 1,
   ms: isCount,
+  /** A device's first visit of the day to this page, or first open of this invite (visitor.ts). */
+  firstToday: (value) => typeof value === "boolean",
 };
 
 /** The props an event keeps: allowed keys with well-formed values; everything else is gone. */
-export function cleanProps(props: Record<string, unknown> = {}): Record<string, string | number> {
-  const kept: Record<string, string | number> = {};
+export function cleanProps(props: Record<string, unknown> = {}): Record<string, string | number | boolean> {
+  const kept: Record<string, string | number | boolean> = {};
   for (const [key, value] of Object.entries(props)) {
-    if (ALLOWED[key]?.(value)) kept[key] = value as string | number;
+    if (ALLOWED[key]?.(value)) kept[key] = value as string | number | boolean;
   }
   return kept;
 }
 
-/** Crawlers and link previews aren't visitors. */
+/**
+ * Crawlers and link previews aren't visitors. Invite links travel by chat app,
+ * and each one fetches the page to draw a preview: WhatsApp, iMessage (which
+ * says Twitterbot or facebookexternalhit), Telegram, Slack, Discord, Facebook,
+ * LinkedIn, Skype, Signal.
+ */
 export function isBot(userAgent: string): boolean {
-  return /bot|crawl|spider|slurp|preview|monitor|curl|wget|python|headless/i.test(userAgent);
+  return /bot|crawl|spider|slurp|preview|monitor|curl|wget|python|headless|whatsapp|facebookexternalhit|facebot|twitterbot|telegram|slack|discord|linkedin|skypeuri|signal|embedly|vkshare|pinterest/i.test(
+    userAgent,
+  );
 }
