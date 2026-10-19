@@ -64,7 +64,7 @@ The owner pastes this by hand. The app doesn't build it.
 
 > I'm learning {language} on Langue, a small invite-only app for family and
 > friends. Short daily steps, you type real answers, and a wrong ending is
-> marked wrong. No ads. Here's an invite: {link}
+> marked wrong (a missing accent is pointed out). No ads. Here's an invite: {link}
 
 ---
 
@@ -101,6 +101,9 @@ endings.ts covers what's taught through A2, which is the whole course today.
 The note quotes the answer with its accents (#92). "A small typo" sits next to
 "endings count", so it reads as a typo elsewhere in the word, which is what stays
 close.
+#114 CAVEAT: accent-only endings (fr "J'ai parle" for "parlé", es "hablo" for "habló",
+pt "pode" for "pôde") are graded close (probe on ef01562). The sentence about missing
+accents is the carve-out that keeps this line true until #114 ships.
 
 CLAIM: "Little role-plays from the first unit, like greeting a new friend or a
 neighbour"
@@ -140,8 +143,13 @@ SOURCE: "What do you want to learn?" panel, web/src/app/learn/page.tsx (#41). Ve
 CLAIM: "add Langue to your home screen and it works like an app"
 SOURCE: web/src/app/manifest.ts; install hint in web/src/components/pwa.tsx. Verified.
 
-CLAIM (short version): "a wrong ending is marked wrong", "no ads"
+CLAIM (short version): "a wrong ending is marked wrong (a missing accent is pointed
+out)", "no ads"
 SOURCE: as above (#102 probe on a81c9cb); no ad code (grep).
+#114 CAVEAT: accent-only endings (fr "J'ai parle" for "parlé", es "hablo" for "habló",
+pt "pode" for "pôde") are graded close, "Watch the accents" (probe on ef01562). The line
+keeps the accent carve-out until #114 ships. Without the parenthesis, a French learner who
+types "parle" for "parlé" would be counted right against our word.
 ```
 
 ## What I'd measure
