@@ -69,6 +69,9 @@ Roughly in order; each line is one or a few PRs. The board is the record:
 set the order where it matters. **Owner's order (#98): the differentiators
 first, then B1 and B2; C1–C2 wait.**
 
+**First — the owner's priority (2026-10-19): in-house tracking**
+0. #109 Eventing and the first dashboard: signup funnel, retention, engagement (no cookies, no third parties) — L · then #52 (learning measures) and #110 (campaign link tags)
+
 **Now — accuracy and progress safety (bugs first)**
 1. #93 Item keys survive content edits (lock + renames) — M
 2. #107 Neutral ending note · #82 Cloze homographs · #85 Articles per language — S
@@ -85,7 +88,7 @@ first, then B1 and B2; C1–C2 wait.**
 11. #76 Password reset without email — M (after #63)
 12. #53 Your mistakes, made visible — L (after #63)
 13. #51 Dictation — M · #55 Listening cards — S · #54 Speak your reply — M · #56 Writing task — M
-14. #52 Learning events and the dashboard (full build) — M (after #49, #63)
+14. #52 Dashboard phase 2: learning measures — M (after #109)
 15. #100 Certificates say what the course practised — S · #99 Gloss check — M
 16. #72 Front page and invite copy — S (after the readiness kit, #69)
 
