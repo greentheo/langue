@@ -52,7 +52,7 @@ export const INVENTORY: InventoryEntry[] = [
     model: "InviteCode",
     title: "Invite codes",
     what: "The codes that let people join, with the note the person who made one wrote for it and how many times it was used.",
-    kept: "Until whoever made it removes it.",
+    kept: "As long as Langue runs: there's no way to remove a code yet.",
     fields: { id: "langue", code: "langue", note: "you", createdById: "langue" },
   },
   {
@@ -128,24 +128,24 @@ export const INVENTORY: InventoryEntry[] = [
   {
     model: "Event",
     title: "Usage counts",
-    what: "Short records Langue keeps to see whether it's working: a visit to the front or invite page, an invite opened, a signup, the app opened, a step started, the app installed, reminders turned on or off. They hold ids, page names and counts, never what you typed. Visits carry only the day's scrambled visitor code (below).",
+    what: "Short records Langue keeps to see whether it's working: a visit to the front or invite page, an invite opened, a signup, the app opened, a step started, the app installed, reminders turned on or off. They hold ids, page names, counts and whether a visit was a device's first that day, never what you typed and never anything that identifies a visitor.",
     kept: "180 days, then deleted. Deleting your account deletes yours.",
-    fields: { id: "langue", userId: "langue", visitor: "langue", type: "langue", props: "langue" },
+    fields: { id: "langue", userId: "langue", type: "langue", props: "langue" },
   },
 ];
 
 /** What the page says that isn't a table: how visitors are counted, and what stays on your device. */
 export const NOTES: { title: string; text: string }[] = [
   {
-    title: "Counting visitors without tracking them",
-    text: "To count how many people visit the front page and the invite page, Langue makes a scrambled code from your internet address and browser name, mixed with a random value that changes every day and is never written down. Langue can't turn the code back into your address or connect one day's visitors to another's. Your internet address itself is never stored.",
+    title: "Counting visitors",
+    text: "To count how many people visit the front page and the invite page, Langue makes a scrambled code from your internet address and browser name, mixed with a random value that changes every day. The code is only held in the server's memory for the day, to tell a first visit from a return; neither the code nor the random value is ever written down, and both are gone the next day. Your internet address is never stored.",
   },
   {
     title: "On your device",
-    text: "Langue stores no tracking cookie or identifier on your device. Once you sign in, there's a sign-in cookie so you stay signed in. Your display choices (colours, sound, voice, whether to show the install hint) stay in your browser and never reach Langue.",
+    text: "Langue stores no tracking cookie or identifier on your device. When you sign in there's a sign-in cookie, langue_session, so you stay signed in, and a second one, langue_accounts, if more than one learner signs in on the same device. Your settings stay in your browser's local storage and never reach Langue: colours, sound on or off, flashcard mode, and whether you've dismissed the install hint.",
   },
   {
-    title: "Nobody else",
-    text: "Nothing here is sent to advertisers, analytics companies or anyone else. There are no ads.",
+    title: "Who else sees it",
+    text: "The optional AI tools (conversation, reading, translation and fill-in-the-blank practice, \"ask about this lesson\", and flashcard explanations) send what you type in them to Anthropic, to get a reply. The course itself sends nothing: no advertisers, no analytics companies, no ads.",
   },
 ];

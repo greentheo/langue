@@ -9,7 +9,7 @@ import { inviteStatus } from "@/lib/auth/invite-status";
 import { prisma } from "@/lib/db";
 import { openInvite } from "@/lib/events/invites";
 import { isBot } from "@/lib/events/props";
-import { clientAddress, visitorHash } from "@/lib/events/visitor";
+import { clientAddress, visitors } from "@/lib/events/visitor";
 import { newVisitToken } from "@/lib/events/visits";
 
 export const metadata = { title: "Create account — LANGUE" };
@@ -66,5 +66,5 @@ async function visitToken(code: string): Promise<string> {
   const request = await headers();
   const userAgent = request.get("user-agent") ?? "";
   if (!invite || inviteStatus(invite) !== "active" || isBot(userAgent)) return newVisitToken();
-  return openInvite(visitorHash(clientAddress(request), userAgent), invite.id);
+  return openInvite(visitors.hash(clientAddress(request), userAgent), invite.id);
 }
