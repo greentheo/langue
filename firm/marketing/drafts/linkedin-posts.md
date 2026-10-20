@@ -19,7 +19,7 @@ confirm before post 1:
 
 ## 1. Post 1: the story (no invite)
 
-**Gates:** the README is fixed (§4), so the repo link lands well. Don't name
+**Gates:** #126 (the README, from §4) is merged, so the repo link lands well. Don't name
 the app's address until #72 is deployed.
 
 > My family's language app has a staff of five. None of them are people.
@@ -112,12 +112,13 @@ Sent only to people who answered "which language, and what's it for?".
 > leaderboard, so a first name or nickname is perfect. What Langue keeps
 > about you: {app address}/privacy
 
-## 4. README, top section (proposed for #72)
+## 4. README, top section (#126)
 
 Post 1 links the repo, and today's README opens "Langue - AI Language
 Learning" and lists levels A1–C2 (the old CLI's flashcard libraries). Proposed
-replacement for its title and first paragraph, for night shift to apply under
-#72 (marketing doesn't edit outside `firm/marketing/`):
+replacement for its title and first paragraph. The foreman applies it word
+for word as a docs PR for #126 once this PR merges (marketing doesn't edit
+outside `firm/marketing/`):
 
 > # Langue
 >

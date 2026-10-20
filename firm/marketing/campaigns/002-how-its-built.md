@@ -100,10 +100,11 @@ asking for an invite, invites sent.
 ## When to launch
 
 **Post 1 (the story, no invite) can go out once:**
-1. **The README is fixed.** The post links the repo, and its README opens
+1. **#126 is merged (the README).** The post links the repo, and its README opens
    "Langue - AI Language Learning" and lists levels A1–C2 (those are the old
    CLI's flashcard libraries, not the course). A draft for its top section is
-   in `drafts/linkedin-posts.md` §4, proposed for #72.
+   in `drafts/linkedin-posts.md` §4; the foreman applies it under #126 once
+   this brief merges.
 2. **#72 is deployed,** or the post doesn't name the app's address. Readers
    who look Langue up land on a front page that says "AI language practice".
 
