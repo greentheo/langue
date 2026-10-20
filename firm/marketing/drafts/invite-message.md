@@ -5,7 +5,8 @@
 approved, #72 puts it in the app word for word. **Status:** draft, not sent.
 
 Why it changes: today's email says *"learn a language with an AI tutor"*. No AI
-runs while you learn on the course, so it promises the wrong app.
+runs in the daily steps (only optional extra tools use it), so it promises
+the wrong app.
 
 Parts in `{braces}` are filled in by the app from the same inputs it uses
 today. `{languages}` is the app's list, e.g. "Italian, Spanish, French and

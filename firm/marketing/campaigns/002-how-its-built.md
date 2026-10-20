@@ -11,7 +11,7 @@ People who want in send a message, and the owner's LinkedIn inbox is the
 waiting list. Once the gates below are live, post 2 opens 25 places, and the
 owner sends each invite by private message from one campaign code. Two weeks
 after the code closes, #109's dashboard says whether to do more, change the
-story, or stop and fix the app.
+story, stop and fix the app, or wait because it's too few to judge.
 
 **The owner's decisions (2026-10-20, in marketing's session, #124):**
 - open Langue to people they don't know: "Yes, capped", after campaign 001;
@@ -62,8 +62,9 @@ Three pieces, all in `drafts/linkedin-posts.md` with sources:
 2. **Post 2, the cohort opens.** 25 places for beginners with a reason, what
    the course is and isn't, and "it's pre-alpha".
 3. **The invite message,** sent privately to each person. It's 001's body,
-   adjusted for strangers: the group is "others who came from my post", it's
-   pre-alpha, and it links to `/privacy`.
+   adjusted for strangers: the group is "me and others who came from my
+   post", it's pre-alpha, the code is "open until {day}", the link is "just
+   for you", and it links to `/privacy`.
 
 **Depends on:**
 - **#114:** while it's open, the endings line keeps "(a missing accent is
@@ -89,8 +90,8 @@ Made by the owner on `/learn/invites` on day 0:
 
 | Setting | Value | Why |
 |---|---|---|
-| **Uses** | **25** | The cap limits AI cost, password resets and support to what the owner can handle at 10–20 minutes a day. 25 can clear #109's ≥ 5-signup row even if four in five people who asked never join. |
-| **Expires** | **7 days** | As in 001: every signup lands in week 1, so the cohort reads clean by day 21. People who ask later go on the inbox waiting list for 003. |
+| **Uses** | **25** | The cap limits AI cost, password resets and support to what the owner can handle at 10–20 minutes a day. **The code is made with 25 uses, so the app turns away a 26th signup** ("That invite code has been used by everyone it was made for"). So the owner sends **at most 25 invites**, never more, and everyone else who asked is first for 003. 25 can reach #109's 5 signups even if four in five people invited never join. |
+| **Expires** | **7 days** | The week runs from when the code is made (`lib/auth/invites.ts` l.49–51), not from each invite, so the message says "open until {day}". As in 001, every signup lands in week 1, and the cohort reads clean by day 21. People who ask later go on the inbox waiting list for 003. |
 | **Note** | **"Early learners"** | The note is the group's name, so every member sees it (`lib/leaderboard.ts`). It's also the dashboard label. It names the campaign, never a person or the channel's source, and it must differ from 001's "Autumn starters". |
 
 The owner's LinkedIn inbox is the list of who asked and who was invited. It
@@ -114,7 +115,7 @@ Post 1 hands out nothing, so it can run while 001 does.
 
 | Gate | Why it's a gate for strangers | State (2026-10-20) |
 |---|---|---|
-| **001's day-14 read shows no first-run problem** (activated ≥ 60% of signups, or 001 had fewer than 5 signups and the owner heard of no one getting stuck) | Don't hand a known leak to people who don't know us. | 001 not launched |
+| **001's day-14 read shows no first-run problem:** on 001's row, activated is at least 60% of signups. If 001 has no row (fewer than 5 signups, or pooled by the dashboard), the owner has heard of no one getting stuck. | Don't hand a known leak to people who don't know us. | 001 not launched |
 | **#109 PR 1 and PR 2 deployed** | Without the funnel, 002 can't be read. | In review (#115, #117) |
 | **#72 deployed** | First contact must not say "AI tutor". | Ready, not built |
 | **#123 deployed, or at least a monthly spend limit on the Anthropic key** (the owner sets it in Anthropic's console, no code needed) | Nothing caps a learner's AI use today, and AI is on by default (#74). | Needs owner |
@@ -127,8 +128,8 @@ The foreman's view matches (2026-10-20). Night shift's queue doesn't include
 | Day | What | Owner's time |
 |---|---|---|
 | any time after its gates | Post 1 | ~10 min |
-| 0 | Post 2; mint the code; message each person on the waiting list who answered the question | ~30 min |
-| 0–7 | Invite new askers as they answer the question | ~5 min a day |
+| 0 | Post 2; mint the code; invite the first people on the waiting list who answered the question, **25 at most**; tell the rest they're first for 003 | ~30 min |
+| 0–7 | Invite new askers as they answer, until 25 invites have gone out | ~5 min a day |
 | 7 | The code expires | — |
 | 14 | First read | 2 min |
 | 21 | Final read; decide | 2 min |
@@ -140,13 +141,22 @@ signed up → activated → week-2 active. **Above the funnel, from LinkedIn,**
 the owner reports counts only: each post's impressions and reactions (LinkedIn's
 own post analytics), messages asking for an invite, and invites sent.
 
+**What the owner can see.** `/learn/invites` always shows the code's uses
+("{useCount}/{maxUses} used"). The dashboard decides whether the code gets its
+own row, and 5 signups aren't always enough: under #117's privacy rule, a
+code is pooled whenever the other people who signed up in the same window
+number 1–4. One small family code is enough for that. Each rule below uses
+only what's on the page.
+
 **Read top to bottom; the first row that matches decides:**
 
 | When | If… | Then |
 |---|---|---|
-| **Day 14** | **Fewer than 5 signed up.** No row of its own; the owner reads uses on `/learn/invites`. | **Change the story.** If few people asked, post 1 didn't reach learners: try the app itself (endings count) for 003. If many asked but few joined, look at the invite message and the sign-up page. |
-| **Day 21** | **5 or more week-2 active, and at least 40% of activated** (#109's tripwire, not tripped) | **Do more.** 003: the next post, with a bigger cap (50) if the owner's time held up. |
-| **Day 21** | **5 or more signed up, but week 2 below that** | **Stop, and fix the app first.** #109's tripwires name the stage. Marketing files what the row shows as an issue. |
+| **Day 14** | **Fewer than 5 signed up**, read from the code's uses on `/learn/invites` | **Change the story.** If few people asked, post 1 didn't reach learners: try the app itself (endings count) for 003. If many asked but few joined, look at the invite message and the sign-up page. |
+| **Day 21** | **The code has no row of its own** (pooled, even with 5+ signups) | **Too few to judge.** Keep the story and the cap, and run 003 at the same size. Record the signups from `/learn/invites`, and "pooled". |
+| **Day 21** | **A tripwire is tripped on the code's row:** activated under 60% of signups, or week 2 under 40% of activated | **Stop, and fix the app first.** The tripped tripwire names the stage (first run, or onboarding and reminders). Marketing files what the row shows as an issue. Campaigns restart when the fix ships. |
+| **Day 21** | **5 or more week-2 active** | **Do more.** 003: the next post, with a bigger cap (50) if the owner's time held up. |
+| **Day 21** | **Anything else:** 5 or more signed up, fewer than 5 week-2 active, and no tripwire tripped | **Too few to judge.** A small cohort that's healthy so far (e.g. 7 signed up, 6 activated, 4 in week 2). Keep the cap and run 003 at the same size. |
 
 **Also look at, but don't decide on:**
 - **002 against 001.** If 002's week-2 rate is far below 001's, the story
@@ -209,4 +219,13 @@ listed in Section 8.2"). Fetched 2026-10-20.
 CLAIM: #123's per-code allowance and "codes that hit C"
 SOURCE: #123 design v3.1 (C = max(300, 50 × members)); foreman's message
 2026-10-20. Design, not built.
+
+CLAIM: "a code is pooled whenever the other people who signed up in the same window
+number 1–4"; "/learn/invites always shows the code's uses"
+SOURCE: PR #117's fixes (a0001c4: "A code gets its own row in a window only while
+everyone else who signed up in that window … is 0 or ≥ 5"); the reviewer's re-check
+and the foreman's decision (activated and week 2 in one window, all time), still with
+night shift on 2026-10-20; learn/invites/page.tsx ("{useCount}/{maxUses} used"),
+never suppressed. Design in review, not shipped: re-check against the live
+dashboard before day 14. The "too few to judge" rows came from the reviewer (PR #125).
 ```

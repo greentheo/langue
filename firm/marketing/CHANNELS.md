@@ -33,7 +33,6 @@ Langue.
   owner's own LinkedIn is a channel by their decision (2026-10-20, #124): its
   posts are theirs, drafted by marketing.
 - Nothing automated on anyone's account: no bot posts, replies, likes or
-  messages (LinkedIn User Agreement §8.2; Reddit restricts undisclosed AI
-  accounts; MARKETING.md).
+  messages (LinkedIn User Agreement §8.2; MARKETING.md).
 - No email lists. Langue sends no email; invites go person to person.
 - Nothing aimed at children. Materials speak to parents and adults.

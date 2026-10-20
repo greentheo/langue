@@ -67,11 +67,11 @@ Chrome offers an Install button. On iPhone the home-screen app keeps its
 own login, so you sign in once more inside it.
 
 **Does Langue use AI?**
-Not while you learn on the course: lessons, steps, role-plays, grading,
-reviews and reminders are fixed content and plain code, the same for
-everyone. Some optional extra tools do use
+Not in the daily steps: the steps, role-plays, grading, reviews and
+reminders are fixed content and plain code, the same for everyone, and so
+is each lesson's text. Some optional extra tools do use
 AI (Anthropic's small Claude model): the Conversation partner, the Reading,
-Translation and Fill-in-the-blank exercises, "ask about this lesson", and
+Translation and Fill-in-the-blank exercises, "Ask about this lesson" (the box at the end of each lesson page), and
 the explanation you get when you miss a flashcard. What you type into those
 tools is sent to Anthropic. AI-written exercises aren't checked the way the
 course is.
@@ -182,14 +182,15 @@ Chrome offers an Install button … keeps its own login"
 SOURCE: components/pwa.tsx InstallHint; docs/ROADMAP.md "On iPhone, the installed app
 keeps its own login". Verified.
 
-CLAIM: AI answer (no AI runs while you learn on the course; which tools do;
+CLAIM: AI answer (no AI runs in the daily steps; which tools do, including the lesson
+page's Ask box; corrected 2026-10-20, PR #125, from "while you learn … lessons";
 Anthropic; typed text sent; AI exercises not checked like the course)
 SOURCE: model calls (app/api/chat, app/api/lessons/ask, lib/engine/activities.ts
 via exercises, exercises/grade, flashcards/answer); model.ts claude-haiku-4-5; content
 checks cover data/curriculum only. Verified.
 NOT IMPLIED: who wrote the course. Per #97, every A1/A2 line was written by AI writer
 agents and reviewed by AI, with no native check yet. The owner decided (2026-10-16,
-#97) on no FAQ line about it, so the copy says what *runs* ("while you learn"), never
+#97) on no FAQ line about it, so the copy says what *runs* ("in the daily steps"), never
 "no AI in the course", which reads as "people wrote it".
 OWNER: the line "AI-written exercises aren't checked the way the course is" is about
 the optional tools, not the course's authorship, so I kept it. Cut it if you read

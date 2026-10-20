@@ -1,16 +1,15 @@
 # Campaign 001: a reason to learn
 
-**Status:** draft brief for #112. Nothing is sent; launching is the owner's
-call. **Stacked on #78:** the message and its claims come from #78's drafts
-and POSITIONING. The owner approved #78 ("Looks good to me!", 2026-10-16),
-and it isn't merged yet.
+**Status:** brief for #112, merged 2026-10-20 (#113). Nothing is sent;
+launching is the owner's call. The message and its claims come from #78's
+drafts and POSITIONING (#78 merged 2026-10-19).
 
 **In one paragraph:** the owner personally invites about 15 adults from their
 own circle who have a real reason to learn Italian, Spanish, French or
 Brazilian Portuguese. Everyone gets one shared campaign code, open for a
 week. Two weeks after the code closes, #109's dashboard says whether to do
-more of this, change the message, or stop and fix something in the app
-first.
+more of this, change the message, stop and fix something in the app first,
+or carry on at the same size because it's too few to judge.
 
 ---
 
@@ -125,8 +124,11 @@ signed up → activated (finished a first step within 7 days) → week-2 active
 (practised on any of days 7–13).
 
 **Why the bars are counts of 5:**
-- **Signups:** the code only gets its own row at 5 or more (#109), so 5 is
-  the least we can measure the campaign by.
+- **Signups:** a code gets its own row only at 5 or more (#109), so 5 is the
+  least we can measure the campaign by. Even then, #117's privacy rule pools
+  a code whenever the other people who signed up in the same window number
+  1–4 (one small family code is enough). So the rules below also say what to
+  do without a row.
 - **Week-2 active:** within the row every count is shown (#109, clarified
   2026-10-19). Here 5 is a choice, not a limit: a third of the 15 invited,
   still practising in their second week.
@@ -134,13 +136,20 @@ signed up → activated (finished a first step within 7 days) → week-2 active
 Neither is an industry benchmark. Campaign 001 sets our first baseline, and
 002's bars come from it, finer if the numbers support it.
 
-**Read top to bottom; the first row that matches decides:**
+**Read top to bottom; the first row that matches decides.** Each rule uses
+only what the owner can see: `/learn/invites` always shows the code's uses,
+and the dashboard shows the code's row only when it isn't pooled.
 
 | When | If… | Then |
 |---|---|---|
-| **Day 14** | **Fewer than 5 signed up.** The code has no row of its own; the owner reads the code's uses on `/learn/invites`. | **Change the message.** Fewer than a third of people with a reason said yes. Rewrite the personal line and the body (and ask yourself whether the people were right), then run 002 with the new message to a new group. |
-| **Day 21** | **5 or more week-2 active** (at least a third of the 15 still practising in their second week) | **Do more of this.** Campaign 002: the same message to the next group of similar people. |
-| **Day 21** | **5 or more signed up, but fewer than 5 week-2 active** | **Stop, and fix the app first.** People came and didn't stay, so more invites would spend goodwill on a leak. #109's tripwires name the stage: *activated under 60% of signups* → first-run experience; *week-2 active under 40% of activated* → onboarding and reminders. Marketing files what the row shows as an issue. Campaigns restart when the fix ships. |
+| **Day 14** | **Fewer than 5 signed up**, read from the code's uses on `/learn/invites` | **Change the message.** Fewer than a third of people with a reason said yes. Rewrite the personal line and the body (and ask yourself whether the people were right), then run the next group with the new message. |
+| **Day 21** | **The code has no row of its own** (pooled, even with 5+ signups) | **Too few to judge.** Keep the message and invite the next group of similar people at the same size (15). Record the signups from `/learn/invites`, and "pooled". |
+| **Day 21** | **A tripwire is tripped on the code's row:** activated under 60% of signups, or week 2 under 40% of activated | **Stop, and fix the app first.** People came and didn't stay, so more invites would spend goodwill on a leak. The tripped tripwire names the stage: activation → first-run experience; week 2 → onboarding and reminders. Marketing files what the row shows as an issue. Campaigns restart when the fix ships. |
+| **Day 21** | **5 or more week-2 active** (at least a third of the 15 still practising in their second week) | **Do more of this.** The same message to the next group of similar people. |
+| **Day 21** | **Anything else:** 5 or more signed up, fewer than 5 week-2 active, and no tripwire tripped | **Too few to judge.** A small cohort that's healthy so far (e.g. 7 signed up, 6 activated, 4 in week 2). Keep the message and invite the next group at the same size. |
+
+The first draft's rule sent that last case to "stop", with no stage to name
+(reviewer, PR #125).
 
 **Also look at, but don't decide on:**
 - **Opened vs. signed up, as a rough sign only.** `invite.opened` counts a
@@ -234,4 +243,13 @@ code: #109 isn't built. Re-check against the shipped dashboard before day 14.
 CLAIM (measure): "the owner reads the code's uses on /learn/invites"
 SOURCE: learn/invites/page.tsx ("{useCount}/{maxUses} used"). Verified. It shows names
 of who joined to the admin only, and marketing never sees or records those.
+
+CLAIM: "a code is pooled whenever the other people who signed up in the same window
+number 1–4"; "/learn/invites always shows the code's uses"
+SOURCE: PR #117's fixes (a0001c4: "A code gets its own row in a window only while
+everyone else who signed up in that window … is 0 or ≥ 5"); the reviewer's re-check
+and the foreman's decision (activated and week 2 in one window, all time), still with
+night shift on 2026-10-20; learn/invites/page.tsx ("{useCount}/{maxUses} used"),
+never suppressed. Design in review, not shipped: re-check against the live
+dashboard before day 14. The "too few to judge" rows came from the reviewer (PR #125).
 ```
