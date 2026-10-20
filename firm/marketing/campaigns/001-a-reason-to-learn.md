@@ -1,6 +1,6 @@
 # Campaign 001: a reason to learn
 
-**Status:** brief for #112, merged 2026-10-20 (#113). Nothing is sent;
+**Status:** brief for #112, merged 2026-10-19 (#113). Nothing is sent;
 launching is the owner's call. The message and its claims come from #78's
 drafts and POSITIONING (#78 merged 2026-10-19).
 
