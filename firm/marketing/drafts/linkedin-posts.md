@@ -40,8 +40,8 @@ well. Don't name the app's address until #72 is deployed.
 > • a marketer isn't allowed to claim anything it can't source
 >
 > My part takes 10 to 20 minutes a day. Nothing ships until I say "ship it".
-> In the first {five} days, {16} changes merged, {half} of them to the app
-> and its course.
+> In the first {five} days, {16} changes merged, {half} of them to the app,
+> its course and its tests.
 >
 > My favourite moment so far: the marketer drafted an invite saying "a
 > wrong ending is marked wrong". The reviewer tested it and found that the
@@ -86,7 +86,7 @@ well. Don't name the app's address until #72 is deployed.
 > is pointed out)}. No ads, nothing to pay.
 >
 > Who made it: AI wrote the course, and no native speaker has checked it
-> yet. Your answers are graded by plain code, not AI.
+> yet. Your answers in the daily steps are graded by plain code, not AI.
 >
 > What it isn't yet: there's no speaking out loud, and the course stops at
 > A2. It's pre-alpha, so expect rough edges, and tell me when you hit one.
@@ -128,9 +128,12 @@ to no more than 25 of them.
 > leaderboard, so a first name or nickname is perfect. What Langue keeps
 > about you: {app address}/privacy
 
-`{the code's expiry day}` is 7 days from when the code was made, shown on
-`/learn/invites`. It's the same date for everyone, however late in the week
-they're invited.
+`{the code's expiry day}` is 7 days from when the code was made. It's the
+same date for everyone, however late in the week they're invited. **Write
+the day before the date `/learn/invites` shows.** That page shows the expiry
+as a UTC date, and the code closes at the minute it was made, not at the
+end of that day. Made on an evening in the Americas, the date shown is the
+day after it closes locally.
 
 ## 4. README, top section (#126)
 
@@ -153,10 +156,10 @@ as they are, with their `web/README.md` link:
 Langue is a small, invite-only language-learning web app for family and
 friends. Its course teaches Italian, Spanish, French and Brazilian Portuguese
 at A1 and A2 (beginner and elementary), in short daily steps where you type
-real answers. The daily steps, role-plays and grading run no AI: grading is
-plain code. Optional AI tools sit alongside: a tutor at the end of each
-lesson page, a conversation partner, some extra exercises and flashcard
-explanations.
+real answers. The daily steps, with their role-plays and grading, run no AI:
+they're plain code. Optional AI tools sit alongside: a tutor at the end of
+each lesson page, a conversation partner, some extra exercises (one is graded
+by AI) and flashcard explanations.
 
 It's built and run by a small firm of AI agents (a foreman, a night shift, a
 reviewer, Socrates and a marketer) and one human owner, who decides what
@@ -190,7 +193,7 @@ tested PR"; reviewer: "a PR → findings, numbers it re-ran"; Socrates: "the obv
 questions nobody asked"); MARKETING.md ("A claim with no source is cut"). Verified.
 
 CLAIM: "Since mid-October"; "In the first five days, 16 changes merged, half of them
-to the app and its course"
+to the app, its course and its tests" (#68 is CI)
 SOURCE: firm/README.md first committed 2026-10-15 (#67); gh pr list --state merged
 --search "merged:>=2026-10-15" → 16 on 2026-10-20, of which 8 changed the app, its
 course or CI (#68, #83, #86, #88, #89, #92, #96, #102; the reviewer's count, matched
@@ -227,10 +230,13 @@ SOURCE: CLAUDE.md ("they verify every listed answer grades correct, nothing is t
 twice, every card renders"). Verified. Not "tests check the language is right".
 
 CLAIM: "Your answers in the daily steps are graded by plain code, not AI" (post 1);
-"Your answers are graded by plain code, not AI" (post 2); README "The daily steps,
-role-plays and grading run no AI … Optional AI tools sit alongside: a tutor at the
-end of each lesson page, a conversation partner, some extra exercises and flashcard
-explanations"
+"Your answers in the daily steps are graded by plain code, not AI" (post 2); README
+"The daily steps, with their role-plays and grading, run no AI … Optional AI tools
+sit alongside: a tutor at the end of each lesson page, a conversation partner, some
+extra exercises (one is graded by AI) and flashcard explanations"
+SCOPE: always "in the daily steps". The optional Translation exercise is graded by
+the model (api/exercises/grade/route.ts l.11–12, gradeTranslation); unqualified
+"graded by plain code" was a re-check finding (reviewer, PR #125).
 SOURCE: POSITIONING AI rows (corrected in this PR: app/api/steps/* makes no model
 call, and no step component reaches an AI route; the lesson page's "Ask about this
 lesson" box, app/learn/lessons/[id]/page.tsx l.98–103, calls app/api/lessons/ask).
@@ -268,7 +274,8 @@ that aren't listed"; #49). Verified.
 
 CLAIM: "The link fills in the code, and it's open until {the code's expiry day}"
 SOURCE: register/page.tsx codeFromQuery; lib/auth/invites.ts l.49–51 (expiresAt =
-when the code is made + expiresInDays). Not "open for a week": that's true only for
+when the code is made + expiresInDays); invite-status.ts l.22 (closes at that
+minute); learn/invites/page.tsx formatDay (a UTC date), hence "the day before". Not "open for a week": that's true only for
 someone invited on day 0 (reviewer, PR #125). Verified.
 
 CLAIM: "a small group with me and others who came from my post … names, points,

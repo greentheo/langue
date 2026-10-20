@@ -67,11 +67,11 @@ Chrome offers an Install button. On iPhone the home-screen app keeps its
 own login, so you sign in once more inside it.
 
 **Does Langue use AI?**
-Not in the daily steps: the steps, role-plays, grading, reviews and
-reminders are fixed content and plain code, the same for everyone, and so
-is each lesson's text. Some optional extra tools do use
+Not in the daily steps: the steps, with their role-plays, grading and
+reviews, are fixed content and plain code, the same for everyone, and so
+are reminders and each lesson's text. Some optional extra tools do use
 AI (Anthropic's small Claude model): the Conversation partner, the Reading,
-Translation and Fill-in-the-blank exercises, "Ask about this lesson" (the box at the end of each lesson page), and
+Translation (graded by the AI) and Fill-in-the-blank exercises, "Ask about this lesson" (the box at the end of each lesson page), and
 the explanation you get when you miss a flashcard. What you type into those
 tools is sent to Anthropic. AI-written exercises aren't checked the way the
 course is.
@@ -105,9 +105,11 @@ to message other learners. The person who runs Langue can see accounts, as
 with any app.
 
 **Will my child talk to an AI?** ⚠
-Not in the course. The optional extra tools above (the Conversation partner
-and some exercises) use AI, and today any account can open them. There's no
-parental switch for them yet. What's typed into them is sent to Anthropic.
+Not in the daily steps. Two optional tools let anyone type to an AI: the
+"Ask about this lesson" box at the end of each lesson page, and the
+Conversation partner. Some extra exercises and the flashcard explanations
+use it too. Today any account can open all of them, and there's no parental
+switch yet. What's typed into them is sent to Anthropic.
 *(Decision pending: #74.)*
 
 **Will it pressure my child to keep going?**

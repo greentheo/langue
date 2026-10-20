@@ -46,10 +46,11 @@ actually use.
 > - Private groups. Each invite code is a group with its own leaderboard,
 >   and there's no messaging between learners.
 >
-> **No AI in the daily steps.** The steps, role-plays, grading and reviews
-> are fixed content and plain code, the same for everyone. A few optional
-> extra tools do use AI: the "Ask about this lesson" box at the end of each
-> lesson page, a conversation partner, and some extra exercises.
+> **No AI in the daily steps.** The steps, with their role-plays, grading
+> and reviews, are fixed content and plain code, the same for everyone. A
+> few optional extra tools do use AI: the "Ask about this lesson" box at the
+> end of each lesson page, a conversation partner, some extra exercises (one
+> is graded by AI), and the explanation you get when you miss a flashcard.
 >
 > **Not built yet:** speaking your answers aloud, dictation, writing tasks,
 > and levels above A2.
