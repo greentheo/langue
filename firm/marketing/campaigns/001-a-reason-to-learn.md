@@ -149,6 +149,9 @@ Neither is an industry benchmark. Campaign 001 sets our first baseline, and
   opens far outnumber signups *and* the owner hears that people got stuck
   on the sign-up page is it worth filing against first contact (#72's
   area), not the message.
+- **#123's "codes that hit C" line,** once #123 is live, beside week 2: a
+  low week 2 can be the code's shared daily AI limit, not the message
+  (foreman, 2026-10-20).
 - **What people say.** If the owner hears why someone didn't join or
   stopped, that's feedback. Marketing turns it into an issue with no name
   attached.
