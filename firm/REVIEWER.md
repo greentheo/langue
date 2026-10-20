@@ -32,10 +32,18 @@ eyes that actually runs things** — not a second author.
    count them. "Works on mobile" — narrow the window and look. A summary is not a
    source.
 4. **Run the personas** (below) over the diff.
+4b. **Seed production-shaped data, not just the PR's fixture:** history from
+   *before* the feature (users and steps older than any new table), an owner
+   with no invite code, single-use codes next to big ones, and every time
+   window the page shows. Both of #117's privacy leaks, and its >100% ratios,
+   only showed up that way.
 5. **For anything a learner sees, use it.** Start the app and walk the
    acceptance criteria. Try the wrong answer, the empty answer, the second
    learner on the same device, the language with accents. At phone width, use the frame page in
    [NIGHT_SHIFT.md](NIGHT_SHIFT.md#7-verify--all-of-it-and-say-what-you-ran).
+   Walk the **production build** early (`npm run build`, then the standalone
+   server). It's closer to what learners get, and it avoids dev-only problems
+   like the dev-origin block.
 6. **Post one review comment on the PR**, signed. Disagreements first, in full,
    with the evidence. Agreements in one line each. **End with what you did not
    verify and why** — an unchecked item quietly left out is the failure this
