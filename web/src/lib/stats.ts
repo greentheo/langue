@@ -22,6 +22,9 @@
  */
 
 export const SMALL = 5;
+/** The cohort table's weeks: 0 and 1 are activated and week 2, which the funnel shows all time only. */
+export const COHORT_FIRST_WEEK = 2;
+export const COHORT_LAST_WEEK = 7;
 const DAY_MS = 24 * 60 * 60 * 1000;
 const HOUR_MS = 60 * 60 * 1000;
 /** "Opened but didn't practise": no step finished within this long of opening the app. */
@@ -130,7 +133,8 @@ export interface Stats {
   trackingSince: string | null;
   windows: Window[];
   retention: { day: 1 | 7 | 30; share: Shown | null; n: number }[];
-  cohorts: { week: string; size: Shown; weeks: (Shown | null)[] }[];
+  /** Per signup week: who practised in each week `n` after signing up, from COHORT_FIRST_WEEK. */
+  cohorts: { week: string; size: Shown; weeks: { n: number; share: Shown }[] }[];
   engagement: {
     activeToday: number;
     dailyAverage: number;
@@ -294,7 +298,8 @@ export function computeStats(input: StatsInput): Stats {
     return { day: k, share: share === null ? null : shown(share, old.length), n: old.length };
   });
 
-  // Weekly signup cohorts × weeks since signup: who practised in that week.
+  // Weekly signup cohorts × weeks since signup: who practised in that week. From week 2: weeks 0 and 1 are activated
+  // and week 2 under another name, shown all time only, and per signup week they could be subtracted from those.
   const cohortsByWeek = new Map<string, User[]>();
   for (const user of input.users) {
     const week = weekOf(utcDay(user.createdAt));
@@ -305,7 +310,8 @@ export function computeStats(input: StatsInput): Stats {
     .slice(0, 8)
     .map(([week, members]) => {
       const reached = Math.floor(daysBetween(week, today) / 7);
-      const weeks = Array.from({ length: Math.min(8, reached + 1) }, (_, w) => {
+      const weeks = Array.from({ length: Math.max(0, Math.min(COHORT_LAST_WEEK, reached) - COHORT_FIRST_WEEK + 1) }, (_, i) => {
+        const w = COHORT_FIRST_WEEK + i;
         const active = members.filter((user) => {
           const signup = utcDay(user.createdAt);
           return [...(practiceDays.get(user.id)?.keys() ?? [])].some((day) => {
@@ -313,7 +319,7 @@ export function computeStats(input: StatsInput): Stats {
             return offset >= w * 7 && offset < (w + 1) * 7;
           });
         }).length;
-        return members.length < SMALL ? ("<5" as const) : (percent(active, members.length) ?? 0);
+        return { n: w, share: members.length < SMALL ? ("<5" as const) : (percent(active, members.length) ?? 0) };
       });
       return { week, size: shown(members.length, members.length), weeks };
     });

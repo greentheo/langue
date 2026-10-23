@@ -2,7 +2,6 @@ import Link from "next/link";
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { clearAdminConfirmation, verifySession } from "@/lib/auth/session";
-import { isAdminArea } from "@/lib/auth/admin-area";
 import { AdminWatch } from "@/components/admin-watch";
 import { logout } from "@/lib/auth/actions";
 import { languageLabel } from "@/lib/vocab";
@@ -12,16 +11,17 @@ import { SoundToggle } from "@/components/sound-toggle";
 import type { Level } from "@/lib/vocab/types";
 import { liveStreak } from "@/lib/standings";
 import { trackAppOpened } from "@/lib/events/app-opened";
-import { countsAsAppOpen, PATH_HEADER } from "@/lib/events/days";
+import { ADMIN_PAGE_HEADER } from "@/lib/admin-paths";
 
 export default async function LearnLayout({ children }: { children: React.ReactNode }) {
   // proxy.ts only checks that a cookie exists. This is the real check.
   const user = await verifySession();
   if (!user) redirect("/login");
-  const path = (await headers()).get(PATH_HEADER);
-  if (countsAsAppOpen(path)) await trackAppOpened(user.id);
-  // The first page outside the admin area ends an admin's password confirmation (#119; lib/auth/admin.ts).
-  if (user.adminConfirmedAt && path !== null && !isAdminArea(path)) await clearAdminConfirmation();
+  // The owner on an admin page isn't a learner opening the app (#109): it would push "opened, didn't practise" up.
+  const adminPage = (await headers()).get(ADMIN_PAGE_HEADER) === "1";
+  if (!adminPage) await trackAppOpened(user.id);
+  // The first page outside the admin pages ends an admin's password confirmation (#119; lib/auth/admin.ts).
+  if (!adminPage && user.adminConfirmedAt) await clearAdminConfirmation();
 
   return (
     <div className="mx-auto max-w-4xl px-5 py-6">

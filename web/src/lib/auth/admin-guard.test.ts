@@ -2,6 +2,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readdirSync, readFileSync, statSync } from "node:fs";
 import { join, relative } from "node:path";
+import { ADMIN_PATHS } from "@/lib/admin-paths";
 
 /**
  * Every admin page and admin action asks for a recent password confirmation
@@ -19,8 +20,8 @@ const DISPLAY_ONLY: Record<string, string> = {
   "lib/auth/admin.ts": "the guard itself",
 };
 
-/** Folders whose every page, route and action is an admin one. */
-const ADMIN_FOLDERS = ["app/learn/admin", "app/learn/invites"];
+/** Folders whose every page, route and action is an admin one: the admin pages' one list (lib/admin-paths.ts). */
+const ADMIN_FOLDERS = ADMIN_PATHS.map((path) => `app${path}`);
 /** The one admin page that must not need a confirmation: it's where you give one. */
 const CONFIRM_PAGE = "app/learn/admin/confirm/page.tsx";
 

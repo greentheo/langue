@@ -2,7 +2,8 @@ import { describe, test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import { countsAsAppOpen, opensNewDay } from "./days";
+import { opensNewDay } from "./days";
+import { isAdminPath } from "../admin-paths";
 import { cleanProps, isBot, TRACKED_PATHS } from "./props";
 import { createTracker, type EventRow } from "./tracker";
 import { clientAddress, createDailyVisitors } from "./visitor";
@@ -155,15 +156,14 @@ describe("days and visitors", () => {
     assert.equal(opensNewDay(new Date("2026-10-18T23:50:00Z"), now), true);
   });
 
-  test("the admin pages don't count as opening the app", () => {
-    assert.equal(countsAsAppOpen("/learn"), true);
-    assert.equal(countsAsAppOpen("/learn/path"), true);
-    assert.equal(countsAsAppOpen(null), true, "no path known: count it");
-    assert.equal(countsAsAppOpen("/learn/admin"), false);
-    assert.equal(countsAsAppOpen("/learn/admin/stats"), false);
-    assert.equal(countsAsAppOpen("/learn/administer"), true);
-    const proxy = readFileSync(join(process.cwd(), "src", "proxy.ts"), "utf8");
-    assert.match(proxy, /requestHeaders\.set\(PATH_HEADER, pathname\)/, "proxy.ts passes the path to the learn layout");
+  test("the admin pages don't count as opening the app: one list, set by proxy.ts", () => {
+    for (const path of ["/learn/admin", "/learn/admin/stats", "/learn/invites"]) assert.equal(isAdminPath(path), true, path);
+    for (const path of ["/learn", "/learn/path", "/learn/administer", "/learn/invitesx", null]) assert.equal(isAdminPath(path), false, String(path));
+    const source = (...path: string[]) => readFileSync(join(process.cwd(), "src", ...path), "utf8");
+    assert.match(source("proxy.ts"), /requestHeaders\.set\(ADMIN_PAGE_HEADER, isAdminPath\(pathname\) \? "1" : "0"\)/, "proxy.ts marks admin pages");
+    const layout = source("app", "learn", "layout.tsx");
+    assert.match(layout, /const adminPage = \(await headers\(\)\)\.get\(ADMIN_PAGE_HEADER\) === "1"/, "the learn layout reads the mark");
+    assert.match(layout, /if \(!adminPage\) await trackAppOpened\(user\.id\)/, "and records an open only off the admin pages");
   });
 
   test("crawlers and chat apps' link previews aren't visitors", () => {
@@ -231,6 +231,22 @@ describe("bounds on the public events route", () => {
     assert.notEqual(today.rateKey("203.0.113.7", new Date("2026-10-20T08:00:00Z")), key, "a new day, a new key");
     assert.notEqual(key, today.hash("203.0.113.7", "", morning), "not the visitor hash: changing the browser name doesn't buy more");
     const route = readFileSync(join(process.cwd(), "src", "app", "api", "events", "route.ts"), "utf8");
-    assert.match(route, /allow\(visitors\.rateKey\(address\)\)/);
+    assert.match(route, /visitors\.allow\(address\)/);
+  });
+
+  test("the limit's counts go with the salt when the day changes: yesterday's keys are gone", () => {
+    const limiters: { calls: number }[] = [];
+    const today = createDailyVisitors(undefined, () => {
+      const limiter = { calls: 0 };
+      limiters.push(limiter);
+      const allow = createRateLimit(1, 60_000);
+      return (key: string, now?: number) => (limiter.calls++, allow(key, now));
+    });
+    const late = new Date("2026-10-19T23:59:50Z");
+    assert.equal(today.allow("203.0.113.7", late), true);
+    assert.equal(today.allow("203.0.113.7", late), false, "one a minute, in this test");
+    assert.equal(today.allow("203.0.113.7", new Date("2026-10-20T00:00:10Z")), true, "a new day");
+    assert.equal(limiters.length, 2, "a new limiter for the new day");
+    assert.equal(limiters[0].calls, 2, "yesterday's limiter, and its keys, are never used again");
   });
 });

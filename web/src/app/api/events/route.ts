@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { handler } from "@/lib/api";
-import { createRateLimit, readLimited } from "@/lib/events/limits";
+import { readLimited } from "@/lib/events/limits";
 import { isBot, TRACKED_PATHS } from "@/lib/events/props";
 import { track } from "@/lib/events/track";
 import { clientAddress, visitors } from "@/lib/events/visitor";
@@ -20,7 +20,6 @@ import { clientAddress, visitors } from "@/lib/events/visitor";
  */
 
 const MAX_BODY = 2048;
-const allow = createRateLimit(30, 60_000);
 
 const BodySchema = z.discriminatedUnion("type", [
   z.object({ type: z.literal("page.viewed"), path: z.enum(TRACKED_PATHS) }),
@@ -43,7 +42,7 @@ function fromLangue(headers: Headers): boolean {
 export const POST = handler(async (request) => {
   const userAgent = request.headers.get("user-agent") ?? "";
   const address = clientAddress(request.headers);
-  if (!fromLangue(request.headers) || isBot(userAgent) || !allow(visitors.rateKey(address))) return nothing();
+  if (!fromLangue(request.headers) || isBot(userAgent) || !visitors.allow(address)) return nothing();
 
   const text = await readLimited(request, MAX_BODY);
   if (text === null) return nothing();

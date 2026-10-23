@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { usePathname, useRouter } from "next/navigation";
-import { isAdminArea } from "@/lib/auth/admin-area";
+import { isAdminPath } from "@/lib/admin-paths";
 
 /** Tell the server the admin confirmation should end. A beacon, so it's sent even as the page goes away. */
 function leave() {
@@ -23,13 +23,13 @@ export function AdminWatch() {
   const previous = useRef(pathname);
 
   useEffect(() => {
-    if (isAdminArea(previous.current) && !isAdminArea(pathname)) leave();
+    if (isAdminPath(previous.current) && !isAdminPath(pathname)) leave();
     previous.current = pathname;
   }, [pathname]);
 
   useEffect(() => {
     const onVisibility = () => {
-      if (!isAdminArea(window.location.pathname)) return;
+      if (!isAdminPath(window.location.pathname)) return;
       if (document.visibilityState === "hidden") leave();
       else router.refresh();
     };

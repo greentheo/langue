@@ -147,7 +147,7 @@ describe("usage dashboard, against a hand-computed fixture", () => {
     assert.deepEqual(stats.windows[1].codes, [
       { label: "Everyone else: 2 smaller codes, and learners who joined without one", made: null, opened: 6, signedUp: 5, activated: 3, weekTwo: 1 },
     ]);
-    assert.ok(stats.cohorts.every((cohort) => cohort.size === "<5" && cohort.weeks.every((cell) => cell === "<5" || cell === null)));
+    assert.ok(stats.cohorts.every((cohort) => cohort.size === "<5" && cohort.weeks.every((cell) => cell.share === "<5")));
   });
 });
 
@@ -255,19 +255,21 @@ describe("per-code rows can't be subtracted to find one person", () => {
     assert.ok(!JSON.stringify(stats.windows).includes("for someone"), "no personal invite's note is shown");
   });
 
-  test("a cohort of five shows its weekly shares", () => {
-    const cohort = ["w1", "w2", "w3", "w4", "w5"].map((id) => user(id, "camp", "2026-10-05"));
+  test("a cohort of five shows its weekly shares, from week 2", () => {
+    const cohort = ["w1", "w2", "w3", "w4", "w5"].map((id) => user(id, "camp", "2026-09-28"));
     const stats = computeStats({
       ...base,
       users: cohort,
       practice: [
-        { userId: "w1", day: "2026-10-05", steps: 1 },
+        { userId: "w1", day: "2026-09-28", steps: 1 },
         { userId: "w2", day: "2026-10-06", steps: 1 },
-        { userId: "w1", day: "2026-10-12", steps: 1 },
+        { userId: "w1", day: "2026-10-12", steps: 1 }, // day 14: week 2
+        { userId: "w2", day: "2026-10-13", steps: 1 },
+        { userId: "w1", day: "2026-10-19", steps: 1 }, // day 21: week 3
       ],
     });
-    // Week of Monday 5 October: week 0 → w1, w2 (40%); week 1 → w1 (20%); week 2 → nobody.
-    assert.deepEqual(stats.cohorts, [{ week: "2026-10-05", size: 5, weeks: [40, 20, 0] }]);
+    // Week of Monday 28 September: weeks 0 and 1 are activated and week 2, shown all time only; week 2 → w1, w2 (40%); week 3 → w1 (20%).
+    assert.deepEqual(stats.cohorts, [{ week: "2026-09-28", size: 5, weeks: [{ n: 2, share: 40 }, { n: 3, share: 20 }] }]);
   });
 });
 
@@ -286,6 +288,10 @@ function assertNoNestedLeak(stats: ReturnType<typeof computeStats>) {
     "the 30-day funnel stops at signups",
   );
   for (const row of last30.codes) assert.ok(!("activated" in row) && !("weekTwo" in row), `30-day row "${row.label}" shows only opens and signups`);
+  // A cohort's weeks 0 and 1 are activated and week 2 per signup week: subtracted from the funnel and the rows, they'd describe someone.
+  for (const cohort of stats.cohorts) {
+    for (const cell of cohort.weeks) assert.ok(cell.n >= 2, `cohort ${cohort.week} shows week ${cell.n}`);
+  }
   const total = allTime.funnel[2].count;
   for (const row of allTime.codes) {
     if (row.signedUp === "<5") continue;
@@ -321,6 +327,8 @@ describe("the reviewer's cases: no two nested aggregates single anyone out (#117
       ["Autumn starters", 5, 4, 3],
       ["Everyone else: 1 smaller code, and learners who joined without one", 7, 2, 1],
     ]);
+    // The cohort of 28 September (campaign and Mum, 6): it read week 0 83% · week 1 67%, so 5 · 4, and the campaign row 5 · 4 · 3 left Mum.
+    assert.deepEqual(stats.cohorts.find((cohort) => cohort.week === "2026-09-28")?.weeks.map((cell) => cell.n), [2, 3]);
     assertNoNestedLeak(stats);
   });
 
@@ -333,6 +341,8 @@ describe("the reviewer's cases: no two nested aggregates single anyone out (#117
     // Before: all time 7 · 6 · 4, last 30 days 5 · 4 · 3 → the owner and Gran 2 · 2 · 1.
     assert.deepEqual(counts(stats.windows[1].funnel).slice(2).map(([count]) => count), [7, 6, 4]);
     assert.equal(stats.windows[0].funnel.length, 3);
+    // The campaign's cohort read week 0 80% · week 1 60% (4 · 3): the funnel's 6 · 4 minus that was the owner and Gran.
+    assert.deepEqual(stats.cohorts.find((cohort) => cohort.week === "2026-09-28")?.weeks.map((cell) => cell.n), [2, 3]);
     assertNoNestedLeak(stats);
   });
 

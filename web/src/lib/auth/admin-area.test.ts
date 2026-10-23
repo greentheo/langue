@@ -1,6 +1,7 @@
 import { describe, test } from "node:test";
 import assert from "node:assert/strict";
-import { ADMIN_CONFIRM_MS, adminConfirmationLive, confirmPath, createWrongTries, isAdminArea, safeReturnTo } from "./admin-area";
+import { ADMIN_CONFIRM_MS, adminConfirmationLive, confirmPath, createWrongTries, safeReturnTo } from "./admin-area";
+import { isAdminPath } from "@/lib/admin-paths";
 
 describe("the admin password confirmation (#119)", () => {
   const at = new Date("2026-10-23T10:00:00Z");
@@ -14,10 +15,10 @@ describe("the admin password confirmation (#119)", () => {
     assert.equal(adminConfirmationLive(null, at), false, "never confirmed");
   });
 
-  test("the admin area: the admin pages and the invites page, nothing else", () => {
-    for (const path of ["/learn/admin", "/learn/admin/stats", "/learn/admin/confirm", "/learn/invites"]) assert.equal(isAdminArea(path), true, path);
+  test("the admin pages: one list (lib/admin-paths.ts), the password prompt included", () => {
+    for (const path of ["/learn/admin", "/learn/admin/stats", "/learn/admin/confirm", "/learn/invites"]) assert.equal(isAdminPath(path), true, path);
     for (const path of ["/learn", "/learn/path", "/learn/lessons/x", "/learn/administer", "/learn/invitesx", "/accounts", null]) {
-      assert.equal(isAdminArea(path), false, String(path));
+      assert.equal(isAdminPath(path), false, String(path));
     }
   });
 

@@ -6,19 +6,17 @@
  * admin page asks for the admin's password again: within the last 15 minutes,
  * in this session. The confirmation ends at whichever comes first: 15 minutes
  * after confirming (fixed, not extended), the first page outside the admin
- * area, or the admin page being hidden (screen lock, another app, another tab).
+ * pages (lib/admin-paths.ts), or the admin page being hidden (screen lock,
+ * another app, another tab).
  */
+
+import { isAdminPath } from "@/lib/admin-paths";
 
 export const ADMIN_CONFIRM_MS = 15 * 60 * 1000;
 
 /** Is a confirmation made at `confirmedAt` still good at `now`? */
 export function adminConfirmationLive(confirmedAt: Date | null, now: Date): boolean {
   return confirmedAt !== null && now.getTime() - confirmedAt.getTime() < ADMIN_CONFIRM_MS;
-}
-
-/** The admin area: leaving it ends the confirmation. */
-export function isAdminArea(path: string | null | undefined): boolean {
-  return /^\/learn\/(admin|invites)(\/|$)/.test(path ?? "");
 }
 
 const CONFIRM = "/learn/admin/confirm";
@@ -32,7 +30,7 @@ export function confirmPath(returnTo: string): string {
 export function safeReturnTo(next: unknown): string {
   if (typeof next !== "string" || !next.startsWith("/") || next.startsWith("//")) return "/learn";
   const path = next.split(/[?#]/)[0];
-  return isAdminArea(path) && path !== CONFIRM ? next : "/learn";
+  return isAdminPath(path) && path !== CONFIRM ? next : "/learn";
 }
 
 /** At most `limit` wrong passwords per account in `windowMs`. In memory: a restart forgets, which only allows a few more. */
