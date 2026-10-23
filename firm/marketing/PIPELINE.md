@@ -15,7 +15,7 @@ CHANNELS.md).
 | FAQ for new learners and parents | Draft (`drafts/faq.md`). Four answers depend on open issues (#73, #74, #76, #63). |
 | `POSITIONING.md` with sources | Done for everything live on `main` @ 4f00646. |
 | LinkedIn posts and invite message (campaign 002) | Draft (`drafts/linkedin-posts.md`, #124). |
-| README (what a reader of LinkedIn post 1 lands on) | Off-message: "Langue - AI Language Learning", levels A1–C2 (the CLI's libraries). Draft fix in `drafts/linkedin-posts.md` §4; applied under #126 after #124 merges. |
+| README (what a reader of LinkedIn post 1 lands on) | ✅ Applied: #127 (12c3847, 2026-10-23) puts `drafts/linkedin-posts.md` §4 on top, word for word. At post 2, drop "for family and friends", as the front page does (#130). |
 
 ## The plan (the owner, 2026-10-20, #124)
 
