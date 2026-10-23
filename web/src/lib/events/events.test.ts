@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { opensNewDay } from "./days";
+import { isAdminPath } from "../admin-paths";
 import { cleanProps, isBot, TRACKED_PATHS } from "./props";
 import { createTracker, type EventRow } from "./tracker";
 import { clientAddress, createDailyVisitors } from "./visitor";
@@ -153,6 +154,16 @@ describe("days and visitors", () => {
     assert.equal(opensNewDay(null, now), true);
     assert.equal(opensNewDay(new Date("2026-10-19T00:10:00Z"), now), false);
     assert.equal(opensNewDay(new Date("2026-10-18T23:50:00Z"), now), true);
+  });
+
+  test("the admin pages don't count as opening the app: one list, set by proxy.ts", () => {
+    for (const path of ["/learn/admin", "/learn/admin/stats", "/learn/invites"]) assert.equal(isAdminPath(path), true, path);
+    for (const path of ["/learn", "/learn/path", "/learn/administer", "/learn/invitesx", null]) assert.equal(isAdminPath(path), false, String(path));
+    const source = (...path: string[]) => readFileSync(join(process.cwd(), "src", ...path), "utf8");
+    assert.match(source("proxy.ts"), /requestHeaders\.set\(ADMIN_PAGE_HEADER, isAdminPath\(pathname\) \? "1" : "0"\)/, "proxy.ts marks admin pages");
+    const layout = source("app", "learn", "layout.tsx");
+    assert.match(layout, /const adminPage = \(await headers\(\)\)\.get\(ADMIN_PAGE_HEADER\) === "1"/, "the learn layout reads the mark");
+    assert.match(layout, /if \(!adminPage\) await trackAppOpened\(user\.id\)/, "and records an open only off the admin pages");
   });
 
   test("crawlers and chat apps' link previews aren't visitors", () => {
