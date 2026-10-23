@@ -22,10 +22,11 @@ export default async function HomePage() {
 
   return (
     <main className="mx-auto max-w-3xl px-5 py-10">
-      <div className="flex items-start justify-between gap-4">
+      {/* The banner keeps its width (about 263 px on a phone) and the colour switch wraps below it when both don't fit (#129). */}
+      <div className="flex flex-wrap items-start justify-between gap-4">
         <pre
           aria-label="LANGUE"
-          className="text-[0.5rem] sm:text-[0.7rem] leading-tight text-[var(--crt-fg-bright)] crt-glow overflow-x-auto"
+          className="shrink-0 max-w-full text-[0.5rem] sm:text-[0.7rem] leading-tight text-[var(--crt-fg-bright)] crt-glow overflow-x-auto"
         >
           {BANNER}
         </pre>
