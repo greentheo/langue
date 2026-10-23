@@ -56,8 +56,10 @@ export default async function HomePage() {
           </Point>
           <Point lead="Endings count.">
             A slip that changes a word&apos;s ending (<em>cansados</em> for <em>cansadas</em>, <em>comemos</em> for{" "}
-            <em>comimos</em>) is marked wrong, not forgiven as a typo, because the ending is the grammar. A missing
-            accent, or a small typo in the middle of a word, is pointed out with the right spelling and still counts.
+            <em>comimos</em>) is marked wrong, not forgiven as a typo, because the ending is the grammar. So is{" "}
+            <em>parle</em> for <em>parlé</em>, where the missing accent changes the meaning. A missing accent that
+            makes no word (<em>cafe</em> for <em>café</em>), or a small typo in the middle of a word, is pointed out
+            with the right spelling and still counts.
           </Point>
           <Point lead="Reviews come back">
             at growing intervals. A word counts as learned when you&apos;ve produced it on more than one day.
@@ -98,7 +100,7 @@ export default async function HomePage() {
       </div>
 
       <Panel title="Access" className="mt-8">
-        <p className="text-sm text-[var(--crt-fg-dim)]">Langue is invite-only, for family and friends.</p>
+        <p className="text-sm text-[var(--crt-fg-dim)]">Langue is invite-only.</p>
         <div className="mt-4 flex flex-wrap gap-3">
           <Link href="/login" className="crt-button crt-button-primary no-underline">
             Sign in
