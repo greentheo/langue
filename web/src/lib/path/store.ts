@@ -188,6 +188,16 @@ export async function freezeCertificates(courseFor: (language: string) => Course
   return filled;
 }
 
+/**
+ * The accent tip shows once per learner, on the first answer an accent
+ * changed (#114). True for the one answer that gets to show it: the update
+ * only matches while it hasn't been seen, so two answers at once can't both.
+ */
+export async function claimAccentTip(userId: string, now: Date): Promise<boolean> {
+  const { count } = await prisma.user.updateMany({ where: { id: userId, accentTipSeenAt: null }, data: { accentTipSeenAt: now } });
+  return count === 1;
+}
+
 /** A role-play was played to the end: schedule the next time it is offered. */
 export async function recordDialoguePlayed(
   userId: string,

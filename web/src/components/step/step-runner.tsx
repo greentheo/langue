@@ -114,9 +114,8 @@ export function StepRunner({ language, challenge }: { language: string; challeng
   const [checking, setChecking] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [tally, setTally] = useState(EMPTY_TALLY);
-  /** The accent tip shows once a step, on the first answer an accent changed (#114). */
+  /** The accent tip shows once per learner, on the first answer an accent changed: the server says when (#114). */
   const [accentTip, setAccentTip] = useState(false);
-  const accentTipped = useRef(false);
   const [finish, setFinish] = useState<Finish | null>(null);
   const [finishing, setFinishing] = useState(false);
 
@@ -134,7 +133,6 @@ export function StepRunner({ language, challenge }: { language: string; challeng
     setChosen(null);
     setResult(null);
     setTally(EMPTY_TALLY);
-    accentTipped.current = false;
     try {
       const next = await postJson<PublicStep>("/api/steps", challenge ? { challenge } : {});
       setStep(next);
@@ -223,9 +221,7 @@ export function StepRunner({ language, challenge }: { language: string; challeng
         answer: value,
       });
       setResult(graded);
-      const changed = graded.accentMiss === "otherForm" || graded.accentMiss === "otherWord";
-      setAccentTip(changed && !accentTipped.current);
-      if (changed) accentTipped.current = true;
+      setAccentTip(Boolean(graded.accentTip));
       const right = graded.verdict !== "incorrect";
       playCue(right ? "right" : "wrong");
       count(graded, Boolean(card.retry));

@@ -9,7 +9,7 @@
  */
 
 import { endingOf, isKnownForm, keepsEnding } from "./endings";
-import { glossOf, isKnownWrittenForm } from "./forms";
+import { accentPair, glossOf, isKnownWrittenForm } from "./forms";
 import { normalizeAnswer, normalizeKeepingAccents } from "./normalize";
 
 export { normalizeAnswer, normalizeKeepingAccents };
@@ -387,7 +387,11 @@ function writtenWords(value: string): string[] {
  * Does a typed word differ from the intended one only in its accents, and is
  * it, as typed, a word the course uses? Then the accent changed the word. In
  * the word's ending it's another form of it (parle for parlé, hablo for
- * habló); elsewhere, or in a short word, a different word (e for è, tu for tú).
+ * habló); elsewhere, or in a short word, a different word (e for è, tu for tú),
+ * unless the short-word table says it's a form (pode for pôde).
+ *
+ * A capital typed without its accent stays a slip: French print often leaves
+ * capitals bare, and Italian keyboards have no È ("A demain", "E stanco").
  */
 function accentChangesWord(
   typed: string,
@@ -400,20 +404,35 @@ function accentChangesWord(
     const match = intendedWords.find(
       (word) => normalizeAnswer(word) === normalizeAnswer(typedWord) && normalizeKeepingAccents(word) !== asTyped,
     );
-    if (!match || !isKnownWrittenForm(asTyped, language)) continue;
+    if (!match) continue;
 
     const expected = normalizeKeepingAccents(match);
+    const [letters, typedLetters, written] = [[...expected], [...asTyped], [...typedWord.normalize("NFC")]];
+    const sameLength = letters.length === typedLetters.length;
+    const differ = letters.flatMap((letter, i) => (letter !== typedLetters[i] ? [i] : []));
+    const onCapitals = sameLength && written.length === letters.length && differ.every((i) => written[i] !== written[i].toLowerCase());
+    if (onCapitals) continue;
+
+    const pair = accentPair(expected, asTyped, language);
+    if (pair) {
+      const kind = pair.kind === "form" ? "another form" : "a different word";
+      return {
+        kind: pair.kind === "form" ? "otherForm" : "otherWord",
+        note: `That's ${kind} — «${match}» (${pair.accented}), not «${typedWord}» (${pair.plain}).`,
+      };
+    }
+    if (!isKnownWrittenForm(asTyped, language)) continue;
+
     const ending = endingOf(normalizeAnswer(match), language).length;
-    const differ = [...expected].flatMap((letter, i) => (letter !== [...asTyped][i] ? [i] : []));
-    const inEnding = [...expected].length === [...asTyped].length && differ.every((i) => i >= [...expected].length - ending);
-    if (inEnding && [...expected].length > SHORT_WORD) {
+    const inEnding = sameLength && differ.every((i) => i >= letters.length - ending);
+    if (inEnding && letters.length > SHORT_WORD) {
       return { kind: "otherForm", note: `That's another form — the accent is the grammar here: «${intended}».` };
     }
     const [meant, said] = [glossOf(expected, language), glossOf(asTyped, language)];
     const both = meant && said;
     return {
       kind: "otherWord",
-      note: `That's a different word — «${match}»${both ? ` (${meant})` : ""}, not «${asTyped}»${both ? ` (${said})` : ""}.`,
+      note: `That's a different word — «${match}»${both ? ` (${meant})` : ""}, not «${typedWord}»${both ? ` (${said})` : ""}.`,
     };
   }
   return null;

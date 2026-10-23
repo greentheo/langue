@@ -354,13 +354,52 @@ describe("a missing accent that makes another real word is a mistake (#114)", ()
 
   test("an accent on a short word makes a different word", () => {
     const result = gradeTargetAnswer("Lui e stanco", ["Lui è stanco"], "italian");
-    assert.equal(result.note, "That's a different word — «è», not «e».");
+    assert.equal(result.note, "That's a different word — «è» (is), not «e» (and).");
     assert.equal(result.accentMiss, "otherWord");
   });
 
-  test("with both meanings when the course glosses both words", () => {
+  test("with both meanings, and the typed word as typed", () => {
     const result = gradeTargetAnswer("Ou est la gare ?", ["Où est la gare ?"], "french");
-    assert.equal(result.note, "That's a different word — «Où» (where), not «ou» (or).");
+    assert.equal(result.note, "That's a different word — «Où» (where), not «Ou» (or).");
+  });
+
+  test("the short-word pairs carry both meanings, and pôde/pode is another form (#120 review)", () => {
+    const NOTES: [string, string, string, string][] = [
+      ["italian", "Lui e stanco", "Lui è stanco", "That's a different word — «è» (is), not «e» (and)."],
+      ["spanish", "Esta en casa", "Está en casa", "That's a different word — «Está» (is), not «Esta» (this)."],
+      ["spanish", "Tu eres mi amigo", "Tú eres mi amigo", "That's a different word — «Tú» (you (informal)), not «Tu» (your)."],
+      ["spanish", "Si, claro", "Sí, claro", "That's a different word — «Sí» (yes), not «Si» (if)."],
+      ["spanish", "el es mi hermano", "él es mi hermano", "That's a different word — «él» (he), not «el» (the)."],
+      ["french", "Je vais a Paris", "Je vais à Paris", "That's a different word — «à» (to, at), not «a» (has)."],
+      ["portuguese", "Ele e alto", "Ele é alto", "That's a different word — «é» (is), not «e» (and)."],
+      ["portuguese", "Ela esta aqui", "Ela está aqui", "That's a different word — «está» (is), not «esta» (this)."],
+    ];
+    for (const [language, typed, expected, note] of NOTES) {
+      const result = gradeTargetAnswer(typed, [expected], language);
+      assert.equal(result.note, note, typed);
+      assert.equal(result.accentMiss, "otherWord", typed);
+    }
+    const pode = gradeTargetAnswer("Ele não pode vir ontem", ["Ele não pôde vir ontem"], "portuguese");
+    assert.equal(pode.verdict, "incorrect");
+    assert.equal(pode.note, "That's another form — «pôde» (could, in the past), not «pode» (can).");
+    assert.equal(pode.accentMiss, "otherForm");
+  });
+
+  test("a missing accent on a capital letter stays close (#120 review)", () => {
+    // French print often leaves capitals bare, and Italian keyboards have no È.
+    for (const [language, typed, expected] of [
+      ["french", "A demain", "À demain"],
+      ["french", "A bientôt", "À bientôt"],
+      ["italian", "E stanco", "È stanco"],
+      ["italian", "E' stanco", "È stanco"],
+    ]) {
+      const result = gradeTargetAnswer(typed, [expected], language);
+      assert.equal(result.verdict, "close", typed);
+      assert.equal(result.accentMiss, "plain", typed);
+    }
+    // Not on a small letter, and not when the missing accent is elsewhere in a capitalised word.
+    assert.equal(gradeTargetAnswer("a demain", ["À demain"], "french").verdict, "incorrect");
+    assert.equal(gradeTargetAnswer("Tu eres mi amigo", ["Tú eres mi amigo"], "spanish").verdict, "incorrect");
   });
 
   test("a missing accent that makes no word is still only close", () => {
