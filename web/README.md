@@ -1,7 +1,8 @@
 # Langue Web
 
-The browser version of Langue: AI language practice styled like an Apple IIe,
-built to deploy on Railway so friends can use it too.
+The browser version of Langue: a guided course in short daily steps, with
+optional AI tools alongside, styled like an Apple IIe and built to deploy on
+Railway so friends can use it too.
 
 It shares vocabulary with the Python CLI in this repository — the same
 `data/flashcard_libraries` JSON is compiled into the app at build time — but
