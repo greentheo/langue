@@ -402,6 +402,16 @@ describe("a missing accent that makes another real word is a mistake (#114)", ()
     assert.equal(gradeTargetAnswer("Tu eres mi amigo", ["Tú eres mi amigo"], "spanish").verdict, "incorrect");
   });
 
+  test("only in French and Italian: Spanish and Portuguese keep accents on capitals (#120 re-check)", () => {
+    // Their keyboards have É, and the course types É, Às and Él in A1 phrases.
+    const pt = gradeTargetAnswer("E muito caro.", ["É muito caro."], "portuguese");
+    assert.equal(pt.verdict, "incorrect");
+    assert.equal(pt.note, "That's a different word — «É» (is), not «E» (and).");
+    const es = gradeTargetAnswer("El es mi primo.", ["Él es mi primo."], "spanish");
+    assert.equal(es.verdict, "incorrect");
+    assert.equal(es.note, "That's a different word — «Él» (he), not «El» (the).");
+  });
+
   test("a missing accent that makes no word is still only close", () => {
     for (const [language, typed, expected] of [
       ["italian", "perche", "perché"],

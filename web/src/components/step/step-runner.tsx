@@ -682,7 +682,7 @@ function Feedback({
       {result.note ? <p className="mt-1 text-sm text-[var(--crt-fg-dim)]">{result.note}</p> : null}
       {accentTip ? (
         <p className="mt-1 text-xs text-[var(--crt-fg-dim)]">
-          Accents count when they change the word. Use the accent bar under the box.
+          A missing accent can make another word (<em>parle</em> for <em>parlé</em>). Use the accent bar under the box.
         </p>
       ) : null}
       {!clicked ? (

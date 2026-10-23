@@ -371,6 +371,9 @@ export function gradeTargetAnswer(
   };
 }
 
+/** Languages where a capital is often written without its accent (#120 re-check): French print, Italian keyboards. */
+const BARE_CAPITALS = new Set(["french", "italian"]);
+
 /** A word this short is a word of its own, not a stem and an ending: è/e, tú/tu, está/esta, pôde/pode. */
 const SHORT_WORD = 4;
 
@@ -390,8 +393,10 @@ function writtenWords(value: string): string[] {
  * habló); elsewhere, or in a short word, a different word (e for è, tu for tú),
  * unless the short-word table says it's a form (pode for pôde).
  *
- * A capital typed without its accent stays a slip: French print often leaves
- * capitals bare, and Italian keyboards have no È ("A demain", "E stanco").
+ * In French and Italian, a capital typed without its accent stays a slip:
+ * French print often leaves capitals bare, and Italian keyboards have no È
+ * ("A demain", "E stanco"). Spanish and Portuguese keyboards have É, and
+ * their spelling keeps it, so there a capital follows the ordinary rule.
  */
 function accentChangesWord(
   typed: string,
@@ -411,7 +416,7 @@ function accentChangesWord(
     const sameLength = letters.length === typedLetters.length;
     const differ = letters.flatMap((letter, i) => (letter !== typedLetters[i] ? [i] : []));
     const onCapitals = sameLength && written.length === letters.length && differ.every((i) => written[i] !== written[i].toLowerCase());
-    if (onCapitals) continue;
+    if (onCapitals && BARE_CAPITALS.has(language)) continue;
 
     const pair = accentPair(expected, asTyped, language);
     if (pair) {
