@@ -30,10 +30,10 @@ actually use.
 >   recalling it, to typing it, to using it in a sentence and in a role-play.
 > - **Endings count.** A slip that changes a word's ending (*cansados* for
 >   *cansadas*, *comemos* for *comimos*) is marked wrong, not forgiven as a
->   typo, because the ending is the grammar. So is *parle* for *parlé*, where
->   the missing accent changes the meaning. A missing accent that makes no
->   word (*cafe* for *café*), or a small typo in the middle of a word, is
->   pointed out with the right spelling and still counts.
+>   typo, because the ending is the grammar. So are some missing accents,
+>   like *parle* for *parlé*. Others (*cafe* for *café*), and small typos in
+>   the middle of a word, are pointed out with the right spelling and still
+>   count.
 > - **Reviews come back** at growing intervals. A word counts as learned
 >   when you've produced it on more than one day.
 > - **Already know some?** Test out of the units you know. Each unit ends
@@ -103,10 +103,9 @@ SOURCE: modes recognize/recall/type/cloze/reply/turn in steps/answer/route.ts;
 rungs in schedule.ts. Verified.
 
 CLAIM: "A slip that changes a word's ending (cansados for cansadas, comemos for
-comimos) is marked wrong, not forgiven as a typo … So is parle for parlé, where the
-missing accent changes the meaning. A missing accent that makes no word (cafe for
-café), or a small typo in the middle of a word, is pointed out with the right spelling
-and still counts."
+comimos) is marked wrong, not forgiven as a typo … So are some missing accents, like
+parle for parlé. Others (cafe for café), and small typos in the middle of a word, are
+pointed out with the right spelling and still count."
 SOURCE: #102 (closes #70), deployed a81c9cb (2026-10-16). Probe on a81c9cb: pt "Estamos
 cansados" for "cansadas" → incorrect, "Check the spelling of the ending: «cansadas»";
 es "Comemos" for "Comimos" → incorrect, "That's another form — check the ending:
@@ -116,14 +115,17 @@ ACCENTS: #120 (closes #114), PR head 51b6ed8; this line goes live with #128, aft
 #120. Probe with gradeTargetAnswer on 51b6ed8: fr "J'ai parle" → incorrect, "That's
 another form — the accent is the grammar here: «J'ai parlé»" (test "an accent in the
 ending is the grammar"); fr "cafe" → close, "Watch the accents" (test "a missing accent
-that makes no word is still only close"). "Changes the meaning": je parle (present),
-parlé (past participle).
-WHY EXAMPLES, NOT A RULE: #120 marks a missing accent wrong only where the plain spelling
+that makes no word is still only close").
+WHY "SOME", NOT A RULE: #120 marks a missing accent wrong only where the plain spelling
 is a word the course uses, or one of its short-word pairs. Real words the course doesn't
 use stay close: es "hable" for "hablé", "compre"/"compré", "llegue"/"llegué"; fr "J'ai
-change" for "changé"; it "passo"/"passò"; and a bare capital ("E stanco", "A demain").
-So the line gives parle/parlé as an example, never "a missing accent that changes the
-meaning is marked wrong", and the close half is said only of accents that make no word.
+change" for "changé", "J'ai casse" for "cassé" (92 of the 233 uncaught French words end
+in consonant + é, mostly participles whose plain spelling is a present form; the
+reviewer on #130); it "passo"/"passò"; and a bare capital ("E stanco", "A demain"). So
+the line says "some", with parle/parlé as an example, and gives no reason clause: the
+first draft's "where the missing accent changes the meaning" read as a rule, and J'ai
+change also changes the meaning (the reviewer, #130). "Others … still count" is exact:
+every missing accent the grader doesn't mark wrong is close.
 LIMITS (POSITIONING), not contradicted: a typo that makes another real word
 (attivo/cattivo) is forgiven until #106; endings.ts covers what's taught through A2,
 which is the whole course today. "Still counts": schedule.ts applyAnswer ("A close

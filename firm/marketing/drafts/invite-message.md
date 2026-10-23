@@ -31,10 +31,9 @@ away" is true, but until #73 ships, today's reminders still say the streak can
 > - Short steps, planned for about three minutes each. One button picks what's
 >   next: new words, reviews that are due, and the things you keep missing.
 > - You type the answers yourself, and endings count: *cansados* for
->   *cansadas* is marked wrong, not waved through as a typo, and so is
->   *parle* for *parlé*, where the missing accent changes the meaning. A
->   missing accent that makes no word, or a small typo, is pointed out with
->   the right spelling.
+>   *cansadas* is marked wrong, not waved through as a typo, and so are some
+>   missing accents, like *parle* for *parlé*. Others, and small typos, are
+>   pointed out with the right spelling.
 > - Little role-plays from the first unit, like greeting a new friend or a
 >   neighbour.
 > - Beginner (A1) and Elementary (A2) are complete. If you already know some,
@@ -90,9 +89,8 @@ you keep missing"
 SOURCE: docs/guided-path.md (planner), web/src/lib/path/planner.ts. Verified.
 
 CLAIM: "You type the answers yourself, and endings count: cansados for cansadas is
-marked wrong, not waved through as a typo, and so is parle for parlé, where the missing
-accent changes the meaning. A missing accent that makes no word, or a small typo, is
-pointed out with the right spelling."
+marked wrong, not waved through as a typo, and so are some missing accents, like parle
+for parlé. Others, and small typos, are pointed out with the right spelling."
 SOURCE: #102 (closes #70), deployed a81c9cb (2026-10-16). Probe on a81c9cb: pt "Estamos
 cansados" for "cansadas" → incorrect, "Check the spelling of the ending: «cansadas»";
 es "Comemos" for "Comimos" → incorrect, "That's another form — check the ending:
@@ -100,9 +98,11 @@ es "Comemos" for "Comimos" → incorrect, "That's another form — check the end
 (fr "telefone" → "téléphone", it "ristorrante", pt "obirgado"). Verified.
 ACCENTS: as in what-is-langue.md (#120, probe on 51b6ed8: fr "J'ai parle" → incorrect,
 "That's another form — the accent is the grammar here"; "cafe" → close). This text goes
-live with #128, after #120. An example, not a rule: real words the course doesn't use
-stay close (es "hable" for "hablé", fr "change" for "changé"; POSITIONING accent row),
-so the close half is said only of accents that make no word.
+live with #128, after #120. "Some", not a rule: real words the course doesn't use stay
+close (es "hable" for "hablé", fr "J'ai change" for "changé"; POSITIONING accent row),
+so there's no reason clause (the first draft's "where the missing accent changes the
+meaning" read as one; the reviewer, #130). "Others" is exact: every missing accent the
+grader doesn't mark wrong is close.
 LIMITS (POSITIONING), not contradicted: a typo that makes another real word
 (attivo/cattivo) is forgiven until #106; endings.ts covers what's taught through A2,
 which is the whole course today.
