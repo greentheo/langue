@@ -59,8 +59,10 @@ See issue #27.
 
 ## The CLI's features
 
-These sections describe the Python CLI (`langue/`). The web app's guided
-course is described in [docs/guided-path.md](docs/guided-path.md).
+Everything from here down to Contributing describes the Python CLI
+(`langue/`). The web app's guided course is described in
+[docs/guided-path.md](docs/guided-path.md), and the web app itself in
+[web/README.md](web/README.md).
 
 - Learn multiple languages through a variety of activities
 - Supports both online (Claude) and offline (Ollama) language models
@@ -87,16 +89,10 @@ course is described in [docs/guided-path.md](docs/guided-path.md).
 - For offline usage: [Ollama](https://ollama.ai/) with language models installed
 - Required packages: click, rich, pydantic, questionary, and more (automatically installed)
 
-### Install from PyPI
+### Install from source
 
 ```bash
-pip install langue
-```
-
-### Install from Source
-
-```bash
-git clone https://github.com/yourusername/langue.git
+git clone https://github.com/greentheo/langue.git
 cd langue
 pip install -e .
 ```
@@ -147,14 +143,12 @@ Testing ensures:
 
 Langue creates a configuration file at `~/.config/langue/config.toml` that you can customize:
 
-- Set your preferred language model (Ollama or Claude)
-- Configure API keys for online models
 - Adjust learning preferences and activity settings
 - Customize your learning experience
 
 ### Model Selection
 
-When you first run Langue, it will automatically detect available language models and prompt you to select one:
+At every start, Langue uses Claude when `ANTHROPIC_API_KEY` is set (from the environment or `.env`). Otherwise it looks for local Ollama models and asks you to pick one:
 
 ```
 Please select an Ollama model to use:
@@ -188,7 +182,7 @@ You can change models at any time, and Langue will verify model availability bef
 - You can change the model at any time through the Settings menu
 - Use the `.env` file to specify a default model (create from `.env.template`)
 - Specify `OLLAMA_MODEL=model_name` in your `.env` file for your preferred model
-- If models are unavailable, Langue will gracefully fall back to simulated responses
+- If no model is available, Langue stops with an error that says how to fix it. Fake canned responses appear only if you set `LANGUE_ALLOW_MOCK=1`, and then with a loud warning
 
 ## User Interface
 
@@ -210,7 +204,7 @@ For online models, you'll need to set up API keys:
 
 - Claude: Get an API key from [Anthropic](https://www.anthropic.com/)
 
-You can set these via the configuration file or environment variables:
+Set them as environment variables or in a `.env` file. Langue never writes a key to its configuration file (it blanks `api_key` on every save):
 
 ```bash
 # Environment variable setup
