@@ -1,6 +1,5 @@
-import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
-import { verifySession, requireUser } from "@/lib/auth/session";
+import { requireAdmin } from "@/lib/auth/admin";
 import { createInvite, listInvites } from "@/lib/auth/invites";
 import {
   inviteStatus,
@@ -20,16 +19,14 @@ export const metadata = { title: "Invites — LANGUE" };
 /**
  * Mint a new invite code.
  *
- * Re-checks admin inside the action. A server action is a public endpoint: the
- * page-level check that hides the link does not stop anyone from invoking it.
+ * Re-checks admin, and the password confirmation (#119), inside the action. A
+ * server action is a public endpoint: the page-level check that hides the link
+ * does not stop anyone from invoking it.
  */
 async function mintInvite(formData: FormData) {
   "use server";
 
-  const user = await requireUser();
-  if (!user.isAdmin) {
-    throw new Error("Only an admin can create invite codes.");
-  }
+  const user = await requireAdmin({ confirmed: true, returnTo: "/learn/invites" });
 
   const note = String(formData.get("note") ?? "").trim() || undefined;
   const daysRaw = Number(formData.get("days"));
@@ -51,9 +48,7 @@ function formatDay(date: Date): string {
 }
 
 export default async function InvitesPage() {
-  const user = await verifySession();
-  if (!user) redirect("/login");
-  if (!user.isAdmin) redirect("/learn");
+  const user = await requireAdmin({ confirmed: true, returnTo: "/learn/invites" });
 
   const invites = await listInvites();
   const now = new Date();
