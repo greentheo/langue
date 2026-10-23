@@ -73,6 +73,10 @@ model Session {
   createdAt DateTime @default(now())
   expiresAt DateTime
   userAgent String?
+  /// When this session's admin last confirmed their password (#119): admin
+  /// pages need it within 15 minutes. Cleared on switching in, on leaving the
+  /// admin pages, and when an admin page is hidden.
+  adminConfirmedAt DateTime?
 
   @@index([userId])
   @@index([expiresAt])

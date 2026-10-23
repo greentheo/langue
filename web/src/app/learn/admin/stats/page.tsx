@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { notFound, redirect } from "next/navigation";
-import { verifySession } from "@/lib/auth/session";
+import { requireAdmin } from "@/lib/auth/admin";
 import { Panel } from "@/components/crt";
 import { computeStats, TRIPWIRES, type CodeRow, type FunnelStage, type Shown } from "@/lib/stats";
 import { loadStats } from "@/lib/stats-data";
@@ -9,16 +8,15 @@ export const metadata = { title: "Usage — LANGUE" };
 
 /**
  * The usage dashboard (#109): the signup funnel, retention, engagement and
- * whether tracking is healthy. Admins only; anyone else gets a 404. Totals for
+ * whether tracking is healthy. Admins only, with their password confirmed in
+ * the last 15 minutes (#119); anyone else gets a 404. Totals for
  * the whole app are always shown; every breakdown of fewer than five learners
  * reads "<5" or is pooled, what people did after signing up is shown all time
  * only (lib/stats.ts), and there is no per-person view. Each headline
  * number has its tripwire beside it: what to look at when it trips.
  */
 export default async function StatsPage() {
-  const user = await verifySession();
-  if (!user) redirect("/login");
-  if (!user.isAdmin) notFound();
+  await requireAdmin({ confirmed: true, returnTo: "/learn/admin/stats" });
 
   const stats = computeStats(await loadStats());
   const { engagement: e } = stats;
