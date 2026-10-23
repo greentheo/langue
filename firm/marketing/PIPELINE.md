@@ -14,6 +14,26 @@ CHANNELS.md).
 | Weekly "what's new" | First draft (`drafts/whats-new-2026-10-15.md`), refreshed 2026-10-16 to cover everything deployed 13–16 October. |
 | FAQ for new learners and parents | Draft (`drafts/faq.md`). Four answers depend on open issues (#73, #74, #76, #63). |
 | `POSITIONING.md` with sources | Done for everything live on `main` @ 4f00646. |
+| LinkedIn posts and invite message (campaign 002) | Draft (`drafts/linkedin-posts.md`, #124). |
+| README (what a reader of LinkedIn post 1 lands on) | Off-message: "Langue - AI Language Learning", levels A1–C2 (the CLI's libraries). Draft fix in `drafts/linkedin-posts.md` §4; applied under #126 after #124 merges. |
+
+## The plan (the owner, 2026-10-20, #124)
+
+Free pre-alpha marketing, in three rings. Each opens only when the last one
+keeps people. No money is spent; the real costs are the owner's time and
+Anthropic usage (capped by #123 once it ships).
+
+| Ring | What | Opens when | State |
+|---|---|---|---|
+| **1. Personal invites** | Campaign 001: 15 people from the owner's circle with a reason to learn | #109 PR 1 and #72 deployed | Brief merged (#113); not launched |
+| **2. LinkedIn** | Campaign 002: post 1 tells how Langue is built (no invite); post 2 opens 25 places, invited by private message | Post 1: #126 (the README) merged. Post 2: 001's day-14 read, #109 PR 1 and 2, #72, #123 (or an Anthropic spend limit), #63, #76 | Drafted (#124) |
+| **3. Reddit** | Not drafted. Listen first: what beginners say about forgiven typos, streak pressure and grammar is message material | 001 and 002 both reach "do more"; #49 (report a grading) live; the owner has read each subreddit's rules; posts come from the owner's own account and say AI wrote the course | Listening |
+
+**Not now:** Hacker News and Product Hunt. They'd bring a burst of hundreds of
+builders: the wrong audience, and uncapped AI cost until #123. Nothing paid.
+
+**Nothing is automated.** Marketing drafts; the owner posts, replies and
+sends (CHANNELS.md).
 
 ## Numbers
 
@@ -60,3 +80,7 @@ the plan for when the dashboard exists.
 3. **The what's-new note brings back quiet learners.** Measure: practising in
    the last 7 days, the week before vs. the week after it's posted
    (funnel.sql §2). Small numbers, so read it as a hint, not a result.
+4. **The building story brings learners, not just the curious.** Measure:
+   002's week-2 rate against 001's, on their codes' #109 rows. Small numbers,
+   so read it as a hint. If it's far lower, tighten the invite question
+   before 003.

@@ -72,7 +72,7 @@ than the vision:
 
 | Claim | Status | Source |
 |---|---|---|
-| No AI runs while you learn on the course: lessons, steps, role-plays, grading, reviews and reminders are fixed content and plain code. Say "no AI while you learn", **not** "no AI in the course". | LIVE | Only `app/api/chat`, `app/api/lessons/ask` and `lib/engine/activities.ts` (used by `app/api/exercises`, `exercises/grade`, `flashcards/answer`) **call** the model (`complete` / `streamCompletion`); `app/api/steps/*` makes no call. Say "call", not "import": `lib/api.ts` imports the model module's error type, so everything imports it transitively. |
+| No AI runs in the daily steps: the steps (new words, reviews, role-plays, challenges), their grading, and reminders are fixed content and plain code. Each lesson's text is fixed too, **but every lesson page ends with an optional "Ask about this lesson" box that uses AI** (row below). Say "no AI in the daily steps" or "your answers in the daily steps are graded by plain code, not AI": keep "in the daily steps", because the optional Translation exercise is graded by the model (`api/exercises/grade/route.ts` l.11–12). **Not** "no AI while you learn" or "in the lessons" (a lesson page has the AI box), and not "no AI in the course" (#97). | LIVE | Only `app/api/chat`, `app/api/lessons/ask` and `lib/engine/activities.ts` (used by `app/api/exercises`, `exercises/grade`, `flashcards/answer`) **call** the model (`complete` / `streamCompletion`); `app/api/steps/*` makes no call, and no step component reaches an AI route (`AskTutor` is only on `app/learn/lessons/[id]/page.tsx` l.98–103). Corrected 2026-10-20 (reviewer, PR #125): this row used to list "lessons" as no-AI. Say "call", not "import": `lib/api.ts` imports the model module's error type, so everything imports it transitively. |
 | Some optional extra tools do use AI: the Conversation partner, the Reading, Translation and Fill-in-the-blank exercises, "ask about this lesson", and explanations of a missed flashcard. | LIVE (say it) | As above. Model: `claude-haiku-4-5`, Anthropic's small model (`web/src/lib/engine/model.ts`, default tier `fast`). |
 | What you type into those tools is sent to Anthropic. | LIVE (say it) | `app/api/chat/route.ts` posts the transcript to the model. #63's privacy page will say it too. |
 | AI-written exercises aren't checked the way the course is. | LIVE (say it) | The content checks cover `data/curriculum` and vocabulary only. |
@@ -104,9 +104,10 @@ commit.
 - **#74 (per-learner AI switch, child-safety instructions):** lift the HOLD
   row, check the deployed Settings page wording, then replace the FAQ's
   "Will my child talk to an AI?" answer with (draft):
-  > Not on the course. Some optional tools (the conversation partner, "ask the
-  > tutor", and some practice exercises) use AI, and they're on by default for
-  > every account. You can turn all AI off for your child in Settings → AI
+  > Not in the daily steps. Two optional tools let anyone type to an AI: the
+  > "Ask about this lesson" box at the end of each lesson page, and the
+  > conversation partner. Some extra exercises and the flashcard explanations
+  > use it too. They're on by default for every account. You can turn all AI off for your child in Settings → AI
   > features, or ask the person who runs Langue to turn it off and lock it.
   > The conversation screens tell your child their practice partner is an AI.
   > What's typed into them is sent to Anthropic.
