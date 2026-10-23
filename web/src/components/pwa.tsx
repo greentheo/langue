@@ -15,6 +15,19 @@ export function ServiceWorker() {
       // Not fatal: Langue works the same in a plain browser tab.
     });
   }, []);
+
+  // Count an install (#109): no account, just that a device put Langue on its home screen.
+  useEffect(() => {
+    const installed = () => {
+      void fetch("/api/events", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ type: "app.installed" }),
+      }).catch(() => undefined);
+    };
+    window.addEventListener("appinstalled", installed);
+    return () => window.removeEventListener("appinstalled", installed);
+  }, []);
   return null;
 }
 

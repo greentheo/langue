@@ -56,6 +56,7 @@ model User {
   unitMarks    UnitMark[]
   groups       GroupMember[]
   pushSubscriptions PushSubscription[]
+  events       Event[]
   invitesMade  InviteCode[]      @relation("InviteCreatedBy")
 
   @@index([email])
@@ -290,4 +291,22 @@ model PushSubscription {
 
   @@unique([userId, endpoint])
   @@index([endpoint])
+}
+
+/// An in-house analytics event (#109). Nothing leaves the app and there are no
+/// third parties. `props` holds ids, paths, counts, milliseconds and flags only:
+/// lib/events/props.ts drops anything else, and never stores free text. No
+/// visitor id is stored: whether a visit is a device's first today is worked
+/// out in memory and kept as `firstToday` (lib/events/visitor.ts).
+model Event {
+  id     String   @id @default(cuid())
+  /// The learner, for events in the app. Deleting the account deletes these.
+  userId String?
+  user   User?    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  type   String
+  props  Json?
+  at     DateTime @default(now())
+
+  @@index([type, at])
+  @@index([userId, at])
 }
