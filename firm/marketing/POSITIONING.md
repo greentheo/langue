@@ -90,7 +90,7 @@ commit.
 - **#93 (keys stay put):** lifts the "counts never drop" HOLD.
 - **#106 (real-word typos):** removes limit (2) from the endings claim.
 - **#114 (PR #120, accents that change the word):** the copy is already
-  switched in the PR that merges after #120, with #128 (#72): the accent row,
+  switched in PR #130, which merges after #120, with #128 (#72): the accent row,
   limit (1), the one-pager, the invite and its chat version, the FAQ's
   "check the ending" answer, campaigns 001 and 002, and LinkedIn post 2. Once
   #120 is deployed, re-run the accent row's probe on the deployed commit, and
