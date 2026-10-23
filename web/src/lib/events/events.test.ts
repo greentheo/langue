@@ -220,6 +220,22 @@ describe("bounds on the public events route", () => {
     assert.notEqual(today.rateKey("203.0.113.7", new Date("2026-10-20T08:00:00Z")), key, "a new day, a new key");
     assert.notEqual(key, today.hash("203.0.113.7", "", morning), "not the visitor hash: changing the browser name doesn't buy more");
     const route = readFileSync(join(process.cwd(), "src", "app", "api", "events", "route.ts"), "utf8");
-    assert.match(route, /allow\(visitors\.rateKey\(address\)\)/);
+    assert.match(route, /visitors\.allow\(address\)/);
+  });
+
+  test("the limit's counts go with the salt when the day changes: yesterday's keys are gone", () => {
+    const limiters: { calls: number }[] = [];
+    const today = createDailyVisitors(undefined, () => {
+      const limiter = { calls: 0 };
+      limiters.push(limiter);
+      const allow = createRateLimit(1, 60_000);
+      return (key: string, now?: number) => (limiter.calls++, allow(key, now));
+    });
+    const late = new Date("2026-10-19T23:59:50Z");
+    assert.equal(today.allow("203.0.113.7", late), true);
+    assert.equal(today.allow("203.0.113.7", late), false, "one a minute, in this test");
+    assert.equal(today.allow("203.0.113.7", new Date("2026-10-20T00:00:10Z")), true, "a new day");
+    assert.equal(limiters.length, 2, "a new limiter for the new day");
+    assert.equal(limiters[0].calls, 2, "yesterday's limiter, and its keys, are never used again");
   });
 });
