@@ -2,7 +2,9 @@ import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { verifySession } from "@/lib/auth/session";
 import { Panel } from "@/components/crt";
-import { computeStats, TRIPWIRES, type CodeRow, type FunnelStage, type Shown } from "@/lib/stats";
+import { COHORT_FIRST_WEEK, COHORT_LAST_WEEK, computeStats, TRIPWIRES, type CodeRow, type FunnelStage, type Shown } from "@/lib/stats";
+
+const COHORT_WEEKS = Array.from({ length: COHORT_LAST_WEEK - COHORT_FIRST_WEEK + 1 }, (_, i) => COHORT_FIRST_WEEK + i);
 import { loadStats } from "@/lib/stats-data";
 
 export const metadata = { title: "Usage — LANGUE" };
@@ -83,14 +85,14 @@ export default async function StatsPage() {
             </li>
           ))}
         </ul>
-        <p className="mt-4 text-xs text-[var(--crt-fg-dim)]">Weekly signup cohorts: share who practised in each week after signing up.</p>
+        <p className="mt-4 text-xs text-[var(--crt-fg-dim)]">Weekly signup cohorts: share who practised in each week after signing up, from week 2 (weeks 0 and 1 are activated and week 2, above).</p>
         <Scroll>
           <table className="mt-2 text-sm">
             <thead>
               <tr className="text-left text-xs text-[var(--crt-fg-dim)]">
                 <th className="pr-3 font-normal">Week of</th>
                 <th className="pr-3 text-right font-normal">People</th>
-                {Array.from({ length: 8 }, (_, week) => (
+                {COHORT_WEEKS.map((week) => (
                   <th key={week} className="pr-3 text-right font-normal">
                     W{week}
                   </th>
@@ -102,10 +104,9 @@ export default async function StatsPage() {
                 <tr key={cohort.week}>
                   <td className="pr-3">{cohort.week}</td>
                   <Cell value={cohort.size} />
-                  {Array.from({ length: 8 }, (_, week) => {
-                    const cell = cohort.weeks[week];
-                    return <Cell key={week} value={cell === undefined || cell === null ? null : cell} unit="%" />;
-                  })}
+                  {COHORT_WEEKS.map((week) => (
+                    <Cell key={week} value={cohort.weeks.find((cell) => cell.n === week)?.share ?? null} unit="%" />
+                  ))}
                 </tr>
               ))}
             </tbody>

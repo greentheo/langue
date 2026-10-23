@@ -10,13 +10,15 @@ import { SoundToggle } from "@/components/sound-toggle";
 import type { Level } from "@/lib/vocab/types";
 import { liveStreak } from "@/lib/standings";
 import { trackAppOpened } from "@/lib/events/app-opened";
-import { countsAsAppOpen, PATH_HEADER } from "@/lib/events/days";
+import { ADMIN_PAGE_HEADER } from "@/lib/admin-paths";
 
 export default async function LearnLayout({ children }: { children: React.ReactNode }) {
   // proxy.ts only checks that a cookie exists. This is the real check.
   const user = await verifySession();
   if (!user) redirect("/login");
-  if (countsAsAppOpen((await headers()).get(PATH_HEADER))) await trackAppOpened(user.id);
+  // The owner on an admin page isn't a learner opening the app (#109): it would push "opened, didn't practise" up.
+  const adminPage = (await headers()).get(ADMIN_PAGE_HEADER) === "1";
+  if (!adminPage) await trackAppOpened(user.id);
 
   return (
     <div className="mx-auto max-w-4xl px-5 py-6">
