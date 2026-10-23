@@ -1,5 +1,6 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { SESSION_COOKIE } from "@/lib/auth/session";
+import { PATH_HEADER } from "@/lib/events/days";
 
 /**
  * Optimistic auth redirect.
@@ -32,7 +33,11 @@ export function proxy(request: NextRequest) {
   // cookie from /login to /learn (which bounces it back) loops forever. The
   // login page redirects after a real check instead.
 
-  return NextResponse.next();
+  // The path, for the learn layout: app.opened isn't recorded on the admin pages (lib/events/days.ts).
+  // Set here, so a caller can't choose it.
+  const requestHeaders = new Headers(request.headers);
+  requestHeaders.set(PATH_HEADER, pathname);
+  return NextResponse.next({ request: { headers: requestHeaders } });
 }
 
 export const config = {

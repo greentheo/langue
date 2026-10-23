@@ -1,6 +1,6 @@
 import { describe, test } from "node:test";
 import assert from "node:assert/strict";
-import { computeStats, type StatsInput } from "./stats";
+import { computeStats, SMALL, utcDay, type StatsInput } from "./stats";
 
 // Monday 19 October 2026, noon UTC. Values below were worked out by hand from the definitions in stats.ts.
 const NOW = new Date("2026-10-19T12:00:00Z");
@@ -65,15 +65,13 @@ const counts = (stages: { count: number; conversion: number | null; pending?: nu
 describe("usage dashboard, against a hand-computed fixture", () => {
   const stats = computeStats(FIXTURE);
 
-  test("funnel, last 30 days", () => {
-    // 5 visitor-days → 5 opens → 4 signups (a, b, c, d) → 3 activated of 3 who've had a week → 1 back in week 2 of 2 who've had two.
+  test("funnel, last 30 days: visits, invite opens and signups only", () => {
+    // 5 visitor-days → 5 opens → 4 signups (a, b, c, d). What people did after signing up is shown all time only.
     assert.equal(stats.windows[0].title, "Last 30 days");
     assert.deepEqual(counts(stats.windows[0].funnel), [
       [5, null, null],
       [5, 100, null],
       [4, 80, null],
-      [3, 100, 1],
-      [1, 50, 1],
     ]);
   });
 
@@ -106,6 +104,7 @@ describe("usage dashboard, against a hand-computed fixture", () => {
       stickiness: 5,
       openedNotPractised: 67, // d and c, of 3 opens
       appOpens: 3,
+      appOpensPending: 0, // a's open at 09:00 is exactly three hours old: judged
       stepsStarted: 10,
       stepsFinished: 8,
       finishedShare: 80,
@@ -125,6 +124,13 @@ describe("usage dashboard, against a hand-computed fixture", () => {
     assert.equal(computeStats({ ...lateNight, appOpened: [{ userId: "d", at: new Date("2026-10-18T23:00:00Z") }] }).engagement.openedNotPractised, 0);
   });
 
+  test("an open under three hours old is pending: neither practised nor not", () => {
+    const { engagement } = computeStats({ ...FIXTURE, appOpened: [...FIXTURE.appOpened, { userId: "b", at: new Date("2026-10-19T10:30:00Z") }] });
+    assert.equal(engagement.openedNotPractised, 67, "still d and c, of the 3 old enough to tell");
+    assert.equal(engagement.appOpens, 3);
+    assert.equal(engagement.appOpensPending, 1);
+  });
+
   test("health: a past day with no heartbeat, or steps with no events, is flagged", () => {
     const flagged = stats.health.filter((day) => day.broken).map((day) => day.day);
     assert.ok(flagged.includes("2026-10-18"), "no heartbeat");
@@ -135,7 +141,7 @@ describe("usage dashboard, against a hand-computed fixture", () => {
   test("small codes are pooled with learners who joined without one, and hidden under five", () => {
     // Last 30 days: a, b, c, d on two two-person codes.
     assert.deepEqual(stats.windows[0].codes, [
-      { label: "Everyone else: 2 smaller codes", made: null, opened: "<5", signedUp: "<5", activated: "<5", weekTwo: "<5" },
+      { label: "Everyone else: 2 smaller codes", made: null, opened: "<5", signedUp: "<5" },
     ]);
     // All time: e joined without a code; five people, the whole app, so the numbers can show.
     assert.deepEqual(stats.windows[1].codes, [
@@ -262,5 +268,75 @@ describe("per-code rows can't be subtracted to find one person", () => {
     });
     // Week of Monday 5 October: week 0 → w1, w2 (40%); week 1 → w1 (20%); week 2 → nobody.
     assert.deepEqual(stats.cohorts, [{ week: "2026-10-05", size: 5, weeks: [40, 20, 0] }]);
+  });
+});
+
+/**
+ * Any two aggregates on the page where one group of people contains the other
+ * must differ by 0 or at least five people, or subtracting them describes
+ * someone. What people did after signing up (activated, week 2) is shown in
+ * one window only, all time, where the rows split the total into parts of 0
+ * or five or more.
+ */
+function assertNoNestedLeak(stats: ReturnType<typeof computeStats>) {
+  const [last30, allTime] = stats.windows;
+  assert.deepEqual(
+    last30.funnel.map((stage) => stage.name),
+    ["Front-page visitors (one per device per day)", "Invite pages opened", "Signed up"],
+    "the 30-day funnel stops at signups",
+  );
+  for (const row of last30.codes) assert.ok(!("activated" in row) && !("weekTwo" in row), `30-day row "${row.label}" shows only opens and signups`);
+  const total = allTime.funnel[2].count;
+  for (const row of allTime.codes) {
+    if (row.signedUp === "<5") continue;
+    const rest = total - row.signedUp;
+    assert.ok(rest === 0 || rest >= SMALL, `all time: the total minus "${row.label}" is ${rest} people`);
+  }
+}
+
+describe("the reviewer's cases: no two nested aggregates single anyone out (#117 re-check)", () => {
+  const user = (id: string, code: string | null, day: string) => ({ id, createdAt: at(day), inviteCodeId: code, streakDays: 0 });
+  const codes = [
+    { id: "camp", note: "Autumn starters", createdAt: at("2026-09-28") },
+    { id: "mum", note: "for Mum", createdAt: at("2026-09-28") },
+  ];
+  const base = { ...FIXTURE, codes, stepFinishes: [], appOpened: [], frontVisitors: [], inviteOpens: [] };
+  /** Practised on the signup day (activated) and, for some, on day 7 (week 2). */
+  const practised = (ids: string[], signup: string, weekTwo: string[]) => [
+    ...ids.map((userId) => ({ userId, day: signup, steps: 1 })),
+    ...weekTwo.map((userId) => ({ userId, day: utcDay(new Date(Date.parse(`${signup}T00:00:00Z`) + 7 * 24 * 3600 * 1000)), steps: 1 })),
+  ];
+  const camp = ["p1", "p2", "p3", "p4", "p5"].map((id) => user(id, "camp", "2026-09-29"));
+
+  test("A: six earlier family members, then the campaign and Mum — the 30-day pool minus the campaign row was Mum", () => {
+    const family = ["f1", "f2", "f3", "f4", "f5", "f6"].map((id) => user(id, null, "2026-08-10"));
+    const stats = computeStats({
+      ...base,
+      users: [...family, ...camp, user("mum1", "mum", "2026-09-29")],
+      practice: [...practised(["p1", "p2", "p3", "p4", "mum1"], "2026-09-29", ["p1", "p2", "p3", "mum1"]), ...practised(["f1"], "2026-08-10", [])],
+    });
+    // Before: last 30 days "Everyone else (2 smaller codes): 6 · 5 · 4" and all time "Autumn starters: 5 · 4 · 3" → Mum 1 · 1.
+    assert.deepEqual(stats.windows[0].codes, [{ label: "Everyone else: 2 smaller codes", made: null, opened: 0, signedUp: 6 }]);
+    assert.deepEqual(stats.windows[1].codes.map((row) => [row.label, row.signedUp, row.activated, row.weekTwo]), [
+      ["Autumn starters", 5, 4, 3],
+      ["Everyone else: 1 smaller code, and learners who joined without one", 7, 2, 1],
+    ]);
+    assertNoNestedLeak(stats);
+  });
+
+  test("B: the owner and Gran long ago, the campaign recently — the all-time funnel minus the 30-day one was them", () => {
+    const stats = computeStats({
+      ...base,
+      users: [user("owner", null, "2026-08-20"), user("gran", null, "2026-08-20"), ...camp],
+      practice: [...practised(["owner", "gran"], "2026-08-20", ["owner"]), ...practised(["p1", "p2", "p3", "p4"], "2026-09-29", ["p1", "p2", "p3"])],
+    });
+    // Before: all time 7 · 6 · 4, last 30 days 5 · 4 · 3 → the owner and Gran 2 · 2 · 1.
+    assert.deepEqual(counts(stats.windows[1].funnel).slice(2).map(([count]) => count), [7, 6, 4]);
+    assert.equal(stats.windows[0].funnel.length, 3);
+    assertNoNestedLeak(stats);
+  });
+
+  test("the hand-computed fixture holds to the same rule", () => {
+    assertNoNestedLeak(computeStats(FIXTURE));
   });
 });

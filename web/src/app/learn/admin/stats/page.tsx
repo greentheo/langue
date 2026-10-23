@@ -11,7 +11,8 @@ export const metadata = { title: "Usage — LANGUE" };
  * The usage dashboard (#109): the signup funnel, retention, engagement and
  * whether tracking is healthy. Admins only; anyone else gets a 404. Totals for
  * the whole app are always shown; every breakdown of fewer than five learners
- * reads "<5" or is pooled, and there is no per-person view. Each headline
+ * reads "<5" or is pooled, what people did after signing up is shown all time
+ * only (lib/stats.ts), and there is no per-person view. Each headline
  * number has its tripwire beside it: what to look at when it trips.
  */
 export default async function StatsPage() {
@@ -21,8 +22,10 @@ export default async function StatsPage() {
 
   const stats = computeStats(await loadStats());
   const { engagement: e } = stats;
-  const activated = stats.windows[0].funnel[3];
-  const weekTwo = stats.windows[0].funnel[4];
+  // Activated and week 2 are in the all-time window only.
+  const allTime = stats.windows[1];
+  const activated = allTime.funnel[3];
+  const weekTwo = allTime.funnel[4];
 
   return (
     <div className="space-y-8">
@@ -45,8 +48,12 @@ export default async function StatsPage() {
           ))}
         </div>
         <div className="mt-4 space-y-1">
-          <Tripwire value={activated.conversion} {...TRIPWIRES.activated} label="Activated" />
-          <Tripwire value={weekTwo.conversion} {...TRIPWIRES.weekTwo} label="Week-2 active" />
+          <p className="text-xs text-[var(--crt-fg-dim)]">
+            Activated and week 2 are shown all time only: with a 30-day count beside them, the difference could describe
+            someone who joined earlier.
+          </p>
+          <Tripwire value={activated.conversion} {...TRIPWIRES.activated} label="Activated (all time)" />
+          <Tripwire value={weekTwo.conversion} {...TRIPWIRES.weekTwo} label="Week-2 active (all time)" />
         </div>
       </Panel>
 
@@ -54,7 +61,7 @@ export default async function StatsPage() {
         <p className="mb-3 text-xs text-[var(--crt-fg-dim)]">
           A code gets its own row once five people have signed up with it, and only while everyone else in the same
           window is none or at least five, so no row can be worked out from the totals. Everyone else is pooled.
-          Pages opened are counted since tracking began.
+          Pages opened are counted since tracking began; activated and week 2, all time only.
         </p>
         {stats.windows.map((window) => (
           <div key={window.title} className="mt-4 first:mt-0">
@@ -115,7 +122,10 @@ export default async function StatsPage() {
           <Line label="Stickiness (daily ÷ monthly)" value={e.stickiness === null ? "—" : `${e.stickiness}%`} />
           <Line
             label="Opened the app, and no step finished within 3 hours"
-            value={e.openedNotPractised === null ? "—" : `${e.openedNotPractised}% of ${e.appOpens} opens`}
+            value={
+              (e.openedNotPractised === null ? "—" : `${e.openedNotPractised}% of ${e.appOpens} opens`) +
+              (e.appOpensPending > 0 ? ` (+${e.appOpensPending} too soon)` : "")
+            }
           />
           <Line
             label={`Steps finished of started${stats.trackingSince ? ` (since tracking began on ${stats.trackingSince})` : ""}`}
@@ -221,17 +231,22 @@ function Cell({ value, unit = "", last = false }: { value: Shown | null; unit?: 
 }
 
 function CodeTable({ rows }: { rows: CodeRow[] }) {
+  const journey = rows.some((row) => row.activated !== undefined);
   return (
     <Scroll>
-      <table className="mt-1 w-full min-w-[32rem] text-sm">
+      <table className={`mt-1 w-full text-sm ${journey ? "min-w-[32rem]" : "min-w-[20rem]"}`}>
         <thead>
           <tr className="text-left text-xs text-[var(--crt-fg-dim)]">
             <th className="pr-3 font-normal">Code</th>
             <th className="pr-3 font-normal">Made</th>
             <th className="pr-3 text-right font-normal">Opened</th>
-            <th className="pr-3 text-right font-normal">Signed up</th>
-            <th className="pr-3 text-right font-normal">Activated</th>
-            <th className="text-right font-normal">Week 2</th>
+            <th className={`${journey ? "pr-3" : ""} text-right font-normal`}>Signed up</th>
+            {journey ? (
+              <>
+                <th className="pr-3 text-right font-normal">Activated</th>
+                <th className="text-right font-normal">Week 2</th>
+              </>
+            ) : null}
           </tr>
         </thead>
         <tbody>
@@ -240,9 +255,13 @@ function CodeTable({ rows }: { rows: CodeRow[] }) {
               <td className="pr-3">{row.label}</td>
               <td className="pr-3 text-[var(--crt-fg-dim)]">{row.made ?? "—"}</td>
               <Cell value={row.opened} />
-              <Cell value={row.signedUp} />
-              <Cell value={row.activated} />
-              <Cell value={row.weekTwo} last />
+              <Cell value={row.signedUp} last={!journey} />
+              {journey ? (
+                <>
+                  <Cell value={row.activated ?? null} />
+                  <Cell value={row.weekTwo ?? null} last />
+                </>
+              ) : null}
             </tr>
           ))}
         </tbody>

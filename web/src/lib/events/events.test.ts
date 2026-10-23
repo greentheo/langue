@@ -2,7 +2,7 @@ import { describe, test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import { opensNewDay } from "./days";
+import { countsAsAppOpen, opensNewDay } from "./days";
 import { cleanProps, isBot, TRACKED_PATHS } from "./props";
 import { createTracker, type EventRow } from "./tracker";
 import { clientAddress, createDailyVisitors } from "./visitor";
@@ -153,6 +153,17 @@ describe("days and visitors", () => {
     assert.equal(opensNewDay(null, now), true);
     assert.equal(opensNewDay(new Date("2026-10-19T00:10:00Z"), now), false);
     assert.equal(opensNewDay(new Date("2026-10-18T23:50:00Z"), now), true);
+  });
+
+  test("the admin pages don't count as opening the app", () => {
+    assert.equal(countsAsAppOpen("/learn"), true);
+    assert.equal(countsAsAppOpen("/learn/path"), true);
+    assert.equal(countsAsAppOpen(null), true, "no path known: count it");
+    assert.equal(countsAsAppOpen("/learn/admin"), false);
+    assert.equal(countsAsAppOpen("/learn/admin/stats"), false);
+    assert.equal(countsAsAppOpen("/learn/administer"), true);
+    const proxy = readFileSync(join(process.cwd(), "src", "proxy.ts"), "utf8");
+    assert.match(proxy, /requestHeaders\.set\(PATH_HEADER, pathname\)/, "proxy.ts passes the path to the learn layout");
   });
 
   test("crawlers and chat apps' link previews aren't visitors", () => {

@@ -6,7 +6,10 @@
  * Days are UTC, as everywhere else in Langue. "Practised" means finishing a
  * step, a challenge or any activity that day (ActivityLog).
  *
- * Small numbers never describe a person:
+ * Small numbers never describe a person, alone or subtracted from another:
+ * - what people did after signing up (activated, week 2) is shown all time
+ *   only, so no two windows can be subtracted to find someone; the last 30
+ *   days show visits, invite opens and signups;
  * - a code gets its own row in a window only when everyone else who signed up
  *   in that window (smaller codes and learners with no code) is 0 or at least
  *   SMALL people, so the app-wide totals minus the shown rows can't isolate
@@ -111,8 +114,9 @@ export interface CodeRow {
   /** Invite pages opened, since tracking began. */
   opened: Shown;
   signedUp: Shown;
-  activated: Shown;
-  weekTwo: Shown;
+  /** All time only. */
+  activated?: Shown;
+  weekTwo?: Shown;
 }
 
 export interface Window {
@@ -134,7 +138,10 @@ export interface Stats {
     monthly: number;
     stickiness: number | null;
     openedNotPractised: number | null;
+    /** Opens at least PRACTISE_WITHIN_MS old: the ones that can be judged. */
     appOpens: number;
+    /** Opens newer than that: too soon to tell. */
+    appOpensPending: number;
     stepsStarted: number;
     /** Steps finished since tracking began (within the 30 days), to compare with started. */
     stepsFinished: number;
@@ -173,6 +180,7 @@ function codeRows(
   opens: Map<string, number>,
   practiceDays: Map<string, Map<string, number>>,
   today: string,
+  withJourney: boolean,
 ): CodeRow[] {
   const members = (codeId: string) => users.filter((user) => user.inviteCodeId === codeId);
   const shownCodes = codes
@@ -184,8 +192,10 @@ function codeRows(
   const rows: CodeRow[] = shownCodes
     .sort((a, b) => a.createdAt.getTime() - b.createdAt.getTime())
     .map((code) => {
+      const row: CodeRow = { label: code.note || "(no note)", made: utcDay(code.createdAt), opened: opens.get(code.id) ?? 0, signedUp: members(code.id).length };
+      if (!withJourney) return row;
       const j = journey(members(code.id), practiceDays, today);
-      return { label: code.note || "(no note)", made: utcDay(code.createdAt), opened: opens.get(code.id) ?? 0, signedUp: j.signedUp, activated: j.activated, weekTwo: j.weekTwo };
+      return { ...row, activated: j.activated, weekTwo: j.weekTwo };
     });
 
   const shownIds = new Set(shownCodes.map((code) => code.id));
@@ -193,19 +203,16 @@ function codeRows(
   const pooledCodes = codes.filter((code) => !shownIds.has(code.id) && (members(code.id).length > 0 || (opens.get(code.id) ?? 0) > 0));
   const withoutCode = pool.some((user) => !user.inviteCodeId);
   if (pool.length > 0 || pooledCodes.length > 0) {
-    const j = journey(pool, practiceDays, today);
     const opened = pooledCodes.reduce((sum, code) => sum + (opens.get(code.id) ?? 0), 0);
     const label =
       `Everyone else: ${pooledCodes.length} smaller code${pooledCodes.length === 1 ? "" : "s"}` +
       (withoutCode ? ", and learners who joined without one" : "");
-    rows.push({
-      label,
-      made: null,
-      opened: shown(opened, pool.length),
-      signedUp: shown(pool.length, pool.length),
-      activated: shown(j.activated, pool.length),
-      weekTwo: shown(j.weekTwo, pool.length),
-    });
+    const row: CodeRow = { label, made: null, opened: shown(opened, pool.length), signedUp: shown(pool.length, pool.length) };
+    if (withJourney) {
+      const j = journey(pool, practiceDays, today);
+      Object.assign(row, { activated: shown(j.activated, pool.length), weekTwo: shown(j.weekTwo, pool.length) });
+    }
+    rows.push(row);
   }
   return rows;
 }
@@ -226,8 +233,9 @@ export function computeStats(input: StatsInput): Stats {
     practiceDays.set(row.userId, days);
   }
 
-  // The funnel and the per-code rows, over the same two windows so their numbers can be set side by side safely.
-  const window = (title: string, users: User[], visitors: number, opened: number, opensByCode: Map<string, number>): Window => {
+  // The funnel and the per-code rows, over two windows. Only one has what people did after signing up (withJourney):
+  // with both, the all-time numbers minus the 30-day ones would describe whoever joined before.
+  const window = (title: string, users: User[], visitors: number, opened: number, opensByCode: Map<string, number>, withJourney: boolean): Window => {
     const j = journey(users, practiceDays, today);
     // Invite pages opened → signed up mixes events with signups that may predate them: count signups since tracking began.
     const trackedSignups = users.filter((user) => sinceTracking(user.createdAt)).length;
@@ -240,20 +248,24 @@ export function computeStats(input: StatsInput): Stats {
         conversion: tracking ? percent(trackedSignups, opened) : null,
         note: tracking && trackedSignups < j.signedUp ? `${trackedSignups} of them ${trackingNote}` : undefined,
       },
-      {
-        name: "Activated (a first step within 7 days)",
-        count: j.activated,
-        conversion: percent(j.activated, j.signedUp - j.activationPending),
-        pending: j.activationPending,
-      },
-      {
-        name: "Week-2 active (practised on days 7–13)",
-        count: j.weekTwo,
-        conversion: percent(j.weekTwo, j.activated - j.weekTwoPending),
-        pending: j.weekTwoPending,
-      },
     ];
-    return { title, funnel, codes: codeRows(users, input.codes, opensByCode, practiceDays, today) };
+    if (withJourney) {
+      funnel.push(
+        {
+          name: "Activated (a first step within 7 days)",
+          count: j.activated,
+          conversion: percent(j.activated, j.signedUp - j.activationPending),
+          pending: j.activationPending,
+        },
+        {
+          name: "Week-2 active (practised on days 7–13)",
+          count: j.weekTwo,
+          conversion: percent(j.weekTwo, j.activated - j.weekTwoPending),
+          pending: j.weekTwoPending,
+        },
+      );
+    }
+    return { title, funnel, codes: codeRows(users, input.codes, opensByCode, practiceDays, today, withJourney) };
   };
   const windows = [
     window(
@@ -262,6 +274,7 @@ export function computeStats(input: StatsInput): Stats {
       input.frontVisitors.filter((row) => in30(row.day)).reduce((sum, row) => sum + row.visitors, 0),
       input.inviteOpens.reduce((sum, row) => sum + row.recent, 0),
       new Map(input.inviteOpens.map((row) => [row.inviteCodeId, row.recent])),
+      false,
     ),
     window(
       "All time",
@@ -269,6 +282,7 @@ export function computeStats(input: StatsInput): Stats {
       input.frontVisitors.reduce((sum, row) => sum + row.visitors, 0),
       input.inviteOpens.reduce((sum, row) => sum + row.total, 0),
       new Map(input.inviteOpens.map((row) => [row.inviteCodeId, row.total])),
+      true,
     ),
   ];
 
@@ -312,7 +326,9 @@ export function computeStats(input: StatsInput): Stats {
   const dailyAverage = Math.round((days30.reduce((sum, day) => sum + activeOn(day), 0) / 30) * 10) / 10;
   const monthly = learnersSince(since30);
   // Opened the app, and no step finished within three hours: no day boundary to split a session.
-  const opens = input.appOpened.filter((open) => in30(utcDay(open.at)));
+  // An open newer than that is pending: it may yet be practised.
+  const recentOpens = input.appOpened.filter((open) => in30(utcDay(open.at)));
+  const opens = recentOpens.filter((open) => input.now.getTime() - open.at.getTime() >= PRACTISE_WITHIN_MS);
   const notPractised = opens.filter(
     (open) =>
       !input.stepFinishes.some(
@@ -355,6 +371,7 @@ export function computeStats(input: StatsInput): Stats {
       stickiness: monthly > 0 ? Math.round((dailyAverage / monthly) * 100) : null,
       openedNotPractised: percent(notPractised, opens.length),
       appOpens: opens.length,
+      appOpensPending: recentOpens.length - opens.length,
       stepsStarted: input.stepsStarted,
       stepsFinished: finishedTracked,
       finishedShare: tracking ? percent(finishedTracked, input.stepsStarted) : null,
