@@ -69,45 +69,52 @@ Roughly in order; each line is one or a few PRs. The board is the record:
 set the order where it matters. **Owner's order (#98): the differentiators
 first, then B1 and B2; C1–C2 wait.**
 
-**First — the owner's priority (2026-10-19): in-house tracking**
-0. #109 Eventing and the first dashboard: signup funnel, retention, engagement (no cookies, no third parties) — L · then #52 (learning measures) and #110 (campaign link tags)
+**First — the owner's order for the pre-alpha (2026-10-23)**
+The owner chose "yes, capped" for people they don't know (#124). Everything
+here is live before campaign 002's post opens the LinkedIn group; its gates
+are in `firm/marketing/campaigns/002-how-its-built.md`.
+0. #109 Eventing and the first dashboard (in review: #115, #117) · #114 A missing accent that changes the grammar is a mistake (in review: #120)
+1. #72 Front page and invite copy — S
+2. #119 Admin pages ask for the password again (one-tap switching stays) — S
+3. #123 Cap AI use per learner, per invite code and per day — M (after #109)
+4. #63 Privacy page, account deletion, age checkbox — M (after #109)
+5. #76 Password reset without email — M (after #63)
+6. #118 The owner's learner list — S (after #109, #119)
+7. #93 Item keys survive content edits (lock + renames) — M
+· #126 README first screen (the foreman, docs only) · then #52 (learning measures) and #110 (campaign link tags)
 
 **Now — accuracy and progress safety (bugs first)**
-1. #93 Item keys survive content edits (lock + renames) — M
-2. #107 Neutral ending note · #82 Cloze homographs · #85 Articles per language — S
-3. #101 Multi-word nouns with their article · #104 Noun genders (after #99) — S/M
-4. #105 Endings gap-finder, then forgive end-of-word typos again — M · #106 Different-word typos — S
-5. #90 "What's new since you finished" — L (after #93)
-6. #80, #81 CI hardening · #103 Dev server on 127.0.0.1 · #95 Weekly encrypted local backup — S
+8. #107 Neutral ending note · #82 Cloze homographs · #85 Articles per language — S
+9. #101 Multi-word nouns with their article · #104 Noun genders (after #99) — S/M
+10. #105 Endings gap-finder, then forgive end-of-word typos again — M · #106 Different-word typos — S
+11. #90 "What's new since you finished" — L (after #93)
+12. #80, #81 CI hardening · #103 Dev server on 127.0.0.1 · #95 Weekly encrypted local backup — S
 
 **Next — trust, then the differentiators**
-7. #63 Privacy page, account deletion, housekeeping — M
-8. #74 AI switch per learner, child-safety prompts — M
-9. #73 Streak reminders that sell the dream, not threats — S
-10. #49 "My answer should be accepted" reports — M (after #63)
-11. #76 Password reset without email — M (after #63)
-12. #53 Your mistakes, made visible — L (after #63)
-13. #51 Dictation — M · #55 Listening cards — S · #54 Speak your reply — M · #56 Writing task — M
-14. #52 Dashboard phase 2: learning measures — M (after #109)
-15. #100 Certificates say what the course practised — S · #99 Gloss check — M
-16. #72 Front page and invite copy — S (after the readiness kit, #69)
+13. #74 AI switch per learner, child-safety prompts — M
+14. #73 Streak reminders that sell the dream, not threats — S
+15. #49 "My answer should be accepted" reports — M (after #63)
+16. #53 Your mistakes, made visible — L (after #63)
+17. #51 Dictation — M · #55 Listening cards — S · #54 Speak your reply — M · #56 Writing task — M
+18. #52 Dashboard phase 2: learning measures — M (after #109)
+19. #100 Certificates say what the course practised — S · #99 Gloss check — M
 
 **Then — levels**
-17. #57 B1 guided path, all four languages — L (after the differentiators; French checked by a native speaker)
-18. B2 (to be filed when B1 is under way)
-19. #61 Weekly recap — S
+20. #57 B1 guided path, all four languages — L (after the differentiators; French checked by a native speaker)
+21. B2 (to be filed when B1 is under way)
+22. #61 Weekly recap — S
 
 **Later**
-20. #59 Practice exam sections at A2 and B1 — L
-21. #58 Graded readers — L
-22. #60 Engagement experiments (no loss framing — owner's rule, #73) — M
-23. #62 Move to the custom domain — S (after the owner sets up DNS)
-24. #65 Foundations for new writing systems and grammars — M
-25. #66 German A1 pilot — L
-26. #64 Triage legacy CLI issues — S (owner decides what to close)
+23. #59 Practice exam sections at A2 and B1 — L
+24. #58 Graded readers — L, then #122 Cartoon clips (parked; reuses #58's scripts)
+25. #60 Engagement experiments (no loss framing — owner's rule, #73) — M
+26. #62 Move to the custom domain — S (after the owner sets up DNS)
+27. #65 Foundations for new writing systems and grammars — M
+28. #66 German A1 pilot — L
+29. #64 Triage legacy CLI issues — S (owner decides what to close)
 
-**Waiting on the owner:** Railway's "Wait for CI" toggle (#71); the one-line
-AI disclosure inside AI screens (#74).
+**Waiting on the owner:** nothing (2026-10-23). Railway's "Wait for CI" is on
+(#71, closed), and the Anthropic key has a $20/month spend limit (#123).
 
 Done and closed: #35–#38 (guided path phases 1–4), #40–#47 (sounds, language
 chooser, group leaderboards, PWA, streak reminders), #48 (CI), #87 (typo notes

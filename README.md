@@ -1,10 +1,24 @@
-# Langue - AI Language Learning
+# Langue
 
 > **Read, write and speak a language correctly — at real levels, a few minutes
 > a day, without tricks.** Why and how: [docs/vision.md](docs/vision.md) ·
 > what's next: [docs/ROADMAP.md](docs/ROADMAP.md).
 
-Langue is an AI language-learning app in two forms that share one vocabulary set:
+Langue is a small, invite-only language-learning web app for family and
+friends. Its course teaches Italian, Spanish, French and Brazilian Portuguese
+at A1 and A2 (beginner and elementary), in short daily steps where you type
+real answers. The daily steps, with their role-plays and grading, run no AI:
+they're plain code. Optional AI tools sit alongside: a tutor at the end of
+each lesson page, a conversation partner, some extra exercises (one is graded
+by AI) and flashcard explanations.
+
+It's built and run by a small firm of AI agents (a foreman, a night shift, a
+reviewer, Socrates and a marketer) and one human owner, who decides what
+ships: see [firm/README.md](firm/README.md). The course was written and
+reviewed by AI agents, and its mechanics are checked by tests. Native-speaker
+checks are still to come ([docs/ROADMAP.md](docs/ROADMAP.md)).
+
+The repo holds two apps that share one vocabulary set:
 
 - **CLI** (`langue/`) — Python, runs in your terminal with a rad 80's-inspired
   interface. Works fully offline against Ollama.
@@ -13,6 +27,8 @@ Langue is an AI language-learning app in two forms that share one vocabulary set
   [web/README.md](web/README.md).
 
 ## Languages
+
+The flashcard word lists (below) go from A1 to C2; the guided course is A1–A2.
 
 | Language | Levels | Unique words |
 |---|---|---|
@@ -41,17 +57,20 @@ A German library used to exist. It contained ten Spanish words labelled German �
 recognise — so it was removed rather than left to teach the wrong language.
 See issue #27.
 
-## Features
+## The CLI's features
+
+These sections describe the Python CLI (`langue/`). The web app's guided
+course is described in [docs/guided-path.md](docs/guided-path.md).
 
 - Learn multiple languages through a variety of activities
-- Supports both online (Claude, ChatGPT) and offline (Ollama) language models
+- Supports both online (Claude) and offline (Ollama) language models
 - Track your progress with words learned, points, and learning streaks
-- Adjustable difficulty levels from beginner to advanced
+- Adjustable difficulty per activity (1–5)
 - Fully functional offline with local LLMs
-- Interactive model selection with automatic detection of available models
+- Interactive model selection with automatic detection of local Ollama models
 - Stylish retro UI with arrow key navigation and synthwave colors
 
-## Activities
+## The CLI's activities
 
 - Flashcards for vocabulary practice with level-based libraries (A1-C2)
 - Fill-in-the-blank exercises
@@ -128,7 +147,7 @@ Testing ensures:
 
 Langue creates a configuration file at `~/.config/langue/config.toml` that you can customize:
 
-- Set your preferred language model (Ollama, Claude, OpenAI)
+- Set your preferred language model (Ollama or Claude)
 - Configure API keys for online models
 - Adjust learning preferences and activity settings
 - Customize your learning experience
@@ -190,14 +209,12 @@ Langue features a stylish, 80's inspired retro interface:
 For online models, you'll need to set up API keys:
 
 - Claude: Get an API key from [Anthropic](https://www.anthropic.com/)
-- OpenAI: Get an API key from [OpenAI](https://platform.openai.com/)
 
 You can set these via the configuration file or environment variables:
 
 ```bash
 # Environment variable setup
 export ANTHROPIC_API_KEY=your_key_here
-export OPENAI_API_KEY=your_key_here
 export OLLAMA_MODEL=llama3.2     # Specify which Ollama model to use
 ```
 
