@@ -26,7 +26,7 @@ export async function openInvite(visitor: string, inviteCodeId: string): Promise
     const choice = chooseVisit(last ? { visit: last, signedUp: await signedUpWith(last) } : null);
     if (choice.record) {
       visitors.rememberOpen(key, choice.visit);
-      await track("invite.opened", { props: { inviteCodeId, visit: choice.visit, firstToday: choice.firstToday } });
+      await track("invite.opened", { props: { inviteCodeId, visit: choice.visit } });
     }
     return choice.visit;
   } catch (error) {

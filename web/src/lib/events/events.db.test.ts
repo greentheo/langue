@@ -65,10 +65,10 @@ describe("events in the database", { skip }, () => {
     for (const visit of visits) {
       assert.equal(opens.filter((open) => (open.props as { visit: string }).visit === visit).length, 1, "each signup joins one open");
     }
-    // Nothing written ties the three accounts together: no row holds a visitor id, only whether an open was the device's first today.
+    // Nothing written ties the three accounts together: no row holds a visitor id, and no open says whether
+    // its device had opened the code before today (with the token, that ties siblings' signups together).
     for (const row of [...opens, ...signups]) assert.ok(!("visitor" in row), "no visitor column");
-    assert.deepEqual(opens.map((open) => (open.props as { firstToday: boolean }).firstToday), [true, false, false]);
-    assert.ok(signups.every((signup) => !("firstToday" in (signup.props as object))));
+    for (const row of [...opens, ...signups]) assert.ok(!("firstToday" in (row.props as object)), "no firstToday on opens or signups");
   });
 
   test("a token joins one signup only", async () => {

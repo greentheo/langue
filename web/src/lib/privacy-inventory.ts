@@ -138,7 +138,7 @@ export const INVENTORY: InventoryEntry[] = [
 export const NOTES: { title: string; text: string }[] = [
   {
     title: "Counting visitors",
-    text: "To count how many people visit the front page and the invite page, Langue makes a scrambled code from your internet address and browser name, mixed with a random value that changes every day. The code is only held in the server's memory for the day, to tell a first visit from a return; neither the code nor the random value is ever written down, and both are gone the next day. Your internet address is never stored.",
+    text: "To count how many people visit the front page and the invite page, Langue makes scrambled codes from your internet address and browser name, mixed with a random value that changes every day. They're only held in the server's memory for the day, to tell a first visit from a return and to stop one address sending too much; neither the codes nor the random value is ever written down, and all of it is gone the next day. Your internet address is never stored.",
   },
   {
     title: "On your device",

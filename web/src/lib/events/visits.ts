@@ -19,13 +19,14 @@ export function newVisitToken(): string {
 }
 
 /**
- * The token for this page load, whether it is a new open to record, and
- * whether that open is this device's first of this code today.
+ * The token for this page load, and whether it is a new open to record. The
+ * open doesn't say whether its device opened the code before: beside the
+ * token, that would tie siblings' signups to one device.
  */
 export function chooseVisit(
   lastOpen: { visit: string; signedUp: boolean } | null,
   fresh: () => string = newVisitToken,
-): { visit: string; record: boolean; firstToday: boolean } {
-  if (lastOpen && !lastOpen.signedUp) return { visit: lastOpen.visit, record: false, firstToday: false };
-  return { visit: fresh(), record: true, firstToday: lastOpen === null };
+): { visit: string; record: boolean } {
+  if (lastOpen && !lastOpen.signedUp) return { visit: lastOpen.visit, record: false };
+  return { visit: fresh(), record: true };
 }

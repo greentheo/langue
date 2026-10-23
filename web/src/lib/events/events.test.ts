@@ -120,16 +120,17 @@ describe("the register form's visit token", () => {
   let n = 0;
   const fresh = () => `token-${++n}`;
 
-  test("a first open is recorded with a new token, as the device's first today", () => {
-    assert.deepEqual(chooseVisit(null, fresh), { visit: "token-1", record: true, firstToday: true });
+  test("a first open is recorded with a new token", () => {
+    assert.deepEqual(chooseVisit(null, fresh), { visit: "token-1", record: true });
   });
 
   test("a refresh before signing up reuses the open and its token", () => {
-    assert.deepEqual(chooseVisit({ visit: "token-1", signedUp: false }, fresh), { visit: "token-1", record: false, firstToday: false });
+    assert.deepEqual(chooseVisit({ visit: "token-1", signedUp: false }, fresh), { visit: "token-1", record: false });
   });
 
-  test("after a signup, the next person on the device gets a new open, not the device's first", () => {
-    assert.deepEqual(chooseVisit({ visit: "token-1", signedUp: true }, () => "token-x"), { visit: "token-x", record: true, firstToday: false });
+  test("after a signup, the next person on the device gets a new open", () => {
+    // Nothing says it came from the same device: with the token, that would tie their signups together (#115 re-check).
+    assert.deepEqual(chooseVisit({ visit: "token-1", signedUp: true }, () => "token-x"), { visit: "token-x", record: true });
   });
 
   test("three signups on one device: three opens, three tokens", () => {
@@ -207,5 +208,18 @@ describe("bounds on the public events route", () => {
     assert.equal(results.filter(Boolean).length, 30);
     assert.equal(allow("198.51.100.4", 1000), true, "another address isn't held back");
     assert.equal(allow("203.0.113.7", 61_000), true, "a new minute");
+  });
+
+  test("the limit is kept by a daily hash of the address, never the address itself", () => {
+    const today = createDailyVisitors();
+    const morning = new Date("2026-10-19T08:00:00Z");
+    const key = today.rateKey("203.0.113.7", morning);
+    assert.ok(!key.includes("203.0.113.7"));
+    assert.equal(today.rateKey("203.0.113.7", new Date("2026-10-19T21:00:00Z")), key, "the same address all day");
+    assert.notEqual(today.rateKey("198.51.100.4", morning), key);
+    assert.notEqual(today.rateKey("203.0.113.7", new Date("2026-10-20T08:00:00Z")), key, "a new day, a new key");
+    assert.notEqual(key, today.hash("203.0.113.7", "", morning), "not the visitor hash: changing the browser name doesn't buy more");
+    const route = readFileSync(join(process.cwd(), "src", "app", "api", "events", "route.ts"), "utf8");
+    assert.match(route, /allow\(visitors\.rateKey\(address\)\)/);
   });
 });

@@ -13,7 +13,8 @@ import { clientAddress, visitors } from "@/lib/events/visitor";
  * 204, so it tells a caller nothing.
  *
  * Bounded, since anyone can call it: bodies over 2 KB are refused unread, an
- * address may send 30 a minute, and crawlers and link previews are skipped.
+ * address may send 30 a minute (counted by its daily hash, never the address
+ * itself), and crawlers and link previews are skipped.
  * The headers checked below can be forged by a script; these bounds are what
  * keep a forger to noise.
  */
@@ -42,7 +43,7 @@ function fromLangue(headers: Headers): boolean {
 export const POST = handler(async (request) => {
   const userAgent = request.headers.get("user-agent") ?? "";
   const address = clientAddress(request.headers);
-  if (!fromLangue(request.headers) || isBot(userAgent) || !allow(address)) return nothing();
+  if (!fromLangue(request.headers) || isBot(userAgent) || !allow(visitors.rateKey(address))) return nothing();
 
   const text = await readLimited(request, MAX_BODY);
   if (text === null) return nothing();
