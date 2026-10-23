@@ -1,10 +1,24 @@
-# Langue - AI Language Learning
+# Langue
 
 > **Read, write and speak a language correctly — at real levels, a few minutes
 > a day, without tricks.** Why and how: [docs/vision.md](docs/vision.md) ·
 > what's next: [docs/ROADMAP.md](docs/ROADMAP.md).
 
-Langue is an AI language-learning app in two forms that share one vocabulary set:
+Langue is a small, invite-only language-learning web app for family and
+friends. Its course teaches Italian, Spanish, French and Brazilian Portuguese
+at A1 and A2 (beginner and elementary), in short daily steps where you type
+real answers. The daily steps, with their role-plays and grading, run no AI:
+they're plain code. Optional AI tools sit alongside: a tutor at the end of
+each lesson page, a conversation partner, some extra exercises (one is graded
+by AI) and flashcard explanations.
+
+It's built and run by a small firm of AI agents (a foreman, a night shift, a
+reviewer, Socrates and a marketer) and one human owner, who decides what
+ships: see [firm/README.md](firm/README.md). The course was written and
+reviewed by AI agents, and its mechanics are checked by tests. Native-speaker
+checks are still to come ([docs/ROADMAP.md](docs/ROADMAP.md)).
+
+The repo holds two apps that share one vocabulary set:
 
 - **CLI** (`langue/`) — Python, runs in your terminal with a rad 80's-inspired
   interface. Works fully offline against Ollama.
@@ -13,6 +27,8 @@ Langue is an AI language-learning app in two forms that share one vocabulary set
   [web/README.md](web/README.md).
 
 ## Languages
+
+The flashcard word lists (below) go from A1 to C2; the guided course is A1–A2.
 
 | Language | Levels | Unique words |
 |---|---|---|
@@ -41,17 +57,22 @@ A German library used to exist. It contained ten Spanish words labelled German �
 recognise — so it was removed rather than left to teach the wrong language.
 See issue #27.
 
-## Features
+## The CLI's features
+
+Everything from here down to Contributing describes the Python CLI
+(`langue/`). The web app's guided course is described in
+[docs/guided-path.md](docs/guided-path.md), and the web app itself in
+[web/README.md](web/README.md).
 
 - Learn multiple languages through a variety of activities
-- Supports both online (Claude, ChatGPT) and offline (Ollama) language models
+- Supports both online (Claude) and offline (Ollama) language models
 - Track your progress with words learned, points, and learning streaks
-- Adjustable difficulty levels from beginner to advanced
+- Adjustable difficulty per activity (1–5)
 - Fully functional offline with local LLMs
-- Interactive model selection with automatic detection of available models
+- Interactive model selection with automatic detection of local Ollama models
 - Stylish retro UI with arrow key navigation and synthwave colors
 
-## Activities
+## The CLI's activities
 
 - Flashcards for vocabulary practice with level-based libraries (A1-C2)
 - Fill-in-the-blank exercises
@@ -68,16 +89,10 @@ See issue #27.
 - For offline usage: [Ollama](https://ollama.ai/) with language models installed
 - Required packages: click, rich, pydantic, questionary, and more (automatically installed)
 
-### Install from PyPI
+### Install from source
 
 ```bash
-pip install langue
-```
-
-### Install from Source
-
-```bash
-git clone https://github.com/yourusername/langue.git
+git clone https://github.com/greentheo/langue.git
 cd langue
 pip install -e .
 ```
@@ -128,14 +143,12 @@ Testing ensures:
 
 Langue creates a configuration file at `~/.config/langue/config.toml` that you can customize:
 
-- Set your preferred language model (Ollama, Claude, OpenAI)
-- Configure API keys for online models
 - Adjust learning preferences and activity settings
 - Customize your learning experience
 
 ### Model Selection
 
-When you first run Langue, it will automatically detect available language models and prompt you to select one:
+At every start, Langue uses Claude when `ANTHROPIC_API_KEY` is set (from the environment or `.env`). Otherwise it looks for local Ollama models, and asks you to pick one if the configured model isn't installed:
 
 ```
 Please select an Ollama model to use:
@@ -169,7 +182,7 @@ You can change models at any time, and Langue will verify model availability bef
 - You can change the model at any time through the Settings menu
 - Use the `.env` file to specify a default model (create from `.env.template`)
 - Specify `OLLAMA_MODEL=model_name` in your `.env` file for your preferred model
-- If models are unavailable, Langue will gracefully fall back to simulated responses
+- If no model is available, the activity stops with a model error that says how to fix it. Fake canned responses appear only if you set `LANGUE_ALLOW_MOCK=1`, and then with a loud warning
 
 ## User Interface
 
@@ -190,14 +203,12 @@ Langue features a stylish, 80's inspired retro interface:
 For online models, you'll need to set up API keys:
 
 - Claude: Get an API key from [Anthropic](https://www.anthropic.com/)
-- OpenAI: Get an API key from [OpenAI](https://platform.openai.com/)
 
-You can set these via the configuration file or environment variables:
+Set them as environment variables or in a `.env` file. Langue never writes a key to its configuration file (it blanks `api_key` on every save):
 
 ```bash
 # Environment variable setup
 export ANTHROPIC_API_KEY=your_key_here
-export OPENAI_API_KEY=your_key_here
 export OLLAMA_MODEL=llama3.2     # Specify which Ollama model to use
 ```
 
