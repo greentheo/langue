@@ -67,9 +67,10 @@ Three pieces, all in `drafts/linkedin-posts.md` with sources:
    for you", and it links to `/privacy`.
 
 **Depends on:**
-- **#114:** while it's open, the endings line keeps "(a missing accent is
-  pointed out)", as in 001. Post 1's moment says the fix "is in review";
-  refresh it to "fixed" if #120 has shipped.
+- **#114 (PR #120):** the endings line says "(so are some missing
+  accents)", as in 001, never the bare "a wrong ending is marked wrong"
+  (Spanish *hable* for *hablé* still counts). Post 1's moment says the fix
+  "is in review"; refresh it to "fixed" once #120 has shipped.
 - **#123:** the invite message says nothing about AI limits. If a learner
   hits one, the app says so (#123's scope 5).
 

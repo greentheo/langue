@@ -36,8 +36,10 @@ accent. You'll see the right spelling, and it still counts as right.
 **It said "check the ending" and marked me wrong. Why not "close"?**
 The end of a word carries its grammar (*cansado* or *cansada*, *comemos* or
 *comimos*), so a slip there is marked wrong, even when it was only a typo.
-A missing accent is different: it's pointed out with the right spelling and
-counts, even where the accent is the ending (*parle* for *parlé*).
+A missing accent is marked wrong only if it leaves another word the course
+uses: *parle* for *parlé* ("That's another form — the accent is the grammar
+here") or *e* for *è* ("That's a different word"). Otherwise it's pointed out
+with the right spelling and counts.
 "That's another form" means you wrote a real form of the word, just not the
 one asked for; "Check the spelling of the ending" means the ending is
 misspelt. Either way you see the right answer.
@@ -153,8 +155,20 @@ CLAIM: "small typo in the middle of a longer word, or a missing or wrong accent 
 still counts as right"
 SOURCE: grade.ts typoOf (no typos on words of 3 letters or fewer; since #102 none in
 a word's ending) and gradeTargetAnswer; schedule.ts applyAnswer "A close answer …
-counts as right". Probe on a81c9cb: fr "telefone", it "ristorrante" → close; es
-"Ayer hablo" for "habló" → close (accent). Verified.
+counts as right". Probe on a81c9cb: fr "telefone", it "ristorrante" → close.
+Accent: fr "cafe" for "café" → close (probe on 51b6ed8, #120). Verified. (Was es "Ayer
+hablo" for "habló", which #120 marks wrong.)
+
+CLAIM: "A missing accent is marked wrong only if it leaves another word the course
+uses: parle for parlé ('That's another form — the accent is the grammar here') or e for
+è ('That's a different word'). Otherwise it's pointed out with the right spelling and
+counts."
+SOURCE: #120 (closes #114), probe on 51b6ed8: fr "J'ai parle" → incorrect, "That's
+another form — the accent is the grammar here: «J'ai parlé»"; it "Lui e stanco" →
+incorrect, "That's a different word — «è» (is), not «e» (and)". Tests in grade.test.ts
+(#114 block). Goes live after #120 (POSITIONING accent row). "Only if", not "if": real
+words the course doesn't use (es "hable" for "hablé") and bare capitals ("E stanco")
+stay close. Verified on the PR head; re-probe on the deployed commit.
 
 CLAIM: "a slip there is marked wrong, even when it was only a typo … 'That's another
 form' … 'Check the spelling of the ending' … Either way you see the right answer"

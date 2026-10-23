@@ -56,8 +56,8 @@ different language from the owner's, and with the group explained.
 > I've been learning {the owner's language} on Langue, a small invite-only
 > app for family and friends. It teaches Italian, Spanish, French and
 > Brazilian Portuguese, from beginner to elementary (A1 and A2): short daily
-> steps where you type real answers, and a wrong ending is marked wrong (a
-> missing accent is pointed out). No ads, nothing to pay.
+> steps where you type real answers, and a wrong ending is marked wrong (so
+> are some missing accents). No ads, nothing to pay.
 >
 > Here's your invite. The link fills in the code, and it's open for a week:
 > {link}
@@ -72,9 +72,10 @@ different language from the owner's, and with the group explained.
 - **#72 shipped before launch (a gate, below).** An invitee who taps "←
   Langue" on the sign-up page lands on the front page, which still says *"AI
   language practice"*.
-- **Not on #114.** "(a missing accent is pointed out)" keeps the endings
-  line true until #114 makes accent-only endings (French *parlé*) count as
-  wrong. Drop the parenthesis once #114 is live.
+- **On #114 (PR #120), through #72.** "(so are some missing accents)" is
+  true once #120 ships, and #72 ships after it. Keep the parenthesis after
+  #120 too: Spanish *hable* for *hablé* still counts as right (POSITIONING,
+  limit 1).
 - **Not on #73.** This version has no streak line. The email version (#78
   §1) does, so don't use it for this campaign until #73 ships.
 
@@ -198,12 +199,14 @@ CLAIM (message): "short daily steps where you type real answers"
 SOURCE: POSITIONING "Short steps, planned for about three minutes" and "You type real
 answers…". Verified.
 
-CLAIM (message): "a wrong ending is marked wrong (a missing accent is pointed out)"
+CLAIM (message): "a wrong ending is marked wrong (so are some missing accents)"
 SOURCE: POSITIONING endings row, LIVE since #102 (deployed a81c9cb; 13 #70 rows incorrect
 both ways). The short form is allowed while the course stops at A2. Verified.
-#114 CAVEAT: the parenthesis is required until #114 ships. French's commonest ending is
-an accent, and "J'ai parle" for "parlé" is graded close (as are es hablo/habló and pt
-pode/pôde; probe on ef01562). My first draft said the bare claim didn't contradict
+ACCENTS (#120, probe on 51b6ed8): "J'ai parle" for "parlé" → incorrect, so "some
+missing accents" holds; es "Ayer hable" for "hablé" → close, so the bare claim still
+doesn't, and the parenthesis stays. Before #120 it read "(a missing accent is pointed
+out)": French's commonest ending is an accent, and "J'ai parle" was graded close (as
+were es hablo/habló and pt pode/pôde; probe on ef01562). My first draft said the bare claim didn't contradict
 limit (1) "since the message says nothing about accents". The reviewer showed it does,
 for French. Real-word typos (#106) aren't touched: the message says nothing about
 typos.

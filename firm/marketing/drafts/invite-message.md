@@ -31,8 +31,10 @@ away" is true, but until #73 ships, today's reminders still say the streak can
 > - Short steps, planned for about three minutes each. One button picks what's
 >   next: new words, reviews that are due, and the things you keep missing.
 > - You type the answers yourself, and endings count: *cansados* for
->   *cansadas* is marked wrong, not waved through as a typo. A missing accent
->   or a small typo is pointed out, with the right spelling.
+>   *cansadas* is marked wrong, not waved through as a typo, and so is
+>   *parle* for *parlé*, where the missing accent changes the meaning. A
+>   missing accent that makes no word, or a small typo, is pointed out with
+>   the right spelling.
 > - Little role-plays from the first unit, like greeting a new friend or a
 >   neighbour.
 > - Beginner (A1) and Elementary (A2) are complete. If you already know some,
@@ -65,7 +67,7 @@ The owner pastes this by hand. The app doesn't build it.
 
 > I'm learning {language} on Langue, a small invite-only app for family and
 > friends. Short daily steps, you type real answers, and a wrong ending is
-> marked wrong (a missing accent is pointed out). No ads. Here's an invite: {link}
+> marked wrong (so are some missing accents). No ads. Here's an invite: {link}
 
 ---
 
@@ -88,23 +90,26 @@ you keep missing"
 SOURCE: docs/guided-path.md (planner), web/src/lib/path/planner.ts. Verified.
 
 CLAIM: "You type the answers yourself, and endings count: cansados for cansadas is
-marked wrong, not waved through as a typo. A missing accent or a small typo is pointed
-out, with the right spelling."
+marked wrong, not waved through as a typo, and so is parle for parlé, where the missing
+accent changes the meaning. A missing accent that makes no word, or a small typo, is
+pointed out with the right spelling."
 SOURCE: #102 (closes #70), deployed a81c9cb (2026-10-16). Probe on a81c9cb: pt "Estamos
 cansados" for "cansadas" → incorrect, "Check the spelling of the ending: «cansadas»";
 es "Comemos" for "Comimos" → incorrect, "That's another form — check the ending:
 «Comimos»". All 13 #70 rows are incorrect both ways. Mid-word typos stay close
 (fr "telefone" → "téléphone", it "ristorrante", pt "obirgado"). Verified.
-LIMITS (POSITIONING), not contradicted: accent-only grammar (es hablo/habló) is
-close; a typo that makes another real word (attivo/cattivo) is forgiven until #106;
-endings.ts covers what's taught through A2, which is the whole course today.
-"Pointed out", not "checked": a missing accent is graded close and counts as right.
-The note quotes the answer with its accents (#92). "A small typo" sits next to
-"endings count", so it reads as a typo elsewhere in the word, which is what stays
-close.
-#114 CAVEAT: accent-only endings (fr "J'ai parle" for "parlé", es "hablo" for "habló",
-pt "pode" for "pôde") are graded close (probe on ef01562). The sentence about missing
-accents is the carve-out that keeps this line true until #114 ships.
+ACCENTS: as in what-is-langue.md (#120, probe on 51b6ed8: fr "J'ai parle" → incorrect,
+"That's another form — the accent is the grammar here"; "cafe" → close). This text goes
+live with #128, after #120. An example, not a rule: real words the course doesn't use
+stay close (es "hable" for "hablé", fr "change" for "changé"; POSITIONING accent row),
+so the close half is said only of accents that make no word.
+LIMITS (POSITIONING), not contradicted: a typo that makes another real word
+(attivo/cattivo) is forgiven until #106; endings.ts covers what's taught through A2,
+which is the whole course today.
+"Pointed out", not "checked": a close answer counts as right (schedule.ts
+applyAnswer). The note quotes the answer with its accents (#92). "A small typo" sits
+next to "endings count", so it reads as a typo elsewhere in the word, which is what
+stays close.
 
 CLAIM: "Little role-plays from the first unit, like greeting a new friend or a
 neighbour"
@@ -144,13 +149,14 @@ SOURCE: "What do you want to learn?" panel, web/src/app/learn/page.tsx (#41). Ve
 CLAIM: "add Langue to your home screen and it works like an app"
 SOURCE: web/src/app/manifest.ts; install hint in web/src/components/pwa.tsx. Verified.
 
-CLAIM (short version): "a wrong ending is marked wrong (a missing accent is pointed
-out)", "no ads"
-SOURCE: as above (#102 probe on a81c9cb); no ad code (grep).
-#114 CAVEAT: accent-only endings (fr "J'ai parle" for "parlé", es "hablo" for "habló",
-pt "pode" for "pôde") are graded close, "Watch the accents" (probe on ef01562). The line
-keeps the accent carve-out until #114 ships. Without the parenthesis, a French learner who
-types "parle" for "parlé" would be counted right against our word.
+CLAIM (short version): "a wrong ending is marked wrong (so are some missing accents)",
+"no ads"
+SOURCE: as above (#102 probe on a81c9cb; #120 probe on 51b6ed8); no ad code (grep).
+"Some", because #120 catches a missing accent only where the plain spelling is a word
+the course uses. Not the bare "a wrong ending is marked wrong", even after #120: es
+"Ayer hable" for "hablé" is still close and counts, so a Spanish learner would be
+counted right against our word. (Until #120 this was "(a missing accent is pointed
+out)", which reads as "and forgiven" once parle for parlé is marked wrong.)
 ```
 
 ## What I'd measure
