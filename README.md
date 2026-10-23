@@ -148,7 +148,7 @@ Langue creates a configuration file at `~/.config/langue/config.toml` that you c
 
 ### Model Selection
 
-At every start, Langue uses Claude when `ANTHROPIC_API_KEY` is set (from the environment or `.env`). Otherwise it looks for local Ollama models and asks you to pick one:
+At every start, Langue uses Claude when `ANTHROPIC_API_KEY` is set (from the environment or `.env`). Otherwise it looks for local Ollama models, and asks you to pick one if the configured model isn't installed:
 
 ```
 Please select an Ollama model to use:
@@ -182,7 +182,7 @@ You can change models at any time, and Langue will verify model availability bef
 - You can change the model at any time through the Settings menu
 - Use the `.env` file to specify a default model (create from `.env.template`)
 - Specify `OLLAMA_MODEL=model_name` in your `.env` file for your preferred model
-- If no model is available, Langue stops with an error that says how to fix it. Fake canned responses appear only if you set `LANGUE_ALLOW_MOCK=1`, and then with a loud warning
+- If no model is available, the activity stops with a model error that says how to fix it. Fake canned responses appear only if you set `LANGUE_ALLOW_MOCK=1`, and then with a loud warning
 
 ## User Interface
 
