@@ -9,7 +9,8 @@
  * tell whether a front-page visit is a device's first today (written as
  * `firstToday`), to keep a refreshed invite page on the same open, and to
  * rate-limit the events route by a hash of the address alone (`rateKey`), so no
- * address is held even there. When the day changes or the
+ * address is held even there; the limit's counts are part of the day too. When
+ * the day changes or the
  * server restarts, salt and hashes are gone together, so nothing can link one
  * day's visitors to another's, and a restart mid-day can count a returning
  * visitor twice. The raw IP address is never stored.
@@ -24,6 +25,7 @@
  */
 
 import { createHash, randomBytes } from "node:crypto";
+import { createRateLimit } from "./limits";
 
 /** The UTC day a salt is for: "2026-10-19". */
 function dayOf(now: Date): string {
@@ -37,14 +39,19 @@ interface Today {
   seen: Set<string>;
   /** Today's invite open per visitor and code, by its form token (visits.ts). */
   opens: Map<string, string>;
+  /** The events route's rate limit, by rateKey: replaced with the salt, so yesterday's keys go too. */
+  rate: (key: string, now?: number) => boolean;
 }
 
+/** The events route's limit: an address may send 30 a minute. */
+const beaconLimit = () => createRateLimit(30, 60_000);
+
 /** One day's visitors, remembered in memory and forgotten when the day changes. */
-export function createDailyVisitors(random: (size: number) => Buffer = randomBytes) {
+export function createDailyVisitors(random: (size: number) => Buffer = randomBytes, limit: () => Today["rate"] = beaconLimit) {
   let today: Today | null = null;
   const current = (now: Date): Today => {
     const day = dayOf(now);
-    if (today?.day !== day) today = { day, salt: random(32), seen: new Set(), opens: new Map() };
+    if (today?.day !== day) today = { day, salt: random(32), seen: new Set(), opens: new Map(), rate: limit() };
     return today;
   };
 
@@ -59,6 +66,10 @@ export function createDailyVisitors(random: (size: number) => Buffer = randomByt
      */
     rateKey(address: string, now: Date = new Date()): string {
       return createHash("sha256").update(current(now).salt).update("rate\n").update(address).digest("hex").slice(0, 32);
+    },
+    /** May this address send the events route another event now? Counted by rateKey, for today only. */
+    allow(address: string, now: Date = new Date()): boolean {
+      return current(now).rate(this.rateKey(address, now), now.getTime());
     },
     /** True the first time `key` (a hash and what it did) is seen today; remembered after that. */
     firstToday(key: string, now: Date = new Date()): boolean {
