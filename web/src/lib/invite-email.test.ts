@@ -54,7 +54,7 @@ describe("buildInviteEmail", () => {
         "",
         "What it's like:",
         "- Short steps, planned for about three minutes each. One button picks what's next: new words, reviews that are due, and the things you keep missing.",
-        "- You type the answers yourself, and endings count: cansados for cansadas is marked wrong, not waved through as a typo, and so is parle for parlé, where the missing accent changes the meaning. A missing accent that makes no word, or a small typo, is pointed out with the right spelling.",
+        "- You type the answers yourself, and endings count: cansados for cansadas is marked wrong, not waved through as a typo, and so are some missing accents, like parle for parlé. Others, and small typos, are pointed out with the right spelling.",
         "- Little role-plays from the first unit, like greeting a new friend or a neighbour.",
         "- Beginner (A1) and Elementary (A2) are complete. If you already know some, you can test out of the early units.",
         "- No ads, nothing to pay, and your streak is never taken away.",
@@ -85,7 +85,7 @@ describe("buildInviteEmail", () => {
     assert.match(frontPage, /A language course in short daily steps, where you type the answers\s+yourself\./);
     assert.match(frontPage, /No AI in the daily steps\./);
     // After #120: a missing accent that makes another word is marked wrong (marketing's wording, PR #130).
-    assert.match(frontPage, /So is(\{" "\})?\s+<em>parle<\/em> for <em>parlé<\/em>, where the missing accent changes the meaning\./);
+    assert.match(frontPage, /So are some\s+missing accents,\s+like <em>parle<\/em> for <em>parlé<\/em>\.\s+Others \(<em>cafe<\/em> for <em>café<\/em>\),\s+and\s+small\s+typos/);
     assert.match(frontPage, />Langue is invite-only\.</);
   });
 
