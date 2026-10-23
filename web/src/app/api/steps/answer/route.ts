@@ -7,7 +7,7 @@ import { difficultyForLevel, gradePracticeItem } from "@/lib/engine/practice";
 import { getCourse } from "@/lib/path/course";
 import { rungOf } from "@/lib/path/schedule";
 import { blankOut, gradeReply, sameSentence } from "@/lib/path/sentences";
-import { recordAnswer, recordChallengeAnswer, recordDialoguePlayed } from "@/lib/path/store";
+import { claimAccentTip, recordAnswer, recordChallengeAnswer, recordDialoguePlayed } from "@/lib/path/store";
 import type { Course, CourseDialogue, Item, StepAnswerResult } from "@/lib/path/types";
 
 /**
@@ -53,6 +53,7 @@ function graded(result: GradeResult, level: string, answers: string[], why: stri
     points: pointsForResult(result, difficultyForLevel(level)),
     note: result.note,
     endingMiss: result.endingMiss,
+    accentMiss: result.accentMiss,
     answers,
     why,
   };
@@ -131,6 +132,7 @@ function gradeItem(course: Course, item: Item, body: Body, level: string): Grade
       points: grade.points,
       note: grade.note,
       endingMiss: grade.endingMiss,
+      accentMiss: grade.accentMiss,
       answers: grade.answers,
       why: grade.why,
     };
@@ -200,5 +202,8 @@ export const POST = handler(async (request) => {
     : await recordAnswer(user.id, language, item, { correct, rung: rungOf(body.mode, item) }, new Date());
 
   const response: StepAnswerResult = { ...result, stage: after.stage, promoted: after.stage > before.stage };
+  // The step's cards show the accent tip, once per learner; role-play turns (above) don't show it, so don't spend it there.
+  const changed = result.accentMiss === "otherForm" || result.accentMiss === "otherWord";
+  if (changed && (await claimAccentTip(user.id, new Date()))) response.accentTip = true;
   return Response.json(response);
 });

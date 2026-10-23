@@ -285,6 +285,10 @@ export interface StepAnswerResult {
   note: string | null;
   /** A near miss rejected for its ending: counted per step (ActivityLog.metadata.endingMisses). */
   endingMiss?: "otherForm" | "misspelt";
+  /** Right but for its accents: another form, a different word, or a plain slip. Counted per step (ActivityLog.metadata.accentMisses). */
+  accentMiss?: "otherForm" | "otherWord" | "plain";
+  /** This learner's first answer an accent changed, ever: show the accent tip (#114). */
+  accentTip?: boolean;
   /** The right answer(s), revealed after grading. */
   answers: string[];
   why: string | null;
