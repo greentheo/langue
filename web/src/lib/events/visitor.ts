@@ -6,8 +6,10 @@
  * A visitor is a hash of IP address and browser (user agent) with a random
  * salt made each day and kept only in this process's memory. The hash never
  * leaves memory either: today's hashes are remembered beside the salt only to
- * tell whether a visit is a device's first today (written as `firstToday`) and
- * to keep a refreshed invite page on the same open. When the day changes or the
+ * tell whether a front-page visit is a device's first today (written as
+ * `firstToday`), to keep a refreshed invite page on the same open, and to
+ * rate-limit the events route by a hash of the address alone (`rateKey`), so no
+ * address is held even there. When the day changes or the
  * server restarts, salt and hashes are gone together, so nothing can link one
  * day's visitors to another's, and a restart mid-day can count a returning
  * visitor twice. The raw IP address is never stored.
@@ -50,6 +52,13 @@ export function createDailyVisitors(random: (size: number) => Buffer = randomByt
     /** The visitor's hash for today. Never written anywhere. */
     hash(address: string, userAgent: string, now: Date = new Date()): string {
       return createHash("sha256").update(current(now).salt).update(address).update("\n").update(userAgent).digest("hex").slice(0, 32);
+    },
+    /**
+     * The events route's rate-limit key for an address today: a hash of the
+     * address alone, so a script can't buy more by changing its browser name.
+     */
+    rateKey(address: string, now: Date = new Date()): string {
+      return createHash("sha256").update(current(now).salt).update("rate\n").update(address).digest("hex").slice(0, 32);
     },
     /** True the first time `key` (a hash and what it did) is seen today; remembered after that. */
     firstToday(key: string, now: Date = new Date()): boolean {
