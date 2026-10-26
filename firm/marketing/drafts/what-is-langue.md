@@ -30,9 +30,10 @@ actually use.
 >   recalling it, to typing it, to using it in a sentence and in a role-play.
 > - **Endings count.** A slip that changes a word's ending (*cansados* for
 >   *cansadas*, *comemos* for *comimos*) is marked wrong, not forgiven as a
->   typo, because the ending is the grammar. A missing accent, or a small typo
->   in the middle of a word, is pointed out with the right spelling and still
->   counts.
+>   typo, because the ending is the grammar. So are some missing accents,
+>   like *parle* for *parlé*. Others (*cafe* for *café*), and small typos in
+>   the middle of a word, are pointed out with the right spelling and still
+>   count.
 > - **Reviews come back** at growing intervals. A word counts as learned
 >   when you've produced it on more than one day.
 > - **Already know some?** Test out of the units you know. Each unit ends
@@ -55,7 +56,7 @@ actually use.
 > **Not built yet:** speaking your answers aloud, dictation, writing tasks,
 > and levels above A2.
 >
-> Langue is invite-only, for family and friends.
+> Langue is invite-only.
 > **[Sign in]  [Redeem invite]**
 
 ---
@@ -102,20 +103,33 @@ SOURCE: modes recognize/recall/type/cloze/reply/turn in steps/answer/route.ts;
 rungs in schedule.ts. Verified.
 
 CLAIM: "A slip that changes a word's ending (cansados for cansadas, comemos for
-comimos) is marked wrong, not forgiven as a typo … A missing accent, or a small typo
-in the middle of a word, is pointed out with the right spelling and still counts."
+comimos) is marked wrong, not forgiven as a typo … So are some missing accents, like
+parle for parlé. Others (cafe for café), and small typos in the middle of a word, are
+pointed out with the right spelling and still count."
 SOURCE: #102 (closes #70), deployed a81c9cb (2026-10-16). Probe on a81c9cb: pt "Estamos
 cansados" for "cansadas" → incorrect, "Check the spelling of the ending: «cansadas»";
 es "Comemos" for "Comimos" → incorrect, "That's another form — check the ending:
 «Comimos»". All 13 #70 rows are incorrect both ways. Mid-word typos stay close
 (fr "telefone" → "téléphone", it "ristorrante", pt "obirgado"). Verified.
-LIMITS (POSITIONING), not contradicted: accent-only grammar (es hablo/habló) is
-close; a typo that makes another real word (attivo/cattivo) is forgiven until #106;
-endings.ts covers what's taught through A2, which is the whole course today.
-"Still counts": schedule.ts applyAnswer ("A close answer … counts as right").
-#114 CAVEAT: accent-only endings (fr "J'ai parle" for "parlé", es "hablo" for "habló",
-pt "pode" for "pôde") are graded close (probe on ef01562). The sentence about missing
-accents is the carve-out that keeps this line true until #114 ships.
+ACCENTS: #120 (closes #114), PR head 51b6ed8; this line goes live with #128, after
+#120. Probe with gradeTargetAnswer on 51b6ed8: fr "J'ai parle" → incorrect, "That's
+another form — the accent is the grammar here: «J'ai parlé»" (test "an accent in the
+ending is the grammar"); fr "cafe" → close, "Watch the accents" (test "a missing accent
+that makes no word is still only close").
+WHY "SOME", NOT A RULE: #120 marks a missing accent wrong only where the plain spelling
+is a word the course uses, or one of its short-word pairs. Real words the course doesn't
+use stay close: es "hable" for "hablé", "compre"/"compré", "llegue"/"llegué"; fr "J'ai
+change" for "changé", "J'ai casse" for "cassé" (92 of the 233 uncaught French words end
+in consonant + é, mostly participles whose plain spelling is a present form; the
+reviewer on #130); it "passo"/"passò"; and a bare capital ("E stanco", "A demain"). So
+the line says "some", with parle/parlé as an example, and gives no reason clause: the
+first draft's "where the missing accent changes the meaning" read as a rule, and J'ai
+change also changes the meaning (the reviewer, #130). "Others … still count" is exact:
+every missing accent the grader doesn't mark wrong is close.
+LIMITS (POSITIONING), not contradicted: a typo that makes another real word
+(attivo/cattivo) is forgiven until #106; endings.ts covers what's taught through A2,
+which is the whole course today. "Still counts": schedule.ts applyAnswer ("A close
+answer … counts as right").
 
 CLAIM: "Reviews come back at growing intervals"
 SOURCE: schedule.ts (interval doubles up to MAX_INTERVAL_DAYS). Verified.
@@ -162,6 +176,12 @@ NOT IMPLIED: who wrote the course. Per #97, every A1/A2 line was written by AI w
 agents and reviewed by AI, with no native check yet. The owner decided (2026-10-16,
 #97) on no FAQ line about it, so the copy says what *runs* ("in the daily steps"), never
 "no AI in the course", which reads as "people wrote it".
+
+CLAIM: "Langue is invite-only."
+SOURCE: registration needs an invite code (schema.prisma InviteCode; register page
+"Registration is invite-only"). Verified. Was "invite-only, for family and friends":
+true today, not once campaign 002 opens 25 places to the owner's LinkedIn network
+(#124, the owner's "Yes, capped"). Cut now so the front page needn't change again then.
 
 CLAIM: "Not built yet: speaking your answers aloud, dictation, writing tasks, and
 levels above A2"
