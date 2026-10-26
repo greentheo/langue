@@ -67,9 +67,10 @@ Three pieces, all in `drafts/linkedin-posts.md` with sources:
    for you", and it links to `/privacy`.
 
 **Depends on:**
-- **#114:** while it's open, the endings line keeps "(a missing accent is
-  pointed out)", as in 001. Post 1's moment says the fix "is in review";
-  refresh it to "fixed" if #120 has shipped.
+- **#114 (PR #120):** the endings line says "(so are some missing
+  accents)", as in 001, never the bare "a wrong ending is marked wrong"
+  (Spanish *hable* for *hablé* still counts). Post 1's moment says the fix
+  "is in review"; refresh it to "fixed" once #120 has shipped.
 - **#123:** the invite message says nothing about AI limits. If a learner
   hits one, the app says so (#123's scope 5).
 
@@ -101,11 +102,12 @@ asking for an invite, invites sent.
 ## When to launch
 
 **Post 1 (the story, no invite) can go out once:**
-1. **#126 is merged (the README).** The post links the repo, and its README opens
-   "Langue - AI Language Learning" and lists levels A1–C2 (those are the old
-   CLI's flashcard libraries, not the course). A draft for its top section is
-   in `drafts/linkedin-posts.md` §4; the foreman applies it under #126 once
-   this brief merges.
+1. ✅ **#126 is merged (the README):** #127, 12c3847, 2026-10-23. The post
+   links the repo, and its README used to open "Langue - AI Language
+   Learning" and list levels A1–C2 (the old CLI's flashcard libraries, not
+   the course). It now opens with `drafts/linkedin-posts.md` §4, word for
+   word. At post 2, drop its "for family and friends", as the front page
+   does (#130).
 2. **#72 is deployed,** or the post doesn't name the app's address. Readers
    who look Langue up land on a front page that says "AI language practice".
 
@@ -200,8 +202,9 @@ reset it either"
 SOURCE: #76 open; foreman, 2026-10-20 ("the owner has no tool to reset it either").
 Verified against the board, not the code.
 
-CLAIM: README "opens 'Langue - AI Language Learning' and lists levels A1–C2"
-SOURCE: README.md lines 1 and 16–21 on main @ 84aa0f1. Verified.
+CLAIM: README "used to open 'Langue - AI Language Learning' and list levels A1–C2"
+SOURCE: README.md lines 1 and 16–21 on main @ 84aa0f1. Verified. Replaced by #127
+(12c3847): README.md l.1–20 on main match §4. Verified 2026-10-23.
 
 CLAIM: front page says "AI language practice"
 SOURCE: web/src/app/page.tsx l.36 (foreman, 2026-10-20); #72. Verified.

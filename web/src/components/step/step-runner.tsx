@@ -32,6 +32,8 @@ import { TileBuilder } from "./tile-builder";
 
 type Card = PublicExercise & { retry?: boolean };
 
+const EMPTY_TALLY = { total: 0, correct: 0, points: 0, otherForm: 0, misspelt: 0, accentOtherForm: 0, accentOtherWord: 0, accentPlain: 0 };
+
 interface Finish {
   unit: UnitProgress;
   streak: number;
@@ -111,7 +113,9 @@ export function StepRunner({ language, challenge }: { language: string; challeng
   const [result, setResult] = useState<StepAnswerResult | null>(null);
   const [checking, setChecking] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [tally, setTally] = useState({ total: 0, correct: 0, points: 0, otherForm: 0, misspelt: 0 });
+  const [tally, setTally] = useState(EMPTY_TALLY);
+  /** The accent tip shows once per learner, on the first answer an accent changed: the server says when (#114). */
+  const [accentTip, setAccentTip] = useState(false);
   const [finish, setFinish] = useState<Finish | null>(null);
   const [finishing, setFinishing] = useState(false);
 
@@ -128,7 +132,7 @@ export function StepRunner({ language, challenge }: { language: string; challeng
     setAnswer("");
     setChosen(null);
     setResult(null);
-    setTally({ total: 0, correct: 0, points: 0, otherForm: 0, misspelt: 0 });
+    setTally(EMPTY_TALLY);
     try {
       const next = await postJson<PublicStep>("/api/steps", challenge ? { challenge } : {});
       setStep(next);
@@ -191,6 +195,10 @@ export function StepRunner({ language, challenge }: { language: string; challeng
       // Near misses rejected for a wrong ending (#70), for the owner's weekly look at their effect.
       otherForm: prev.otherForm + (graded.endingMiss === "otherForm" ? 1 : 0),
       misspelt: prev.misspelt + (graded.endingMiss === "misspelt" ? 1 : 0),
+      // Accents that change the word (#114), and plain accent slips.
+      accentOtherForm: prev.accentOtherForm + (graded.accentMiss === "otherForm" ? 1 : 0),
+      accentOtherWord: prev.accentOtherWord + (graded.accentMiss === "otherWord" ? 1 : 0),
+      accentPlain: prev.accentPlain + (graded.accentMiss === "plain" ? 1 : 0),
     }));
   }
 
@@ -213,6 +221,7 @@ export function StepRunner({ language, challenge }: { language: string; challeng
         answer: value,
       });
       setResult(graded);
+      setAccentTip(Boolean(graded.accentTip));
       const right = graded.verdict !== "incorrect";
       playCue(right ? "right" : "wrong");
       count(graded, Boolean(card.retry));
@@ -249,6 +258,7 @@ export function StepRunner({ language, challenge }: { language: string; challeng
           durationSec: Math.round((Date.now() - startedAt.current) / 1000),
           challenge: step.challenge || undefined,
           endingMisses: { otherForm: tally.otherForm, misspelt: tally.misspelt },
+          accentMisses: { otherForm: tally.accentOtherForm, otherWord: tally.accentOtherWord, plain: tally.accentPlain },
         }),
       );
       playCue("done");
@@ -368,6 +378,7 @@ export function StepRunner({ language, challenge }: { language: string; challeng
         <Feedback
           card={card}
           result={result}
+          accentTip={accentTip}
           nextRef={nextRef}
           last={index + 1 >= queue.length}
           busy={finishing}
@@ -634,6 +645,7 @@ function CardBody({
 function Feedback({
   card,
   result,
+  accentTip,
   nextRef,
   last,
   busy,
@@ -641,6 +653,7 @@ function Feedback({
 }: {
   card: Card;
   result: StepAnswerResult;
+  accentTip: boolean;
   nextRef: React.RefObject<HTMLButtonElement | null>;
   last: boolean;
   busy: boolean;
@@ -667,6 +680,11 @@ function Feedback({
         ) : null}
       </p>
       {result.note ? <p className="mt-1 text-sm text-[var(--crt-fg-dim)]">{result.note}</p> : null}
+      {accentTip ? (
+        <p className="mt-1 text-xs text-[var(--crt-fg-dim)]">
+          A missing accent can make another word (<em>parle</em> for <em>parlé</em>). Use the accent bar under the box.
+        </p>
+      ) : null}
       {!clicked ? (
         <p className="mt-2 text-sm">
           <span className="text-[var(--crt-fg-dim)]">Answer: </span>

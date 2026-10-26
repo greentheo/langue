@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { verifySession } from "@/lib/auth/session";
-import { availableLanguages, availableLevels, languageLabel, wordCount } from "@/lib/vocab";
 import { Panel, Rule } from "@/components/crt";
 import { PhosphorToggle } from "@/components/phosphor-toggle";
+import { TrackView } from "@/components/track-view";
 
 const BANNER = String.raw`
  ██╗      █████╗ ███╗   ██╗ ██████╗ ██╗   ██╗███████╗
@@ -18,8 +18,6 @@ export default async function HomePage() {
   const user = await verifySession();
   if (user) redirect("/learn");
 
-  const languages = availableLanguages();
-
   return (
     <main className="mx-auto max-w-3xl px-5 py-10">
       {/* The banner keeps its width (about 263 px on a phone) and the colour switch wraps below it when both don't fit (#129). */}
@@ -33,42 +31,77 @@ export default async function HomePage() {
         <PhosphorToggle />
       </div>
 
+      {/* The words are the approved draft, firm/marketing/drafts/what-is-langue.md (#72): change them there first. */}
       <p className="mt-2 text-sm text-[var(--crt-fg-dim)]">
-        AI language practice on a green screen. Apple IIe, 2026 edition.
+        A language course in short daily steps, where you type the answers yourself.
       </p>
 
       <Rule />
 
-      <Panel title="Catalog">
-        <ul className="space-y-1 text-sm">
-          {languages.map((language) => (
-            <li key={language} className="flex justify-between gap-4">
-              <span className="text-[var(--crt-fg-bright)]">
-                {languageLabel(language)}
-              </span>
-              <span className="text-[var(--crt-fg-dim)]">
-                {availableLevels(language).length} levels &middot;{" "}
-                {wordCount(language).toLocaleString()} words
-              </span>
-            </li>
-          ))}
+      <Panel title="What it teaches">
+        <p className="text-sm">
+          Italian, Spanish, French and Brazilian Portuguese. Beginner (A1) and Elementary (A2) are complete in all
+          four, about a thousand words in all. The levels are built on the CEFR, the European scale from A1 to C2.
+          Higher levels aren&apos;t built yet.
+        </p>
+      </Panel>
+
+      <Panel title="How it works" className="mt-8">
+        <ul className="space-y-2 text-sm">
+          <Point lead="Short steps.">
+            Each step is planned for about three minutes. One button picks the next one: something new, reviews that
+            are due, and the things you keep missing.
+          </Point>
+          <Point lead="You produce the language.">
+            A new word climbs from recognising it, to recalling it, to typing it, to using it in a sentence and in a
+            role-play.
+          </Point>
+          <Point lead="Endings count.">
+            A slip that changes a word&apos;s ending (<em>cansados</em> for <em>cansadas</em>, <em>comemos</em> for{" "}
+            <em>comimos</em>) is marked wrong, not forgiven as a typo, because the ending is the grammar. So are some
+            missing accents, like <em>parle</em> for <em>parlé</em>. Others (<em>cafe</em> for <em>café</em>), and small
+            typos in the middle of a word, are pointed out with the right spelling and still count.
+          </Point>
+          <Point lead="Reviews come back">
+            at growing intervals. A word counts as learned when you&apos;ve produced it on more than one day.
+          </Point>
+          <Point lead="Already know some?">
+            Test out of the units you know. Each unit ends with a level-up challenge, and each level with a
+            certificate.
+          </Point>
         </ul>
       </Panel>
 
-      <Panel title="Activities" className="mt-8">
-        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1 text-sm text-[var(--crt-fg-dim)]">
-          <li>Flashcards &mdash; vocabulary drill</li>
-          <li>Conversation &mdash; talk with a tutor</li>
-          <li>Fill in the blank &mdash; grammar in context</li>
-          <li>Translation &mdash; both directions</li>
-          <li>Reading &mdash; passage and questions</li>
+      <Panel title="Kind by design" className="mt-8">
+        <ul className="space-y-2 text-sm">
+          <Point>Your streak is never taken away, and progress bars only go up.</Point>
+          <Point>No lives, no ads, nothing to pay.</Point>
+          <Point>
+            Reminders only if you turn them on: after two quiet days, then five, then twelve, and then they stop.
+          </Point>
+          <Point>
+            Private groups. Each invite code is a group with its own leaderboard, and there&apos;s no messaging
+            between learners.
+          </Point>
         </ul>
       </Panel>
+
+      <div className="mt-8 space-y-3 text-sm">
+        <p>
+          <strong className="text-[var(--crt-fg-bright)]">No AI in the daily steps.</strong> The steps, with their
+          role-plays, grading and reviews, are fixed content and plain code, the same for everyone. A few optional
+          extra tools do use AI: the &ldquo;Ask about this lesson&rdquo; box at the end of each lesson page, a
+          conversation partner, some extra exercises (one is graded by AI), and the explanation you get when you miss
+          a flashcard.
+        </p>
+        <p>
+          <strong className="text-[var(--crt-fg-bright)]">Not built yet:</strong> speaking your answers aloud,
+          dictation, writing tasks, and levels above A2.
+        </p>
+      </div>
 
       <Panel title="Access" className="mt-8">
-        <p className="text-sm text-[var(--crt-fg-dim)]">
-          This is a private deployment. Registration needs an invite code.
-        </p>
+        <p className="text-sm text-[var(--crt-fg-dim)]">Langue is invite-only.</p>
         <div className="mt-4 flex flex-wrap gap-3">
           <Link href="/login" className="crt-button crt-button-primary no-underline">
             Sign in
@@ -80,8 +113,25 @@ export default async function HomePage() {
       </Panel>
 
       <footer className="mt-10 text-xs text-[var(--crt-fg-dim)]">
-        Vocabulary shared with the Langue CLI. Press TAB to move, ENTER to submit.
+        Vocabulary shared with the Langue CLI. Press TAB to move, ENTER to submit.{" "}
+        <Link href="/privacy">What Langue keeps</Link>
       </footer>
+      <TrackView path="/" />
     </main>
+  );
+}
+
+/** One point in a panel's list, with an optional bold lead-in. */
+function Point({ lead, children }: { lead?: string; children: React.ReactNode }) {
+  return (
+    <li className="flex gap-2">
+      <span aria-hidden="true" className="text-[var(--crt-fg-dim)]">
+        -
+      </span>
+      <span>
+        {lead ? <strong className="text-[var(--crt-fg-bright)]">{lead} </strong> : null}
+        {children}
+      </span>
+    </li>
   );
 }
