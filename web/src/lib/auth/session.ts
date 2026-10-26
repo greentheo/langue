@@ -50,6 +50,22 @@ export interface SessionUser {
   streakDays: number;
   /** Last time the user practised; the streak is only live if this is recent. */
   lastActiveAt: Date;
+  /** When this session's admin last confirmed their password (#119; lib/auth/admin.ts). */
+  adminConfirmedAt: Date | null;
+}
+
+/**
+ * Where a device's session tokens live: the request's cookies, or a stand-in
+ * in tests. The functions below take one only so tests can be a device.
+ */
+export interface TokenJar {
+  get(name: string): { value: string } | undefined;
+  set(name: string, value: string, options?: ReturnType<typeof cookieOptions>): void;
+  delete(name: string): void;
+}
+
+async function jarOrCookies(jar?: TokenJar): Promise<TokenJar> {
+  return jar ?? (await cookies());
 }
 
 function cookieOptions(expires: Date) {
@@ -63,8 +79,7 @@ function cookieOptions(expires: Date) {
 }
 
 /** The active token and the waiting ones, as the browser sent them. */
-async function readTokens(): Promise<{ active: string | null; waiting: string[] }> {
-  const cookieStore = await cookies();
+async function readTokens(cookieStore: TokenJar): Promise<{ active: string | null; waiting: string[] }> {
   return {
     active: cookieStore.get(SESSION_COOKIE)?.value ?? null,
     waiting: parseTokenList(cookieStore.get(ACCOUNTS_COOKIE)?.value),
@@ -72,8 +87,7 @@ async function readTokens(): Promise<{ active: string | null; waiting: string[] 
 }
 
 /** Write both cookies. Only callable from server actions and route handlers. */
-async function writeTokens(active: string | null, waiting: string[]): Promise<void> {
-  const cookieStore = await cookies();
+async function writeTokens(cookieStore: TokenJar, active: string | null, waiting: string[]): Promise<void> {
   const expires = new Date(Date.now() + SESSION_TTL_MS);
 
   if (active) cookieStore.set(SESSION_COOKIE, active, cookieOptions(expires));
@@ -113,7 +127,8 @@ async function deleteSessions(tokens: string[]): Promise<void> {
  * first. Signing in again as someone already on the device replaces their old
  * session rather than listing them twice.
  */
-export async function createSession(userId: string, userAgent?: string): Promise<string> {
+export async function createSession(userId: string, userAgent?: string, device?: TokenJar): Promise<string> {
+  const jar = await jarOrCookies(device);
   const token = randomBytes(32).toString("base64url");
   const expiresAt = new Date(Date.now() + SESSION_TTL_MS);
 
@@ -121,7 +136,7 @@ export async function createSession(userId: string, userAgent?: string): Promise
     data: { tokenHash: hashToken(token), userId, expiresAt, userAgent },
   });
 
-  const { active, waiting } = await readTokens();
+  const { active, waiting } = await readTokens(jar);
   const live = await liveSessions([active, ...waiting].filter((t): t is string => Boolean(t)));
 
   const sameUser = [...live].filter(([, session]) => session.userId === userId).map(([t]) => t);
@@ -129,7 +144,7 @@ export async function createSession(userId: string, userAgent?: string): Promise
 
   const next = activate(token, keep(active) ? active : null, waiting.filter(keep));
   await deleteSessions([...sameUser, ...next.evicted]);
-  await writeTokens(token, next.waiting);
+  await writeTokens(jar, token, next.waiting);
 
   return token;
 }
@@ -138,39 +153,71 @@ export async function createSession(userId: string, userAgent?: string): Promise
  * Sign out the active learner only. Another learner signed in on this device,
  * if any, becomes active. Returns whether anyone is still signed in.
  */
-export async function destroySession(): Promise<boolean> {
-  const { active, waiting } = await readTokens();
+export async function destroySession(device?: TokenJar): Promise<boolean> {
+  const jar = await jarOrCookies(device);
+  const { active, waiting } = await readTokens(jar);
   if (active) await deleteSessions([active]);
 
   const live = await liveSessions(waiting);
   const remaining = waiting.filter((token) => live.has(token));
 
-  await writeTokens(remaining[0] ?? null, remaining.slice(1));
+  await writeTokens(jar, remaining[0] ?? null, remaining.slice(1));
   return remaining.length > 0;
 }
 
 /** Sign out every learner on this device. */
-export async function destroyAllSessions(): Promise<void> {
-  const { active, waiting } = await readTokens();
+export async function destroyAllSessions(device?: TokenJar): Promise<void> {
+  const jar = await jarOrCookies(device);
+  const { active, waiting } = await readTokens(jar);
   await deleteSessions([active, ...waiting].filter((t): t is string => Boolean(t)));
-  await writeTokens(null, []);
+  await writeTokens(jar, null, []);
 }
 
 /**
  * Make a learner already signed in on this device the active one. Returns
  * false if they are not among this device's live sessions — the user id comes
  * from a form, so it is only honoured if a waiting token really belongs to it.
+ *
+ * Switching needs no password, so it clears the admin confirmation of the
+ * session it switches to (#119): a sibling tapping into the owner's account
+ * on the family iPad is asked for the owner's password before any admin page.
  */
-export async function switchSession(userId: string): Promise<boolean> {
-  const { active, waiting } = await readTokens();
+export async function switchSession(userId: string, device?: TokenJar): Promise<boolean> {
+  const jar = await jarOrCookies(device);
+  const { active, waiting } = await readTokens(jar);
   const live = await liveSessions(waiting);
   const target = waiting.find((token) => live.get(token)?.userId === userId);
   if (!target) return false;
 
+  await prisma.session.updateMany({ where: { tokenHash: hashToken(target) }, data: { adminConfirmedAt: null } });
   const next = activate(target, active, waiting.filter((token) => live.has(token)));
   await deleteSessions(next.evicted);
-  await writeTokens(target, next.waiting);
+  await writeTokens(jar, target, next.waiting);
   return true;
+}
+
+/** The active session on this device, if it's live. */
+export async function activeSession(device?: TokenJar) {
+  const { active } = await readTokens(await jarOrCookies(device));
+  if (!active) return null;
+  return prisma.session.findFirst({
+    where: { tokenHash: hashToken(active), expiresAt: { gt: new Date() } },
+    select: { id: true, userId: true, adminConfirmedAt: true },
+  });
+}
+
+/** The active session's admin typed their password just now (lib/auth/admin.ts). */
+export async function confirmAdminSession(now: Date, device?: TokenJar): Promise<void> {
+  const { active } = await readTokens(await jarOrCookies(device));
+  if (active) await prisma.session.updateMany({ where: { tokenHash: hashToken(active) }, data: { adminConfirmedAt: now } });
+}
+
+/** End the active session's admin confirmation: they left the admin pages, or the page was hidden. */
+export async function clearAdminConfirmation(device?: TokenJar): Promise<void> {
+  const { active } = await readTokens(await jarOrCookies(device));
+  if (active) {
+    await prisma.session.updateMany({ where: { tokenHash: hashToken(active), adminConfirmedAt: { not: null } }, data: { adminConfirmedAt: null } });
+  }
 }
 
 export interface DeviceAccount {
@@ -190,7 +237,7 @@ export interface DeviceAccount {
  * a server action rewrites the cookies.
  */
 export const deviceAccounts = cache(async (): Promise<DeviceAccount[]> => {
-  const { active, waiting } = await readTokens();
+  const { active, waiting } = await readTokens(await cookies());
   const ordered = [active, ...waiting].filter((t): t is string => Boolean(t));
   if (ordered.length === 0) return [];
 
@@ -262,6 +309,7 @@ export const verifySession = cache(async (): Promise<SessionUser | null> => {
     points: user.points,
     streakDays: user.streakDays,
     lastActiveAt: user.lastActiveAt,
+    adminConfirmedAt: session.adminConfirmedAt,
   };
 });
 

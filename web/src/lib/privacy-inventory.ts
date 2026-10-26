@@ -44,7 +44,7 @@ export const INVENTORY: InventoryEntry[] = [
   {
     model: "Session",
     title: "Signing in",
-    what: "One record per device you're signed in on, so you stay signed in, with the name your browser gives itself.",
+    what: "One record per device you're signed in on, so you stay signed in, with the name your browser gives itself and, if you run Langue, when you last confirmed your password for the admin pages.",
     kept: "Removed when you sign out; it stops working after 30 days.",
     fields: { id: "langue", tokenHash: "langue", userId: "langue", userAgent: "device" },
   },
