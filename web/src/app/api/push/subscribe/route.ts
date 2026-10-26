@@ -2,6 +2,7 @@ import { z } from "zod";
 import { handler, readJson, BadRequestError } from "@/lib/api";
 import { deviceAccounts, requireUser } from "@/lib/auth/session";
 import { prisma } from "@/lib/db";
+import { track } from "@/lib/events/track";
 
 /**
  * Turn on streak reminders for this phone or browser: for every learner
@@ -27,6 +28,15 @@ export const POST = handler(async (request) => {
   const accounts = await deviceAccounts();
   const data = { p256dh: subscription.keys.p256dh, auth: subscription.keys.auth, timeZone: timeZone ?? null };
 
+  // The browser links its subscription on every visit; only a learner it's new for turned reminders on.
+  const existing = new Set(
+    (
+      await prisma.pushSubscription.findMany({
+        where: { endpoint: subscription.endpoint, userId: { in: accounts.map((account) => account.id) } },
+        select: { userId: true },
+      })
+    ).map((row) => row.userId),
+  );
   await prisma.$transaction(
     accounts.map((account) =>
       prisma.pushSubscription.upsert({
@@ -37,5 +47,8 @@ export const POST = handler(async (request) => {
     ),
   );
 
+  for (const account of accounts.filter((candidate) => !existing.has(candidate.id))) {
+    await track("reminders.on", { userId: account.id });
+  }
   return Response.json({ learners: accounts.map((account) => account.displayName) });
 });

@@ -6,6 +6,7 @@ import { getCourse } from "@/lib/path/course";
 import { planChallenge, planStep } from "@/lib/path/planner";
 import { presentStep } from "@/lib/path/present";
 import { loadMarks, loadStates, recentAccuracy, seedFromLessons } from "@/lib/path/store";
+import { track } from "@/lib/events/track";
 
 /**
  * Plan the learner's next ~3-minute step on the guided path — or, given a
@@ -39,9 +40,14 @@ export const POST = handler(async (request) => {
     const unitIndex = course.units.findIndex((unit) => unit.id === challenge);
     if (unitIndex === -1) throw new BadRequestError("That unit is not on your path.");
     const plan = planChallenge(course, unitIndex, states, Math.random);
-    return Response.json(presentStep(course, plan, Math.random));
+    const step = presentStep(course, plan, Math.random);
+    await track("step.started", { userId: user.id, props: { exercises: step.exercises.length, challenge: 1 } });
+    return Response.json(step);
   }
 
   const plan = planStep({ course, states, now, recentAccuracy: accuracy, random: Math.random, marks });
-  return Response.json(presentStep(course, plan, Math.random));
+  const step = presentStep(course, plan, Math.random);
+  // Started here, finished in ActivityLog: the two give how many steps are left half-done.
+  await track("step.started", { userId: user.id, props: { exercises: step.exercises.length, challenge: 0 } });
+  return Response.json(step);
 });
