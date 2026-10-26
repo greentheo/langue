@@ -55,10 +55,11 @@ describe("gradePracticeItem", () => {
     assert.equal(gradePracticeItem(cedilla, "ç", "a1", "french").verdict, "correct");
   });
 
-  test("a fill answer missing its accent is close and shows the accented form", () => {
+  test("a fill answer missing an accent that makes another word is wrong, and says which", () => {
+    // "e" (and) for "è" (is): since #114 an accent that changes the word is a mistake, not a slip.
     const grade = gradePracticeItem(fill, "e", "a1", "italian");
-    assert.equal(grade.verdict, "close");
-    assert.match(grade.note ?? "", /è/);
+    assert.equal(grade.verdict, "incorrect");
+    assert.match(grade.note ?? "", /«è»/);
     assert.equal(grade.why, "Lui takes è.");
   });
 

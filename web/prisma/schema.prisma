@@ -40,6 +40,9 @@ model User {
   reminderCount  Int       @default(0)
   lastRemindedAt DateTime?
 
+  /// When the learner first saw the accent tip (#114): it shows once, ever.
+  accentTipSeenAt DateTime?
+
   /// The invite code this account registered with. Null for accounts whose
   /// code was later deleted.
   inviteCodeId String?

@@ -28,7 +28,7 @@ export const INVENTORY: InventoryEntry[] = [
   {
     model: "User",
     title: "Your account",
-    what: "Your name, email address, a scrambled form of your password (never the password itself), your languages and level, points and streak, and the invite you joined with.",
+    what: "Your name, email address, a scrambled form of your password (never the password itself), your languages and level, points and streak, the invite you joined with, and a note that you've seen the accent tip.",
     kept: WITH_ACCOUNT,
     fields: {
       id: "langue",
