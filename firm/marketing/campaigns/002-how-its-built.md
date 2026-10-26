@@ -108,20 +108,20 @@ asking for an invite, invites sent.
    the course). It now opens with `drafts/linkedin-posts.md` §4, word for
    word. At post 2, drop its "for family and friends", as the front page
    does (#130).
-2. **#72 is deployed,** or the post doesn't name the app's address. Readers
-   who look Langue up land on a front page that says "AI language practice".
+2. ✅ **#72 is deployed** (#128, 8f7d6e1, 2026-10-26), so the post may name the app's address. Readers
+   who look Langue up no longer land on "AI language practice".
 
 Post 1 hands out nothing, so it can run while 001 does.
 
 **Post 2 and the invites wait for all of these:**
 
-| Gate | Why it's a gate for strangers | State (2026-10-20) |
+| Gate | Why it's a gate for strangers | State (2026-10-26) |
 |---|---|---|
 | **001's day-14 read shows no first-run problem:** on 001's row, activated is at least 60% of signups. If 001 has no row (fewer than 5 signups, or pooled by the dashboard), the owner has heard of no one getting stuck. | Don't hand a known leak to people who don't know us. | 001 not launched |
-| **#109 PR 1 and PR 2 deployed** | Without the funnel, 002 can't be read. | In review (#115, #117) |
-| **#72 deployed** | First contact must not say "AI tutor". | Ready, not built |
+| **#109 PR 1 and PR 2 deployed** | Without the funnel, 002 can't be read. | ✅ Deployed (#115, #117; 8f7d6e1) |
+| **#72 deployed** | First contact must not say "AI tutor". | ✅ Deployed (#128; 8f7d6e1) |
 | **#123 deployed, or at least a monthly spend limit on the Anthropic key** (the owner sets it in Anthropic's console, no code needed) | Nothing caps a learner's AI use today, and AI is on by default (#74). | Needs owner |
-| **#63 deployed** (age checkbox, delete account, full privacy page) | Strangers need to know what's kept and be able to leave. Kids use Langue, and the checkbox asks. | Ready, blocked by #109 |
+| **#63 deployed** (age checkbox, delete account, full privacy page) | Strangers need to know what's kept and be able to leave. Kids use Langue, and the checkbox asks. | Ready, no longer blocked (#109 shipped) |
 | **#76 deployed** (password reset) | Today a stranger who forgets their password has no way back, and the owner can't reset it either. A lost login would read as "didn't stay". | Ready, not built |
 
 The foreman's view matches (2026-10-20). Night shift's queue doesn't include

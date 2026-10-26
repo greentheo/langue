@@ -3,7 +3,7 @@
 **For:** anyone deciding whether to join, and parents. **Doubles as** the
 front page (`/`): #72 replaces the tagline and the Catalog and Activities
 panels with this text, and keeps the banner, green screen and Sign in /
-Redeem invite. **Status:** draft, not published.
+Redeem invite. **Status:** live in the app since 8f7d6e1 (#128, 2026-10-26).
 
 Why it changes: today's front page says *"AI language practice on a green
 screen"* and lists the older AI-made exercises, not the course people
