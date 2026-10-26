@@ -50,9 +50,10 @@ export function buildInviteEmail(input: InviteEmailInput): InviteEmail {
   const { inviterName, code, origin, expiresAt, languages, remainingUses } = input;
   const link = registerUrl(origin, code);
 
-  const subject = "Join me on Langue — learn a language with an AI tutor";
+  // The words are the approved draft, firm/marketing/drafts/invite-message.md (#72): change them there first.
+  const subject = "Join me on Langue";
 
-  const offering = languages.length > 0 ? ` Right now it teaches ${joinList(languages)}.` : "";
+  const offering = languages.length > 0 ? ` It teaches ${joinList(languages)}.` : "";
 
   const codeLine = [
     `Your invite code is ${code} (the link fills it in for you).`,
@@ -65,19 +66,26 @@ export function buildInviteEmail(input: InviteEmailInput): InviteEmail {
   const body = [
     "Hi!",
     "",
-    "I've been using Langue, a little language-learning app. It looks like an " +
-      "old Apple IIe screen, but behind it is an AI tutor: lessons, flashcards, " +
-      `and real conversation practice at your own level.${offering}`,
+    `I've been learning with Langue, a small language app for family and friends.${offering}`,
     "",
-    "You're invited. Here's your link:",
+    "What it's like:",
+    "- Short steps, planned for about three minutes each. One button picks what's next: new words, reviews that are due, and the things you keep missing.",
+    "- You type the answers yourself, and endings count: cansados for cansadas is marked wrong, not waved through as a typo, and so are some missing accents, like parle for parlé. Others, and small typos, are pointed out with the right spelling.",
+    "- Little role-plays from the first unit, like greeting a new friend or a neighbour.",
+    "- Beginner (A1) and Elementary (A2) are complete. If you already know some, you can test out of the early units.",
+    "- No ads, nothing to pay, and your streak is never taken away.",
+    "",
+    "Here's your invite:",
     link,
     "",
     codeLine,
     "",
     "Getting started:",
     "1. Open the link.",
-    "2. Pick a name, your email and a password (at least 10 characters).",
-    "3. Choose your language and level on the menu. If you're new to it, start at A1.",
+    "2. Pick a name, your email and a password (at least 10 characters). Your name is what your group sees on the leaderboard.",
+    "3. Choose your language and take your first step.",
+    "",
+    "On a phone, add Langue to your home screen and it works like an app.",
     "",
     "See you there,",
     inviterName,
