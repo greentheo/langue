@@ -40,7 +40,10 @@ just the screens the issue names: the one you miss is the one a learner sees.
 
 ### 3. Tests first
 Write tests that express the acceptance criteria and **watch them fail** before
-you implement. Use real record shapes — copy a real lesson, phrase, item state
+you implement. Include a **production-shaped** fixture: data from before your
+feature existed, an owner with no invite code, single-use codes, and every
+window or filter the page shows. Fixtures built alongside the feature hide the
+cases real data has. Use real record shapes — copy a real lesson, phrase, item state
 or API body — not fixtures invented from memory. For content: the content tests
 (`answers.test.ts`, `path.test.ts`) must pass and must be able to fail.
 
@@ -111,6 +114,11 @@ differently, what you filed. Then stop.
 - Never force-push or rewrite `main`.
 - A script that edits several files asserts **every** anchor before writing
   **any** file, so a failed match can't leave half an edit behind.
+- **Squash against your branch's own base** (`git merge-base HEAD origin/main`),
+  never against `origin/main` after it has moved: `git reset --soft origin/main`
+  on a stale branch stages reverts of everything merged since. **Before every
+  push, run `git diff --stat origin/main`** and check that it lists only your
+  files.
 - Never chain a history-changing git command (`commit --amend`, `rebase`,
   `reset`) after one whose exit status you haven't checked: a failed first
   step can make the second rewrite the wrong commit.
