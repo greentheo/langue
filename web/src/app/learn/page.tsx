@@ -384,7 +384,8 @@ export default async function LearnPage() {
 
       {user.isAdmin ? (
         <p className="text-xs text-[var(--crt-fg-dim)]">
-          <Link href="/learn/invites">Manage invite codes &rarr;</Link>
+          <Link href="/learn/invites">Manage invite codes &rarr;</Link>{" "}
+          · <Link href="/learn/admin/stats">Usage &rarr;</Link>
         </p>
       ) : null}
     </div>

@@ -24,6 +24,7 @@ import {
 import { claimInviteUse } from "./claim-invite";
 import { inviteStatus } from "./invite-status";
 import { availableLanguages } from "@/lib/vocab";
+import { trackSignup } from "@/lib/events/invites";
 
 export interface AuthFormState {
   error?: string;
@@ -168,6 +169,8 @@ export async function register(
     }
     throw error;
   }
+
+  await trackSignup(userId, invite.id, formData.get("visit"));
 
   const userAgent = (await headers()).get("user-agent") ?? undefined;
   await createSession(userId, userAgent);

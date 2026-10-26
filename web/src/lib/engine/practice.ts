@@ -63,6 +63,8 @@ export interface ItemGrade {
   note: string | null;
   /** Set when a near miss was rejected for its ending (grade.ts). */
   endingMiss?: GradeResult["endingMiss"];
+  /** Set when the answer was right but for its accents (grade.ts). */
+  accentMiss?: GradeResult["accentMiss"];
   /** Every accepted answer, revealed only after grading. */
   answers: string[];
   why: string;
@@ -101,6 +103,7 @@ export function gradePracticeItem(item: PracticeItem, answer: string, level: str
     points: pointsForResult(result, difficultyForLevel(level)),
     note: result.note,
     endingMiss: result.endingMiss,
+    accentMiss: result.accentMiss,
     answers,
     why: item.why,
   };

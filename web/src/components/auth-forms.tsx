@@ -78,11 +78,13 @@ export function LoginForm() {
   );
 }
 
-export function RegisterForm({ initialCode = "" }: { initialCode?: string }) {
+export function RegisterForm({ initialCode = "", visit }: { initialCode?: string; visit: string }) {
   const [state, formAction] = useActionState(register, EMPTY);
 
   return (
     <form action={formAction} className="space-y-4">
+      {/* Joins this page load to the signup it leads to, and nothing else (lib/events/visits.ts). */}
+      <input type="hidden" name="visit" value={visit} />
       {state.error ? <ErrorBox title="Denied" message={state.error} /> : null}
 
       <div>

@@ -28,6 +28,14 @@ const BodySchema = z.object({
   endingMisses: z
     .object({ otherForm: z.number().int().min(0).max(60), misspelt: z.number().int().min(0).max(60) })
     .optional(),
+  /** Answers right but for their accents: another form, a different word, or a plain slip (#114). Counts only. */
+  accentMisses: z
+    .object({
+      otherForm: z.number().int().min(0).max(60),
+      otherWord: z.number().int().min(0).max(60),
+      plain: z.number().int().min(0).max(60),
+    })
+    .optional(),
 });
 
 export const POST = handler(async (request) => {
@@ -38,7 +46,7 @@ export const POST = handler(async (request) => {
     throw new BadRequestError("Step result was malformed.");
   }
 
-  const { unitId, challenge, endingMisses, ...result } = parsed.data;
+  const { unitId, challenge, endingMisses, accentMisses, ...result } = parsed.data;
   const language = user.currentLanguage;
   const course = getCourse(language);
   const unitIndex = course.units.findIndex((unit) => unit.id === unitId);
@@ -53,7 +61,7 @@ export const POST = handler(async (request) => {
     language,
     level: course.units[unitIndex].level,
     ...result,
-    metadata: endingMisses ? { unitId, endingMisses } : { unitId },
+    metadata: { unitId, ...(endingMisses ? { endingMisses } : {}), ...(accentMisses ? { accentMisses } : {}) },
   });
 
   const passed = challenge

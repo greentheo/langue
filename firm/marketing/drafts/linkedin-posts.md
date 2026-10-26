@@ -82,8 +82,8 @@ well. Don't name the app's address until #72 is deployed.
 > Portuguese.
 >
 > What it is: beginner to elementary (A1 and A2), in short daily steps where
-> you type real answers. A wrong ending is marked wrong{ (a missing accent
-> is pointed out)}. No ads, nothing to pay.
+> you type real answers. A wrong ending is marked wrong, and so are some
+> missing accents. No ads, nothing to pay.
 >
 > Who made it: AI wrote the course, and no native speaker has checked it
 > yet. Your answers in the daily steps are graded by plain code, not AI.
@@ -95,7 +95,8 @@ well. Don't name the app's address until #72 is deployed.
 > messaged me after the last post, you'll hear from me today.
 
 **When posting:**
-- Drop "{ (a missing accent is pointed out)}" once #114 is live.
+- Keep "and so are some missing accents" after #120 ships: a bare "a wrong
+  ending is marked wrong" is untrue for Spanish *hable* for *hablé*.
 - Never put the code or the invite link in the post or a comment.
 - **Send at most 25 invites,** one for each of the code's 25 uses.
   Everyone else who answered the question hears from you that day too:
@@ -113,8 +114,8 @@ to no more than 25 of them.
 >
 > Langue teaches Italian, Spanish, French and Brazilian Portuguese, from
 > beginner to elementary (A1 and A2): short daily steps where you type real
-> answers, and a wrong ending is marked wrong{ (a missing accent is pointed
-> out)}. No ads, nothing to pay.
+> answers, and a wrong ending is marked wrong (so are some missing
+> accents). No ads, nothing to pay.
 >
 > It's early. Now and then a right answer will be marked wrong, or
 > something will break. When it does, tell me: that's how it gets fixed.
@@ -259,10 +260,11 @@ CLAIM: "25 places"
 SOURCE: 002's code, Uses 25. Verified against the brief.
 
 CLAIM: "beginner to elementary (A1 and A2) … short daily steps where you type real
-answers … a wrong ending is marked wrong (a missing accent is pointed out). No ads,
-nothing to pay." (Not "the grading is strict": a missing accent and a mid-word
-typo count as right, and attivo for cattivo is forgiven until #106.)
-SOURCE: as in 001's message sources (POSITIONING rows; #102; #114 caveat). Verified.
+answers … a wrong ending is marked wrong, and so are some missing accents. No ads,
+nothing to pay." (Not "the grading is strict": a missing accent that makes no word
+and a mid-word typo count as right, and attivo for cattivo is forgiven until #106.)
+SOURCE: as in 001's message sources (POSITIONING rows; #102; #120, probe on 51b6ed8).
+Post 2 and §3 are gated on #72, which ships after #120. Verified.
 
 CLAIM: "there's no speaking out loud, and the course stops at A2"
 SOURCE: #54 open (speaking aloud); #57 open (B1). Verified. Not "nothing past A2":

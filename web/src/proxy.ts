@@ -1,5 +1,6 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { SESSION_COOKIE } from "@/lib/auth/session";
+import { ADMIN_PAGE_HEADER, isAdminPath } from "@/lib/admin-paths";
 
 /**
  * Optimistic auth redirect.
@@ -14,7 +15,7 @@ import { SESSION_COOKIE } from "@/lib/auth/session";
  * for a page render first.
  */
 
-const PUBLIC_PATHS = ["/", "/login", "/register"];
+const PUBLIC_PATHS = ["/", "/login", "/register", "/privacy"];
 
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
@@ -32,7 +33,11 @@ export function proxy(request: NextRequest) {
   // cookie from /login to /learn (which bounces it back) loops forever. The
   // login page redirects after a real check instead.
 
-  return NextResponse.next();
+  // Whether this is an admin-only page, for the learn layout: app.opened isn't recorded there (lib/admin-paths.ts).
+  // Set here, so a caller can't choose it.
+  const requestHeaders = new Headers(request.headers);
+  requestHeaders.set(ADMIN_PAGE_HEADER, isAdminPath(pathname) ? "1" : "0");
+  return NextResponse.next({ request: { headers: requestHeaders } });
 }
 
 export const config = {
