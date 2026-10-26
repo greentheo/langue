@@ -26,7 +26,7 @@ Anthropic usage (capped by #123 once it ships).
 | Ring | What | Opens when | State |
 |---|---|---|---|
 | **1. Personal invites** | Campaign 001: 15 people from the owner's circle with a reason to learn | #109 PR 1 and #72 deployed | ✅ Gates met 2026-10-26 (8f7d6e1). The owner's call to launch |
-| **2. LinkedIn** | Campaign 002: post 1 tells how Langue is built (no invite); post 2 opens 25 places, invited by private message | Post 1: #126 (the README) merged ✅. Post 2: 001's day-14 read, #109 PR 1 and 2, #72 ✅, #123 (spend limit already set), #132, #63, #76 | Drafted (#124) |
+| **2. LinkedIn** | Campaign 002: post 1 tells how Langue is built (no invite); post 2 opens 25 places, invited by private message | Post 1: #126 (the README) merged ✅. Post 2: 001's day-14 read, #109 PR 1 and 2, #72 ✅, #123 deployed (spend limit already set), #132, #63, #76 | Drafted (#124) |
 | **3. Reddit** | Not drafted. Listen first: what beginners say about forgiven typos, streak pressure and grammar is message material | 001 and 002 both reach "do more"; #49 (report a grading) live; the owner has read each subreddit's rules; posts come from the owner's own account and say AI wrote the course | Listening |
 
 **Not now:** Hacker News and Product Hunt. They'd bring a burst of hundreds of
