@@ -120,12 +120,13 @@ Post 1 hands out nothing, so it can run while 001 does.
 | **001's day-14 read shows no first-run problem:** on 001's row, activated is at least 60% of signups. If 001 has no row (fewer than 5 signups, or pooled by the dashboard), the owner has heard of no one getting stuck. | Don't hand a known leak to people who don't know us. | 001 not launched |
 | **#109 PR 1 and PR 2 deployed** | Without the funnel, 002 can't be read. | ✅ Deployed (#115, #117; 8f7d6e1) |
 | **#72 deployed** | First contact must not say "AI tutor". | ✅ Deployed (#128; 8f7d6e1) |
-| **#123 deployed, or at least a monthly spend limit on the Anthropic key** (the owner sets it in Anthropic's console, no code needed) | Nothing caps a learner's AI use today, and AI is on by default (#74). | Needs owner |
+| **#123 deployed** (per-learner and per-code AI caps; the spend limit is already set) | Nothing caps a learner's AI use today, and AI is on by default (#74). The owner's $20/month limit on the Anthropic key (2026-10-23, recorded on #123) is the hard ceiling meanwhile, but one heavy user could use it up for everyone. | Ready, not built; spend limit ✅ |
 | **#63 deployed** (age checkbox, delete account, full privacy page) | Strangers need to know what's kept and be able to leave. Kids use Langue, and the checkbox asks. | Ready, no longer blocked (#109 shipped) |
+| **#132 deployed** (limits on tries for sign-in, password confirmation and invite codes) | Before people we don't know arrive, guessing passwords or codes shouldn't be free (the foreman's recommendation, 2026-10-26). | Open; next in night shift's queue |
 | **#76 deployed** (password reset) | Today a stranger who forgets their password has no way back, and the owner can't reset it either. A lost login would read as "didn't stay". | Ready, not built |
 
-The foreman's view matches (2026-10-20). Night shift's queue doesn't include
-#72, #63, #76 or #123 yet, and reordering it is the owner's call.
+The foreman's view matches (2026-10-20; #132 added 2026-10-26). Ordering
+night shift's queue is the owner's call.
 
 | Day | What | Owner's time |
 |---|---|---|
@@ -188,7 +189,8 @@ CLAIM: "Speaking aloud isn't built (#54)"; "the course today is A1 and A2"
 SOURCE: as in 001's sources. Verified.
 
 CLAIM: Gate states: #115/#117 in review, #72 ready not built, #63 blocked by #109,
-#76 ready not built, #123 needs-owner, night shift's queue
+#76 ready not built, #123 needs-owner, night shift's queue (as of 2026-10-20; updated
+2026-10-26: #109 and #72 deployed, spend limit set per #123, #132 added per the foreman)
 SOURCE: gh issue/pr views, 2026-10-20; foreman's message to marketing, 2026-10-20
 (night shift's order: #115/#117/#120 fixes → #119 → #118 → #93). Re-check on launch day.
 

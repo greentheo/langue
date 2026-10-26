@@ -14,9 +14,9 @@ confirm before post 1:
 - **Naming Claude Code** is accurate (each seat is a Claude Code session, and
   all 16 commits on `main` since 2026-10-15 carry a Claude co-author line),
   but optional.
-- **"When it's ready" has no date on purpose.** Post 2 waits on six gates,
-  and four of them are builds night shift hasn't queued (#72, #63, #76,
-  #123). Add a date only once they're scheduled.
+- **"When it's ready" has no date on purpose.** Post 2 waits on 001's
+  day-14 read and four builds (#123, #132, #63, #76; brief 002). Add a date
+  only once they're scheduled.
 
 ---
 
