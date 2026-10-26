@@ -176,9 +176,10 @@ describe("gradeTargetAnswer", () => {
   });
 
   test("a missing accent is close, with the accented form shown", () => {
-    const result = gradeTargetAnswer("lui e stanco", ["Lui è stanco"], "italian");
+    // "citta" is no word, so this is a slip (#114 makes "e" for "è" a different word).
+    const result = gradeTargetAnswer("lui va in citta", ["Lui va in città"], "italian");
     assert.equal(result.verdict, "close");
-    assert.match(result.note ?? "", /è/);
+    assert.match(result.note ?? "", /città/);
   });
 
   test("a wrong accent is close too", () => {
@@ -191,9 +192,9 @@ describe("gradeTargetAnswer", () => {
   });
 
   test("picks the accepted form the learner was aiming at", () => {
-    const result = gradeTargetAnswer("e", ["è", "sei"], "italian");
+    const result = gradeTargetAnswer("perche", ["come mai", "perché"], "italian");
     assert.equal(result.verdict, "close");
-    assert.match(result.note ?? "", /"è"/);
+    assert.match(result.note ?? "", /"perché"/);
   });
 
   test("a leading le / lo / la in a sentence is a pronoun, not an article", () => {
@@ -324,5 +325,103 @@ describe("keepEndings: a slip that changes a word's ending is a mistake, not a t
     assert.equal(misspelt.verdict, "incorrect");
     assert.equal(misspelt.note, "Check the spelling of the ending: «parliamo».");
     assert.equal(misspelt.endingMiss, "misspelt");
+  });
+});
+
+describe("a missing accent that makes another real word is a mistake (#114)", () => {
+  // The reviewer's list from #113: each missing accent leaves a different form the course uses.
+  const OTHER_FORMS: [string, string, string][] = [
+    ["french", "J'ai parle", "J'ai parlé"],
+    ["french", "Je suis arrive", "Je suis arrivé"],
+    ["french", "J'ai mange", "J'ai mangé"],
+    ["spanish", "Ayer hablo", "Ayer habló"],
+    ["portuguese", "Ele não pode vir ontem", "Ele não pôde vir ontem"],
+    ["italian", "Lui e stanco", "Lui è stanco"],
+  ];
+  for (const [language, typed, expected] of OTHER_FORMS) {
+    test(`${language}: "${typed}" for "${expected}" is wrong, with a note`, () => {
+      const result = gradeTargetAnswer(typed, [expected], language);
+      assert.equal(result.verdict, "incorrect");
+      assert.ok(result.note, "the learner is told why");
+    });
+  }
+
+  test("an accent in the ending is the grammar: another form", () => {
+    const result = gradeTargetAnswer("J'ai parle", ["J'ai parlé"], "french");
+    assert.equal(result.note, "That's another form — the accent is the grammar here: «J'ai parlé».");
+    assert.equal(result.accentMiss, "otherForm");
+  });
+
+  test("an accent on a short word makes a different word", () => {
+    const result = gradeTargetAnswer("Lui e stanco", ["Lui è stanco"], "italian");
+    assert.equal(result.note, "That's a different word — «è» (is), not «e» (and).");
+    assert.equal(result.accentMiss, "otherWord");
+  });
+
+  test("with both meanings, and the typed word as typed", () => {
+    const result = gradeTargetAnswer("Ou est la gare ?", ["Où est la gare ?"], "french");
+    assert.equal(result.note, "That's a different word — «Où» (where), not «Ou» (or).");
+  });
+
+  test("the short-word pairs carry both meanings, and pôde/pode is another form (#120 review)", () => {
+    const NOTES: [string, string, string, string][] = [
+      ["italian", "Lui e stanco", "Lui è stanco", "That's a different word — «è» (is), not «e» (and)."],
+      ["spanish", "Esta en casa", "Está en casa", "That's a different word — «Está» (is), not «Esta» (this)."],
+      ["spanish", "Tu eres mi amigo", "Tú eres mi amigo", "That's a different word — «Tú» (you (informal)), not «Tu» (your)."],
+      ["spanish", "Si, claro", "Sí, claro", "That's a different word — «Sí» (yes), not «Si» (if)."],
+      ["spanish", "el es mi hermano", "él es mi hermano", "That's a different word — «él» (he), not «el» (the)."],
+      ["french", "Je vais a Paris", "Je vais à Paris", "That's a different word — «à» (to, at), not «a» (has)."],
+      ["portuguese", "Ele e alto", "Ele é alto", "That's a different word — «é» (is), not «e» (and)."],
+      ["portuguese", "Ela esta aqui", "Ela está aqui", "That's a different word — «está» (is), not «esta» (this)."],
+    ];
+    for (const [language, typed, expected, note] of NOTES) {
+      const result = gradeTargetAnswer(typed, [expected], language);
+      assert.equal(result.note, note, typed);
+      assert.equal(result.accentMiss, "otherWord", typed);
+    }
+    const pode = gradeTargetAnswer("Ele não pode vir ontem", ["Ele não pôde vir ontem"], "portuguese");
+    assert.equal(pode.verdict, "incorrect");
+    assert.equal(pode.note, "That's another form — «pôde» (could, in the past), not «pode» (can).");
+    assert.equal(pode.accentMiss, "otherForm");
+  });
+
+  test("a missing accent on a capital letter stays close (#120 review)", () => {
+    // French print often leaves capitals bare, and Italian keyboards have no È.
+    for (const [language, typed, expected] of [
+      ["french", "A demain", "À demain"],
+      ["french", "A bientôt", "À bientôt"],
+      ["italian", "E stanco", "È stanco"],
+      ["italian", "E' stanco", "È stanco"],
+    ]) {
+      const result = gradeTargetAnswer(typed, [expected], language);
+      assert.equal(result.verdict, "close", typed);
+      assert.equal(result.accentMiss, "plain", typed);
+    }
+    // Not on a small letter, and not when the missing accent is elsewhere in a capitalised word.
+    assert.equal(gradeTargetAnswer("a demain", ["À demain"], "french").verdict, "incorrect");
+    assert.equal(gradeTargetAnswer("Tu eres mi amigo", ["Tú eres mi amigo"], "spanish").verdict, "incorrect");
+  });
+
+  test("only in French and Italian: Spanish and Portuguese keep accents on capitals (#120 re-check)", () => {
+    // Their keyboards have É, and the course types É, Às and Él in A1 phrases.
+    const pt = gradeTargetAnswer("E muito caro.", ["É muito caro."], "portuguese");
+    assert.equal(pt.verdict, "incorrect");
+    assert.equal(pt.note, "That's a different word — «É» (is), not «E» (and).");
+    const es = gradeTargetAnswer("El es mi primo.", ["Él es mi primo."], "spanish");
+    assert.equal(es.verdict, "incorrect");
+    assert.equal(es.note, "That's a different word — «Él» (he), not «El» (the).");
+  });
+
+  test("a missing accent that makes no word is still only close", () => {
+    for (const [language, typed, expected] of [
+      ["italian", "perche", "perché"],
+      ["italian", "citta", "città"],
+      ["french", "cafe", "café"],
+      ["italian", "universita", "università"],
+    ]) {
+      const result = gradeTargetAnswer(typed, [expected], language);
+      assert.equal(result.verdict, "close", typed);
+      assert.equal(result.accentMiss, "plain", typed);
+    }
   });
 });
