@@ -100,7 +100,7 @@ the repo or an issue. Marketing needs only the **number sent**.
 
 ## When to launch
 
-**Gates (all three):**
+**Gates (all three), all met 2026-10-26 (8f7d6e1); launch is the owner's call:**
 1. **#109's eventing (PR 1) is deployed.** `invite.opened` and `signup` are
    then recorded from the first tap. The dashboard (PR 2) can follow, as
    long as it's live by day 14.

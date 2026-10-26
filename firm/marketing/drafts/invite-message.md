@@ -2,7 +2,7 @@
 
 **For:** the owner and anyone with invite codes. **Replaces:** the text the
 "Copy invite email" button builds (`web/src/lib/invite-email.ts`). Once
-approved, #72 puts it in the app word for word. **Status:** draft, not sent.
+approved, #72 puts it in the app word for word. **Status:** live in the app since 8f7d6e1 (#128, 2026-10-26); the chat version is pasted by hand.
 
 Why it changes: today's email says *"learn a language with an AI tutor"*. No AI
 runs in the daily steps (only optional extra tools use it), so it promises

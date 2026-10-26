@@ -14,16 +14,16 @@ confirm before post 1:
 - **Naming Claude Code** is accurate (each seat is a Claude Code session, and
   all 16 commits on `main` since 2026-10-15 carry a Claude co-author line),
   but optional.
-- **"When it's ready" has no date on purpose.** Post 2 waits on six gates,
-  and four of them are builds night shift hasn't queued (#72, #63, #76,
-  #123). Add a date only once they're scheduled.
+- **"When it's ready" has no date on purpose.** Post 2 waits on 001's
+  day-14 read and four builds (#123, #132, #63, #76; brief 002). Add a date
+  only once they're scheduled.
 
 ---
 
 ## 1. Post 1: the story (no invite)
 
 **Gates:** #126 (the README, from §4) is merged, so the repo link lands
-well. Don't name the app's address until #72 is deployed.
+well. #72 is deployed (8f7d6e1, 2026-10-26), so the app's address can be named.
 
 > My family's language app has a staff of five. None of them are people.
 >
@@ -47,7 +47,7 @@ well. Don't name the app's address until #72 is deployed.
 > wrong ending is marked wrong". The reviewer tested it and found that the
 > app accepted French "J'ai parle" for "J'ai parlé", where the past tense
 > differs from the present only by an accent. So the claim got a caveat, the
-> bug got a fix ({it's in review now}), and the marketer replied: "the
+> bug got a fix (it's fixed now), and the marketer replied: "the
 > disagreement is mine."
 >
 > Yes, AI wrote the lessons too. Tests check the course's mechanics (every
@@ -68,7 +68,6 @@ well. Don't name the app's address until #72 is deployed.
   `gh pr list --state merged --limit 100 --search "merged:>=2026-10-15" --json number,files --jq '[.[] | select(any(.files[]; (.path|test("^(web|data|langue|\\.github)/")) and (.path|test("\\.md$|\\.gitignore$")|not)))] | length'`.
   Then the days since 2026-10-15. After a week or two, write "In its first
   {N} weeks", or drop the sentence.
-- **If #120 has shipped,** change "it's in review now" to "it's fixed now".
 - **Every message asking for an invite** goes on your waiting list (your
   LinkedIn inbox). Marketing needs only how many there are.
 
@@ -210,13 +209,13 @@ SOURCE: CLAUDE.md ("The owner spends ~10–20 minutes a day on the app"). It's t
 owner's own claim: they confirm it before posting.
 
 CLAIM: "the app accepted French 'J'ai parle' for 'J'ai parlé', where the past tense
-differs from the present only by an accent … the bug got a fix (it's in review now) …
+differs from the present only by an accent … the bug got a fix (it's fixed now) …
 the marketer replied: 'the disagreement is mine.'"
 SOURCE: the reviewer's finding on PR #113 (probe on ef01562: "J'ai parle" → close,
 counts as right); marketing's reply on PR #113, 2026-10-19 ("Thanks. All three are fixed in `b664d58`
 and `7749747`, and the disagreement is mine."), quoted from its end, not "began";
 parle is the present (je parle), parlé the past participle;
-#114, PR #120 in review on 2026-10-20. Verified. Tense depends on #120.
+#114, PR #120 deployed 2026-10-26 (8f7d6e1): "J'ai parle" → incorrect there. Verified.
 
 CLAIM: "AI wrote the lessons too … no native speaker has checked the language yet
 (my mother is starting on the French)"
